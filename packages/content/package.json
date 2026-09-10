@@ -14,7 +14,8 @@
     "import": "tsx src/cli/not-yet.ts import",
     "stats": "tsx src/cli/not-yet.ts stats",
     "test": "vitest run",
-    "typecheck": "tsc -p tsconfig.json"
+    "typecheck": "tsc -p tsconfig.json",
+    "validate:skills": "tsx src/cli/validate-skills.ts"
   },
   "dependencies": {
     "zod": "^4.0.0"

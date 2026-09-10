@@ -62,7 +62,7 @@ Nạp trùng một ngày → cập nhật bản ghi cũ, không tạo thêm.
   "taught": [
     { "subject": "VIET",  "lessonRefText": "Bài 13: U u – Ư ư",
       "lessonUnitCode": "KNTT-TV1-T1-B13", "pages": [38,39],
-      "skillCodes": ["VIET.HV.AM_U", "VIET.HV.AM_U_MOC", "VIET.DOC.DOC_TIENG"] },
+      "skillCodes": ["VIET.HV.AM_U_UW", "VIET.DOC.DOC_TIENG"] },
     { "subject": "ESL",   "lessonRefText": "Unit 1 - Lesson 16 - Unit Review",
       "unit": 1, "lesson": 16,
       "content": "family members, adjectives, have, to be",

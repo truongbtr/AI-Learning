@@ -1,11 +1,12 @@
 /**
- * `pnpm content:validate` — phase 0 validates content/timetable/*.json only.
- * Lessons / exercises / skill-map validators arrive in phase 1-2 (docs/10).
+ * `pnpm content:validate` — validates every content/ source: timetable (phase 0), skill map +
+ * lesson units + error taxonomy (phase 1). Lessons / exercises arrive in phase 2 (docs/10).
  */
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { contentDir } from "../paths";
 import { parseTimetable } from "../timetable";
+import { runSkillsValidation } from "./validate-skills";
 
 let errors = 0;
 const dir = contentDir("timetable");
@@ -21,5 +22,6 @@ for (const name of readdirSync(dir).filter((f) => f.endsWith(".json") && !f.incl
     console.error(`ERR timetable/${name}: ${(err as Error).message}`);
   }
 }
-console.log("(skill-map / lessons / exercises validators: phase 1-2)");
+errors += runSkillsValidation();
+console.log("(lessons content / exercises validators: phase 2)");
 process.exit(errors ? 1 : 0);
