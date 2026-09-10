@@ -46,7 +46,7 @@ AiCall ; AiConfig ; PromptTemplate ; Setting
 
 **SkillPrerequisite** — `skillId`, `prerequisiteId`, `strength` (0–1).
 
-**SkillEmbedding** — `skillId`, `embedding vector(1024)` — để gắn kỹ năng từ văn bản trích xuất.
+> Không có `SkillEmbedding`/pgvector (ADR-12, ADR-10). Tra cứu kỹ năng bằng chuỗi dùng cột `Skill.searchVector` (`tsvector`, cập nhật bằng trigger từ mã + tên + mô tả + mạch, qua `unaccent`) với chỉ mục GIN — xem ADR-13.
 
 ### 2.3 Năng lực & bằng chứng
 
@@ -74,7 +74,7 @@ AiCall ; AiConfig ; PromptTemplate ; Setting
 
 **Material** — `title`, `subject`, `kind` (`TEXTBOOK|CURRICULUM|WORKSHEET|WEEKLY_NOTICE|OTHER`), `term`, `files: FileRef[]`, `status`, `pageCount`, `uploadedById`.
 
-**LessonUnit** — `materialId`, `code` (ví dụ `NAVIO-L1-U3`), `title`, `subject`, `objectives: string[]`, `vocabulary: string[]`, `concepts: string[]`, `sampleTasks: string[]`, `pageFrom`, `pageTo`, `contentText` (văn bản đã trích), `embedding vector(1024)`, `weekFrom?`, `weekTo?` (lịch học), `isApproved`.
+**LessonUnit** — `materialId`, `code` (ví dụ `NAVIO-L1-U3`), `title`, `subject`, `objectives: string[]`, `vocabulary: string[]`, `concepts: string[]`, `sampleTasks: string[]`, `pageFrom`, `pageTo`, `contentText` (văn bản đã trích), `weekFrom?`, `weekTo?` (lịch học), `isApproved`. (Không có cột `embedding` — ADR-12.)
 
 **LessonUnitSkill** — `unitId`, `skillId`, `weight`.
 
@@ -139,7 +139,7 @@ AiCall ; AiConfig ; PromptTemplate ; Setting
 - `Exercise(stableId)` unique, `Exercise(contentHash)` unique; index `(status, subject, difficulty, type)`, `(status, assetTheme)`, `(targetsError)`; GIN trên `ExerciseSkill`.
 - `Attempt(sessionId, order)` unique.
 - `IntakeJob(status, createdAt)`.
-- pgvector: ivfflat/hnsw trên `SkillEmbedding.embedding`, `LessonUnit.embedding`.
+- Full-text: GIN trên `Skill.searchVector` (ADR-12/ADR-13); không có pgvector.
 - Xoá Student → cascade toàn bộ bảng con (phục vụ NFR-06), file xoá bằng job.
 
 ## 4. Dữ liệu seed
