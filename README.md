@@ -71,6 +71,12 @@ docs/           bộ tài liệu — nguồn sự thật
 - Sai 5 lần → khoá 10 phút; 10 lần sai/phút từ một IP → tạm chặn; mọi lần đăng nhập ghi `LoginAudit`.
 - Phiên là cookie httpOnly (Secure khi chạy sau HTTPS/Cloudflare Tunnel); người lớn 30 ngày nếu "ghi nhớ máy này", con hết hạn sau 2 giờ không thao tác.
 
+## Giọng đọc (TTS)
+
+- Mặc định `TTS_PROVIDER=webspeech`: đọc bằng giọng cài trên máy. **Máy phải có giọng tiếng Việt**, nếu không nút Nghe sẽ im lặng (app không đọc tiếng Việt bằng giọng Anh). Cài trên Windows: *Settings → Time & Language → Speech → Manage voices → Add voices → Tiếng Việt* (giọng "Microsoft An"); trình duyệt **Edge** có sẵn giọng neural "HoaiMy"/"NamMinh" (miền Bắc) — dùng Edge cho bé là tốt nhất khi chưa có cloud.
+- Giọng neural miền Bắc chất lượng cao: `TTS_PROVIDER=azure` (khoá Azure Speech + `TTS_REGION`, giọng `vi-VN-HoaiMyNeural`) hoặc `TTS_PROVIDER=google` (API key Cloud Text-to-Speech, giọng `vi-VN-Neural2-A`). Câu đã đọc được cache mp3 trong `FILE_ROOT/tts/` nên mỗi câu chỉ tốn tiền một lần; `TTS_PITCH_PERCENT` / `TTS_RATE` chỉnh cho nghe trẻ hơn.
+- Giọng trẻ em thật: thu âm các câu thoại cố định vào `content/art/audio/vi/<key>.mp3` (xem README trong đó); app ưu tiên clip thu sẵn → cloud → Web Speech.
+
 ## Bản quyền & riêng tư
 
 Sách của trường trong `sach giao khoa/` chỉ dùng nội bộ gia đình, không vào git. Dữ liệu của trẻ nằm ở máy nhà; app không gửi gì tới dịch vụ AI lúc chạy.
