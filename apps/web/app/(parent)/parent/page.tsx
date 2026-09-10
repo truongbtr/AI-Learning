@@ -6,11 +6,14 @@ import { avatarEmoji } from "@/lib/avatars";
 
 export const dynamic = "force-dynamic";
 
-/** P2 placeholder (phase 5). Lists only the children linked through StudentGuardian. */
+/** P2 placeholder (phase 5). Lists only active children linked through StudentGuardian. */
 export default async function ParentHomePage() {
   const user = await guardPage("parent");
   const students = await prisma.student.findMany({
-    where: user.role === "ADMIN" ? {} : { guardians: { some: { userId: user.id } } },
+    where: {
+      user: { isActive: true },
+      ...(user.role === "ADMIN" ? {} : { guardians: { some: { userId: user.id } } }),
+    },
     orderBy: { createdAt: "asc" },
     select: { id: true, nickname: true, avatarKey: true, className: true },
   });

@@ -83,6 +83,18 @@ test.beforeAll(() => {
   mkdirSync(SHOTS, { recursive: true });
 });
 
+// Leave no active test accounts behind (there is no hard delete by design).
+test.afterAll(async ({ browser }) => {
+  if (!ADMIN_PASSWORD) return;
+  const page = await browser.newPage();
+  await adultLogin(page, ADMIN_USER, ADMIN_PASSWORD);
+  await expect(page).toHaveURL(/\/admin\/users/);
+  for (const id of [ids.parent, ids.thy, ids.thanh]) {
+    if (id) await page.request.patch(`/api/admin/users/${id}`, { data: { isActive: false } });
+  }
+  await page.close();
+});
+
 test("1. admin login: forced password change on a fresh install, then /admin/users — screenshot /login", async ({
   page,
 }) => {
