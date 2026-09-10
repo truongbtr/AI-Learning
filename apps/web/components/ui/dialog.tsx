@@ -5,17 +5,19 @@ import type * as React from "react";
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
-/** Modal on top of the native <dialog> element (no extra dependency). */
+/** Modal on top of the native <dialog> element (MEDIFA ONE `Modal` look, no extra dependency). */
 export function Dialog({
   open,
   onClose,
   title,
+  description,
   children,
   className,
 }: {
   open: boolean;
   onClose: () => void;
   title: string;
+  description?: string;
   children: React.ReactNode;
   className?: string;
 }) {
@@ -35,22 +37,27 @@ export function Dialog({
         if (e.target === ref.current) onClose();
       }}
       className={cn(
-        "m-auto w-[min(92vw,40rem)] rounded-xl border bg-card p-0 text-card-foreground shadow-xl backdrop:bg-black/40",
+        "m-auto w-[min(92vw,40rem)] animate-scale-in rounded-card border border-ink-100 bg-white p-0 text-ink-800 shadow-popover backdrop:bg-ink-900/40",
         className,
       )}
     >
-      <div className="flex items-center justify-between border-b px-5 py-3">
-        <h2 className="text-base font-semibold">{title}</h2>
+      <div className="flex items-start justify-between gap-4 border-b border-ink-100 px-6 py-4">
+        <div className="min-w-0">
+          <h2 className="text-base font-bold text-ink-900">{title}</h2>
+          {description ? <p className="mt-0.5 text-sm text-ink-400">{description}</p> : null}
+        </div>
         <button
           type="button"
           onClick={onClose}
-          className="rounded p-1 hover:bg-accent"
+          className="rounded-control p-1.5 text-ink-400 transition-colors hover:bg-ink-100 hover:text-ink-700"
           aria-label="Đóng"
         >
           <X className="h-4 w-4" />
         </button>
       </div>
-      <div className="max-h-[75vh] overflow-y-auto px-5 py-4">{open ? children : null}</div>
+      <div className="thin-scrollbar max-h-[75vh] overflow-y-auto px-6 py-5">
+        {open ? children : null}
+      </div>
     </dialog>
   );
 }

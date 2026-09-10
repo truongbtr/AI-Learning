@@ -1,5 +1,6 @@
 import { notFound, redirect } from "next/navigation";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { PageHeader } from "@/components/admin/page-header";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ApiError } from "@/lib/api";
 import { guardPage, requireStudentAccess } from "@/lib/auth/session";
 
@@ -18,14 +19,25 @@ export default async function StudentPage({ params }: { params: Promise<{ studen
     throw err;
   }
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>{student.nickname}</CardTitle>
-      </CardHeader>
-      <CardContent className="text-sm text-muted-foreground">
-        Hồ sơ năng lực, xu hướng và "3 điều cần chú ý" sẽ có ở pha 5. API kiểm thử:{" "}
-        <code>GET /api/students/{studentId}/mastery</code>
-      </CardContent>
-    </Card>
+    <div className="flex flex-col gap-6">
+      <PageHeader
+        breadcrumb={["Tổng quan", "Các con", student.nickname]}
+        title={student.nickname}
+      />
+      <Card>
+        <CardHeader>
+          <div>
+            <CardTitle>Hồ sơ năng lực</CardTitle>
+            <CardDescription>Có ở pha 5 cùng xu hướng và "3 điều cần chú ý".</CardDescription>
+          </div>
+        </CardHeader>
+        <CardContent className="text-sm text-ink-500">
+          API kiểm thử quyền truy cập:{" "}
+          <code className="rounded bg-surface-muted px-1.5 py-0.5 text-xs">
+            GET /api/students/{studentId}/mastery
+          </code>
+        </CardContent>
+      </Card>
+    </div>
   );
 }

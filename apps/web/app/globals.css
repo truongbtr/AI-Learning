@@ -1,51 +1,124 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens.
+ * Adult area (admin + parent dashboard) follows the MEDIFA ONE design system the project owner
+ * uses elsewhere: teal `brand`, neutral `ink`, muted surfaces, rounded-card 20px, soft shadows.
+ * Kid area keeps its own playful world (docs/06 §1) and never uses these components.
+ */
 @theme {
-  --font-sans: var(--font-be-vietnam), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-be-vietnam), "Segoe UI", ui-sans-serif, system-ui, sans-serif;
   --font-kid: var(--font-nunito), var(--font-be-vietnam), ui-sans-serif, system-ui, sans-serif;
 
-  --color-background: oklch(99% 0.005 250);
-  --color-foreground: oklch(22% 0.02 260);
-  --color-card: oklch(100% 0 0);
-  --color-card-foreground: oklch(22% 0.02 260);
-  --color-muted: oklch(96% 0.01 250);
-  --color-muted-foreground: oklch(50% 0.02 260);
-  --color-accent: oklch(95% 0.02 250);
-  --color-accent-foreground: oklch(22% 0.02 260);
-  --color-primary: oklch(55% 0.17 260);
-  --color-primary-foreground: oklch(99% 0 0);
-  --color-secondary: oklch(93% 0.03 250);
-  --color-secondary-foreground: oklch(25% 0.03 260);
-  --color-destructive: oklch(58% 0.2 25);
-  --color-border: oklch(90% 0.01 250);
-  --color-input: oklch(88% 0.01 250);
-  --color-ring: oklch(60% 0.15 260);
+  /* brand: teal (MEDIFA ONE design-system §1.1) */
+  --color-brand-50: #effcf9;
+  --color-brand-100: #c8f5ec;
+  --color-brand-200: #97ebdd;
+  --color-brand-300: #5cdccb;
+  --color-brand-400: #2ec4b6;
+  --color-brand-500: #14a89b;
+  --color-brand-600: #0c877e;
+  --color-brand-700: #0f6b66;
+  --color-brand-800: #125553;
+  --color-brand-900: #123f3f;
+
+  --color-accent-50: #fff1f2;
+  --color-accent-100: #ffe0e3;
+  --color-accent-400: #ff4d57;
+  --color-accent-500: #ef1f2f;
+  --color-accent-600: #c91427;
+  --color-accent-700: #a30f20;
+
+  /* ink: text + neutral surfaces */
+  --color-ink-50: #f6f8fa;
+  --color-ink-100: #eaeff4;
+  --color-ink-200: #d6dee7;
+  --color-ink-300: #b3c1cd;
+  --color-ink-400: #8397a7;
+  --color-ink-500: #5f7482;
+  --color-ink-600: #455966;
+  --color-ink-700: #33454f;
+  --color-ink-800: #22303a;
+  --color-ink-900: #0f1d26;
+
+  --color-surface: #ffffff;
+  --color-surface-muted: #f4f7fb;
+  --color-surface-subtle: #eef3f8;
+
+  --color-success-50: #ecfdf3;
+  --color-success-100: #d1fae5;
+  --color-success-500: #12b76a;
+  --color-success-600: #059669;
+  --color-success-700: #047857;
+  --color-warning-50: #fffaeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-500: #f79009;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+  --color-danger-50: #fef3f2;
+  --color-danger-100: #fee2e2;
+  --color-danger-500: #f04438;
+  --color-danger-600: #dc2626;
+  --color-danger-700: #b91c1c;
+  --color-info-50: #eff8ff;
+  --color-info-100: #dbeafe;
+  --color-info-500: #2e90fa;
+  --color-info-600: #2563eb;
+  --color-info-700: #1d4ed8;
+
+  /* shadcn-style aliases kept for existing components (mapped onto the tokens above) */
+  --color-background: #f4f7fb;
+  --color-foreground: #22303a;
+  --color-card: #ffffff;
+  --color-card-foreground: #22303a;
+  --color-muted: #eef3f8;
+  --color-muted-foreground: #5f7482;
+  --color-accent: #eaeff4;
+  --color-accent-foreground: #22303a;
+  --color-primary: #14a89b;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #effcf9;
+  --color-secondary-foreground: #0f6b66;
+  --color-destructive: #f04438;
+  --color-border: #eaeff4;
+  --color-input: #d6dee7;
+  --color-ring: #2ec4b6;
+
+  --radius-card: 1.25rem;
+  --radius-control: 0.75rem;
+
+  --shadow-card: 0 18px 40px -28px rgba(15, 29, 38, 0.35);
+  --shadow-card-hover: 0 24px 50px -26px rgba(15, 29, 38, 0.4);
+  --shadow-control: 0 1px 2px 0 rgba(15, 29, 38, 0.06);
+  --shadow-popover: 0 16px 40px -12px rgba(15, 29, 38, 0.28);
+
+  --text-display-sm: 1.75rem;
+  --text-display-sm--line-height: 2.25rem;
+  --text-display-sm--letter-spacing: -0.015em;
+
+  --animate-fade-in: fade-in 150ms ease-out;
+  --animate-scale-in: scale-in 180ms ease-out;
+  --animate-float: float 3s ease-in-out infinite;
 }
 
-@layer base {
-  * {
-    border-color: var(--color-border);
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
-  html {
-    color-scheme: light;
-  }
-  body {
-    background: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-sans);
+  to {
+    opacity: 1;
   }
 }
-
-/* Kid area: playful sky/meadow gradient until phase 3 world art arrives. */
-.kid-world {
-  font-family: var(--font-kid);
-  background:
-    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.6), transparent 30%),
-    radial-gradient(circle at 80% 10%, rgba(255, 230, 120, 0.5), transparent 25%),
-    linear-gradient(180deg, #bfe6ff 0%, #e8f7ff 45%, #c8f2c0 75%, #a3e39a 100%);
-  min-height: 100dvh;
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
-
 @keyframes float {
   0%,
   100% {
@@ -55,6 +128,53 @@
     transform: translateY(-10px);
   }
 }
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    color-scheme: light;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink-900);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand-400);
+    outline-offset: 2px;
+  }
+}
+
+/* Thin scrollbar for the sidebar and long tables (MEDIFA `.medifa-scrollbar`). */
+.thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-ink-200) transparent;
+}
+.thin-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: var(--color-ink-200);
+}
+
+/* Kid area: playful sky/meadow gradient until phase 3 world art arrives. */
+.kid-world {
+  font-family: var(--font-kid);
+  color: #22303a;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.6), transparent 30%),
+    radial-gradient(circle at 80% 10%, rgba(255, 230, 120, 0.5), transparent 25%),
+    linear-gradient(180deg, #bfe6ff 0%, #e8f7ff 45%, #c8f2c0 75%, #a3e39a 100%);
+  min-height: 100dvh;
 }

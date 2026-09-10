@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { PicturePinGrid } from "@/components/kid/picture-pin-grid";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/card";
+import { Badge, Card } from "@/components/ui/card";
 import { Dialog } from "@/components/ui/dialog";
 import { Field, Input, Select } from "@/components/ui/input";
 import { Table, TBody, TD, TH, THead, TR } from "@/components/ui/table";
@@ -66,17 +66,25 @@ export function UsersAdmin({
   }
 
   return (
-    <div className="space-y-3">
-      <div className="flex items-center justify-between">
-        <p className="text-sm text-muted-foreground">{users.length} tài khoản</p>
-        <Button onClick={() => setDialog({ kind: "create" })}>+ Tạo tài khoản</Button>
-      </div>
+    <div className="space-y-4">
       {rowError ? (
-        <p role="alert" className="rounded-md bg-red-50 px-3 py-2 text-sm text-red-700">
+        <p
+          role="alert"
+          className="rounded-control border border-danger-100 bg-danger-50 px-4 py-3 text-sm font-medium text-danger-700"
+        >
           {rowError}
         </p>
       ) : null}
-      <div className="rounded-xl border bg-card">
+      <Card flush>
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-ink-100 px-5 py-4">
+          <div>
+            <h2 className="text-base font-bold text-ink-900">Tài khoản</h2>
+            <p className="text-sm text-ink-400">
+              {users.length} tài khoản · admin, phụ huynh và con
+            </p>
+          </div>
+          <Button onClick={() => setDialog({ kind: "create" })}>+ Tạo tài khoản</Button>
+        </div>
         <Table>
           <THead>
             <TR>
@@ -95,28 +103,26 @@ export function UsersAdmin({
               <TR key={u.id} className={u.isActive ? "" : "opacity-60"}>
                 <TD className="text-2xl">{avatarEmoji(u.avatarKey)}</TD>
                 <TD>
-                  <div className="font-medium">{u.displayName}</div>
-                  {u.email ? <div className="text-xs text-muted-foreground">{u.email}</div> : null}
+                  <div className="font-semibold text-ink-900">{u.displayName}</div>
+                  {u.email ? <div className="text-xs text-ink-400">{u.email}</div> : null}
                   {u.student ? (
-                    <div className="text-xs text-muted-foreground">Hồ sơ: {u.student.nickname}</div>
+                    <div className="text-xs text-ink-400">Hồ sơ: {u.student.nickname}</div>
                   ) : null}
                 </TD>
-                <TD className="font-mono text-xs">{u.username}</TD>
+                <TD className="font-mono text-xs text-ink-500">{u.username}</TD>
                 <TD>
                   <Badge
-                    variant={
-                      u.role === "ADMIN" ? "default" : u.role === "PARENT" ? "secondary" : "outline"
-                    }
+                    tone={u.role === "ADMIN" ? "brand" : u.role === "PARENT" ? "info" : "neutral"}
                   >
                     {ROLE_LABEL[u.role]}
                   </Badge>
                   {u.mustChangePassword ? (
-                    <Badge variant="warning" className="ml-1">
+                    <Badge tone="warning" dot className="ml-1">
                       phải đổi mật khẩu
                     </Badge>
                   ) : null}
                   {u.lockedUntil ? (
-                    <Badge variant="warning" className="ml-1">
+                    <Badge tone="warning" dot className="ml-1">
                       khoá tới {formatDateTime(u.lockedUntil)}
                     </Badge>
                   ) : null}
@@ -127,14 +133,18 @@ export function UsersAdmin({
                   ) : u.guardianOf.length ? (
                     u.guardianOf.map((g) => g.nickname).join(", ")
                   ) : (
-                    <span className="text-muted-foreground">chưa gắn</span>
+                    <span className="text-ink-400">chưa gắn</span>
                   )}
                 </TD>
                 <TD>
                   {u.isActive ? (
-                    <Badge variant="success">Bật</Badge>
+                    <Badge tone="success" dot>
+                      Bật
+                    </Badge>
                   ) : (
-                    <Badge variant="outline">Tắt</Badge>
+                    <Badge tone="neutral" dot>
+                      Tắt
+                    </Badge>
                   )}
                 </TD>
                 <TD className="text-sm">{formatDateTime(u.lastLoginAt)}</TD>
@@ -180,7 +190,7 @@ export function UsersAdmin({
             ))}
           </TBody>
         </Table>
-      </div>
+      </Card>
 
       <Dialog
         open={dialog?.kind === "create"}
@@ -326,7 +336,7 @@ function CreateUserForm({
           <fieldset className="sm:col-span-2">
             <legend className="text-sm font-medium">Gắn con</legend>
             {students.length === 0 ? (
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-ink-400">
                 Chưa có hồ sơ con nào — tạo tài khoản Con trước.
               </p>
             ) : (
@@ -417,7 +427,10 @@ function CreateUserForm({
       )}
 
       {error ? (
-        <p role="alert" className="rounded-md bg-red-50 px-3 py-2 text-sm text-red-700">
+        <p
+          role="alert"
+          className="rounded-control border border-danger-100 bg-danger-50 px-4 py-3 text-sm font-medium text-danger-700"
+        >
           {error}
         </p>
       ) : null}
@@ -461,7 +474,7 @@ function LinkForm({
   return (
     <div className="space-y-4">
       {students.length === 0 ? (
-        <p className="text-sm text-muted-foreground">Chưa có hồ sơ con nào.</p>
+        <p className="text-sm text-ink-400">Chưa có hồ sơ con nào.</p>
       ) : (
         <div className="space-y-2">
           {students.map((s) => (
@@ -476,12 +489,12 @@ function LinkForm({
                   )
                 }
               />
-              {s.nickname} <span className="text-xs text-muted-foreground">({s.slug})</span>
+              {s.nickname} <span className="text-xs text-ink-400">({s.slug})</span>
             </label>
           ))}
         </div>
       )}
-      {error ? <p className="text-sm text-red-700">{error}</p> : null}
+      {error ? <p className="text-sm font-medium text-danger-600">{error}</p> : null}
       <div className="flex justify-end">
         <Button onClick={save} disabled={pending}>
           Lưu
@@ -544,7 +557,7 @@ function ResetForm({ user, onDone }: { user: AdminUserRow; onDone: () => void })
             onChange={setPin}
             resetToken={pinReset}
           />
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-ink-400">
             Con đăng nhập được bằng mã mới ngay; bộ đếm sai được xoá.
           </p>
         </>
@@ -559,7 +572,7 @@ function ResetForm({ user, onDone }: { user: AdminUserRow; onDone: () => void })
           />
         </Field>
       )}
-      {error ? <p className="text-sm text-red-700">{error}</p> : null}
+      {error ? <p className="text-sm font-medium text-danger-600">{error}</p> : null}
       <div className="flex justify-end">
         <Button
           onClick={save}
@@ -602,10 +615,9 @@ function LoginsTable({ userId }: { userId: string }) {
       .then((d) => setRows(d.items))
       .catch((err) => setError((err as Error).message));
   }
-  if (error) return <p className="text-sm text-red-700">{error}</p>;
-  if (rows === null) return <p className="text-sm text-muted-foreground">Đang tải…</p>;
-  if (rows.length === 0)
-    return <p className="text-sm text-muted-foreground">Chưa có lần đăng nhập nào.</p>;
+  if (error) return <p className="text-sm font-medium text-danger-600">{error}</p>;
+  if (rows === null) return <p className="text-sm text-ink-400">Đang tải…</p>;
+  if (rows.length === 0) return <p className="text-sm text-ink-400">Chưa có lần đăng nhập nào.</p>;
   return (
     <Table>
       <THead>
@@ -622,14 +634,11 @@ function LoginsTable({ userId }: { userId: string }) {
             <TD className="whitespace-nowrap text-xs">{formatDateTime(r.at)}</TD>
             <TD className="font-mono text-xs">{r.ip}</TD>
             <TD>
-              <Badge variant={r.result === "OK" ? "success" : "warning"}>
+              <Badge tone={r.result === "OK" ? "success" : "warning"} dot>
                 {RESULT_LABEL[r.result] ?? r.result}
               </Badge>
             </TD>
-            <TD
-              className="max-w-[20rem] truncate text-xs text-muted-foreground"
-              title={r.userAgent}
-            >
+            <TD className="max-w-[20rem] truncate text-xs text-ink-400" title={r.userAgent}>
               {r.userAgent}
             </TD>
           </TR>
