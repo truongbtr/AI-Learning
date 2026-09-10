@@ -1,0 +1,33 @@
+{
+  "name": "@mtct/inbox",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI queue (docs/13): schemas + pull/validate/push CLIs processed by Claude Code in batches. No LLM SDK (ADR-10).",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "pull": "tsx src/cli/not-yet.ts pull",
+    "validate": "tsx src/cli/not-yet.ts validate",
+    "push": "tsx src/cli/not-yet.ts push",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@mtct/config": "workspace:*",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^5.0.0"
+  },
+  "files": [
+    "src",
+    "package.json"
+  ]
+}
