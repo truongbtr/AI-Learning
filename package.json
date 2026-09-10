@@ -26,7 +26,8 @@
     "content:stats": "pnpm --filter @mtct/content stats",
     "inbox:pull": "pnpm --filter @mtct/inbox pull",
     "inbox:validate": "pnpm --filter @mtct/inbox validate",
-    "inbox:push": "pnpm --filter @mtct/inbox push"
+    "inbox:push": "pnpm --filter @mtct/inbox push",
+    "tts:clone": "node scripts/tts-clone-voices.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.0",

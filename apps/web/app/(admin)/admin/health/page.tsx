@@ -57,7 +57,11 @@ export default async function AdminHealthPage() {
         <KpiCard
           label="Giọng đọc"
           value={cloudTtsEnabled(tts) ? `Cloud (${tts.provider})` : "Trên thiết bị"}
-          caption={cloudTtsEnabled(tts) ? tts.voices.vi : "Cần giọng tiếng Việt cài trên máy"}
+          caption={
+            cloudTtsEnabled(tts)
+              ? `gái: ${tts.voices.girl.vi ?? "—"} · trai: ${tts.voices.boy.vi ?? "—"}`
+              : "Cần giọng tiếng Việt cài trên máy"
+          }
           icon={<Volume2 className="h-6 w-6" />}
           tone={cloudTtsEnabled(tts) ? "success" : "warning"}
         />
@@ -94,7 +98,7 @@ export default async function AdminHealthPage() {
                 Giọng vi / en
               </dt>
               <dd className="mt-1 font-medium text-ink-800">
-                {tts.voices.vi ?? "Web Speech"} · {tts.voices.en ?? "Web Speech"}
+                {tts.voices.girl.vi ?? "Web Speech"} · {tts.voices.girl.en ?? "Web Speech"}
               </dd>
             </div>
             <div className="rounded-control bg-surface-muted px-4 py-3">

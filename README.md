@@ -73,9 +73,11 @@ docs/           bộ tài liệu — nguồn sự thật
 
 ## Giọng đọc (TTS)
 
-- Mặc định `TTS_PROVIDER=webspeech`: đọc bằng giọng cài trên máy. **Máy phải có giọng tiếng Việt**, nếu không nút Nghe sẽ im lặng (app không đọc tiếng Việt bằng giọng Anh). Cài trên Windows: *Settings → Time & Language → Speech → Manage voices → Add voices → Tiếng Việt* (giọng "Microsoft An"); trình duyệt **Edge** có sẵn giọng neural "HoaiMy"/"NamMinh" (miền Bắc) — dùng Edge cho bé là tốt nhất khi chưa có cloud.
-- Giọng neural miền Bắc chất lượng cao: `TTS_PROVIDER=azure` (khoá Azure Speech + `TTS_REGION`, giọng `vi-VN-HoaiMyNeural`) hoặc `TTS_PROVIDER=google` (API key Cloud Text-to-Speech, giọng `vi-VN-Neural2-A`). Câu đã đọc được cache mp3 trong `FILE_ROOT/tts/` nên mỗi câu chỉ tốn tiền một lần; `TTS_PITCH_PERCENT` / `TTS_RATE` chỉnh cho nghe trẻ hơn.
-- Giọng trẻ em thật: thu âm các câu thoại cố định vào `content/art/audio/vi/<key>.mp3` (xem README trong đó); app ưu tiên clip thu sẵn → cloud → Web Speech.
+Thứ tự phát: clip thu sẵn (`content/art/audio/`) → mp3 đã cache (`FILE_ROOT/tts/`) → TTS cloud → Web Speech trên thiết bị. App **không bao giờ** đọc tiếng Việt bằng giọng Anh: không có giọng phù hợp thì nút Nghe im lặng và chuyển xám.
+
+- **Giọng bé trai / bé gái của gia đình** (khuyên dùng): đặt hai bản thu vào `ai voice/` (đã có, không vào git), điền `TTS_PROVIDER=elevenlabs` + `TTS_API_KEY`, chạy `pnpm tts:clone` một lần để nhân bản giọng và ghi `TTS_VOICE_GIRL`/`TTS_VOICE_BOY` vào `.env`. Giọng được chọn theo ngữ cảnh: màn hình của bé gái dùng giọng bé gái, của bé trai dùng giọng bé trai (theo avatar rồi mascot). Chi tiết: `content/art/audio/README.md`.
+- **Giọng neural có sẵn**: `TTS_PROVIDER=azure` (khoá Azure Speech + `TTS_REGION`; HoaiMy nữ / NamMinh nam, miền Bắc) hoặc `TTS_PROVIDER=google` (API key Cloud Text-to-Speech; Neural2-A nữ / Neural2-D nam). `TTS_PITCH_PERCENT` / `TTS_RATE` chỉnh cho nghe trẻ hơn.
+- **Không cloud** (`webspeech`): máy phải có giọng tiếng Việt — Windows: *Settings → Time & Language → Speech → Add voices → Tiếng Việt*; trình duyệt **Edge** có sẵn giọng neural HoaiMy/NamMinh.
 
 ## Bản quyền & riêng tư
 

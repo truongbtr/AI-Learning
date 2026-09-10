@@ -1,21 +1,33 @@
-# Âm thanh thu sẵn (giọng thật)
+# Âm thanh cho góc của con
 
-Không nhà cung cấp TTS lớn nào có **giọng trẻ em tiếng Việt** thật. Với 40–60 câu thoại cố định của
-mascot (chào, khen, động viên, tạm biệt… — `docs/06-THIET-KE-UI.md` §1.8 mục 5) cách tốt nhất là
-**thu âm giọng thật** (một bé/người thân giọng miền Bắc) rồi đặt vào đây:
+## 1. Giọng nhân bản của gia đình (bé trai + bé gái)
+
+Hai bản thu trong thư mục `ai voice/` (không vào git — giọng thật của trẻ) được nhân bản một lần
+trên ElevenLabs (Instant Voice Cloning, không cần "train" dài — 30–60 giây thu sạch là đủ):
+
+```powershell
+# .env: TTS_PROVIDER=elevenlabs, TTS_API_KEY=<khoá ElevenLabs>
+pnpm tts:clone          # tạo 2 giọng, ghi TTS_VOICE_GIRL / TTS_VOICE_BOY vào .env
+```
+
+Sau đó mọi câu (lời chào, đề bài, câu có tên riêng) đều được đọc bằng giọng đó qua `/api/tts`,
+cache mp3 dưới `FILE_ROOT/tts/` nên mỗi câu chỉ tốn phí một lần.
+
+**Chọn giọng theo ngữ cảnh** (`lib/tts/voices.ts` → `personaFor`): màn hình của bé gái (avatar
+`girl-*`, mascot Cú) dùng giọng bé gái; của bé trai (avatar `boy-*`, mascot Rô-bốt) dùng giọng bé trai.
+Thiếu một giọng thì dùng giọng còn lại.
+
+## 2. Clip thu sẵn (ưu tiên cao nhất)
+
+Câu thoại cố định của mascot có thể là bản thu thật, đặt vào:
 
 ```
-content/art/audio/vi/<key>.mp3      # ví dụ: chao-buoi-sang.mp3, gioi-lam.mp3, tam-biet.mp3
-content/art/audio/en/<key>.mp3
+content/art/audio/vi/<key>.mp3            # dùng chung
+content/art/audio/vi/girl/<key>.mp3       # riêng giọng bé gái
+content/art/audio/vi/boy/<key>.mp3        # riêng giọng bé trai
 ```
 
-- `key`: chữ thường, số, dấu `-`, tối đa 60 ký tự.
-- Định dạng: MP3 mono 24 kHz, 48 kbps là đủ; cắt bỏ khoảng lặng đầu/cuối, chuẩn hoá âm lượng −16 LUFS.
-- Trong code: `<SpeakButton text="Giỏi lắm!" clip="gioi-lam" />` → `/api/tts` trả clip này trước, không
-  có clip mới dùng TTS neural (nếu cấu hình) rồi Web Speech.
+- `key`: chữ thường, số, dấu `-`, tối đa 60 ký tự. MP3 mono 24 kHz, 48 kbps; cắt lặng đầu/cuối.
+- Trong code: `<SpeakButton text="Giỏi lắm!" clip="gioi-lam" voice="boy" />`.
 
-Đề bài và câu có tên riêng (thay đổi theo bé) dùng TTS neural (`TTS_PROVIDER=azure|google`, giọng
-`vi-VN-HoaiMyNeural` / `vi-VN-Neural2-A` — nữ miền Bắc, đã nâng cao độ +12% cho trẻ hơn) và được
-cache mp3 dưới `FILE_ROOT/tts/`, nên mỗi câu chỉ tốn tiền một lần.
-
-Không thu âm tên đầy đủ hay thông tin cá nhân của bé vào file — chỉ tên gọi ở nhà.
+Không thu âm hay gửi tên đầy đủ, ngày sinh của bé — chỉ tên gọi ở nhà.

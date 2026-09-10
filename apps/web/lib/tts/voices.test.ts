@@ -41,3 +41,14 @@ describe("pickVoice", () => {
     expect(pickVoice(withNatural, "en-US")?.name).toContain("Aria");
   });
 });
+
+describe("personaFor", () => {
+  it("follows the avatar, then the mascot, then defaults to the girl voice", async () => {
+    const { personaFor } = await import("./voices");
+    expect(personaFor({ avatarKey: "boy-1", mascot: "OWL" })).toBe("boy");
+    expect(personaFor({ avatarKey: "girl-2", mascot: "ROBOT" })).toBe("girl");
+    expect(personaFor({ avatarKey: "unicorn", mascot: "ROBOT" })).toBe("boy");
+    expect(personaFor({ avatarKey: "unicorn", mascot: "OWL" })).toBe("girl");
+    expect(personaFor(null)).toBe("girl");
+  });
+});

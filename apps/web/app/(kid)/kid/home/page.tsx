@@ -3,6 +3,7 @@ import { SpeakButton } from "@/components/kid/speak-button";
 import { signOutAction } from "@/lib/auth/actions";
 import { guardPage } from "@/lib/auth/session";
 import { avatarEmoji } from "@/lib/avatars";
+import { personaFor } from "@/lib/tts/voices";
 
 export const dynamic = "force-dynamic";
 
@@ -23,6 +24,7 @@ export default async function KidHomePage() {
     student?.nickname ?? (user.role === "ADMIN" ? "bạn nhỏ (xem thử)" : user.displayName);
   const mascot = student?.mascot === "OWL" ? "🦉" : "🤖";
   const greeting = `Chào ${nickname}! Hôm nay mình cùng học vui nhé!`;
+  const voice = personaFor(student ?? { avatarKey: user.avatarKey, mascot: null });
 
   return (
     <main className="flex min-h-dvh flex-col items-center justify-between px-6 py-8">
@@ -34,7 +36,7 @@ export default async function KidHomePage() {
           <p className="text-5xl font-black text-sky-800">Chào {nickname}!</p>
           <p className="mt-3 text-2xl font-bold text-slate-600">Hôm nay mình cùng học vui nhé!</p>
         </div>
-        <SpeakButton text={greeting} autoPlay />
+        <SpeakButton text={greeting} voice={voice} autoPlay />
         <div className="flex items-center gap-3 rounded-3xl bg-white/70 px-6 py-4 text-2xl font-bold text-slate-600">
           <span className="text-4xl" aria-hidden>
             {avatarEmoji(student?.avatarKey ?? user.avatarKey)}

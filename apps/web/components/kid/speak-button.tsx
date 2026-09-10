@@ -2,7 +2,7 @@
 
 import { Volume2 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { KID_PROSODY, pickVoice } from "@/lib/tts/voices";
+import { KID_PROSODY, pickVoice, type VoicePersona } from "@/lib/tts/voices";
 import { cn } from "@/lib/utils";
 
 type SpeakState = "idle" | "loading" | "speaking" | "unavailable";
@@ -43,13 +43,14 @@ export async function speak(
   lang = "vi-VN",
   clip?: string,
   onState?: (s: SpeakState) => void,
+  voice: VoicePersona = "girl",
 ): Promise<boolean> {
   if (typeof window === "undefined") return false;
   stopAll();
   onState?.("loading");
 
   try {
-    const params = new URLSearchParams({ text, lang });
+    const params = new URLSearchParams({ text, lang, voice });
     if (clip) params.set("clip", clip);
     const res = await fetch(`/api/tts?${params}`, { cache: "force-cache" });
     if (res.status === 200) {
@@ -73,8 +74,8 @@ export async function speak(
     onState?.("unavailable");
     return false;
   }
-  const voice = pickVoice(await loadVoices(), lang);
-  if (!voice) {
+  const synthVoice = pickVoice(await loadVoices(), lang);
+  if (!synthVoice) {
     console.warn(
       `[tts] no ${lang} voice installed; staying silent instead of using a foreign voice`,
     );
@@ -82,7 +83,7 @@ export async function speak(
     return false;
   }
   const u = new SpeechSynthesisUtterance(text);
-  u.voice = voice as SpeechSynthesisVoice;
+  u.voice = synthVoice as SpeechSynthesisVoice;
   u.lang = lang;
   u.rate = KID_PROSODY.rate;
   u.pitch = KID_PROSODY.pitch;
@@ -100,6 +101,7 @@ export function SpeakButton({
   text,
   lang = "vi-VN",
   clip,
+  voice = "girl",
   autoPlay = false,
   className,
   label = "Nghe",
@@ -108,6 +110,8 @@ export function SpeakButton({
   lang?: string;
   /** Key of a recorded clip in content/art/audio/<lang>/ (real child voice), if one exists. */
   clip?: string;
+  /** Cloned child voice for this screen (see personaFor in lib/tts/voices). */
+  voice?: VoicePersona;
   autoPlay?: boolean;
   className?: string;
   label?: string;
@@ -122,8 +126,8 @@ export function SpeakButton({
     };
   }, []);
   const play = useCallback(
-    () => speak(text, lang, clip, (s) => mounted.current && setState(s)),
-    [text, lang, clip],
+    () => speak(text, lang, clip, (s) => mounted.current && setState(s), voice),
+    [text, lang, clip, voice],
   );
   useEffect(() => {
     if (autoPlay) void play();

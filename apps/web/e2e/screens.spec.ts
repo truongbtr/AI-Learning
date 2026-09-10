@@ -12,7 +12,9 @@ const SHOTS = join(__dirname, "..", "..", "..", "docs", "screens", "pha-0");
 
 test.skip(!ADMIN_PASSWORD, "set E2E_ADMIN_PASSWORD to capture the adult-area screenshots");
 
-test("admin dashboard, users, health and parent pages render inside the shell", async ({ page }) => {
+test("admin dashboard, users, health and parent pages render inside the shell", async ({
+  page,
+}) => {
   mkdirSync(SHOTS, { recursive: true });
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/login");

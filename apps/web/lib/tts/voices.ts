@@ -49,3 +49,20 @@ export function pickVoice(voices: readonly VoiceLike[], lang: string): VoiceLike
     null
   );
 }
+
+export type VoicePersona = "boy" | "girl";
+
+/**
+ * Which cloned child voice speaks on a screen (context rule, docs/06 §1.7 mascot voice):
+ * a girl's screens are voiced by the girl voice, a boy's by the boy voice — decided from the
+ * child's avatar first, then the mascot (owl → girl, robot → boy). Adults/unknown → girl.
+ */
+export function personaFor(
+  student: { avatarKey?: string | null; mascot?: string | null } | null,
+): VoicePersona {
+  const avatar = (student?.avatarKey ?? "").toLowerCase();
+  if (avatar.startsWith("boy")) return "boy";
+  if (avatar.startsWith("girl")) return "girl";
+  if ((student?.mascot ?? "").toUpperCase() === "ROBOT") return "boy";
+  return "girl";
+}
