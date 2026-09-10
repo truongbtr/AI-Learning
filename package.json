@@ -1,0 +1,36 @@
+{
+  "name": "mtct",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Hoc cung Mai Thy & Chi Thanh - family learning platform (EDISON_LEARNING)",
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "turbo run test",
+    "e2e": "pnpm --filter @mtct/web e2e",
+    "db:generate": "pnpm --filter @mtct/db generate",
+    "db:migrate": "pnpm --filter @mtct/db migrate",
+    "db:deploy": "pnpm --filter @mtct/db deploy",
+    "db:seed": "pnpm --filter @mtct/db seed",
+    "db:seed:dev": "pnpm --filter @mtct/db seed:dev",
+    "db:studio": "pnpm --filter @mtct/db studio",
+    "content:validate": "pnpm --filter @mtct/content validate",
+    "content:import": "pnpm --filter @mtct/content import",
+    "content:stats": "pnpm --filter @mtct/content stats",
+    "inbox:pull": "pnpm --filter @mtct/inbox pull",
+    "inbox:validate": "pnpm --filter @mtct/inbox validate",
+    "inbox:push": "pnpm --filter @mtct/inbox push"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.0",
+    "turbo": "^2.10.0",
+    "typescript": "^5.9.0"
+  }
+}

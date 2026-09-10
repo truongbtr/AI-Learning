@@ -1,0 +1,36 @@
+# secrets & local env
+.env
+.env.*
+!.env.example
+
+# school books, scratch, AI inbox, runtime data
+sach giao khoa/
+_to_delete/
+/inbox/
+/data
+/backup
+
+# node / build
+node_modules/
+.pnpm-store/
+.next/
+dist/
+out/
+.turbo/
+*.tsbuildinfo
+coverage/
+
+# prisma generated client
+packages/db/generated/
+
+# playwright
+playwright-report/
+test-results/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log

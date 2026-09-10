@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NODE_ENV", "DATABASE_URL", "AUTH_SECRET", "AUTH_URL", "AUTH_TRUST_HOST"],
+  "globalPassThroughEnv": [
+    "ADMIN_USERNAME",
+    "ADMIN_EMAIL",
+    "ADMIN_PASSWORD",
+    "FILE_ROOT",
+    "INBOX_ROOT",
+    "TTS_PROVIDER",
+    "TTS_API_KEY",
+    "SCHOOL_YEAR_START",
+    "SEED_DEV",
+    "PORT"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+    },
+    "test": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    }
+  }
+}
