@@ -1,0 +1,84 @@
+# docker compose -f docker/compose.yml up -d --build
+# Three services only (docs/02 §7, docs/08 pha 0): postgres, web, worker.
+# All containers read ../.env (copy .env.example → .env at the repo root).
+# Inside the containers DATABASE_URL is rebuilt from POSTGRES_* to point at the "postgres" service,
+# so the DATABASE_URL in .env only matters for tools run on the host (pnpm dev, prisma studio).
+# The host port for Postgres defaults to 5432; to change it run with `--env-file .env` and set POSTGRES_PORT.
+
+name: mtct
+
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    env_file:
+      - ../.env
+    environment:
+      TZ: Asia/Ho_Chi_Minh
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  web:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: web
+    restart: unless-stopped
+    env_file:
+      - ../.env
+    environment:
+      NODE_ENV: production
+      PORT: 3000 # container port; the host port comes from .env PORT (${PORT}:3000)
+      DATABASE_HOST: postgres
+      FILE_ROOT: /data/files
+      INBOX_ROOT: /data/inbox
+      TZ: Asia/Ho_Chi_Minh
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - files:/data/files
+      - inbox:/data/inbox
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 90s
+
+  worker:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: worker
+    restart: unless-stopped
+    env_file:
+      - ../.env
+    environment:
+      NODE_ENV: production
+      DATABASE_HOST: postgres
+      FILE_ROOT: /data/files
+      INBOX_ROOT: /data/inbox
+      TZ: Asia/Ho_Chi_Minh
+    volumes:
+      - files:/data/files
+      - inbox:/data/inbox
+    depends_on:
+      postgres:
+        condition: service_healthy
+      web:
+        condition: service_started
+
+volumes:
+  pgdata:
+  files:
+  inbox:
