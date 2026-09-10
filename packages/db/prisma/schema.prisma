@@ -1,0 +1,1373 @@
+// Prisma schema — docs/03-MO-HINH-DU-LIEU.md (all tables created in phase 0, ADR-10: no pgvector).
+// Table/column names in English; Vietnamese notes point to the docs.
+
+generator client {
+  provider      = "prisma-client-js"
+  output        = "../generated/client"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// =====================================================================
+// 2.1 Users & students (docs/12)
+// =====================================================================
+
+enum Role {
+  ADMIN
+  PARENT
+  CHILD
+}
+
+enum LoginResult {
+  OK
+  WRONG_PASSWORD
+  LOCKED
+  NO_SUCH_USER
+  DISABLED
+}
+
+enum Mascot {
+  ROBOT
+  OWL
+}
+
+model User {
+  id                 String    @id @default(cuid())
+  username           String    @unique
+  displayName        String
+  avatarKey          String?
+  email              String?   @unique
+  role               Role
+  passwordHash       String? // Argon2id — ADMIN/PARENT
+  picturePinHash     String? // Argon2id — CHILD, 4 ordered pictures
+  pictureSetKey      String? // which picture grid the child uses
+  isActive           Boolean   @default(true)
+  mustChangePassword Boolean   @default(false)
+  failedCount        Int       @default(0)
+  lockedUntil        DateTime?
+  lastLoginAt        DateTime?
+  locale             String    @default("vi")
+  createdById        String?
+  createdBy          User?     @relation("UserCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  createdUsers       User[]    @relation("UserCreatedBy")
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  student          Student?
+  guardianOf       StudentGuardian[]
+  loginAudits      LoginAudit[]
+  trustedDevices   TrustedDevice[]   @relation("TrustedDeviceUser")
+  approvedDevices  TrustedDevice[]   @relation("TrustedDeviceApprover")
+  intakeJobs       IntakeJob[]
+  reviewedResults  IntakeResult[]
+  evidences        Evidence[]
+  materials        Material[]
+  approvedPlans    Plan[]
+  conversations    Conversation[]
+  kidMails         KidMail[]
+  auditLogs        AuditLog[]
+  sentMessages     Message[]
+}
+
+model LoginAudit {
+  id            String      @id @default(cuid())
+  userId        String?
+  user          User?       @relation(fields: [userId], references: [id], onDelete: SetNull)
+  usernameTried String
+  ip            String
+  userAgent     String
+  result        LoginResult
+  at            DateTime    @default(now())
+
+  @@index([userId, at(sort: Desc)])
+  @@index([ip, at(sort: Desc)])
+}
+
+// P1 — trusted devices for the kid area (docs/12 §6)
+model TrustedDevice {
+  id           String    @id @default(cuid())
+  userId       String
+  user         User      @relation("TrustedDeviceUser", fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash    String    @unique
+  label        String
+  approvedById String?
+  approvedBy   User?     @relation("TrustedDeviceApprover", fields: [approvedById], references: [id], onDelete: SetNull)
+  expiresAt    DateTime
+  lastSeenAt   DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model Student {
+  id         String    @id @default(cuid())
+  userId     String    @unique
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  slug       String    @unique // thy | thanh
+  fullName   String
+  nickname   String // home name shown to the child
+  avatarKey  String?
+  birthDate  DateTime?
+  grade      Int       @default(1)
+  className  String    @default("1B3")
+  schoolYear String    @default("2026-2027")
+  interests  String[]  @default([])
+  mascot     Mascot    @default(ROBOT)
+  settings   Json      @default("{}") // dailyMinutes, suggestedTime, voiceTutorEnabled, difficultyBias
+  isActive   Boolean   @default(true)
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  guardians          StudentGuardian[]
+  masteries          SkillMastery[]
+  errorStats         ErrorStat[]
+  remediationTracks  RemediationTrack[]
+  masteryHistories   MasteryHistory[]
+  evidences          Evidence[]
+  intakeJobs         IntakeJob[]
+  externalProgress   ExternalProgress[]
+  homeworks          Homework[]
+  sessions           Session[]
+  plans              Plan[]
+  planHints          PlanHint[]
+  reports            Report[]
+  streak             Streak?
+  badges             StudentBadge[]
+  starLedger         StarLedger[]
+  rewardGoals        RewardGoal[]
+  collectibles       StudentCollectible[]
+  pets               StudentPet[]
+  eggProgress        EggProgress[]
+  picturePieces      StudentPicturePiece[]
+  kidMails           KidMail[]
+  mascotMemories     MascotMemory[]
+  certificates       Certificate[]
+  conversations      Conversation[]
+  inboxItems         InboxItem[]
+}
+
+model StudentGuardian {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  studentId  String
+  student    Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  relation   String   @default("ba") // ba | me | khac
+  canApprove Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([userId, studentId])
+  @@index([studentId])
+}
+
+// =====================================================================
+// 2.2 Skill map (seeded in phase 1)
+// =====================================================================
+
+enum Subject {
+  ESL
+  ENL
+  EMATH
+  ESCI
+  VIET
+  VMATH
+}
+
+enum SkillSource {
+  SEED
+  ADMIN
+  AI
+}
+
+model Skill {
+  id                String      @id @default(cuid())
+  code              String      @unique // EM.OA.ADD10
+  subject           Subject
+  strand            String
+  nameVi            String
+  nameEn            String
+  description       String      @default("")
+  standardRef       String?
+  gradeLevel        String      @default("1") // K | 1 | 2
+  order             Int         @default(0)
+  expectedWeek      Int?
+  exerciseTypes     String[]    @default([])
+  difficultyMin     Int         @default(1)
+  difficultyMax     Int         @default(5)
+  relatedSkillCodes String[]    @default([])
+  isActive          Boolean     @default(true)
+  source            SkillSource @default(SEED)
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  prerequisites     SkillPrerequisite[] @relation("SkillPrereqSkill")
+  prerequisiteOf    SkillPrerequisite[] @relation("SkillPrereqPrerequisite")
+  masteries         SkillMastery[]
+  remediationTracks RemediationTrack[]
+  masteryHistories  MasteryHistory[]
+  evidences         Evidence[]
+  lessonUnitSkills  LessonUnitSkill[]
+  exerciseSkills    ExerciseSkill[]
+  planItems         PlanItem[]
+
+  @@index([subject, strand, order])
+}
+
+model SkillPrerequisite {
+  id             String @id @default(cuid())
+  skillId        String
+  skill          Skill  @relation("SkillPrereqSkill", fields: [skillId], references: [id], onDelete: Cascade)
+  prerequisiteId String
+  prerequisite   Skill  @relation("SkillPrereqPrerequisite", fields: [prerequisiteId], references: [id], onDelete: Cascade)
+  strength       Float  @default(1)
+
+  @@unique([skillId, prerequisiteId])
+}
+
+// =====================================================================
+// 2.3 Mastery & evidence
+// =====================================================================
+
+enum MasteryStatus {
+  NOT_STARTED
+  LEARNING
+  NEEDS_PRACTICE
+  SOLID
+  MASTERED
+}
+
+enum RemediationStatus {
+  ACTIVE
+  PASSED
+  NEEDS_PARENT
+}
+
+enum MasteryCause {
+  EVIDENCE
+  DECAY
+  PARENT_OVERRIDE
+  RECALC
+}
+
+enum EvidenceSource {
+  EXERCISE
+  INTAKE_PHOTO
+  INTAKE_TEACHER_NOTE
+  HOMEWORK
+  EXTERNAL_REPORT
+  PARENT_NOTE
+  PARENT_OVERRIDE
+  VOICE_TUTOR
+}
+
+enum EvidenceOutcome {
+  CORRECT
+  PARTIAL
+  INCORRECT
+  OBSERVED
+}
+
+model SkillMastery {
+  id             String        @id @default(cuid())
+  studentId      String
+  student        Student       @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  skillId        String
+  skill          Skill         @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  mastery        Float         @default(0) // 0-100
+  confidence     Float         @default(0) // 0-1
+  evidenceCount  Int           @default(0)
+  lastEvidenceAt DateTime?
+  trend14d       Float         @default(0)
+  status         MasteryStatus @default(NOT_STARTED)
+  nextReviewAt   DateTime?
+  intervalDays   Int           @default(0)
+  easeFactor     Float         @default(2.5)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  @@unique([studentId, skillId])
+  @@index([studentId, status])
+  @@index([studentId, nextReviewAt])
+}
+
+model ErrorStat {
+  id             String    @id @default(cuid())
+  studentId      String
+  student        Student   @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  errorCode      String // content/error-taxonomy.json
+  count7d        Int       @default(0)
+  count30d       Int       @default(0)
+  lastAt         DateTime?
+  lastEvidenceId String?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@unique([studentId, errorCode])
+}
+
+model RemediationTrack {
+  id         String            @id @default(cuid())
+  studentId  String
+  student    Student           @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  skillId    String
+  skill      Skill             @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  errorCode  String?
+  rung       Int               @default(1) // 1-6, docs/04 §11.4
+  startedAt  DateTime          @default(now())
+  lastStepAt DateTime?
+  status     RemediationStatus @default(ACTIVE)
+  note       String?
+  createdAt  DateTime          @default(now())
+  updatedAt  DateTime          @updatedAt
+
+  @@index([studentId, status])
+}
+
+model MasteryHistory {
+  id              String       @id @default(cuid())
+  studentId       String
+  student         Student      @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  skillId         String
+  skill           Skill        @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  masteryBefore   Float
+  masteryAfter    Float
+  confidenceAfter Float
+  cause           MasteryCause
+  evidenceId      String?
+  at              DateTime     @default(now())
+
+  @@index([studentId, skillId, at(sort: Desc)])
+}
+
+model Evidence {
+  id           String          @id @default(cuid())
+  studentId    String
+  student      Student         @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  skillId      String
+  skill        Skill           @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  source       EvidenceSource
+  outcome      EvidenceOutcome
+  score        Float           @default(0) // 0-1
+  weight       Float           @default(1) // 0-1 by source
+  difficulty   Int             @default(3) // 1-5
+  errorCode    String?
+  attemptId    String?
+  attempt      Attempt?        @relation(fields: [attemptId], references: [id], onDelete: SetNull)
+  intakeItemId String?
+  intakeItem   IntakeItem?     @relation(fields: [intakeItemId], references: [id], onDelete: SetNull)
+  note         String?
+  observedAt   DateTime        @default(now())
+  createdById  String?
+  createdBy    User?           @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+
+  @@index([studentId, skillId, observedAt(sort: Desc)])
+}
+
+// =====================================================================
+// 2.4 Intake (photos of workbooks, tests, teacher notes)
+// =====================================================================
+
+enum IntakeKind {
+  PHOTO_BATCH
+  MATERIAL
+}
+
+enum IntakeStatus {
+  QUEUED
+  PROCESSING
+  PENDING_REVIEW
+  NEEDS_REVIEW
+  APPROVED
+  REJECTED
+  FAILED
+}
+
+enum DocType {
+  WORKBOOK
+  TEST
+  WORKSHEET
+  TEACHER_NOTE
+  CLASS_DIARY
+  NAVIO_REPORT
+  KIDSAZ_REPORT
+  OTHER
+}
+
+enum IntakeItemOutcome {
+  CORRECT
+  PARTIAL
+  INCORRECT
+  BLANK
+  UNGRADED
+}
+
+enum ExternalPlatform {
+  NAVIO
+  KIDSAZ
+}
+
+model IntakeJob {
+  id          String       @id @default(cuid())
+  studentId   String?
+  student     Student?     @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  createdById String
+  createdBy   User         @relation(fields: [createdById], references: [id], onDelete: Cascade)
+  kind        IntakeKind   @default(PHOTO_BATCH)
+  status      IntakeStatus @default(QUEUED)
+  subjectHint Subject?
+  dateHint    DateTime?
+  files       Json         @default("[]") // FileRef[]
+  error       String?
+  aiCallIds   String[]     @default([])
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  results     IntakeResult[]
+  classDiary  ClassDiary[]
+  externals   ExternalProgress[]
+
+  @@index([status, createdAt])
+}
+
+model IntakeResult {
+  id              String    @id @default(cuid())
+  jobId           String
+  job             IntakeJob @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  docType         DocType   @default(OTHER)
+  subject         Subject?
+  detectedStudent String?
+  summary         String    @default("")
+  teacherComment  String?
+  rawExtraction   Json      @default("{}") // IntakeExtraction
+  confidence      Float     @default(0)
+  reviewedById    String?
+  reviewedBy      User?     @relation(fields: [reviewedById], references: [id], onDelete: SetNull)
+  reviewedAt      DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  items IntakeItem[]
+}
+
+model IntakeItem {
+  id              String            @id @default(cuid())
+  resultId        String
+  result          IntakeResult      @relation(fields: [resultId], references: [id], onDelete: Cascade)
+  index           Int
+  questionText    String            @default("")
+  studentAnswer   String?
+  expectedAnswer  String?
+  outcome         IntakeItemOutcome @default(UNGRADED)
+  errorCode       String?
+  skillCodes      String[]          @default([])
+  skillCodesFinal String[]          @default([])
+  bbox            Json?
+  fileIndex       Int               @default(0)
+  evidenceIds     String[]          @default([])
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+
+  evidences Evidence[]
+
+  @@unique([resultId, index])
+}
+
+model ExternalProgress {
+  id             String           @id @default(cuid())
+  studentId      String
+  student        Student          @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  platform       ExternalPlatform
+  metric         String // raz_level, unit_completed, stars
+  value          String
+  valueNum       Float?
+  observedAt     DateTime         @default(now())
+  sourceIntakeId String?
+  sourceIntake   IntakeJob?       @relation(fields: [sourceIntakeId], references: [id], onDelete: SetNull)
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+
+  @@index([studentId, platform, metric, observedAt(sort: Desc)])
+}
+
+// =====================================================================
+// 2.5 Curriculum materials & lesson units
+// =====================================================================
+
+enum MaterialKind {
+  TEXTBOOK
+  CURRICULUM
+  WORKSHEET
+  WEEKLY_NOTICE
+  OTHER
+}
+
+model Material {
+  id           String       @id @default(cuid())
+  title        String
+  subject      Subject?
+  kind         MaterialKind @default(TEXTBOOK)
+  term         Int?
+  files        Json         @default("[]") // FileRef[]
+  status       String       @default("ACTIVE")
+  pageCount    Int?
+  uploadedById String?
+  uploadedBy   User?        @relation(fields: [uploadedById], references: [id], onDelete: SetNull)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  units LessonUnit[]
+}
+
+model LessonUnit {
+  id          String    @id @default(cuid())
+  materialId  String?
+  material    Material? @relation(fields: [materialId], references: [id], onDelete: SetNull)
+  code        String    @unique // NAVIO-L1-U3, TOAN1-B13
+  title       String
+  subject     Subject
+  objectives  String[]  @default([])
+  vocabulary  String[]  @default([])
+  concepts    String[]  @default([])
+  sampleTasks String[]  @default([])
+  pageFrom    Int?
+  pageTo      Int?
+  contentText String?
+  weekFrom    Int?
+  weekTo      Int?
+  isApproved  Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  skills       LessonUnitSkill[]
+  exercises    Exercise[]
+  diaryLessons DiaryLesson[]
+
+  @@index([subject, weekFrom])
+}
+
+model LessonUnitSkill {
+  id      String     @id @default(cuid())
+  unitId  String
+  unit    LessonUnit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  skillId String
+  skill   Skill      @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  weight  Float      @default(1)
+
+  @@unique([unitId, skillId])
+}
+
+// =====================================================================
+// 2.5b Class diary & homework (docs/11)
+// =====================================================================
+
+enum HomeworkTaskType {
+  READ_ALOUD
+  WRITE
+  WORKSHEET
+  VIDEO_SUBMIT
+  ONLINE_APP
+  BRING_ITEM
+  OTHER
+}
+
+enum HomeworkStatus {
+  PENDING
+  IN_PROGRESS
+  DONE
+  SKIPPED
+}
+
+enum ReminderKind {
+  UNIFORM
+  BRING
+  EVENT
+  SCHEDULE
+  OTHER
+}
+
+model ClassDiary {
+  id             String     @id @default(cuid())
+  className      String
+  date           DateTime   @db.Date
+  rawText        String
+  sourceIntakeId String?
+  sourceIntake   IntakeJob? @relation(fields: [sourceIntakeId], references: [id], onDelete: SetNull)
+  parsedAt       DateTime?
+  confidence     Float      @default(0)
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+
+  lessons   DiaryLesson[]
+  homeworks Homework[]
+  reminders ClassReminder[]
+
+  @@unique([className, date])
+}
+
+model DiaryLesson {
+  id            String      @id @default(cuid())
+  diaryId       String
+  diary         ClassDiary  @relation(fields: [diaryId], references: [id], onDelete: Cascade)
+  subject       Subject?
+  subjectLabel  String      @default("")
+  lessonRefText String
+  lessonUnitId  String?
+  lessonUnit    LessonUnit? @relation(fields: [lessonUnitId], references: [id], onDelete: SetNull)
+  unit          String?
+  lesson        String?
+  pages         Int[]       @default([])
+  contentNote   String?
+  skillCodes    String[]    @default([])
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model Homework {
+  id          String           @id @default(cuid())
+  diaryId     String?
+  diary       ClassDiary?      @relation(fields: [diaryId], references: [id], onDelete: SetNull)
+  studentId   String
+  student     Student          @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  subject     Subject?
+  taskType    HomeworkTaskType @default(OTHER)
+  text        String
+  repeatCount Int?
+  pages       Int[]            @default([])
+  skillCodes  String[]         @default([])
+  optional    Boolean          @default(false)
+  dueDate     DateTime?
+  status      HomeworkStatus   @default(PENDING)
+  progress    Int              @default(0)
+  doneAt      DateTime?
+  sessionId   String?
+  session     Session?         @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+  artifactKey String?
+  submitTo    String?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@index([studentId, status, dueDate])
+}
+
+model ClassReminder {
+  id        String       @id @default(cuid())
+  diaryId   String
+  diary     ClassDiary   @relation(fields: [diaryId], references: [id], onDelete: Cascade)
+  kind      ReminderKind @default(OTHER)
+  text      String
+  forDate   DateTime?    @db.Date
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+}
+
+// =====================================================================
+// 2.6 Exercise bank & sessions (ADR-5, ADR-9)
+// =====================================================================
+
+enum ExerciseType {
+  MCQ
+  LISTEN_CHOOSE
+  DRAG_DROP
+  READ_ALOUD
+  COUNT_TAP
+  WRITE_PHOTO
+  SPEAK_ANSWER
+  TRACE
+  MINI_STORY
+}
+
+enum Language {
+  en
+  vi
+}
+
+enum GeneratedBy {
+  CLAUDE_CODE
+  AI_RUNTIME
+  HUMAN
+}
+
+enum ExerciseStatus {
+  DRAFT
+  PUBLISHED
+  RETIRED
+}
+
+enum AssetTheme {
+  NEUTRAL
+  ROBOT
+  GARDEN
+}
+
+enum QualityFlag {
+  OK
+  GOOD
+  BAD
+  UNREVIEWED
+}
+
+model Exercise {
+  id              String         @id @default(cuid())
+  type            ExerciseType
+  subject         Subject
+  language        Language       @default(vi)
+  difficulty      Int            @default(3) // 1-5
+  spec            Json // ExerciseSpec (docs/04 §5) — never sent with answerKey
+  answerKey       Json
+  explanation     String?
+  assets          Json           @default("[]") // FileRef[]
+  lessonUnitId    String?
+  lessonUnit      LessonUnit?    @relation(fields: [lessonUnitId], references: [id], onDelete: SetNull)
+  generatedBy     GeneratedBy    @default(CLAUDE_CODE)
+  stableId        String         @unique
+  sourceFile      String?
+  sourceRef       String?
+  batchId         String?
+  batch           ContentBatch?  @relation(fields: [batchId], references: [id], onDelete: SetNull)
+  status          ExerciseStatus @default(DRAFT)
+  assetTheme      AssetTheme     @default(NEUTRAL)
+  targetsError    String?
+  promptVersion   String?
+  qualityFlag     QualityFlag    @default(UNREVIEWED)
+  usageCount      Int            @default(0)
+  contentHash     String         @unique
+  personalizedFor String?
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+
+  skills   ExerciseSkill[]
+  attempts Attempt[]
+
+  @@index([status, subject, difficulty, type])
+  @@index([status, assetTheme])
+  @@index([targetsError])
+}
+
+model ExerciseSkill {
+  id         String   @id @default(cuid())
+  exerciseId String
+  exercise   Exercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  skillId    String
+  skill      Skill    @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  weight     Float    @default(1)
+
+  @@unique([exerciseId, skillId])
+  @@index([skillId])
+}
+
+enum SessionKind {
+  DAILY_QUEST
+  FREE_PLAY
+  TARGETED
+  ASSESSMENT
+}
+
+enum SessionStatus {
+  PLANNED
+  IN_PROGRESS
+  COMPLETED
+  ABANDONED
+}
+
+enum GradedBy {
+  LOCAL
+  AI
+  PARENT
+  PENDING
+}
+
+model Session {
+  id            String        @id @default(cuid())
+  studentId     String
+  student       Student       @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  kind          SessionKind   @default(DAILY_QUEST)
+  planId        String?
+  plan          Plan?         @relation(fields: [planId], references: [id], onDelete: SetNull)
+  date          DateTime      @db.Date
+  status        SessionStatus @default(PLANNED)
+  slots         Json          @default("[]")
+  startedAt     DateTime?
+  finishedAt    DateTime?
+  durationSec   Int           @default(0)
+  starsEarned   Int           @default(0)
+  summary       Json          @default("{}")
+  generationLog Json          @default("{}")
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  attempts  Attempt[]
+  homeworks Homework[]
+
+  @@index([studentId, date(sort: Desc)])
+}
+
+model Attempt {
+  id         String    @id @default(cuid())
+  sessionId  String
+  session    Session   @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  exerciseId String
+  exercise   Exercise  @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  order      Int
+  response   Json      @default("{}")
+  isCorrect  Boolean?
+  score      Float?
+  hintsUsed  Int       @default(0)
+  tries      Int       @default(0)
+  timeMs     Int       @default(0)
+  gradedBy   GradedBy  @default(PENDING)
+  aiFeedback Json?
+  audioKey   String?
+  photoKey   String?
+  gradedAt   DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  evidences Evidence[]
+
+  @@unique([sessionId, order])
+}
+
+// =====================================================================
+// 2.7 Plans, reports, motivation
+// =====================================================================
+
+enum PlanStatus {
+  PROPOSED
+  APPROVED
+  ACTIVE
+  DONE
+  REJECTED
+}
+
+enum PlanCreator {
+  AI
+  PARENT
+}
+
+model Plan {
+  id           String      @id @default(cuid())
+  studentId    String
+  student      Student     @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  weekStart    DateTime    @db.Date
+  weekEnd      DateTime    @db.Date
+  status       PlanStatus  @default(PROPOSED)
+  rationale    String?
+  createdBy    PlanCreator @default(AI)
+  approvedById String?
+  approvedBy   User?       @relation(fields: [approvedById], references: [id], onDelete: SetNull)
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  items    PlanItem[]
+  sessions Session[]
+
+  @@index([studentId, weekStart(sort: Desc)])
+}
+
+model PlanItem {
+  id              String @id @default(cuid())
+  planId          String
+  plan            Plan   @relation(fields: [planId], references: [id], onDelete: Cascade)
+  skillId         String
+  skill           Skill  @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  priority        Int    @default(3) // 1-5
+  reason          String?
+  targetMastery   Float  @default(70)
+  sessionsPlanned Int    @default(0)
+  sessionsDone    Int    @default(0)
+
+  @@unique([planId, skillId])
+}
+
+enum PlanHintCreator {
+  CLAUDE_CODE
+  PARENT
+}
+
+// Focus hints left by Claude Code or parents (docs/13 §3)
+model PlanHint {
+  id          String          @id @default(cuid())
+  studentId   String
+  student     Student         @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  validFrom   DateTime        @default(now())
+  validTo     DateTime
+  focusSkills Json            @default("[]") // [{code, weight}]
+  focusErrors String[]        @default([])
+  avoidSkills String[]        @default([])
+  note        String?
+  createdBy   PlanHintCreator @default(CLAUDE_CODE)
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+
+  @@index([studentId, validTo])
+}
+
+enum ReportKind {
+  WEEKLY
+  MONTHLY
+  ADHOC
+}
+
+model Report {
+  id          String     @id @default(cuid())
+  studentId   String
+  student     Student    @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  kind        ReportKind @default(WEEKLY)
+  periodStart DateTime   @db.Date
+  periodEnd   DateTime   @db.Date
+  contentMd   String     @default("")
+  data        Json       @default("{}")
+  aiCallId    String?
+  sentAt      DateTime?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@index([studentId, periodStart(sort: Desc)])
+}
+
+model Streak {
+  id             String    @id @default(cuid())
+  studentId      String    @unique
+  student        Student   @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  current        Int       @default(0)
+  longest        Int       @default(0)
+  lastActiveDate DateTime? @db.Date
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+model Badge {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  nameVi    String
+  nameEn    String
+  icon      String
+  rule      Json     @default("{}")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  students StudentBadge[]
+}
+
+model StudentBadge {
+  id        String   @id @default(cuid())
+  studentId String
+  student   Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  badgeCode String
+  badge     Badge    @relation(fields: [badgeCode], references: [code], onDelete: Cascade)
+  earnedAt  DateTime @default(now())
+  seen      Boolean  @default(false)
+
+  @@unique([studentId, badgeCode])
+}
+
+model StarLedger {
+  id        String   @id @default(cuid())
+  studentId String
+  student   Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  delta     Int
+  reason    String
+  refType   String?
+  refId     String?
+  at        DateTime @default(now())
+
+  @@index([studentId, at(sort: Desc)])
+}
+
+enum RewardGoalStatus {
+  ACTIVE
+  ACHIEVED
+  CANCELLED
+}
+
+model RewardGoal {
+  id          String           @id @default(cuid())
+  studentId   String
+  student     Student          @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  title       String
+  starsNeeded Int
+  starsSpent  Int              @default(0)
+  status      RewardGoalStatus @default(ACTIVE)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+}
+
+model Collectible {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  nameVi    String   @default("")
+  cost      Int      @default(10)
+  category  String   @default("misc")
+  assetKey  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  owners StudentCollectible[]
+}
+
+model StudentCollectible {
+  id              String      @id @default(cuid())
+  studentId       String
+  student         Student     @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  collectibleCode String
+  collectible     Collectible @relation(fields: [collectibleCode], references: [code], onDelete: Cascade)
+  acquiredAt      DateTime    @default(now())
+  placement       Json?
+
+  @@unique([studentId, collectibleCode])
+}
+
+model Pet {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  name      String
+  rarity    String   @default("common")
+  lottieKey String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  owners StudentPet[]
+}
+
+model StudentPet {
+  id          String   @id @default(cuid())
+  studentId   String
+  student     Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  petCode     String
+  pet         Pet      @relation(fields: [petCode], references: [code], onDelete: Cascade)
+  hatchedAt   DateTime @default(now())
+  isCompanion Boolean  @default(false)
+
+  @@unique([studentId, petCode])
+}
+
+model EggProgress {
+  id             String   @id @default(cuid())
+  studentId      String
+  student        Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  weekStart      DateTime @db.Date
+  cracks         Int      @default(0) // 0-5
+  hatchedPetCode String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([studentId, weekStart])
+}
+
+model WeeklyPicture {
+  id        String   @id @default(cuid())
+  weekStart DateTime @unique @db.Date
+  theme     String
+  imageKey  String
+  pieces    Int      @default(6)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model StudentPicturePiece {
+  id         String   @id @default(cuid())
+  studentId  String
+  student    Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  weekStart  DateTime @db.Date
+  pieceIndex Int
+  earnedAt   DateTime @default(now())
+
+  @@unique([studentId, weekStart, pieceIndex])
+}
+
+enum KidMailFrom {
+  PARENT
+  CHARACTER
+  TEACHER_PRAISE
+}
+
+model KidMail {
+  id         String      @id @default(cuid())
+  studentId  String
+  student    Student     @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  fromKind   KidMailFrom @default(PARENT)
+  fromUserId String?
+  fromUser   User?       @relation(fields: [fromUserId], references: [id], onDelete: SetNull)
+  text       String
+  audioKey   String?
+  giftCode   String?
+  deliverOn  DateTime    @default(now())
+  openedAt   DateTime?
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+
+  @@index([studentId, deliverOn])
+}
+
+enum MascotMemoryKind {
+  YESTERDAY_WIN
+  INTEREST
+  SCHEDULE
+  EVENT
+}
+
+model MascotMemory {
+  id        String           @id @default(cuid())
+  studentId String
+  student   Student          @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  kind      MascotMemoryKind
+  text      String
+  validFrom DateTime         @default(now())
+  validTo   DateTime?
+  usedAt    DateTime?
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  @@index([studentId, validTo])
+}
+
+enum CertificateKind {
+  TOPIC
+  MONTH
+  SPECIAL
+}
+
+model Certificate {
+  id        String          @id @default(cuid())
+  studentId String
+  student   Student         @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  kind      CertificateKind @default(TOPIC)
+  title     String
+  issuedAt  DateTime        @default(now())
+  pdfKey    String?
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+}
+
+// =====================================================================
+// 2.8 Conversations (kept for data model completeness; no runtime AI in v1)
+// =====================================================================
+
+enum Audience {
+  KID
+  PARENT
+}
+
+model Conversation {
+  id        String    @id @default(cuid())
+  studentId String?
+  student   Student?  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  userId    String?
+  user      User?     @relation(fields: [userId], references: [id], onDelete: SetNull)
+  audience  Audience
+  startedAt DateTime  @default(now())
+  expiresAt DateTime?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  messages Message[]
+}
+
+model Message {
+  id             String       @id @default(cuid())
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  role           String // user | assistant | system
+  contentText    String
+  audioKey       String?
+  filtered       Boolean      @default(false)
+  filterReason   String?
+  aiCallId       String?
+  senderUserId   String?
+  sender         User?        @relation(fields: [senderUserId], references: [id], onDelete: SetNull)
+  createdAt      DateTime     @default(now())
+
+  @@index([conversationId, createdAt])
+}
+
+// =====================================================================
+// 2.9 School timetable & calendar
+// =====================================================================
+
+model Timetable {
+  id         String   @id @default(cuid())
+  className  String
+  schoolYear String
+  validFrom  DateTime @db.Date
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  slots TimetableSlot[]
+
+  @@unique([className, schoolYear, validFrom])
+}
+
+model TimetableSlot {
+  id             String    @id @default(cuid())
+  timetableId    String
+  timetable      Timetable @relation(fields: [timetableId], references: [id], onDelete: Cascade)
+  weekday        Int // 1 = Monday ... 5 = Friday
+  period         String // 1-2 | 3-4 | 5-6 | 7-8 | DATN | 9-10
+  timeFrom       String
+  timeTo         String
+  subjectLabelVi String
+  subjectLabelEn String
+  subject        Subject?
+  isNative       Boolean   @default(false)
+
+  @@unique([timetableId, weekday, period])
+}
+
+model SchoolWeek {
+  id         String   @id @default(cuid())
+  schoolYear String
+  weekNo     Int
+  dateFrom   DateTime @db.Date
+  dateTo     DateTime @db.Date
+  term       Int      @default(1)
+  isHoliday  Boolean  @default(false)
+  note       String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([schoolYear, weekNo])
+}
+
+// =====================================================================
+// 2.10 Content batches, AI queue, system
+// =====================================================================
+
+enum ContentBatchKind {
+  SKILL_MAP
+  LESSONS
+  EXERCISES
+  ART
+  INTAKE
+}
+
+model ContentBatch {
+  id        String           @id @default(cuid())
+  kind      ContentBatchKind
+  sourceDir String
+  fileCount Int              @default(0)
+  created   Int              @default(0)
+  updated   Int              @default(0)
+  retired   Int              @default(0)
+  runBy     String           @default("claude-code")
+  note      String?
+  at        DateTime         @default(now())
+
+  exercises Exercise[]
+}
+
+enum InboxKind {
+  PHOTO_INTAKE
+  DIARY_HARD
+  WRITE_PHOTO_GRADE
+  SPEAK_GRADE
+  WEEKLY_REPORT
+}
+
+enum InboxStatus {
+  PENDING
+  PULLED
+  DONE
+  FAILED
+}
+
+// AI queue processed by Claude Code in batches (docs/13 §2) — the app never calls an LLM.
+model InboxItem {
+  id        String      @id @default(cuid())
+  kind      InboxKind
+  studentId String?
+  student   Student?    @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  payload   Json        @default("{}")
+  status    InboxStatus @default(PENDING)
+  pulledAt  DateTime?
+  doneAt    DateTime?
+  resultRef String?
+  error     String?
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+
+  @@index([status, createdAt])
+}
+
+enum AiTask {
+  INTAKE_EXTRACT
+  INTAKE_MAP
+  GRADE
+  PLAN
+  REPORT
+  ASSIST_PARENT
+  ASSIST_KID
+  EMBED
+  TTS
+  STT
+  EXERCISE_GEN
+}
+
+// Kept for cloud TTS/STT accounting and the optional v2 auto-worker (docs/13 §6)
+model AiCall {
+  id            String   @id @default(cuid())
+  task          AiTask
+  provider      String
+  model         String
+  promptVersion String?
+  inputTokens   Int      @default(0)
+  outputTokens  Int      @default(0)
+  costUsd       Float    @default(0)
+  latencyMs     Int      @default(0)
+  status        String   @default("OK")
+  error         String?
+  inputSummary  String?
+  outputRef     String?
+  cacheHit      Boolean  @default(false)
+  at            DateTime @default(now())
+
+  @@index([task, at(sort: Desc)])
+}
+
+model AiConfig {
+  id             String   @id @default("default")
+  modelByTask    Json     @default("{}")
+  dailyBudgetUsd Float    @default(0)
+  cacheEnabled   Boolean  @default(true)
+  autoApprove    Json     @default("{}")
+  ttsProvider    String   @default("webspeech")
+  sttProvider    String   @default("webspeech")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model PromptTemplate {
+  id        String   @id @default(cuid())
+  task      AiTask
+  version   String
+  body      String
+  isActive  Boolean  @default(true)
+  notes     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([task, version])
+}
+
+model Setting {
+  key       String   @id
+  value     Json
+  updatedAt DateTime @updatedAt
+}
+
+model AuditLog {
+  id     String   @id @default(cuid())
+  userId String?
+  user   User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action String
+  target String?
+  detail Json?
+  at     DateTime @default(now())
+
+  @@index([userId, at(sort: Desc)])
+}
