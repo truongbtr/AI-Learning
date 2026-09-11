@@ -33,6 +33,8 @@ Trạng thái: **xong** (6/6 tiêu chí đạt, kiểm cả trên máy dev lẫn
 
 Ảnh chụp: `docs/screens/pha-1/admin-skills.png`.
 
+**Kiểm chứng "seed không đụng dữ liệu học của con":** chạy `pnpm db:seed` khi DB đang có 15 `Evidence`, 5 `SkillMastery`, 15 `MasteryHistory`, 5 `ErrorStat` → sau khi seed vẫn đúng 15/5/15/5. Trình nạp chỉ ghi `Skill`, `SkillPrerequisite`, `Material`, `LessonUnit`, `LessonUnitSkill`, `ErrorCode`, `ContentBatch`; kỹ năng biến mất khỏi file chỉ bị `isActive=false`, không xoá.
+
 ### Số liệu
 
 | Hạng mục | Số lượng |
