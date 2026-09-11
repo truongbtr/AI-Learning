@@ -45,10 +45,10 @@ Kiểm tra chất lượng (phải xanh trước khi báo cáo):
 ```powershell
 pnpm lint; pnpm test; pnpm build
 pnpm e2e                                                   # smoke Playwright, cần web đang chạy
-$env:E2E_ADMIN_PASSWORD="<mật khẩu admin đã đổi>"; $env:E2E_CHANNEL="chrome"; pnpm e2e   # nghiệm thu pha 0 đầy đủ
+$env:E2E_ADMIN_PASSWORD="<mật khẩu admin đã đổi>"; $env:E2E_CHANNEL="chrome"; pnpm e2e   # nghiệm thu pha 0 + 1 + 2 (23 test)
 ```
 
-Lệnh khác: `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm mọi file `content/`), `pnpm skills:validate` (chỉ bản đồ kỹ năng + khung bài học + bộ mã lỗi), `pnpm decay:run [--force]` (chạy tay job quên kiến thức hằng đêm), `pnpm content:import [--dry-run]` / `pnpm content:stats` / `pnpm content:export --skill <mã>` (ngân hàng bài), `pnpm inbox:pull|validate|push` (hàng chờ AI), `pnpm tts:voices` (liệt kê giọng Vbee).
+Lệnh khác: `node scripts/sample-exercises.mjs pha-2-dot-1 20` (rút lại đúng 20 bài mẫu QC chấm), `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm mọi file `content/`), `pnpm skills:validate` (chỉ bản đồ kỹ năng + khung bài học + bộ mã lỗi), `pnpm decay:run [--force]` (chạy tay job quên kiến thức hằng đêm), `pnpm content:import [--dry-run]` / `pnpm content:stats` / `pnpm content:export --skill <mã>` (ngân hàng bài), `pnpm inbox:pull|validate|push` (hàng chờ AI), `pnpm tts:voices` (liệt kê giọng Vbee).
 
 > **Windows:** dừng `pnpm dev` trước khi chạy `pnpm build`. Prisma phải ghi lại `query_engine-windows.dll.node`, mà tiến trình dev đang giữ file này (lỗi `EPERM: operation not permitted, rename …`).
 
