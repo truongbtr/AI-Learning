@@ -2,6 +2,138 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 3 — 11/09/2026 — Góc của con: thế giới, mascot, phiên học
+
+Trạng thái: **dựng xong, 6/8 tiêu chí tự kiểm đạt**; 2 tiêu chí còn lại cần chủ dự án (dán khoá Azure vào `.env`, và chấm checklist `06` §4 trên iPad thật). 13 commit trong pha, **chưa push**.
+
+### 1. Đã làm gì
+
+**Việc 0 — dọn tồn đọng ngân hàng bài đợt 1** (`b097402`; chi tiết: `content/_reports/pha-3-viec-0.md`)
+
+- **Mã lỗi đúng nghĩa.** Thêm `lap_lai_tong` và `nham_chu_gan_giong` (bộ mã 42 → **44**), rồi **suy lại mã của từng phương án từ chính đáp án**: 471 bài đổi mã, 590 lượt trên từng phương án. Mã nào không có nghĩa nào khớp thì bỏ trống — một mã sai còn tệ hơn không mã, vì thang rèn sẽ rèn nhầm chỗ.
+- **Bài đi trước bài học.** `VIET.HV.AM_A` là bài 1 (lớp mới biết một chữ) mà in "Nam"/"Nem" và thẻ kéo "cà" mang thanh huyền của bài 9. **156/453 bài Tiếng Việt** vi phạm → viết lại cả 10 gói từ danh sách từ đã kiểm, **giữ nguyên id** nên bài cập nhật tại chỗ, bằng chứng cũ của con vẫn trỏ đúng.
+- **Một câu lệnh cho 214 bài.** Mỗi dạng nay có **≥ 6 cách hỏi và ≥ 4 gợi ý** mỗi ngôn ngữ, chia đều.
+- **Lặt vặt.** Nhiễu là từ tiếng Việt thật (bỏ "trè", "dà"); câu phủ định viết lại khẳng định; **385 bài Toán** trỏ đúng trang của bài thay vì dải 11 trang; ô thả chỉ nhận thứ thuộc về nó; bài đếm không còn gửi `repeat` (vốn vẽ sẵn đáp án).
+- **Ba kiểm định mới** trong `content:validate` + 20 test: mã lỗi phải *có thể* xảy ra với phương án nó gắn vào; chữ tiếng Việt in ra phải nằm trong phạm vi bài lớp đã học (bảng 83 bài của `09` §3); không câu lệnh nào chiếm quá 25% một dạng.
+- Kết quả: `content:validate` **0 lỗi** · `content:import` chạy lại **0 thay đổi** · `content:stats` **1236 PUBLISHED** (không tụt), mọi kỹ năng ≥ 35 bài.
+
+**Việc 0b — TTS Azure** (`b3223ba`)
+
+Azure AI Speech, tầng F0, vùng **eastasia**. Tiếng Việt **`vi-VN-HoaiMyNeural`, không bọc `<prosody>`** — chủ dự án đã nghe 6 mẫu và loại bản chậm/cao hơn, nên code **từ chối** thêm lại: `buildAzureSsml` chỉ phát `<prosody>` cho tiếng Anh. Tiếng Anh **`en-US-AnaNeural` bọc `<prosody rate="-10%">`**; `TTS_RATE` **chỉ áp cho tiếng Anh** (có test). `pnpm tts:voices` gọi danh sách giọng thật của tài nguyên Azure; `pnpm tts:smoke "<câu>"` ghi một mp3 vào `_tts-thu/` (đã gitignore). Không khoá thì mọi thứ vẫn chạy bằng Web Speech, test vẫn xanh. **Khoá chỉ nằm trong `.env`; `.env.example` chỉ có chỗ trống.**
+
+**Việc 1 — tài sản đồ hoạ** (`6548d5e` bảng phong cách, `cd3a2b0` hàng loạt, tranh tuần bổ sung ở `8d39483`)
+
+`content/art/STYLE.md` là hợp đồng phong cách: không viền đen, ba sắc độ mỗi hình, sáng từ trên-trái, bóng là ellipse mờ (filter blur tốn khung hình trên iPad), mỗi bộ phận động nằm trong một `id` riêng để Framer Motion điều khiển. **134 tài sản, 0,43 MB / 40 MB**: 4 khu Thành phố Robot + 1 khu Vườn Kỳ Diệu × 3 lớp (15 lớp nền); 2 mascot × 9 trạng thái; 8 avatar; 11 hiệu ứng (trứng, giấy chứng nhận, sao vàng lớn, rương); **70 vật thể**; **6 tranh tuần**; 6 âm thanh WAV tự tổng hợp (không giấy phép phải theo dõi, và không tiếng nào nghe như tiếng "sai"). Ba lệnh: `art:build` vẽ tất, `art:check` đo ngân sách và **chặn blur / đen tuyền**, `art:sync` chép sang `apps/web/public`. Sửa quy tắc mỹ thuật = **sửa `STYLE.md` trước**, rồi sửa generator — tài sản không sửa tay được nên phong cách không trôi.
+
+**Việc 2 — design system & motion** (`af6de8f`), trình diễn ở `/dev/kit`
+
+64 px để chạm, 22 px để đọc, không đỏ ở đâu cả, mọi chữ đọc được to, mọi chuyển động tắt khi máy xin ít chuyển động. Mascot là SVG nội tuyến (không phải `<img>`) nên **thở, chớp mắt, mở miệng đúng nhịp giọng đọc, kêu "hí hí" khi bị chọc**. `WorldBackground` xếp 3 lớp, trôi theo con trỏ hoặc độ nghiêng iPad, **giữ yên vùng giữa** cho đề bài, **nhuộm trời theo giờ thật**. Có `BigButton`, `StarFlyToPocket`/`StarPocket` (sao bay theo đường cong rồi số đếm nhảy), `FeedbackOverlay` ba trạng thái không có trạng thái nào là thất bại, `LoadingMascot`/`EmptyState`/`OfflineNotice` (mascot đang làm gì đó, không có spinner trơn), `SceneTransition`, `KidPinPad`, `HintBulb`, `SpeakerButton`, `useSpeak`.
+
+**Việc 3 — sáu dạng bài** (`fe657aa`)
+
+Một cửa vào (`ExerciseRenderer`), props giống nhau. `LISTEN_CHOOSE` **phát chứ không in** `listenTarget` (ADR-14). `DRAG_DROP` nghiêng – hít – nảy; **thẻ đặt sai vẫn được đặt** để máy chủ chấm theo tỉ lệ và đọc được `dragItems[].errorTag`, chấm xong thẻ sai mới bay về (ADR-15); chạm cũng được, không bắt buộc kéo. `COUNT_TAP` đánh số theo ngón tay, vẽ theo `repeat`, không bao giờ theo đáp án. `READ_ALOUD` khớp từng từ bằng `packages/core` (máy chủ dùng lại đúng hàm đó nên một lần đọc không bị chấm hai kiểu), tha giọng Bắc (s/x, ch/tr, r/d) nhưng **rơi dấu vẫn tính là trượt**, và **luôn có** lối "đọc cho ba mẹ nghe". `WRITE_PHOTO` chụp → `PENDING` → hàng chờ; "để chụp sau" là **quyết định, không phải lỗi**.
+
+**Việc 4 — planner & phiên học** (`85ca582`)
+
+- `packages/core/planner` — thuần, **22 test**, gồm đúng ca `docs/08` nêu: 2 lỗi `nham_b_d` trong 7 ngày → phiên kế có bài **đối chiếu b/d**, **≤ 4 bài rèn**, bậc 3 xin mascot làm mẫu, bậc 4 lùi về tiên quyết, không bao giờ rèn quá 2 kỹ năng một lúc. Phiên 12 bài (1,3 phút/bài, kẹp 8–15), khởi động → thang rèn → 50/30/20, và **không quá 2 bài cùng môn liền nhau**.
+- `packages/core/grading` — chấm thuần, **18 test**: `choices[].errorTag` / `dragItems[].errorTag` → `Evidence.errorCode`; ba lần: gợi ý 1 → gợi ý 2 → hiện đáp án đọc to; **không bao giờ có chữ "sai"**.
+- `packages/db/session` — lên phiên (idempotent theo ngày; chọn bài từ ngân hàng pha 2; **ưu tiên thế giới của bé**; hôm qua mệt thì hôm nay ngắn 20%; bài lớp học 3 ngày gần nhất lên đầu nửa trọng tâm), ghi `Evidence` qua `commitEvidence`, sao, streak, và **một bước trên thang rèn** cho mỗi kỹ năng phiên đó rèn. **6 test tích hợp**: máy con **không nhận `answerKey` hay `errorTag`**; gửi lại cùng một câu trả lời **không chấm hai lần**; phiên dở **biết chỗ đi tiếp**; ba lần thử ra gợi ý 1, gợi ý 2, rồi đáp án + `dem_thieu_1` vào `Evidence`.
+- `apps/worker` — job **`planner.daily` 04:00** (nhật ký worker in `queue: planner.daily, cron: 0 4 * * *`) + **`pnpm plan:run`** gọi tay (`--student thy --date … --force`).
+- `apps/web` — `POST /api/sessions`, `GET /api/sessions/:id`, `POST /api/sessions/:id/attempts`, `.../finish`, `.../choice`, và **SSE `GET /api/events`** (tiến độ phiên, huy hiệu mới, bài chấm xong) có `retry` nên mất mạng thì trình duyệt tự nối lại; mọi route kiểm quyền trên đúng `studentId` ở tầng server.
+
+**Việc 5 — màn hình K1–K5, K7 + giữ mới** (`8d39483`, `38e807f`)
+
+K1 có nhân vật vẽ thật + mascot chào. K2 là **một nơi chốn**: thế giới, mascot chào bằng giọng và **nhắc một việc hôm qua**, túi sao, ngọn lửa streak, trứng tuần, tranh tuần, hộp thư, một nút to duy nhất. K3 `QuestMap`: con đường 12 trạm, avatar đi giữa các trạm, trạm xong lấp lánh, **rương cuối đường**, 2 trạm có nhãn "chọn". K4 làm bài **trên nền thế giới**, có **nghỉ vận động 30 giây** (lần đầu không bỏ qua được) và câu hỏi **"chơi tiếp hay nghỉ"** sau 8 bài. K5 `SessionFinale` 4–6 giây: rương mở → sao tràn → số đếm nhảy → **lễ trao huy hiệu** → mascot nhảy, chạm để bỏ qua. K7 mua bằng sao và **đặt vật phẩm vào đúng chỗ trong thế giới của mình**, kèm hàng giấy chứng nhận in được.
+
+**Bảy cơ chế P0 của `06` §1.8c là dữ liệu thật, không phải trang trí:** trứng nứt theo **ngày học** (5 ngày thì nở ra thú); tranh tuần lật một mảnh mỗi ngày (6 mảnh); thế giới đổi theo giờ thật; thư ba mẹ mascot đọc to (`KidMail`, FR-PAR-08); nút "Khen" thả một **sao vàng lớn**; kỹ năng thành thạo in được **giấy chứng nhận** A4 (`/kid/certificate/<id>`, có CSS in); mascot nhắc đúng một việc đã xảy ra (`MascotMemory`, dùng một lần). Tất cả tính từ *số ngày thực sự có phiên hoàn thành* nên **không thưởng hai lần**, và **nghỉ một ngày không mất gì**.
+
+Seed thêm: **23 huy hiệu** (6 huy hiệu sự kiện tuần chỉ tuần đó lấy được), **22 vật phẩm**, **8 thú cưng**.
+
+### 2. Cách chạy thử (PowerShell, tại gốc repo)
+
+```powershell
+docker compose --env-file .env -f docker/compose.yml up -d db   # Postgres 5433
+pnpm db:migrate; $env:SEED_DEV="1"; pnpm db:seed                # 23 huy hiệu · 22 vật phẩm · 8 thú
+pnpm content:import                                             # ngân hàng 1236 bài
+pnpm plan:run -- --student thy                                  # lên Daily Quest hôm nay bằng tay
+pnpm dev                                                        # web 5000 + worker (planner.daily 04:00)
+```
+
+Vào `http://localhost:5000/login` → thẻ **Thy** → 4 hình **Mèo › Thỏ › Bướm › Cá** → K2. Component: `/dev/kit`. Gửi thư / khen con: `/parent/<id>`.
+
+Chạy bộ nghiệm thu pha 3 (tự đi hết con đường và chụp ảnh):
+
+```powershell
+$env:E2E_ADMIN_PASSWORD="<mật khẩu admin>"; $env:E2E_RESET_QUEST="1"; $env:E2E_CHANNEL="msedge"
+pnpm --filter @mtct/web exec playwright test e2e/phase3-acceptance.spec.ts
+```
+
+### 3. Tám tiêu chí xong
+
+| # | Tiêu chí | Kết quả |
+|---|---|---|
+| 1 | Thy đăng nhập → Daily Quest **12 bài ≥ 3 dạng, ≥ 2 môn** | **Đạt** — phiên hôm nay (`cmtx3003f00zh…`): **12 trạm, đủ cả 6 dạng** (MCQ 4 · LISTEN_CHOOSE 2 · COUNT_TAP 2 · DRAG_DROP 2 · READ_ALOUD 1 · WRITE_PHOTO 1), **4 môn** (ESL 4 · VIET 3 · VMATH 3 · ENL 2). Ảnh `k3-map.png` |
+| 2 | Xong phiên có **kịch bản ăn mừng và sao** | **Đạt** — `SessionFinale` 4–6 giây, `+21 (tất cả 156 sao)`, trứng 1/5, tranh 1/6. Ảnh `k5-finale.png` |
+| 3 | **Sai 3 lần** thấy gợi ý rồi đáp án, **không có chữ "sai"** | **Đạt** — test tích hợp `session.test.ts` ép sai 3 lần: gợi ý 1 → gợi ý 2 → `Đáp án là …` + giải thích; e2e quét toàn bộ `body` mỗi trạm, không trang nào chứa chữ "sai" hay "điểm số" |
+| 4 | **Mastery các kỹ năng trong phiên thay đổi** | **Đạt** — sau các phiên hôm nay: **119 dòng `Evidence`**, **23 dòng `SkillMastery`**, và `ErrorStat` của Thy có `dem_thieu_1:6 · dem_thua_1:5 · lap_lai_tong:1 · nham_am_dau:1` — tức chẩn đoán từ `choices[].errorTag` đã chạy suốt từ lúc con chạm tới bảng thống kê lỗi |
+| 5 | **Playwright K1→K5 xanh** | **Đạt** — 5 test pha 3 xanh; chạy cả bộ: **28/28 e2e xanh** (pha 0: 6 · pha 1: 7 · pha 2: 5 · pha 3: 5 · login+screens: 5) |
+| 6 | **Checklist `06` §4** trên iPad Safari | **Tự kiểm 11/12 trên Edge/Chromium** (bảng ở mục 4 dưới). Mục 8 (60 fps đo bằng Safari Web Inspector trên iPad thật) **chủ dự án cần chấm** — máy này không có iPad |
+| 7 | **Video 2 phút** một phiên học | **Đạt** — `docs/screens/pha-3/phien-hoc-k1-k5.webm` (2 phút 47 giây, 4,8 MB): đăng nhập bằng hình → bản đồ → 12 trạm → nghỉ vận động → "chơi tiếp hay nghỉ" → ăn mừng |
+| 8 | **`pnpm tts:smoke "Nghe rồi chọn ô đúng nhé!"` ra mp3 đúng giọng** | **Chưa kiểm được** — `TTS_API_KEY` trong `.env` đang **trống**, lệnh dừng êm và nói rõ thiếu khoá. Dán khoá Azure vào là chạy (xem mục 7) |
+
+Thêm hai tiêu chí chủ dự án bổ sung: `docs/09` **có bảng unit Global Stage Level 1 cho cả hai quyển** (§4b.1 Language Book, §4b.2 Literacy Book) — **đạt**; `esl.json`/`enl.json` **không còn `standardRef` ước đoán kiểu `GS1.U<n>`** — **đạt** (mục 5 dưới).
+
+### 4. Checklist "hấp dẫn với trẻ" (`06` §4, 12 mục)
+
+| # | Mục | Kết quả |
+|---|---|---|
+| 1 | Không màn hình nào chỉ chữ + nút trên nền trơn | **Đạt** — K1, K2, K3, K4, K5, K7 đều đứng trên `WorldBackground` 3 lớp có mây trôi, sao lấp lánh |
+| 2 | Mascot ở mọi màn hình, `idle` chớp mắt, phản ứng khi chạm, đúng trạng thái | **Đạt** — 9 trạng thái; `greet` ở K2, `think` khi con đang làm, `cheer`/`celebrate` khi xong |
+| 3 | Mọi nút/thẻ có phản hồi hoạt hình; xuất hiện có stagger | **Đạt** — `BigButton` nén 0.94 rồi bật lại; thẻ vào theo `STAGGER` 60 ms |
+| 4 | Đúng: sao bay + đếm nhảy + âm thanh + mascot `cheer`; gần đúng: lắc + gợi ý trượt lên, không đỏ | **Đạt** |
+| 5 | Bản đồ: avatar di chuyển, trạm xong lấp lánh, cuối đường có rương | **Đạt** — ảnh `k3-map.png` |
+| 6 | Xong phiên: rương mở, sao tràn, huy hiệu, mascot nhảy, bỏ qua được | **Đạt** — ảnh `k5-finale.png`, chạm bất kỳ đâu là nhảy tới cuối |
+| 7 | Tải/trống/mất mạng có minh hoạ + mascot, không spinner trơn | **Đạt** — `LoadingMascot`, `EmptyState`, `OfflineNotice` |
+| 8 | **60 fps trên iPad**, tài sản màn hình ≤ 1,5 MB | **Cần chủ dự án chấm trên iPad.** Phần đo được: một màn hình nặng nhất tải **≤ 120 KB** tài sản (3 lớp nền ≈ 15 KB + mascot ≤ 3,5 KB + vật thể ≤ 1,4 KB mỗi cái); `art:check` chặn blur filter — thứ hay làm rớt khung hình nhất |
+| 9 | Video 2 phút | **Đạt** — mục 3 tiêu chí 7 |
+| 10 | Có trạm chọn 1-trong-2; có nghỉ vận động; hỏi "chơi tiếp hay nghỉ" sau 8 bài | **Đạt** — 2 trạm chọn mỗi phiên (ảnh `k3-map.png` có nhãn "chọn"), ảnh `k4-movement-break.png`, `k4-carry-on.png` |
+| 11 | Mascot làm mẫu được một bài (`scaffold: model`) | **Đạt** — ảnh `k4-model-first.png`; thang rèn bậc 3 xin đúng loại bài này |
+| 12 | Bảy cơ chế P0 của §1.8c chạy được | **Đạt** — trứng, tranh tuần, giờ thật, thư ba mẹ, sao vàng lớn, giấy chứng nhận, ký ức mascot |
+
+### 5. Tiếng Anh — Global Stage Level 1 (`c397907`, `0eafeba`)
+
+- **Tải chương trình công khai** Scope & Sequence của Macmillan cho **Language Book 1** và **Literacy Book 1**, lưu `sach giao khoa/global-stage/`, tóm tắt vào **`docs/09` §4b**: 10 unit mỗi quyển với từ vựng → cấu trúc câu → phonics → kỹ năng đọc/viết → tuần dự kiến. Literacy Book có thêm hai bài đọc và kỹ năng đọc từng unit (long o, e, a, i, u → blend pr/pl, fl/fr, sl/st → digraph sh/ch, th).
+- **Gắn lại bản đồ kỹ năng.** ESL: 32 kỹ năng gắn `GS1-LB.*`, 14 kỹ năng phonics gắn `GS1-LIT.*`, **3 kỹ năng RETIRE** (`isActive=false`, không xoá cứng): `VOC.WEATHER`, `VOC.DAYS_OF_WEEK`, `VOC.TRANSPORT` — Global Stage 1 không dạy. `VOC.NUMBERS_1_20` và `PH.BLENDS_FINAL` giữ lại nhưng bỏ `standardRef` (thuộc English Maths và Raz-Kids). **Thêm 16 kỹ năng** cho phần chương trình trước đây không kỹ năng nào trỏ tới. ENL: 7 kỹ năng gắn `GS1-LB.*`, 11 gắn `GS1-LIT.*`, thêm `ENL.RL.PREDICTING`. **Không còn `GS1.U<n>` nào.**
+- **Rà 398 bài ESL/ENL/EMATH của pha 2: giữ 398 · sửa 309 · RETIRE 0.** Mọi từ trong bài đều là từ vựng Global Stage Level 1, từ trên phiếu Unit 1 của trường, nhiễu chính tả cố ý, hoặc từ phần ôn phonics — **đoán về *nội dung* ở pha 2 là đúng, chỉ tên sách là sai**. 259 bài nay trỏ đúng unit thật thay vì "chưa có giáo trình của trường"; 50 bài sight word nói rõ lấy từ danh sách Dolch, không phải từ giáo trình.
+- **Đúng những trang cần chụp** (`docs/09` §4b.4) — vài trang một, theo tiến độ lớp:
+
+| Ưu tiên | Quyển | Trang | Để làm gì |
+|---|---|---|---|
+| 1 | Language Book 1 | **tr.4–9** (Language Review) | danh sách từ thật của phần ôn đầu sách |
+| 2 | Language Book 1 | **tr.10–21** (Unit 1) | lớp đang học: mẫu câu, bài tập, thứ tự lesson |
+| 3 | Literacy Book 1 | **tr.4–7** (Phonics Review) + **tr.8–23** (Unit 1) | hai bài đọc *Come On, Family!* và *Zoom Town* |
+| 4 | Language Book 1 | **tr.22–33** (Unit 2) | unit kế tiếp |
+| 5 | Literacy Book 1 | **tr.24–39** (Unit 2) | unit kế tiếp |
+| 6 | cả hai | **mục lục** (tr.2–3) | xác nhận số lesson mỗi unit để chia tuần |
+
+### 6. Lệch tài liệu — ADR-15
+
+`docs/adr/ADR-15-goc-cua-con-pha-3.md` ghi sáu chỗ: (1) tài sản là **SVG vẽ bằng code + Framer Motion**, không phải Lottie như `06` §1.9 đề xuất — không có hoạ sĩ, các gói Lottie miễn phí không cùng bút pháp, và `lottie-web` nặng gấp rưỡi cả thư viện tài sản hiện tại; (2) **`dragItems[].errorTag`** — điểm ADR-14 để ngỏ, nay làm, kèm việc **thẻ đặt sai vẫn được đặt**; (3) **hai mã lỗi mới**; (4) **`06` §1.8c được viết lại** từ `03` §2.7 + FR-PAR-08 + nhật ký 10/09 vì mục gốc không còn trong file (giữ nguyên cách đánh số để FR-PAR-08 "mục 5, 10" vẫn đúng), và thêm mục 12 vào checklist §4; (5) **chốt con số** cho sao / trứng / tranh tuần; (6) API phiên học là `POST /api/sessions/:id/attempts` chứ không phải `POST /api/attempts` như `02` §5 phác.
+
+### 7. Chưa làm / cần chủ dự án
+
+1. **Dán khoá Azure vào `.env`** (`TTS_API_KEY=<khoá>`, `TTS_REGION=eastasia` đã có sẵn) rồi chạy `pnpm tts:smoke "Nghe rồi chọn ô đúng nhé!"` — file mp3 nằm ở `_tts-thu/`. Sau đó `pnpm content:import` sẽ sinh mp3 cho 1450 câu (chạy dần được, hết hạn mức thì dừng êm).
+2. **Chấm mục 8 của checklist trên iPad thật** (60 fps trong lúc làm bài, đo bằng Safari Web Inspector) — và nếu được, để hai bé dùng thử 10 phút không cần ba mẹ trợ giúp.
+3. **K6 "chơi thêm theo môn"** và **K8 "Hỏi bạn Cú"** không thuộc pha 3 (`docs/08` giao K1–K5 và K7) — K6 ở pha 7, K8 là gia sư giọng nói P2. Trang chủ vì thế **chưa có 3 icon môn** như `06` §1.2 mô tả, để không dẫn con vào màn hình trống.
+4. **Dọn dữ liệu dev:** máy đang có **28 lô `content:import`** và một loạt tài khoản "Bé Thử"/"Thy"/"Thanh" do các bộ e2e cũ tạo — ảnh chụp màn hình đăng nhập vì thế hơi rối. Không ảnh hưởng bản thật (seed chỉ tạo 1 admin), nhưng nên dọn trước khi cho hai bé dùng.
+5. **Giọng mascot thu sẵn** (`06` §1.8b mục 5: 40–60 câu thoại thu giọng thật) chưa làm — hiện mascot nói bằng TTS. Việc này hợp với pha 7, hoặc làm sớm nếu chủ dự án muốn tự thu.
+
+### 8. Câu hỏi cho chủ dự án
+
+1. **Luật sao** (ADR-15 mục 5): đúng ngay lần đầu 2 sao · làm xong 1 sao · xong phiên 3 sao · nghỉ vận động 1 sao · ba mẹ khen 5 sao. Vật phẩm K7 từ 8 đến 50 sao. Có muốn đổi tỉ lệ không?
+2. **Trứng nở cần 5 ngày học/tuần** — với lịch nhà mình (học các ngày trong tuần) thì con phải học gần như đủ tuần mới nở. Giữ 5, hay hạ xuống 4?
+3. Hai bé dùng **cùng một thế giới cho mọi môn** (Thy: Vườn Kỳ Diệu, Thanh: Thành phố Robot) — pha 3 mới vẽ **1 khu vườn**, 4 khu robot. Có muốn tôi vẽ đủ 4 khu vườn ở pha sau không, hay để tài sản nhẹ như hiện tại?
+
 ## Pha 2 — 11/09/2026 — Xưởng nội dung & ngân hàng bài luyện (đợt 1)
 
 Trạng thái: **xong** (7/7 tiêu chí đạt, kiểm cả trên máy dev lẫn stack Docker sạch không có khoá nào). 7 commit, chưa push. Đầu pha có 2 commit thi hành ADR-11 và dọn tài liệu QC để lại.
