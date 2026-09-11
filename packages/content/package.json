@@ -11,8 +11,6 @@
   },
   "scripts": {
     "validate": "tsx src/cli/validate.ts",
-    "import": "tsx src/cli/not-yet.ts import",
-    "stats": "tsx src/cli/not-yet.ts stats",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json",
     "validate:skills": "tsx src/cli/validate-skills.ts"

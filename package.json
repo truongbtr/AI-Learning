@@ -21,14 +21,15 @@
     "db:seed": "pnpm --filter @mtct/db seed",
     "db:seed:dev": "pnpm --filter @mtct/db seed:dev",
     "db:studio": "pnpm --filter @mtct/db studio",
-    "content:validate": "pnpm --filter @mtct/content validate",
-    "content:import": "pnpm --filter @mtct/content import",
-    "content:stats": "pnpm --filter @mtct/content stats",
+    "content:validate": "pnpm --filter @mtct/content run validate",
+    "content:import": "pnpm --filter @mtct/db run content:import",
+    "content:stats": "pnpm --filter @mtct/db run content:stats",
     "inbox:pull": "pnpm --filter @mtct/inbox pull",
     "inbox:validate": "pnpm --filter @mtct/inbox validate",
     "inbox:push": "pnpm --filter @mtct/inbox push",
     "skills:validate": "pnpm --filter @mtct/content validate:skills",
-    "decay:run": "pnpm --filter @mtct/worker decay:run"
+    "decay:run": "pnpm --filter @mtct/worker decay:run",
+    "content:export": "pnpm --filter @mtct/db run content:export"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.0",

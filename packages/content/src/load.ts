@@ -1,6 +1,8 @@
-import { existsSync, readdirSync, readFileSync } from "node:fs";
-import { join } from "node:path";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
+import { join, relative } from "node:path";
 import { type ErrorTaxonomyFile, parseErrorTaxonomy } from "./error-taxonomy";
+import { type ExercisePack, parseExercisePack } from "./exercise";
+import { type LessonFile, parseLesson } from "./lesson";
 import { type LessonUnitsFile, parseLessonUnits } from "./lesson-units";
 import { contentDir } from "./paths";
 import { parseSkillMap, type SkillMapFile } from "./skill-map";
@@ -13,12 +15,32 @@ export interface NamedLessonUnits {
   name: string;
   units: LessonUnitsFile;
 }
+export interface NamedLesson {
+  name: string;
+  lesson: LessonFile;
+}
+export interface NamedPack {
+  name: string;
+  pack: ExercisePack;
+}
 
 function jsonFiles(dir: string, suffix = ".json"): string[] {
   if (!existsSync(dir)) return [];
   return readdirSync(dir)
     .filter((f) => f.endsWith(suffix) && !f.endsWith(".schema.json"))
     .sort();
+}
+
+/** Every file under `dir` (one level of subfolders) whose name ends with `suffix`. */
+function walk(dir: string, suffix: string): string[] {
+  if (!existsSync(dir)) return [];
+  const out: string[] = [];
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const path = join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...walk(path, suffix));
+    else if (entry.name.endsWith(suffix) && !entry.name.endsWith(".schema.json")) out.push(path);
+  }
+  return out.sort();
 }
 
 /** content/skill-map/<subject>.json */
@@ -45,10 +67,57 @@ export function loadLessonUnitFiles(dir = contentDir("lessons")): NamedLessonUni
   return out;
 }
 
+/**
+ * content/lessons/<subject>/<code>.json — the filled-in lessons of docs/10 sec. 4.1
+ * (`*.units.json` are skeletons and are loaded by `loadLessonUnitFiles` instead).
+ */
+export function loadLessons(dir = contentDir("lessons")): NamedLesson[] {
+  const root = contentDir();
+  return walk(dir, ".json")
+    .filter((p) => !p.endsWith(".units.json"))
+    .map((path) => ({
+      name: relative(root, path).replace(/\\/g, "/"),
+      lesson: parseLesson(JSON.parse(readFileSync(path, "utf8"))),
+    }));
+}
+
+/** content/exercises/<subject>/<SKILL_CODE>.pack.json */
+export function loadExercisePacks(dir = contentDir("exercises")): NamedPack[] {
+  const root = contentDir();
+  return walk(dir, ".pack.json").map((path) => ({
+    name: relative(root, path).replace(/\\/g, "/"),
+    pack: parseExercisePack(JSON.parse(readFileSync(path, "utf8"))),
+  }));
+}
+
 /** content/error-taxonomy.json (null when absent) */
 export function loadErrorTaxonomy(
   file = contentDir("error-taxonomy.json"),
 ): ErrorTaxonomyFile | null {
   if (!existsSync(file)) return null;
   return parseErrorTaxonomy(JSON.parse(readFileSync(file, "utf8")));
+}
+
+/**
+ * Labels of content/art/objects/manifest.json — the object library exercises may point at
+ * (`ImageRef.kind = "asset"`). Returns null while the manifest does not exist (phase 3 builds it),
+ * and the validator then skips that check instead of failing every pack.
+ */
+export function loadAssetLabels(
+  file = contentDir("art", "objects", "manifest.json"),
+): Set<string> | null {
+  if (!existsSync(file) || !statSync(file).isFile()) return null;
+  const json = JSON.parse(readFileSync(file, "utf8")) as {
+    objects?: { key?: string; labelEn?: string; labelVi?: string }[];
+  };
+  const labels = new Set<string>();
+  for (const o of json.objects ?? [])
+    for (const v of [o.key, o.labelEn, o.labelVi]) if (v) labels.add(v);
+  return labels;
+}
+
+/** Resolves `--dir content/exercises/vmath` (absolute or repo-relative) to an absolute path. */
+export function resolveContentDir(arg: string | undefined, fallback: string): string {
+  if (!arg) return fallback;
+  return existsSync(arg) ? arg : join(contentDir(), arg.replace(/^content[\\/]/, ""));
 }

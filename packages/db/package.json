@@ -24,7 +24,10 @@
     "seed": "tsx prisma/seed.ts",
     "seed:dev": "cross-env SEED_DEV=1 tsx prisma/seed.ts",
     "test": "vitest run",
-    "typecheck": "tsc -p tsconfig.json"
+    "typecheck": "tsc -p tsconfig.json",
+    "content:import": "dotenv -e ../../.env -- tsx src/cli/content-import.ts",
+    "content:stats": "dotenv -e ../../.env -- tsx src/cli/content-stats.ts",
+    "content:export": "dotenv -e ../../.env -- tsx src/cli/content-export.ts"
   },
   "dependencies": {
     "@mtct/content": "workspace:*",
