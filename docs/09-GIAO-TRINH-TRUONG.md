@@ -12,6 +12,8 @@
 | `01-sgk-tieng-viet-1-tap-hai.pdf` | Tiếng Việt 1 — tập hai | SGK học sinh | 178 | HK2: 8 chủ đề bài đọc + Ôn tập & đánh giá |
 | `01-sgk-toan-1-tap-mot.pdf` | Toán 1 — tập một | SGK học sinh | 118 | HK1: chủ đề 1–5, bài 1–20 |
 | `01-sgk-toan-1-tap-hai.pdf` | Toán 1 — tập hai | SGK học sinh | 110 | HK2: chủ đề 6–10, bài 21–41 |
+| `global-stage/global-stage-1-language-book-scope-and-sequence.pdf` | Global Stage 1 — Language Book | **Bảng chương trình** (Macmillan, tải công khai) | 2 | 10 unit + Language Review: từ vựng, cấu trúc, nói, viết (§4b.1) |
+| `global-stage/global-stage-1-literacy-book-scope-and-sequence.pdf` | Global Stage 1 — Literacy Book | **Bảng chương trình** (Macmillan, tải công khai) | 2 | 10 unit + Phonics Review: bài đọc, kỹ năng đọc, phonics (§4b.2) |
 
 Tất cả đều thuộc bộ **Kết nối tri thức với cuộc sống** (NXB GDVN), **PDF quét — không có lớp chữ**, nên phải đọc bằng nhận dạng ảnh. **Quy đổi trang: trang PDF = trang sách + 1** (đã kiểm chứng: bài 13 ở trang sách 38–39 nằm ở PDF 39–40). ⚠️ **Khi tách ảnh trang ra khỏi PDF** (cách Claude Code đọc sách quét) thì chỉ số ảnh = **trang sách + 3** với cả hai file SGK trong repo, vì đầu file có 2 ảnh bìa lặp — kiểm lại bằng một trang đã biết trước khi soạn (ghi nhận ở pha 2).
 
@@ -29,7 +31,7 @@ Tất cả đều thuộc bộ **Kết nối tri thức với cuộc sống** (N
 
 ~~**Xác nhận sách tiếng Anh:** bìa sau SGK liệt kê bộ 11 cuốn lớp 1, trong đó có "Tiếng Anh 1 – Global Success – Sách học sinh". Khớp với mã `GS1` trên phiếu bài tập của trường → GS1 = Global Success 1, sách dễ tìm.~~ *(sai — xem đính chính ở trên)*
 
-**Manh mối về sách ESL:** phiếu bài tập của trường có tiêu đề **`GS1 – UNIT 1 – REVIEW UNIT 1`** — nhiều khả năng **GS1 = Global Success 1** (Tiếng Anh 1, NXB GDVN, cùng bộ với các sách trên; bìa xuất hiện ở trang cuối SGV). Nếu đúng thì đây là sách phổ biến, dễ tìm bản PDF. Nội dung Unit 1 ghi nhận từ nhật ký lớp và phiếu: *family members* (mom, dad, brother, sister, aunt, uncle, grandparents, twins, baby, pets, cousins), *adjectives* (old, young, tall, short, funny, kind, cute, smart), *ngữ pháp* have/has, am/is/are + phủ định. Chương trình có ít nhất 16 lesson trong Unit 1 → nhiều hơn Global Success chuẩn, nên có thể trường ghép thêm giáo trình quốc tế; **cần chủ dự án xác nhận tên sách ESL với cô giáo**.
+~~**Manh mối về sách ESL (đã giải quyết — xem §4b):**~~ phiếu bài tập của trường có tiêu đề **`GS1 – UNIT 1 – REVIEW UNIT 1`** — nhiều khả năng **GS1 = Global Success 1** (Tiếng Anh 1, NXB GDVN, cùng bộ với các sách trên; bìa xuất hiện ở trang cuối SGV). Nếu đúng thì đây là sách phổ biến, dễ tìm bản PDF. Nội dung Unit 1 ghi nhận từ nhật ký lớp và phiếu: *family members* (mom, dad, brother, sister, aunt, uncle, grandparents, twins, baby, pets, cousins), *adjectives* (old, young, tall, short, funny, kind, cute, smart), *ngữ pháp* have/has, am/is/are + phủ định. Chương trình có ít nhất 16 lesson trong Unit 1 → nhiều hơn Global Success chuẩn, nên có thể trường ghép thêm giáo trình quốc tế; **cần chủ dự án xác nhận tên sách ESL với cô giáo**. *(Đã xác nhận 11/09/2026: Global Stage Level 1 — bảng chương trình đầy đủ ở §4b. Nội dung Unit 1 đoán từ phiếu hoá ra **đúng**: gia đình + tính từ + have/has + be chính là Unit 1 của Language Book.)*
 
 **Dạng bài phiếu ESL của trường** (dùng làm khuôn khi soạn ngân hàng bài, `10` §6): `Look and circle` (nhìn tranh chọn từ), `Look and unscramble` (xếp lại chữ cái thành từ, có cho chữ đầu), `Circle to choose` (chọn A/B ngữ pháp), `Read and match` (đọc đoạn rồi nối người ↔ tính từ), `Draw and write` (vẽ và điền câu về gia đình mình). Bài luyện trên app nên **giống hệt các dạng này** để con quen.
 
@@ -37,8 +39,8 @@ Tất cả đều thuộc bộ **Kết nối tri thức với cuộc sống** (N
 
 | Ưu tiên | Tài liệu | Chặn việc gì |
 |---|---|---|
-| 1 | **Global Stage Level 1 — Language Book + Literacy Book (Macmillan)** (+ workbook / phiếu bài tập nếu có) | ESL nhiều tiết nhất tuần; hiện chỉ suy được nội dung từ nhật ký lớp và phiếu bài tập |
-| 2 | Giáo trình quốc tế đi kèm **NAVIO** (Macmillan) nếu trường dùng thêm — Unit 1 có tới 16 lesson nên nhiều khả năng có sách thứ hai | Gán đúng Unit/Lesson cho môn ESL/ENL |
+| 1 | **Ảnh trang Global Stage Level 1** từ cổng học liệu — danh sách trang cụ thể ở **§4b.4** | Bảng chương trình đã có (§4b); còn thiếu bài đọc, tranh và bài tập mẫu để soạn nội dung đợt 2 |
+| 2 | ~~Giáo trình quốc tế đi kèm NAVIO~~ — **đã rõ**: Navio là app đi kèm chính bộ Global Stage; 16 lesson của Unit 1 = 8 lesson Language Book + 8 lesson Literacy Book | *(không còn chặn)* |
 | 3 | **English Maths**, **English Science** | Hai môn quốc tế còn lại |
 | 4 | Hai file SGV đã mất (xem cảnh báo ở trên); vở bài tập; kế hoạch học kỳ của trường | Mục tiêu bài dạy, đáp án, gán tuần chính xác |
 
@@ -149,6 +151,96 @@ Tập hai chuyển từ *học vần* (tập một) sang **văn bản đọc**: 
 Kỹ năng mới cần bổ sung vào `content/skill-map/viet.json`: `DOC.DOC_THO`, `DOC.DOC_DIEN_CAM`, `DOC.DOC_HIEU_VAN_BAN_THONG_TIN`, `DOC.RUT_RA_BAI_HOC`, `TV.TU_CHI_DAC_DIEM`. Mỗi bài đọc thành một `LessonUnit` với `vocabulary` (từ mới trong bài), `concepts` (vần được ôn trong bài), `sampleTasks` (câu hỏi đọc hiểu, câu chính tả), `contentText` (văn bản bài đọc — để sinh bài `MINI_STORY` và `READ_ALOUD` **đúng bài con đang học**).
 
 **Học kỳ 1 (tập một — chưa có sách):** phần học vần theo bộ Kết nối tri thức có thứ tự âm/vần riêng; bản đồ `VIET.HV.*` trong `05` §3.5 tạm giữ thứ tự chung, sẽ gán `lessonRef`/`expectedWeek` khi có tập một. Vì con đang ở HK1 (tuần 1 từ 08/09/2026), **tập một là tài liệu cần ưu tiên tìm nhất**.
+
+## 4b. Tiếng Anh — Global Stage Level 1 (Macmillan): Language Book + Literacy Book
+
+> Đánh số **4b** để không phải đánh số lại §5–§6 (nhiều chỗ trong code và tài liệu đang trỏ tới
+> `docs/09` §2 và §3). Nguồn: hai file *Scope and Sequence* tải công khai từ Macmillan
+> (xem §1), bản Level 1 đã lưu trong `sach giao khoa/global-stage/`:
+> `global-stage-1-language-book-scope-and-sequence.pdf` · `global-stage-1-literacy-book-scope-and-sequence.pdf`.
+> Đây **không phải nội dung sách** (không có bài đọc, không có tranh) — chỉ là bảng chương trình,
+> đủ để dựng bản đồ kỹ năng và gán unit; nội dung trang sách chụp theo tiến độ lớp khi cần.
+
+**Cách ghi `standardRef`** (thay cho `GS1.U<n>` đoán sai trước đây):
+`GS1-LB.U1…U10` và `GS1-LB.R` (Language Review đầu sách) cho **ESL**;
+`GS1-LIT.U1…U10` và `GS1-LIT.R` (Phonics Review đầu sách) cho **ENL**.
+
+**Nhịp học:** TKB 1B3 có **6 tiết ESL/ENL mỗi tuần** (1 tiết `ESL & ENL` + 5 tiết native). Mỗi unit
+trải trên cả hai quyển (Language ~8 lesson + Literacy ~8 lesson = **16 lesson/unit** — khớp với
+"Unit 1 – Lesson 16" trong nhật ký lớp), tức **≈ 3 tuần/unit**. Cột "tuần" dưới đây là tuần **dự
+kiến học xong**; nhật ký lớp (`docs/11`) sẽ hiệu chỉnh.
+
+### 4b.1 Language Book 1 → môn ESL
+
+| Unit | Tên (trang) | Từ vựng | Cấu trúc | Nói · phát âm | Viết | Tuần |
+|---|---|---|---|---|---|---|
+| **R** | Language Review | School Supplies · Colors · Shapes · Food · Animals · Parts of the Body | Imperatives · Be · Can · Have · Like | — | — | 1 |
+| **1** | Meet My Family (tr.10) | **Family:** parents, grandparents, grandma, grandpa, baby, pets, aunt, uncle, cousins, twins · **Adjectives:** kind, tall, short, old, young, smart, funny, scary, cute | Simple Present **Have** · **How many …?** · Simple Present **Be** | Giới thiệu bản thân và gia đình · /ɪ/ – /i/ | Dấu câu: viết hoa và dấu chấm · *A Special Person Poster* | 3 |
+| **2** | This Is Delicious (tr.22) | **Food 1:** carrots, potatoes, tomatoes, onions, mushrooms, strawberries, watermelons, peaches, coconuts, limes, broccoli · **Food 2:** rice, salad, breakfast, lunch, dinner, cereal, chicken, cheese, soup, pasta, eggs | Simple Present **Like** · **What …?** · **Want** | Đồng ý – không đồng ý · /æ/ – /ɔ/ | Dấu hỏi · *A Rainbow Food Survey* | 6 |
+| **3** | Play With Me (tr.36) | **Toys:** video game, train, bike, kite, dinosaur, skateboard, robot, teddy bear, scooter, drum · **Action Verbs 1:** walk, ride a bike, throw, catch, fly, climb, dance, run, sing, turn | **This/That/These/Those** · Modal **Can** (khả năng) | Đưa ra đề nghị · /ɪ/ – /aɪ/ | Dựng câu: màu (tính từ) + danh từ · *A Toy Swap Shop Ad* | 9 |
+| **4** | Animals Are Awesome (tr.48) | **Wild Animals:** penguin, hippo, tiger, elephant, frog, giraffe, parrot, crocodile, rhino, zebra · **Action Verbs 2:** jump, eat, drink, swim, carry, hide, sleep, stand | **Present Progressive** (câu kể) · **What …?** | Thuyết trình bằng tranh · /u/ – /oʊ/ | Chính tả động từ đuôi –ing · *An Awesome Animals Fact File* | 12 |
+| **5** | Where Are My Shoes? (tr.62) | **Clothes:** pants, glasses, shirt, skirt, jacket, sweater, shorts, hat, boots, sneakers · **Bedroom Furniture:** bed, rug, lamp, table, chair, desk, closet, wall, picture, floor | **Whose …?** · sở hữu cách **’s** · **There is / There are** (+ và −) · giới từ nơi chốn on, behind, under, in | Dẫn khách thăm phòng ngủ · /s/ – /ʃ/ | Dựng câu có tính từ và màu · *A Dream Bedroom Description* | 15 |
+| **6** | Look What I Can Do (tr.74) | **Activity Verbs:** watch TV, read comic books, do homework, paint a picture, listen to music, play outside, play board games, play table tennis, make cookies · **go / play / do:** go swimming, go horseback riding, go surfing, play tennis, play basketball, play soccer, do karate, do yoga, do ballet | Simple Present **What …?** và câu kể · câu hỏi **Yes/No** | Rủ bạn chơi · can – can’t | Chính tả –s, –es, –ies · *A Weekly Calendar* | 18 |
+| **7** | Look Around (tr.88) | **Places in Town:** park, library, café, movie theater, hospital, town, sports center, grocery store, swimming pool, station, street, hotel · **Nature:** tree, forest, insects, flowers, leaves, grass, river, lake, mountain | Present Progressive câu hỏi Yes/No và **Who …?** · câu mệnh lệnh **chỉ đường** | Tả thị trấn của mình · /f/ – /v/ | Viết hoa tên phố, tên thị trấn · *A Fantasy Town Description* | 21 |
+| **8** | Let’s Go Home (tr.100) | **Rooms and Furniture:** living room, bedroom, kitchen, office, yard, bathroom, cabinet, shower, sofa, hallway · **Daily Routines:** get up, brush your teeth, wash your face, get dressed, make your bed, go to school, go home, take a shower, pack your backpack, go to bed | **Where …?** + giới từ nơi chốn · **When …?** · before / after · trạng từ tần suất never / always | Tả một ngày hoàn hảo · /p/ – /b/ | Dựng câu với *and* · *A Crazy House Description* | 24 |
+| **9** | We’re Working Hard (tr.114) | **Jobs:** doctor, firefighter, chef, police officer, pilot, actor, office worker, dentist, vet, astronaut · **Verbs with Jobs:** fly, teach, drive, clean, cook, take care of, help, work, travel, wear a uniform | Simple Present với nghề · **Want to** · **Why? – Because** | Thể hiện sự quan tâm · /e/ – /ɜ/ | a / an · *A Job Poster* | 27 |
+| **10** | It’s Party Time (tr.126) | **Parties:** balloons, gift, candy, invitation, fireworks, card, band, drinks, decorations · **Tableware:** cup, plate, knife, fork, spoon, chopsticks, bowl, candle, napkin | Lượng từ **some / any** · danh từ đếm được – không đếm được · đại từ sở hữu mine, yours, his, hers, ours, theirs | Nhờ vả lịch sự · /dʒ/ – /tʃ/ | Giới từ on, at, from · *Invitations* | 31 |
+| **Plays** | tr.140 | Play 1 *Fenella’s Birthday Surprise* (Unit 1–5) · Play 2 *Where’s Caspar?* (Unit 6–10) | | | | 32–35 |
+
+Mỗi hai unit có một trang **Put It Together** (ôn Unit 1–2, 3–4, 5–6, 7–8, 9–10) — dùng làm mốc
+phiên `ASSESSMENT` nhỏ. Cột **International English** của sách dạy cặp Mỹ/Anh (eraser–rubber,
+backpack–rucksack, mom–mum, candy–sweets, movie theater–cinema, pants–trousers, cookies–biscuits,
+soccer–football, yard–garden, cabinet–cupboard, cell phone–mobile phone…) — **giữ nguyên cả hai
+biến thể trong bài luyện**, đừng coi biến thể Anh là lỗi.
+
+### 4b.2 Literacy Book 1 → môn ENL
+
+| Unit | Trang | Bài đọc 1 | Bài đọc 2 | Kỹ năng đọc | Phonics | Tích hợp · SEL |
+|---|---|---|---|---|---|---|
+| **R** | đầu sách | — | — | — | **Ôn phonics:** âm đầu, âm cuối, nguyên âm ngắn, từ CVC | — |
+| **1** | tr.8 | *Come On, Family!* (truyện) | *Zoom Town* (creative nonfiction) | Dự đoán từ **tranh** | **long o** | Xã hội – Gia đình · Social Awareness |
+| **2** | tr.24 | *The Right Place* (creative nonfiction) | *The Yum Café* (kịch) | Nhận biết **nhân vật và bối cảnh** | **long e** | Khoa học – Nông nghiệp |
+| **3** | tr.40 | *We Make Toys* (tiểu sử) | *A New Way to Play* (truyện) | Dự đoán từ **nhan đề** | **long a** | Xã hội – Thời gian rảnh |
+| **4** | tr.56 | *Jungle Animals* (thơ) | *Little Ant and Big Parrot* (ngụ ngôn) | **So sánh – đối chiếu** | **long i** | Khoa học – Sinh học |
+| **5** | tr.72 | *Hurry Up, Hugo!* (kịch) | *Jan’s Blog* (creative nonfiction) | **Mở – thân – kết** | **long u** | Xã hội – Cộng đồng |
+| **6** | tr.88 | *This Is Yoga* (văn bản hướng dẫn) | *I Can Do It* (truyện) | Nhận biết và **sắp thứ tự sự việc** | blend đầu **pr, pl** | Khoa học – Sức khoẻ |
+| **7** | tr.104 | *What’s Inside?* (thơ) | *Butterfly Forest* (fantasy) | Dự đoán **kết truyện** | blend đầu **fl, fr** | Xã hội – Cộng đồng |
+| **8** | tr.120 | *The Storm* (thơ) | *Old and New* (văn bản thông tin) | Dự đoán từ **nhan đề và tranh** | blend đầu **sl, st** | Xã hội – Truyền thống · gọi tên cảm xúc |
+| **9** | tr.136 | *Helping Hands* (văn bản thông tin) | *Clean-up Day* (truyện) | **Ý chính và chi tiết** | digraph **sh, ch** (đầu và cuối) | Xã hội – Tình nguyện |
+| **10** | tr.152 | *Children’s Day* (văn bản thông tin) | *The Feast* (truyện dân gian) | **Xem lại dự đoán** | digraph **th** (hữu thanh/vô thanh) | Xã hội – Truyền thống |
+
+### 4b.3 Đã gắn lại bản đồ kỹ năng (11/09/2026)
+
+- **ESL** (`content/skill-map/esl.json`): 32 kỹ năng gắn `GS1-LB.*`, 14 kỹ năng phonics gắn
+  `GS1-LIT.*`, **3 kỹ năng ngừng dùng** (`isActive=false`, không xoá): `VOC.WEATHER`,
+  `VOC.DAYS_OF_WEEK`, `VOC.TRANSPORT` — Global Stage 1 không có ba chủ đề này.
+  `VOC.NUMBERS_1_20` và `PH.BLENDS_FINAL` giữ lại nhưng bỏ `standardRef` (số đếm học ở English
+  Maths; blend cuối thuộc Raz-Kids). **Thêm 16 kỹ năng** cho phần chương trình trước đây không có
+  kỹ năng nào trỏ tới: đồ phòng ngủ, hoạt động go/play/do, nơi chốn, thiên nhiên, việc hằng ngày,
+  động từ nghề, tiệc, đồ ăn uống, hiện tại tiếp diễn, Whose/’s, chỉ đường, trạng từ tần suất,
+  want to, why/because, some/any, đại từ sở hữu.
+- **ENL** (`content/skill-map/enl.json`): 7 kỹ năng ngôn ngữ–viết gắn `GS1-LB.*` (Language Book dạy
+  phần này), 11 kỹ năng phonics và đọc gắn `GS1-LIT.*`, thêm `ENL.RL.PREDICTING` — kỹ năng đọc
+  xuất hiện ở 5/10 unit mà bản đồ cũ không có. Các kỹ năng còn lại (Dolch sight words, fluency
+  Raz-Kids, r-controlled, vowel teams…) giữ `standardRef` CCSS vì thuộc mạch Raz-Kids/NAVIO.
+- **Không còn `standardRef` nào dạng `GS1.U<n>`** (đoán theo Global Success).
+
+### 4b.4 Còn thiếu — đúng những trang cần chụp
+
+Scope and Sequence **không có**: câu chuyện, tranh, bài tập mẫu, danh sách từ của *Language Review*,
+và số lesson trong từng unit. Khi soạn nội dung đợt 2 (pha 6) cần chụp từ cổng học liệu, **theo tiến
+độ lớp, mỗi lần vài trang**:
+
+| Ưu tiên | Quyển | Trang cần chụp | Để làm gì |
+|---|---|---|---|
+| 1 | Language Book 1 | **tr.4–9** (Language Review) | danh sách từ thật của phần ôn đầu sách — đang phải đoán |
+| 2 | Language Book 1 | **tr.10–21** (Unit 1 trọn vẹn) | lớp đang học; lấy mẫu câu, bài tập, thứ tự lesson |
+| 3 | Literacy Book 1 | **tr.4–7** (Phonics Review) + **tr.8–23** (Unit 1) | hai bài đọc *Come On, Family!* và *Zoom Town* để soạn `MINI_STORY`, `READ_ALOUD` |
+| 4 | Language Book 1 | **tr.22–33** (Unit 2) | unit kế tiếp |
+| 5 | Literacy Book 1 | **tr.24–39** (Unit 2) | unit kế tiếp |
+| 6 | cả hai | **trang mục lục** (thường tr.2–3) | xác nhận số lesson mỗi unit để chia tuần cho đúng |
+
+Không cần chụp cả quyển: bảng §4b.1 và §4b.2 đã đủ để gán kỹ năng và lên kế hoạch.
 
 ## 5. Cách dùng trong các pha
 
