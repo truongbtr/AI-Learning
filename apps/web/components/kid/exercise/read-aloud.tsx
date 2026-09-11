@@ -186,6 +186,23 @@ export function ReadAloudExercise({
           </div>
         )}
 
+        {/*
+          The way out when the microphone hears nothing — a noisy room, a shy morning, a laptop
+          with no permission. A child must never be stuck on a screen with nothing to press, so the
+          "a grown-up listened" route is always there, not only when the browser cannot listen.
+        */}
+        {supported && !result ? (
+          <button
+            type="button"
+            onClick={() => onSubmit({ transcript: null, parentConfirmed: true })}
+            disabled={disabled}
+            className="min-h-[64px] rounded-[28px] bg-white/90 px-7 font-extrabold text-[20px] text-[#6B6B7B] shadow"
+            data-testid="parent-confirm"
+          >
+            Con đọc cho ba mẹ nghe rồi
+          </button>
+        ) : null}
+
         {heard ? (
           <p className="text-[20px] text-[#6B6B7B]">
             Mình nghe được: <span className="font-bold">“{heard}”</span>

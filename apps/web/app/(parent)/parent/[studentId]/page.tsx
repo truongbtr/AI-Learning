@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/admin/page-header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ApiError } from "@/lib/api";
 import { guardPage, requireStudentAccess } from "@/lib/auth/session";
+import { SendMailCard } from "./send-mail-card";
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +25,7 @@ export default async function StudentPage({ params }: { params: Promise<{ studen
         breadcrumb={["Tổng quan", "Các con", student.nickname]}
         title={student.nickname}
       />
+      <SendMailCard studentId={studentId} nickname={student.nickname} />
       <Card>
         <CardHeader>
           <div>

@@ -1,9 +1,12 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useState, useTransition } from "react";
+import { MascotSays } from "@/components/kid/mascot";
 import { PicturePinGrid } from "@/components/kid/picture-pin-grid";
 import { SpeakButton, speak } from "@/components/kid/speak-button";
-import { avatarEmoji } from "@/lib/avatars";
+import { STAGGER } from "@/components/kid/tokens";
+import { avatarArt } from "@/lib/avatars";
 import { kidLoginAction } from "./actions";
 
 export interface KidCard {
@@ -51,22 +54,42 @@ export function KidLogin({ kids }: { kids: KidCard[] }) {
 
   return (
     <section aria-label="Con đăng nhập" className="space-y-4">
-      <div className="flex flex-wrap justify-center gap-4">
+      {/* K1 is a place too: the mascot is here to say hello before anyone has logged in. */}
+      {selected ? null : (
+        <div className="flex justify-center">
+          <MascotSays
+            name="robot"
+            state="greet"
+            size={170}
+            text="Chào con! Con là ai nào?"
+            sub="Chạm vào ảnh của con nhé."
+          />
+        </div>
+      )}
+      <motion.div
+        variants={STAGGER.container}
+        initial="hidden"
+        animate="show"
+        className="flex flex-wrap justify-center gap-4"
+      >
         {kids.map((kid) => (
-          <button
+          <motion.button
             type="button"
             key={kid.id}
+            variants={STAGGER.item}
+            whileTap={{ scale: 0.94 }}
             onClick={() => choose(kid)}
             aria-pressed={selected?.id === kid.id}
-            className={`flex min-h-40 min-w-40 flex-col items-center justify-center rounded-3xl border-4 bg-white/90 px-6 py-4 shadow-lg transition-transform active:scale-95 ${
+            className={`flex min-h-40 min-w-40 flex-col items-center justify-center rounded-3xl border-4 bg-white/90 px-6 py-4 shadow-lg ${
               selected?.id === kid.id ? "border-amber-400 ring-4 ring-amber-200" : "border-white"
             }`}
           >
-            <span className="text-7xl">{avatarEmoji(kid.avatarKey)}</span>
-            <span className="mt-2 text-3xl font-extrabold text-slate-700">{kid.displayName}</span>
-          </button>
+            {/* biome-ignore lint/performance/noImgElement: an inline SVG asset, not a photo */}
+            <img src={avatarArt(kid.avatarKey)} alt="" width={104} height={104} />
+            <span className="mt-2 font-extrabold text-3xl text-slate-700">{kid.displayName}</span>
+          </motion.button>
         ))}
-      </div>
+      </motion.div>
 
       {selected ? (
         <div className="mx-auto max-w-xl space-y-4 rounded-3xl bg-white/70 p-4 shadow-inner">

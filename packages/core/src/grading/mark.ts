@@ -201,6 +201,17 @@ export function markAttempt(
   opts: { lang?: "vi" | "en" } = {},
 ): MarkResult {
   const lang = opts.lang ?? "vi";
+  // "I'll do this one later" is a decision, not a mistake (docs/07 §2.2: BLANK is not wrong). The
+  // attempt is over, nothing is scored, and the child moves on.
+  if (res.skipped) {
+    return {
+      correct: false,
+      outcome: "OBSERVED",
+      score: 0,
+      errorCode: BLANK,
+      pending: true,
+    };
+  }
   switch (type) {
     case "MCQ":
     case "LISTEN_CHOOSE":

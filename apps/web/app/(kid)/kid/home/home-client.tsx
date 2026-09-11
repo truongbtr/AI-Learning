@@ -33,7 +33,8 @@ export function KidHomeClient({ home, signOut }: { home: KidHome; signOut: React
   const [praise, setPraise] = useState<{ from: string } | null>(null);
   const theme = THEME[home.theme];
 
-  const hello = `${TIME_GREETING[timeOfDay()]} ${home.nickname}!`;
+  // "Chào Thy! Tối rồi, học nhẹ thôi nha!" — the name first, then the time of day.
+  const hello = `Chào ${home.nickname}! ${TIME_GREETING[timeOfDay()]}`;
   const line = home.memory?.text ?? home.event.lineVi;
 
   useEffect(() => {
@@ -82,11 +83,11 @@ export function KidHomeClient({ home, signOut }: { home: KidHome; signOut: React
             />
           </header>
 
-          <div className="flex flex-1 flex-col items-center justify-center gap-6">
+          <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-5">
             <MascotSays
               name={home.mascot}
               state={questDone ? "celebrate" : "greet"}
-              size={230}
+              size={200}
               speaking={state === "speaking"}
               text={hello}
               sub={line}
@@ -147,6 +148,7 @@ export function KidHomeClient({ home, signOut }: { home: KidHome; signOut: React
                 hatched={home.egg.hatched}
               />
               <WeekPicture
+                compact
                 imageKey={home.picture.imageKey}
                 nameVi={home.picture.nameVi}
                 pieces={home.picture.pieces}

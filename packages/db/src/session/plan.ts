@@ -166,6 +166,8 @@ export async function pickExercises(
   opts: { recentExerciseIds?: string[]; theme?: "NEUTRAL" | "ROBOT" | "GARDEN" } = {},
 ): Promise<PickedSlot[]> {
   const avoid = new Set(opts.recentExerciseIds ?? []);
+  /** The same exercise twice in one session is never acceptable, however empty the bank is. */
+  const usedToday = new Set<string>();
   const out: PickedSlot[] = [];
 
   for (const slot of slots) {
@@ -193,21 +195,33 @@ export async function pickExercises(
     tries.push(base); // any difficulty rather than no exercise at all
 
     let chosen: { id: string; stableId: string } | null = null;
-    for (const where of tries) {
-      const rows = await db.exercise.findMany({
-        where: { ...where, id: { notIn: [...avoid] } },
-        select: { id: true, stableId: true, usageCount: true },
-        orderBy: [{ usageCount: "asc" }, { difficulty: "asc" }],
-        take: 8,
-      });
-      const pick = rows[Math.floor(Math.random() * Math.min(rows.length, 4))] ?? rows[0];
-      if (pick) {
-        chosen = { id: pick.id, stableId: pick.stableId };
-        break;
+    // Twice over: first refusing anything the child met this week, then — rather than leave the
+    // station empty — allowing an exercise to come round again. A bank of 30 for one skill runs
+    // out after a fortnight of practice; a child should still get a question.
+    for (const skipSeen of [true, false]) {
+      for (const where of tries) {
+        const rows = await db.exercise.findMany({
+          where: {
+            ...where,
+            id: skipSeen ? { notIn: [...avoid] } : { notIn: [...usedToday] },
+          },
+          select: { id: true, stableId: true, usageCount: true },
+          orderBy: [{ usageCount: "asc" }, { difficulty: "asc" }],
+          take: 8,
+        });
+        const pick = rows[Math.floor(Math.random() * Math.min(rows.length, 4))] ?? rows[0];
+        if (pick) {
+          chosen = { id: pick.id, stableId: pick.stableId };
+          break;
+        }
       }
+      if (chosen) break;
     }
 
-    if (chosen) avoid.add(chosen.id);
+    if (chosen) {
+      avoid.add(chosen.id);
+      usedToday.add(chosen.id);
+    }
     out.push({
       ...slot,
       exerciseId: chosen?.id ?? null,

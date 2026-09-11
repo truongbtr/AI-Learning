@@ -207,8 +207,10 @@ test("3. child taps the avatar card, picks 4 pictures and sees the home name —
 }) => {
   await page.goto("/login");
   await page
-    .getByRole("button", { name: /^👧?\s*Thy$/ })
-    .first()
+    // The card carries a drawn character since phase 3, not an emoji (docs/08 pha 3 việc 5), and
+    // the newest card is this run's own child — a dev database also holds the seeded "Thy".
+    .getByRole("button", { name: "Thy", exact: true })
+    .last()
     .click();
   await expect(page.getByText("Chọn 4 hình của con nhé")).toBeVisible();
   await kidPickPin(page, THY.pin);
@@ -224,7 +226,9 @@ test("4. five wrong pins lock the child for 10 minutes and write 5 LoginAudit ro
   page,
 }) => {
   await page.goto("/login");
-  await page.getByRole("button", { name: /Thanh/ }).first().click();
+  // The last card is the child this run created; locking the seeded one would make the test
+  // unrepeatable for ten minutes.
+  await page.getByRole("button", { name: "Thanh", exact: true }).last().click();
   test.setTimeout(240_000);
   const wrong = ["cat", "cat", "cat", "cat"];
   let wrongCount = 0;
@@ -264,7 +268,7 @@ test("5. authorization: child → other child 403, unlinked parent 403, guest �
 }) => {
   // Child Thy asks for Thanh's mastery → 403; own → 200.
   await page.goto("/login");
-  await page.getByRole("button", { name: /Thy/ }).first().click();
+  await page.getByRole("button", { name: "Thy", exact: true }).last().click();
   await kidPickPin(page, THY.pin);
   await expect(page).toHaveURL(/\/kid\/home/);
   expect((await page.request.get(`/api/students/${ids.thanhStudent}/mastery`)).status()).toBe(403);

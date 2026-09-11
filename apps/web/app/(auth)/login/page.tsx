@@ -1,4 +1,5 @@
 import { prisma } from "@mtct/db";
+import { WorldBackground } from "@/components/kid/world-background";
 import { AdultLoginForm } from "./adult-login-form";
 import { type KidCard, KidLogin } from "./kid-login";
 
@@ -18,28 +19,30 @@ export default async function LoginPage({
   });
 
   return (
-    <main className="kid-world flex min-h-dvh flex-col items-center px-4 py-8">
-      <h1 className="mb-6 text-center text-4xl font-black text-sky-800 drop-shadow-sm">
-        Học cùng Mai Thy &amp; Chí Thanh
-      </h1>
+    <WorldBackground theme="garden">
+      <main className="flex min-h-dvh flex-col items-center px-4 py-8">
+        <h1 className="mb-6 text-center text-4xl font-black text-sky-800 drop-shadow-sm">
+          Học cùng Mai Thy &amp; Chí Thanh
+        </h1>
 
-      <KidLogin kids={kids} />
+        <KidLogin kids={kids} />
 
-      <div className="mt-10 w-full max-w-md">
-        <div className="mb-3 flex items-center gap-3 text-sm text-slate-600">
-          <span className="h-px flex-1 bg-slate-400/50" />
-          Ba mẹ đăng nhập
-          <span className="h-px flex-1 bg-slate-400/50" />
+        <div className="mt-10 w-full max-w-md">
+          <div className="mb-3 flex items-center gap-3 text-sm text-slate-600">
+            <span className="h-px flex-1 bg-slate-400/50" />
+            Ba mẹ đăng nhập
+            <span className="h-px flex-1 bg-slate-400/50" />
+          </div>
+          <div className="rounded-xl border bg-white/95 p-5 shadow font-sans">
+            {params.changed ? (
+              <p className="mb-3 rounded-md bg-emerald-50 px-3 py-2 text-sm text-emerald-700">
+                Đã đổi mật khẩu. Đăng nhập lại nhé.
+              </p>
+            ) : null}
+            <AdultLoginForm next={params.next ?? null} />
+          </div>
         </div>
-        <div className="rounded-xl border bg-white/95 p-5 shadow font-sans">
-          {params.changed ? (
-            <p className="mb-3 rounded-md bg-emerald-50 px-3 py-2 text-sm text-emerald-700">
-              Đã đổi mật khẩu. Đăng nhập lại nhé.
-            </p>
-          ) : null}
-          <AdultLoginForm next={params.next ?? null} />
-        </div>
-      </div>
-    </main>
+      </main>
+    </WorldBackground>
   );
 }

@@ -51,10 +51,22 @@ test("2. an exercise previews exactly as the child sees it, answer and diagnosis
 }) => {
   await adultLogin(page);
   await page.goto("/admin/content");
+  // The page opens on the batch list, and phase 3 added batches of its own — including lesson-only
+  // ones with no exercises in them. Open batches until one has something to preview.
+  const batches = page.getByRole("button", { name: "Xem lô" });
+  for (let i = 0; i < Math.min(await batches.count(), 8); i++) {
+    await batches.nth(i).click();
+    await page.waitForTimeout(1600);
+    if ((await page.getByRole("button", { name: "Xem thử" }).count()) > 0) break;
+    await page.goto("/admin/content");
+  }
   await page.getByRole("button", { name: "Xem thử" }).first().click();
 
   const dialog = page.getByRole("dialog");
   await expect(dialog).toBeVisible();
+  // An exercise with scaffold: "model" opens on the mascot's worked example (docs/04 §11.4 rung 3).
+  const modelled = dialog.getByRole("button", { name: /Con hiểu rồi/ });
+  if (await modelled.isVisible().catch(() => false)) await modelled.click();
   // Kid rules: read-aloud button, a hint button, no red, no "sai".
   await expect(dialog.getByRole("button", { name: /Nghe/ }).first()).toBeVisible();
   await expect(dialog.getByRole("button", { name: "Gợi ý" })).toBeVisible();
@@ -86,7 +98,7 @@ test("3. the published bank is queryable: every batch-1 skill has >= 35 exercise
 test("4. /dev/kit renders a pasted ExerciseSpec", async ({ page }) => {
   await adultLogin(page);
   await page.goto("/dev/kit");
-  await expect(page.getByRole("heading", { level: 1, name: /Bộ dựng bài/ })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: /Bộ dựng giao diện/ })).toBeVisible();
   await page.getByRole("button", { name: "COUNT_TAP" }).click();
   await expect(page.getByText("Có mấy quả táo?", { exact: true }).first()).toBeVisible();
   await page.screenshot({ path: join(SHOTS, "dev-kit.png"), fullPage: false });

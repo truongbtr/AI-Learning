@@ -10,6 +10,12 @@ export default async function CollectionPage() {
   const { student } = await kidStudent();
   if (!student) redirect("/kid/home");
   const view = await collectionFor(prisma, student.id);
+  const certificates = await prisma.certificate.findMany({
+    where: { studentId: student.id },
+    orderBy: { issuedAt: "desc" },
+    take: 6,
+    select: { id: true, title: true, issuedAt: true },
+  });
 
   return (
     <CollectionClient
@@ -17,6 +23,11 @@ export default async function CollectionPage() {
       theme={student.mascot === "OWL" ? "garden" : "robot"}
       studentId={student.id}
       nickname={student.nickname}
+      certificates={certificates.map((c) => ({
+        id: c.id,
+        title: c.title,
+        issuedAt: c.issuedAt.toISOString().slice(0, 10),
+      }))}
     />
   );
 }

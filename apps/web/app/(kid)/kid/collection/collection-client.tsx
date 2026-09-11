@@ -31,11 +31,14 @@ export function CollectionClient({
   theme,
   studentId,
   nickname,
+  certificates = [],
 }: {
   view: CollectionView;
   theme: "robot" | "garden";
   studentId: string;
   nickname: string;
+  /** Printable certificates the child has earned (docs/06 §1.8c item 11). */
+  certificates?: { id: string; title: string; issuedAt: string }[];
 }) {
   const router = useRouter();
   const { speak } = useSpeak();
@@ -140,6 +143,22 @@ export function CollectionClient({
             size={150}
             text={line}
           />
+
+          {certificates.length > 0 ? (
+            <section data-testid="certificates" className="flex flex-wrap items-center gap-3">
+              {certificates.map((c) => (
+                <button
+                  key={c.id}
+                  type="button"
+                  onClick={() => router.push(`/kid/certificate/${c.id}`)}
+                  className="flex min-h-[64px] items-center gap-2 rounded-[26px] bg-white/92 px-5 font-extrabold text-[19px] text-[#2B2B3A] shadow"
+                >
+                  <span className="text-[28px]">📜</span>
+                  {c.title}
+                </button>
+              ))}
+            </section>
+          ) : null}
 
           {view.goal ? (
             <div className="rounded-[28px] bg-white/92 px-6 py-4">

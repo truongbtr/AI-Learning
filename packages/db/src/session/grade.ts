@@ -566,7 +566,8 @@ export async function submitAttempt(db: Db, input: SubmitAttemptInput): Promise<
         data: { starsEarned: { increment: starsAwarded }, status: "IN_PROGRESS" },
       });
     }
-  } else if (mark.pending) {
+  } else if (mark.pending && (input.response.photoKey || input.response.heard)) {
+    // Only real work goes to the queue: a skipped station has nothing for anyone to grade.
     await queueForGrading(db, session.studentId, attempt.id, exercise.id, input.response);
   }
 

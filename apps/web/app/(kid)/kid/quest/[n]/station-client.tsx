@@ -51,6 +51,7 @@ export function StationClient({
   const [tries, setTries] = useState(0);
   const [stars, setStars] = useState(session.starsTotal);
   const [flying, setFlying] = useState<{ x: number; y: number } | null>(null);
+  const [wrongItems, setWrongItems] = useState<string[] | undefined>();
   const [offline, setOffline] = useState(false);
   const [busy, setBusy] = useState(false);
   const [startedAt] = useState(() => Date.now());
@@ -82,12 +83,13 @@ export function StationClient({
       .catch(() => setPhase("exercise"));
   }, [phase, session.id, item.order]);
 
-  const submit = async (response: unknown, origin?: { x: number; y: number }) => {
+  const submit = async (raw: unknown) => {
     if (busy) return;
     setBusy(true);
     setOffline(false);
     const token = `${session.id}-${item.order}-${tries + 1}-${startedAt}`;
     try {
+      const { response, origin } = await toAttemptResponse(raw, startedAt);
       const res = await fetch(`/api/sessions/${session.id}/attempts`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -114,6 +116,7 @@ export function StationClient({
         if (data.stage === "pending") setStars(data.starsTotal);
       } else {
         setFeedback("almost");
+        setWrongItems(data.wrongItems);
         if (data.hint) {
           setHint(data.hint);
           setHintsUsed((h) => h + 1);
@@ -217,11 +220,7 @@ export function StationClient({
                   vars={session.vars}
                   mascot={mascot}
                   disabled={busy || feedback !== null}
-                  feedback={
-                    feedback
-                      ? { kind: feedback, tries, reveal: explanation ? undefined : undefined }
-                      : undefined
-                  }
+                  feedback={feedback ? { kind: feedback, tries, wrongItems } : undefined}
                   onHint={() => {
                     const spec = item.spec as ClientSpec;
                     const next = spec.hints[Math.min(hintsUsed, spec.hints.length - 1)];
@@ -268,6 +267,39 @@ export function StationClient({
       />
     </WorldBackground>
   );
+}
+
+/**
+ * The exercise components speak in their own shapes (a tapped card, a tray of dropped cards, what
+ * the microphone heard); the API takes one shape (`AttemptResponse`). Translating here keeps both
+ * sides honest — and keeps the point on the screen where the star should fly from.
+ */
+async function toAttemptResponse(
+  raw: unknown,
+  startedAt: number,
+): Promise<{ response: Record<string, unknown>; origin?: { x: number; y: number } }> {
+  const r = (raw ?? {}) as Record<string, unknown>;
+  const origin = r.at as { x: number; y: number } | undefined;
+  const seconds = Math.round((Date.now() - startedAt) / 1000);
+
+  if (typeof r.choiceId === "string") return { response: { choiceId: r.choiceId }, origin };
+  if (r.placement) return { response: { placements: r.placement as object }, origin };
+  if (typeof r.count === "number") return { response: { count: r.count }, origin };
+  if (r.parentConfirmed) return { response: { parentVerdict: "good" }, origin };
+  if (typeof r.transcript === "string") {
+    return { response: { heard: r.transcript, seconds }, origin };
+  }
+  if (r.photo instanceof File) {
+    const form = new FormData();
+    form.append("file", r.photo);
+    const res = await fetch("/api/kid/photo", { method: "POST", body: form });
+    if (res.ok) {
+      const { photoKey } = (await res.json()) as { photoKey: string };
+      return { response: { photoKey }, origin };
+    }
+    return { response: { skipped: true }, origin };
+  }
+  return { response: { skipped: true }, origin };
 }
 
 /** What to show when the answer is revealed: the answer itself, in the child's own words. */

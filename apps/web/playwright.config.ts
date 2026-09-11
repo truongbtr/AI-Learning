@@ -14,8 +14,13 @@ export default defineConfig({
   reporter: [["list"], ["html", { open: "never" }]],
   use: {
     baseURL: process.env.E2E_BASE_URL ?? "http://localhost:5000",
+    // No locator action may hang for the whole test budget: a covered button is a failure to
+    // report, not a reason to wait ten minutes.
+    actionTimeout: 10_000,
     trace: "retain-on-failure",
     locale: "vi-VN",
+    // E2E_VIDEO=1 records the run — how docs/screens/pha-3 gets its video of a whole session.
+    video: process.env.E2E_VIDEO === "1" ? "on" : "off",
   },
   // E2E_CHANNEL=chrome|msedge uses an installed browser (no download); unset → bundled Chromium.
   projects: [

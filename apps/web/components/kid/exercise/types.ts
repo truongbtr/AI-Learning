@@ -16,6 +16,8 @@ export interface FeedbackState {
   tries: number;
   /** The right answer, sent only once the exercise is over. */
   reveal?: unknown;
+  /** Drag cards the server found in the wrong zone; they float home (ADR-15). */
+  wrongItems?: string[];
 }
 
 export interface ExerciseProps {

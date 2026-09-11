@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { playSound } from "../sound";
 import { SPRING, STAGGER } from "../tokens";
 import { ExerciseFrame } from "./frame";
@@ -13,8 +13,13 @@ import { type ExerciseProps, fillPlaceholders, imageSrc } from "./types";
  *  - **hít**: a zone within reach pulls the card in and glows;
  *  - **nảy**: a card that lands where it belongs bounces; one that does not floats back.
  *
- * Dropping a card the zone will not take is not a failure — it simply drifts home, with the soft
- * "almost" sound and no red anywhere.
+ * A card may be dropped in any zone, including the wrong one: that is the whole point of
+ * `dragItems[].errorTag` (ADR-15) — the server sees where the card actually went and can say what
+ * the child was thinking. A card that turns out to be in the wrong place floats home afterwards,
+ * with the soft "almost" sound and no red anywhere.
+ *
+ * Cards can also be tapped instead of dragged (tap the card, then tap the zone): a six-year-old on
+ * a tablet drags happily, but a tired one, or one using a mouse, should not be stuck.
  */
 
 const SNAP_PX = 90;
@@ -28,18 +33,32 @@ export function DragDropExercise({
   onSubmit,
   onHint,
   disabled,
+  feedback,
   vars,
   mascot,
 }: ExerciseProps) {
   const [placed, setPlaced] = useState<Placed>({});
   const [hintsUsed, setHintsUsed] = useState(0);
   const [hover, setHover] = useState<string | null>(null);
-  const zoneRefs = useRef<Record<string, HTMLDivElement | null>>({});
+  const [selected, setSelected] = useState<string | null>(null);
+  const zoneRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const reduce = useReducedMotion();
 
   const zones = spec.dropZones ?? [];
   const items = spec.dragItems ?? [];
-  const ready = zones.every((z) => Object.values(placed).includes(z.id));
+  const ready = items.every((i) => placed[i.id]);
+
+  // The server has marked it: the cards that went to the wrong place float home so the child can
+  // try those again — the ones that were right stay where they were put.
+  const wrong = feedback?.wrongItems;
+  useEffect(() => {
+    if (!wrong?.length) return;
+    setPlaced((p) => {
+      const next = { ...p };
+      for (const id of wrong) delete next[id];
+      return next;
+    });
+  }, [wrong]);
 
   const zoneUnder = useCallback((x: number, y: number) => {
     let best: { id: string; d: number } | null = null;
@@ -67,17 +86,15 @@ export function DragDropExercise({
       });
       return;
     }
-    const zone = zones.find((z) => z.id === zoneId);
-    if (!zone?.accepts.includes(itemId)) {
-      // the zone will not take it: float home, quietly
-      playSound("gan-dung");
-      setPlaced((p) => {
-        const { [itemId]: _gone, ...rest } = p;
-        return rest;
-      });
-      return;
-    }
     playSound("cham");
+    setSelected(null);
+    setPlaced((p) => ({ ...p, [itemId]: zoneId }));
+  };
+
+  /** Tap-to-place: the same landing as a drag, without the dragging. */
+  const drop2 = (itemId: string, zoneId: string) => {
+    playSound("cham");
+    setSelected(null);
     setPlaced((p) => ({ ...p, [itemId]: zoneId }));
   };
 
@@ -110,10 +127,15 @@ export function DragDropExercise({
         whileDrag={reduce ? undefined : { scale: 1.12, rotate: 6, zIndex: 30 }}
         onDrag={(_, info) => setHover(zoneUnder(info.point.x, info.point.y))}
         onDragEnd={(_, info) => drop(item.id, info.point.x, info.point.y)}
+        onClick={() => {
+          if (disabled) return;
+          playSound("cham");
+          setSelected((s) => (s === item.id ? null : item.id));
+        }}
         animate={inZone && !reduce ? { scale: [1.15, 0.95, 1] } : {}}
         transition={SPRING.press}
         className={`flex min-h-[104px] min-w-[104px] cursor-grab touch-none select-none items-center justify-center rounded-[26px] bg-white px-5 py-3 shadow-[0_12px_28px_-14px_rgba(43,43,58,0.55)] ${
-          inZone ? "ring-4 ring-[#34C759]" : ""
+          selected === item.id ? "ring-4 ring-[#FFD447]" : inZone ? "ring-4 ring-[#34C759]" : ""
         }`}
         data-testid="drag-item"
         data-item={item.id}
@@ -155,8 +177,13 @@ export function DragDropExercise({
               .map(([itemId]) => items.find((i) => i.id === itemId))
               .filter(Boolean);
             return (
-              <div
+              <button
+                type="button"
                 key={z.id}
+                onClick={() => {
+                  if (!selected || disabled) return;
+                  drop2(selected, z.id);
+                }}
                 ref={(el) => {
                   zoneRefs.current[z.id] = el;
                 }}
@@ -172,7 +199,7 @@ export function DragDropExercise({
                 <div className="flex flex-wrap justify-center gap-2">
                   {mine.map((item) => (item ? card(item, true) : null))}
                 </div>
-              </div>
+              </button>
             );
           })}
         </div>

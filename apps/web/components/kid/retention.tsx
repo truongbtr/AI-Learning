@@ -97,11 +97,14 @@ export function WeekPicture({
   nameVi,
   pieces,
   total,
+  compact,
 }: {
   imageKey: string;
   nameVi: string;
   pieces: number[];
   total: number;
+  /** The home screen has a whole world to show as well, so the picture sits smaller there. */
+  compact?: boolean;
 }) {
   const cols = 3;
   const have = new Set(pieces);
@@ -112,7 +115,11 @@ export function WeekPicture({
       className="rounded-[28px] bg-white/90 p-4 shadow-[0_10px_24px_-16px_rgba(43,43,58,0.7)]"
     >
       <p className="mb-2 font-extrabold text-[20px] text-[#2B2B3A]">{nameVi}</p>
-      <div className="relative aspect-[3/2] w-[clamp(14rem,26vw,20rem)] overflow-hidden rounded-2xl bg-[#FFF3DC]">
+      <div
+        className={`relative aspect-[3/2] overflow-hidden rounded-2xl bg-[#FFF3DC] ${
+          compact ? "w-[clamp(9rem,18vw,13rem)]" : "w-[clamp(14rem,26vw,20rem)]"
+        }`}
+      >
         {/* biome-ignore lint/performance/noImgElement: an inline SVG asset, not a photo */}
         <img src={`/${imageKey}`} alt={nameVi} className="h-full w-full object-cover" />
         <div className="absolute inset-0 grid grid-cols-3 grid-rows-2">
@@ -131,7 +138,7 @@ export function WeekPicture({
         </div>
       </div>
       <p className="mt-2 font-extrabold text-[#6B6B7B] text-[18px]">
-        {pieces.length}/{total} mảnh — mỗi ngày học được một mảnh
+        {pieces.length}/{total} mảnh{compact ? "" : " — mỗi ngày học được một mảnh"}
       </p>
     </div>
   );
