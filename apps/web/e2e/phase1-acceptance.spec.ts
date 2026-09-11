@@ -23,6 +23,7 @@ const KID = {
   pin: ["cat", "dog", "fish", "lion"],
 };
 const SKILL = "VMATH.SO.CONG_PV_10";
+const PIC_LABEL: Record<string, string> = { cat: "Mèo", dog: "Chó", fish: "Cá", lion: "Sư tử" };
 
 test.describe.configure({ mode: "serial" });
 test.skip(!ADMIN_PASSWORD, "set E2E_ADMIN_PASSWORD to run the phase 1 acceptance flow");
@@ -52,6 +53,15 @@ test.afterAll(async ({ browser }) => {
 
 test("1. a throw-away child is created for the evidence run", async ({ page }) => {
   await adultLogin(page, ADMIN_USER, ADMIN_PASSWORD!);
+  // Earlier runs (or a run that crashed) may have left an active test child behind.
+  const before = (await (await page.request.get("/api/admin/users")).json()) as {
+    items: { id: string; username: string; isActive: boolean }[];
+  };
+  for (const u of before.items) {
+    if (u.isActive && /^p1kid-/.test(u.username)) {
+      await page.request.patch(`/api/admin/users/${u.id}`, { data: { isActive: false } });
+    }
+  }
   const res = await page.request.post("/api/admin/users", {
     data: {
       role: "CHILD",
@@ -72,9 +82,12 @@ test("1. a throw-away child is created for the evidence run", async ({ page }) =
     },
   });
   expect(res.status(), await res.text()).toBe(201);
-  const body = (await res.json()) as { user: { id: string; student?: { id: string } | null } };
-  ids.userId = body.user.id;
-  ids.studentId = body.user.student?.id;
+  ids.userId = ((await res.json()) as { id: string }).id;
+
+  const users = (await (await page.request.get("/api/admin/users")).json()) as {
+    items: { id: string; student: { id: string } | null }[];
+  };
+  ids.studentId = users.items.find((u) => u.id === ids.userId)?.student?.id;
   expect(ids.studentId).toBeTruthy();
 });
 
@@ -177,12 +190,12 @@ test("2c. a child cannot write evidence and cannot read another child's mastery"
   page,
 }) => {
   await page.goto("/login");
-  await page.getByRole("button", { name: new RegExp(KID.nickname) }).click();
+  await page
+    .getByRole("button", { name: new RegExp(KID.nickname) })
+    .last()
+    .click();
   for (const pic of KID.pin) {
-    await page
-      .getByRole("button", { name: new RegExp(pic, "i") })
-      .first()
-      .click();
+    await page.getByRole("button", { name: PIC_LABEL[pic]!, exact: true }).click();
   }
   await page.waitForURL(/\/kid\/home/, { timeout: 15_000 });
 
@@ -217,7 +230,8 @@ test("3. /admin/skills shows ≥ 250 skills with ≥ 35 in every subject — scr
     );
     expect(count, `${subject} skills`).toBeGreaterThanOrEqual(35);
   }
-  await page.screenshot({ path: join(SHOTS, "admin-skills.png"), fullPage: true });
+  // Viewport only: the full table is 350+ rows tall and unreadable as one image.
+  await page.screenshot({ path: join(SHOTS, "admin-skills.png") });
 });
 
 test("4. full-text search finds the sh/ch/th skill in the top 3", async ({ page }) => {

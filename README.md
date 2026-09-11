@@ -2,7 +2,7 @@
 
 Nền tảng học tại nhà của gia đình cho hai bé lớp 1 (hệ Song ngữ, Edison Schools Ecopark). Chạy tại nhà bằng Docker, **không gọi API AI nào lúc chạy** (ADR-10) — mọi việc cần AI do Claude Code làm theo lô trong repo.
 
-**Trạng thái:** Pha 0 xong (khung dự án, đăng nhập, quản lý người dùng). Lộ trình: `docs/08-LO-TRINH-PHA.md`; tiến độ: `docs/TIEN-DO.md`.
+**Trạng thái:** Pha 1 xong (bản đồ kỹ năng 6 môn, mô hình năng lực, API mastery, `/admin/skills`, tra cứu kỹ năng). Pha 0: khung dự án, đăng nhập, quản lý người dùng. Lộ trình: `docs/08-LO-TRINH-PHA.md`; tiến độ: `docs/TIEN-DO.md`.
 
 ## Yêu cầu máy chạy (Windows + Docker Desktop)
 
@@ -48,18 +48,20 @@ pnpm e2e                                                   # smoke Playwright, c
 $env:E2E_ADMIN_PASSWORD="<mật khẩu admin đã đổi>"; $env:E2E_CHANNEL="chrome"; pnpm e2e   # nghiệm thu pha 0 đầy đủ
 ```
 
-Lệnh khác: `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm file `content/`), `pnpm inbox:pull|validate|push` (pha 2).
+Lệnh khác: `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm mọi file `content/`), `pnpm skills:validate` (chỉ bản đồ kỹ năng + khung bài học + bộ mã lỗi), `pnpm decay:run [--force]` (chạy tay job quên kiến thức hằng đêm), `pnpm inbox:pull|validate|push` (pha 2).
+
+> **Windows:** dừng `pnpm dev` trước khi chạy `pnpm build`. Prisma phải ghi lại `query_engine-windows.dll.node`, mà tiến trình dev đang giữ file này (lỗi `EPERM: operation not permitted, rename …`).
 
 ## Cấu trúc
 
 ```
 apps/web        Next.js 16 (App Router): (auth) /login /change-password · (kid) /kid/* · (parent) /parent/* · (admin) /admin/* · api/*
-apps/worker     pg-boss (job ping; planner/decay/intake ở pha sau)
-packages/core   domain thuần: chính sách khoá tài khoản, mật khẩu, mã hình, tuần học, FileStorage
-packages/db     Prisma schema (đủ mọi bảng docs/03), migrations, seed
-packages/content  schema/validator cho content/ (pha 0: thời khoá biểu)
+apps/worker     pg-boss (job ping mỗi phút, mastery.decay 02:30; planner/intake ở pha sau)
+packages/core   domain thuần: khoá tài khoản, mật khẩu, mã hình, tuần học, mastery, thang rèn, FileStorage
+packages/db     Prisma schema (đủ mọi bảng docs/03), migrations, seed, dịch vụ mastery + tìm kỹ năng
+packages/content  schema/validator cho content/ (thời khoá biểu, bản đồ kỹ năng, khung bài học, mã lỗi)
 packages/inbox  hàng chờ AI (kiểu dữ liệu; CLI ở pha 2)
-content/        nội dung do Claude Code soạn (timetable/1B3-2026.json ...)
+content/        nội dung do Claude Code soạn (skill-map/, lessons/, error-taxonomy.json, timetable/)
 docker/         Dockerfile (target web|worker), compose.yml, entrypoint
 docs/           bộ tài liệu — nguồn sự thật
 ```
