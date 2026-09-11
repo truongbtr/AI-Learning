@@ -4,7 +4,7 @@
 
 ## Pha 2 — 11/09/2026 — Xưởng nội dung & ngân hàng bài luyện (đợt 1)
 
-Trạng thái: **xong** (7/7 tiêu chí đạt, kiểm cả trên máy dev lẫn stack Docker sạch không có khoá nào). 6 commit, chưa push. Đầu pha có 2 commit thi hành ADR-11 và dọn tài liệu QC để lại.
+Trạng thái: **xong** (7/7 tiêu chí đạt, kiểm cả trên máy dev lẫn stack Docker sạch không có khoá nào). 7 commit, chưa push. Đầu pha có 2 commit thi hành ADR-11 và dọn tài liệu QC để lại.
 
 ### Đã làm theo 5 việc
 
@@ -33,7 +33,7 @@ Trạng thái: **xong** (7/7 tiêu chí đạt, kiểm cả trên máy dev lẫn
 | 3 | Sửa 1 bài rồi nạp lại → cập nhật tại chỗ, `stableId` giữ nguyên, `Evidence` cũ không mất | **Đạt** — làm thật: sửa lỗi "1 apples" → `0 new, 1 updated, 1231 unchanged`, bài vẫn `PUBLISHED`. Test tích hợp chứng minh `Attempt`/`Evidence` cũ còn nguyên và **7 bảng dữ liệu học của con không đổi một dòng** | `pnpm --filter @mtct/db test` (9 test importer) |
 | 4 | 20 bài ngẫu nhiên, tự chấm rubric `docs/10` §6, ≥ 18/20 đạt | **Đạt 20/20 — sau hai vòng sửa.** Lần chấm đầu 14/20; 9 lỗi hệ thống tìm được và cách sửa ghi ở `content/_reports/dot-1.md` §4 | `node scripts/sample-exercises.mjs pha-2-dot-1 20` (luôn ra đúng 20 mã đó) |
 | 5 | `.env` không khoá nào vẫn `docker compose --env-file .env up -d --build` chạy, vẫn truy vấn và render được bài, `content:import` vẫn chạy | **Đạt** — dựng stack thứ hai volume mới (`-p mtct-p2`, cổng 3001/5434), `TTS_API_KEY` trống: seed 359/182/42 → `content:import` 1236 bài (`tts: skipped 1450 line(s)`) → phát hành và xem thử bài trong `/admin/content` | `docker compose --env-file .env -f docker/compose.yml up -d --build` rồi `Invoke-RestMethod http://localhost:5000/api/health` |
-| 6 | `pnpm lint && pnpm test && pnpm build` xanh; e2e pha 0 và pha 1 vẫn xanh sau khi gỡ vỏ MEDIFA ONE | **Đạt** — lint 0 lỗi · **166 test đơn vị/tích hợp** (core 81, content 33, db 22, web 18, inbox 12) · build 4 gói · **23 e2e xanh** (pha 0: 6, pha 1: 7, pha 2: 5, login + screens: 5) chạy trên stack Docker sạch | `pnpm lint; pnpm test; pnpm build` (dừng `pnpm dev` trước) |
+| 6 | `pnpm lint && pnpm test && pnpm build` xanh; e2e pha 0 và pha 1 vẫn xanh sau khi gỡ vỏ MEDIFA ONE | **Đạt** — lint 0 lỗi · **167 test đơn vị/tích hợp** (core 81, content 33, db 23, web 18, inbox 12) · build 4 gói · **23 e2e xanh** (pha 0: 6, pha 1: 7, pha 2: 5, login + screens: 5) chạy trên stack Docker sạch | `pnpm lint; pnpm test; pnpm build` (dừng `pnpm dev` trước) |
 | 7 | `grep -ri elevenlabs` rỗng; thư mục `ai voice/` không còn | **Đạt trong code** — không còn ở bất kỳ file mã, script, env, `package.json` hay README nào; thư mục đã xoá. **Còn đúng 2 chỗ là tài liệu lịch sử**: `docs/adr/ADR-11` (chính bản ghi quyết định gỡ) và mục pha 1 của file này. Xoá tên khỏi ADR sẽ làm mất bản ghi quyết định nên giữ lại | `Select-String -Path (Get-ChildItem -Recurse -File).FullName -Pattern "elevenlabs"` |
 
 Ảnh chụp: `docs/screens/pha-2/admin-content.png`, `exercise-preview.png`, `dev-kit.png`.
@@ -50,7 +50,7 @@ Trạng thái: **xong** (7/7 tiêu chí đạt, kiểm cả trên máy dev lẫn
 | `scaffold: model` | **190 bài** (mascot làm mẫu trước — `04` §11.4 bậc 3) |
 | `targetsError` | **588 bài** nhắm đúng một mã lỗi (thang rèn bậc 5) |
 | Biến thể chủ đề | 66 bài `robot` · 80 bài `garden` · còn lại `neutral` |
-| Test | **166 đơn vị/tích hợp** + **23 e2e** |
+| Test | **167 đơn vị/tích hợp** + **23 e2e** |
 
 ### Mã 20 bài mẫu để QC chấm lại
 
@@ -69,6 +69,10 @@ Bảng chấm từng bài ở `content/_reports/dot-1.md` §3.
   4. Mở `difficultyRange` → `[1,5]` và thêm dạng bài cho **đúng 28 kỹ năng đợt 1** trong `content/skill-map/` cho khớp bài đã soạn (331 kỹ năng còn lại không đụng).
 
   `docs/04` §5 đã cập nhật cho khớp.
+
+### Lỗi tự tìm ra khi rà số liệu cuối pha (`9a1ce6b`)
+
+`content:stats` báo 2 kỹ năng tụt dưới 35 bài. Truy ra **lỗi thật trong trình nạp**: bài có mã rời khỏi file rồi quay lại thì kẹt `RETIRED` vĩnh viễn, vì trình nạp coi nó là “không đổi” khi nội dung giữ nguyên — **60 bài của đợt 1 đã vô hình như thế**. Đã sửa: bài quay lại được hồi sinh **trên đúng dòng cũ** (nên `Attempt`/`Evidence` của con vẫn trỏ đúng) và trở về `DRAFT` chứ không thẳng lên `PUBLISHED` — nội dung từng rời đi thì nên được ba mẹ xem lại. Có test riêng; `content:import` in thêm cột `revived`.
 
 ### Chưa làm + giả định
 
