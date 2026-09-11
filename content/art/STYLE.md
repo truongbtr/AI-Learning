@@ -2,7 +2,23 @@
 
 > Mọi tài sản trong `content/art/` phải theo tài liệu này, để thứ vẽ hôm nay và thứ vẽ sáu tháng
 > nữa nhìn vẫn như cùng một bàn tay. Nguồn: `docs/06` §1.1, §1.5–1.9.
-> **Bảng tham chiếu:** `content/art/style-sheet.svg` — mở file đó ra là thấy đúng cái đang mô tả.
+> **Bảng tham chiếu:** `content/art/style-sheet.svg` (Thành phố Robot) và
+> `content/art/garden-frame.svg` (Vườn Kỳ Diệu) — mở hai file đó ra là thấy đúng cái đang mô tả.
+
+**Tài sản được sinh ra, không vẽ tay từng file.** `pnpm art:build` chạy `scripts/art-build/` và ghi
+đè toàn bộ `content/art/**` (trừ `STYLE.md` và `style-sheet.svg`). Sửa một file SVG bằng tay thì lần
+build sau mất — **sửa trong `scripts/art-build/` ấy**; và nếu chính quy tắc đổi thì **sửa
+`STYLE.md` trước**. Ba lệnh:
+
+| Lệnh | Làm gì |
+|---|---|
+| `pnpm art:build` | vẽ lại mọi tài sản + `manifest.json` + trang kiểm kê `_contact-sheet.html` |
+| `pnpm art:check` | đo ngân sách dung lượng (§7) và bắt hai lỗi phong cách: dùng `filter`/blur, dùng màu đen tuyền |
+| `pnpm art:sync` | chép `content/art/` → `apps/web/public/art/` để Next phục vụ (tự chạy trong `pnpm dev` và `pnpm build`) |
+
+Mở `content/art/_contact-sheet.html` bằng trình duyệt để xem **tất cả** tài sản trên một trang —
+9 trạng thái của hai mascot, 5 khu thế giới đã chồng ba lớp, avatar, hiệu ứng, 70 vật thể và 6 âm
+thanh bấm nghe được.
 
 ---
 

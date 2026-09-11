@@ -1,0 +1,707 @@
+{
+  "$comment": "Sinh bởi scripts/art-build/build.mjs — đừng sửa tay. Bài luyện trỏ tới vật thể bằng ImageRef.kind='asset', value=key.",
+  "source": "mtct-hand-drawn",
+  "license": "internal",
+  "objects": [
+    {
+      "key": "qua-tao",
+      "labelVi": "quả táo",
+      "labelEn": "apple",
+      "category": "food",
+      "file": "art/objects/qua-tao.svg",
+      "bytes": 682,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "qua-cam",
+      "labelVi": "quả cam",
+      "labelEn": "orange",
+      "category": "food",
+      "file": "art/objects/qua-cam.svg",
+      "bytes": 712,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "qua-chuoi",
+      "labelVi": "quả chuối",
+      "labelEn": "banana",
+      "category": "food",
+      "file": "art/objects/qua-chuoi.svg",
+      "bytes": 457,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "qua-dua-hau",
+      "labelVi": "quả dưa hấu",
+      "labelEn": "watermelon",
+      "category": "food",
+      "file": "art/objects/qua-dua-hau.svg",
+      "bytes": 471,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "qua-ca",
+      "labelVi": "quả cà",
+      "labelEn": "aubergine",
+      "category": "food",
+      "file": "art/objects/qua-ca.svg",
+      "bytes": 831,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "qua-bi",
+      "labelVi": "quả bí",
+      "labelEn": "pumpkin",
+      "category": "food",
+      "file": "art/objects/qua-bi.svg",
+      "bytes": 457,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "banh-mi",
+      "labelVi": "ổ bánh mì",
+      "labelEn": "bread",
+      "category": "food",
+      "file": "art/objects/banh-mi.svg",
+      "bytes": 647,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "mieng-pho-mai",
+      "labelVi": "miếng phô mai",
+      "labelEn": "cheese",
+      "category": "food",
+      "file": "art/objects/mieng-pho-mai.svg",
+      "bytes": 404,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "qua-trung",
+      "labelVi": "quả trứng",
+      "labelEn": "egg",
+      "category": "food",
+      "file": "art/objects/qua-trung.svg",
+      "bytes": 375,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-keo",
+      "labelVi": "cái kẹo",
+      "labelEn": "candy",
+      "category": "food",
+      "file": "art/objects/cai-keo.svg",
+      "bytes": 406,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "ly-sua",
+      "labelVi": "li sữa",
+      "labelEn": "glass of milk",
+      "category": "food",
+      "file": "art/objects/ly-sua.svg",
+      "bytes": 406,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "bat-che",
+      "labelVi": "bát chè",
+      "labelEn": "bowl of sweet soup",
+      "category": "food",
+      "file": "art/objects/bat-che.svg",
+      "bytes": 464,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-ca",
+      "labelVi": "con cá",
+      "labelEn": "fish",
+      "category": "animal",
+      "file": "art/objects/con-ca.svg",
+      "bytes": 522,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-bo",
+      "labelVi": "con bò",
+      "labelEn": "cow",
+      "category": "animal",
+      "file": "art/objects/con-bo.svg",
+      "bytes": 1413,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-de",
+      "labelVi": "con dê",
+      "labelEn": "goat",
+      "category": "animal",
+      "file": "art/objects/con-de.svg",
+      "bytes": 1196,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-cho",
+      "labelVi": "con chó",
+      "labelEn": "dog",
+      "category": "animal",
+      "file": "art/objects/con-cho.svg",
+      "bytes": 1197,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-meo",
+      "labelVi": "con mèo",
+      "labelEn": "cat",
+      "category": "animal",
+      "file": "art/objects/con-meo.svg",
+      "bytes": 1196,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-ho",
+      "labelVi": "con hổ",
+      "labelEn": "tiger",
+      "category": "animal",
+      "file": "art/objects/con-ho.svg",
+      "bytes": 1391,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-khi",
+      "labelVi": "con khỉ",
+      "labelEn": "monkey",
+      "category": "animal",
+      "file": "art/objects/con-khi.svg",
+      "bytes": 1030,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-chim",
+      "labelVi": "con chim",
+      "labelEn": "bird",
+      "category": "animal",
+      "file": "art/objects/con-chim.svg",
+      "bytes": 740,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-vit",
+      "labelVi": "con vịt",
+      "labelEn": "duck",
+      "category": "animal",
+      "file": "art/objects/con-vit.svg",
+      "bytes": 520,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-ong",
+      "labelVi": "con ong",
+      "labelEn": "bee",
+      "category": "animal",
+      "file": "art/objects/con-ong.svg",
+      "bytes": 678,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-bo-rua",
+      "labelVi": "con bọ rùa",
+      "labelEn": "ladybird",
+      "category": "animal",
+      "file": "art/objects/con-bo-rua.svg",
+      "bytes": 585,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-buom",
+      "labelVi": "con bướm",
+      "labelEn": "butterfly",
+      "category": "animal",
+      "file": "art/objects/con-buom.svg",
+      "bytes": 552,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-cu",
+      "labelVi": "con cú",
+      "labelEn": "owl",
+      "category": "animal",
+      "file": "art/objects/con-cu.svg",
+      "bytes": 800,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-ga",
+      "labelVi": "con gà",
+      "labelEn": "hen",
+      "category": "animal",
+      "file": "art/objects/con-ga.svg",
+      "bytes": 720,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-ech",
+      "labelVi": "con ếch",
+      "labelEn": "frog",
+      "category": "animal",
+      "file": "art/objects/con-ech.svg",
+      "bytes": 700,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-voi",
+      "labelVi": "con voi",
+      "labelEn": "elephant",
+      "category": "animal",
+      "file": "art/objects/con-voi.svg",
+      "bytes": 806,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "chim-canh-cut",
+      "labelVi": "chim cánh cụt",
+      "labelEn": "penguin",
+      "category": "animal",
+      "file": "art/objects/chim-canh-cut.svg",
+      "bytes": 797,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "nguoi-ba",
+      "labelVi": "bà",
+      "labelEn": "grandma",
+      "category": "person",
+      "file": "art/objects/nguoi-ba.svg",
+      "bytes": 1100,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "nguoi-ong",
+      "labelVi": "ông",
+      "labelEn": "grandpa",
+      "category": "person",
+      "file": "art/objects/nguoi-ong.svg",
+      "bytes": 1172,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "nguoi-bo",
+      "labelVi": "bố",
+      "labelEn": "dad",
+      "category": "person",
+      "file": "art/objects/nguoi-bo.svg",
+      "bytes": 1097,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "nguoi-me",
+      "labelVi": "mẹ",
+      "labelEn": "mum",
+      "category": "person",
+      "file": "art/objects/nguoi-me.svg",
+      "bytes": 1097,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "nguoi-co-giao",
+      "labelVi": "cô giáo",
+      "labelEn": "teacher",
+      "category": "person",
+      "file": "art/objects/nguoi-co-giao.svg",
+      "bytes": 1106,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "em-be",
+      "labelVi": "em bé",
+      "labelEn": "baby",
+      "category": "person",
+      "file": "art/objects/em-be.svg",
+      "bytes": 1147,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "qua-bong",
+      "labelVi": "quả bóng",
+      "labelEn": "ball",
+      "category": "toy",
+      "file": "art/objects/qua-bong.svg",
+      "bytes": 452,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "khoi-lap-phuong",
+      "labelVi": "khối lập phương",
+      "labelEn": "cube",
+      "category": "toy",
+      "file": "art/objects/khoi-lap-phuong.svg",
+      "bytes": 379,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "o-to",
+      "labelVi": "ô tô",
+      "labelEn": "car",
+      "category": "toy",
+      "file": "art/objects/o-to.svg",
+      "bytes": 608,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "ten-lua",
+      "labelVi": "tên lửa",
+      "labelEn": "rocket",
+      "category": "toy",
+      "file": "art/objects/ten-lua.svg",
+      "bytes": 621,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "tau-hoa",
+      "labelVi": "tàu hoả",
+      "labelEn": "train",
+      "category": "toy",
+      "file": "art/objects/tau-hoa.svg",
+      "bytes": 807,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "xe-dap",
+      "labelVi": "xe đạp",
+      "labelEn": "bike",
+      "category": "toy",
+      "file": "art/objects/xe-dap.svg",
+      "bytes": 618,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-dieu",
+      "labelVi": "con diều",
+      "labelEn": "kite",
+      "category": "toy",
+      "file": "art/objects/con-dieu.svg",
+      "bytes": 495,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-trong",
+      "labelVi": "cái trống",
+      "labelEn": "drum",
+      "category": "toy",
+      "file": "art/objects/cai-trong.svg",
+      "bytes": 602,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "gau-bong",
+      "labelVi": "gấu bông",
+      "labelEn": "teddy bear",
+      "category": "toy",
+      "file": "art/objects/gau-bong.svg",
+      "bytes": 1068,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-bup-be",
+      "labelVi": "con búp bê",
+      "labelEn": "doll",
+      "category": "toy",
+      "file": "art/objects/cai-bup-be.svg",
+      "bytes": 1106,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "but-chi",
+      "labelVi": "bút chì",
+      "labelEn": "pencil",
+      "category": "school",
+      "file": "art/objects/but-chi.svg",
+      "bytes": 544,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "quyen-sach",
+      "labelVi": "quyển sách",
+      "labelEn": "book",
+      "category": "school",
+      "file": "art/objects/quyen-sach.svg",
+      "bytes": 760,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-cap",
+      "labelVi": "cái cặp",
+      "labelEn": "backpack",
+      "category": "school",
+      "file": "art/objects/cai-cap.svg",
+      "bytes": 521,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-ca",
+      "labelVi": "cái ca",
+      "labelEn": "mug",
+      "category": "home",
+      "file": "art/objects/cai-ca.svg",
+      "bytes": 476,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-o",
+      "labelVi": "cái ô",
+      "labelEn": "umbrella",
+      "category": "home",
+      "file": "art/objects/cai-o.svg",
+      "bytes": 625,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-den",
+      "labelVi": "cái đèn",
+      "labelEn": "lamp",
+      "category": "home",
+      "file": "art/objects/cai-den.svg",
+      "bytes": 431,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-giuong",
+      "labelVi": "cái giường",
+      "labelEn": "bed",
+      "category": "home",
+      "file": "art/objects/cai-giuong.svg",
+      "bytes": 539,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-ghe",
+      "labelVi": "cái ghế",
+      "labelEn": "chair",
+      "category": "home",
+      "file": "art/objects/cai-ghe.svg",
+      "bytes": 600,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "ngoi-nha",
+      "labelVi": "ngôi nhà",
+      "labelEn": "house",
+      "category": "place",
+      "file": "art/objects/ngoi-nha.svg",
+      "bytes": 606,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-cay",
+      "labelVi": "cái cây",
+      "labelEn": "tree",
+      "category": "place",
+      "file": "art/objects/cai-cay.svg",
+      "bytes": 459,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "bong-hoa",
+      "labelVi": "bông hoa",
+      "labelEn": "flower",
+      "category": "place",
+      "file": "art/objects/bong-hoa.svg",
+      "bytes": 787,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "chiec-la",
+      "labelVi": "chiếc lá",
+      "labelEn": "leaf",
+      "category": "place",
+      "file": "art/objects/chiec-la.svg",
+      "bytes": 548,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "ngoi-sao",
+      "labelVi": "ngôi sao",
+      "labelEn": "star",
+      "category": "effect",
+      "file": "art/objects/ngoi-sao.svg",
+      "bytes": 405,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "mat-trang",
+      "labelVi": "mặt trăng",
+      "labelEn": "moon",
+      "category": "place",
+      "file": "art/objects/mat-trang.svg",
+      "bytes": 401,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "dam-may",
+      "labelVi": "đám mây",
+      "labelEn": "cloud",
+      "category": "place",
+      "file": "art/objects/dam-may.svg",
+      "bytes": 383,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-ho",
+      "labelVi": "cái hồ",
+      "labelEn": "lake",
+      "category": "place",
+      "file": "art/objects/cai-ho.svg",
+      "bytes": 435,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-ao",
+      "labelVi": "cái áo",
+      "labelEn": "shirt",
+      "category": "clothes",
+      "file": "art/objects/cai-ao.svg",
+      "bytes": 488,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "doi-giay",
+      "labelVi": "đôi giày",
+      "labelEn": "shoes",
+      "category": "clothes",
+      "file": "art/objects/doi-giay.svg",
+      "bytes": 492,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cai-mu",
+      "labelVi": "cái mũ",
+      "labelEn": "hat",
+      "category": "clothes",
+      "file": "art/objects/cai-mu.svg",
+      "bytes": 505,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "banh-rang",
+      "labelVi": "bánh răng",
+      "labelEn": "gear",
+      "category": "robot",
+      "file": "art/objects/banh-rang.svg",
+      "bytes": 1232,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "con-robot",
+      "labelVi": "con rô-bốt",
+      "labelEn": "robot",
+      "category": "robot",
+      "file": "art/objects/con-robot.svg",
+      "bytes": 1006,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "pin-nang-luong",
+      "labelVi": "cục pin",
+      "labelEn": "battery",
+      "category": "robot",
+      "file": "art/objects/pin-nang-luong.svg",
+      "bytes": 466,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cay-nam",
+      "labelVi": "cây nấm",
+      "labelEn": "mushroom",
+      "category": "garden",
+      "file": "art/objects/cay-nam.svg",
+      "bytes": 474,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "cau-vong",
+      "labelVi": "cầu vồng",
+      "labelEn": "rainbow",
+      "category": "garden",
+      "file": "art/objects/cau-vong.svg",
+      "bytes": 616,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    },
+    {
+      "key": "ruong-kho-bau",
+      "labelVi": "rương kho báu",
+      "labelEn": "treasure chest",
+      "category": "effect",
+      "file": "art/objects/ruong-kho-bau.svg",
+      "bytes": 637,
+      "source": "mtct-hand-drawn",
+      "license": "internal"
+    }
+  ]
+}

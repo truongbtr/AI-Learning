@@ -9,8 +9,8 @@
     "pnpm": ">=9"
   },
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
+    "dev": "pnpm art:sync && turbo run dev",
+    "build": "pnpm art:sync && turbo run build",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "test": "turbo run test",
@@ -31,7 +31,10 @@
     "decay:run": "pnpm --filter @mtct/worker decay:run",
     "content:export": "pnpm --filter @mtct/db run content:export",
     "tts:voices": "pnpm --filter @mtct/db run tts:voices",
-    "tts:smoke": "pnpm --filter @mtct/db run tts:smoke"
+    "tts:smoke": "pnpm --filter @mtct/db run tts:smoke",
+    "art:build": "node scripts/art-build/build.mjs",
+    "art:check": "node scripts/art-check.mjs",
+    "art:sync": "node scripts/art-sync.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.0",
