@@ -2,6 +2,186 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 4 — 12/09/2026 — Nạp ảnh bài vở, nhật ký lớp & duyệt
+
+Trạng thái: **xong, 7/7 tiêu chí đạt** — trừ một nửa của tiêu chí eval phải chờ 20 ảnh mẫu của chủ
+dự án (mục 5 dưới). 4 commit code trong pha, **chưa push**. `lint` sạch · **295 test đơn vị** ·
+**32 e2e xanh** (pha 0–4) · `build` 4 gói.
+
+### 1. Đã làm gì, commit nào
+
+**Việc 0 — ba quyết định của chủ dự án** (`972d454`, ADR-16)
+
+- **Sao đo công sức, không đo đúng sai.** Gộp `firstTry: 2` + `finished: 1` thành **`exercise: 1`**:
+  một sao cho mỗi trạm con **làm xong**, dù đúng, gần đúng, hay phải xem đáp án rồi mới xong; cộng
+  3 sao khi hết phiên. Ảnh bài viết tay và bài đọc to ghi âm **nay được sao ngay** (trước đây rơi
+  vào nhánh "chờ chấm" nên con làm thật mà không được gì). Chạm "để sau" vẫn 0 sao — chưa làm thì
+  chưa có gì để thưởng.
+- **Trứng 4 ngày, không bao giờ reset.** `EggProgress` bỏ khoá theo tuần, đổi sang `(studentId,
+  eggNo)`: 4 **ngày học** nở một con thú rồi quả kế tiếp bắt đầu. Nghỉ thì thanh đứng yên. Tranh
+  tuần và `Streak` áp cùng nguyên tắc — với lịch nhà mình (4–5 buổi/tuần), **bức tranh 6 mảnh theo
+  tuần lịch là bức tranh không bao giờ xong**. Cả ba tính lại từ *số ngày riêng biệt có phiên hoàn
+  thành*, nên chạy lại không thưởng hai lần. Migration `20260911120000` đánh số lại dữ liệu cũ theo
+  thứ tự tuần, không mất mảnh nào.
+- **Vườn Kỳ Diệu đủ 4 khu**: `thap-chu` (tháp chậu hoa a-b-c + truyện trên nấm), `tram-khong-gian`
+  (nhà kính + khinh khí cầu bồ công anh + kính thiên văn), `ben-tau-tieng-anh` (thuyền lá buồm cánh
+  hoa chữ A trên hồ sen). 15 → **24 lớp nền**, tổng tài sản 0,46 MB / 40 MB, `art:check` xanh.
+- Sửa luôn một lỗi cũ: `weeklyEvent()`/`pictureForWeek()` trả `undefined` với mọi ngày **trước** tuần
+  mốc 07/09/2026 (JS giữ dấu âm khi chia lấy dư) — một phiên ngày lùi làm hỏng cả bước trao huy hiệu.
+
+**Việc 1–5 — ảnh bài vở, nhật ký lớp, bài cô giao** (`f27fead`, migration `20260911130000`)
+
+| Việc | Đã làm |
+|---|---|
+| **1. P5 nạp ảnh** | `/parent/intake/new`: camera trực tiếp (`capture`), chọn nhiều ảnh, **nén ngay trên máy** (canvas, cạnh dài 2000, JPEG 0.82). `POST /api/intake` lưu **ảnh gốc nguyên vẹn** (bằng chứng ba mẹ quay lại xem sau này) rồi tạo `IntakeJob`. Kiểm quyền trên đúng `studentId` ở tầng server. |
+| **2. Hàng chờ** | Job worker `intake.preprocess` (mỗi phút, `pnpm intake:run` gọi tay): xoay theo EXIF, cạnh dài 2000, `normalise` + `linear` nhẹ (bút chì phải còn là xám, không thành vệt đen), **tách ảnh chụp vở mở hai trang** theo rãnh gáy, nén ≤ 1,5 MB, **dHash** cảnh báo trùng trong 7 ngày. `inbox:pull` **chép ảnh nằm cạnh `context.json`**. `inbox:push` → `PENDING_REVIEW`. SSE `/api/events` thêm `toReview`, hộp thư tự làm mới khi kết quả về (`46afcfe`). |
+| **3. P6 duyệt** | `/parent/intake/[id]`: ảnh trái có **bbox bấm được**, bảng item phải sửa inline (đúng/gần đúng/chưa đúng/để trống, mã lỗi, kỹ năng tìm bằng full-text). **`BLANK` ≠ sai**: ô trống có màu riêng, ghi rõ "con chưa làm xong" hay "con chưa biết làm", **đổi bằng một chạm**. Duyệt → `Evidence` (+ `ExternalProgress` cho NAVIO/Kids A-Z) → mastery. Cặp "máy đọc / ba mẹ sửa" ở lại trên `IntakeItem.skillCodes` vs `skillCodesFinal` để làm ví dụ cho lần sau. |
+| **4. P7 + ghi chú nhanh** | `/parent/inbox` ba hàng chờ (chờ duyệt · chờ đọc · bài mở chờ chấm) + **badge trên thanh bên mọi trang**. FR-INT-04: ô một dòng, full-text gợi ý kỹ năng, ba mẹ chạm chọn → `Evidence(PARENT_NOTE, w=0.5)`. |
+| **5. Nhật ký lớp & bài cô giao** | `/parent/diary`: dán văn bản → **bộ đọc theo mẫu, không AI** (regex trên chữ đã bỏ dấu, nên "dặn dò"/"dan do"/"Ðồng phục" đều khớp). Dòng nào không khớp mẫu → hàng chờ `DIARY_HARD`, **không đoán bừa**. Một việc cô giao → **một `Homework` cho từng bé**. Trạm "Bài cô giao" đứng **đầu bản đồ** (5 ngọn đèn sáng dần, mỗi lượt một sao; "Quay cho cô" lưu file để ba mẹ nộp Teams — app không tự nộp). Thẻ nhắc phi học tập chỉ hiện cho ba mẹ. `/parent/school` đề nghị lại ngày bắt đầu năm học. |
+
+**Việc 6 — eval & nạp lô lớn** (`bf0bf3e`)
+
+`pnpm eval:intake` chấm bộ nhãn `docs/eval/intake-v1/cases.json`; `pnpm content:import-intake` nạp
+cả thư mục ảnh vở cũ vào **đúng hàng chờ duyệt P6**. Kết quả ở mục 4.
+
+Sửa hai đường dẫn giải sai thư mục: `INBOX_ROOT` đẩy hàng chờ vào `packages/inbox/inbox/` thay vì
+gốc repo (chỗ `CLAUDE.md` bảo nhìn và `.gitignore` che), và tương tự cho hai lệnh mới.
+
+### 2. Cách chạy thử (PowerShell, tại gốc repo)
+
+```powershell
+docker compose --env-file .env -f docker/compose.yml up -d db     # Postgres 5433
+pnpm db:migrate                                                   # 2 migration mới của pha 4
+pnpm dev                                                          # web 5000 + worker (intake.preprocess mỗi phút)
+```
+
+| Tiêu chí | Chạy gì |
+|---|---|
+| 1. Nhật ký lớp | Mở `/parent/diary`, dán bài đăng 10/09 → xem "3 mục đã học · 3 bài cô giao · 1 lời nhắc". Rồi `pnpm plan:run -- --student thy --force` và mở `/kid/quest`: trạm đầu là **Bài cô giao** |
+| 2. `BLANK` ≠ sai | `/parent/inbox` → mở phiếu ESL → 4 ô trống hiện "con chưa làm xong", chạm một cái thành "con chưa biết làm" |
+| 3. 5 ảnh ≤ 90 giây | `/parent/intake/new` chụp/chọn 5 ảnh → `pnpm intake:run` → `pnpm inbox:pull` |
+| 4. Duyệt → mastery | Duyệt trong `/parent/intake/<id>` rồi `Invoke-RestMethod "http://localhost:5000/api/students/<id>/mastery?subject=VIET"` |
+| 5. Raz-Kids | Ảnh màn hình Kids A-Z → `result.json` có `externals` → duyệt → xem `ENL.RF.FLUENCY_LEVEL_*` |
+| 6. Việc 0 | `/kid/home` xem trứng "x/4"; làm một bài sai → vẫn **+1 sao**; `/dev/kit` và `/kid/quest` xem 4 khu vườn |
+| 7. Tất cả | `pnpm lint; pnpm test; pnpm build` rồi `$env:E2E_ADMIN_PASSWORD="…"; $env:E2E_CHANNEL="msedge"; pnpm --filter @mtct/web exec playwright test` |
+
+Bộ nghiệm thu pha 4 đi **đúng đường thật**, kể cả dòng lệnh: nạp ảnh qua API → `pnpm intake:run` →
+`pnpm inbox:pull` → tự viết `result.json` → `pnpm inbox:validate` → `pnpm inbox:push` → duyệt trên
+web. Không có cửa sau nào cho test.
+
+```powershell
+$env:E2E_ADMIN_PASSWORD="<mật khẩu admin>"; $env:E2E_CHANNEL="msedge"
+pnpm --filter @mtct/web exec playwright test e2e/phase4-acceptance.spec.ts
+```
+
+### 3. Bảng 7 tiêu chí xong
+
+| # | Tiêu chí | Kết quả |
+|---|---|---|
+| 1 | Dán nhật ký mẫu → **3 mục đã học + 3 bài cô giao + 1 nhắc đồng phục**; Daily Quest đổi trọng tâm | **Đạt** — bộ đọc mẫu giải thích **100%** bài đăng, không dòng nào phải vào hàng chờ. Bài "quay video" nhận đúng là **tuỳ chọn** ("cô khuyến khích") và đúng nơi nộp (Teams – Chương trình Việt). Phiên sau đó: trạm 1 = bài cô giao, phần trọng tâm có kỹ năng Tiếng Việt của bài 13. Ảnh `docs/screens/pha-4/diary-parsed.png` |
+| 2 | Phiếu ESL làm dở → **`BLANK` chứ không phải sai**, đổi nhãn một chạm | **Đạt** — 2/6 câu làm được, 4 câu trống dồn về cuối → cả 4 là "con chưa làm xong" (trọng số 0,3), không dòng nào bị gắn nhãn sai. Ảnh `review-blank.png` |
+| 3 | 5 ảnh vở Tiếng Việt → **≤ 90 giây** | **Đạt — 12 giây** (tiền xử lý 5 ảnh: 450 ms). Xem ADR-17 mục 1 về việc "có kết quả" nghĩa là gì sau ADR-10 |
+| 4 | Duyệt → **mastery đổi và bằng chứng hiện trong drawer kỹ năng** | **Đạt** — mastery `VIET.HV.AM_U_UW` tăng sau khi duyệt; `GET /mastery/history?skill=…` trả bằng chứng `source=INTAKE_PHOTO`. **118 bằng chứng** từ ảnh/bài cô giao trên hồ sơ Thy. Ảnh `review-workbook.png` |
+| 5 | Ảnh Raz-Kids → `raz_level` + `ENL.RF.FLUENCY_LEVEL_*` | **Đạt** — mức D cho: `AA=95 · A=95 · B=95 · C=85 · D=70 · E=30`, **đúng bảng `05` §5** |
+| 6 | Việc 0 xong | **Đạt** — sao 1/bài làm xong (test ép sai 3 lần vẫn +1 sao), trứng 4/7 không reset (test đi qua ranh giới tuần), Vườn Kỳ Diệu 4 khu |
+| 7 | `lint && test && build` xanh; **e2e pha 0–3 vẫn xanh** | **Đạt** — lint sạch · 295 test đơn vị (core 157, content 66, db 35, web 25, inbox 12) · build 4 gói · **32/32 e2e** (pha 0: 6 · pha 1: 7 · pha 2: 5 · pha 3: 5 · pha 4: 4 · login + screens: 5) |
+
+### 4. Ngày bắt đầu năm học, và kết quả eval
+
+**Ngày bắt đầu năm học: đề nghị tuần 1 từ thứ Hai 24/08/2026** (đang đặt 08/09/2026).
+
+Căn cứ: nhật ký 10/09/2026 ghi lớp học **Tiếng Việt bài 13**. Tiếng Việt 1 tập một dạy **một bài mỗi
+buổi** (TKB 1B3 có 5 tiết "Tiếng Việt cơ bản"/tuần, `05` §2), nên bài 13 = **buổi học thứ 13**. Đếm
+ngược 13 buổi từ thứ Năm 10/09, bỏ thứ Bảy–Chủ nhật và **02/09 (Quốc khánh)** → buổi đầu tiên rơi
+đúng **thứ Hai 24/08/2026**. Chuỗi bài của chính lớp đang ăn khớp với giả thiết "một bài một buổi".
+
+**Tôi chưa tự đổi lịch.** `11` §5 nói ba xác nhận một lần, và mọi `expectedWeek` đo theo 35 tuần này
+— đổi ngầm là lặng lẽ dán lại nhãn "đúng tiến độ / chậm" cho cả hai bé. Mở `/parent/school`, đối
+chiếu bằng chứng trên màn hình rồi bấm **"Xác nhận và đặt lại 35 tuần"**.
+
+Nếu trường nghỉ cả 03/09 (nhiều trường nghỉ liền 02–03/09) thì buổi đầu lùi thêm một ngày → tuần 1
+từ **17/08**. Ba xem lịch trường rồi chọn giúp; ô ngày trên màn hình sửa tay được.
+
+**Eval đọc ảnh (`pnpm eval:intake`, 9 ca có nhãn — `docs/eval/intake-v1.md`):**
+
+```
+gắn kỹ năng: top-1 33,3% · top-5 66,7% · có trong ngữ cảnh đưa cho người đọc 77,8%
+đúng/sai:    chưa đo — cần 20 ảnh mẫu (mục 5)
+quy tắc BLANK trên phiếu docs/11 §9: ĐÚNG
+```
+
+Ba điều rút ra, và điều thứ hai là điều đáng nhớ nhất của cả pha:
+
+1. **Tìm kiếm một mình không đủ để gắn kỹ năng** (33% top-1, mục tiêu 80%). Nó tốt khi đề bài nói
+   thẳng nội dung ("các số 6–10"), kém khi đề bài chỉ là mệnh lệnh ("Read and match") hoặc khi chữ
+   trong đề trùng từ vựng của kỹ năng khác ("pets" trong bài về gia đình).
+2. **Nhật ký lớp cứu phần lớn các ca đó.** Ca "Vở Tiếng Việt bài 13": tìm kiếm trượt hoàn toàn (trả
+   về ba họ vần khác), nhưng vì tối hôm đó ba mẹ đã dán nhật ký nên `VIET.HV.AM_U_UW` nằm sẵn trong
+   ngữ cảnh. **Dán nhật ký mỗi tối không chỉ lái Daily Quest — nó làm việc đọc ảnh chính xác hơn.**
+3. **Hai lỗ thật:** kỹ năng đọc hiểu (`ENL.RL.*`) và viết câu (`ENL.W.*`) **không được đề xuất ở đâu
+   cả**. Đề nghị cho pha 5/6: với phiếu ENL, đưa cả mạch kỹ năng vào ngữ cảnh chứ không chỉ kết quả
+   tìm kiếm.
+
+### 5. 20 ảnh mẫu cần chủ dự án chụp (việc 6 còn nợ nửa này)
+
+Chép vào `intake-inbox/<tên gọi ở nhà>/<ngày>/`, ví dụ `intake-inbox/thy/2026-09-13/01.jpg`. Danh
+sách đầy đủ kèm lý do từng ảnh ở `docs/eval/intake-v1.md` §5; tóm tắt:
+
+| # | Chụp gì |
+|---|---|
+| 1–3 | Vở **Tiếng Việt** 3 trang con đã làm, có chữ cô sửa |
+| 4–5 | Vở **Toán** 2 trang (cộng trong 10, viết số) |
+| 6–8 | **Phiếu ESL** 3 tờ — **ít nhất 1 tờ con làm dở** (quan trọng nhất) |
+| 9–10 | **Bài kiểm tra** có điểm và nhận xét |
+| 11 | **Nhận xét / sổ liên lạc** của cô (chỉ chữ) |
+| 12–13 | Màn hình **Kids A-Z**: trang cấp độ và trang sách đã đọc |
+| 14 | Màn hình **NAVIO** |
+| 15 | Màn hình **nhật ký lớp Edi Parent** |
+| 16 | **Vở mở hai trang** chụp ngang một lần (thử tách trang) |
+| 17 | **Chụp lại đúng trang ở ảnh 1** (thử cảnh báo trùng) |
+| 18 | Một trang của **Chí Thanh** (thử phân biệt hai bé) |
+| 19 | Một ảnh **hơi nghiêng, thiếu sáng** |
+| 20 | Một ảnh **không phải bài học** (bìa vở) — phải ra `OTHER`, không bịa |
+
+Chụp xong nói một câu, tôi đọc 20 ảnh, ghi nhãn thật và chạy lại eval để có con số "đúng/sai" đầy
+đủ. Ảnh không vào git (`.gitignore` có `intake-inbox/`).
+
+### 6. ADR đã viết
+
+- **ADR-16** — ba quyết định của chủ dự án: sao theo công sức (thay bảng ADR-15 §5), trứng 4 ngày
+  không reset, Vườn Kỳ Diệu 4 khu.
+- **ADR-17** — năm chỗ pha 4 lệch tài liệu: (1) "≤ 90 giây có kết quả" nghĩa là gì sau ADR-10;
+  (2) FR-INT-04 "AI gắn kỹ năng" → tìm kiếm gợi ý + ba mẹ chạm; (3) bài cô giao là loại trạm mới
+  trong phiên; (4) `weightFactor` để `07` §2.2 vào được mô hình mastery; (5) ảnh Raz-Kids **đặt**
+  mastery theo bảng `05` §5 thay vì nhích.
+
+### 7. Chưa làm / tồn đọng
+
+1. **Planner vẫn chưa đọc `PlanHint`.** `inbox:push` ghi gợi ý trọng tâm vào DB từ pha 2, nhưng
+   planner chưa tôn trọng nó (`13` §3 nói phải). Không nằm trong 6 việc của pha 4 nên tôi không tự
+   làm; **nên đưa vào pha 5** cùng màn kế hoạch P9, vì hai thứ cùng đụng một chỗ trong planner.
+2. **Dữ liệu dev vẫn rối** (tồn từ pha 3): DB có **38 hồ sơ `Student`** lớp 1B3 do các bộ e2e cũ tạo
+   — mới 2 bé còn hoạt động nên nhật ký chỉ sinh 6 `Homework`, nhưng danh sách nhìn vẫn rối. Nên dọn
+   trước khi cho hai bé dùng thật.
+3. **Chưa có ảnh bài vở thật nào đi qua đường này.** Toàn bộ pha 4 chạy bằng ảnh sinh trong test
+   (trang kẻ dòng + nét bút giả). Pipeline đúng; chất lượng **đọc** ảnh thật chưa ai biết — đó chính
+   là 20 ảnh ở mục 5.
+4. **Bộ đọc nhật ký mới thấy đúng một bài đăng thật.** Mẫu của cô có thể đổi (đánh số khác, thêm
+   môn). Mỗi bài đăng lệch mẫu sẽ vào hàng chờ `DIARY_HARD` chứ không mất, nhưng vài tối đầu ba mẹ
+   nên liếc phần "Hệ thống đọc được" trước khi bấm "Đúng rồi".
+5. **Ảnh `CLASS_DIARY` chưa có đường đọc riêng.** Chụp màn hình Edi Parent đi vào hàng chờ ảnh như
+   mọi ảnh khác; đường dán văn bản (nhanh hơn, chính xác hơn, `11` §3 ưu tiên 1) đã chạy đủ.
+6. **Chưa nén ảnh HEIC trên máy.** iPhone gửi HEIC thì trình duyệt không vẽ được lên canvas nên ảnh
+   đi nguyên bản (server vẫn xử lý được, chỉ tốn mạng hơn).
+
+### 8. Câu hỏi cho chủ dự án
+
+1. **Xác nhận ngày bắt đầu năm học** — 24/08/2026 (nếu chỉ nghỉ 02/09) hay 17/08/2026 (nếu nghỉ cả
+   02 và 03/09)? Mở `/parent/school`, bấm một cái là xong.
+2. **20 ảnh mẫu** (mục 5) — cái này chặn nửa còn lại của việc 6.
+3. **Dọn 38 hồ sơ `Student` thử nghiệm trong DB dev?** Tôi không tự xoá dữ liệu học của ai; nói một
+   câu là tôi viết script dọn đúng các tài khoản do e2e tạo (`slug` bắt đầu bằng `p1kid-`).
+
 ## Pha 3 — 11/09/2026 — Góc của con: thế giới, mascot, phiên học
 
 Trạng thái: **dựng xong, 7/8 tiêu chí tự kiểm đạt**; tiêu chí còn lại cần chủ dự án chấm trên iPad thật (60 fps, mục 8 checklist `06` §4). 14 commit trong pha, **chưa push**.
