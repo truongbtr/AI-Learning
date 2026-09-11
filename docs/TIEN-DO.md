@@ -134,6 +134,30 @@ Thêm hai tiêu chí chủ dự án bổ sung: `docs/09` **có bảng unit Globa
 2. **Trứng nở cần 5 ngày học/tuần** — với lịch nhà mình (học các ngày trong tuần) thì con phải học gần như đủ tuần mới nở. Giữ 5, hay hạ xuống 4?
 3. Hai bé dùng **cùng một thế giới cho mọi môn** (Thy: Vườn Kỳ Diệu, Thanh: Thành phố Robot) — pha 3 mới vẽ **1 khu vườn**, 4 khu robot. Có muốn tôi vẽ đủ 4 khu vườn ở pha sau không, hay để tài sản nhẹ như hiện tại?
 
+### 9. Bàn giao cho người làm pha 4
+
+Pha 4 là "nạp ảnh bài vở & duyệt" (`08` pha 4). Những thứ pha 3 để lại mà pha 4 dùng được ngay, và những chỗ dễ vấp:
+
+**Dùng lại được ngay**
+
+| Pha 4 cần | Đã có sẵn | Ở đâu |
+|---|---|---|
+| Hàng chờ AI cho ảnh vở (mục 2, 6) | `packages/inbox` đủ ba lệnh `inbox:pull / validate / push`, trang `/admin/inbox`, schema `IntakeExtraction` / `GradeResult` / `DiaryParse` | `packages/inbox/src/`, `CLAUDE.md` mục "Xử lý hàng chờ AI" |
+| Lưu ảnh | `POST /api/kid/photo` nhận ảnh, kiểm loại và kích thước, trả `photoKey`; dùng `fileStorage()` (FILE_ROOT) — pha 4 dùng chung adapter này cho `POST /api/intake` | `apps/web/app/api/kid/photo/route.ts`, `apps/web/lib/storage.ts` |
+| Chấm bài mở đi qua hàng chờ | Mỗi `WRITE_PHOTO` con gửi đã tự tạo `InboxItem(WRITE_PHOTO_GRADE)` với `attemptId` trong payload; `inbox:push` ghi kết quả ngược vào `Attempt` | `packages/db/src/session/grade.ts` (`queueForGrading`), `packages/inbox/src/push.ts` (`applyGrade`) |
+| SSE "có kết quả rồi" (mục 2) | `GET /api/events` đã phát trạng thái phiên, huy hiệu mới và **số bài đã được AI/ba mẹ chấm**; thêm một trường vào `snapshotOf` là xong | `apps/web/app/api/events/route.ts` |
+| Planner đổi nguồn "bài đang học" sang `DiaryLesson` 3 ngày gần nhất (mục 5) | **Đã làm ở pha 3**: `plannerSnapshot` đọc `ClassDiary`/`DiaryLesson` theo lớp của bé và đưa vào `lessonSkills`, planner xếp các kỹ năng đó lên đầu nửa trọng tâm (có test). Pha 4 chỉ còn phải **đổ dữ liệu vào hai bảng đó** | `packages/db/src/session/plan.ts:78`, `packages/core/src/planner/plan-session.ts` |
+| Trạm "Bài cô giao" đầu bản đồ (mục 5) | Slot đã mang `kind` và bản đồ đã vẽ theo `kind`; thêm một `SlotKind` mới + một renderer là có trạm mới, không phải sửa cấu trúc phiên | `packages/core/src/planner/types.ts:13`, `apps/web/components/kid/quest-map.tsx` |
+| `BLANK` ≠ sai (tiêu chí xong của pha 4) | Đã là luật ở tầng chấm: bỏ qua một bài trả về `pending`, **không ghi `Evidence`**, không tính điểm | `packages/core/src/grading/mark.ts` |
+
+**Chỗ dễ vấp trên máy này**
+
+1. `pnpm build` **hỏng khi web server đang chạy** — `prisma generate` không đổi tên được `query_engine-windows.dll.node` (EPERM). Dừng `next dev`/`next start` trước khi build.
+2. Playwright: **`E2E_CHANNEL=msedge`** (máy này không có Chromium bundled); `playwright.config.ts` đã đặt `actionTimeout: 10_000` — đừng bỏ, nếu không một nút bị che sẽ treo hết ngân sách của test.
+3. Trình nạp nội dung chỉ cho nghỉ bài **trong những file mà lần nạp đó đọc** (sửa 11/09). Nếu viết test nạp nội dung mới, nhớ dùng `sourceFile` riêng, đừng mượn tên file của gói thật.
+4. Ngân hàng phải giữ **1236 `PUBLISHED`**; `pnpm content:stats` là cách kiểm nhanh nhất sau mỗi lần đụng vào trình nạp.
+5. Dữ liệu dev đang lẫn tài khoản và lô của các bộ e2e cũ (xem mục 7.4) — nên dọn trước khi quay video hay cho hai bé dùng.
+
 ## Pha 2 — 11/09/2026 — Xưởng nội dung & ngân hàng bài luyện (đợt 1)
 
 Trạng thái: **xong** (7/7 tiêu chí đạt, kiểm cả trên máy dev lẫn stack Docker sạch không có khoá nào). 7 commit, chưa push. Đầu pha có 2 commit thi hành ADR-11 và dọn tài liệu QC để lại.
