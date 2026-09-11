@@ -58,6 +58,10 @@ dựng lại mục §1.8c từ hai nguồn đó, **giữ nguyên cách đánh s�
 
 ### 5. Luật sao, trứng và tranh tuần — chốt con số
 
+> **Đã bị ADR-16 thay thế (11/09/2026).** Chủ dự án đổi: sao **1 cho mỗi bài làm xong** bất kể đúng
+> sai (bỏ mức 2 sao), trứng **4 ngày** và **không reset theo tuần**, tranh cũng không reset. Bảng
+> dưới giữ lại để đọc lịch sử quyết định.
+
 Tài liệu nói "được sao", "trứng nở theo ngày học", "mảnh tranh cuối tuần" nhưng không cho con số.
 Chốt trong code (`packages/db/src/session/grade.ts`, `packages/core/src/world/week.ts`):
 

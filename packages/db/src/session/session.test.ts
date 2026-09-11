@@ -205,7 +205,7 @@ describe("a day's session (integration, needs the seeded database)", () => {
       token: "same-token",
     });
     expect(sent.correct).toBe(true);
-    expect(sent.starsAwarded).toBe(2); // right the first time
+    expect(sent.starsAwarded).toBe(1); // one star for the work, not for being right (ADR-16)
 
     const resent = await submitAttempt(db, {
       sessionId,
@@ -220,7 +220,7 @@ describe("a day's session (integration, needs the seeded database)", () => {
       where: { attempt: { session: { id: sessionId } } },
     });
     expect(evidences).toBe(1);
-    expect(await starBalance(db, student?.id ?? "")).toBe(before + 2);
+    expect(await starBalance(db, student?.id ?? "")).toBe(before + 1);
   });
 
   it("remembers where a session stopped, so it can be carried on", async (ctx) => {
@@ -244,7 +244,7 @@ describe("a day's session (integration, needs the seeded database)", () => {
     expect(summary.answered).toBe(1);
     expect(summary.correct).toBe(1);
     expect(summary.accuracy).toBe(1);
-    expect(summary.starsEarned).toBeGreaterThanOrEqual(5); // 2 for the answer + 3 for finishing
+    expect(summary.starsEarned).toBeGreaterThanOrEqual(4); // 1 for the answer + 3 for finishing
     expect(summary.streak.current).toBeGreaterThanOrEqual(1);
     expect(summary.bySkill[0]?.skillCode).toBe(SKILL);
 
@@ -254,5 +254,67 @@ describe("a day's session (integration, needs the seeded database)", () => {
     const row = await db.session.findUnique({ where: { id: sessionId } });
     expect(row?.status).toBe("COMPLETED");
     expect(row?.finishedAt).not.toBeNull();
+  });
+
+  // ADR-16: the star measures effort. The child who needed all three tries did the most work of
+  // anyone, and must not end the station with less than the child who guessed right at once.
+  it("gives the same one star to a child who only got there after the answer was shown", async (ctx) => {
+    needDb(ctx);
+    const db = testDb();
+    const sessionId = await oneExerciseSession();
+    const before = await starBalance(db, student?.id ?? "");
+
+    await submitAttempt(db, { sessionId, order: 0, response: { choiceId: "a" }, token: "s1" });
+    await submitAttempt(db, { sessionId, order: 0, response: { choiceId: "c" }, token: "s2" });
+    const last = await submitAttempt(db, {
+      sessionId,
+      order: 0,
+      response: { choiceId: "a" },
+      token: "s3",
+    });
+    expect(last.correct).toBe(false);
+    expect(last.final).toBe(true);
+    expect(last.starsAwarded).toBe(1);
+    expect(await starBalance(db, student?.id ?? "")).toBe(before + 1);
+  });
+
+  // ADR-16: a week off pauses the flame, it does not put it out.
+  it("does not send the streak back to one after a gap", async (ctx) => {
+    needDb(ctx);
+    const db = testDb();
+    const fiveDaysAgo = new Date();
+    fiveDaysAgo.setDate(fiveDaysAgo.getDate() - 5);
+    fiveDaysAgo.setHours(0, 0, 0, 0);
+    const old = await db.session.create({
+      data: {
+        studentId: student?.id ?? "",
+        kind: "TARGETED",
+        date: fiveDaysAgo,
+        status: "PLANNED",
+        slots: [],
+      },
+    });
+    const first = await finishSession(db, old.id, { studentId: student?.id, at: fiveDaysAgo });
+    expect(first.streak.current).toBeGreaterThanOrEqual(1);
+
+    const todaySession = await oneExerciseSession();
+    const second = await finishSession(db, todaySession, { studentId: student?.id });
+    expect(second.streak.current).toBe(first.streak.current + 1);
+  });
+
+  it("gives no star for a station tapped away — that is a choice, not work", async (ctx) => {
+    needDb(ctx);
+    const db = testDb();
+    const sessionId = await oneExerciseSession();
+    const before = await starBalance(db, student?.id ?? "");
+
+    const skipped = await submitAttempt(db, {
+      sessionId,
+      order: 0,
+      response: { skipped: true },
+      token: "k1",
+    });
+    expect(skipped.starsAwarded).toBe(0);
+    expect(await starBalance(db, student?.id ?? "")).toBe(before);
   });
 });

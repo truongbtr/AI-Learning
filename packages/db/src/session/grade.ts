@@ -27,12 +27,17 @@ import type { PickedSlot } from "./plan";
 
 type Db = PrismaClient;
 
-/** docs/06 §1.5: the reward is immediate and never taken away. */
+/**
+ * docs/06 §1.5: the reward is immediate and never taken away.
+ *
+ * Since ADR-16 stars measure effort, not accuracy: one for every station the child actually works
+ * through, right or not yet right. The two children are not equally far along, and a star that
+ * tracked correctness would have made the star pocket a scoreboard between them. Where their real
+ * level shows is the parent's skill map, not the pocket.
+ */
 export const STARS = {
-  /** Right the first time. */
-  firstTry: 2,
-  /** Right in the end, or simply finished — a child who kept going still earns something. */
-  finished: 1,
+  /** Any station the child worked through — right, nearly right, or answered after the reveal. */
+  exercise: 1,
   /** Getting to the end of the quest. */
   session: 3,
   /** The 30-second movement break (docs/06 §1.8c item 3). */
@@ -553,22 +558,24 @@ export async function submitAttempt(db: Db, input: SubmitAttemptInput): Promise<
         note: slot.reason,
       });
     }
-    starsAwarded = await awardStars(
-      db,
-      session.studentId,
-      mark.correct && tries === 1 ? STARS.firstTry : STARS.finished,
-      "exercise",
-      { type: "Attempt", id: attempt.id },
-    );
+  } else if (mark.pending && (input.response.photoKey || input.response.heard)) {
+    // Only real work goes to the queue: a skipped station has nothing for anyone to grade.
+    await queueForGrading(db, session.studentId, attempt.id, exercise.id, input.response);
+  }
+
+  // One star for the work, whatever the answer turned out to be (ADR-16). A photo taken and a
+  // reading recorded count as work done; tapping "later" is a decision, and earns nothing.
+  if (final && !input.response.skipped) {
+    starsAwarded = await awardStars(db, session.studentId, STARS.exercise, "exercise", {
+      type: "Attempt",
+      id: attempt.id,
+    });
     if (starsAwarded > 0) {
       await db.session.update({
         where: { id: session.id },
         data: { starsEarned: { increment: starsAwarded }, status: "IN_PROGRESS" },
       });
     }
-  } else if (mark.pending && (input.response.photoKey || input.response.heard)) {
-    // Only real work goes to the queue: a skipped station has nothing for anyone to grade.
-    await queueForGrading(db, session.studentId, attempt.id, exercise.id, input.response);
   }
 
   return buildFeedback({
@@ -800,7 +807,7 @@ async function closingLines(db: Db, summary: SessionSummary): Promise<string[]> 
       : "Hôm nay con đã cố gắng hết mình, mình thấy hết đó!";
   const second =
     summary.streak.current >= 2
-      ? `Con học liền ${summary.streak.current} ngày rồi đấy, giỏi quá!`
+      ? `Con đã học ${summary.streak.current} ngày rồi đấy, giỏi quá!`
       : "Mai mình lại gặp nhau nhé!";
   return [first, second];
 }
@@ -867,7 +874,12 @@ async function advanceTracks(
   return moves;
 }
 
-/** One day's learning keeps the fire alight; a missed day starts it again at one, never at zero. */
+/**
+ * The flame counts days learnt and never goes out (ADR-16).
+ *
+ * A day off pauses it — the number stays exactly where it was and the next day of learning adds
+ * one. Nothing a six-year-old earned by turning up is taken back because the family had a weekend.
+ */
 async function bumpStreak(
   db: Db,
   studentId: string,
@@ -876,11 +888,10 @@ async function bumpStreak(
   const today = startOfDay(date);
   const row = await db.streak.findUnique({ where: { studentId } });
   const last = row?.lastActiveDate ? startOfDay(row.lastActiveDate) : null;
-  if (last && last.getTime() === today.getTime()) {
+  if (last && last.getTime() >= today.getTime()) {
     return { current: row?.current ?? 1, longest: row?.longest ?? 1 };
   }
-  const yesterday = new Date(today.getTime() - 24 * 60 * 60 * 1000);
-  const current = last && last.getTime() === yesterday.getTime() ? (row?.current ?? 0) + 1 : 1;
+  const current = (row?.current ?? 0) + 1;
   const longest = Math.max(current, row?.longest ?? 0);
   await db.streak.upsert({
     where: { studentId },

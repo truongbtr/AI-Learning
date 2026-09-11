@@ -12,7 +12,7 @@
 2. **Nhìn – nghe – chạm.** Mọi đề bài có nút loa và **tự đọc khi mở**; icon lớn kèm nhãn ngắn; vùng chạm ≥ 64 px; khoảng cách nút ≥ 16 px (tránh chạm nhầm).
 3. **Chữ ít, to, dễ đọc.** Font tròn, thân thiện, rõ nét chữ a/g một tầng: **Nunito** (Latin) + **Be Vietnam Pro / Baloo 2** cho tiếng Việt; cỡ ≥ 22 px; đề bài ≤ 15 từ.
 4. **Không có thất bại đỏ.** Sai → rung nhẹ + mascot "Gần đúng rồi, thử lại nhé" + gợi ý; không có chữ "SAI", không đếm ngược gây áp lực; không điểm số.
-5. **Phần thưởng tức thì & rõ ràng.** Sao bay lên góc túi sao, âm thanh vui ngắn (≤ 1 s), confetti khi xong phiên; huy hiệu có "lễ trao" riêng.
+5. **Phần thưởng tức thì & rõ ràng.** Sao bay lên góc túi sao, âm thanh vui ngắn (≤ 1 s), confetti khi xong phiên; huy hiệu có "lễ trao" riêng. **Sao đo công sức, không đo đúng sai** (§1.5b).
 6. **Mascot đồng hành.** Mỗi bé chọn mascot (cú, mèo, robot, khủng long, kỳ lân…); mascot nói bằng bong bóng + giọng; là cửa vào gia sư giọng nói.
 7. **Cá nhân hoá nhìn thấy được.** Chủ đề màu/hình theo sở thích (Thanh: robot – xanh dương/cam; Thy: vườn – hồng/tím); tên gọi ở nhà trong lời chào.
 8. **Không lối thoát ra ngoài.** Không link ngoài, không nút mở tab, không nội dung không do hệ thống sinh. Nút "ba mẹ" ở góc (giữ 2 giây) để mở khoá về trang phụ huynh.
@@ -69,6 +69,21 @@ K1 chọn bé → mã 4 hình → K2 (mascot chào bằng giọng)
 - **Nền có chiều sâu:** 3 lớp (trời/xa – cảnh vật – tiền cảnh) để làm parallax nhẹ; mỗi thế giới có bảng màu riêng nhưng cùng bút pháp.
 - **Không có màn hình trống:** mọi trạng thái (đang tải, chưa có bài, mất mạng, chờ chấm) đều có minh hoạ + mascot làm gì đó (ngáp, đọc sách, xoay bánh răng).
 
+### 1.5b Luật sao — đo công sức, không đo đúng sai *(chủ dự án chốt 11/09/2026, ADR-16)*
+
+| Việc | Sao |
+|---|---|
+| **Làm xong một bài** — đúng, gần đúng, hay phải xem đáp án rồi mới xong | **1** |
+| Xong cả phiên | 3 |
+| Nghỉ vận động 30 giây | 1 |
+| Ba mẹ bấm "Khen" | 5 (sao vàng lớn) |
+| Chạm "để sau" (bỏ qua trạm) | 0 — không phải phạt, chỉ là chưa làm |
+
+**Vì sao bỏ luật "đúng ngay lần đầu 2 sao"** (ADR-15 §5): hai bé không học ngang nhau. Sao gắn với
+độ đúng thì bé yếu hơn **luôn** ít sao hơn, và túi sao biến thành bảng so điểm giữa hai anh em —
+trái `00` §6. Ảnh chụp bài viết tay và bài đọc to đã ghi âm vẫn được **1 sao ngay**, không chờ chấm.
+Chỗ phản ánh năng lực thật là bản đồ năng lực của ba mẹ (`P4`), không phải túi sao của con.
+
 ### 1.6 Thế giới trò chơi & cá nhân hoá
 
 Góc của con là một **thế giới** chứ không phải danh sách nút. Mỗi bé có một thế giới riêng theo sở thích, đổi được trong cài đặt:
@@ -76,8 +91,12 @@ Góc của con là một **thế giới** chứ không phải danh sách nút. M
 | Thế giới | Mặc định cho | Bối cảnh | Cách thể hiện môn học |
 |---|---|---|---|
 | **Thành phố Robot** | Chí Thanh | Xưởng máy, bánh răng, tên lửa, bàn cờ khổng lồ, phím đàn phát sáng | Mỗi môn là một toà nhà/khu: Xưởng Số (Toán), Tháp Chữ (Tiếng Việt), Trạm Không Gian (Science), Bến Tàu Tiếng Anh |
-| **Vườn Kỳ Diệu** | Mai Thy | Vườn hoa, hồ nước, sân khấu múa, xưởng vẽ, lâu đài nhỏ | Mỗi môn là một khu vườn/nhà: Vườn Số, Cây Chữ, Hồ Khoa Học, Sân Khấu Tiếng Anh |
+| **Vườn Kỳ Diệu** | Mai Thy | Vườn hoa, hồ nước, nhà kính, bến sen, lâu đài nhỏ | Mỗi môn là một khu vườn: Vườn Số (Toán), Tháp Chữ — tháp chậu hoa a-b-c (Tiếng Việt), Trạm Không Gian — nhà kính + kính thiên văn (Science), Bến Tàu Tiếng Anh — thuyền lá trên hồ sen |
 | Đại Dương / Rừng Khủng Long | tuỳ chọn thêm (P1) | | |
+
+**Hai thế giới phải cân nhau: 4 khu mỗi bên** (chủ dự án chốt 11/09/2026, ADR-16). Cùng bốn cái
+tên, cùng bốn môn, chỉ khác bút pháp — nếu một bé có 4 khu còn bé kia 1 khu thì đứa ít hơn nhận ra
+ngay, và đó đúng là kiểu so sánh `00` §6 cấm.
 
 - **Bản đồ nhiệm vụ (K3)** là con đường uốn lượn qua thế giới; mỗi bài là một trạm có icon môn; nhân vật của bé (avatar) **đi/nhảy/bay** giữa các trạm sau mỗi bài; trạm chưa mở tối màu, trạm xong có sao lấp lánh; cuối đường là rương kho báu.
 - **Tiến bộ nhìn thấy được trong thế giới:** vật phẩm mua bằng sao đặt vào thế giới (cây, đèn, robot phụ, thú cưng đi theo avatar); thành thạo một mạch kỹ năng → một công trình "xây xong" và sáng lên. Trẻ quay lại vì muốn thấy thế giới mình lớn lên.
@@ -141,12 +160,19 @@ Thước đo (pha 8): tỉ lệ ngày con **tự mở app** không cần nhắc 
 
 **A. Mong chờ — có thứ đang lớn lên khi con vắng mặt**
 
-1. **Trứng nở theo ngày học** *(P0)* — mỗi tuần một quả trứng; mỗi ngày con học xong phiên, trứng
-   thêm một vết nứt (`EggProgress.cracks` 0–5); đủ 5 vết thì nở ra một con thú (`Pet`,
-   `StudentPet`) về ở trong thế giới của con. Thú hiếm xuất hiện thưa, không mua được bằng sao.
-2. **Mảnh tranh cuối tuần** *(P0)* — mỗi tuần một bức tranh chủ đề (`WeeklyPicture`, 6 mảnh); mỗi
-   ngày học xong con lật được một mảnh (`StudentPicturePiece`). Chủ nhật đủ mảnh → tranh hiện
-   nguyên, cất vào bộ sưu tập. Nghỉ một ngày thì tranh vẫn còn đó chờ, không mất.
+1. **Trứng nở theo ngày học** *(P0 — sửa 11/09/2026, ADR-16)* — **một quả trứng tại một thời
+   điểm, không phải mỗi tuần một quả**: mỗi ngày con học xong phiên, trứng thêm một vết nứt
+   (`EggProgress.cracks` 0–4); đủ **4 ngày học** thì nở ra một con thú (`Pet`, `StudentPet`) về ở
+   trong thế giới của con, rồi quả trứng kế tiếp bắt đầu từ 0. **Không bao giờ reset về 0 vì nghỉ**
+   — nghỉ thì thanh tiến độ đứng yên, trứng nở chậm hơn thôi. Nhịp mong đợi: **4 ngày học trong 7
+   ngày** → khoảng một tuần một con thú. Hết thú trong `Pet` thì trứng đứng ở mức đầy và chờ (ba mẹ
+   seed thêm thú), không tụt. Thú hiếm xuất hiện thưa, không mua được bằng sao.
+2. **Mảnh tranh** *(P0 — sửa 11/09/2026, ADR-16)* — một bức tranh chủ đề tại một thời điểm
+   (`WeeklyPicture`, 6 mảnh, đánh số `pictureNo` theo thứ tự con sưu tập); mỗi ngày học xong con
+   lật được một mảnh (`StudentPicturePiece`). Đủ 6 mảnh → tranh hiện nguyên, cất vào bộ sưu tập và
+   tranh kế tiếp bắt đầu. **Mảnh đã lật không bao giờ mất**: nghỉ một tuần thì tranh vẫn nằm đó chờ
+   đúng số mảnh cũ. (Trước đây tranh theo tuần lịch nên bé học 3 buổi/tuần **không bao giờ** thấy
+   được một bức tranh trọn vẹn.)
 3. **Thế giới theo giờ thật** *(P0)* — sáng thế giới hửng nắng, chiều ngả vàng, tối có đèn và sao;
    mascot chào theo buổi. Không có đồng hồ đếm ngược, chỉ là thế giới sống cùng giờ của con.
 4. **Thú cưng đi theo avatar** *(P1)* — thú đã nở (`StudentPet.isCompanion`) đi theo nhân vật trên
@@ -190,6 +216,10 @@ Thước đo (pha 8): tỉ lệ ngày con **tự mở app** không cần nhắc 
 Nguyên tắc chung cho cả 14 cơ chế: **không có cơ chế nào lấy đi thứ con đã có** (không mất sao,
 không mất streak vì nghỉ một ngày, không đếm ngược), và **không cơ chế nào so sánh hai bé**
 (`00` §6).
+
+**Ngọn lửa `Streak` cũng theo nguyên tắc đó** (ADR-16): nó đếm **số ngày con đã học**, nghỉ thì
+đứng yên — không bao giờ về 1. Vì vậy câu của mascot là "con đã học N ngày rồi", không phải "N ngày
+liên tiếp".
 
 ### 1.9 Tài sản đồ hoạ — nguồn & quy trình sản xuất
 

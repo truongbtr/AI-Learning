@@ -10,6 +10,7 @@ import {
   ellipse,
   g,
   leaf,
+  light,
   PALETTE as P,
   path,
   rect,
@@ -348,6 +349,211 @@ const ZONES_GARDEN = {
       flower(1490, 840, 0.9, G.petal) +
       flower(1330, 890, 0.55, G.magic) +
       g(sparkle(420, 640, 14, P.white) + sparkle(1200, 600, 12, P.white), { id: "sparkles" }),
+  },
+  "thap-chu": {
+    vi: "Tháp Chữ",
+    mid: () => {
+      // three flower pots stacked into a tower, a letter painted on each
+      let tower = "";
+      const letters = ["a", "b", "c"];
+      for (let i = 0; i < 3; i++) {
+        const w = 210 - i * 26;
+        const x = 160 + i * 13;
+        const y = 690 - i * 112;
+        tower +=
+          path(`M${x} ${y}h${w}l-16 96H${x + 16}Z`, i % 2 ? G.petal : G.magic) +
+          path(
+            `M${x + w * 0.58} ${y}h${w * 0.42}l-16 96h-${w * 0.42 - 10}Z`,
+            shade(i % 2 ? G.petal : G.magic),
+          ) +
+          rect(x - 10, y - 22, w + 20, 26, 12, i % 2 ? G.petalDeep : shade(G.magic)) +
+          `<text x="${x + w / 2}" y="${y + 72}" text-anchor="middle" font-family="Nunito, sans-serif" font-size="62" font-weight="800" fill="${P.white}">${letters[i]}</text>`;
+      }
+      return (
+        tower +
+        // a climbing vine beside the tower
+        g(
+          path(`M96 790c40-70 8-120 46-190 34-62 6-108 34-170`, "none", {
+            stroke: G.grassDark,
+            "stroke-width": 12,
+            fill: "none",
+            "stroke-linecap": "round",
+          }) +
+            leaf(112, 660, 56, G.grass, 54) +
+            leaf(126, 540, 50, G.grass, -58) +
+            leaf(150, 430, 46, G.grassDark, 48),
+          { id: "vine" },
+        ) +
+        // a giant open storybook resting on a toadstool, right of the safe area
+        ellipse(1380, 786, 168, 34, "#8A6B3C", { "fill-opacity": 0.22 }) +
+        rect(1348, 620, 64, 166, 24, "#FFF3E2") +
+        path(`M1256 640a124 92 0 0 1 248 0Z`, "#F27D7D") +
+        path(`M1380 548a124 92 0 0 1 124 92h-124Z`, shade("#F27D7D")) +
+        circle(1312, 602, 18, P.white, { "fill-opacity": 0.9 }) +
+        circle(1436, 614, 13, P.white, { "fill-opacity": 0.8 }) +
+        g(
+          path(
+            `M-180 0c56-50 124-50 180 0 56-50 124-50 180 0v110c-56-50-124-50-180 0-56-50-124-50-180 0Z`,
+            P.white,
+          ) +
+            path(`M0 0c56-50 124-50 180 0v110c-56-50-124-50-180 0Z`, "#EFE6FA") +
+            rect(-7, 0, 14, 110, 7, G.magic),
+          { id: "book", transform: "translate(1380 450)" },
+        ) +
+        // a butterfly that will flutter
+        g(
+          path(`M0 0c-44-40-84-26-72 16 8 28 44 32 72 6Z`, G.petal) +
+            path(`M0 0c44-40 84-26 72 16-8 28-44 32-72 6Z`, G.petalDeep) +
+            rect(-6, -14, 12, 46, 6, shade(G.magic)),
+          { id: "butterfly", transform: "translate(1490 330) rotate(-12)" },
+        )
+      );
+    },
+    fore: () =>
+      // lettered stepping stones along the path, the way the number garden has numbered ones
+      ["a", "b", "c"].map((_l, i) => ellipse(560 + i * 140, 862, 54, 21, "#E7D2AE")).join("") +
+      ["a", "b", "c"]
+        .map(
+          (l, i) =>
+            `<text x="${560 + i * 140}" y="${874}" text-anchor="middle" font-family="Nunito, sans-serif" font-size="36" font-weight="800" fill="${G.primary}">${l}</text>`,
+        )
+        .join("") +
+      g(
+        ellipse(1300, 902, 58, 16, "#8A6B3C", { "fill-opacity": 0.22 }) +
+          rect(1286, 842, 28, 60, 12, "#FFF3E2") +
+          path(`M1236 848a64 46 0 0 1 128 0Z`, "#F27D7D") +
+          circle(1272, 830, 11, P.white) +
+          circle(1318, 838, 8, P.white),
+        { id: "toadstool" },
+      ) +
+      flower(1520, 860, 0.8, G.petal) +
+      flower(230, 900, 0.5, G.magic) +
+      g(sparkle(330, 660, 14, P.white) + sparkle(1240, 620, 12, P.white), { id: "sparkles" }),
+  },
+  "tram-khong-gian": {
+    vi: "Trạm Không Gian",
+    mid: () =>
+      // a glass greenhouse dome on the left — the garden's observatory
+      path(`M96 790V626a172 172 0 0 1 344 0v164Z`, "#CDEAF7") +
+      path(`M268 454a172 172 0 0 1 172 172v164H268Z`, "#ABD9EE") +
+      path(`M268 454v336`, "none", { stroke: P.white, "stroke-width": 10 }) +
+      path(`M120 700h296`, "none", { stroke: P.white, "stroke-width": 10 }) +
+      rect(232, 690, 72, 100, 22, G.magic) +
+      circle(268, 440, 26, P.reward) +
+      // a dandelion balloon lifting off on the right
+      g(
+        circle(0, 0, 118, P.white, { "fill-opacity": 0.92 }) +
+          circle(34, 26, 86, "#EFE6FA", { "fill-opacity": 0.85 }) +
+          [0, 45, 90, 135, 180, 225, 270, 315]
+            .map((a) =>
+              sparkle(0, 0, 20, P.white, 0.9).replace(
+                "<path",
+                `<path transform="rotate(${a}) translate(0 -96)"`,
+              ),
+            )
+            .join("") +
+          path(`M-46 118h92l-14 74h-64Z`, "#D8A76B") +
+          path(`M0 118h46l-14 74h-32Z`, shade("#D8A76B")) +
+          path(`M-40 108 0 16 40 108`, "none", {
+            stroke: G.grassDark,
+            "stroke-width": 7,
+            fill: "none",
+          }),
+        { id: "balloon", transform: "translate(1370 470)" },
+      ) +
+      // a ringed planet in the corner, clear of both the sun and the balloon
+      g(
+        circle(0, 0, 50, G.magic) +
+          path(`M-50 0a50 50 0 0 0 50 50 50 50 0 0 0 50-50Z`, shade(G.magic)) +
+          ellipse(0, 6, 84, 18, P.reward, { "fill-opacity": 0.75 }),
+        { id: "planet", transform: "translate(1534 312) rotate(-14)" },
+      ),
+    fore: () =>
+      // a little telescope on a tripod, on the open ground to the right of the greenhouse
+      g(
+        ellipse(1234, 916, 74, 18, "#8A6B3C", { "fill-opacity": 0.22 }) +
+          path(`M1200 908 1240 812M1274 908 1240 812M1240 908V812`, "none", {
+            stroke: "#B98A5A",
+            "stroke-width": 11,
+            "stroke-linecap": "round",
+          }) +
+          g(
+            rect(-86, -24, 172, 48, 24, "#8FB8E8") +
+              rect(24, -24, 62, 48, 24, "#6E9AD6") +
+              circle(-86, 0, 28, P.reward) +
+              circle(-92, -8, 12, P.white, { "fill-opacity": 0.85 }),
+            { transform: "translate(1240 798) rotate(-24)" },
+          ),
+        { id: "telescope" },
+      ) +
+      // star flowers: a five-pointed head on a stem, scattered where nothing else is
+      g(
+        [
+          [150, 856, 26],
+          [268, 902, 18],
+          [1490, 878, 22],
+        ]
+          .map(
+            ([x, y, r]) =>
+              path(`M${x} ${y}v${r * 2.6}`, "none", {
+                stroke: G.grassDark,
+                "stroke-width": Math.max(5, r * 0.3),
+                "stroke-linecap": "round",
+              }) + star(x, y, r),
+          )
+          .join(""),
+        { id: "star-flowers" },
+      ) +
+      flower(1380, 892, 0.55, G.magic) +
+      g(sparkle(380, 640, 15, P.white) + sparkle(1240, 660, 12, P.white), { id: "sparkles" }),
+  },
+  "ben-tau-tieng-anh": {
+    vi: "Bến Tàu Tiếng Anh",
+    mid: () =>
+      // a wide lily pond: this harbour is made of leaves, not concrete
+      rect(0, 640, W, 150, 0, "#8AD4F0") +
+      path(`M0 640h${W}v26a1600 1600 0 0 1-${W} 0Z`, "#A8E2F6") +
+      // a leaf boat with a petal sail carrying a letter
+      g(
+        path(`M-150 0h300c-14 66-70 104-150 104S-136 66-150 0Z`, G.grass) +
+          path(`M0 0h150c-14 66-70 104-150 104Z`, G.grassDark) +
+          path(`M-150 0h300l10-18h-320Z`, light(G.grass)) +
+          rect(-8, -190, 15, 190, 7, "#B98A5A") +
+          path(`M8-182C116-140 116-56 8-14Z`, G.petal) +
+          path(`M8-120C72-104 92-56 8-14Z`, shade(G.petal)) +
+          `<text x="46" y="-88" text-anchor="middle" font-family="Nunito, sans-serif" font-size="56" font-weight="800" fill="${P.white}">A</text>`,
+        { id: "boat", transform: "translate(250 640)" },
+      ) +
+      // lily pads, and a flower lighthouse on its own little island
+      ellipse(1180, 700, 92, 30, G.grass) +
+      path(`M1180 700a92 30 0 0 1 92-30Z`, G.grassDark) +
+      ellipse(1330, 736, 76, 26, G.grass) +
+      ellipse(1240, 766, 64, 22, G.grassDark) +
+      ellipse(1470, 692, 170, 50, G.grass) +
+      path(`M1470 692a170 50 0 0 1 170-50Z`, G.grassDark) +
+      g(
+        rect(-30, -230, 60, 236, 24, P.white) +
+          rect(-30, -196, 60, 34, 0, G.petal) +
+          rect(-30, -118, 60, 34, 0, G.petal) +
+          rect(6, -230, 24, 236, 12, "#F0E8F6", { "fill-opacity": 0.55 }) +
+          circle(0, -248, 38, P.reward) +
+          circle(-12, -260, 14, P.white, { "fill-opacity": 0.9 }),
+        { id: "lighthouse", transform: "translate(1470 668)" },
+      ),
+    fore: () =>
+      // a plank jetty over the water and reeds at both ends
+      rect(0, 800, W, 26, 12, "#C08A4E") +
+      rect(120, 826, 26, 90, 8, "#A9764E") +
+      rect(1420, 826, 26, 90, 8, "#A9764E") +
+      g(
+        leaf(90, 900, 96, G.grassDark, 10) +
+          leaf(130, 912, 74, G.grass, -14) +
+          leaf(1508, 906, 88, G.grassDark, -8) +
+          leaf(1546, 916, 68, G.grass, 12),
+        { id: "reeds" },
+      ) +
+      flower(300, 890, 0.5, G.petal) +
+      g(sparkle(420, 700, 14, P.white) + sparkle(1180, 680, 12, P.white), { id: "sparkles" }),
   },
 };
 

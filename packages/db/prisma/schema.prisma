@@ -1072,22 +1072,27 @@ model StudentPet {
   @@unique([studentId, petCode])
 }
 
+// One egg at a time, counted from the child's first (ADR-16): four days of learning hatch it and
+// the next one starts. Not keyed by week, so resting never empties it.
 model EggProgress {
-  id             String   @id @default(cuid())
+  id             String    @id @default(cuid())
   studentId      String
-  student        Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
-  weekStart      DateTime @db.Date
-  cracks         Int      @default(0) // 0-5
+  student        Student   @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  eggNo          Int       @default(0)
+  startedOn      DateTime  @db.Date
+  cracks         Int       @default(0) // 0-4
   hatchedPetCode String?
-  createdAt      DateTime @default(now())
-  updatedAt      DateTime @updatedAt
+  hatchedAt      DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
 
-  @@unique([studentId, weekStart])
+  @@unique([studentId, eggNo])
 }
 
+// The catalogue of pictures in the order they are collected (ADR-16).
 model WeeklyPicture {
   id        String   @id @default(cuid())
-  weekStart DateTime @unique @db.Date
+  pictureNo Int      @unique
   theme     String
   imageKey  String
   pieces    Int      @default(6)
@@ -1099,11 +1104,11 @@ model StudentPicturePiece {
   id         String   @id @default(cuid())
   studentId  String
   student    Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
-  weekStart  DateTime @db.Date
+  pictureNo  Int      @default(0)
   pieceIndex Int
   earnedAt   DateTime @default(now())
 
-  @@unique([studentId, weekStart, pieceIndex])
+  @@unique([studentId, pictureNo, pieceIndex])
 }
 
 enum KidMailFrom {

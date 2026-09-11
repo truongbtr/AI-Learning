@@ -91,8 +91,13 @@ export const WEEKLY_EVENTS: readonly WeeklyEvent[] = [
   },
 ] as const;
 
+/** Rotation index, safe for dates before the epoch week (JS `%` keeps the sign). */
+function rotate(index: number, length: number): number {
+  return ((index % length) + length) % length;
+}
+
 export function weeklyEvent(date: Date): WeeklyEvent {
-  return WEEKLY_EVENTS[weekIndex(date) % WEEKLY_EVENTS.length] as WeeklyEvent;
+  return WEEKLY_EVENTS[rotate(weekIndex(date), WEEKLY_EVENTS.length)] as WeeklyEvent;
 }
 
 /** The picture the week's pieces build up to (docs/06 §1.8c item 2). Six pieces, one a day. */
@@ -112,8 +117,32 @@ export const PICTURE_THEMES: readonly { theme: string; nameVi: string; imageKey:
 export const PICTURE_PIECES = 6;
 
 export function pictureForWeek(date: Date): { theme: string; nameVi: string; imageKey: string } {
-  return PICTURE_THEMES[weekIndex(date) % PICTURE_THEMES.length] as (typeof PICTURE_THEMES)[number];
+  return PICTURE_THEMES[
+    rotate(weekIndex(date), PICTURE_THEMES.length)
+  ] as (typeof PICTURE_THEMES)[number];
 }
 
-/** Cracks in this week's egg: five days of learning hatch it (docs/06 §1.8c item 1). */
-export const EGG_CRACKS_TO_HATCH = 5;
+/**
+ * The n-th picture a child collects, counting from the first one (docs/06 §1.8c item 2, ADR-16).
+ *
+ * Pictures follow the child, not the calendar: a week with three learning days leaves three pieces
+ * turned over and the same picture still waiting on Monday. Nothing already earned is taken back.
+ */
+export function pictureByNumber(pictureNo: number): {
+  theme: string;
+  nameVi: string;
+  imageKey: string;
+} {
+  return PICTURE_THEMES[
+    rotate(pictureNo, PICTURE_THEMES.length)
+  ] as (typeof PICTURE_THEMES)[number];
+}
+
+/**
+ * Days of learning that hatch one egg (docs/06 §1.8c item 1, ADR-16).
+ *
+ * Four, not five, and counted from the first day of *this* egg instead of from Monday: the two
+ * children do not learn on the same days, and an egg that went back to zero every Sunday punished
+ * whoever rested. Resting now only makes the egg slower.
+ */
+export const EGG_DAYS_TO_HATCH = 4;

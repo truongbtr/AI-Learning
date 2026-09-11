@@ -221,16 +221,15 @@ export async function useMemory(db: Db, studentId: string, memoryId: string): Pr
   });
 }
 
-/** This week's picture, egg and event without touching anything — for the parent view. */
+/** The egg on the go, the pieces collected and this week's event — read-only, for the parent view. */
 export async function kidWeek(db: Db, studentId: string, at = new Date()) {
   return {
     weekStart: weekStartOf(at).toISOString().slice(0, 10),
     event: weeklyEvent(at),
-    egg: await db.eggProgress.findUnique({
-      where: { studentId_weekStart: { studentId, weekStart: weekStartOf(at) } },
+    egg: await db.eggProgress.findFirst({
+      where: { studentId, hatchedPetCode: null },
+      orderBy: { eggNo: "desc" },
     }),
-    pieces: await db.studentPicturePiece.count({
-      where: { studentId, weekStart: weekStartOf(at) },
-    }),
+    pieces: await db.studentPicturePiece.count({ where: { studentId } }),
   };
 }
