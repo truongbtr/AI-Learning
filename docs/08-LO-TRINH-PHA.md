@@ -117,8 +117,9 @@ Sau pha 3 gia đình đã có thể **dùng thử hằng ngày**: bài luyện t
 3. K8 "Hỏi bạn Cú": `ASSIST_KID` + bộ lọc 2 lớp + lưu hội thoại 90 ngày + phụ huynh xem lại; eval 30 câu ngoài chủ đề.
 4. Dạng bài `SPEAK_ANSWER`, `TRACE`, `MINI_STORY`; `GRADE` cho READ_ALOUD (vùng xám), SPEAK_ANSWER, WRITE_PHOTO (vision); hàng chờ chấm trong P7; phụ huynh sửa điểm.
 5. K6 chơi thêm theo môn với "vé"/ngày; gửi báo cáo qua email (P1).
+6. **Lấp hai lỗ `ENL.RL.*` (đọc hiểu) và `ENL.W.*` (viết câu)** — hai mạch này hiện **không có dạng bài nào chở được**, nên bản đồ năng lực của cả hai bé để trắng ở đó và eval đọc ảnh không đề xuất được chúng (`docs/eval/intake-v1.md` §2 ca *Read and match* và *Draw and write*). `MINI_STORY` ở mục 4 là dạng bài của `ENL.RL.*`; `TRACE` + `WRITE_PHOTO` là của `ENL.W.*`. Cùng lúc: khi `docType = WORKSHEET` và môn là ENL, `inbox:pull` đưa **cả mạch kỹ năng** vào `context.json` chứ không chỉ kết quả tìm kiếm, vì hai mạch này trượt full-text 100% số ca.
 
-**Tiêu chí xong:** báo cáo tuần có 3 số QC đối chiếu đúng DB; 10 câu hỏi phụ huynh trả lời có nguồn; 30/30 câu ngoài chủ đề bị chặn; bài viết chụp được chấm và phản hồi ≤ 2 phút.
+**Tiêu chí xong:** báo cáo tuần có 3 số QC đối chiếu đúng DB; 10 câu hỏi phụ huynh trả lời có nguồn; 30/30 câu ngoài chủ đề bị chặn; bài viết chụp được chấm và phản hồi ≤ 2 phút; **`ENL.RL.*` và `ENL.W.*` mỗi mạch có ≥ 1 dạng bài phát hành và hiện được trạng thái trên P4** (hết trắng).
 
 ## Pha 8 — Vận hành & nghiệm thu thực tế
 

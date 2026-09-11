@@ -34,6 +34,8 @@
     "content:export": "pnpm --filter @mtct/db run content:export",
     "content:import-intake": "pnpm --filter @mtct/db run content:import-intake",
     "eval:intake": "pnpm --filter @mtct/db run eval:intake",
+    "db:school-year": "pnpm --filter @mtct/db run school-year",
+    "db:clean-test-students": "pnpm --filter @mtct/db run clean-test-students",
     "tts:voices": "pnpm --filter @mtct/db run tts:voices",
     "tts:smoke": "pnpm --filter @mtct/db run tts:smoke",
     "art:build": "node scripts/art-build/build.mjs",

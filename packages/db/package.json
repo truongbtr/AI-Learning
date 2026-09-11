@@ -30,6 +30,8 @@
     "content:export": "dotenv -e ../../.env -- tsx src/cli/content-export.ts",
     "content:import-intake": "dotenv -e ../../.env -- tsx src/cli/content-import-intake.ts",
     "eval:intake": "dotenv -e ../../.env -- tsx src/cli/eval-intake.ts",
+    "school-year": "dotenv -e ../../.env -- tsx src/cli/school-year.ts",
+    "clean-test-students": "dotenv -e ../../.env -- tsx src/cli/clean-test-students.ts",
     "tts:voices": "dotenv -e ../../.env -- tsx src/cli/tts-voices.ts",
     "tts:smoke": "dotenv -e ../../.env -- tsx src/cli/tts-smoke.ts"
   },

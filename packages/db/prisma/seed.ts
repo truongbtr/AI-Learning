@@ -4,7 +4,7 @@
  *  - ONE User role=ADMIN from ADMIN_USERNAME/ADMIN_EMAIL/ADMIN_PASSWORD (skipped when an ADMIN exists),
  *    mustChangePassword = true.
  *  - Timetable 1B3 + 30 TimetableSlot from content/timetable/1B3-2026.json.
- *  - 35 SchoolWeek from SCHOOL_YEAR_START (default 2026-09-08).
+ *  - 35 SchoolWeek from SCHOOL_YEAR_START (default 2026-08-24, confirmed by the owner 12/09/2026).
  *  - AiConfig default row, >= 15 Badge, >= 20 Collectible, the pets the weekly egg hatches.
  *  - Skill stays EMPTY (phase 1).
  *  - Sample students (thy, thanh) ONLY when SEED_DEV=1 — never in production.
@@ -124,7 +124,7 @@ async function seedTimetable() {
 }
 
 async function seedSchoolWeeks() {
-  const start = parseIsoDate(process.env.SCHOOL_YEAR_START ?? "2026-09-08");
+  const start = parseIsoDate(process.env.SCHOOL_YEAR_START ?? "2026-08-24");
   const schoolYear = `${start.getUTCFullYear()}-${start.getUTCFullYear() + 1}`;
   const weeks = buildSchoolWeeks(start);
   // Only create missing weeks: parents may edit dates/holidays in admin later (docs/11 §5).

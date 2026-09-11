@@ -2,6 +2,40 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 5 — 12/09/2026 — Bảng điều khiển ba mẹ
+
+*(đang làm — mục này viết dần, việc 0 xong trước)*
+
+### Việc 0 — ba quyết định của chủ dự án
+
+**1. Năm học bắt đầu 24/08/2026.** `SchoolWeek` tính lại: tuần 1 `24/08 → 30/08`, tuần 3 là tuần
+có ngày 12/09. Đúng con số chính nhật ký lớp suy ra (`pnpm db:school-year` in cả hai để đối chiếu:
+"từ ngày 11/09 bài 13, đếm ngược 13 buổi"). Mặc định của seed và `.env.example` đổi theo. Ô ngày
+vẫn sửa tay được ở `/parent/school`; lệnh `pnpm db:school-year -- --apply` làm cùng việc từ dòng
+lệnh và **chỉ in ra** nếu thiếu `--apply`.
+
+**2. Dọn hồ sơ test: 31 xoá, 19 giữ.** `pnpm db:clean-test-students` (thêm `--apply` mới xoá thật).
+Quy tắc ba tầng ở `packages/db/src/maintenance/test-students.ts`, có test đơn vị: `thy`/`thanh`
+không bao giờ là ứng viên; ứng viên phải **vừa** khớp mẫu slug e2e sinh ra **vừa** có tài khoản đã
+tắt; và ứng viên nào mang **bất kỳ** dữ liệu học nào cũng được **giữ lại và báo cáo**. Kết quả:
+
+| Nhóm | Số | Vì sao |
+|---|---|---|
+| Hồ sơ thật | 2 | `thy` (249 bằng chứng, 34 phiên), `thanh` |
+| Giữ vì có dữ liệu | **17** | 15 hồ sơ `p1kid-*` mỗi hồ sơ 3 bằng chứng · `p1kid-bllrg` 11 bằng chứng + 1 phiên + 12 lượt làm bài · `thy-bo9kq` 3 phiên |
+| Đã xoá | **31** | hồ sơ `thy-*`/`thanh-*` rỗng hoàn toàn |
+
+Sau khi chạy: 50 → **19 hồ sơ**, `Evidence` vẫn **305** (không mất dòng nào), `thy` vẫn 34 phiên.
+Còn **15 tài khoản phụ huynh e2e** (`me-*`) nay không còn con nào — chưa xoá vì ngoài phạm vi việc
+0; xoá được bằng `pnpm db:clean-test-students -- --apply --with-orphan-parents`.
+
+**3. Hai lỗ `ENL.RL.*` và `ENL.W.*` chờ pha 7.** Đọc hiểu (`ENL.RL.*`) và viết câu (`ENL.W.*`) hiện
+**không có dạng bài nào chở được**, nên trên bản đồ năng lực P4 hai mạch này để trắng và eval đọc
+ảnh trượt 100% số ca thuộc chúng (`docs/eval/intake-v1.md` §2: *Read and match*, *Draw and write* —
+mã đúng **không xuất hiện ở đâu** trong ngữ cảnh đưa cho người đọc). Dạng bài chở được chúng là
+`MINI_STORY` và `TRACE`/`WRITE_PHOTO`, đã nằm ở pha 7 mục 4 — nay ghi thành **mục 6 và một tiêu chí
+xong riêng** của pha 7 trong `docs/08`. Không cố nhét vào pha 5.
+
 ## Pha 4 — 12/09/2026 — Nạp ảnh bài vở, nhật ký lớp & duyệt
 
 Trạng thái: **xong, 7/7 tiêu chí đạt** — trừ một nửa của tiêu chí eval phải chờ 20 ảnh mẫu của chủ
