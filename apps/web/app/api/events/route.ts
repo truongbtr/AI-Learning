@@ -18,6 +18,8 @@ interface Snapshot {
   stars: number;
   graded: number;
   badges: string[];
+  /** Readings of photos that came back from the queue and are waiting for a parent (P7). */
+  toReview: number;
 }
 
 async function snapshotOf(studentId: string): Promise<Snapshot> {
@@ -38,6 +40,9 @@ async function snapshotOf(studentId: string): Promise<Snapshot> {
     select: { badgeCode: true },
     orderBy: { earnedAt: "asc" },
   });
+  const toReview = await prisma.intakeResult.count({
+    where: { reviewedAt: null, job: { studentId } },
+  });
   return {
     sessionId: session?.id ?? null,
     status: session?.status ?? null,
@@ -46,6 +51,7 @@ async function snapshotOf(studentId: string): Promise<Snapshot> {
     graded:
       session?.attempts.filter((a) => a.gradedBy === "AI" || a.gradedBy === "PARENT").length ?? 0,
     badges: badges.map((b) => b.badgeCode),
+    toReview,
   };
 }
 
@@ -56,6 +62,7 @@ function sameSnapshot(a: Snapshot, b: Snapshot): boolean {
     a.answered === b.answered &&
     a.stars === b.stars &&
     a.graded === b.graded &&
+    a.toReview === b.toReview &&
     a.badges.join(",") === b.badges.join(",")
   );
 }

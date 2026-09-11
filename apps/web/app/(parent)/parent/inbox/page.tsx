@@ -7,6 +7,7 @@ import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { Stat } from "@/components/ui/stat";
 import { guardianStudentIds, guardPage } from "@/lib/auth/session";
 import { formatDateTime } from "@/lib/utils";
+import { LiveRefresh } from "./live-refresh";
 
 export const dynamic = "force-dynamic";
 
@@ -30,7 +31,9 @@ export default async function ParentInboxPage() {
     orderBy: { createdAt: "desc" },
     take: 30,
     include: {
-      job: { select: { student: { select: { nickname: true } }, createdAt: true } },
+      job: {
+        select: { studentId: true, student: { select: { nickname: true } }, createdAt: true },
+      },
       items: { select: { outcome: true } },
     },
   });
@@ -44,6 +47,16 @@ export default async function ParentInboxPage() {
     take: 20,
     include: { student: { select: { nickname: true } } },
   });
+
+  // Only the children who actually have something in flight are worth a live stream: one stream
+  // per child in the database would be dozens of open connections on a dev machine, and the page
+  // a parent stares at must stay light.
+  const watching = [
+    ...new Set([
+      ...waiting.map((job) => job.studentId).filter((id): id is string => Boolean(id)),
+      ...toReview.map((r) => r.job.studentId).filter((id): id is string => Boolean(id)),
+    ]),
+  ].slice(0, 4);
 
   return (
     <div className="flex flex-col gap-6">
@@ -59,6 +72,8 @@ export default async function ParentInboxPage() {
           </Link>
         }
       />
+
+      <LiveRefresh studentIds={watching} />
 
       <div className="grid gap-4 sm:grid-cols-3">
         <Stat label="Chờ ba mẹ duyệt" value={String(counts.toReview)} />

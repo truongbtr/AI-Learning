@@ -430,11 +430,31 @@ test("2-5. 5 ảnh → hàng chờ → đọc → duyệt: BLANK, mastery, Raz-K
   expect(rows.find((s) => s.code === "ENL.RF.FLUENCY_LEVEL_C")?.mastery).toBeCloseTo(85, 0);
 });
 
-test("6. hộp thư duyệt: ba hàng chờ và badge", async ({ page }) => {
+test("6. hộp thư duyệt: ba hàng chờ, badge, và SSE báo khi có kết quả", async ({ page }) => {
   await adminLogin(page);
   await page.goto("/parent/inbox");
   await expect(page.getByText("Chờ ba mẹ duyệt")).toBeVisible();
   await expect(page.getByText("Đang chờ đọc (hàng chờ AI)")).toBeVisible();
   await expect(page.getByText("Bài mở chờ chấm")).toBeVisible();
   await page.screenshot({ path: join(SHOTS, "inbox.png"), fullPage: true });
+
+  // The stream the page listens to: it must carry how many readings are waiting for a parent, so
+  // the list refreshes itself when `inbox:push` runs on the computer in the other room.
+  const first = await page.evaluate(
+    (id) =>
+      new Promise<{ toReview?: number } | null>((resolve) => {
+        const source = new EventSource(`/api/events?studentId=${encodeURIComponent(id)}`);
+        source.addEventListener("state", (event) => {
+          source.close();
+          resolve(JSON.parse((event as MessageEvent).data));
+        });
+        setTimeout(() => {
+          source.close();
+          resolve(null);
+        }, 10_000);
+      }),
+    studentId,
+  );
+  expect(first, "SSE không gửi state nào").not.toBeNull();
+  expect(typeof first?.toReview).toBe("number");
 });
