@@ -168,13 +168,92 @@
   background: var(--color-ink-200);
 }
 
-/* Kid area: playful sky/meadow gradient until phase 3 world art arrives. */
+/*
+ * ───────────────────────────── Kid area (docs/06 §1) ─────────────────────────────
+ * The child's world has its own type, its own colours and its own rules: nothing smaller than
+ * 22 px, nothing to tap smaller than 64 px, and no red anywhere.
+ */
 .kid-world {
   font-family: var(--font-kid);
-  color: #22303a;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.6), transparent 30%),
-    radial-gradient(circle at 80% 10%, rgba(255, 230, 120, 0.5), transparent 25%),
-    linear-gradient(180deg, #bfe6ff 0%, #e8f7ff 45%, #c8f2c0 75%, #a3e39a 100%);
+  color: #2b2b3a;
+  background: #fff8ec;
   min-height: 100dvh;
+}
+.kid-world :where(p, span, button, label, li) {
+  font-size: max(1em, 22px);
+}
+
+/*
+ * The mascot is a real SVG inlined by components/kid/mascot.tsx, so the parts inside it can move.
+ * `transform-box: fill-box` is what makes transform-origin mean "the middle of this shape".
+ */
+.mascot-alive :where(#eye-l, #eye-r) {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: kid-blink 6.5s infinite;
+}
+.mascot-alive #eye-r {
+  animation-delay: 0.08s;
+}
+@keyframes kid-blink {
+  0%,
+  93%,
+  100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.08);
+  }
+}
+
+.mascot-alive #antenna {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation: kid-sway 3.4s ease-in-out infinite;
+}
+@keyframes kid-sway {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+/* While the text is being read, the mouth moves with it (docs/06 §1.7 `talk`). */
+.mascot-talking #mouth {
+  transform-box: fill-box;
+  transform-origin: center top;
+  animation: kid-talk 0.26s ease-in-out infinite alternate;
+}
+@keyframes kid-talk {
+  from {
+    transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1.3);
+  }
+}
+
+/* Background life: clouds drift, gears turn, grass sways — all transform-only. */
+.kid-world #clouds,
+[data-layer="sky"] #clouds {
+  animation: kid-drift 60s linear infinite;
+}
+@keyframes kid-drift {
+  from {
+    transform: translateX(-3%);
+  }
+  to {
+    transform: translateX(3%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot-alive *,
+  .mascot-talking *,
+  [data-layer] * {
+    animation: none !important;
+  }
 }

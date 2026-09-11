@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "web",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@mtct/web", "dev"],
+      "port": 5000,
+      "url": "http://localhost:5000"
+    }
+  ]
+}
