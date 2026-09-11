@@ -2,7 +2,7 @@
   "skillCode": "VIET.HV.DAU_THANH",
   "subject": "VIET",
   "generatedBy": "claude-code",
-  "promptVersion": "exercise-gen-v1",
+  "promptVersion": "exercise-gen-v2",
   "lessonRefs": [
     "KNTT-TV1-T1-B02",
     "KNTT-TV1-T1-B03",
@@ -10,7 +10,7 @@
     "KNTT-TV1-T1-B07",
     "KNTT-TV1-T1-B09"
   ],
-  "note": "Năm dấu thanh học kỳ 1 — SGK Tiếng Việt 1 tập một Bài 2, 3, 6, 7, 9.",
+  "note": "Sáu thanh: ngang, huyền (bài 2), sắc (bài 3), hỏi (bài 6), nặng (bài 7), ngã (bài 9) — mỗi bài luyện ghi đúng bài dạy thanh đó.",
   "exercises": [
     {
       "id": "viet-dauthanh-0001",
@@ -19,30 +19,25 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "model",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng “bà” mang dấu gì?",
+        "text": "Tiếng nào mang dấu huyền?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dấu huyền"
+          "text": "bà"
         },
         {
           "id": "b",
-          "text": "dấu sắc",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "c",
-          "text": "dấu hỏi",
-          "errorTag": "sai_dau_thanh"
+          "text": "ba",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "answerKey": "a",
-      "hints": ["Dấu huyền là nét xiên đi xuống bên trái."],
+      "hints": ["Nhìn dấu nhỏ ở ngay trên (hoặc dưới) nguyên âm."],
       "explanation": "“bà” mang dấu huyền.",
       "meta": {
         "estSeconds": 20,
@@ -57,35 +52,30 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng “bá” mang dấu gì?",
+        "text": "Ô nào có dấu huyền?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dấu hỏi",
+          "text": "bỏ",
           "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "dấu nặng",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "c",
-          "text": "dấu sắc"
+          "text": "bò"
         }
       ],
-      "answerKey": "c",
-      "hints": ["Dấu sắc là nét xiên đi lên bên phải."],
-      "explanation": "“bá” mang dấu sắc.",
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai tiếng, nghe giọng lên hay xuống."],
+      "explanation": "“bò” mang dấu huyền.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
@@ -95,35 +85,30 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng “bả” mang dấu gì?",
+        "text": "Tìm tiếng mang dấu huyền nhé.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dấu ngã",
-          "errorTag": "sai_dau_thanh"
+          "text": "cò"
         },
         {
           "id": "b",
-          "text": "dấu hỏi"
-        },
-        {
-          "id": "c",
-          "text": "dấu nặng",
+          "text": "cỏ",
           "errorTag": "sai_dau_thanh"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Dấu hỏi giống cái móc câu."],
-      "explanation": "“bả” mang dấu hỏi.",
+      "answerKey": "a",
+      "hints": ["Dấu huyền đi xuống, dấu sắc đi lên nhé."],
+      "explanation": "“cò” mang dấu huyền.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
@@ -133,35 +118,30 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "model",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng “bạ” mang dấu gì?",
+        "text": "Chạm vào tiếng có dấu huyền.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dấu nặng"
+          "text": "đa",
+          "errorTag": "thieu_dau_thanh"
         },
         {
           "id": "b",
-          "text": "dấu ngã",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "c",
-          "text": "dấu huyền",
-          "errorTag": "sai_dau_thanh"
+          "text": "đà"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Dấu nặng là một chấm ở dưới."],
-      "explanation": "“bạ” mang dấu nặng.",
+      "answerKey": "b",
+      "hints": ["Thanh ngang là tiếng đọc đều, không có dấu nào."],
+      "explanation": "“đà” mang dấu huyền.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B07",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 7 tr.26–27"
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
@@ -171,68 +151,63 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng “bã” mang dấu gì?",
+        "text": "Bạn Cú cần tiếng mang dấu huyền. Ô nào đúng?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dấu huyền",
-          "errorTag": "sai_dau_thanh"
+          "text": "bờ"
         },
         {
           "id": "b",
-          "text": "dấu sắc",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "c",
-          "text": "dấu ngã"
+          "text": "bơ",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
-      "answerKey": "c",
-      "hints": ["Dấu ngã lượn sóng ở trên."],
-      "explanation": "“bã” mang dấu ngã.",
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“bờ” mang dấu huyền.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-dauthanh-0006",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào mang dấu huyền?",
+        "text": "Chỉ giúp mình tiếng mang dấu huyền nha.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bà"
+          "text": "cỡ",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "bá",
-          "errorTag": "sai_dau_thanh"
+          "text": "cờ"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“bà” mang dấu huyền.",
+      "answerKey": "b",
+      "hints": ["Nhìn dấu nhỏ ở ngay trên (hoặc dưới) nguyên âm."],
+      "explanation": "“cờ” mang dấu huyền.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
@@ -251,31 +226,196 @@
       "choices": [
         {
           "id": "a",
-          "text": "bà",
-          "errorTag": "sai_dau_thanh"
+          "text": "bá"
         },
         {
           "id": "b",
-          "text": "bá"
+          "text": "bả",
+          "errorTag": "sai_dau_thanh"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai tiếng, nghe giọng lên hay xuống."],
       "explanation": "“bá” mang dấu sắc.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-dauthanh-0008",
       "type": "MCQ",
       "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ô nào có dấu sắc?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bỏ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bó"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Dấu huyền đi xuống, dấu sắc đi lên nhé."],
+      "explanation": "“bó” mang dấu sắc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0009",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tìm tiếng mang dấu sắc nhé.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "có"
+        },
+        {
+          "id": "b",
+          "text": "co",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Thanh ngang là tiếng đọc đều, không có dấu nào."],
+      "explanation": "“có” mang dấu sắc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0010",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm vào tiếng có dấu sắc.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đa",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "đá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“đá” mang dấu sắc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bạn Cú cần tiếng mang dấu sắc. Ô nào đúng?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cớ"
+        },
+        {
+          "id": "b",
+          "text": "cờ",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn dấu nhỏ ở ngay trên (hoặc dưới) nguyên âm."],
+      "explanation": "“cớ” mang dấu sắc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0012",
+      "type": "MCQ",
+      "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chỉ giúp mình tiếng mang dấu sắc nha.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bộ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bố"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai tiếng, nghe giọng lên hay xuống."],
+      "explanation": "“bố” mang dấu sắc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
       "scaffold": "none",
       "prompt": {
         "text": "Tiếng nào mang dấu hỏi?",
@@ -288,215 +428,50 @@
         },
         {
           "id": "b",
-          "text": "bã",
-          "errorTag": "nham_hoi_nga"
+          "text": "ba",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "answerKey": "a",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
+      "hints": ["Dấu huyền đi xuống, dấu sắc đi lên nhé."],
       "explanation": "“bả” mang dấu hỏi.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0009",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu ngã?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bả",
-          "errorTag": "nham_hoi_nga"
-        },
-        {
-          "id": "b",
-          "text": "bã"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“bã” mang dấu ngã.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0010",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu nặng?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bạ"
-        },
-        {
-          "id": "b",
-          "text": "bả",
-          "errorTag": "sai_dau_thanh"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“bạ” mang dấu nặng.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0011",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu huyền?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cá",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "b",
-          "text": "cà"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“cà” mang dấu huyền.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0012",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu sắc?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cá"
-        },
-        {
-          "id": "b",
-          "text": "cà",
-          "errorTag": "sai_dau_thanh"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“cá” mang dấu sắc.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0013",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu hỏi?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cã",
-          "errorTag": "nham_hoi_nga"
-        },
-        {
-          "id": "b",
-          "text": "cả"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“cả” mang dấu hỏi.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-dauthanh-0014",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu ngã?",
+        "text": "Ô nào có dấu hỏi?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cã"
+          "text": "bó",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "cả",
-          "errorTag": "nham_hoi_nga"
+          "text": "bỏ"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“cã” mang dấu ngã.",
+      "answerKey": "b",
+      "hints": ["Thanh ngang là tiếng đọc đều, không có dấu nào."],
+      "explanation": "“bỏ” mang dấu hỏi.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
@@ -506,129 +481,129 @@
       "difficulty": 3,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu nặng?",
+        "text": "Tìm tiếng mang dấu hỏi nhé.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cả",
-          "errorTag": "sai_dau_thanh"
+          "text": "cỏ"
         },
         {
           "id": "b",
-          "text": "cạ"
+          "text": "có",
+          "errorTag": "sai_dau_thanh"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“cạ” mang dấu nặng.",
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“cỏ” mang dấu hỏi.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-dauthanh-0016",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
       "targetsError": "sai_dau_thanh",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu huyền?",
+        "text": "Chạm vào tiếng có dấu hỏi.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bò"
+          "text": "bờ",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "bó",
-          "errorTag": "sai_dau_thanh"
+          "text": "bở"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“bò” mang dấu huyền.",
+      "answerKey": "b",
+      "hints": ["Nhìn dấu nhỏ ở ngay trên (hoặc dưới) nguyên âm."],
+      "explanation": "“bở” mang dấu hỏi.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-dauthanh-0017",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu sắc?",
+        "text": "Bạn Cú cần tiếng mang dấu hỏi. Ô nào đúng?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bò",
-          "errorTag": "sai_dau_thanh"
+          "text": "cỡ"
         },
         {
           "id": "b",
-          "text": "bó"
+          "text": "cờ",
+          "errorTag": "sai_dau_thanh"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“bó” mang dấu sắc.",
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai tiếng, nghe giọng lên hay xuống."],
+      "explanation": "“cỡ” mang dấu hỏi.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-dauthanh-0018",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào mang dấu hỏi?",
+        "text": "Chỉ giúp mình tiếng mang dấu hỏi nha.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bỏ"
+          "text": "bộ",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "bõ",
-          "errorTag": "nham_hoi_nga"
+          "text": "bổ"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“bỏ” mang dấu hỏi.",
+      "answerKey": "b",
+      "hints": ["Dấu huyền đi xuống, dấu sắc đi lên nhé."],
+      "explanation": "“bổ” mang dấu hỏi.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
@@ -636,39 +611,6 @@
       "type": "MCQ",
       "language": "vi",
       "difficulty": 4,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu ngã?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bỏ",
-          "errorTag": "nham_hoi_nga"
-        },
-        {
-          "id": "b",
-          "text": "bõ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“bõ” mang dấu ngã.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0020",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
       "targetsError": "sai_dau_thanh",
@@ -684,162 +626,30 @@
         },
         {
           "id": "b",
-          "text": "bỏ",
+          "text": "bò",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
+      "hints": ["Thanh ngang là tiếng đọc đều, không có dấu nào."],
       "explanation": "“bọ” mang dấu nặng.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B07",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 7 tr.26–27"
       }
     },
     {
-      "id": "viet-dauthanh-0021",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu huyền?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "có",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "b",
-          "text": "cò"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“cò” mang dấu huyền.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0022",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu sắc?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "có"
-        },
-        {
-          "id": "b",
-          "text": "cò",
-          "errorTag": "sai_dau_thanh"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“có” mang dấu sắc.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0023",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu hỏi?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cõ",
-          "errorTag": "nham_hoi_nga"
-        },
-        {
-          "id": "b",
-          "text": "cỏ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“cỏ” mang dấu hỏi.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0024",
+      "id": "viet-dauthanh-0020",
       "type": "MCQ",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu ngã?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cõ"
-        },
-        {
-          "id": "b",
-          "text": "cỏ",
-          "errorTag": "nham_hoi_nga"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“cõ” mang dấu ngã.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0025",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu nặng?",
+        "text": "Ô nào có dấu nặng?",
         "tts": true
       },
       "choices": [
@@ -854,121 +664,154 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
       "explanation": "“cọ” mang dấu nặng.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B07",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 7 tr.26–27"
       }
     },
     {
-      "id": "viet-dauthanh-0026",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu huyền?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bè"
-        },
-        {
-          "id": "b",
-          "text": "bé",
-          "errorTag": "sai_dau_thanh"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“bè” mang dấu huyền.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0027",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu sắc?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bè",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "b",
-          "text": "bé"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“bé” mang dấu sắc.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0028",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào mang dấu hỏi?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bẻ"
-        },
-        {
-          "id": "b",
-          "text": "bẽ",
-          "errorTag": "nham_hoi_nga"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“bẻ” mang dấu hỏi.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0029",
+      "id": "viet-dauthanh-0021",
       "type": "MCQ",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tìm tiếng mang dấu nặng nhé.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bộ"
+        },
+        {
+          "id": "b",
+          "text": "bổ",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn dấu nhỏ ở ngay trên (hoặc dưới) nguyên âm."],
+      "explanation": "“bộ” mang dấu nặng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B07",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 7 tr.26–27"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0022",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm vào tiếng có dấu nặng.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dã",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "dạ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai tiếng, nghe giọng lên hay xuống."],
+      "explanation": "“dạ” mang dấu nặng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B07",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 7 tr.26–27"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0023",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bạn Cú cần tiếng mang dấu ngã. Ô nào đúng?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bã"
+        },
+        {
+          "id": "b",
+          "text": "bá",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Dấu huyền đi xuống, dấu sắc đi lên nhé."],
+      "explanation": "“bã” mang dấu ngã.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0024",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chỉ giúp mình tiếng mang dấu ngã nha.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đá",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "đã"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Thanh ngang là tiếng đọc đều, không có dấu nào."],
+      "explanation": "“đã” mang dấu ngã.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0025",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
       "scaffold": "none",
       "prompt": {
         "text": "Tiếng nào mang dấu ngã?",
@@ -977,54 +820,204 @@
       "choices": [
         {
           "id": "a",
-          "text": "bẻ",
-          "errorTag": "nham_hoi_nga"
+          "text": "dã"
         },
         {
           "id": "b",
-          "text": "bẽ"
+          "text": "da",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“bẽ” mang dấu ngã.",
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“dã” mang dấu ngã.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0026",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ô nào có thanh ngang?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bá",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "ba"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn dấu nhỏ ở ngay trên (hoặc dưới) nguyên âm."],
+      "explanation": "“ba” mang thanh ngang.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0027",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tìm tiếng mang thanh ngang nhé.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "co"
+        },
+        {
+          "id": "b",
+          "text": "cỏ",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai tiếng, nghe giọng lên hay xuống."],
+      "explanation": "“co” mang thanh ngang.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0028",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tranh này là tiếng nào?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐄",
+          "labelVi": "bò",
+          "labelEn": "cow"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bò"
+        },
+        {
+          "id": "b",
+          "text": "bó",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai tiếng, nghe giọng lên hay xuống."],
+      "explanation": "Tranh vẽ “bò”, mang dấu huyền.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0029",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "💐",
+          "labelVi": "bó",
+          "labelEn": "bunch"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bò",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bó"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Dấu huyền đi xuống, dấu sắc đi lên nhé."],
+      "explanation": "Tranh vẽ “bó”, mang dấu sắc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-dauthanh-0030",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào mang dấu nặng?",
-        "tts": true
+        "text": "Đọc hai ô rồi chọn tiếng hợp với tranh.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌿",
+          "labelVi": "cỏ",
+          "labelEn": "grass"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bẹ"
+          "text": "cỏ"
         },
         {
           "id": "b",
-          "text": "bẻ",
+          "text": "cò",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“bẹ” mang dấu nặng.",
+      "hints": ["Thanh ngang là tiếng đọc đều, không có dấu nào."],
+      "explanation": "Tranh vẽ “cỏ”, mang dấu hỏi.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
@@ -1034,96 +1027,114 @@
       "difficulty": 2,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": "thieu_dau_thanh",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu huyền?",
-        "tts": true
+        "text": "Tiếng nào gọi tên bức tranh này?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🚩",
+          "labelVi": "cờ",
+          "labelEn": "flag"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "dú",
-          "errorTag": "sai_dau_thanh"
+          "text": "cơ",
+          "errorTag": "thieu_dau_thanh"
         },
         {
           "id": "b",
-          "text": "dù"
+          "text": "cờ"
         }
       ],
       "answerKey": "b",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“dù” mang dấu huyền.",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "Tranh vẽ “cờ”, mang dấu huyền.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-dauthanh-0032",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu sắc?",
-        "tts": true
+        "text": "Chọn tiếng đúng với tranh nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "bọ",
+          "labelEn": "beetle"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "dú"
+          "text": "bọ"
         },
         {
           "id": "b",
-          "text": "dù",
+          "text": "bó",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“dú” mang dấu sắc.",
+      "hints": ["Nhìn dấu nhỏ ở ngay trên (hoặc dưới) nguyên âm."],
+      "explanation": "Tranh vẽ “bọ”, mang dấu nặng.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B07",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 7 tr.26–27"
       }
     },
     {
       "id": "viet-dauthanh-0033",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu hỏi?",
-        "tts": true
+        "text": "Bạn Cú nhìn tranh rồi tìm tiếng. Con giúp nhé!",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🥑",
+          "labelVi": "bơ",
+          "labelEn": "avocado"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "dũ",
-          "errorTag": "nham_hoi_nga"
+          "text": "bờ",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "dủ"
+          "text": "bơ"
         }
       ],
       "answerKey": "b",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“dủ” mang dấu hỏi.",
+      "hints": ["Đọc thầm hai tiếng, nghe giọng lên hay xuống."],
+      "explanation": "Tranh vẽ “bơ”, mang thanh ngang.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
@@ -1133,207 +1144,219 @@
       "difficulty": 4,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": "sai_dau_thanh",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu ngã?",
-        "tts": true
+        "text": "Tranh này là tiếng nào?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👨",
+          "labelVi": "bố",
+          "labelEn": "dad"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "dũ"
+          "text": "bố"
         },
         {
           "id": "b",
-          "text": "dủ",
-          "errorTag": "nham_hoi_nga"
+          "text": "bổ",
+          "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "a",
-      "hints": ["Dấu hỏi là cái móc, dấu ngã lượn sóng."],
-      "explanation": "“dũ” mang dấu ngã.",
+      "hints": ["Dấu huyền đi xuống, dấu sắc đi lên nhé."],
+      "explanation": "Tranh vẽ “bố”, mang dấu sắc.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-dauthanh-0035",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu nặng?",
-        "tts": true
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👵",
+          "labelVi": "bà",
+          "labelEn": "grandma"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "dủ",
+          "text": "bá",
           "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "dụ"
+          "text": "bà"
         }
       ],
       "answerKey": "b",
-      "hints": ["Nhìn kĩ dấu ở trên chữ."],
-      "explanation": "“dụ” mang dấu nặng.",
+      "hints": ["Thanh ngang là tiếng đọc đều, không có dấu nào."],
+      "explanation": "Tranh vẽ “bà”, mang dấu huyền.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-dauthanh-0036",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
         "text": "Nghe rồi chọn ô đúng nhé!",
         "tts": true
       },
       "listenTarget": {
-        "text": "bả"
+        "text": "bà"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bả"
+          "text": "bà"
         },
         {
           "id": "b",
-          "text": "bã",
-          "errorTag": "nham_hoi_nga"
+          "text": "ba",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "answerKey": "a",
-      "hints": ["Dấu hỏi đọc xuống rồi lên nhẹ; dấu ngã gãy giọng ở giữa."],
-      "explanation": "Cô đọc “bả” — mang dấu hỏi.",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “bà”.",
       "meta": {
-        "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-dauthanh-0037",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": "sai_dau_thanh",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
         "tts": true
       },
       "listenTarget": {
-        "text": "cã"
+        "text": "bó"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cả",
-          "errorTag": "nham_hoi_nga"
+          "text": "bò",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "cã"
+          "text": "bó"
         }
       ],
       "answerKey": "b",
-      "hints": ["Dấu hỏi đọc xuống rồi lên nhẹ; dấu ngã gãy giọng ở giữa."],
-      "explanation": "Cô đọc “cã” — mang dấu ngã.",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “bó”.",
       "meta": {
-        "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-dauthanh-0038",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
         "tts": true
       },
       "listenTarget": {
-        "text": "bỏ"
+        "text": "cỏ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bỏ"
+          "text": "cỏ"
         },
         {
           "id": "b",
-          "text": "bõ",
-          "errorTag": "nham_hoi_nga"
+          "text": "có",
+          "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "a",
-      "hints": ["Dấu hỏi đọc xuống rồi lên nhẹ; dấu ngã gãy giọng ở giữa."],
-      "explanation": "Cô đọc “bỏ” — mang dấu hỏi.",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “cỏ”.",
       "meta": {
-        "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-dauthanh-0039",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
         "tts": true
       },
       "listenTarget": {
-        "text": "cõ"
+        "text": "đá"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cỏ",
-          "errorTag": "nham_hoi_nga"
+          "text": "đà",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "cõ"
+          "text": "đá"
         }
       ],
       "answerKey": "b",
-      "hints": ["Dấu hỏi đọc xuống rồi lên nhẹ; dấu ngã gãy giọng ở giữa."],
-      "explanation": "Cô đọc “cõ” — mang dấu ngã.",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “đá”.",
       "meta": {
-        "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
@@ -1346,28 +1369,28 @@
       "targetsError": "nham_hoi_nga",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Tiếng vừa nghe nằm ở ô nào?",
         "tts": true
       },
       "listenTarget": {
-        "text": "bẻ"
+        "text": "bã"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bẻ"
+          "text": "bã"
         },
         {
           "id": "b",
-          "text": "bẽ",
+          "text": "bả",
           "errorTag": "nham_hoi_nga"
         }
       ],
       "answerKey": "a",
-      "hints": ["Dấu hỏi đọc xuống rồi lên nhẹ; dấu ngã gãy giọng ở giữa."],
-      "explanation": "Cô đọc “bẻ” — mang dấu hỏi.",
+      "hints": ["Nhắc lại tiếng đó trong đầu rồi chọn."],
+      "explanation": "Bạn Cú đọc “bã”.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B09",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
       }
@@ -1376,36 +1399,36 @@
       "id": "viet-dauthanh-0041",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Nghe xong, chỉ giúp mình ô đúng nha.",
         "tts": true
       },
       "listenTarget": {
-        "text": "dũ"
+        "text": "cọ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "dủ",
-          "errorTag": "nham_hoi_nga"
+          "text": "cỏ",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "dũ"
+          "text": "cọ"
         }
       ],
       "answerKey": "b",
-      "hints": ["Dấu hỏi đọc xuống rồi lên nhẹ; dấu ngã gãy giọng ở giữa."],
-      "explanation": "Cô đọc “dũ” — mang dấu ngã.",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “cọ”.",
       "meta": {
-        "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B07",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 7 tr.26–27"
       }
     },
     {
@@ -1415,47 +1438,42 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Kéo dấu đúng để thành tiếng trong tranh.",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "👵",
-          "labelVi": "bà"
-        }
+        "text": "Kéo tiếng mang dấu huyền vào ô.",
+        "tts": true
       },
       "dragItems": [
         {
           "id": "t1",
-          "text": "dấu huyền"
+          "text": "bà"
         },
         {
           "id": "t2",
-          "text": "dấu sắc"
+          "text": "ba"
         },
         {
           "id": "t3",
-          "text": "dấu hỏi"
+          "text": "bá"
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "ba",
-          "accepts": ["t1", "t2", "t3"]
+          "label": "ô dấu huyền",
+          "accepts": ["t1"]
         }
       ],
       "answerKey": {
         "o": ["t1"]
       },
-      "hints": ["Dấu huyền là nét xiên đi xuống bên trái."],
-      "explanation": "Tranh là “bà” — mang dấu huyền.",
+      "hints": ["Nhìn dấu nhỏ ở ngay trên (hoặc dưới) nguyên âm."],
+      "explanation": "“bà” mang dấu huyền.",
       "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
@@ -1465,47 +1483,42 @@
       "difficulty": 2,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Kéo dấu đúng để thành tiếng trong tranh.",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐟",
-          "labelVi": "cá"
-        }
+        "text": "Kéo tiếng mang dấu sắc vào ô.",
+        "tts": true
       },
       "dragItems": [
         {
           "id": "t1",
-          "text": "dấu sắc"
+          "text": "bó"
         },
         {
           "id": "t2",
-          "text": "dấu huyền"
+          "text": "bò"
         },
         {
           "id": "t3",
-          "text": "dấu hỏi"
+          "text": "bỏ"
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "ca",
-          "accepts": ["t1", "t2", "t3"]
+          "label": "ô dấu sắc",
+          "accepts": ["t1"]
         }
       ],
       "answerKey": {
         "o": ["t1"]
       },
-      "hints": ["Dấu sắc là nét xiên đi lên bên phải."],
-      "explanation": "Tranh là “cá” — mang dấu sắc.",
+      "hints": ["Đọc thầm hai tiếng, nghe giọng lên hay xuống."],
+      "explanation": "“bó” mang dấu sắc.",
       "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
@@ -1515,47 +1528,42 @@
       "difficulty": 3,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo dấu đúng để thành tiếng trong tranh.",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🌿",
-          "labelVi": "cỏ"
-        }
+        "text": "Kéo tiếng mang dấu hỏi vào ô.",
+        "tts": true
       },
       "dragItems": [
         {
           "id": "t1",
-          "text": "dấu hỏi"
+          "text": "cỏ"
         },
         {
           "id": "t2",
-          "text": "dấu huyền"
+          "text": "cò"
         },
         {
           "id": "t3",
-          "text": "dấu sắc"
+          "text": "có"
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "co",
-          "accepts": ["t1", "t2", "t3"]
+          "label": "ô dấu hỏi",
+          "accepts": ["t1"]
         }
       ],
       "answerKey": {
         "o": ["t1"]
       },
-      "hints": ["Dấu hỏi giống cái móc câu."],
-      "explanation": "Tranh là “cỏ” — mang dấu hỏi.",
+      "hints": ["Dấu huyền đi xuống, dấu sắc đi lên nhé."],
+      "explanation": "“cỏ” mang dấu hỏi.",
       "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
@@ -1565,45 +1573,40 @@
       "difficulty": 4,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo dấu đúng để thành tiếng trong tranh.",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "👩",
-          "labelVi": "mẹ"
-        }
+        "text": "Kéo tiếng mang dấu ngã vào ô.",
+        "tts": true
       },
       "dragItems": [
         {
           "id": "t1",
-          "text": "dấu nặng"
+          "text": "bã"
         },
         {
           "id": "t2",
-          "text": "dấu huyền"
+          "text": "bà"
         },
         {
           "id": "t3",
-          "text": "dấu sắc"
+          "text": "bá"
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "me",
-          "accepts": ["t1", "t2", "t3"]
+          "label": "ô dấu ngã",
+          "accepts": ["t1"]
         }
       ],
       "answerKey": {
         "o": ["t1"]
       },
-      "hints": ["Dấu nặng là một chấm ở dưới."],
-      "explanation": "Tranh là “mẹ” — mang dấu nặng.",
+      "hints": ["Thanh ngang là tiếng đọc đều, không có dấu nào."],
+      "explanation": "“bã” mang dấu ngã.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B09",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
       }
@@ -1615,47 +1618,42 @@
       "difficulty": 5,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo dấu đúng để thành tiếng trong tranh.",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐯",
-          "labelVi": "dữ"
-        }
+        "text": "Kéo tiếng mang thanh ngang vào ô.",
+        "tts": true
       },
       "dragItems": [
         {
           "id": "t1",
-          "text": "dấu ngã"
+          "text": "co"
         },
         {
           "id": "t2",
-          "text": "dấu huyền"
+          "text": "cò"
         },
         {
           "id": "t3",
-          "text": "dấu sắc"
+          "text": "cọ"
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "du",
-          "accepts": ["t1", "t2", "t3"]
+          "label": "ô thanh ngang",
+          "accepts": ["t1"]
         }
       ],
       "answerKey": {
         "o": ["t1"]
       },
-      "hints": ["Dấu ngã lượn sóng ở trên."],
-      "explanation": "Tranh là “dữ” — mang dấu ngã.",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“co” mang thanh ngang.",
       "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
@@ -1668,22 +1666,22 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to cả dãy tiếng này nhé!",
+        "text": "Con đọc to nhé!",
         "tts": true
       },
       "readTarget": {
-        "text": "ba  bà  bá  bả  bã  bạ",
-        "words": ["ba", "bà", "bá", "bả", "bã", "bạ"]
+        "text": "ba  bà  bá",
+        "words": ["ba", "bà", "bá"]
       },
       "answerKey": {
-        "words": ["ba", "bà", "bá", "bả", "bã", "bạ"]
+        "words": ["ba", "bà", "bá"]
       },
-      "hints": ["Đọc chậm, nghe rõ dấu thanh đổi ở mỗi tiếng."],
-      "explanation": "Dãy này đọc là \"ba, bà, bá, bả, bã, bạ\".",
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là “ba bà bá”.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
@@ -1694,24 +1692,24 @@
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
+      "scaffold": "model",
       "prompt": {
-        "text": "Con đọc to cả dãy tiếng này nhé!",
+        "text": "Đọc to cho bạn Cú nghe nào.",
         "tts": true
       },
       "readTarget": {
-        "text": "ca  cà  cá  cả  cã  cạ",
-        "words": ["ca", "cà", "cá", "cả", "cã", "cạ"]
+        "text": "bò  bó  bỏ",
+        "words": ["bò", "bó", "bỏ"]
       },
       "answerKey": {
-        "words": ["ca", "cà", "cá", "cả", "cã", "cạ"]
+        "words": ["bò", "bó", "bỏ"]
       },
-      "hints": ["Đọc chậm, nghe rõ dấu thanh đổi ở mỗi tiếng."],
-      "explanation": "Dãy này đọc là \"ca, cà, cá, cả, cã, cạ\".",
+      "hints": ["Hít một hơi rồi đọc to nhé."],
+      "explanation": "Đọc là “bò bó bỏ”.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
@@ -1724,22 +1722,22 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to cả dãy tiếng này nhé!",
+        "text": "Đến lượt con đọc rồi!",
         "tts": true
       },
       "readTarget": {
-        "text": "bo  bò  bó  bỏ  bõ  bọ",
-        "words": ["bo", "bò", "bó", "bỏ", "bõ", "bọ"]
+        "text": "co  cò  có  cỏ",
+        "words": ["co", "cò", "có", "cỏ"]
       },
       "answerKey": {
-        "words": ["bo", "bò", "bó", "bỏ", "bõ", "bọ"]
+        "words": ["co", "cò", "có", "cỏ"]
       },
-      "hints": ["Đọc chậm, nghe rõ dấu thanh đổi ở mỗi tiếng."],
-      "explanation": "Dãy này đọc là \"bo, bò, bó, bỏ, bõ, bọ\".",
+      "hints": ["Đọc như đang kể cho bạn Cú nghe."],
+      "explanation": "Đọc là “co cò có cỏ”.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
@@ -1752,20 +1750,20 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to cả dãy tiếng này nhé!",
+        "text": "Con đọc chậm và rõ nhé.",
         "tts": true
       },
       "readTarget": {
-        "text": "co  cò  có  cỏ  cõ  cọ",
-        "words": ["co", "cò", "có", "cỏ", "cõ", "cọ"]
+        "text": "đa  đà  đá  đã",
+        "words": ["đa", "đà", "đá", "đã"]
       },
       "answerKey": {
-        "words": ["co", "cò", "có", "cỏ", "cõ", "cọ"]
+        "words": ["đa", "đà", "đá", "đã"]
       },
-      "hints": ["Đọc chậm, nghe rõ dấu thanh đổi ở mỗi tiếng."],
-      "explanation": "Dãy này đọc là \"co, cò, có, cỏ, cõ, cọ\".",
+      "hints": ["Ngón tay chỉ tới đâu, đọc tới đó."],
+      "explanation": "Đọc là “đa đà đá đã”.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B09",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
       }
@@ -1780,29 +1778,29 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to cả dãy tiếng này nhé!",
+        "text": "Đọc to lên, mình nghe đây!",
         "tts": true
       },
       "readTarget": {
-        "text": "be  bè  bé  bẻ  bẽ  bẹ",
-        "words": ["be", "bè", "bé", "bẻ", "bẽ", "bẹ"]
+        "text": "cơ  cờ  cớ  cỡ",
+        "words": ["cơ", "cờ", "cớ", "cỡ"]
       },
       "answerKey": {
-        "words": ["be", "bè", "bé", "bẻ", "bẽ", "bẹ"]
+        "words": ["cơ", "cờ", "cớ", "cỡ"]
       },
-      "hints": ["Đọc chậm, nghe rõ dấu thanh đổi ở mỗi tiếng."],
-      "explanation": "Dãy này đọc là \"be, bè, bé, bẻ, bẽ, bẹ\".",
+      "hints": ["Không vội đâu, con cứ đọc chậm."],
+      "explanation": "Đọc là “cơ cờ cớ cỡ”.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B07",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 7 tr.26–27"
       }
     },
     {
       "id": "viet-dauthanh-0052",
       "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
       "targetsError": "dat_dau_sai_cho",
@@ -1813,23 +1811,53 @@
       },
       "rubric": {
         "criteria": [
-          "Dấu đặt đúng trên (hoặc dưới) nguyên âm",
-          "Dấu nhỏ, không chạm chữ",
-          "Chữ đều nét"
+          "Dấu đặt ngay trên (hoặc dưới) nguyên âm",
+          "Dấu nhỏ, không chạm vào con chữ",
+          "Chữ đều nét, đúng độ cao"
         ],
         "sampleAnswers": ["bà"]
       },
       "answerKey": null,
-      "hints": ["Dấu thanh luôn đặt ở nguyên âm, không đặt ở chữ đầu."],
-      "explanation": "“bà” có dấu đặt ngay trên nguyên âm.",
+      "hints": ["Ngồi thẳng, cầm bút nhẹ thôi nhé."],
+      "explanation": "“bà” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-dauthanh-0053",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.DAU_THANH"],
+      "assetTheme": "neutral",
+      "targetsError": "dat_dau_sai_cho",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con viết “bá” vào vở nhé, xong nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": [
+          "Dấu đặt ngay trên (hoặc dưới) nguyên âm",
+          "Dấu nhỏ, không chạm vào con chữ",
+          "Chữ đều nét, đúng độ cao"
+        ],
+        "sampleAnswers": ["bá"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm cho tròn nét."],
+      "explanation": "“bá” viết liền nét, dấu đặt trên nguyên âm.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-dauthanh-0054",
       "type": "WRITE_PHOTO",
       "language": "vi",
       "difficulty": 3,
@@ -1838,28 +1866,28 @@
       "targetsError": "dat_dau_sai_cho",
       "scaffold": "none",
       "prompt": {
-        "text": "Viết tiếng “cá” vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Lấy vở viết “cỏ”, rồi chụp gửi bạn Cú.",
         "tts": true
       },
       "rubric": {
         "criteria": [
-          "Dấu đặt đúng trên (hoặc dưới) nguyên âm",
-          "Dấu nhỏ, không chạm chữ",
-          "Chữ đều nét"
+          "Dấu đặt ngay trên (hoặc dưới) nguyên âm",
+          "Dấu nhỏ, không chạm vào con chữ",
+          "Chữ đều nét, đúng độ cao"
         ],
-        "sampleAnswers": ["cá"]
+        "sampleAnswers": ["cỏ"]
       },
       "answerKey": null,
-      "hints": ["Dấu thanh luôn đặt ở nguyên âm, không đặt ở chữ đầu."],
-      "explanation": "“cá” có dấu đặt ngay trên nguyên âm.",
+      "hints": ["Nhìn dòng kẻ để chữ không bị nghiêng."],
+      "explanation": "“cỏ” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
-      "id": "viet-dauthanh-0054",
+      "id": "viet-dauthanh-0055",
       "type": "WRITE_PHOTO",
       "language": "vi",
       "difficulty": 4,
@@ -1868,52 +1896,22 @@
       "targetsError": "dat_dau_sai_cho",
       "scaffold": "none",
       "prompt": {
-        "text": "Viết tiếng “cỏ” vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Tập viết “bã” vào vở giúp mình nhé.",
         "tts": true
       },
       "rubric": {
         "criteria": [
-          "Dấu đặt đúng trên (hoặc dưới) nguyên âm",
-          "Dấu nhỏ, không chạm chữ",
-          "Chữ đều nét"
+          "Dấu đặt ngay trên (hoặc dưới) nguyên âm",
+          "Dấu nhỏ, không chạm vào con chữ",
+          "Chữ đều nét, đúng độ cao"
         ],
-        "sampleAnswers": ["cỏ"]
+        "sampleAnswers": ["bã"]
       },
       "answerKey": null,
-      "hints": ["Dấu thanh luôn đặt ở nguyên âm, không đặt ở chữ đầu."],
-      "explanation": "“cỏ” có dấu đặt ngay trên nguyên âm.",
+      "hints": ["Viết xong đọc lại một lần nhé."],
+      "explanation": "“bã” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
-      }
-    },
-    {
-      "id": "viet-dauthanh-0055",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.DAU_THANH"],
-      "assetTheme": "neutral",
-      "targetsError": "dat_dau_sai_cho",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết tiếng “dữ” vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Dấu đặt đúng trên (hoặc dưới) nguyên âm",
-          "Dấu nhỏ, không chạm chữ",
-          "Chữ đều nét"
-        ],
-        "sampleAnswers": ["dữ"]
-      },
-      "answerKey": null,
-      "hints": ["Dấu thanh luôn đặt ở nguyên âm, không đặt ở chữ đầu."],
-      "explanation": "“dữ” có dấu đặt ngay trên nguyên âm.",
-      "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B09",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
       }
@@ -1922,96 +1920,96 @@
       "id": "viet-dauthanh-0056",
       "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Chạm vào những tiếng mang dấu huyền.",
+        "text": "Chạm từng bò để đếm.",
         "tts": true
       },
       "countTarget": {
         "objects": {
           "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng có dấu huyền",
-          "labelEn": "syllable"
+          "value": "🐄",
+          "labelVi": "bò",
+          "labelEn": "cow"
         },
-        "correctCount": 2,
+        "correctCount": 3,
         "layout": "line"
       },
-      "answerKey": 2,
-      "hints": ["Nhìn dấu ở trên từng tiếng."],
-      "explanation": "Có 2 tiếng mang dấu huyền.",
+      "answerKey": 3,
+      "hints": ["Chạm tới đâu đếm tới đó nhé."],
+      "explanation": "Có 3 bò.",
       "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-dauthanh-0057",
       "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Chạm vào những tiếng mang dấu sắc.",
+        "text": "Đếm xem có mấy cờ nhé.",
         "tts": true
       },
       "countTarget": {
         "objects": {
           "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng có dấu sắc",
-          "labelEn": "syllable"
+          "value": "🚩",
+          "labelVi": "cờ",
+          "labelEn": "flag"
         },
-        "correctCount": 3,
+        "correctCount": 4,
         "layout": "line"
       },
-      "answerKey": 3,
-      "hints": ["Nhìn dấu ở trên từng tiếng."],
-      "explanation": "Có 3 tiếng mang dấu sắc.",
+      "answerKey": 4,
+      "hints": ["Đếm từ trái sang phải cho khỏi sót."],
+      "explanation": "Có 4 cờ.",
       "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-dauthanh-0058",
       "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.DAU_THANH"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Chạm vào những tiếng mang dấu hỏi.",
+        "text": "Có bao nhiêu bọ? Chạm để đếm.",
         "tts": true
       },
       "countTarget": {
         "objects": {
           "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng có dấu hỏi",
-          "labelEn": "syllable"
+          "value": "🐞",
+          "labelVi": "bọ",
+          "labelEn": "beetle"
         },
-        "correctCount": 2,
+        "correctCount": 5,
         "layout": "line"
       },
-      "answerKey": 2,
-      "hints": ["Nhìn dấu ở trên từng tiếng."],
-      "explanation": "Có 2 tiếng mang dấu hỏi.",
+      "answerKey": 5,
+      "hints": ["Đếm một lần nữa cho chắc nha."],
+      "explanation": "Có 5 bọ.",
       "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B09",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30–31"
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B07",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 7 tr.26–27"
       }
     }
   ]

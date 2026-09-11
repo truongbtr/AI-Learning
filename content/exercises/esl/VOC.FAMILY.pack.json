@@ -13,10 +13,10 @@
       "difficulty": 1,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Choose the word that fits.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -31,8 +31,7 @@
         },
         {
           "id": "b",
-          "text": "dad",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "dad"
         }
       ],
       "answerKey": "a",
@@ -65,8 +64,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "mom",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "mom"
         },
         {
           "id": "b",
@@ -92,7 +90,7 @@
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Look, then pick the right word.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -107,8 +105,7 @@
         },
         {
           "id": "b",
-          "text": "sister",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "sister"
         }
       ],
       "answerKey": "a",
@@ -127,10 +124,10 @@
       "difficulty": 2,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Which one is right? Have a look.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -141,8 +138,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "brother",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "brother"
         },
         {
           "id": "b",
@@ -168,7 +164,7 @@
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Read both, then choose.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -206,7 +202,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Point to the right one.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -241,10 +237,10 @@
       "difficulty": 3,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Choose the word that fits.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -260,7 +256,7 @@
         {
           "id": "b",
           "text": "brother",
-          "errorTag": "sai_chinh_ta_tu"
+          "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
@@ -293,8 +289,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "uncle",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "uncle"
         },
         {
           "id": "b",
@@ -320,7 +315,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Look, then pick the right word.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -335,8 +330,7 @@
         },
         {
           "id": "b",
-          "text": "aunt",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "aunt"
         }
       ],
       "answerKey": "a",
@@ -355,10 +349,10 @@
       "difficulty": 4,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Which one is right? Have a look.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -369,8 +363,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "brother",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "brother"
         },
         {
           "id": "b",
@@ -393,10 +386,10 @@
       "difficulty": 2,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Listen again if you like, then tap.",
         "tts": true
       },
       "listenTarget": {
@@ -406,7 +399,6 @@
         {
           "id": "a",
           "text": "dad",
-          "errorTag": "sai_chinh_ta_tu",
           "image": {
             "kind": "emoji",
             "value": "👨",
@@ -424,7 +416,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Listen once more for the first sound."],
       "explanation": "\"mom\" nghĩa là mẹ.",
       "meta": {
         "estSeconds": 20,
@@ -439,7 +431,7 @@
       "difficulty": 2,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Listen, then tap one box.",
@@ -461,7 +453,6 @@
         {
           "id": "b",
           "text": "mom",
-          "errorTag": "sai_chinh_ta_tu",
           "image": {
             "kind": "emoji",
             "value": "👩",
@@ -470,7 +461,7 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Press the speaker to hear it again."],
       "explanation": "\"dad\" nghĩa là bố.",
       "meta": {
         "estSeconds": 20,
@@ -485,10 +476,10 @@
       "difficulty": 3,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Listen and tap the right box.",
         "tts": true
       },
       "listenTarget": {
@@ -498,7 +489,6 @@
         {
           "id": "a",
           "text": "sister",
-          "errorTag": "sai_chinh_ta_tu",
           "image": {
             "kind": "emoji",
             "value": "👧",
@@ -516,7 +506,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Say it in your head, then choose."],
       "explanation": "\"brother\" nghĩa là anh trai / em trai.",
       "meta": {
         "estSeconds": 20,
@@ -531,10 +521,10 @@
       "difficulty": 3,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Have a listen, then choose.",
         "tts": true
       },
       "listenTarget": {
@@ -553,7 +543,6 @@
         {
           "id": "b",
           "text": "brother",
-          "errorTag": "sai_chinh_ta_tu",
           "image": {
             "kind": "emoji",
             "value": "👦",
@@ -562,7 +551,7 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Listen to the end of the word."],
       "explanation": "\"sister\" nghĩa là chị gái / em gái.",
       "meta": {
         "estSeconds": 20,
@@ -580,7 +569,7 @@
       "targetsError": "sai_chinh_ta_tu",
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Which box? Listen first!",
         "tts": true
       },
       "listenTarget": {
@@ -608,7 +597,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Read each box, then match the sound."],
       "explanation": "\"grandma\" nghĩa là bà.",
       "meta": {
         "estSeconds": 20,
@@ -626,7 +615,7 @@
       "targetsError": "sai_chinh_ta_tu",
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Listen carefully, then tap.",
         "tts": true
       },
       "listenTarget": {
@@ -654,7 +643,7 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Listen once more for the first sound."],
       "explanation": "\"grandpa\" nghĩa là ông.",
       "meta": {
         "estSeconds": 20,
@@ -669,10 +658,10 @@
       "difficulty": 4,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Tap the box you hear.",
         "tts": true
       },
       "listenTarget": {
@@ -682,7 +671,7 @@
         {
           "id": "a",
           "text": "brother",
-          "errorTag": "sai_chinh_ta_tu",
+          "errorTag": "doc_nham_van",
           "image": {
             "kind": "emoji",
             "value": "👦",
@@ -700,7 +689,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Press the speaker to hear it again."],
       "explanation": "\"baby\" nghĩa là em bé.",
       "meta": {
         "estSeconds": 20,
@@ -715,10 +704,10 @@
       "difficulty": 4,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Listen again if you like, then tap.",
         "tts": true
       },
       "listenTarget": {
@@ -737,7 +726,6 @@
         {
           "id": "b",
           "text": "uncle",
-          "errorTag": "sai_chinh_ta_tu",
           "image": {
             "kind": "emoji",
             "value": "🧔",
@@ -746,7 +734,7 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Say it in your head, then choose."],
       "explanation": "\"aunt\" nghĩa là cô / dì.",
       "meta": {
         "estSeconds": 20,
@@ -761,7 +749,7 @@
       "difficulty": 4,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Listen, then tap one box.",
@@ -774,7 +762,6 @@
         {
           "id": "a",
           "text": "aunt",
-          "errorTag": "sai_chinh_ta_tu",
           "image": {
             "kind": "emoji",
             "value": "👩‍🦰",
@@ -792,7 +779,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Listen to the end of the word."],
       "explanation": "\"uncle\" nghĩa là chú / bác.",
       "meta": {
         "estSeconds": 20,
@@ -807,10 +794,10 @@
       "difficulty": 5,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Listen and tap the right box.",
         "tts": true
       },
       "listenTarget": {
@@ -829,7 +816,6 @@
         {
           "id": "b",
           "text": "brother",
-          "errorTag": "sai_chinh_ta_tu",
           "image": {
             "kind": "emoji",
             "value": "👦",
@@ -838,7 +824,7 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại rồi nhớ nghĩa tiếng Việt."],
+      "hints": ["Read each box, then match the sound."],
       "explanation": "\"cousin\" nghĩa là anh chị em họ.",
       "meta": {
         "estSeconds": 20,
@@ -1198,7 +1184,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Read aloud, please!",
+        "text": "Your turn to read!",
         "tts": true
       },
       "readTarget": {
@@ -1208,7 +1194,7 @@
       "answerKey": {
         "words": ["mom", "dad"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Take a breath, then read out loud."],
       "explanation": "Đọc là \"mom dad\".",
       "meta": {
         "estSeconds": 25,
@@ -1226,7 +1212,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Read aloud, please!",
+        "text": "Read it out loud for Owl.",
         "tts": true
       },
       "readTarget": {
@@ -1236,7 +1222,7 @@
       "answerKey": {
         "words": ["brother", "sister"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Point with your finger as you read."],
       "explanation": "Đọc là \"brother sister\".",
       "meta": {
         "estSeconds": 25,
@@ -1254,7 +1240,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Read aloud, please!",
+        "text": "Say it out loud, nice and clear.",
         "tts": true
       },
       "readTarget": {
@@ -1264,7 +1250,7 @@
       "answerKey": {
         "words": ["grandma", "grandpa"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Read it like you are telling a friend."],
       "explanation": "Đọc là \"grandma grandpa\".",
       "meta": {
         "estSeconds": 25,
@@ -1282,7 +1268,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Read aloud, please!",
+        "text": "Read slowly and clearly.",
         "tts": true
       },
       "readTarget": {
@@ -1292,7 +1278,7 @@
       "answerKey": {
         "words": ["This", "is", "my", "family"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Slow is fine — clear is what counts."],
       "explanation": "Đọc là \"This is my family\".",
       "meta": {
         "estSeconds": 25,
@@ -1310,7 +1296,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Read aloud, please!",
+        "text": "Let's read together — you first!",
         "tts": true
       },
       "readTarget": {
@@ -1320,7 +1306,7 @@
       "answerKey": {
         "words": ["I", "have", "a", "big", "family"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Take your time, one word at a time."],
       "explanation": "Đọc là \"I have a big family\".",
       "meta": {
         "estSeconds": 25,
@@ -1570,7 +1556,7 @@
       "difficulty": 2,
       "skillCodes": ["ESL.VOC.FAMILY"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
       "prompt": {
         "text": "Unscramble: d a d",
@@ -1580,7 +1566,7 @@
         {
           "id": "a",
           "text": "bad",
-          "errorTag": "sai_chinh_ta_tu"
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",

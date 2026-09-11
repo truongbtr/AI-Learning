@@ -1,6 +1,8 @@
+import { explainErrorTagMismatch } from "./error-semantics";
 import type { ExerciseDef, ExercisePack, Phase3Type } from "./exercise";
 import { PHASE3_TYPES } from "./exercise";
-import type { SkillDef } from "./skill-map";
+import { lessonRefsOf, type SkillDef } from "./skill-map";
+import { checkPrintedVietnamese, lessonReachOf, taughtUpTo } from "./tieng-viet-progression";
 
 /**
  * Cross-file checks for the exercise bank (docs/10 sec. 6 rubric + docs/08 pha 2 "tieu chi xong").
@@ -12,6 +14,12 @@ export const TARGET_EXERCISES_PER_SKILL = 40;
 export const MIN_MODEL_SCAFFOLDS = 6;
 export const MIN_TARGETED_ERROR = 6;
 export const MIN_PHASE3_TYPES_PER_SKILL = 4;
+/** One instruction may not cover more than this share of a type — see `checkPromptVariety`. */
+export const PROMPT_REPEAT_WARN_RATIO = 0.25;
+export const MIN_PROMPT_VARIANTS = 6;
+export const MIN_HINT_VARIANTS = 4;
+/** Below this many exercises a type/language group is too small to judge for variety. */
+const VARIETY_SAMPLE_FLOOR = 10;
 
 /** Subjects where a wrong multiple-choice option MUST carry a diagnosis (docs/04 sec. 11.2). */
 const DIAGNOSTIC_SUBJECTS = new Set(["VMATH", "EMATH"]);
@@ -79,6 +87,21 @@ export function validatePack(
   for (const ref of pack.lessonRefs)
     if (!ctx.lessonCodes.has(ref)) err(`lessonRef "${ref}" is not a known LessonUnit`);
 
+  const lessonReach = pack.subject === "VIET" ? lessonReachOf(lessonRefsOf(skill)) : null;
+  const taught = lessonReach == null ? null : taughtUpTo(lessonReach);
+  /** The Vietnamese a child has to decode to answer; instructions and audio are exempt. */
+  const printedVietnameseIssues = (ex: ExerciseDef, _skill: SkillDef) => {
+    if (taught == null || ex.language !== "vi") return [];
+    const out = [];
+    for (const c of ex.choices ?? [])
+      if (c.text) out.push(...checkPrintedVietnamese(`choice ${c.id}`, c.text, taught));
+    for (const d of ex.dragItems ?? [])
+      if (d.text) out.push(...checkPrintedVietnamese(`drag item ${d.id}`, d.text, taught));
+    if (ex.readTarget)
+      out.push(...checkPrintedVietnamese("readTarget", ex.readTarget.text, taught));
+    return out;
+  };
+
   const declaredTypes = new Set<string>(skill.exerciseTypes);
   const seenPrompts = new Map<string, string>();
   const typeCount = new Map<string, number>();
@@ -111,6 +134,40 @@ export function validatePack(
     for (const c of ex.choices ?? [])
       if (c.errorTag && !ctx.errorCodes.has(c.errorTag))
         err(`choice ${c.id} errorTag "${c.errorTag}" is not in the taxonomy`, ex.id);
+
+    // A tag has to mean what the child did (docs/04 §11.2) — see error-semantics.ts.
+    const correctChoice = (ex.choices ?? []).find((c) => c.id === ex.answerKey);
+    for (const c of ex.choices ?? []) {
+      if (!c.errorTag || c.id === ex.answerKey) continue;
+      const why = explainErrorTagMismatch(
+        { code: c.errorTag, distractor: c.text ?? null, correct: correctChoice?.text ?? null },
+        {
+          type: ex.type,
+          language: ex.language,
+          subject: pack.subject,
+          prompt: ex.prompt.text,
+          listenTarget: ex.listenTarget?.text ?? null,
+        },
+      );
+      if (why) err(`choice ${c.id}: ${why}`, ex.id);
+    }
+    // An exercise that says it drills an error should hand the planner a way to see it.
+    if (
+      ex.targetsError &&
+      (ex.type === "MCQ" || ex.type === "LISTEN_CHOOSE") &&
+      !(ex.choices ?? []).some((c) => c.errorTag === ex.targetsError)
+    )
+      warn(
+        `targetsError "${ex.targetsError}" but no option carries that tag — the attempt cannot record it`,
+        ex.id,
+      );
+
+    // Nothing printed for the child to read may use letters, rimes or tones the class has not met.
+    for (const issue of printedVietnameseIssues(ex, skill))
+      err(
+        `${issue.where} "${issue.word}" uses ${issue.parts.join(", ")} — not taught by bài ${lessonReach} (docs/09 §3)`,
+        ex.id,
+      );
 
     // Rubric 11: the distractors of a maths / phonics question must be diagnostic.
     if ((ex.type === "MCQ" || ex.type === "LISTEN_CHOOSE") && needsDiagnosis(pack, skill)) {
@@ -167,8 +224,14 @@ export function validatePack(
 
   if (models < MIN_MODEL_SCAFFOLDS)
     err(`only ${models} exercises with scaffold "model", need >= ${MIN_MODEL_SCAFFOLDS}`);
-  if (targeted < MIN_TARGETED_ERROR)
-    err(`only ${targeted} exercises with targetsError, need >= ${MIN_TARGETED_ERROR}`);
+  if (targeted < MIN_TARGETED_ERROR) {
+    // Maths and phonics always have a nameable mistake to drill. A vocabulary pack does not:
+    // picking "short" for "tall" is not a diagnosable error, it is simply a word not learnt yet,
+    // and inventing a code for it would send the remediation ladder after the wrong thing.
+    const message = `only ${targeted} exercises with targetsError, need >= ${MIN_TARGETED_ERROR}`;
+    if (needsDiagnosis(pack, skill)) err(message);
+    else warn(`${message} (no error code in the taxonomy fits this skill)`);
+  }
 
   return issues;
 }
@@ -207,6 +270,66 @@ export function bankStats(packs: ExercisePack[]): BankStats {
     }
   }
   return stats;
+}
+
+/**
+ * Instructions must not all read the same (docs/08 pha 3 việc 0 muc 3).
+ *
+ * Phase 2 gave all 214 LISTEN_CHOOSE the one sentence "Nghe rồi chọn ô đúng nhé!" and a single
+ * hint. A child who meets the same sentence twelve times an evening stops hearing it, and the
+ * mascot sounds like a machine. Warnings, not errors: repetition is a quality problem, not a
+ * broken file, and a skill with only a handful of exercises of a type cannot be varied.
+ */
+export function checkPromptVariety(packs: { file: string; pack: ExercisePack }[]): PackIssue[] {
+  const issues: PackIssue[] = [];
+  const byType = new Map<string, Map<string, number>>();
+  const byTypeLang = new Map<string, { prompts: Set<string>; hints: Set<string>; n: number }>();
+
+  for (const { pack } of packs)
+    for (const ex of pack.exercises) {
+      const prompts = byType.get(ex.type) ?? new Map<string, number>();
+      const text = ex.prompt.text.trim();
+      prompts.set(text, (prompts.get(text) ?? 0) + 1);
+      byType.set(ex.type, prompts);
+
+      const key = `${ex.type}/${ex.language}`;
+      const group = byTypeLang.get(key) ?? { prompts: new Set(), hints: new Set(), n: 0 };
+      group.prompts.add(text);
+      group.hints.add(ex.hints.join(" | ").trim());
+      group.n++;
+      byTypeLang.set(key, group);
+    }
+
+  for (const [type, prompts] of byType) {
+    const total = [...prompts.values()].reduce((a, b) => a + b, 0);
+    if (total < VARIETY_SAMPLE_FLOOR) continue;
+    for (const [text, count] of prompts) {
+      const share = count / total;
+      if (share > PROMPT_REPEAT_WARN_RATIO)
+        issues.push({
+          file: "content/exercises",
+          level: "warn",
+          message: `${type}: "${text}" is the instruction of ${count}/${total} exercises (${Math.round(share * 100)}%) — write more variants (limit ${Math.round(PROMPT_REPEAT_WARN_RATIO * 100)}%)`,
+        });
+    }
+  }
+
+  for (const [key, group] of byTypeLang) {
+    if (group.n < VARIETY_SAMPLE_FLOOR) continue;
+    if (group.prompts.size < MIN_PROMPT_VARIANTS)
+      issues.push({
+        file: "content/exercises",
+        level: "warn",
+        message: `${key}: only ${group.prompts.size} different instructions for ${group.n} exercises, need >= ${MIN_PROMPT_VARIANTS}`,
+      });
+    if (group.hints.size < MIN_HINT_VARIANTS)
+      issues.push({
+        file: "content/exercises",
+        level: "warn",
+        message: `${key}: only ${group.hints.size} different hints for ${group.n} exercises, need >= ${MIN_HINT_VARIANTS}`,
+      });
+  }
+  return issues.sort((a, b) => a.message.localeCompare(b.message));
 }
 
 /** Duplicate stable ids across packs would silently overwrite each other on import. */

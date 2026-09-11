@@ -2,9 +2,9 @@
   "skillCode": "VIET.HV.AM_A",
   "subject": "VIET",
   "generatedBy": "claude-code",
-  "promptVersion": "exercise-gen-v1",
+  "promptVersion": "exercise-gen-v2",
   "lessonRefs": ["KNTT-TV1-T1-B01"],
-  "note": "Bài 1: A a — câu nhận biết “Nam và Hà ca hát.”",
+  "note": "Bài 1: A a — chỉ chữ a là đọc được; mọi tiếng khác chỉ xuất hiện bằng tranh và giọng đọc.",
   "exercises": [
     {
       "id": "viet-am-a-0001",
@@ -13,8 +13,8 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
         "text": "Đâu là chữ a?",
         "tts": true
@@ -26,13 +26,13 @@
         },
         {
           "id": "b",
-          "text": "o",
-          "errorTag": "nham_b_d"
+          "text": "ă",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
       "answerKey": "a",
-      "hints": ["Chữ a tròn như quả trứng, có cái đuôi bên phải."],
-      "explanation": "Chữ a có một nét cong tròn và một nét móc. Đây là chữ a.",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ a là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -43,29 +43,29 @@
       "id": "viet-am-a-0002",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ a?",
+        "text": "Chữ nào là chữ A?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "ă",
-          "errorTag": "thieu_dau_thanh"
+          "text": "O",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "a"
+          "text": "A"
         }
       ],
       "answerKey": "b",
-      "hints": ["Chữ a tròn như quả trứng, có cái đuôi bên phải."],
-      "explanation": "Chữ a có một nét cong tròn và một nét móc. Đây là chữ a.",
+      "hints": ["So hai chữ xem chỗ nào khác nhau nhé."],
+      "explanation": "Chữ A là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -76,29 +76,29 @@
       "id": "viet-am-a-0003",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ A?",
+        "text": "Chỉ giúp bạn Cú chữ a nhé!",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "Ă",
-          "errorTag": "thieu_dau_thanh"
+          "text": "a"
         },
         {
           "id": "b",
-          "text": "A"
+          "text": "ă",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Chữ A hoa giống cái mái nhà có thanh ngang."],
-      "explanation": "Chữ A hoa có hai nét xiên và một nét ngang. Đây là chữ A.",
+      "answerKey": "a",
+      "hints": ["Chữ a có nét riêng, tìm nét đó nhé."],
+      "explanation": "Chữ a là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -109,31 +109,31 @@
       "id": "viet-am-a-0004",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm a?",
+        "text": "Tìm chữ A giúp mình nào.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "ba"
+          "text": "O",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "bò",
-          "errorTag": "doc_nham_van"
+          "text": "A"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm a không."],
-      "explanation": "Tiếng \"ba\" có âm a; tiếng \"bò\" thì không.",
+      "answerKey": "b",
+      "hints": ["Đọc thầm tên chữ rồi chọn."],
+      "explanation": "Chữ A là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
@@ -142,31 +142,31 @@
       "id": "viet-am-a-0005",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm a?",
+        "text": "Chạm vào chữ a.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cò",
-          "errorTag": "doc_nham_van"
+          "text": "a"
         },
         {
           "id": "b",
-          "text": "ca"
+          "text": "ă",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm a không."],
-      "explanation": "Tiếng \"ca\" có âm a; tiếng \"cò\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nhìn phần trên của chữ trước."],
+      "explanation": "Chữ a là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
@@ -175,31 +175,31 @@
       "id": "viet-am-a-0006",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào có âm a?",
+        "text": "Ô nào có chữ A?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cà"
+          "text": "O",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "cỏ",
-          "errorTag": "doc_nham_van"
+          "text": "A"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm a không."],
-      "explanation": "Tiếng \"cà\" có âm a; tiếng \"cỏ\" thì không.",
+      "answerKey": "b",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ A là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
@@ -208,29 +208,39 @@
       "id": "viet-am-a-0007",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm a?",
+        "text": "Tên tranh nào có âm a?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "về",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
         },
         {
           "id": "b",
-          "text": "và"
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm a không."],
-      "explanation": "Tiếng \"và\" có âm a; tiếng \"về\" thì không.",
+      "answerKey": "a",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm a không."],
+      "explanation": "“cá” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -241,29 +251,39 @@
       "id": "viet-am-a-0008",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm a?",
+        "text": "Tranh nào mà tên có âm a?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "hát"
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "hết",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm a không."],
-      "explanation": "Tiếng \"hát\" có âm a; tiếng \"hết\" thì không.",
+      "answerKey": "b",
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“bà” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -274,29 +294,39 @@
       "id": "viet-am-a-0009",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm a?",
+        "text": "Chọn tranh có âm a trong tên nhé.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "nem",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          }
         },
         {
           "id": "b",
-          "text": "Nam"
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm a không."],
-      "explanation": "Tiếng \"Nam\" có âm a; tiếng \"nem\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“cà” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -307,29 +337,39 @@
       "id": "viet-am-a-0010",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm a?",
+        "text": "Bạn Cú đi tìm âm a. Tranh nào đúng?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "Hà"
+          "image": {
+            "kind": "emoji",
+            "value": "💐",
+            "labelVi": "bó",
+            "labelEn": "bunch"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "hồ",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm a không."],
-      "explanation": "Tiếng \"Hà\" có âm a; tiếng \"hồ\" thì không.",
+      "answerKey": "b",
+      "hints": ["Nói to tên tranh lên, sẽ nghe ra ngay."],
+      "explanation": "“ba” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -340,29 +380,39 @@
       "id": "viet-am-a-0011",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm a?",
+        "text": "Tranh nào đọc lên nghe thấy âm a?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "tôi",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          }
         },
         {
           "id": "b",
-          "text": "tay"
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelVi": "lò",
+            "labelEn": "stove"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm a không."],
-      "explanation": "Tiếng \"tay\" có âm a; tiếng \"tôi\" thì không.",
+      "answerKey": "a",
+      "hints": ["Tách tên tranh thành từng tiếng nhé."],
+      "explanation": "“lá” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -371,34 +421,41 @@
     },
     {
       "id": "viet-am-a-0012",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Chạm vào tranh có âm a.",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "ba"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bo",
-          "errorTag": "nham_b_d"
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "ba"
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"ba\".",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm a không."],
+      "explanation": "“ca” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -407,34 +464,41 @@
     },
     {
       "id": "viet-am-a-0013",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Hai tranh này, tranh nào có âm a?",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "ca"
       },
       "choices": [
         {
           "id": "a",
-          "text": "ca"
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelVi": "hoa",
+            "labelEn": "flower"
+          }
         },
         {
           "id": "b",
-          "text": "cô",
-          "errorTag": "nham_c_k_q"
+          "image": {
+            "kind": "emoji",
+            "value": "🏞️",
+            "labelVi": "hồ",
+            "labelEn": "lake"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"ca\".",
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“hoa” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -443,34 +507,41 @@
     },
     {
       "id": "viet-am-a-0014",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Tên tranh nào có âm a?",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "cà"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cò",
-          "errorTag": "nham_c_k_q"
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "cà"
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelVi": "đá",
+            "labelEn": "stone"
+          }
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"cà\".",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“đá” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -479,34 +550,41 @@
     },
     {
       "id": "viet-am-a-0015",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "nham_s_x",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Tranh nào mà tên có âm a?",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "và"
       },
       "choices": [
         {
           "id": "a",
-          "text": "và"
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
         },
         {
           "id": "b",
-          "text": "vè",
-          "errorTag": "nham_s_x"
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"và\".",
+      "hints": ["Nói to tên tranh lên, sẽ nghe ra ngay."],
+      "explanation": "“cá” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -515,34 +593,41 @@
     },
     {
       "id": "viet-am-a-0016",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Chọn tranh có âm a trong tên nhé.",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "hát"
       },
       "choices": [
         {
           "id": "a",
-          "text": "hết",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          },
           "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "hát"
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"hát\".",
+      "hints": ["Tách tên tranh thành từng tiếng nhé."],
+      "explanation": "“bà” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -551,34 +636,41 @@
     },
     {
       "id": "viet-am-a-0017",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Bạn Cú đi tìm âm a. Tranh nào đúng?",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "Nam"
       },
       "choices": [
         {
           "id": "a",
-          "text": "Nam"
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          }
         },
         {
           "id": "b",
-          "text": "Nem",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          },
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"Nam\".",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm a không."],
+      "explanation": "“cà” có âm a.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -589,32 +681,42 @@
       "id": "viet-am-a-0018",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
         "text": "Nghe rồi chọn ô đúng nhé!",
         "tts": true
       },
       "listenTarget": {
-        "text": "Hà"
+        "text": "bà"
       },
       "choices": [
         {
           "id": "a",
-          "text": "Hồ",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
         },
         {
           "id": "b",
-          "text": "Hà"
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
+      "answerKey": "a",
       "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"Hà\".",
+      "explanation": "Bạn Cú đọc “bà”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -623,6 +725,282 @@
     },
     {
       "id": "viet-am-a-0019",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_A"],
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          },
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “cà”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B01",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
+      }
+    },
+    {
+      "id": "viet-am-a-0020",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_A"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ba"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "💐",
+            "labelVi": "bó",
+            "labelEn": "bunch"
+          },
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “ba”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B01",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
+      }
+    },
+    {
+      "id": "viet-am-a-0021",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_A"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "lá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelVi": "lò",
+            "labelEn": "stove"
+          },
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “lá”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B01",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
+      }
+    },
+    {
+      "id": "viet-am-a-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_A"],
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng vừa nghe nằm ở ô nào?",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ca"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          },
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhắc lại tiếng đó trong đầu rồi chọn."],
+      "explanation": "Bạn Cú đọc “ca”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B01",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
+      }
+    },
+    {
+      "id": "viet-am-a-0023",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_A"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe xong, chỉ giúp mình ô đúng nha.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "hoa"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🏞️",
+            "labelVi": "hồ",
+            "labelEn": "lake"
+          },
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelVi": "hoa",
+            "labelEn": "flower"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “hoa”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B01",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
+      }
+    },
+    {
+      "id": "viet-am-a-0024",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_A"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nghe một lần nữa rồi chọn nhé.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "đá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelVi": "đá",
+            "labelEn": "stone"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          },
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “đá”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B01",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
+      }
+    },
+    {
+      "id": "viet-am-a-0025",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 5,
@@ -635,22 +1013,32 @@
         "tts": true
       },
       "listenTarget": {
-        "text": "tay"
+        "text": "cá"
       },
       "choices": [
         {
           "id": "a",
-          "text": "tay"
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "tôi",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"tay\".",
+      "answerKey": "b",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “cá”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
@@ -658,7 +1046,7 @@
       }
     },
     {
-      "id": "viet-am-a-0020",
+      "id": "viet-am-a-0026",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 1,
@@ -671,351 +1059,51 @@
         "tts": true
       },
       "readTarget": {
-        "text": "a  A",
-        "words": ["a", "A"]
+        "text": "a",
+        "words": ["a"]
       },
       "answerKey": {
-        "words": ["a", "A"]
+        "words": ["a"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"a A\".",
+      "explanation": "Đọc là “a”.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B01",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
-      }
-    },
-    {
-      "id": "viet-am-a-0021",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_A"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "ba  ca  cà",
-        "words": ["ba", "ca", "cà"]
-      },
-      "answerKey": {
-        "words": ["ba", "ca", "cà"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"ba ca cà\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B01",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
-      }
-    },
-    {
-      "id": "viet-am-a-0022",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_A"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "và  hát  Nam",
-        "words": ["và", "hát", "Nam"]
-      },
-      "answerKey": {
-        "words": ["và", "hát", "Nam"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"và hát Nam\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B01",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
-      }
-    },
-    {
-      "id": "viet-am-a-0023",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_A"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "ca hát  quả cà  bàn tay",
-        "words": ["ca", "hát", "quả", "cà", "bàn", "tay"]
-      },
-      "answerKey": {
-        "words": ["ca", "hát", "quả", "cà", "bàn", "tay"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"ca hát quả cà bàn tay\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B01",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
-      }
-    },
-    {
-      "id": "viet-am-a-0024",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_A"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "Nam và Hà ca hát",
-        "words": ["Nam", "và", "Hà", "ca", "hát"]
-      },
-      "answerKey": {
-        "words": ["Nam", "và", "Hà", "ca", "hát"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"Nam và Hà ca hát\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B01",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
-      }
-    },
-    {
-      "id": "viet-am-a-0025",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_A"],
-      "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🎤",
-          "labelVi": "ca hát"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "ca hát"
-        },
-        {
-          "id": "b",
-          "text": "cô hát",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"ca hát\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B01",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
-      }
-    },
-    {
-      "id": "viet-am-a-0026",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_A"],
-      "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🍆",
-          "labelVi": "quả cà"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "quả cò",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "b",
-          "text": "quả cà"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"quả cà\".",
-      "meta": {
-        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0027",
-      "type": "MCQ",
+      "type": "READ_ALOUD",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "✋",
-          "labelVi": "bàn tay"
-        }
+        "text": "Đọc to cho bạn Cú nghe nào.",
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bàn tay"
-        },
-        {
-          "id": "b",
-          "text": "bàn tôi",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"bàn tay\".",
+      "readTarget": {
+        "text": "A",
+        "words": ["A"]
+      },
+      "answerKey": {
+        "words": ["A"]
+      },
+      "hints": ["Hít một hơi rồi đọc to nhé."],
+      "explanation": "Đọc là “A”.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0028",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_A"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "model",
-      "prompt": {
-        "text": "Ghép thành tiếng \"ba\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "b"
-        },
-        {
-          "id": "p2",
-          "text": "a"
-        },
-        {
-          "id": "p3",
-          "text": "o"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"ba\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"a\" thành \"ba\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B01",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
-      }
-    },
-    {
-      "id": "viet-am-a-0029",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_A"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "model",
-      "prompt": {
-        "text": "Ghép thành tiếng \"ca\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "c"
-        },
-        {
-          "id": "p2",
-          "text": "a"
-        },
-        {
-          "id": "p3",
-          "text": "ê"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"ca\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"a\" thành \"ca\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B01",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
-      }
-    },
-    {
-      "id": "viet-am-a-0030",
-      "type": "DRAG_DROP",
+      "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_A"],
@@ -1023,43 +1111,76 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"cà\".",
+        "text": "Đến lượt con đọc rồi!",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "c"
-        },
-        {
-          "id": "p2",
-          "text": "à"
-        },
-        {
-          "id": "p3",
-          "text": "o"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
+      "readTarget": {
+        "text": "a  A",
+        "words": ["a", "A"]
       },
-      "hints": ["Âm đầu của \"cà\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"à\" thành \"cà\".",
+      "answerKey": {
+        "words": ["a", "A"]
+      },
+      "hints": ["Đọc như đang kể cho bạn Cú nghe."],
+      "explanation": "Đọc là “a A”.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B01",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
+      }
+    },
+    {
+      "id": "viet-am-a-0029",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_A"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc chậm và rõ nhé.",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "a  a  a",
+        "words": ["a", "a", "a"]
+      },
+      "answerKey": {
+        "words": ["a", "a", "a"]
+      },
+      "hints": ["Ngón tay chỉ tới đâu, đọc tới đó."],
+      "explanation": "Đọc là “a a a”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B01",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
+      }
+    },
+    {
+      "id": "viet-am-a-0030",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_A"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đọc to lên, mình nghe đây!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "A  a",
+        "words": ["A", "a"]
+      },
+      "answerKey": {
+        "words": ["A", "a"]
+      },
+      "hints": ["Không vội đâu, con cứ đọc chậm."],
+      "explanation": "Đọc là “A a”.",
+      "meta": {
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
@@ -1068,49 +1189,43 @@
       "id": "viet-am-a-0031",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"và\".",
+        "text": "Kéo chữ a vào giỏ.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "p1",
-          "text": "v"
+          "id": "k1",
+          "text": "a"
         },
         {
-          "id": "p2",
-          "text": "à"
+          "id": "d1",
+          "text": "o"
         },
         {
-          "id": "p3",
-          "text": "ê"
+          "id": "d2",
+          "text": "ă"
         }
       ],
       "dropZones": [
         {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "id": "gio",
+          "label": "giỏ chữ a",
+          "accepts": ["k1"]
         }
       ],
       "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
+        "gio": ["k1"]
       },
-      "hints": ["Âm đầu của \"và\" là \"v\"."],
-      "explanation": "\"v\" ghép với \"à\" thành \"và\".",
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "Chỉ thẻ a vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
@@ -1119,49 +1234,43 @@
       "id": "viet-am-a-0032",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"hát\".",
+        "text": "Bỏ chữ a vào giỏ giúp mình nhé.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "p1",
-          "text": "h"
+          "id": "k1",
+          "text": "a"
         },
         {
-          "id": "p2",
-          "text": "át"
+          "id": "d1",
+          "text": "e"
         },
         {
-          "id": "p3",
-          "text": "ôt"
+          "id": "d2",
+          "text": "â"
         }
       ],
       "dropZones": [
         {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "id": "gio",
+          "label": "giỏ chữ a",
+          "accepts": ["k1"]
         }
       ],
       "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
+        "gio": ["k1"]
       },
-      "hints": ["Âm đầu của \"hát\" là \"h\"."],
-      "explanation": "\"h\" ghép với \"át\" thành \"hát\".",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "Chỉ thẻ a vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
@@ -1170,56 +1279,50 @@
       "id": "viet-am-a-0033",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"Nam\".",
+        "text": "Tìm chữ a rồi kéo vào giỏ.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "p1",
-          "text": "N"
+          "id": "k1",
+          "text": "a"
         },
         {
-          "id": "p2",
-          "text": "am"
+          "id": "d1",
+          "text": "o"
         },
         {
-          "id": "p3",
-          "text": "êm"
+          "id": "d2",
+          "text": "e"
         }
       ],
       "dropZones": [
         {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "id": "gio",
+          "label": "giỏ chữ a",
+          "accepts": ["k1"]
         }
       ],
       "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
+        "gio": ["k1"]
       },
-      "hints": ["Âm đầu của \"Nam\" là \"N\"."],
-      "explanation": "\"N\" ghép với \"am\" thành \"Nam\".",
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "Chỉ thẻ a vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0034",
-      "type": "WRITE_PHOTO",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_A"],
@@ -1227,29 +1330,44 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Viết chữ a vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Kéo mọi chữ a vào giỏ nào.",
         "tts": true
       },
-      "rubric": {
-        "criteria": [
-          "Viết chữ a một nét cong kín rồi nét móc",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["a"]
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "a"
+        },
+        {
+          "id": "d1",
+          "text": "ă"
+        },
+        {
+          "id": "d2",
+          "text": "â"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ a",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
       },
-      "answerKey": null,
-      "hints": ["Chữ a tròn như quả trứng, có cái đuôi bên phải."],
-      "explanation": "Chữ a có một nét cong tròn và một nét móc.",
+      "hints": ["Kéo từng thẻ một thôi."],
+      "explanation": "Chỉ thẻ a vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0035",
-      "type": "WRITE_PHOTO",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_A"],
@@ -1257,113 +1375,268 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Viết chữ A vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Kéo tranh có âm a vào ô.",
         "tts": true
       },
-      "rubric": {
-        "criteria": [
-          "Hai nét xiên gặp nhau ở đỉnh, nét ngang ở giữa",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["A"]
+      "dragItems": [
+        {
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm a",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
       },
-      "answerKey": null,
-      "hints": ["Chữ A hoa giống cái mái nhà có thanh ngang."],
-      "explanation": "Chữ A hoa có hai nét xiên và một nét ngang.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm a không."],
+      "explanation": "“cá” và “lá” có âm a.",
       "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0036",
-      "type": "WRITE_PHOTO",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
+      "scaffold": "model",
       "prompt": {
-        "text": "Viết từ \"ca hát\" vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Tranh nào có âm a thì kéo vào ô nhé.",
         "tts": true
       },
-      "rubric": {
-        "criteria": ["Viết đủ các tiếng", "Có dấu thanh đúng chỗ", "Chữ đều nét"],
-        "sampleAnswers": ["ca hát"]
+      "dragItems": [
+        {
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
+        },
+        {
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🏞️",
+            "labelVi": "hồ",
+            "labelEn": "lake"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm a",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
       },
-      "answerKey": null,
-      "hints": ["Nhìn mẫu trong sách rồi viết theo."],
-      "explanation": "Từ này viết là \"ca hát\".",
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“bà” và “cà” có âm a.",
       "meta": {
-        "estSeconds": 70,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0037",
-      "type": "COUNT_TAP",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Câu \"Nam và Hà ca hát\" có mấy tiếng? Chạm để đếm.",
+        "text": "Bỏ tranh có âm a vào ô giúp mình.",
         "tts": true
       },
-      "countTarget": {
-        "objects": {
-          "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng",
-          "labelEn": "syllable"
+      "dragItems": [
+        {
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          }
         },
-        "correctCount": 5,
-        "layout": "line"
+        {
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelVi": "hoa",
+            "labelEn": "flower"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "💐",
+            "labelVi": "bó",
+            "labelEn": "bunch"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm a",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
       },
-      "answerKey": 5,
-      "hints": ["Mỗi tiếng con đọc một nhịp thì chạm một lần."],
-      "explanation": "Câu này có 5 tiếng.",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“ba” và “hoa” có âm a.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0038",
-      "type": "MCQ",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Chọn chữ có nét móc bên phải.",
+        "text": "Tìm tranh có âm a rồi kéo vào ô.",
         "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
-          "text": "a"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelVi": "đá",
+            "labelEn": "stone"
+          }
         },
         {
-          "id": "b",
-          "text": "o",
-          "errorTag": "nham_b_d"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Chữ a có cái đuôi thẳng bên phải, chữ o thì tròn kín."],
-      "explanation": "Chữ a có nét móc bên phải, chữ o không có.",
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm a",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
+      },
+      "hints": ["Nói to tên tranh lên, sẽ nghe ra ngay."],
+      "explanation": "“đá” và “ca” có âm a.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
@@ -1375,184 +1648,186 @@
       "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ tròn có đuôi vào ô.",
+        "text": "Kéo đúng tranh có âm a nào!",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "k1",
-          "text": "a"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          }
         },
         {
-          "id": "k2",
-          "text": "o"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelVi": "lò",
+            "labelEn": "stove"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🏞️",
+            "labelVi": "hồ",
+            "labelEn": "lake"
+          }
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
+          "label": "ô có âm a",
+          "accepts": ["g1", "g2"]
         }
       ],
       "answerKey": {
-        "o": ["k1"]
+        "o": ["g1", "g2"]
       },
-      "hints": ["Chữ a có cái đuôi thẳng bên phải, chữ o thì tròn kín."],
-      "explanation": "Chữ a có nét móc bên phải, chữ o không có.",
+      "hints": ["Tách tên tranh thành từng tiếng nhé."],
+      "explanation": "“lá” và “cá” có âm a.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0040",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào không có dấu thanh?",
+        "text": "Viết chữ a vào vở rồi nhờ ba mẹ chụp.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bà",
-          "errorTag": "thieu_dau_thanh"
-        },
-        {
-          "id": "b",
-          "text": "ba"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["“ba” không có dấu, “bà” có dấu huyền."],
-      "explanation": "“ba” viết trơn, không có dấu thanh nào.",
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["a"]
+      },
+      "answerKey": null,
+      "hints": ["Ngồi thẳng, cầm bút nhẹ thôi nhé."],
+      "explanation": "Chữ a viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0041",
-      "type": "DRAG_DROP",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ không mang dấu nào vào ô.",
+        "text": "Con viết A vào vở nhé, xong nhờ ba mẹ chụp.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "ba"
-        },
-        {
-          "id": "k2",
-          "text": "bà"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["A"]
       },
-      "hints": ["“ba” không có dấu, “bà” có dấu huyền."],
-      "explanation": "“ba” viết trơn, không có dấu thanh nào.",
+      "answerKey": null,
+      "hints": ["Viết chậm cho tròn nét."],
+      "explanation": "Chữ A viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0042",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu huyền?",
+        "text": "Lấy vở viết a, rồi chụp gửi bạn Cú.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cà"
-        },
-        {
-          "id": "b",
-          "text": "ca",
-          "errorTag": "thieu_dau_thanh"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["“cà” có dấu huyền ở trên chữ a."],
-      "explanation": "“cà” có dấu huyền, “ca” thì không.",
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["a"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn dòng kẻ để chữ không bị nghiêng."],
+      "explanation": "Chữ a viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }
     },
     {
       "id": "viet-am-a-0043",
-      "type": "DRAG_DROP",
+      "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_A"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ mang dấu huyền vào ô.",
+        "text": "Chạm từng cá để đếm.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "cà"
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "cá",
+          "labelEn": "fish"
         },
-        {
-          "id": "k2",
-          "text": "ca"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+        "correctCount": 4,
+        "layout": "line"
       },
-      "hints": ["“cà” có dấu huyền ở trên chữ a."],
-      "explanation": "“cà” có dấu huyền, “ca” thì không.",
+      "answerKey": 4,
+      "hints": ["Chạm tới đâu đếm tới đó nhé."],
+      "explanation": "Có 4 cá.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B01",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 1 tr.14–15"
       }

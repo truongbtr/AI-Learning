@@ -2,9 +2,9 @@
   "skillCode": "VIET.HV.AM_B",
   "subject": "VIET",
   "generatedBy": "claude-code",
-  "promptVersion": "exercise-gen-v1",
+  "promptVersion": "exercise-gen-v2",
   "lessonRefs": ["KNTT-TV1-T1-B02"],
-  "note": "Bài 2: B b và dấu huyền — câu nhận biết “Bà cho bé búp bê.”",
+  "note": "Bài 2: B b và dấu huyền — tiếng đọc được chỉ có ba, bà.",
   "exercises": [
     {
       "id": "viet-am-b-0001",
@@ -14,7 +14,7 @@
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
       "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
         "text": "Đâu là chữ b?",
         "tts": true
@@ -31,8 +31,8 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Chữ b có bụng quay sang phải, như chữ trong tiếng “bà”."],
-      "explanation": "Chữ b có nét sổ thẳng rồi bụng tròn quay sang phải. Đây là chữ b.",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ b là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -43,46 +43,13 @@
       "id": "viet-am-b-0002",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_p_q",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Đâu là chữ b?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "p",
-          "errorTag": "nham_p_q"
-        },
-        {
-          "id": "b",
-          "text": "b"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Chữ b có bụng quay sang phải, như chữ trong tiếng “bà”."],
-      "explanation": "Chữ b có nét sổ thẳng rồi bụng tròn quay sang phải. Đây là chữ b.",
-      "meta": {
-        "estSeconds": 15,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0003",
-      "type": "MCQ",
-      "language": "vi",
       "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ B?",
+        "text": "Chữ nào là chữ B?",
         "tts": true
       },
       "choices": [
@@ -97,8 +64,41 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Chữ B hoa có hai cái bụng chồng lên nhau."],
-      "explanation": "Chữ B hoa có nét sổ và hai bụng tròn. Đây là chữ B.",
+      "hints": ["So hai chữ xem chỗ nào khác nhau nhé."],
+      "explanation": "Chữ B là chữ ở ô đúng con vừa chọn.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chỉ giúp bạn Cú chữ b nhé!",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b"
+        },
+        {
+          "id": "b",
+          "text": "d",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ b có nét riêng, tìm nét đó nhé."],
+      "explanation": "Chữ b là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -109,31 +109,31 @@
       "id": "viet-am-b-0004",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
       "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm b?",
+        "text": "Tìm chữ B giúp mình nào.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "ba"
+          "text": "D",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "b",
-          "text": "da",
-          "errorTag": "nham_b_d"
+          "text": "B"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm b không."],
-      "explanation": "Tiếng \"ba\" có âm b; tiếng \"da\" thì không.",
+      "answerKey": "b",
+      "hints": ["Đọc thầm tên chữ rồi chọn."],
+      "explanation": "Chữ B là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
@@ -142,31 +142,31 @@
       "id": "viet-am-b-0005",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm b?",
+        "text": "Chạm vào chữ b.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "đa",
-          "errorTag": "nham_b_d"
+          "text": "b"
         },
         {
           "id": "b",
-          "text": "bà"
+          "text": "d",
+          "errorTag": "nham_b_d"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm b không."],
-      "explanation": "Tiếng \"bà\" có âm b; tiếng \"đa\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nhìn phần trên của chữ trước."],
+      "explanation": "Chữ b là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
@@ -175,31 +175,31 @@
       "id": "viet-am-b-0006",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào có âm b?",
+        "text": "Ô nào có chữ B?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bé"
+          "text": "D",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "b",
-          "text": "dê",
-          "errorTag": "nham_b_d"
+          "text": "B"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm b không."],
-      "explanation": "Tiếng \"bé\" có âm b; tiếng \"dê\" thì không.",
+      "answerKey": "b",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ B là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
@@ -208,29 +208,39 @@
       "id": "viet-am-b-0007",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm b?",
+        "text": "Tên tranh nào có âm b?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dế",
-          "errorTag": "nham_b_d"
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
         },
         {
           "id": "b",
-          "text": "bê"
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          },
+          "errorTag": "nham_am_dau"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm b không."],
-      "explanation": "Tiếng \"bê\" có âm b; tiếng \"dế\" thì không.",
+      "answerKey": "a",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm b không."],
+      "explanation": "“bà” có âm b.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -241,29 +251,39 @@
       "id": "viet-am-b-0008",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm b?",
+        "text": "Tranh nào mà tên có âm b?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bò"
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          },
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "dò",
-          "errorTag": "nham_b_d"
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm b không."],
-      "explanation": "Tiếng \"bò\" có âm b; tiếng \"dò\" thì không.",
+      "answerKey": "b",
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“ba” có âm b.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -274,29 +294,39 @@
       "id": "viet-am-b-0009",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm b?",
+        "text": "Chọn tranh có âm b trong tên nhé.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "đủ",
-          "errorTag": "nham_b_d"
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
         },
         {
           "id": "b",
-          "text": "búp"
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          },
+          "errorTag": "nham_am_dau"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm b không."],
-      "explanation": "Tiếng \"búp\" có âm b; tiếng \"đủ\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“bò” có âm b.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -307,29 +337,39 @@
       "id": "viet-am-b-0010",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm b?",
+        "text": "Bạn Cú đi tìm âm b. Tranh nào đúng?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bí"
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "chó",
+            "labelEn": "dog"
+          },
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "dì",
-          "errorTag": "nham_b_d"
+          "image": {
+            "kind": "emoji",
+            "value": "💐",
+            "labelVi": "bó",
+            "labelEn": "bunch"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm b không."],
-      "explanation": "Tiếng \"bí\" có âm b; tiếng \"dì\" thì không.",
+      "answerKey": "b",
+      "hints": ["Nói to tên tranh lên, sẽ nghe ra ngay."],
+      "explanation": "“bó” có âm b.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -346,23 +386,33 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm b?",
+        "text": "Tranh nào đọc lên nghe thấy âm b?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dơ",
-          "errorTag": "nham_b_d"
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
         },
         {
           "id": "b",
-          "text": "bơ"
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          },
+          "errorTag": "nham_am_dau"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm b không."],
-      "explanation": "Tiếng \"bơ\" có âm b; tiếng \"dơ\" thì không.",
+      "answerKey": "a",
+      "hints": ["Tách tên tranh thành từng tiếng nhé."],
+      "explanation": "“bà” có âm b.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -371,12 +421,289 @@
     },
     {
       "id": "viet-am-b-0012",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chạm vào tranh có âm b.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm b không."],
+      "explanation": "“ba” có âm b.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tranh này là tiếng nào?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👵",
+          "labelVi": "bà",
+          "labelEn": "grandma"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bà"
+        },
+        {
+          "id": "b",
+          "text": "ba",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“bà” đọc là bà.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👨",
+          "labelVi": "ba",
+          "labelEn": "dad"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bà",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "ba"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“ba” đọc là ba.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0015",
+      "type": "MCQ",
       "language": "vi",
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đọc hai ô rồi chọn tiếng hợp với tranh.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👵",
+          "labelVi": "bà",
+          "labelEn": "grandma"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bà"
+        },
+        {
+          "id": "b",
+          "text": "ba",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn dấu thanh ở trên nguyên âm."],
+      "explanation": "“bà” đọc là bà.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào gọi tên bức tranh này?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👨",
+          "labelVi": "ba",
+          "labelEn": "dad"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bà",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "ba"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm thôi, chậm mà chắc."],
+      "explanation": "“ba” đọc là ba.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn tiếng đúng với tranh nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👵",
+          "labelVi": "bà",
+          "labelEn": "grandma"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bà"
+        },
+        {
+          "id": "b",
+          "text": "ba",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“bà” đọc là bà.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0018",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Bạn Cú nhìn tranh rồi tìm tiếng. Con giúp nhé!",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👨",
+          "labelVi": "ba",
+          "labelEn": "dad"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bà",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "ba"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“ba” đọc là ba.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0019",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
       "prompt": {
         "text": "Nghe rồi chọn ô đúng nhé!",
@@ -388,17 +715,27 @@
       "choices": [
         {
           "id": "a",
-          "text": "da",
-          "errorTag": "nham_b_d"
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          }
         },
         {
           "id": "b",
-          "text": "ba"
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          },
+          "errorTag": "nham_am_dau"
         }
       ],
-      "answerKey": "b",
+      "answerKey": "a",
       "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"ba\".",
+      "explanation": "Bạn Cú đọc “ba”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -406,13 +743,151 @@
       }
     },
     {
-      "id": "viet-am-b-0013",
+      "id": "viet-am-b-0020",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bò"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “bò”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0021",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bó"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "💐",
+            "labelVi": "bó",
+            "labelEn": "bunch"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "chó",
+            "labelEn": "dog"
+          },
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “bó”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “bà”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0023",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Nghe rồi chọn ô đúng nhé!",
@@ -428,13 +903,13 @@
         },
         {
           "id": "b",
-          "text": "dà",
-          "errorTag": "nham_b_d"
+          "text": "ba",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "answerKey": "a",
       "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bà\".",
+      "explanation": "Bạn Cú đọc “bà”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -442,71 +917,71 @@
       }
     },
     {
-      "id": "viet-am-b-0014",
+      "id": "viet-am-b-0024",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ba"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bà",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "ba"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “ba”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0025",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": "thieu_dau_thanh",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
         "tts": true
       },
       "listenTarget": {
-        "text": "bé"
+        "text": "bà"
       },
       "choices": [
         {
           "id": "a",
-          "text": "dé",
-          "errorTag": "nham_b_d"
+          "text": "bà"
         },
         {
           "id": "b",
-          "text": "bé"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bé\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0015",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "bê"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bê"
-        },
-        {
-          "id": "b",
-          "text": "dê",
-          "errorTag": "nham_b_d"
+          "text": "ba",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bê\".",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “bà”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -514,35 +989,35 @@
       }
     },
     {
-      "id": "viet-am-b-0016",
+      "id": "viet-am-b-0026",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
         "tts": true
       },
       "listenTarget": {
-        "text": "bò"
+        "text": "ba"
       },
       "choices": [
         {
           "id": "a",
-          "text": "dò",
-          "errorTag": "nham_b_d"
+          "text": "bà",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "bò"
+          "text": "ba"
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bò\".",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “ba”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -550,115 +1025,7 @@
       }
     },
     {
-      "id": "viet-am-b-0017",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "búp"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "búp"
-        },
-        {
-          "id": "b",
-          "text": "dúp",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"búp\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0018",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "bí"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dí",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "bí"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bí\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0019",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "bơ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bơ"
-        },
-        {
-          "id": "b",
-          "text": "dơ",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bơ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0020",
+      "id": "viet-am-b-0027",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 1,
@@ -671,14 +1038,14 @@
         "tts": true
       },
       "readTarget": {
-        "text": "b  B",
-        "words": ["b", "B"]
+        "text": "b",
+        "words": ["b"]
       },
       "answerKey": {
-        "words": ["b", "B"]
+        "words": ["b"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"b B\".",
+      "explanation": "Đọc là “b”.",
       "meta": {
         "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -686,7 +1053,7 @@
       }
     },
     {
-      "id": "viet-am-b-0021",
+      "id": "viet-am-b-0028",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 2,
@@ -695,18 +1062,18 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to nhé!",
+        "text": "Đọc to cho bạn Cú nghe nào.",
         "tts": true
       },
       "readTarget": {
-        "text": "ba  bà  bé",
-        "words": ["ba", "bà", "bé"]
+        "text": "ba",
+        "words": ["ba"]
       },
       "answerKey": {
-        "words": ["ba", "bà", "bé"]
+        "words": ["ba"]
       },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"ba bà bé\".",
+      "hints": ["Hít một hơi rồi đọc to nhé."],
+      "explanation": "Đọc là “ba”.",
       "meta": {
         "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -714,7 +1081,7 @@
       }
     },
     {
-      "id": "viet-am-b-0022",
+      "id": "viet-am-b-0029",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 3,
@@ -723,18 +1090,18 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to nhé!",
+        "text": "Đến lượt con đọc rồi!",
         "tts": true
       },
       "readTarget": {
-        "text": "bê  bò  búp",
-        "words": ["bê", "bò", "búp"]
+        "text": "bà",
+        "words": ["bà"]
       },
       "answerKey": {
-        "words": ["bê", "bò", "búp"]
+        "words": ["bà"]
       },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"bê bò búp\".",
+      "hints": ["Đọc như đang kể cho bạn Cú nghe."],
+      "explanation": "Đọc là “bà”.",
       "meta": {
         "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -742,27 +1109,27 @@
       }
     },
     {
-      "id": "viet-am-b-0023",
+      "id": "viet-am-b-0030",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
+      "scaffold": "model",
       "prompt": {
-        "text": "Con đọc to nhé!",
+        "text": "Con đọc chậm và rõ nhé.",
         "tts": true
       },
       "readTarget": {
-        "text": "bà  ba ba  búp bê",
-        "words": ["bà", "ba", "ba", "búp", "bê"]
+        "text": "ba  bà",
+        "words": ["ba", "bà"]
       },
       "answerKey": {
-        "words": ["bà", "ba", "ba", "búp", "bê"]
+        "words": ["ba", "bà"]
       },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"bà ba ba búp bê\".",
+      "hints": ["Ngón tay chỉ tới đâu, đọc tới đó."],
+      "explanation": "Đọc là “ba bà”.",
       "meta": {
         "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -770,7 +1137,7 @@
       }
     },
     {
-      "id": "viet-am-b-0024",
+      "id": "viet-am-b-0031",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 5,
@@ -779,18 +1146,18 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to nhé!",
+        "text": "Đọc to lên, mình nghe đây!",
         "tts": true
       },
       "readTarget": {
-        "text": "Bà cho bé búp bê",
-        "words": ["Bà", "cho", "bé", "búp", "bê"]
+        "text": "b  a  ba",
+        "words": ["b", "a", "ba"]
       },
       "answerKey": {
-        "words": ["Bà", "cho", "bé", "búp", "bê"]
+        "words": ["b", "a", "ba"]
       },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"Bà cho bé búp bê\".",
+      "hints": ["Không vội đâu, con cứ đọc chậm."],
+      "explanation": "Đọc là “b a ba”.",
       "meta": {
         "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -798,37 +1165,44 @@
       }
     },
     {
-      "id": "viet-am-b-0025",
-      "type": "MCQ",
+      "id": "viet-am-b-0032",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "👵",
-          "labelVi": "bà"
-        }
+        "text": "Kéo chữ b vào giỏ.",
+        "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
-          "text": "bà"
+          "id": "k1",
+          "text": "b"
         },
         {
-          "id": "b",
-          "text": "dà",
-          "errorTag": "nham_b_d"
+          "id": "d1",
+          "text": "d"
+        },
+        {
+          "id": "d2",
+          "text": "o"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"bà\".",
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ b",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "Chỉ thẻ b vào giỏ, thẻ khác ở lại khay.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -836,37 +1210,44 @@
       }
     },
     {
-      "id": "viet-am-b-0026",
-      "type": "MCQ",
+      "id": "viet-am-b-0033",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐢",
-          "labelVi": "ba ba"
-        }
+        "text": "Bỏ chữ b vào giỏ giúp mình nhé.",
+        "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
-          "text": "da da",
-          "errorTag": "nham_b_d"
+          "id": "k1",
+          "text": "b"
         },
         {
-          "id": "b",
-          "text": "ba ba"
+          "id": "d1",
+          "text": "d"
+        },
+        {
+          "id": "d2",
+          "text": "a"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"ba ba\".",
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ b",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "Chỉ thẻ b vào giỏ, thẻ khác ở lại khay.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
@@ -874,54 +1255,61 @@
       }
     },
     {
-      "id": "viet-am-b-0027",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🪆",
-          "labelVi": "búp bê"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "búp bê"
-        },
-        {
-          "id": "b",
-          "text": "dúp dê",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"búp bê\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0028",
+      "id": "viet-am-b-0034",
       "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"ba\".",
+        "text": "Tìm chữ b rồi kéo vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "b"
+        },
+        {
+          "id": "d1",
+          "text": "a"
+        },
+        {
+          "id": "d2",
+          "text": "d"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ b",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "Chỉ thẻ b vào giỏ, thẻ khác ở lại khay.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B02",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
+      }
+    },
+    {
+      "id": "viet-am-b-0035",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_B"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng “ba”.",
         "tts": true
       },
       "dragItems": [
@@ -935,44 +1323,44 @@
         },
         {
           "id": "p3",
-          "text": "d"
+          "text": "o"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"ba\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"a\" thành \"ba\".",
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "“ba” gồm b và a.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
-      "id": "viet-am-b-0029",
+      "id": "viet-am-b-0036",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Ghép thành tiếng \"bà\".",
+        "text": "Kéo hai thẻ để thành tiếng “bà”.",
         "tts": true
       },
       "dragItems": [
@@ -986,326 +1374,36 @@
         },
         {
           "id": "p3",
-          "text": "d"
+          "text": "à"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"bà\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"à\" thành \"bà\".",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "“bà” gồm b và à.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0030",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"bé\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "b"
-        },
-        {
-          "id": "p2",
-          "text": "é"
-        },
-        {
-          "id": "p3",
-          "text": "d"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"bé\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"é\" thành \"bé\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0031",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"bê\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "b"
-        },
-        {
-          "id": "p2",
-          "text": "ê"
-        },
-        {
-          "id": "p3",
-          "text": "d"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"bê\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"ê\" thành \"bê\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0032",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"bò\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "b"
-        },
-        {
-          "id": "p2",
-          "text": "ò"
-        },
-        {
-          "id": "p3",
-          "text": "d"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"bò\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"ò\" thành \"bò\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0033",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"búp\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "b"
-        },
-        {
-          "id": "p2",
-          "text": "úp"
-        },
-        {
-          "id": "p3",
-          "text": "d"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"búp\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"úp\" thành \"búp\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0034",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ b vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Nét sổ trước, bụng tròn quay sang phải",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["b"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ b có bụng quay sang phải, như chữ trong tiếng “bà”."],
-      "explanation": "Chữ b có nét sổ thẳng rồi bụng tròn quay sang phải.",
-      "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0035",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ B vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Nét sổ rồi hai bụng tròn đều nhau",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["B"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ B hoa có hai cái bụng chồng lên nhau."],
-      "explanation": "Chữ B hoa có nét sổ và hai bụng tròn.",
-      "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
-      }
-    },
-    {
-      "id": "viet-am-b-0036",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_B"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết từ \"bà\" vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": ["Viết đủ các tiếng", "Có dấu thanh đúng chỗ", "Chữ đều nét"],
-        "sampleAnswers": ["bà"]
-      },
-      "answerKey": null,
-      "hints": ["Nhìn mẫu trong sách rồi viết theo."],
-      "explanation": "Từ này viết là \"bà\".",
-      "meta": {
-        "estSeconds": 70,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-am-b-0037",
-      "type": "COUNT_TAP",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_B"],
@@ -1313,57 +1411,94 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Câu \"Bà cho bé búp bê\" có mấy tiếng? Chạm để đếm.",
+        "text": "Xếp thành tiếng “ba” nhé.",
         "tts": true
       },
-      "countTarget": {
-        "objects": {
-          "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng",
-          "labelEn": "syllable"
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "b"
         },
-        "correctCount": 5,
-        "layout": "line"
+        {
+          "id": "p2",
+          "text": "a"
+        },
+        {
+          "id": "p3",
+          "text": "à"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "van": ["p2"]
       },
-      "answerKey": 5,
-      "hints": ["Mỗi tiếng con đọc một nhịp thì chạm một lần."],
-      "explanation": "Câu này có 5 tiếng.",
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "“ba” gồm b và a.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-am-b-0038",
-      "type": "MCQ",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Chữ nào có bụng quay sang phải?",
+        "text": "Đặt đúng chỗ để đọc được “bà”.",
         "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
+          "id": "p1",
           "text": "b"
         },
         {
-          "id": "b",
-          "text": "d",
-          "errorTag": "nham_b_d"
+          "id": "p2",
+          "text": "à"
+        },
+        {
+          "id": "p3",
+          "text": "a"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Chữ b bụng quay sang phải, chữ d bụng quay sang trái."],
-      "explanation": "Chữ b có bụng bên phải nét sổ.",
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "van": ["p2"]
+      },
+      "hints": ["Kéo từng thẻ một thôi."],
+      "explanation": "“bà” gồm b và à.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
@@ -1372,72 +1507,136 @@
       "id": "viet-am-b-0039",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ bụng quay phải vào ô.",
+        "text": "Kéo tranh có âm b vào ô.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "k1",
-          "text": "b"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
         },
         {
-          "id": "k2",
-          "text": "d"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "chó",
+            "labelEn": "dog"
+          }
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
+          "label": "ô có âm b",
+          "accepts": ["g1", "g2"]
         }
       ],
       "answerKey": {
-        "o": ["k1"]
+        "o": ["g1", "g2"]
       },
-      "hints": ["Chữ b bụng quay sang phải, chữ d bụng quay sang trái."],
-      "explanation": "Chữ b có bụng bên phải nét sổ.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm b không."],
+      "explanation": "“bà” và “ba” có âm b.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-am-b-0040",
-      "type": "MCQ",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào bắt đầu bằng chữ b?",
+        "text": "Tranh nào có âm b thì kéo vào ô nhé.",
         "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
-          "text": "dà",
-          "errorTag": "nham_b_d"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
         },
         {
-          "id": "b",
-          "text": "bà"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "💐",
+            "labelVi": "bó",
+            "labelEn": "bunch"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nghĩ tới bà của con: bắt đầu bằng chữ b."],
-      "explanation": "“bà” bắt đầu bằng chữ b.",
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm b",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
+      },
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“bò” và “bó” có âm b.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
@@ -1449,184 +1648,186 @@
       "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ có âm đầu b vào ô.",
+        "text": "Bỏ tranh có âm b vào ô giúp mình.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "k1",
-          "text": "bà"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          }
         },
         {
-          "id": "k2",
-          "text": "dà"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          }
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
+          "label": "ô có âm b",
+          "accepts": ["g1", "g2"]
         }
       ],
       "answerKey": {
-        "o": ["k1"]
+        "o": ["g1", "g2"]
       },
-      "hints": ["Nghĩ tới bà của con: bắt đầu bằng chữ b."],
-      "explanation": "“bà” bắt đầu bằng chữ b.",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“ba” và “bò” có âm b.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-am-b-0042",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào chỉ con bò nhỏ?",
+        "text": "Viết chữ b vào vở rồi nhờ ba mẹ chụp.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bê"
-        },
-        {
-          "id": "b",
-          "text": "dê",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Con bê là con bò nhỏ, viết bằng chữ b."],
-      "explanation": "“bê” bắt đầu bằng chữ b, “dê” bằng chữ d.",
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["b"]
+      },
+      "answerKey": null,
+      "hints": ["Ngồi thẳng, cầm bút nhẹ thôi nhé."],
+      "explanation": "Chữ b viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-am-b-0043",
-      "type": "DRAG_DROP",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ có âm đầu là b vào ô.",
+        "text": "Con viết “ba” vào vở nhé, xong nhờ ba mẹ chụp.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "bê"
-        },
-        {
-          "id": "k2",
-          "text": "dê"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+      "rubric": {
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Dấu thanh đặt ngay trên (hoặc dưới) nguyên âm",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["ba"]
       },
-      "hints": ["Con bê là con bò nhỏ, viết bằng chữ b."],
-      "explanation": "“bê” bắt đầu bằng chữ b, “dê” bằng chữ d.",
+      "answerKey": null,
+      "hints": ["Viết chậm cho tròn nét."],
+      "explanation": "“ba” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-am-b-0044",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu huyền?",
+        "text": "Lấy vở viết “bà”, rồi chụp gửi bạn Cú.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "ba",
-          "errorTag": "thieu_dau_thanh"
-        },
-        {
-          "id": "b",
-          "text": "bà"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Dấu huyền là nét xiên từ trên xuống bên trái."],
-      "explanation": "“bà” có dấu huyền trên chữ a.",
+      "rubric": {
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Dấu thanh đặt ngay trên (hoặc dưới) nguyên âm",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["bà"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn dòng kẻ để chữ không bị nghiêng."],
+      "explanation": "“bà” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }
     },
     {
       "id": "viet-am-b-0045",
-      "type": "DRAG_DROP",
+      "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_B"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ mang dấu huyền vào ô.",
+        "text": "Chạm từng bà để đếm.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "bà"
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "👵",
+          "labelVi": "bà",
+          "labelEn": "grandma"
         },
-        {
-          "id": "k2",
-          "text": "ba"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+        "correctCount": 3,
+        "layout": "line"
       },
-      "hints": ["Dấu huyền là nét xiên từ trên xuống bên trái."],
-      "explanation": "“bà” có dấu huyền trên chữ a.",
+      "answerKey": 3,
+      "hints": ["Chạm tới đâu đếm tới đó nhé."],
+      "explanation": "Có 3 bà.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B02",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17"
       }

@@ -1,3 +1,4 @@
+export * from "./error-semantics";
 export * from "./error-taxonomy";
 export * from "./exercise";
 export * from "./exercise-validate";
@@ -6,6 +7,7 @@ export * from "./lesson-units";
 export * from "./load";
 export * from "./paths";
 export * from "./skill-map";
+export * from "./tieng-viet-progression";
 export * from "./timetable";
 export * from "./to-rows";
 export * from "./validate-content";

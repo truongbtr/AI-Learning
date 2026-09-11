@@ -2,9 +2,9 @@
   "skillCode": "VIET.HV.AM_O",
   "subject": "VIET",
   "generatedBy": "claude-code",
-  "promptVersion": "exercise-gen-v1",
+  "promptVersion": "exercise-gen-v2",
   "lessonRefs": ["KNTT-TV1-T1-B06", "KNTT-TV1-T1-B07"],
-  "note": "Bài 6: O o và dấu hỏi — câu nhận biết “Đàn bò gặm cỏ.”",
+  "note": "Bài 6: O o và dấu hỏi — tiếng đọc được thêm bò, bó, bỏ, cò, có, cỏ, cả.",
   "exercises": [
     {
       "id": "viet-am-o-0001",
@@ -13,8 +13,8 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
         "text": "Đâu là chữ o?",
         "tts": true
@@ -26,13 +26,13 @@
         },
         {
           "id": "b",
-          "text": "a",
-          "errorTag": "nham_b_d"
+          "text": "ô",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
       "answerKey": "a",
-      "hints": ["Chữ o tròn như quả trứng, không có đuôi."],
-      "explanation": "Chữ o là một nét cong tròn khép kín. Đây là chữ o.",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ o là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -46,26 +46,26 @@
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ o?",
+        "text": "Chữ nào là chữ O?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "ô",
-          "errorTag": "thieu_dau_thanh"
+          "text": "A",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "o"
+          "text": "O"
         }
       ],
       "answerKey": "b",
-      "hints": ["Chữ o tròn như quả trứng, không có đuôi."],
-      "explanation": "Chữ o là một nét cong tròn khép kín. Đây là chữ o.",
+      "hints": ["So hai chữ xem chỗ nào khác nhau nhé."],
+      "explanation": "Chữ O là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -76,29 +76,29 @@
       "id": "viet-am-o-0003",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ O?",
+        "text": "Chỉ giúp bạn Cú chữ o nhé!",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "Ô",
-          "errorTag": "thieu_dau_thanh"
+          "text": "o"
         },
         {
           "id": "b",
-          "text": "O"
+          "text": "ô",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Chữ O hoa to tròn như bánh xe."],
-      "explanation": "Chữ O hoa là nét cong to khép kín. Đây là chữ O.",
+      "answerKey": "a",
+      "hints": ["Chữ o có nét riêng, tìm nét đó nhé."],
+      "explanation": "Chữ o là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -109,31 +109,31 @@
       "id": "viet-am-o-0004",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm o?",
+        "text": "Tìm chữ O giúp mình nào.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bò"
+          "text": "A",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "bà",
-          "errorTag": "doc_nham_van"
+          "text": "O"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm o không."],
-      "explanation": "Tiếng \"bò\" có âm o; tiếng \"bà\" thì không.",
+      "answerKey": "b",
+      "hints": ["Đọc thầm tên chữ rồi chọn."],
+      "explanation": "Chữ O là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
@@ -142,31 +142,31 @@
       "id": "viet-am-o-0005",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm o?",
+        "text": "Chạm vào chữ o.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "ba",
-          "errorTag": "doc_nham_van"
+          "text": "o"
         },
         {
           "id": "b",
-          "text": "bó"
+          "text": "ô",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm o không."],
-      "explanation": "Tiếng \"bó\" có âm o; tiếng \"ba\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nhìn phần trên của chữ trước."],
+      "explanation": "Chữ o là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
@@ -175,29 +175,39 @@
       "id": "viet-am-o-0006",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào có âm o?",
+        "text": "Tên tranh nào có âm o?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bỏ"
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
         },
         {
           "id": "b",
-          "text": "bé",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          },
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm o không."],
-      "explanation": "Tiếng \"bỏ\" có âm o; tiếng \"bé\" thì không.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm o không."],
+      "explanation": "“bò” có âm o.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -208,29 +218,39 @@
       "id": "viet-am-o-0007",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm o?",
+        "text": "Tranh nào mà tên có âm o?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cà",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          },
           "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "cò"
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          }
         }
       ],
       "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm o không."],
-      "explanation": "Tiếng \"cò\" có âm o; tiếng \"cà\" thì không.",
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“cỏ” có âm o.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -241,29 +261,39 @@
       "id": "viet-am-o-0008",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm o?",
+        "text": "Chọn tranh có âm o trong tên nhé.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "có"
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "chó",
+            "labelEn": "dog"
+          }
         },
         {
           "id": "b",
-          "text": "cá",
+          "image": {
+            "kind": "emoji",
+            "value": "✏️",
+            "labelVi": "chì",
+            "labelEn": "pencil"
+          },
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm o không."],
-      "explanation": "Tiếng \"có\" có âm o; tiếng \"cá\" thì không.",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“chó” có âm o.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -280,23 +310,33 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm o?",
+        "text": "Bạn Cú đi tìm âm o. Tranh nào đúng?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cả",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          },
           "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "cỏ"
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelVi": "lò",
+            "labelEn": "stove"
+          }
         }
       ],
       "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm o không."],
-      "explanation": "Tiếng \"cỏ\" có âm o; tiếng \"cả\" thì không.",
+      "hints": ["Nói to tên tranh lên, sẽ nghe ra ngay."],
+      "explanation": "“lò” có âm o.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -313,23 +353,33 @@
       "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm o?",
+        "text": "Tranh nào đọc lên nghe thấy âm o?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "to"
+          "image": {
+            "kind": "emoji",
+            "value": "💐",
+            "labelVi": "bó",
+            "labelEn": "bunch"
+          }
         },
         {
           "id": "b",
-          "text": "ta",
+          "image": {
+            "kind": "emoji",
+            "value": "🎃",
+            "labelVi": "bí",
+            "labelEn": "pumpkin"
+          },
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm o không."],
-      "explanation": "Tiếng \"to\" có âm o; tiếng \"ta\" thì không.",
+      "hints": ["Tách tên tranh thành từng tiếng nhé."],
+      "explanation": "“bó” có âm o.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -340,29 +390,39 @@
       "id": "viet-am-o-0011",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm o?",
+        "text": "Chạm vào tranh có âm o.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "na",
+          "image": {
+            "kind": "emoji",
+            "value": "🥑",
+            "labelVi": "bơ",
+            "labelEn": "avocado"
+          },
           "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "nó"
+          "image": {
+            "kind": "emoji",
+            "value": "🐞",
+            "labelVi": "bọ",
+            "labelEn": "beetle"
+          }
         }
       ],
       "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm o không."],
-      "explanation": "Tiếng \"nó\" có âm o; tiếng \"na\" thì không.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm o không."],
+      "explanation": "“bọ” có âm o.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -371,34 +431,37 @@
     },
     {
       "id": "viet-am-o-0012",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "bò"
+        "text": "Tranh này là tiếng nào?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐄",
+          "labelVi": "bò",
+          "labelEn": "cow"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bồ",
-          "errorTag": "doc_nham_van"
+          "text": "bò"
         },
         {
           "id": "b",
-          "text": "bò"
+          "text": "bó",
+          "errorTag": "sai_dau_thanh"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bò\".",
+      "answerKey": "a",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“bò” đọc là bò.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -407,34 +470,37 @@
     },
     {
       "id": "viet-am-o-0013",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "sai_dau_thanh",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "bó"
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌿",
+          "labelVi": "cỏ",
+          "labelEn": "grass"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bó"
+          "text": "có",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "bố",
-          "errorTag": "doc_nham_van"
+          "text": "cỏ"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bó\".",
+      "answerKey": "b",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“cỏ” đọc là cỏ.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -443,12 +509,334 @@
     },
     {
       "id": "viet-am-o-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ô nào viết tiếng “bỏ”?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bỏ"
+        },
+        {
+          "id": "b",
+          "text": "bò",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn dấu thanh ở trên nguyên âm."],
+      "explanation": "“bỏ” đọc là bỏ.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chỉ giúp mình tiếng “cò” nhé.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cỏ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "cò"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm thôi, chậm mà chắc."],
+      "explanation": "“cò” đọc là cò.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tìm tiếng “có” trong hai ô này.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "có"
+        },
+        {
+          "id": "b",
+          "text": "cò",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“có” đọc là có.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bạn Cú nhìn tranh rồi tìm tiếng. Con giúp nhé!",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "💐",
+          "labelVi": "bó",
+          "labelEn": "bunch"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bỏ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bó"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“bó” đọc là bó.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0018",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cỏ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          },
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “cỏ”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0019",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "chó"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "✏️",
+            "labelVi": "chì",
+            "labelEn": "pencil"
+          },
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "chó",
+            "labelEn": "dog"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “chó”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0020",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "lò"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelVi": "lò",
+            "labelEn": "stove"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          },
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “lò”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0021",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bó"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🎃",
+            "labelVi": "bí",
+            "labelEn": "pumpkin"
+          },
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "💐",
+            "labelVi": "bó",
+            "labelEn": "bunch"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “bó”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
       "scaffold": "none",
       "prompt": {
         "text": "Nghe rồi chọn ô đúng nhé!",
@@ -460,17 +848,17 @@
       "choices": [
         {
           "id": "a",
-          "text": "bõ",
-          "errorTag": "nham_hoi_nga"
+          "text": "bỏ"
         },
         {
           "id": "b",
-          "text": "bỏ"
+          "text": "bò",
+          "errorTag": "sai_dau_thanh"
         }
       ],
-      "answerKey": "b",
+      "answerKey": "a",
       "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bỏ\".",
+      "explanation": "Bạn Cú đọc “bỏ”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -478,16 +866,16 @@
       }
     },
     {
-      "id": "viet-am-o-0015",
+      "id": "viet-am-o-0023",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
         "tts": true
       },
       "listenTarget": {
@@ -496,17 +884,17 @@
       "choices": [
         {
           "id": "a",
-          "text": "cò"
+          "text": "cỏ",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "cồ",
-          "errorTag": "doc_nham_van"
+          "text": "cò"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"cò\".",
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “cò”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -514,16 +902,16 @@
       }
     },
     {
-      "id": "viet-am-o-0016",
+      "id": "viet-am-o-0024",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
         "tts": true
       },
       "listenTarget": {
@@ -532,17 +920,17 @@
       "choices": [
         {
           "id": "a",
-          "text": "cố",
-          "errorTag": "doc_nham_van"
+          "text": "có"
         },
         {
           "id": "b",
-          "text": "có"
+          "text": "cò",
+          "errorTag": "sai_dau_thanh"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"có\".",
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “có”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -550,71 +938,35 @@
       }
     },
     {
-      "id": "viet-am-o-0017",
+      "id": "viet-am-o-0025",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": "sai_dau_thanh",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
         "tts": true
       },
       "listenTarget": {
-        "text": "cỏ"
+        "text": "bó"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cỏ"
+          "text": "bỏ",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "b",
-          "text": "cõ",
-          "errorTag": "nham_hoi_nga"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"cỏ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0018",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "to"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "tô",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "b",
-          "text": "to"
+          "text": "bó"
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"to\".",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “bó”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -622,43 +974,7 @@
       }
     },
     {
-      "id": "viet-am-o-0019",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "nó"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "nó"
-        },
-        {
-          "id": "b",
-          "text": "nố",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"nó\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0020",
+      "id": "viet-am-o-0026",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 1,
@@ -671,14 +987,14 @@
         "tts": true
       },
       "readTarget": {
-        "text": "o  O",
-        "words": ["o", "O"]
+        "text": "o",
+        "words": ["o"]
       },
       "answerKey": {
-        "words": ["o", "O"]
+        "words": ["o"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"o O\".",
+      "explanation": "Đọc là “o”.",
       "meta": {
         "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -686,7 +1002,7 @@
       }
     },
     {
-      "id": "viet-am-o-0021",
+      "id": "viet-am-o-0027",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 2,
@@ -695,18 +1011,18 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to nhé!",
+        "text": "Đọc to cho bạn Cú nghe nào.",
         "tts": true
       },
       "readTarget": {
-        "text": "bò  bó  bỏ",
-        "words": ["bò", "bó", "bỏ"]
+        "text": "bò  bó",
+        "words": ["bò", "bó"]
       },
       "answerKey": {
-        "words": ["bò", "bó", "bỏ"]
+        "words": ["bò", "bó"]
       },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"bò bó bỏ\".",
+      "hints": ["Hít một hơi rồi đọc to nhé."],
+      "explanation": "Đọc là “bò bó”.",
       "meta": {
         "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
@@ -714,7 +1030,7 @@
       }
     },
     {
-      "id": "viet-am-o-0022",
+      "id": "viet-am-o-0028",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 3,
@@ -723,7 +1039,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to nhé!",
+        "text": "Đến lượt con đọc rồi!",
         "tts": true
       },
       "readTarget": {
@@ -733,333 +1049,66 @@
       "answerKey": {
         "words": ["cò", "có", "cỏ"]
       },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"cò có cỏ\".",
+      "hints": ["Đọc như đang kể cho bạn Cú nghe."],
+      "explanation": "Đọc là “cò có cỏ”.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0023",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "con bò  con cò  bụi cỏ",
-        "words": ["con", "bò", "con", "cò", "bụi", "cỏ"]
-      },
-      "answerKey": {
-        "words": ["con", "bò", "con", "cò", "bụi", "cỏ"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"con bò con cò bụi cỏ\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0024",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "Đàn bò gặm cỏ",
-        "words": ["Đàn", "bò", "gặm", "cỏ"]
-      },
-      "answerKey": {
-        "words": ["Đàn", "bò", "gặm", "cỏ"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"Đàn bò gặm cỏ\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0025",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐄",
-          "labelVi": "con bò"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "con bò"
-        },
-        {
-          "id": "b",
-          "text": "con bó",
-          "errorTag": "sai_dau_thanh"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"con bò\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0026",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🕊️",
-          "labelVi": "con cò"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "con có",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "b",
-          "text": "con cò"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"con cò\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0027",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🌿",
-          "labelVi": "bụi cỏ"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bụi cỏ"
-        },
-        {
-          "id": "b",
-          "text": "bụi cõ",
-          "errorTag": "nham_hoi_nga"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"bụi cỏ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0028",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "model",
-      "prompt": {
-        "text": "Ghép thành tiếng \"bò\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "b"
-        },
-        {
-          "id": "p2",
-          "text": "ò"
-        },
-        {
-          "id": "p3",
-          "text": "ô"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"bò\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"ò\" thành \"bò\".",
-      "meta": {
-        "estSeconds": 35,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-am-o-0029",
-      "type": "DRAG_DROP",
+      "type": "READ_ALOUD",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"bó\".",
+        "text": "Con đọc chậm và rõ nhé.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "b"
-        },
-        {
-          "id": "p2",
-          "text": "ó"
-        },
-        {
-          "id": "p3",
-          "text": "ô"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
+      "readTarget": {
+        "text": "bỏ  bò",
+        "words": ["bỏ", "bò"]
       },
-      "hints": ["Âm đầu của \"bó\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"ó\" thành \"bó\".",
+      "answerKey": {
+        "words": ["bỏ", "bò"]
+      },
+      "hints": ["Ngón tay chỉ tới đâu, đọc tới đó."],
+      "explanation": "Đọc là “bỏ bò”.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-am-o-0030",
-      "type": "DRAG_DROP",
+      "type": "READ_ALOUD",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
+      "scaffold": "model",
       "prompt": {
-        "text": "Ghép thành tiếng \"bỏ\".",
+        "text": "Đọc to lên, mình nghe đây!",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "b"
-        },
-        {
-          "id": "p2",
-          "text": "ỏ"
-        },
-        {
-          "id": "p3",
-          "text": "ô"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
+      "readTarget": {
+        "text": "ca  cỏ  cá",
+        "words": ["ca", "cỏ", "cá"]
       },
-      "hints": ["Âm đầu của \"bỏ\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"ỏ\" thành \"bỏ\".",
+      "answerKey": {
+        "words": ["ca", "cỏ", "cá"]
+      },
+      "hints": ["Không vội đâu, con cứ đọc chậm."],
+      "explanation": "Đọc là “ca cỏ cá”.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
@@ -1068,49 +1117,43 @@
       "id": "viet-am-o-0031",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"cò\".",
+        "text": "Kéo chữ o vào giỏ.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "p1",
-          "text": "c"
+          "id": "k1",
+          "text": "o"
         },
         {
-          "id": "p2",
-          "text": "ò"
+          "id": "d1",
+          "text": "a"
         },
         {
-          "id": "p3",
-          "text": "ô"
+          "id": "d2",
+          "text": "e"
         }
       ],
       "dropZones": [
         {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "id": "gio",
+          "label": "giỏ chữ o",
+          "accepts": ["k1"]
         }
       ],
       "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
+        "gio": ["k1"]
       },
-      "hints": ["Âm đầu của \"cò\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"ò\" thành \"cò\".",
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "Chỉ thẻ o vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
@@ -1119,49 +1162,43 @@
       "id": "viet-am-o-0032",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"có\".",
+        "text": "Bỏ chữ o vào giỏ giúp mình nhé.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "p1",
-          "text": "c"
+          "id": "k1",
+          "text": "o"
         },
         {
-          "id": "p2",
-          "text": "ó"
+          "id": "d1",
+          "text": "e"
         },
         {
-          "id": "p3",
-          "text": "ô"
+          "id": "d2",
+          "text": "a"
         }
       ],
       "dropZones": [
         {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "id": "gio",
+          "label": "giỏ chữ o",
+          "accepts": ["k1"]
         }
       ],
       "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
+        "gio": ["k1"]
       },
-      "hints": ["Âm đầu của \"có\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"ó\" thành \"có\".",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "Chỉ thẻ o vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
@@ -1170,13 +1207,109 @@
       "id": "viet-am-o-0033",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"cỏ\".",
+        "text": "Tìm chữ o rồi kéo vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "o"
+        },
+        {
+          "id": "d1",
+          "text": "a"
+        },
+        {
+          "id": "d2",
+          "text": "ê"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ o",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "Chỉ thẻ o vào giỏ, thẻ khác ở lại khay.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0034",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng “bò”.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "b"
+        },
+        {
+          "id": "p2",
+          "text": "ò"
+        },
+        {
+          "id": "p3",
+          "text": "ó"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "van": ["p2"]
+      },
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "“bò” gồm b và ò.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B06",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
+      }
+    },
+    {
+      "id": "viet-am-o-0035",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_O"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo hai thẻ để thành tiếng “cỏ”.",
         "tts": true
       },
       "dragItems": [
@@ -1190,180 +1323,218 @@
         },
         {
           "id": "p3",
-          "text": "ô"
+          "text": "ò"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"cỏ\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"ỏ\" thành \"cỏ\".",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "“cỏ” gồm c và ỏ.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0034",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ o vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Một nét cong tròn khép kín, đều nét",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["o"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ o tròn như quả trứng, không có đuôi."],
-      "explanation": "Chữ o là một nét cong tròn khép kín.",
-      "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B06",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
-      }
-    },
-    {
-      "id": "viet-am-o-0035",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_O"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ O vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Nét cong to, tròn đều, khép kín",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["O"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ O hoa to tròn như bánh xe."],
-      "explanation": "Chữ O hoa là nét cong to khép kín.",
-      "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-am-o-0036",
-      "type": "WRITE_PHOTO",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
+      "scaffold": "model",
       "prompt": {
-        "text": "Viết từ \"con bò\" vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Xếp thành tiếng “có” nhé.",
         "tts": true
       },
-      "rubric": {
-        "criteria": ["Viết đủ các tiếng", "Có dấu thanh đúng chỗ", "Chữ đều nét"],
-        "sampleAnswers": ["con bò"]
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "c"
+        },
+        {
+          "id": "p2",
+          "text": "ó"
+        },
+        {
+          "id": "p3",
+          "text": "ỏ"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "van": ["p2"]
       },
-      "answerKey": null,
-      "hints": ["Nhìn mẫu trong sách rồi viết theo."],
-      "explanation": "Từ này viết là \"con bò\".",
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "“có” gồm c và ó.",
       "meta": {
-        "estSeconds": 70,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-am-o-0037",
-      "type": "COUNT_TAP",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Câu \"Đàn bò gặm cỏ\" có mấy tiếng? Chạm để đếm.",
+        "text": "Kéo tranh có âm o vào ô.",
         "tts": true
       },
-      "countTarget": {
-        "objects": {
-          "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng",
-          "labelEn": "syllable"
+      "dragItems": [
+        {
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
         },
-        "correctCount": 4,
-        "layout": "line"
+        {
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm o",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
       },
-      "answerKey": 4,
-      "hints": ["Mỗi tiếng con đọc một nhịp thì chạm một lần."],
-      "explanation": "Câu này có 4 tiếng.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm o không."],
+      "explanation": "“bò” và “cỏ” có âm o.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-am-o-0038",
-      "type": "MCQ",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu hỏi?",
+        "text": "Tranh nào có âm o thì kéo vào ô nhé.",
         "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
-          "text": "cỏ"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "chó",
+            "labelEn": "dog"
+          }
         },
         {
-          "id": "b",
-          "text": "cõ",
-          "errorTag": "nham_hoi_nga"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelVi": "lò",
+            "labelEn": "stove"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "✏️",
+            "labelVi": "chì",
+            "labelEn": "pencil"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Dấu hỏi giống cái móc câu, dấu ngã lượn sóng."],
-      "explanation": "“cỏ” mang dấu hỏi, đọc xuống rồi lên nhẹ.",
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm o",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
+      },
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“chó” và “lò” có âm o.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
@@ -1375,184 +1546,186 @@
       "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ mang dấu hỏi vào ô.",
+        "text": "Bỏ tranh có âm o vào ô giúp mình.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "k1",
-          "text": "cỏ"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "💐",
+            "labelVi": "bó",
+            "labelEn": "bunch"
+          }
         },
         {
-          "id": "k2",
-          "text": "cõ"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐞",
+            "labelVi": "bọ",
+            "labelEn": "beetle"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🎃",
+            "labelVi": "bí",
+            "labelEn": "pumpkin"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🥑",
+            "labelVi": "bơ",
+            "labelEn": "avocado"
+          }
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
+          "label": "ô có âm o",
+          "accepts": ["g1", "g2"]
         }
       ],
       "answerKey": {
-        "o": ["k1"]
+        "o": ["g1", "g2"]
       },
-      "hints": ["Dấu hỏi giống cái móc câu, dấu ngã lượn sóng."],
-      "explanation": "“cỏ” mang dấu hỏi, đọc xuống rồi lên nhẹ.",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“bó” và “bọ” có âm o.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-am-o-0040",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu móc câu ở trên?",
+        "text": "Viết chữ o vào vở rồi nhờ ba mẹ chụp.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bõ",
-          "errorTag": "nham_hoi_nga"
-        },
-        {
-          "id": "b",
-          "text": "bỏ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Dấu hỏi là một nét móc cong."],
-      "explanation": "“bỏ” mang dấu hỏi.",
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["o"]
+      },
+      "answerKey": null,
+      "hints": ["Ngồi thẳng, cầm bút nhẹ thôi nhé."],
+      "explanation": "Chữ o viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-am-o-0041",
-      "type": "DRAG_DROP",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ mang dấu hỏi vào ô.",
+        "text": "Con viết “bò” vào vở nhé, xong nhờ ba mẹ chụp.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "bỏ"
-        },
-        {
-          "id": "k2",
-          "text": "bõ"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+      "rubric": {
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Dấu thanh đặt ngay trên (hoặc dưới) nguyên âm",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["bò"]
       },
-      "hints": ["Dấu hỏi là một nét móc cong."],
-      "explanation": "“bỏ” mang dấu hỏi.",
+      "answerKey": null,
+      "hints": ["Viết chậm cho tròn nét."],
+      "explanation": "“bò” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-am-o-0042",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Chữ nào không đội mũ?",
+        "text": "Lấy vở viết “cỏ”, rồi chụp gửi bạn Cú.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "o"
-        },
-        {
-          "id": "b",
-          "text": "ô",
-          "errorTag": "thieu_dau_thanh"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Chữ ô có mũ trên đầu."],
-      "explanation": "Chữ o không đội mũ.",
+      "rubric": {
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Dấu thanh đặt ngay trên (hoặc dưới) nguyên âm",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["cỏ"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn dòng kẻ để chữ không bị nghiêng."],
+      "explanation": "“cỏ” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }
     },
     {
       "id": "viet-am-o-0043",
-      "type": "DRAG_DROP",
+      "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_O"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ không có mũ vào ô.",
+        "text": "Chạm từng bò để đếm.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "o"
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐄",
+          "labelVi": "bò",
+          "labelEn": "cow"
         },
-        {
-          "id": "k2",
-          "text": "ô"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+        "correctCount": 3,
+        "layout": "line"
       },
-      "hints": ["Chữ ô có mũ trên đầu."],
-      "explanation": "Chữ o không đội mũ.",
+      "answerKey": 3,
+      "hints": ["Chạm tới đâu đếm tới đó nhé."],
+      "explanation": "Có 3 bò.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B06",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 tr.24–25"
       }

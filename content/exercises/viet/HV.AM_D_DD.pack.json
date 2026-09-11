@@ -2,9 +2,9 @@
   "skillCode": "VIET.HV.AM_D_DD",
   "subject": "VIET",
   "generatedBy": "claude-code",
-  "promptVersion": "exercise-gen-v1",
+  "promptVersion": "exercise-gen-v2",
   "lessonRefs": ["KNTT-TV1-T1-B08"],
-  "note": "Bài 8: D d Đ đ — câu nhận biết “Dưới gốc đa, các bạn chơi dung dăng dung dẻ.”",
+  "note": "Bài 8: D d – Đ đ (sau bài 7 đã có ô và dấu nặng) — tiếng đọc được thêm da, dê, dế, dò, đa, đá, đò, đỏ.",
   "exercises": [
     {
       "id": "viet-am-d-0001",
@@ -13,8 +13,8 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
         "text": "Đâu là chữ d?",
         "tts": true
@@ -26,13 +26,13 @@
         },
         {
           "id": "b",
-          "text": "b",
-          "errorTag": "nham_b_d"
+          "text": "đ",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
       "answerKey": "a",
-      "hints": ["Chữ d có bụng quay sang trái, ngược với chữ b."],
-      "explanation": "Chữ d có bụng tròn bên trái rồi nét sổ. Đây là chữ d.",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ d là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -43,29 +43,29 @@
       "id": "viet-am-d-0002",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "nham_p_q",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ d?",
+        "text": "Chữ nào là chữ đ?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "q",
-          "errorTag": "nham_p_q"
+          "text": "d",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "d"
+          "text": "đ"
         }
       ],
       "answerKey": "b",
-      "hints": ["Chữ d có bụng quay sang trái, ngược với chữ b."],
-      "explanation": "Chữ d có bụng tròn bên trái rồi nét sổ. Đây là chữ d.",
+      "hints": ["So hai chữ xem chỗ nào khác nhau nhé."],
+      "explanation": "Chữ đ là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -76,29 +76,29 @@
       "id": "viet-am-d-0003",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ đ?",
+        "text": "Chỉ giúp bạn Cú chữ D nhé!",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "d",
-          "errorTag": "viet_thieu_net"
+          "text": "D"
         },
         {
           "id": "b",
-          "text": "đ"
+          "text": "Đ",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Chữ đ giống chữ d nhưng có gạch ngang trên đầu."],
-      "explanation": "Chữ đ là chữ d có thêm nét gạch ngang. Đây là chữ đ.",
+      "answerKey": "a",
+      "hints": ["Chữ D có nét riêng, tìm nét đó nhé."],
+      "explanation": "Chữ D là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -109,31 +109,31 @@
       "id": "viet-am-d-0004",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm d?",
+        "text": "Tìm chữ Đ giúp mình nào.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "da"
+          "text": "D",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "ba",
-          "errorTag": "nham_b_d"
+          "text": "Đ"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm d không."],
-      "explanation": "Tiếng \"da\" có âm d; tiếng \"ba\" thì không.",
+      "answerKey": "b",
+      "hints": ["Đọc thầm tên chữ rồi chọn."],
+      "explanation": "Chữ Đ là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
@@ -142,31 +142,31 @@
       "id": "viet-am-d-0005",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm d?",
+        "text": "Chạm vào chữ d.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bẻ",
-          "errorTag": "nham_b_d"
+          "text": "d"
         },
         {
           "id": "b",
-          "text": "dẻ"
+          "text": "đ",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm d không."],
-      "explanation": "Tiếng \"dẻ\" có âm d; tiếng \"bẻ\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nhìn phần trên của chữ trước."],
+      "explanation": "Chữ d là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
@@ -175,31 +175,31 @@
       "id": "viet-am-d-0006",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào có âm d?",
+        "text": "Ô nào có chữ đ?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dế"
+          "text": "d",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "bế",
-          "errorTag": "nham_b_d"
+          "text": "đ"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm d không."],
-      "explanation": "Tiếng \"dế\" có âm d; tiếng \"bế\" thì không.",
+      "answerKey": "b",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ đ là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
@@ -208,29 +208,39 @@
       "id": "viet-am-d-0007",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm đ?",
+        "text": "Tên tranh nào có âm đ?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cá",
-          "errorTag": "nham_am_dau"
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          }
         },
         {
           "id": "b",
-          "text": "đá"
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          },
+          "errorTag": "nham_am_dau"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm đ không."],
-      "explanation": "Tiếng \"đá\" có âm đ; tiếng \"cá\" thì không.",
+      "answerKey": "a",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm đ không."],
+      "explanation": "“đò” có âm đ.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -241,29 +251,39 @@
       "id": "viet-am-d-0008",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm đ?",
+        "text": "Tranh nào mà tên có âm đ?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "đò"
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          },
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "cò",
-          "errorTag": "nham_am_dau"
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelVi": "đá",
+            "labelEn": "stone"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm đ không."],
-      "explanation": "Tiếng \"đò\" có âm đ; tiếng \"cò\" thì không.",
+      "answerKey": "b",
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“đá” có âm đ.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -280,23 +300,33 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm đ?",
+        "text": "Chọn tranh có âm đ trong tên nhé.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bổ",
-          "errorTag": "nham_am_dau"
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          }
         },
         {
           "id": "b",
-          "text": "đổ"
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelVi": "lò",
+            "labelEn": "stove"
+          },
+          "errorTag": "nham_am_dau"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm đ không."],
-      "explanation": "Tiếng \"đổ\" có âm đ; tiếng \"bổ\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“đò” có âm đ.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -313,7 +343,272 @@
       "targetsError": "nham_am_dau",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm đ?",
+        "text": "Bạn Cú đi tìm âm đ. Tranh nào đúng?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelVi": "đá",
+            "labelEn": "stone"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nói to tên tranh lên, sẽ nghe ra ngay."],
+      "explanation": "“đá” có âm đ.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào đọc là “da”?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "da"
+        },
+        {
+          "id": "b",
+          "text": "ba",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“da” đọc là da.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐐",
+          "labelVi": "dê",
+          "labelEn": "goat"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bê",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "dê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“dê” đọc là dê.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ô nào viết tiếng “dò”?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dò"
+        },
+        {
+          "id": "b",
+          "text": "bò",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn dấu thanh ở trên nguyên âm."],
+      "explanation": "“dò” đọc là dò.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào gọi tên bức tranh này?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🪨",
+          "labelVi": "đá",
+          "labelEn": "stone"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "đá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm thôi, chậm mà chắc."],
+      "explanation": "“đá” đọc là đá.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn tiếng đúng với tranh nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🛶",
+          "labelVi": "đò",
+          "labelEn": "ferry"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đò"
+        },
+        {
+          "id": "b",
+          "text": "cò",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“đò” đọc là đò.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bạn Cú nhìn tranh rồi tìm tiếng. Con giúp nhé!",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🦗",
+          "labelVi": "dế",
+          "labelEn": "cricket"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bế",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "dế"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“dế” đọc là dế.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Hai ô này, ô nào là “đa”?",
         "tts": true
       },
       "choices": [
@@ -328,8 +623,8 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm đ không."],
-      "explanation": "Tiếng \"đa\" có âm đ; tiếng \"ca\" thì không.",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“đa” đọc là đa.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -337,8 +632,100 @@
       }
     },
     {
-      "id": "viet-am-d-0011",
-      "type": "MCQ",
+      "id": "viet-am-d-0018",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "đá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelVi": "đá",
+            "labelEn": "stone"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          },
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “đá”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0019",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "đò"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelVi": "lò",
+            "labelEn": "stove"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “đò”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0020",
+      "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_D_DD"],
@@ -346,23 +733,36 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm d?",
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
         "tts": true
+      },
+      "listenTarget": {
+        "text": "đá"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bê",
-          "errorTag": "nham_b_d"
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelVi": "đá",
+            "labelEn": "stone"
+          }
         },
         {
           "id": "b",
-          "text": "dê"
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          },
+          "errorTag": "nham_am_dau"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm d không."],
-      "explanation": "Tiếng \"dê\" có âm d; tiếng \"bê\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “đá”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -370,71 +770,35 @@
       }
     },
     {
-      "id": "viet-am-d-0012",
+      "id": "viet-am-d-0021",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Nghe rồi chọn ô đúng nhé!",
         "tts": true
       },
       "listenTarget": {
-        "text": "da"
+        "text": "dò"
       },
       "choices": [
         {
           "id": "a",
-          "text": "ba",
-          "errorTag": "nham_b_d"
+          "text": "dò"
         },
         {
           "id": "b",
-          "text": "da"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"da\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0013",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "dẻ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dẻ"
-        },
-        {
-          "id": "b",
-          "text": "bẻ",
+          "text": "bò",
           "errorTag": "nham_b_d"
         }
       ],
       "answerKey": "a",
       "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"dẻ\".",
+      "explanation": "Bạn Cú đọc “dò”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -442,16 +806,88 @@
       }
     },
     {
-      "id": "viet-am-d-0014",
+      "id": "viet-am-d-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "đá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "đá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “đá”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0023",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "đò"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đò"
+        },
+        {
+          "id": "b",
+          "text": "cò",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “đò”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0024",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
         "tts": true
       },
       "listenTarget": {
@@ -469,8 +905,8 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"dế\".",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “dế”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -478,124 +914,16 @@
       }
     },
     {
-      "id": "viet-am-d-0015",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "đá"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "đá"
-        },
-        {
-          "id": "b",
-          "text": "dá",
-          "errorTag": "viet_thieu_net"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"đá\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0016",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "đò"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dò",
-          "errorTag": "viet_thieu_net"
-        },
-        {
-          "id": "b",
-          "text": "đò"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"đò\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0017",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "đổ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "đổ"
-        },
-        {
-          "id": "b",
-          "text": "dổ",
-          "errorTag": "viet_thieu_net"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"đổ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0018",
+      "id": "viet-am-d-0025",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Tiếng vừa nghe nằm ở ô nào?",
         "tts": true
       },
       "listenTarget": {
@@ -604,53 +932,17 @@
       "choices": [
         {
           "id": "a",
-          "text": "da",
-          "errorTag": "viet_thieu_net"
-        },
-        {
-          "id": "b",
           "text": "đa"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"đa\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0019",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "dê"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dê"
         },
         {
           "id": "b",
-          "text": "bê",
-          "errorTag": "nham_b_d"
+          "text": "ca",
+          "errorTag": "nham_am_dau"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"dê\".",
+      "hints": ["Nhắc lại tiếng đó trong đầu rồi chọn."],
+      "explanation": "Bạn Cú đọc “đa”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -658,7 +950,7 @@
       }
     },
     {
-      "id": "viet-am-d-0020",
+      "id": "viet-am-d-0026",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 1,
@@ -678,233 +970,164 @@
         "words": ["d", "đ"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"d đ\".",
+      "explanation": "Đọc là “d đ”.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0021",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "da  dẻ  dế",
-        "words": ["da", "dẻ", "dế"]
-      },
-      "answerKey": {
-        "words": ["da", "dẻ", "dế"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"da dẻ dế\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0022",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "đá  đò  đổ",
-        "words": ["đá", "đò", "đổ"]
-      },
-      "answerKey": {
-        "words": ["đá", "đò", "đổ"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"đá đò đổ\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0023",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "đá dế  đa đa  ô đỏ",
-        "words": ["đá", "dế", "đa", "đa", "ô", "đỏ"]
-      },
-      "answerKey": {
-        "words": ["đá", "dế", "đa", "đa", "ô", "đỏ"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"đá dế đa đa ô đỏ\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0024",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "Dưới gốc đa các bạn chơi dung dăng dung dẻ",
-        "words": ["Dưới", "gốc", "đa", "các", "bạn", "chơi", "dung", "dăng", "dung", "dẻ"]
-      },
-      "answerKey": {
-        "words": ["Dưới", "gốc", "đa", "các", "bạn", "chơi", "dung", "dăng", "dung", "dẻ"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"Dưới gốc đa các bạn chơi dung dăng dung dẻ\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0025",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🦗",
-          "labelVi": "đá dế"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "đá dế"
-        },
-        {
-          "id": "b",
-          "text": "bá bế",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"đá dế\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0026",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐦",
-          "labelVi": "đa đa"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "da da",
-          "errorTag": "viet_thieu_net"
-        },
-        {
-          "id": "b",
-          "text": "đa đa"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"đa đa\".",
-      "meta": {
-        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-am-d-0027",
-      "type": "MCQ",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đọc to cho bạn Cú nghe nào.",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "da  dê",
+        "words": ["da", "dê"]
+      },
+      "answerKey": {
+        "words": ["da", "dê"]
+      },
+      "hints": ["Hít một hơi rồi đọc to nhé."],
+      "explanation": "Đọc là “da dê”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0028",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đến lượt con đọc rồi!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "đa  đá",
+        "words": ["đa", "đá"]
+      },
+      "answerKey": {
+        "words": ["đa", "đá"]
+      },
+      "hints": ["Đọc như đang kể cho bạn Cú nghe."],
+      "explanation": "Đọc là “đa đá”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0029",
+      "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "☂️",
-          "labelVi": "ô đỏ"
-        }
+        "text": "Con đọc chậm và rõ nhé.",
+        "tts": true
       },
-      "choices": [
+      "readTarget": {
+        "text": "đò  đỏ",
+        "words": ["đò", "đỏ"]
+      },
+      "answerKey": {
+        "words": ["đò", "đỏ"]
+      },
+      "hints": ["Ngón tay chỉ tới đâu, đọc tới đó."],
+      "explanation": "Đọc là “đò đỏ”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0030",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đọc to lên, mình nghe đây!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "dê  dế  dò",
+        "words": ["dê", "dế", "dò"]
+      },
+      "answerKey": {
+        "words": ["dê", "dế", "dò"]
+      },
+      "hints": ["Không vội đâu, con cứ đọc chậm."],
+      "explanation": "Đọc là “dê dế dò”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0031",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo chữ d vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
         {
-          "id": "a",
-          "text": "ô đỏ"
+          "id": "k1",
+          "text": "d"
         },
         {
-          "id": "b",
-          "text": "ô dỏ",
-          "errorTag": "viet_thieu_net"
+          "id": "d1",
+          "text": "b"
+        },
+        {
+          "id": "d2",
+          "text": "o"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"ô đỏ\".",
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ d",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "Chỉ thẻ d vào giỏ, thẻ khác ở lại khay.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
@@ -912,16 +1135,106 @@
       }
     },
     {
-      "id": "viet-am-d-0028",
+      "id": "viet-am-d-0032",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bỏ chữ đ vào giỏ giúp mình nhé.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "đ"
+        },
+        {
+          "id": "d1",
+          "text": "b"
+        },
+        {
+          "id": "d2",
+          "text": "a"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ đ",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "Chỉ thẻ đ vào giỏ, thẻ khác ở lại khay.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0033",
       "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"da\".",
+        "text": "Tìm chữ d rồi kéo vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "d"
+        },
+        {
+          "id": "d1",
+          "text": "b"
+        },
+        {
+          "id": "d2",
+          "text": "c"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ d",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "Chỉ thẻ d vào giỏ, thẻ khác ở lại khay.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-am-d-0034",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_D_DD"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng “da”.",
         "tts": true
       },
       "dragItems": [
@@ -935,86 +1248,35 @@
         },
         {
           "id": "p3",
-          "text": "b"
+          "text": "ê"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"da\" là \"d\"."],
-      "explanation": "\"d\" ghép với \"a\" thành \"da\".",
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "“da” gồm d và a.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
     },
     {
-      "id": "viet-am-d-0029",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "model",
-      "prompt": {
-        "text": "Ghép thành tiếng \"dẻ\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "d"
-        },
-        {
-          "id": "p2",
-          "text": "ẻ"
-        },
-        {
-          "id": "p3",
-          "text": "b"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"dẻ\" là \"d\"."],
-      "explanation": "\"d\" ghép với \"ẻ\" thành \"dẻ\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0030",
+      "id": "viet-am-d-0035",
       "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 3,
@@ -1023,58 +1285,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"dế\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "d"
-        },
-        {
-          "id": "p2",
-          "text": "ế"
-        },
-        {
-          "id": "p3",
-          "text": "b"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"dế\" là \"d\"."],
-      "explanation": "\"d\" ghép với \"ế\" thành \"dế\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0031",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"đá\".",
+        "text": "Kéo hai thẻ để thành tiếng “đá”.",
         "tts": true
       },
       "dragItems": [
@@ -1088,282 +1299,218 @@
         },
         {
           "id": "p3",
-          "text": "d"
+          "text": "a"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"đá\" là \"đ\"."],
-      "explanation": "\"đ\" ghép với \"á\" thành \"đá\".",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "“đá” gồm đ và á.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0032",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"đò\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "đ"
-        },
-        {
-          "id": "p2",
-          "text": "ò"
-        },
-        {
-          "id": "p3",
-          "text": "d"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"đò\" là \"đ\"."],
-      "explanation": "\"đ\" ghép với \"ò\" thành \"đò\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0033",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"đổ\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "đ"
-        },
-        {
-          "id": "p2",
-          "text": "ổ"
-        },
-        {
-          "id": "p3",
-          "text": "d"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"đổ\" là \"đ\"."],
-      "explanation": "\"đ\" ghép với \"ổ\" thành \"đổ\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0034",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ d vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Bụng tròn bên trái rồi nét sổ bên phải",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["d"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ d có bụng quay sang trái, ngược với chữ b."],
-      "explanation": "Chữ d có bụng tròn bên trái rồi nét sổ.",
-      "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-am-d-0035",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_D_DD"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ đ vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Viết chữ d rồi thêm nét gạch ngang",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["đ"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ đ giống chữ d nhưng có gạch ngang trên đầu."],
-      "explanation": "Chữ đ là chữ d có thêm nét gạch ngang.",
-      "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-am-d-0036",
-      "type": "WRITE_PHOTO",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
+      "scaffold": "model",
       "prompt": {
-        "text": "Viết từ \"đá dế\" vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Xếp thành tiếng “dê” nhé.",
         "tts": true
       },
-      "rubric": {
-        "criteria": ["Viết đủ các tiếng", "Có dấu thanh đúng chỗ", "Chữ đều nét"],
-        "sampleAnswers": ["đá dế"]
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "d"
+        },
+        {
+          "id": "p2",
+          "text": "ê"
+        },
+        {
+          "id": "p3",
+          "text": "a"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "van": ["p2"]
       },
-      "answerKey": null,
-      "hints": ["Nhìn mẫu trong sách rồi viết theo."],
-      "explanation": "Từ này viết là \"đá dế\".",
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "“dê” gồm d và ê.",
       "meta": {
-        "estSeconds": 70,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-am-d-0037",
-      "type": "COUNT_TAP",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Câu \"Dưới gốc đa các bạn chơi dung dăng dung dẻ\" có mấy tiếng? Chạm để đếm.",
+        "text": "Kéo tranh có âm d vào ô.",
         "tts": true
       },
-      "countTarget": {
-        "objects": {
-          "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng",
-          "labelEn": "syllable"
+      "dragItems": [
+        {
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelVi": "dê",
+            "labelEn": "goat"
+          }
         },
-        "correctCount": 10,
-        "layout": "line"
+        {
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🦗",
+            "labelVi": "dế",
+            "labelEn": "cricket"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "👶",
+            "labelVi": "bé",
+            "labelEn": "baby"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm d",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
       },
-      "answerKey": 10,
-      "hints": ["Mỗi tiếng con đọc một nhịp thì chạm một lần."],
-      "explanation": "Câu này có 10 tiếng.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm d không."],
+      "explanation": "“dê” và “dế” có âm d.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-am-d-0038",
-      "type": "MCQ",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Chữ nào có bụng quay sang trái?",
+        "text": "Tranh nào có âm đ thì kéo vào ô nhé.",
         "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
-          "text": "d"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          }
         },
         {
-          "id": "b",
-          "text": "b",
-          "errorTag": "nham_b_d"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelVi": "đá",
+            "labelEn": "stone"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Chữ d bụng quay sang trái, chữ b quay sang phải."],
-      "explanation": "Chữ d có bụng bên trái nét sổ.",
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm đ",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
+      },
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“đò” và “đá” có âm đ.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
@@ -1375,184 +1522,186 @@
       "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ bụng quay trái vào ô.",
+        "text": "Bỏ tranh có âm d vào ô giúp mình.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "k1",
-          "text": "d"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          }
         },
         {
-          "id": "k2",
-          "text": "b"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelVi": "dê",
+            "labelEn": "goat"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "👶",
+            "labelVi": "bé",
+            "labelEn": "baby"
+          }
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
+          "label": "ô có âm d",
+          "accepts": ["g1", "g2"]
         }
       ],
       "answerKey": {
-        "o": ["k1"]
+        "o": ["g1", "g2"]
       },
-      "hints": ["Chữ d bụng quay sang trái, chữ b quay sang phải."],
-      "explanation": "Chữ d có bụng bên trái nét sổ.",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“dù” và “dê” có âm d.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-am-d-0040",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Chữ nào có nét gạch ngang?",
+        "text": "Viết chữ d vào vở rồi nhờ ba mẹ chụp.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "d",
-          "errorTag": "viet_thieu_net"
-        },
-        {
-          "id": "b",
-          "text": "đ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Chữ đ có thêm một nét gạch ngang."],
-      "explanation": "Chữ đ có nét gạch ngang, chữ d thì không.",
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["d"]
+      },
+      "answerKey": null,
+      "hints": ["Ngồi thẳng, cầm bút nhẹ thôi nhé."],
+      "explanation": "Chữ d viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-am-d-0041",
-      "type": "DRAG_DROP",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ có gạch ngang vào ô.",
+        "text": "Con viết đ vào vở nhé, xong nhờ ba mẹ chụp.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "đ"
-        },
-        {
-          "id": "k2",
-          "text": "d"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["đ"]
       },
-      "hints": ["Chữ đ có thêm một nét gạch ngang."],
-      "explanation": "Chữ đ có nét gạch ngang, chữ d thì không.",
+      "answerKey": null,
+      "hints": ["Viết chậm cho tròn nét."],
+      "explanation": "Chữ đ viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-am-d-0042",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào bắt đầu bằng chữ d?",
+        "text": "Lấy vở viết “dê”, rồi chụp gửi bạn Cú.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dế"
-        },
-        {
-          "id": "b",
-          "text": "bế",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Con dế kêu trong cỏ, viết bằng chữ d."],
-      "explanation": "“dế” bắt đầu bằng chữ d.",
+      "rubric": {
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Dấu thanh đặt ngay trên (hoặc dưới) nguyên âm",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["dê"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn dòng kẻ để chữ không bị nghiêng."],
+      "explanation": "“dê” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-am-d-0043",
-      "type": "DRAG_DROP",
+      "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_D_DD"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ có âm đầu d vào ô.",
+        "text": "Chạm từng dê để đếm.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "dế"
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐐",
+          "labelVi": "dê",
+          "labelEn": "goat"
         },
-        {
-          "id": "k2",
-          "text": "bế"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+        "correctCount": 5,
+        "layout": "line"
       },
-      "hints": ["Con dế kêu trong cỏ, viết bằng chữ d."],
-      "explanation": "“dế” bắt đầu bằng chữ d.",
+      "answerKey": 5,
+      "hints": ["Chạm tới đâu đếm tới đó nhé."],
+      "explanation": "Có 5 dê.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
       }

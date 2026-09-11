@@ -2,7 +2,13 @@
  * Lesson + exercise-bank validation, run by `pnpm content:validate` (docs/10 sec. 5 step 3).
  * Everything here is file-only: no database, so it can run before the stack is even up.
  */
-import { bankStats, findDuplicateIds, type PackIssue, validatePack } from "./exercise-validate";
+import {
+  bankStats,
+  checkPromptVariety,
+  findDuplicateIds,
+  type PackIssue,
+  validatePack,
+} from "./exercise-validate";
 import {
   loadAssetLabels,
   loadErrorTaxonomy,
@@ -91,6 +97,7 @@ export function runContentValidation(opts: { quiet?: boolean } = {}): ContentVal
       }),
     );
   allIssues.push(...findDuplicateIds(packs.map((p) => ({ file: p.name, pack: p.pack }))));
+  allIssues.push(...checkPromptVariety(packs.map((p) => ({ file: p.name, pack: p.pack }))));
 
   for (const issue of allIssues) {
     const line = `${issue.file}${issue.id ? ` [${issue.id}]` : ""}: ${issue.message}`;

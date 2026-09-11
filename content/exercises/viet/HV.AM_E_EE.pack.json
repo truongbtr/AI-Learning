@@ -2,9 +2,9 @@
   "skillCode": "VIET.HV.AM_E_EE",
   "subject": "VIET",
   "generatedBy": "claude-code",
-  "promptVersion": "exercise-gen-v1",
+  "promptVersion": "exercise-gen-v2",
   "lessonRefs": ["KNTT-TV1-T1-B04"],
-  "note": "Bài 4: E e Ê ê — câu nhận biết “Bé kể mẹ nghe về bạn bè.”",
+  "note": "Bài 4: E e – Ê ê — tiếng đọc được thêm be, bè, bé, bê, bế.",
   "exercises": [
     {
       "id": "viet-am-e-0001",
@@ -13,8 +13,8 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
         "text": "Đâu là chữ e?",
         "tts": true
@@ -27,12 +27,12 @@
         {
           "id": "b",
           "text": "ê",
-          "errorTag": "thieu_dau_thanh"
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
       "answerKey": "a",
-      "hints": ["Chữ e có cái gạch ngang ở giữa bụng."],
-      "explanation": "Chữ e có một nét ngang rồi nét cong. Đây là chữ e.",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ e là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -43,29 +43,29 @@
       "id": "viet-am-e-0002",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ e?",
+        "text": "Chữ nào là chữ ê?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "c",
-          "errorTag": "nham_c_k_q"
+          "text": "e",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "e"
+          "text": "ê"
         }
       ],
       "answerKey": "b",
-      "hints": ["Chữ e có cái gạch ngang ở giữa bụng."],
-      "explanation": "Chữ e có một nét ngang rồi nét cong. Đây là chữ e.",
+      "hints": ["So hai chữ xem chỗ nào khác nhau nhé."],
+      "explanation": "Chữ ê là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -76,29 +76,29 @@
       "id": "viet-am-e-0003",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ ê?",
+        "text": "Chỉ giúp bạn Cú chữ E nhé!",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "e",
-          "errorTag": "thieu_dau_thanh"
+          "text": "E"
         },
         {
           "id": "b",
-          "text": "ê"
+          "text": "Ê",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Chữ ê có cái mũ nhọn ở trên đầu."],
-      "explanation": "Chữ ê là chữ e đội thêm cái mũ. Đây là chữ ê.",
+      "answerKey": "a",
+      "hints": ["Chữ E có nét riêng, tìm nét đó nhé."],
+      "explanation": "Chữ E là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -109,31 +109,31 @@
       "id": "viet-am-e-0004",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm e?",
+        "text": "Tìm chữ Ê giúp mình nào.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bè"
+          "text": "E",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "bà",
-          "errorTag": "doc_nham_van"
+          "text": "Ê"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm e không."],
-      "explanation": "Tiếng \"bè\" có âm e; tiếng \"bà\" thì không.",
+      "answerKey": "b",
+      "hints": ["Đọc thầm tên chữ rồi chọn."],
+      "explanation": "Chữ Ê là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
@@ -142,31 +142,31 @@
       "id": "viet-am-e-0005",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm e?",
+        "text": "Chạm vào chữ e.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "ba",
-          "errorTag": "doc_nham_van"
+          "text": "e"
         },
         {
           "id": "b",
-          "text": "bé"
+          "text": "ê",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm e không."],
-      "explanation": "Tiếng \"bé\" có âm e; tiếng \"ba\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nhìn phần trên của chữ trước."],
+      "explanation": "Chữ e là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
@@ -175,31 +175,31 @@
       "id": "viet-am-e-0006",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào có âm ê?",
+        "text": "Ô nào có chữ ê?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bế"
+          "text": "e",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "bó",
-          "errorTag": "doc_nham_van"
+          "text": "ê"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ê không."],
-      "explanation": "Tiếng \"bế\" có âm ê; tiếng \"bó\" thì không.",
+      "answerKey": "b",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ ê là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
@@ -208,29 +208,39 @@
       "id": "viet-am-e-0007",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm ê?",
+        "text": "Tên tranh nào có âm e?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cỏ",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "👶",
+            "labelVi": "bé",
+            "labelEn": "baby"
+          }
         },
         {
           "id": "b",
-          "text": "kể"
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ê không."],
-      "explanation": "Tiếng \"kể\" có âm ê; tiếng \"cỏ\" thì không.",
+      "answerKey": "a",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm e không."],
+      "explanation": "“bé” có âm e.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -241,29 +251,39 @@
       "id": "viet-am-e-0008",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm e?",
+        "text": "Tranh nào mà tên có âm ê?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "mẹ"
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "má",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelVi": "dê",
+            "labelEn": "goat"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm e không."],
-      "explanation": "Tiếng \"mẹ\" có âm e; tiếng \"má\" thì không.",
+      "answerKey": "b",
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“dê” có âm ê.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -280,23 +300,33 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm ê?",
+        "text": "Chọn tranh có âm e trong tên nhé.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "vò",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🍵",
+            "labelVi": "chè",
+            "labelEn": "sweet soup"
+          }
         },
         {
           "id": "b",
-          "text": "về"
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "chó",
+            "labelEn": "dog"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ê không."],
-      "explanation": "Tiếng \"về\" có âm ê; tiếng \"vò\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“chè” có âm e.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -313,23 +343,33 @@
       "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm e?",
+        "text": "Bạn Cú đi tìm âm e. Tranh nào đúng?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "xe"
+          "image": {
+            "kind": "emoji",
+            "value": "🏞️",
+            "labelVi": "hồ",
+            "labelEn": "lake"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "xa",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🏖️",
+            "labelVi": "hè",
+            "labelEn": "summer"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm e không."],
-      "explanation": "Tiếng \"xe\" có âm e; tiếng \"xa\" thì không.",
+      "answerKey": "b",
+      "hints": ["Nói to tên tranh lên, sẽ nghe ra ngay."],
+      "explanation": "“hè” có âm e.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -340,29 +380,39 @@
       "id": "viet-am-e-0011",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm ê?",
+        "text": "Tranh nào đọc lên nghe thấy âm ê?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dù",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🦗",
+            "labelVi": "dế",
+            "labelEn": "cricket"
+          }
         },
         {
           "id": "b",
-          "text": "dê"
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ê không."],
-      "explanation": "Tiếng \"dê\" có âm ê; tiếng \"dù\" thì không.",
+      "answerKey": "a",
+      "hints": ["Tách tên tranh thành từng tiếng nhé."],
+      "explanation": "“dế” có âm ê.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -371,34 +421,37 @@
     },
     {
       "id": "viet-am-e-0012",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "bè"
+        "text": "Tranh này là tiếng nào?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👶",
+          "labelVi": "bé",
+          "labelEn": "baby"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bề",
-          "errorTag": "doc_nham_van"
+          "text": "bé"
         },
         {
           "id": "b",
-          "text": "bè"
+          "text": "bè",
+          "errorTag": "sai_dau_thanh"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bè\".",
+      "answerKey": "a",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“bé” đọc là bé.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -407,9 +460,364 @@
     },
     {
       "id": "viet-am-e-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đâu là tiếng “bê”?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bế",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“bê” đọc là bê.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đọc hai ô rồi chọn tiếng hợp với tranh.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👶",
+          "labelVi": "bé",
+          "labelEn": "baby"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bé"
+        },
+        {
+          "id": "b",
+          "text": "bê",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn dấu thanh ở trên nguyên âm."],
+      "explanation": "“bé” đọc là bé.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chỉ giúp mình tiếng “bè” nhé.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bé",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bè"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm thôi, chậm mà chắc."],
+      "explanation": "“bè” đọc là bè.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tìm tiếng “bế” trong hai ô này.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bế"
+        },
+        {
+          "id": "b",
+          "text": "bê",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“bế” đọc là bế.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm vào tiếng “bê”.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bé",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "bê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“bê” đọc là bê.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0018",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "dê"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelVi": "dê",
+            "labelEn": "goat"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          },
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “dê”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0019",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "chè"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "chó",
+            "labelEn": "dog"
+          },
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍵",
+            "labelVi": "chè",
+            "labelEn": "sweet soup"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “chè”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0020",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "hè"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🏖️",
+            "labelVi": "hè",
+            "labelEn": "summer"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🏞️",
+            "labelVi": "hồ",
+            "labelEn": "lake"
+          },
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “hè”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0021",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "dế"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          },
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🦗",
+            "labelVi": "dế",
+            "labelEn": "cricket"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “dế”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": "doc_nham_van",
@@ -428,13 +836,13 @@
         },
         {
           "id": "b",
-          "text": "bế",
+          "text": "bê",
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
       "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bé\".",
+      "explanation": "Bạn Cú đọc “bé”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -442,20 +850,92 @@
       }
     },
     {
-      "id": "viet-am-e-0014",
+      "id": "viet-am-e-0023",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bè"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bé",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bè"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “bè”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0024",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
         "tts": true
       },
       "listenTarget": {
         "text": "bế"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bế"
+        },
+        {
+          "id": "b",
+          "text": "bê",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “bế”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0025",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bê"
       },
       "choices": [
         {
@@ -465,12 +945,12 @@
         },
         {
           "id": "b",
-          "text": "bế"
+          "text": "bê"
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"bế\".",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “bê”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -478,187 +958,7 @@
       }
     },
     {
-      "id": "viet-am-e-0015",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "kể"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "kể"
-        },
-        {
-          "id": "b",
-          "text": "kẻ",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"kể\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0016",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "mẹ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "mệ",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "b",
-          "text": "mẹ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"mẹ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0017",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "về"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "về"
-        },
-        {
-          "id": "b",
-          "text": "vè",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"về\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0018",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "xe"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "xê",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "b",
-          "text": "xe"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"xe\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0019",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "dê"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dê"
-        },
-        {
-          "id": "b",
-          "text": "de",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"dê\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0020",
+      "id": "viet-am-e-0026",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 1,
@@ -678,233 +978,164 @@
         "words": ["e", "ê"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"e ê\".",
+      "explanation": "Đọc là “e ê”.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0021",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "bè  bé  bế",
-        "words": ["bè", "bé", "bế"]
-      },
-      "answerKey": {
-        "words": ["bè", "bé", "bế"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"bè bé bế\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0022",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "kể  mẹ  về",
-        "words": ["kể", "mẹ", "về"]
-      },
-      "answerKey": {
-        "words": ["kể", "mẹ", "về"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"kể mẹ về\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0023",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "bè  em bé  con dê",
-        "words": ["bè", "em", "bé", "con", "dê"]
-      },
-      "answerKey": {
-        "words": ["bè", "em", "bé", "con", "dê"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"bè em bé con dê\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0024",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "Bé kể mẹ nghe về bạn bè",
-        "words": ["Bé", "kể", "mẹ", "nghe", "về", "bạn", "bè"]
-      },
-      "answerKey": {
-        "words": ["Bé", "kể", "mẹ", "nghe", "về", "bạn", "bè"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"Bé kể mẹ nghe về bạn bè\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0025",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🛶",
-          "labelVi": "bè"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bè"
-        },
-        {
-          "id": "b",
-          "text": "bé",
-          "errorTag": "sai_dau_thanh"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"bè\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0026",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "👶",
-          "labelVi": "em bé"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "em bè",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "b",
-          "text": "em bé"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"em bé\".",
-      "meta": {
-        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
       "id": "viet-am-e-0027",
-      "type": "MCQ",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đọc to cho bạn Cú nghe nào.",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "be  bè",
+        "words": ["be", "bè"]
+      },
+      "answerKey": {
+        "words": ["be", "bè"]
+      },
+      "hints": ["Hít một hơi rồi đọc to nhé."],
+      "explanation": "Đọc là “be bè”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0028",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đến lượt con đọc rồi!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "bé  bê",
+        "words": ["bé", "bê"]
+      },
+      "answerKey": {
+        "words": ["bé", "bê"]
+      },
+      "hints": ["Đọc như đang kể cho bạn Cú nghe."],
+      "explanation": "Đọc là “bé bê”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0029",
+      "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐐",
-          "labelVi": "con dê"
-        }
+        "text": "Con đọc chậm và rõ nhé.",
+        "tts": true
       },
-      "choices": [
+      "readTarget": {
+        "text": "bê  bế",
+        "words": ["bê", "bế"]
+      },
+      "answerKey": {
+        "words": ["bê", "bế"]
+      },
+      "hints": ["Ngón tay chỉ tới đâu, đọc tới đó."],
+      "explanation": "Đọc là “bê bế”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0030",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đọc to lên, mình nghe đây!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "be  bé  bế",
+        "words": ["be", "bé", "bế"]
+      },
+      "answerKey": {
+        "words": ["be", "bé", "bế"]
+      },
+      "hints": ["Không vội đâu, con cứ đọc chậm."],
+      "explanation": "Đọc là “be bé bế”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0031",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo chữ e vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
         {
-          "id": "a",
-          "text": "con dê"
+          "id": "k1",
+          "text": "e"
         },
         {
-          "id": "b",
-          "text": "con de",
-          "errorTag": "thieu_dau_thanh"
+          "id": "d1",
+          "text": "o"
+        },
+        {
+          "id": "d2",
+          "text": "a"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"con dê\".",
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ e",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "Chỉ thẻ e vào giỏ, thẻ khác ở lại khay.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
@@ -912,67 +1143,106 @@
       }
     },
     {
-      "id": "viet-am-e-0028",
+      "id": "viet-am-e-0032",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"bè\".",
+        "text": "Bỏ chữ ê vào giỏ giúp mình nhé.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "p1",
-          "text": "b"
-        },
-        {
-          "id": "p2",
-          "text": "è"
-        },
-        {
-          "id": "p3",
+          "id": "k1",
           "text": "ê"
+        },
+        {
+          "id": "d1",
+          "text": "a"
+        },
+        {
+          "id": "d2",
+          "text": "o"
         }
       ],
       "dropZones": [
         {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "id": "gio",
+          "label": "giỏ chữ ê",
+          "accepts": ["k1"]
         }
       ],
       "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
+        "gio": ["k1"]
       },
-      "hints": ["Âm đầu của \"bè\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"è\" thành \"bè\".",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "Chỉ thẻ ê vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
-      "id": "viet-am-e-0029",
+      "id": "viet-am-e-0033",
       "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"bé\".",
+        "text": "Tìm chữ e rồi kéo vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "e"
+        },
+        {
+          "id": "d1",
+          "text": "o"
+        },
+        {
+          "id": "d2",
+          "text": "ê"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ e",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "Chỉ thẻ e vào giỏ, thẻ khác ở lại khay.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B04",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
+      }
+    },
+    {
+      "id": "viet-am-e-0034",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_E_EE"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng “bé”.",
         "tts": true
       },
       "dragItems": [
@@ -993,28 +1263,28 @@
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"bé\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"é\" thành \"bé\".",
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "“bé” gồm b và é.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
-      "id": "viet-am-e-0030",
+      "id": "viet-am-e-0035",
       "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 3,
@@ -1023,7 +1293,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"bế\".",
+        "text": "Kéo hai thẻ để thành tiếng “bê”.",
         "tts": true
       },
       "dragItems": [
@@ -1033,337 +1303,222 @@
         },
         {
           "id": "p2",
-          "text": "ế"
-        },
-        {
-          "id": "p3",
-          "text": "e"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"bế\" là \"b\"."],
-      "explanation": "\"b\" ghép với \"ế\" thành \"bế\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0031",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"kể\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "k"
-        },
-        {
-          "id": "p2",
-          "text": "ể"
-        },
-        {
-          "id": "p3",
-          "text": "e"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"kể\" là \"k\"."],
-      "explanation": "\"k\" ghép với \"ể\" thành \"kể\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0032",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"mẹ\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "m"
-        },
-        {
-          "id": "p2",
-          "text": "ẹ"
-        },
-        {
-          "id": "p3",
           "text": "ê"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"mẹ\" là \"m\"."],
-      "explanation": "\"m\" ghép với \"ẹ\" thành \"mẹ\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0033",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"về\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "v"
-        },
-        {
-          "id": "p2",
-          "text": "ề"
         },
         {
           "id": "p3",
-          "text": "e"
+          "text": "é"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"về\" là \"v\"."],
-      "explanation": "\"v\" ghép với \"ề\" thành \"về\".",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "“bê” gồm b và ê.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0034",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ e vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Nét ngang trước rồi nét cong tròn",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["e"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ e có cái gạch ngang ở giữa bụng."],
-      "explanation": "Chữ e có một nét ngang rồi nét cong.",
-      "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B04",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
-      }
-    },
-    {
-      "id": "viet-am-e-0035",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_E_EE"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ ê vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Viết chữ e rồi thêm dấu mũ ở trên",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["ê"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ ê có cái mũ nhọn ở trên đầu."],
-      "explanation": "Chữ ê là chữ e đội thêm cái mũ.",
-      "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
       "id": "viet-am-e-0036",
-      "type": "WRITE_PHOTO",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
+      "scaffold": "model",
       "prompt": {
-        "text": "Viết từ \"bè\" vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Xếp thành tiếng “bè” nhé.",
         "tts": true
       },
-      "rubric": {
-        "criteria": ["Viết đủ các tiếng", "Có dấu thanh đúng chỗ", "Chữ đều nét"],
-        "sampleAnswers": ["bè"]
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "b"
+        },
+        {
+          "id": "p2",
+          "text": "è"
+        },
+        {
+          "id": "p3",
+          "text": "e"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "van": ["p2"]
       },
-      "answerKey": null,
-      "hints": ["Nhìn mẫu trong sách rồi viết theo."],
-      "explanation": "Từ này viết là \"bè\".",
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "“bè” gồm b và è.",
       "meta": {
-        "estSeconds": 70,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
       "id": "viet-am-e-0037",
-      "type": "COUNT_TAP",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Câu \"Bé kể mẹ nghe về bạn bè\" có mấy tiếng? Chạm để đếm.",
+        "text": "Kéo tranh có âm e vào ô.",
         "tts": true
       },
-      "countTarget": {
-        "objects": {
-          "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng",
-          "labelEn": "syllable"
+      "dragItems": [
+        {
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "👶",
+            "labelVi": "bé",
+            "labelEn": "baby"
+          }
         },
-        "correctCount": 7,
-        "layout": "line"
+        {
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍵",
+            "labelVi": "chè",
+            "labelEn": "sweet soup"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "chó",
+            "labelEn": "dog"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm e",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
       },
-      "answerKey": 7,
-      "hints": ["Mỗi tiếng con đọc một nhịp thì chạm một lần."],
-      "explanation": "Câu này có 7 tiếng.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm e không."],
+      "explanation": "“bé” và “chè” có âm e.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
       "id": "viet-am-e-0038",
-      "type": "MCQ",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Chữ nào có mũ ở trên?",
+        "text": "Tranh nào có âm ê thì kéo vào ô nhé.",
         "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
-          "text": "ê"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelVi": "dê",
+            "labelEn": "goat"
+          }
         },
         {
-          "id": "b",
-          "text": "e",
-          "errorTag": "thieu_dau_thanh"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🦗",
+            "labelVi": "dế",
+            "labelEn": "cricket"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Chữ ê đội mũ nhọn trên đầu."],
-      "explanation": "Chữ ê có dấu mũ, chữ e thì không.",
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm ê",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
+      },
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“dê” và “dế” có âm ê.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
@@ -1375,184 +1530,186 @@
       "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ đội mũ vào ô.",
+        "text": "Bỏ tranh có âm e vào ô giúp mình.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "k1",
-          "text": "ê"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🏖️",
+            "labelVi": "hè",
+            "labelEn": "summer"
+          }
         },
         {
-          "id": "k2",
-          "text": "e"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "👶",
+            "labelVi": "bé",
+            "labelEn": "baby"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🏞️",
+            "labelVi": "hồ",
+            "labelEn": "lake"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
+          "label": "ô có âm e",
+          "accepts": ["g1", "g2"]
         }
       ],
       "answerKey": {
-        "o": ["k1"]
+        "o": ["g1", "g2"]
       },
-      "hints": ["Chữ ê đội mũ nhọn trên đầu."],
-      "explanation": "Chữ ê có dấu mũ, chữ e thì không.",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“hè” và “bé” có âm e.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
       "id": "viet-am-e-0040",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào viết bằng chữ e không mũ?",
+        "text": "Viết chữ e vào vở rồi nhờ ba mẹ chụp.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bế",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "b",
-          "text": "bé"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["“bé” dùng chữ e không mũ."],
-      "explanation": "“bé” viết bằng e, “bế” viết bằng ê.",
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["e"]
+      },
+      "answerKey": null,
+      "hints": ["Ngồi thẳng, cầm bút nhẹ thôi nhé."],
+      "explanation": "Chữ e viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
       "id": "viet-am-e-0041",
-      "type": "DRAG_DROP",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ dùng chữ e vào ô.",
+        "text": "Con viết ê vào vở nhé, xong nhờ ba mẹ chụp.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "bé"
-        },
-        {
-          "id": "k2",
-          "text": "bế"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["ê"]
       },
-      "hints": ["“bé” dùng chữ e không mũ."],
-      "explanation": "“bé” viết bằng e, “bế” viết bằng ê.",
+      "answerKey": null,
+      "hints": ["Viết chậm cho tròn nét."],
+      "explanation": "Chữ ê viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
       "id": "viet-am-e-0042",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu nặng?",
+        "text": "Lấy vở viết “bé”, rồi chụp gửi bạn Cú.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "mẹ"
-        },
-        {
-          "id": "b",
-          "text": "mè",
-          "errorTag": "sai_dau_thanh"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["“mẹ” mang dấu nặng ở dưới."],
-      "explanation": "“mẹ” có dấu nặng, “mè” có dấu huyền.",
+      "rubric": {
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Dấu thanh đặt ngay trên (hoặc dưới) nguyên âm",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["bé"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn dòng kẻ để chữ không bị nghiêng."],
+      "explanation": "“bé” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }
     },
     {
       "id": "viet-am-e-0043",
-      "type": "DRAG_DROP",
+      "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_E_EE"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ có chấm ở dưới vào ô.",
+        "text": "Chạm từng dê để đếm.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "mẹ"
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐐",
+          "labelVi": "dê",
+          "labelEn": "goat"
         },
-        {
-          "id": "k2",
-          "text": "mè"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+        "correctCount": 4,
+        "layout": "line"
       },
-      "hints": ["“mẹ” mang dấu nặng ở dưới."],
-      "explanation": "“mẹ” có dấu nặng, “mè” có dấu huyền.",
+      "answerKey": 4,
+      "hints": ["Chạm tới đâu đếm tới đó nhé."],
+      "explanation": "Có 4 dê.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B04",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 4 tr.20–21"
       }

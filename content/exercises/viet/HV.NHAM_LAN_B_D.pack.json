@@ -2,9 +2,9 @@
   "skillCode": "VIET.HV.NHAM_LAN_B_D",
   "subject": "VIET",
   "generatedBy": "claude-code",
-  "promptVersion": "exercise-gen-v1",
+  "promptVersion": "exercise-gen-v2",
   "lessonRefs": ["KNTT-TV1-T1-B02", "KNTT-TV1-T1-B08"],
-  "note": "Bộ bài đối chiếu b/d — SGK Tiếng Việt 1 tập một Bài 2 (tr.16) và Bài 8 (tr.28).",
+  "note": "Phân biệt b – d: chỉ dùng tiếng đọc được tới bài 8 (ba/da, bê/dê, bế/dế, bò/dò).",
   "exercises": [
     {
       "id": "viet-bd-0001",
@@ -14,7 +14,139 @@
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
       "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đâu là chữ b?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b"
+        },
+        {
+          "id": "b",
+          "text": "d",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ b có bụng tròn ở phía phải.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0002",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chữ nào là chữ d?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "d"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["So hai chữ xem chỗ nào khác nhau nhé."],
+      "explanation": "Chữ d có bụng tròn ở phía trái.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chỉ giúp bạn Cú chữ B nhé!",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "B"
+        },
+        {
+          "id": "b",
+          "text": "D",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ B có nét riêng, tìm nét đó nhé."],
+      "explanation": "Chữ B có bụng tròn ở phía phải.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0004",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tìm chữ D giúp mình nào.",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "B",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "D"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm tên chữ rồi chọn."],
+      "explanation": "Chữ D có bụng tròn ở phía trái.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0005",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
         "text": "Chạm vào chữ b.",
         "tts": true
@@ -31,157 +163,25 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Chữ b có bụng quay sang phải."],
-      "explanation": "Chữ b: nét sổ trước, bụng bên phải.",
+      "hints": ["Nhìn phần trên của chữ trước."],
+      "explanation": "Chữ b có bụng tròn ở phía phải.",
       "meta": {
         "estSeconds": 15,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0002",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Chạm vào chữ B hoa.",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "D",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "B"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Chữ b có bụng quay sang phải."],
-      "explanation": "Chữ b: nét sổ trước, bụng bên phải.",
-      "meta": {
-        "estSeconds": 15,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0003",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Chữ nào có bụng quay sang phải?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "b"
-        },
-        {
-          "id": "b",
-          "text": "d",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Chữ b có bụng quay sang phải."],
-      "explanation": "Chữ b: nét sổ trước, bụng bên phải.",
-      "meta": {
-        "estSeconds": 15,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0004",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 1,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
-      "prompt": {
-        "text": "Chạm vào chữ d.",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "b",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "d"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Chữ d có bụng quay sang trái."],
-      "explanation": "Chữ d: bụng bên trái, nét sổ bên phải.",
-      "meta": {
-        "estSeconds": 15,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0005",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Chạm vào chữ D hoa.",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "D"
-        },
-        {
-          "id": "b",
-          "text": "B",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Chữ d có bụng quay sang trái."],
-      "explanation": "Chữ d: bụng bên trái, nét sổ bên phải.",
-      "meta": {
-        "estSeconds": 15,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0006",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Chữ nào có bụng quay sang trái?",
+        "text": "Ô nào có chữ d?",
         "tts": true
       },
       "choices": [
@@ -196,25 +196,91 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Chữ d có bụng quay sang trái."],
-      "explanation": "Chữ d: bụng bên trái, nét sổ bên phải.",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ d có bụng tròn ở phía trái.",
       "meta": {
         "estSeconds": 15,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0007",
       "type": "MCQ",
       "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bạn Rô-bốt cần chữ d. Chọn giúp bạn ấy nhé!",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "d"
+        },
+        {
+          "id": "b",
+          "text": "đ",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["So hai chữ xem chỗ nào khác nhau nhé."],
+      "explanation": "Chữ d có bụng tròn ở phía trái.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0008",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đâu là chữ d?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "d"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ d có nét riêng, tìm nét đó nhé."],
+      "explanation": "Chữ d có bụng tròn ở phía trái.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0009",
+      "type": "MCQ",
+      "language": "vi",
       "difficulty": 1,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào là “ba”?",
+        "text": "Tiếng nào đọc là “ba”?",
         "tts": true
       },
       "choices": [
@@ -229,78 +295,12 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Nhìn chữ đầu: b bụng phải."],
-      "explanation": "“ba” bắt đầu bằng chữ b.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0008",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 1,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
-      "prompt": {
-        "text": "Tiếng nào là “dà”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bà",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "dà"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn chữ đầu: d bụng trái."],
-      "explanation": "“dà” bắt đầu bằng chữ d.",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“ba” đọc là ba.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0009",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 1,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
-      "prompt": {
-        "text": "Tiếng nào là “bé”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bé"
-        },
-        {
-          "id": "b",
-          "text": "dé",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn chữ đầu: b bụng phải."],
-      "explanation": "“bé” bắt đầu bằng chữ b.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
@@ -313,7 +313,73 @@
       "targetsError": "nham_b_d",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào là “dê”?",
+        "text": "Đâu là tiếng “da”?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ba",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "da"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“da” đọc là da.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ô nào viết tiếng “bê”?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bê"
+        },
+        {
+          "id": "b",
+          "text": "dê",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn dấu thanh ở trên nguyên âm."],
+      "explanation": "“bê” đọc là bê.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chỉ giúp mình tiếng “dê” nhé.",
         "tts": true
       },
       "choices": [
@@ -328,256 +394,58 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nhìn chữ đầu: d bụng trái."],
-      "explanation": "“dê” bắt đầu bằng chữ d.",
+      "hints": ["Đọc chậm thôi, chậm mà chắc."],
+      "explanation": "“dê” đọc là dê.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0011",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào là “bò”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bò"
-        },
-        {
-          "id": "b",
-          "text": "dò",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn chữ đầu: b bụng phải."],
-      "explanation": "“bò” bắt đầu bằng chữ b.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0012",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào là “dó”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bó",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "dó"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn chữ đầu: d bụng trái."],
-      "explanation": "“dó” bắt đầu bằng chữ d.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0013",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
       "targetsError": "nham_b_d",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào là “bỏ”?",
+        "text": "Tìm tiếng “bế” trong hai ô này.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bỏ"
+          "text": "bế"
         },
         {
           "id": "b",
-          "text": "dỏ",
+          "text": "dế",
           "errorTag": "nham_b_d"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nhìn chữ đầu: b bụng phải."],
-      "explanation": "“bỏ” bắt đầu bằng chữ b.",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“bế” đọc là bế.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0014",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào là “dơ”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bơ",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "dơ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn chữ đầu: d bụng trái."],
-      "explanation": "“dơ” bắt đầu bằng chữ d.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0015",
-      "type": "MCQ",
-      "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào là “bú”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bú"
-        },
-        {
-          "id": "b",
-          "text": "dú",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn chữ đầu: b bụng phải."],
-      "explanation": "“bú” bắt đầu bằng chữ b.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0016",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào là “dí”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bí",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "dí"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn chữ đầu: d bụng trái."],
-      "explanation": "“dí” bắt đầu bằng chữ d.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0017",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào là “bổ”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bổ"
-        },
-        {
-          "id": "b",
-          "text": "dổ",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn chữ đầu: b bụng phải."],
-      "explanation": "“bổ” bắt đầu bằng chữ b.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0018",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào là “dế”?",
+        "text": "Chạm vào tiếng “dế”.",
         "tts": true
       },
       "choices": [
@@ -592,16 +460,49 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nhìn chữ đầu: d bụng trái."],
-      "explanation": "“dế” bắt đầu bằng chữ d.",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“dế” đọc là dế.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
-      "id": "viet-bd-0019",
+      "id": "viet-bd-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Hai ô này, ô nào là “bò”?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bò"
+        },
+        {
+          "id": "b",
+          "text": "dò",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“bò” đọc là bò.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0016",
       "type": "MCQ",
       "language": "vi",
       "difficulty": 4,
@@ -610,287 +511,8 @@
       "targetsError": "nham_b_d",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào là “bẻ”?",
+        "text": "Tiếng nào đọc là “dò”?",
         "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bẻ"
-        },
-        {
-          "id": "b",
-          "text": "dẻ",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn chữ đầu: b bụng phải."],
-      "explanation": "“bẻ” bắt đầu bằng chữ b.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0020",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào là “dụ”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bụ",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "dụ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn chữ đầu: d bụng trái."],
-      "explanation": "“dụ” bắt đầu bằng chữ d.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0021",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào là “bắt”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bắt"
-        },
-        {
-          "id": "b",
-          "text": "dắt",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn chữ đầu: b bụng phải."],
-      "explanation": "“bắt” bắt đầu bằng chữ b.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0022",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào là “dám”?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bám",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "dám"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn chữ đầu: d bụng trái."],
-      "explanation": "“dám” bắt đầu bằng chữ d.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0023",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "da"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "ba",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "da"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “da”, bắt đầu bằng d.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0024",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "bà"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bà"
-        },
-        {
-          "id": "b",
-          "text": "dà",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “bà”, bắt đầu bằng b.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0025",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "dé"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bé",
-          "errorTag": "nham_b_d"
-        },
-        {
-          "id": "b",
-          "text": "dé"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “dé”, bắt đầu bằng d.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0026",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "bê"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bê"
-        },
-        {
-          "id": "b",
-          "text": "dê",
-          "errorTag": "nham_b_d"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “bê”, bắt đầu bằng b.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
-      }
-    },
-    {
-      "id": "viet-bd-0027",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "dò"
       },
       "choices": [
         {
@@ -904,12 +526,414 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “dò”, bắt đầu bằng d.",
+      "hints": ["Nhìn dấu thanh ở trên nguyên âm."],
+      "explanation": "“dò” đọc là dò.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đâu là tiếng “ba”?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ba"
+        },
+        {
+          "id": "b",
+          "text": "da",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm thôi, chậm mà chắc."],
+      "explanation": "“ba” đọc là ba.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0018",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Ô nào viết tiếng “da”?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ba",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "da"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“da” đọc là da.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0019",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đọc hai ô rồi chọn tiếng hợp với tranh.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐄",
+          "labelVi": "bò",
+          "labelEn": "cow"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bò"
+        },
+        {
+          "id": "b",
+          "text": "dò",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn dấu thanh ở trên nguyên âm."],
+      "explanation": "“bò” đọc là bò.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0020",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào gọi tên bức tranh này?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐐",
+          "labelVi": "dê",
+          "labelEn": "goat"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bê",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "dê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm thôi, chậm mà chắc."],
+      "explanation": "“dê” đọc là dê.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0021",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn tiếng đúng với tranh nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🦗",
+          "labelVi": "dế",
+          "labelEn": "cricket"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dế"
+        },
+        {
+          "id": "b",
+          "text": "bế",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“dế” đọc là dế.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0022",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bạn Cú nhìn tranh rồi tìm tiếng. Con giúp nhé!",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "👨",
+          "labelVi": "ba",
+          "labelEn": "dad"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "da",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "ba"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“ba” đọc là ba.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0023",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "da"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "da"
+        },
+        {
+          "id": "b",
+          "text": "ba",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “da”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0024",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bê"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dê",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "bê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “bê”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0025",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "dê"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dê"
+        },
+        {
+          "id": "b",
+          "text": "bê",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “dê”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0026",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bế"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dế",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "bế"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “bế”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
+      }
+    },
+    {
+      "id": "viet-bd-0027",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng vừa nghe nằm ở ô nào?",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "dế"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dế"
+        },
+        {
+          "id": "b",
+          "text": "bế",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhắc lại tiếng đó trong đầu rồi chọn."],
+      "explanation": "Bạn Cú đọc “dế”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
@@ -922,297 +946,309 @@
       "targetsError": "nham_b_d",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Nghe xong, chỉ giúp mình ô đúng nha.",
         "tts": true
       },
       "listenTarget": {
-        "text": "bó"
+        "text": "bò"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bó"
+          "text": "dò",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "b",
-          "text": "dó",
-          "errorTag": "nham_b_d"
+          "text": "bò"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “bó”, bắt đầu bằng b.",
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “bò”.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0029",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Nghe một lần nữa rồi chọn nhé.",
         "tts": true
       },
       "listenTarget": {
-        "text": "dỏ"
+        "text": "dò"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bỏ",
-          "errorTag": "nham_b_d"
+          "text": "dò"
         },
         {
           "id": "b",
-          "text": "dỏ"
+          "text": "bò",
+          "errorTag": "nham_b_d"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “dỏ”, bắt đầu bằng d.",
+      "answerKey": "a",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “dò”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0030",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
         "text": "Nghe rồi chọn ô đúng nhé!",
         "tts": true
       },
       "listenTarget": {
-        "text": "bơ"
+        "text": "ba"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bơ"
+          "text": "da",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "b",
-          "text": "dơ",
-          "errorTag": "nham_b_d"
+          "text": "ba"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “bơ”, bắt đầu bằng b.",
+      "answerKey": "b",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “ba”.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0031",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
       "targetsError": "nham_b_d",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
         "tts": true
       },
       "listenTarget": {
-        "text": "dú"
+        "text": "da"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bú",
-          "errorTag": "nham_b_d"
+          "text": "da"
         },
         {
           "id": "b",
-          "text": "dú"
+          "text": "ba",
+          "errorTag": "nham_b_d"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “dú”, bắt đầu bằng d.",
+      "answerKey": "a",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “da”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0032",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
         "tts": true
       },
       "listenTarget": {
-        "text": "bí"
+        "text": "bê"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bí"
+          "text": "dê",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "b",
-          "text": "dí",
-          "errorTag": "nham_b_d"
+          "text": "bê"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe kĩ âm đầu tiên."],
-      "explanation": "Cô đọc “bí”, bắt đầu bằng b.",
+      "answerKey": "b",
+      "hints": ["Nhắc lại tiếng đó trong đầu rồi chọn."],
+      "explanation": "Bạn Cú đọc “bê”.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B02",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "lessonUnitCode": "KNTT-TV1-T1-B08",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0033",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ đầu đúng cho tiếng “bà”.",
+        "text": "Kéo chữ b vào giỏ.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "c1",
+          "id": "k1",
           "text": "b"
         },
         {
-          "id": "c2",
+          "id": "d1",
           "text": "d"
+        },
+        {
+          "id": "d2",
+          "text": "đ"
         }
       ],
       "dropZones": [
         {
-          "id": "o",
-          "label": "… à",
-          "accepts": ["c1", "c2"]
+          "id": "gio",
+          "label": "giỏ chữ b",
+          "accepts": ["k1"]
         }
       ],
       "answerKey": {
-        "o": ["c1"]
+        "gio": ["k1"]
       },
-      "hints": ["Bụng quay phải là b."],
-      "explanation": "“bà” bắt đầu bằng chữ b.",
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "Chỉ thẻ b vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0034",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ đầu đúng cho tiếng “dê”.",
+        "text": "Bỏ chữ d vào giỏ giúp mình nhé.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "c1",
+          "id": "k1",
           "text": "d"
         },
         {
-          "id": "c2",
+          "id": "d1",
           "text": "b"
+        },
+        {
+          "id": "d2",
+          "text": "đ"
         }
       ],
       "dropZones": [
         {
-          "id": "o",
-          "label": "… ê",
-          "accepts": ["c1", "c2"]
+          "id": "gio",
+          "label": "giỏ chữ d",
+          "accepts": ["k1"]
         }
       ],
       "answerKey": {
-        "o": ["c1"]
+        "gio": ["k1"]
       },
-      "hints": ["Bụng quay trái là d."],
-      "explanation": "“dê” bắt đầu bằng chữ d.",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "Chỉ thẻ d vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0035",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ đầu đúng cho tiếng “bé”.",
+        "text": "Tìm chữ b rồi kéo vào giỏ.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "c1",
+          "id": "k1",
           "text": "b"
         },
         {
-          "id": "c2",
+          "id": "d1",
           "text": "d"
+        },
+        {
+          "id": "d2",
+          "text": "b"
         }
       ],
       "dropZones": [
         {
-          "id": "o",
-          "label": "… é",
-          "accepts": ["c1", "c2"]
+          "id": "gio",
+          "label": "giỏ chữ b",
+          "accepts": ["k1"]
         }
       ],
       "answerKey": {
-        "o": ["c1"]
+        "gio": ["k1"]
       },
-      "hints": ["Bụng quay phải là b."],
-      "explanation": "“bé” bắt đầu bằng chữ b.",
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "Chỉ thẻ b vào giỏ, thẻ khác ở lại khay.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
@@ -1222,38 +1258,48 @@
       "difficulty": 3,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Kéo chữ đầu đúng cho tiếng “dế”.",
+        "text": "Ghép thành tiếng “ba”.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "c1",
-          "text": "d"
+          "id": "p1",
+          "text": "b"
         },
         {
-          "id": "c2",
-          "text": "b"
+          "id": "p2",
+          "text": "a"
+        },
+        {
+          "id": "p3",
+          "text": "d"
         }
       ],
       "dropZones": [
         {
-          "id": "o",
-          "label": "… ế",
-          "accepts": ["c1", "c2"]
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
-        "o": ["c1"]
+        "dau": ["p1"],
+        "van": ["p2"]
       },
-      "hints": ["Bụng quay trái là d."],
-      "explanation": "“dế” bắt đầu bằng chữ d.",
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "“ba” gồm b và a.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
@@ -1263,38 +1309,48 @@
       "difficulty": 4,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ đầu đúng cho tiếng “bò”.",
+        "text": "Kéo hai thẻ để thành tiếng “dê”.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "c1",
-          "text": "b"
+          "id": "p1",
+          "text": "d"
         },
         {
-          "id": "c2",
-          "text": "d"
+          "id": "p2",
+          "text": "ê"
+        },
+        {
+          "id": "p3",
+          "text": "b"
         }
       ],
       "dropZones": [
         {
-          "id": "o",
-          "label": "… ò",
-          "accepts": ["c1", "c2"]
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
-        "o": ["c1"]
+        "dau": ["p1"],
+        "van": ["p2"]
       },
-      "hints": ["Bụng quay phải là b."],
-      "explanation": "“bò” bắt đầu bằng chữ b.",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "“dê” gồm d và ê.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
@@ -1304,254 +1360,280 @@
       "difficulty": 5,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ đầu đúng cho tiếng “dù”.",
+        "text": "Xếp thành tiếng “bò” nhé.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "c1",
-          "text": "d"
+          "id": "p1",
+          "text": "b"
         },
         {
-          "id": "c2",
-          "text": "b"
+          "id": "p2",
+          "text": "ò"
+        },
+        {
+          "id": "p3",
+          "text": "d"
         }
       ],
       "dropZones": [
         {
-          "id": "o",
-          "label": "… ù",
-          "accepts": ["c1", "c2"]
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
-        "o": ["c1"]
+        "dau": ["p1"],
+        "van": ["p2"]
       },
-      "hints": ["Bụng quay trái là d."],
-      "explanation": "“dù” bắt đầu bằng chữ d.",
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "“bò” gồm b và ò.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0039",
       "type": "READ_ALOUD",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to hai tiếng này nhé!",
+        "text": "Con đọc to nhé!",
         "tts": true
       },
       "readTarget": {
-        "text": "bà · dà",
-        "words": ["bà", "dà"]
+        "text": "b  d",
+        "words": ["b", "d"]
       },
       "answerKey": {
-        "words": ["bà", "dà"]
+        "words": ["b", "d"]
       },
-      "hints": ["Đọc tiếng có b trước, tiếng có d sau."],
-      "explanation": "Hai tiếng này chỉ khác nhau chữ đầu: b và d.",
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là “b d”.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0040",
       "type": "READ_ALOUD",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to hai tiếng này nhé!",
+        "text": "Đọc to cho bạn Cú nghe nào.",
         "tts": true
       },
       "readTarget": {
-        "text": "bé · dé",
-        "words": ["bé", "dé"]
+        "text": "ba  da",
+        "words": ["ba", "da"]
       },
       "answerKey": {
-        "words": ["bé", "dé"]
+        "words": ["ba", "da"]
       },
-      "hints": ["Đọc tiếng có b trước, tiếng có d sau."],
-      "explanation": "Hai tiếng này chỉ khác nhau chữ đầu: b và d.",
+      "hints": ["Hít một hơi rồi đọc to nhé."],
+      "explanation": "Đọc là “ba da”.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0041",
       "type": "READ_ALOUD",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to hai tiếng này nhé!",
+        "text": "Đến lượt con đọc rồi!",
         "tts": true
       },
       "readTarget": {
-        "text": "bò · dò",
-        "words": ["bò", "dò"]
+        "text": "bê  dê",
+        "words": ["bê", "dê"]
       },
       "answerKey": {
-        "words": ["bò", "dò"]
+        "words": ["bê", "dê"]
       },
-      "hints": ["Đọc tiếng có b trước, tiếng có d sau."],
-      "explanation": "Hai tiếng này chỉ khác nhau chữ đầu: b và d.",
+      "hints": ["Đọc như đang kể cho bạn Cú nghe."],
+      "explanation": "Đọc là “bê dê”.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0042",
       "type": "READ_ALOUD",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Con đọc to hai tiếng này nhé!",
+        "text": "Con đọc chậm và rõ nhé.",
         "tts": true
       },
       "readTarget": {
-        "text": "bê · dê",
-        "words": ["bê", "dê"]
+        "text": "bò  dò",
+        "words": ["bò", "dò"]
       },
       "answerKey": {
-        "words": ["bê", "dê"]
+        "words": ["bò", "dò"]
       },
-      "hints": ["Đọc tiếng có b trước, tiếng có d sau."],
-      "explanation": "Hai tiếng này chỉ khác nhau chữ đầu: b và d.",
+      "hints": ["Ngón tay chỉ tới đâu, đọc tới đó."],
+      "explanation": "Đọc là “bò dò”.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0043",
       "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": "viet_nguoc_chu",
       "scaffold": "none",
       "prompt": {
-        "text": "Viết “b” vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Viết chữ b vào vở rồi nhờ ba mẹ chụp.",
         "tts": true
       },
       "rubric": {
-        "criteria": ["Bụng chữ quay đúng bên", "Nét sổ thẳng, đúng độ cao"],
+        "criteria": [
+          "Nét sổ trước, bụng tròn sau",
+          "Bụng quay sang phải",
+          "Đúng độ cao trong ô li"
+        ],
         "sampleAnswers": ["b"]
       },
       "answerKey": null,
-      "hints": ["Nhớ: b bụng phải, d bụng trái."],
-      "explanation": "Viết xong con đọc lại xem có đúng tiếng mình định viết không.",
+      "hints": ["Ngồi thẳng, cầm bút nhẹ thôi nhé."],
+      "explanation": "Chữ b viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0044",
       "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": "viet_nguoc_chu",
       "scaffold": "none",
       "prompt": {
-        "text": "Viết “d” vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Con viết d vào vở nhé, xong nhờ ba mẹ chụp.",
         "tts": true
       },
       "rubric": {
-        "criteria": ["Bụng chữ quay đúng bên", "Nét sổ thẳng, đúng độ cao"],
+        "criteria": [
+          "Nét sổ trước, bụng tròn sau",
+          "Bụng quay sang trái",
+          "Đúng độ cao trong ô li"
+        ],
         "sampleAnswers": ["d"]
       },
       "answerKey": null,
-      "hints": ["Nhớ: b bụng phải, d bụng trái."],
-      "explanation": "Viết xong con đọc lại xem có đúng tiếng mình định viết không.",
+      "hints": ["Viết chậm cho tròn nét."],
+      "explanation": "Chữ d viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0045",
       "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": "viet_nguoc_chu",
       "scaffold": "none",
       "prompt": {
-        "text": "Viết “bà” vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Lấy vở viết “ba”, rồi chụp gửi bạn Cú.",
         "tts": true
       },
       "rubric": {
-        "criteria": ["Bụng chữ quay đúng bên", "Nét sổ thẳng, đúng độ cao"],
-        "sampleAnswers": ["bà"]
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Bụng chữ b quay sang phải, bụng chữ d quay sang trái",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["ba"]
       },
       "answerKey": null,
-      "hints": ["Nhớ: b bụng phải, d bụng trái."],
-      "explanation": "Viết xong con đọc lại xem có đúng tiếng mình định viết không.",
+      "hints": ["Nhìn dòng kẻ để chữ không bị nghiêng."],
+      "explanation": "“ba” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
       "id": "viet-bd-0046",
       "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
-      "targetsError": "nham_b_d",
+      "targetsError": "viet_nguoc_chu",
       "scaffold": "none",
       "prompt": {
-        "text": "Viết “dê” vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Tập viết “dê” vào vở giúp mình nhé.",
         "tts": true
       },
       "rubric": {
-        "criteria": ["Bụng chữ quay đúng bên", "Nét sổ thẳng, đúng độ cao"],
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Bụng chữ b quay sang phải, bụng chữ d quay sang trái",
+          "Đúng độ cao trong ô li"
+        ],
         "sampleAnswers": ["dê"]
       },
       "answerKey": null,
-      "hints": ["Nhớ: b bụng phải, d bụng trái."],
-      "explanation": "Viết xong con đọc lại xem có đúng tiếng mình định viết không.",
+      "hints": ["Viết xong đọc lại một lần nhé."],
+      "explanation": "“dê” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
@@ -1564,26 +1646,26 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Chạm vào tất cả chữ b con nhìn thấy.",
+        "text": "Chạm từng dê để đếm.",
         "tts": true
       },
       "countTarget": {
         "objects": {
           "kind": "emoji",
-          "value": "🔠",
-          "labelVi": "chữ b",
-          "labelEn": "letter b"
+          "value": "🐐",
+          "labelVi": "dê",
+          "labelEn": "goat"
         },
-        "correctCount": 3,
-        "layout": "grid"
+        "correctCount": 4,
+        "layout": "line"
       },
-      "answerKey": 3,
-      "hints": ["Chỉ chọn chữ bụng quay phải."],
-      "explanation": "Có 3 chữ b trong tranh.",
+      "answerKey": 4,
+      "hints": ["Chạm tới đâu đếm tới đó nhé."],
+      "explanation": "Có 4 dê.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
@@ -1594,28 +1676,28 @@
       "skillCodes": ["VIET.HV.NHAM_LAN_B_D"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
+      "scaffold": "model",
       "prompt": {
-        "text": "Chạm vào tất cả chữ d con nhìn thấy.",
+        "text": "Đếm xem có mấy bò nhé.",
         "tts": true
       },
       "countTarget": {
         "objects": {
           "kind": "emoji",
-          "value": "🔠",
-          "labelVi": "chữ d",
-          "labelEn": "letter d"
+          "value": "🐄",
+          "labelVi": "bò",
+          "labelEn": "cow"
         },
-        "correctCount": 4,
-        "layout": "grid"
+        "correctCount": 3,
+        "layout": "line"
       },
-      "answerKey": 4,
-      "hints": ["Chỉ chọn chữ bụng quay trái."],
-      "explanation": "Có 4 chữ d trong tranh.",
+      "answerKey": 3,
+      "hints": ["Đếm từ trái sang phải cho khỏi sót."],
+      "explanation": "Có 3 bò.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     },
     {
@@ -1628,26 +1710,26 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Chạm vào tất cả chữ b con nhìn thấy.",
+        "text": "Có bao nhiêu dế? Chạm để đếm.",
         "tts": true
       },
       "countTarget": {
         "objects": {
           "kind": "emoji",
-          "value": "🔠",
-          "labelVi": "chữ b",
-          "labelEn": "letter b"
+          "value": "🦗",
+          "labelVi": "dế",
+          "labelEn": "cricket"
         },
         "correctCount": 5,
-        "layout": "grid"
+        "layout": "line"
       },
       "answerKey": 5,
-      "hints": ["Chỉ chọn chữ bụng quay phải."],
-      "explanation": "Có 5 chữ b trong tranh.",
+      "hints": ["Đếm một lần nữa cho chắc nha."],
+      "explanation": "Có 5 dế.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B08",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 · SGK Tiếng Việt 1 tập một, Bài 8 tr.28–29"
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 2 tr.16–17 và Bài 8 tr.28–29"
       }
     }
   ]

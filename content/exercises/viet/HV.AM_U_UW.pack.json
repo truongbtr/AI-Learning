@@ -2,9 +2,9 @@
   "skillCode": "VIET.HV.AM_U_UW",
   "subject": "VIET",
   "generatedBy": "claude-code",
-  "promptVersion": "exercise-gen-v1",
+  "promptVersion": "exercise-gen-v2",
   "lessonRefs": ["KNTT-TV1-T1-B13"],
-  "note": "Bài 13: U u Ư ư — câu nhận biết “Đu đủ chín ngọt lù.” — bài lớp đang học",
+  "note": "Bài 13: U u – Ư ư — lớp đang học bài này; tiếng đọc được thêm cú, cũ, dù, đủ, hồ, hổ, lá, li, bí.",
   "exercises": [
     {
       "id": "viet-am-u-0001",
@@ -13,8 +13,8 @@
       "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
         "text": "Đâu là chữ u?",
         "tts": true
@@ -27,12 +27,12 @@
         {
           "id": "b",
           "text": "ư",
-          "errorTag": "viet_thieu_net"
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
       "answerKey": "a",
-      "hints": ["Chữ u giống cái cốc, hai nét móc đi lên."],
-      "explanation": "Chữ u có hai nét móc xuôi. Đây là chữ u.",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ u là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -43,29 +43,29 @@
       "id": "viet-am-u-0002",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_nguoc_chu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ u?",
+        "text": "Chữ nào là chữ ư?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "n",
-          "errorTag": "viet_nguoc_chu"
+          "text": "u",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "u"
+          "text": "ư"
         }
       ],
       "answerKey": "b",
-      "hints": ["Chữ u giống cái cốc, hai nét móc đi lên."],
-      "explanation": "Chữ u có hai nét móc xuôi. Đây là chữ u.",
+      "hints": ["So hai chữ xem chỗ nào khác nhau nhé."],
+      "explanation": "Chữ ư là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -76,29 +76,29 @@
       "id": "viet-am-u-0003",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ ư?",
+        "text": "Chỉ giúp bạn Cú chữ U nhé!",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "u",
-          "errorTag": "viet_thieu_net"
+          "text": "U"
         },
         {
           "id": "b",
-          "text": "ư"
+          "text": "Ư",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Chữ ư có cái râu nhỏ bên phải."],
-      "explanation": "Chữ ư là chữ u có thêm cái râu. Đây là chữ ư.",
+      "answerKey": "a",
+      "hints": ["Chữ U có nét riêng, tìm nét đó nhé."],
+      "explanation": "Chữ U là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -109,31 +109,31 @@
       "id": "viet-am-u-0004",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
-      "scaffold": "model",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm u?",
+        "text": "Tìm chữ Ư giúp mình nào.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dù"
+          "text": "U",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "dò",
-          "errorTag": "doc_nham_van"
+          "text": "Ư"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm u không."],
-      "explanation": "Tiếng \"dù\" có âm u; tiếng \"dò\" thì không.",
+      "answerKey": "b",
+      "hints": ["Đọc thầm tên chữ rồi chọn."],
+      "explanation": "Chữ Ư là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
@@ -142,31 +142,31 @@
       "id": "viet-am-u-0005",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm u?",
+        "text": "Chạm vào chữ u.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "đá",
-          "errorTag": "doc_nham_van"
+          "text": "u"
         },
         {
           "id": "b",
-          "text": "đủ"
+          "text": "ư",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm u không."],
-      "explanation": "Tiếng \"đủ\" có âm u; tiếng \"đá\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nhìn phần trên của chữ trước."],
+      "explanation": "Chữ u là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
@@ -175,31 +175,31 @@
       "id": "viet-am-u-0006",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào có âm u?",
+        "text": "Ô nào có chữ ư?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "hũ"
+          "text": "u",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "b",
-          "text": "hò",
-          "errorTag": "doc_nham_van"
+          "text": "ư"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm u không."],
-      "explanation": "Tiếng \"hũ\" có âm u; tiếng \"hò\" thì không.",
+      "answerKey": "b",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ ư là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
@@ -208,29 +208,39 @@
       "id": "viet-am-u-0007",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
       "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm ư?",
+        "text": "Tên tranh nào có âm u?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cò",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
         },
         {
           "id": "b",
-          "text": "cử"
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ư không."],
-      "explanation": "Tiếng \"cử\" có âm ư; tiếng \"cò\" thì không.",
+      "answerKey": "a",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm u không."],
+      "explanation": "“cú” có âm u.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -241,29 +251,39 @@
       "id": "viet-am-u-0008",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm ư?",
+        "text": "Tranh nào mà tên có âm u?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dự"
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelVi": "dê",
+            "labelEn": "goat"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "dạ",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ư không."],
-      "explanation": "Tiếng \"dự\" có âm ư; tiếng \"dạ\" thì không.",
+      "answerKey": "b",
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“dù” có âm u.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -280,23 +300,33 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm ư?",
+        "text": "Chọn tranh có âm u trong tên nhé.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "lá",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
         },
         {
           "id": "b",
-          "text": "lữ"
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ư không."],
-      "explanation": "Tiếng \"lữ\" có âm ư; tiếng \"lá\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“cú” có âm u.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -313,23 +343,33 @@
       "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm u?",
+        "text": "Bạn Cú đi tìm âm u. Tranh nào đúng?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "lù"
+          "image": {
+            "kind": "emoji",
+            "value": "🦗",
+            "labelVi": "dế",
+            "labelEn": "cricket"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "lò",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm u không."],
-      "explanation": "Tiếng \"lù\" có âm u; tiếng \"lò\" thì không.",
+      "answerKey": "b",
+      "hints": ["Nói to tên tranh lên, sẽ nghe ra ngay."],
+      "explanation": "“dù” có âm u.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -340,29 +380,39 @@
       "id": "viet-am-u-0011",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm ư?",
+        "text": "Tranh nào đọc lên nghe thấy âm u?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "dã",
-          "errorTag": "doc_nham_van"
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
         },
         {
           "id": "b",
-          "text": "dữ"
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ư không."],
-      "explanation": "Tiếng \"dữ\" có âm ư; tiếng \"dã\" thì không.",
+      "answerKey": "a",
+      "hints": ["Tách tên tranh thành từng tiếng nhé."],
+      "explanation": "“cú” có âm u.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -371,34 +421,37 @@
     },
     {
       "id": "viet-am-u-0012",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "dù"
+        "text": "Tranh này là tiếng nào?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🦉",
+          "labelVi": "cú",
+          "labelEn": "owl"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "dừ",
-          "errorTag": "viet_thieu_net"
+          "text": "cú"
         },
         {
           "id": "b",
-          "text": "dù"
+          "text": "cá",
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"dù\".",
+      "answerKey": "a",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“cú” đọc là cú.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -407,34 +460,37 @@
     },
     {
       "id": "viet-am-u-0013",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "đủ"
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌂",
+          "labelVi": "dù",
+          "labelEn": "parasol"
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "đủ"
+          "text": "dê",
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "đử",
-          "errorTag": "viet_thieu_net"
+          "text": "dù"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"đủ\".",
+      "answerKey": "b",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“dù” đọc là dù.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -443,34 +499,31 @@
     },
     {
       "id": "viet-am-u-0014",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Ô nào viết tiếng “cũ”?",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "hũ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "hủ",
-          "errorTag": "nham_hoi_nga"
+          "text": "cũ"
         },
         {
           "id": "b",
-          "text": "hũ"
+          "text": "cỏ",
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"hũ\".",
+      "answerKey": "a",
+      "hints": ["Nhìn dấu thanh ở trên nguyên âm."],
+      "explanation": "“cũ” đọc là cũ.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -479,34 +532,31 @@
     },
     {
       "id": "viet-am-u-0015",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
       "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Chỉ giúp mình tiếng “đủ” nhé.",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "cử"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cử"
+          "text": "đá",
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "củ",
-          "errorTag": "viet_thieu_net"
+          "text": "đủ"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"cử\".",
+      "answerKey": "b",
+      "hints": ["Đọc chậm thôi, chậm mà chắc."],
+      "explanation": "“đủ” đọc là đủ.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -515,34 +565,31 @@
     },
     {
       "id": "viet-am-u-0016",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Tìm tiếng “cư” trong hai ô này.",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "dự"
       },
       "choices": [
         {
           "id": "a",
-          "text": "dụ",
-          "errorTag": "viet_thieu_net"
+          "text": "cư"
         },
         {
           "id": "b",
-          "text": "dự"
+          "text": "cơ",
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"dự\".",
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“cư” đọc là cư.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -551,34 +598,31 @@
     },
     {
       "id": "viet-am-u-0017",
-      "type": "LISTEN_CHOOSE",
+      "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Chạm vào tiếng “hư”.",
         "tts": true
-      },
-      "listenTarget": {
-        "text": "lữ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "lữ"
+          "text": "hồ",
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "lử",
-          "errorTag": "nham_hoi_nga"
+          "text": "hư"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"lữ\".",
+      "answerKey": "b",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“hư” đọc là hư.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -589,32 +633,42 @@
       "id": "viet-am-u-0018",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "none",
+      "targetsError": null,
+      "scaffold": "model",
       "prompt": {
         "text": "Nghe rồi chọn ô đúng nhé!",
         "tts": true
       },
       "listenTarget": {
-        "text": "lù"
+        "text": "dù"
       },
       "choices": [
         {
           "id": "a",
-          "text": "lừ",
-          "errorTag": "viet_thieu_net"
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          }
         },
         {
           "id": "b",
-          "text": "lù"
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelVi": "dê",
+            "labelEn": "goat"
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
-      "answerKey": "b",
+      "answerKey": "a",
       "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"lù\".",
+      "explanation": "Bạn Cú đọc “dù”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -625,32 +679,42 @@
       "id": "viet-am-u-0019",
       "type": "LISTEN_CHOOSE",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
       "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
         "tts": true
       },
       "listenTarget": {
-        "text": "dữ"
+        "text": "cú"
       },
       "choices": [
         {
           "id": "a",
-          "text": "dữ"
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "dử",
-          "errorTag": "nham_hoi_nga"
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"dữ\".",
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “cú”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -659,6 +723,242 @@
     },
     {
       "id": "viet-am-u-0020",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "dù"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🦗",
+            "labelVi": "dế",
+            "labelEn": "cricket"
+          },
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “dù”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0021",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cú"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          },
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “cú”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cũ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cũ"
+        },
+        {
+          "id": "b",
+          "text": "cỏ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “cũ”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0023",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "đủ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đá",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "đủ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “đủ”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0024",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cư"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cư"
+        },
+        {
+          "id": "b",
+          "text": "cơ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “cư”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0025",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "hư"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hồ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "hư"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “hư”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0026",
       "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 1,
@@ -678,233 +978,164 @@
         "words": ["u", "ư"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"u ư\".",
+      "explanation": "Đọc là “u ư”.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0021",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "dù  đủ  hũ",
-        "words": ["dù", "đủ", "hũ"]
-      },
-      "answerKey": {
-        "words": ["dù", "đủ", "hũ"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"dù đủ hũ\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0022",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "cử  dự  lữ",
-        "words": ["cử", "dự", "lữ"]
-      },
-      "answerKey": {
-        "words": ["cử", "dự", "lữ"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"cử dự lữ\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0023",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "cái dù  đu đủ  hổ dữ",
-        "words": ["cái", "dù", "đu", "đủ", "hổ", "dữ"]
-      },
-      "answerKey": {
-        "words": ["cái", "dù", "đu", "đủ", "hổ", "dữ"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"cái dù đu đủ hổ dữ\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0024",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "Đu đủ chín ngọt lù",
-        "words": ["Đu", "đủ", "chín", "ngọt", "lù"]
-      },
-      "answerKey": {
-        "words": ["Đu", "đủ", "chín", "ngọt", "lù"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"Đu đủ chín ngọt lù\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0025",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🪂",
-          "labelVi": "cái dù"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cái dù"
-        },
-        {
-          "id": "b",
-          "text": "cái dừ",
-          "errorTag": "viet_thieu_net"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"cái dù\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0026",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🥭",
-          "labelVi": "đu đủ"
-        }
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "đu đử",
-          "errorTag": "viet_thieu_net"
-        },
-        {
-          "id": "b",
-          "text": "đu đủ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"đu đủ\".",
-      "meta": {
-        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
     },
     {
       "id": "viet-am-u-0027",
-      "type": "MCQ",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đọc to cho bạn Cú nghe nào.",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "cú  cũ",
+        "words": ["cú", "cũ"]
+      },
+      "answerKey": {
+        "words": ["cú", "cũ"]
+      },
+      "hints": ["Hít một hơi rồi đọc to nhé."],
+      "explanation": "Đọc là “cú cũ”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0028",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đến lượt con đọc rồi!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "dù  đủ",
+        "words": ["dù", "đủ"]
+      },
+      "answerKey": {
+        "words": ["dù", "đủ"]
+      },
+      "hints": ["Đọc như đang kể cho bạn Cú nghe."],
+      "explanation": "Đọc là “dù đủ”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0029",
+      "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐯",
-          "labelVi": "hổ dữ"
-        }
+        "text": "Con đọc chậm và rõ nhé.",
+        "tts": true
       },
-      "choices": [
+      "readTarget": {
+        "text": "hồ  hổ",
+        "words": ["hồ", "hổ"]
+      },
+      "answerKey": {
+        "words": ["hồ", "hổ"]
+      },
+      "hints": ["Ngón tay chỉ tới đâu, đọc tới đó."],
+      "explanation": "Đọc là “hồ hổ”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0030",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đọc to lên, mình nghe đây!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "cú  dù  lá",
+        "words": ["cú", "dù", "lá"]
+      },
+      "answerKey": {
+        "words": ["cú", "dù", "lá"]
+      },
+      "hints": ["Không vội đâu, con cứ đọc chậm."],
+      "explanation": "Đọc là “cú dù lá”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0031",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo chữ u vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
         {
-          "id": "a",
-          "text": "hổ dữ"
+          "id": "k1",
+          "text": "u"
         },
         {
-          "id": "b",
-          "text": "hổ dử",
-          "errorTag": "nham_hoi_nga"
+          "id": "d1",
+          "text": "ư"
+        },
+        {
+          "id": "d2",
+          "text": "o"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"hổ dữ\".",
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ u",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "Chỉ thẻ u vào giỏ, thẻ khác ở lại khay.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
@@ -912,16 +1143,157 @@
       }
     },
     {
-      "id": "viet-am-u-0028",
+      "id": "viet-am-u-0032",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bỏ chữ ư vào giỏ giúp mình nhé.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "ư"
+        },
+        {
+          "id": "d1",
+          "text": "u"
+        },
+        {
+          "id": "d2",
+          "text": "ơ"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ ư",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "Chỉ thẻ ư vào giỏ, thẻ khác ở lại khay.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0033",
       "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"dù\".",
+        "text": "Tìm chữ u rồi kéo vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "u"
+        },
+        {
+          "id": "d1",
+          "text": "n"
+        },
+        {
+          "id": "d2",
+          "text": "ơ"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ u",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "Chỉ thẻ u vào giỏ, thẻ khác ở lại khay.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0034",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng “cú”.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "c"
+        },
+        {
+          "id": "p2",
+          "text": "ú"
+        },
+        {
+          "id": "p3",
+          "text": "ù"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "van": ["p2"]
+      },
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "“cú” gồm c và ú.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
+      }
+    },
+    {
+      "id": "viet-am-u-0035",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_U_UW"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo hai thẻ để thành tiếng “dù”.",
         "tts": true
       },
       "dragItems": [
@@ -935,146 +1307,44 @@
         },
         {
           "id": "p3",
-          "text": "ư"
+          "text": "ú"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"dù\" là \"d\"."],
-      "explanation": "\"d\" ghép với \"ù\" thành \"dù\".",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "“dù” gồm d và ù.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
     },
     {
-      "id": "viet-am-u-0029",
+      "id": "viet-am-u-0036",
       "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Ghép thành tiếng \"đủ\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "đ"
-        },
-        {
-          "id": "p2",
-          "text": "ủ"
-        },
-        {
-          "id": "p3",
-          "text": "ư"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"đủ\" là \"đ\"."],
-      "explanation": "\"đ\" ghép với \"ủ\" thành \"đủ\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0030",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"hũ\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "h"
-        },
-        {
-          "id": "p2",
-          "text": "ũ"
-        },
-        {
-          "id": "p3",
-          "text": "ư"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"hũ\" là \"h\"."],
-      "explanation": "\"h\" ghép với \"ũ\" thành \"hũ\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0031",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"cử\".",
+        "text": "Xếp thành tiếng “cũ” nhé.",
         "tts": true
       },
       "dragItems": [
@@ -1084,286 +1354,171 @@
         },
         {
           "id": "p2",
-          "text": "ử"
+          "text": "ũ"
         },
         {
           "id": "p3",
-          "text": "u"
+          "text": "ũ"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"cử\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"ử\" thành \"cử\".",
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "“cũ” gồm c và ũ.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0032",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"dự\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "d"
-        },
-        {
-          "id": "p2",
-          "text": "ự"
-        },
-        {
-          "id": "p3",
-          "text": "u"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"dự\" là \"d\"."],
-      "explanation": "\"d\" ghép với \"ự\" thành \"dự\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0033",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"lữ\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "l"
-        },
-        {
-          "id": "p2",
-          "text": "ữ"
-        },
-        {
-          "id": "p3",
-          "text": "u"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"lữ\" là \"l\"."],
-      "explanation": "\"l\" ghép với \"ữ\" thành \"lữ\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0034",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ u vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Hai nét móc xuôi rồi nét sổ cuối",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["u"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ u giống cái cốc, hai nét móc đi lên."],
-      "explanation": "Chữ u có hai nét móc xuôi.",
-      "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0035",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ ư vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Viết chữ u rồi thêm dấu râu bên phải",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["ư"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ ư có cái râu nhỏ bên phải."],
-      "explanation": "Chữ ư là chữ u có thêm cái râu.",
-      "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
-      }
-    },
-    {
-      "id": "viet-am-u-0036",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_U_UW"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết từ \"cái dù\" vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": ["Viết đủ các tiếng", "Có dấu thanh đúng chỗ", "Chữ đều nét"],
-        "sampleAnswers": ["cái dù"]
-      },
-      "answerKey": null,
-      "hints": ["Nhìn mẫu trong sách rồi viết theo."],
-      "explanation": "Từ này viết là \"cái dù\".",
-      "meta": {
-        "estSeconds": 70,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
     },
     {
       "id": "viet-am-u-0037",
-      "type": "COUNT_TAP",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Câu \"Đu đủ chín ngọt lù\" có mấy tiếng? Chạm để đếm.",
+        "text": "Kéo tranh có âm u vào ô.",
         "tts": true
       },
-      "countTarget": {
-        "objects": {
-          "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng",
-          "labelEn": "syllable"
+      "dragItems": [
+        {
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
         },
-        "correctCount": 5,
-        "layout": "line"
+        {
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelVi": "dê",
+            "labelEn": "goat"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm u",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
       },
-      "answerKey": 5,
-      "hints": ["Mỗi tiếng con đọc một nhịp thì chạm một lần."],
-      "explanation": "Câu này có 5 tiếng.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm u không."],
+      "explanation": "“cú” và “dù” có âm u.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
     },
     {
       "id": "viet-am-u-0038",
-      "type": "MCQ",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Chữ nào có râu bên phải?",
+        "text": "Tranh nào có âm u thì kéo vào ô nhé.",
         "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
-          "text": "ư"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          }
         },
         {
-          "id": "b",
-          "text": "u",
-          "errorTag": "viet_thieu_net"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelVi": "đá",
+            "labelEn": "stone"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Chữ ư có cái râu nhỏ bên phải."],
-      "explanation": "Chữ ư có dấu râu, chữ u thì không.",
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm u",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
+      },
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“dù” và “cú” có âm u.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
@@ -1375,184 +1530,186 @@
       "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "viet_thieu_net",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ có râu vào ô.",
+        "text": "Bỏ tranh có âm u vào ô giúp mình.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "k1",
-          "text": "ư"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🦉",
+            "labelVi": "cú",
+            "labelEn": "owl"
+          }
         },
         {
-          "id": "k2",
-          "text": "u"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌂",
+            "labelVi": "dù",
+            "labelEn": "parasol"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🍵",
+            "labelVi": "chè",
+            "labelEn": "sweet soup"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          }
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
+          "label": "ô có âm u",
+          "accepts": ["g1", "g2"]
         }
       ],
       "answerKey": {
-        "o": ["k1"]
+        "o": ["g1", "g2"]
       },
-      "hints": ["Chữ ư có cái râu nhỏ bên phải."],
-      "explanation": "Chữ ư có dấu râu, chữ u thì không.",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“cú” và “dù” có âm u.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
     },
     {
       "id": "viet-am-u-0040",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu hỏi?",
+        "text": "Viết chữ u vào vở rồi nhờ ba mẹ chụp.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "đũ",
-          "errorTag": "nham_hoi_nga"
-        },
-        {
-          "id": "b",
-          "text": "đủ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Dấu hỏi giống cái móc câu."],
-      "explanation": "“đủ” mang dấu hỏi.",
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["u"]
+      },
+      "answerKey": null,
+      "hints": ["Ngồi thẳng, cầm bút nhẹ thôi nhé."],
+      "explanation": "Chữ u viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
     },
     {
       "id": "viet-am-u-0041",
-      "type": "DRAG_DROP",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ mang dấu hỏi vào ô.",
+        "text": "Con viết ư vào vở nhé, xong nhờ ba mẹ chụp.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "đủ"
-        },
-        {
-          "id": "k2",
-          "text": "đũ"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["ư"]
       },
-      "hints": ["Dấu hỏi giống cái móc câu."],
-      "explanation": "“đủ” mang dấu hỏi.",
+      "answerKey": null,
+      "hints": ["Viết chậm cho tròn nét."],
+      "explanation": "Chữ ư viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
     },
     {
       "id": "viet-am-u-0042",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu ngã?",
+        "text": "Lấy vở viết “dù”, rồi chụp gửi bạn Cú.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dữ"
-        },
-        {
-          "id": "b",
-          "text": "dử",
-          "errorTag": "nham_hoi_nga"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Dấu ngã lượn sóng, đọc gãy giọng."],
-      "explanation": "“dữ” mang dấu ngã, như trong “hổ dữ”.",
+      "rubric": {
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Dấu thanh đặt ngay trên (hoặc dưới) nguyên âm",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["dù"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn dòng kẻ để chữ không bị nghiêng."],
+      "explanation": "“dù” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }
     },
     {
       "id": "viet-am-u-0043",
-      "type": "DRAG_DROP",
+      "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_U_UW"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ mang dấu ngã vào ô.",
+        "text": "Chạm từng cú để đếm.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "dữ"
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🦉",
+          "labelVi": "cú",
+          "labelEn": "owl"
         },
-        {
-          "id": "k2",
-          "text": "dử"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+        "correctCount": 4,
+        "layout": "line"
       },
-      "hints": ["Dấu ngã lượn sóng, đọc gãy giọng."],
-      "explanation": "“dữ” mang dấu ngã, như trong “hổ dữ”.",
+      "answerKey": 4,
+      "hints": ["Chạm tới đâu đếm tới đó nhé."],
+      "explanation": "Có 4 cú.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B13",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39"
       }

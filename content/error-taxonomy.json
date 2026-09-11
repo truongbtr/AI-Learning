@@ -87,6 +87,25 @@
       "behavioural": false
     },
     {
+      "code": "nham_chu_gan_giong",
+      "subject": "VIET",
+      "group": "viet_am_chu",
+      "nameVi": "Nhầm chữ gần giống",
+      "description": "Lẫn hai chữ chỉ khác nhau một dấu phụ hoặc một nét: a–ă–â, o–ô–ơ, e–ê, u–ư, d–đ, và cặp tròn a–o.",
+      "detection": "Đáp án nhiễu là chữ gần giống chữ đúng; ảnh vở (viết thiếu mũ, thiếu râu).",
+      "remediation": "Đặt hai chữ cạnh nhau, tô lại đúng phần khác nhau (mũ, râu, móc); nghe–chọn từng cặp trước khi viết.",
+      "remediationSkills": ["VIET.HV.AM_A", "VIET.HV.AM_O", "VIET.HV.AM_E_EE", "VIET.HV.AM_U_UW"],
+      "lessonRefs": [
+        "KNTT-TV1-T1-B01",
+        "KNTT-TV1-T1-B04",
+        "KNTT-TV1-T1-B06",
+        "KNTT-TV1-T1-B07",
+        "KNTT-TV1-T1-B09",
+        "KNTT-TV1-T1-B13"
+      ],
+      "behavioural": false
+    },
+    {
       "code": "nham_hoi_nga",
       "subject": "VIET",
       "group": "viet_dau_thanh",
@@ -157,7 +176,7 @@
       "subject": "VIET",
       "group": "viet_doc",
       "nameVi": "Đọc nhầm vần",
-      "description": "Đọc sai vần của tiếng (bàn → bằn, chuối → chuỗi).",
+      "description": "Đọc sai vần của tiếng (bàn → bằn, chuối → chuỗi). Với tiếng Anh: chọn từ không cùng vần khi bài hỏi từ cùng vần (rhyme).",
       "detection": "STT; MCQ vần có errorTag.",
       "remediation": "Về bài vần tương ứng, nghe-chọn vần rồi đọc to.",
       "remediationSkills": ["VIET.HV.DANH_VAN_TIENG", "VIET.DOC.DOC_TIENG"],
@@ -322,6 +341,18 @@
         "VMATH.SO.CONG_TRU_TRON_CHUC"
       ],
       "lessonRefs": ["KNTT-T1-B10", "KNTT-T1-B11"],
+      "behavioural": false
+    },
+    {
+      "code": "lap_lai_tong",
+      "subject": "VMATH",
+      "group": "toan_phep_tinh",
+      "nameVi": "Lặp lại số có trong đề",
+      "description": "Chọn ngay một số đã in trong đề — thường là tổng hoặc số đầu tiên — thay vì tính (2 và mấy thì được 8? → chọn 8; có 6 quả, ăn 1, còn mấy? → chọn 6).",
+      "detection": "Đáp án nhiễu bằng đúng một số xuất hiện trong đề bài.",
+      "remediation": "Bậc 1 đưa về mô hình tách–gộp có hình để thấy \"số đã có\" khác \"số phải tìm\"; bậc 5 bài đối chiếu hai số đó cạnh nhau.",
+      "remediationSkills": ["VMATH.SO.TACH_GOP_10", "VMATH.SO.CONG_PV_10", "VMATH.SO.TRU_PV_10"],
+      "lessonRefs": ["KNTT-T1-B05", "KNTT-T1-B10", "KNTT-T1-B11"],
       "behavioural": false
     },
     {

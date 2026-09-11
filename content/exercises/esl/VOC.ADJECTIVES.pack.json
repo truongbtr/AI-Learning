@@ -13,10 +13,10 @@
       "difficulty": 1,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Read both, then choose.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -31,8 +31,7 @@
         },
         {
           "id": "b",
-          "text": "short",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "short"
         }
       ],
       "answerKey": "a",
@@ -54,7 +53,7 @@
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Point to the right one.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -65,8 +64,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "tall",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "tall"
         },
         {
           "id": "b",
@@ -89,10 +87,10 @@
       "difficulty": 2,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "garden",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Choose the word that fits.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -107,8 +105,7 @@
         },
         {
           "id": "b",
-          "text": "young",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "young"
         }
       ],
       "answerKey": "a",
@@ -141,8 +138,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "old",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "old"
         },
         {
           "id": "b",
@@ -165,10 +161,10 @@
       "difficulty": 3,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "robot",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Look, then pick the right word.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -183,8 +179,7 @@
         },
         {
           "id": "b",
-          "text": "kind",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "kind"
         }
       ],
       "answerKey": "a",
@@ -206,7 +201,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Which one is right? Have a look.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -217,8 +212,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "funny",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "funny"
         },
         {
           "id": "b",
@@ -241,10 +235,10 @@
       "difficulty": 4,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Read both, then choose.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -259,8 +253,7 @@
         },
         {
           "id": "b",
-          "text": "smart",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "smart"
         }
       ],
       "answerKey": "a",
@@ -282,7 +275,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Look and circle the right word.",
+        "text": "Point to the right one.",
         "tts": true,
         "image": {
           "kind": "emoji",
@@ -293,8 +286,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "cute",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "cute"
         },
         {
           "id": "b",
@@ -317,10 +309,10 @@
       "difficulty": 2,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Tap the box you hear.",
         "tts": true
       },
       "listenTarget": {
@@ -329,8 +321,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "short",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "short"
         },
         {
           "id": "b",
@@ -338,7 +329,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại rồi nhớ nghĩa."],
+      "hints": ["Say it in your head, then choose."],
       "explanation": "\"tall\" nghĩa là cao.",
       "meta": {
         "estSeconds": 20,
@@ -353,10 +344,10 @@
       "difficulty": 2,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Listen again if you like, then tap.",
         "tts": true
       },
       "listenTarget": {
@@ -369,12 +360,11 @@
         },
         {
           "id": "b",
-          "text": "tall",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "tall"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại rồi nhớ nghĩa."],
+      "hints": ["Listen to the end of the word."],
       "explanation": "\"short\" nghĩa là thấp.",
       "meta": {
         "estSeconds": 20,
@@ -389,7 +379,7 @@
       "difficulty": 3,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Listen, then tap one box.",
@@ -401,8 +391,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "young",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "young"
         },
         {
           "id": "b",
@@ -410,7 +399,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại rồi nhớ nghĩa."],
+      "hints": ["Read each box, then match the sound."],
       "explanation": "\"old\" nghĩa là già.",
       "meta": {
         "estSeconds": 20,
@@ -425,10 +414,10 @@
       "difficulty": 3,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Listen and tap the right box.",
         "tts": true
       },
       "listenTarget": {
@@ -441,12 +430,11 @@
         },
         {
           "id": "b",
-          "text": "old",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "old"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại rồi nhớ nghĩa."],
+      "hints": ["Listen once more for the first sound."],
       "explanation": "\"young\" nghĩa là trẻ.",
       "meta": {
         "estSeconds": 20,
@@ -461,10 +449,10 @@
       "difficulty": 4,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Have a listen, then choose.",
         "tts": true
       },
       "listenTarget": {
@@ -473,8 +461,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "kind",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "kind"
         },
         {
           "id": "b",
@@ -482,7 +469,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại rồi nhớ nghĩa."],
+      "hints": ["Press the speaker to hear it again."],
       "explanation": "\"funny\" nghĩa là vui tính.",
       "meta": {
         "estSeconds": 20,
@@ -497,10 +484,10 @@
       "difficulty": 4,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Which box? Listen first!",
         "tts": true
       },
       "listenTarget": {
@@ -513,12 +500,11 @@
         },
         {
           "id": "b",
-          "text": "funny",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "funny"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại rồi nhớ nghĩa."],
+      "hints": ["Say it in your head, then choose."],
       "explanation": "\"kind\" nghĩa là tốt bụng.",
       "meta": {
         "estSeconds": 20,
@@ -533,10 +519,10 @@
       "difficulty": 5,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Listen carefully, then tap.",
         "tts": true
       },
       "listenTarget": {
@@ -545,8 +531,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "smart",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "smart"
         },
         {
           "id": "b",
@@ -554,7 +539,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": ["Nghe lại rồi nhớ nghĩa."],
+      "hints": ["Listen to the end of the word."],
       "explanation": "\"cute\" nghĩa là dễ thương.",
       "meta": {
         "estSeconds": 20,
@@ -569,10 +554,10 @@
       "difficulty": 5,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Listen, then tap one box.",
+        "text": "Tap the box you hear.",
         "tts": true
       },
       "listenTarget": {
@@ -585,12 +570,11 @@
         },
         {
           "id": "b",
-          "text": "cute",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "cute"
         }
       ],
       "answerKey": "a",
-      "hints": ["Nghe lại rồi nhớ nghĩa."],
+      "hints": ["Read each box, then match the sound."],
       "explanation": "\"smart\" nghĩa là thông minh.",
       "meta": {
         "estSeconds": 20,
@@ -605,7 +589,7 @@
       "difficulty": 2,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "What is the opposite of \"tall\"?",
@@ -618,8 +602,7 @@
         },
         {
           "id": "b",
-          "text": "tall",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "tall"
         }
       ],
       "answerKey": "a",
@@ -638,7 +621,7 @@
       "difficulty": 2,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "What is the opposite of \"short\"?",
@@ -647,8 +630,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "short",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "short"
         },
         {
           "id": "b",
@@ -671,7 +653,7 @@
       "difficulty": 3,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "What is the opposite of \"old\"?",
@@ -684,8 +666,7 @@
         },
         {
           "id": "b",
-          "text": "old",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "old"
         }
       ],
       "answerKey": "a",
@@ -704,7 +685,7 @@
       "difficulty": 3,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "What is the opposite of \"young\"?",
@@ -713,8 +694,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "young",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "young"
         },
         {
           "id": "b",
@@ -737,7 +717,7 @@
       "difficulty": 4,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "What is the opposite of \"funny\"?",
@@ -750,8 +730,7 @@
         },
         {
           "id": "b",
-          "text": "funny",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "funny"
         }
       ],
       "answerKey": "a",
@@ -770,7 +749,7 @@
       "difficulty": 4,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "What is the opposite of \"kind\"?",
@@ -779,8 +758,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "kind",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "kind"
         },
         {
           "id": "b",
@@ -803,7 +781,7 @@
       "difficulty": 5,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "What is the opposite of \"cute\"?",
@@ -816,8 +794,7 @@
         },
         {
           "id": "b",
-          "text": "cute",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "cute"
         }
       ],
       "answerKey": "a",
@@ -836,7 +813,7 @@
       "difficulty": 5,
       "skillCodes": ["ESL.VOC.ADJECTIVES"],
       "assetTheme": "neutral",
-      "targetsError": "sai_chinh_ta_tu",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "What is the opposite of \"smart\"?",
@@ -845,8 +822,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "smart",
-          "errorTag": "sai_chinh_ta_tu"
+          "text": "smart"
         },
         {
           "id": "b",
@@ -1214,7 +1190,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Read aloud, please!",
+        "text": "Read it out loud for Owl.",
         "tts": true
       },
       "readTarget": {
@@ -1224,7 +1200,7 @@
       "answerKey": {
         "words": ["tall", "short"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Take a breath, then read out loud."],
       "explanation": "Đọc là \"tall short\".",
       "meta": {
         "estSeconds": 25,
@@ -1242,7 +1218,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Read aloud, please!",
+        "text": "Say it out loud, nice and clear.",
         "tts": true
       },
       "readTarget": {
@@ -1252,7 +1228,7 @@
       "answerKey": {
         "words": ["old", "young"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Point with your finger as you read."],
       "explanation": "Đọc là \"old young\".",
       "meta": {
         "estSeconds": 25,
@@ -1270,7 +1246,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Read aloud, please!",
+        "text": "Read slowly and clearly.",
         "tts": true
       },
       "readTarget": {
@@ -1280,7 +1256,7 @@
       "answerKey": {
         "words": ["My", "dad", "is", "tall"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Read it like you are telling a friend."],
       "explanation": "Đọc là \"My dad is tall\".",
       "meta": {
         "estSeconds": 25,
@@ -1298,7 +1274,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Read aloud, please!",
+        "text": "Let's read together — you first!",
         "tts": true
       },
       "readTarget": {
@@ -1308,7 +1284,7 @@
       "answerKey": {
         "words": ["My", "sister", "is", "funny"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Slow is fine — clear is what counts."],
       "explanation": "Đọc là \"My sister is funny\".",
       "meta": {
         "estSeconds": 25,
@@ -1336,7 +1312,7 @@
       "answerKey": {
         "words": ["My", "grandma", "is", "kind"]
       },
-      "hints": ["Đọc chậm từng từ."],
+      "hints": ["Take your time, one word at a time."],
       "explanation": "Đọc là \"My grandma is kind\".",
       "meta": {
         "estSeconds": 25,

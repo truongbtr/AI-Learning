@@ -2,9 +2,9 @@
   "skillCode": "VIET.HV.AM_C",
   "subject": "VIET",
   "generatedBy": "claude-code",
-  "promptVersion": "exercise-gen-v1",
+  "promptVersion": "exercise-gen-v2",
   "lessonRefs": ["KNTT-TV1-T1-B03"],
-  "note": "Bài 3: C c và dấu sắc — câu nhận biết “Nam và bố câu cá.”",
+  "note": "Bài 3: C c và dấu sắc — tiếng đọc được: ba, bà, ca, cà, cá.",
   "exercises": [
     {
       "id": "viet-am-c-0001",
@@ -14,7 +14,7 @@
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
       "targetsError": "nham_c_k_q",
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
         "text": "Đâu là chữ c?",
         "tts": true
@@ -26,13 +26,13 @@
         },
         {
           "id": "b",
-          "text": "o",
+          "text": "k",
           "errorTag": "nham_c_k_q"
         }
       ],
       "answerKey": "a",
-      "hints": ["Chữ c giống cái miệng đang há, hở bên phải."],
-      "explanation": "Chữ c là một nét cong hở bên phải. Đây là chữ c.",
+      "hints": ["Nhìn kĩ nét cong và nét móc của chữ."],
+      "explanation": "Chữ c là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -46,26 +46,26 @@
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ c?",
+        "text": "Chữ nào là chữ C?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "e",
+          "text": "K",
           "errorTag": "nham_c_k_q"
         },
         {
           "id": "b",
-          "text": "c"
+          "text": "C"
         }
       ],
       "answerKey": "b",
-      "hints": ["Chữ c giống cái miệng đang há, hở bên phải."],
-      "explanation": "Chữ c là một nét cong hở bên phải. Đây là chữ c.",
+      "hints": ["So hai chữ xem chỗ nào khác nhau nhé."],
+      "explanation": "Chữ C là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -76,29 +76,29 @@
       "id": "viet-am-c-0003",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "nham_g_gh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Đâu là chữ C?",
+        "text": "Chỉ giúp bạn Cú chữ c nhé!",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "G",
-          "errorTag": "nham_g_gh"
+          "text": "c"
         },
         {
           "id": "b",
-          "text": "C"
+          "text": "k",
+          "errorTag": "nham_c_k_q"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Chữ C hoa như vầng trăng khuyết."],
-      "explanation": "Chữ C hoa là nét cong to hở bên phải. Đây là chữ C.",
+      "answerKey": "a",
+      "hints": ["Chữ c có nét riêng, tìm nét đó nhé."],
+      "explanation": "Chữ c là chữ ở ô đúng con vừa chọn.",
       "meta": {
         "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -109,31 +109,31 @@
       "id": "viet-am-c-0004",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "model",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm c?",
+        "text": "Tìm chữ C giúp mình nào.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "ca"
+          "text": "K",
+          "errorTag": "nham_c_k_q"
         },
         {
           "id": "b",
-          "text": "ba",
-          "errorTag": "nham_am_dau"
+          "text": "C"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm c không."],
-      "explanation": "Tiếng \"ca\" có âm c; tiếng \"ba\" thì không.",
+      "answerKey": "b",
+      "hints": ["Đọc thầm tên chữ rồi chọn."],
+      "explanation": "Chữ C là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
@@ -142,31 +142,31 @@
       "id": "viet-am-c-0005",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 1,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm c?",
+        "text": "Chạm vào chữ c.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bà",
-          "errorTag": "nham_am_dau"
+          "text": "c"
         },
         {
           "id": "b",
-          "text": "cá"
+          "text": "k",
+          "errorTag": "nham_c_k_q"
         }
       ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm c không."],
-      "explanation": "Tiếng \"cá\" có âm c; tiếng \"bà\" thì không.",
+      "answerKey": "a",
+      "hints": ["Nhìn phần trên của chữ trước."],
+      "explanation": "Chữ c là chữ ở ô đúng con vừa chọn.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 15,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
@@ -175,29 +175,39 @@
       "id": "viet-am-c-0006",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 2,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
-        "text": "Tiếng nào có âm c?",
+        "text": "Tên tranh nào có âm c?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cà"
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          }
         },
         {
           "id": "b",
-          "text": "đa",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          },
           "errorTag": "nham_am_dau"
         }
       ],
       "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm c không."],
-      "explanation": "Tiếng \"cà\" có âm c; tiếng \"đa\" thì không.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm c không."],
+      "explanation": "“cà” có âm c.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -214,23 +224,33 @@
       "targetsError": "nham_am_dau",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm c?",
+        "text": "Tranh nào mà tên có âm c?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "bò",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          },
           "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "cò"
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
         }
       ],
       "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm c không."],
-      "explanation": "Tiếng \"cò\" có âm c; tiếng \"bò\" thì không.",
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“ca” có âm c.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -247,23 +267,33 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm c?",
+        "text": "Chọn tranh có âm c trong tên nhé.",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "cỏ"
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
         },
         {
           "id": "b",
-          "text": "bỏ",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          },
           "errorTag": "nham_am_dau"
         }
       ],
       "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm c không."],
-      "explanation": "Tiếng \"cỏ\" có âm c; tiếng \"bỏ\" thì không.",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“cá” có âm c.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -274,29 +304,39 @@
       "id": "viet-am-c-0009",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm c?",
+        "text": "Bạn Cú đi tìm âm c. Tranh nào đúng?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "đâu",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          },
           "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "câu"
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          }
         }
       ],
       "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm c không."],
-      "explanation": "Tiếng \"câu\" có âm c; tiếng \"đâu\" thì không.",
+      "hints": ["Nói to tên tranh lên, sẽ nghe ra ngay."],
+      "explanation": "“cà” có âm c.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -307,29 +347,39 @@
       "id": "viet-am-c-0010",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào có âm c?",
+        "text": "Tranh nào đọc lên nghe thấy âm c?",
         "tts": true
       },
       "choices": [
         {
           "id": "a",
-          "text": "có"
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
         },
         {
           "id": "b",
-          "text": "bó",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          },
           "errorTag": "nham_am_dau"
         }
       ],
       "answerKey": "a",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm c không."],
-      "explanation": "Tiếng \"có\" có âm c; tiếng \"bó\" thì không.",
+      "hints": ["Tách tên tranh thành từng tiếng nhé."],
+      "explanation": "“ca” có âm c.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -340,479 +390,19 @@
       "id": "viet-am-c-0011",
       "type": "MCQ",
       "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tiếng nào có âm c?",
-        "tts": true
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dù",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "cú"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm c không."],
-      "explanation": "Tiếng \"cú\" có âm c; tiếng \"dù\" thì không.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0012",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "ca"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "ka",
-          "errorTag": "nham_c_k_q"
-        },
-        {
-          "id": "b",
-          "text": "ca"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"ca\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0013",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "cá"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cá"
-        },
-        {
-          "id": "b",
-          "text": "ká",
-          "errorTag": "nham_c_k_q"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"cá\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0014",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "cà"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "kà",
-          "errorTag": "nham_c_k_q"
-        },
-        {
-          "id": "b",
-          "text": "cà"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"cà\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0015",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "cò"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cò"
-        },
-        {
-          "id": "b",
-          "text": "kò",
-          "errorTag": "nham_c_k_q"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"cò\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0016",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "cỏ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "kỏ",
-          "errorTag": "nham_c_k_q"
-        },
-        {
-          "id": "b",
-          "text": "cỏ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"cỏ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0017",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "câu"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "câu"
-        },
-        {
-          "id": "b",
-          "text": "kâu",
-          "errorTag": "nham_c_k_q"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"câu\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0018",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "có"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "kó",
-          "errorTag": "nham_c_k_q"
-        },
-        {
-          "id": "b",
-          "text": "có"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"có\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0019",
-      "type": "LISTEN_CHOOSE",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Nghe rồi chọn ô đúng nhé!",
-        "tts": true
-      },
-      "listenTarget": {
-        "text": "cú"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cú"
-        },
-        {
-          "id": "b",
-          "text": "kú",
-          "errorTag": "nham_c_k_q"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
-      "explanation": "Cô đọc tiếng \"cú\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0020",
-      "type": "READ_ALOUD",
-      "language": "vi",
       "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "c  C",
-        "words": ["c", "C"]
-      },
-      "answerKey": {
-        "words": ["c", "C"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"c C\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0021",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "ca  cá  cà",
-        "words": ["ca", "cá", "cà"]
-      },
-      "answerKey": {
-        "words": ["ca", "cá", "cà"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"ca cá cà\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0022",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "cò  cỏ  câu",
-        "words": ["cò", "cỏ", "câu"]
-      },
-      "answerKey": {
-        "words": ["cò", "cỏ", "câu"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"cò cỏ câu\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0023",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "cá  cái ca  quả cà",
-        "words": ["cá", "cái", "ca", "quả", "cà"]
-      },
-      "answerKey": {
-        "words": ["cá", "cái", "ca", "quả", "cà"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"cá cái ca quả cà\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0024",
-      "type": "READ_ALOUD",
-      "language": "vi",
-      "difficulty": 5,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Con đọc to nhé!",
-        "tts": true
-      },
-      "readTarget": {
-        "text": "Nam và bố câu cá",
-        "words": ["Nam", "và", "bố", "câu", "cá"]
-      },
-      "answerKey": {
-        "words": ["Nam", "và", "bố", "câu", "cá"]
-      },
-      "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"Nam và bố câu cá\".",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0025",
-      "type": "MCQ",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "none",
-      "prompt": {
-        "text": "Tranh này là gì?",
+        "text": "Tranh này là tiếng nào?",
         "tts": true,
         "image": {
           "kind": "emoji",
           "value": "🐟",
-          "labelVi": "cá"
+          "labelVi": "cá",
+          "labelEn": "fish"
         }
       },
       "choices": [
@@ -827,8 +417,570 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"cá\".",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“cá” đọc là cá.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🥤",
+          "labelVi": "ca",
+          "labelEn": "mug"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "ca"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“ca” đọc là ca.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đọc hai ô rồi chọn tiếng hợp với tranh.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍆",
+          "labelVi": "cà",
+          "labelEn": "aubergine"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cà"
+        },
+        {
+          "id": "b",
+          "text": "ca",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn dấu thanh ở trên nguyên âm."],
+      "explanation": "“cà” đọc là cà.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào gọi tên bức tranh này?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🥤",
+          "labelVi": "ca",
+          "labelEn": "mug"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ba",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "ca"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm thôi, chậm mà chắc."],
+      "explanation": "“ca” đọc là ca.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn tiếng đúng với tranh nhé.",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍆",
+          "labelVi": "cà",
+          "labelEn": "aubergine"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cà"
+        },
+        {
+          "id": "b",
+          "text": "bà",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Che một ô lại, đọc ô còn lại trước."],
+      "explanation": "“cà” đọc là cà.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bạn Cú nhìn tranh rồi tìm tiếng. Con giúp nhé!",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "cá",
+          "labelEn": "fish"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ca",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng phần rồi ghép lại."],
+      "explanation": "“cá” đọc là cá.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Hai ô này, ô nào hợp với tranh?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "cá",
+          "labelEn": "fish"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá"
+        },
+        {
+          "id": "b",
+          "text": "cà",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc âm đầu trước, rồi tới vần."],
+      "explanation": "“cá” đọc là cá.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0018",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ca"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          },
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “ca”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0019",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “cá”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0020",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          },
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “cà”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0021",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ca"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “ca”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cà"
+        },
+        {
+          "id": "b",
+          "text": "ca",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Bạn Cú đọc “cà”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0023",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bấm loa nghe lại cũng được, rồi chọn ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ca"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ba",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "ca"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của tiếng nhé."],
+      "explanation": "Bạn Cú đọc “ca”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0024",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Lắng nghe rồi chạm vào ô đúng.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cà"
+        },
+        {
+          "id": "b",
+          "text": "bà",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe xem giọng lên hay xuống."],
+      "explanation": "Bạn Cú đọc “cà”.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0025",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe kĩ nhé, rồi chọn ô của con.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ca",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Bấm loa nghe thêm một lần nha."],
+      "explanation": "Bạn Cú đọc “cá”.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -837,74 +989,183 @@
     },
     {
       "id": "viet-am-c-0026",
-      "type": "MCQ",
+      "type": "READ_ALOUD",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🥤",
-          "labelVi": "cái ca"
-        }
+        "text": "Con đọc to nhé!",
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cái cà",
-          "errorTag": "sai_dau_thanh"
-        },
-        {
-          "id": "b",
-          "text": "cái ca"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"cái ca\".",
+      "readTarget": {
+        "text": "ca",
+        "words": ["ca"]
+      },
+      "answerKey": {
+        "words": ["ca"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là “ca”.",
       "meta": {
-        "estSeconds": 20,
+        "estSeconds": 30,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-am-c-0027",
-      "type": "MCQ",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đọc to cho bạn Cú nghe nào.",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "cà  cá",
+        "words": ["cà", "cá"]
+      },
+      "answerKey": {
+        "words": ["cà", "cá"]
+      },
+      "hints": ["Hít một hơi rồi đọc to nhé."],
+      "explanation": "Đọc là “cà cá”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0028",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đến lượt con đọc rồi!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "ba  ca",
+        "words": ["ba", "ca"]
+      },
+      "answerKey": {
+        "words": ["ba", "ca"]
+      },
+      "hints": ["Đọc như đang kể cho bạn Cú nghe."],
+      "explanation": "Đọc là “ba ca”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0029",
+      "type": "READ_ALOUD",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tranh này là gì?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🍆",
-          "labelVi": "quả cà"
-        }
+        "text": "Con đọc chậm và rõ nhé.",
+        "tts": true
       },
-      "choices": [
+      "readTarget": {
+        "text": "bà  cà",
+        "words": ["bà", "cà"]
+      },
+      "answerKey": {
+        "words": ["bà", "cà"]
+      },
+      "hints": ["Ngón tay chỉ tới đâu, đọc tới đó."],
+      "explanation": "Đọc là “bà cà”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0030",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đọc to lên, mình nghe đây!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "ca  cà  cá",
+        "words": ["ca", "cà", "cá"]
+      },
+      "answerKey": {
+        "words": ["ca", "cà", "cá"]
+      },
+      "hints": ["Không vội đâu, con cứ đọc chậm."],
+      "explanation": "Đọc là “ca cà cá”.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0031",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo chữ c vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
         {
-          "id": "a",
-          "text": "quả cà"
+          "id": "k1",
+          "text": "c"
         },
         {
-          "id": "b",
-          "text": "quả cá",
-          "errorTag": "sai_dau_thanh"
+          "id": "d1",
+          "text": "b"
+        },
+        {
+          "id": "d2",
+          "text": "a"
         }
       ],
-      "answerKey": "a",
-      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
-      "explanation": "Tranh vẽ \"quả cà\".",
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ c",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "Chỉ thẻ c vào giỏ, thẻ khác ở lại khay.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
@@ -912,16 +1173,106 @@
       }
     },
     {
-      "id": "viet-am-c-0028",
+      "id": "viet-am-c-0032",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Bỏ chữ c vào giỏ giúp mình nhé.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "c"
+        },
+        {
+          "id": "d1",
+          "text": "b"
+        },
+        {
+          "id": "d2",
+          "text": "o"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ c",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "Chỉ thẻ c vào giỏ, thẻ khác ở lại khay.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0033",
       "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "model",
+      "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"ca\".",
+        "text": "Tìm chữ c rồi kéo vào giỏ.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "c"
+        },
+        {
+          "id": "d1",
+          "text": "a"
+        },
+        {
+          "id": "d2",
+          "text": "b"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "gio",
+          "label": "giỏ chữ c",
+          "accepts": ["k1"]
+        }
+      ],
+      "answerKey": {
+        "gio": ["k1"]
+      },
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "Chỉ thẻ c vào giỏ, thẻ khác ở lại khay.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B03",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
+      }
+    },
+    {
+      "id": "viet-am-c-0034",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_C"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng “ca”.",
         "tts": true
       },
       "dragItems": [
@@ -935,86 +1286,35 @@
         },
         {
           "id": "p3",
-          "text": "k"
+          "text": "à"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"ca\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"a\" thành \"ca\".",
+      "hints": ["Kéo chậm, thẻ sẽ tự dính vào ô."],
+      "explanation": "“ca” gồm c và a.",
       "meta": {
-        "estSeconds": 35,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
-      "id": "viet-am-c-0029",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "model",
-      "prompt": {
-        "text": "Ghép thành tiếng \"cá\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "c"
-        },
-        {
-          "id": "p2",
-          "text": "á"
-        },
-        {
-          "id": "p3",
-          "text": "k"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"cá\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"á\" thành \"cá\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0030",
+      "id": "viet-am-c-0035",
       "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 3,
@@ -1023,7 +1323,7 @@
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Ghép thành tiếng \"cà\".",
+        "text": "Kéo hai thẻ để thành tiếng “cà”.",
         "tts": true
       },
       "dragItems": [
@@ -1037,333 +1337,218 @@
         },
         {
           "id": "p3",
-          "text": "k"
+          "text": "a"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p1"]
         },
         {
-          "id": "sau",
+          "id": "van",
           "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
+          "accepts": ["p2"]
         }
       ],
       "answerKey": {
         "dau": ["p1"],
-        "sau": ["p2"]
+        "van": ["p2"]
       },
-      "hints": ["Âm đầu của \"cà\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"à\" thành \"cà\".",
+      "hints": ["Nhìn kĩ thẻ trước khi kéo nhé."],
+      "explanation": "“cà” gồm c và à.",
       "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0031",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"cò\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "c"
-        },
-        {
-          "id": "p2",
-          "text": "ò"
-        },
-        {
-          "id": "p3",
-          "text": "k"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"cò\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"ò\" thành \"cò\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0032",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"cỏ\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "c"
-        },
-        {
-          "id": "p2",
-          "text": "ỏ"
-        },
-        {
-          "id": "p3",
-          "text": "k"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"cỏ\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"ỏ\" thành \"cỏ\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0033",
-      "type": "DRAG_DROP",
-      "language": "vi",
-      "difficulty": 4,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Ghép thành tiếng \"câu\".",
-        "tts": true
-      },
-      "dragItems": [
-        {
-          "id": "p1",
-          "text": "c"
-        },
-        {
-          "id": "p2",
-          "text": "âu"
-        },
-        {
-          "id": "p3",
-          "text": "k"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "âm đầu",
-          "accepts": ["p1", "p2", "p3"]
-        },
-        {
-          "id": "sau",
-          "label": "phần vần",
-          "accepts": ["p1", "p2", "p3"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["p1"],
-        "sau": ["p2"]
-      },
-      "hints": ["Âm đầu của \"câu\" là \"c\"."],
-      "explanation": "\"c\" ghép với \"âu\" thành \"câu\".",
-      "meta": {
-        "estSeconds": 35,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0034",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 2,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ c vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Một nét cong hở phải, không khép kín",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["c"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ c giống cái miệng đang há, hở bên phải."],
-      "explanation": "Chữ c là một nét cong hở bên phải.",
-      "meta": {
-        "estSeconds": 60,
-        "lessonUnitCode": "KNTT-TV1-T1-B03",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
-      }
-    },
-    {
-      "id": "viet-am-c-0035",
-      "type": "WRITE_PHOTO",
-      "language": "vi",
-      "difficulty": 3,
-      "skillCodes": ["VIET.HV.AM_C"],
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "prompt": {
-        "text": "Viết chữ C vào vở rồi nhờ ba mẹ chụp.",
-        "tts": true
-      },
-      "rubric": {
-        "criteria": [
-          "Nét cong to, đều, hở bên phải",
-          "Đúng độ cao trong ô li",
-          "Nét liền, không ngắt giữa chừng"
-        ],
-        "sampleAnswers": ["C"]
-      },
-      "answerKey": null,
-      "hints": ["Chữ C hoa như vầng trăng khuyết."],
-      "explanation": "Chữ C hoa là nét cong to hở bên phải.",
-      "meta": {
-        "estSeconds": 60,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-am-c-0036",
-      "type": "WRITE_PHOTO",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 3,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
+      "scaffold": "model",
       "prompt": {
-        "text": "Viết từ \"cá\" vào vở rồi nhờ ba mẹ chụp.",
+        "text": "Xếp thành tiếng “cá” nhé.",
         "tts": true
       },
-      "rubric": {
-        "criteria": ["Viết đủ các tiếng", "Có dấu thanh đúng chỗ", "Chữ đều nét"],
-        "sampleAnswers": ["cá"]
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "c"
+        },
+        {
+          "id": "p2",
+          "text": "á"
+        },
+        {
+          "id": "p3",
+          "text": "à"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1"]
+        },
+        {
+          "id": "van",
+          "label": "phần vần",
+          "accepts": ["p2"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "van": ["p2"]
       },
-      "answerKey": null,
-      "hints": ["Nhìn mẫu trong sách rồi viết theo."],
-      "explanation": "Từ này viết là \"cá\".",
+      "hints": ["Thẻ nào không hợp thì để lại khay."],
+      "explanation": "“cá” gồm c và á.",
       "meta": {
-        "estSeconds": 70,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-am-c-0037",
-      "type": "COUNT_TAP",
+      "type": "DRAG_DROP",
       "language": "vi",
-      "difficulty": 3,
+      "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Câu \"Nam và bố câu cá\" có mấy tiếng? Chạm để đếm.",
+        "text": "Kéo tranh có âm c vào ô.",
         "tts": true
       },
-      "countTarget": {
-        "objects": {
-          "kind": "emoji",
-          "value": "🔤",
-          "labelVi": "tiếng",
-          "labelEn": "syllable"
+      "dragItems": [
+        {
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
         },
-        "correctCount": 5,
-        "layout": "line"
+        {
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍆",
+            "labelVi": "cà",
+            "labelEn": "aubergine"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà",
+            "labelEn": "grandma"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm c",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
       },
-      "answerKey": 5,
-      "hints": ["Mỗi tiếng con đọc một nhịp thì chạm một lần."],
-      "explanation": "Câu này có 5 tiếng.",
+      "hints": ["Đọc thầm tên tranh, nghe xem có âm c không."],
+      "explanation": "“cá” và “cà” có âm c.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-am-c-0038",
-      "type": "MCQ",
+      "type": "DRAG_DROP",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu sắc?",
+        "text": "Tranh nào có âm c thì kéo vào ô nhé.",
         "tts": true
       },
-      "choices": [
+      "dragItems": [
         {
-          "id": "a",
-          "text": "cá"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🥤",
+            "labelVi": "ca",
+            "labelEn": "mug"
+          }
         },
         {
-          "id": "b",
-          "text": "cà",
-          "errorTag": "sai_dau_thanh"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "👨",
+            "labelVi": "ba",
+            "labelEn": "dad"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "đò",
+            "labelEn": "ferry"
+          }
         }
       ],
-      "answerKey": "a",
-      "hints": ["Dấu sắc đi lên bên phải, dấu huyền đi xuống bên trái."],
-      "explanation": "“cá” mang dấu sắc, “cà” mang dấu huyền.",
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ô có âm c",
+          "accepts": ["g1", "g2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1", "g2"]
+      },
+      "hints": ["Gọi tên từng tranh trong đầu nhé."],
+      "explanation": "“ca” và “cỏ” có âm c.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
@@ -1375,184 +1560,186 @@
       "difficulty": 5,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ mang dấu sắc vào ô.",
+        "text": "Bỏ tranh có âm c vào ô giúp mình.",
         "tts": true
       },
       "dragItems": [
         {
-          "id": "k1",
-          "text": "cá"
+          "id": "g1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "cá",
+            "labelEn": "fish"
+          }
         },
         {
-          "id": "k2",
-          "text": "cà"
+          "id": "g2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelVi": "cỏ",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelVi": "lá",
+            "labelEn": "leaf"
+          }
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "bò",
+            "labelEn": "cow"
+          }
         }
       ],
       "dropZones": [
         {
           "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
+          "label": "ô có âm c",
+          "accepts": ["g1", "g2"]
         }
       ],
       "answerKey": {
-        "o": ["k1"]
+        "o": ["g1", "g2"]
       },
-      "hints": ["Dấu sắc đi lên bên phải, dấu huyền đi xuống bên trái."],
-      "explanation": "“cá” mang dấu sắc, “cà” mang dấu huyền.",
+      "hints": ["Nghe tiếng đầu của tên tranh."],
+      "explanation": "“cá” và “cỏ” có âm c.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-am-c-0040",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 4,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
-      "scaffold": "model",
+      "targetsError": null,
+      "scaffold": "none",
       "prompt": {
-        "text": "Đứng trước a thì viết chữ nào?",
+        "text": "Viết chữ c vào vở rồi nhờ ba mẹ chụp.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "k",
-          "errorTag": "nham_c_k_q"
-        },
-        {
-          "id": "b",
-          "text": "c"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Trước a, o, ô, ơ, u, ư thì viết c."],
-      "explanation": "Trước chữ a ta luôn viết c, như trong “cá”.",
+      "rubric": {
+        "criteria": [
+          "Đúng điểm đặt bút và chiều đưa bút",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["c"]
+      },
+      "answerKey": null,
+      "hints": ["Ngồi thẳng, cầm bút nhẹ thôi nhé."],
+      "explanation": "Chữ c viết đủ nét là đẹp rồi.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-am-c-0041",
-      "type": "DRAG_DROP",
+      "type": "WRITE_PHOTO",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 2,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "nham_c_k_q",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo chữ viết được trước a vào ô.",
+        "text": "Con viết “ca” vào vở nhé, xong nhờ ba mẹ chụp.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "c"
-        },
-        {
-          "id": "k2",
-          "text": "k"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+      "rubric": {
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Dấu thanh đặt ngay trên (hoặc dưới) nguyên âm",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["ca"]
       },
-      "hints": ["Trước a, o, ô, ơ, u, ư thì viết c."],
-      "explanation": "Trước chữ a ta luôn viết c, như trong “cá”.",
+      "answerKey": null,
+      "hints": ["Viết chậm cho tròn nét."],
+      "explanation": "“ca” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-am-c-0042",
-      "type": "MCQ",
+      "type": "WRITE_PHOTO",
       "language": "vi",
       "difficulty": 4,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Tiếng nào mang dấu hỏi?",
+        "text": "Lấy vở viết “cá”, rồi chụp gửi bạn Cú.",
         "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cỏ"
-        },
-        {
-          "id": "b",
-          "text": "cõ",
-          "errorTag": "nham_hoi_nga"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Dấu hỏi giống cái móc, dấu ngã lượn sóng."],
-      "explanation": "“cỏ” mang dấu hỏi.",
+      "rubric": {
+        "criteria": [
+          "Các con chữ nối nhau, không rời rạc",
+          "Dấu thanh đặt ngay trên (hoặc dưới) nguyên âm",
+          "Đúng độ cao trong ô li"
+        ],
+        "sampleAnswers": ["cá"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn dòng kẻ để chữ không bị nghiêng."],
+      "explanation": "“cá” viết liền nét, dấu đặt trên nguyên âm.",
       "meta": {
-        "estSeconds": 25,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
     },
     {
       "id": "viet-am-c-0043",
-      "type": "DRAG_DROP",
+      "type": "COUNT_TAP",
       "language": "vi",
-      "difficulty": 5,
+      "difficulty": 1,
       "skillCodes": ["VIET.HV.AM_C"],
       "assetTheme": "neutral",
-      "targetsError": "nham_hoi_nga",
+      "targetsError": null,
       "scaffold": "none",
       "prompt": {
-        "text": "Kéo thẻ mang dấu hỏi vào ô.",
+        "text": "Chạm từng cá để đếm.",
         "tts": true
       },
-      "dragItems": [
-        {
-          "id": "k1",
-          "text": "cỏ"
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "cá",
+          "labelEn": "fish"
         },
-        {
-          "id": "k2",
-          "text": "cõ"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "o",
-          "label": "thẻ đúng",
-          "accepts": ["k1", "k2"]
-        }
-      ],
-      "answerKey": {
-        "o": ["k1"]
+        "correctCount": 5,
+        "layout": "line"
       },
-      "hints": ["Dấu hỏi giống cái móc, dấu ngã lượn sóng."],
-      "explanation": "“cỏ” mang dấu hỏi.",
+      "answerKey": 5,
+      "hints": ["Chạm tới đâu đếm tới đó nhé."],
+      "explanation": "Có 5 cá.",
       "meta": {
-        "estSeconds": 30,
+        "estSeconds": 20,
         "lessonUnitCode": "KNTT-TV1-T1-B03",
         "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 tr.18–19"
       }
