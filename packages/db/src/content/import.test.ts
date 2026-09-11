@@ -219,6 +219,23 @@ describe("content importer (integration, needs the seeded database)", () => {
     expect(gone?.status).toBe("RETIRED");
   });
 
+  it("brings a retired exercise back as DRAFT when it returns to the files", async (ctx) => {
+    needDb(ctx);
+    const db = testDb();
+    const gone = await db.exercise.findUniqueOrThrow({ where: { stableId: `${PREFIX}-0005` } });
+    expect(gone.status).toBe("RETIRED");
+    // Same text as before — the hash has not changed, so only the status tells it came back.
+    const result = await importExercises(db, [row(5)], {
+      sourceDir: "itest",
+      retireMissing: false,
+    });
+    expect(result.revived).toBe(1);
+    expect(result.unchanged).toBe(0);
+    const back = await db.exercise.findUniqueOrThrow({ where: { stableId: `${PREFIX}-0005` } });
+    expect(back.id).toBe(gone.id); // same row, so the old Evidence still points at it
+    expect(back.status).toBe("DRAFT"); // a parent looks at it again before a child meets it
+  });
+
   it("never writes a child's learning data (docs/10 §11)", async (ctx) => {
     needDb(ctx);
     const db = testDb();

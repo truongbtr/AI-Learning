@@ -79,10 +79,12 @@ export interface ExerciseImportResult {
   updated: number;
   unchanged: number;
   retired: number;
+  /** Exercises that had been retired and are back in the files — returned to DRAFT for review. */
+  revived: number;
   skipped: { stableId: string; reason: string }[];
   batchId: string | null;
   /** Filled in dry-run mode so the operator sees exactly what would change. */
-  plan: { stableId: string; action: "create" | "update" | "retire" }[];
+  plan: { stableId: string; action: "create" | "update" | "retire" | "revive" }[];
 }
 
 export interface LessonImportResult {
@@ -126,6 +128,7 @@ export async function importExercises(
     updated: 0,
     unchanged: 0,
     retired: 0,
+    revived: 0,
     skipped: [],
     batchId: null,
     plan: [],
@@ -140,7 +143,7 @@ export async function importExercises(
     (
       await db.exercise.findMany({
         where: { stableId: { in: rows.map((r) => r.stableId) } },
-        select: { id: true, stableId: true, contentHash: true },
+        select: { id: true, stableId: true, contentHash: true, status: true },
       })
     ).map((e) => [e.stableId, e]),
   );
@@ -167,6 +170,8 @@ export async function importExercises(
   for (const row of rows) {
     const known = existing.get(row.stableId);
     if (!known) result.plan.push({ stableId: row.stableId, action: "create" });
+    else if (known.status === "RETIRED")
+      result.plan.push({ stableId: row.stableId, action: "revive" });
     else if (known.contentHash !== row.contentHash)
       result.plan.push({ stableId: row.stableId, action: "update" });
   }
@@ -176,6 +181,7 @@ export async function importExercises(
     for (const row of rows) {
       const known = existing.get(row.stableId);
       if (!known) result.created++;
+      else if (known.status === "RETIRED") result.revived++;
       else if (known.contentHash !== row.contentHash) result.updated++;
       else result.unchanged++;
     }
@@ -190,7 +196,11 @@ export async function importExercises(
       continue;
     }
     const known = existing.get(row.stableId);
-    if (known && known.contentHash === row.contentHash) {
+    // An exercise that comes back into the files must stop being retired, even when its text did
+    // not change — otherwise it stays invisible for ever. It returns as DRAFT so a parent looks
+    // at it again before a child meets it.
+    const revived = known?.status === "RETIRED";
+    if (known && !revived && known.contentHash === row.contentHash) {
       result.unchanged++;
       continue;
     }
@@ -216,7 +226,7 @@ export async function importExercises(
     const saved = await db.exercise.upsert({
       where: { stableId: row.stableId },
       create: { stableId: row.stableId, ...data },
-      update: data,
+      update: revived ? { ...data, status: "DRAFT" as const } : data,
     });
     await db.exerciseSkill.deleteMany({ where: { exerciseId: saved.id } });
     await db.exerciseSkill.createMany({
@@ -227,7 +237,8 @@ export async function importExercises(
       })),
       skipDuplicates: true,
     });
-    if (known) result.updated++;
+    if (revived) result.revived++;
+    else if (known) result.updated++;
     else result.created++;
   }
 

@@ -84,8 +84,8 @@ async function main() {
     retireMissing: true,
   });
   console.log(
-    `exercises: ${result.created} new, ${result.updated} updated, ${result.unchanged} unchanged, ` +
-      `${result.retired} retired` +
+    `exercises: ${result.created} new, ${result.updated} updated, ${result.revived} revived, ` +
+      `${result.unchanged} unchanged, ${result.retired} retired` +
       (result.batchId ? ` — batch ${result.batchId}` : ""),
   );
   for (const s of result.skipped) console.warn(`  WARN ${s.stableId}: ${s.reason}`);
