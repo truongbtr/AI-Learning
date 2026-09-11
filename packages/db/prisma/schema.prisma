@@ -437,6 +437,15 @@ enum ExternalPlatform {
   KIDSAZ
 }
 
+// docs/07 §2.2: a blank answer is never a wrong answer, but the two reasons for it mean very
+// different things — and the parent flips between them with one tap in P6.
+enum BlankReason {
+  /** Ran out of time — the blanks run to the end of the page. Barely counts as evidence. */
+  NOT_FINISHED
+  /** Skipped in the middle of answered questions: probably did not know how. */
+  DOES_NOT_KNOW
+}
+
 model IntakeJob {
   id          String       @id @default(cuid())
   studentId   String?
@@ -446,8 +455,11 @@ model IntakeJob {
   kind        IntakeKind   @default(PHOTO_BATCH)
   status      IntakeStatus @default(QUEUED)
   subjectHint Subject?
+  docTypeHint DocType?
   dateHint    DateTime?
-  files       Json         @default("[]") // FileRef[]
+  /** One line the parent typed with the photos. */
+  note        String?
+  files       Json         @default("[]") // IntakeFileRef[]
   error       String?
   aiCallIds   String[]     @default([])
   createdAt   DateTime     @default(now())
@@ -489,12 +501,17 @@ model IntakeItem {
   studentAnswer   String?
   expectedAnswer  String?
   outcome         IntakeItemOutcome @default(UNGRADED)
+  /** Only for outcome = BLANK (docs/07 §2.2). */
+  blankReason     BlankReason?
   errorCode       String?
   skillCodes      String[]          @default([])
   skillCodesFinal String[]          @default([])
+  /** What the parent changed in P6, kept as the few-shot examples of docs/07 §2.3. */
+  editedByParent  Boolean           @default(false)
   bbox            Json?
   fileIndex       Int               @default(0)
   evidenceIds     String[]          @default([])
+  note            String?
   createdAt       DateTime          @default(now())
   updatedAt       DateTime          @updatedAt
 
@@ -625,6 +642,11 @@ model ClassDiary {
   sourceIntake   IntakeJob? @relation(fields: [sourceIntakeId], references: [id], onDelete: SetNull)
   parsedAt       DateTime?
   confidence     Float      @default(0)
+  /** Lines the pattern reader could not place; they go to the queue as DIARY_HARD (docs/13 §4). */
+  unmatched      String[]   @default([])
+  /** A parent read what the pattern reader made of it and tapped "đúng rồi" (FR-INT-06). */
+  confirmedAt    DateTime?
+  confirmedById  String?
   createdAt      DateTime   @default(now())
   updatedAt      DateTime   @updatedAt
 

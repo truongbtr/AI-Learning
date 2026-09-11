@@ -64,6 +64,7 @@ export function QuestMapClient({
               subject: i.subject,
               done: done.has(i.order),
               choice: i.choice,
+              homework: Boolean(i.homework),
             }))}
             at={next ?? session.items[session.items.length - 1]?.order ?? 0}
             avatarKey={avatarKey}

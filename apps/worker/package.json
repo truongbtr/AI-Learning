@@ -11,7 +11,8 @@
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json",
     "decay:run": "tsx src/cli/run-decay.ts",
-    "plan:run": "tsx src/cli/run-planner.ts"
+    "plan:run": "tsx src/cli/run-planner.ts",
+    "intake:run": "tsx src/cli/run-intake.ts"
   },
   "dependencies": {
     "@mtct/core": "workspace:*",
@@ -19,6 +20,7 @@
     "dotenv": "^17.0.0",
     "pg-boss": "^12.0.0",
     "pino": "^10.0.0",
+    "sharp": "^0.35.0",
     "tsx": "^4.20.0"
   },
   "devDependencies": {

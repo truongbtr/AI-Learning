@@ -46,6 +46,12 @@ export interface MasteryEvidence {
   tries?: number;
   outcome?: EvidenceOutcome;
   observedAt: Date;
+  /**
+   * 0-1, default 1: scales the weight of the source for this one piece of evidence.
+   * docs/07 §2.2 uses it for blanks — a page the child ran out of time on (0.3) says much less
+   * than a question they tried and got wrong.
+   */
+  weightFactor?: number;
 }
 
 export interface MasteryUpdateResult {

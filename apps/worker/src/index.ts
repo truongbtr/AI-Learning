@@ -10,6 +10,11 @@ import { prisma } from "@mtct/db";
 import { config as loadEnv } from "dotenv";
 import { PgBoss } from "pg-boss";
 import pino from "pino";
+import {
+  INTAKE_PREPROCESS_CRON,
+  INTAKE_PREPROCESS_QUEUE,
+  runIntakePreprocessJob,
+} from "./jobs/intake-preprocess";
 import { MASTERY_DECAY_CRON, MASTERY_DECAY_QUEUE, runMasteryDecayJob } from "./jobs/mastery-decay";
 import { PLANNER_DAILY_CRON, PLANNER_DAILY_QUEUE, runPlannerDailyJob } from "./jobs/planner-daily";
 
@@ -65,6 +70,18 @@ async function main() {
   log.info(
     { queue: PLANNER_DAILY_QUEUE, cron: PLANNER_DAILY_CRON, tz },
     "daily quest planning scheduled",
+  );
+
+  // Photos of schoolwork: straighten, shrink, hash, hand to the AI queue (docs/07 §2, ADR-10).
+  await boss.createQueue(INTAKE_PREPROCESS_QUEUE);
+  await boss.work(INTAKE_PREPROCESS_QUEUE, async () => {
+    await runIntakePreprocessJob(prisma, log);
+  });
+  await boss.schedule(INTAKE_PREPROCESS_QUEUE, INTAKE_PREPROCESS_CRON, {}, { tz });
+  await boss.send(INTAKE_PREPROCESS_QUEUE, {});
+  log.info(
+    { queue: INTAKE_PREPROCESS_QUEUE, cron: INTAKE_PREPROCESS_CRON, tz },
+    "intake preprocessing scheduled",
   );
 
   const shutdown = async (signal: string) => {

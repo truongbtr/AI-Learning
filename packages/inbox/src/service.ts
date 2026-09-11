@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
+import { LocalFileStorage } from "@mtct/core/storage";
 import { type PrismaClient, type Subject, searchSkills } from "@mtct/db";
 import {
   EXPECTS,
@@ -91,6 +92,7 @@ export async function pullPending(db: PrismaClient, opts: PullOptions = {}): Pro
 
     const text = typeof payload.text === "string" ? payload.text : null;
     const candidates = await skillCandidates(db, searchTermsOf(text, payload), payload);
+    const files = await copyFiles(payload, itemDir);
 
     const context: InboxContext = {
       id: item.id,
@@ -106,9 +108,7 @@ export async function pullPending(db: PrismaClient, opts: PullOptions = {}): Pro
         : null,
       subjectHint: (payload.subject as InboxContext["subjectHint"]) ?? null,
       dateHint: (payload.date as string | undefined) ?? null,
-      files: Array.isArray(payload.files)
-        ? (payload.files as { key?: string }[]).map((f) => basename(String(f.key ?? f)))
-        : [],
+      files,
       text,
       skillCandidates: candidates,
       currentSkills,
@@ -127,6 +127,31 @@ export async function pullPending(db: PrismaClient, opts: PullOptions = {}): Pro
   });
   writeFileSync(join(dir, "README.md"), readmeFor(written), "utf8");
   return { dir, items: written };
+}
+
+/**
+ * Copies the pictures of an item next to its `context.json`, so whoever reads the queue has the
+ * photo in front of them without a database or a URL (docs/13 §2). The names are kept short and
+ * in the order the parent took them: `01.jpg`, `02-p1.jpg`, …
+ */
+async function copyFiles(payload: Record<string, unknown>, itemDir: string): Promise<string[]> {
+  if (!Array.isArray(payload.files)) return [];
+  const storage = new LocalFileStorage(process.env.FILE_ROOT ?? "./data/files");
+  const names: string[] = [];
+  for (const entry of payload.files as ({ key?: string } | string)[]) {
+    const key = typeof entry === "string" ? entry : entry.key;
+    if (!key) continue;
+    const name = basename(key);
+    try {
+      const bytes = await storage.get(key);
+      writeFileSync(join(itemDir, name), Buffer.from(bytes));
+      names.push(name);
+    } catch {
+      // The file is gone (a cleaned-up dev volume). Name it anyway so the gap is visible.
+      names.push(name);
+    }
+  }
+  return names;
 }
 
 function readmeFor(items: PullResult["items"]): string {

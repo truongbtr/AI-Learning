@@ -4,11 +4,14 @@ import {
   Activity,
   Baby,
   BookOpen,
+  CalendarDays,
+  Camera,
   ExternalLink,
   Inbox,
   LayoutDashboard,
   type LucideIcon,
   Network,
+  NotebookText,
   Sparkles,
   Users,
   X,
@@ -30,6 +33,9 @@ const ICONS: Record<NavIcon, LucideIcon> = {
   inbox: Inbox,
   kid: Sparkles,
   help: Sparkles,
+  camera: Camera,
+  diary: NotebookText,
+  school: CalendarDays,
 };
 
 /**
@@ -40,10 +46,13 @@ export function Sidebar({
   open,
   onClose,
   sections,
+  badges,
 }: {
   open: boolean;
   onClose: () => void;
   sections: NavSection[];
+  /** Counts drawn beside a label — how many things are waiting for a grown-up (docs/06 §2.1 P7). */
+  badges?: Partial<Record<NonNullable<NavSection["badge"]>, number>>;
 }) {
   const pathname = usePathname();
   const homeHref = sections[0]?.href ?? "/parent";
@@ -131,6 +140,14 @@ export function Sidebar({
                       >
                         <Icon className={cn("h-5 w-5", active ? "text-ink-700" : "text-ink-400")} />
                         <span className="truncate">{section.label}</span>
+                        {section.badge && (badges?.[section.badge] ?? 0) > 0 ? (
+                          <span
+                            data-testid={`badge-${section.badge}`}
+                            className="ml-auto rounded-full bg-warning-500 px-2 py-0.5 text-[11px] font-bold text-white"
+                          >
+                            {badges?.[section.badge]}
+                          </span>
+                        ) : null}
                       </Link>
                     )}
                   </li>

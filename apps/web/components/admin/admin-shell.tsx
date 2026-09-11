@@ -13,15 +13,22 @@ export function AdminShell({
   children,
   sections,
   user,
+  badges,
 }: {
   children: React.ReactNode;
   sections: NavSection[];
   user: TopbarUser;
+  badges?: Partial<Record<"inbox", number>>;
 }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div className="min-h-dvh bg-surface-muted">
-      <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} sections={sections} />
+      <Sidebar
+        open={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
+        sections={sections}
+        badges={badges}
+      />
       <div className="lg:pl-[240px]">
         <Topbar onOpenSidebar={() => setSidebarOpen(true)} user={user} />
         <main className="mx-auto w-full max-w-[1280px] px-4 pb-8 pt-6 sm:px-6">{children}</main>

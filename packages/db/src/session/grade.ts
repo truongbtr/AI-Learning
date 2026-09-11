@@ -90,6 +90,21 @@ export interface KidItem {
   spec: unknown;
   /** Filled in for a slot the planner could not find an exercise for. */
   missing?: string;
+  /**
+   * The teacher's own homework, standing at the head of the road (FR-LRN-07). It has no exercise
+   * and no answer key: the child reads a page of the textbook, or records a video for the teacher.
+   */
+  homework?: {
+    id: string;
+    taskType: string;
+    text: string;
+    repeatCount: number | null;
+    progress: number;
+    pages: number[];
+    submitTo: string | null;
+    optional: boolean;
+    done: boolean;
+  };
 }
 
 export interface KidAttemptState {
@@ -174,8 +189,42 @@ export async function sessionForKid(
   });
   const byId = new Map(exercises.map((e) => [e.id, e]));
 
+  const homeworkIds = slots.map((s) => s.homework?.id).filter((id): id is string => Boolean(id));
+  const homeworkRows = homeworkIds.length
+    ? await db.homework.findMany({ where: { id: { in: homeworkIds } } })
+    : [];
+  const homeworkById = new Map(homeworkRows.map((h) => [h.id, h]));
+
   const items: KidItem[] = [];
   for (const slot of slots) {
+    if (slot.kind === "homework" && slot.homework) {
+      const row = homeworkById.get(slot.homework.id);
+      if (!row) continue; // the diary was re-pasted and this task is gone
+      items.push({
+        order: slot.order,
+        exerciseId: "",
+        stableId: `homework-${row.id}`,
+        type: (row.taskType === "READ_ALOUD" ? "READ_ALOUD" : "WRITE_PHOTO") as MarkableType,
+        language: row.subject === "VIET" || row.subject === null ? "vi" : "en",
+        subject: row.subject ?? "VIET",
+        difficulty: 2,
+        skillCode: row.skillCodes[0] ?? "",
+        kind: "homework",
+        spec: null,
+        homework: {
+          id: row.id,
+          taskType: row.taskType,
+          text: row.text,
+          repeatCount: row.repeatCount,
+          progress: row.progress,
+          pages: row.pages,
+          submitTo: row.submitTo,
+          optional: row.optional,
+          done: row.status === "DONE" || row.status === "SKIPPED",
+        },
+      });
+      continue;
+    }
     const ex = slot.exerciseId ? byId.get(slot.exerciseId) : undefined;
     if (!ex) continue; // a hole in the plan is simply not shown to the child
     items.push({
@@ -195,7 +244,8 @@ export async function sessionForKid(
   // Two stations along the road let the child choose between two exercises for the same skill.
   for (const index of CHOICE_STATIONS) {
     const item = items[index];
-    if (item && item.kind !== "warmup" && item.kind !== "finish") item.choice = true;
+    if (item && item.kind !== "warmup" && item.kind !== "finish" && item.kind !== "homework")
+      item.choice = true;
   }
 
   const attempts: KidAttemptState[] = session.attempts.map((a) => ({
@@ -205,6 +255,8 @@ export async function sessionForKid(
     done: a.gradedAt !== null || (a.response as StoredResponse | null)?.final === true,
   }));
   const doneOrders = new Set(attempts.filter((a) => a.done).map((a) => a.order));
+  // Homework is finished in its own table, not by an Attempt row.
+  for (const item of items) if (item.homework?.done) doneOrders.add(item.order);
   const nextOrder = items.find((i) => !doneOrders.has(i.order))?.order ?? null;
 
   return {

@@ -74,7 +74,7 @@ export function effectiveScore(evidence: Pick<MasteryEvidence, "score" | "hintsU
  * PARENT_OVERRIDE sets mastery = score*100 and confidence = 0.9.
  */
 export function updateMastery(state: MasteryState, evidence: MasteryEvidence): MasteryUpdateResult {
-  const weight = SOURCE_WEIGHT[evidence.source];
+  const weight = SOURCE_WEIGHT[evidence.source] * clamp(evidence.weightFactor ?? 1, 0, 1);
   const difficulty = clamp(Math.round(evidence.difficulty ?? 3), 1, 5);
   // A parent override is not a "correct evidence" for the 3-distinct-days rule (docs/04 sec. 3.3).
   const correct = evidence.source !== "PARENT_OVERRIDE" && isCorrectEvidence(evidence);

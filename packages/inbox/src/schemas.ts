@@ -99,11 +99,25 @@ export const intakeItemSchema = z.object({
   studentAnswer: z.string().nullable().default(null),
   expectedAnswer: z.string().nullable().default(null),
   outcome: z.enum(OUTCOMES).default("UNGRADED"),
+  /**
+   * Only with `outcome: "BLANK"` (docs/07 §2.2). Leave it out and the server works it out from
+   * where the blanks fall on the page; a parent can still change it with one tap.
+   */
+  blankReason: z.enum(["NOT_FINISHED", "DOES_NOT_KNOW"]).nullable().default(null),
   errorCode: errorCode.nullable().default(null),
   skillCodes: z.array(skillCode).default([]),
   /** [x, y, w, h] in 0..1 of the source image, so the parent sees what was read. */
   bbox: z.tuple([z.number(), z.number(), z.number(), z.number()]).nullable().default(null),
   fileIndex: z.number().int().min(0).default(0),
+});
+
+/** A number read off a NAVIO or Kids A-Z screenshot (docs/05 §5, FR-INT-02). */
+export const externalProgressSchema = z.object({
+  platform: z.enum(["NAVIO", "KIDSAZ"]),
+  /** raz_level · books_read · quiz_score · stars · unit_completed */
+  metric: z.string().min(2).max(40),
+  value: z.string().min(1).max(40),
+  valueNum: z.number().nullable().default(null),
 });
 
 export const intakeExtractionSchema = z.object({
@@ -116,6 +130,8 @@ export const intakeExtractionSchema = z.object({
   teacherComment: z.string().nullable().default(null),
   confidence: z.number().min(0).max(1).default(0.5),
   items: z.array(intakeItemSchema).default([]),
+  /** Numbers from a NAVIO / Kids A-Z screenshot; empty for ordinary schoolwork. */
+  externals: z.array(externalProgressSchema).default([]),
 });
 export type IntakeExtraction = z.infer<typeof intakeExtractionSchema>;
 

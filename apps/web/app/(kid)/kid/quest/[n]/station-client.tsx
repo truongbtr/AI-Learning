@@ -7,10 +7,11 @@ import { useCallback, useEffect, useState } from "react";
 import { ExerciseRenderer } from "@/components/kid/exercise";
 import type { ClientSpec } from "@/components/kid/exercise/types";
 import { type FeedbackKind, FeedbackOverlay, HintBubble } from "@/components/kid/feedback";
+import { HomeworkStation } from "@/components/kid/homework-station";
 import { CarryOnPrompt, ChoiceStation, MovementBreak } from "@/components/kid/retention";
 import { StarFlyToPocket, StarPocket } from "@/components/kid/stars";
 import { OfflineNotice, SceneTransition } from "@/components/kid/states";
-import { SUBJECT_LABEL } from "@/components/kid/tokens";
+import { SUBJECT_LABEL, THEME } from "@/components/kid/tokens";
 import { useSpeak } from "@/components/kid/use-speak";
 import { WorldBackground } from "@/components/kid/world-background";
 
@@ -213,7 +214,16 @@ export function StationClient({
               />
             ) : null}
 
-            {phase === "exercise" ? (
+            {phase === "exercise" && item.homework ? (
+              <HomeworkStation
+                homework={item.homework}
+                mascot={mascot}
+                themeColor={THEME[session.theme].primary}
+                onFinished={goOn}
+              />
+            ) : null}
+
+            {phase === "exercise" && !item.homework ? (
               <>
                 <ExerciseRenderer
                   spec={item.spec as ClientSpec}

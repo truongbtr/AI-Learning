@@ -42,6 +42,8 @@ export interface CommitEvidenceInput {
   hintsUsed?: number;
   tries?: number;
   errorCode?: string | null;
+  /** 0-1: scales this evidence's weight (docs/07 §2.2 blanks). Default 1. */
+  weightFactor?: number;
   note?: string | null;
   observedAt?: Date;
   attemptId?: string | null;
@@ -210,7 +212,7 @@ export async function commitEvidence(
         source: input.source,
         outcome: input.outcome,
         score: Math.min(1, Math.max(0, input.score)),
-        weight: SOURCE_WEIGHT[input.source],
+        weight: SOURCE_WEIGHT[input.source] * Math.min(1, Math.max(0, input.weightFactor ?? 1)),
         difficulty: input.difficulty ?? 3,
         errorCode,
         note: input.note ?? null,
@@ -245,6 +247,7 @@ export async function commitEvidence(
       tries: input.tries,
       outcome: input.outcome,
       observedAt,
+      weightFactor: input.weightFactor,
     });
     const trend14d = computeTrend14d(
       [...points, { at: observedAt, masteryBefore: before.mastery, masteryAfter: state.mastery }],

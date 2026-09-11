@@ -153,6 +153,55 @@ export interface PickedSlot extends Slot {
   stableId?: string;
   /** Why the picker could not fill it, when it could not. */
   missing?: string;
+  /** Set on a `homework` slot: the teacher's task, done in the app (FR-LRN-07). */
+  homework?: {
+    id: string;
+    taskType: string;
+    text: string;
+    repeatCount: number | null;
+    pages: number[];
+    submitTo: string | null;
+    subject: string | null;
+  };
+}
+
+/**
+ * "Bài cô giao" goes at the head of the road (FR-LRN-07, docs/11 §6.2).
+ *
+ * Only the tasks the child can actually do on the screen become stations — reading a lesson N
+ * times, recording the video for the teacher. A paper worksheet stays a tick-box for a parent:
+ * putting it on the map would give a six-year-old a station they cannot finish.
+ */
+async function homeworkSlots(db: Db, studentId: string, date: Date): Promise<PickedSlot[]> {
+  const since = new Date(startOfDay(date).getTime() - 2 * DAY_MS);
+  const rows = await db.homework.findMany({
+    where: {
+      studentId,
+      status: { in: ["PENDING", "IN_PROGRESS"] },
+      taskType: { in: ["READ_ALOUD", "VIDEO_SUBMIT"] },
+      diary: { date: { gte: since } },
+    },
+    orderBy: [{ optional: "asc" }, { createdAt: "asc" }],
+    take: 3,
+  });
+  return rows.map((h, i) => ({
+    order: i + 1,
+    kind: "homework" as const,
+    skillCode: h.skillCodes[0] ?? "",
+    subject: (h.subject ?? "VIET") as Slot["subject"],
+    difficulty: 2,
+    reason: h.optional ? "cô khuyến khích" : "bài cô giao hôm nay",
+    exerciseId: null,
+    homework: {
+      id: h.id,
+      taskType: h.taskType,
+      text: h.text,
+      repeatCount: h.repeatCount,
+      pages: h.pages,
+      submitTo: h.submitTo,
+      subject: h.subject,
+    },
+  }));
 }
 
 /**
@@ -276,10 +325,17 @@ export async function planDailyQuest(
   });
   const input = await plannerSnapshot(db, studentId, date);
   const plan = planSession(input);
-  const picked = await pickExercises(db, plan.slots, {
+  const practice = await pickExercises(db, plan.slots, {
     recentExerciseIds: input.recentExerciseIds,
     theme: student?.mascot === "OWL" ? "GARDEN" : "ROBOT",
   });
+
+  // What the teacher set comes first, then the app's own practice — the order a family works in.
+  const homework = await homeworkSlots(db, studentId, date);
+  const picked: PickedSlot[] = [
+    ...homework,
+    ...practice.map((slot, i) => ({ ...slot, order: homework.length + i + 1 })),
+  ];
 
   const session = await db.session.create({
     data: {

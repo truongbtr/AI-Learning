@@ -13,7 +13,10 @@ export type NavIcon =
   | "help"
   | "skills"
   | "content"
-  | "inbox";
+  | "inbox"
+  | "camera"
+  | "diary"
+  | "school";
 
 export interface NavItem {
   label: string;
@@ -32,6 +35,8 @@ export interface NavSection {
   roles?: Role[];
   /** Opens the child's world in a new tab (kid screens have no way back to the dashboard). */
   external?: boolean;
+  /** Key into the counts the layout passes down, drawn as a number beside the label. */
+  badge?: "inbox";
   children?: NavItem[];
 }
 
@@ -42,6 +47,28 @@ export const navSections: NavSection[] = [
     label: "Các con",
     href: "/parent",
     icon: "children",
+  },
+  {
+    id: "intake",
+    group: "Nạp dữ liệu",
+    label: "Chụp bài vở",
+    href: "/parent/intake/new",
+    icon: "camera",
+  },
+  {
+    id: "diary",
+    group: "Nạp dữ liệu",
+    label: "Nhật ký lớp",
+    href: "/parent/diary",
+    icon: "diary",
+  },
+  {
+    id: "parent-inbox",
+    group: "Nạp dữ liệu",
+    label: "Hộp thư duyệt",
+    href: "/parent/inbox",
+    icon: "inbox",
+    badge: "inbox",
   },
   {
     id: "skills",
@@ -82,6 +109,13 @@ export const navSections: NavSection[] = [
     href: "/admin/users",
     icon: "users",
     roles: ["ADMIN"],
+  },
+  {
+    id: "school",
+    group: "Hệ thống",
+    label: "Năm học",
+    href: "/parent/school",
+    icon: "school",
   },
   {
     id: "health",

@@ -1,6 +1,6 @@
 import { rmSync } from "node:fs";
 import { join } from "node:path";
-import type { PrismaClient } from "@mtct/db";
+import { inferBlankReasons, type PrismaClient } from "@mtct/db";
 import type { InboxResult, PlanHint } from "./schemas";
 import { inboxRoot, type ValidatedItem, validateInbox } from "./service";
 
@@ -119,15 +119,18 @@ async function applyIntake(
       confidence: result.confidence,
     },
   });
-  if (result.items.length > 0)
+  if (result.items.length > 0) {
+    // Why a blank is blank: what the reader said, else the rule of docs/07 §2.2 read off the page.
+    const inferred = inferBlankReasons(result.items.map((i) => i.outcome));
     await db.intakeItem.createMany({
-      data: result.items.map((i) => ({
+      data: result.items.map((i, n) => ({
         resultId: intake.id,
         index: i.index,
         questionText: i.questionText,
         studentAnswer: i.studentAnswer,
         expectedAnswer: i.expectedAnswer,
         outcome: i.outcome,
+        blankReason: i.outcome === "BLANK" ? (i.blankReason ?? inferred[n] ?? null) : null,
         errorCode: i.errorCode,
         skillCodes: i.skillCodes,
         // skillCodesFinal stays empty until the parent confirms or changes the labels.
@@ -136,6 +139,7 @@ async function applyIntake(
       })),
       skipDuplicates: true,
     });
+  }
   return `IntakeResult:${intake.id}`;
 }
 

@@ -19,6 +19,8 @@ export interface Station {
   done: boolean;
   /** Two exercises to choose from at this station (docs/06 §1.8b item 2). */
   choice?: boolean;
+  /** The teacher's own homework: first on the road, with its own mark (FR-LRN-07). */
+  homework?: boolean;
 }
 
 const SUBJECT_ICON: Record<string, string> = {
@@ -174,7 +176,7 @@ export function QuestMap({ stations, at, avatarKey, onGo, companion }: QuestMapP
                 outline: isNext ? `4px solid ${COLOR.reward}` : "none",
               }}
             >
-              {s.done ? "⭐" : (SUBJECT_ICON[s.subject] ?? "✨")}
+              {s.done ? "⭐" : s.homework ? "🍎" : (SUBJECT_ICON[s.subject] ?? "✨")}
             </motion.span>
             <span className="sr-only">
               {`Bài ${s.order + 1} — ${SUBJECT_LABEL[s.subject] ?? s.subject}${s.done ? ", đã xong" : ""}`}
@@ -182,6 +184,11 @@ export function QuestMap({ stations, at, avatarKey, onGo, companion }: QuestMapP
             {s.choice ? (
               <span className="-bottom-3 absolute rounded-full bg-white px-2 font-extrabold text-[#E85D9C] text-[14px] shadow">
                 chọn
+              </span>
+            ) : null}
+            {s.homework ? (
+              <span className="-bottom-3 absolute whitespace-nowrap rounded-full bg-white px-2 font-extrabold text-[#2F80ED] text-[14px] shadow">
+                cô giao
               </span>
             ) : null}
           </motion.button>
