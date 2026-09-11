@@ -1136,7 +1136,8 @@
         },
         {
           "id": "d1",
-          "text": "d"
+          "text": "d",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "d2",
@@ -1147,7 +1148,7 @@
         {
           "id": "gio",
           "label": "giỏ chữ b",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1181,18 +1182,20 @@
         },
         {
           "id": "d1",
-          "text": "b"
+          "text": "b",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "d2",
-          "text": "đ"
+          "text": "đ",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
       "dropZones": [
         {
           "id": "gio",
           "label": "giỏ chữ d",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1226,7 +1229,8 @@
         },
         {
           "id": "d1",
-          "text": "d"
+          "text": "d",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "d2",
@@ -1237,7 +1241,7 @@
         {
           "id": "gio",
           "label": "giỏ chữ b",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1282,12 +1286,12 @@
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1"]
+          "accepts": ["p1", "p2", "p3"]
         },
         {
           "id": "van",
           "label": "phần vần",
-          "accepts": ["p2"]
+          "accepts": ["p1", "p2", "p3"]
         }
       ],
       "answerKey": {
@@ -1333,12 +1337,12 @@
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1"]
+          "accepts": ["p1", "p2", "p3"]
         },
         {
           "id": "van",
           "label": "phần vần",
-          "accepts": ["p2"]
+          "accepts": ["p1", "p2", "p3"]
         }
       ],
       "answerKey": {
@@ -1384,12 +1388,12 @@
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1"]
+          "accepts": ["p1", "p2", "p3"]
         },
         {
           "id": "van",
           "label": "phần vần",
-          "accepts": ["p2"]
+          "accepts": ["p1", "p2", "p3"]
         }
       ],
       "answerKey": {

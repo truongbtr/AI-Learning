@@ -73,6 +73,12 @@ export const dragItemSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]{1,20}$/),
   text: z.string().trim().min(1).optional(),
   image: imageRefSchema.optional(),
+  /**
+   * Why a child might put *this* card in the wrong place (ADR-15). Phase 2 shipped 185 drag
+   * exercises that could only ever say "not yet" — the same blind spot `choices[].errorTag`
+   * fixed for multiple choice. Server-side only, exactly like the choice tags.
+   */
+  errorTag: errorTag.optional(),
 });
 
 export const dropZoneSchema = z.object({
@@ -343,7 +349,8 @@ export function toExerciseSpec(ex: ExerciseDef, subject: (typeof SUBJECTS)[numbe
     meta: { ...ex.meta, theme: ex.meta.theme ?? ex.assetTheme },
   };
   if (ex.choices) spec.choices = ex.choices.map(({ errorTag: _drop, ...rest }) => ({ ...rest }));
-  if (ex.dragItems) spec.dragItems = ex.dragItems;
+  if (ex.dragItems)
+    spec.dragItems = ex.dragItems.map(({ errorTag: _drop, ...rest }) => ({ ...rest }));
   if (ex.dropZones) spec.dropZones = ex.dropZones;
   if (ex.readTarget) spec.readTarget = ex.readTarget;
   if (ex.listenTarget) spec.listenTarget = ex.listenTarget;
@@ -361,6 +368,9 @@ export function toExerciseSpec(ex: ExerciseDef, subject: (typeof SUBJECTS)[numbe
 export function errorTagsOf(ex: ExerciseDef): Record<string, string> {
   const out: Record<string, string> = {};
   for (const c of ex.choices ?? []) if (c.errorTag) out[c.id] = c.errorTag;
+  // Drag cards share the map: choice ids are single letters, drag ids are never single letters,
+  // so the two cannot collide (ADR-15).
+  for (const d of ex.dragItems ?? []) if (d.errorTag) out[d.id] = d.errorTag;
   return out;
 }
 

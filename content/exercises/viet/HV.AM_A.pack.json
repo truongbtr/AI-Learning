@@ -1205,18 +1205,20 @@
         },
         {
           "id": "d1",
-          "text": "o"
+          "text": "o",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "d2",
-          "text": "ă"
+          "text": "ă",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
       "dropZones": [
         {
           "id": "gio",
           "label": "giỏ chữ a",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1254,14 +1256,15 @@
         },
         {
           "id": "d2",
-          "text": "â"
+          "text": "â",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
       "dropZones": [
         {
           "id": "gio",
           "label": "giỏ chữ a",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1295,7 +1298,8 @@
         },
         {
           "id": "d1",
-          "text": "o"
+          "text": "o",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "d2",
@@ -1306,7 +1310,7 @@
         {
           "id": "gio",
           "label": "giỏ chữ a",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1340,18 +1344,20 @@
         },
         {
           "id": "d1",
-          "text": "ă"
+          "text": "ă",
+          "errorTag": "nham_chu_gan_giong"
         },
         {
           "id": "d2",
-          "text": "â"
+          "text": "â",
+          "errorTag": "nham_chu_gan_giong"
         }
       ],
       "dropZones": [
         {
           "id": "gio",
           "label": "giỏ chữ a",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1404,7 +1410,8 @@
             "value": "🌿",
             "labelVi": "cỏ",
             "labelEn": "grass"
-          }
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b2",
@@ -1420,7 +1427,7 @@
         {
           "id": "o",
           "label": "ô có âm a",
-          "accepts": ["g1", "g2"]
+          "accepts": ["g1", "g2", "b1", "b2"]
         }
       ],
       "answerKey": {
@@ -1473,7 +1480,8 @@
             "value": "🦉",
             "labelVi": "cú",
             "labelEn": "owl"
-          }
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b2",
@@ -1489,7 +1497,7 @@
         {
           "id": "o",
           "label": "ô có âm a",
-          "accepts": ["g1", "g2"]
+          "accepts": ["g1", "g2", "b1", "b2"]
         }
       ],
       "answerKey": {
@@ -1542,7 +1550,8 @@
             "value": "💐",
             "labelVi": "bó",
             "labelEn": "bunch"
-          }
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b2",
@@ -1558,7 +1567,7 @@
         {
           "id": "o",
           "label": "ô có âm a",
-          "accepts": ["g1", "g2"]
+          "accepts": ["g1", "g2", "b1", "b2"]
         }
       ],
       "answerKey": {
@@ -1611,7 +1620,8 @@
             "value": "🛶",
             "labelVi": "đò",
             "labelEn": "ferry"
-          }
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b2",
@@ -1620,14 +1630,15 @@
             "value": "🦉",
             "labelVi": "cú",
             "labelEn": "owl"
-          }
+          },
+          "errorTag": "doc_nham_van"
         }
       ],
       "dropZones": [
         {
           "id": "o",
           "label": "ô có âm a",
-          "accepts": ["g1", "g2"]
+          "accepts": ["g1", "g2", "b1", "b2"]
         }
       ],
       "answerKey": {
@@ -1680,7 +1691,8 @@
             "value": "🔥",
             "labelVi": "lò",
             "labelEn": "stove"
-          }
+          },
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b2",
@@ -1696,7 +1708,7 @@
         {
           "id": "o",
           "label": "ô có âm a",
-          "accepts": ["g1", "g2"]
+          "accepts": ["g1", "g2", "b1", "b2"]
         }
       ],
       "answerKey": {

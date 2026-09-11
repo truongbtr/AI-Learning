@@ -10,6 +10,7 @@ const SAMPLES: Record<string, PreviewSpec> = {
     type: "MCQ",
     language: "vi",
     subject: "VMATH",
+    skillCodes: [],
     difficulty: 2,
     prompt: { text: "{ten} có 3 {vat} và 2 {vat} nữa. Tất cả mấy {vat}?", tts: true },
     choices: [
@@ -26,6 +27,7 @@ const SAMPLES: Record<string, PreviewSpec> = {
     type: "LISTEN_CHOOSE",
     language: "vi",
     subject: "VIET",
+    skillCodes: [],
     difficulty: 2,
     prompt: { text: "Nghe rồi chọn chữ đúng: bà", tts: true },
     choices: [
@@ -41,6 +43,7 @@ const SAMPLES: Record<string, PreviewSpec> = {
     type: "COUNT_TAP",
     language: "vi",
     subject: "VMATH",
+    skillCodes: [],
     difficulty: 1,
     prompt: { text: "Có mấy quả táo?", tts: true },
     countTarget: {
@@ -56,6 +59,7 @@ const SAMPLES: Record<string, PreviewSpec> = {
     type: "READ_ALOUD",
     language: "vi",
     subject: "VIET",
+    skillCodes: [],
     difficulty: 2,
     prompt: { text: "Con đọc to hai tiếng này nhé!", tts: true },
     readTarget: { text: "bà · bé", words: ["bà", "bé"] },
@@ -68,6 +72,7 @@ const SAMPLES: Record<string, PreviewSpec> = {
     type: "DRAG_DROP",
     language: "vi",
     subject: "VMATH",
+    skillCodes: [],
     difficulty: 3,
     prompt: { text: "Kéo hai số vào ô cho đủ 5.", tts: true },
     dragItems: [
@@ -84,6 +89,7 @@ const SAMPLES: Record<string, PreviewSpec> = {
     type: "WRITE_PHOTO",
     language: "vi",
     subject: "VIET",
+    skillCodes: [],
     difficulty: 3,
     prompt: { text: "Con viết chữ u vào vở rồi nhờ ba mẹ chụp nhé.", tts: true },
     rubric: { criteria: ["Viết đúng nét", "Đúng độ cao"], sampleAnswers: ["u"] },

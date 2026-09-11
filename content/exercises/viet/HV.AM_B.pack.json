@@ -1184,7 +1184,8 @@
         },
         {
           "id": "d1",
-          "text": "d"
+          "text": "d",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "d2",
@@ -1195,7 +1196,7 @@
         {
           "id": "gio",
           "label": "giỏ chữ b",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1229,7 +1230,8 @@
         },
         {
           "id": "d1",
-          "text": "d"
+          "text": "d",
+          "errorTag": "nham_b_d"
         },
         {
           "id": "d2",
@@ -1240,7 +1242,7 @@
         {
           "id": "gio",
           "label": "giỏ chữ b",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1278,14 +1280,15 @@
         },
         {
           "id": "d2",
-          "text": "d"
+          "text": "d",
+          "errorTag": "nham_b_d"
         }
       ],
       "dropZones": [
         {
           "id": "gio",
           "label": "giỏ chữ b",
-          "accepts": ["k1"]
+          "accepts": ["k1", "d1", "d2"]
         }
       ],
       "answerKey": {
@@ -1323,19 +1326,20 @@
         },
         {
           "id": "p3",
-          "text": "o"
+          "text": "o",
+          "errorTag": "doc_nham_van"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1"]
+          "accepts": ["p1", "p2", "p3"]
         },
         {
           "id": "van",
           "label": "phần vần",
-          "accepts": ["p2"]
+          "accepts": ["p1", "p2", "p3"]
         }
       ],
       "answerKey": {
@@ -1381,12 +1385,12 @@
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1"]
+          "accepts": ["p1", "p2", "p3"]
         },
         {
           "id": "van",
           "label": "phần vần",
-          "accepts": ["p2"]
+          "accepts": ["p1", "p2", "p3"]
         }
       ],
       "answerKey": {
@@ -1425,19 +1429,20 @@
         },
         {
           "id": "p3",
-          "text": "à"
+          "text": "à",
+          "errorTag": "sai_dau_thanh"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1"]
+          "accepts": ["p1", "p2", "p3"]
         },
         {
           "id": "van",
           "label": "phần vần",
-          "accepts": ["p2"]
+          "accepts": ["p1", "p2", "p3"]
         }
       ],
       "answerKey": {
@@ -1476,19 +1481,20 @@
         },
         {
           "id": "p3",
-          "text": "a"
+          "text": "a",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "dropZones": [
         {
           "id": "dau",
           "label": "âm đầu",
-          "accepts": ["p1"]
+          "accepts": ["p1", "p2", "p3"]
         },
         {
           "id": "van",
           "label": "phần vần",
-          "accepts": ["p2"]
+          "accepts": ["p1", "p2", "p3"]
         }
       ],
       "answerKey": {
@@ -1542,7 +1548,8 @@
             "value": "🍆",
             "labelVi": "cà",
             "labelEn": "aubergine"
-          }
+          },
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b2",
@@ -1558,7 +1565,7 @@
         {
           "id": "o",
           "label": "ô có âm b",
-          "accepts": ["g1", "g2"]
+          "accepts": ["g1", "g2", "b1", "b2"]
         }
       ],
       "answerKey": {
@@ -1611,7 +1618,8 @@
             "value": "🛶",
             "labelVi": "đò",
             "labelEn": "ferry"
-          }
+          },
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b2",
@@ -1627,7 +1635,7 @@
         {
           "id": "o",
           "label": "ô có âm b",
-          "accepts": ["g1", "g2"]
+          "accepts": ["g1", "g2", "b1", "b2"]
         }
       ],
       "answerKey": {
@@ -1680,7 +1688,8 @@
             "value": "🥤",
             "labelVi": "ca",
             "labelEn": "mug"
-          }
+          },
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b2",
@@ -1689,14 +1698,15 @@
             "value": "🛶",
             "labelVi": "đò",
             "labelEn": "ferry"
-          }
+          },
+          "errorTag": "nham_am_dau"
         }
       ],
       "dropZones": [
         {
           "id": "o",
           "label": "ô có âm b",
-          "accepts": ["g1", "g2"]
+          "accepts": ["g1", "g2", "b1", "b2"]
         }
       ],
       "answerKey": {

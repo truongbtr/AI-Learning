@@ -135,6 +135,26 @@ export function validatePack(
       if (c.errorTag && !ctx.errorCodes.has(c.errorTag))
         err(`choice ${c.id} errorTag "${c.errorTag}" is not in the taxonomy`, ex.id);
 
+    // Drag cards carry a diagnosis too (ADR-15): why a child might put *this* card in the wrong
+    // place. It belongs on a card the answer key does not use, or on one of the cards of a
+    // matching task, where the mistake is swapping them.
+    if (ex.type === "DRAG_DROP") {
+      const placed = new Set(
+        Object.values((ex.answerKey ?? {}) as Record<string, string[]>).flat(),
+      );
+      const zones = (ex.dropZones ?? []).length;
+      for (const d of ex.dragItems ?? []) {
+        if (!d.errorTag) continue;
+        if (!ctx.errorCodes.has(d.errorTag))
+          err(`drag item ${d.id} errorTag "${d.errorTag}" is not in the taxonomy`, ex.id);
+        if (zones === 1 && placed.has(d.id))
+          err(
+            `drag item ${d.id} is the right card, so it cannot carry an errorTag — tag the decoys`,
+            ex.id,
+          );
+      }
+    }
+
     // A tag has to mean what the child did (docs/04 §11.2) — see error-semantics.ts.
     const correctChoice = (ex.choices ?? []).find((c) => c.id === ex.answerKey);
     for (const c of ex.choices ?? []) {
