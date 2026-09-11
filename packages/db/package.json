@@ -28,6 +28,8 @@
     "content:import": "dotenv -e ../../.env -- tsx src/cli/content-import.ts",
     "content:stats": "dotenv -e ../../.env -- tsx src/cli/content-stats.ts",
     "content:export": "dotenv -e ../../.env -- tsx src/cli/content-export.ts",
+    "content:import-intake": "dotenv -e ../../.env -- tsx src/cli/content-import-intake.ts",
+    "eval:intake": "dotenv -e ../../.env -- tsx src/cli/eval-intake.ts",
     "tts:voices": "dotenv -e ../../.env -- tsx src/cli/tts-voices.ts",
     "tts:smoke": "dotenv -e ../../.env -- tsx src/cli/tts-smoke.ts"
   },

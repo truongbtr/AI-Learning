@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
-import { basename, join } from "node:path";
+import { basename, dirname, isAbsolute, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { LocalFileStorage } from "@mtct/core/storage";
 import { type PrismaClient, type Subject, searchSkills } from "@mtct/db";
 import {
@@ -23,8 +24,29 @@ import {
  * the optional worker of docs/13 §6 later — the files are the whole contract.
  */
 
+/**
+ * The queue folder, always at the root of the repository.
+ *
+ * `INBOX_ROOT=./inbox` used to be resolved against the current directory, and the CLIs run from
+ * `packages/inbox` — so the work landed in `packages/inbox/inbox/` where nobody (and no
+ * `.gitignore` rule) was looking for it. A relative root is now resolved against the workspace
+ * root; an absolute one is taken as given.
+ */
 export function inboxRoot(): string {
-  return process.env.INBOX_ROOT ?? "./inbox";
+  const configured = process.env.INBOX_ROOT ?? "./inbox";
+  return isAbsolute(configured) ? configured : resolve(workspaceRoot(), configured);
+}
+
+/** The folder holding pnpm-workspace.yaml, walking up from this file (the package is ESM). */
+function workspaceRoot(): string {
+  let dir = dirname(fileURLToPath(import.meta.url));
+  for (let i = 0; i < 8; i++) {
+    if (existsSync(join(dir, "pnpm-workspace.yaml"))) return dir;
+    const parent = dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  return process.cwd();
 }
 
 function today(): string {

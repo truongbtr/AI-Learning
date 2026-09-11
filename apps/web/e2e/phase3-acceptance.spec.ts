@@ -217,6 +217,47 @@ test("K4 → K5: the whole quest, with hints and never the word a child should n
       continue;
     }
 
+    // Since phase 4 the road can open with the teacher's own homework (FR-LRN-07). It is not an
+    // exercise — nothing is marked right or wrong — so walk it and carry on without counting it.
+    if (
+      await page
+        .getByTestId("homework-rounds")
+        .isVisible()
+        .catch(() => false)
+    ) {
+      for (let round = 0; round < 12; round++) {
+        const one = page.getByTestId("homework-round");
+        if (!(await one.isVisible().catch(() => false))) break;
+        await one.click({ timeout: 4000 }).catch(() => {});
+        await page.waitForTimeout(500);
+      }
+      const onwards = page.getByTestId("homework-next");
+      if (await onwards.isVisible().catch(() => false)) {
+        await onwards.click({ timeout: 4000 }).catch(() => {});
+      } else {
+        await page
+          .getByRole("button", { name: /Để sau nhé/ })
+          .click({ timeout: 4000 })
+          .catch(() => {});
+      }
+      await page.waitForTimeout(600);
+      continue;
+    }
+    if (
+      await page
+        .getByTestId("homework-record")
+        .isVisible()
+        .catch(() => false)
+    ) {
+      // "Quay cho cô" needs a camera; a grown-up does that one, so step past it.
+      await page
+        .getByRole("button", { name: /Để sau nhé/ })
+        .click({ timeout: 4000 })
+        .catch(() => {});
+      await page.waitForTimeout(600);
+      continue;
+    }
+
     // The mascot models one first when the exercise asks for it (docs/04 §11.4 rung 3).
     if (
       await page

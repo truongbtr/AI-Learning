@@ -1,0 +1,108 @@
+{
+  "$comment": "Bộ đánh giá đọc ảnh bài vở, phiên bản 1 (docs/04 §9, docs/08 pha 4 việc 6). Mỗi ca là một câu/bài đã có NHÃN ĐÚNG do người ghi. Khi chủ dự án chụp đủ 20 ảnh (danh sách ở docs/eval/intake-v1.md §5), thêm ca vào đây kèm 'photo' và 'read' để đo cả độ chính xác đọc.",
+  "version": "intake-v1",
+  "cases": [
+    {
+      "id": "gs1-u1-review-ex1",
+      "source": "docs/11 §9 — phiếu GS1 – UNIT 1 – REVIEW UNIT 1 của Mai Thy, chụp 10/09/2026",
+      "docType": "WORKSHEET",
+      "subject": "ESL",
+      "questionText": "Look and circle: uncle/aunt, pets/baby, parents/grandpa, parents/grandparents, uncle/baby, twins/pets",
+      "truth": {
+        "outcome": "CORRECT",
+        "skillCodes": ["ESL.VOC.FAMILY"]
+      }
+    },
+    {
+      "id": "gs1-u1-review-ex2-done",
+      "source": "docs/11 §9",
+      "docType": "WORKSHEET",
+      "subject": "ESL",
+      "questionText": "Look and unscramble: viết tính từ old, young",
+      "truth": {
+        "outcome": "CORRECT",
+        "skillCodes": ["ESL.VOC.ADJECTIVES"]
+      }
+    },
+    {
+      "id": "gs1-u1-review-ex2-blank",
+      "source": "docs/11 §9 — câu 3–6 để trống liên tiếp về cuối bài",
+      "docType": "WORKSHEET",
+      "subject": "ESL",
+      "questionText": "Look and unscramble: viết tính từ tall, funny, kind, smart",
+      "truth": {
+        "outcome": "BLANK",
+        "blankReason": "NOT_FINISHED",
+        "skillCodes": ["ESL.VOC.ADJECTIVES"]
+      }
+    },
+    {
+      "id": "gs1-u1-review-ex3",
+      "source": "docs/11 §9 — chỉ chọn câu 1 (has, đúng), 5 câu còn trống",
+      "docType": "WORKSHEET",
+      "subject": "ESL",
+      "questionText": "Circle to choose: ngữ pháp have/has, am/is/are, câu phủ định",
+      "truth": {
+        "outcome": "BLANK",
+        "blankReason": "NOT_FINISHED",
+        "skillCodes": ["ESL.GR.HAVE_HAS", "ESL.GR.IS_ARE"]
+      }
+    },
+    {
+      "id": "gs1-u1-review-ex4",
+      "source": "docs/11 §9 — nối được 1 trên 6",
+      "docType": "WORKSHEET",
+      "subject": "ENL",
+      "questionText": "Read and match: đọc đoạn This is my family rồi nối người với tính từ",
+      "truth": {
+        "outcome": "PARTIAL",
+        "skillCodes": ["ENL.RL.KEY_DETAILS"]
+      }
+    },
+    {
+      "id": "gs1-u1-review-draw",
+      "source": "docs/11 §9 — vẽ gia đình và viết Hello, I'm…, đang làm dở",
+      "docType": "WORKSHEET",
+      "subject": "ENL",
+      "questionText": "Draw and write: vẽ gia đình và điền Hello, I'm …, This is my …",
+      "truth": {
+        "outcome": "UNGRADED",
+        "skillCodes": ["ENL.W.SENTENCE"]
+      }
+    },
+    {
+      "id": "tv-b13-doc",
+      "source": "docs/11 §1 — nhật ký lớp 10/09/2026, Tiếng Việt bài 13",
+      "docType": "WORKBOOK",
+      "subject": "VIET",
+      "questionText": "Đọc tiếng có âm u, ư: củ từ, cá thu",
+      "truth": {
+        "outcome": "CORRECT",
+        "skillCodes": ["VIET.HV.AM_U_UW"]
+      }
+    },
+    {
+      "id": "toan-so-6-10",
+      "source": "docs/11 §1 — Toán: Các số 6,7,8,9,10 (Tiếp)",
+      "docType": "WORKBOOK",
+      "subject": "VMATH",
+      "questionText": "Đếm số lượng đồ vật và viết số từ 6 đến 10",
+      "truth": {
+        "outcome": "CORRECT",
+        "skillCodes": ["VMATH.SO.SO_6_10"]
+      }
+    },
+    {
+      "id": "raz-level-d",
+      "source": "docs/05 §5 — ảnh màn hình Kids A-Z",
+      "docType": "KIDSAZ_REPORT",
+      "subject": "ENL",
+      "questionText": "Kids A-Z: Level D, 12 books read",
+      "truth": {
+        "outcome": "UNGRADED",
+        "external": { "platform": "KIDSAZ", "metric": "raz_level", "value": "D" },
+        "skillCodes": ["ENL.RF.FLUENCY_LEVEL_D"]
+      }
+    }
+  ]
+}

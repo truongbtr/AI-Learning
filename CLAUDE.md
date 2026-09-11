@@ -60,6 +60,8 @@ App **không gọi API AI nào** — mọi việc cần đọc-hiểu-viết đi
    - `kind` nào thì schema nấy: `PHOTO_INTAKE` → `IntakeExtraction` · `DIARY_HARD` → `DiaryParse` · `WRITE_PHOTO_GRADE`/`SPEAK_GRADE` → `GradeResult` · `WEEKLY_REPORT` → `WeeklyReport` (`packages/inbox/src/schemas.ts`).
    - **Chỉ dùng mã kỹ năng và mã lỗi có trong `context.json`** — validator chặn mã lạ.
    - Câu viết cho bé đọc (`feedbackVi`) phải ngắn, ấm, **không bao giờ có chữ "sai"**; chưa làm thì ghi `BLANK`, đừng ghi `INCORRECT`.
+   - Ô trống: để nguyên `outcome: "BLANK"`, máy chủ tự suy `blankReason` theo `07` §2.2 (trống dồn về cuối bài = `NOT_FINISHED`, trống giữa các câu đã làm = `DOES_NOT_KNOW`) và ba mẹ đổi được bằng một chạm. Chỉ ghi `blankReason` khi nhìn ảnh thấy rõ hơn quy tắc đó.
+   - Ảnh màn hình NAVIO / Kids A-Z: ghi số vào `externals` (`raz_level`, `books_read`, `quiz_score`…), `items` để rỗng.
    - Muốn lái trọng tâm vài ngày tới thì ghi thêm `plan-hint.json` (`PlanHint`: `focusSkills`, `focusErrors`, `note` cho ba mẹ đọc).
 3. **`pnpm inbox:validate`** — sửa đến khi sạch; lỗi nào cũng in kèm `id` của việc.
 4. **`pnpm inbox:push`** — nạp kết quả vào DB ở trạng thái **chờ ba mẹ duyệt** (không tự thành bằng chứng của con). Báo lại cho chủ dự án: bao nhiêu việc đã nạp, việc nào không chắc cần ba mẹ nhìn kỹ.
@@ -76,6 +78,9 @@ pnpm content:validate            # kiểm định file trong content/
 pnpm content:import --dry-run    # xem thay đổi trước khi nạp DB
 pnpm content:stats               # kỹ năng nào còn thiếu bài (đọc DB)
 pnpm content:export --skill <mã> # xuất ngược từ DB ra file
+pnpm content:import-intake       # nạp lô ảnh vở cũ từ intake-inbox/<bé>/<ngày>/ (10 §8)
+pnpm intake:run                  # tiền xử lý ảnh vừa nạp ngay, không chờ job mỗi phút
+pnpm eval:intake                 # chấm bộ nhãn đọc ảnh (docs/eval/intake-v1.md)
 pnpm inbox:pull && pnpm inbox:validate && pnpm inbox:push   # "Xử lý hàng chờ AI"
 pnpm report:data thy && pnpm report:push                    # "Viết báo cáo tuần"
 pnpm lint && pnpm test && pnpm build

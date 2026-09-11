@@ -8,4 +8,7 @@ export * from "./mastery";
 export * from "./planner";
 export * from "./remediation";
 export * from "./speech";
+// The storage *contract* is plain types, so anything may depend on it; the implementation that
+// touches the disk stays behind "@mtct/core/storage".
+export type { FileStorage, StoredFile } from "./storage/file-storage";
 export * from "./world";
