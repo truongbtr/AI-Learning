@@ -3,7 +3,9 @@
 import {
   Activity,
   Baby,
+  BookOpen,
   ExternalLink,
+  Inbox,
   LayoutDashboard,
   type LucideIcon,
   Network,
@@ -24,6 +26,8 @@ const ICONS: Record<NavIcon, LucideIcon> = {
   health: Activity,
   children: Baby,
   skills: Network,
+  content: BookOpen,
+  inbox: Inbox,
   kid: Sparkles,
   help: Sparkles,
 };

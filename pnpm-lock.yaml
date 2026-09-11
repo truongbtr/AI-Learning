@@ -209,6 +209,12 @@ importers:
 
   packages/inbox:
     dependencies:
+      '@mtct/content':
+        specifier: workspace:*
+        version: link:../content
+      '@mtct/db':
+        specifier: workspace:*
+        version: link:../db
       zod:
         specifier: ^4.0.0
         version: 4.6.1
@@ -219,6 +225,12 @@ importers:
       '@types/node':
         specifier: ^22.0.0
         version: 22.20.2
+      dotenv:
+        specifier: ^17.0.0
+        version: 17.4.2
+      dotenv-cli:
+        specifier: ^11.0.0
+        version: 11.0.0
       tsx:
         specifier: ^4.20.0
         version: 4.23.13

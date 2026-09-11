@@ -59,7 +59,10 @@ export default auth((req) => {
     ? "kid"
     : pathname.startsWith("/parent")
       ? "parent"
-      : pathname.startsWith("/admin") || pathname.startsWith("/api/admin")
+      : pathname.startsWith("/admin") ||
+          pathname.startsWith("/api/admin") ||
+          // /dev/kit renders any ExerciseSpec, answer key included — ADMIN only.
+          pathname.startsWith("/dev")
         ? "admin"
         : null;
   if (area && !roleAllowsArea(user.role, area)) {

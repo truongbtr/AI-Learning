@@ -2,7 +2,7 @@
 
 Nền tảng học tại nhà của gia đình cho hai bé lớp 1 (hệ Song ngữ, Edison Schools Ecopark). Chạy tại nhà bằng Docker, **không gọi API AI nào lúc chạy** (ADR-10) — mọi việc cần AI do Claude Code làm theo lô trong repo.
 
-**Trạng thái:** Pha 1 xong (bản đồ kỹ năng 6 môn, mô hình năng lực, API mastery, `/admin/skills`, tra cứu kỹ năng). Pha 0: khung dự án, đăng nhập, quản lý người dùng. Lộ trình: `docs/08-LO-TRINH-PHA.md`; tiến độ: `docs/TIEN-DO.md`.
+**Trạng thái:** Pha 2 xong (xưởng nội dung, hàng chờ AI, /admin/content, ngân hàng bài đợt 1). Pha 1 (bản đồ kỹ năng 6 môn, mô hình năng lực, API mastery, `/admin/skills`, tra cứu kỹ năng). Pha 0: khung dự án, đăng nhập, quản lý người dùng. Lộ trình: `docs/08-LO-TRINH-PHA.md`; tiến độ: `docs/TIEN-DO.md`.
 
 ## Yêu cầu máy chạy (Windows + Docker Desktop)
 
@@ -48,7 +48,7 @@ pnpm e2e                                                   # smoke Playwright, c
 $env:E2E_ADMIN_PASSWORD="<mật khẩu admin đã đổi>"; $env:E2E_CHANNEL="chrome"; pnpm e2e   # nghiệm thu pha 0 đầy đủ
 ```
 
-Lệnh khác: `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm mọi file `content/`), `pnpm skills:validate` (chỉ bản đồ kỹ năng + khung bài học + bộ mã lỗi), `pnpm decay:run [--force]` (chạy tay job quên kiến thức hằng đêm), `pnpm inbox:pull|validate|push` (pha 2).
+Lệnh khác: `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm mọi file `content/`), `pnpm skills:validate` (chỉ bản đồ kỹ năng + khung bài học + bộ mã lỗi), `pnpm decay:run [--force]` (chạy tay job quên kiến thức hằng đêm), `pnpm content:import [--dry-run]` / `pnpm content:stats` / `pnpm content:export --skill <mã>` (ngân hàng bài), `pnpm inbox:pull|validate|push` (hàng chờ AI), `pnpm tts:voices` (liệt kê giọng Vbee).
 
 > **Windows:** dừng `pnpm dev` trước khi chạy `pnpm build`. Prisma phải ghi lại `query_engine-windows.dll.node`, mà tiến trình dev đang giữ file này (lỗi `EPERM: operation not permitted, rename …`).
 
@@ -59,9 +59,9 @@ apps/web        Next.js 16 (App Router): (auth) /login /change-password · (kid)
 apps/worker     pg-boss (job ping mỗi phút, mastery.decay 02:30; planner/intake ở pha sau)
 packages/core   domain thuần: khoá tài khoản, mật khẩu, mã hình, tuần học, mastery, thang rèn, FileStorage
 packages/db     Prisma schema (đủ mọi bảng docs/03), migrations, seed, dịch vụ mastery + tìm kỹ năng
-packages/content  schema/validator cho content/ (thời khoá biểu, bản đồ kỹ năng, khung bài học, mã lỗi)
-packages/inbox  hàng chờ AI (kiểu dữ liệu; CLI ở pha 2)
-content/        nội dung do Claude Code soạn (skill-map/, lessons/, error-taxonomy.json, timetable/)
+packages/content  schema/validator cho content/ (TKB, bản đồ kỹ năng, bài học, ngân hàng bài luyện, mã lỗi)
+packages/inbox  hàng chờ AI: schema IntakeExtraction/GradeResult/DiaryParse/WeeklyReport + CLI pull/validate/push
+content/        nội dung do Claude Code soạn (skill-map/, lessons/, exercises/, error-taxonomy.json, timetable/)
 docker/         Dockerfile (target web|worker), compose.yml, entrypoint
 docs/           bộ tài liệu — nguồn sự thật
 ```
@@ -77,8 +77,11 @@ docs/           bộ tài liệu — nguồn sự thật
 
 Thứ tự phát: clip thu sẵn (`content/art/audio/`) → mp3 đã cache (`FILE_ROOT/tts/`) → TTS cloud → Web Speech trên thiết bị. App **không bao giờ** đọc tiếng Việt bằng giọng Anh: không có giọng phù hợp thì nút Nghe im lặng và chuyển xám.
 
-- **Giọng neural có sẵn của nhà cung cấp** (khuyên dùng — ADR-11 chốt không nhân bản giọng trẻ): `TTS_PROVIDER=azure` (khoá Azure Speech + `TTS_REGION`) → `vi-VN-HoaiMyNeural` cho tiếng Việt, `en-US-AnaNeural` (giọng bé gái) cho tiếng Anh; hoặc `TTS_PROVIDER=google` (API key Cloud Text-to-Speech) → `vi-VN-Neural2-A` / `en-US-Neural2-F`. Ghi đè bằng `TTS_VOICE_VI` / `TTS_VOICE_EN`; `TTS_RATE` (mặc định 0.9) cho đọc chậm dễ nghe. Chi tiết: `content/art/audio/README.md`.
-- **mp3 sinh sẵn lúc nạp nội dung**: `pnpm content:import` tự sinh mp3 cho mọi đề bài có `tts: true` và cache vào `FILE_ROOT/tts/` theo hash văn bản + giọng — lúc con học chỉ phát file, không gọi mạng, mỗi câu chỉ tốn phí một lần. Không có khoá thì bước này bị bỏ qua, mọi lệnh vẫn chạy.
+- **Giọng dựng sẵn của nhà cung cấp** (ADR-11 chốt không nhân bản giọng trẻ):
+  - `TTS_PROVIDER=vbee` — **khuyên dùng cho tiếng Việt** (nhà cung cấp Việt Nam, có giọng trẻ em). Cần `TTS_API_KEY` + `TTS_APP_ID`; chạy `pnpm tts:voices` để lấy mã giọng thật rồi điền `TTS_VOICE_VI`.
+  - `TTS_PROVIDER=azure` (`TTS_API_KEY` + `TTS_REGION`) → `vi-VN-HoaiMyNeural` / `en-US-AnaNeural`; `TTS_PROVIDER=google` → `vi-VN-Neural2-A` / `en-US-Neural2-F`.
+  - `TTS_RATE` (mặc định 0.9) cho đọc chậm dễ nghe. Chi tiết: `content/art/audio/README.md`.
+- **mp3 sinh sẵn lúc nạp nội dung**: `pnpm content:import` sinh mp3 cho mọi đề bài có `tts: true` và cache vào `FILE_ROOT/tts/` theo hash văn bản + giọng — lúc con học chỉ phát file, không gọi mạng, mỗi câu chỉ tốn phí một lần. **Sinh dần**: hết hạn mức ngày thì lệnh dừng êm và báo còn bao nhiêu câu, chạy lại hôm sau là tiếp tục; `pnpm content:stats` hiện số câu đã có mp3. Không có khoá thì bỏ qua bước này, mọi lệnh vẫn chạy.
 - **Không cloud** (`webspeech`): máy phải có giọng tiếng Việt — Windows: *Settings → Time & Language → Speech → Add voices → Tiếng Việt*; trình duyệt **Edge** có sẵn giọng neural HoaiMy/NamMinh.
 
 ## Bản quyền & riêng tư

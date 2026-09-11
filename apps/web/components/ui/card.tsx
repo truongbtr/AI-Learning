@@ -57,7 +57,7 @@ const DOT_CLASS: Record<BadgeTone, string> = {
   info: "bg-info-500",
 };
 
-/** MEDIFA ONE `Badge`: pill with inset ring and optional status dot. */
+/** Badge (shadcn/ui): pill with inset ring and optional status dot. */
 export function Badge({
   className,
   tone = "neutral",

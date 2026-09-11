@@ -44,9 +44,14 @@ Ngoài ra:
 **Phương án (c) — gỡ phần nhân bản giọng, giữ TTS cloud với giọng tiếng Việt chuẩn.** Chủ dự án: *"Không cần phải theo giọng thu sẵn, tôi cần giọng chuẩn tiếng Việt dễ thương là được."*
 
 1. **Gỡ hẳn nhân bản giọng:** xoá `scripts/tts-clone-voices.mjs`, lệnh `pnpm tts:clone`, mọi nhánh code chọn giọng nhân bản, provider `elevenlabs`; xoá thư mục `ai voice/` khỏi máy chủ (giọng thật của trẻ em là dữ liệu sinh trắc học, không đưa lên bên thứ ba). Nếu đã từng chạy `pnpm tts:clone` thì báo chủ dự án tự đăng nhập ElevenLabs xoá giọng đã tạo — developer không gọi API xoá.
-2. **Giữ TTS cloud tuỳ chọn** (ADR-6, NFR-04) với **giọng dựng sẵn của nhà cung cấp**, không nhân bản: mặc định `vi-VN-HoaiMyNeural` (Azure) cho tiếng Việt, giọng nữ trẻ cho tiếng Anh; provider hỗ trợ `azure` và `google`, chọn bằng `TTS_PROVIDER`. Sinh sẵn mp3 **lúc nạp nội dung** và cache theo hash văn bản; lúc chạy app chỉ phát file. Không khoá → Web Speech, app vẫn đủ chức năng.
+2. **Giữ TTS cloud tuỳ chọn** (ADR-6, NFR-04) với **giọng dựng sẵn của nhà cung cấp**, không nhân bản. Chọn bằng `TTS_PROVIDER`:
+   - `vbee` — **mặc định cho tiếng Việt** (nhà cung cấp Việt Nam, có sẵn giọng trẻ em tiếng Việt). `POST https://api.vbee.vn/v1/tts`, header `Authorization: Bearer <token>` + `App-Id`; body `text`, `voiceCode`, `speed` (0.25–1.9), `outputFormat: mp3`; `mode` đồng bộ cho câu ngắn. Danh sách giọng: `GET https://vbee.vn/api/public/v1/voices?language_code=vi-VN`. **Link audio trả về hết hạn sau 3 phút** → phải tải mp3 về lưu ngay, không lưu link vào DB.
+   - `azure` — dự phòng / dùng cho tiếng Anh (`vi-VN-HoaiMyNeural` nếu cần tiếng Việt).
+   - `google`, `webspeech` (mặc định khi không có khoá).
+   Sinh sẵn mp3 **lúc nạp nội dung**, cache theo hash (văn bản + mã giọng + tốc độ); lúc chạy app chỉ phát file. Không khoá → Web Speech, app vẫn đủ chức năng.
+   **Sinh dần, có thể chạy lại:** hạn mức miễn phí của nhà cung cấp có thể chỉ vài nghìn ký tự/ngày, nên `content:import` sinh những câu chưa có mp3, gặp lỗi hết hạn mức thì **dừng êm** (không hỏng lô nạp), ghi số câu còn thiếu; chạy lại hôm sau là tiếp tục. `content:stats` hiển thị số câu chưa có audio.
 3. **Giao diện người lớn:** gỡ vỏ MEDIFA ONE, trả `/admin/*` và `/parent/*` về `docs/06` §2 (shadcn/ui, màu trung tính, điểm nhấn theo bé). Giữ `/admin/health` vì pha 8 cần; bỏ `/admin` dashboard cho tới khi `docs/06` §2.2 có thiết kế cho nó.
-4. Biến env còn lại: `TTS_PROVIDER` (mặc định `webspeech`), `TTS_API_KEY`, `TTS_REGION`, `TTS_VOICE_VI`, `TTS_VOICE_EN`. Bỏ `TTS_VOICE_GIRL`/`TTS_VOICE_BOY`/`TTS_PITCH_PERCENT`. Trong lúc chờ: pha 1 xây `/admin/skills` bằng các primitives hiện có (Button/Card/Input/Table/Dialog — vốn là kiểu shadcn) với màu trung tính, không đầu tư thêm vào token MEDIFA ONE; mọi thứ tiếp tục chạy khi không có khoá trả phí nào.
+4. Biến env còn lại: `TTS_PROVIDER` (mặc định `webspeech`), `TTS_API_KEY`, `TTS_REGION`, `TTS_VOICE_VI`, `TTS_VOICE_EN`, `TTS_APP_ID` (Vbee), `TTS_RATE`. Bỏ `TTS_VOICE_GIRL`/`TTS_VOICE_BOY`/`TTS_PITCH_PERCENT`. Trong lúc chờ: pha 1 xây `/admin/skills` bằng các primitives hiện có (Button/Card/Input/Table/Dialog — vốn là kiểu shadcn) với màu trung tính, không đầu tư thêm vào token MEDIFA ONE; mọi thứ tiếp tục chạy khi không có khoá trả phí nào.
 
 ## Hệ quả
 

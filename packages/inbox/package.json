@@ -10,21 +10,25 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "pull": "tsx src/cli/not-yet.ts pull",
-    "validate": "tsx src/cli/not-yet.ts validate",
-    "push": "tsx src/cli/not-yet.ts push",
+    "pull": "dotenv -e ../../.env -- tsx src/cli/pull.ts",
+    "validate": "tsx src/cli/validate.ts",
+    "push": "dotenv -e ../../.env -- tsx src/cli/push.ts",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "zod": "^4.0.0"
+    "zod": "^4.0.0",
+    "@mtct/content": "workspace:*",
+    "@mtct/db": "workspace:*"
   },
   "devDependencies": {
     "@mtct/config": "workspace:*",
     "@types/node": "^22.0.0",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0",
-    "vitest": "^5.0.0"
+    "vitest": "^5.0.0",
+    "dotenv-cli": "^11.0.0",
+    "dotenv": "^17.0.0"
   },
   "files": [
     "src",

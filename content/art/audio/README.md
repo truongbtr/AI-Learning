@@ -8,16 +8,24 @@ bên thứ ba — ADR-11). Đề bài dùng **giọng dựng sẵn của nhà cu
 
 | `TTS_PROVIDER` | Giọng tiếng Việt | Giọng tiếng Anh | Cần gì trong `.env` |
 |---|---|---|---|
-| `azure` (khuyên dùng) | `vi-VN-HoaiMyNeural` — nữ miền Bắc | `en-US-AnaNeural` — giọng bé gái | `TTS_API_KEY`, `TTS_REGION` |
+| `vbee` (**khuyên dùng cho tiếng Việt**) | giọng trẻ em / nữ miền Bắc của Vbee | — (rơi về Web Speech) | `TTS_API_KEY`, `TTS_APP_ID`, `TTS_VOICE_VI` |
+| `azure` | `vi-VN-HoaiMyNeural` — nữ miền Bắc | `en-US-AnaNeural` — giọng bé gái | `TTS_API_KEY`, `TTS_REGION` |
 | `google` | `vi-VN-Neural2-A` | `en-US-Neural2-F` | `TTS_API_KEY` |
 | `webspeech` *(mặc định)* | giọng cài trên máy | giọng cài trên máy | — |
 
-Ghi đè giọng bằng `TTS_VOICE_VI` / `TTS_VOICE_EN` nếu muốn thử giọng khác.
+Mã giọng khác nhau theo gói cước, nên với Vbee hãy chạy **`pnpm tts:voices`** (gọi `GET https://vbee.vn/api/public/v1/voices?language_code=vi-VN`) rồi chép mã vào `TTS_VOICE_VI`. Ghi đè giọng bằng `TTS_VOICE_VI` / `TTS_VOICE_EN`.
+
+Link audio Vbee trả về **hết hạn sau ~3 phút**, nên trình nạp tải mp3 về ngay và không bao giờ lưu link vào DB.
 
 **Sinh sẵn lúc nạp nội dung:** `pnpm content:import` đọc mọi `prompt.text` có `tts: true` và sinh
 mp3 vào `FILE_ROOT/tts/<vi|en>/<hash>.mp3`, hash theo (văn bản + mã giọng + tốc độ). Lúc chạy, app
 chỉ phát file có sẵn nên mỗi câu chỉ tốn phí **một lần** và con không phải chờ. Không có khoá →
 bước sinh bị bỏ qua, `content:import` vẫn chạy trót lọt và nút Nghe rơi về Web Speech.
+
+**Sinh dần, chạy lại được:** gói miễn phí thường chỉ vài nghìn ký tự mỗi ngày. Trình nạp chỉ sinh
+những câu **chưa có** mp3; gặp báo hết hạn mức thì **dừng êm** (lô nạp vẫn thành công) và in số câu
+còn thiếu. Chạy lại `pnpm content:import` hôm sau là sinh tiếp. `pnpm content:stats` hiện
+"audio: x/y câu đã có mp3".
 
 ## 2. Clip thu sẵn (ưu tiên cao nhất)
 

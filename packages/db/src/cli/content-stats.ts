@@ -3,7 +3,9 @@
  * Reads the DB and answers the only question that matters before a writing session:
  * which skill still needs exercises, of which type, at which difficulty.
  */
-import { MIN_EXERCISES_PER_SKILL } from "@mtct/content";
+import { loadExercisePacks, MIN_EXERCISES_PER_SKILL, ttsLinesOf } from "@mtct/content";
+import { LocalFileStorage } from "@mtct/core/storage";
+import { missingAudio, ttsConfigFromEnv } from "@mtct/core/tts";
 import { bankCoverage } from "../content/stats";
 import { prisma } from "../index";
 import { parseArgs } from "./args";
@@ -76,6 +78,20 @@ async function main() {
     short.length === 0
       ? `every skill has >= ${MIN_EXERCISES_PER_SKILL} published exercises`
       : `${short.length} skill(s) below ${MIN_EXERCISES_PER_SKILL} published: ${short.map((s) => s.code).join(", ")}`,
+  );
+
+  // Audio coverage (ADR-11 muc 2): how many prompts still have no mp3.
+  const lines = loadExercisePacks().flatMap(({ pack }) =>
+    pack.exercises.flatMap((ex) => ttsLinesOf(ex)),
+  );
+  const cfg = ttsConfigFromEnv();
+  const storage = new LocalFileStorage(process.env.FILE_ROOT ?? "./data/files");
+  const audio = await missingAudio(lines, cfg, storage);
+  console.log(
+    audio.enabled
+      ? `audio: ${audio.total - audio.missing}/${audio.total} câu đã có mp3 (${cfg.provider})` +
+          (audio.missing > 0 ? " — chạy lại `pnpm content:import` để sinh tiếp" : "")
+      : `audio: chưa bật TTS cloud (TTS_PROVIDER=${cfg.provider}) — con nghe bằng giọng của máy`,
   );
   if (incomplete.length > 0)
     console.log(

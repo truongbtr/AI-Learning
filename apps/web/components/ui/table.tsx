@@ -1,7 +1,7 @@
 import type * as React from "react";
 import { cn } from "@/lib/utils";
 
-/** MEDIFA ONE `DataTable` look: tiny uppercase header, hairline rows, subtle hover. */
+/** Data table (shadcn/ui): tiny uppercase header, hairline rows, subtle hover. */
 export function Table({ className, ...props }: React.TableHTMLAttributes<HTMLTableElement>) {
   return (
     <div className="thin-scrollbar relative w-full overflow-x-auto">

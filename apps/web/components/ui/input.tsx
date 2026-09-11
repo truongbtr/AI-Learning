@@ -1,9 +1,9 @@
 import type * as React from "react";
 import { cn } from "@/lib/utils";
 
-/** MEDIFA ONE `inputBaseClass`: 44px control, 12px radius, hairline border, teal focus. */
+/** Input base (shadcn/ui): 44px control, hairline border, neutral focus ring. */
 export const inputBaseClass =
-  "h-11 w-full rounded-control border border-ink-200 bg-white px-3.5 text-sm text-ink-800 shadow-control transition-colors placeholder:text-ink-300 focus:border-brand-400 focus:outline-none disabled:cursor-not-allowed disabled:bg-ink-50 disabled:text-ink-400";
+  "h-11 w-full rounded-control border border-ink-200 bg-white px-3.5 text-sm text-ink-800 shadow-control transition-colors placeholder:text-ink-300 focus:border-ink-400 focus:outline-none disabled:cursor-not-allowed disabled:bg-ink-50 disabled:text-ink-400";
 
 export function Input({ className, ...props }: React.InputHTMLAttributes<HTMLInputElement>) {
   return <input className={cn(inputBaseClass, className)} {...props} />;

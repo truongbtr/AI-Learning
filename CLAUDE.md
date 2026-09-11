@@ -51,6 +51,21 @@ content/{skill-map,lessons,exercises,art,timetable,prompts}  "sach giao khoa"/  
 - Tiếng Việt cho tài liệu & UI phụ huynh; tiếng Anh cho code/commit.
 - Máy chủ dự án: Windows + Docker Desktop — README và script phải chạy từ PowerShell.
 
+## Xử lý hàng chờ AI (khi chủ dự án nói "Xử lý hàng chờ AI")
+
+App **không gọi API AI nào** — mọi việc cần đọc-hiểu-viết đi qua hàng chờ và do chính phiên Claude Code này làm (`docs/13`). Quy trình đúng **4 bước**, không bỏ bước nào:
+
+1. **`pnpm inbox:pull`** — xuất mọi việc `PENDING` ra `inbox/<ngày>/<id>/`. Xem `inbox/<ngày>/README.md` để biết có bao nhiêu việc.
+2. **Đọc từng `context.json` rồi viết `result.json` cùng thư mục.** Trong `context.json` có sẵn: `expects` (một câu mô tả phải trả ra schema nào), `student.nickname` (chỉ tên gọi ở nhà — **không bao giờ** dùng tên đầy đủ), `files` (ảnh nằm cùng thư mục), `text`, `skillCandidates` + `currentSkills` (ứng viên kỹ năng lấy từ full-text `searchSkills`), `errorCodes` (bộ mã lỗi đầy đủ), `parentCorrections` (10 lần ba mẹ đã sửa nhãn — dùng làm ví dụ).
+   - `kind` nào thì schema nấy: `PHOTO_INTAKE` → `IntakeExtraction` · `DIARY_HARD` → `DiaryParse` · `WRITE_PHOTO_GRADE`/`SPEAK_GRADE` → `GradeResult` · `WEEKLY_REPORT` → `WeeklyReport` (`packages/inbox/src/schemas.ts`).
+   - **Chỉ dùng mã kỹ năng và mã lỗi có trong `context.json`** — validator chặn mã lạ.
+   - Câu viết cho bé đọc (`feedbackVi`) phải ngắn, ấm, **không bao giờ có chữ "sai"**; chưa làm thì ghi `BLANK`, đừng ghi `INCORRECT`.
+   - Muốn lái trọng tâm vài ngày tới thì ghi thêm `plan-hint.json` (`PlanHint`: `focusSkills`, `focusErrors`, `note` cho ba mẹ đọc).
+3. **`pnpm inbox:validate`** — sửa đến khi sạch; lỗi nào cũng in kèm `id` của việc.
+4. **`pnpm inbox:push`** — nạp kết quả vào DB ở trạng thái **chờ ba mẹ duyệt** (không tự thành bằng chứng của con). Báo lại cho chủ dự án: bao nhiêu việc đã nạp, việc nào không chắc cần ba mẹ nhìn kỹ.
+
+Xem hàng chờ trên web: `/admin/inbox`. Chạy lại `inbox:push` trên lô đã xong không tạo bản trùng.
+
 ## Lệnh thường dùng
 
 ```
@@ -59,7 +74,8 @@ pnpm db:migrate     # prisma migrate dev
 pnpm db:seed
 pnpm content:validate            # kiểm định file trong content/
 pnpm content:import --dry-run    # xem thay đổi trước khi nạp DB
-pnpm content:stats               # kỹ năng nào còn thiếu bài
+pnpm content:stats               # kỹ năng nào còn thiếu bài (đọc DB)
+pnpm content:export --skill <mã> # xuất ngược từ DB ra file
 pnpm inbox:pull && pnpm inbox:validate && pnpm inbox:push   # "Xử lý hàng chờ AI"
 pnpm report:data thy && pnpm report:push                    # "Viết báo cáo tuần"
 pnpm lint && pnpm test && pnpm build

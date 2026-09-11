@@ -7,8 +7,9 @@ import {
   localeFor,
   resolveVoice,
   ttsConfigFromEnv,
+  vbeeBody,
 } from "./config";
-import { pregenerateAudio, ttsCacheKey } from "./synthesize";
+import { missingAudio, pregenerateAudio, ttsCacheKey } from "./synthesize";
 
 /** In-memory FileStorage so the cache logic can be tested without touching disk. */
 function memoryStorage() {
@@ -87,6 +88,21 @@ describe("TTS config (ADR-11 phuong an c)", () => {
     expect(localeFor("en-GB")).toBe("en-US");
     expect(localeFor("vi")).toBe("vi-VN");
   });
+
+  it("uses Vbee for Vietnamese with a speed the API accepts (ADR-11)", () => {
+    const cfg = ttsConfigFromEnv({ TTS_PROVIDER: "vbee", TTS_API_KEY: "k", TTS_APP_ID: "app" });
+    expect(cfg.provider).toBe("vbee");
+    expect(resolveVoice(cfg, "vi")).toBe("hn_female_ngochuyen_full_48k-fhg");
+    expect(vbeeBody("ba cong hai", "v", cfg)).toMatchObject({ speed: 0.9, audio_type: "mp3" });
+    // Vbee refuses anything outside 0.25-1.9, so the rate is clamped rather than rejected.
+    expect(vbeeBody("x", "v", { ...cfg, rate: 5 }).speed).toBe(1.9);
+    expect(vbeeBody("x", "v", { ...cfg, rate: 0.05 }).speed).toBe(0.25);
+  });
+
+  it("leaves English on Web Speech when Vbee has no English voice configured", () => {
+    const cfg = ttsConfigFromEnv({ TTS_PROVIDER: "vbee", TTS_API_KEY: "k" });
+    expect(resolveVoice(cfg, "en-US")).toBeNull();
+  });
 });
 
 describe("TTS cache", () => {
@@ -134,12 +150,63 @@ describe("TTS cache", () => {
     expect(storage.files.size).toBe(0);
   });
 
+  it("stops quietly when the provider's daily quota is reached, and says what is left", async () => {
+    const storage = memoryStorage();
+    let calls = 0;
+    const quotaFetch = (async () => {
+      calls++;
+      return calls === 1
+        ? new Response(new Uint8Array([1]), { status: 200 })
+        : new Response("daily quota exceeded", { status: 429 });
+    }) as unknown as typeof fetch;
+    const lines = [
+      { text: "Mot", lang: "vi" },
+      { text: "Hai", lang: "vi" },
+      { text: "Ba", lang: "vi" },
+    ];
+    const result = await pregenerateAudio(lines, cfg, storage, quotaFetch);
+    expect(result.generated).toBe(1);
+    expect(result.quotaReached).toBe(true);
+    expect(result.remaining).toBe(2);
+    expect(result.failed).toEqual([]); // a quota stop is not a failure
+
+    // Tomorrow's run picks up exactly the two that are missing.
+    const okFetch = (async () =>
+      new Response(new Uint8Array([1]), { status: 200 })) as unknown as typeof fetch;
+    const second = await pregenerateAudio(lines, cfg, storage, okFetch);
+    expect(second.cached).toBe(1);
+    expect(second.generated).toBe(2);
+    expect(second.remaining).toBe(0);
+  });
+
+  it("counts how many lines still have no mp3 (content:stats)", async () => {
+    const storage = memoryStorage();
+    const lines = [
+      { text: "Mot", lang: "vi" },
+      { text: "Hai", lang: "vi" },
+    ];
+    expect(await missingAudio(lines, cfg, storage)).toEqual({
+      total: 2,
+      missing: 2,
+      enabled: true,
+    });
+    await pregenerateAudio(
+      [lines[0] as { text: string; lang: string }],
+      cfg,
+      storage,
+      (async () => new Response(new Uint8Array([1]), { status: 200 })) as unknown as typeof fetch,
+    );
+    expect((await missingAudio(lines, cfg, storage)).missing).toBe(1);
+  });
+
   it("records a provider failure per line instead of aborting the import", async () => {
     const storage = memoryStorage();
-    const failing = (async () => new Response("quota", { status: 429 })) as unknown as typeof fetch;
+    const failing = (async () =>
+      new Response("voice not found", { status: 500 })) as unknown as typeof fetch;
     const result = await pregenerateAudio([{ text: "Mot", lang: "vi" }], cfg, storage, failing);
     expect(result.generated).toBe(0);
     expect(result.failed).toHaveLength(1);
-    expect(result.failed[0]?.error).toContain("429");
+    expect(result.failed[0]?.error).toContain("500");
+    expect(result.quotaReached).toBe(false);
   });
 });

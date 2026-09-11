@@ -2,32 +2,44 @@
  * Cloud neural TTS configuration (ADR-6, ADR-11 phuong an (c), NFR-04).
  *
  * Stock provider voices only — the project never clones a real child's voice (that is biometric
- * data and must not sit on a third party's servers, ADR-11). Vietnamese defaults to the northern
- * female neural voice the textbook audio uses; English to a young female voice. Both are read a
- * little slower than default (TTS_RATE, ~0.9) so a 6-year-old can follow.
+ * data and must not sit on a third party's servers, ADR-11). Vietnamese is read by Vbee, a
+ * Vietnamese vendor with real child voices; Azure/Google are the fallbacks and carry English.
+ * Everything is read a little slower than default (TTS_RATE, ~0.9) so a 6-year-old can follow.
  *
  * Pure functions: no fs, no network, no Next — so both the web app and the content importer can
  * use them and the unit tests need no keys.
  */
-export type TtsProviderName = "webspeech" | "azure" | "google";
+export type TtsProviderName = "webspeech" | "vbee" | "azure" | "google";
 
 export type TtsLang = "vi" | "en";
 
 export interface TtsConfig {
   provider: TtsProviderName;
   apiKey: string;
-  /** Azure region (e.g. southeastasia). Ignored by Google. */
+  /** Vbee `App-Id` header. Ignored by the others. */
+  appId: string;
+  /** Azure region (e.g. southeastasia). Ignored by the others. */
   region: string;
   /** Concrete provider voice per language. */
   voices: Record<TtsLang, string>;
-  /** Slower than default so the words are easy to follow. */
+  /** Slower than default so the words are easy to follow (Vbee accepts 0.25–1.9). */
   rate: number;
 }
 
-/** Provider defaults; TTS_VOICE_VI / TTS_VOICE_EN override them. */
-export const STOCK_VOICES: Record<"azure" | "google", Record<TtsLang, string>> = {
+/**
+ * Provider defaults; TTS_VOICE_VI / TTS_VOICE_EN override them.
+ *
+ * The Vbee code below is the northern female voice most of their samples use — confirm it for the
+ * account in use with `pnpm tts:voices` (GET https://vbee.vn/api/public/v1/voices?language_code=vi-VN)
+ * and set TTS_VOICE_VI, because voice codes differ per plan.
+ */
+export const STOCK_VOICES: Record<"vbee" | "azure" | "google", Record<TtsLang, string>> = {
+  vbee: {
+    vi: "hn_female_ngochuyen_full_48k-fhg",
+    en: "", // Vbee is used for Vietnamese; English falls back to Web Speech unless set.
+  },
   azure: {
-    vi: "vi-VN-HoaiMyNeural", // nu mien Bac, giong sach giao khoa
+    vi: "vi-VN-HoaiMyNeural", // nu mien Bac
     en: "en-US-AnaNeural", // giong be gai, hop voi tre 6 tuoi
   },
   google: {
@@ -37,6 +49,8 @@ export const STOCK_VOICES: Record<"azure" | "google", Record<TtsLang, string>> =
 };
 
 export const DEFAULT_TTS_RATE = 0.9;
+export const VBEE_TTS_URL = "https://api.vbee.vn/v1/tts";
+export const VBEE_VOICES_URL = "https://vbee.vn/api/public/v1/voices";
 
 export function langBase(lang: string): TtsLang {
   return lang.toLowerCase().startsWith("en") ? "en" : "vi";
@@ -45,12 +59,13 @@ export function langBase(lang: string): TtsLang {
 export function ttsConfigFromEnv(env: Record<string, string | undefined> = process.env): TtsConfig {
   const raw = (env.TTS_PROVIDER ?? "webspeech").trim().toLowerCase();
   const provider: TtsProviderName =
-    raw === "azure" || raw === "google" ? raw : ("webspeech" as const);
+    raw === "vbee" || raw === "azure" || raw === "google" ? raw : ("webspeech" as const);
   const stock = provider === "webspeech" ? { vi: "", en: "" } : STOCK_VOICES[provider];
   const rate = Number(env.TTS_RATE ?? DEFAULT_TTS_RATE);
   return {
     provider,
     apiKey: (env.TTS_API_KEY ?? "").trim(),
+    appId: (env.TTS_APP_ID ?? "").trim(),
     region: (env.TTS_REGION ?? "southeastasia").trim(),
     voices: {
       vi: (env.TTS_VOICE_VI ?? "").trim() || stock.vi,
@@ -93,4 +108,16 @@ export function buildAzureSsml(text: string, lang: string, voice: string, cfg: T
 /** Google audioConfig derived from the same config. Exported for tests. */
 export function googleAudioConfig(cfg: TtsConfig) {
   return { audioEncoding: "MP3", speakingRate: cfg.rate };
+}
+
+/** Vbee request body. `speed` is clamped to the range the API accepts. Exported for tests. */
+export function vbeeBody(text: string, voice: string, cfg: TtsConfig) {
+  return {
+    text,
+    voice_code: voice,
+    speed: Math.min(1.9, Math.max(0.25, cfg.rate)),
+    audio_type: "mp3",
+    // Synchronous: the sentences here are short, so waiting for the link is simpler than polling.
+    callback_url: "",
+  };
 }

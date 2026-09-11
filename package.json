@@ -24,12 +24,13 @@
     "content:validate": "pnpm --filter @mtct/content run validate",
     "content:import": "pnpm --filter @mtct/db run content:import",
     "content:stats": "pnpm --filter @mtct/db run content:stats",
-    "inbox:pull": "pnpm --filter @mtct/inbox pull",
-    "inbox:validate": "pnpm --filter @mtct/inbox validate",
-    "inbox:push": "pnpm --filter @mtct/inbox push",
+    "inbox:pull": "pnpm --filter @mtct/inbox run pull",
+    "inbox:validate": "pnpm --filter @mtct/inbox run validate",
+    "inbox:push": "pnpm --filter @mtct/inbox run push",
     "skills:validate": "pnpm --filter @mtct/content validate:skills",
     "decay:run": "pnpm --filter @mtct/worker decay:run",
-    "content:export": "pnpm --filter @mtct/db run content:export"
+    "content:export": "pnpm --filter @mtct/db run content:export",
+    "tts:voices": "pnpm --filter @mtct/db run tts:voices"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.0",

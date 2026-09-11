@@ -5,7 +5,7 @@ import type * as React from "react";
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
-/** Modal on top of the native <dialog> element (MEDIFA ONE `Modal` look, no extra dependency). */
+/** Modal on top of the native <dialog> element (no extra dependency). */
 export function Dialog({
   open,
   onClose,

@@ -110,14 +110,22 @@ async function main() {
   const lines = packs.flatMap(({ pack }) => pack.exercises.flatMap((ex) => ttsLinesOf(ex)));
   const storage = new LocalFileStorage(process.env.FILE_ROOT ?? "./data/files");
   const audio = await pregenerateAudio(lines, cfg, storage);
-  if (audio.requested > 0 && audio.skipped === audio.requested)
+  if (audio.requested > 0 && audio.skipped === audio.requested) {
     console.log(
       `tts: skipped ${audio.requested} line(s) — no TTS_API_KEY, the app will use Web Speech`,
     );
-  else
+  } else {
     console.log(
-      `tts: ${audio.generated} generated, ${audio.cached} already cached, ${audio.failed.length} failed`,
+      `tts: ${audio.generated} generated, ${audio.cached} already cached, ` +
+        `${audio.skipped} skipped, ${audio.failed.length} failed`,
     );
+    // A free plan runs out fast; stopping there is expected, not a broken import (ADR-11 muc 2).
+    if (audio.quotaReached)
+      console.log(
+        `tts: nhà cung cấp báo hết hạn mức — còn ${audio.remaining} câu chưa có mp3. ` +
+          "Chạy lại `pnpm content:import` ngày mai để sinh tiếp; con vẫn học được bằng giọng máy.",
+      );
+  }
   for (const f of audio.failed.slice(0, 5)) console.warn(`  WARN tts "${f.text}": ${f.error}`);
 }
 

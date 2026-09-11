@@ -4,7 +4,16 @@ import type { Role } from "@mtct/core";
  * Single place that declares the adult-area menu (docs/06 §2.1-2.2).
  * Add a section here when a new area ships — never edit the Sidebar for that.
  */
-export type NavIcon = "dashboard" | "users" | "health" | "children" | "kid" | "help" | "skills";
+export type NavIcon =
+  | "dashboard"
+  | "users"
+  | "health"
+  | "children"
+  | "kid"
+  | "help"
+  | "skills"
+  | "content"
+  | "inbox";
 
 export interface NavItem {
   label: string;
@@ -40,6 +49,30 @@ export const navSections: NavSection[] = [
     label: "Bản đồ kỹ năng",
     href: "/admin/skills",
     icon: "skills",
+    roles: ["ADMIN"],
+  },
+  {
+    id: "content",
+    group: "Nội dung",
+    label: "Ngân hàng bài",
+    href: "/admin/content",
+    icon: "content",
+    roles: ["ADMIN"],
+  },
+  {
+    id: "inbox",
+    group: "Nội dung",
+    label: "Hàng chờ AI",
+    href: "/admin/inbox",
+    icon: "inbox",
+    roles: ["ADMIN"],
+  },
+  {
+    id: "devkit",
+    group: "Nội dung",
+    label: "Bộ dựng bài",
+    href: "/dev/kit",
+    icon: "help",
     roles: ["ADMIN"],
   },
   {
