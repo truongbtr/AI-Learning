@@ -17,7 +17,17 @@ Tất cả đều thuộc bộ **Kết nối tri thức với cuộc sống** (N
 
 > ⚠️ Hai file **sách giáo viên** nạp ngày 09/09 (`01-sgv-toan-1.pdf`, `01-sgvtieng-viet-1-tap-hai.pdf`) hiện **không còn trong thư mục**. SGV có mục tiêu bài dạy và đáp án — rất hữu ích khi soạn bài luyện và chấm. Nếu chủ dự án còn giữ, nên chép lại vào; bảng bài Toán ở §2 dưới đây đang dùng số trang của SGV.
 
-**Xác nhận sách tiếng Anh:** bìa sau SGK liệt kê bộ 11 cuốn lớp 1, trong đó có **"Tiếng Anh 1 – Global Success – Sách học sinh"**. Khớp với mã `GS1` trên phiếu bài tập của trường → **GS1 = Global Success 1**, sách dễ tìm.
+> ⚠️ **ĐÍNH CHÍNH 11/09/2026 — GS1 KHÔNG phải Global Success.** Chủ dự án đưa ảnh cổng học liệu của trường: sách tiếng Anh là **Global Stage Level 1 (Macmillan)**, gồm **Language Book 1** và **Literacy Book 1** (bản số, khoá học 08/09/2026 – 07/12/2027). `GS1` trên phiếu bài tập = **Global Stage 1**. Điều này khớp với việc trường dùng **Navio** — Navio App là ứng dụng đi kèm bộ Global Stage. Mọi suy đoán "Global Success" bên dưới đã sai và được giữ lại chỉ để ghi nhận lịch sử.
+>
+> **Nguồn cấu trúc chương trình (tải công khai, miễn phí, không phải chụp sách):**
+> - `https://www.macmillanenglish.com/api/fileadmin/user_upload/Catalogue/Global_Stage/Scope_and_Sequence_Language_Book.zip`
+> - `https://www.macmillanenglish.com/api/fileadmin/user_upload/Catalogue/Global_Stage/Scope_and_Sequence_Literacy_Book.zip`
+>
+> Hai file này liệt kê từng unit dạy từ vựng gì, cấu trúc gì, âm phonics nào, kỹ năng đọc–viết nào → đủ để dựng lại bản đồ kỹ năng ESL/ENL. Nội dung trang sách chỉ chụp khi soạn bài cho unit cụ thể, theo tiến độ lớp.
+>
+> **Phân vai hai quyển:** Language Book → môn **ESL** (từ vựng, mẫu câu, nghe nói). Literacy Book → môn **ENL** (phonics, đọc hiểu, viết).
+
+~~**Xác nhận sách tiếng Anh:** bìa sau SGK liệt kê bộ 11 cuốn lớp 1, trong đó có "Tiếng Anh 1 – Global Success – Sách học sinh". Khớp với mã `GS1` trên phiếu bài tập của trường → GS1 = Global Success 1, sách dễ tìm.~~ *(sai — xem đính chính ở trên)*
 
 **Manh mối về sách ESL:** phiếu bài tập của trường có tiêu đề **`GS1 – UNIT 1 – REVIEW UNIT 1`** — nhiều khả năng **GS1 = Global Success 1** (Tiếng Anh 1, NXB GDVN, cùng bộ với các sách trên; bìa xuất hiện ở trang cuối SGV). Nếu đúng thì đây là sách phổ biến, dễ tìm bản PDF. Nội dung Unit 1 ghi nhận từ nhật ký lớp và phiếu: *family members* (mom, dad, brother, sister, aunt, uncle, grandparents, twins, baby, pets, cousins), *adjectives* (old, young, tall, short, funny, kind, cute, smart), *ngữ pháp* have/has, am/is/are + phủ định. Chương trình có ít nhất 16 lesson trong Unit 1 → nhiều hơn Global Success chuẩn, nên có thể trường ghép thêm giáo trình quốc tế; **cần chủ dự án xác nhận tên sách ESL với cô giáo**.
 
@@ -27,7 +37,7 @@ Tất cả đều thuộc bộ **Kết nối tri thức với cuộc sống** (N
 
 | Ưu tiên | Tài liệu | Chặn việc gì |
 |---|---|---|
-| 1 | **Tiếng Anh 1 – Global Success – SGK học sinh** (+ workbook / phiếu bài tập nếu có) | ESL nhiều tiết nhất tuần; hiện chỉ suy được nội dung từ nhật ký lớp và phiếu bài tập |
+| 1 | **Global Stage Level 1 — Language Book + Literacy Book (Macmillan)** (+ workbook / phiếu bài tập nếu có) | ESL nhiều tiết nhất tuần; hiện chỉ suy được nội dung từ nhật ký lớp và phiếu bài tập |
 | 2 | Giáo trình quốc tế đi kèm **NAVIO** (Macmillan) nếu trường dùng thêm — Unit 1 có tới 16 lesson nên nhiều khả năng có sách thứ hai | Gán đúng Unit/Lesson cho môn ESL/ENL |
 | 3 | **English Maths**, **English Science** | Hai môn quốc tế còn lại |
 | 4 | Hai file SGV đã mất (xem cảnh báo ở trên); vở bài tập; kế hoạch học kỳ của trường | Mục tiêu bài dạy, đáp án, gán tuần chính xác |
