@@ -1,6 +1,9 @@
 import { PrismaClient } from "../generated/client";
 
 export * from "../generated/client";
+export * from "./mastery/service";
+export * from "./skills/import";
+export * from "./skills/search";
 
 const globalForPrisma = globalThis as unknown as { __mtctPrisma?: PrismaClient };
 

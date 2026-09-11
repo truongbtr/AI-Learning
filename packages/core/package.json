@@ -2,15 +2,23 @@
   "name": "@mtct/core",
   "version": "0.1.0",
   "private": true,
-  "description": "Pure domain logic (no Next, no Prisma): auth policy, calendar, storage adapter",
-  "type": "module",
+  "description": "Pure domain logic (no Next, no Prisma): auth policy, calendar, mastery, remediation, storage adapter. TS source for bundlers/tsx, CommonJS dist for @mtct/db",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "exports": {
-    ".": "./src/index.ts",
-    "./storage": "./src/storage/index.ts"
+    ".": {
+      "types": "./src/index.ts",
+      "require": "./dist/index.js",
+      "default": "./src/index.ts"
+    },
+    "./storage": {
+      "types": "./src/storage/index.ts",
+      "require": "./dist/storage/index.js",
+      "default": "./src/storage/index.ts"
+    }
   },
   "scripts": {
+    "build": "tsc -p tsconfig.build.json",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json"
   },
@@ -22,6 +30,7 @@
   },
   "files": [
     "src",
+    "dist",
     "package.json"
   ]
 }

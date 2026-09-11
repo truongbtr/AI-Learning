@@ -11,11 +11,27 @@
  */
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { contentDir, flattenTimetable, parseTimetable } from "@mtct/content";
+import {
+  contentDir,
+  flattenTimetable,
+  loadErrorTaxonomy,
+  loadLessonUnitFiles,
+  loadSkillMaps,
+  parseTimetable,
+  validateErrorTaxonomy,
+  validateLessonUnits,
+  validateSkillMaps,
+} from "@mtct/content";
 import { buildSchoolWeeks, DEFAULT_PICTURE_SET_KEY, parseIsoDate, pinToSecret } from "@mtct/core";
 import { hash } from "@node-rs/argon2";
 import { config as loadEnv } from "dotenv";
 import { PrismaClient } from "../generated/client";
+import {
+  importErrorCodes,
+  importLessonUnits,
+  importSkillMaps,
+  linkSkillLessonRefs,
+} from "../src/skills/import";
 
 const rootEnv = join(__dirname, "..", "..", "..", ".env");
 if (existsSync(rootEnv)) loadEnv({ path: rootEnv, override: false });
@@ -289,6 +305,61 @@ async function seedDevStudents() {
   }
 }
 
+/**
+ * Skill map, lesson-unit skeletons and error codes (docs/08 pha 1 việc 1).
+ * Validates the files first and refuses to touch the DB when they are inconsistent.
+ * Only Skill/SkillPrerequisite/Material/LessonUnit/LessonUnitSkill/ErrorCode/ContentBatch —
+ * never Evidence/SkillMastery/Session/Attempt.
+ */
+async function seedSkillMap() {
+  const maps = loadSkillMaps();
+  const unitFiles = loadLessonUnitFiles();
+  const taxonomy = loadErrorTaxonomy();
+  if (maps.length === 0) {
+    console.log("skill map: no files in content/skill-map — skipped");
+    return;
+  }
+  const lessonCodes = new Set(unitFiles.flatMap((f) => f.units.units.map((u) => u.code)));
+  const skillCodes = new Set(maps.flatMap((m) => m.map.skills.map((s) => s.code)));
+  const check = validateSkillMaps(maps, lessonCodes);
+  const unitIssues = validateLessonUnits(unitFiles, skillCodes);
+  const taxIssues = taxonomy ? validateErrorTaxonomy(taxonomy, skillCodes) : [];
+  if (check.errors.length || unitIssues.length || taxIssues.length) {
+    for (const e of check.errors) console.error(`  ${e.file} [${e.code ?? "-"}]: ${e.message}`);
+    for (const e of unitIssues) console.error(`  ${e.file} [${e.code ?? "-"}]: ${e.message}`);
+    for (const e of taxIssues) console.error(`  error-taxonomy.json: ${e}`);
+    throw new Error("content/ is invalid — run `pnpm skills:validate` (nothing was written)");
+  }
+
+  const skills = await importSkillMaps(
+    prisma,
+    maps.map((m) => m.map),
+    { note: `seed: ${maps.map((m) => m.map.subject).join(", ")}` },
+  );
+  const units = await importLessonUnits(
+    prisma,
+    unitFiles.map((f) => f.units),
+  );
+  const links = await linkSkillLessonRefs(
+    prisma,
+    maps.map((m) => m.map),
+  );
+  console.log(
+    `skill map: ${skills.total} skills (${skills.created} new, ${skills.updated} updated, ${skills.retired} retired), ${skills.prerequisites} prerequisites`,
+  );
+  console.log(
+    `lesson units: ${units.created + units.updated} in ${units.materials} materials (${units.created} new), ${units.links + links} skill links`,
+  );
+  if (taxonomy) {
+    const errs = await importErrorCodes(prisma, taxonomy);
+    console.log(
+      `error codes: ${taxonomy.codes.length} (${errs.created} new, ${errs.updated} updated, ${errs.retired} retired)`,
+    );
+  } else {
+    console.log("error codes: content/error-taxonomy.json missing — skipped");
+  }
+}
+
 async function main() {
   const dev = process.env.SEED_DEV === "1" || process.argv.includes("--dev");
   if (dev && process.env.NODE_ENV === "production") {
@@ -299,10 +370,15 @@ async function main() {
   await seedSchoolWeeks();
   await seedAiConfig();
   await seedBadges();
+  await seedSkillMap();
   if (dev) await seedDevStudents();
   const counts = {
     users: await prisma.user.count(),
     skills: await prisma.skill.count(),
+    skillPrerequisites: await prisma.skillPrerequisite.count(),
+    lessonUnits: await prisma.lessonUnit.count(),
+    materials: await prisma.material.count(),
+    errorCodes: await prisma.errorCode.count(),
     timetableSlots: await prisma.timetableSlot.count(),
     schoolWeeks: await prisma.schoolWeek.count(),
     badges: await prisma.badge.count(),

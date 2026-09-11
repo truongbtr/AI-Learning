@@ -29,7 +29,8 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 FROM deps AS build
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm --filter @mtct/db generate \
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm --filter @mtct/core build \
+  && pnpm --filter @mtct/db generate \
   && pnpm --filter @mtct/db build \
   && pnpm --filter @mtct/web build \
   && pnpm install --prod --frozen-lockfile --config.confirmModulesPurge=false \

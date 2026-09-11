@@ -199,8 +199,12 @@ model Skill {
   difficultyMin     Int         @default(1)
   difficultyMax     Int         @default(5)
   relatedSkillCodes String[]    @default([])
+  /// Skills a 6-year-old mixes this one up with (b/d, s/x, have/has) — remediation rung 5 (ADR-13)
+  confusableWith    String[]    @default([])
   isActive          Boolean     @default(true)
   source            SkillSource @default(SEED)
+  /// Full-text vector over code + names + description + strand, unaccented; kept by a trigger (ADR-12/13)
+  searchVector      Unsupported("tsvector")?
   createdAt         DateTime    @default(now())
   updatedAt         DateTime    @updatedAt
 
@@ -215,6 +219,27 @@ model Skill {
   planItems         PlanItem[]
 
   @@index([subject, strand, order])
+}
+
+/// Standard error codes (docs/04 §11.1, content/error-taxonomy.json). Evidence.errorCode,
+/// Exercise.targetsError and choices[].errorTag must be one of these (ADR-13).
+model ErrorCode {
+  code              String      @id // nham_b_d
+  subject           String // ESL|ENL|EMATH|ESCI|VIET|VMATH|ALL
+  group             String
+  nameVi            String
+  description       String
+  detection         String      @default("")
+  remediation       String      @default("")
+  remediationSkills String[]    @default([])
+  lessonRefs        String[]    @default([])
+  behavioural       Boolean     @default(false)
+  isActive          Boolean     @default(true)
+  source            SkillSource @default(SEED)
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  @@index([subject, group])
 }
 
 model SkillPrerequisite {
