@@ -1,0 +1,1485 @@
+{
+  "skillCode": "ENL.RF.RHYME",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": [],
+  "note": "Rhyming words — CCSS RF.1.2a; chưa có giáo trình của trường.",
+  "exercises": [
+    {
+      "id": "enl-rhyme-0001",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Which word rhymes with \"cat\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐱",
+          "labelEn": "cat"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hat"
+        },
+        {
+          "id": "b",
+          "text": "dog",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"cat\" and \"hat\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0002",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "robot",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Which word rhymes with \"dog\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐶",
+          "labelEn": "dog"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "log"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"dog\" and \"log\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0003",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "garden",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Which word rhymes with \"sun\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "☀️",
+          "labelEn": "sun"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "run"
+        },
+        {
+          "id": "b",
+          "text": "moon",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"sun\" and \"run\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0004",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Which word rhymes with \"bee\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelEn": "bee"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bird",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "tree"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"bee\" and \"tree\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0005",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "robot",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word rhymes with \"star\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "star"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "car"
+        },
+        {
+          "id": "b",
+          "text": "moon",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"star\" and \"car\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0006",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "garden",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word rhymes with \"cake\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍰",
+          "labelEn": "cake"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bread",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "lake"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"cake\" and \"lake\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0007",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word rhymes with \"mouse\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐭",
+          "labelEn": "mouse"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "house"
+        },
+        {
+          "id": "b",
+          "text": "cat",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"mouse\" and \"house\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0008",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "robot",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word rhymes with \"bear\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐻",
+          "labelEn": "bear"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "apple",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "pear"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"bear\" and \"pear\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0009",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "garden",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word rhymes with \"frog\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐸",
+          "labelEn": "frog"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "log"
+        },
+        {
+          "id": "b",
+          "text": "fish",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"frog\" and \"log\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0010",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word rhymes with \"moon\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌙",
+          "labelEn": "moon"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "star",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "spoon"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"moon\" and \"spoon\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0011",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "robot",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word rhymes with \"fish\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelEn": "fish"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dish"
+        },
+        {
+          "id": "b",
+          "text": "bird",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"fish\" and \"dish\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0012",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "garden",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word rhymes with \"boat\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⛵",
+          "labelEn": "boat"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "car",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "coat"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe phần đuôi của từ."],
+      "explanation": "\"boat\" and \"coat\" rhyme.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0013",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cat … hat"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dog",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "hat"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"cat\" rhymes with \"hat\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0014",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "dog … log"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "log"
+        },
+        {
+          "id": "b",
+          "text": "cat",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"dog\" rhymes with \"log\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0015",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "sun … run"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "moon",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "run"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"sun\" rhymes with \"run\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0016",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bee … tree"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tree"
+        },
+        {
+          "id": "b",
+          "text": "bird",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"bee\" rhymes with \"tree\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0017",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "star … car"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "moon",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "car"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"star\" rhymes with \"car\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0018",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cake … lake"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lake"
+        },
+        {
+          "id": "b",
+          "text": "bread",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"cake\" rhymes with \"lake\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0019",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "mouse … house"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "house"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"mouse\" rhymes with \"house\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0020",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bear … pear"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "pear"
+        },
+        {
+          "id": "b",
+          "text": "apple",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"bear\" rhymes with \"pear\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0021",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "frog … log"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "log"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"frog\" rhymes with \"log\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "moon … spoon"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "spoon"
+        },
+        {
+          "id": "b",
+          "text": "star",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"moon\" rhymes with \"spoon\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0023",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "fish … dish"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bird",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "dish"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"fish\" rhymes with \"dish\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0024",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which one rhymes? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "boat … coat"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "coat"
+        },
+        {
+          "id": "b",
+          "text": "car",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ phần cuối của mỗi từ."],
+      "explanation": "\"boat\" rhymes with \"coat\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0025",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Drag the word that rhymes with \"cat\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "r1",
+          "text": "hat"
+        },
+        {
+          "id": "r2",
+          "text": "dog"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z",
+          "label": "cat",
+          "image": {
+            "kind": "emoji",
+            "value": "🐱",
+            "labelEn": "cat"
+          },
+          "accepts": ["r1", "r2"]
+        }
+      ],
+      "answerKey": {
+        "z": ["r1"]
+      },
+      "hints": ["Đuôi từ phải nghe giống nhau."],
+      "explanation": "\"cat\" – \"hat\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0026",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Drag the word that rhymes with \"dog\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "r1",
+          "text": "log"
+        },
+        {
+          "id": "r2",
+          "text": "cat"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z",
+          "label": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐶",
+            "labelEn": "dog"
+          },
+          "accepts": ["r1", "r2"]
+        }
+      ],
+      "answerKey": {
+        "z": ["r1"]
+      },
+      "hints": ["Đuôi từ phải nghe giống nhau."],
+      "explanation": "\"dog\" – \"log\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0027",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Drag the word that rhymes with \"sun\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "r1",
+          "text": "run"
+        },
+        {
+          "id": "r2",
+          "text": "moon"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z",
+          "label": "sun",
+          "image": {
+            "kind": "emoji",
+            "value": "☀️",
+            "labelEn": "sun"
+          },
+          "accepts": ["r1", "r2"]
+        }
+      ],
+      "answerKey": {
+        "z": ["r1"]
+      },
+      "hints": ["Đuôi từ phải nghe giống nhau."],
+      "explanation": "\"sun\" – \"run\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0028",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Drag the word that rhymes with \"bee\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "r1",
+          "text": "tree"
+        },
+        {
+          "id": "r2",
+          "text": "bird"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z",
+          "label": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          },
+          "accepts": ["r1", "r2"]
+        }
+      ],
+      "answerKey": {
+        "z": ["r1"]
+      },
+      "hints": ["Đuôi từ phải nghe giống nhau."],
+      "explanation": "\"bee\" – \"tree\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0029",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Drag the word that rhymes with \"star\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "r1",
+          "text": "car"
+        },
+        {
+          "id": "r2",
+          "text": "moon"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z",
+          "label": "star",
+          "image": {
+            "kind": "emoji",
+            "value": "⭐",
+            "labelEn": "star"
+          },
+          "accepts": ["r1", "r2"]
+        }
+      ],
+      "answerKey": {
+        "z": ["r1"]
+      },
+      "hints": ["Đuôi từ phải nghe giống nhau."],
+      "explanation": "\"star\" – \"car\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0030",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Drag the word that rhymes with \"cake\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "r1",
+          "text": "lake"
+        },
+        {
+          "id": "r2",
+          "text": "bread"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z",
+          "label": "cake",
+          "image": {
+            "kind": "emoji",
+            "value": "🍰",
+            "labelEn": "cake"
+          },
+          "accepts": ["r1", "r2"]
+        }
+      ],
+      "answerKey": {
+        "z": ["r1"]
+      },
+      "hints": ["Đuôi từ phải nghe giống nhau."],
+      "explanation": "\"cake\" – \"lake\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0031",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read the rhyming pair aloud!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "cat – hat",
+        "words": ["cat", "hat"]
+      },
+      "answerKey": {
+        "words": ["cat", "hat"]
+      },
+      "hints": ["Đọc to để nghe rõ vần."],
+      "explanation": "\"cat\" và \"hat\" có cùng vần.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0032",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read the rhyming pair aloud!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "dog – log",
+        "words": ["dog", "log"]
+      },
+      "answerKey": {
+        "words": ["dog", "log"]
+      },
+      "hints": ["Đọc to để nghe rõ vần."],
+      "explanation": "\"dog\" và \"log\" có cùng vần.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0033",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read the rhyming pair aloud!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "sun – run",
+        "words": ["sun", "run"]
+      },
+      "answerKey": {
+        "words": ["sun", "run"]
+      },
+      "hints": ["Đọc to để nghe rõ vần."],
+      "explanation": "\"sun\" và \"run\" có cùng vần.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0034",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read the rhyming pair aloud!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "bee – tree",
+        "words": ["bee", "tree"]
+      },
+      "answerKey": {
+        "words": ["bee", "tree"]
+      },
+      "hints": ["Đọc to để nghe rõ vần."],
+      "explanation": "\"bee\" và \"tree\" có cùng vần.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0035",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read the rhyming pair aloud!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "moon – spoon",
+        "words": ["moon", "spoon"]
+      },
+      "answerKey": {
+        "words": ["moon", "spoon"]
+      },
+      "hints": ["Đọc to để nghe rõ vần."],
+      "explanation": "\"moon\" và \"spoon\" có cùng vần.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0036",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tap the rhyming pictures to count them.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐱",
+          "labelEn": "picture"
+        },
+        "correctCount": 2,
+        "layout": "line"
+      },
+      "answerKey": 2,
+      "hints": ["Chỉ chạm những tranh có tên cùng vần."],
+      "explanation": "There are 2.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0037",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tap the rhyming pictures to count them.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐶",
+          "labelEn": "picture"
+        },
+        "correctCount": 3,
+        "layout": "line"
+      },
+      "answerKey": 3,
+      "hints": ["Chỉ chạm những tranh có tên cùng vần."],
+      "explanation": "There are 3.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0038",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tap the rhyming pictures to count them.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "picture"
+        },
+        "correctCount": 4,
+        "layout": "line"
+      },
+      "answerKey": 4,
+      "hints": ["Chỉ chạm những tranh có tên cùng vần."],
+      "explanation": "There are 4.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0039",
+      "type": "WRITE_PHOTO",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Write cat – hat in your notebook.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Hai từ cùng vần", "Đúng chính tả"],
+        "sampleAnswers": ["cat – hat"]
+      },
+      "answerKey": null,
+      "hints": ["Đuôi từ giống nhau là được."],
+      "explanation": "Hai từ cùng vần khi phần đuôi nghe giống nhau.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0040",
+      "type": "WRITE_PHOTO",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Write dog – log in your notebook.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Hai từ cùng vần", "Đúng chính tả"],
+        "sampleAnswers": ["dog – log"]
+      },
+      "answerKey": null,
+      "hints": ["Đuôi từ giống nhau là được."],
+      "explanation": "Hai từ cùng vần khi phần đuôi nghe giống nhau.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "enl-rhyme-0041",
+      "type": "WRITE_PHOTO",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ENL.RF.RHYME"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Write a rhyme for sun in your notebook.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Hai từ cùng vần", "Đúng chính tả"],
+        "sampleAnswers": ["a rhyme for sun"]
+      },
+      "answerKey": null,
+      "hints": ["Đuôi từ giống nhau là được."],
+      "explanation": "Hai từ cùng vần khi phần đuôi nghe giống nhau.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    }
+  ]
+}

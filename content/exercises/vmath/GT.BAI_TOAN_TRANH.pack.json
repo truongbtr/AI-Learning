@@ -1,0 +1,1701 @@
+{
+  "skillCode": "VMATH.GT.BAI_TOAN_TRANH",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": ["KNTT-T1-B10", "KNTT-T1-B11"],
+  "note": "Bài toán có tranh — SGK Toán 1 tập một Bài 10 và Bài 11.",
+  "exercises": [
+    {
+      "id": "vmath-btranh-0001",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Mai có 3 con cá, 2 bơi tới. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "labelEn": "fish",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 3 + 2."],
+      "explanation": "ba cộng hai bằng năm.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0002",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nam có 4 con chim, 1 bay đến. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "labelEn": "bird",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 4 + 1."],
+      "explanation": "bốn cộng một bằng năm.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Mi có 5 bông hoa, 2 nở thêm. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 5 + 2."],
+      "explanation": "năm cộng hai bằng bảy.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0004",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Việt có 2 chiếc ô tô, 3 đỗ thêm. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🚗",
+          "labelVi": "chiếc ô tô",
+          "labelEn": "car",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 2 + 3."],
+      "explanation": "hai cộng ba bằng năm.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0005",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Rô-bốt có 6 con ong, 3 bay tới. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "labelEn": "bee",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 6 + 3."],
+      "explanation": "sáu cộng ba bằng chín.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0006",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nam có 4 khối lập phương, 4 xếp thêm. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🟨",
+          "labelVi": "khối lập phương",
+          "labelEn": "cube",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 4 + 4."],
+      "explanation": "bốn cộng bốn bằng tám.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0007",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 5 ngôi sao, 5 sáng thêm. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "star",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "0",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 5 + 5."],
+      "explanation": "năm cộng năm bằng mười.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0008",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 7 quả táo, 2 hái thêm. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apple",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 7 + 2."],
+      "explanation": "bảy cộng hai bằng chín.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0009",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt có 5 quả bóng, 2 bay mất. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "quả bóng",
+          "labelEn": "balloon",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 5 − 2."],
+      "explanation": "năm trừ hai bằng ba.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0010",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 6 quả cam, 1 ăn mất. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍊",
+          "labelVi": "quả cam",
+          "labelEn": "orange",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 6 − 1."],
+      "explanation": "sáu trừ một bằng năm.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 7 con vịt, 3 bơi đi. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🦆",
+          "labelVi": "con vịt",
+          "labelEn": "duck",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 7 − 3."],
+      "explanation": "bảy trừ ba bằng bốn.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 8 con bọ rùa, 2 bò đi. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "con bọ rùa",
+          "labelEn": "ladybug",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 8 − 2."],
+      "explanation": "tám trừ hai bằng sáu.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 9 quả chuối, 4 cho bạn. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍌",
+          "labelVi": "quả chuối",
+          "labelEn": "banana",
+          "repeat": 9
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 9 − 4."],
+      "explanation": "chín trừ bốn bằng năm.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt có 10 cái kẹo, 3 chia cho bạn. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍬",
+          "labelVi": "cái kẹo",
+          "labelEn": "sweet",
+          "repeat": 10
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 10 − 3."],
+      "explanation": "mười trừ ba bằng bảy.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 8 con bướm, 5 bay đi. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🦋",
+          "labelVi": "con bướm",
+          "labelEn": "butterfly",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 8 − 5."],
+      "explanation": "tám trừ năm bằng ba.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 10 chiếc lá, 6 rụng mất. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍃",
+          "labelVi": "chiếc lá",
+          "labelEn": "leaf",
+          "repeat": 10
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 10 − 6."],
+      "explanation": "mười trừ sáu bằng bốn.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 6 bánh răng, 4 lắp thêm. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⚙️",
+          "labelVi": "bánh răng",
+          "labelEn": "gear",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 6 + 4."],
+      "explanation": "sáu cộng bốn bằng mười.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0018",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt có 3 tên lửa, 6 phóng thêm. Có tất cả mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🚀",
+          "labelVi": "tên lửa",
+          "labelEn": "rocket",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["“Thêm vào” thì mình gộp lại.", "Phép tính là 3 + 6."],
+      "explanation": "ba cộng sáu bằng chín.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0019",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 9 cái bút chì, 6 cho bạn. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "✏️",
+          "labelVi": "cái bút chì",
+          "labelEn": "pencil",
+          "repeat": 9
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "15",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 9 − 6."],
+      "explanation": "chín trừ sáu bằng ba.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0020",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 10 cái dù, 9 gấp lại. Còn lại mấy?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🪂",
+          "labelVi": "cái dù",
+          "labelEn": "parachute",
+          "repeat": 10
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["“Mất đi” thì mình bớt ra.", "Phép tính là 10 − 9."],
+      "explanation": "mười trừ chín bằng một.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0021",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng: 3 … 2 = 5",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "+"
+        },
+        {
+          "id": "d2",
+          "text": "−"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "3 … 2 = 5",
+          "accepts": ["d1", "d2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["d1"]
+      },
+      "hints": ["Kết quả to hơn thì là dấu cộng."],
+      "explanation": "Ở đây dùng dấu cộng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0022",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng: 4 … 1 = 5",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "+"
+        },
+        {
+          "id": "d2",
+          "text": "−"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "4 … 1 = 5",
+          "accepts": ["d1", "d2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["d1"]
+      },
+      "hints": ["Kết quả to hơn thì là dấu cộng."],
+      "explanation": "Ở đây dùng dấu cộng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0023",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng: 5 … 2 = 7",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "+"
+        },
+        {
+          "id": "d2",
+          "text": "−"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "5 … 2 = 7",
+          "accepts": ["d1", "d2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["d1"]
+      },
+      "hints": ["Kết quả to hơn thì là dấu cộng."],
+      "explanation": "Ở đây dùng dấu cộng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0024",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng: 2 … 3 = 5",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "+"
+        },
+        {
+          "id": "d2",
+          "text": "−"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "2 … 3 = 5",
+          "accepts": ["d1", "d2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["d1"]
+      },
+      "hints": ["Kết quả to hơn thì là dấu cộng."],
+      "explanation": "Ở đây dùng dấu cộng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0025",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng: 6 … 3 = 9",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "+"
+        },
+        {
+          "id": "d2",
+          "text": "−"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "6 … 3 = 9",
+          "accepts": ["d1", "d2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["d1"]
+      },
+      "hints": ["Kết quả to hơn thì là dấu cộng."],
+      "explanation": "Ở đây dùng dấu cộng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0026",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng: 4 … 4 = 8",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "+"
+        },
+        {
+          "id": "d2",
+          "text": "−"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "4 … 4 = 8",
+          "accepts": ["d1", "d2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["d1"]
+      },
+      "hints": ["Kết quả to hơn thì là dấu cộng."],
+      "explanation": "Ở đây dùng dấu cộng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0027",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng: 5 … 5 = 10",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "+"
+        },
+        {
+          "id": "d2",
+          "text": "−"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "5 … 5 = 10",
+          "accepts": ["d1", "d2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["d1"]
+      },
+      "hints": ["Kết quả to hơn thì là dấu cộng."],
+      "explanation": "Ở đây dùng dấu cộng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0028",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng: 7 … 2 = 9",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "+"
+        },
+        {
+          "id": "d2",
+          "text": "−"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "7 … 2 = 9",
+          "accepts": ["d1", "d2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["d1"]
+      },
+      "hints": ["Kết quả to hơn thì là dấu cộng."],
+      "explanation": "Ở đây dùng dấu cộng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0029",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm con cá còn lại sau khi bớt 2.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "labelEn": "fish"
+        },
+        "correctCount": 3,
+        "layout": "grid"
+      },
+      "answerKey": 3,
+      "hints": ["Đếm hết số trong tranh trước đã."],
+      "explanation": "Trong tranh có ba con cá.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0030",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm bông hoa còn lại sau khi bớt 3.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower"
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Đếm hết số trong tranh trước đã."],
+      "explanation": "Trong tranh có năm bông hoa.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0031",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm quả táo còn lại sau khi bớt 4.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apple"
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Đếm hết số trong tranh trước đã."],
+      "explanation": "Trong tranh có sáu quả táo.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0032",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm khối lập phương còn lại sau khi bớt 3.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟨",
+          "labelVi": "khối lập phương",
+          "labelEn": "cube"
+        },
+        "correctCount": 7,
+        "layout": "grid"
+      },
+      "answerKey": 7,
+      "hints": ["Đếm hết số trong tranh trước đã."],
+      "explanation": "Trong tranh có bảy khối lập phương.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0033",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Có bốn quả, thêm ba quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ chữ “thêm” hay “bớt”."],
+      "explanation": "bốn cộng ba bằng bảy.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0034",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Có sáu quả, bớt hai quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe kĩ chữ “thêm” hay “bớt”."],
+      "explanation": "sáu trừ hai bằng bốn.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0035",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Có năm quả, thêm bốn quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ chữ “thêm” hay “bớt”."],
+      "explanation": "năm cộng bốn bằng chín.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0036",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Có chín quả, bớt năm quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ chữ “thêm” hay “bớt”."],
+      "explanation": "chín trừ năm bằng bốn.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0037",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con kể lại bài toán bằng lời nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "ba thêm hai là năm",
+        "words": ["ba", "thêm", "hai", "là", "năm"]
+      },
+      "answerKey": {
+        "words": ["ba", "thêm", "hai", "là", "năm"]
+      },
+      "hints": ["Nói chậm, đủ ba phần: có mấy — thêm hay bớt — còn mấy."],
+      "explanation": "Câu chuyện này là \"ba thêm hai là năm\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0038",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con kể lại bài toán bằng lời nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "sáu bớt hai còn bốn",
+        "words": ["sáu", "bớt", "hai", "còn", "bốn"]
+      },
+      "answerKey": {
+        "words": ["sáu", "bớt", "hai", "còn", "bốn"]
+      },
+      "hints": ["Nói chậm, đủ ba phần: có mấy — thêm hay bớt — còn mấy."],
+      "explanation": "Câu chuyện này là \"sáu bớt hai còn bốn\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0039",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con kể lại bài toán bằng lời nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "chín bớt ba còn sáu",
+        "words": ["chín", "bớt", "ba", "còn", "sáu"]
+      },
+      "answerKey": {
+        "words": ["chín", "bớt", "ba", "còn", "sáu"]
+      },
+      "hints": ["Nói chậm, đủ ba phần: có mấy — thêm hay bớt — còn mấy."],
+      "explanation": "Câu chuyện này là \"chín bớt ba còn sáu\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-btranh-0040",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính cho bài: có 4 quả, thêm 3 quả.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Dấu đúng là cộng", "Kết quả đúng là 7"],
+        "sampleAnswers": ["4 + 3 = 7"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc lại đề, tìm chữ “thêm” hoặc “bớt”."],
+      "explanation": "Phép tính đúng là 4 + 3 = 7.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-btranh-0041",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.GT.BAI_TOAN_TRANH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính cho bài: có 9 quả, bớt 5 quả.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Dấu đúng là trừ", "Kết quả đúng là 4"],
+        "sampleAnswers": ["9 − 5 = 4"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc lại đề, tìm chữ “thêm” hoặc “bớt”."],
+      "explanation": "Phép tính đúng là 9 − 5 = 4.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    }
+  ]
+}

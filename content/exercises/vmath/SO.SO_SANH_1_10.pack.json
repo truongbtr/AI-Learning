@@ -1,0 +1,1492 @@
+{
+  "skillCode": "VMATH.SO.SO_SANH_1_10",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": ["KNTT-T1-B04"],
+  "note": "Soạn từ SGK Toán 1 tập một, Bài 4 (tr.24–31): “Bốn lớn hơn ba”, dấu > < =.",
+  "exercises": [
+    {
+      "id": "vmath-sosanh-0001",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chọn dấu đúng: 4 … 3",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">"
+        },
+        {
+          "id": "b",
+          "text": "<",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 4 và 3, số nào lớn hơn?"],
+      "explanation": "bốn lớn hơn ba.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0002",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chọn dấu đúng: 5 … 4",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": ">"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 5 và 4, số nào lớn hơn?"],
+      "explanation": "năm lớn hơn bốn.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chọn dấu đúng: 2 … 3",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "<"
+        },
+        {
+          "id": "c",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 2 và 3, số nào lớn hơn?"],
+      "explanation": "hai bé hơn ba.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0004",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chọn dấu đúng: 1 … 2",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<"
+        },
+        {
+          "id": "b",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 1 và 2, số nào lớn hơn?"],
+      "explanation": "một bé hơn hai.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0005",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chọn dấu đúng: 3 … 3",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "="
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 3 và 3, số nào lớn hơn?"],
+      "explanation": "ba bằng ba.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0006",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Chọn dấu đúng: 6 … 5",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": ">"
+        },
+        {
+          "id": "c",
+          "text": "<",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 6 và 5, số nào lớn hơn?"],
+      "explanation": "sáu lớn hơn năm.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0007",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 4 … 7",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<"
+        },
+        {
+          "id": "b",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 4 và 7, số nào lớn hơn?"],
+      "explanation": "bốn bé hơn bảy.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0008",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 8 … 8",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "="
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 8 và 8, số nào lớn hơn?"],
+      "explanation": "tám bằng tám.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0009",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 5 … 9",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "<"
+        },
+        {
+          "id": "c",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 5 và 9, số nào lớn hơn?"],
+      "explanation": "năm bé hơn chín.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0010",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 7 … 6",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">"
+        },
+        {
+          "id": "b",
+          "text": "<",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 7 và 6, số nào lớn hơn?"],
+      "explanation": "bảy lớn hơn sáu.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 9 … 4",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": ">"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 9 và 4, số nào lớn hơn?"],
+      "explanation": "chín lớn hơn bốn.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 3 … 8",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "<"
+        },
+        {
+          "id": "c",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 3 và 8, số nào lớn hơn?"],
+      "explanation": "ba bé hơn tám.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 10 … 7",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">"
+        },
+        {
+          "id": "b",
+          "text": "<",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 10 và 7, số nào lớn hơn?"],
+      "explanation": "mười lớn hơn bảy.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 6 … 10",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "<"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 6 và 10, số nào lớn hơn?"],
+      "explanation": "sáu bé hơn mười.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 2 … 9",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "<"
+        },
+        {
+          "id": "c",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 2 và 9, số nào lớn hơn?"],
+      "explanation": "hai bé hơn chín.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 8 … 3",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">"
+        },
+        {
+          "id": "b",
+          "text": "<",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 8 và 3, số nào lớn hơn?"],
+      "explanation": "tám lớn hơn ba.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 10 … 10",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "="
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 10 và 10, số nào lớn hơn?"],
+      "explanation": "mười bằng mười.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0018",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 7 … 9",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "<"
+        },
+        {
+          "id": "c",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 7 và 9, số nào lớn hơn?"],
+      "explanation": "bảy bé hơn chín.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0019",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 5 … 10",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<"
+        },
+        {
+          "id": "b",
+          "text": ">",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 5 và 10, số nào lớn hơn?"],
+      "explanation": "năm bé hơn mười.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0020",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chọn dấu đúng: 9 … 8",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": ">"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Miệng dấu luôn quay về phía số lớn hơn.", "Đếm lại: 9 và 8, số nào lớn hơn?"],
+      "explanation": "chín lớn hơn tám.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0021",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng vào giữa: 3 … 5",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "g1",
+          "text": ">"
+        },
+        {
+          "id": "g2",
+          "text": "<"
+        },
+        {
+          "id": "g3",
+          "text": "="
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "3 … 5",
+          "accepts": ["g1", "g2", "g3"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g2"]
+      },
+      "hints": ["Miệng dấu quay về số lớn hơn."],
+      "explanation": "ba bé hơn năm.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0022",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng vào giữa: 7 … 4",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "g1",
+          "text": ">"
+        },
+        {
+          "id": "g2",
+          "text": "<"
+        },
+        {
+          "id": "g3",
+          "text": "="
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "7 … 4",
+          "accepts": ["g1", "g2", "g3"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1"]
+      },
+      "hints": ["Miệng dấu quay về số lớn hơn."],
+      "explanation": "bảy lớn hơn bốn.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0023",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng vào giữa: 6 … 6",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "g1",
+          "text": ">"
+        },
+        {
+          "id": "g2",
+          "text": "<"
+        },
+        {
+          "id": "g3",
+          "text": "="
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "6 … 6",
+          "accepts": ["g1", "g2", "g3"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g3"]
+      },
+      "hints": ["Miệng dấu quay về số lớn hơn."],
+      "explanation": "sáu bằng sáu.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0024",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng vào giữa: 9 … 10",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "g1",
+          "text": ">"
+        },
+        {
+          "id": "g2",
+          "text": "<"
+        },
+        {
+          "id": "g3",
+          "text": "="
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "9 … 10",
+          "accepts": ["g1", "g2", "g3"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g2"]
+      },
+      "hints": ["Miệng dấu quay về số lớn hơn."],
+      "explanation": "chín bé hơn mười.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0025",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo dấu đúng vào giữa: 8 … 2",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "g1",
+          "text": ">"
+        },
+        {
+          "id": "g2",
+          "text": "<"
+        },
+        {
+          "id": "g3",
+          "text": "="
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "8 … 2",
+          "accepts": ["g1", "g2", "g3"]
+        }
+      ],
+      "answerKey": {
+        "o": ["g1"]
+      },
+      "hints": ["Miệng dấu quay về số lớn hơn."],
+      "explanation": "tám lớn hơn hai.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0026",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "năm thế nào so với hai?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lớn hơn"
+        },
+        {
+          "id": "b",
+          "text": "bé hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại số đầu tiên cho kĩ."],
+      "explanation": "năm lớn hơn hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0027",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ba thế nào so với bảy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lớn hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "bé hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại số đầu tiên cho kĩ."],
+      "explanation": "ba bé hơn bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0028",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "tám thế nào so với tám?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bé hơn",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "bằng"
+        },
+        {
+          "id": "c",
+          "text": "lớn hơn",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại số đầu tiên cho kĩ."],
+      "explanation": "tám bằng tám.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0029",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "mười thế nào so với sáu?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lớn hơn"
+        },
+        {
+          "id": "b",
+          "text": "bé hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại số đầu tiên cho kĩ."],
+      "explanation": "mười lớn hơn sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0030",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bốn thế nào so với chín?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lớn hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "bé hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại số đầu tiên cho kĩ."],
+      "explanation": "bốn bé hơn chín.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0031",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm con vịt ở hàng trên để so sánh.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🦆",
+          "labelVi": "con vịt",
+          "labelEn": "duck"
+        },
+        "correctCount": 4,
+        "layout": "line"
+      },
+      "answerKey": 4,
+      "hints": ["Đếm hàng trên trước, hàng dưới sau."],
+      "explanation": "Hàng trên có bốn con vịt.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0032",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm quả dưa hấu ở hàng trên để so sánh.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍉",
+          "labelVi": "quả dưa hấu",
+          "labelEn": "watermelon"
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Đếm hàng trên trước, hàng dưới sau."],
+      "explanation": "Hàng trên có năm quả dưa hấu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0033",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm quả táo ở hàng trên để so sánh.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apple"
+        },
+        "correctCount": 8,
+        "layout": "line"
+      },
+      "answerKey": 8,
+      "hints": ["Đếm hàng trên trước, hàng dưới sau."],
+      "explanation": "Hàng trên có tám quả táo.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0034",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm ngôi sao ở hàng trên để so sánh.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "star"
+        },
+        "correctCount": 10,
+        "layout": "line"
+      },
+      "answerKey": 10,
+      "hints": ["Đếm hàng trên trước, hàng dưới sau."],
+      "explanation": "Hàng trên có mười ngôi sao.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0035",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to câu so sánh này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "bốn lớn hơn ba",
+        "words": ["bốn", "lớn hơn", "ba"]
+      },
+      "answerKey": {
+        "words": ["bốn", "lớn hơn", "ba"]
+      },
+      "hints": ["Đọc rõ ba phần: số — từ so sánh — số."],
+      "explanation": "Câu này đọc là \"bốn lớn hơn ba\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0036",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to câu so sánh này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "năm lớn hơn bốn",
+        "words": ["năm", "lớn hơn", "bốn"]
+      },
+      "answerKey": {
+        "words": ["năm", "lớn hơn", "bốn"]
+      },
+      "hints": ["Đọc rõ ba phần: số — từ so sánh — số."],
+      "explanation": "Câu này đọc là \"năm lớn hơn bốn\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0037",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to câu so sánh này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "hai bé hơn sáu",
+        "words": ["hai", "bé hơn", "sáu"]
+      },
+      "answerKey": {
+        "words": ["hai", "bé hơn", "sáu"]
+      },
+      "hints": ["Đọc rõ ba phần: số — từ so sánh — số."],
+      "explanation": "Câu này đọc là \"hai bé hơn sáu\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0038",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to câu so sánh này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "bảy bằng bảy",
+        "words": ["bảy", "bằng", "bảy"]
+      },
+      "answerKey": {
+        "words": ["bảy", "bằng", "bảy"]
+      },
+      "hints": ["Đọc rõ ba phần: số — từ so sánh — số."],
+      "explanation": "Câu này đọc là \"bảy bằng bảy\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0039",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết dấu > < = vào vở cho ba cặp: 5…3, 2…6, 4…4.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Ba dấu đều đúng", "Dấu viết đúng chiều"],
+        "sampleAnswers": ["5 > 3, 2 < 6, 4 = 4"]
+      },
+      "answerKey": null,
+      "hints": ["Miệng dấu quay về số lớn hơn."],
+      "explanation": "Năm lớn hơn ba, hai bé hơn sáu, bốn bằng bốn.",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    },
+    {
+      "id": "vmath-sosanh-0040",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_SANH_1_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tìm số thích hợp rồi viết vào vở: ? > 7 và ? < 2.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Số đầu lớn hơn 7", "Số sau bé hơn 2"],
+        "sampleAnswers": ["8 > 7 và 1 < 2"]
+      },
+      "answerKey": null,
+      "hints": ["Thử từng số trong dãy 0 đến 10."],
+      "explanation": "Số lớn hơn 7 là 8, 9 hoặc 10; số bé hơn 2 là 0 hoặc 1.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-T1-B04",
+        "sourceRef": "SGK Toán 1 tập một tr.24–31"
+      }
+    }
+  ]
+}

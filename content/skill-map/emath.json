@@ -71,8 +71,15 @@
       "prerequisites": ["EMATH.OA.NUMBER_BONDS_10"],
       "relatedSkillCodes": ["VMATH.SO.CONG_PV_10"],
       "confusableWith": ["EMATH.OA.SUB_WITHIN_10"],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "DRAG_DROP", "LISTEN_CHOOSE"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "COUNT_TAP",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.SUB_WITHIN_10",
@@ -311,8 +318,15 @@
       "prerequisites": [],
       "relatedSkillCodes": ["VMATH.SO.SO_1_10", "ESL.VOC.NUMBERS_1_20"],
       "confusableWith": [],
-      "exerciseTypes": ["COUNT_TAP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "COUNT_TAP",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "DRAG_DROP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.NBT.COMPARE_1_10",

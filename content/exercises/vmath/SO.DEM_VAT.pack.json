@@ -1,0 +1,1558 @@
+{
+  "skillCode": "VMATH.SO.DEM_VAT",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": ["KNTT-T1-B01", "KNTT-T1-B02"],
+  "note": "Đếm vật trong phạm vi 10 — SGK Toán 1 tập một Bài 1 và Bài 2.",
+  "exercises": [
+    {
+      "id": "vmath-demvat-0001",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Có mấy con cá? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "labelEn": "fish"
+        },
+        "correctCount": 1,
+        "layout": "line"
+      },
+      "answerKey": 1,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có một con cá.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0002",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Có mấy con ong? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "labelEn": "bee"
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có bốn con ong.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0003",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Có mấy con chim? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "labelEn": "bird"
+        },
+        "correctCount": 7,
+        "layout": "grid"
+      },
+      "answerKey": 7,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có bảy con chim.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0004",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy bông hoa? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower"
+        },
+        "correctCount": 10,
+        "layout": "line"
+      },
+      "answerKey": 10,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có mười bông hoa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0005",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy ngôi sao? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "star"
+        },
+        "correctCount": 3,
+        "layout": "grid"
+      },
+      "answerKey": 3,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có ba ngôi sao.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0006",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy con bọ rùa? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "con bọ rùa",
+          "labelEn": "ladybug"
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có sáu con bọ rùa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0007",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy quả táo? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apple"
+        },
+        "correctCount": 9,
+        "layout": "line"
+      },
+      "answerKey": 9,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có chín quả táo.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0008",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy quả cam? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍊",
+          "labelVi": "quả cam",
+          "labelEn": "orange"
+        },
+        "correctCount": 2,
+        "layout": "grid"
+      },
+      "answerKey": 2,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có hai quả cam.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0009",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy quả bóng? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "quả bóng",
+          "labelEn": "balloon"
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có năm quả bóng.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0010",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy khối lập phương? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟨",
+          "labelVi": "khối lập phương",
+          "labelEn": "cube"
+        },
+        "correctCount": 8,
+        "layout": "line"
+      },
+      "answerKey": 8,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có tám khối lập phương.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0011",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy chiếc ô tô? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🚗",
+          "labelVi": "chiếc ô tô",
+          "labelEn": "car"
+        },
+        "correctCount": 1,
+        "layout": "grid"
+      },
+      "answerKey": 1,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có một chiếc ô tô.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0012",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy con vịt? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🦆",
+          "labelVi": "con vịt",
+          "labelEn": "duck"
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có bốn con vịt.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0013",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy con bướm? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🦋",
+          "labelVi": "con bướm",
+          "labelEn": "butterfly"
+        },
+        "correctCount": 7,
+        "layout": "line"
+      },
+      "answerKey": 7,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có bảy con bướm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0014",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy cái kẹo? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍬",
+          "labelVi": "cái kẹo",
+          "labelEn": "sweet"
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có mười cái kẹo.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0015",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có mấy quả chuối? Chạm vào từng cái để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍌",
+          "labelVi": "quả chuối",
+          "labelEn": "banana"
+        },
+        "correctCount": 3,
+        "layout": "grid"
+      },
+      "answerKey": 3,
+      "hints": ["Đếm từ trái sang phải.", "Mỗi cái chỉ chạm một lần thôi."],
+      "explanation": "Tất cả có ba quả chuối.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B01",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đếm xem có mấy con cá?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "labelEn": "fish",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có một con cá.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đếm xem có mấy con ong?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "labelEn": "bee",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có tám con ong.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0018",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đếm xem có mấy con chim?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "labelEn": "bird",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có năm con chim.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0019",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm xem có mấy bông hoa?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có hai bông hoa.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0020",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm xem có mấy ngôi sao?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "star",
+          "repeat": 9
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có chín ngôi sao.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0021",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm xem có mấy con bọ rùa?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "con bọ rùa",
+          "labelEn": "ladybug",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có sáu con bọ rùa.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0022",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm xem có mấy quả táo?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apple",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_lai_tu_dau"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có ba quả táo.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0023",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm xem có mấy quả cam?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍊",
+          "labelVi": "quả cam",
+          "labelEn": "orange",
+          "repeat": 10
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có mười quả cam.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0024",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm xem có mấy quả bóng?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "quả bóng",
+          "labelEn": "balloon",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có bảy quả bóng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0025",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm xem có mấy khối lập phương?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🟨",
+          "labelVi": "khối lập phương",
+          "labelEn": "cube",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_lai_tu_dau"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có bốn khối lập phương.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0026",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "robot",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm xem có mấy chiếc ô tô?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🚗",
+          "labelVi": "chiếc ô tô",
+          "labelEn": "car",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có một chiếc ô tô.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0027",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm xem có mấy con vịt?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🦆",
+          "labelVi": "con vịt",
+          "labelEn": "duck",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chỉ tay vào từng cái rồi đếm to.", "Đếm đến cái cuối cùng mới dừng nhé."],
+      "explanation": "Có tám con vịt.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.8–13 · SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0028",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có bốn con cá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ số rồi mới đếm."],
+      "explanation": "Nhóm đúng có bốn con cá.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0029",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có bảy con ong"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe kĩ số rồi mới đếm."],
+      "explanation": "Nhóm đúng có bảy con ong.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0030",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có chín ngôi sao"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ số rồi mới đếm."],
+      "explanation": "Nhóm đúng có chín ngôi sao.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0031",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có mười con bọ rùa"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ số rồi mới đếm."],
+      "explanation": "Nhóm đúng có mười con bọ rùa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0032",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có sáu bông hoa"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe kĩ số rồi mới đếm."],
+      "explanation": "Nhóm đúng có sáu bông hoa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0033",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số 3 và số 5 vào đúng rổ của nó.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "sa",
+          "text": "3"
+        },
+        {
+          "id": "sb",
+          "text": "5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "ro1",
+          "label": "rổ có 3 quả",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelVi": "quả táo",
+            "labelEn": "apple"
+          },
+          "accepts": ["sa", "sb"]
+        },
+        {
+          "id": "ro2",
+          "label": "rổ có 5 quả",
+          "image": {
+            "kind": "emoji",
+            "value": "🍊",
+            "labelVi": "quả cam",
+            "labelEn": "orange"
+          },
+          "accepts": ["sa", "sb"]
+        }
+      ],
+      "answerKey": {
+        "ro1": ["sa"],
+        "ro2": ["sb"]
+      },
+      "hints": ["Đếm số quả trong từng rổ trước."],
+      "explanation": "Rổ ít hơn có ba quả, rổ kia có năm quả.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0034",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số 4 và số 6 vào đúng rổ của nó.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "sa",
+          "text": "4"
+        },
+        {
+          "id": "sb",
+          "text": "6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "ro1",
+          "label": "rổ có 4 quả",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelVi": "quả táo",
+            "labelEn": "apple"
+          },
+          "accepts": ["sa", "sb"]
+        },
+        {
+          "id": "ro2",
+          "label": "rổ có 6 quả",
+          "image": {
+            "kind": "emoji",
+            "value": "🍊",
+            "labelVi": "quả cam",
+            "labelEn": "orange"
+          },
+          "accepts": ["sa", "sb"]
+        }
+      ],
+      "answerKey": {
+        "ro1": ["sa"],
+        "ro2": ["sb"]
+      },
+      "hints": ["Đếm số quả trong từng rổ trước."],
+      "explanation": "Rổ ít hơn có bốn quả, rổ kia có sáu quả.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0035",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số 2 và số 7 vào đúng rổ của nó.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "sa",
+          "text": "2"
+        },
+        {
+          "id": "sb",
+          "text": "7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "ro1",
+          "label": "rổ có 2 quả",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelVi": "quả táo",
+            "labelEn": "apple"
+          },
+          "accepts": ["sa", "sb"]
+        },
+        {
+          "id": "ro2",
+          "label": "rổ có 7 quả",
+          "image": {
+            "kind": "emoji",
+            "value": "🍊",
+            "labelVi": "quả cam",
+            "labelEn": "orange"
+          },
+          "accepts": ["sa", "sb"]
+        }
+      ],
+      "answerKey": {
+        "ro1": ["sa"],
+        "ro2": ["sb"]
+      },
+      "hints": ["Đếm số quả trong từng rổ trước."],
+      "explanation": "Rổ ít hơn có hai quả, rổ kia có bảy quả.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0036",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đếm to theo thứ tự nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "một, hai, ba",
+        "words": ["một", "hai", "ba"]
+      },
+      "answerKey": {
+        "words": ["một", "hai", "ba"]
+      },
+      "hints": ["Đếm chậm, rõ từng tiếng."],
+      "explanation": "Đếm là \"một, hai, ba\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0037",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đếm to theo thứ tự nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "bốn, năm, sáu",
+        "words": ["bốn", "năm", "sáu"]
+      },
+      "answerKey": {
+        "words": ["bốn", "năm", "sáu"]
+      },
+      "hints": ["Đếm chậm, rõ từng tiếng."],
+      "explanation": "Đếm là \"bốn, năm, sáu\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0038",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đếm to theo thứ tự nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "bảy, tám, chín, mười",
+        "words": ["bảy", "tám", "chín", "mười"]
+      },
+      "answerKey": {
+        "words": ["bảy", "tám", "chín", "mười"]
+      },
+      "hints": ["Đếm chậm, rõ từng tiếng."],
+      "explanation": "Đếm là \"bảy, tám, chín, mười\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0039",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Vẽ 8 ngôi sao vào vở rồi viết số 8 bên cạnh.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Vẽ đúng 8 hình", "Viết số 8 đúng chiều"],
+        "sampleAnswers": ["8"]
+      },
+      "answerKey": null,
+      "hints": ["Vẽ xong thì đếm lại một lần cho chắc."],
+      "explanation": "Tám ngôi sao thì viết số 8.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-demvat-0040",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.DEM_VAT"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm số ghế trong nhà rồi viết số đó vào vở.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Đếm hết, không bỏ sót", "Viết số đúng chiều"],
+        "sampleAnswers": ["6"]
+      },
+      "answerKey": null,
+      "hints": ["Đi một vòng và chỉ tay vào từng cái ghế."],
+      "explanation": "Đếm xong thì viết đúng số vừa đếm được.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    }
+  ]
+}

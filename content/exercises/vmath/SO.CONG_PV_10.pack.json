@@ -1,0 +1,1876 @@
+{
+  "skillCode": "VMATH.SO.CONG_PV_10",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": ["KNTT-T1-B10"],
+  "note": "Soạn từ SGK Toán 1 tập một, Bài 10 (tr.56–67): “Gộp lại thì bằng mấy?”",
+  "exercises": [
+    {
+      "id": "vmath-cong10-0001",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nam có 1 con cá và 1 con cá. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ một: hai, ba…", "Lấy 1 rồi thêm 1 nữa."],
+      "explanation": "một cộng một bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0002",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Mai có 2 quả bóng và 1 quả bóng. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ hai: ba, bốn…", "Lấy 2 rồi thêm 1 nữa."],
+      "explanation": "hai cộng một bằng ba.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Việt có 1 quả táo và 3 quả táo. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ một: hai, ba…", "Lấy 1 rồi thêm 3 nữa."],
+      "explanation": "một cộng ba bằng bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0004",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 2 khối lập phương và 2 khối lập phương. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ hai: ba, bốn…", "Lấy 2 rồi thêm 2 nữa."],
+      "explanation": "hai cộng hai bằng bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0005",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 3 chiếc ô tô và 2 chiếc ô tô. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ ba: bốn, năm…", "Lấy 3 rồi thêm 2 nữa."],
+      "explanation": "ba cộng hai bằng năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0006",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 4 bông hoa và 1 bông hoa. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ bốn: năm, sáu…", "Lấy 4 rồi thêm 1 nữa."],
+      "explanation": "bốn cộng một bằng năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0007",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 3 quả cam và 3 quả cam. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ ba: bốn, năm…", "Lấy 3 rồi thêm 3 nữa."],
+      "explanation": "ba cộng ba bằng sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0008",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt có 5 con ong và 1 con ong. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ năm: sáu, bảy…", "Lấy 5 rồi thêm 1 nữa."],
+      "explanation": "năm cộng một bằng sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0009",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 2 con chim và 4 con chim. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ hai: ba, bốn…", "Lấy 2 rồi thêm 4 nữa."],
+      "explanation": "hai cộng bốn bằng sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0010",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 1 cái kẹo và 5 cái kẹo. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ một: hai, ba…", "Lấy 1 rồi thêm 5 nữa."],
+      "explanation": "một cộng năm bằng sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 4 con vịt và 3 con vịt. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ bốn: năm, sáu…", "Lấy 4 rồi thêm 3 nữa."],
+      "explanation": "bốn cộng ba bằng bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 5 con bọ rùa và 2 con bọ rùa. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ năm: sáu, bảy…", "Lấy 5 rồi thêm 2 nữa."],
+      "explanation": "năm cộng hai bằng bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt có 6 quả chuối và 1 quả chuối. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ sáu: bảy, tám…", "Lấy 6 rồi thêm 1 nữa."],
+      "explanation": "sáu cộng một bằng bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 4 quả dưa hấu và 4 quả dưa hấu. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ bốn: năm, sáu…", "Lấy 4 rồi thêm 4 nữa."],
+      "explanation": "bốn cộng bốn bằng tám.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 2 con bướm và 5 con bướm. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ hai: ba, bốn…", "Lấy 2 rồi thêm 5 nữa."],
+      "explanation": "hai cộng năm bằng bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 5 bánh răng và 3 bánh răng. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ năm: sáu, bảy…", "Lấy 5 rồi thêm 3 nữa."],
+      "explanation": "năm cộng ba bằng tám.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 6 tên lửa và 3 tên lửa. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ sáu: bảy, tám…", "Lấy 6 rồi thêm 3 nữa."],
+      "explanation": "sáu cộng ba bằng chín.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0018",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt có 7 cái bút chì và 2 cái bút chì. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ bảy: tám, chín…", "Lấy 7 rồi thêm 2 nữa."],
+      "explanation": "bảy cộng hai bằng chín.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0019",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 5 chiếc lá và 5 chiếc lá. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ năm: sáu, bảy…", "Lấy 5 rồi thêm 5 nữa."],
+      "explanation": "năm cộng năm bằng mười.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0020",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 8 ngôi sao và 1 ngôi sao. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ tám: chín, mười…", "Lấy 8 rồi thêm 1 nữa."],
+      "explanation": "tám cộng một bằng chín.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0021",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 6 chú khỉ và 4 chú khỉ. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ sáu: bảy, tám…", "Lấy 6 rồi thêm 4 nữa."],
+      "explanation": "sáu cộng bốn bằng mười.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0022",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 7 cái dù và 3 cái dù. Gộp lại được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ bảy: tám, chín…", "Lấy 7 rồi thêm 3 nữa."],
+      "explanation": "bảy cộng ba bằng mười.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0023",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 2 quả táo, thêm 1 nữa. Chạm để đếm tất cả.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apple"
+        },
+        "correctCount": 3,
+        "layout": "grid"
+      },
+      "answerKey": 3,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm tiếp từ hai."],
+      "explanation": "Còn lại ba quả táo.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0024",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 3 con cá, thêm 2 nữa. Chạm để đếm tất cả.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "labelEn": "fish"
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm tiếp từ ba."],
+      "explanation": "Còn lại năm con cá.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0025",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 4 bông hoa, thêm 2 nữa. Chạm để đếm tất cả.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower"
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm tiếp từ bốn."],
+      "explanation": "Còn lại sáu bông hoa.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0026",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 5 khối lập phương, thêm 3 nữa. Chạm để đếm tất cả.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟨",
+          "labelVi": "khối lập phương",
+          "labelEn": "cube"
+        },
+        "correctCount": 8,
+        "layout": "line"
+      },
+      "answerKey": 8,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm tiếp từ năm."],
+      "explanation": "Còn lại tám khối lập phương.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0027",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 6 quả bóng, thêm 3 nữa. Chạm để đếm tất cả.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "quả bóng",
+          "labelEn": "balloon"
+        },
+        "correctCount": 9,
+        "layout": "grid"
+      },
+      "answerKey": 9,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm tiếp từ sáu."],
+      "explanation": "Còn lại chín quả bóng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0028",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 1 + 2 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "3"
+        },
+        {
+          "id": "n2",
+          "text": "4"
+        },
+        {
+          "id": "n3",
+          "text": "5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "1 + 2 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Gộp 1 với 2."],
+      "explanation": "một cộng hai bằng ba.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0029",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 2 + 3 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "5"
+        },
+        {
+          "id": "n2",
+          "text": "4"
+        },
+        {
+          "id": "n3",
+          "text": "7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "2 + 3 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Gộp 2 với 3."],
+      "explanation": "hai cộng ba bằng năm.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0030",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 3 + 4 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "7"
+        },
+        {
+          "id": "n2",
+          "text": "5"
+        },
+        {
+          "id": "n3",
+          "text": "9"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "3 + 4 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Gộp 3 với 4."],
+      "explanation": "ba cộng bốn bằng bảy.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0031",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 4 + 5 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "9"
+        },
+        {
+          "id": "n2",
+          "text": "6"
+        },
+        {
+          "id": "n3",
+          "text": "7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "4 + 5 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Gộp 4 với 5."],
+      "explanation": "bốn cộng năm bằng chín.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0032",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 6 + 4 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "10"
+        },
+        {
+          "id": "n2",
+          "text": "5"
+        },
+        {
+          "id": "n3",
+          "text": "8"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "6 + 4 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Gộp 6 với 4."],
+      "explanation": "sáu cộng bốn bằng mười.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0033",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "hai cộng hai bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "hai cộng hai bằng bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0034",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ba cộng ba bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "ba cộng ba bằng sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0035",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bốn cộng ba bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "bốn cộng ba bằng bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0036",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "năm cộng bốn bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "năm cộng bốn bằng chín.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0037",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bảy cộng ba bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "bảy cộng ba bằng mười.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0038",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to phép tính này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "3 + 2 = 5",
+        "words": ["ba", "cộng", "hai", "bằng", "năm"]
+      },
+      "answerKey": {
+        "words": ["ba", "cộng", "hai", "bằng", "năm"]
+      },
+      "hints": ["Đọc chậm từng tiếng: ba… cộng… hai… bằng… năm."],
+      "explanation": "Phép tính này đọc là \"ba cộng hai bằng năm\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0039",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to phép tính này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "4 + 4 = 8",
+        "words": ["bốn", "cộng", "bốn", "bằng", "tám"]
+      },
+      "answerKey": {
+        "words": ["bốn", "cộng", "bốn", "bằng", "tám"]
+      },
+      "hints": ["Đọc chậm từng tiếng: bốn… cộng… bốn… bằng… tám."],
+      "explanation": "Phép tính này đọc là \"bốn cộng bốn bằng tám\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0040",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to phép tính này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "6 + 2 = 8",
+        "words": ["sáu", "cộng", "hai", "bằng", "tám"]
+      },
+      "answerKey": {
+        "words": ["sáu", "cộng", "hai", "bằng", "tám"]
+      },
+      "hints": ["Đọc chậm từng tiếng: sáu… cộng… hai… bằng… tám."],
+      "explanation": "Phép tính này đọc là \"sáu cộng hai bằng tám\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0041",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to phép tính này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "5 + 5 = 10",
+        "words": ["năm", "cộng", "năm", "bằng", "mười"]
+      },
+      "answerKey": {
+        "words": ["năm", "cộng", "năm", "bằng", "mười"]
+      },
+      "hints": ["Đọc chậm từng tiếng: năm… cộng… năm… bằng… mười."],
+      "explanation": "Phép tính này đọc là \"năm cộng năm bằng mười\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0042",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính 2 + 3 = ? vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đủ dấu cộng và dấu bằng", "Kết quả đúng là 5", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["2 + 3 = 5"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm tiếp từ hai thêm 3 lần."],
+      "explanation": "hai cộng ba bằng năm.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0043",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính 4 + 2 = ? vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đủ dấu cộng và dấu bằng", "Kết quả đúng là 6", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["4 + 2 = 6"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm tiếp từ bốn thêm 2 lần."],
+      "explanation": "bốn cộng hai bằng sáu.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0044",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính 5 + 3 = ? vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đủ dấu cộng và dấu bằng", "Kết quả đúng là 8", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["5 + 3 = 8"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm tiếp từ năm thêm 3 lần."],
+      "explanation": "năm cộng ba bằng tám.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0045",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính 6 + 4 = ? vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ dấu cộng và dấu bằng",
+          "Kết quả đúng là 10",
+          "Chữ số viết đúng chiều"
+        ],
+        "sampleAnswers": ["6 + 4 = 10"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm tiếp từ sáu thêm 4 lần."],
+      "explanation": "sáu cộng bốn bằng mười.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0046",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Mai có 4 quả cam, mẹ không cho thêm quả nào. Mai có mấy quả?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Thêm 0 nghĩa là không thêm gì cả."],
+      "explanation": "Bốn cộng không vẫn bằng bốn.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0047",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Rổ chưa có quả nào, mẹ bỏ vào 7 quả. Trong rổ có mấy quả?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Không có gì, thêm bảy thì thành bảy."],
+      "explanation": "Không cộng bảy bằng bảy.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0048",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nhìn kĩ dấu cộng nhé: 6 + 3 bằng mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Dấu + là gộp lại, nên kết quả to hơn cả hai số."],
+      "explanation": "Sáu cộng ba bằng chín.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0049",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nhìn kĩ dấu cộng nhé: 8 + 2 bằng mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Gộp 8 với 2 thì được trọn một chục."],
+      "explanation": "Tám cộng hai bằng mười.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    },
+    {
+      "id": "vmath-cong10-0050",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.CONG_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt đếm tiếp từ 5 thêm 3 nữa. Việt được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp: sáu, bảy, tám — đúng ba lần."],
+      "explanation": "Năm cộng ba bằng tám.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một tr.56–67"
+      }
+    }
+  ]
+}

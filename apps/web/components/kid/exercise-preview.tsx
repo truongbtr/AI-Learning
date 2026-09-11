@@ -20,6 +20,8 @@ export interface ImageRef {
   value: string;
   labelVi?: string;
   labelEn?: string;
+  /** Draw the picture this many times — a counting question needs it. */
+  repeat?: number;
 }
 
 export interface PreviewSpec {
@@ -33,6 +35,8 @@ export interface PreviewSpec {
   dragItems?: { id: string; text?: string; image?: ImageRef }[];
   dropZones?: { id: string; label?: string; image?: ImageRef; accepts: string[] }[];
   readTarget?: { text: string; words: string[] };
+  /** Spoken only. NEVER render this — printing it hands the child the answer (docs/adr/ADR-14). */
+  listenTarget?: { text: string; audioKey?: string };
   countTarget?: { objects: ImageRef; layout?: "grid" | "line" };
   traceTarget?: { glyph: string };
   story?: { sentences: { text: string; image?: ImageRef }[] };
@@ -52,7 +56,18 @@ export function fillPlaceholders(text: string, nickname = "Thy", object = "ngôi
 
 function Img({ image, size = "text-6xl" }: { image?: ImageRef; size?: string }) {
   if (!image) return null;
-  if (image.kind === "emoji") return <span className={size}>{image.value}</span>;
+  if (image.kind === "emoji") {
+    const times = image.repeat ?? 1;
+    if (times === 1) return <span className={size}>{image.value}</span>;
+    return (
+      <span className={cn("flex max-w-md flex-wrap justify-center gap-2", size)}>
+        {Array.from({ length: times }, (_, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: identical glyphs, position is the identity
+          <span key={i}>{image.value}</span>
+        ))}
+      </span>
+    );
+  }
   return (
     <span className="rounded-2xl bg-white/70 px-3 py-2 text-lg font-bold text-slate-600">
       {image.labelVi ?? image.value}
@@ -133,7 +148,16 @@ export function ExercisePreview({
 
         {spec.type === "LISTEN_CHOOSE" && spec.choices ? (
           <div className="flex flex-col items-center gap-4">
-            <p className="text-lg font-bold text-slate-500">Nghe rồi chạm vào hình đúng</p>
+            {/* The spoken word is played, never printed. */}
+            {spec.listenTarget ? (
+              <SpeakButton
+                text={spec.listenTarget.text}
+                lang={lang}
+                label="Nghe lại"
+                className="bg-violet-500"
+              />
+            ) : null}
+            <p className="text-lg font-bold text-slate-500">Nghe rồi chạm vào ô đúng</p>
             <div className="flex flex-wrap justify-center gap-3">
               {spec.choices.map((c) => (
                 <ChoiceButton
@@ -182,8 +206,8 @@ export function ExercisePreview({
               spec.countTarget.layout === "line" && "flex-nowrap overflow-x-auto",
             )}
           >
-            {/* The count itself is server-side only, so the preview shows the object, not the answer. */}
-            <Img image={spec.countTarget.objects} />
+            {/* The count is server-side only, so the preview shows one object, not the answer. */}
+            <Img image={{ ...spec.countTarget.objects, repeat: 1 }} />
             <p className="w-full text-center text-lg font-bold text-slate-500">
               Con chạm vào từng {spec.countTarget.objects.labelVi ?? "vật"} để đếm
             </p>

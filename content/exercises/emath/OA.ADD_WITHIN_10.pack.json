@@ -1,0 +1,1589 @@
+{
+  "skillCode": "EMATH.OA.ADD_WITHIN_10",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": [],
+  "note": "Add within 10 bằng tiếng Anh — song song với Toán Bài 10 (docs/09 §2 liên kết chéo).",
+  "exercises": [
+    {
+      "id": "emath-add10-0001",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "prompt": {
+        "text": "1 apple and 2 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "apples"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on from one.", "Take 1, then add 2."],
+      "explanation": "one plus two is three.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0002",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "2 balls and 2 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⚽",
+          "labelEn": "balls"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from two.", "Take 2, then add 2."],
+      "explanation": "two plus two is four.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0003",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "3 fish and 1 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelEn": "fish"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from three.", "Take 3, then add 1."],
+      "explanation": "three plus one is four.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0004",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "prompt": {
+        "text": "2 flowers and 3 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelEn": "flowers"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from two.", "Take 2, then add 3."],
+      "explanation": "two plus three is five.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0005",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "4 cars and 1 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🚗",
+          "labelEn": "cars"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from four.", "Take 4, then add 1."],
+      "explanation": "four plus one is five.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0006",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "3 oranges and 3 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍊",
+          "labelEn": "oranges"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from three.", "Take 3, then add 3."],
+      "explanation": "three plus three is six.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0007",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "4 bees and 2 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelEn": "bees"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from four.", "Take 4, then add 2."],
+      "explanation": "four plus two is six.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0008",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "5 stars and 1 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "stars"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from five.", "Take 5, then add 1."],
+      "explanation": "five plus one is six.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0009",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "2 ladybugs and 5 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelEn": "ladybugs"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from two.", "Take 2, then add 5."],
+      "explanation": "two plus five is seven.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0010",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "4 balloons and 3 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelEn": "balloons"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Count on from four.", "Take 4, then add 3."],
+      "explanation": "four plus three is seven.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0011",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "5 bananas and 2 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍌",
+          "labelEn": "bananas"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from five.", "Take 5, then add 2."],
+      "explanation": "five plus two is seven.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0012",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "6 sweets and 1 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍬",
+          "labelEn": "sweets"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from six.", "Take 6, then add 1."],
+      "explanation": "six plus one is seven.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0013",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "4 birds and 4 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelEn": "birds"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on from four.", "Take 4, then add 4."],
+      "explanation": "four plus four is eight.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0014",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "5 gears and 3 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⚙️",
+          "labelEn": "gears"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from five.", "Take 5, then add 3."],
+      "explanation": "five plus three is eight.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0015",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "6 rockets and 3 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🚀",
+          "labelEn": "rockets"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from six.", "Take 6, then add 3."],
+      "explanation": "six plus three is nine.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0016",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "7 pencils and 2 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "✏️",
+          "labelEn": "pencils"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from seven.", "Take 7, then add 2."],
+      "explanation": "seven plus two is nine.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0017",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "5 leaves and 5 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍃",
+          "labelEn": "leaves"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from five.", "Take 5, then add 5."],
+      "explanation": "five plus five is ten.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0018",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "8 butterflies and 1 more. How many?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🦋",
+          "labelEn": "butterflies"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from eight.", "Take 8, then add 1."],
+      "explanation": "eight plus one is nine.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0019",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "2 and 1 more. Tap to count them all.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "thing"
+        },
+        "correctCount": 3,
+        "layout": "grid"
+      },
+      "answerKey": 3,
+      "hints": ["Tap each one once."],
+      "explanation": "Altogether there are three.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0020",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "3 and 2 more. Tap to count them all.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "thing"
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Tap each one once."],
+      "explanation": "Altogether there are five.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0021",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "4 and 2 more. Tap to count them all.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelEn": "thing"
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Tap each one once."],
+      "explanation": "Altogether there are six.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0022",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "5 and 3 more. Tap to count them all.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⚙️",
+          "labelEn": "thing"
+        },
+        "correctCount": 8,
+        "layout": "line"
+      },
+      "answerKey": 8,
+      "hints": ["Tap each one once."],
+      "explanation": "Altogether there are eight.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0023",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "6 and 3 more. Tap to count them all.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelEn": "thing"
+        },
+        "correctCount": 9,
+        "layout": "grid"
+      },
+      "answerKey": 9,
+      "hints": ["Tap each one once."],
+      "explanation": "Altogether there are nine.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0024",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Drag the answer: 1 + 2 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "3"
+        },
+        {
+          "id": "a2",
+          "text": "2"
+        },
+        {
+          "id": "a3",
+          "text": "1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "1 + 2 =",
+          "accepts": ["a1", "a2", "a3"]
+        }
+      ],
+      "answerKey": {
+        "box": ["a1"]
+      },
+      "hints": ["Count on from one."],
+      "explanation": "1 + 2 = 3.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0025",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Drag the answer: 2 + 3 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "5"
+        },
+        {
+          "id": "a2",
+          "text": "4"
+        },
+        {
+          "id": "a3",
+          "text": "1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "2 + 3 =",
+          "accepts": ["a1", "a2", "a3"]
+        }
+      ],
+      "answerKey": {
+        "box": ["a1"]
+      },
+      "hints": ["Count on from two."],
+      "explanation": "2 + 3 = 5.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0026",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Drag the answer: 3 + 4 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "7"
+        },
+        {
+          "id": "a2",
+          "text": "6"
+        },
+        {
+          "id": "a3",
+          "text": "1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "3 + 4 =",
+          "accepts": ["a1", "a2", "a3"]
+        }
+      ],
+      "answerKey": {
+        "box": ["a1"]
+      },
+      "hints": ["Count on from three."],
+      "explanation": "3 + 4 = 7.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0027",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Drag the answer: 4 + 5 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "9"
+        },
+        {
+          "id": "a2",
+          "text": "8"
+        },
+        {
+          "id": "a3",
+          "text": "1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "4 + 5 =",
+          "accepts": ["a1", "a2", "a3"]
+        }
+      ],
+      "answerKey": {
+        "box": ["a1"]
+      },
+      "hints": ["Count on from four."],
+      "explanation": "4 + 5 = 9.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0028",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Drag the answer: 6 + 4 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "10"
+        },
+        {
+          "id": "a2",
+          "text": "9"
+        },
+        {
+          "id": "a3",
+          "text": "2"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "6 + 4 =",
+          "accepts": ["a1", "a2", "a3"]
+        }
+      ],
+      "answerKey": {
+        "box": ["a1"]
+      },
+      "hints": ["Count on from six."],
+      "explanation": "6 + 4 = 10.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0029",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Listen, then tap one box.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "two plus two is …?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Use your fingers to count on."],
+      "explanation": "two plus two is four.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0030",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Listen, then tap one box.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "three plus three is …?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Use your fingers to count on."],
+      "explanation": "three plus three is six.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0031",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Listen, then tap one box.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "four plus three is …?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Use your fingers to count on."],
+      "explanation": "four plus three is seven.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0032",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Listen, then tap one box.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "five plus four is …?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Use your fingers to count on."],
+      "explanation": "five plus four is nine.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0033",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Listen, then tap one box.",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "seven plus three is …?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Use your fingers to count on."],
+      "explanation": "seven plus three is ten.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0034",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read the number sentence aloud!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "one plus one is two",
+        "words": ["one", "plus", "one", "is", "two"]
+      },
+      "answerKey": {
+        "words": ["one", "plus", "one", "is", "two"]
+      },
+      "hints": ["Say it slowly, word by word."],
+      "explanation": "It reads \"one plus one is two\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0035",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read the number sentence aloud!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "three plus two is five",
+        "words": ["three", "plus", "two", "is", "five"]
+      },
+      "answerKey": {
+        "words": ["three", "plus", "two", "is", "five"]
+      },
+      "hints": ["Say it slowly, word by word."],
+      "explanation": "It reads \"three plus two is five\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0036",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read the number sentence aloud!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "four plus four is eight",
+        "words": ["four", "plus", "four", "is", "eight"]
+      },
+      "answerKey": {
+        "words": ["four", "plus", "four", "is", "eight"]
+      },
+      "hints": ["Say it slowly, word by word."],
+      "explanation": "It reads \"four plus four is eight\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0037",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read the number sentence aloud!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "five plus five is ten",
+        "words": ["five", "plus", "five", "is", "ten"]
+      },
+      "answerKey": {
+        "words": ["five", "plus", "five", "is", "ten"]
+      },
+      "hints": ["Say it slowly, word by word."],
+      "explanation": "It reads \"five plus five is ten\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0038",
+      "type": "WRITE_PHOTO",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Write 2 + 3 = ? in your notebook.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["The answer is 5", "Dấu + và = viết rõ"],
+        "sampleAnswers": ["2 + 3 = 5"]
+      },
+      "answerKey": null,
+      "hints": ["Count on from two."],
+      "explanation": "2 + 3 = 5.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0039",
+      "type": "WRITE_PHOTO",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Write 4 + 4 = ? in your notebook.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["The answer is 8", "Dấu + và = viết rõ"],
+        "sampleAnswers": ["4 + 4 = 8"]
+      },
+      "answerKey": null,
+      "hints": ["Count on from four."],
+      "explanation": "4 + 4 = 8.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "emath-add10-0040",
+      "type": "WRITE_PHOTO",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Write 6 + 4 = ? in your notebook.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["The answer is 10", "Dấu + và = viết rõ"],
+        "sampleAnswers": ["6 + 4 = 10"]
+      },
+      "answerKey": null,
+      "hints": ["Count on from six."],
+      "explanation": "6 + 4 = 10.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.MATH.1.OA / 1.NBT (docs/05 §3.4) — chưa có giáo trình của trường"
+      }
+    }
+  ]
+}

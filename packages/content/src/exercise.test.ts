@@ -97,7 +97,7 @@ describe("exercise schema (docs/04 §5, docs/10 §4.2)", () => {
     expect(() => parseExercisePack(pack([count]))).toThrow(/must equal countTarget.correctCount/);
   });
 
-  it("checks that every drag item is placed by the answerKey", () => {
+  it("checks that every drop zone gets an item (decoys may stay in the tray)", () => {
     const drag = {
       ...mcq(5),
       type: "DRAG_DROP",
@@ -106,10 +106,30 @@ describe("exercise schema (docs/04 §5, docs/10 §4.2)", () => {
         { id: "i1", text: "3" },
         { id: "i2", text: "4" },
       ],
-      dropZones: [{ id: "z1", label: "5", accepts: ["i1", "i2"] }],
+      dropZones: [
+        { id: "z1", label: "5", accepts: ["i1", "i2"] },
+        { id: "z2", label: "6", accepts: ["i1", "i2"] },
+      ],
       answerKey: { z1: ["i1"] },
     };
-    expect(() => parseExercisePack(pack([drag]))).toThrow(/every drag item must be placed/);
+    expect(() => parseExercisePack(pack([drag]))).toThrow(/every dropZone needs an entry/);
+  });
+
+  it("refuses a LISTEN_CHOOSE whose prompt prints the spoken word", () => {
+    const listen = {
+      ...mcq(7),
+      type: "LISTEN_CHOOSE",
+      prompt: { text: "Nghe rồi chọn tiếng: chè" },
+      listenTarget: { text: "chè" },
+    };
+    expect(() => parseExercisePack(pack([listen]))).toThrow(/gives the answer away/);
+    const fixed = { ...listen, prompt: { text: "Nghe rồi chọn ô đúng nhé!" } };
+    expect(parseExercisePack(pack([fixed])).exercises[0]?.listenTarget?.text).toBe("chè");
+  });
+
+  it("needs listenTarget on a LISTEN_CHOOSE — otherwise there is nothing to listen to", () => {
+    const listen = { ...mcq(8), type: "LISTEN_CHOOSE", prompt: { text: "Nghe rồi chọn ô đúng." } };
+    expect(() => parseExercisePack(pack([listen]))).toThrow(/needs listenTarget/);
   });
 
   it("makes WRITE_PHOTO carry a rubric and a null answerKey (graded by the queue)", () => {
@@ -151,6 +171,25 @@ describe("ExerciseSpec sent to the client", () => {
     const spec = toExerciseSpec(count, "VMATH");
     expect(JSON.stringify(spec)).not.toContain("correctCount");
     expect(answerBundleOf(count)).toMatchObject({ value: 6, correctCount: 6 });
+  });
+
+  it("plays the spoken word but never puts it in the prompt", () => {
+    const listen = parseExercisePack(
+      pack([
+        {
+          ...mcq(9),
+          type: "LISTEN_CHOOSE",
+          prompt: { text: "Nghe rồi chọn ô đúng nhé!" },
+          listenTarget: { text: "chè" },
+        },
+      ]),
+    ).exercises[0] as ExerciseDef;
+    const spec = toExerciseSpec(listen, "VIET");
+    // The client needs it to speak, so it is in the spec — the renderer must not print it.
+    expect(spec.listenTarget?.text).toBe("chè");
+    expect(spec.prompt.text).not.toContain("chè");
+    // It also gets its own mp3 at import time.
+    expect(ttsLinesOf(listen).map((l) => l.text)).toContain("chè");
   });
 
   it("keeps the diagnosis server-side in the answer bundle", () => {

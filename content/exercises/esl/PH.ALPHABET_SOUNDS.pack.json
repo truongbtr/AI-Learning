@@ -1,0 +1,1839 @@
+{
+  "skillCode": "ESL.PH.ALPHABET_SOUNDS",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": [],
+  "note": "Âm của chữ cái — CCSS RF.1.3, chưa bám được sách của trường (docs/09 §1).",
+  "exercises": [
+    {
+      "id": "esl-abcsound-0001",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Which letter starts \"apple\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "apple"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a"
+        },
+        {
+          "id": "b",
+          "text": "e",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm: apple — âm đầu là /æ/."],
+      "explanation": "\"apple\" starts with the letter a.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0002",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Which letter starts \"ball\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⚽",
+          "labelEn": "ball"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "d",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "b"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm: ball — âm đầu là /b/."],
+      "explanation": "\"ball\" starts with the letter b.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0003",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "garden",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Which letter starts \"cat\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐱",
+          "labelEn": "cat"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "c"
+        },
+        {
+          "id": "b",
+          "text": "s",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm: cat — âm đầu là /k/."],
+      "explanation": "\"cat\" starts with the letter c.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0004",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Which letter starts \"dog\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐶",
+          "labelEn": "dog"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "d"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm: dog — âm đầu là /d/."],
+      "explanation": "\"dog\" starts with the letter d.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0005",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"egg\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🥚",
+          "labelEn": "egg"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "e"
+        },
+        {
+          "id": "b",
+          "text": "a",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm: egg — âm đầu là /e/."],
+      "explanation": "\"egg\" starts with the letter e.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0006",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "garden",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"fish\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelEn": "fish"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "h",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "f"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm: fish — âm đầu là /f/."],
+      "explanation": "\"fish\" starts with the letter f.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0007",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"hat\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🎩",
+          "labelEn": "hat"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "h"
+        },
+        {
+          "id": "b",
+          "text": "f",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm: hat — âm đầu là /h/."],
+      "explanation": "\"hat\" starts with the letter h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0008",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"igloo\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🧊",
+          "labelEn": "igloo"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "e",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "i"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm: igloo — âm đầu là /ɪ/."],
+      "explanation": "\"igloo\" starts with the letter i.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0009",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "garden",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"moon\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌙",
+          "labelEn": "moon"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "m"
+        },
+        {
+          "id": "b",
+          "text": "n",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm: moon — âm đầu là /m/."],
+      "explanation": "\"moon\" starts with the letter m.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0010",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"nest\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🪹",
+          "labelEn": "nest"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "m",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "n"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm: nest — âm đầu là /n/."],
+      "explanation": "\"nest\" starts with the letter n.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0011",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"orange\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍊",
+          "labelEn": "orange"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "o"
+        },
+        {
+          "id": "b",
+          "text": "u",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm: orange — âm đầu là /ɒ/."],
+      "explanation": "\"orange\" starts with the letter o.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0012",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "garden",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"sun\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "☀️",
+          "labelEn": "sun"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "c",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "s"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm: sun — âm đầu là /s/."],
+      "explanation": "\"sun\" starts with the letter s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0013",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"tree\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌳",
+          "labelEn": "tree"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "t"
+        },
+        {
+          "id": "b",
+          "text": "d",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm: tree — âm đầu là /t/."],
+      "explanation": "\"tree\" starts with the letter t.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0014",
+      "type": "MCQ",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which letter starts \"umbrella\"?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "☂️",
+          "labelEn": "umbrella"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "o",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "u"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc chậm: umbrella — âm đầu là /ʌ/."],
+      "explanation": "\"umbrella\" starts with the letter u.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0015",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /æ/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "apple"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "egg",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🥚",
+            "labelEn": "egg"
+          }
+        },
+        {
+          "id": "b",
+          "text": "apple",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelEn": "apple"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"apple\" bắt đầu bằng /æ/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0016",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /b/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ball"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ball",
+          "image": {
+            "kind": "emoji",
+            "value": "⚽",
+            "labelEn": "ball"
+          }
+        },
+        {
+          "id": "b",
+          "text": "dog",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🐶",
+            "labelEn": "dog"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"ball\" bắt đầu bằng /b/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0017",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /k/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "cat"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sun",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "☀️",
+            "labelEn": "sun"
+          }
+        },
+        {
+          "id": "b",
+          "text": "cat",
+          "image": {
+            "kind": "emoji",
+            "value": "🐱",
+            "labelEn": "cat"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"cat\" bắt đầu bằng /k/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0018",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /d/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "dog"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐶",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "b",
+          "text": "ball",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "⚽",
+            "labelEn": "ball"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"dog\" bắt đầu bằng /d/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0019",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /e/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "egg"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "apple",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelEn": "apple"
+          }
+        },
+        {
+          "id": "b",
+          "text": "egg",
+          "image": {
+            "kind": "emoji",
+            "value": "🥚",
+            "labelEn": "egg"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"egg\" bắt đầu bằng /e/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0020",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /f/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "fish"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "b",
+          "text": "hat",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🎩",
+            "labelEn": "hat"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"fish\" bắt đầu bằng /f/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0021",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /h/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "hat"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "b",
+          "text": "hat",
+          "image": {
+            "kind": "emoji",
+            "value": "🎩",
+            "labelEn": "hat"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"hat\" bắt đầu bằng /h/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /ɪ/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "igloo"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "igloo",
+          "image": {
+            "kind": "emoji",
+            "value": "🧊",
+            "labelEn": "igloo"
+          }
+        },
+        {
+          "id": "b",
+          "text": "egg",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🥚",
+            "labelEn": "egg"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"igloo\" bắt đầu bằng /ɪ/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0023",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /m/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "moon"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nest",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🪹",
+            "labelEn": "nest"
+          }
+        },
+        {
+          "id": "b",
+          "text": "moon",
+          "image": {
+            "kind": "emoji",
+            "value": "🌙",
+            "labelEn": "moon"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"moon\" bắt đầu bằng /m/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0024",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /n/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "nest"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nest",
+          "image": {
+            "kind": "emoji",
+            "value": "🪹",
+            "labelEn": "nest"
+          }
+        },
+        {
+          "id": "b",
+          "text": "moon",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🌙",
+            "labelEn": "moon"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"nest\" bắt đầu bằng /n/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0025",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /ɒ/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "orange"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "umbrella",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "☂️",
+            "labelEn": "umbrella"
+          }
+        },
+        {
+          "id": "b",
+          "text": "orange",
+          "image": {
+            "kind": "emoji",
+            "value": "🍊",
+            "labelEn": "orange"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"orange\" bắt đầu bằng /ɒ/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0026",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /s/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "sun"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sun",
+          "image": {
+            "kind": "emoji",
+            "value": "☀️",
+            "labelEn": "sun"
+          }
+        },
+        {
+          "id": "b",
+          "text": "cat",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🐱",
+            "labelEn": "cat"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"sun\" bắt đầu bằng /s/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0027",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /t/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "tree"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dog",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🐶",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "b",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"tree\" bắt đầu bằng /t/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0028",
+      "type": "LISTEN_CHOOSE",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Which word starts with /ʌ/? Listen!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "umbrella"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "umbrella",
+          "image": {
+            "kind": "emoji",
+            "value": "☂️",
+            "labelEn": "umbrella"
+          }
+        },
+        {
+          "id": "b",
+          "text": "orange",
+          "errorTag": "nham_am_dau",
+          "image": {
+            "kind": "emoji",
+            "value": "🍊",
+            "labelEn": "orange"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe kĩ âm đầu tiên."],
+      "explanation": "\"umbrella\" bắt đầu bằng /ʌ/.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0029",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Match each letter to its picture.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "l1",
+          "text": "a"
+        },
+        {
+          "id": "l2",
+          "text": "i"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "apple",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelEn": "apple"
+          },
+          "accepts": ["l1", "l2"]
+        },
+        {
+          "id": "z2",
+          "label": "igloo",
+          "image": {
+            "kind": "emoji",
+            "value": "🧊",
+            "labelEn": "igloo"
+          },
+          "accepts": ["l1", "l2"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["l1"],
+        "z2": ["l2"]
+      },
+      "hints": ["\"apple\" bắt đầu bằng a."],
+      "explanation": "a → apple, i → igloo.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0030",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Match each letter to its picture.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "l1",
+          "text": "b"
+        },
+        {
+          "id": "l2",
+          "text": "m"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "ball",
+          "image": {
+            "kind": "emoji",
+            "value": "⚽",
+            "labelEn": "ball"
+          },
+          "accepts": ["l1", "l2"]
+        },
+        {
+          "id": "z2",
+          "label": "moon",
+          "image": {
+            "kind": "emoji",
+            "value": "🌙",
+            "labelEn": "moon"
+          },
+          "accepts": ["l1", "l2"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["l1"],
+        "z2": ["l2"]
+      },
+      "hints": ["\"ball\" bắt đầu bằng b."],
+      "explanation": "b → ball, m → moon.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0031",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Match each letter to its picture.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "l1",
+          "text": "c"
+        },
+        {
+          "id": "l2",
+          "text": "n"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "cat",
+          "image": {
+            "kind": "emoji",
+            "value": "🐱",
+            "labelEn": "cat"
+          },
+          "accepts": ["l1", "l2"]
+        },
+        {
+          "id": "z2",
+          "label": "nest",
+          "image": {
+            "kind": "emoji",
+            "value": "🪹",
+            "labelEn": "nest"
+          },
+          "accepts": ["l1", "l2"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["l1"],
+        "z2": ["l2"]
+      },
+      "hints": ["\"cat\" bắt đầu bằng c."],
+      "explanation": "c → cat, n → nest.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0032",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Match each letter to its picture.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "l1",
+          "text": "d"
+        },
+        {
+          "id": "l2",
+          "text": "o"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐶",
+            "labelEn": "dog"
+          },
+          "accepts": ["l1", "l2"]
+        },
+        {
+          "id": "z2",
+          "label": "orange",
+          "image": {
+            "kind": "emoji",
+            "value": "🍊",
+            "labelEn": "orange"
+          },
+          "accepts": ["l1", "l2"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["l1"],
+        "z2": ["l2"]
+      },
+      "hints": ["\"dog\" bắt đầu bằng d."],
+      "explanation": "d → dog, o → orange.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0033",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Match each letter to its picture.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "l1",
+          "text": "e"
+        },
+        {
+          "id": "l2",
+          "text": "s"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "egg",
+          "image": {
+            "kind": "emoji",
+            "value": "🥚",
+            "labelEn": "egg"
+          },
+          "accepts": ["l1", "l2"]
+        },
+        {
+          "id": "z2",
+          "label": "sun",
+          "image": {
+            "kind": "emoji",
+            "value": "☀️",
+            "labelEn": "sun"
+          },
+          "accepts": ["l1", "l2"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["l1"],
+        "z2": ["l2"]
+      },
+      "hints": ["\"egg\" bắt đầu bằng e."],
+      "explanation": "e → egg, s → sun.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0034",
+      "type": "DRAG_DROP",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Match each letter to its picture.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "l1",
+          "text": "f"
+        },
+        {
+          "id": "l2",
+          "text": "t"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          },
+          "accepts": ["l1", "l2"]
+        },
+        {
+          "id": "z2",
+          "label": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          },
+          "accepts": ["l1", "l2"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["l1"],
+        "z2": ["l2"]
+      },
+      "hints": ["\"fish\" bắt đầu bằng f."],
+      "explanation": "f → fish, t → tree.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0035",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read aloud, please!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "a  b  c",
+        "words": ["a", "b", "c"]
+      },
+      "answerKey": {
+        "words": ["a", "b", "c"]
+      },
+      "hints": ["Đọc chậm từng chữ."],
+      "explanation": "Đọc là \"a, b, c\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0036",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read aloud, please!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "d  e  f",
+        "words": ["d", "e", "f"]
+      },
+      "answerKey": {
+        "words": ["d", "e", "f"]
+      },
+      "hints": ["Đọc chậm từng chữ."],
+      "explanation": "Đọc là \"d, e, f\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0037",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read aloud, please!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "apple  ball  cat",
+        "words": ["apple", "ball", "cat"]
+      },
+      "answerKey": {
+        "words": ["apple", "ball", "cat"]
+      },
+      "hints": ["Đọc chậm từng chữ."],
+      "explanation": "Đọc là \"apple, ball, cat\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0038",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 4,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read aloud, please!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "dog  egg  fish",
+        "words": ["dog", "egg", "fish"]
+      },
+      "answerKey": {
+        "words": ["dog", "egg", "fish"]
+      },
+      "hints": ["Đọc chậm từng chữ."],
+      "explanation": "Đọc là \"dog, egg, fish\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0039",
+      "type": "READ_ALOUD",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Read aloud, please!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "moon  nest  sun  tree",
+        "words": ["moon", "nest", "sun", "tree"]
+      },
+      "answerKey": {
+        "words": ["moon", "nest", "sun", "tree"]
+      },
+      "hints": ["Đọc chậm từng chữ."],
+      "explanation": "Đọc là \"moon, nest, sun, tree\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0040",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 1,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "How many? Tap to count.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "thing"
+        },
+        "correctCount": 3,
+        "layout": "grid"
+      },
+      "answerKey": 3,
+      "hints": ["Tap each one once."],
+      "explanation": "There are 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0041",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "How many? Tap to count.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⚽",
+          "labelEn": "thing"
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Tap each one once."],
+      "explanation": "There are 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0042",
+      "type": "COUNT_TAP",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "How many? Tap to count.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelEn": "thing"
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Tap each one once."],
+      "explanation": "There are 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0043",
+      "type": "WRITE_PHOTO",
+      "language": "en",
+      "difficulty": 2,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Write \"a\" in your notebook.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đúng chữ cái", "Đúng độ cao"],
+        "sampleAnswers": ["a"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo."],
+      "explanation": "Viết là \"a\".",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0044",
+      "type": "WRITE_PHOTO",
+      "language": "en",
+      "difficulty": 3,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Write \"b\" in your notebook.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đúng chữ cái", "Đúng độ cao"],
+        "sampleAnswers": ["b"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo."],
+      "explanation": "Viết là \"b\".",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    },
+    {
+      "id": "esl-abcsound-0045",
+      "type": "WRITE_PHOTO",
+      "language": "en",
+      "difficulty": 5,
+      "skillCodes": ["ESL.PH.ALPHABET_SOUNDS"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Write \"cat\" in your notebook.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đúng chữ cái", "Đúng độ cao"],
+        "sampleAnswers": ["cat"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo."],
+      "explanation": "Viết là \"cat\".",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS.ELA-LITERACY.RF.1 (docs/05 §3.3) — chưa có giáo trình của trường"
+      }
+    }
+  ]
+}

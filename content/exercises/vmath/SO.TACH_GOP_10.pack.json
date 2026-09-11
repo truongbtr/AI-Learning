@@ -1,0 +1,1689 @@
+{
+  "skillCode": "VMATH.SO.TACH_GOP_10",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": ["KNTT-T1-B05"],
+  "note": "Soạn từ SGK Toán 1 tập một, Bài 5 (tr.32–37): “3 và 2 được 5”.",
+  "exercises": [
+    {
+      "id": "vmath-tachgop-0001",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "model",
+      "prompt": {
+        "text": "1 và mấy thì được 2?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ một cho tới hai.", "Lấy 2 bớt 1."],
+      "explanation": "một và một được hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0002",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "1 và mấy thì được 3?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ một cho tới ba.", "Lấy 3 bớt 1."],
+      "explanation": "một và hai được ba.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "2 và mấy thì được 3?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ hai cho tới ba.", "Lấy 3 bớt 2."],
+      "explanation": "hai và một được ba.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0004",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "1 và mấy thì được 4?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ một cho tới bốn.", "Lấy 4 bớt 1."],
+      "explanation": "một và ba được bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0005",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "model",
+      "prompt": {
+        "text": "2 và mấy thì được 4?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ hai cho tới bốn.", "Lấy 4 bớt 2."],
+      "explanation": "hai và hai được bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0006",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "1 và mấy thì được 5?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ một cho tới năm.", "Lấy 5 bớt 1."],
+      "explanation": "một và bốn được năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0007",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "2 và mấy thì được 5?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ hai cho tới năm.", "Lấy 5 bớt 2."],
+      "explanation": "hai và ba được năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0008",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "3 và mấy thì được 5?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ ba cho tới năm.", "Lấy 5 bớt 3."],
+      "explanation": "ba và hai được năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0009",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "none",
+      "prompt": {
+        "text": "1 và mấy thì được 6?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ một cho tới sáu.", "Lấy 6 bớt 1."],
+      "explanation": "một và năm được sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0010",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "2 và mấy thì được 6?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ hai cho tới sáu.", "Lấy 6 bớt 2."],
+      "explanation": "hai và bốn được sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "3 và mấy thì được 6?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ ba cho tới sáu.", "Lấy 6 bớt 3."],
+      "explanation": "ba và ba được sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "2 và mấy thì được 7?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ hai cho tới bảy.", "Lấy 7 bớt 2."],
+      "explanation": "hai và năm được bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "none",
+      "prompt": {
+        "text": "3 và mấy thì được 7?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ ba cho tới bảy.", "Lấy 7 bớt 3."],
+      "explanation": "ba và bốn được bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "4 và mấy thì được 7?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ bốn cho tới bảy.", "Lấy 7 bớt 4."],
+      "explanation": "bốn và ba được bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "2 và mấy thì được 8?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ hai cho tới tám.", "Lấy 8 bớt 2."],
+      "explanation": "hai và sáu được tám.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "3 và mấy thì được 8?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ ba cho tới tám.", "Lấy 8 bớt 3."],
+      "explanation": "ba và năm được tám.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "none",
+      "prompt": {
+        "text": "4 và mấy thì được 8?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ bốn cho tới tám.", "Lấy 8 bớt 4."],
+      "explanation": "bốn và bốn được tám.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0018",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "3 và mấy thì được 9?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ ba cho tới chín.", "Lấy 9 bớt 3."],
+      "explanation": "ba và sáu được chín.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0019",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "4 và mấy thì được 9?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ bốn cho tới chín.", "Lấy 9 bớt 4."],
+      "explanation": "bốn và năm được chín.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0020",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "4 và mấy thì được 10?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ bốn cho tới mười.", "Lấy 10 bớt 4."],
+      "explanation": "bốn và sáu được mười.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0021",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "none",
+      "prompt": {
+        "text": "5 và mấy thì được 10?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ năm cho tới mười.", "Lấy 10 bớt 5."],
+      "explanation": "năm và năm được mười.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0022",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "2 và mấy thì được 10?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ hai cho tới mười.", "Lấy 10 bớt 2."],
+      "explanation": "hai và tám được mười.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0023",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chia 5 con cá vào hai bể: 2 và 3.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "2"
+        },
+        {
+          "id": "p2",
+          "text": "3"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be1",
+          "label": "bể 2 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "con cá",
+            "labelEn": "fish"
+          },
+          "accepts": ["p1", "p2"]
+        },
+        {
+          "id": "be2",
+          "label": "bể 3 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "con cá",
+            "labelEn": "fish"
+          },
+          "accepts": ["p1", "p2"]
+        }
+      ],
+      "answerKey": {
+        "be1": ["p1"],
+        "be2": ["p2"]
+      },
+      "hints": ["Đếm số vật trong từng bể trước."],
+      "explanation": "hai và ba được năm.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0024",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chia 6 quả táo vào hai bể: 4 và 2.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "4"
+        },
+        {
+          "id": "p2",
+          "text": "2"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be1",
+          "label": "bể 4 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelVi": "quả táo",
+            "labelEn": "apple"
+          },
+          "accepts": ["p1", "p2"]
+        },
+        {
+          "id": "be2",
+          "label": "bể 2 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelVi": "quả táo",
+            "labelEn": "apple"
+          },
+          "accepts": ["p1", "p2"]
+        }
+      ],
+      "answerKey": {
+        "be1": ["p1"],
+        "be2": ["p2"]
+      },
+      "hints": ["Đếm số vật trong từng bể trước."],
+      "explanation": "bốn và hai được sáu.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0025",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chia 8 khối lập phương vào hai bể: 5 và 3.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "5"
+        },
+        {
+          "id": "p2",
+          "text": "3"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be1",
+          "label": "bể 5 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🟨",
+            "labelVi": "khối lập phương",
+            "labelEn": "cube"
+          },
+          "accepts": ["p1", "p2"]
+        },
+        {
+          "id": "be2",
+          "label": "bể 3 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🟨",
+            "labelVi": "khối lập phương",
+            "labelEn": "cube"
+          },
+          "accepts": ["p1", "p2"]
+        }
+      ],
+      "answerKey": {
+        "be1": ["p1"],
+        "be2": ["p2"]
+      },
+      "hints": ["Đếm số vật trong từng bể trước."],
+      "explanation": "năm và ba được tám.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0026",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chia 9 bông hoa vào hai bể: 6 và 3.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "6"
+        },
+        {
+          "id": "p2",
+          "text": "3"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be1",
+          "label": "bể 6 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelVi": "bông hoa",
+            "labelEn": "flower"
+          },
+          "accepts": ["p1", "p2"]
+        },
+        {
+          "id": "be2",
+          "label": "bể 3 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelVi": "bông hoa",
+            "labelEn": "flower"
+          },
+          "accepts": ["p1", "p2"]
+        }
+      ],
+      "answerKey": {
+        "be1": ["p1"],
+        "be2": ["p2"]
+      },
+      "hints": ["Đếm số vật trong từng bể trước."],
+      "explanation": "sáu và ba được chín.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0027",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chia 10 quả bóng vào hai bể: 7 và 3.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "7"
+        },
+        {
+          "id": "p2",
+          "text": "3"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be1",
+          "label": "bể 7 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🎈",
+            "labelVi": "quả bóng",
+            "labelEn": "balloon"
+          },
+          "accepts": ["p1", "p2"]
+        },
+        {
+          "id": "be2",
+          "label": "bể 3 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🎈",
+            "labelVi": "quả bóng",
+            "labelEn": "balloon"
+          },
+          "accepts": ["p1", "p2"]
+        }
+      ],
+      "answerKey": {
+        "be1": ["p1"],
+        "be2": ["p2"]
+      },
+      "hints": ["Đếm số vật trong từng bể trước."],
+      "explanation": "bảy và ba được mười.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0028",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chia 7 con ong vào hai bể: 1 và 6.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "1"
+        },
+        {
+          "id": "p2",
+          "text": "6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be1",
+          "label": "bể 1 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelVi": "con ong",
+            "labelEn": "bee"
+          },
+          "accepts": ["p1", "p2"]
+        },
+        {
+          "id": "be2",
+          "label": "bể 6 con",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelVi": "con ong",
+            "labelEn": "bee"
+          },
+          "accepts": ["p1", "p2"]
+        }
+      ],
+      "answerKey": {
+        "be1": ["p1"],
+        "be2": ["p2"]
+      },
+      "hints": ["Đếm số vật trong từng bể trước."],
+      "explanation": "một và sáu được bảy.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0029",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ba và mấy thì được năm?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp bằng ngón tay."],
+      "explanation": "ba và hai được năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0030",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "hai và mấy thì được sáu?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp bằng ngón tay."],
+      "explanation": "hai và bốn được sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0031",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "ba và mấy thì được tám?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "quen_so_0"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp bằng ngón tay."],
+      "explanation": "ba và năm được tám.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0032",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "sáu và mấy thì được mười?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp bằng ngón tay."],
+      "explanation": "sáu và bốn được mười.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0033",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "năm và mấy thì được chín?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp bằng ngón tay."],
+      "explanation": "năm và bốn được chín.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0034",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm để đếm con cá ở cả hai bể.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "labelEn": "fish"
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Đếm bể thứ nhất rồi đếm tiếp bể thứ hai."],
+      "explanation": "Cả hai bể có bốn con cá.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0035",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm để đếm khối lập phương ở cả hai bể.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟨",
+          "labelVi": "khối lập phương",
+          "labelEn": "cube"
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Đếm bể thứ nhất rồi đếm tiếp bể thứ hai."],
+      "explanation": "Cả hai bể có sáu khối lập phương.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0036",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm để đếm quả táo ở cả hai bể.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apple"
+        },
+        "correctCount": 8,
+        "layout": "grid"
+      },
+      "answerKey": 8,
+      "hints": ["Đếm bể thứ nhất rồi đếm tiếp bể thứ hai."],
+      "explanation": "Cả hai bể có tám quả táo.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0037",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm để đếm ngôi sao ở cả hai bể.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "star"
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Đếm bể thứ nhất rồi đếm tiếp bể thứ hai."],
+      "explanation": "Cả hai bể có mười ngôi sao.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0038",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to câu này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "ba và hai được năm",
+        "words": ["ba", "và", "hai", "được", "năm"]
+      },
+      "answerKey": {
+        "words": ["ba", "và", "hai", "được", "năm"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Câu này đọc là \"ba và hai được năm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0039",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to câu này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "bốn và bốn được tám",
+        "words": ["bốn", "và", "bốn", "được", "tám"]
+      },
+      "answerKey": {
+        "words": ["bốn", "và", "bốn", "được", "tám"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Câu này đọc là \"bốn và bốn được tám\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0040",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to câu này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "sáu và bốn được mười",
+        "words": ["sáu", "và", "bốn", "được", "mười"]
+      },
+      "answerKey": {
+        "words": ["sáu", "và", "bốn", "được", "mười"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Câu này đọc là \"sáu và bốn được mười\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0041",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết vào vở: 4 và … được 10.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Điền đúng số 6", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["4 và 6 được 10"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm tiếp từ bốn cho tới mười."],
+      "explanation": "bốn và sáu được mười.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    },
+    {
+      "id": "vmath-tachgop-0042",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.TACH_GOP_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết vào vở: 5 và … được 8.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Điền đúng số 3", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["5 và 3 được 8"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm tiếp từ năm cho tới tám."],
+      "explanation": "năm và ba được tám.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B05",
+        "sourceRef": "SGK Toán 1 tập một tr.32–37"
+      }
+    }
+  ]
+}

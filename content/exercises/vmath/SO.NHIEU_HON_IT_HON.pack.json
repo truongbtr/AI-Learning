@@ -1,0 +1,1502 @@
+{
+  "skillCode": "VMATH.SO.NHIEU_HON_IT_HON",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": ["KNTT-T1-B03"],
+  "note": "Soạn từ SGK Toán 1 tập một, Bài 3 (tr.20–23): nhiều hơn, ít hơn, bằng nhau.",
+  "exercises": [
+    {
+      "id": "vmath-nhieuit-0001",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Có 3 con cá và 2 quả táo. Số con cá thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "b",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 3 và 2."],
+      "explanation": "ba so với hai thì nhiều hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0002",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Có 2 con ong và 4 bông hoa. Số con ong thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "ít hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 2 và 4."],
+      "explanation": "hai so với bốn thì ít hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Có 5 khối lập phương và 5 quả bóng. Số khối lập phương thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau"
+        },
+        {
+          "id": "c",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 5 và 5."],
+      "explanation": "năm so với năm thì bằng nhau.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0004",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Có 4 con chim và 3 ngôi sao. Số con chim thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "b",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 4 và 3."],
+      "explanation": "bốn so với ba thì nhiều hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0005",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Có 1 chiếc ô tô và 3 con vịt. Số chiếc ô tô thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "ít hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 1 và 3."],
+      "explanation": "một so với ba thì ít hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0006",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Có 6 con bọ rùa và 4 cái kẹo. Số con bọ rùa thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "c",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 6 và 4."],
+      "explanation": "sáu so với bốn thì nhiều hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0007",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 5 quả cam và 7 quả chuối. Số quả cam thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn"
+        },
+        {
+          "id": "b",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 5 và 7."],
+      "explanation": "năm so với bảy thì ít hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0008",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 6 con bướm và 6 chiếc lá. Số con bướm thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 6 và 6."],
+      "explanation": "sáu so với sáu thì bằng nhau.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0009",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 8 bánh răng và 5 tên lửa. Số bánh răng thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "c",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 8 và 5."],
+      "explanation": "tám so với năm thì nhiều hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0010",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 7 cái dù và 9 chú khỉ. Số cái dù thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn"
+        },
+        {
+          "id": "b",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 7 và 9."],
+      "explanation": "bảy so với chín thì ít hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 10 quả dưa hấu và 8 con bò. Số quả dưa hấu thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "nhiều hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 10 và 8."],
+      "explanation": "mười so với tám thì nhiều hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 9 cái bút chì và 9 con cò. Số cái bút chì thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau"
+        },
+        {
+          "id": "c",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 9 và 9."],
+      "explanation": "chín so với chín thì bằng nhau.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 2 quả táo và 5 quả cam. Số quả táo thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn"
+        },
+        {
+          "id": "b",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 2 và 5."],
+      "explanation": "hai so với năm thì ít hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 7 con cá và 3 con chim. Số con cá thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "nhiều hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 7 và 3."],
+      "explanation": "bảy so với ba thì nhiều hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 4 quả bóng và 8 khối lập phương. Số quả bóng thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "ít hơn"
+        },
+        {
+          "id": "c",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 4 và 8."],
+      "explanation": "bốn so với tám thì ít hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "garden",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 10 bông hoa và 9 con ong. Số bông hoa thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "b",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 10 và 9."],
+      "explanation": "mười so với chín thì nhiều hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 3 ngôi sao và 10 con bọ rùa. Số ngôi sao thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "ít hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 3 và 10."],
+      "explanation": "ba so với mười thì ít hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0018",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 8 con vịt và 8 con bò. Số con vịt thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau"
+        },
+        {
+          "id": "c",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 8 và 8."],
+      "explanation": "tám so với tám thì bằng nhau.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0019",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 1 cái kẹo và 4 quả chuối. Số cái kẹo thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn"
+        },
+        {
+          "id": "b",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 1 và 4."],
+      "explanation": "một so với bốn thì ít hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0020",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 9 chiếc lá và 2 con bướm. Số chiếc lá thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "nhiều hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 9 và 2."],
+      "explanation": "chín so với hai thì nhiều hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0021",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 5 con cò và 8 chú khỉ. Số con cò thế nào?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "ít hơn"
+        },
+        {
+          "id": "c",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Ghép từng đôi một xem bên nào thừa ra.", "Đếm lại: 5 và 8."],
+      "explanation": "năm so với tám thì ít hơn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0022",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo thẻ đúng vào ô: nhóm 3 và nhóm 5.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "t1",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "t2",
+          "text": "ít hơn"
+        },
+        {
+          "id": "t3",
+          "text": "bằng nhau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "nhóm 3 …",
+          "accepts": ["t1", "t2", "t3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["t2"]
+      },
+      "hints": ["Ghép từng đôi một cho dễ nhìn."],
+      "explanation": "ba ít hơn năm.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0023",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo thẻ đúng vào ô: nhóm 6 và nhóm 4.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "t1",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "t2",
+          "text": "ít hơn"
+        },
+        {
+          "id": "t3",
+          "text": "bằng nhau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "nhóm 6 …",
+          "accepts": ["t1", "t2", "t3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["t1"]
+      },
+      "hints": ["Ghép từng đôi một cho dễ nhìn."],
+      "explanation": "sáu nhiều hơn bốn.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0024",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo thẻ đúng vào ô: nhóm 7 và nhóm 7.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "t1",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "t2",
+          "text": "ít hơn"
+        },
+        {
+          "id": "t3",
+          "text": "bằng nhau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "nhóm 7 …",
+          "accepts": ["t1", "t2", "t3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["t3"]
+      },
+      "hints": ["Ghép từng đôi một cho dễ nhìn."],
+      "explanation": "bảy bằng bảy.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0025",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo thẻ đúng vào ô: nhóm 9 và nhóm 6.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "t1",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "t2",
+          "text": "ít hơn"
+        },
+        {
+          "id": "t3",
+          "text": "bằng nhau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "nhóm 9 …",
+          "accepts": ["t1", "t2", "t3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["t1"]
+      },
+      "hints": ["Ghép từng đôi một cho dễ nhìn."],
+      "explanation": "chín nhiều hơn sáu.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0026",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo thẻ đúng vào ô: nhóm 8 và nhóm 10.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "t1",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "t2",
+          "text": "ít hơn"
+        },
+        {
+          "id": "t3",
+          "text": "bằng nhau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "nhóm 8 …",
+          "accepts": ["t1", "t2", "t3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["t2"]
+      },
+      "hints": ["Ghép từng đôi một cho dễ nhìn."],
+      "explanation": "tám ít hơn mười.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0027",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có bốn quả và nhóm có hai quả. Nhóm đầu thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "b",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Số nào đọc sau cùng thì so với số đầu."],
+      "explanation": "bốn thì nhiều hơn hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0028",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có ba quả và nhóm có sáu quả. Nhóm đầu thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "ít hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Số nào đọc sau cùng thì so với số đầu."],
+      "explanation": "ba thì ít hơn sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0029",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có năm quả và nhóm có năm quả. Nhóm đầu thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ít hơn",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau"
+        },
+        {
+          "id": "c",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Số nào đọc sau cùng thì so với số đầu."],
+      "explanation": "năm thì bằng nhau năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0030",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có tám quả và nhóm có bảy quả. Nhóm đầu thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn"
+        },
+        {
+          "id": "b",
+          "text": "ít hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Số nào đọc sau cùng thì so với số đầu."],
+      "explanation": "tám thì nhiều hơn bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0031",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Nhóm có sáu quả và nhóm có chín quả. Nhóm đầu thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhiều hơn",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "bằng nhau",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "ít hơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Số nào đọc sau cùng thì so với số đầu."],
+      "explanation": "sáu thì ít hơn chín.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0032",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm để đếm quả táo ở nhóm nhiều hơn.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apple"
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Đếm nhóm dài hơn trước."],
+      "explanation": "Nhóm nhiều hơn có năm quả táo.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0033",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm để đếm con cá ở nhóm nhiều hơn.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "labelEn": "fish"
+        },
+        "correctCount": 7,
+        "layout": "line"
+      },
+      "answerKey": 7,
+      "hints": ["Đếm nhóm dài hơn trước."],
+      "explanation": "Nhóm nhiều hơn có bảy con cá.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0034",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm để đếm bông hoa ở nhóm nhiều hơn.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower"
+        },
+        "correctCount": 9,
+        "layout": "line"
+      },
+      "answerKey": 9,
+      "hints": ["Đếm nhóm dài hơn trước."],
+      "explanation": "Nhóm nhiều hơn có chín bông hoa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0035",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm để đếm quả bóng ở nhóm nhiều hơn.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "quả bóng",
+          "labelEn": "balloon"
+        },
+        "correctCount": 4,
+        "layout": "line"
+      },
+      "answerKey": 4,
+      "hints": ["Đếm nhóm dài hơn trước."],
+      "explanation": "Nhóm nhiều hơn có bốn quả bóng.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0036",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to các từ so sánh nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "nhiều hơn · ít hơn",
+        "words": ["nhiều hơn", "ít hơn"]
+      },
+      "answerKey": {
+        "words": ["nhiều hơn", "ít hơn"]
+      },
+      "hints": ["Đọc rõ từng tiếng."],
+      "explanation": "Ba từ so sánh là \"nhiều hơn\", \"ít hơn\", \"bằng nhau\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0037",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to các từ so sánh nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "bằng nhau",
+        "words": ["bằng nhau"]
+      },
+      "answerKey": {
+        "words": ["bằng nhau"]
+      },
+      "hints": ["Đọc rõ từng tiếng."],
+      "explanation": "Ba từ so sánh là \"nhiều hơn\", \"ít hơn\", \"bằng nhau\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0038",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to các từ so sánh nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "nhiều hơn · bằng nhau · ít hơn",
+        "words": ["nhiều hơn", "bằng nhau", "ít hơn"]
+      },
+      "answerKey": {
+        "words": ["nhiều hơn", "bằng nhau", "ít hơn"]
+      },
+      "hints": ["Đọc rõ từng tiếng."],
+      "explanation": "Ba từ so sánh là \"nhiều hơn\", \"ít hơn\", \"bằng nhau\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0039",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Vẽ 5 quả táo và 3 quả cam, khoanh vào nhóm nhiều hơn.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Vẽ đủ số lượng", "Khoanh đúng nhóm 5 quả"],
+        "sampleAnswers": ["khoanh nhóm táo"]
+      },
+      "answerKey": null,
+      "hints": ["Vẽ xong đếm lại rồi mới khoanh."],
+      "explanation": "Nhóm 5 quả nhiều hơn nhóm 3 quả.",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    },
+    {
+      "id": "vmath-nhieuit-0040",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.NHIEU_HON_IT_HON"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm bút và thước trong hộp, viết nhóm nào ít hơn.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Đếm đúng cả hai nhóm", "Viết đúng tên nhóm ít hơn"],
+        "sampleAnswers": ["thước ít hơn"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm từng nhóm rồi so hai số."],
+      "explanation": "Nhóm có số nhỏ hơn là nhóm ít hơn.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-T1-B03",
+        "sourceRef": "SGK Toán 1 tập một tr.20–23"
+      }
+    }
+  ]
+}

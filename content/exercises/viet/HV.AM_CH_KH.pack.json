@@ -1,0 +1,1561 @@
+{
+  "skillCode": "VIET.HV.AM_CH_KH",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": ["KNTT-TV1-T1-B14"],
+  "note": "Bài 14: Ch ch Kh kh — câu nhận biết “Mấy chú khỉ ăn chuối.”",
+  "exercises": [
+    {
+      "id": "viet-am-ch-0001",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đâu là chữ ch?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ch"
+        },
+        {
+          "id": "b",
+          "text": "tr",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ ch là hai con chữ đứng cạnh nhau: c và h."],
+      "explanation": "Chữ ch gồm chữ c ghép với chữ h. Đây là chữ ch.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0002",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đâu là chữ ch?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kh",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "ch"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ ch là hai con chữ đứng cạnh nhau: c và h."],
+      "explanation": "Chữ ch gồm chữ c ghép với chữ h. Đây là chữ ch.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đâu là chữ kh?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ch",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "kh"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ kh bắt đầu bằng chữ k cao."],
+      "explanation": "Chữ kh gồm chữ k ghép với chữ h. Đây là chữ kh.",
+      "meta": {
+        "estSeconds": 15,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0004",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Tiếng nào có âm ch?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chè"
+        },
+        {
+          "id": "b",
+          "text": "bè",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ch không."],
+      "explanation": "Tiếng \"chè\" có âm ch; tiếng \"bè\" thì không.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0005",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Tiếng nào có âm ch?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "chỉ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ch không."],
+      "explanation": "Tiếng \"chỉ\" có âm ch; tiếng \"cá\" thì không.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0006",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Tiếng nào có âm ch?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chợ"
+        },
+        {
+          "id": "b",
+          "text": "cỏ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ch không."],
+      "explanation": "Tiếng \"chợ\" có âm ch; tiếng \"cỏ\" thì không.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0007",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào có âm kh?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bế",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "khế"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm kh không."],
+      "explanation": "Tiếng \"khế\" có âm kh; tiếng \"bế\" thì không.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0008",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào có âm kh?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kho"
+        },
+        {
+          "id": "b",
+          "text": "bò",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm kh không."],
+      "explanation": "Tiếng \"kho\" có âm kh; tiếng \"bò\" thì không.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0009",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào có âm kh?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "có",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "khó"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm kh không."],
+      "explanation": "Tiếng \"khó\" có âm kh; tiếng \"có\" thì không.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0010",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào có âm ch?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chú"
+        },
+        {
+          "id": "b",
+          "text": "bú",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm ch không."],
+      "explanation": "Tiếng \"chú\" có âm ch; tiếng \"bú\" thì không.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào có âm kh?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bí",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần từng tiếng rồi nghe xem có âm kh không."],
+      "explanation": "Tiếng \"khỉ\" có âm kh; tiếng \"bí\" thì không.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0012",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "chè"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trè",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chè"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Cô đọc tiếng \"chè\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0013",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "chỉ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chỉ"
+        },
+        {
+          "id": "b",
+          "text": "trí",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Cô đọc tiếng \"chỉ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0014",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "chợ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trợ",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chợ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Cô đọc tiếng \"chợ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0015",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "khế"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "khế"
+        },
+        {
+          "id": "b",
+          "text": "chế",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Cô đọc tiếng \"khế\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0016",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "kho"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cho",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "kho"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Cô đọc tiếng \"kho\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0017",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "khó"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "khó"
+        },
+        {
+          "id": "b",
+          "text": "chó",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Cô đọc tiếng \"khó\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0018",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "chú"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trú",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chú"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Cô đọc tiếng \"chú\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0019",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "khỉ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "khỉ"
+        },
+        {
+          "id": "b",
+          "text": "chỉ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa, chú ý tiếng đầu."],
+      "explanation": "Cô đọc tiếng \"khỉ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0020",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "ch  kh",
+        "words": ["ch", "kh"]
+      },
+      "answerKey": {
+        "words": ["ch", "kh"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là \"ch kh\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0021",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "chè  chỉ  chợ",
+        "words": ["chè", "chỉ", "chợ"]
+      },
+      "answerKey": {
+        "words": ["chè", "chỉ", "chợ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là \"chè chỉ chợ\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0022",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "khế  kho  khó",
+        "words": ["khế", "kho", "khó"]
+      },
+      "answerKey": {
+        "words": ["khế", "kho", "khó"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là \"khế kho khó\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0023",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "chú khỉ  lá khô  chợ cá",
+        "words": ["chú", "khỉ", "lá", "khô", "chợ", "cá"]
+      },
+      "answerKey": {
+        "words": ["chú", "khỉ", "lá", "khô", "chợ", "cá"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là \"chú khỉ lá khô chợ cá\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0024",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "Mấy chú khỉ ăn chuối",
+        "words": ["Mấy", "chú", "khỉ", "ăn", "chuối"]
+      },
+      "answerKey": {
+        "words": ["Mấy", "chú", "khỉ", "ăn", "chuối"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là \"Mấy chú khỉ ăn chuối\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0025",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tranh này là gì?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐒",
+          "labelVi": "chú khỉ"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chú khỉ"
+        },
+        {
+          "id": "b",
+          "text": "trú khỉ",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
+      "explanation": "Tranh vẽ \"chú khỉ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0026",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tranh này là gì?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍂",
+          "labelVi": "lá khô"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lá chô",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "lá khô"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
+      "explanation": "Tranh vẽ \"lá khô\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0027",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tranh này là gì?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐠",
+          "labelVi": "chợ cá"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chợ cá"
+        },
+        {
+          "id": "b",
+          "text": "trợ cá",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn kĩ tranh rồi đánh vần từng đáp án."],
+      "explanation": "Tranh vẽ \"chợ cá\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0028",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Ghép thành tiếng \"chè\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "ch"
+        },
+        {
+          "id": "p2",
+          "text": "è"
+        },
+        {
+          "id": "p3",
+          "text": "tr"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "sau",
+          "label": "phần vần",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "sau": ["p2"]
+      },
+      "hints": ["Âm đầu của \"chè\" là \"ch\"."],
+      "explanation": "\"ch\" ghép với \"è\" thành \"chè\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0029",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Ghép thành tiếng \"chỉ\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "ch"
+        },
+        {
+          "id": "p2",
+          "text": "ỉ"
+        },
+        {
+          "id": "p3",
+          "text": "tr"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "sau",
+          "label": "phần vần",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "sau": ["p2"]
+      },
+      "hints": ["Âm đầu của \"chỉ\" là \"ch\"."],
+      "explanation": "\"ch\" ghép với \"ỉ\" thành \"chỉ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0030",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng \"chợ\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "ch"
+        },
+        {
+          "id": "p2",
+          "text": "ợ"
+        },
+        {
+          "id": "p3",
+          "text": "tr"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "sau",
+          "label": "phần vần",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "sau": ["p2"]
+      },
+      "hints": ["Âm đầu của \"chợ\" là \"ch\"."],
+      "explanation": "\"ch\" ghép với \"ợ\" thành \"chợ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0031",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng \"khế\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "kh"
+        },
+        {
+          "id": "p2",
+          "text": "ế"
+        },
+        {
+          "id": "p3",
+          "text": "ch"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "sau",
+          "label": "phần vần",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "sau": ["p2"]
+      },
+      "hints": ["Âm đầu của \"khế\" là \"kh\"."],
+      "explanation": "\"kh\" ghép với \"ế\" thành \"khế\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0032",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng \"kho\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "kh"
+        },
+        {
+          "id": "p2",
+          "text": "o"
+        },
+        {
+          "id": "p3",
+          "text": "ch"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "sau",
+          "label": "phần vần",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "sau": ["p2"]
+      },
+      "hints": ["Âm đầu của \"kho\" là \"kh\"."],
+      "explanation": "\"kh\" ghép với \"o\" thành \"kho\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0033",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Ghép thành tiếng \"khó\".",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "kh"
+        },
+        {
+          "id": "p2",
+          "text": "ó"
+        },
+        {
+          "id": "p3",
+          "text": "ch"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "âm đầu",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "sau",
+          "label": "phần vần",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["p1"],
+        "sau": ["p2"]
+      },
+      "hints": ["Âm đầu của \"khó\" là \"kh\"."],
+      "explanation": "\"kh\" ghép với \"ó\" thành \"khó\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0034",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết chữ ch vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": [
+          "Viết c rồi viết h, hai chữ sát nhau",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["ch"]
+      },
+      "answerKey": null,
+      "hints": ["Chữ ch là hai con chữ đứng cạnh nhau: c và h."],
+      "explanation": "Chữ ch gồm chữ c ghép với chữ h.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0035",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết chữ kh vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": [
+          "Viết k rồi viết h, hai chữ sát nhau",
+          "Đúng độ cao trong ô li",
+          "Nét liền, không ngắt giữa chừng"
+        ],
+        "sampleAnswers": ["kh"]
+      },
+      "answerKey": null,
+      "hints": ["Chữ kh bắt đầu bằng chữ k cao."],
+      "explanation": "Chữ kh gồm chữ k ghép với chữ h.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0036",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết từ \"chú khỉ\" vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đủ các tiếng", "Có dấu thanh đúng chỗ", "Chữ đều nét"],
+        "sampleAnswers": ["chú khỉ"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu trong sách rồi viết theo."],
+      "explanation": "Từ này viết là \"chú khỉ\".",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0037",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Câu \"Mấy chú khỉ ăn chuối\" có mấy tiếng? Chạm để đếm.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔤",
+          "labelVi": "tiếng",
+          "labelEn": "syllable"
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Mỗi tiếng con đọc một nhịp thì chạm một lần."],
+      "explanation": "Câu này có 5 tiếng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0038",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Tiếng nào bắt đầu bằng ch?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chè"
+        },
+        {
+          "id": "b",
+          "text": "tre",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc ch thì đầu lưỡi chạm chân răng trên."],
+      "explanation": "“chè” bắt đầu bằng ch.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0039",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo thẻ có âm đầu ch vào ô.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "chè"
+        },
+        {
+          "id": "k2",
+          "text": "tre"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "thẻ đúng",
+          "accepts": ["k1", "k2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["k1"]
+      },
+      "hints": ["Đọc ch thì đầu lưỡi chạm chân răng trên."],
+      "explanation": "“chè” bắt đầu bằng ch.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0040",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Tiếng nào bắt đầu bằng kh?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chó",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "khó"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kh thì hơi bật ra ở cổ họng."],
+      "explanation": "“khô” bắt đầu bằng kh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0041",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo thẻ có âm đầu kh vào ô.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "khó"
+        },
+        {
+          "id": "k2",
+          "text": "chó"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "thẻ đúng",
+          "accepts": ["k1", "k2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["k1"]
+      },
+      "hints": ["Đọc kh thì hơi bật ra ở cổ họng."],
+      "explanation": "“khô” bắt đầu bằng kh.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0042",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Tiếng nào có âm đầu ch?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chú"
+        },
+        {
+          "id": "b",
+          "text": "trú",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú khỉ trong tranh viết bằng ch."],
+      "explanation": "“chú” bắt đầu bằng ch, “trú” bằng tr.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    },
+    {
+      "id": "viet-am-ch-0043",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VIET.HV.AM_CH_KH"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo thẻ đọc bằng ch vào ô.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "k1",
+          "text": "chú"
+        },
+        {
+          "id": "k2",
+          "text": "trú"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "thẻ đúng",
+          "accepts": ["k1", "k2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["k1"]
+      },
+      "hints": ["Chú khỉ trong tranh viết bằng ch."],
+      "explanation": "“chú” bắt đầu bằng ch, “trú” bằng tr.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B14",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40–41"
+      }
+    }
+  ]
+}

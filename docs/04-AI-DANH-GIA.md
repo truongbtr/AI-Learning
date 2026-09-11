@@ -118,19 +118,22 @@ type ExerciseSpec = {
   dragItems?: { id: string; text?: string; image?: ImageRef }[];
   dropZones?: { id: string; label?: string; image?: ImageRef; accepts: string[] }[];  // DRAG_DROP
   readTarget?: { text: string; words: string[]; modelAudioKey?: string };        // READ_ALOUD
-  countTarget?: { objects: ImageRef; correctCount: number; layout: 'grid'|'line' }; // COUNT_TAP
+  listenTarget?: { text: string; audioKey?: string };   // LISTEN_CHOOSE — tiếng ĐƯỢC ĐỌC, KHÔNG BAO GIỜ in ra (ADR-14)
+  countTarget?: { objects: ImageRef; layout: 'grid'|'line' };   // COUNT_TAP — correctCount nằm trong answerKey, không gửi client
   traceTarget?: { glyph: string; strokes?: Path[] };                              // TRACE
   story?: { sentences: { text: string; image?: ImageRef }[]; questions: MCQ[] };  // MINI_STORY
   rubric?: { criteria: string[]; sampleAnswers: string[] };                       // SPEAK_ANSWER, WRITE_PHOTO
   hints: string[];                       // 1–2 gợi ý, ngắn, đọc được
   explanation: string;                   // giải thích khi sai, ≤ 20 từ, giọng thân thiện
-  answerKey: unknown;                    // phụ thuộc type; tách riêng khỏi payload gửi client
+  answerKey: unknown;                    // KHÔNG nằm trong spec gửi client — xem gói answerKey bên dưới
   meta: { theme?: string; personalizedFor?: string; lessonUnitCode?: string; estSeconds: number };
 };
 ```
 
-- `ImageRef` = `{ kind: 'emoji'|'icon'|'asset'|'generated', value: string }` — v1 ưu tiên **emoji và bộ icon SVG có sẵn** (không sinh ảnh AI), bài cần ảnh thật dùng thư viện ảnh nội bộ do phụ huynh nạp hoặc `generated` ở P2.
+- `ImageRef` = `{ kind: 'emoji'|'icon'|'asset'|'generated', value: string, labelVi?, labelEn?, repeat? }` — v1 ưu tiên **emoji và bộ icon SVG có sẵn** (không sinh ảnh AI), bài cần ảnh thật dùng thư viện ảnh nội bộ do phụ huynh nạp hoặc `generated` ở P2. `repeat` = vẽ hình mấy lần, bắt buộc với câu hỏi đếm (ADR-14).
 - Client **không nhận `answerKey`** với dạng đóng; chấm ở server (`POST attempt`). Ngoại lệ: cho phép chấm cục bộ offline với chữ ký HMAC của đáp án — dev chọn 1 cách và ghi ADR.
+- **Cột `Exercise.answerKey` lưu một gói, chỉ máy chủ đọc** (ADR-14): `{ value, errorTags?: { <choiceId>: <mã lỗi> }, correctCount?: number }`. `choices[].errorTag` và `countTarget.correctCount` bị cắt khỏi `spec` trước khi gửi client — cái đầu làm lộ chẩn đoán, cái sau làm lộ đáp án.
+- **Bài `LISTEN_CHOOSE`:** đề bài chỉ là câu hướng dẫn trung tính; tiếng phải nghe nằm ở `listenTarget` và **bộ render không bao giờ được hiển thị nó** — in ra là bé biết đọc chỉ cần nhìn, bài không còn đo kỹ năng nghe (ADR-14).
 
 ## 6. Prompt — nguyên tắc & khung
 

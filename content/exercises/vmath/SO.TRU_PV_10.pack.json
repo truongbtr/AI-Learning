@@ -1,0 +1,1872 @@
+{
+  "skillCode": "VMATH.SO.TRU_PV_10",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": ["KNTT-T1-B11"],
+  "note": "Soạn từ SGK Toán 1 tập một, Bài 11 (tr.68–79): “Bớt đi còn lại mấy?”",
+  "exercises": [
+    {
+      "id": "vmath-tru10-0001",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nam có 2 quả cam, cho bạn 1 quả cam. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ hai: một, không…", "Lấy 2 rồi bớt 1."],
+      "explanation": "hai trừ một bằng một.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0002",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Mai có 3 quả bóng, cho bạn 1 quả bóng. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi từ ba: hai, một…", "Lấy 3 rồi bớt 1."],
+      "explanation": "ba trừ một bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Việt có 4 quả táo, cho bạn 2 quả táo. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lùi từ bốn: ba, hai…", "Lấy 4 rồi bớt 2."],
+      "explanation": "bốn trừ hai bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0004",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 3 con cá, cho bạn 2 con cá. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ ba: hai, một…", "Lấy 3 rồi bớt 2."],
+      "explanation": "ba trừ hai bằng một.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0005",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 5 bông hoa, cho bạn 1 bông hoa. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ năm: bốn, ba…", "Lấy 5 rồi bớt 1."],
+      "explanation": "năm trừ một bằng bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0006",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 5 khối lập phương, cho bạn 2 khối lập phương. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lùi từ năm: bốn, ba…", "Lấy 5 rồi bớt 2."],
+      "explanation": "năm trừ hai bằng ba.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0007",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 6 chiếc ô tô, cho bạn 1 chiếc ô tô. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ sáu: năm, bốn…", "Lấy 6 rồi bớt 1."],
+      "explanation": "sáu trừ một bằng năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0008",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt có 5 cái kẹo, cho bạn 3 cái kẹo. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi từ năm: bốn, ba…", "Lấy 5 rồi bớt 3."],
+      "explanation": "năm trừ ba bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0009",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 6 con chim, cho bạn 2 con chim. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ sáu: năm, bốn…", "Lấy 6 rồi bớt 2."],
+      "explanation": "sáu trừ hai bằng bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0010",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 7 con ong, cho bạn 1 con ong. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ bảy: sáu, năm…", "Lấy 7 rồi bớt 1."],
+      "explanation": "bảy trừ một bằng sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 7 con vịt, cho bạn 3 con vịt. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi từ bảy: sáu, năm…", "Lấy 7 rồi bớt 3."],
+      "explanation": "bảy trừ ba bằng bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 8 con bọ rùa, cho bạn 2 con bọ rùa. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lùi từ tám: bảy, sáu…", "Lấy 8 rồi bớt 2."],
+      "explanation": "tám trừ hai bằng sáu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt có 6 quả chuối, cho bạn 4 quả chuối. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ sáu: năm, bốn…", "Lấy 6 rồi bớt 4."],
+      "explanation": "sáu trừ bốn bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 8 quả dưa hấu, cho bạn 3 quả dưa hấu. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi từ tám: bảy, sáu…", "Lấy 8 rồi bớt 3."],
+      "explanation": "tám trừ ba bằng năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 9 con bướm, cho bạn 2 con bướm. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lùi từ chín: tám, bảy…", "Lấy 9 rồi bớt 2."],
+      "explanation": "chín trừ hai bằng bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0016",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 9 bánh răng, cho bạn 4 bánh răng. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ chín: tám, bảy…", "Lấy 9 rồi bớt 4."],
+      "explanation": "chín trừ bốn bằng năm.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0017",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 10 tên lửa, cho bạn 3 tên lửa. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ mười: chín, tám…", "Lấy 10 rồi bớt 3."],
+      "explanation": "mười trừ ba bằng bảy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0018",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Việt có 8 cái bút chì, cho bạn 5 cái bút chì. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lùi từ tám: bảy, sáu…", "Lấy 8 rồi bớt 5."],
+      "explanation": "tám trừ năm bằng ba.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0019",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi có 10 chiếc lá, cho bạn 6 chiếc lá. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ mười: chín, tám…", "Lấy 10 rồi bớt 6."],
+      "explanation": "mười trừ sáu bằng bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0020",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt có 9 ngôi sao, cho bạn 7 ngôi sao. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi từ chín: tám, bảy…", "Lấy 9 rồi bớt 7."],
+      "explanation": "chín trừ bảy bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0021",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nam có 10 chú khỉ, cho bạn 8 chú khỉ. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ mười: chín, tám…", "Lấy 10 rồi bớt 8."],
+      "explanation": "mười trừ tám bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0022",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai có 7 cái dù, cho bạn 5 cái dù. Còn lại mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ bảy: sáu, năm…", "Lấy 7 rồi bớt 5."],
+      "explanation": "bảy trừ năm bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0023",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 3 quả táo, bay đi 1. Chạm để đếm số còn lại.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apple"
+        },
+        "correctCount": 2,
+        "layout": "grid"
+      },
+      "answerKey": 2,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm lùi từ ba."],
+      "explanation": "Còn lại hai quả táo.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0024",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 5 con cá, bay đi 2. Chạm để đếm số còn lại.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "labelEn": "fish"
+        },
+        "correctCount": 3,
+        "layout": "line"
+      },
+      "answerKey": 3,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm lùi từ năm."],
+      "explanation": "Còn lại ba con cá.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0025",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 6 bông hoa, bay đi 2. Chạm để đếm số còn lại.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower"
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm lùi từ sáu."],
+      "explanation": "Còn lại bốn bông hoa.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0026",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 8 khối lập phương, bay đi 3. Chạm để đếm số còn lại.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟨",
+          "labelVi": "khối lập phương",
+          "labelEn": "cube"
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm lùi từ tám."],
+      "explanation": "Còn lại năm khối lập phương.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0027",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Có 9 quả bóng, bay đi 4. Chạm để đếm số còn lại.",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "quả bóng",
+          "labelEn": "balloon"
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm vào từng cái một lần thôi nhé.", "Đếm lùi từ chín."],
+      "explanation": "Còn lại năm quả bóng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0028",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 3 − 1 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "2"
+        },
+        {
+          "id": "n2",
+          "text": "3"
+        },
+        {
+          "id": "n3",
+          "text": "4"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "3 − 1 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Bớt 1 khỏi 3."],
+      "explanation": "ba trừ một bằng hai.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0029",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 5 − 2 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "3"
+        },
+        {
+          "id": "n2",
+          "text": "4"
+        },
+        {
+          "id": "n3",
+          "text": "5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "5 − 2 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Bớt 2 khỏi 5."],
+      "explanation": "năm trừ hai bằng ba.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0030",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 7 − 3 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "4"
+        },
+        {
+          "id": "n2",
+          "text": "5"
+        },
+        {
+          "id": "n3",
+          "text": "6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "7 − 3 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Bớt 3 khỏi 7."],
+      "explanation": "bảy trừ ba bằng bốn.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0031",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 9 − 4 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "5"
+        },
+        {
+          "id": "n2",
+          "text": "6"
+        },
+        {
+          "id": "n3",
+          "text": "7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "9 − 4 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Bớt 4 khỏi 9."],
+      "explanation": "chín trừ bốn bằng năm.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0032",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số đúng vào ô trống: 10 − 5 = ?",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "n1",
+          "text": "5"
+        },
+        {
+          "id": "n2",
+          "text": "6"
+        },
+        {
+          "id": "n3",
+          "text": "7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "kq",
+          "label": "10 − 5 =",
+          "accepts": ["n1", "n2", "n3"]
+        }
+      ],
+      "answerKey": {
+        "kq": ["n1"]
+      },
+      "hints": ["Bớt 5 khỏi 10."],
+      "explanation": "mười trừ năm bằng năm.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0033",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bốn trừ hai bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "bốn trừ hai bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0034",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "sáu trừ ba bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "sáu trừ ba bằng ba.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0035",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "bảy trừ bốn bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "bảy trừ bốn bằng ba.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0036",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "chín trừ năm bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "chín trừ năm bằng bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0037",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "mười trừ bảy bằng mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại lần nữa rồi đếm bằng ngón tay."],
+      "explanation": "mười trừ bảy bằng ba.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0038",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to phép tính này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "5 − 2 = 3",
+        "words": ["năm", "trừ", "hai", "bằng", "ba"]
+      },
+      "answerKey": {
+        "words": ["năm", "trừ", "hai", "bằng", "ba"]
+      },
+      "hints": ["Đọc chậm từng tiếng: năm… trừ… hai… bằng… ba."],
+      "explanation": "Phép tính này đọc là \"năm trừ hai bằng ba\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0039",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to phép tính này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "6 − 3 = 3",
+        "words": ["sáu", "trừ", "ba", "bằng", "ba"]
+      },
+      "answerKey": {
+        "words": ["sáu", "trừ", "ba", "bằng", "ba"]
+      },
+      "hints": ["Đọc chậm từng tiếng: sáu… trừ… ba… bằng… ba."],
+      "explanation": "Phép tính này đọc là \"sáu trừ ba bằng ba\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0040",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to phép tính này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "8 − 4 = 4",
+        "words": ["tám", "trừ", "bốn", "bằng", "bốn"]
+      },
+      "answerKey": {
+        "words": ["tám", "trừ", "bốn", "bằng", "bốn"]
+      },
+      "hints": ["Đọc chậm từng tiếng: tám… trừ… bốn… bằng… bốn."],
+      "explanation": "Phép tính này đọc là \"tám trừ bốn bằng bốn\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0041",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to phép tính này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "10 − 6 = 4",
+        "words": ["mười", "trừ", "sáu", "bằng", "bốn"]
+      },
+      "answerKey": {
+        "words": ["mười", "trừ", "sáu", "bằng", "bốn"]
+      },
+      "hints": ["Đọc chậm từng tiếng: mười… trừ… sáu… bằng… bốn."],
+      "explanation": "Phép tính này đọc là \"mười trừ sáu bằng bốn\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0042",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính 4 − 1 = ? vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đủ dấu trừ và dấu bằng", "Kết quả đúng là 3", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["4 − 1 = 3"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm lùi từ bốn bớt 1 lần."],
+      "explanation": "bốn trừ một bằng ba.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0043",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính 6 − 2 = ? vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đủ dấu trừ và dấu bằng", "Kết quả đúng là 4", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["6 − 2 = 4"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm lùi từ sáu bớt 2 lần."],
+      "explanation": "sáu trừ hai bằng bốn.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0044",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính 8 − 5 = ? vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đủ dấu trừ và dấu bằng", "Kết quả đúng là 3", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["8 − 5 = 3"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm lùi từ tám bớt 5 lần."],
+      "explanation": "tám trừ năm bằng ba.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0045",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết phép tính 10 − 4 = ? vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": ["Viết đủ dấu trừ và dấu bằng", "Kết quả đúng là 6", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["10 − 4 = 6"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm lùi từ mười bớt 4 lần."],
+      "explanation": "mười trừ bốn bằng sáu.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0046",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Nam có 5 quả bóng, không cho bạn quả nào. Nam còn mấy quả?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Bớt 0 nghĩa là không bớt gì cả."],
+      "explanation": "Năm trừ không vẫn bằng năm.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0047",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "quen_so_0",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đĩa có 6 quả, Mi ăn hết cả 6 quả. Trên đĩa còn mấy quả?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Ăn hết rồi thì đĩa trống không."],
+      "explanation": "Sáu trừ sáu bằng không.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0048",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nhìn kĩ dấu trừ nhé: 7 − 3 bằng mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Dấu − là bớt đi, nên kết quả nhỏ hơn số đầu."],
+      "explanation": "Bảy trừ ba bằng bốn.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0049",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nhìn kĩ dấu trừ nhé: 8 − 2 bằng mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Bớt 2 khỏi 8 thì còn ít hơn 8."],
+      "explanation": "Tám trừ hai bằng sáu.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    },
+    {
+      "id": "vmath-tru10-0050",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.TRU_PV_10"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt đếm lùi từ 9, bớt 6 bánh răng. Còn mấy bánh răng?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi: tám, bảy, sáu, năm, bốn, ba — đúng sáu lần."],
+      "explanation": "Chín trừ sáu bằng ba.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một tr.68–79"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1680 @@
+{
+  "skillCode": "VMATH.SO.SO_6_10",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v1",
+  "lessonRefs": ["KNTT-T1-B02"],
+  "note": "Soạn từ SGK Toán 1 tập một, Bài 2 (tr.14–19): ong 6, chim 7, hoa 8, sao biển 9, bọ rùa 10.",
+  "exercises": [
+    {
+      "id": "vmath-so610-0001",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Trong tranh có mấy con ong?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "labelEn": "bee",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có sáu con ong.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0002",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy ngôi sao?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "star",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_lai_tu_dau"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có sáu ngôi sao.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0003",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy con ong?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "labelEn": "bee",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_lai_tu_dau"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có sáu con ong.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0004",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Trong tranh có mấy con chim?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "labelEn": "bird",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có bảy con chim.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0005",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy con bọ rùa?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "con bọ rùa",
+          "labelEn": "ladybug",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_lai_tu_dau"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có bảy con bọ rùa.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0006",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy con chim?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "labelEn": "bird",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_lai_tu_dau"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có bảy con chim.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0007",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Trong tranh có mấy bông hoa?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có tám bông hoa.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0008",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy cái kẹo?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🍬",
+          "labelVi": "cái kẹo",
+          "labelEn": "sweet",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_lai_tu_dau"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có tám cái kẹo.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0009",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy bông hoa?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "10",
+          "errorTag": "dem_lai_tu_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có tám bông hoa.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0010",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy ngôi sao?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "star",
+          "repeat": 9
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có chín ngôi sao.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0011",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy con ong?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "labelEn": "bee",
+          "repeat": 9
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "11",
+          "errorTag": "dem_lai_tu_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có chín con ong.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0012",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy ngôi sao?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "star",
+          "repeat": 9
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_lai_tu_dau"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có chín ngôi sao.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0013",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy con bọ rùa?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "con bọ rùa",
+          "labelEn": "ladybug",
+          "repeat": 10
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có mười con bọ rùa.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0014",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy con chim?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "labelEn": "bird",
+          "repeat": 10
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có mười con chim.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0015",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Trong tranh có mấy con bọ rùa?",
+        "tts": true,
+        "image": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "con bọ rùa",
+          "labelEn": "ladybug",
+          "repeat": 10
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chỉ tay vào từng cái rồi đếm.", "Đếm một lần thôi, đừng đếm lại cái cũ."],
+      "explanation": "Có mười con bọ rùa.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0016",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm vào từng con chim để đếm nhé!",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "labelEn": "bird"
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Chạm từ trái sang phải cho khỏi sót."],
+      "explanation": "Tất cả có sáu con chim.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0017",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm vào từng bông hoa để đếm nhé!",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flower"
+        },
+        "correctCount": 7,
+        "layout": "line"
+      },
+      "answerKey": 7,
+      "hints": ["Chạm từ trái sang phải cho khỏi sót."],
+      "explanation": "Tất cả có bảy bông hoa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0018",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm vào từng ngôi sao để đếm nhé!",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "star"
+        },
+        "correctCount": 8,
+        "layout": "grid"
+      },
+      "answerKey": 8,
+      "hints": ["Chạm từ trái sang phải cho khỏi sót."],
+      "explanation": "Tất cả có tám ngôi sao.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0019",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm vào từng con bọ rùa để đếm nhé!",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "con bọ rùa",
+          "labelEn": "ladybug"
+        },
+        "correctCount": 9,
+        "layout": "line"
+      },
+      "answerKey": 9,
+      "hints": ["Chạm từ trái sang phải cho khỏi sót."],
+      "explanation": "Tất cả có chín con bọ rùa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0020",
+      "type": "COUNT_TAP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Chạm vào từng cái kẹo để đếm nhé!",
+        "tts": true
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍬",
+          "labelVi": "cái kẹo",
+          "labelEn": "sweet"
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Chạm từ trái sang phải cho khỏi sót."],
+      "explanation": "Tất cả có mười cái kẹo.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0021",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Số sáu"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nhớ hình dáng của số."],
+      "explanation": "Số 6 đọc là \"sáu\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0022",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Số bảy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi nhớ hình dáng của số."],
+      "explanation": "Số 7 đọc là \"bảy\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0023",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Số tám"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi nhớ hình dáng của số."],
+      "explanation": "Số 8 đọc là \"tám\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0024",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Số chín"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nhớ hình dáng của số."],
+      "explanation": "Số 9 đọc là \"chín\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0025",
+      "type": "LISTEN_CHOOSE",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Nghe rồi chọn ô đúng nhé!",
+        "tts": true
+      },
+      "listenTarget": {
+        "text": "Số mười"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi nhớ hình dáng của số."],
+      "explanation": "Số 10 đọc là \"mười\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0026",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Kéo số đúng vào ô có 6 con ong.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "6"
+        },
+        {
+          "id": "s2",
+          "text": "7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "con ong",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelVi": "con ong",
+            "labelEn": "bee"
+          },
+          "accepts": ["s1", "s2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["s1"]
+      },
+      "hints": ["Đếm số vật trong ô trước đã."],
+      "explanation": "Ô đó có sáu con ong nên chọn số 6.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0027",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Kéo số đúng vào ô có 7 con chim.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "7"
+        },
+        {
+          "id": "s2",
+          "text": "8"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "con chim",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelVi": "con chim",
+            "labelEn": "bird"
+          },
+          "accepts": ["s1", "s2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["s1"]
+      },
+      "hints": ["Đếm số vật trong ô trước đã."],
+      "explanation": "Ô đó có bảy con chim nên chọn số 7.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0028",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "prompt": {
+        "text": "Kéo số đúng vào ô có 8 bông hoa.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "8"
+        },
+        {
+          "id": "s2",
+          "text": "9"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "bông hoa",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelVi": "bông hoa",
+            "labelEn": "flower"
+          },
+          "accepts": ["s1", "s2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["s1"]
+      },
+      "hints": ["Đếm số vật trong ô trước đã."],
+      "explanation": "Ô đó có tám bông hoa nên chọn số 8.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0029",
+      "type": "DRAG_DROP",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Kéo số đúng vào ô có 9 ngôi sao.",
+        "tts": true
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "9"
+        },
+        {
+          "id": "s2",
+          "text": "10"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "ngôi sao",
+          "image": {
+            "kind": "emoji",
+            "value": "⭐",
+            "labelVi": "ngôi sao",
+            "labelEn": "star"
+          },
+          "accepts": ["s1", "s2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["s1"]
+      },
+      "hints": ["Đếm số vật trong ô trước đã."],
+      "explanation": "Ô đó có chín ngôi sao nên chọn số 9.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0030",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to dãy số này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "6  7  8",
+        "words": ["sáu", "bảy", "tám"]
+      },
+      "answerKey": {
+        "words": ["sáu", "bảy", "tám"]
+      },
+      "hints": ["Đọc chậm, chỉ tay vào từng số."],
+      "explanation": "Dãy số này đọc là \"sáu, bảy, tám\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0031",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to dãy số này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "6  7  8  9",
+        "words": ["sáu", "bảy", "tám", "chín"]
+      },
+      "answerKey": {
+        "words": ["sáu", "bảy", "tám", "chín"]
+      },
+      "hints": ["Đọc chậm, chỉ tay vào từng số."],
+      "explanation": "Dãy số này đọc là \"sáu, bảy, tám, chín\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0032",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 3,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to dãy số này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "6  7  8  9  10",
+        "words": ["sáu", "bảy", "tám", "chín", "mười"]
+      },
+      "answerKey": {
+        "words": ["sáu", "bảy", "tám", "chín", "mười"]
+      },
+      "hints": ["Đọc chậm, chỉ tay vào từng số."],
+      "explanation": "Dãy số này đọc là \"sáu, bảy, tám, chín, mười\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0033",
+      "type": "READ_ALOUD",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Con đọc to dãy số này nhé!",
+        "tts": true
+      },
+      "readTarget": {
+        "text": "10  9  8  7  6",
+        "words": ["mười", "chín", "tám", "bảy", "sáu"]
+      },
+      "answerKey": {
+        "words": ["mười", "chín", "tám", "bảy", "sáu"]
+      },
+      "hints": ["Đọc chậm, chỉ tay vào từng số."],
+      "explanation": "Dãy số này đọc là \"mười, chín, tám, bảy, sáu\".",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0034",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 1,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết các số 6, 7 vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đúng chiều, không viết ngược",
+          "Đúng độ cao trong ô li",
+          "Đủ các số đã cho"
+        ],
+        "sampleAnswers": ["6 7"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn số mẫu trong vở rồi viết theo."],
+      "explanation": "Con viết lần lượt sáu, bảy.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0035",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 2,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết các số 8, 9 vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đúng chiều, không viết ngược",
+          "Đúng độ cao trong ô li",
+          "Đủ các số đã cho"
+        ],
+        "sampleAnswers": ["8 9"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn số mẫu trong vở rồi viết theo."],
+      "explanation": "Con viết lần lượt tám, chín.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0036",
+      "type": "WRITE_PHOTO",
+      "language": "vi",
+      "difficulty": 4,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "prompt": {
+        "text": "Viết các số 6, 7, 8, 9, 10 vào vở rồi nhờ ba mẹ chụp.",
+        "tts": true
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đúng chiều, không viết ngược",
+          "Đúng độ cao trong ô li",
+          "Đủ các số đã cho"
+        ],
+        "sampleAnswers": ["6 7 8 9 10"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn số mẫu trong vở rồi viết theo."],
+      "explanation": "Con viết lần lượt sáu, bảy, tám, chín, mười.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0037",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "prompt": {
+        "text": "Đếm tiếp: sau số 6 là số mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Sau một số là số lớn hơn một đơn vị."],
+      "explanation": "Kết quả là bảy.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0038",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mai đếm 10 bông hoa rồi bớt 2. Còn mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi hai bước."],
+      "explanation": "Kết quả là tám.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0039",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Rô-bốt đếm được 9 con ong rồi thêm 1 nữa. Được mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Thêm một là đếm tiếp một bước."],
+      "explanation": "Kết quả là mười.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0040",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Mi đếm 9 con chim rồi bớt 1. Còn mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Bớt một là đếm lùi một bước."],
+      "explanation": "Kết quả là tám.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    },
+    {
+      "id": "vmath-so610-0041",
+      "type": "MCQ",
+      "language": "vi",
+      "difficulty": 5,
+      "skillCodes": ["VMATH.SO.SO_6_10"],
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "prompt": {
+        "text": "Đếm lùi từ 10: số liền trước 10 là số mấy?",
+        "tts": true
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "quen_so_0"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Liền trước là số nhỏ hơn một đơn vị."],
+      "explanation": "Kết quả là chín.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B02",
+        "sourceRef": "SGK Toán 1 tập một tr.14–19"
+      }
+    }
+  ]
+}

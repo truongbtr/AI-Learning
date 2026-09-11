@@ -45,6 +45,11 @@ export const imageRefSchema = z.object({
   value: z.string().trim().min(1),
   labelVi: z.string().trim().optional(),
   labelEn: z.string().trim().optional(),
+  /**
+   * Draw the picture this many times. A counting question ("Trong tranh có mấy bông hoa?") is
+   * unanswerable without it, so it is part of the data, not a rendering detail.
+   */
+  repeat: z.number().int().min(1).max(20).optional(),
 });
 
 export const choiceSchema = z.object({
@@ -99,6 +104,17 @@ export const exerciseSchema = z
         modelAudioKey: audioKey.optional(),
       })
       .optional(),
+    /**
+     * LISTEN_CHOOSE: the word or sentence that is *spoken*. The renderer must play it and must
+     * NEVER print it — printing it would hand a reading child the answer, which is exactly the
+     * trap `prompt.text` fell into before (see docs/adr/ADR-14).
+     */
+    listenTarget: z
+      .object({
+        text: z.string().trim().min(1),
+        audioKey: audioKey.optional(),
+      })
+      .optional(),
     countTarget: z
       .object({
         objects: imageRefSchema,
@@ -141,9 +157,22 @@ export const exerciseSchema = z
     const need = (cond: boolean, message: string) => {
       if (!cond) ctx.addIssue({ code: "custom", message });
     };
+    if (ex.type === "LISTEN_CHOOSE") {
+      need(Boolean(ex.listenTarget), "LISTEN_CHOOSE needs listenTarget (the spoken word)");
+      // The instruction must not spell out what is spoken, or reading it is enough to answer.
+      if (ex.listenTarget) {
+        const strip = (s: string) => ` ${s.toLowerCase().replace(/[.,!?:;"“”…]/g, " ")} `;
+        const spoken = strip(ex.listenTarget.text).trim();
+        need(
+          !strip(ex.prompt.text).includes(` ${spoken} `),
+          `the prompt prints the spoken word "${ex.listenTarget.text}" — that gives the answer away`,
+        );
+      }
+    }
     switch (ex.type) {
-      case "MCQ":
-      case "LISTEN_CHOOSE": {
+      // A LISTEN_CHOOSE is answered with choices exactly like an MCQ.
+      case "LISTEN_CHOOSE":
+      case "MCQ": {
         need(Boolean(ex.choices), `${ex.type} needs choices`);
         const ids = ex.choices?.map((c) => c.id) ?? [];
         need(new Set(ids).size === ids.length, "choice ids must be unique");
@@ -184,8 +213,16 @@ export const exerciseSchema = z
             for (const item of items ?? [])
               need(itemIds.has(item), `answerKey["${zoneId}"] mentions unknown item "${item}"`);
           }
-          const placed = Object.values(key).flat().length;
-          need(placed === itemIds.size, "every drag item must be placed by the answerKey");
+          // Decoys that stay in the tray are fine ("drag the right one in"), but every zone must
+          // get something and no item may be placed twice.
+          const placed = Object.values(key).flat();
+          need(new Set(placed).size === placed.length, "a drag item is placed in two zones");
+          need(
+            zoneIds.size === Object.keys(key).length,
+            "every dropZone needs an entry in the answerKey",
+          );
+          for (const [zoneId, items] of Object.entries(key))
+            need((items ?? []).length > 0, `dropZone "${zoneId}" is left empty by the answerKey`);
         }
         break;
       }
@@ -275,6 +312,8 @@ export interface ExerciseSpec {
   dragItems?: ExerciseDef["dragItems"];
   dropZones?: ExerciseDef["dropZones"];
   readTarget?: ExerciseDef["readTarget"];
+  /** Spoken only — a renderer that prints this is a bug (see ExercisePreview). */
+  listenTarget?: ExerciseDef["listenTarget"];
   countTarget?: Omit<NonNullable<ExerciseDef["countTarget"]>, "correctCount">;
   traceTarget?: ExerciseDef["traceTarget"];
   story?: ExerciseDef["story"];
@@ -307,6 +346,7 @@ export function toExerciseSpec(ex: ExerciseDef, subject: (typeof SUBJECTS)[numbe
   if (ex.dragItems) spec.dragItems = ex.dragItems;
   if (ex.dropZones) spec.dropZones = ex.dropZones;
   if (ex.readTarget) spec.readTarget = ex.readTarget;
+  if (ex.listenTarget) spec.listenTarget = ex.listenTarget;
   if (ex.countTarget) {
     const { correctCount: _drop, ...rest } = ex.countTarget;
     spec.countTarget = rest;
@@ -328,6 +368,7 @@ export function errorTagsOf(ex: ExerciseDef): Record<string, string> {
 export function ttsLinesOf(ex: ExerciseDef): { text: string; lang: string }[] {
   const lines: { text: string; lang: string }[] = [];
   if (ex.prompt.tts) lines.push({ text: ex.prompt.text, lang: ex.language });
+  if (ex.listenTarget) lines.push({ text: ex.listenTarget.text, lang: ex.language });
   // Placeholders are substituted per child at display time, so they cannot be pre-generated.
   return lines.filter((l) => !PLACEHOLDERS.some((p) => l.text.includes(p)));
 }
