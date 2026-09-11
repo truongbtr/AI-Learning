@@ -131,6 +131,66 @@ Chạm vào mascot bất kỳ lúc nào → phản ứng vui ngẫu nhiên (nh�
 
 Thước đo (pha 8): tỉ lệ ngày con **tự mở app** không cần nhắc ≥ 60% trong 2 tuần nghiệm thu.
 
+### 1.8c Mười bốn cơ chế thu hút, theo bốn động lực của trẻ 6 tuổi
+
+> *Mục này được viết lại trong pha 3 từ bảng dữ liệu `03` §2.7, FR-PAR-08 ở `01` và nhật ký
+> 10/09/2026 — bản gốc bị mất khỏi file. Đánh số giữ nguyên để FR-PAR-08 ("mục 5, 10") vẫn đúng.*
+
+Đồ hoạ và phần thưởng làm trẻ thích **hôm nay**; bốn động lực dưới đây mới làm trẻ quay lại
+**ngày mai**. Mỗi cơ chế ghi rõ bảng dữ liệu ở `03` và mức ưu tiên: **P0 = pha 3**, P1 = sau.
+
+**A. Mong chờ — có thứ đang lớn lên khi con vắng mặt**
+
+1. **Trứng nở theo ngày học** *(P0)* — mỗi tuần một quả trứng; mỗi ngày con học xong phiên, trứng
+   thêm một vết nứt (`EggProgress.cracks` 0–5); đủ 5 vết thì nở ra một con thú (`Pet`,
+   `StudentPet`) về ở trong thế giới của con. Thú hiếm xuất hiện thưa, không mua được bằng sao.
+2. **Mảnh tranh cuối tuần** *(P0)* — mỗi tuần một bức tranh chủ đề (`WeeklyPicture`, 6 mảnh); mỗi
+   ngày học xong con lật được một mảnh (`StudentPicturePiece`). Chủ nhật đủ mảnh → tranh hiện
+   nguyên, cất vào bộ sưu tập. Nghỉ một ngày thì tranh vẫn còn đó chờ, không mất.
+3. **Thế giới theo giờ thật** *(P0)* — sáng thế giới hửng nắng, chiều ngả vàng, tối có đèn và sao;
+   mascot chào theo buổi. Không có đồng hồ đếm ngược, chỉ là thế giới sống cùng giờ của con.
+4. **Thú cưng đi theo avatar** *(P1)* — thú đã nở (`StudentPet.isCompanion`) đi theo nhân vật trên
+   bản đồ nhiệm vụ và nhảy cùng lúc ăn mừng.
+
+**B. Sở hữu — cái này là của con, không phải của app**
+
+5. **Hộp thư ba mẹ** *(P0)* — ba mẹ gửi lời nhắn ≤ 200 chữ, tuỳ chọn thu giọng 10 giây và kèm quà
+   (`KidMail`, FR-PAR-08); sáng hôm sau thư nằm trên bản đồ, mascot đọc to. Con mở → `openedAt`,
+   ba mẹ thấy "đã mở". Lời khen của cô trong nhật ký lớp cũng thành một lá thư
+   (`fromKind=TEACHER_PRAISE`).
+6. **Mục tiêu phần thưởng đời thực** *(P1)* — ba mẹ đặt một mục tiêu ("đi công viên", 200 sao,
+   `RewardGoal`); thanh tiến trình hiện ở K7 để con thấy sao của mình dùng vào việc gì.
+
+**C. Được là người lớn — con quyết định, con dạy lại**
+
+7. **Mascot có ký ức** *(P0)* — mascot nhắc đúng một điều đã xảy ra: "Hôm qua con đọc trúng hết từ
+   có *sh* đấy!", "Hôm nay lớp mình có tiết Toán nhỉ?" (`MascotMemory`, 4 loại
+   `YESTERDAY_WIN|INTEREST|SCHEDULE|EVENT`). Mỗi câu dùng một lần (`usedAt`), sinh từ dữ liệu thật
+   trong DB — không phải câu chung chung.
+8. **Con chọn mục tiêu ngày** *(P1)* — đầu phiên con chọn "hôm nay mình làm 8 hay 12 bài"; chọn ít
+   vẫn giữ streak. Quyền chọn quan trọng hơn con số.
+9. **Con dạy lại mascot** *(P1)* — sau một kỹ năng `SOLID`, mascot giả vờ quên và nhờ con chỉ lại;
+   con nói/chọn đúng thì mascot "hiểu ra". Dạy lại là cách ôn tốt nhất ở tuổi này.
+
+**D. Được nhìn thấy — có người thật nhìn thấy con cố gắng**
+
+10. **Sao vàng lớn** *(P0)* — nút "Khen" của ba mẹ (FR-PAR-08) gửi một ngôi sao vàng to kèm giọng
+    thu sẵn; sao rơi xuống giữa màn hình của con kèm tên người khen. Không tính vào điểm, không
+    mua được — chỉ để con biết có người vừa nhìn thấy mình.
+11. **Giấy chứng nhận in được** *(P0)* — xong một mạch kỹ năng hoặc một tháng đều đặn → một tờ
+    chứng nhận A4 có tên con, ngày và thứ con làm được (`Certificate`); ba mẹ in và dán lên tường.
+12. **Lễ trao huy hiệu** *(P1 ở mục này; bắt buộc theo §1.5)* — huy hiệu mới không hiện thầm lặng:
+    có màn riêng, nhạc ngắn, mascot trao.
+13. **Góc khoe với ông bà** *(P1)* — một màn hình dọc gọn gàng (tranh tuần, huy hiệu, chứng nhận)
+    để ba mẹ đưa điện thoại cho ông bà xem; không có số liệu học tập, chỉ có thành quả.
+14. **Bộ sưu tập bày ra được** *(P1 — phần mua bằng sao làm ở K7 pha 3)* — vật phẩm mua bằng sao
+    đặt được vào đúng chỗ trong thế giới (`StudentCollectible.placement`), nên thế giới của hai bé
+    khác nhau và không bao giờ so sánh được với nhau.
+
+Nguyên tắc chung cho cả 14 cơ chế: **không có cơ chế nào lấy đi thứ con đã có** (không mất sao,
+không mất streak vì nghỉ một ngày, không đếm ngược), và **không cơ chế nào so sánh hai bé**
+(`00` §6).
+
 ### 1.9 Tài sản đồ hoạ — nguồn & quy trình sản xuất
 
 Dự án gia đình không có hoạ sĩ, nên tài sản đến từ ba nguồn, **cùng một phong cách** theo `STYLE.md`:
@@ -201,3 +261,4 @@ Quy trình: mọi tài sản đặt trong `content/art/<loại>/` kèm `manifest
   9. Quay video 2 phút một phiên học để chủ dự án xem (lưu `docs/screens/pha-3/`).
   10. Có ít nhất 1 trạm chọn "1 trong 2" trong phiên; có nghỉ vận động giữa phiên; mascot hỏi "chơi tiếp hay nghỉ" sau 8 bài (§1.8b).
   11. Mascot làm mẫu được một bài (`scaffold: model`): nói to cách nghĩ rồi đưa bài sinh đôi cho con (`04` §11.4 bậc 3).
+  12. Bảy cơ chế P0 của §1.8c có mặt và chạy được: trứng nứt thêm sau phiên, mảnh tranh tuần lật thêm một mảnh, thế giới đổi theo giờ thật, thư của ba mẹ đọc được bằng giọng, mascot nhắc đúng một việc hôm qua, sao vàng lớn của ba mẹ rơi xuống, giấy chứng nhận in ra được.
