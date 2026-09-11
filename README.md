@@ -48,7 +48,7 @@ pnpm e2e                                                   # smoke Playwright, c
 $env:E2E_ADMIN_PASSWORD="<mật khẩu admin đã đổi>"; $env:E2E_CHANNEL="chrome"; pnpm e2e   # nghiệm thu pha 0 + 1 + 2 (23 test)
 ```
 
-Lệnh khác: `node scripts/sample-exercises.mjs pha-2-dot-1 20` (rút lại đúng 20 bài mẫu QC chấm), `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm mọi file `content/`), `pnpm skills:validate` (chỉ bản đồ kỹ năng + khung bài học + bộ mã lỗi), `pnpm decay:run [--force]` (chạy tay job quên kiến thức hằng đêm), `pnpm content:import [--dry-run]` / `pnpm content:stats` / `pnpm content:export --skill <mã>` (ngân hàng bài), `pnpm inbox:pull|validate|push` (hàng chờ AI), `pnpm tts:voices` (liệt kê giọng Vbee).
+Lệnh khác: `node scripts/sample-exercises.mjs pha-2-dot-1 20` (rút lại đúng 20 bài mẫu QC chấm), `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm mọi file `content/`), `pnpm skills:validate` (chỉ bản đồ kỹ năng + khung bài học + bộ mã lỗi), `pnpm decay:run [--force]` (chạy tay job quên kiến thức hằng đêm), `pnpm content:import [--dry-run]` / `pnpm content:stats` / `pnpm content:export --skill <mã>` (ngân hàng bài), `pnpm inbox:pull|validate|push` (hàng chờ AI), `pnpm tts:voices` (liệt kê giọng Azure), `pnpm tts:smoke "câu"` (nghe thử một câu).
 
 > **Windows:** dừng `pnpm dev` trước khi chạy `pnpm build`. Prisma phải ghi lại `query_engine-windows.dll.node`, mà tiến trình dev đang giữ file này (lỗi `EPERM: operation not permitted, rename …`).
 
@@ -77,10 +77,11 @@ docs/           bộ tài liệu — nguồn sự thật
 
 Thứ tự phát: clip thu sẵn (`content/art/audio/`) → mp3 đã cache (`FILE_ROOT/tts/`) → TTS cloud → Web Speech trên thiết bị. App **không bao giờ** đọc tiếng Việt bằng giọng Anh: không có giọng phù hợp thì nút Nghe im lặng và chuyển xám.
 
-- **Giọng dựng sẵn của nhà cung cấp** (ADR-11 chốt không nhân bản giọng trẻ):
-  - `TTS_PROVIDER=vbee` — **khuyên dùng cho tiếng Việt** (nhà cung cấp Việt Nam, có giọng trẻ em). Cần `TTS_API_KEY` + `TTS_APP_ID`; chạy `pnpm tts:voices` để lấy mã giọng thật rồi điền `TTS_VOICE_VI`.
-  - `TTS_PROVIDER=azure` (`TTS_API_KEY` + `TTS_REGION`) → `vi-VN-HoaiMyNeural` / `en-US-AnaNeural`; `TTS_PROVIDER=google` → `vi-VN-Neural2-A` / `en-US-Neural2-F`.
-  - `TTS_RATE` (mặc định 0.9) cho đọc chậm dễ nghe. Chi tiết: `content/art/audio/README.md`.
+- **Giọng dựng sẵn của nhà cung cấp** (ADR-11 chốt không nhân bản giọng trẻ; bổ sung 11/09/2026 chốt Azure):
+  - `TTS_PROVIDER=azure` — **mặc định**, bậc F0 miễn phí ~500k ký tự/tháng, vùng `TTS_REGION=eastasia`. Chỉ cần `TTS_API_KEY`.
+  - **Giọng đã nghe thử và chốt:** tiếng Việt `vi-VN-HoaiMyNeural` **giữ nguyên tốc độ và cao độ gốc** (không bọc `<prosody>`); tiếng Anh `en-US-AnaNeural` bọc `<prosody rate="-10%">`. `TTS_RATE` (mặc định `-10%`) **chỉ áp cho tiếng Anh** — các bản chậm/cao hơn của giọng Việt đã bị loại, đừng thêm lại.
+  - `pnpm tts:voices` liệt kê giọng thật của tài nguyên; `pnpm tts:smoke "Nghe rồi chọn ô đúng nhé!"` sinh một file mp3 trong `_tts-thu/` để nghe ngay (thêm `--en` cho tiếng Anh).
+  - Tuỳ chọn: `TTS_PROVIDER=vbee` (`TTS_API_KEY` + `TTS_APP_ID`) hoặc `google` → `vi-VN-Neural2-A` / `en-US-Neural2-F`. Chi tiết: `content/art/audio/README.md`.
 - **mp3 sinh sẵn lúc nạp nội dung**: `pnpm content:import` sinh mp3 cho mọi đề bài có `tts: true` và cache vào `FILE_ROOT/tts/` theo hash văn bản + giọng — lúc con học chỉ phát file, không gọi mạng, mỗi câu chỉ tốn phí một lần. **Sinh dần**: hết hạn mức ngày thì lệnh dừng êm và báo còn bao nhiêu câu, chạy lại hôm sau là tiếp tục; `pnpm content:stats` hiện số câu đã có mp3. Không có khoá thì bỏ qua bước này, mọi lệnh vẫn chạy.
 - **Không cloud** (`webspeech`): máy phải có giọng tiếng Việt — Windows: *Settings → Time & Language → Speech → Add voices → Tiếng Việt*; trình duyệt **Edge** có sẵn giọng neural HoaiMy/NamMinh.
 

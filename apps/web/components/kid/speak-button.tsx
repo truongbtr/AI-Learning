@@ -2,7 +2,7 @@
 
 import { Volume2 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { KID_PROSODY, pickVoice } from "@/lib/tts/voices";
+import { kidProsody, pickVoice } from "@/lib/tts/voices";
 import { cn } from "@/lib/utils";
 
 type SpeakState = "idle" | "loading" | "speaking" | "unavailable";
@@ -84,8 +84,9 @@ export async function speak(
   const u = new SpeechSynthesisUtterance(text);
   u.voice = synthVoice as SpeechSynthesisVoice;
   u.lang = lang;
-  u.rate = KID_PROSODY.rate;
-  u.pitch = KID_PROSODY.pitch;
+  const prosody = kidProsody(lang);
+  u.rate = prosody.rate;
+  u.pitch = prosody.pitch;
   await new Promise<void>((resolve) => {
     u.onend = () => resolve();
     u.onerror = () => resolve();

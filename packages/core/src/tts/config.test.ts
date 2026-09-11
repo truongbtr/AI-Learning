@@ -1,15 +1,24 @@
 import { describe, expect, it } from "vitest";
 import {
+  azureTtsUrl,
+  azureVoicesUrl,
   buildAzureSsml,
   cloudTtsEnabled,
   DEFAULT_TTS_RATE,
   googleAudioConfig,
   localeFor,
   resolveVoice,
+  speedMultiplier,
   ttsConfigFromEnv,
   vbeeBody,
 } from "./config";
-import { missingAudio, pregenerateAudio, ttsCacheKey } from "./synthesize";
+import {
+  listAzureVoices,
+  missingAudio,
+  pregenerateAudio,
+  synthesizeWithProvider,
+  ttsCacheKey,
+} from "./synthesize";
 
 /** In-memory FileStorage so the cache logic can be tested without touching disk. */
 function memoryStorage() {
@@ -34,11 +43,12 @@ function memoryStorage() {
   };
 }
 
-describe("TTS config (ADR-11 phuong an c)", () => {
-  it("defaults to Web Speech with no key, so the app runs with an empty .env", () => {
+describe("TTS config (ADR-11 phuong an c + bo sung Azure)", () => {
+  it("defaults to Azure eastasia but stays silent with no key — an empty .env still runs", () => {
     const cfg = ttsConfigFromEnv({});
-    expect(cfg.provider).toBe("webspeech");
-    expect(cloudTtsEnabled(cfg)).toBe(false);
+    expect(cfg.provider).toBe("azure");
+    expect(cfg.region).toBe("eastasia");
+    expect(cloudTtsEnabled(cfg)).toBe(false); // no key -> Web Speech
     expect(cfg.rate).toBe(DEFAULT_TTS_RATE);
   });
 
@@ -70,13 +80,40 @@ describe("TTS config (ADR-11 phuong an c)", () => {
     expect(resolveVoice(cfg, "en-US")).toBe("en-US-Wavenet-F");
   });
 
-  it("reads slower than default for a 6-year-old", () => {
+  it("reads Vietnamese at the voice's own speed — no prosody (the owner chose that sample)", () => {
     const cfg = ttsConfigFromEnv({ TTS_PROVIDER: "azure", TTS_API_KEY: "k" });
-    expect(cfg.rate).toBeLessThan(1);
     const ssml = buildAzureSsml("ba cong hai", "vi-VN", cfg.voices.vi, cfg);
-    expect(ssml).toContain('rate="0.9"');
+    expect(ssml).not.toContain("prosody");
     expect(ssml).toContain("vi-VN-HoaiMyNeural");
-    expect(googleAudioConfig(cfg).speakingRate).toBe(0.9);
+    expect(ssml).toContain('xml:lang="vi-VN"');
+  });
+
+  it("slows English by TTS_RATE, and only English", () => {
+    const cfg = ttsConfigFromEnv({ TTS_PROVIDER: "azure", TTS_API_KEY: "k" });
+    expect(cfg.rate).toBe("-10%");
+    const ssml = buildAzureSsml("How many apples?", "en-US", cfg.voices.en, cfg);
+    expect(ssml).toContain('<prosody rate="-10%">');
+    expect(ssml).toContain("en-US-AnaNeural");
+    expect(googleAudioConfig(cfg, "en").speakingRate).toBeCloseTo(0.9);
+    expect(googleAudioConfig(cfg, "vi").speakingRate).toBe(1);
+  });
+
+  it("reads the rate as a percentage or as a multiplier", () => {
+    expect(speedMultiplier("-10%")).toBeCloseTo(0.9);
+    expect(speedMultiplier("+20%")).toBeCloseTo(1.2);
+    expect(speedMultiplier("0.85")).toBe(0.85);
+    expect(speedMultiplier("")).toBe(1);
+    expect(speedMultiplier("nonsense")).toBe(1);
+  });
+
+  it("builds the Azure endpoints from the region", () => {
+    const cfg = ttsConfigFromEnv({ TTS_PROVIDER: "azure", TTS_API_KEY: "k" });
+    expect(azureTtsUrl(cfg.region)).toBe(
+      "https://eastasia.tts.speech.microsoft.com/cognitiveservices/v1",
+    );
+    expect(azureVoicesUrl(cfg.region)).toBe(
+      "https://eastasia.tts.speech.microsoft.com/cognitiveservices/voices/list",
+    );
   });
 
   it("escapes XML so a prompt with & or < cannot break the SSML", () => {
@@ -89,19 +126,62 @@ describe("TTS config (ADR-11 phuong an c)", () => {
     expect(localeFor("vi")).toBe("vi-VN");
   });
 
-  it("uses Vbee for Vietnamese with a speed the API accepts (ADR-11)", () => {
+  it("keeps Vbee as an optional provider, at a speed its API accepts (ADR-11)", () => {
     const cfg = ttsConfigFromEnv({ TTS_PROVIDER: "vbee", TTS_API_KEY: "k", TTS_APP_ID: "app" });
     expect(cfg.provider).toBe("vbee");
     expect(resolveVoice(cfg, "vi")).toBe("hn_female_ngochuyen_full_48k-fhg");
-    expect(vbeeBody("ba cong hai", "v", cfg)).toMatchObject({ speed: 0.9, audio_type: "mp3" });
+    // Vietnamese keeps its own speed, English takes TTS_RATE.
+    expect(vbeeBody("ba cong hai", "v", cfg, "vi")).toMatchObject({ speed: 1, audio_type: "mp3" });
+    expect(vbeeBody("three", "v", cfg, "en").speed).toBeCloseTo(0.9);
     // Vbee refuses anything outside 0.25-1.9, so the rate is clamped rather than rejected.
-    expect(vbeeBody("x", "v", { ...cfg, rate: 5 }).speed).toBe(1.9);
-    expect(vbeeBody("x", "v", { ...cfg, rate: 0.05 }).speed).toBe(0.25);
+    expect(vbeeBody("x", "v", { ...cfg, rate: "500%" }, "en").speed).toBe(1.9);
+    expect(vbeeBody("x", "v", { ...cfg, rate: "0.05" }, "en").speed).toBe(0.25);
   });
 
   it("leaves English on Web Speech when Vbee has no English voice configured", () => {
     const cfg = ttsConfigFromEnv({ TTS_PROVIDER: "vbee", TTS_API_KEY: "k" });
     expect(resolveVoice(cfg, "en-US")).toBeNull();
+  });
+});
+
+describe("talking to Azure", () => {
+  const cfg = ttsConfigFromEnv({ TTS_PROVIDER: "azure", TTS_API_KEY: "secret" });
+
+  it("posts SSML to the region endpoint and takes the mp3 straight from the reply", async () => {
+    const seen: { url: string; init: RequestInit }[] = [];
+    const fakeFetch = (async (url: string, init: RequestInit) => {
+      seen.push({ url, init });
+      return new Response(new Uint8Array([0xff, 0xfb, 0x90]), { status: 200 });
+    }) as unknown as typeof fetch;
+
+    const bytes = await synthesizeWithProvider("Chào con!", "vi", cfg, fakeFetch);
+    expect(bytes).toEqual(new Uint8Array([0xff, 0xfb, 0x90]));
+    const call = seen[0];
+    expect(call?.url).toBe("https://eastasia.tts.speech.microsoft.com/cognitiveservices/v1");
+    const headers = call?.init.headers as Record<string, string>;
+    expect(headers["Ocp-Apim-Subscription-Key"]).toBe("secret");
+    expect(headers["Content-Type"]).toBe("application/ssml+xml");
+    expect(headers["X-Microsoft-OutputFormat"]).toBe("audio-24khz-48kbitrate-mono-mp3");
+    expect(String(call?.init.body)).toContain("vi-VN-HoaiMyNeural");
+    expect(String(call?.init.body)).not.toContain("prosody");
+  });
+
+  it("lists the voices of the resource", async () => {
+    const fakeFetch = (async () =>
+      Response.json([
+        {
+          ShortName: "vi-VN-HoaiMyNeural",
+          LocalName: "Hoài My",
+          Gender: "Female",
+          Locale: "vi-VN",
+        },
+        { ShortName: "en-US-AnaNeural", LocalName: "Ana", Gender: "Female", Locale: "en-US" },
+        { ShortName: "fr-FR-DeniseNeural", LocalName: "Denise", Gender: "Female", Locale: "fr-FR" },
+      ])) as unknown as typeof fetch;
+    const all = await listAzureVoices(cfg, "", fakeFetch);
+    expect(all).toHaveLength(3);
+    const vi = await listAzureVoices(cfg, "vi", fakeFetch);
+    expect(vi.map((v) => v.code)).toEqual(["vi-VN-HoaiMyNeural"]);
   });
 });
 
@@ -112,7 +192,7 @@ describe("TTS cache", () => {
     expect(ttsCacheKey("mot hai ba", "vi", cfg)).toBe(ttsCacheKey(" mot hai ba ", "vi-VN", cfg));
     expect(ttsCacheKey("mot hai ba", "vi", cfg)).not.toBe(ttsCacheKey("mot hai bon", "vi", cfg));
     expect(ttsCacheKey("one", "en", cfg)).toMatch(/^tts\/en\//);
-    const slower = { ...cfg, rate: 0.7 };
+    const slower = { ...cfg, rate: "-30%" };
     expect(ttsCacheKey("mot", "vi", cfg)).not.toBe(ttsCacheKey("mot", "vi", slower));
   });
 

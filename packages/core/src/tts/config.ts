@@ -1,10 +1,14 @@
 /**
- * Cloud neural TTS configuration (ADR-6, ADR-11 phuong an (c), NFR-04).
+ * Cloud neural TTS configuration (ADR-6, ADR-11 phuong an (c) + the Azure addendum, NFR-04).
  *
  * Stock provider voices only — the project never clones a real child's voice (that is biometric
- * data and must not sit on a third party's servers, ADR-11). Vietnamese is read by Vbee, a
- * Vietnamese vendor with real child voices; Azure/Google are the fallbacks and carry English.
- * Everything is read a little slower than default (TTS_RATE, ~0.9) so a 6-year-old can follow.
+ * data and must not sit on a third party's servers, ADR-11).
+ *
+ * The voices are settled: the project owner listened to six samples on 11/09/2026 and chose
+ *   - Vietnamese `vi-VN-HoaiMyNeural` **at its own speed and pitch** — no <prosody> at all.
+ *     The slowed-down and raised-pitch samples were listened to and rejected; do not add them back.
+ *   - English `en-US-AnaNeural` wrapped in <prosody rate="-10%">, which TTS_RATE sets.
+ * So TTS_RATE applies to English only. Vbee and Google stay as optional providers.
  *
  * Pure functions: no fs, no network, no Next — so both the web app and the content importer can
  * use them and the unit tests need no keys.
@@ -18,12 +22,15 @@ export interface TtsConfig {
   apiKey: string;
   /** Vbee `App-Id` header. Ignored by the others. */
   appId: string;
-  /** Azure region (e.g. southeastasia). Ignored by the others. */
+  /** Azure region (eastasia — the owner's F0 resource). Ignored by the others. */
   region: string;
   /** Concrete provider voice per language. */
   voices: Record<TtsLang, string>;
-  /** Slower than default so the words are easy to follow (Vbee accepts 0.25–1.9). */
-  rate: number;
+  /**
+   * Reading speed for **English only**, as Azure writes it: "-10%" (or "0.9" for the providers
+   * that take a multiplier). Empty string = the voice's own speed. Vietnamese never uses it.
+   */
+  rate: string;
 }
 
 /**
@@ -48,30 +55,55 @@ export const STOCK_VOICES: Record<"vbee" | "azure" | "google", Record<TtsLang, s
   },
 };
 
-export const DEFAULT_TTS_RATE = 0.9;
+/** English only — the Vietnamese voice is left alone (ADR-11 addendum). */
+export const DEFAULT_TTS_RATE = "-10%";
+export const DEFAULT_TTS_REGION = "eastasia";
 export const VBEE_TTS_URL = "https://api.vbee.vn/v1/tts";
 export const VBEE_VOICES_URL = "https://vbee.vn/api/public/v1/voices";
+
+export function azureTtsUrl(region: string): string {
+  return `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
+}
+export function azureVoicesUrl(region: string): string {
+  return `https://${region}.tts.speech.microsoft.com/cognitiveservices/voices/list`;
+}
+
+/**
+ * `rate` as a plain multiplier, for the providers that want a number.
+ * "-10%" -> 0.9 · "+20%" -> 1.2 · "0.9" -> 0.9 · "" -> 1.
+ */
+export function speedMultiplier(rate: string): number {
+  const text = rate.trim();
+  if (!text) return 1;
+  const percent = /^([+-]?\d+(?:\.\d+)?)%$/.exec(text);
+  if (percent) return 1 + Number(percent[1]) / 100;
+  const n = Number(text);
+  return Number.isFinite(n) && n > 0 ? n : 1;
+}
 
 export function langBase(lang: string): TtsLang {
   return lang.toLowerCase().startsWith("en") ? "en" : "vi";
 }
 
 export function ttsConfigFromEnv(env: Record<string, string | undefined> = process.env): TtsConfig {
-  const raw = (env.TTS_PROVIDER ?? "webspeech").trim().toLowerCase();
+  // Azure is the default vendor (ADR-11 addendum). With no key it still falls back to Web Speech,
+  // so an empty .env runs the whole app.
+  const raw = (env.TTS_PROVIDER ?? "azure").trim().toLowerCase();
   const provider: TtsProviderName =
-    raw === "vbee" || raw === "azure" || raw === "google" ? raw : ("webspeech" as const);
+    raw === "vbee" || raw === "azure" || raw === "google" || raw === "webspeech"
+      ? raw
+      : ("webspeech" as const);
   const stock = provider === "webspeech" ? { vi: "", en: "" } : STOCK_VOICES[provider];
-  const rate = Number(env.TTS_RATE ?? DEFAULT_TTS_RATE);
   return {
     provider,
     apiKey: (env.TTS_API_KEY ?? "").trim(),
     appId: (env.TTS_APP_ID ?? "").trim(),
-    region: (env.TTS_REGION ?? "southeastasia").trim(),
+    region: (env.TTS_REGION ?? DEFAULT_TTS_REGION).trim(),
     voices: {
       vi: (env.TTS_VOICE_VI ?? "").trim() || stock.vi,
       en: (env.TTS_VOICE_EN ?? "").trim() || stock.en,
     },
-    rate: Number.isFinite(rate) && rate > 0 ? rate : DEFAULT_TTS_RATE,
+    rate: (env.TTS_RATE ?? DEFAULT_TTS_RATE).trim(),
   };
 }
 
@@ -96,26 +128,38 @@ function escapeXml(s: string): string {
   );
 }
 
-/** Azure SSML with the kid reading rate. Exported for tests. */
+/**
+ * Azure SSML. English is slowed by `rate`; **Vietnamese is never wrapped in <prosody>** — the
+ * owner listened to the slowed and pitched-up HoaiMy samples and picked the plain one (ADR-11).
+ * Exported for tests.
+ */
 export function buildAzureSsml(text: string, lang: string, voice: string, cfg: TtsConfig): string {
   const locale = localeFor(lang);
+  const body =
+    langBase(lang) === "en" && cfg.rate
+      ? `<prosody rate="${escapeXml(cfg.rate)}">${escapeXml(text)}</prosody>`
+      : escapeXml(text);
   return (
     `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="${locale}">` +
-    `<voice name="${voice}"><prosody rate="${cfg.rate}">${escapeXml(text)}</prosody></voice></speak>`
+    `<voice name="${voice}">${body}</voice></speak>`
   );
 }
 
 /** Google audioConfig derived from the same config. Exported for tests. */
-export function googleAudioConfig(cfg: TtsConfig) {
-  return { audioEncoding: "MP3", speakingRate: cfg.rate };
+export function googleAudioConfig(cfg: TtsConfig, lang = "en") {
+  return {
+    audioEncoding: "MP3",
+    speakingRate: langBase(lang) === "en" ? speedMultiplier(cfg.rate) : 1,
+  };
 }
 
 /** Vbee request body. `speed` is clamped to the range the API accepts. Exported for tests. */
-export function vbeeBody(text: string, voice: string, cfg: TtsConfig) {
+export function vbeeBody(text: string, voice: string, cfg: TtsConfig, lang = "vi") {
+  const speed = langBase(lang) === "en" ? speedMultiplier(cfg.rate) : 1;
   return {
     text,
     voice_code: voice,
-    speed: Math.min(1.9, Math.max(0.25, cfg.rate)),
+    speed: Math.min(1.9, Math.max(0.25, speed)),
     audio_type: "mp3",
     // Synchronous: the sentences here are short, so waiting for the link is simpler than polling.
     callback_url: "",

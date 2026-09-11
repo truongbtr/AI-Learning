@@ -1,6 +1,8 @@
 import { createHash } from "node:crypto";
 import type { FileStorage } from "../storage/file-storage";
 import {
+  azureTtsUrl,
+  azureVoicesUrl,
   buildAzureSsml,
   cloudTtsEnabled,
   googleAudioConfig,
@@ -48,6 +50,43 @@ export function ttsCacheKey(text: string, lang: string, cfg: TtsConfig): string 
   return `tts/${langBase(lang)}/${hash}.mp3`;
 }
 
+export interface VoiceInfo {
+  code: string;
+  name: string;
+  gender?: string;
+  locale?: string;
+}
+
+/**
+ * The Azure voices the resource may use — `pnpm tts:voices` prints this (ADR-11 addendum).
+ * GET https://{region}.tts.speech.microsoft.com/cognitiveservices/voices/list
+ */
+export async function listAzureVoices(
+  cfg: TtsConfig,
+  language = "",
+  fetchImpl: typeof fetch = fetch,
+): Promise<VoiceInfo[]> {
+  const res = await fetchImpl(azureVoicesUrl(cfg.region), {
+    headers: { "Ocp-Apim-Subscription-Key": cfg.apiKey },
+  });
+  if (!res.ok) throw new Error(`Azure voices ${res.status}: ${await res.text()}`);
+  const body = (await res.json()) as {
+    ShortName?: string;
+    DisplayName?: string;
+    LocalName?: string;
+    Gender?: string;
+    Locale?: string;
+  }[];
+  return body
+    .filter((v) => !language || (v.Locale ?? "").toLowerCase().startsWith(language.toLowerCase()))
+    .map((v) => ({
+      code: v.ShortName ?? "",
+      name: v.LocalName ?? v.DisplayName ?? "",
+      gender: v.Gender,
+      locale: v.Locale,
+    }));
+}
+
 /** The voices the account may use — `pnpm tts:voices` prints this (ADR-11). */
 export async function listVbeeVoices(
   cfg: TtsConfig,
@@ -87,7 +126,7 @@ export async function synthesizeWithProvider(
         "App-Id": cfg.appId,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(vbeeBody(text, voice, cfg)),
+      body: JSON.stringify(vbeeBody(text, voice, cfg, lang)),
     });
     const raw = await res.text();
     if (!res.ok) {
@@ -111,19 +150,16 @@ export async function synthesizeWithProvider(
   }
 
   if (cfg.provider === "azure") {
-    const res = await fetchImpl(
-      `https://${cfg.region}.tts.speech.microsoft.com/cognitiveservices/v1`,
-      {
-        method: "POST",
-        headers: {
-          "Ocp-Apim-Subscription-Key": cfg.apiKey,
-          "Content-Type": "application/ssml+xml",
-          "X-Microsoft-OutputFormat": "audio-24khz-48kbitrate-mono-mp3",
-          "User-Agent": "mtct-learning",
-        },
-        body: buildAzureSsml(text, lang, voice, cfg),
+    const res = await fetchImpl(azureTtsUrl(cfg.region), {
+      method: "POST",
+      headers: {
+        "Ocp-Apim-Subscription-Key": cfg.apiKey,
+        "Content-Type": "application/ssml+xml",
+        "X-Microsoft-OutputFormat": "audio-24khz-48kbitrate-mono-mp3",
+        "User-Agent": "mtct-learning",
       },
-    );
+      body: buildAzureSsml(text, lang, voice, cfg),
+    });
     if (!res.ok) {
       const raw = await res.text();
       if (isQuotaFailure(res.status, raw)) throw new TtsQuotaError(`Azure ${res.status}: ${raw}`);
@@ -141,7 +177,7 @@ export async function synthesizeWithProvider(
         body: JSON.stringify({
           input: { text },
           voice: { languageCode: locale, name: voice },
-          audioConfig: googleAudioConfig(cfg),
+          audioConfig: googleAudioConfig(cfg, lang),
         }),
       },
     );

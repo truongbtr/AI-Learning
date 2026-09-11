@@ -30,7 +30,8 @@
     "skills:validate": "pnpm --filter @mtct/content validate:skills",
     "decay:run": "pnpm --filter @mtct/worker decay:run",
     "content:export": "pnpm --filter @mtct/db run content:export",
-    "tts:voices": "pnpm --filter @mtct/db run tts:voices"
+    "tts:voices": "pnpm --filter @mtct/db run tts:voices",
+    "tts:smoke": "pnpm --filter @mtct/db run tts:smoke"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.0",

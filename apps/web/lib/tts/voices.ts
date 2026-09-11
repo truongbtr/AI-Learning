@@ -20,8 +20,13 @@ const VI_PREFERENCE = [
   "Linh", // Apple
 ];
 
-/** Prosody for the on-device fallback: same slow, gentle read as TTS_RATE (ADR-11). */
-export const KID_PROSODY = { rate: 0.9, pitch: 1.15 } as const;
+/**
+ * Prosody for the on-device fallback, matching the cloud voices the owner chose (ADR-11
+ * addendum): Vietnamese at its own speed and pitch, English a touch slower.
+ */
+export function kidProsody(lang: string): { rate: number; pitch: number } {
+  return langBase(lang) === "en" ? { rate: 0.9, pitch: 1 } : { rate: 1, pitch: 1 };
+}
 
 function langBase(lang: string): string {
   return lang.toLowerCase().split(/[-_]/)[0] ?? "";

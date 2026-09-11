@@ -1,6 +1,6 @@
 # ADR-11 — Ba commit ngoài phạm vi pha 0 (TTS cloud, giọng nhân bản ElevenLabs, giao diện MEDIFA ONE)
 
-- **Trạng thái:** ĐÃ CHỐT 11/09/2026 — phương án (c), xem mục "Quyết định".
+- **Trạng thái:** ĐÃ CHỐT 11/09/2026 — phương án (c). **Sửa 11/09/2026 (bổ sung ở cuối):** nhà cung cấp mặc định đổi từ Vbee sang **Azure** — xem mục "Bổ sung: đổi nhà cung cấp TTS".
 - **Ngày:** 11/09/2026 (đầu pha 1)
 - **Liên quan:** ADR-6 (Web Speech mặc định, cloud TTS qua adapter), ADR-10 (không SDK LLM), NFR-04, NFR-09, `docs/06` §2 (giao diện ba mẹ/admin).
 
@@ -57,3 +57,20 @@ Ngoài ra:
 
 - Báo cáo cuối pha 1 nêu câu hỏi này để chủ dự án chọn; pha 2 không bắt đầu khi chưa chốt.
 - Dù chọn (a) hay (b), nguyên tắc không đổi: **app không gọi API LLM**, Web Speech là mặc định, khoá chỉ trong `.env`.
+
+
+## Bổ sung: đổi nhà cung cấp TTS mặc định sang Azure (11/09/2026)
+
+Sau khi chốt phương án (c), QC kiểm tra bảng giá thật của Vbee: **tab API không niêm yết giá**, chỉ có biểu mẫu "liên hệ nhận báo giá doanh nghiệp"; gói 599k/năm mà chủ dự án thấy là gói **Studio** (gõ tay trên web, không kèm quyền gọi API). Không phù hợp với một dự án gia đình cần ~36.000 ký tự một lần.
+
+**Quyết định:** nhà cung cấp mặc định là **Azure AI Speech**, bậc `F0` (miễn phí ~500.000 ký tự giọng neural/tháng), vùng **`eastasia`** (tài nguyên `mimosa118` của chủ dự án).
+
+- `POST https://{region}.tts.speech.microsoft.com/cognitiveservices/v1`; header `Ocp-Apim-Subscription-Key`, `Content-Type: application/ssml+xml`, `X-Microsoft-OutputFormat: audio-24khz-48kbitrate-mono-mp3`; thân là SSML; đáp lại **chính là mp3** (không có link hết hạn như Vbee).
+- **Giọng đã nghe thử và chốt 11/09/2026** (chủ dự án nghe 6 mẫu, chọn mẫu 1 và mẫu 6):
+  - Tiếng Việt: `vi-VN-HoaiMyNeural`, **giữ nguyên tốc độ và cao độ gốc** — không bọc `<prosody>`. (Các mẫu chậm 10% / nâng cao độ đều bị loại.)
+  - Tiếng Anh: `en-US-AnaNeural` (giọng bé gái), bọc `<prosody rate="-10%">`.
+  - `TTS_RATE` chỉ áp cho tiếng Anh; tiếng Việt để trống.
+- Danh sách giọng: `GET https://{region}.tts.speech.microsoft.com/cognitiveservices/voices/list`.
+- Mã Vbee đã viết ở pha 2 **giữ lại làm provider tuỳ chọn**, không phải mặc định; không đi hỏi báo giá doanh nghiệp.
+- Azure không có giọng **trẻ em tiếng Việt**. Nếu sau này nghe thấy khô, đường lùi rẻ: mua gói Vbee Studio 599k/năm, xuất tay ~100 câu thoại cố định của mascot bỏ vào `content/art/audio/`; phần câu lệnh bài tập vẫn do Azure sinh. Quyết định ở pha 3 sau khi nghe thử.
+- Biến env: `TTS_PROVIDER=azure|vbee|google|webspeech`, `TTS_API_KEY`, `TTS_REGION`, `TTS_VOICE_VI`, `TTS_VOICE_EN`, `TTS_RATE`; `TTS_APP_ID` chỉ dùng cho Vbee.
