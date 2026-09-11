@@ -42,7 +42,7 @@ AiCall ; AiConfig ; PromptTemplate ; Setting
 
 ### 2.2 Bản đồ kỹ năng
 
-**Skill** — `code` (duy nhất, ví dụ `EM.OA.ADD10` = English Maths / Operations & Algebraic / cộng trong 10), `subject` (enum: `ESL`, `ENL`, `EMATH`, `ESCI`, `VIET`, `VMATH`), `strand` (mạch, ví dụ *Phonics*, *Number & Operations*), `nameVi`, `nameEn`, `description` (mô tả để AI hiểu phạm vi), `standardRef` (ví dụ `CCSS.MATH.1.OA.C.6`, `CT2018.TV1.DOC.3`), `gradeLevel` (K, 1, 2 — cho phép nội dung dưới/trên lớp), `order` (thứ tự trong mạch), `expectedWeek` (tuần học kỳ vọng đạt, nullable), `exerciseTypes: string[]` (dạng bài phù hợp), `difficultyRange` (1–5), `isActive`, `source` (seed|admin|ai).
+**Skill** — `code` (duy nhất, ví dụ `EM.OA.ADD10` = English Maths / Operations & Algebraic / cộng trong 10), `subject` (enum: `ESL`, `ENL`, `EMATH`, `ESCI`, `VIET`, `VMATH`), `strand` (mạch, ví dụ *Phonics*, *Number & Operations*), `nameVi`, `nameEn`, `description` (mô tả để AI hiểu phạm vi), `standardRef` (ví dụ `CCSS.MATH.1.OA.C.6`, `CT2018.TV1.DOC.3`), `gradeLevel` (K, 1, 2 — cho phép nội dung dưới/trên lớp), `order` (thứ tự trong mạch), `expectedWeek` (tuần học kỳ vọng đạt, nullable), `exerciseTypes: string[]` (dạng bài phù hợp), `difficultyRange` (1–5), `relatedSkillCodes: string[]`, `confusableWith: string[]` (cặp dễ nhầm — thang rèn bậc 5, ADR-13), `searchVector` (tsvector, trigger giữ, ADR-12/13), `isActive`, `source` (SEED|ADMIN|AI).
 
 **SkillPrerequisite** — `skillId`, `prerequisiteId`, `strength` (0–1).
 
@@ -51,6 +51,8 @@ AiCall ; AiConfig ; PromptTemplate ; Setting
 ### 2.3 Năng lực & bằng chứng
 
 **SkillMastery** — `studentId`, `skillId` (unique cặp), `mastery` (0–100), `confidence` (0–1), `evidenceCount`, `lastEvidenceAt`, `trend14d` (số), `status` (enum `NOT_STARTED|LEARNING|NEEDS_PRACTICE|SOLID|MASTERED`), `nextReviewAt` (spaced repetition), `intervalDays`, `easeFactor`.
+
+**ErrorCode** (ADR-13) — `code` (khoá chính, ví dụ `nham_b_d`), `subject`, `group`, `nameVi`, `description`, `detection`, `remediation`, `remediationSkills: string[]`, `lessonRefs: string[]`, `behavioural`, `isActive`, `source`. Nguồn sự thật vẫn là `content/error-taxonomy.json`; `pnpm db:seed` nạp vào bảng này để API chặn mã lạ ngay trong transaction.
 
 **ErrorStat** — `studentId`, `errorCode` (mã trong `content/error-taxonomy.json`, `04` §11.1), `count7d`, `count30d`, `lastAt`, `lastEvidenceId`; unique `(studentId, errorCode)`. Cập nhật bởi job khi có `Evidence` mang mã lỗi; là nguồn cho thang rèn và "3 điều cần chú ý".
 

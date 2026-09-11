@@ -60,7 +60,7 @@ m_new = clamp(m_new, 0, 100)
 c_new = min(1, c + 0.08 * w)                # mỗi bằng chứng tăng tin cậy
 ```
 
-Trọng số `w` theo nguồn: `EXERCISE` 1.0 · `INTAKE_PHOTO` 0.8 · `INTAKE_TEACHER_NOTE` 0.9 · `EXTERNAL_REPORT` 0.7 · `PARENT_NOTE` 0.5 · `VOICE_TUTOR` 0.3 · `PARENT_OVERRIDE` = đặt thẳng giá trị, `c = 0.9`.
+Trọng số `w` theo nguồn: `EXERCISE` 1.0 · `INTAKE_PHOTO` 0.8 · `INTAKE_TEACHER_NOTE` 0.9 · `HOMEWORK` 0.8 (ADR-13) · `EXTERNAL_REPORT` 0.7 · `PARENT_NOTE` 0.5 · `VOICE_TUTOR` 0.3 · `PARENT_OVERRIDE` = đặt thẳng giá trị, `c = 0.9`.
 
 **Ví dụ kiểm thử (QC):** m=50, c=0.5, bằng chứng EXERCISE đúng (s=1), d=3, không gợi ý → k=18; m_new = 50 + 50×0.18×1.1 = **59.9**; c_new=0.58. Sai (s=0): m_new = 50 − 50×0.18×1.1 = **40.1**.
 
@@ -76,7 +76,9 @@ Sau 21 ngày không có bằng chứng: mỗi ngày `c -= 0.01` (tối thiểu 0
 | `LEARNING` | có bằng chứng, m < 60 hoặc c < 0.4 |
 | `NEEDS_PRACTICE` | m < 60 và c ≥ 0.4 **hoặc** trend14d ≤ −8 |
 | `SOLID` | 60 ≤ m < 85, c ≥ 0.4 |
-| `MASTERED` | m ≥ 85, c ≥ 0.6, ≥ 3 bằng chứng đúng trong 3 ngày khác nhau |
+| `MASTERED` | m ≥ 85, c ≥ 0.6, ≥ 3 bằng chứng đúng trong 3 ngày khác nhau (giờ Việt Nam) |
+
+"Bằng chứng **đúng**" = `outcome = CORRECT`, hoặc `score ≥ 0.8` khi bằng chứng chỉ có điểm liên tục; `PARENT_OVERRIDE` không tính (ADR-13 §3).
 
 ### 3.4 Lịch ôn (spaced repetition)
 

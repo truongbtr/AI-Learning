@@ -155,7 +155,7 @@ services:
   backup:    image: postgres:16 ; cron pg_dump hằng đêm + rsync /data/files → /backup (NAS)
 ```
 
-- `.env.example` liệt kê: `DATABASE_URL`, `AUTH_SECRET`, `ADMIN_USERNAME`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `TTS_PROVIDER` (mặc định `webspeech`), `TTS_API_KEY?`, `FILE_ROOT`, `INBOX_ROOT`, `TUNNEL_TOKEN`. **Không có khoá API LLM.**
+- `.env.example` liệt kê: `DATABASE_URL`, `AUTH_SECRET`, `ADMIN_USERNAME`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `TTS_PROVIDER` (mặc định `webspeech`), `TTS_API_KEY?`, `FILE_ROOT`, `INBOX_ROOT`, `INTERNAL_API_TOKEN?` (worker gọi `POST /api/evidence`; để trống thì chỉ ADMIN ghi được — ADR-13), `TUNNEL_TOKEN`. **Không có khoá API LLM.**
 - Môi trường dev: `pnpm dev` với Postgres trong Docker; seed bằng `pnpm db:seed`.
 - Cập nhật: `git pull && docker compose build && docker compose up -d` ; migration chạy tự động lúc web khởi động (`prisma migrate deploy`).
 

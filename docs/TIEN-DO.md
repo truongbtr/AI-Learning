@@ -2,6 +2,70 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 1 — 11/09/2026 — Bản đồ kỹ năng & mô hình năng lực
+
+Trạng thái: **xong** (6/6 tiêu chí đạt, kiểm cả trên máy dev lẫn stack Docker). 6 commit, chưa push. Đầu pha có 1 commit ADR xử lý phần ngoài phạm vi của pha 0.
+
+### Đã làm theo 5 việc
+
+0. **Trước việc 1 — ADR cho phần ngoài phạm vi pha 0** (`b108aa4`): `docs/adr/ADR-11-pha0-ngoai-pham-vi.md` liệt kê ba commit ngoài phạm vi (`e13b042` TTS cloud, `3cb324a` giao diện MEDIFA ONE, `00f4d36` giọng nhân bản ElevenLabs), thư mục `ai voice/` (không có trong `02` §3), ba dịch vụ trả phí tuỳ chọn (ElevenLabs/Azure/Google — **không có SDK nào được cài**), 8 biến `TTS_*`, và ảnh hưởng tới `06` §2; nêu hai phương án (a) giữ + tắt bằng cờ env, (b) gỡ — **chờ chủ dự án chọn**. `docs/adr/ADR-12-bo-skill-embedding.md` ghi lại quyết định bỏ `SkillEmbedding`/pgvector của pha 0 và `docs/03` đã sửa cho khớp.
+
+1. **Bản đồ kỹ năng + khung bài học** (`e9a8016`) — `content/skill-map/{viet,vmath,esl,enl,emath,esci}.json`: **359 kỹ năng**, mỗi kỹ năng đủ `code/subject/strand/nameVi/nameEn/description (có "Ví dụ:" và "Lỗi thường gặp:")/gradeLevel/prerequisites/relatedSkillCodes/confusableWith/exerciseTypes/difficultyRange`, Toán và Tiếng Việt có `lessonRef` + `expectedWeek` lấy từ `09`. Học vần sinh đúng **83 bài** của `09` §3 (mỗi bài không phải "Ôn tập" → 1–2 kỹ năng cùng `lessonRef`, dấu thanh tách riêng, bài 29 → `VIET.VIET.CHINH_TA_NGHE_VIET`, 11 cặp âm dễ nhầm thành `confusableWith`). Khung `LessonUnit`: **182 unit** trong **4 `Material`** (83 bài TV tập một + ôn tập/đánh giá, 41 bài Toán, 8 chủ đề TV tập hai = 46 unit) — chỉ mã, tên, trang, tuần, kỹ năng liên quan; `isApproved=false`, chưa có nội dung. `content/error-taxonomy.json`: **42 mã lỗi** theo `04` §11.1. `pnpm skills:validate` (thật, trong `packages/content`) kiểm: trùng mã, tiên quyết/related/confusable tồn tại, không vòng phụ thuộc, ≥ 35 kỹ năng/môn, `lessonRef` trỏ tới `LessonUnit` có thật, `expectedWeek` 1–35, mô tả đủ hai cụm bắt buộc, mạch hợp môn, kỹ năng đọc có `READ_ALOUD`, kỹ năng viết có `WRITE_PHOTO`/`TRACE`. `pnpm db:seed` nạp cả ba nguồn, **upsert theo `code`**, chỉ đụng `Skill`/`SkillPrerequisite`/`Material`/`LessonUnit`/`LessonUnitSkill`/`ErrorCode`/`ContentBatch`.
+
+2. **Thuật toán mastery + bộ mã lỗi** (`49ba88b`) — `packages/core/src/mastery/`: `updateMastery`, `applyDecay`, `statusOf`, `nextReviewAt`/`reviewIntervalAfter` (SM-2 rút gọn), `computeTrend14d`, `isWeakSkill` (§3.5) — hàm thuần, không import Next/Prisma. `packages/core/src/remediation/ladder.ts`: thang rèn 6 bậc §11.4 (`nextRung`, `nextApplicableRung` bỏ bậc 4 khi tiên quyết đã vững, giới hạn ≤ 4 bài/phiên, ≤ 2 kỹ năng rèn cùng lúc). Bảng `ErrorStat` cập nhật bằng `refreshErrorStat` (tính lại cửa sổ 7/30 ngày từ `Evidence` nên job và API luôn khớp); `RemediationTrack` đã có sẵn từ pha 0. Validator chặn mã lỗi lạ ở tầng service (`commitEvidence`) nên mọi đường ghi bằng chứng đều bị chặn, không riêng API.
+
+3. **API + job** (`6e67280`) — `GET /api/students/:id/mastery[?subject=]` (mọi kỹ năng đang dùng kèm `status`, `lastEvidenceAt`, `nextReviewAt`, `trend14d` + tóm tắt theo môn), `GET /api/students/:id/mastery/history?skill=` (đường mastery + bằng chứng), `POST /api/evidence` **nội bộ** (ADMIN hoặc `Authorization: Bearer $INTERNAL_API_TOKEN`; `CHILD`/`PARENT` → 403). Job pg-boss `mastery.decay` chạy **02:30 giờ Việt Nam** trong `apps/worker`, bù được số ngày máy tắt; lệnh chạy tay `pnpm decay:run [--force]`.
+
+4. **`/admin/skills`** (`6e67280`) — cây môn → mạch kèm số đếm, tìm nhanh (dùng full-text việc 5), bảng có `lessonRef`/`expectedWeek`/tiên quyết, hộp thoại sửa tên/mô tả/tuần/tiên quyết (chặn vòng lặp và mã không tồn tại), **ẩn** kỹ năng (không xoá — hiện số bằng chứng đã có), nạp JSON/CSV dùng **lại chính validator của việc 1** với bước "Xem trước" bắt buộc. Giao diện dùng primitives người lớn sẵn có, không đầu tư thêm vào MEDIFA ONE khi ADR-11 chưa được chốt.
+
+5. **Tra cứu kỹ năng bằng chuỗi** (`05047e2`) — migration `20260910223533_phase1_skills_mastery`: cột `Skill.searchVector` (tsvector) do **trigger** duy trì (dùng `unaccent`, không dùng cột sinh vì `unaccent()` không `IMMUTABLE`), index **GIN**, extension `unaccent`. `searchSkills(q, {subject?, limit})` trong `packages/db` + `GET /api/skills/search?q=` (chỉ người lớn). Tìm được cả tiếng Việt có dấu/không dấu, tiếng Anh, và mảnh mã (`VIET.HV.AM_U`).
+
+### Bảng 6 tiêu chí xong
+
+| # | Tiêu chí | Kết quả | Cách tự kiểm (PowerShell, tại gốc repo) |
+|---|---|---|---|
+| 1 | `pnpm test`: mastery 59.9 / 40.1; bảng trạng thái §3.3 | **Đạt** — 59.9 và 40.1 khớp **đúng công thức tài liệu**, không phải chọn thêm hằng số nào | `pnpm test` (104 test: core 65, content 10, web 27, db 13). Riêng phần này: `pnpm --filter @mtct/core test` |
+| 2 | `POST /api/evidence` 3 lần → `status` đổi đúng §3.3; `ErrorStat` tăng đúng mã; mã lạ → 400 | **Đạt** — LEARNING (25.2) → SOLID (70) → NEEDS_PRACTICE (59.2); `nham_cong_tru` count7d=1; `khong_co_ma_nay` → 400 và **không ghi gì** | `pnpm dev` rồi `$env:E2E_ADMIN_PASSWORD="<mật khẩu admin>"; $env:E2E_CHANNEL="chrome"; pnpm --filter @mtct/web exec playwright test e2e/phase1-acceptance.spec.ts` (7 test) |
+| 3 | `/admin/skills` lọc theo môn: mỗi môn ≥ 35, tổng ≥ 250; `skills:validate` sạch; seed 2 lần không trùng | **Đạt** — 359 kỹ năng (VIET 102, ESL 59, ENL 52, EMATH 51, VMATH 48, ESCI 47) | `pnpm skills:validate`; mở <http://localhost:5000/admin/skills>; `pnpm db:seed` hai lần → lần hai in `0 new, 359 updated, 0 retired` và tổng số không đổi |
+| 4 | `GET /api/skills/search?q=đọc từ có sh` → `ESL.PH.DIGRAPHS_SH_CH_TH` trong top-3 | **Đạt** — cả "đọc từ có sh" lẫn "doc tu co sh"; "cộng trong phạm vi 10" → `VMATH.SO.CONG_PV_10` | Trong `/admin/skills` gõ vào ô tìm; hoặc `Invoke-RestMethod "http://localhost:5000/api/skills/search?q=đọc từ có sh"` (cần cookie ADMIN) |
+| 5 | `pnpm lint && pnpm test && pnpm build` xanh; `docker compose --env-file .env up -d --build` chạy **không cần khoá API nào** | **Đạt** — `.env` không có khoá nào (`TTS_API_KEY`, `TTS_VOICE_*`, `INTERNAL_API_TOKEN` đều trống); container web tự `migrate deploy` + seed (359/182/42) rồi `next start`; 7 test nghiệm thu chạy lại trên stack Docker đều xanh | `pnpm lint; pnpm test; pnpm build` (dừng `pnpm dev` trước); `docker compose --env-file .env -f docker/compose.yml up -d --build` rồi `Invoke-RestMethod http://localhost:5000/api/health` |
+| 6 | Không có SDK Anthropic/OpenAI; `packages/core` không import Next/Prisma | **Đạt** | `Select-String -Path (Get-ChildItem -Recurse -Filter package.json -Exclude node_modules).FullName -Pattern "anthropic\|openai"` → rỗng; `Select-String -Path packages/core/src/**/*.ts -Pattern "from \"next\|@mtct/db\|@prisma"` → rỗng |
+
+Ảnh chụp: `docs/screens/pha-1/admin-skills.png`.
+
+### Số liệu
+
+| Hạng mục | Số lượng |
+|---|---|
+| Kỹ năng | **359** — VIET 102 · ESL 59 · ENL 52 · EMATH 51 · VMATH 48 · ESCI 47 |
+| Quan hệ tiên quyết | 353 |
+| `LessonUnit` khung | **182** (TV 140: 83 bài học vần + ôn tập/đánh giá + 54 bài đọc tập hai · Toán 42: 41 bài + tiết học đầu tiên) trong 4 `Material` |
+| Liên kết kỹ năng ↔ bài học | 505 |
+| Mã lỗi | **42** (38 mã kiến thức + 4 mã hành vi `doan_bua`, `bo_trong`, `chua_nghe_het_de`, `met_cuoi_phien`) |
+| Test | **104 đơn vị/tích hợp** xanh (core 65 · web 27 · db 13 · content 10) + **18 e2e** xanh (10 pha 0 + 7 pha 1 + smoke) |
+
+### ADR đã viết
+
+- **ADR-11** — ba commit ngoài phạm vi pha 0 + `ai voice/` + dịch vụ trả phí: **chờ chủ dự án chọn (a) giữ-tắt-mặc-định hay (b) gỡ**.
+- **ADR-12** — bỏ `SkillEmbedding`/pgvector (ghi lại quyết định của pha 0), đã sửa `docs/03`.
+- **ADR-13** — bổ sung nhỏ khi hiện thực hoá: trọng số `HOMEWORK` = 0.8, định nghĩa "bằng chứng đúng" (`score ≥ 0.8` khi không có `outcome`), lịch ôn chỉ cho kỹ năng từ `SOLID` trở lên, cột `Skill.confusableWith`, bảng `ErrorCode` (file JSON vẫn là nguồn sự thật), `searchVector` bằng trigger, mã môn Toán là `VMATH` (yêu cầu pha 1 ghi nhầm `TOAN`), khung `LessonUnit` đặt ở `*.units.json`, `INTERNAL_API_TOKEN` tuỳ chọn. Đã cập nhật `docs/02` §7, `docs/03` §2.2–2.3, `docs/04` §3.1 và §3.3 cho khớp.
+
+### Chưa làm + giả định
+
+- `RemediationTrack` mới có mô hình dữ liệu + hàm thuần chọn bậc (đúng phạm vi pha 1); **chưa có UI và chưa nối vào planner** — pha 3/5.
+- `LessonUnit` mới là **khung**: `objectives`/`vocabulary`/`sampleTasks`/`contentText` để trống, pha 6 nạp từ PDF. Số trang SGK Toán **tập hai** chưa có (chỉ biết B21 tr.4) — `09` §2 cũng chưa có.
+- `expectedWeek` và `weekFrom/To` là **suy từ số tiết** (Toán 3 tiết/tuần, Tiếng Việt ~5 bài/tuần), chưa hiệu chỉnh theo nhật ký lớp — `11` §5 sẽ chỉnh. Lớp đang học bài 13 vào 10/09/2026 nên nhịp thật có thể nhanh hơn.
+- Kỹ năng **ESL** gắn `standardRef` dạng `GS1.U<n>` là **ước đoán** unit Global Success 1 (chỉ Unit 1 có dữ liệu thật từ phiếu bài tập); ENL/EMATH/ESCI theo CCSS/NGSS, chưa có sách của trường. Gắn lại khi có sách (FR-INT-03).
+- Ba tệp sinh kỹ năng chạy một lần trong thư mục tạm rồi bỏ; **file JSON trong `content/` là nguồn sự thật**, sửa trực tiếp hoặc qua `/admin/skills`.
+
+### Câu hỏi cho chủ dự án
+
+1. **ADR-11: giữ hay gỡ** phần TTS cloud + giọng nhân bản ElevenLabs + giao diện MEDIFA ONE? Nếu giữ thì cần cập nhật `docs/02` §3 (thư mục `ai voice/`) và `docs/06` §2 (token màu teal, hai trang `/admin` và `/admin/health`). Nếu đã chạy `pnpm tts:clone` thì có muốn **xoá giọng đã tải lên ElevenLabs** không (bản thu giọng thật của con đang nằm ở bên thứ ba)?
+2. Ngày bắt đầu năm học thật (câu hỏi còn nợ từ pha 0) — cần để chỉnh `expectedWeek` cho khớp lớp.
+3. Sách **Tiếng Anh 1 – Global Success** (và giáo trình NAVIO nếu có): có xin được bản PDF không? Thiếu nó thì 59 kỹ năng ESL vẫn là bản đồ nền, chưa bám unit thật của trường.
+
+---
+
 ## Pha 0 — 10/09/2026 — Khung dự án + đăng nhập & quản lý người dùng
 
 Trạng thái: **xong** (8/8 tiêu chí đạt trên máy dev; mục 1 kiểm bằng compose với volume DB mới, xem bảng). Code chạy ở 9 commit Conventional Commits, chưa push.
