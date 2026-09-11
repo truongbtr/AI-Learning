@@ -36,10 +36,41 @@ export class TtsQuotaError extends Error {
   }
 }
 
+/**
+ * "Too fast" — a different thing from "no quota left". Azure's free F0 tier answers 429 after
+ * twenty requests in a minute, and generating the whole bank means fifteen hundred of them: the
+ * run waits and carries on instead of stopping after the first twenty.
+ */
+export class TtsRateLimitError extends Error {
+  constructor(
+    message: string,
+    public retryAfterMs: number,
+  ) {
+    super(message);
+    this.name = "TtsRateLimitError";
+  }
+}
+
+/** Out of quota for good (or for today): stop. 429 is handled separately, as a rate limit. */
 function isQuotaFailure(status: number, body: string): boolean {
-  if (status === 429 || status === 402) return true;
+  if (status === 402) return true;
+  if (status === 429) return /quota|balance|exhaust|hết lượt|vượt quá/i.test(body);
   return /quota|limit|exceed|insufficient|balance|hết lượt|vượt quá/i.test(body);
 }
+
+/** `Retry-After` in seconds (Azure sends it), else a sensible wait for the free tier. */
+function retryAfterMs(res: { headers: { get(name: string): string | null } }): number {
+  const raw = res.headers.get("Retry-After");
+  const seconds = raw ? Number.parseFloat(raw) : Number.NaN;
+  if (Number.isFinite(seconds) && seconds > 0) return Math.min(120_000, seconds * 1000);
+  return 12_000;
+}
+
+function rateLimited(status: number, body: string): boolean {
+  return status === 429 && !isQuotaFailure(status, body);
+}
+
+const sleep = (ms: number) => new Promise((done) => setTimeout(done, ms));
 
 /** Stable cache key: the text, the voice and the rate that produced the audio. */
 export function ttsCacheKey(text: string, lang: string, cfg: TtsConfig): string {
@@ -131,6 +162,9 @@ export async function synthesizeWithProvider(
     const raw = await res.text();
     if (!res.ok) {
       if (isQuotaFailure(res.status, raw)) throw new TtsQuotaError(`Vbee ${res.status}: ${raw}`);
+      if (rateLimited(res.status, raw)) {
+        throw new TtsRateLimitError(`Vbee 429: ${raw}`, retryAfterMs(res));
+      }
       throw new Error(`Vbee TTS ${res.status}: ${raw}`);
     }
     const body = JSON.parse(raw) as {
@@ -163,6 +197,9 @@ export async function synthesizeWithProvider(
     if (!res.ok) {
       const raw = await res.text();
       if (isQuotaFailure(res.status, raw)) throw new TtsQuotaError(`Azure ${res.status}: ${raw}`);
+      if (rateLimited(res.status, raw)) {
+        throw new TtsRateLimitError(`Azure 429: ${raw}`, retryAfterMs(res));
+      }
       throw new Error(`Azure TTS ${res.status}: ${raw}`);
     }
     return new Uint8Array(await res.arrayBuffer());
@@ -184,6 +221,9 @@ export async function synthesizeWithProvider(
     if (!res.ok) {
       const raw = await res.text();
       if (isQuotaFailure(res.status, raw)) throw new TtsQuotaError(`Google ${res.status}: ${raw}`);
+      if (rateLimited(res.status, raw)) {
+        throw new TtsRateLimitError(`Google 429: ${raw}`, retryAfterMs(res));
+      }
       throw new Error(`Google TTS ${res.status}: ${raw}`);
     }
     const body = (await res.json()) as { audioContent: string };
@@ -233,7 +273,39 @@ export interface PregenerateResult {
   remaining: number;
   /** True when the provider's quota stopped the run (not an error). */
   quotaReached: boolean;
+  /** How long this run spent waiting out rate limits. */
+  waitedMs: number;
   failed: { text: string; error: string }[];
+}
+
+export interface PregenerateProgress {
+  done: number;
+  total: number;
+  generated: number;
+  waitedMs: number;
+  lastWaitMs: number;
+}
+
+export interface PregenerateOptions {
+  /**
+   * Milliseconds between two requests. Azure's free F0 tier allows twenty a minute, so pacing at
+   * ~3.3 s keeps a long run under the limit instead of bouncing off it. 0 = as fast as possible.
+   */
+  pacingMs?: number;
+  /** Called after every line, so a run that takes an hour can say where it is. */
+  onProgress?: (p: PregenerateProgress) => void;
+  fetchImpl?: typeof fetch;
+}
+
+/** How many times a single line waits out a rate limit before the run gives up for now. */
+const MAX_RATE_LIMIT_RETRIES = 5;
+
+/**
+ * Azure's free F0 tier allows twenty requests a minute; anything faster spends the run bouncing
+ * off 429s. Vbee and Google are paced by their own plans, so they go at full speed by default.
+ */
+function defaultPacingMs(cfg: TtsConfig): number {
+  return cfg.provider === "azure" ? 3300 : 0;
 }
 
 /**
@@ -245,8 +317,15 @@ export async function pregenerateAudio(
   lines: TtsLine[],
   cfg: TtsConfig,
   storage: FileStorage,
-  fetchImpl: typeof fetch = fetch,
+  fetchOrOptions: typeof fetch | PregenerateOptions = fetch,
 ): Promise<PregenerateResult> {
+  const options: PregenerateOptions =
+    typeof fetchOrOptions === "function" ? { fetchImpl: fetchOrOptions } : fetchOrOptions;
+  const fetchImpl = options.fetchImpl ?? fetch;
+  const opts = {
+    pacingMs: options.pacingMs ?? defaultPacingMs(cfg),
+    onProgress: options.onProgress,
+  };
   const out: PregenerateResult = {
     requested: lines.length,
     generated: 0,
@@ -254,6 +333,7 @@ export async function pregenerateAudio(
     skipped: 0,
     remaining: 0,
     quotaReached: false,
+    waitedMs: 0,
     failed: [],
   };
   if (!cloudTtsEnabled(cfg)) {
@@ -281,17 +361,40 @@ export async function pregenerateAudio(
 
   for (let i = 0; i < pending.length; i++) {
     const line = pending[i] as TtsLine;
-    try {
-      await getOrSynthesize(line.text, line.lang, cfg, storage, fetchImpl);
-      out.generated++;
-    } catch (err) {
-      if (err instanceof TtsQuotaError) {
-        out.quotaReached = true;
-        out.remaining = pending.length - i;
-        return out;
+    // A rate limit is "wait a moment", not "stop": Azure's free tier allows twenty requests a
+    // minute, and this loop has fifteen hundred lines to get through.
+    let waited = 0;
+    for (let attempt = 0; ; attempt++) {
+      try {
+        if (opts.pacingMs > 0 && (i > 0 || attempt > 0)) await sleep(opts.pacingMs);
+        await getOrSynthesize(line.text, line.lang, cfg, storage, fetchImpl);
+        out.generated++;
+        break;
+      } catch (err) {
+        if (err instanceof TtsRateLimitError && attempt < MAX_RATE_LIMIT_RETRIES) {
+          waited += err.retryAfterMs;
+          out.waitedMs += err.retryAfterMs;
+          await sleep(err.retryAfterMs);
+          continue;
+        }
+        // Still throttled after several waits, or genuinely out of quota: stop and leave the rest
+        // for the next run — every mp3 already written stays written.
+        if (err instanceof TtsQuotaError || err instanceof TtsRateLimitError) {
+          out.quotaReached = true;
+          out.remaining = pending.length - i;
+          return out;
+        }
+        out.failed.push({ text: line.text, error: (err as Error).message });
+        break;
       }
-      out.failed.push({ text: line.text, error: (err as Error).message });
     }
+    opts.onProgress?.({
+      done: i + 1,
+      total: pending.length,
+      generated: out.generated,
+      waitedMs: out.waitedMs,
+      lastWaitMs: waited,
+    });
   }
   return out;
 }

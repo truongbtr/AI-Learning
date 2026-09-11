@@ -1,5 +1,5 @@
 /**
- * `pnpm content:import [--dir content/exercises/vmath] [--dry-run] [--no-tts] [--note "..."]`
+ * `pnpm content:import [--dir content/exercises/vmath] [--dry-run] [--no-tts] [--tts-pace 3300] [--note "..."]`
  * (docs/10 sec. 5 step 4).
  *
  * 1. validates everything first — a dirty bank is never imported;
@@ -33,6 +33,8 @@ const dryRun = args.flags.has("dry-run");
 const dirArg = args.values.get("dir");
 const note = args.values.get("note");
 const skipTts = args.flags.has("no-tts");
+/** `--tts-pace 3300` — ms between two synthesis requests; the free Azure tier needs about that. */
+const pacing = Number.parseInt(args.values.get("tts-pace") ?? "", 10);
 
 async function main() {
   const validation = runContentValidation({ quiet: true });
@@ -109,7 +111,22 @@ async function main() {
   const cfg = ttsConfigFromEnv();
   const lines = packs.flatMap(({ pack }) => pack.exercises.flatMap((ex) => ttsLinesOf(ex)));
   const storage = new LocalFileStorage(process.env.FILE_ROOT ?? "./data/files");
-  const audio = await pregenerateAudio(lines, cfg, storage);
+  // Generating the whole bank takes the best part of an hour on the free tier, so say where it is.
+  const startedAt = Date.now();
+  let lastLog = 0;
+  const audio = await pregenerateAudio(lines, cfg, storage, {
+    pacingMs: Number.isFinite(pacing) ? pacing : undefined,
+    onProgress: ({ done, total, waitedMs }) => {
+      if (done !== total && done - lastLog < 25) return;
+      lastLog = done;
+      const mins = (Date.now() - startedAt) / 60_000;
+      const left = done > 0 ? (mins / done) * (total - done) : 0;
+      console.log(
+        `tts: ${done}/${total} câu — ${mins.toFixed(0)} phút, còn khoảng ${left.toFixed(0)} phút` +
+          (waitedMs > 0 ? ` (chờ hạn mức ${(waitedMs / 1000).toFixed(0)} giây)` : ""),
+      );
+    },
+  });
   if (audio.requested > 0 && audio.skipped === audio.requested) {
     console.log(
       `tts: skipped ${audio.requested} line(s) — no TTS_API_KEY, the app will use Web Speech`,

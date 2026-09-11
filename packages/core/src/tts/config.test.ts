@@ -208,14 +208,65 @@ describe("TTS cache", () => {
       { text: "Ba cong hai bang may?", lang: "vi" },
       { text: "How many apples?", lang: "en" },
     ];
-    const first = await pregenerateAudio(lines, cfg, storage, fakeFetch);
+    const first = await pregenerateAudio(lines, cfg, storage, {
+      fetchImpl: fakeFetch,
+      pacingMs: 0,
+    });
     expect(first.generated).toBe(2);
     expect(calls).toBe(2);
 
-    const second = await pregenerateAudio(lines, cfg, storage, fakeFetch);
+    const second = await pregenerateAudio(lines, cfg, storage, {
+      fetchImpl: fakeFetch,
+      pacingMs: 0,
+    });
     expect(second.generated).toBe(0);
     expect(second.cached).toBe(2);
     expect(calls).toBe(2);
+  });
+
+  it("waits out a rate limit and carries on — the free tier allows 20 requests a minute", async () => {
+    const storage = memoryStorage();
+    let calls = 0;
+    const throttled = (async () => {
+      calls++;
+      // Every other request is refused for being too fast, the way Azure's F0 tier does it.
+      return calls % 2 === 0
+        ? new Response("Too many requests", { status: 429, headers: { "Retry-After": "0.01" } })
+        : new Response(new Uint8Array([1, 2, 3]), { status: 200 });
+    }) as unknown as typeof fetch;
+    const lines = [
+      { text: "Mot", lang: "vi" },
+      { text: "Hai", lang: "vi" },
+      { text: "Ba", lang: "vi" },
+    ];
+    const result = await pregenerateAudio(lines, cfg, storage, {
+      fetchImpl: throttled,
+      pacingMs: 0,
+    });
+    expect(result.generated).toBe(3);
+    expect(result.quotaReached).toBe(false);
+    expect(result.waitedMs).toBeGreaterThan(0);
+  });
+
+  it("gives up for now when the rate limit never lifts, keeping what it already wrote", async () => {
+    const storage = memoryStorage();
+    const alwaysThrottled = (async () =>
+      new Response("Too many requests", {
+        status: 429,
+        headers: { "Retry-After": "0.01" },
+      })) as unknown as typeof fetch;
+    const result = await pregenerateAudio(
+      [
+        { text: "Mot", lang: "vi" },
+        { text: "Hai", lang: "vi" },
+      ],
+      cfg,
+      storage,
+      { fetchImpl: alwaysThrottled, pacingMs: 0 },
+    );
+    expect(result.generated).toBe(0);
+    expect(result.quotaReached).toBe(true);
+    expect(result.remaining).toBe(2);
   });
 
   it("skips silently (never throws) when there is no key — content:import must still pass", async () => {
@@ -244,7 +295,10 @@ describe("TTS cache", () => {
       { text: "Hai", lang: "vi" },
       { text: "Ba", lang: "vi" },
     ];
-    const result = await pregenerateAudio(lines, cfg, storage, quotaFetch);
+    const result = await pregenerateAudio(lines, cfg, storage, {
+      fetchImpl: quotaFetch,
+      pacingMs: 0,
+    });
     expect(result.generated).toBe(1);
     expect(result.quotaReached).toBe(true);
     expect(result.remaining).toBe(2);

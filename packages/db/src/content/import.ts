@@ -148,10 +148,13 @@ export async function importExercises(
     ).map((e) => [e.stableId, e]),
   );
 
-  // Retire: anything currently attached to one of these skills but missing from the files.
+  // Retire: an id that has disappeared **from a file this run actually read**. Scoping by file
+  // matters — without it, importing five test rows for a skill retired the fifty real exercises of
+  // that same skill, and `pnpm test` quietly emptied a corner of the bank every time it ran.
   const touchedSkillIds = [...new Set(rows.flatMap((r) => r.skillCodes))]
     .map((c) => skillMap.get(c))
     .filter((id): id is string => Boolean(id));
+  const touchedFiles = [...new Set(rows.map((r) => r.sourceFile))];
   const keepIds = new Set(rows.map((r) => r.stableId));
   const retireCandidates =
     opts.retireMissing === false || touchedSkillIds.length === 0
@@ -161,6 +164,7 @@ export async function importExercises(
             where: {
               status: { not: "RETIRED" },
               stableId: { notIn: [...keepIds] },
+              sourceFile: { in: touchedFiles },
               skills: { some: { skillId: { in: touchedSkillIds } } },
             },
             select: { id: true, stableId: true },

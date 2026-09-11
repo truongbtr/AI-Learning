@@ -219,6 +219,29 @@ describe("content importer (integration, needs the seeded database)", () => {
     expect(gone?.status).toBe("RETIRED");
   });
 
+  it("never retires exercises of another file, even for the same skill", async (ctx) => {
+    needDb(ctx);
+    const db = testDb();
+    // The real bank's exercises for this skill come from their own pack file. An import of five
+    // test rows used to retire all fifty of them — running the test suite emptied the bank.
+    const before = await db.exercise.count({
+      where: {
+        skills: { some: { skill: { code: SKILL } } },
+        status: "PUBLISHED",
+        stableId: { not: { startsWith: PREFIX } },
+      },
+    });
+    await importExercises(db, [row(1)], { sourceDir: "itest" });
+    const after = await db.exercise.count({
+      where: {
+        skills: { some: { skill: { code: SKILL } } },
+        status: "PUBLISHED",
+        stableId: { not: { startsWith: PREFIX } },
+      },
+    });
+    expect(after).toBe(before);
+  });
+
   it("brings a retired exercise back as DRAFT when it returns to the files", async (ctx) => {
     needDb(ctx);
     const db = testDb();
