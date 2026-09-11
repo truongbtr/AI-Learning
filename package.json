@@ -29,6 +29,7 @@
     "inbox:push": "pnpm --filter @mtct/inbox run push",
     "skills:validate": "pnpm --filter @mtct/content validate:skills",
     "decay:run": "pnpm --filter @mtct/worker decay:run",
+    "plan:run": "pnpm --filter @mtct/worker plan:run",
     "content:export": "pnpm --filter @mtct/db run content:export",
     "tts:voices": "pnpm --filter @mtct/db run tts:voices",
     "tts:smoke": "pnpm --filter @mtct/db run tts:smoke",

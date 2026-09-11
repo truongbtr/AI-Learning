@@ -2,7 +2,7 @@
   "name": "@mtct/worker",
   "version": "0.1.0",
   "private": true,
-  "description": "pg-boss worker: scheduled jobs (ping, nightly mastery.decay; planner and intake later)",
+  "description": "pg-boss worker: scheduled jobs (ping, nightly mastery.decay, morning planner.daily; intake later)",
   "type": "commonjs",
   "scripts": {
     "dev": "tsx watch src/index.ts",
@@ -10,7 +10,8 @@
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json",
-    "decay:run": "tsx src/cli/run-decay.ts"
+    "decay:run": "tsx src/cli/run-decay.ts",
+    "plan:run": "tsx src/cli/run-planner.ts"
   },
   "dependencies": {
     "@mtct/core": "workspace:*",

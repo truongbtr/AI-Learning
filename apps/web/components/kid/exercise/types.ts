@@ -5,7 +5,7 @@ import type { ExerciseSpec } from "@mtct/content";
  *
  * The server sends `ExerciseSpec` and nothing else: no `answerKey`, no `choices[].errorTag`, no
  * `dragItems[].errorTag`, no `countTarget.correctCount` (ADR-14, ADR-15). Marking happens in
- * `POST /api/attempts`. `listenTarget` is here because it has to be *played* — a renderer that
+ * `POST /api/sessions/:id/attempts`. `listenTarget` is here because it has to be *played* — a renderer that
  * prints it turns a listening question into a reading question, and that is a bug with a name.
  */
 export type ClientSpec = ExerciseSpec;

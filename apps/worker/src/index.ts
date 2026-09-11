@@ -2,6 +2,7 @@
  * Worker process (docs/02 §2): pg-boss on the same PostgreSQL.
  *  - `ping` every minute → Setting["worker.lastPing"], read by /api/health (<= 6 min = ok).
  *  - `mastery.decay` at 02:30 Vietnam time (docs/04 §3.2); `pnpm decay:run` does it by hand.
+ *  - `planner.daily` at 04:00 Vietnam time (docs/04 §4); `pnpm plan:run` does it by hand.
  */
 import { existsSync } from "node:fs";
 import { join } from "node:path";
@@ -10,6 +11,7 @@ import { config as loadEnv } from "dotenv";
 import { PgBoss } from "pg-boss";
 import pino from "pino";
 import { MASTERY_DECAY_CRON, MASTERY_DECAY_QUEUE, runMasteryDecayJob } from "./jobs/mastery-decay";
+import { PLANNER_DAILY_CRON, PLANNER_DAILY_QUEUE, runPlannerDailyJob } from "./jobs/planner-daily";
 
 const rootEnv = join(__dirname, "..", "..", "..", ".env");
 if (existsSync(rootEnv)) loadEnv({ path: rootEnv, override: false });
@@ -54,6 +56,16 @@ async function main() {
   });
   await boss.schedule(MASTERY_DECAY_QUEUE, MASTERY_DECAY_CRON, {}, { tz });
   log.info({ queue: MASTERY_DECAY_QUEUE, cron: MASTERY_DECAY_CRON, tz }, "nightly decay scheduled");
+
+  await boss.createQueue(PLANNER_DAILY_QUEUE);
+  await boss.work(PLANNER_DAILY_QUEUE, async () => {
+    await runPlannerDailyJob(prisma, log);
+  });
+  await boss.schedule(PLANNER_DAILY_QUEUE, PLANNER_DAILY_CRON, {}, { tz });
+  log.info(
+    { queue: PLANNER_DAILY_QUEUE, cron: PLANNER_DAILY_CRON, tz },
+    "daily quest planning scheduled",
+  );
 
   const shutdown = async (signal: string) => {
     log.info({ signal }, "worker stopping");
