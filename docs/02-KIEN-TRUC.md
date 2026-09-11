@@ -33,7 +33,7 @@
 │                                                                                       │
 │  ┌────────────┐   ┌──────────────────────────┐   ┌───────────────┐   ┌─────────────┐  │
 │  │ cloudflared│──▶│  web (Next.js)           │──▶│ postgres 16   │◀──│ worker      │  │
-│  │ (tunnel)   │   │  - App Router pages      │   │ + pgvector    │   │ (pg-boss)   │  │
+│  │ (tunnel)   │   │  - App Router pages      │   │ + full-text   │   │ (pg-boss)   │  │
 │  └────────────┘   │  - Route Handlers /api/* │   │ + pg-boss     │   │ - intake    │  │
 │                   │  - Server Actions        │   └───────────────┘   │ - planner   │  │
 │   LAN / tablet ──▶│  - Auth.js               │                       │ - grader    │  │
@@ -106,7 +106,7 @@ EDISON_LEARNING/
 
 ### 4.1 Nạp ảnh bài vở
 1. Phụ huynh tải ảnh → `POST /api/intake` (multipart) → lưu file, tạo `IntakeJob(status=queued)` → enqueue `intake.process`.
-2. Worker: tiền xử lý ảnh (xoay, nén ≤ 1.5 MB, tăng tương phản) → gọi `ai.intake.extract` (Vision, output JSON theo schema `IntakeExtraction`) → gọi `ai.intake.mapSkills` (gắn kỹ năng, dùng embedding pgvector + few-shot từ các lần phụ huynh sửa) → lưu `IntakeResult(status=pending_review)` → SSE thông báo.
+2. Worker: tiền xử lý ảnh (xoay, nén ≤ 1.5 MB, tăng tương phản) → đẩy vào **hàng chờ AI** (`InboxItem`, ADR-10) — Claude Code đọc ảnh theo lô, trả `IntakeExtraction` kèm mã kỹ năng (ứng viên lấy từ full-text `searchSkills` trong `context.json`) → `inbox:push` lưu `IntakeResult(status=pending_review)` → SSE thông báo.
 3. Phụ huynh duyệt → `core.evidence.commit()` → tạo `Evidence[]` → `core.mastery.update()` → ghi `MasteryHistory`.
 
 ### 4.2 Daily Quest
@@ -165,7 +165,7 @@ services:
 |---|---|---|---|
 | ADR-1 | Next.js full-stack, 1 repo | .NET + Next.js (stack MEDIFA ONE) | Dự án gia đình 2 người dùng; giảm 60% khối lượng hạ tầng; Claude Code làm Next.js hiệu quả |
 | ADR-2 | pg-boss thay vì Redis/BullMQ | BullMQ + Redis | Bớt 1 service; tải job nhỏ |
-| ADR-3 | pgvector thay vì vector DB riêng | Qdrant/Chroma | Chỉ vài nghìn vector |
+| ADR-3 | ~~pgvector thay vì vector DB riêng~~ — **bãi bỏ bởi ADR-10/ADR-12**: không dùng vector, tra cứu kỹ năng bằng Postgres full-text + `unaccent` | Qdrant/Chroma | Không còn embedding lúc chạy |
 | ADR-4 | Mọi output AI qua tool-use JSON + Zod | Parse text tự do | Ổn định, test được, không vỡ UI |
 | ADR-5 | Bài luyện là **dữ liệu** (`ExerciseSpec` JSON) render bởi component theo `type` | AI sinh HTML/JSX | An toàn, cache được, chấm cục bộ được |
 | ADR-6 | Web Speech mặc định, cloud TTS/STT qua adapter | Chỉ cloud | Chi phí + độ trễ; adapter đổi được |

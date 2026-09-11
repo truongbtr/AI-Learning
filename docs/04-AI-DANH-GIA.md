@@ -23,7 +23,7 @@
 | Task | Mục đích | Đầu vào | Đầu ra (schema Zod) | Model gợi ý |
 |---|---|---|---|---|
 | `INTAKE_EXTRACT` | Đọc ảnh bài vở/bài KT/nhận xét/báo cáo app | ảnh (1–20), gợi ý môn/bé/ngày | `IntakeExtraction` | Sonnet (vision) |
-| `INTAKE_MAP` | Gắn kỹ năng cho từng item | items + top-k skill ứng viên (pgvector) + few-shot sửa của phụ huynh | `SkillMapping[]` | Haiku (Sonnet nếu confidence thấp) |
+| `INTAKE_MAP` | Gắn kỹ năng cho từng item | items + top-k skill ứng viên (full-text `searchSkills`) + few-shot sửa của phụ huynh | `SkillMapping[]` | Haiku (Sonnet nếu confidence thấp) |
 | `GRADE` | Chấm bài mở (đọc to, nói, viết chụp) | spec + đáp án + transcript/ảnh | `GradeResult` | Haiku (đọc to, nói) / Sonnet (ảnh viết) |
 | `PLAN` | Đề xuất kế hoạch 1–2 tuần | snapshot mastery, TKB, unit đang học, lịch sử plan | `PlanProposal` | Sonnet |
 | `REPORT` | Viết báo cáo tuần | số liệu tổng hợp (JSON) | Markdown + `ReportHighlights` | Sonnet |
@@ -38,7 +38,7 @@ Mọi kết quả nhóm B phải **đúng schema Zod** (`pnpm inbox:validate` ch
 ## 2. Bản đồ kỹ năng — cách AI dùng
 
 - Mỗi `Skill` có `description` viết cho AI: phạm vi, ví dụ đúng, ví dụ *không* thuộc kỹ năng này, lỗi thường gặp của trẻ 6 tuổi.
-- Gắn kỹ năng 2 bước: (1) embedding văn bản item → top-8 skill ứng viên cùng môn; (2) model chọn 1–2 skill + confidence, kèm few-shot từ bảng "phụ huynh đã sửa" (`IntakeItem.skillCodes` ≠ `skillCodesFinal`).
+- Gắn kỹ năng 2 bước: (1) full-text `searchSkills` văn bản item → top-8 skill ứng viên cùng môn (ADR-12, không embedding); (2) model chọn 1–2 skill + confidence, kèm few-shot từ bảng "phụ huynh đã sửa" (`IntakeItem.skillCodes` ≠ `skillCodesFinal`).
 - Kỹ năng tiên quyết dùng để: (a) khi kỹ năng B yếu, kiểm tra A trước; (b) không luyện B khi A < 40.
 
 ## 3. Mô hình năng lực (mastery) — thuật toán bắt buộc

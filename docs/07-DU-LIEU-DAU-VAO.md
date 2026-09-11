@@ -28,7 +28,7 @@ Kênh phụ: **E. Ghi chú nhanh của phụ huynh** (1 câu) và **F. Hội tho
    │                                             tăng tương phản nhẹ, tách trang nếu ảnh 2 trang
    │                                          2. INTAKE_EXTRACT (Claude Vision, batch ≤ 4 ảnh/gọi):
    │                                             docType, subject, student guess, items[], teacherComment
-   │                                          3. INTAKE_MAP: embedding item → top-8 skill → model chọn
+   │                                          3. INTAKE_MAP: full-text searchSkills → top-8 skill → Claude Code chọn
    │                                          4. Lưu IntakeResult/IntakeItem (PENDING_REVIEW)
    │                                          5. SSE "intake.ready" → badge hộp thư
    ▼
@@ -91,7 +91,7 @@ Mỗi lần phụ huynh sửa nhãn kỹ năng hoặc đúng/sai, lưu cặp (v�
 PDF/ảnh → tách trang (pdf → ảnh 150dpi; PDF quét không có lớp chữ nên luôn đi đường Vision) → UNIT_EXTRACT theo batch 8–10 trang có overlap 1 trang
         → nếu Material đã có LessonUnit khung (seed từ 09) thì khớp theo số trang, không tạo unit mới
         → LessonUnitDraft[] (title, objectives, vocabulary, concepts, sampleTasks, pageFrom/To)
-        → gộp draft trùng tên qua các batch → embedding → gắn kỹ năng (top-5 + model)
+        → gộp draft trùng tên qua các batch → full-text searchSkills → gắn kỹ năng (top-5 + Claude Code chọn)
         → phụ huynh duyệt (sửa tên, gộp/tách, gắn tuần) → LessonUnit.isApproved
 ```
 

@@ -39,7 +39,7 @@ Sau pha 3 gia đình đã có thể **dùng thử hằng ngày**: bài luyện t
 - `.gitignore` phải có `sach giao khoa/`, `_to_delete/`, `.env`, `/data`.
 
 1. Monorepo pnpm + Turborepo theo cấu trúc `02-KIEN-TRUC.md` §3; TypeScript strict; Biome/ESLint; Vitest; Playwright cấu hình.
-2. `packages/db`: Prisma schema đầy đủ theo `03-MO-HINH-DU-LIEU.md` (được phép để trống phần chưa dùng nhưng phải có bảng — gồm `User` 3 vai trò, `LoginAudit`, `TrustedDevice`), migration đầu, `pgvector` bật, seed: **một `User` role=ADMIN từ `.env`**, TKB 1B3, `SchoolWeek`, `AiConfig`, ≥ 5 `Badge`.
+2. `packages/db`: Prisma schema đầy đủ theo `03-MO-HINH-DU-LIEU.md` (được phép để trống phần chưa dùng nhưng phải có bảng — gồm `User` 3 vai trò, `LoginAudit`, `TrustedDevice`), migration đầu, seed: **một `User` role=ADMIN từ `.env`**, TKB 1B3, `SchoolWeek`, `AiConfig`, ≥ 5 `Badge`.
 3. `apps/web`: Next.js, **Auth.js đầy đủ theo `12`** — credentials (username + mật khẩu Argon2id) + provider `kid-login` (avatar + mã 4 hình), khoá tài khoản/rate-limit IP, `LoginAudit`, ép đổi mật khẩu lần đầu, cookie httpOnly/Secure/SameSite, tiêu đề bảo mật; route groups `(kid)/(parent)/(admin)/(auth)` có middleware phân quyền; trang `/login` gộp; `/api/health`.
 4. `apps/worker`: pg-boss chạy job mẫu `ping`; `docker/compose.yml` (postgres, web, worker), Dockerfile multi-stage, `.env.example`, README chạy trên Windows Docker Desktop.
 5. **`/admin/users`** theo FR-ADM-06: bảng người dùng + 5 thao tác (tạo tài khoản — `CHILD` thì tạo luôn hồ sơ `Student`; gắn phụ huynh ↔ con; đặt lại mật khẩu/mã hình; bật-tắt; xem nhật ký đăng nhập). CI cục bộ `pnpm lint && pnpm test && pnpm build` xanh.
