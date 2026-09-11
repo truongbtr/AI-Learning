@@ -10,6 +10,7 @@ import {
   SESSION_TARGET_ACCURACY,
 } from "@mtct/core";
 import type { Prisma, PrismaClient } from "../../generated/client";
+import { grantSessionRewards, rememberForTomorrow, type SessionRewards } from "../kid/rewards";
 import { commitEvidence } from "../mastery/service";
 import type { PickedSlot } from "./plan";
 
@@ -50,6 +51,9 @@ const CHEER_LINES = [
 
 const PENDING_LINE = "Mình cất bài này để ba mẹ xem cùng nhé!";
 
+/** Where on the road the child is offered a choice (docs/06 §1.8b item 2). */
+const CHOICE_STATIONS = [2, 6];
+
 function rotate(lines: readonly string[], seed: number): string {
   return lines[Math.abs(seed) % lines.length] as string;
 }
@@ -73,6 +77,10 @@ export interface KidItem {
   subject: string;
   difficulty: number;
   skillCode: string;
+  /** Why the planner put this station here — `warmup`, `focus`, `review`, … */
+  kind: string;
+  /** A station where the child picks one of two exercises (docs/06 §1.8b item 2). */
+  choice?: boolean;
   /** `Exercise.spec` — already stripped of the answer key at import time. */
   spec: unknown;
   /** Filled in for a slot the planner could not find an exercise for. */
@@ -174,10 +182,16 @@ export async function sessionForKid(
       subject: ex.subject,
       difficulty: ex.difficulty,
       skillCode: slot.skillCode,
+      kind: slot.kind,
       spec: ex.spec,
     });
   }
   items.sort((a, b) => a.order - b.order);
+  // Two stations along the road let the child choose between two exercises for the same skill.
+  for (const index of CHOICE_STATIONS) {
+    const item = items[index];
+    if (item && item.kind !== "warmup" && item.kind !== "finish") item.choice = true;
+  }
 
   const attempts: KidAttemptState[] = session.attempts.map((a) => ({
     order: a.order,
@@ -202,6 +216,105 @@ export async function sessionForKid(
     theme: session.student.mascot === "OWL" ? "garden" : "robot",
     vars: kidVars(session.student),
   };
+}
+
+/**
+ * The two exercises a choice station offers (docs/06 §1.8b item 2): the one the planner picked and
+ * one more for the same skill. Same skill, different context — the choice is real but the learning
+ * is the same either way.
+ */
+export async function choiceAt(
+  db: Db,
+  sessionId: string,
+  order: number,
+): Promise<{ items: KidItem[] }> {
+  const session = await db.session.findUnique({
+    where: { id: sessionId },
+    select: { slots: true, studentId: true },
+  });
+  const slots = (session?.slots ?? []) as unknown as PickedSlot[];
+  const slot = slots.find((s) => s.order === order);
+  if (!slot?.exerciseId) return { items: [] };
+
+  const seen = await db.attempt.findMany({
+    where: { session: { studentId: session?.studentId } },
+    select: { exerciseId: true },
+    take: 200,
+    orderBy: { createdAt: "desc" },
+  });
+  const select = {
+    id: true,
+    stableId: true,
+    type: true,
+    language: true,
+    subject: true,
+    difficulty: true,
+    spec: true,
+  } as const;
+
+  const [current, alternative] = await Promise.all([
+    db.exercise.findUnique({ where: { id: slot.exerciseId }, select }),
+    db.exercise.findFirst({
+      where: {
+        status: "PUBLISHED",
+        qualityFlag: { not: "BAD" },
+        skills: { some: { skill: { code: slot.skillCode } } },
+        id: { notIn: [slot.exerciseId, ...seen.map((a) => a.exerciseId)] },
+        difficulty: {
+          gte: Math.max(1, slot.difficulty - 1),
+          lte: Math.min(5, slot.difficulty + 1),
+        },
+      },
+      select,
+      orderBy: { usageCount: "asc" },
+    }),
+  ]);
+
+  const toItem = (ex: NonNullable<typeof current>): KidItem => ({
+    order,
+    exerciseId: ex.id,
+    stableId: ex.stableId,
+    type: ex.type as MarkableType,
+    language: ex.language as "vi" | "en",
+    subject: ex.subject,
+    difficulty: ex.difficulty,
+    skillCode: slot.skillCode,
+    kind: slot.kind,
+    spec: ex.spec,
+  });
+
+  return { items: [current, alternative].filter(Boolean).map((ex) => toItem(ex as never)) };
+}
+
+/**
+ * The child picked one: the slot now points at that exercise. Refused once the station has been
+ * answered, and refused for anything that is not one of the two that were offered.
+ */
+export async function chooseAt(
+  db: Db,
+  sessionId: string,
+  order: number,
+  exerciseId: string,
+): Promise<boolean> {
+  const attempt = await db.attempt.findUnique({
+    where: { sessionId_order: { sessionId, order } },
+    select: { id: true },
+  });
+  if (attempt) return false;
+  const offered = await choiceAt(db, sessionId, order);
+  if (!offered.items.some((i) => i.exerciseId === exerciseId)) return false;
+
+  const session = await db.session.findUnique({
+    where: { id: sessionId },
+    select: { slots: true },
+  });
+  const slots = (session?.slots ?? []) as unknown as PickedSlot[];
+  const next = slots.map((s) => (s.order === order ? { ...s, exerciseId } : s));
+  await db.session.update({
+    where: { id: sessionId },
+    data: { slots: next as unknown as Prisma.InputJsonValue },
+  });
+  return true;
 }
 
 /** Marks the session started the first time the child opens it; calling it again changes nothing. */
@@ -566,7 +679,7 @@ export interface SessionSummary {
   starsTotal: number;
   /** Per skill, for the parent view and the mascot's closing line. */
   bySkill: { skillCode: string; answered: number; correct: number }[];
-  /** Three wrong in a row at the end: tomorrow's session is shortened (docs/06 §1.8c item 4). */
+  /** Three wrong in a row at the end: tomorrow's session is shortened (docs/06 §1.8b item 4). */
   tiredAtEnd: boolean;
   streak: { current: number; longest: number };
   /** Tracks that moved a rung, for the parent dashboard. */
@@ -577,6 +690,10 @@ export interface SessionSummary {
     to: number;
     status: string;
   }[];
+  /** The egg, the week's picture, new badges and any certificate (docs/06 §1.8c). */
+  rewards?: SessionRewards;
+  /** Two warm lines for the celebration screen. */
+  mascotLines?: string[];
 }
 
 /**
@@ -654,7 +771,37 @@ export async function finishSession(
       summary: summary as unknown as Prisma.InputJsonValue,
     },
   });
+
+  // Only now is the day counted as learnt, so the egg, the picture and the badges are granted
+  // after the session is closed — and from the rows, so a second call grants nothing twice.
+  summary.rewards = await grantSessionRewards(db, session.studentId, at);
+  summary.mascotLines = await closingLines(db, summary);
+  await rememberForTomorrow(db, session.studentId, at);
+  await db.session.update({
+    where: { id: session.id },
+    data: { summary: summary as unknown as Prisma.InputJsonValue },
+  });
   return summary;
+}
+
+/**
+ * The two lines the mascot says on the celebration screen (docs/06 §1.2 K5). Always about
+ * something the child actually did, never a score and never a comparison.
+ */
+async function closingLines(db: Db, summary: SessionSummary): Promise<string[]> {
+  const best = [...summary.bySkill].sort((a, b) => b.correct - a.correct)[0];
+  const skill = best
+    ? await db.skill.findUnique({ where: { code: best.skillCode }, select: { nameVi: true } })
+    : null;
+  const first =
+    skill && best && best.correct > 0
+      ? `Hôm nay con làm rất giỏi phần ${skill.nameVi}!`
+      : "Hôm nay con đã cố gắng hết mình, mình thấy hết đó!";
+  const second =
+    summary.streak.current >= 2
+      ? `Con học liền ${summary.streak.current} ngày rồi đấy, giỏi quá!`
+      : "Mai mình lại gặp nhau nhé!";
+  return [first, second];
 }
 
 /** docs/04 §11.4: a rung is passed when the child gets 70% of its exercises right in one session. */

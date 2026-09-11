@@ -13,6 +13,7 @@ import { buildEffects } from "./effects.mjs";
 import { ART_ROOT, svg, write } from "./lib.mjs";
 import { buildMascots } from "./mascots.mjs";
 import { buildObjects } from "./objects.mjs";
+import { buildPictures } from "./pictures.mjs";
 import { buildGardenFrame, buildSheet } from "./sheet.mjs";
 import { buildWorlds } from "./worlds.mjs";
 
@@ -21,6 +22,7 @@ const mascots = buildMascots(write, svg);
 const worlds = buildWorlds(write, svg);
 const avatars = buildAvatars(write, svg);
 const effects = buildEffects(write, svg);
+const pictures = buildPictures(write, svg);
 const audio = buildAudio(write);
 
 writeFileSync(
@@ -39,7 +41,7 @@ writeFileSync(
   "utf8",
 );
 
-const all = [...objects, ...mascots, ...worlds, ...avatars, ...effects, ...audio];
+const all = [...objects, ...mascots, ...worlds, ...avatars, ...effects, ...pictures, ...audio];
 writeFileSync(
   join(ART_ROOT, "manifest.json"),
   `${JSON.stringify(
@@ -52,6 +54,7 @@ writeFileSync(
         worlds: worlds.length,
         avatars: avatars.length,
         effects: effects.length,
+        pictures: pictures.length,
         audio: audio.length,
       },
       files: all.map((f) => ({ file: f.file ?? f.path, bytes: f.bytes, kind: f.kind ?? "object" })),
@@ -68,5 +71,5 @@ buildSheet();
 const total = all.reduce((n, f) => n + f.bytes, 0);
 console.log(
   `art: ${objects.length} objects · ${mascots.length} mascot states · ${worlds.length} world layers · ` +
-    `${avatars.length} avatars · ${effects.length} effects · ${audio.length} sounds — ${(total / 1024).toFixed(0)} KB`,
+    `${avatars.length} avatars · ${effects.length} effects · ${pictures.length} pictures · ${audio.length} sounds — ${(total / 1024).toFixed(0)} KB`,
 );

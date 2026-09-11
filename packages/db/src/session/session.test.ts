@@ -7,7 +7,7 @@ import {
   type TempStudent,
   testDb,
 } from "../test-db";
-import { finishSession, sessionForKid, startSession, starBalance, submitAttempt } from "./grade";
+import { finishSession, sessionForKid, starBalance, startSession, submitAttempt } from "./grade";
 import { planDailyQuest } from "./plan";
 
 /**

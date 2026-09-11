@@ -5,7 +5,7 @@
  *    mustChangePassword = true.
  *  - Timetable 1B3 + 30 TimetableSlot from content/timetable/1B3-2026.json.
  *  - 35 SchoolWeek from SCHOOL_YEAR_START (default 2026-09-08).
- *  - AiConfig default row, >= 5 Badge.
+ *  - AiConfig default row, >= 15 Badge, >= 20 Collectible, the pets the weekly egg hatches.
  *  - Skill stays EMPTY (phase 1).
  *  - Sample students (thy, thanh) ONLY when SEED_DEV=1 — never in production.
  */
@@ -225,6 +225,203 @@ const BADGES = [
     icon: "🗣️",
     rule: { type: "skills_mastered", subject: "ESL", count: 1 },
   },
+  {
+    code: "STREAK_14",
+    nameVi: "14 ngày liên tiếp",
+    nameEn: "14-day streak",
+    icon: "🏅",
+    rule: { type: "streak", days: 14 },
+  },
+  {
+    code: "PERFECT_SESSION",
+    nameVi: "Một phiên trọn vẹn",
+    nameEn: "A perfect quest",
+    icon: "✨",
+    rule: { type: "perfect_session" },
+  },
+  {
+    code: "COMEBACK",
+    nameVi: "Quay lại sau ngày nghỉ",
+    nameEn: "Welcome back",
+    icon: "🌈",
+    rule: { type: "comeback" },
+  },
+  {
+    code: "EARLY_BIRD",
+    nameVi: "Học sớm buổi sáng",
+    nameEn: "Early bird",
+    icon: "🌅",
+    rule: { type: "early_bird" },
+  },
+  {
+    code: "COUNTER_50",
+    nameVi: "Đếm đúng 50 lần",
+    nameEn: "50 counts right",
+    icon: "🔢",
+    rule: { type: "exercise_type_count", exerciseType: "COUNT_TAP", count: 50 },
+  },
+  {
+    code: "LISTENER_20",
+    nameVi: "Nghe giỏi 20 lần",
+    nameEn: "20 good listens",
+    icon: "👂",
+    rule: { type: "exercise_type_count", exerciseType: "LISTEN_CHOOSE", count: 20 },
+  },
+  {
+    code: "EGG_HATCH_1",
+    nameVi: "Quả trứng đầu tiên nở",
+    nameEn: "First egg hatched",
+    icon: "🥚",
+    rule: { type: "egg_hatched", count: 1 },
+  },
+  {
+    code: "PICTURE_WEEK_1",
+    nameVi: "Ghép xong tranh tuần",
+    nameEn: "A full weekly picture",
+    icon: "🖼️",
+    rule: { type: "picture_complete" },
+  },
+  {
+    code: "VIET_MASTER_1",
+    nameVi: "Thành thạo kỹ năng Tiếng Việt đầu tiên",
+    nameEn: "First Vietnamese skill mastered",
+    icon: "📕",
+    rule: { type: "skills_mastered", subject: "VIET", count: 1 },
+  },
+  // Only obtainable during their own week (docs/06 §1.8b item 1) — the rotation is in
+  // packages/core/world/week.ts, so a badge code here must match an event code there.
+  {
+    code: "EVENT_DINO",
+    nameVi: "Bạn của khủng long",
+    nameEn: "Dinosaur week",
+    icon: "🦕",
+    rule: { type: "event_week", event: "DINO", sessions: 3 },
+  },
+  {
+    code: "EVENT_SPACE",
+    nameVi: "Phi hành gia nhí",
+    nameEn: "Space week",
+    icon: "🚀",
+    rule: { type: "event_week", event: "SPACE", sessions: 3 },
+  },
+  {
+    code: "EVENT_MOON",
+    nameVi: "Đèn lồng Trung thu",
+    nameEn: "Moon festival week",
+    icon: "🏮",
+    rule: { type: "event_week", event: "MOON", sessions: 3 },
+  },
+  {
+    code: "EVENT_OCEAN",
+    nameVi: "Thợ lặn tí hon",
+    nameEn: "Ocean week",
+    icon: "🐠",
+    rule: { type: "event_week", event: "OCEAN", sessions: 3 },
+  },
+  {
+    code: "EVENT_JUNGLE",
+    nameVi: "Nhà thám hiểm rừng xanh",
+    nameEn: "Jungle week",
+    icon: "🌴",
+    rule: { type: "event_week", event: "JUNGLE", sessions: 3 },
+  },
+  {
+    code: "EVENT_SNOW",
+    nameVi: "Mùa đông ấm áp",
+    nameEn: "Winter week",
+    icon: "❄️",
+    rule: { type: "event_week", event: "SNOW", sessions: 3 },
+  },
+];
+
+/** Things stars buy, placed into the child's own world (docs/06 §1.8c item 14). */
+const COLLECTIBLES = [
+  { code: "cay-non", nameVi: "Cây non", cost: 10, category: "cay-co", assetKey: "cai-cay" },
+  { code: "bong-hoa", nameVi: "Bông hoa", cost: 10, category: "cay-co", assetKey: "bong-hoa" },
+  { code: "chiec-la", nameVi: "Chiếc lá vàng", cost: 8, category: "cay-co", assetKey: "chiec-la" },
+  { code: "cay-nam", nameVi: "Cây nấm", cost: 12, category: "cay-co", assetKey: "cay-nam" },
+  { code: "den-loi", nameVi: "Đèn lối đi", cost: 15, category: "trang-tri", assetKey: "cai-den" },
+  { code: "cau-vong", nameVi: "Cầu vồng", cost: 30, category: "trang-tri", assetKey: "cau-vong" },
+  { code: "dam-may", nameVi: "Đám mây bông", cost: 18, category: "trang-tri", assetKey: "dam-may" },
+  {
+    code: "ngoi-sao",
+    nameVi: "Ngôi sao treo",
+    cost: 20,
+    category: "trang-tri",
+    assetKey: "ngoi-sao",
+  },
+  {
+    code: "mat-trang",
+    nameVi: "Mặt trăng nhỏ",
+    cost: 35,
+    category: "trang-tri",
+    assetKey: "mat-trang",
+  },
+  {
+    code: "ngoi-nha",
+    nameVi: "Ngôi nhà nhỏ",
+    cost: 40,
+    category: "cong-trinh",
+    assetKey: "ngoi-nha",
+  },
+  { code: "cai-ghe", nameVi: "Chiếc ghế", cost: 14, category: "cong-trinh", assetKey: "cai-ghe" },
+  { code: "cai-o", nameVi: "Cái ô", cost: 16, category: "cong-trinh", assetKey: "cai-o" },
+  { code: "xe-dap", nameVi: "Xe đạp", cost: 25, category: "xe-co", assetKey: "xe-dap" },
+  { code: "o-to", nameVi: "Ô tô nhỏ", cost: 28, category: "xe-co", assetKey: "o-to" },
+  { code: "tau-hoa", nameVi: "Tàu hoả", cost: 45, category: "xe-co", assetKey: "tau-hoa" },
+  { code: "ten-lua", nameVi: "Tên lửa", cost: 50, category: "xe-co", assetKey: "ten-lua" },
+  {
+    code: "con-robot",
+    nameVi: "Robot phụ",
+    cost: 45,
+    category: "ban-dong-hanh",
+    assetKey: "con-robot",
+  },
+  { code: "con-meo", nameVi: "Bạn mèo", cost: 30, category: "ban-dong-hanh", assetKey: "con-meo" },
+  { code: "con-cho", nameVi: "Bạn cún", cost: 30, category: "ban-dong-hanh", assetKey: "con-cho" },
+  {
+    code: "con-buom",
+    nameVi: "Bạn bướm",
+    cost: 22,
+    category: "ban-dong-hanh",
+    assetKey: "con-buom",
+  },
+  {
+    code: "con-chim",
+    nameVi: "Bạn chim",
+    cost: 22,
+    category: "ban-dong-hanh",
+    assetKey: "con-chim",
+  },
+  {
+    code: "gau-bong",
+    nameVi: "Gấu bông",
+    cost: 26,
+    category: "ban-dong-hanh",
+    assetKey: "gau-bong",
+  },
+];
+
+/** What hatches out of the weekly egg (docs/06 §1.8c item 1). */
+const PETS = [
+  { code: "meo-con", name: "Mèo con", rarity: "common", lottieKey: "art/objects/con-meo.svg" },
+  { code: "cun-con", name: "Cún con", rarity: "common", lottieKey: "art/objects/con-cho.svg" },
+  { code: "vit-con", name: "Vịt con", rarity: "common", lottieKey: "art/objects/con-vit.svg" },
+  { code: "ga-con", name: "Gà con", rarity: "common", lottieKey: "art/objects/con-ga.svg" },
+  { code: "buom-nho", name: "Bướm nhỏ", rarity: "common", lottieKey: "art/objects/con-buom.svg" },
+  { code: "ech-xanh", name: "Ếch xanh", rarity: "common", lottieKey: "art/objects/con-ech.svg" },
+  {
+    code: "canh-cut",
+    name: "Chim cánh cụt",
+    rarity: "rare",
+    lottieKey: "art/objects/chim-canh-cut.svg",
+  },
+  {
+    code: "robot-nho",
+    name: "Robot tí hon",
+    rarity: "rare",
+    lottieKey: "art/objects/con-robot.svg",
+  },
 ];
 
 async function seedBadges() {
@@ -236,6 +433,24 @@ async function seedBadges() {
     });
   }
   console.log(`badges: ${BADGES.length}`);
+}
+
+async function seedCollectiblesAndPets() {
+  for (const c of COLLECTIBLES) {
+    await prisma.collectible.upsert({
+      where: { code: c.code },
+      create: c,
+      update: { nameVi: c.nameVi, cost: c.cost, category: c.category, assetKey: c.assetKey },
+    });
+  }
+  for (const p of PETS) {
+    await prisma.pet.upsert({
+      where: { code: p.code },
+      create: p,
+      update: { name: p.name, rarity: p.rarity, lottieKey: p.lottieKey },
+    });
+  }
+  console.log(`collectibles: ${COLLECTIBLES.length} · pets: ${PETS.length}`);
 }
 
 /** Dev-only sample profiles (docs/03 §4 4b). A Student needs a CHILD user, so both are created. */
@@ -370,6 +585,7 @@ async function main() {
   await seedSchoolWeeks();
   await seedAiConfig();
   await seedBadges();
+  await seedCollectiblesAndPets();
   await seedSkillMap();
   if (dev) await seedDevStudents();
   const counts = {
@@ -382,6 +598,8 @@ async function main() {
     timetableSlots: await prisma.timetableSlot.count(),
     schoolWeeks: await prisma.schoolWeek.count(),
     badges: await prisma.badge.count(),
+    collectibles: await prisma.collectible.count(),
+    pets: await prisma.pet.count(),
   };
   console.log("seed done:", JSON.stringify(counts));
 }

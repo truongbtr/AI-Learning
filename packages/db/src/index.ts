@@ -4,6 +4,7 @@ export * from "../generated/client";
 export * from "./content/export";
 export * from "./content/import";
 export * from "./content/stats";
+export * from "./kid";
 export * from "./mastery/service";
 export * from "./session";
 export * from "./skills/import";

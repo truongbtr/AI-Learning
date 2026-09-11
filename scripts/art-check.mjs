@@ -15,6 +15,7 @@ const LIMITS = [
   { match: /^objects\/.*\.svg$/, label: "vật thể", max: 6 * 1024 },
   { match: /^effects\//, label: "hiệu ứng", max: 20 * 1024 },
   { match: /^avatars\//, label: "avatar", max: 12 * 1024 },
+  { match: /^pictures\//, label: "tranh tuần", max: 30 * 1024 },
   { match: /^audio\//, label: "âm thanh", max: 120 * 1024 },
 ];
 const TOTAL_MAX = 40 * 1024 * 1024;
