@@ -3,7 +3,7 @@ import { Loader2 } from "lucide-react";
 import type * as React from "react";
 import { cn } from "@/lib/utils";
 
-/** Adult-area button (MEDIFA ONE `Button`): teal primary, soft secondary, outline, ghost, danger. */
+/** Adult-area button (shadcn/ui): neutral primary, soft secondary, outline, ghost, danger. */
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-control font-semibold transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-70",
   {

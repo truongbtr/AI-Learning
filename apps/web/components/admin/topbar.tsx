@@ -13,7 +13,7 @@ export interface TopbarUser {
   avatarKey: string | null;
 }
 
-/** MEDIFA ONE `Topbar`: sticky, blurred, menu button on mobile, account panel on the right. */
+/** Sticky topbar: menu button on mobile, account panel on the right. */
 export function Topbar({ onOpenSidebar, user }: { onOpenSidebar: () => void; user: TopbarUser }) {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -49,7 +49,7 @@ export function Topbar({ onOpenSidebar, user }: { onOpenSidebar: () => void; use
             aria-haspopup="menu"
             className="flex items-center gap-2.5 rounded-control py-1.5 pl-1.5 pr-2.5 transition-colors hover:bg-white"
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-50 text-xl">
+            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-ink-100 text-xl">
               {avatarEmoji(user.avatarKey)}
             </span>
             <span className="hidden text-left sm:block">

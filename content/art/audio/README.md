@@ -1,33 +1,36 @@
 # Âm thanh cho góc của con
 
-## 1. Giọng nhân bản của gia đình (bé trai + bé gái)
+## 1. Giọng đọc đề bài — TTS neural có sẵn (ADR-6, ADR-11)
 
-Hai bản thu trong thư mục `ai voice/` (không vào git — giọng thật của trẻ) được nhân bản một lần
-trên ElevenLabs (Instant Voice Cloning, không cần "train" dài — 30–60 giây thu sạch là đủ):
+Dự án **không nhân bản giọng thật của trẻ** (giọng là dữ liệu sinh trắc học, không đưa lên dịch vụ
+bên thứ ba — ADR-11). Đề bài dùng **giọng dựng sẵn của nhà cung cấp**, đọc chậm hơn mặc định
+(`TTS_RATE=0.9`) cho trẻ 6 tuổi dễ nghe:
 
-```powershell
-# .env: TTS_PROVIDER=elevenlabs, TTS_API_KEY=<khoá ElevenLabs>
-pnpm tts:clone          # tạo 2 giọng, ghi TTS_VOICE_GIRL / TTS_VOICE_BOY vào .env
-```
+| `TTS_PROVIDER` | Giọng tiếng Việt | Giọng tiếng Anh | Cần gì trong `.env` |
+|---|---|---|---|
+| `azure` (khuyên dùng) | `vi-VN-HoaiMyNeural` — nữ miền Bắc | `en-US-AnaNeural` — giọng bé gái | `TTS_API_KEY`, `TTS_REGION` |
+| `google` | `vi-VN-Neural2-A` | `en-US-Neural2-F` | `TTS_API_KEY` |
+| `webspeech` *(mặc định)* | giọng cài trên máy | giọng cài trên máy | — |
 
-Sau đó mọi câu (lời chào, đề bài, câu có tên riêng) đều được đọc bằng giọng đó qua `/api/tts`,
-cache mp3 dưới `FILE_ROOT/tts/` nên mỗi câu chỉ tốn phí một lần.
+Ghi đè giọng bằng `TTS_VOICE_VI` / `TTS_VOICE_EN` nếu muốn thử giọng khác.
 
-**Chọn giọng theo ngữ cảnh** (`lib/tts/voices.ts` → `personaFor`): màn hình của bé gái (avatar
-`girl-*`, mascot Cú) dùng giọng bé gái; của bé trai (avatar `boy-*`, mascot Rô-bốt) dùng giọng bé trai.
-Thiếu một giọng thì dùng giọng còn lại.
+**Sinh sẵn lúc nạp nội dung:** `pnpm content:import` đọc mọi `prompt.text` có `tts: true` và sinh
+mp3 vào `FILE_ROOT/tts/<vi|en>/<hash>.mp3`, hash theo (văn bản + mã giọng + tốc độ). Lúc chạy, app
+chỉ phát file có sẵn nên mỗi câu chỉ tốn phí **một lần** và con không phải chờ. Không có khoá →
+bước sinh bị bỏ qua, `content:import` vẫn chạy trót lọt và nút Nghe rơi về Web Speech.
 
 ## 2. Clip thu sẵn (ưu tiên cao nhất)
 
-Câu thoại cố định của mascot có thể là bản thu thật, đặt vào:
+Câu thoại cố định của mascot (chào, khen, động viên — `docs/06` §1.8b mục 5) có thể là bản thu
+thật hoặc mp3 chất lượng cao, đặt vào:
 
 ```
-content/art/audio/vi/<key>.mp3            # dùng chung
-content/art/audio/vi/girl/<key>.mp3       # riêng giọng bé gái
-content/art/audio/vi/boy/<key>.mp3        # riêng giọng bé trai
+content/art/audio/vi/<key>.mp3
+content/art/audio/en/<key>.mp3
 ```
 
 - `key`: chữ thường, số, dấu `-`, tối đa 60 ký tự. MP3 mono 24 kHz, 48 kbps; cắt lặng đầu/cuối.
-- Trong code: `<SpeakButton text="Giỏi lắm!" clip="gioi-lam" voice="boy" />`.
+- Trong code: `<SpeakButton text="Giỏi lắm!" clip="gioi-lam" />`.
 
-Không thu âm hay gửi tên đầy đủ, ngày sinh của bé — chỉ tên gọi ở nhà.
+Không thu âm giọng của con để đưa lên dịch vụ ngoài; không gửi tên đầy đủ hay ngày sinh của bé —
+chỉ tên gọi ở nhà.

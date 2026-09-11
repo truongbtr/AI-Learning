@@ -2,48 +2,48 @@
 
 /*
  * Design tokens.
- * Adult area (admin + parent dashboard) follows the MEDIFA ONE design system the project owner
- * uses elsewhere: teal `brand`, neutral `ink`, muted surfaces, rounded-card 20px, soft shadows.
- * Kid area keeps its own playful world (docs/06 §1) and never uses these components.
+ * Adult area (admin + parent dashboard) = shadcn/ui with a neutral palette (docs/06 §2, ADR-11):
+ * slate `brand` primary, neutral `ink` text/surfaces, per-child accents for telling the two
+ * children apart. Kid area keeps its own playful world (docs/06 §1) and never uses these tokens.
  */
 @theme {
   --font-sans: var(--font-be-vietnam), "Segoe UI", ui-sans-serif, system-ui, sans-serif;
   --font-kid: var(--font-nunito), var(--font-be-vietnam), ui-sans-serif, system-ui, sans-serif;
 
-  /* brand: teal (MEDIFA ONE design-system §1.1) */
-  --color-brand-50: #effcf9;
-  --color-brand-100: #c8f5ec;
-  --color-brand-200: #97ebdd;
-  --color-brand-300: #5cdccb;
-  --color-brand-400: #2ec4b6;
-  --color-brand-500: #14a89b;
-  --color-brand-600: #0c877e;
-  --color-brand-700: #0f6b66;
-  --color-brand-800: #125553;
-  --color-brand-900: #123f3f;
+  /* brand: neutral slate primary (shadcn default look, docs/06 §2 "mau trung tinh") */
+  --color-brand-50: #f8fafc;
+  --color-brand-100: #eef2f6;
+  --color-brand-200: #cbd5e1;
+  --color-brand-300: #94a3b8;
+  --color-brand-400: #475569;
+  --color-brand-500: #1e293b;
+  --color-brand-600: #172033;
+  --color-brand-700: #0f172a;
+  --color-brand-800: #0b1220;
+  --color-brand-900: #060a13;
 
-  --color-accent-50: #fff1f2;
-  --color-accent-100: #ffe0e3;
-  --color-accent-400: #ff4d57;
-  --color-accent-500: #ef1f2f;
-  --color-accent-600: #c91427;
-  --color-accent-700: #a30f20;
+  /* accent = "diem nhan theo be" (docs/06 §1.1): Thy hong, Thanh xanh. Dung khi man hinh
+     thuoc ve mot be cu the; con lai giao dien nguoi lon giu mau trung tinh. */
+  --color-kid-thy: #e85d9c;
+  --color-kid-thy-soft: #fdeef5;
+  --color-kid-thanh: #2f80ed;
+  --color-kid-thanh-soft: #eaf2fe;
 
-  /* ink: text + neutral surfaces */
-  --color-ink-50: #f6f8fa;
-  --color-ink-100: #eaeff4;
-  --color-ink-200: #d6dee7;
-  --color-ink-300: #b3c1cd;
-  --color-ink-400: #8397a7;
-  --color-ink-500: #5f7482;
-  --color-ink-600: #455966;
-  --color-ink-700: #33454f;
-  --color-ink-800: #22303a;
-  --color-ink-900: #0f1d26;
+  /* ink: text + neutral surfaces (slate) */
+  --color-ink-50: #f8fafc;
+  --color-ink-100: #e9edf2;
+  --color-ink-200: #d8dfe7;
+  --color-ink-300: #b4bfcb;
+  --color-ink-400: #7d8b9a;
+  --color-ink-500: #5b6875;
+  --color-ink-600: #44505c;
+  --color-ink-700: #333d47;
+  --color-ink-800: #222b33;
+  --color-ink-900: #0f161c;
 
   --color-surface: #ffffff;
-  --color-surface-muted: #f4f7fb;
-  --color-surface-subtle: #eef3f8;
+  --color-surface-muted: #f7f8fa;
+  --color-surface-subtle: #eff1f5;
 
   --color-success-50: #ecfdf3;
   --color-success-100: #d1fae5;
@@ -66,31 +66,31 @@
   --color-info-600: #2563eb;
   --color-info-700: #1d4ed8;
 
-  /* shadcn-style aliases kept for existing components (mapped onto the tokens above) */
-  --color-background: #f4f7fb;
-  --color-foreground: #22303a;
+  /* shadcn aliases (mapped onto the tokens above) */
+  --color-background: #f7f8fa;
+  --color-foreground: #222b33;
   --color-card: #ffffff;
-  --color-card-foreground: #22303a;
-  --color-muted: #eef3f8;
-  --color-muted-foreground: #5f7482;
-  --color-accent: #eaeff4;
-  --color-accent-foreground: #22303a;
-  --color-primary: #14a89b;
+  --color-card-foreground: #222b33;
+  --color-muted: #eff1f5;
+  --color-muted-foreground: #5b6875;
+  --color-accent: #e9edf2;
+  --color-accent-foreground: #222b33;
+  --color-primary: #1e293b;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #effcf9;
-  --color-secondary-foreground: #0f6b66;
-  --color-destructive: #f04438;
-  --color-border: #eaeff4;
-  --color-input: #d6dee7;
-  --color-ring: #2ec4b6;
+  --color-secondary: #f1f5f9;
+  --color-secondary-foreground: #0f172a;
+  --color-destructive: #dc2626;
+  --color-border: #e9edf2;
+  --color-input: #d8dfe7;
+  --color-ring: #94a3b8;
 
-  --radius-card: 1.25rem;
-  --radius-control: 0.75rem;
+  --radius-card: 0.75rem;
+  --radius-control: 0.5rem;
 
-  --shadow-card: 0 18px 40px -28px rgba(15, 29, 38, 0.35);
-  --shadow-card-hover: 0 24px 50px -26px rgba(15, 29, 38, 0.4);
-  --shadow-control: 0 1px 2px 0 rgba(15, 29, 38, 0.06);
-  --shadow-popover: 0 16px 40px -12px rgba(15, 29, 38, 0.28);
+  --shadow-card: 0 1px 2px 0 rgba(15, 22, 28, 0.06), 0 1px 3px 0 rgba(15, 22, 28, 0.08);
+  --shadow-card-hover: 0 2px 6px -1px rgba(15, 22, 28, 0.1), 0 4px 12px -4px rgba(15, 22, 28, 0.1);
+  --shadow-control: 0 1px 2px 0 rgba(15, 22, 28, 0.05);
+  --shadow-popover: 0 8px 24px -8px rgba(15, 22, 28, 0.2);
 
   --text-display-sm: 1.75rem;
   --text-display-sm--line-height: 2.25rem;
@@ -149,12 +149,12 @@
     color: var(--color-ink-900);
   }
   :focus-visible {
-    outline: 2px solid var(--color-brand-400);
+    outline: 2px solid var(--color-ink-400);
     outline-offset: 2px;
   }
 }
 
-/* Thin scrollbar for the sidebar and long tables (MEDIFA `.medifa-scrollbar`). */
+/* Thin scrollbar for the sidebar and long tables. */
 .thin-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: var(--color-ink-200) transparent;

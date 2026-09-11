@@ -1,6 +1,6 @@
 # ADR-11 — Ba commit ngoài phạm vi pha 0 (TTS cloud, giọng nhân bản ElevenLabs, giao diện MEDIFA ONE)
 
-- **Trạng thái:** ĐỀ XUẤT — chờ chủ dự án chọn (a) hoặc (b). Developer **không tự quyết**.
+- **Trạng thái:** ĐÃ CHỐT 11/09/2026 — phương án (c), xem mục "Quyết định".
 - **Ngày:** 11/09/2026 (đầu pha 1)
 - **Liên quan:** ADR-6 (Web Speech mặc định, cloud TTS qua adapter), ADR-10 (không SDK LLM), NFR-04, NFR-09, `docs/06` §2 (giao diện ba mẹ/admin).
 
@@ -41,7 +41,12 @@ Ngoài ra:
 
 ## Quyết định
 
-*Chưa có.* Trong lúc chờ: pha 1 xây `/admin/skills` bằng các primitives hiện có (Button/Card/Input/Table/Dialog — vốn là kiểu shadcn) với màu trung tính, không đầu tư thêm vào token MEDIFA ONE; mọi thứ tiếp tục chạy khi không có khoá trả phí nào.
+**Phương án (c) — gỡ phần nhân bản giọng, giữ TTS cloud với giọng tiếng Việt chuẩn.** Chủ dự án: *"Không cần phải theo giọng thu sẵn, tôi cần giọng chuẩn tiếng Việt dễ thương là được."*
+
+1. **Gỡ hẳn nhân bản giọng:** xoá `scripts/tts-clone-voices.mjs`, lệnh `pnpm tts:clone`, mọi nhánh code chọn giọng nhân bản, provider `elevenlabs`; xoá thư mục `ai voice/` khỏi máy chủ (giọng thật của trẻ em là dữ liệu sinh trắc học, không đưa lên bên thứ ba). Nếu đã từng chạy `pnpm tts:clone` thì báo chủ dự án tự đăng nhập ElevenLabs xoá giọng đã tạo — developer không gọi API xoá.
+2. **Giữ TTS cloud tuỳ chọn** (ADR-6, NFR-04) với **giọng dựng sẵn của nhà cung cấp**, không nhân bản: mặc định `vi-VN-HoaiMyNeural` (Azure) cho tiếng Việt, giọng nữ trẻ cho tiếng Anh; provider hỗ trợ `azure` và `google`, chọn bằng `TTS_PROVIDER`. Sinh sẵn mp3 **lúc nạp nội dung** và cache theo hash văn bản; lúc chạy app chỉ phát file. Không khoá → Web Speech, app vẫn đủ chức năng.
+3. **Giao diện người lớn:** gỡ vỏ MEDIFA ONE, trả `/admin/*` và `/parent/*` về `docs/06` §2 (shadcn/ui, màu trung tính, điểm nhấn theo bé). Giữ `/admin/health` vì pha 8 cần; bỏ `/admin` dashboard cho tới khi `docs/06` §2.2 có thiết kế cho nó.
+4. Biến env còn lại: `TTS_PROVIDER` (mặc định `webspeech`), `TTS_API_KEY`, `TTS_REGION`, `TTS_VOICE_VI`, `TTS_VOICE_EN`. Bỏ `TTS_VOICE_GIRL`/`TTS_VOICE_BOY`/`TTS_PITCH_PERCENT`. Trong lúc chờ: pha 1 xây `/admin/skills` bằng các primitives hiện có (Button/Card/Input/Table/Dialog — vốn là kiểu shadcn) với màu trung tính, không đầu tư thêm vào token MEDIFA ONE; mọi thứ tiếp tục chạy khi không có khoá trả phí nào.
 
 ## Hệ quả
 

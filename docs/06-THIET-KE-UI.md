@@ -172,7 +172,11 @@ Quy trình: mọi tài sản đặt trong `content/art/<loại>/` kèm `manifest
 
 ### 2.2 Admin
 
-`/admin/ai` (model theo task, ngân sách, chi phí biểu đồ), `/admin/prompts`, `/admin/skills` (cây kỹ năng, import), `/admin/exercises` (bank, gắn cờ), `/admin/logs`, `/admin/backup`, `/admin/users`.
+`/admin/skills` (cây kỹ năng, import — pha 1), `/admin/content` (lô nội dung, xem thử bài như con thấy, gắn cờ `GOOD/BAD`, phát hành `DRAFT → PUBLISHED` — FR-ADM-05, pha 2), `/admin/inbox` (hàng chờ AI, `docs/13` — pha 2), `/admin/health` (db + worker, pha 0/8), `/admin/users` (pha 0), `/admin/logs`, `/admin/backup` (pha 8), `/dev/kit` (trình diễn component & dạng bài — pha 2/3).
+
+> `/admin/ai` và `/admin/prompts` **bỏ khỏi v1** (ADR-10: app không gọi LLM nên không có model/ngân sách để cấu hình). Không có trang `/admin` dashboard cho tới khi mục này có thiết kế cho nó (ADR-11).
+
+**Vỏ giao diện người lớn** (ADR-11): shadcn/ui, màu trung tính (`slate`), điểm nhấn `primary` theo bé; sidebar cố định trên laptop, ngăn kéo trên điện thoại; không dùng token thương hiệu của dự án khác.
 
 ## 3. i18n & âm thanh
 

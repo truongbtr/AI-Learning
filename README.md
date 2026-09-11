@@ -77,8 +77,8 @@ docs/           bộ tài liệu — nguồn sự thật
 
 Thứ tự phát: clip thu sẵn (`content/art/audio/`) → mp3 đã cache (`FILE_ROOT/tts/`) → TTS cloud → Web Speech trên thiết bị. App **không bao giờ** đọc tiếng Việt bằng giọng Anh: không có giọng phù hợp thì nút Nghe im lặng và chuyển xám.
 
-- **Giọng bé trai / bé gái của gia đình** (khuyên dùng): đặt hai bản thu vào `ai voice/` (đã có, không vào git), điền `TTS_PROVIDER=elevenlabs` + `TTS_API_KEY`, chạy `pnpm tts:clone` một lần để nhân bản giọng và ghi `TTS_VOICE_GIRL`/`TTS_VOICE_BOY` vào `.env`. Giọng được chọn theo ngữ cảnh: màn hình của bé gái dùng giọng bé gái, của bé trai dùng giọng bé trai (theo avatar rồi mascot). Chi tiết: `content/art/audio/README.md`.
-- **Giọng neural có sẵn**: `TTS_PROVIDER=azure` (khoá Azure Speech + `TTS_REGION`; HoaiMy nữ / NamMinh nam, miền Bắc) hoặc `TTS_PROVIDER=google` (API key Cloud Text-to-Speech; Neural2-A nữ / Neural2-D nam). `TTS_PITCH_PERCENT` / `TTS_RATE` chỉnh cho nghe trẻ hơn.
+- **Giọng neural có sẵn của nhà cung cấp** (khuyên dùng — ADR-11 chốt không nhân bản giọng trẻ): `TTS_PROVIDER=azure` (khoá Azure Speech + `TTS_REGION`) → `vi-VN-HoaiMyNeural` cho tiếng Việt, `en-US-AnaNeural` (giọng bé gái) cho tiếng Anh; hoặc `TTS_PROVIDER=google` (API key Cloud Text-to-Speech) → `vi-VN-Neural2-A` / `en-US-Neural2-F`. Ghi đè bằng `TTS_VOICE_VI` / `TTS_VOICE_EN`; `TTS_RATE` (mặc định 0.9) cho đọc chậm dễ nghe. Chi tiết: `content/art/audio/README.md`.
+- **mp3 sinh sẵn lúc nạp nội dung**: `pnpm content:import` tự sinh mp3 cho mọi đề bài có `tts: true` và cache vào `FILE_ROOT/tts/` theo hash văn bản + giọng — lúc con học chỉ phát file, không gọi mạng, mỗi câu chỉ tốn phí một lần. Không có khoá thì bước này bị bỏ qua, mọi lệnh vẫn chạy.
 - **Không cloud** (`webspeech`): máy phải có giọng tiếng Việt — Windows: *Settings → Time & Language → Speech → Add voices → Tiếng Việt*; trình duyệt **Edge** có sẵn giọng neural HoaiMy/NamMinh.
 
 ## Bản quyền & riêng tư

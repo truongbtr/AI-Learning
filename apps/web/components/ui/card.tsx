@@ -1,7 +1,7 @@
 import type * as React from "react";
 import { cn } from "@/lib/utils";
 
-/** MEDIFA ONE `Card`: 20px radius, hairline border, soft shadow. `flush` removes padding for tables. */
+/** Card (shadcn/ui): hairline border, soft shadow. `flush` removes padding for tables. */
 export function Card({
   className,
   flush = false,

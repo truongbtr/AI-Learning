@@ -2,7 +2,7 @@
 
 import { Volume2 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { KID_PROSODY, pickVoice, type VoicePersona } from "@/lib/tts/voices";
+import { KID_PROSODY, pickVoice } from "@/lib/tts/voices";
 import { cn } from "@/lib/utils";
 
 type SpeakState = "idle" | "loading" | "speaking" | "unavailable";
@@ -34,7 +34,7 @@ function loadVoices(): Promise<SpeechSynthesisVoice[]> {
 }
 
 /**
- * Speaks `text`: recorded clip / cloud neural mp3 from /api/tts first (docs/06 §3 `useSpeak`),
+ * Speaks `text`: recorded clip / pre-generated mp3 from /api/tts first (docs/06 §3 `useSpeak`),
  * else Web Speech — but only with a real voice for the language. Reading Vietnamese with an
  * English voice is worse than silence for a 6-year-old. Returns false when nothing could play.
  */
@@ -43,14 +43,13 @@ export async function speak(
   lang = "vi-VN",
   clip?: string,
   onState?: (s: SpeakState) => void,
-  voice: VoicePersona = "girl",
 ): Promise<boolean> {
   if (typeof window === "undefined") return false;
   stopAll();
   onState?.("loading");
 
   try {
-    const params = new URLSearchParams({ text, lang, voice });
+    const params = new URLSearchParams({ text, lang });
     if (clip) params.set("clip", clip);
     const res = await fetch(`/api/tts?${params}`, { cache: "force-cache" });
     if (res.status === 200) {
@@ -101,17 +100,14 @@ export function SpeakButton({
   text,
   lang = "vi-VN",
   clip,
-  voice = "girl",
   autoPlay = false,
   className,
   label = "Nghe",
 }: {
   text: string;
   lang?: string;
-  /** Key of a recorded clip in content/art/audio/<lang>/ (real child voice), if one exists. */
+  /** Key of a recorded mascot clip in content/art/audio/<lang>/, if one exists. */
   clip?: string;
-  /** Cloned child voice for this screen (see personaFor in lib/tts/voices). */
-  voice?: VoicePersona;
   autoPlay?: boolean;
   className?: string;
   label?: string;
@@ -126,8 +122,8 @@ export function SpeakButton({
     };
   }, []);
   const play = useCallback(
-    () => speak(text, lang, clip, (s) => mounted.current && setState(s), voice),
-    [text, lang, clip, voice],
+    () => speak(text, lang, clip, (s) => mounted.current && setState(s)),
+    [text, lang, clip],
   );
   useEffect(() => {
     if (autoPlay) void play();

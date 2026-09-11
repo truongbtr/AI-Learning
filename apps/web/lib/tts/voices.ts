@@ -20,8 +20,8 @@ const VI_PREFERENCE = [
   "Linh", // Apple
 ];
 
-/** Prosody for a younger-sounding read: slightly higher pitch, calmer rate (kid screens). */
-export const KID_PROSODY = { rate: 0.92, pitch: 1.2 } as const;
+/** Prosody for the on-device fallback: same slow, gentle read as TTS_RATE (ADR-11). */
+export const KID_PROSODY = { rate: 0.9, pitch: 1.15 } as const;
 
 function langBase(lang: string): string {
   return lang.toLowerCase().split(/[-_]/)[0] ?? "";
@@ -48,21 +48,4 @@ export function pickVoice(voices: readonly VoiceLike[], lang: string): VoiceLike
     candidates[0] ??
     null
   );
-}
-
-export type VoicePersona = "boy" | "girl";
-
-/**
- * Which cloned child voice speaks on a screen (context rule, docs/06 §1.7 mascot voice):
- * a girl's screens are voiced by the girl voice, a boy's by the boy voice — decided from the
- * child's avatar first, then the mascot (owl → girl, robot → boy). Adults/unknown → girl.
- */
-export function personaFor(
-  student: { avatarKey?: string | null; mascot?: string | null } | null,
-): VoicePersona {
-  const avatar = (student?.avatarKey ?? "").toLowerCase();
-  if (avatar.startsWith("boy")) return "boy";
-  if (avatar.startsWith("girl")) return "girl";
-  if ((student?.mascot ?? "").toUpperCase() === "ROBOT") return "boy";
-  return "girl";
 }

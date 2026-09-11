@@ -1,9 +1,9 @@
+import { cloudTtsEnabled, resolveVoice, ttsConfigFromEnv } from "@mtct/core/tts";
 import { prisma } from "@mtct/db";
 import { Activity, Database, HardDrive, Volume2 } from "lucide-react";
-import { KpiCard } from "@/components/admin/kpi-card";
 import { PageHeader } from "@/components/admin/page-header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { cloudTtsEnabled, ttsConfigFromEnv } from "@/lib/tts/provider";
+import { Stat } from "@/components/ui/stat";
 import { formatDateTime } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
@@ -38,14 +38,14 @@ export default async function AdminHealthPage() {
         description="Cơ sở dữ liệu, worker và giọng đọc. Cùng dữ liệu với GET /api/health."
       />
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <KpiCard
+        <Stat
           label="Cơ sở dữ liệu"
           value={db === "ok" ? "Kết nối tốt" : "Lỗi"}
           caption={`${migrations} migration đã áp dụng`}
           icon={<Database className="h-6 w-6" />}
           tone={db === "ok" ? "success" : "danger"}
         />
-        <KpiCard
+        <Stat
           label="Worker (pg-boss)"
           value={workerOk ? "Đang chạy" : "Ngừng"}
           caption={
@@ -54,18 +54,18 @@ export default async function AdminHealthPage() {
           icon={<Activity className="h-6 w-6" />}
           tone={workerOk ? "success" : "danger"}
         />
-        <KpiCard
+        <Stat
           label="Giọng đọc"
           value={cloudTtsEnabled(tts) ? `Cloud (${tts.provider})` : "Trên thiết bị"}
           caption={
             cloudTtsEnabled(tts)
-              ? `gái: ${tts.voices.girl.vi ?? "—"} · trai: ${tts.voices.boy.vi ?? "—"}`
+              ? `vi: ${resolveVoice(tts, "vi") ?? "—"} · en: ${resolveVoice(tts, "en") ?? "—"}`
               : "Cần giọng tiếng Việt cài trên máy"
           }
           icon={<Volume2 className="h-6 w-6" />}
           tone={cloudTtsEnabled(tts) ? "success" : "warning"}
         />
-        <KpiCard
+        <Stat
           label="Kho tệp"
           value={process.env.FILE_ROOT ?? "./data/files"}
           caption="FILE_ROOT (ảnh vở, cache mp3)"
@@ -98,7 +98,8 @@ export default async function AdminHealthPage() {
                 Giọng vi / en
               </dt>
               <dd className="mt-1 font-medium text-ink-800">
-                {tts.voices.girl.vi ?? "Web Speech"} · {tts.voices.girl.en ?? "Web Speech"}
+                {resolveVoice(tts, "vi") ?? "Web Speech"} ·{" "}
+                {resolveVoice(tts, "en") ?? "Web Speech"}
               </dd>
             </div>
             <div className="rounded-control bg-surface-muted px-4 py-3">

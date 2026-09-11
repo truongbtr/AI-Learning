@@ -27,7 +27,6 @@
     "inbox:pull": "pnpm --filter @mtct/inbox pull",
     "inbox:validate": "pnpm --filter @mtct/inbox validate",
     "inbox:push": "pnpm --filter @mtct/inbox push",
-    "tts:clone": "node scripts/tts-clone-voices.mjs",
     "skills:validate": "pnpm --filter @mtct/content validate:skills",
     "decay:run": "pnpm --filter @mtct/worker decay:run"
   },

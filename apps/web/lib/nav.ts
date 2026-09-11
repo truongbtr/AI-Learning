@@ -1,7 +1,7 @@
 import type { Role } from "@mtct/core";
 
 /**
- * Single place that declares the adult-area menu (MEDIFA ONE `lib/nav.ts` convention).
+ * Single place that declares the adult-area menu (docs/06 §2.1-2.2).
  * Add a section here when a new area ships — never edit the Sidebar for that.
  */
 export type NavIcon = "dashboard" | "users" | "health" | "children" | "kid" | "help" | "skills";
@@ -27,14 +27,6 @@ export interface NavSection {
 }
 
 export const navSections: NavSection[] = [
-  {
-    id: "dashboard",
-    group: "Tổng quan",
-    label: "Bảng điều khiển",
-    href: "/admin",
-    icon: "dashboard",
-    roles: ["ADMIN"],
-  },
   {
     id: "children",
     group: "Tổng quan",
@@ -82,6 +74,6 @@ export function visibleSections(role: Role): NavSection[] {
 
 /** Exact match for the root of an area, prefix match for everything else. */
 export function isActivePath(pathname: string, href: string): boolean {
-  if (href === "/admin" || href === "/parent") return pathname === href;
+  if (href === "/parent") return pathname === href;
   return pathname === href || pathname.startsWith(`${href}/`);
 }

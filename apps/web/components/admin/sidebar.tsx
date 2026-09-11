@@ -29,8 +29,8 @@ const ICONS: Record<NavIcon, LucideIcon> = {
 };
 
 /**
- * MEDIFA ONE `Sidebar`: fixed 264px on lg+, slide-in drawer below. Sections come from lib/nav.ts;
- * the active row gets a teal tint and a red pill on the right.
+ * Sidebar (docs/06 §2): fixed 240px on lg+, slide-in drawer below. Sections come from lib/nav.ts;
+ * the active row gets a neutral tint — no brand colour from another project (ADR-11).
  */
 export function Sidebar({
   open,
@@ -57,7 +57,7 @@ export function Sidebar({
 
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-40 flex w-[264px] flex-col border-r border-ink-100 bg-white transition-transform duration-200 lg:translate-x-0",
+          "fixed inset-y-0 left-0 z-40 flex w-[240px] flex-col border-r border-ink-100 bg-white transition-transform duration-200 lg:translate-x-0",
           open ? "translate-x-0" : "-translate-x-full",
         )}
       >
@@ -89,7 +89,7 @@ export function Sidebar({
               const rowClass = cn(
                 "group flex items-center gap-3 rounded-control px-3 py-2.5 text-sm font-semibold transition-colors",
                 active
-                  ? "bg-brand-50 text-brand-700"
+                  ? "bg-ink-100 text-ink-900"
                   : "text-ink-500 hover:bg-ink-50 hover:text-ink-800",
               );
               return (
@@ -125,13 +125,8 @@ export function Sidebar({
                         aria-current={active ? "page" : undefined}
                         className={rowClass}
                       >
-                        <Icon
-                          className={cn("h-5 w-5", active ? "text-brand-600" : "text-ink-400")}
-                        />
+                        <Icon className={cn("h-5 w-5", active ? "text-ink-700" : "text-ink-400")} />
                         <span className="truncate">{section.label}</span>
-                        {active ? (
-                          <span className="ml-auto h-5 w-1 rounded-full bg-accent-500" />
-                        ) : null}
                       </Link>
                     )}
                   </li>
@@ -141,13 +136,10 @@ export function Sidebar({
           </ul>
         </nav>
 
-        <div className="m-3 rounded-card bg-brand-50 p-4">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-500 text-white">
-            <Baby className="h-5 w-5" aria-hidden />
-          </span>
-          <p className="mt-3 text-sm font-bold text-brand-800">Học cùng Mai Thy &amp; Chí Thanh</p>
-          <p className="mt-1 text-xs leading-relaxed text-brand-700">
-            Máy chủ tại nhà, dữ liệu của con không rời khỏi gia đình. Không có đăng ký công khai.
+        <div className="m-3 rounded-card border border-ink-100 bg-ink-50 p-4">
+          <p className="text-sm font-bold text-ink-800">Máy chủ tại nhà</p>
+          <p className="mt-1 text-xs leading-relaxed text-ink-500">
+            Dữ liệu của con không rời khỏi gia đình. Không có đăng ký công khai.
           </p>
         </div>
       </aside>

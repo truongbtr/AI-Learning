@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-/** MEDIFA ONE `PageHeader`: breadcrumb, display title, description, actions on the right. */
+/** Page header: breadcrumb, title, description, actions on the right (docs/06 §2). */
 export function PageHeader({
   breadcrumb,
   title,

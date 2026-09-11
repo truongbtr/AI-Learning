@@ -12,9 +12,7 @@ const SHOTS = join(__dirname, "..", "..", "..", "docs", "screens", "pha-0");
 
 test.skip(!ADMIN_PASSWORD, "set E2E_ADMIN_PASSWORD to capture the adult-area screenshots");
 
-test("admin dashboard, users, health and parent pages render inside the shell", async ({
-  page,
-}) => {
+test("admin skills, users, health and parent pages render inside the shell", async ({ page }) => {
   mkdirSync(SHOTS, { recursive: true });
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/login");
@@ -24,7 +22,7 @@ test("admin dashboard, users, health and parent pages render inside the shell", 
   await expect(page).toHaveURL(/\/admin\/users/);
 
   for (const [path, file, heading] of [
-    ["/admin", "admin-dashboard.png", "Bảng điều khiển"],
+    ["/admin/skills", "admin-skills.png", "Bản đồ kỹ năng"],
     ["/admin/users", "admin-users.png", "Người dùng"],
     ["/admin/health", "admin-health.png", "Sức khoẻ hệ thống"],
     ["/parent", "parent-home.png", "Các con"],
