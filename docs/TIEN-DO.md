@@ -4,7 +4,7 @@
 
 ## Pha 3 — 11/09/2026 — Góc của con: thế giới, mascot, phiên học
 
-Trạng thái: **dựng xong, 6/8 tiêu chí tự kiểm đạt**; 2 tiêu chí còn lại cần chủ dự án (dán khoá Azure vào `.env`, và chấm checklist `06` §4 trên iPad thật). 13 commit trong pha, **chưa push**.
+Trạng thái: **dựng xong, 7/8 tiêu chí tự kiểm đạt**; tiêu chí còn lại cần chủ dự án chấm trên iPad thật (60 fps, mục 8 checklist `06` §4). 14 commit trong pha, **chưa push**.
 
 ### 1. Đã làm gì
 
@@ -79,7 +79,7 @@ pnpm --filter @mtct/web exec playwright test e2e/phase3-acceptance.spec.ts
 | 5 | **Playwright K1→K5 xanh** | **Đạt** — 5 test pha 3 xanh; chạy cả bộ: **28/28 e2e xanh** (pha 0: 6 · pha 1: 7 · pha 2: 5 · pha 3: 5 · login+screens: 5) |
 | 6 | **Checklist `06` §4** trên iPad Safari | **Tự kiểm 11/12 trên Edge/Chromium** (bảng ở mục 4 dưới). Mục 8 (60 fps đo bằng Safari Web Inspector trên iPad thật) **chủ dự án cần chấm** — máy này không có iPad |
 | 7 | **Video 2 phút** một phiên học | **Đạt** — `docs/screens/pha-3/phien-hoc-k1-k5.webm` (2 phút 47 giây, 4,8 MB): đăng nhập bằng hình → bản đồ → 12 trạm → nghỉ vận động → "chơi tiếp hay nghỉ" → ăn mừng |
-| 8 | **`pnpm tts:smoke "Nghe rồi chọn ô đúng nhé!"` ra mp3 đúng giọng** | **Chưa kiểm được** — `TTS_API_KEY` trong `.env` đang **trống**, lệnh dừng êm và nói rõ thiếu khoá. Dán khoá Azure vào là chạy (xem mục 7) |
+| 8 | **`pnpm tts:smoke "Nghe rồi chọn ô đúng nhé!"` ra mp3 đúng giọng** | **Đạt** (chủ dự án dán khoá lúc 22:17 ngày 11/09) — `_tts-thu/smoke-vi-*.mp3`, 15 KB, lệnh in `giọng vi-VN-HoaiMyNeural (azure/eastasia), giọng gốc, không prosody`. Câu tiếng Anh (`--en`) ra `en-US-AnaNeural … prosody rate=-10%`. `pnpm tts:voices` đọc được 79 giọng của vùng eastasia |
 
 Thêm hai tiêu chí chủ dự án bổ sung: `docs/09` **có bảng unit Global Stage Level 1 cho cả hai quyển** (§4b.1 Language Book, §4b.2 Literacy Book) — **đạt**; `esl.json`/`enl.json` **không còn `standardRef` ước đoán kiểu `GS1.U<n>`** — **đạt** (mục 5 dưới).
 
@@ -122,7 +122,7 @@ Thêm hai tiêu chí chủ dự án bổ sung: `docs/09` **có bảng unit Globa
 
 ### 7. Chưa làm / cần chủ dự án
 
-1. **Dán khoá Azure vào `.env`** (`TTS_API_KEY=<khoá>`, `TTS_REGION=eastasia` đã có sẵn) rồi chạy `pnpm tts:smoke "Nghe rồi chọn ô đúng nhé!"` — file mp3 nằm ở `_tts-thu/`. Sau đó `pnpm content:import` sẽ sinh mp3 cho 1450 câu (chạy dần được, hết hạn mức thì dừng êm).
+1. **Sinh mp3 cho cả ngân hàng.** Khoá Azure đã có trong `.env` và hai câu thử đã ra đúng giọng (tiêu chí 8). Còn lại là chạy `pnpm content:import` để sinh mp3 cho **1450 câu** — tầng F0 giới hạn 20 yêu cầu/phút nên mất khoảng **70–80 phút**; lệnh chạy dần được và hết hạn mức thì dừng êm, chạy lại là tiếp. Chưa chạy vì tốn hạn mức của chủ dự án — nói một câu là tôi chạy.
 2. **Chấm mục 8 của checklist trên iPad thật** (60 fps trong lúc làm bài, đo bằng Safari Web Inspector) — và nếu được, để hai bé dùng thử 10 phút không cần ba mẹ trợ giúp.
 3. **K6 "chơi thêm theo môn"** và **K8 "Hỏi bạn Cú"** không thuộc pha 3 (`docs/08` giao K1–K5 và K7) — K6 ở pha 7, K8 là gia sư giọng nói P2. Trang chủ vì thế **chưa có 3 icon môn** như `06` §1.2 mô tả, để không dẫn con vào màn hình trống.
 4. **Dọn dữ liệu dev:** máy đang có **28 lô `content:import`** và một loạt tài khoản "Bé Thử"/"Thy"/"Thanh" do các bộ e2e cũ tạo — ảnh chụp màn hình đăng nhập vì thế hơi rối. Không ảnh hưởng bản thật (seed chỉ tạo 1 admin), nhưng nên dọn trước khi cho hai bé dùng.
