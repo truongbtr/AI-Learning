@@ -6,6 +6,7 @@ import {
   ExternalLink,
   LayoutDashboard,
   type LucideIcon,
+  Network,
   Sparkles,
   Users,
   X,
@@ -22,6 +23,7 @@ const ICONS: Record<NavIcon, LucideIcon> = {
   users: Users,
   health: Activity,
   children: Baby,
+  skills: Network,
   kid: Sparkles,
   help: Sparkles,
 };

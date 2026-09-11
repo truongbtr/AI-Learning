@@ -4,7 +4,7 @@ import type { Role } from "@mtct/core";
  * Single place that declares the adult-area menu (MEDIFA ONE `lib/nav.ts` convention).
  * Add a section here when a new area ships — never edit the Sidebar for that.
  */
-export type NavIcon = "dashboard" | "users" | "health" | "children" | "kid" | "help";
+export type NavIcon = "dashboard" | "users" | "health" | "children" | "kid" | "help" | "skills";
 
 export interface NavItem {
   label: string;
@@ -41,6 +41,14 @@ export const navSections: NavSection[] = [
     label: "Các con",
     href: "/parent",
     icon: "children",
+  },
+  {
+    id: "skills",
+    group: "Nội dung",
+    label: "Bản đồ kỹ năng",
+    href: "/admin/skills",
+    icon: "skills",
+    roles: ["ADMIN"],
   },
   {
     id: "users",

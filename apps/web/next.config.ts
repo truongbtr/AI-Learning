@@ -39,7 +39,7 @@ const nextConfig: NextConfig = {
   // Do not let Next write AGENTS.md/CLAUDE.md into apps/web — the repo root CLAUDE.md is the rulebook.
   agentRules: false,
   // Pure-TS workspace packages are compiled by Next; the DB package is a prebuilt CommonJS external.
-  transpilePackages: ["@mtct/core"],
+  transpilePackages: ["@mtct/core", "@mtct/content"],
   serverExternalPackages: ["@mtct/db", "@prisma/client", "@node-rs/argon2"],
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];

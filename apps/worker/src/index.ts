@@ -1,6 +1,7 @@
 /**
- * Worker process (docs/02 §2): pg-boss on the same PostgreSQL. Phase 0 runs one job, `ping`,
- * every minute and records Setting["worker.lastPing"] which /api/health reads (<= 6 min = ok).
+ * Worker process (docs/02 §2): pg-boss on the same PostgreSQL.
+ *  - `ping` every minute → Setting["worker.lastPing"], read by /api/health (<= 6 min = ok).
+ *  - `mastery.decay` at 02:30 Vietnam time (docs/04 §3.2); `pnpm decay:run` does it by hand.
  */
 import { existsSync } from "node:fs";
 import { join } from "node:path";
@@ -8,6 +9,7 @@ import { prisma } from "@mtct/db";
 import { config as loadEnv } from "dotenv";
 import { PgBoss } from "pg-boss";
 import pino from "pino";
+import { MASTERY_DECAY_CRON, MASTERY_DECAY_QUEUE, runMasteryDecayJob } from "./jobs/mastery-decay";
 
 const rootEnv = join(__dirname, "..", "..", "..", ".env");
 if (existsSync(rootEnv)) loadEnv({ path: rootEnv, override: false });
@@ -36,13 +38,22 @@ async function main() {
   await boss.start();
   log.info("pg-boss started");
 
+  const tz = process.env.TZ ?? "Asia/Ho_Chi_Minh";
+
   await boss.createQueue(PING_QUEUE);
   await boss.work(PING_QUEUE, async () => {
     await recordPing();
   });
   // Every minute (server local time). One immediate ping so /api/health is green right away.
-  await boss.schedule(PING_QUEUE, "* * * * *", {}, { tz: process.env.TZ ?? "Asia/Ho_Chi_Minh" });
+  await boss.schedule(PING_QUEUE, "* * * * *", {}, { tz });
   await boss.send(PING_QUEUE, {});
+
+  await boss.createQueue(MASTERY_DECAY_QUEUE);
+  await boss.work(MASTERY_DECAY_QUEUE, async () => {
+    await runMasteryDecayJob(prisma, log);
+  });
+  await boss.schedule(MASTERY_DECAY_QUEUE, MASTERY_DECAY_CRON, {}, { tz });
+  log.info({ queue: MASTERY_DECAY_QUEUE, cron: MASTERY_DECAY_CRON, tz }, "nightly decay scheduled");
 
   const shutdown = async (signal: string) => {
     log.info({ signal }, "worker stopping");

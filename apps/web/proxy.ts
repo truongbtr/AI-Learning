@@ -25,6 +25,11 @@ export default auth((req) => {
   const user = req.auth?.user;
   const isApi = pathname.startsWith("/api/");
 
+  // Internal endpoint for the worker: it authenticates with a bearer token, not a cookie, so the
+  // session check here would reject it. The handler itself demands an ADMIN session or that token
+  // (lib/auth/internal.ts) — CHILD and PARENT are refused there.
+  if (pathname === "/api/evidence") return NextResponse.next();
+
   // Public: login page, Auth.js endpoints, health.
   if (pathname === "/login" || isAuthJsInternal(pathname) || pathname === "/api/health") {
     if (user && pathname === "/login") {
