@@ -13,7 +13,7 @@
 | `01-sgk-toan-1-tap-mot.pdf` | Toán 1 — tập một | SGK học sinh | 118 | HK1: chủ đề 1–5, bài 1–20 |
 | `01-sgk-toan-1-tap-hai.pdf` | Toán 1 — tập hai | SGK học sinh | 110 | HK2: chủ đề 6–10, bài 21–41 |
 
-Tất cả đều thuộc bộ **Kết nối tri thức với cuộc sống** (NXB GDVN), **PDF quét — không có lớp chữ**, nên phải đọc bằng nhận dạng ảnh. **Quy đổi trang: trang PDF = trang sách + 1** (đã kiểm chứng: bài 13 ở trang sách 38–39 nằm ở PDF 39–40).
+Tất cả đều thuộc bộ **Kết nối tri thức với cuộc sống** (NXB GDVN), **PDF quét — không có lớp chữ**, nên phải đọc bằng nhận dạng ảnh. **Quy đổi trang: trang PDF = trang sách + 1** (đã kiểm chứng: bài 13 ở trang sách 38–39 nằm ở PDF 39–40). ⚠️ **Khi tách ảnh trang ra khỏi PDF** (cách Claude Code đọc sách quét) thì chỉ số ảnh = **trang sách + 3** với cả hai file SGK trong repo, vì đầu file có 2 ảnh bìa lặp — kiểm lại bằng một trang đã biết trước khi soạn (ghi nhận ở pha 2).
 
 > ⚠️ Hai file **sách giáo viên** nạp ngày 09/09 (`01-sgv-toan-1.pdf`, `01-sgvtieng-viet-1-tap-hai.pdf`) hiện **không còn trong thư mục**. SGV có mục tiêu bài dạy và đáp án — rất hữu ích khi soạn bài luyện và chấm. Nếu chủ dự án còn giữ, nên chép lại vào; bảng bài Toán ở §2 dưới đây đang dùng số trang của SGV.
 

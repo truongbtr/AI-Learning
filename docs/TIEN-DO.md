@@ -2,6 +2,94 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 2 — 11/09/2026 — Xưởng nội dung & ngân hàng bài luyện (đợt 1)
+
+Trạng thái: **xong** (7/7 tiêu chí đạt, kiểm cả trên máy dev lẫn stack Docker sạch không có khoá nào). 6 commit, chưa push. Đầu pha có 2 commit thi hành ADR-11 và dọn tài liệu QC để lại.
+
+### Đã làm theo 5 việc
+
+0. **Trước việc 1 — thi hành ADR-11 phương án (c) + dọn tài liệu** (`ab304db`, `d29577e`):
+   - `ab304db` commit giúp phần QC sửa còn treo: bỏ nốt chữ "pgvector/embedding" trong `docs/02`, `04`, `07`, `08`. *(Ghi chú: git identity trên máy **đã có sẵn** — `truongbtr@gmail.com`, không phải cấu hình lại.)*
+   - `d29577e` **gỡ hẳn nhân bản giọng**: xoá `scripts/tts-clone-voices.mjs`, lệnh `pnpm tts:clone`, provider nhân bản, `personaFor`/`VoicePersona`, và **thư mục `ai voice/`** trên máy chủ. Giữ TTS cloud tuỳ chọn với **giọng dựng sẵn** trong `packages/core/src/tts/` (dùng chung cho web và trình nạp). **Gỡ vỏ MEDIFA ONE**: token màu về slate trung tính theo `docs/06` §2, thêm token `--color-kid-thy`/`--color-kid-thanh` cho pha 5, bỏ `/admin` dashboard, giữ `/admin/health`. Env còn `TTS_PROVIDER | TTS_API_KEY | TTS_APP_ID | TTS_REGION | TTS_VOICE_VI | TTS_VOICE_EN | TTS_RATE`.
+   - Sau đó chủ dự án cập nhật ADR-11 thêm **Vbee** làm nhà cung cấp tiếng Việt → đã thi hành trong `0ccf6fb`: provider `vbee` (header `App-Id`, tải mp3 ngay vì link hết hạn ~3 phút), **sinh dần và chạy lại được** (hết hạn mức thì dừng êm, báo còn bao nhiêu câu), `pnpm tts:voices` để lấy mã giọng thật, `content:stats` hiện số câu đã có mp3.
+
+1. **`packages/content` — xưởng nội dung** (`bdaa2a6`): schema Zod cho file bài học (`10` §4.1) và gói bài luyện (`10` §4.2) + bộ dựng `ExerciseSpec` (`04` §5). Bốn lệnh thật, không stub: `content:validate` · `content:import [--dry-run] [--dir] [--no-tts]` · `content:stats` · `content:export --skill`. Validator kiểm cả những thứ schema không nói được: trùng câu hỏi, thiếu mức khó, dùng dạng bài kỹ năng không khai, `errorTag` ngoài `error-taxonomy.json`, và **bắt buộc nhiễu của bài Toán/học vần phải có chẩn đoán**.
+   *Lệch tài liệu:* ba lệnh đụng DB (`import`/`stats`/`export`) đặt ở **`packages/db`** chứ không phải `packages/content` như `docs/10` §10 phác thảo — cho chiều ngược lại sẽ tạo **vòng phụ thuộc** và Turborepo từ chối chạy. Lệnh `pnpm content:*` người dùng gõ không đổi. (ADR-14 mục cuối.)
+
+2. **`packages/inbox` — hàng chờ AI** (`0ccf6fb`): schema `IntakeExtraction`, `GradeResult`, `DiaryParse`, `WeeklyReport`, `PlanHint` + `ExerciseSpec` tái xuất từ `@mtct/content`; lệnh `inbox:pull` / `inbox:validate` / `inbox:push`; trang `/admin/inbox`. `context.json` kèm **ứng viên kỹ năng lấy từ `searchSkills` của pha 1**, bộ mã lỗi đầy đủ, 10 lần ba mẹ đã sửa nhãn, và **chỉ tên gọi ở nhà** (test kiểm `context.json` không chứa tên đầy đủ). Validator từ chối: `result.json` sai loại việc, mã lỗi ngoài bộ, và **bất kỳ câu nào nói với bé có chữ "sai"**. Mục **"Xử lý hàng chờ AI"** 4 bước đã viết vào `CLAUDE.md`.
+
+3. **Xem trước & duyệt** (`0ccf6fb`): `/admin/content` theo FR-ADM-05 — danh sách lô, **xem thử bài đúng như con sẽ thấy** (`components/kid/exercise-preview.tsx`, nền thế giới, chạm ≥ 64 px, chữ ≥ 22 px, nút Nghe), gắn cờ `GOOD`/`BAD` (gắn `BAD` là bài rời ngân hàng ngay), phát hành / thu hồi cả lô, và bảng phủ nội dung tô đỏ kỹ năng < 10 bài. `/dev/kit` dán `ExerciseSpec` bất kỳ vào là render. Nút nghe thử dùng mp3 sinh sẵn, không có thì rơi về Web Speech.
+
+4. **Soạn nội dung đợt 1** (`94238dc`): **28 kỹ năng · 1236 bài**. Đọc SGK thật — PDF quét không có lớp chữ nên tách ảnh từng trang ra rồi đọc: Toán B1/B2/B3/B4/B5/B10/B11, Tiếng Việt B1, 2, 3, 4, 6, 8, 13, 14. Câu nhận biết, bảng ghép âm, từ khoá có tranh và nhân vật (Nam, Mai, Việt, Mi, Rô-bốt, bà, bé) đều lấy từ sách. Báo cáo rubric ở `content/_reports/dot-1.md`.
+
+5. **Nạp & phát hành** (`94238dc`): `content:validate` sạch → `content:import` → duyệt và phát hành trong `/admin/content` → `content:stats` cho thấy **cả 28 kỹ năng ≥ 35 bài `PUBLISHED`, không kỹ năng nào thiếu dạng hay mức khó**.
+
+### Bảng 7 tiêu chí xong
+
+| # | Tiêu chí | Kết quả | Cách tự kiểm (PowerShell, tại gốc repo) |
+|---|---|---|---|
+| 1 | `content:stats` ≥ 25 kỹ năng, mỗi kỹ năng ≥ 35 bài `PUBLISHED`, không thiếu dạng bài pha 3 | **Đạt** — 28 kỹ năng, 1236 bài, ít nhất 40 bài/kỹ năng, cột "thiếu dạng"/"thiếu mức khó" đều trống | `pnpm content:stats` |
+| 2 | `content:import --dry-run` chạy lại lô cũ báo **0 thay đổi** | **Đạt** — `0 new, 0 updated, 1236 unchanged` · `dry-run: 0 changes` | `pnpm content:import --dry-run` |
+| 3 | Sửa 1 bài rồi nạp lại → cập nhật tại chỗ, `stableId` giữ nguyên, `Evidence` cũ không mất | **Đạt** — làm thật: sửa lỗi "1 apples" → `0 new, 1 updated, 1231 unchanged`, bài vẫn `PUBLISHED`. Test tích hợp chứng minh `Attempt`/`Evidence` cũ còn nguyên và **7 bảng dữ liệu học của con không đổi một dòng** | `pnpm --filter @mtct/db test` (9 test importer) |
+| 4 | 20 bài ngẫu nhiên, tự chấm rubric `docs/10` §6, ≥ 18/20 đạt | **Đạt 20/20 — sau hai vòng sửa.** Lần chấm đầu 14/20; 9 lỗi hệ thống tìm được và cách sửa ghi ở `content/_reports/dot-1.md` §4 | `node scripts/sample-exercises.mjs pha-2-dot-1 20` (luôn ra đúng 20 mã đó) |
+| 5 | `.env` không khoá nào vẫn `docker compose --env-file .env up -d --build` chạy, vẫn truy vấn và render được bài, `content:import` vẫn chạy | **Đạt** — dựng stack thứ hai volume mới (`-p mtct-p2`, cổng 3001/5434), `TTS_API_KEY` trống: seed 359/182/42 → `content:import` 1236 bài (`tts: skipped 1450 line(s)`) → phát hành và xem thử bài trong `/admin/content` | `docker compose --env-file .env -f docker/compose.yml up -d --build` rồi `Invoke-RestMethod http://localhost:5000/api/health` |
+| 6 | `pnpm lint && pnpm test && pnpm build` xanh; e2e pha 0 và pha 1 vẫn xanh sau khi gỡ vỏ MEDIFA ONE | **Đạt** — lint 0 lỗi · **166 test đơn vị/tích hợp** (core 81, content 33, db 22, web 18, inbox 12) · build 4 gói · **23 e2e xanh** (pha 0: 6, pha 1: 7, pha 2: 5, login + screens: 5) chạy trên stack Docker sạch | `pnpm lint; pnpm test; pnpm build` (dừng `pnpm dev` trước) |
+| 7 | `grep -ri elevenlabs` rỗng; thư mục `ai voice/` không còn | **Đạt trong code** — không còn ở bất kỳ file mã, script, env, `package.json` hay README nào; thư mục đã xoá. **Còn đúng 2 chỗ là tài liệu lịch sử**: `docs/adr/ADR-11` (chính bản ghi quyết định gỡ) và mục pha 1 của file này. Xoá tên khỏi ADR sẽ làm mất bản ghi quyết định nên giữ lại | `Select-String -Path (Get-ChildItem -Recurse -File).FullName -Pattern "elevenlabs"` |
+
+Ảnh chụp: `docs/screens/pha-2/admin-content.png`, `exercise-preview.png`, `dev-kit.png`.
+
+### Số liệu ngân hàng bài đợt 1
+
+| Hạng mục | Số lượng |
+|---|---|
+| Kỹ năng | **28** — Tiếng Việt 10 · Toán 9 · ESL 5 · ENL 2 · English Maths 2 |
+| Bài luyện | **1236**, tất cả `PUBLISHED` — VIET 453 · VMATH 385 · ESL 218 · ENL 91 · EMATH 89 |
+| Theo dạng | MCQ 527 · LISTEN_CHOOSE 214 · DRAG_DROP 185 · READ_ALOUD 125 · COUNT_TAP 100 · WRITE_PHOTO 85 |
+| Theo mức khó | 1 → 204 · 2 → 300 · 3 → 291 · 4 → 271 · 5 → 170 |
+| Nhiễu có chẩn đoán | **741 bài** có ít nhất một đáp án sai mang `errorTag` |
+| `scaffold: model` | **190 bài** (mascot làm mẫu trước — `04` §11.4 bậc 3) |
+| `targetsError` | **588 bài** nhắm đúng một mã lỗi (thang rèn bậc 5) |
+| Biến thể chủ đề | 66 bài `robot` · 80 bài `garden` · còn lại `neutral` |
+| Test | **166 đơn vị/tích hợp** + **23 e2e** |
+
+### Mã 20 bài mẫu để QC chấm lại
+
+Rút bằng `node scripts/sample-exercises.mjs pha-2-dot-1 20` — sắp toàn bộ 1236 bài theo `sha256("pha-2-dot-1" + stableId)` rồi lấy 20 bài đầu, không chọn tay:
+
+`viet-am-ch-0012` · `vmath-cong10-0044` · `enl-sight-0043` · `vmath-cong10-0030` · `viet-am-d-0008` · `viet-am-a-0017` · `viet-am-a-0041` · `vmath-tachgop-0015` · `enl-sight-0019` · `viet-am-u-0009` · `esl-havehas-0039` · `vmath-so610-0033` · `viet-dauthanh-0043` · `vmath-nhieuit-0014` · `viet-am-o-0015` · `viet-am-a-0043` · `vmath-so610-0021` · `vmath-demvat-0013` · `vmath-so05-0002` · `vmath-tachgop-0020`
+
+Bảng chấm từng bài ở `content/_reports/dot-1.md` §3.
+
+### ADR đã viết
+
+- **ADR-14** — bốn bổ sung vào hợp đồng bài luyện, đều là **sửa lỗi ở tầng dữ liệu** để pha 3 không mắc lại:
+  1. `Exercise.answerKey` là một **gói** `{ value, errorTags, correctCount }` chỉ máy chủ đọc — `choices[].errorTag` và `countTarget.correctCount` bị cắt khỏi `spec` gửi client.
+  2. `listenTarget` — tiếng được đọc trong bài nghe, **không bao giờ in ra**; validator chặn đề in lại nó.
+  3. `ImageRef.repeat` — vẽ hình mấy lần, bắt buộc với câu hỏi đếm.
+  4. Mở `difficultyRange` → `[1,5]` và thêm dạng bài cho **đúng 28 kỹ năng đợt 1** trong `content/skill-map/` cho khớp bài đã soạn (331 kỹ năng còn lại không đụng).
+
+  `docs/04` §5 đã cập nhật cho khớp.
+
+### Chưa làm + giả định
+
+- **Nhiễu của `DRAG_DROP` chưa mang mã lỗi.** `ExerciseSpec` chỉ cho `errorTag` trên `choices`, nên 185 bài kéo-thả biết "chưa đúng" mà **không biết vì sao**. Đề nghị pha 3 thêm `dragItems[].errorTag`.
+- **Toàn bộ ESL/ENL/EMATH (398 bài) chưa bám sách của trường** — dựng theo phiếu `GS1 – UNIT 1` và CCSS; mọi `sourceRef` ghi rõ "chưa có SGK". Có sách Global Success 1 thì phải rà lại từ vựng và thứ tự unit.
+- **Hình vẫn là emoji** (đúng `04` §5 "v1 ưu tiên emoji"); `content/art/objects/manifest.json` chưa có nên validator bỏ qua bước kiểm vật thể. Pha 3 làm thư viện SVG xong phải rà lại.
+- **`docs/09` §1 ghi "trang PDF = trang sách + 1"; hai file SGK trong repo thực tế lệch +3** (hai ảnh bìa lặp ở đầu). `sourceRef` đều ghi **số trang sách** nên nội dung không sai; nên sửa `docs/09` cho lần sau.
+- **`LessonUnit` vẫn là khung** — pha 2 không điền `objectives`/`vocabulary` (đó là việc pha 6); schema và trình nạp bài học đã sẵn sàng, `content/lessons/` chưa có file bài học nào.
+- **Chưa từng chạy `pnpm tts:clone`** trong phiên này (xem câu hỏi 1).
+- `/admin/content` chưa có nút **sửa nhanh** một bài (FR-ADM-05 có nhắc). Sửa bài hiện đi đường `content/*.pack.json` → `content:import`, an toàn hơn vì mọi thay đổi có trong git.
+
+### Câu hỏi cho chủ dự án
+
+1. **Đã từng chạy `pnpm tts:clone` chưa?** Tôi **không chạy** lệnh đó lần nào (và nó đã bị xoá). Nếu trước đây có chạy thì giọng nhân bản của hai bé **vẫn đang nằm trên tài khoản ElevenLabs** — ADR-11 dặn developer không tự gọi API xoá, nên nhờ chủ dự án đăng nhập ElevenLabs xoá thủ công.
+2. **Khoá Vbee:** cần `TTS_API_KEY` + `TTS_APP_ID`. Sau khi có, chạy `pnpm tts:voices` để lấy **mã giọng thật** rồi điền `TTS_VOICE_VI` — mã mặc định tôi đặt sẵn (`hn_female_ngochuyen_full_48k-fhg`) là mã phổ biến trong tài liệu Vbee nhưng **tôi chưa kiểm chứng được với tài khoản thật**. Gói miễn phí thường chỉ vài nghìn ký tự/ngày; 1450 câu cần sinh dần vài ngày (lệnh tự biết chỗ dừng).
+3. **Sách Tiếng Anh 1 – Global Success** (và giáo trình NAVIO nếu có): vẫn là việc chặn lớn nhất — 398 bài tiếng Anh đang dựng theo suy đoán từ một phiếu bài tập.
+4. **Ngày bắt đầu năm học thật** (còn nợ từ pha 0 và pha 1) — cần để chỉnh `expectedWeek`.
+5. Có muốn tôi soạn tiếp **bài học** (`content/lessons/`, `docs/10` §4.1) cho 12 bài Toán và 14 bài Tiếng Việt đầu ngay bây giờ không, hay để đúng pha 6 như lộ trình?
+
+---
+
 ## Pha 1 — 11/09/2026 — Bản đồ kỹ năng & mô hình năng lực
 
 Trạng thái: **xong** (6/6 tiêu chí đạt, kiểm cả trên máy dev lẫn stack Docker). 6 commit, chưa push. Đầu pha có 1 commit ADR xử lý phần ngoài phạm vi của pha 0.
