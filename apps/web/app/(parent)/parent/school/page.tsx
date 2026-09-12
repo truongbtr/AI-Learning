@@ -1,43 +1,57 @@
-import { prisma, proposeSchoolYearStart } from "@mtct/db";
+import { getTimetable, listSchoolWeeks, prisma, proposeSchoolYearStart } from "@mtct/db";
 import { PageHeader } from "@/components/admin/page-header";
-import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { guardPage } from "@/lib/auth/session";
 import { SchoolYearCard } from "./school-year-card";
+import { TimetableEditor } from "./timetable-editor";
+import { WeeksEditor } from "./weeks-editor";
 
 export const dynamic = "force-dynamic";
 
 /**
- * P12 — thời khoá biểu & năm học (docs/06 §2.1).
- * Phase 4 only builds the half docs/11 §5 needs: re-dating the school year from the class diary.
- * Editing the timetable itself is phase 5.
+ * P12 — thời khoá biểu & năm học (docs/06 §2.1, FR-PAR-06).
+ *
+ * Three things, in the order they matter: when the year really started (every `expectedWeek` is
+ * measured against it), which core subject each period is (the planner weights tonight by it), and
+ * which weeks are holidays (so nobody is "behind" because of Tết).
  */
 export default async function SchoolPage() {
-  await guardPage("parent");
-  const proposal = await proposeSchoolYearStart(prisma);
-  const weeks = await prisma.schoolWeek.findMany({ orderBy: { weekNo: "asc" }, take: 8 });
+  const user = await guardPage("parent");
+  const student = await prisma.student.findFirst({
+    where: {
+      user: { isActive: true },
+      ...(user.role === "ADMIN" ? {} : { guardians: { some: { userId: user.id } } }),
+    },
+    orderBy: { createdAt: "asc" },
+    select: { className: true },
+  });
+  const className = student?.className ?? "1B3";
+
+  const [proposal, timetable, weeks] = await Promise.all([
+    proposeSchoolYearStart(prisma),
+    getTimetable(prisma, className),
+    listSchoolWeeks(prisma),
+  ]);
 
   return (
     <div className="flex flex-col gap-6">
       <PageHeader
         breadcrumb={["Hệ thống", "Năm học"]}
         title="Thời khoá biểu & năm học"
-        description="Lịch 35 tuần là thước đo “đúng tiến độ hay chậm” của mọi kỹ năng."
+        description="Lịch 35 tuần là thước đo “đúng tiến độ hay chậm” của mọi kỹ năng; thời khoá biểu quyết định môn ưu tiên của phiên học tối nay."
       />
       <SchoolYearCard proposal={proposal} />
-      <Card className="flex flex-col gap-2">
-        <div>
-          <CardTitle>8 tuần đầu</CardTitle>
-          <CardDescription>Sửa thời khoá biểu và ngày nghỉ: pha 5.</CardDescription>
-        </div>
-        <ul className="text-sm text-ink-700">
-          {weeks.map((w) => (
-            <li key={w.id}>
-              Tuần {w.weekNo}: {w.dateFrom.toISOString().slice(0, 10)} →{" "}
-              {w.dateTo.toISOString().slice(0, 10)} (học kỳ {w.term})
-            </li>
-          ))}
-        </ul>
-      </Card>
+      {timetable ? (
+        <TimetableEditor initial={timetable} />
+      ) : (
+        <Card>
+          <p className="text-sm text-ink-500">
+            Chưa có thời khoá biểu cho lớp {className}. Chạy <code>pnpm db:seed</code> để nạp bảng
+            của lớp 1B3 từ <code>content/timetable/1B3-2026.json</code>.
+          </p>
+        </Card>
+      )}
+      <WeeksEditor initial={weeks} />
     </div>
   );
 }

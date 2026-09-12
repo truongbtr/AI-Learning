@@ -1,4 +1,10 @@
-import { applySchoolYearStart, prisma, proposeSchoolYearStart } from "@mtct/db";
+import {
+  applySchoolYearStart,
+  listSchoolWeeks,
+  prisma,
+  proposeSchoolYearStart,
+  updateSchoolWeek,
+} from "@mtct/db";
 import { z } from "zod";
 import { handle, json, parseBody } from "@/lib/api";
 import { requireRole } from "@/lib/auth/session";
@@ -9,10 +15,43 @@ const applySchema = z.object({
   startMonday: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
 });
 
-/** GET /api/school-year — what the diary says the school year's first Monday was (docs/11 §5). */
+const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
+
+const weekEditSchema = z.object({
+  weekId: z.string().min(1),
+  isHoliday: z.boolean().optional(),
+  note: z.string().trim().max(200).nullish(),
+  dateFrom: isoDate.optional(),
+  dateTo: isoDate.optional(),
+});
+
+/** GET /api/school-year — what the diary says the first Monday was, plus the 35 weeks (docs/11 §5). */
 export const GET = handle(async () => {
   await requireRole("PARENT", "ADMIN");
-  return json(await proposeSchoolYearStart(prisma));
+  const [proposal, weeks] = await Promise.all([
+    proposeSchoolYearStart(prisma),
+    listSchoolWeeks(prisma),
+  ]);
+  return json({ ...proposal, weeks });
+});
+
+/**
+ * PATCH /api/school-year — one week: a holiday, a note, or dates a parent corrected by hand
+ * (P12, FR-PAR-06).
+ *
+ * A holiday week is how a family says "the class did not move that week", so nothing and nobody
+ * is behind because of Tết.
+ */
+export const PATCH = handle(async (request: Request) => {
+  await requireRole("PARENT", "ADMIN");
+  const body = await parseBody(request, weekEditSchema);
+  const week = await updateSchoolWeek(prisma, body.weekId, {
+    isHoliday: body.isHoliday,
+    note: body.note === undefined ? undefined : body.note,
+    dateFrom: body.dateFrom ? new Date(`${body.dateFrom}T00:00:00Z`) : undefined,
+    dateTo: body.dateTo ? new Date(`${body.dateTo}T00:00:00Z`) : undefined,
+  });
+  return json({ week });
 });
 
 /**

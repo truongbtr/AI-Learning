@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import type { NavSection } from "@/lib/nav";
+import { BottomTabs } from "./bottom-tabs";
 import { Sidebar } from "./sidebar";
 import { Topbar, type TopbarUser } from "./topbar";
 
 /**
  * Shared frame for every adult page (admin + parent dashboard), docs/06 §2:
- * fixed 240px sidebar from lg, drawer below, neutral shadcn surfaces.
+ * fixed 240px sidebar from lg, bottom tabs and a floating camera button below.
  */
 export function AdminShell({
   children,
@@ -35,6 +36,7 @@ export function AdminShell({
         <footer className="px-4 pb-6 text-center text-xs text-ink-300 sm:px-6">
           Học cùng Mai Thy &amp; Chí Thanh
         </footer>
+        <BottomTabs badges={badges} />
       </div>
     </div>
   );
