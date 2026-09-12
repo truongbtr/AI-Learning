@@ -1,20 +1,10 @@
 import { NextResponse } from "next/server";
-import { z } from "zod";
 import { handle } from "@/lib/api";
 import { requireUser } from "@/lib/auth/session";
+import { ttsQuerySchema } from "@/lib/tts/query";
 import { speakAudio } from "@/lib/tts/synthesize";
 
 export const dynamic = "force-dynamic";
-
-const Query = z.object({
-  text: z.string().trim().min(1).max(400),
-  lang: z.enum(["vi-VN", "en-US"]).default("vi-VN"),
-  /** Optional recorded-clip key (content/art/audio/<lang>/<key>.mp3), checked first. */
-  clip: z
-    .string()
-    .regex(/^[a-z0-9][a-z0-9-]{0,60}$/)
-    .optional(),
-});
 
 /**
  * GET /api/tts?text=…&lang=vi-VN[&clip=key] → audio/mpeg, or 204 when there is no recorded clip,
@@ -25,9 +15,9 @@ const Query = z.object({
 export const GET = handle(async (request: Request) => {
   await requireUser();
   const url = new URL(request.url);
-  const q = Query.parse({
+  const q = ttsQuerySchema.parse({
     text: url.searchParams.get("text") ?? "",
-    lang: url.searchParams.get("lang") ?? "vi-VN",
+    lang: url.searchParams.get("lang") ?? undefined,
     clip: url.searchParams.get("clip") ?? undefined,
   });
   let result: Awaited<ReturnType<typeof speakAudio>> = null;
