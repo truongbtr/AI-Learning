@@ -9,6 +9,7 @@ export * from "./intake";
 export * from "./kid";
 export * from "./maintenance/test-students";
 export * from "./mastery/service";
+export * from "./parent";
 export * from "./session";
 export * from "./skills/import";
 export * from "./skills/search";

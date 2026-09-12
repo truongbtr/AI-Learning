@@ -1,3 +1,4 @@
+import { vnDayDate } from "@mtct/core";
 import { afterAll, beforeAll, describe, expect, it, type TestContext } from "vitest";
 import {
   createTempStudent,
@@ -282,24 +283,30 @@ describe("a day's session (integration, needs the seeded database)", () => {
   it("does not send the streak back to one after a gap", async (ctx) => {
     needDb(ctx);
     const db = testDb();
+    // Five days of nothing, with three days already on the counter. Set explicitly rather than
+    // built up by earlier tests: the rule under test is "a gap does not reset", and a test that
+    // depends on what ran before it cannot say that.
     const fiveDaysAgo = new Date();
     fiveDaysAgo.setDate(fiveDaysAgo.getDate() - 5);
-    fiveDaysAgo.setHours(0, 0, 0, 0);
-    const old = await db.session.create({
-      data: {
+    await db.streak.upsert({
+      where: { studentId: student?.id ?? "" },
+      create: {
         studentId: student?.id ?? "",
-        kind: "TARGETED",
-        date: fiveDaysAgo,
-        status: "PLANNED",
-        slots: [],
+        current: 3,
+        longest: 3,
+        lastActiveDate: vnDayDate(fiveDaysAgo),
       },
+      update: { current: 3, longest: 3, lastActiveDate: vnDayDate(fiveDaysAgo) },
     });
-    const first = await finishSession(db, old.id, { studentId: student?.id, at: fiveDaysAgo });
-    expect(first.streak.current).toBeGreaterThanOrEqual(1);
 
     const todaySession = await oneExerciseSession();
-    const second = await finishSession(db, todaySession, { studentId: student?.id });
-    expect(second.streak.current).toBe(first.streak.current + 1);
+    const after = await finishSession(db, todaySession, { studentId: student?.id });
+    expect(after.streak.current).toBe(4);
+
+    // And a second session on the same day does not count twice.
+    const again = await oneExerciseSession();
+    const twice = await finishSession(db, again, { studentId: student?.id });
+    expect(twice.streak.current).toBe(4);
   });
 
   it("gives no star for a station tapped away — that is a choice, not work", async (ctx) => {

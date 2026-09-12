@@ -1,10 +1,19 @@
-import { homeworkForToday, prisma } from "@mtct/db";
-import { ChevronRight } from "lucide-react";
+import {
+  diaryTonight,
+  homeworkForToday,
+  inboxCounts,
+  prisma,
+  shouldNudgeForDiary,
+  studentOverview,
+  visibleStudents,
+} from "@mtct/db";
+import { Inbox } from "lucide-react";
 import Link from "next/link";
 import { PageHeader } from "@/components/admin/page-header";
+import { ChildCard } from "@/components/parent/child-card";
+import { DiaryTonightCard } from "@/components/parent/diary-tonight-card";
 import { Card, CardTitle } from "@/components/ui/card";
 import { guardPage } from "@/lib/auth/session";
-import { avatarEmoji } from "@/lib/avatars";
 import { HomeworkCard, type HomeworkRow } from "./homework-card";
 import { QuickNoteCard } from "./quick-note-card";
 
@@ -18,7 +27,14 @@ const REMINDER_LABEL: Record<string, string> = {
   OTHER: "Nhắc nhở",
 };
 
-/** P2 placeholder (phase 5). Lists only active children linked through StudentGuardian. */
+/**
+ * P2 — tổng quan hai bé (docs/06 §2.1, FR-PAR-01).
+ *
+ * Reading order is deliberate. The class diary comes first, because it is the twenty seconds that
+ * makes tonight's session and tomorrow's photo reading work (docs/08 pha 5 việc 6). Then a card
+ * per child, stacked rather than in columns — docs/00 §6 forbids putting the two side by side to
+ * be compared. Then everything waiting on a grown-up.
+ */
 export default async function ParentHomePage({
   searchParams,
 }: {
@@ -26,14 +42,30 @@ export default async function ParentHomePage({
 }) {
   const user = await guardPage("parent");
   const { denied } = await searchParams;
-  const students = await prisma.student.findMany({
-    where: {
-      user: { isActive: true },
-      ...(user.role === "ADMIN" ? {} : { guardians: { some: { userId: user.id } } }),
-    },
-    orderBy: { createdAt: "asc" },
-    select: { id: true, nickname: true, avatarKey: true, className: true, mascot: true },
+  const students = await visibleStudents(prisma, {
+    userId: user.id,
+    isAdmin: user.role === "ADMIN",
   });
+
+  const overviews = await Promise.all(students.map((s) => studentOverview(prisma, s.id)));
+  const className = students[0]?.className ?? "1B3";
+  const tonight = await diaryTonight(prisma, {
+    className,
+    studentIds: students.map((s) => s.id),
+  });
+
+  const now = new Date();
+  const nudge = shouldNudgeForDiary({
+    hasDiaryToday: tonight.lessons.length > 0,
+    weekday: now.getDay(),
+    hour: now.getHours(),
+    today: tonight.date,
+  });
+
+  const counts = await inboxCounts(
+    prisma,
+    user.role === "ADMIN" ? null : students.map((s) => s.id),
+  );
 
   // What the teacher set, and the non-school notes that only a grown-up should see (docs/11 §6.2).
   const homework: HomeworkRow[] = [];
@@ -54,6 +86,7 @@ export default async function ParentHomePage({
       });
     }
   }
+
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const reminders = await prisma.classReminder.findMany({
@@ -70,7 +103,7 @@ export default async function ParentHomePage({
       <PageHeader
         breadcrumb={["Tổng quan", "Các con"]}
         title="Các con"
-        description="Chọn một bé để xem hồ sơ năng lực, xu hướng và những điều cần chú ý (pha 5)."
+        description="Mỗi con số ở đây bấm được xuống đúng câu con đã làm, đúng ảnh bài vở."
       />
       {denied ? (
         <p
@@ -80,6 +113,16 @@ export default async function ParentHomePage({
           Bạn chưa được gắn với bé đó. Nhờ admin gắn trong Quản lý người dùng.
         </p>
       ) : null}
+
+      <DiaryTonightCard
+        className={className}
+        nudge={nudge}
+        initial={{
+          ...tonight,
+          confirmedAt: tonight.confirmedAt?.toISOString() ?? null,
+        }}
+      />
+
       {students.length === 0 ? (
         <Card>
           <p className="text-sm text-ink-500">
@@ -87,27 +130,25 @@ export default async function ParentHomePage({
           </p>
         </Card>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {students.map((s) => (
-            <Link key={s.id} href={`/parent/${s.id}`} className="group">
-              <Card className="flex items-center gap-4 transition-shadow group-hover:shadow-card-hover">
-                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-50 text-3xl">
-                  {avatarEmoji(s.avatarKey)}
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate text-base font-bold text-ink-900">
-                    {s.nickname}
-                  </span>
-                  <span className="block text-sm text-ink-400">
-                    Lớp {s.className} · mascot {s.mascot === "OWL" ? "Cú" : "Rô-bốt"}
-                  </span>
-                </span>
-                <ChevronRight className="h-5 w-5 text-ink-300 transition-transform group-hover:translate-x-0.5" />
-              </Card>
-            </Link>
-          ))}
+        <div className="flex flex-col gap-4">
+          {overviews.map((overview) =>
+            overview ? <ChildCard key={overview.student.id} overview={overview} /> : null,
+          )}
         </div>
       )}
+
+      {counts.total > 0 ? (
+        <Link href="/parent/inbox" className="group">
+          <Card className="flex items-center gap-3 border-brand-200 bg-brand-50/40 transition-shadow group-hover:shadow-card-hover">
+            <Inbox className="h-5 w-5 shrink-0 text-brand-600" aria-hidden />
+            <span className="min-w-0 flex-1 text-sm text-ink-700">
+              <strong className="font-bold text-ink-900">{counts.total} việc chờ ba mẹ</strong> —{" "}
+              {counts.toReview} ảnh đã đọc xong chờ duyệt · {counts.inQueue} đang chờ đọc ·{" "}
+              {counts.waitingToGrade} bài mở chờ chấm
+            </span>
+          </Card>
+        </Link>
+      ) : null}
 
       <HomeworkCard rows={homework} />
       {reminders.length > 0 ? (

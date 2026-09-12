@@ -257,3 +257,35 @@
     animation: none !important;
   }
 }
+
+/*
+ * Printing a parent screen (FR-PAR-02 "xuất PDF"). The browser's own dialog saves a PDF; this
+ * strips the shell so the page that comes out is the skill map, not a screenshot of an app.
+ */
+@media print {
+  aside,
+  header,
+  footer,
+  nav[aria-label="Điều hướng chính"],
+  [data-print="hide"] {
+    display: none !important;
+  }
+  .lg\:pl-\[240px\] {
+    padding-left: 0 !important;
+  }
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  body {
+    background: #fff !important;
+  }
+  section,
+  article {
+    break-inside: avoid;
+    box-shadow: none !important;
+  }
+  a[href]::after {
+    content: "";
+  }
+}

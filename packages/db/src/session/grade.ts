@@ -8,6 +8,7 @@ import {
   markAttempt,
   nextApplicableRung,
   SESSION_TARGET_ACCURACY,
+  vnDayDate,
 } from "@mtct/core";
 import type { Prisma, PrismaClient } from "../../generated/client";
 import { grantSessionRewards, rememberForTomorrow, type SessionRewards } from "../kid/rewards";
@@ -61,12 +62,6 @@ const CHOICE_STATIONS = [2, 6];
 
 function rotate(lines: readonly string[], seed: number): string {
   return lines[Math.abs(seed) % lines.length] as string;
-}
-
-function startOfDay(date: Date): Date {
-  const d = new Date(date);
-  d.setHours(0, 0, 0, 0);
-  return d;
 }
 
 // ---------------------------------------------------------------------------
@@ -937,9 +932,9 @@ async function bumpStreak(
   studentId: string,
   date: Date,
 ): Promise<{ current: number; longest: number }> {
-  const today = startOfDay(date);
+  const today = vnDayDate(date);
   const row = await db.streak.findUnique({ where: { studentId } });
-  const last = row?.lastActiveDate ? startOfDay(row.lastActiveDate) : null;
+  const last = row?.lastActiveDate ? vnDayDate(row.lastActiveDate) : null;
   if (last && last.getTime() >= today.getTime()) {
     return { current: row?.current ?? 1, longest: row?.longest ?? 1 };
   }

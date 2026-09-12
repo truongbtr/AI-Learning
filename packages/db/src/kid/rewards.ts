@@ -2,6 +2,7 @@ import {
   EGG_DAYS_TO_HATCH,
   PICTURE_PIECES,
   pictureByNumber,
+  vnDayDate,
   type WeeklyEvent,
   weeklyEvent,
   weekStartOf,
@@ -22,17 +23,11 @@ type Db = PrismaClient;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
-function startOfDay(date: Date): Date {
-  const d = new Date(date);
-  d.setHours(0, 0, 0, 0);
-  return d;
-}
-
 /** Days this week on which the child finished at least one session (for the weekly event badge). */
 async function learningDaysThisWeek(db: Db, studentId: string, at: Date): Promise<number> {
   const from = weekStartOf(at);
   const rows = await db.session.findMany({
-    where: { studentId, status: "COMPLETED", date: { gte: from, lte: startOfDay(at) } },
+    where: { studentId, status: "COMPLETED", date: { gte: from, lte: vnDayDate(at) } },
     select: { date: true },
     distinct: ["date"],
   });
@@ -42,7 +37,7 @@ async function learningDaysThisWeek(db: Db, studentId: string, at: Date): Promis
 /** Every day the child has ever finished a session. The egg and the picture count from this. */
 async function learningDaysTotal(db: Db, studentId: string, at: Date): Promise<number> {
   const rows = await db.session.findMany({
-    where: { studentId, status: "COMPLETED", date: { lte: startOfDay(at) } },
+    where: { studentId, status: "COMPLETED", date: { lte: vnDayDate(at) } },
     select: { date: true },
     distinct: ["date"],
   });
@@ -101,7 +96,7 @@ export async function updateEgg(db: Db, studentId: string, at = new Date()): Pro
       create: {
         studentId,
         eggNo,
-        startedOn: startOfDay(at),
+        startedOn: vnDayDate(at),
         cracks: EGG_DAYS_TO_HATCH,
         hatchedPetCode: pick.code,
         hatchedAt: at,
@@ -118,7 +113,7 @@ export async function updateEgg(db: Db, studentId: string, at = new Date()): Pro
   const cracks = waitingForNewPet ? EGG_DAYS_TO_HATCH : days - done * EGG_DAYS_TO_HATCH;
   const current = await db.eggProgress.upsert({
     where: { studentId_eggNo: { studentId, eggNo } },
-    create: { studentId, eggNo, startedOn: startOfDay(at), cracks },
+    create: { studentId, eggNo, startedOn: vnDayDate(at), cracks },
     update: { cracks },
   });
 
@@ -462,7 +457,7 @@ export async function rememberForTomorrow(
   studentId: string,
   at = new Date(),
 ): Promise<number> {
-  const day = startOfDay(at);
+  const day = vnDayDate(at);
   const session = await db.session.findFirst({
     where: { studentId, date: day, status: "COMPLETED" },
     orderBy: { createdAt: "desc" },

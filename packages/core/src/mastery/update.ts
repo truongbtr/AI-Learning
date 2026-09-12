@@ -25,6 +25,20 @@ export function dayKey(date: Date): string {
   return dayFormatter.format(date);
 }
 
+/**
+ * The value to store in a Prisma `@db.Date` column for the Vietnam calendar day of `date`.
+ *
+ * A `@db.Date` carries no time zone, and Prisma serialises whatever `Date` it is given through
+ * UTC. Handing it local midnight (`setHours(0,0,0,0)`) therefore stores **the day before** at
+ * UTC+7: a session a child finished at nine on Saturday evening was filed under Friday, and the
+ * parent dashboard's seven-day strip drew it in the wrong column. The bug was invisible while
+ * every read used the same wrong conversion.
+ */
+export function vnDayDate(date: Date): Date {
+  const [y, m, d] = dayKey(date).split("-").map(Number);
+  return new Date(Date.UTC(y as number, (m as number) - 1, d as number));
+}
+
 export function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));
 }

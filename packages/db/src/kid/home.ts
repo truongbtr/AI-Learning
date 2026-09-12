@@ -1,4 +1,4 @@
-import { type WeeklyEvent, weeklyEvent, weekStartOf } from "@mtct/core";
+import { vnDayDate, type WeeklyEvent, weeklyEvent, weekStartOf } from "@mtct/core";
 import type { PrismaClient } from "../../generated/client";
 import { kidVars, starBalance } from "../session/grade";
 import { type EggState, type PictureState, updateEgg, updateWeeklyPicture } from "./rewards";
@@ -11,12 +11,6 @@ import { type EggState, type PictureState, updateEgg, updateWeeklyPicture } from
  */
 
 type Db = PrismaClient;
-
-function startOfDay(date: Date): Date {
-  const d = new Date(date);
-  d.setHours(0, 0, 0, 0);
-  return d;
-}
 
 export interface KidMailItem {
   id: string;
@@ -66,7 +60,7 @@ export async function kidHome(db: Db, studentId: string, at = new Date()): Promi
   });
   if (!student) return null;
 
-  const day = startOfDay(at);
+  const day = vnDayDate(at);
   const [session, streak, stars, memory, mailRows, pets, collectibles, badges] = await Promise.all([
     db.session.findFirst({
       where: { studentId, date: day },
