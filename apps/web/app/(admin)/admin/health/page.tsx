@@ -1,5 +1,5 @@
 import { cloudTtsEnabled, resolveVoice, ttsConfigFromEnv } from "@mtct/core/tts";
-import { healthReport, prisma } from "@mtct/db";
+import { healthAdvice, healthReport, prisma } from "@mtct/db";
 import {
   Activity,
   AlertTriangle,
@@ -30,53 +30,9 @@ export default async function AdminHealthPage() {
   const tone = (ok: boolean, warnOnly = false): StatTone =>
     ok ? "success" : warnOnly ? "warning" : "danger";
 
-  /** The line under each card: what this means for tonight, and what to do. */
-  const advice: { level: "error" | "warn"; title: string; what: string }[] = [];
-  if (!h.db.ok)
-    advice.push({
-      level: "error",
-      title: "Không nối được cơ sở dữ liệu",
-      what: "Mở PowerShell tại thư mục dự án: docker compose --env-file .env -f docker/compose.yml up -d postgres — rồi tải lại trang này.",
-    });
-  if (!h.worker.ok)
-    advice.push({
-      level: "error",
-      title: "Worker không chạy",
-      what: "Không có worker thì 4 giờ sáng mai không ai dựng nhiệm vụ cho con. Chạy: docker compose --env-file .env -f docker/compose.yml restart worker",
-    });
-  if (h.jobs.failed24h > 0)
-    advice.push({
-      level: "warn",
-      title: `${h.jobs.failed24h} việc nền hỏng trong 24 giờ qua`,
-      what: `Hàng chờ: ${h.jobs.byQueue.map((q) => `${q.queue} (${q.failed})`).join(", ")}. Xem lý do: docker compose -f docker/compose.yml logs --tail 200 worker`,
-    });
-  if (h.jobs.stuckActive > 0)
-    advice.push({
-      level: "warn",
-      title: `${h.jobs.stuckActive} việc treo hơn một tiếng`,
-      what: "Thường là worker bị tắt giữa chừng. Khởi động lại worker là nó nhận lại.",
-    });
-  if (!h.disk.ok)
-    advice.push({
-      level: "warn",
-      title: `Ổ đĩa còn ${h.disk.freeGb} GB`,
-      what: "Ảnh bài vở là thứ ăn chỗ nhất. Xoá bớt trong thư mục sao lưu cũ, hoặc chuyển BACKUP_DIR sang ổ khác.",
-    });
-  if (!h.backup.ok)
-    advice.push({
-      level: "warn",
-      title: h.backup.latest
-        ? `Bản sao lưu gần nhất đã ${h.backup.ageHours} giờ`
-        : "Chưa có bản sao lưu nào",
-      what: "Chạy ngay: docker compose --env-file .env -f docker/compose.yml --profile backup run --rm backup /backup/backup.sh",
-    });
-  if (h.tts.level !== "ok")
-    advice.push({
-      level: "warn",
-      title: `Giọng đọc đã dùng ${h.tts.chars.toLocaleString("vi-VN")} / ${h.tts.limit.toLocaleString("vi-VN")} ký tự tháng này`,
-      what: "Quá mức miễn phí F0 là bắt đầu mất tiền. Tạm dừng pnpm content:import tới đầu tháng sau, hoặc đổi TTS_PROVIDER=webspeech.",
-    });
-
+  // The same list `pnpm db:usage` prints, from packages/db/src/ops/health.ts, so the screen and
+  // the command line can never drift apart — and so the rule is testable without a browser.
+  const advice = healthAdvice(h);
   return (
     <div className="flex flex-col gap-6">
       <PageHeader

@@ -53,7 +53,7 @@ export function KidLogin({ kids }: { kids: KidCard[] }) {
   }
 
   return (
-    <section aria-label="Con đăng nhập" className="space-y-4">
+    <section aria-label="Con đăng nhập" data-testid="kid-login" className="space-y-4">
       {/* K1 is a place too: the mascot is here to say hello before anyone has logged in. */}
       {selected ? null : (
         <div className="flex justify-center">
@@ -76,6 +76,7 @@ export function KidLogin({ kids }: { kids: KidCard[] }) {
           <motion.button
             type="button"
             key={kid.id}
+            data-testid={`kid-card-${kid.id}`}
             variants={STAGGER.item}
             whileTap={{ scale: 0.94 }}
             onClick={() => choose(kid)}

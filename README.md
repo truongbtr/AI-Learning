@@ -2,7 +2,7 @@
 
 Nền tảng học tại nhà của gia đình cho hai bé lớp 1 (hệ Song ngữ, Edison Schools Ecopark). Chạy tại nhà bằng Docker, **không gọi API AI nào lúc chạy** (ADR-10) — mọi việc cần AI do Claude Code làm theo lô trong repo.
 
-**Trạng thái:** Pha 2 xong (xưởng nội dung, hàng chờ AI, /admin/content, ngân hàng bài đợt 1). Pha 1 (bản đồ kỹ năng 6 môn, mô hình năng lực, API mastery, `/admin/skills`, tra cứu kỹ năng). Pha 0: khung dự án, đăng nhập, quản lý người dùng. Lộ trình: `docs/08-LO-TRINH-PHA.md`; tiến độ: `docs/TIEN-DO.md`.
+**Trạng thái:** Pha 0–5 xong, đang ở **pha 8 — vận hành & nghiệm thu thực tế** (chủ dự án đảo thứ tự: pha 6 và 7 làm sau). Vận hành hằng ngày: **`docs/VAN-HANH.md`**. Lộ trình: `docs/08-LO-TRINH-PHA.md`; tiến độ: `docs/TIEN-DO.md`; nhật ký hai tuần chạy thật: `docs/nhat-ky-chay-that.md`.
 
 ## Yêu cầu máy chạy (Windows + Docker Desktop)
 
@@ -83,6 +83,27 @@ Bộ e2e đọc `.env` ở gốc repo, nên không cần đặt biến môi trư
 Lệnh khác: `node scripts/sample-exercises.mjs pha-2-dot-1 20` (rút lại đúng 20 bài mẫu QC chấm), `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm mọi file `content/`), `pnpm skills:validate` (chỉ bản đồ kỹ năng + khung bài học + bộ mã lỗi), `pnpm decay:run [--force]` (chạy tay job quên kiến thức hằng đêm), `pnpm content:import [--dry-run]` / `pnpm content:stats` / `pnpm content:export --skill <mã>` (ngân hàng bài), `pnpm inbox:pull|validate|push` (hàng chờ AI), `pnpm tts:voices` (liệt kê giọng Azure), `pnpm tts:smoke "câu"` (nghe thử một câu).
 
 > **Windows:** dừng `pnpm dev` trước khi chạy `pnpm build`. Prisma phải ghi lại `query_engine-windows.dll.node`, mà tiến trình dev đang giữ file này (lỗi `EPERM: operation not permitted, rename …`).
+
+## Vận hành (pha 8)
+
+Sổ tay đầy đủ, viết cho người không phải lập trình viên: **`docs/VAN-HANH.md`**.
+
+```powershell
+pnpm db:usage                       # sức khoẻ + chi phí giọng đọc + "cần làm gì", từ dòng lệnh
+pnpm db:trial                       # số liệu 14 ngày chạy thật: mấy phút, bỏ dở mấy phiên, đạt mấy ngày
+pnpm db:assess -- --status          # còn mấy phiên chẩn đoán đầu vào (docs/04 §10)
+pwsh scripts/restore-drill.ps1      # diễn tập khôi phục trên một Postgres trắng
+pnpm db:export-student -- --student thy      # xuất toàn bộ dữ liệu 1 bé ra JSON
+pnpm db:delete-student -- --student thy      # xoá dữ liệu 1 bé (chỉ in ra; thêm --apply)
+pnpm art:icons                      # vẽ lại icon PWA (cần sharp)
+```
+
+Mở ra internet, sao lưu hằng đêm — hai profile của compose, chỉ bật khi cần:
+
+```powershell
+docker compose --env-file .env -f docker/compose.yml --profile tunnel up -d cloudflared
+docker compose --env-file .env -f docker/compose.yml --profile backup up -d backup
+```
 
 ## Cấu trúc
 

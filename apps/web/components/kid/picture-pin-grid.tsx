@@ -47,7 +47,7 @@ export function PicturePinGrid({
 
   const big = size === "big";
   return (
-    <div className="space-y-3">
+    <div className="space-y-3" data-testid="picture-pad">
       <output className="flex items-center justify-center gap-2" aria-label="Đã chọn">
         {Array.from({ length: PIN_LENGTH }).map((_, i) => {
           const key = picked[i];

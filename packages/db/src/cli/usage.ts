@@ -6,7 +6,7 @@
  */
 
 import { prisma } from "../index";
-import { healthReport } from "../ops/health";
+import { healthAdvice, healthReport } from "../ops/health";
 import { parseArgs } from "./args";
 
 const mark = (ok: boolean) => (ok ? "OK  " : "!!  ");
@@ -53,6 +53,19 @@ async function main() {
   console.log(
     `    hàng chờ        ${h.queueWaiting.toRead} việc chờ Claude Code · ${h.queueWaiting.toReview} lô ảnh chờ ba mẹ duyệt`,
   );
+
+  // The same list /admin/health draws. The point of the criterion is that the owner can fix it
+  // without calling anybody, so the command to type is part of the output, not a follow-up.
+  const advice = healthAdvice(h);
+  if (advice.length > 0) {
+    console.log("\nCẦN LÀM GÌ:");
+    for (const a of advice) {
+      console.log(`  ${a.level === "error" ? "!!" : "! "} ${a.title}`);
+      console.log(`     ${a.what}`);
+    }
+  } else {
+    console.log("\nMọi thứ đang chạy bình thường. Không cần làm gì cả.");
+  }
 
   if (h.tts.months.length > 1) {
     console.log("\nGiọng đọc theo tháng:");

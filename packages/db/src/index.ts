@@ -13,6 +13,7 @@ export * from "./maintenance/test-parents";
 export * from "./maintenance/test-students";
 export * from "./mastery/service";
 export * from "./ops/health";
+export * from "./ops/trial";
 export * from "./ops/tts-usage";
 export * from "./parent";
 export * from "./session";

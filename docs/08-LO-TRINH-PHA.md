@@ -130,13 +130,21 @@ Sau pha 3 gia đình đã có thể **dùng thử hằng ngày**: bài luyện t
 
 ## Pha 8 — Vận hành & nghiệm thu thực tế
 
-1. Cloudflare Tunnel + Access cho `/parent`, `/admin`; PWA manifest/icon, cài lên iPad và điện thoại; HTTPS.
-2. Sao lưu hằng đêm (pg_dump + rsync files → NAS), script khôi phục **đã diễn tập**; xuất dữ liệu 1 bé JSON; xoá dữ liệu 1 bé.
-3. Ngân sách AI thực tế, biểu đồ chi phí, cảnh báo; log/health; hướng dẫn vận hành `docs/VAN-HANH.md`.
-4. Phiên chẩn đoán ban đầu (04 §10) cho cả hai bé; nạp giáo trình học kỳ 1; chạy thật 2 tuần; ghi nhận vấn đề UX từ con.
-5. Sửa lỗi & tinh chỉnh từ 2 tuần dùng thật; chốt v1.0; danh sách P2 cho v1.1.
+1. Cloudflare Tunnel + Access cho `/parent`, `/admin`; PWA manifest/icon, cài lên iPad và điện thoại; HTTPS. **Phần của con KHÔNG đặt sau Access** — trẻ 6 tuổi không qua được lớp đăng nhập thứ hai; con vào bằng mã 4 hình.
+2. Sao lưu hằng đêm (pg_dump + bản sao file → NAS), script khôi phục **đã diễn tập thật trên container sạch**; xuất dữ liệu 1 bé ra JSON; xoá dữ liệu 1 bé.
+3. **Chi phí TTS Azure thực tế** + chỗ xem số liệu + cảnh báo; theo dõi dung lượng ổ; log/health; cảnh báo khi job hỏng; `docs/VAN-HANH.md` **viết cho người không phải lập trình viên**.
+4. Phiên chẩn đoán ban đầu (04 §10) cho cả hai bé; bàn giao cho gia đình dùng thật (dữ liệu học sạch, hai hồ sơ thật, mã 4 hình, mascot theo thế giới của từng bé).
+5. Chạy thật 2 tuần, mỗi ngày ghi `docs/nhat-ky-chay-that.md`; cuối hai tuần sửa lỗi & tinh chỉnh UX; chốt v1.0; **danh sách việc cho pha 6**.
 
-**Tiêu chí xong:** 2 bé tự dùng 10 phút/ngày không cần trợ giúp trong ≥ 10/14 ngày; chi phí AI ≤ 6 USD/tháng theo số liệu; khôi phục sao lưu thành công trên máy sạch.
+**Tiêu chí xong** *(bản chốt 12/09/2026 — chủ dự án sửa khi đảo thứ tự)*:
+
+1. 2 bé **tự dùng 10 phút/ngày không cần trợ giúp trong ≥ 10/14 ngày** — đo bằng số liệu thật trong DB (`pnpm db:trial`), không phải cảm tính.
+2. Khôi phục sao lưu **thành công trên máy sạch**, chứng minh bằng log của lần diễn tập (`docs/dien-tap/`).
+3. Cả hai bé mở app từ icon trên iPad, đăng nhập bằng mã 4 hình, **không cần bàn phím**.
+4. `/parent` và `/admin` không vào được nếu chưa qua Cloudflare Access; **phần của con vẫn vào được bình thường**.
+5. **Chi phí TTS Azure trong tháng nằm trong hạn mức miễn phí F0** (500.000 ký tự); có chỗ xem số liệu (`/admin/health`, `pnpm db:usage`). *Tiêu chí cũ "chi phí AI ≤ 6 USD/tháng" **bỏ** — ADR-9/ADR-10: app không gọi API LLM nào.*
+6. `docs/VAN-HANH.md` đủ để chủ dự án tự xử lý khi web không vào được, không cần gọi developer.
+7. Việc 0 xong: nhịp ôn ≥ 30%, dữ liệu múi giờ đã sạch, test canh giữ múi giờ xanh, 39/39 e2e chạy được với tài khoản test riêng.
 
 ---
 

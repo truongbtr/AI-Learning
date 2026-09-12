@@ -61,7 +61,11 @@ export interface HealthReport {
 const worst = (levels: Level[]): Level =>
   levels.includes("error") ? "error" : levels.includes("warn") ? "warn" : "ok";
 
-async function diskFor(path: string, warnBelowGb: number) {
+async function diskFor(requested: string, warnBelowGb: number) {
+  // `FILE_ROOT` is a container path (`/data/files`). Measured from the host — `pnpm dev`, or this
+  // CLI — that directory does not exist, and measuring a path that is not there reports whichever
+  // volume the OS felt like. Fall back to the working directory, and say which one was measured.
+  const path = existsSync(requested) ? requested : process.cwd();
   try {
     // `statfs` is the only cross-platform free-space call Node gives us; on Windows it reports the
     // volume holding `path`, which is what we want.
@@ -201,4 +205,71 @@ export async function healthReport(db: PrismaClient, env = process.env): Promise
     tts: { ...tts, ok: tts.level !== "over" },
     queueWaiting: { toRead, toReview },
   };
+}
+
+/**
+ * What to do about it, in the order it matters (docs/08 pha 8, tiêu chí 6).
+ *
+ * The criterion is not "the owner can see what is wrong" — it is that he can **fix it without
+ * calling a developer**. So every entry carries the command to type, not a diagnosis. Kept here
+ * rather than inside the page so it can be tested without rendering anything, and so `pnpm
+ * db:usage` and `/admin/health` can never drift apart.
+ */
+export interface HealthAdvice {
+  level: "error" | "warn";
+  title: string;
+  /** One sentence of what it means tonight, then the exact command. */
+  what: string;
+}
+
+export function healthAdvice(h: HealthReport): HealthAdvice[] {
+  const out: HealthAdvice[] = [];
+  if (!h.db.ok)
+    out.push({
+      level: "error",
+      title: "Không nối được cơ sở dữ liệu",
+      what: "Mở PowerShell tại thư mục dự án: docker compose --env-file .env -f docker/compose.yml up -d postgres — rồi tải lại trang này.",
+    });
+  if (!h.worker.ok)
+    out.push({
+      level: "error",
+      title: "Worker không chạy",
+      what: "Không có worker thì 4 giờ sáng mai không ai dựng nhiệm vụ cho con. Chạy: docker compose --env-file .env -f docker/compose.yml restart worker",
+    });
+  if (h.jobs.failed24h > 0)
+    out.push({
+      level: "warn",
+      title: `${h.jobs.failed24h} việc nền hỏng trong 24 giờ qua`,
+      what: `Hàng chờ: ${h.jobs.byQueue.map((q) => `${q.queue} (${q.failed})`).join(", ")}. Xem lý do: docker compose -f docker/compose.yml logs --tail 200 worker`,
+    });
+  if (h.jobs.stuckActive > 0)
+    out.push({
+      level: "warn",
+      title: `${h.jobs.stuckActive} việc treo hơn một tiếng`,
+      what: "Thường là worker bị tắt giữa chừng. Chạy: docker compose --env-file .env -f docker/compose.yml restart worker",
+    });
+  if (!h.disk.ok)
+    out.push({
+      level: "warn",
+      title: `Ổ đĩa còn ${h.disk.freeGb} GB`,
+      what:
+        "Ảnh bài vở ăn chỗ nhất. Xem cái gì chiếm chỗ: " +
+        `docker system df; Get-ChildItem "${h.backup.dir ?? "<BACKUP_DIR>"}\\db" | Sort-Object Length -Descending | Select-Object -First 10 Name,Length` +
+        " — rồi xoá bớt bản sao lưu cũ, hoặc giảm BACKUP_KEEP_DAYS trong .env (docs/VAN-HANH.md §6).",
+    });
+  if (!h.backup.ok)
+    out.push({
+      level: "warn",
+      title: h.backup.latest
+        ? `Bản sao lưu gần nhất đã ${h.backup.ageHours} giờ`
+        : "Chưa có bản sao lưu nào",
+      what: "Chạy ngay: docker compose --env-file .env -f docker/compose.yml --profile backup run --rm backup /backup/backup.sh",
+    });
+  if (h.tts.level !== "ok")
+    out.push({
+      level: "warn",
+      title: `Giọng đọc đã dùng ${h.tts.chars.toLocaleString("vi-VN")} / ${h.tts.limit.toLocaleString("vi-VN")} ký tự tháng này`,
+      what: "Quá hạn mức miễn phí F0 là bắt đầu mất tiền. Tạm dừng pnpm content:import tới đầu tháng sau, hoặc đặt TTS_PROVIDER=webspeech trong .env.",
+    });
+  return out;
 }

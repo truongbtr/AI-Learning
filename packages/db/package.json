@@ -38,6 +38,7 @@
     "delete-student": "dotenv -e ../../.env -- tsx src/cli/delete-student.ts",
     "assess": "dotenv -e ../../.env -- tsx src/cli/assess.ts",
     "usage": "dotenv -e ../../.env -- tsx src/cli/usage.ts",
+    "trial": "dotenv -e ../../.env -- tsx src/cli/trial.ts",
     "tts:voices": "dotenv -e ../../.env -- tsx src/cli/tts-voices.ts",
     "tts:smoke": "dotenv -e ../../.env -- tsx src/cli/tts-smoke.ts"
   },
