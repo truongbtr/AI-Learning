@@ -39,12 +39,17 @@ services:
       DATABASE_HOST: postgres
       FILE_ROOT: /data/files
       INBOX_ROOT: /data/inbox
+      # The backup folder lives on the host; mounted read-only so /admin/health can say how old the
+      # last backup is, and so the disk figure is the drive the owner would actually clear. Without
+      # this the card is permanently red in Docker and the free space shown is the Docker VM's.
+      BACKUP_DIR: /backup-out
       TZ: Asia/Ho_Chi_Minh
     ports:
       - "${PORT:-3000}:3000"
     volumes:
       - files:/data/files
       - inbox:/data/inbox
+      - ${BACKUP_DIR:-../_sao-luu}:/backup-out:ro
     depends_on:
       postgres:
         condition: service_healthy

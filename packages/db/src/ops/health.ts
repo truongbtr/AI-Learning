@@ -175,8 +175,15 @@ export async function healthReport(db: PrismaClient, env = process.env): Promise
   const totalFailed = failedRows.reduce((n, r) => n + r.failed, 0);
 
   const warnBelowGb = Number(env.DISK_WARN_FREE_GB ?? 10);
-  const disk = await diskFor(env.FILE_ROOT || process.cwd(), warnBelowGb);
   const backup = backupState(env.BACKUP_DIR);
+  // Which drive to report. Inside Docker, `FILE_ROOT` is a named volume on the Docker VM's own
+  // disk, and it answered "915 GB free" on a machine whose real drive had 182 GB — a number that
+  // would let the owner sleep through the disk filling up. `BACKUP_DIR` is a bind mount from the
+  // host, so measuring it reports the host drive, which is the one somebody can actually clear.
+  const disk = await diskFor(
+    (backup.dir && existsSync(backup.dir) ? backup.dir : "") || env.FILE_ROOT || process.cwd(),
+    warnBelowGb,
+  );
 
   return {
     status: worst([
