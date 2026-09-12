@@ -6,8 +6,10 @@ import {
   type SkillSnapshot,
   type Slot,
   type Subject,
+  vnDayDate,
 } from "@mtct/core";
 import type { Prisma, PrismaClient } from "../../generated/client";
+import { activePlanSkills } from "../parent/plans";
 
 type Db = PrismaClient;
 
@@ -25,12 +27,6 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 const REPEAT_WINDOW_DAYS = 7;
 /** How far back a class lesson still counts as "what we did in class" (docs/11 §4). */
 const LESSON_WINDOW_DAYS = 3;
-
-function startOfDay(date: Date): Date {
-  const d = new Date(date);
-  d.setHours(0, 0, 0, 0);
-  return d;
-}
 
 /** Everything the planner needs about one child, as of `date`. */
 export async function plannerSnapshot(
@@ -88,7 +84,7 @@ export async function plannerSnapshot(
 
   // Three wrong in a row at the end of yesterday's session: today is 20% shorter (docs/06 §1.8c).
   const previous = await db.session.findFirst({
-    where: { studentId, status: "COMPLETED", date: { lt: startOfDay(date) } },
+    where: { studentId, status: "COMPLETED", date: { lt: vnDayDate(date) } },
     orderBy: { date: "desc" },
     select: { summary: true },
   });
@@ -96,7 +92,7 @@ export async function plannerSnapshot(
     (previous?.summary as { tiredAtEnd?: boolean } | null)?.tiredAtEnd === true;
 
   const masteryByCode = new Map(masteryRows.map((m) => [m.skill.code, m]));
-  const today = startOfDay(date);
+  const today = vnDayDate(date);
 
   const snapshots: SkillSnapshot[] = skills.map((s) => {
     const m = masteryByCode.get(s.code);
@@ -109,7 +105,7 @@ export async function plannerSnapshot(
       confidence: m?.confidence ?? 0,
       nextReviewAt,
       overdueDays: nextReviewAt
-        ? Math.floor((today.getTime() - startOfDay(nextReviewAt).getTime()) / DAY_MS)
+        ? Math.floor((today.getTime() - vnDayDate(nextReviewAt).getTime()) / DAY_MS)
         : -1,
       trend14d: m?.trend14d ?? 0,
       evidenceCount: m?.evidenceCount ?? 0,
@@ -130,12 +126,33 @@ export async function plannerSnapshot(
     remediationSkills: remediationByCode.get(e.errorCode) ?? [],
   }));
 
+  // What the class has today, in timetable order (docs/05 §2, FR-PAR-06). Editing the timetable
+  // on P12 has to change tomorrow's session — that is what makes the screen worth having.
+  const todaySubjects = await subjectsOnTimetable(db, student?.className ?? "1B3", date);
+
+  // A plan a parent approved (FR-PAR-03) plus any focus hint Claude Code left with a batch of
+  // results (docs/13 §3, the debt phase 4 recorded). Neither overrides what the class did today.
+  const plan = await activePlanSkills(db, studentId, date);
+  const hint = await db.planHint.findFirst({
+    where: { studentId, validFrom: { lte: date }, validTo: { gte: date } },
+    orderBy: { createdAt: "desc" },
+    select: { focusSkills: true, avoidSkills: true },
+  });
+  const hintSkills = Array.isArray(hint?.focusSkills)
+    ? (hint.focusSkills as { code?: string }[])
+        .map((f) => f?.code)
+        .filter((c): c is string => Boolean(c))
+    : [];
+  const avoid = new Set(hint?.avoidSkills ?? []);
+
   return {
     date,
     dailyMinutes: Math.round((settings.dailyMinutes ?? 15) * (tiredYesterday ? 0.8 : 1)),
     difficultyBias: settings.difficultyBias ?? 0,
-    skills: snapshots,
+    skills: avoid.size > 0 ? snapshots.filter((s) => !avoid.has(s.code)) : snapshots,
     lessonSkills,
+    planSkills: [...new Set([...(plan?.skillCodes ?? []), ...hintSkills])],
+    todaySubjects,
     activeErrors,
     tracks: tracks.map((t) => ({
       skillCode: t.skill.code,
@@ -146,6 +163,46 @@ export async function plannerSnapshot(
     })),
     recentExerciseIds: [...new Set(recentAttempts.map((a) => a.exerciseId))],
   };
+}
+
+/**
+ * The core subjects on the class timetable for `date`, the one with most periods first
+ * (docs/05 §2).
+ *
+ * Weekends have no timetable, so the evening falls back to whatever the rest of the planner wants.
+ * If no timetable has come into force yet — the school year was re-dated backwards, say — the
+ * earliest one for the class is used rather than none: a planner that silently forgets the
+ * timetable is worse than one reading a copy that starts a fortnight late.
+ */
+export async function subjectsOnTimetable(
+  db: Db,
+  className: string,
+  date: Date,
+): Promise<Subject[]> {
+  const weekday = date.getDay();
+  if (weekday === 0 || weekday === 6) return [];
+
+  const timetable =
+    (await db.timetable.findFirst({
+      where: { className, validFrom: { lte: date } },
+      orderBy: { validFrom: "desc" },
+      select: { id: true },
+    })) ??
+    (await db.timetable.findFirst({
+      where: { className },
+      orderBy: { validFrom: "asc" },
+      select: { id: true },
+    }));
+  if (!timetable) return [];
+
+  const slots = await db.timetableSlot.findMany({
+    where: { timetableId: timetable.id, weekday, subject: { not: null } },
+    select: { subject: true },
+  });
+  const periods = new Map<Subject, number>();
+  for (const slot of slots)
+    if (slot.subject) periods.set(slot.subject, (periods.get(slot.subject) ?? 0) + 1);
+  return [...periods.entries()].sort((a, b) => b[1] - a[1]).map(([subject]) => subject);
 }
 
 export interface PickedSlot extends Slot {
@@ -173,7 +230,7 @@ export interface PickedSlot extends Slot {
  * putting it on the map would give a six-year-old a station they cannot finish.
  */
 async function homeworkSlots(db: Db, studentId: string, date: Date): Promise<PickedSlot[]> {
-  const since = new Date(startOfDay(date).getTime() - 2 * DAY_MS);
+  const since = new Date(vnDayDate(date).getTime() - 2 * DAY_MS);
   const rows = await db.homework.findMany({
     where: {
       studentId,
@@ -300,7 +357,7 @@ export async function planDailyQuest(
   date = new Date(),
   opts: { force?: boolean } = {},
 ): Promise<PlannedSession> {
-  const day = startOfDay(date);
+  const day = vnDayDate(date);
   const existing = await db.session.findFirst({
     where: { studentId, kind: "DAILY_QUEST", date: day },
     orderBy: { createdAt: "desc" },

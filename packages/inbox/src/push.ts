@@ -78,7 +78,69 @@ async function applyResult(
       return applyDiary(db, result);
     case "WEEKLY_REPORT":
       return applyReport(db, item, result);
+    case "PLAN":
+      return applyPlan(db, item, result);
   }
+}
+
+/**
+ * A plan lands as `PROPOSED` and nothing else happens (FR-PAR-03, docs/08 pha 5 việc 3).
+ *
+ * The planner does not read it, no session changes, and the child's evening is unaffected until a
+ * parent opens P9, reads the reason beside each skill, edits what they disagree with and approves.
+ * Re-pushing the same week replaces the standing proposal rather than stacking a second one — but
+ * a plan a parent has already approved is never overwritten.
+ */
+async function applyPlan(
+  db: PrismaClient,
+  item: DbInboxItem,
+  result: Extract<InboxResult, { kind: "PLAN" }>,
+): Promise<string> {
+  const studentId =
+    item.studentId ??
+    (
+      await db.student.findFirst({
+        where: { nickname: result.studentNickname },
+        select: { id: true },
+      })
+    )?.id;
+  if (!studentId) throw new Error(`no student named "${result.studentNickname}"`);
+
+  const weekStart = new Date(`${result.weekStart}T00:00:00Z`);
+  const weekEnd = new Date(`${result.weekEnd}T00:00:00Z`);
+
+  const skills = await db.skill.findMany({
+    where: { code: { in: result.items.map((i) => i.skillCode) } },
+    select: { id: true, code: true },
+  });
+  const idByCode = new Map(skills.map((s) => [s.code, s.id]));
+  const unknown = result.items.filter((i) => !idByCode.has(i.skillCode));
+  if (unknown.length > 0)
+    throw new Error(`unknown skill codes: ${unknown.map((i) => i.skillCode).join(", ")}`);
+
+  // A proposal for a week a parent has already decided on is not allowed to undo that decision.
+  await db.plan.deleteMany({ where: { studentId, weekStart, status: "PROPOSED" } });
+
+  const plan = await db.plan.create({
+    data: {
+      studentId,
+      weekStart,
+      weekEnd,
+      status: "PROPOSED",
+      rationale: result.rationale,
+      createdBy: "AI",
+      items: {
+        create: result.items.map((i) => ({
+          skillId: idByCode.get(i.skillCode) as string,
+          priority: i.priority,
+          reason: i.reason,
+          targetMastery: i.targetMastery,
+          sessionsPlanned: i.sessionsPlanned,
+        })),
+      },
+    },
+  });
+  return `Plan:${plan.id}`;
 }
 
 async function applyIntake(

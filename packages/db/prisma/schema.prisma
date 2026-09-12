@@ -1319,6 +1319,8 @@ enum InboxKind {
   WRITE_PHOTO_GRADE
   SPEAK_GRADE
   WEEKLY_REPORT
+  /// A one- or two-week plan proposed through the queue, for a parent to edit and approve (docs/04 §4, P9)
+  PLAN
 }
 
 enum InboxStatus {

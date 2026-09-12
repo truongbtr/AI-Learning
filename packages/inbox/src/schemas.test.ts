@@ -2,7 +2,7 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { EXPECTS, parseInboxResult, parsePlanHint } from "./schemas";
+import { EXPECTS, INBOX_KINDS, parseInboxResult, parsePlanHint } from "./schemas";
 import { validateInbox } from "./service";
 
 const goodGrade = {
@@ -62,7 +62,7 @@ describe("inbox result schemas (docs/13)", () => {
   });
 
   it("tells the reader what each kind expects, in Vietnamese", () => {
-    expect(Object.keys(EXPECTS)).toHaveLength(5);
+    expect(Object.keys(EXPECTS).sort()).toEqual([...INBOX_KINDS].sort());
     for (const text of Object.values(EXPECTS)) expect(text.length).toBeGreaterThan(40);
   });
 });
@@ -120,5 +120,63 @@ describe("validateInbox over a folder", () => {
     expect(issues.find((i) => i.id === "says-sai-1")?.message).toContain(
       'never read the word "sai"',
     );
+  });
+});
+
+/**
+ * A plan is the only queue result that changes what a child does for a fortnight, so the shape has
+ * to insist on the thing a parent needs in order to disagree with it: a reason per skill.
+ */
+describe("PlanProposal (docs/04 §4 task PLAN, FR-PAR-03)", () => {
+  const good = {
+    kind: "PLAN",
+    studentNickname: "Thy",
+    weekStart: "2026-09-14",
+    weekEnd: "2026-09-20",
+    rationale:
+      "Tuần này lớp học vần u, ư. Con đọc tốt nhưng viết còn thiếu nét, nên tuần tới ưu tiên viết.",
+    items: [
+      {
+        skillCode: "VIET.HV.AM_U_UW",
+        priority: 1,
+        reason: "Lớp đang học bài 13, con mới có 2 bằng chứng.",
+        sessionsPlanned: 4,
+      },
+    ],
+    focusErrors: ["viet_thieu_net"],
+  };
+
+  it("accepts a plan with a reason on every skill", () => {
+    const parsed = parseInboxResult(good) as { kind: string; items: { priority: number }[] };
+    expect(parsed.kind).toBe("PLAN");
+    expect(parsed.items[0]?.priority).toBe(1);
+  });
+
+  it("fills the defaults a reader may leave out", () => {
+    const parsed = parseInboxResult({
+      ...good,
+      items: [{ skillCode: "VIET.HV.AM_U_UW", reason: "Lớp đang học bài này tuần này." }],
+    }) as { items: { priority: number; targetMastery: number; sessionsPlanned: number }[] };
+    expect(parsed.items[0]).toMatchObject({ priority: 3, targetMastery: 70, sessionsPlanned: 3 });
+  });
+
+  it("refuses a skill with no reason a parent could argue with", () => {
+    expect(() =>
+      parseInboxResult({ ...good, items: [{ skillCode: "VIET.HV.AM_U_UW", reason: "ok" }] }),
+    ).toThrow();
+  });
+
+  it("refuses an empty plan and a plan with no rationale", () => {
+    expect(() => parseInboxResult({ ...good, items: [] })).toThrow();
+    expect(() => parseInboxResult({ ...good, rationale: "ngắn" })).toThrow();
+  });
+
+  it("refuses a skill code that is not a skill code", () => {
+    expect(() =>
+      parseInboxResult({
+        ...good,
+        items: [{ skillCode: "viet hoc van", priority: 1, reason: "Lớp đang học bài này." }],
+      }),
+    ).toThrow();
   });
 });

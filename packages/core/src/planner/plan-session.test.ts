@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { adaptDifficulty, difficultyFor, isWeak, planSession, slotCount } from "./plan-session";
+import {
+  adaptDifficulty,
+  difficultyFor,
+  isWeak,
+  planSession,
+  slotCount,
+  timetableRank,
+} from "./plan-session";
 import type { PlannerInput, SkillSnapshot } from "./types";
 
 const skill = (over: Partial<SkillSnapshot> & { code: string }): SkillSnapshot => ({
@@ -251,5 +258,67 @@ describe("the case docs/08 names: two b/d mistakes in a week", () => {
       ],
     });
     expect(plan.remediating).toHaveLength(2);
+  });
+});
+
+/**
+ * docs/08 pha 5, tiêu chí 2 and 3 — the two promises the parent dashboard makes about tomorrow.
+ */
+describe("the timetable and the approved plan steer tomorrow (docs/05 §2, FR-PAR-03, FR-PAR-06)", () => {
+  it("ranks a subject by where it sits on today's timetable", () => {
+    expect(timetableRank("VIET", ["VIET", "VMATH"])).toBe(2);
+    expect(timetableRank("VMATH", ["VIET", "VMATH"])).toBe(1);
+    expect(timetableRank("ESL", ["VIET", "VMATH"])).toBe(0);
+    expect(timetableRank("ESL", undefined)).toBe(0);
+  });
+
+  it("changing the timetable changes which subject leads the session", () => {
+    const vietDay = planSession(base({ todaySubjects: ["VIET"] }));
+    const mathDay = planSession(base({ todaySubjects: ["VMATH"] }));
+    // The warm-up is chosen on mastery, so the timetable shows in the first real station after it.
+    expect(vietDay.slots[1]?.subject).toBe("VIET");
+    expect(mathDay.slots[1]?.subject).toBe("VMATH");
+  });
+
+  it("gives the day's subject more of the session than a subject with no lesson today", () => {
+    const count = (plan: ReturnType<typeof planSession>, subject: string) =>
+      plan.slots.filter((s) => s.subject === subject).length;
+    const mathDay = planSession(base({ todaySubjects: ["VMATH"] }));
+    expect(count(mathDay, "VMATH")).toBeGreaterThan(count(mathDay, "VIET"));
+  });
+
+  it("says in the log which subject it favoured, so a parent can see why", () => {
+    const plan = planSession(base({ todaySubjects: ["VMATH", "ESCI"] }));
+    expect(plan.log.join("\n")).toContain("ưu tiên VMATH");
+  });
+
+  it("gives an approved plan at least half the session", () => {
+    const plan = planSession(
+      base({ planSkills: ["VMATH.SO.CONG_PV_10", "VIET.HV.AM_B", "VMATH.SO.SO_0_5"] }),
+    );
+    const mine = plan.slots.filter((s) =>
+      ["VMATH.SO.CONG_PV_10", "VIET.HV.AM_B", "VMATH.SO.SO_0_5"].includes(s.skillCode),
+    ).length;
+    expect(mine).toBeGreaterThanOrEqual(Math.ceil(plan.slots.length / 2));
+    expect(plan.log.join("\n")).toMatch(/kế hoạch tuần đã duyệt/);
+  });
+
+  /**
+   * A plan may not push the teacher's own homework or today's lesson out of the way: the class
+   * comes first, and a plan written on Sunday cannot know what Wednesday's lesson turned out to be.
+   */
+  it("never displaces what the class did today to make room for the plan", () => {
+    const plan = planSession(
+      base({
+        planSkills: ["VMATH.SO.CONG_PV_10", "VMATH.SO.SO_0_5", "VMATH.SO.TRU_PV_10"],
+        lessonSkills: ["VIET.HV.AM_C"],
+      }),
+    );
+    expect(plan.slots.some((s) => s.skillCode === "VIET.HV.AM_C")).toBe(true);
+  });
+
+  it("changes nothing when no plan has been approved", () => {
+    const plan = planSession(base());
+    expect(plan.log.join("\n")).not.toMatch(/kế hoạch tuần đã duyệt/);
   });
 });

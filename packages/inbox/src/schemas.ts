@@ -15,6 +15,7 @@ export const INBOX_KINDS = [
   "WRITE_PHOTO_GRADE",
   "SPEAK_GRADE",
   "WEEKLY_REPORT",
+  "PLAN",
 ] as const;
 export type InboxKind = (typeof INBOX_KINDS)[number];
 
@@ -52,6 +53,87 @@ export const skillCandidateSchema = z.object({
   matchedOn: z.string().optional(),
 });
 
+/**
+ * Everything a fortnight has to be planned against (docs/04 §4, task `PLAN`).
+ *
+ * Assembled at pull time rather than when the task was enqueued: a plan written against a snapshot
+ * from three days ago plans for a child who has since moved.
+ */
+export const planSnapshotSchema = z.object({
+  /** The window being planned. */
+  weekStart: isoDate,
+  weekEnd: isoDate,
+  /** Which week of the 35 the school calendar says this is (docs/11 §5). */
+  schoolWeek: z.number().int().nullable().default(null),
+  dailyMinutes: z.number().int(),
+  /** Subjects on the class timetable, by weekday 1–5 (docs/05 §2). */
+  timetable: z.record(z.string(), z.array(z.string())).default({}),
+  /** What the class actually did in the last week, newest first (docs/11). */
+  recentLessons: z
+    .array(
+      z.object({
+        date: isoDate,
+        subjectLabel: z.string(),
+        lessonRefText: z.string(),
+        skillCodes: z.array(skillCode).default([]),
+      }),
+    )
+    .default([]),
+  /** Every skill with any evidence, plus the ones the class has reached. */
+  skills: z
+    .array(
+      z.object({
+        code: skillCode,
+        nameVi: z.string(),
+        subject: z.enum(SUBJECTS),
+        strand: z.string(),
+        mastery: z.number(),
+        status: z.string(),
+        confidence: z.number(),
+        evidenceCount: z.number().int(),
+        trend14d: z.number(),
+        expectedWeek: z.number().int().nullable().default(null),
+        /** Due for review on or before the start of the window (docs/04 §3.4). */
+        dueForReview: z.boolean().default(false),
+        exerciseCount: z.number().int().default(0),
+      }),
+    )
+    .default([]),
+  /** Mistakes seen in the last week and month (docs/04 §11.3). */
+  activeErrors: z
+    .array(
+      z.object({
+        code: errorCode,
+        nameVi: z.string(),
+        count7d: z.number().int(),
+        count30d: z.number().int(),
+        remediationSkills: z.array(skillCode).default([]),
+      }),
+    )
+    .default([]),
+  /** Skills already being drilled, and how far up the ladder (docs/04 §11.4). */
+  remediating: z
+    .array(z.object({ skillCode, rung: z.number().int(), errorCode: errorCode.nullable() }))
+    .default([]),
+  /** The last two plans and how they went, so a fortnight is not proposed twice. */
+  previousPlans: z
+    .array(
+      z.object({
+        weekStart: isoDate,
+        status: z.string(),
+        items: z.array(
+          z.object({
+            skillCode,
+            sessionsPlanned: z.number().int(),
+            sessionsDone: z.number().int(),
+          }),
+        ),
+      }),
+    )
+    .default([]),
+});
+export type PlanSnapshot = z.infer<typeof planSnapshotSchema>;
+
 export const inboxContextSchema = z.object({
   id: z.string().min(1),
   kind: z.enum(INBOX_KINDS),
@@ -83,6 +165,8 @@ export const inboxContextSchema = z.object({
     .default([]),
   /** Everything else the app stored on the item. */
   payload: z.record(z.string(), z.unknown()).default({}),
+  /** Only on a `PLAN` item: the state a fortnight has to be planned against (docs/04 §4). */
+  planSnapshot: planSnapshotSchema.nullish(),
   /** What the reader must produce, in one sentence. */
   expects: z.string(),
 });
@@ -228,6 +312,42 @@ export const weeklyReportSchema = z.object({
 });
 export type WeeklyReport = z.infer<typeof weeklyReportSchema>;
 
+/**
+ * A one- or two-week plan (docs/04 §1 task `PLAN`, FR-PAR-03, P9).
+ *
+ * The proposal is never authority: `inbox:push` writes it as `PlanStatus.PROPOSED` and the planner
+ * ignores it until a parent has read the reasons, changed what they disagree with and approved it.
+ * That is the whole point of routing it through the queue rather than letting anything decide a
+ * fortnight of a six-year-old's evenings on its own.
+ */
+export const planProposalSchema = z.object({
+  kind: z.literal("PLAN"),
+  studentNickname: z.string(),
+  weekStart: isoDate,
+  weekEnd: isoDate,
+  /** Two or three sentences a parent reads before approving. Vietnamese. */
+  rationale: z.string().trim().min(20).max(1200),
+  items: z
+    .array(
+      z.object({
+        skillCode,
+        /** 1 = most important. */
+        priority: z.number().int().min(1).max(5).default(3),
+        /** Why this skill, in one sentence a parent can disagree with. */
+        reason: z.string().trim().min(5).max(300),
+        targetMastery: z.number().min(0).max(100).default(70),
+        sessionsPlanned: z.number().int().min(1).max(14).default(3),
+      }),
+    )
+    .min(1)
+    .max(12),
+  /** Mistakes the fortnight is aimed at, from the taxonomy in the context. */
+  focusErrors: z.array(errorCode).default([]),
+  /** Things to leave alone for now, with the reason in `rationale`. */
+  avoidSkills: z.array(skillCode).default([]),
+});
+export type PlanProposal = z.infer<typeof planProposalSchema>;
+
 /** Focus left for the planner (docs/13 §3). Optional, written next to any result. */
 export const planHintSchema = z.object({
   studentNickname: z.string(),
@@ -247,6 +367,7 @@ export const inboxResultSchema = z.discriminatedUnion("kind", [
   gradeResultSchema.extend({ kind: z.literal("SPEAK_GRADE") }),
   diaryParseSchema,
   weeklyReportSchema,
+  planProposalSchema,
 ]);
 export type InboxResult = z.infer<typeof inboxResultSchema>;
 
@@ -280,4 +401,5 @@ export const EXPECTS: Record<InboxKind, string> = {
     "Chấm bài đọc to/nói, viết result.json theo GradeResult: từng tiếng đọc đúng chưa, mã lỗi, một câu động viên cho bé.",
   WEEKLY_REPORT:
     "Đọc số liệu tuần, viết result.json theo WeeklyReport: báo cáo tiếng Việt cho ba mẹ và 3 điều cần chú ý.",
+  PLAN: "Đọc snapshot năng lực + thời khoá biểu + bài lớp đang học, viết result.json theo PlanProposal: 4-8 kỹ năng trọng tâm cho 1-2 tuần tới, mỗi kỹ năng một câu lý do ba mẹ đọc được. Chỉ dùng mã kỹ năng có trong context.",
 };

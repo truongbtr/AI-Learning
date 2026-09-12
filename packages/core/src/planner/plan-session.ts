@@ -52,10 +52,28 @@ const byMostOverdue = (a: SkillSnapshot, b: SkillSnapshot) => b.overdueDays - a.
 const byWeakest = (a: SkillSnapshot, b: SkillSnapshot) => a.mastery - b.mastery;
 
 /**
+ * How much today's timetable pulls a subject forward (docs/05 §2: "buổi tối thứ 2 ưu tiên
+ * ESL/VIET; thứ 3: VMATH/ESCI…", FR-PAR-06).
+ *
+ * Position matters: the first subject on the list is the one the class spent most of the day on,
+ * so it comes first in the evening too. Anything not on today's timetable is neither promoted nor
+ * punished — it simply has no timetable reason to be here.
+ */
+export function timetableRank(subject: Subject, todaySubjects?: Subject[]): number {
+  if (!todaySubjects || todaySubjects.length === 0) return 0;
+  const index = todaySubjects.indexOf(subject);
+  return index < 0 ? 0 : todaySubjects.length - index;
+}
+
+/**
  * Spreads the slots so no more than two in a row share a subject, at least three exercise types
  * appear, the first is a warm-up and the last is a sure thing (docs/04 §4 step 4).
+ *
+ * `todaySubjects` decides which subject *opens* the road after the warm-up: the class had it this
+ * morning, so it is what the evening is about (docs/05 §2, FR-PAR-06). The alternation rule still
+ * wins over it, because eight of anything in a row loses a six-year-old.
  */
-export function orderSlots(slots: Slot[]): Slot[] {
+export function orderSlots(slots: Slot[], todaySubjects?: Subject[]): Slot[] {
   const warm = slots.filter((s) => s.kind === "warmup");
   const finish = slots.filter((s) => s.kind === "finish");
   const middle = slots.filter((s) => s.kind !== "warmup" && s.kind !== "finish");
@@ -66,13 +84,20 @@ export function orderSlots(slots: Slot[]): Slot[] {
   let run = 0;
   while (pool.length > 0) {
     // prefer a different subject once two of the same have been in a row
-    let index = pool.findIndex((s) => (run >= 2 ? s.subject !== lastSubject : true));
-    if (index < 0) index = 0;
-    const [next] = pool.splice(index, 1);
-    if (!next) break;
-    run = next.subject === lastSubject ? run + 1 : 1;
-    lastSubject = next.subject;
-    out.push(next);
+    const eligible = pool
+      .map((slot, index) => ({ slot, index }))
+      .filter(({ slot }) => (run >= 2 ? slot.subject !== lastSubject : true));
+    const choices = eligible.length > 0 ? eligible : [{ slot: pool[0] as Slot, index: 0 }];
+    // Homework the teacher set leads whatever the timetable says; then today's subjects.
+    const best = choices.reduce((a, b) => {
+      const score = (s: Slot) =>
+        (s.kind === "homework" ? 1000 : 0) + timetableRank(s.subject, todaySubjects);
+      return score(b.slot) > score(a.slot) ? b : a;
+    });
+    pool.splice(best.index, 1);
+    run = best.slot.subject === lastSubject ? run + 1 : 1;
+    lastSubject = best.slot.subject;
+    out.push(best.slot);
   }
   return [...warm, ...out, ...finish].map((s, i) => ({ ...s, order: i + 1 }));
 }
@@ -185,25 +210,31 @@ export function planSession(input: PlannerInput): SessionPlan {
   };
   want.new = Math.max(0, left - want.focus - want.review);
 
-  // focus: today's lesson first, then the approved plan, then the weak ones
+  // focus: today's lesson first, then the approved plan, then the weak ones — and within all of
+  // that, a subject the class had today comes before one it did not (docs/05 §2, FR-PAR-06).
   const focusPool = input.skills
     .filter((s) => !used.has(s.code))
-    .sort((a, b) => {
-      const rank = (s: SkillSnapshot) =>
-        (s.inLessonToday || lessonSkills.has(s.code) ? 0 : 1) + (planSkills.has(s.code) ? 0 : 1);
-      const d = rank(a) - rank(b);
-      return d !== 0 ? d : byWeakest(a, b);
-    })
     .filter(
       (s) =>
         lessonSkills.has(s.code) ||
         s.inLessonToday ||
         planSkills.has(s.code) ||
         isWeak(s, errorCountFor(s)),
-    );
+    )
+    .sort((a, b) => {
+      const rank = (s: SkillSnapshot) =>
+        (s.inLessonToday || lessonSkills.has(s.code) ? 0 : 1) + (planSkills.has(s.code) ? 0 : 1);
+      const d = rank(a) - rank(b);
+      if (d !== 0) return d;
+      const t =
+        timetableRank(b.subject, input.todaySubjects) -
+        timetableRank(a.subject, input.todaySubjects);
+      return t !== 0 ? t : byWeakest(a, b);
+    });
 
   for (const skill of focusPool) {
     if (slots.length >= 1 + want.focus + ladderUsed) break;
+    const onTimetable = timetableRank(skill.subject, input.todaySubjects) > 0;
     const why =
       lessonSkills.has(skill.code) || skill.inLessonToday
         ? "bài lớp học hôm nay"
@@ -215,7 +246,7 @@ export function planSession(input: PlannerInput): SessionPlan {
       skillCode: skill.code,
       subject: skill.subject,
       difficulty: difficultyFor(skill.mastery, bias),
-      reason: `trọng tâm: ${why}`,
+      reason: `trọng tâm: ${why}${onTimetable ? " · hôm nay có tiết môn này" : ""}`,
     });
   }
 
@@ -262,8 +293,13 @@ export function planSession(input: PlannerInput): SessionPlan {
 
   // Anything still missing: fill from the strongest skills, which keeps the session the right
   // length without ever handing the child something they are not ready for. A skill may come
-  // round twice — the picker gives it a different exercise.
-  const filler = [...input.skills].sort((a, b) => b.mastery - a.mastery);
+  // round twice — the picker gives it a different exercise. Today's subjects go first, so an
+  // evening after a maths-heavy day is a maths-heavy evening.
+  const filler = [...input.skills].sort(
+    (a, b) =>
+      timetableRank(b.subject, input.todaySubjects) -
+        timetableRank(a.subject, input.todaySubjects) || b.mastery - a.mastery,
+  );
   for (let i = 0; filler.length > 0 && slots.length < n - 1; i++) {
     const skill = filler[i % filler.length] as SkillSnapshot;
     take({
@@ -286,7 +322,63 @@ export function planSession(input: PlannerInput): SessionPlan {
       reason: "kết thúc vui: bài chắc chắn làm được",
     });
 
-  const ordered = orderSlots(slots).slice(0, n);
+  // ── 3b. an approved plan has to own the evening ───────────────────────────────────────────
+  //
+  // docs/08 pha 5, tiêu chí 3: approve a plan and at least half of tomorrow's session belongs to
+  // it. The 50/30/20 split alone does not guarantee that — a week of overdue reviews can crowd a
+  // plan out of its own fortnight, and a parent who approved something and then watched nothing
+  // change would never approve another one.
+  //
+  // Padding is taken from the slots that exist to fill space, in the order they are least missed:
+  // filler first, then a new skill, then a review. Homework, the warm-up, the closer, the ladder
+  // and anything the class did today are never displaced — those outrank a plan by design.
+  if (planSkills.size > 0) {
+    const target = Math.ceil(n / 2);
+    const isPlan = (s: Slot) => planSkills.has(s.skillCode);
+    const spare = [...planSkills].filter((code) => !used.has(code) && skillsByCode.has(code));
+    const displaceable = (s: Slot) =>
+      !isPlan(s) &&
+      s.kind !== "warmup" &&
+      s.kind !== "finish" &&
+      s.kind !== "homework" &&
+      s.kind !== "remediation" &&
+      !lessonSkills.has(s.skillCode) &&
+      !skillsByCode.get(s.skillCode)?.inLessonToday;
+    /** Lower = missed less. Space-filling padding goes first, then a new skill, then a review. */
+    const cost = (s: Slot) =>
+      s.reason.startsWith("luyện thêm") ? 0 : s.kind === "new" ? 1 : s.kind === "review" ? 2 : 3;
+
+    let planned = slots.filter(isPlan).length;
+    const swappable = slots
+      .map((slot, index) => ({ slot, index }))
+      .filter(({ slot }) => displaceable(slot))
+      .sort((a, b) => cost(a.slot) - cost(b.slot));
+
+    for (const { index } of swappable) {
+      if (planned >= target || spare.length === 0) break;
+      const code = spare.shift() as string;
+      const skill = skillsByCode.get(code) as SkillSnapshot;
+      slots[index] = {
+        ...(slots[index] as Slot),
+        kind: "focus",
+        skillCode: skill.code,
+        subject: skill.subject,
+        difficulty: difficultyFor(skill.mastery, bias),
+        reason: "trọng tâm: kế hoạch tuần ba mẹ đã duyệt",
+      };
+      used.add(code);
+      planned++;
+    }
+    log.push(
+      `kế hoạch tuần đã duyệt: ${planSkills.size} kỹ năng, chiếm ${planned}/${slots.length} bài`,
+    );
+  }
+
+  const ordered = orderSlots(slots, input.todaySubjects).slice(0, n);
+  if (input.todaySubjects?.length)
+    log.push(
+      `hôm nay lớp có: ${input.todaySubjects.join(", ")} → ưu tiên ${input.todaySubjects[0]}`,
+    );
   log.push(`tổng ${ordered.length} bài · ${remediating.length} kỹ năng đang rèn`);
   return { slots: ordered, remediating, log };
 }

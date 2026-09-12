@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSy
 import { basename, dirname, isAbsolute, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { LocalFileStorage } from "@mtct/core/storage";
-import { type PrismaClient, type Subject, searchSkills } from "@mtct/db";
+import { buildPlanSnapshot, type PrismaClient, type Subject, searchSkills } from "@mtct/db";
 import {
   EXPECTS,
   type InboxContext,
@@ -137,6 +137,14 @@ export async function pullPending(db: PrismaClient, opts: PullOptions = {}): Pro
       errorCodes,
       parentCorrections: await recentParentCorrections(db),
       payload,
+      // A plan is planned against the state at pull time, not at the time it was asked for.
+      planSnapshot:
+        item.kind === "PLAN" && item.studentId
+          ? await buildPlanSnapshot(db, item.studentId, {
+              weeks: payload.weeks === 2 ? 2 : 1,
+              from: typeof payload.weekStart === "string" ? new Date(payload.weekStart) : undefined,
+            })
+          : null,
       expects: EXPECTS[item.kind as InboxKind],
     };
     writeFileSync(join(itemDir, "context.json"), `${JSON.stringify(context, null, 2)}\n`, "utf8");
