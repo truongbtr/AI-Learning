@@ -2,6 +2,202 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 8 — 12/09/2026 — Vận hành & nghiệm thu thực tế *(đang chạy: hai tuần dùng thật chưa bắt đầu)*
+
+Trạng thái: **hạ tầng xong, 4/7 tiêu chí đạt, 3 tiêu chí cần thời gian thật hoặc cần chủ dự án.**
+3 commit, **chưa push**. `lint` sạch · **424 test đơn vị** (core 212, db 95, content 66, web 34,
+inbox 17) · `build` 4 gói xanh · **e2e pha 8: 4/6 chạy, 2 skip** vì chưa có tài khoản test.
+
+> **Pha này khác mọi pha trước:** tiêu chí xong không phải code xanh, mà là hai đứa trẻ 6 tuổi tự
+> mở ra học được trong 14 ngày. Ngày hôm nay là **ngày 0**. Mọi thứ chạy được bằng máy đã làm và đã
+> kiểm; thứ còn thiếu là **thời gian lịch** và **bảy việc của chủ dự án** ở mục 7.
+
+### 1. Đã làm gì, commit nào
+
+| Việc | Commit | Tóm tắt |
+|---|---|---|
+| 0 — nợ pha 5 | `8a8dc70` | đảo ADR-18 mục 1, xoá dữ liệu dev lệch múi giờ, 15 tài khoản e2e, test canh giữ TZ |
+| 1, 2, 3, 4 | `bb51b8c` | Tunnel + Access, PWA, sao lưu + diễn tập khôi phục, phiên chẩn đoán, health |
+| 5 + đo lường | `ceab327` | `pnpm db:trial`, nhật ký chạy thật, bộ nghiệm thu pha 8, tiêu chí mới ở `docs/08` |
+
+*(Giữa `8a8dc70` và `bb51b8c` có `817232c` — **không phải của tôi**, một phiên Claude Code khác
+sửa lỗi TTS `vi` vs `vi-VN` trên cùng nhánh. Không đụng nhau.)*
+
+**Việc 0.1 — nhịp ôn thắng con số nghiệm thu.** Chủ dự án đảo ADR-18 mục 1. `PLAN_SHARE` xuống
+**0,4**, và có **sàn ôn cứng** đúng 30% của `04` §4: vòng lấn chỗ bỏ qua trạm ôn khi đã chạm sàn.
+Khi hai ràng buộc va nhau, planner **không phá sàn** — nó ghi vào log ba mẹ đọc được:
+`kế hoạch tuần đã duyệt: … (dưới 40% vì giữ nhịp ôn)` và `giữ n/y bài ôn (sàn m)`. Lý do đáng ghi
+lại: phần ôn trả kết quả vào tháng 11, lúc không ai nhìn, nên nó phải được bảo vệ bằng luật chứ
+không bằng trí nhớ.
+
+**Việc 0.3 — xoá, không migrate.** 52/72 phiên lệch ngày, **và** toàn bộ 1.662 dòng do bộ e2e sinh
+ra. Dịch ngày chỉ chữa nửa vấn đề; nửa còn lại là phiên chẩn đoán đầu vào sẽ khởi động từ một mô
+hình năng lực dựng bằng câu trả lời của máy. `pnpm db:reset-learning --apply` in số dòng của
+`Skill`/`Exercise`/`LessonUnit`/`ContentBatch` trước và sau để chứng minh không đụng nội dung.
+
+**Việc 1 — ra internet, nhưng không phải phần của con.** Access chắn `/parent`, `/admin`, `/dev`,
+`/api/admin`, và **máy chủ ở nhà tự kiểm chữ ký** chứ không tin rằng không ai tìm được đường khác
+vào. Phần của con cố ý nằm ngoài: trẻ 6 tuổi không đọc được email lấy mã một lần, bắt con qua lớp
+đó nghĩa là ba mẹ phải ngồi cạnh mỗi tối — đúng thứ dự án này sinh ra để khỏi phải làm. Có một test
+mà việc duy nhất của nó là **đỏ lên nếu `/kid` lọt vào danh sách bị chắn**.
+
+**Việc 1 — icon.** Vẽ mới, không cắt từ mascot: ở 60 px giữa ba mươi icon khác, mặt mascot thành
+một vệt nhoè. Một ngôi sao trên nền trời bình minh chung của hai thế giới — sao là đơn vị phần
+thưởng cả app, hai bé đã quen. Zoom tắt **chỉ trong vùng của con**: con tì tay lên màn hình khi
+nghĩ; ba mẹ vẫn cần chụm tay phóng to trang bằng chứng trên điện thoại.
+
+**Việc 2 — sao lưu đã được khôi phục thật.** `pg_dump` + bản sao ảnh mỗi đêm ra một thư mục
+Explorer mở được. Diễn tập dựng một Postgres trắng, khôi phục vào đó, đếm lại từng bảng, tự dọn:
+**ĐẠT, 7 giây, 1.236 bài và 376 kỹ năng về đủ** (`docs/dien-tap/khoi-phuc-20260912-104915.md`).
+
+**Việc 4 — phiên chẩn đoán `04` §10, trước nay chưa từng được xây.** Mười câu một tối, ba tối, mỗi
+câu trả lời chọn câu sau: đúng → lên trong mạch, chưa chắc → **về tiên quyết** (chứ không phải lùi
+một bậc — `04` §2 nói rõ tiên quyết lung lay mới là thứ đáng tìm ra). Nó được trả về **dưới dạng
+Daily Quest**, không phải một màn hình riêng: con bấm "Học ngay" như mọi hôm và không được cho biết
+đây là bài kiểm tra.
+
+### 2. Cách chạy thử (PowerShell, tại gốc repo)
+
+```powershell
+docker compose --env-file .env -f docker/compose.yml up -d
+pnpm db:usage                    # sức khoẻ + chi phí + "cần làm gì"
+pnpm db:assess -- --status       # còn mấy phiên chẩn đoán
+pwsh scripts/restore-drill.ps1   # diễn tập khôi phục (~10 giây)
+pnpm db:trial                    # số liệu 14 ngày (hôm nay còn trống)
+```
+
+| Tiêu chí | Chạy gì |
+|---|---|
+| 1. 10 phút/ngày, ≥10/14 ngày | `pnpm db:trial` — sau 14 ngày thật |
+| 2. Khôi phục trên máy sạch | `pwsh scripts/restore-drill.ps1` |
+| 3. iPad + mã 4 hình | `pnpm e2e:all` bài `phase8` 3a/3b/3c, và một lần thật trên iPad |
+| 4. Access chắn `/parent`, `/admin` | `phase8` bài 4 — tự bật máy chủ thứ hai có Access |
+| 5. Hạn mức giọng Azure | `/admin/health` hoặc `pnpm db:usage` |
+| 6. `VAN-HANH.md` đủ dùng | `phase8` bài 5, và test `health.test.ts` |
+| 7. Việc 0 | `pnpm test` (planner + 2 bộ canh giữ múi giờ) |
+
+### 3. Bảng 7 tiêu chí xong
+
+| # | Tiêu chí | Kết quả |
+|---|---|---|
+| 1 | 2 bé tự dùng 10 phút/ngày, ≥ 10/14 ngày | **Chưa đo được — hôm nay là ngày 0.** Công cụ đo xong và đã chạy: `pnpm db:trial` in bảng 14 ngày cho từng bé. Cách đo và **giới hạn trung thực của nó** ở mục 6 |
+| 2 | Khôi phục sao lưu trên máy sạch | **Đạt** — 12/09 10:49, container trắng, 7 giây, log trong `docs/dien-tap/` |
+| 3 | Hai bé mở từ icon, đăng nhập 4 hình, không bàn phím | **Một nửa đạt** — manifest + 5 icon PNG + màn hình 4 hình đã kiểm bằng e2e (kể cả opacity của thẻ ảnh, vì `toBeVisible()` bỏ qua opacity). **Chưa thử trên iPad thật** vì chưa có iPad và **hai bé chưa có mã 4 hình** (mục 7) |
+| 4 | `/parent`, `/admin` chặn; phần con vẫn vào | **Đạt** — e2e bật một máy chủ thứ hai có Access: `/parent`, `/admin/users`, `/admin/health`, `/api/admin/users` → **403**; `/login`, `/manifest.webmanifest`, `/api/health`, `/kid/home` → **không 403** |
+| 5 | Chi phí TTS Azure trong hạn mức F0 | **Đạt** — tháng 09: **71 / 500.000 ký tự** (0%). Bộ đếm đã bắt được một lần gọi thật. Xem ở `/admin/health` và `pnpm db:usage` |
+| 6 | `VAN-HANH.md` đủ để tự xử lý | **Đạt về phần máy** — `docs/VAN-HANH.md` 11 mục, bắt đầu bằng "web không vào được"; mọi cảnh báo trên `/admin/health` kèm dòng lệnh, có test bắt buộc điều đó. **Chưa ai ngoài tôi đọc thử** — đây là thứ chỉ chủ dự án nghiệm thu được |
+| 7 | Việc 0 xong | **Một nửa đạt** — nhịp ôn ≥ 30% (có test), dữ liệu múi giờ sạch, 2 bộ test canh giữ TZ xanh, `.env.example` + README có đường chạy 39 bài. **Chưa chạy đủ 39 bài** vì tài khoản test là việc chủ dự án (mục 7) |
+
+### 4. Số liệu 14 ngày
+
+**Bằng 0 — hôm nay là ngày 0.** Không có số liệu để báo, và tôi không đoán.
+
+```
+HAI TUẦN CHẠY THẬT — 2026-08-30 → 2026-09-12 (14 ngày)
+Thy   : học 0/14 ngày · 0 phút · 0 câu · bỏ dở 0 phiên · đạt 0/14
+Thanh : học 0/14 ngày · 0 phút · 0 câu · bỏ dở 0 phiên · đạt 0/14
+```
+
+Đúng như phải thế: dữ liệu học dev đã xoá ở việc 0.3, và hai bé chưa bắt đầu.
+
+### 5. Hai bé phàn nàn gì
+
+**Chưa có gì để trích** — chưa bé nào dùng. `docs/nhat-ky-chay-that.md` đã sẵn khung ghi, và mục
+đáng giá nhất trong đó là **nguyên văn con nói gì**, vì đó là thứ duy nhất không có trong DB.
+
+### 6. Cách đo tiêu chí 1, và chỗ nó *không* đo được
+
+`pnpm db:trial` đếm, cho từng bé từng ngày: một **ngày đạt** là ngày con (1) **làm xong** một phiên,
+(2) ≥ **10 phút**, (3) **không có dấu vết ba mẹ giúp**.
+
+- "Phút" đếm từ **khoảng cách giữa các câu trả lời**, mỗi câu tối đa 3 phút, không quá đồng hồ của
+  phiên. Lý do: iPad ngửa trên bàn 40 phút không phải 40 phút học, và một tiêu chí đếm theo đồng hồ
+  treo tường sẽ **đạt chỉ bằng cách để app mở**.
+- "Ba mẹ giúp" máy chỉ thấy **hai** thứ: ba mẹ sửa nhãn (`PARENT_OVERRIDE`), và ba mẹ chấm bài
+  nói/viết (`gradedBy = PARENT`).
+
+**Thứ máy không thấy:** ba mẹ ngồi cạnh đọc hộ đề, hay chỉ tay vào ô đúng. Không dấu vết nào cả.
+Nên **con số của máy là trần, không phải sự thật** — nhật ký viết tay là phần hiệu chỉnh. Nếu cuối
+hai tuần máy nói "đạt 12/14" mà nhật ký ghi 6 ngày phải nhờ đọc đề, thì **nhật ký đúng**. Tôi viết
+điều này vào cả module, cả đầu ra của lệnh, và cả nhật ký, để không ai vô tình báo cáo con số trần.
+
+### 7. Việc chủ dự án phải làm — **hai tuần không bắt đầu được nếu thiếu**
+
+1. **Hai bé chưa đăng nhập được.** `thy` và `thanh` **chưa có mã 4 hình** (`passwordHash` rỗng).
+   `/admin/users` → chọn bé → đặt mã hình. **Cho chính con chọn 4 hình con thích.**
+2. **Chưa có tài khoản `PARENT` nào**, và `thy`/`thanh` **chưa nối với người lớn nào** —
+   `/parent` sẽ trống. `/admin/users` → thêm `PARENT` cho Ba và Mẹ, chọn cả hai bé ở ô "Con".
+3. **Tài khoản `ADMIN` test** (`qc`) để chạy 39 bài e2e — README mục "Chạy bộ nghiệm thu". Đây là
+   thứ duy nhất chặn tiêu chí 7, và là món nợ thứ hai liên tiếp sau pha 5.
+4. **Ngày sinh hai bé** đang là `2020-01-01` (giá trị tạm của seed).
+5. **Cloudflare Tunnel + Access** — `docs/VAN-HANH.md` §4, cần tài khoản Cloudflare + tên miền.
+6. **Cài lên iPad** cho từng bé — `docs/VAN-HANH.md` §5.
+7. **Bật sao lưu hằng đêm**:
+   `docker compose --env-file .env -f docker/compose.yml --profile backup up -d backup`
+
+### 8. Danh sách việc cho pha 6 — xếp theo mức cấp thiết
+
+Hai tuần chạy thật chưa cho dữ liệu, nhưng **việc dựng phiên chẩn đoán đã lộ ra một con số đủ để
+xếp hạng ngay**, và nó nghiêm trọng hơn dự đoán:
+
+> **1.236 bài của đợt 1 phủ đúng 28 / 376 kỹ năng.** Sâu (40–60 bài mỗi kỹ năng) nhưng **rất hẹp**.
+> **132 kỹ năng lớp đã học hoặc sắp học (tuần 1–8) chưa có bài nào.**
+
+| # | Việc | Vì sao cấp thiết |
+|---|---|---|
+| **1** | **ESCI — 0 bài trên 47 kỹ năng.** Cả môn không có gì | Tối chẩn đoán thứ ba đáng lẽ hỏi EMATH + ESCI; nó **không hỏi được câu nào** về ESCI. Bản đồ năng lực của cả hai bé sẽ trắng cả một môn |
+| **2** | **EMATH — 2/51 kỹ năng có bài**; `G`, `MD`, `MP` trắng hoàn toàn | Cùng lý do; tối thứ ba phải mượn môn khác lấp chỗ |
+| **3** | **132 kỹ năng tuần 1–8 chưa có bài** — nhiều nhất ở `VIET.HV` (vần), `ESL.PH` (CVC), `ESL.VOC` | Lớp **đang học chính những thứ này**. Nhật ký lớp sẽ trỏ vào chúng mỗi tối và planner không có gì để đưa ra |
+| **4** | **`ENL.RL.*` và `ENL.W.*`** — món nợ pha 5 ghi vào pha 7 | Không dạng bài nào chở được; xem `docs/08` pha 7 mục 6 |
+| **5** | **`ESL.LIS.*`, `ESL.SPK.*`, `ENL.SL.*`, `VIET.NN.*`** — nghe/nói, trắng hoàn toàn | Cần dạng bài `SPEAK_ANSWER` (pha 7 mục 4) trước khi soạn được |
+| **6** | **`VMATH.HH.*`, `VMATH.DL.*`, `VIET.DOC.*`, `VIET.VIET.*`** trắng | Hình học, đo lường, đọc, viết — bốn mạch lớn |
+| 7 | Dạng bài nào con chán / con thích | **Chờ hai tuần chạy thật** — mục 5 của pha 8 |
+| 8 | Gộp thẻ "Bài cô giao hôm nay" theo nội dung | Món nợ pha 5 tồn đọng 4 |
+
+Danh sách kỹ năng đầy đủ lấy lại bất cứ lúc nào bằng `pnpm content:stats`.
+
+### 9. ADR đã viết
+
+**Không viết ADR mới.** Hai chỗ lệch tài liệu đều đã có chỗ ghi sẵn:
+
+- **ADR-18 mục 1 bị đảo ngược**, ghi ngay trong ADR-18 (mục "Cập nhật 12/09/2026") thay vì mở ADR
+  mới — một quyết định bị lật thì thuộc về chính tài liệu đã chốt nó, không phải một tài liệu khác.
+- **Ghi chú cuối ADR-18** (lỗi múi giờ) cập nhật: dữ liệu cũ **đã xoá**, không migrate.
+- `docs/08` pha 8: **7 tiêu chí xong** viết lại theo đúng bản chủ dự án chốt; bỏ "chi phí AI ≤ 6
+  USD/tháng" (ADR-9/ADR-10 đã lấy hết lời gọi LLM ra khỏi hệ thống đang chạy).
+
+### 10. Chưa làm / tồn đọng / giả định
+
+1. **Hai tuần chạy thật chưa bắt đầu** — đây là thời gian lịch, không phải việc code. Mục 7 là điều
+   kiện cần.
+2. **2/6 bài e2e pha 8 skip** (và 23/39 của các pha trước) vì chưa có tài khoản `ADMIN` test.
+3. **Sao lưu thư mục file đang rỗng** — `/data/files` là volume của Docker, mà máy dev đang chạy
+   `pnpm dev` với `FILE_ROOT` trên host. Khi chạy bằng docker thật thì nó đầy. Không phải lỗi, là
+   khác môi trường; `restore.sh` in sẵn lệnh chép ngược.
+4. **Access cần chung một AUD cho `/parent` và `/admin`.** Nếu Cloudflare cấp AUD khác nhau cho hai
+   ứng dụng thì phải làm **một** ứng dụng phủ cả tên miền + Bypass policy cho `/kid`, `/login`,
+   `/api`, `/art` — ghi ở `VAN-HANH.md` §4.3. Chưa kiểm được vì chưa có tài khoản Cloudflare.
+5. **Giả định về `04` §10:** "3 phiên, mỗi môn ~10 bài" không thể là 10 bài cho 6 môn trong 3 phiên
+   10 bài. Tôi đọc là **3 tối × 10 trạm, mỗi tối 2 môn** (Việt+Toán / ESL+ENL / EMath+ESci). Nếu
+   chủ dự án đọc khác thì sửa `ASSESSMENT_ROUNDS` là xong.
+6. **Tôi đã tạm dừng `next start` và worker của một phiên Claude Code khác** để chạy `pnpm build`
+   (hai tiến trình đó giữ `query_engine-windows.dll.node`) — **có hỏi và được đồng ý**, và đã bật
+   lại ngay sau khi build xong; `/api/health` trả `ok`.
+7. **`prisma migrate dev` của phiên kia (PID 27368) đang treo ~1 tiếng**, nhiều khả năng kẹt ở một
+   câu hỏi tương tác. Tôi không đụng vào. Nếu nó vẫn treo, đóng cửa sổ đó.
+
+### 11. Câu hỏi cần chủ dự án quyết
+
+1. **Bảy việc ở mục 7** — hai tuần bắt đầu được ngay sau khi xong, và việc 1 (mã 4 hình) chỉ mất
+   năm phút.
+2. **Thứ tự soạn pha 6:** tôi xếp ESCI lên đầu vì cả môn trắng. Nhưng nếu ở lớp ESCI chỉ là 1
+   tiết/tuần và ít bài về nhà, thì **132 kỹ năng tuần 1–8** (mục 3 của bảng) đáng làm trước. Anh
+   nhìn thực tế lớp rõ hơn tôi.
+3. **Hai tuần chạy thật bắt đầu ngày nào?** Nên bắt đầu vào **thứ Hai** để 14 ngày phủ đúng hai
+   tuần học — bắt đầu giữa tuần sẽ có hai cuối tuần rơi vào giữa và con số 10/14 khó đạt vì lý do
+   không liên quan gì đến app.
+4. **20 ảnh vở mẫu của pha 4 vẫn nợ** — vẫn là thứ chặn nửa còn lại của eval đọc ảnh.
+
 ## Pha 5 — 12/09/2026 — Bảng điều khiển ba mẹ
 
 Trạng thái: **xong, 8/8 tiêu chí đạt** — nhưng phần e2e chỉ chạy được **16/39** bài vì tôi không có
