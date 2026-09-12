@@ -3,6 +3,8 @@ import {
   adaptDifficulty,
   difficultyFor,
   isWeak,
+  MIX_REVIEW,
+  PLAN_SHARE,
   planSession,
   slotCount,
   timetableRank,
@@ -292,14 +294,14 @@ describe("the timetable and the approved plan steer tomorrow (docs/05 §2, FR-PA
     expect(plan.log.join("\n")).toContain("ưu tiên VMATH");
   });
 
-  it("gives an approved plan at least half the session", () => {
+  it("gives an approved plan its share of the session", () => {
     const plan = planSession(
       base({ planSkills: ["VMATH.SO.CONG_PV_10", "VIET.HV.AM_B", "VMATH.SO.SO_0_5"] }),
     );
     const mine = plan.slots.filter((s) =>
       ["VMATH.SO.CONG_PV_10", "VIET.HV.AM_B", "VMATH.SO.SO_0_5"].includes(s.skillCode),
     ).length;
-    expect(mine).toBeGreaterThanOrEqual(Math.ceil(plan.slots.length / 2));
+    expect(mine).toBeGreaterThanOrEqual(Math.ceil(plan.slots.length * PLAN_SHARE));
     expect(plan.log.join("\n")).toMatch(/kế hoạch tuần đã duyệt/);
   });
 
@@ -323,22 +325,66 @@ describe("the timetable and the approved plan steer tomorrow (docs/05 §2, FR-PA
   });
 });
 
-describe("an approved plan owns half the whole session, homework included", () => {
+describe("an approved plan owns its share of the whole session, homework included", () => {
   const share = (plan: ReturnType<typeof planSession>, codes: string[]) =>
     plan.slots.filter((s) => codes.includes(s.skillCode)).length;
 
   it("fills a plan of few skills by coming back to them, not by giving up", () => {
     const codes = ["VMATH.SO.CONG_PV_10", "VIET.HV.AM_B"];
     const plan = planSession(base({ planSkills: codes }));
-    expect(share(plan, codes)).toBeGreaterThanOrEqual(Math.ceil(plan.slots.length / 2));
+    expect(share(plan, codes)).toBeGreaterThanOrEqual(Math.ceil(plan.slots.length * PLAN_SHARE));
   });
 
-  it("counts the teacher's homework in the half it has to reach", () => {
+  it("counts the teacher's homework in the share it has to reach", () => {
     const codes = ["VMATH.SO.CONG_PV_10", "VIET.HV.AM_B", "VMATH.SO.SO_0_5"];
-    const withHomework = planSession(base({ planSkills: codes, extraSlots: 4 }));
+    const extraSlots = 4;
+    const withHomework = planSession(base({ planSkills: codes, extraSlots }));
     const without = planSession(base({ planSkills: codes }));
-    // Four stations the planner does not build still have to be paid for out of the ones it does.
-    expect(share(withHomework, codes)).toBeGreaterThan(share(without, codes));
-    expect(share(withHomework, codes) * 2).toBeGreaterThanOrEqual(withHomework.slots.length + 4);
+    // Four stations the planner does not build still have to be paid for out of the ones it does,
+    // so the bar it clears is the one computed on everything the child is handed.
+    expect(share(withHomework, codes)).toBeGreaterThanOrEqual(
+      Math.ceil((withHomework.slots.length + extraSlots) * PLAN_SHARE),
+    );
+    expect(Math.ceil((withHomework.slots.length + extraSlots) * PLAN_SHARE)).toBeGreaterThan(
+      Math.ceil(without.slots.length * PLAN_SHARE),
+    );
+  });
+
+  /**
+   * ADR-18 §1, reversed by the owner on 12/09/2026. The review slots are the spaced repetition;
+   * a fortnight's plan may not borrow from them to hit its own number.
+   */
+  it("never takes the review share to pay for the plan", () => {
+    const codes = ["VMATH.SO.CONG_PV_10", "VIET.HV.AM_B", "VMATH.SO.SO_0_5"];
+    const due = (code: string, overdueDays: number) =>
+      skill({
+        code,
+        subject: "ESL" as const,
+        mastery: 62,
+        nextReviewAt: new Date("2026-09-10T00:00:00+07:00"),
+        overdueDays,
+      });
+    // A week that piled up reviews — exactly the case ADR-18 worried about.
+    const input = base({
+      planSkills: codes,
+      skills: [
+        ...(base().skills as SkillSnapshot[]),
+        due("ESL.PH.A", 6),
+        due("ESL.PH.B", 5),
+        due("ESL.PH.C", 4),
+        due("ESL.PH.D", 3),
+      ],
+    });
+    const withPlan = planSession(input);
+    const withoutPlan = planSession({ ...input, planSkills: undefined });
+
+    const reviews = (p: ReturnType<typeof planSession>) =>
+      p.slots.filter((s) => s.kind === "review").length;
+    // The floor is what the 30% of docs/04 §4 asked for, computed on the same session length.
+    expect(reviews(withPlan)).toBeGreaterThan(0);
+    expect(reviews(withPlan)).toBeGreaterThanOrEqual(
+      Math.min(reviews(withoutPlan), Math.floor(withPlan.slots.length * MIX_REVIEW)),
+    );
+    expect(withPlan.log.join("\n")).toMatch(/giữ \d+\/\d+ bài ôn/);
   });
 });

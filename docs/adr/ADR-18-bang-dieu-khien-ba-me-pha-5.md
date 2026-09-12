@@ -1,7 +1,8 @@
 # ADR-18 — Bảng điều khiển ba mẹ: bốn chỗ lệch tài liệu ở pha 5
 
 - **Ngày:** 12/09/2026 (cuối pha 5)
-- **Trạng thái:** đã làm, chờ chủ dự án đọc
+- **Trạng thái:** đã làm · **mục 1 bị chủ dự án đảo ngược 12/09/2026** (đầu pha 8) — xem "Cập nhật"
+  ở cuối mục 1; mục 2, 3, 4 giữ nguyên
 - **Liên quan:** ADR-10 (app không gọi LLM), ADR-13 (mô hình mastery), ADR-17 (bài cô giao là một
   loại trạm mới)
 
@@ -30,6 +31,33 @@ năng nào lớp vừa học trong 3 ngày (`11` §6.1). Bốn thứ đầu là 
 Hệ quả phải nói thẳng: **trong tuần có kế hoạch, phần "ôn" có thể tụt dưới 30%.** Spaced repetition
 bị hoãn vài ngày. Đổi lại, hai tuần ba mẹ đã đọc và đồng ý được thực hiện đúng như đã hứa. Nếu chủ
 dự án thấy phần ôn quan trọng hơn, sửa một hằng số (`target` trong `planSession`) là xong.
+
+### Cập nhật 12/09/2026 (đầu pha 8) — chủ dự án chọn giữ nhịp ôn
+
+Chủ dự án đọc đoạn trên và **chọn phương án còn lại**: phần ôn quan trọng hơn con số của tiêu chí 3.
+
+Lý do của anh ấy, viết lại cho đúng: **phần "ôn" chính là cơ chế lặp lại ngắt quãng, thứ quyết định
+con có nhớ sau hai tháng hay không.** Một kế hoạch hai tuần trả lại kết quả thấy được ngay tối nay;
+nhịp ôn trả lại kết quả vào tháng 11, lúc không ai còn nhìn. Thứ không ai nhìn là thứ dễ bị ăn mất,
+nên nó phải được bảo vệ bằng luật chứ không bằng trí nhớ. Và pha 8 là hai tuần **chạy thật với trẻ
+thật** — không phải lúc để hoãn spaced repetition lấy một con số nghiệm thu.
+
+**Đã đổi, ba thứ:**
+
+1. `PLAN_SHARE = 0.4` (trước là một nửa). Kế hoạch đã duyệt được **≥ 40%** tổng số bài con nhận
+   được, vẫn tính cả bài cô giao trong mẫu số (mục 2 dưới giữ nguyên).
+2. Sàn ôn cứng: `reviewFloor` = đúng 30% của `04` §4 bước 3, tính trên cùng phần phiên. Vòng lấn
+   chỗ **bỏ qua** một trạm ôn khi số trạm ôn đã chạm sàn. Thứ tự lấy bù không đổi (trạm lấp chỗ →
+   trạm mới → trạm ôn), chỉ là trạm ôn nay có đáy.
+3. Nếu vì sàn ôn mà kế hoạch không đạt 40%, planner **không phá sàn** — nó ghi vào
+   `generationLog.log`: `kế hoạch tuần đã duyệt: … chiếm x/y bài (dưới 40% vì giữ nhịp ôn)` và
+   `giữ n/y bài ôn (sàn m)`. Ba mẹ đọc được lý do ngay trên trang phiên học, không phải đoán.
+
+Tiêu chí 3 của `docs/08` pha 5 hạ theo: **≥ 40%**. Đo lại trên dữ liệu thật lúc đầu pha 8, không
+phải trên dữ liệu e2e — dữ liệu e2e đã bị xoá (việc 0.3).
+
+Test canh giữ: `packages/core/src/planner/plan-session.test.ts` → *"never takes the review share to
+pay for the plan"*, dựng đúng ca ADR này lo: một tuần dồn 4 kỹ năng quá hạn ôn.
 
 ## 2. "Nửa phiên" tính cả bài cô giao, và kế hoạch ít kỹ năng thì quay vòng
 
@@ -74,6 +102,14 @@ AC "hiển thị đủ 5 môn" của FR-PAR-02 vẫn đạt: cả năm mảng c�
 ---
 
 ## Ghi thêm — một lỗi cũ sửa trong pha này (không phải lệch tài liệu)
+
+> **Cập nhật 12/09/2026 (pha 8 việc 0.3):** dữ liệu cũ **đã được dọn sạch**, không migrate. 1.662
+> dòng dữ liệu học dev bị xoá bằng `pnpm db:reset-learning --apply`; `Skill`/`Exercise`/
+> `LessonUnit`/`ContentBatch` còn nguyên (1.236 bài, 376 kỹ năng). Lý do chọn xoá thay vì dịch
+> ngày: 52/72 phiên lệch ngày, **và** toàn bộ số liệu đó do bộ e2e sinh ra chứ không phải do con
+> làm — dịch ngày chỉ chữa nửa vấn đề, còn nửa kia (phiên chẩn đoán đầu vào của pha 8 sẽ khởi động
+> từ một mô hình năng lực dựng bằng câu trả lời của máy) thì không. Test canh giữ ở hai múi giờ:
+> `packages/core/src/mastery/timezone.test.ts` và `packages/db/src/session/timezone.test.ts`.
 
 `Session.date`, `Streak.lastActiveDate` và `EggProgress.startedOn` là cột `@db.Date`. Từ pha 3
 chúng được ghi bằng **nửa đêm giờ máy**, mà Prisma tuần tự hoá qua UTC — nên ở UTC+7 mọi phiên học

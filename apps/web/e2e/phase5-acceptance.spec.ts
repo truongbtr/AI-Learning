@@ -20,7 +20,8 @@ import { expect, type Page, test } from "@playwright/test";
  * What it proves, in the order docs/08 lists it:
  *  1. every number on P2 and P3 opens the evidence behind it;
  *  2. editing the timetable changes which subject leads the next day's quest;
- *  3. approving a plan gives it at least half of the next session;
+ *  3. approving a plan gives it at least PLAN_SHARE of the next session, without ever spending
+ *     the review slots (ADR-18 §1, reversed by the owner at the start of phase 8);
  *  4. "Luyện hôm nay" creates a TARGETED session of that skill and its prerequisites, and leaves
  *     the Daily Quest alone;
  *  5. pasting an Edi Parent post on the dashboard shows today's lessons and tonight's skills;
@@ -37,6 +38,8 @@ const SHOTS = join(ROOT, "docs", "screens", "pha-5");
 const INBOX = join(ROOT, "inbox");
 /** The Monday of the plan's week, far enough ahead that no real session is disturbed. */
 const PLAN_WEEK = "2026-09-14";
+/** docs/08 pha 5 tiêu chí 3, lowered from a half on 12/09/2026 — see ADR-18 §1. */
+const PLAN_SHARE = 0.4;
 
 test.describe.configure({ mode: "serial" });
 test.setTimeout(240_000);
@@ -206,7 +209,9 @@ test("5. dán nhật ký trên dashboard → thấy ngay bài lớp và kỹ nă
 
 // ── 3 ────────────────────────────────────────────────────────────────────────────────────────
 
-test("3. duyệt kế hoạch → phiên hôm sau có ≥ 50% bài thuộc kế hoạch", async ({ page }) => {
+test("3. duyệt kế hoạch → phiên hôm sau có ≥ 40% bài thuộc kế hoạch, nhịp ôn còn nguyên", async ({
+  page,
+}) => {
   await login(page);
   await page.goto(`/parent/${studentId}/plan`);
   await page.getByTestId("request-plan").click();
@@ -283,7 +288,17 @@ test("3. duyệt kế hoạch → phiên hôm sau có ≥ 50% bài thuộc kế 
   const slots = (detail.items ?? []) as { skillCode?: string }[];
   const mine = slots.filter((s) => s.skillCode && codes.has(s.skillCode)).length;
   console.log(`kế hoạch chiếm ${mine}/${slots.length} bài`);
-  expect(mine * 2).toBeGreaterThanOrEqual(slots.length);
+  expect(mine).toBeGreaterThanOrEqual(Math.ceil(slots.length * PLAN_SHARE));
+
+  // And the other half of the owner's decision: the plan did not pay for its share out of the
+  // review slots. The planner writes both numbers into the log a parent can read.
+  const log = (detail.why ?? []) as string[];
+  console.log(log.filter((l) => l.includes("ôn") || l.includes("kế hoạch")).join("\n"));
+  const kept = log.find((l) => /giữ \d+\/\d+ bài ôn/.test(l));
+  expect(kept, "generationLog phải ghi số bài ôn đã giữ").toBeTruthy();
+  const [, reviews = "0", , floor = "0"] =
+    kept?.match(/giữ (\d+)\/(\d+) bài ôn \(sàn (\d+)\)/) ?? [];
+  expect(Number(reviews)).toBeGreaterThanOrEqual(Number(floor));
 });
 
 // ── 2 ────────────────────────────────────────────────────────────────────────────────────────

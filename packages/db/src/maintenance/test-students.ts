@@ -46,6 +46,10 @@ export function looksLikeTestSlug(slug: string): boolean {
   return TEST_SLUG_PATTERNS.some((re) => re.test(slug));
 }
 
+export function looksLikeTestParent(username: string): boolean {
+  return TEST_PARENT_USERNAME.test(username);
+}
+
 /** What a profile carries. Every count is a reason to keep it. */
 export interface StudentDataCounts {
   evidence: number;

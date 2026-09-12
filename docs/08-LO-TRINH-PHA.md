@@ -99,7 +99,14 @@ Sau pha 3 gia đình đã có thể **dùng thử hằng ngày**: bài luyện t
 4. P12 TKB & năm học (sửa TKB, tuần, nghỉ), P13 cài đặt bé (thời lượng, mascot, sở thích, mã hình, phần thưởng đời thực).
 5. Responsive điện thoại (bottom tab), nút nổi "Chụp bài vở".
 
-**Tiêu chí xong:** mọi con số trên P2/P3 bấm ra bằng chứng; đổi TKB → Daily Quest ngày sau đổi môn ưu tiên; duyệt plan → phiên hôm sau có ≥ 50% bài thuộc plan.
+**Tiêu chí xong:** mọi con số trên P2/P3 bấm ra bằng chứng; đổi TKB → Daily Quest ngày sau đổi môn ưu tiên; duyệt plan → phiên hôm sau có **≥ 40%** bài thuộc plan *(hạ từ 50% ngày 12/09/2026 — xem ADR-18 mục 1: giữ nhịp ôn ≥ 30% quan trọng hơn con số của tiêu chí này)*.
+
+> ⚠️ **ĐỔI THỨ TỰ 12/09/2026 — chủ dự án chốt: sau pha 5 làm thẳng PHA 8, rồi mới quay lại pha 6 và 7.**
+> Lý do: ngân hàng 1.236 bài của đợt 1 đủ dùng vài tuần, mà hai tuần hai bé dùng thật sẽ dạy mình
+> nhiều hơn bất kỳ bản thiết kế nào — biết con thích gì, chán chỗ nào, rồi hãy đổ công sức soạn tiếp.
+> Thứ tự thực hiện: 0 → 1 → 2 → 3 → 4 → 5 → **8** → 6 → 7.
+> Trong pha 8 chạy thật, bỏ tiêu chí "chi phí AI ≤ 6 USD/tháng" (ADR-10: app không gọi API LLM);
+> thay bằng chi phí TTS Azure thực tế, vốn nằm trong hạn mức miễn phí.
 
 ## Pha 6 — Nội dung đợt 2 & bám tuần học
 

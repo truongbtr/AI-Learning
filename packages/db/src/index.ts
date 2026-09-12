@@ -7,6 +7,7 @@ export * from "./content/stats";
 export * from "./diary";
 export * from "./intake";
 export * from "./kid";
+export * from "./maintenance/test-parents";
 export * from "./maintenance/test-students";
 export * from "./mastery/service";
 export * from "./parent";

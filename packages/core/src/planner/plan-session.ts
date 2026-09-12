@@ -30,6 +30,21 @@ export function slotCount(dailyMinutes: number): number {
   return Math.max(MIN_SLOTS, Math.min(MAX_SLOTS, n));
 }
 
+/** docs/04 §4 step 3: the mix of whatever is left after the warm-up, the ladder and the closer. */
+export const MIX_FOCUS = 0.5;
+export const MIX_REVIEW = 0.3;
+
+/**
+ * How much of the evening an approved plan is guaranteed (docs/08 pha 5, tiêu chí 3).
+ *
+ * This was a half, and reaching a half meant spending review slots — ADR-18 §1 said so and said
+ * the review share could fall below the 30% of `docs/04` §4 as a result. The owner reversed that
+ * on 12/09/2026, before the fortnight of real use: review *is* the spaced repetition, and spaced
+ * repetition is what decides whether the child still knows this in two months. So the guarantee
+ * came down to 40%, which is payable out of filler and new slots alone.
+ */
+export const PLAN_SHARE = 0.4;
+
 /** docs/04 §4 step 5: difficulty follows mastery, nudged by how this child likes it. */
 export function difficultyFor(mastery: number, bias = 0, delta = 0): number {
   const base = 1 + (4 * Math.max(0, Math.min(100, mastery))) / 100;
@@ -204,11 +219,13 @@ export function planSession(input: PlannerInput): SessionPlan {
   // ── 3. the rest, split 50 / 30 / 20 (docs/04 §4 step 3) ───────────────────────────────────
   const left = Math.max(0, n - slots.length - 1); // one is kept for the finish
   const want = {
-    focus: Math.round(left * 0.5),
-    review: Math.round(left * 0.3),
+    focus: Math.round(left * MIX_FOCUS),
+    review: Math.round(left * MIX_REVIEW),
     new: 0,
   };
   want.new = Math.max(0, left - want.focus - want.review);
+  // The number of review slots an approved plan may never take back. See `PLAN_SHARE`.
+  const reviewFloor = want.review;
 
   // focus: today's lesson first, then the approved plan, then the weak ones — and within all of
   // that, a subject the class had today comes before one it did not (docs/05 §2, FR-PAR-06).
@@ -324,19 +341,22 @@ export function planSession(input: PlannerInput): SessionPlan {
 
   // ── 3b. an approved plan has to own the evening ───────────────────────────────────────────
   //
-  // docs/08 pha 5, tiêu chí 3: approve a plan and at least half of tomorrow's session belongs to
-  // it. The 50/30/20 split alone does not guarantee that — a week of overdue reviews can crowd a
-  // plan out of its own fortnight, and a parent who approved something and then watched nothing
-  // change would never approve another one.
+  // docs/08 pha 5, tiêu chí 3: approve a plan and at least `PLAN_SHARE` of tomorrow's session
+  // belongs to it. The 50/30/20 split alone does not guarantee that — a week of overdue reviews
+  // can crowd a plan out of its own fortnight, and a parent who approved something and then
+  // watched nothing change would never approve another one.
   //
   // Padding is taken from the slots that exist to fill space, in the order they are least missed:
-  // filler first, then a new skill, then a review. Homework, the warm-up, the closer, the ladder
-  // and anything the class did today are never displaced — those outrank a plan by design.
+  // filler first, then a new skill, then a review **down to `reviewFloor` and no further**.
+  // Homework, the warm-up, the closer, the ladder and anything the class did today are never
+  // displaced — those outrank a plan by design, and so, since 12/09/2026, does the 30% of review
+  // that `docs/04` §4 asks for. A plan that cannot reach its share out of what is left simply
+  // reaches less; the log says so.
   if (planSkills.size > 0) {
     // Half of what the child will actually be handed, homework included. The teacher's stations
     // are prepended after this and are never displaced (FR-LRN-07), so the plan has to make up
     // the difference out of the practice half.
-    const target = Math.ceil((n + (input.extraSlots ?? 0)) / 2);
+    const target = Math.ceil((n + (input.extraSlots ?? 0)) * PLAN_SHARE);
     const isPlan = (s: Slot) => planSkills.has(s.skillCode);
     // Cycled, not consumed: a plan of four skills still fills six slots, and the picker gives a
     // different exercise each time. A plan with fewer skills is a narrower fortnight, not a
@@ -362,13 +382,16 @@ export function planSession(input: PlannerInput): SessionPlan {
       s.reason.startsWith("luyện thêm") ? 0 : s.kind === "new" ? 1 : s.kind === "review" ? 2 : 3;
 
     let planned = slots.filter(isPlan).length;
+    let reviews = slots.filter((s) => s.kind === "review").length;
     const swappable = slots
       .map((slot, index) => ({ slot, index }))
       .filter(({ slot }) => displaceable(slot))
       .sort((a, b) => cost(a.slot) - cost(b.slot));
 
-    for (const { index } of swappable) {
+    for (const { slot, index } of swappable) {
       if (planned >= target) break;
+      // The 30% of review `docs/04` §4 asks for is not the plan's to spend.
+      if (slot.kind === "review" && reviews <= reviewFloor) continue;
       const code = nextPlanSkill();
       if (!code) break;
       const skill = skillsByCode.get(code) as SkillSnapshot;
@@ -380,12 +403,15 @@ export function planSession(input: PlannerInput): SessionPlan {
         difficulty: difficultyFor(skill.mastery, bias),
         reason: "trọng tâm: kế hoạch tuần ba mẹ đã duyệt",
       };
+      if (slot.kind === "review") reviews--;
       used.add(code);
       planned++;
     }
     log.push(
-      `kế hoạch tuần đã duyệt: ${planSkills.size} kỹ năng, chiếm ${planned}/${slots.length} bài`,
+      `kế hoạch tuần đã duyệt: ${planSkills.size} kỹ năng, chiếm ${planned}/${slots.length} bài` +
+        (planned < target ? ` (dưới ${Math.round(PLAN_SHARE * 100)}% vì giữ nhịp ôn)` : ""),
     );
+    log.push(`giữ ${reviews}/${slots.length} bài ôn (sàn ${reviewFloor})`);
   }
 
   const ordered = orderSlots(slots, input.todaySubjects).slice(0, n);

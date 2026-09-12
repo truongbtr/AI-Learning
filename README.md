@@ -44,9 +44,41 @@ Kiểm tra chất lượng (phải xanh trước khi báo cáo):
 
 ```powershell
 pnpm lint; pnpm test; pnpm build
-pnpm e2e                                                   # smoke Playwright, cần web đang chạy
-$env:E2E_ADMIN_PASSWORD="<mật khẩu admin đã đổi>"; $env:E2E_CHANNEL="chrome"; pnpm e2e   # nghiệm thu pha 0 + 1 + 2 (23 test)
+pnpm e2e            # smoke Playwright, cần web đang chạy
 ```
+
+### Chạy bộ nghiệm thu (đủ 39 bài e2e)
+
+Các bài của pha 0, 1, 2, 4 và bộ ảnh chụp màn hình cần **vùng `/admin`**, nên chúng cần một tài
+khoản `ADMIN`. **Đừng dùng mật khẩu admin thật.** Tạo một tài khoản riêng chỉ để chạy test:
+
+1. Đăng nhập bằng tài khoản admin thật → `/admin/users` → **Thêm người dùng**: vai trò `ADMIN`,
+   tên đăng nhập `qc`, mật khẩu tạm ≥ 10 ký tự.
+2. Đăng xuất, **đăng nhập một lần bằng `qc`** và đổi mật khẩu — hệ thống bắt đổi ở lần đầu, mà bộ
+   e2e không qua được màn hình đó (`docs/12` §3).
+3. Điền vào `.env` ở gốc repo:
+
+   ```
+   E2E_ADMIN_USER=qc
+   E2E_ADMIN_PASSWORD=<mật khẩu đã đổi ở bước 2>
+   E2E_ADMIN_NEW_PASSWORD=<một mật khẩu khác — chỉ bài pha 0 dùng, nó đổi mật khẩu thật>
+   E2E_CHANNEL=msedge
+   ```
+
+4. Web phải đang chạy (`pnpm dev` hoặc docker), rồi:
+
+   ```powershell
+   pnpm e2e:all
+   ```
+
+   Một file thôi: `pnpm --filter @mtct/web exec playwright test e2e/phase5-acceptance.spec.ts`.
+
+Bộ e2e đọc `.env` ở gốc repo, nên không cần đặt biến môi trường trong PowerShell nữa; nếu vẫn đặt
+(`$env:E2E_ADMIN_PASSWORD="…"`) thì biến của shell **thắng** giá trị trong file.
+
+> Sau khi chạy xong, bộ e2e để lại vài hồ sơ `Student` và tài khoản `me-*` do chính nó tạo. Dọn:
+> `pnpm db:clean-test-students` rồi `pnpm db:clean-test-parents` (cả hai chỉ in ra; thêm `--apply`
+> mới xoá thật, và cả hai **giữ lại** bất cứ thứ gì còn nối tới Mai Thy hoặc Chí Thanh).
 
 Lệnh khác: `node scripts/sample-exercises.mjs pha-2-dot-1 20` (rút lại đúng 20 bài mẫu QC chấm), `pnpm db:studio` (xem bảng), `pnpm content:validate` (kiểm mọi file `content/`), `pnpm skills:validate` (chỉ bản đồ kỹ năng + khung bài học + bộ mã lỗi), `pnpm decay:run [--force]` (chạy tay job quên kiến thức hằng đêm), `pnpm content:import [--dry-run]` / `pnpm content:stats` / `pnpm content:export --skill <mã>` (ngân hàng bài), `pnpm inbox:pull|validate|push` (hàng chờ AI), `pnpm tts:voices` (liệt kê giọng Azure), `pnpm tts:smoke "câu"` (nghe thử một câu).
 

@@ -32,6 +32,8 @@
     "eval:intake": "dotenv -e ../../.env -- tsx src/cli/eval-intake.ts",
     "school-year": "dotenv -e ../../.env -- tsx src/cli/school-year.ts",
     "clean-test-students": "dotenv -e ../../.env -- tsx src/cli/clean-test-students.ts",
+    "clean-test-parents": "dotenv -e ../../.env -- tsx src/cli/clean-test-parents.ts",
+    "reset-learning": "dotenv -e ../../.env -- tsx src/cli/reset-learning.ts",
     "tts:voices": "dotenv -e ../../.env -- tsx src/cli/tts-voices.ts",
     "tts:smoke": "dotenv -e ../../.env -- tsx src/cli/tts-smoke.ts"
   },

@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { applyFailure, applySuccess, ipThrottled, isLocked, lockRemainingSeconds } from "./lockout";
+import {
+  applyFailure,
+  applySuccess,
+  ipThrottled,
+  isLocked,
+  type LockState,
+  lockRemainingSeconds,
+} from "./lockout";
 
 const t0 = new Date("2026-09-10T20:00:00Z");
 
@@ -18,7 +25,7 @@ describe("lockout policy (docs/12 §6)", () => {
   });
 
   it("unlocks after the window and restarts the counter", () => {
-    let state = { failedCount: 5, lockedUntil: new Date(t0.getTime() + 600_000) };
+    let state: LockState = { failedCount: 5, lockedUntil: new Date(t0.getTime() + 600_000) };
     const later = new Date(t0.getTime() + 601_000);
     expect(isLocked(state, later)).toBe(false);
     state = applyFailure(state, later);

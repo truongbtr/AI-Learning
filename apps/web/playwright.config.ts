@@ -1,4 +1,12 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { defineConfig, devices } from "@playwright/test";
+import { config as loadEnv } from "dotenv";
+
+// The repo-root .env holds the E2E_* credentials (docs/08 pha 8 việc 0.5). Real environment
+// variables win, so `$env:E2E_ADMIN_PASSWORD="…"` in the shell still overrides the file.
+const rootEnv = join(__dirname, "..", "..", ".env");
+if (existsSync(rootEnv)) loadEnv({ path: rootEnv, override: false, quiet: true });
 
 /**
  * Smoke e2e (docs/08 pha 0): opens /login against a running server.
