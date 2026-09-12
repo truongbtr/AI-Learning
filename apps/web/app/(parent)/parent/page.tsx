@@ -1,4 +1,5 @@
 import {
+  chatBatchCards,
   diaryTonight,
   homeworkForToday,
   inboxCounts,
@@ -10,6 +11,7 @@ import {
 import { Inbox } from "lucide-react";
 import Link from "next/link";
 import { PageHeader } from "@/components/admin/page-header";
+import { ChatBatchCards } from "@/components/parent/chat-batch-card";
 import { ChildCard } from "@/components/parent/child-card";
 import { DiaryTonightCard } from "@/components/parent/diary-tonight-card";
 import { Card, CardTitle } from "@/components/ui/card";
@@ -67,6 +69,20 @@ export default async function ParentHomePage({
     user.role === "ADMIN" ? null : students.map((s) => s.id),
   );
 
+  // What Claude chat sent in from the phone tonight, with the undo on it (docs/13 §7.3), and any
+  // card an ops request left behind (docs/14 §4).
+  const batches = await chatBatchCards(prisma, {
+    studentIds: user.role === "ADMIN" ? null : students.map((s) => s.id),
+  });
+  const notices = await prisma.parentNotice.findMany({
+    where: {
+      dismissedAt: null,
+      OR: [{ studentId: null }, { studentId: { in: students.map((s) => s.id) } }],
+    },
+    orderBy: { createdAt: "desc" },
+    take: 4,
+  });
+
   // What the teacher set, and the non-school notes that only a grown-up should see (docs/11 §6.2).
   const homework: HomeworkRow[] = [];
   for (const student of students) {
@@ -113,6 +129,32 @@ export default async function ParentHomePage({
           Bạn chưa được gắn với bé đó. Nhờ admin gắn trong Quản lý người dùng.
         </p>
       ) : null}
+
+      {notices.length > 0 ? (
+        <div className="flex flex-col gap-2" data-testid="parent-notices">
+          {notices.map((notice) => (
+            <Card
+              key={notice.id}
+              className={
+                notice.tone === "warn"
+                  ? "border-warning-200 bg-warning-50"
+                  : "border-brand-200 bg-brand-50/40"
+              }
+            >
+              <CardTitle>{notice.title}</CardTitle>
+              {notice.body ? <p className="mt-1 text-sm text-ink-600">{notice.body}</p> : null}
+            </Card>
+          ))}
+        </div>
+      ) : null}
+
+      <ChatBatchCards
+        cards={batches.map((b) => ({
+          ...b,
+          appliedAt: b.appliedAt.toISOString(),
+          undoneAt: b.undoneAt?.toISOString() ?? null,
+        }))}
+      />
 
       <DiaryTonightCard
         className={className}

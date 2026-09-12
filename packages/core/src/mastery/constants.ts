@@ -19,6 +19,10 @@ export const SOURCE_WEIGHT: Record<EvidenceSource, number> = {
   EXTERNAL_REPORT: 0.7,
   PARENT_NOTE: 0.5,
   VOICE_TUTOR: 0.3,
+  // A photo read by Claude chat on the phone (docs/13 §7.3). The same page, read by the same kind
+  // of reader as INTAKE_PHOTO, so it carries the same weight (0.8). What differs is that it lands
+  // without waiting for a parent — and that is answered by the undo button, not by discounting it.
+  CHAT_INTAKE: 0.8,
   PARENT_OVERRIDE: 1.0, // not used as a step; the value is set directly
 };
 

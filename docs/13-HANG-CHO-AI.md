@@ -102,3 +102,66 @@ Nếu bật worker tự động thì các rào sau là **bắt buộc, không th
 | Gia sư giọng nói (nếu có) | giới hạn cứng 20 câu/ngày/bé, mỗi câu ≤ 2 câu trả lời, lưu hội thoại cho ba mẹ xem |
 
 Ước lượng khi bật đủ rào: ≤ 1–2 USD/tháng cho hai bé. Không có rào: một lỗi lập trình có thể tiêu vài chục USD trong một đêm.
+
+---
+
+## 7. Chế độ C — Claude chat đọc ảnh hằng ngày (chốt 12/09/2026, sửa cùng ngày)
+
+Chủ dự án chụp ảnh bài vở mỗi tối và đưa thẳng vào phiên Claude chat. **Yêu cầu số một: chủ dự án
+không phải gõ lệnh nào.** Chỉ gửi ảnh, dán nhật ký lớp, rồi đọc lại vài dòng chat tóm tắt.
+
+### 7.1 Đường chính — API nội bộ
+
+Chat gọi thẳng API của web qua tên miền Cloudflare Tunnel (pha 8 việc 1).
+
+**Tên miền đã có (12/09/2026): `https://edu.medifa.vn`** — chủ dự án đã trỏ qua Cloudflare Tunnel về
+`localhost:5000` trên máy chủ. ⚠️ Web của dự án mặc định chạy cổng 3000: hoặc đổi web sang **5000**,
+hoặc sửa cấu hình tunnel về 3000 — phải khớp, ghi rõ trong `docs/VAN-HANH.md`.
+
+- `POST /api/internal/intake` — thân là `IntakeExtraction` kèm ảnh đã tải lên trước qua
+  `POST /api/internal/intake/photo`; `POST /api/internal/diary` cho nhật ký lớp.
+- Xác thực bằng `Authorization: Bearer $INTERNAL_API_TOKEN` (biến đã có từ pha 1), **không** dùng phiên
+  đăng nhập người dùng. Nhánh `/api/internal/*` được Cloudflare cho qua Access nhưng chặn bằng token,
+  giới hạn tần suất, và **chỉ nhận các thao tác ghi bằng chứng học** — không chạm `User`, `.env`,
+  không xoá gì.
+- Chủ dự án làm **một lần**: thêm tên miền vào danh sách mạng cho phép của tài khoản Claude, và đặt
+  `INTERNAL_API_TOKEN` vào `.env`.
+
+### 7.2 Đường lùi — thư mục + job tự nhặt
+
+> **Lưu ý:** chủ dự án chụp bằng app Claude **trên điện thoại** và tải thẳng vào phiên chat ở đó. Phiên
+> trên điện thoại **không có cầu nối tới máy chủ**, nên đường lùi này chỉ dùng được khi làm từ máy tính.
+> Vì vậy §7.1 (API) là **đường duy nhất cho nhịp hằng ngày**, không phải tuỳ chọn: tên miền phải nằm
+> trong danh sách mạng cho phép và `INTERNAL_API_TOKEN` phải sống.
+
+Khi chat không gọi được API (mạng, tunnel, token hết hạn): chat viết `result.json` vào
+`inbox/<ngày>/<task>/` qua cầu nối; job `intake.watch` trên máy chủ quét mỗi phút, tự
+`validate` + `push`. Vẫn không cần chủ dự án gõ gì. Job ghi log và báo lỗi lên `/admin/inbox`.
+
+### 7.3 Duyệt: áp luôn, hoàn tác được
+
+- Mặc định **áp ngay**, không chặn chờ duyệt. Mỗi lô mang `batchId` và `source=CHAT_INTAKE`.
+- Dashboard ba mẹ hiện một thẻ mỗi tối: đọc mấy ảnh, ghi nhận gì, **nút "Hoàn tác lô này"** một chạm
+  (gỡ đúng các `Evidence` của lô và tính lại mastery).
+- **Ngoại lệ giữ lại chờ người:** item có `confidence < 0.6`, hoặc không phân biệt được `BLANK` với
+  sai, hoặc kỹ năng không nằm trong `skillCandidates`. Đây là chỗ máy hay sai và sai thì hại nhất.
+- Trọng số bằng chứng từ chế độ này: như `INTAKE_PHOTO` (0,8).
+
+### 7.4 Ràng buộc không đổi
+
+- Chat **chỉ chọn mã kỹ năng có trong ngữ cảnh** API trả về (`GET /api/internal/context?student=&date=`:
+  ứng viên kỹ năng, bài lớp 3 ngày gần nhất, bộ mã lỗi, 10 ví dụ ba mẹ đã sửa). Không có thì để `null`
+  và đánh dấu cần người xem — không bịa. Eval `intake-v1`: tự đoán đúng 33 %, có ngữ cảnh 77,8 %.
+- `BLANK` ≠ sai, luôn luôn.
+- Nickname (`thy`, `thanh`), không tên đầy đủ, không ngày sinh.
+- **Hệ thống không phụ thuộc vào chat**: tối nào không có ảnh thì planner tự quyết (chế độ B).
+
+### 7.5 Việc cho developer
+
+- Ba endpoint `/api/internal/{context,intake,diary}` + upload ảnh, Zod kiểm định, token bearer, giới
+  hạn tần suất, log mọi lần gọi vào `/admin/inbox`.
+- `batchId`, `source=CHAT_INTAKE`, và **hoàn tác lô** (gỡ Evidence + tính lại mastery) — có test.
+- Job `intake.watch` cho đường lùi §7.2.
+- Validator từ chối: mã kỹ năng ngoài `skillCandidates`, mã lỗi ngoài `error-taxonomy.json`, thiếu
+  trường bắt buộc — báo rõ sai ở đâu.
+- Ảnh gốc giữ trong `intake-inbox/`, không lên git.

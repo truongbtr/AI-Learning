@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "createdBy": "claude-chat",
+  "createdAt": "2026-09-12T21:10:00+07:00",
+  "reason": "Ví dụ — đổi .json.example thành .json rồi chạy pnpm ops:apply. Thy sai nham_b_d 4 lần trong 9 ngày, thang rèn đang đứng ở bậc 2.",
+  "ops": [
+    {
+      "type": "planHint",
+      "student": "thy",
+      "focusSkills": ["VIET.HV.AM_B"],
+      "focusErrors": ["nham_b_d"],
+      "validDays": 3,
+      "note": "ưu tiên bài đối chiếu b/d"
+    },
+    {
+      "type": "noteForParent",
+      "student": "thy",
+      "title": "Tuần này tập trung b/d",
+      "body": "Ba mẹ đọc cùng con 2 phút mỗi tối, chỉ hai chữ b và d.",
+      "tone": "info"
+    }
+  ]
+}

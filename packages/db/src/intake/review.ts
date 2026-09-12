@@ -184,7 +184,10 @@ export async function approveIntakeResult(
       continue;
     }
     const evidence = evidenceFor(item.outcome, blankReason);
-    if (!evidence || item.skillCodesFinal.length === 0) {
+    // An item that already produced evidence is left alone. This is what lets a chat batch apply
+    // the clear half of a page now (docs/13 §7.3) and a parent approve the held half later without
+    // the first half counting twice.
+    if (!evidence || item.skillCodesFinal.length === 0 || item.evidenceIds.length > 0) {
       out.skipped++;
       continue;
     }
@@ -241,7 +244,7 @@ export async function rejectIntakeResult(
  * A screenshot of Raz-Kids or NAVIO: the number on it becomes `ExternalProgress`, and a reading
  * level also moves the matching `ENL.RF.FLUENCY_LEVEL_*` skill (docs/05, FR-INT-02).
  */
-async function recordExternals(
+export async function recordExternals(
   db: Db,
   resultId: string,
   studentId: string,

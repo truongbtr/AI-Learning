@@ -49,6 +49,8 @@ export interface CommitEvidenceInput {
   attemptId?: string | null;
   intakeItemId?: string | null;
   createdById?: string | null;
+  /** The chat batch this came in with (docs/13 §7.3) — what "Hoàn tác lô này" deletes by. */
+  chatBatchId?: string | null;
 }
 
 const KNOWN_ERROR_CODE_TTL_MS = 60_000;
@@ -112,7 +114,8 @@ async function loadCorrectDayKeys(
   return [...new Set(rows.map((r) => dayKey(r.observedAt)))].sort();
 }
 
-async function loadTrendPoints(tx: Tx | Db, studentId: string, skillId: string, now: Date) {
+/** History points a 14-day trend is measured against. Shared with the undo recompute. */
+export async function loadTrendPoints(tx: Tx | Db, studentId: string, skillId: string, now: Date) {
   const since = new Date(now.getTime() - 15 * DAY_MS);
   const recent = await tx.masteryHistory.findMany({
     where: { studentId, skillId, at: { gte: since } },
@@ -219,6 +222,7 @@ export async function commitEvidence(
         observedAt,
         attemptId: input.attemptId ?? null,
         intakeItemId: input.intakeItemId ?? null,
+        chatBatchId: input.chatBatchId ?? null,
         createdById: input.createdById ?? null,
       },
     });

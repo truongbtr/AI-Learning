@@ -73,10 +73,15 @@ services:
       DATABASE_HOST: postgres
       FILE_ROOT: /data/files
       INBOX_ROOT: /data/inbox
+      # The operations snapshot (docs/14 §3) is written to the repository folder on the host, not to
+      # a Docker volume: the whole point is that Claude chat reaching the project folder and Claude
+      # Code in the repo read the same files. In a volume nobody would ever see them.
+      OPS_ROOT: /data/ops
       TZ: Asia/Ho_Chi_Minh
     volumes:
       - files:/data/files
       - inbox:/data/inbox
+      - ../ops:/data/ops
     depends_on:
       postgres:
         condition: service_healthy

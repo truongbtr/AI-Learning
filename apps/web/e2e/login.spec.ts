@@ -33,5 +33,9 @@ test("/api/health answers with db status", async ({ request }) => {
   const res = await request.get("/api/health");
   expect(res.ok()).toBeTruthy();
   const body = await res.json();
-  expect(body.db).toBe("ok");
+  // Phase 8 turned this from the string "ok" into the card /admin/health draws; the assertion
+  // stayed behind and had been red ever since.
+  expect(body.status).toBe("ok");
+  expect(body.db.ok).toBe(true);
+  expect(body.db.migrations).toBeGreaterThan(0);
 });

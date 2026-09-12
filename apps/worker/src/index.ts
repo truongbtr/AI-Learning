@@ -3,6 +3,7 @@
  *  - `ping` every minute → Setting["worker.lastPing"], read by /api/health (<= 6 min = ok).
  *  - `mastery.decay` at 02:30 Vietnam time (docs/04 §3.2); `pnpm decay:run` does it by hand.
  *  - `planner.daily` at 04:00 Vietnam time (docs/04 §4); `pnpm plan:run` does it by hand.
+ *  - `ops.export` at 04:30 (docs/14 §3); `pnpm ops:export` does it by hand.
  */
 import { existsSync } from "node:fs";
 import { join } from "node:path";
@@ -16,6 +17,7 @@ import {
   runIntakePreprocessJob,
 } from "./jobs/intake-preprocess";
 import { MASTERY_DECAY_CRON, MASTERY_DECAY_QUEUE, runMasteryDecayJob } from "./jobs/mastery-decay";
+import { OPS_EXPORT_CRON, OPS_EXPORT_QUEUE, runOpsExportJob } from "./jobs/ops-export";
 import { PLANNER_DAILY_CRON, PLANNER_DAILY_QUEUE, runPlannerDailyJob } from "./jobs/planner-daily";
 
 const rootEnv = join(__dirname, "..", "..", "..", ".env");
@@ -71,6 +73,15 @@ async function main() {
     { queue: PLANNER_DAILY_QUEUE, cron: PLANNER_DAILY_CRON, tz },
     "daily quest planning scheduled",
   );
+
+  // The operations snapshot, half an hour after the planner (docs/14 §3): Claude chat reads these
+  // files and cannot reach the database any other way.
+  await boss.createQueue(OPS_EXPORT_QUEUE);
+  await boss.work(OPS_EXPORT_QUEUE, async () => {
+    await runOpsExportJob(prisma, log);
+  });
+  await boss.schedule(OPS_EXPORT_QUEUE, OPS_EXPORT_CRON, {}, { tz });
+  log.info({ queue: OPS_EXPORT_QUEUE, cron: OPS_EXPORT_CRON, tz }, "ops export scheduled");
 
   // Photos of schoolwork: straighten, shrink, hash, hand to the AI queue (docs/07 §2, ADR-10).
   await boss.createQueue(INTAKE_PREPROCESS_QUEUE);

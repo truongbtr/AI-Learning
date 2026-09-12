@@ -1,6 +1,7 @@
 import { PrismaClient } from "../generated/client";
 
 export * from "../generated/client";
+export * from "./chat";
 export * from "./content/export";
 export * from "./content/import";
 export * from "./content/stats";
@@ -11,10 +12,9 @@ export * from "./maintenance/export-student";
 export * from "./maintenance/reset-learning";
 export * from "./maintenance/test-parents";
 export * from "./maintenance/test-students";
+export * from "./mastery/recompute";
 export * from "./mastery/service";
-export * from "./ops/health";
-export * from "./ops/trial";
-export * from "./ops/tts-usage";
+export * from "./ops";
 export * from "./parent";
 export * from "./session";
 export * from "./skills/import";

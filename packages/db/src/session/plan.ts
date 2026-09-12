@@ -9,6 +9,7 @@ import {
   vnDayDate,
 } from "@mtct/core";
 import type { Prisma, PrismaClient } from "../../generated/client";
+import { PLANNER_MIX_SETTING } from "../ops/apply";
 import { activePlanSkills } from "../parent/plans";
 import { assessmentState, planAssessment } from "./assess";
 
@@ -146,10 +147,17 @@ export async function plannerSnapshot(
     : [];
   const avoid = new Set(hint?.avoidSkills ?? []);
 
+  // The focus/review split, when an ops request has moved it off the 50/30 of docs/04 §4
+  // (docs/14 §4 setPlannerWeight). The planner clamps review to MIN_REVIEW_SHARE itself, so a
+  // stale or hand-edited Setting row cannot take the review rhythm below 30%.
+  const mixRow = await db.setting.findUnique({ where: { key: PLANNER_MIX_SETTING } });
+  const mix = (mixRow?.value ?? null) as { focus?: number; review?: number } | null;
+
   return {
     date,
     dailyMinutes: Math.round((settings.dailyMinutes ?? 15) * (tiredYesterday ? 0.8 : 1)),
     difficultyBias: settings.difficultyBias ?? 0,
+    mix: mix ?? undefined,
     skills: avoid.size > 0 ? snapshots.filter((s) => !avoid.has(s.code)) : snapshots,
     lessonSkills,
     planSkills: [...new Set([...(plan?.skillCodes ?? []), ...hintSkills])],

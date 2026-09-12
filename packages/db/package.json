@@ -40,7 +40,9 @@
     "usage": "dotenv -e ../../.env -- tsx src/cli/usage.ts",
     "trial": "dotenv -e ../../.env -- tsx src/cli/trial.ts",
     "tts:voices": "dotenv -e ../../.env -- tsx src/cli/tts-voices.ts",
-    "tts:smoke": "dotenv -e ../../.env -- tsx src/cli/tts-smoke.ts"
+    "tts:smoke": "dotenv -e ../../.env -- tsx src/cli/tts-smoke.ts",
+    "ops:export": "dotenv -e ../../.env -- tsx src/cli/ops-export.ts",
+    "ops:apply": "dotenv -e ../../.env -- tsx src/cli/ops-apply.ts"
   },
   "dependencies": {
     "@mtct/content": "workspace:*",

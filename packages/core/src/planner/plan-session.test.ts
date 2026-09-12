@@ -3,8 +3,11 @@ import {
   adaptDifficulty,
   difficultyFor,
   isWeak,
+  MIN_REVIEW_SHARE,
+  MIX_FOCUS,
   MIX_REVIEW,
   PLAN_SHARE,
+  plannerMix,
   planSession,
   slotCount,
   timetableRank,
@@ -386,5 +389,69 @@ describe("an approved plan owns its share of the whole session, homework include
       Math.min(reviews(withoutPlan), Math.floor(withPlan.slots.length * MIX_REVIEW)),
     );
     expect(withPlan.log.join("\n")).toMatch(/giữ \d+\/\d+ bài ôn/);
+  });
+});
+
+describe("the review floor an ops request cannot get under (docs/14 sec. 4)", () => {
+  it("plannerMix clamps review to 30% however low it is asked to go", () => {
+    expect(plannerMix()).toEqual({ focus: MIX_FOCUS, review: MIX_REVIEW });
+    expect(plannerMix({ focus: 0.7, review: 0.2 }).review).toBe(MIN_REVIEW_SHARE);
+    expect(plannerMix({ review: 0 }).review).toBe(MIN_REVIEW_SHARE);
+    // Focus never eats into what review was just guaranteed.
+    expect(plannerMix({ focus: 0.9, review: 0.3 })).toEqual({ focus: 0.7, review: 0.3 });
+  });
+
+  it("a session planned with a 20% mix still keeps the 30% of review slots", () => {
+    const due = (code: string, overdueDays: number): SkillSnapshot =>
+      skill({
+        code,
+        subject: "ESL",
+        mastery: 65,
+        status: "SOLID",
+        nextReviewAt: new Date("2026-09-10T00:00:00+07:00"),
+        overdueDays,
+      });
+    const input = base({
+      skills: [
+        ...(base().skills as SkillSnapshot[]),
+        due("ESL.PH.A", 6),
+        due("ESL.PH.B", 5),
+        due("ESL.PH.C", 4),
+        due("ESL.PH.D", 3),
+      ],
+    });
+    const floored = planSession({ ...input, mix: { focus: 0.7, review: 0.2 } });
+    const normal = planSession(input);
+    const reviews = (p: ReturnType<typeof planSession>) =>
+      p.slots.filter((s) => s.kind === "review").length;
+    // Asking for 20% buys nothing: the clamp is in the planner, not in the caller.
+    expect(reviews(floored)).toBe(reviews(normal));
+  });
+
+  it("a mix that raises review above the floor is honoured", () => {
+    const due = (code: string, overdueDays: number): SkillSnapshot =>
+      skill({
+        code,
+        subject: "ESL",
+        mastery: 65,
+        status: "SOLID",
+        nextReviewAt: new Date("2026-09-10T00:00:00+07:00"),
+        overdueDays,
+      });
+    const input = base({
+      skills: [
+        ...(base().skills as SkillSnapshot[]),
+        due("ESL.PH.A", 6),
+        due("ESL.PH.B", 5),
+        due("ESL.PH.C", 4),
+        due("ESL.PH.D", 3),
+        due("ESL.PH.E", 2),
+      ],
+    });
+    const more = planSession({ ...input, mix: { focus: 0.3, review: 0.6 } });
+    const normal = planSession(input);
+    const reviews = (p: ReturnType<typeof planSession>) =>
+      p.slots.filter((s) => s.kind === "review").length;
+    expect(reviews(more)).toBeGreaterThan(reviews(normal));
   });
 });

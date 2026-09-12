@@ -44,6 +44,8 @@
     "db:assess": "pnpm --filter @mtct/db run assess",
     "db:usage": "pnpm --filter @mtct/db run usage",
     "db:trial": "pnpm --filter @mtct/db run trial",
+    "ops:export": "pnpm --filter @mtct/db run ops:export",
+    "ops:apply": "pnpm --filter @mtct/db run ops:apply",
     "tts:voices": "pnpm --filter @mtct/db run tts:voices",
     "tts:smoke": "pnpm --filter @mtct/db run tts:smoke",
     "art:build": "node scripts/art-build/build.mjs",

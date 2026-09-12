@@ -35,6 +35,27 @@ export const MIX_FOCUS = 0.5;
 export const MIX_REVIEW = 0.3;
 
 /**
+ * The review share nothing is allowed to go below — not an approved weekly plan (see `PLAN_SHARE`),
+ * and not an operations request either (docs/14 §4, `setPlannerWeight`).
+ *
+ * docs/04 §4 puts review at 30% of the practice half and the owner reaffirmed it on 12/09/2026.
+ * The reason it lives here as a clamp rather than in the caller is that review pays off in
+ * November, when nobody is watching: whoever turns it down will not see what it cost for weeks, so
+ * the floor has to be enforced where the plan is actually built.
+ */
+export const MIN_REVIEW_SHARE = 0.3;
+
+/** The mix actually used: whatever was asked for, with review never under `MIN_REVIEW_SHARE`. */
+export function plannerMix(mix?: { focus?: number; review?: number }): {
+  focus: number;
+  review: number;
+} {
+  const review = Math.min(0.8, Math.max(MIN_REVIEW_SHARE, mix?.review ?? MIX_REVIEW));
+  const focus = Math.min(1 - review, Math.max(0, mix?.focus ?? MIX_FOCUS));
+  return { focus, review };
+}
+
+/**
  * How much of the evening an approved plan is guaranteed (docs/08 pha 5, tiêu chí 3).
  *
  * This was a half, and reaching a half meant spending review slots — ADR-18 §1 said so and said
@@ -218,9 +239,10 @@ export function planSession(input: PlannerInput): SessionPlan {
 
   // ── 3. the rest, split 50 / 30 / 20 (docs/04 §4 step 3) ───────────────────────────────────
   const left = Math.max(0, n - slots.length - 1); // one is kept for the finish
+  const mix = plannerMix(input.mix);
   const want = {
-    focus: Math.round(left * MIX_FOCUS),
-    review: Math.round(left * MIX_REVIEW),
+    focus: Math.round(left * mix.focus),
+    review: Math.round(left * mix.review),
     new: 0,
   };
   want.new = Math.max(0, left - want.focus - want.review);

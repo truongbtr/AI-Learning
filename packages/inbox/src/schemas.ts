@@ -193,6 +193,8 @@ export const intakeItemSchema = z.object({
   /** [x, y, w, h] in 0..1 of the source image, so the parent sees what was read. */
   bbox: z.tuple([z.number(), z.number(), z.number(), z.number()]).nullable().default(null),
   fileIndex: z.number().int().min(0).default(0),
+  /** The reader asking for a human on this question (docs/13 §7.3). */
+  needsParent: z.boolean().default(false),
 });
 
 /** A number read off a NAVIO or Kids A-Z screenshot (docs/05 §5, FR-INT-02). */
@@ -216,6 +218,8 @@ export const intakeExtractionSchema = z.object({
   items: z.array(intakeItemSchema).default([]),
   /** Numbers from a NAVIO / Kids A-Z screenshot; empty for ordinary schoolwork. */
   externals: z.array(externalProgressSchema).default([]),
+  /** The reader asking for a human over the whole page. */
+  needsParent: z.boolean().default(false),
 });
 export type IntakeExtraction = z.infer<typeof intakeExtractionSchema>;
 

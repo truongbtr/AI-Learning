@@ -2,6 +2,141 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 8b — 12/09/2026 — Cửa cho Claude chat và dữ liệu vận hành
+
+Trạng thái: **6/7 tiêu chí đạt và đã chạy thật qua `https://edu.medifa.vn`**; tiêu chí 3 (bấm nút
+"Hoàn tác lô này" trên web) chứng minh được ở tầng dữ liệu nhưng **cái bấm** vẫn chờ tài khoản test.
+1 commit, **chưa push**. `lint` sạch · **458 test đơn vị** (core 215, db 116, content 66, web 43,
+inbox 18) · `build` 4 gói xanh · **e2e 51 bài: 18 xanh, 33 skip, 0 đỏ**.
+
+> Từ tối nay anh chụp bài vở bằng app Claude trên điện thoại là xong — **không gõ lệnh nào**. Thẻ
+> hiện trên `/parent`, sai thì bấm "Hoàn tác lô này".
+
+### 1. Đã làm gì
+
+| Việc | Tóm tắt |
+|---|---|
+| 0 — tên hai chữ | `pnpm db:seed:dev` đã chạy: `/login` hiện **Mai Thy** và **Chí Thanh**. Không đụng gì khác của hai hồ sơ |
+| 1 — API nội bộ | 4 endpoint `/api/internal/{context, intake, intake/photo, diary}`, token bearer, giới hạn tần suất, log mọi lời gọi lên `/admin/inbox`, `batchId` + `source=CHAT_INTAKE` (0,8), thẻ tối nay + **nút hoàn tác** trên `/parent` |
+| 2 — dữ liệu vận hành | `pnpm ops:export` (11 CSV + `meta.json` + `SUMMARY.md` + `ops/context/`), tự chạy 04:30 sau planner; `pnpm ops:apply` in diff → chờ gật → áp → đường lùi + `CHANGELOG.md` |
+
+**Cửa vào là token, không phải phiên đăng nhập.** `/api/internal/*` **chỉ** nhận
+`Authorization: Bearer $INTERNAL_API_TOKEN`; không nhận cookie, không nhận cả phiên ADMIN. Lý do:
+điện thoại không tạo được phiên nào trong ba thứ đó, mà nhận phiên thì một tab bỏ quên trên iPad
+trong bếp cũng ghi được bằng chứng. Cloudflare Access cho nhánh này qua (docs/13 §7.1), nên token là
+khoá duy nhất — và mọi lời gọi, kể cả lần bị từ chối, nằm trong bảng mới ở `/admin/inbox`.
+
+**Áp luôn, nhưng ba chỗ thì không.** Máy đọc chữ viết tay của trẻ 6 tuổi sai nhiều nhất ở ba chỗ,
+và sai ở đó thì hại nhất, nên chúng **không tự áp**: `confidence < 0,6`; không phân biệt được ô
+trống với làm chưa đúng; kỹ năng không nằm trong danh sách ngữ cảnh máy chủ đã phát ra. Thêm hai
+chỗ nữa tôi chặn vì cùng loại rủi ro: ảnh ghi **tên bé khác**, và người đọc tự đánh dấu
+`needsParent` (kỹ năng `nap-bai-vo-edison` trên điện thoại được dạy đặt cờ này — trước khi sửa,
+máy chủ **bỏ qua** nó). Những câu bị giữ nằm trong `/parent/inbox` như ảnh vở bình thường, duyệt
+một chạm.
+
+**Hoàn tác là tính lại, không phải khôi phục ảnh chụp.** Nút "Hoàn tác lô này" xoá `Evidence` của lô
+rồi **dựng lại mastery từ bằng chứng còn lại** (`recomputeSkillMastery`). Khôi phục một bản chụp
+thì ít code hơn, nhưng nó sẽ xoá luôn thứ con làm *sau* lô đó — phiên lúc 8 giờ trong khi ảnh được
+đọc lúc 9 giờ. Mastery là hàm của bằng chứng (`04` §3.1), nên phát lại **chính là** giá trị cũ, và
+đúng dù trong lúc đó có chuyện gì xảy ra. Hai thứ không nằm trong `Evidence` được lấy lại từ chỗ
+chúng sống: `hintsUsed`/`tries` trên `Attempt`, và `weightFactor` chia ngược ra từ `weight`. Có test
+chứng minh sai số **dưới 10⁻⁶** trên một kỹ năng đã có lịch sử thật (một bài làm đúng một nửa, có
+gợi ý, ở lần thử thứ hai).
+
+**`ops/` — thư mục là API.** Claude chat trên điện thoại không nói chuyện được với Postgres, nên
+04:30 mỗi đêm máy chụp lại toàn bộ số liệu ra CSV phẳng: cùng thứ tự cột mỗi đêm để `diff` được hai
+ngày, dưới 5 MB/ngày (hiện 30 KB), giữ 90 ngày, **không có tên đầy đủ, không ngày sinh** — có test
+lấy tên thật trong DB rồi khẳng định không file nào chứa nó. Muốn đổi gì thì đặt một file JSON vào
+`ops/requests/`; `pnpm ops:apply` in **trước → sau → đường lùi** rồi hỏi `y/N`.
+
+**Sàn ôn 30% giờ có ba lớp khoá.** `setPlannerWeight` xin ôn 20% bị **từ chối ngay ở validator** kèm
+câu giải thích; nếu bằng cách nào đó vẫn lọt vào `Setting`, `plannerMix()` trong `packages/core`
+kẹp lại ở 30% khi dựng phiên. Lý do đáng ghi: phần ôn trả kết quả vào tháng 11, lúc không ai nhìn —
+nên nó phải được bảo vệ ở chỗ kế hoạch thật sự được dựng, không phải ở chỗ người ta nhớ ra.
+
+### 2. Cách chạy thử từng tiêu chí (PowerShell, tại gốc repo)
+
+```powershell
+$T = (Select-String .env -Pattern '^INTERNAL_API_TOKEN=(.*)$').Matches.Groups[1].Value.Trim()
+
+# 1. ngữ cảnh + 401
+curl.exe -s -o NUL -w "%{http_code}`n" "https://edu.medifa.vn/api/internal/context?student=thy"
+curl.exe -s -H "Authorization: Bearer $T" "https://edu.medifa.vn/api/internal/context?student=thy&date=2026-09-12"
+
+# 2+3+4. cả đường: đọc ngữ cảnh → đẩy kết quả → 400 khi mã lạ
+pnpm --filter @mtct/web exec playwright test e2e/phase8b-acceptance.spec.ts
+
+# 5. ảnh chụp vận hành
+pnpm ops:export ; notepad ops\state\SUMMARY.md
+
+# 6. tên hai chữ
+start https://edu.medifa.vn/login
+
+# 7. xanh hết
+pnpm lint ; pnpm test ; pnpm build ; pnpm e2e:all
+```
+
+| # | Tiêu chí | Kết quả |
+|---|---|---|
+| 1 | `context` trả 200 + skillCandidates; không token → 401 | **Đạt** — 200 với 32 ứng viên kỹ năng, 44 mã lỗi, 12 kỹ năng bài lớp 3 ngày gần nhất; không token và token sai đều **401**; bé không có → 404 |
+| 2 | Đẩy IntakeExtraction hợp lệ → Evidence, mastery đổi, thẻ hiện | **Đạt** — 3 câu → 3 `Evidence` `CHAT_INTAKE` trọng số 0,8, mastery `VMATH.SO.SO_SANH_1_10` **23,2 → 43,7**, thẻ có `canUndo` |
+| 3 | Bấm "Hoàn tác lô này" → Evidence biến mất, mastery về cũ | **Một nửa đạt** — cơ chế chạy thật: 3 → 0 bằng chứng, mastery **43,73 → 23,184** (đúng giá trị trước), lô sang `UNDONE`, bấm lần hai không đổi gì. **Cái bấm trên web chưa chạy được** vì chưa có tài khoản test — bài e2e đã viết sẵn, `skip` cho tới khi có |
+| 4 | Mã kỹ năng lạ → 400 kèm chỗ sai | **Đạt** — ba ca đều 400: mã kỹ năng lạ (`items[0].skillCodes[0]`), mã lỗi lạ (`items[0].errorCode`), thiếu trường (`kind`) |
+| 5 | `ops:export` sinh đủ file, `SUMMARY.md` đọc hiểu trong 30 giây | **Đạt** — 13 file / 30 KB, `SUMMARY.md` một trang |
+| 6 | `/login` hiện "Mai Thy" và "Chí Thanh" | **Đạt** — đã xem trên máy |
+| 7 | lint/test/build xanh, e2e pha cũ vẫn xanh | **Đạt** — 458 test, build 4 gói, e2e **0 đỏ** (18 xanh / 33 skip). Sửa thêm một assert cũ đã đỏ từ pha 8: `login.spec` còn kiểm `body.db === "ok"` trong khi `/api/health` đã đổi thành thẻ `{ok, migrations, sizeMb}` |
+
+### 3. Hai việc tôi làm hỏng rồi sửa — **anh nên đọc mục này**
+
+**a) Bài e2e của tôi đè lên nhật ký lớp hôm nay.** Bài kiểm tra `POST /api/internal/diary` dán một
+đoạn giả vào **đúng lớp 1B3, đúng ngày hôm nay**, mà `saveClassDiary` ghi đè theo khoá (lớp, ngày) —
+nên bài đăng thật của cô sáng nay bị thay bằng đoạn giả, và bài cô giao buổi tối được dựng lại từ
+đoạn giả đó. **Đã khôi phục**: bản sao lưu 10:43 sáng nay còn nguyên văn bản gốc, tôi lấy ra và chạy
+lại bộ đọc — 3 bài học, 3 việc cô giao, 1 lời nhắc, `confidence` 1, không dòng nào đọc hụt, đúng như
+trước. Bài e2e nay dán vào lớp `E2E-8B` (lớp không bé nào thuộc về) nên không thể chạm vào ngày thật
+nữa. Đây cũng là lần đầu bản sao lưu hằng đêm **được dùng thật** thay vì diễn tập.
+
+**b) Chạy bộ e2e để lại dữ liệu học giả.** Bài pha 3 làm hết một phiên của `thy` — máy giờ ghi
+`thy: 1 ngày, 78 phút` cho hôm nay, và `pnpm db:trial` sẽ đếm đó là **một ngày đạt**. Mọi lô ảnh và
+bằng chứng `CHAT_INTAKE` do tôi tạo đã được gỡ sạch (`chatEvidence: 0`), nhưng phiên của pha 3 thì
+không phải của tôi mà xoá. **Đề nghị:** sáng hôm bắt đầu hai tuần chạy thật, chạy
+`pnpm db:reset-learning --apply` một lần cho sạch vạch xuất phát — lệnh này in số dòng nội dung
+trước/sau để chứng minh không đụng ngân hàng bài.
+
+### 4. Quyết định tôi tự lấy (không viết ADR, nhưng anh nên biết)
+
+1. **Không đọc ngữ cảnh thì lô bị giữ lại, không bị từ chối.** `docs/13` §7.4 nói chat *phải* đọc
+   `/context` trước. Từ chối thẳng sẽ làm mất một tối ảnh vì một lỗi quy trình; giữ lại thì không
+   mất gì mà vẫn không tự ghi. Máy chủ trả về `contextId` và một dòng nhắc gửi kèm.
+2. **Mã kỹ năng "lạ" chia làm hai.** Mã **không có trong bản đồ** → 400 (tiêu chí 4). Mã **có thật
+   nhưng không nằm trong danh sách ngữ cảnh đã phát ra** → giữ lại chờ người (docs/13 §7.3). Hai câu
+   trong đề bài nói như nhau nhưng là hai chuyện khác nhau: một cái là bịa, một cái là chọn lệch.
+3. **`setSessionLength` nhận 8–20 nhưng planner giữ 8–15.** `docs/14` §4 cho 8–20, `docs/04` §4 kẹp
+   một phiên trong 8–15 bài. Tôi giữ cả hai: yêu cầu 20 được nhận, diff nói rõ "sẽ thành 15".
+4. **Nhật ký lớp không có nút hoàn tác.** Một lô ảnh sinh bằng chứng nên gỡ được; nhật ký thì không
+   sinh bằng chứng nào về con — dán lại là sửa xong, và đó mới là thao tác đúng.
+5. **Giới hạn tần suất để trong bộ nhớ**, không thêm Redis: một tiến trình phục vụ cả nhà; khởi động
+   lại quên một phút đếm không phải rủi ro đáng một service.
+
+### 5. Tồn đọng
+
+1. **Tiêu chí 3 còn nửa cái bấm** — cần tài khoản `ADMIN` test (`qc`) hoặc một tài khoản `PARENT`
+   thật. Vẫn là món nợ thứ ba liên tiếp (pha 5, pha 8, pha 8b) và nó chặn **34 bài e2e**.
+2. **Chưa thử với ảnh thật.** Toàn bộ đường đi đã chạy thật qua tên miền, nhưng bằng JSON tôi tự
+   dựng. Tối đầu tiên anh gửi ảnh thật là lần đầu `POST /intake/photo` nhận một tấm ảnh thật.
+3. **20 ảnh vở mẫu của pha 4 vẫn nợ** — vẫn chặn nửa còn lại của eval đọc ảnh.
+4. **`ops/state/` không lên git** (có dữ liệu học của con); `ops/requests`, `ops/applied`,
+   `ops/rejected`, `ops/context`, `ops/CHANGELOG.md` thì theo git.
+5. **Ảnh chụp màn hình trong `docs/screens/` bị bộ e2e vẽ lại** — nay đã hiện đúng "Mai Thy" /
+   "Chí Thanh", nên tôi giữ bản mới.
+
+### 6. Câu hỏi cần chủ dự án quyết
+
+1. **Tài khoản test** (mục 5.1) — năm phút, và nó mở khoá 34 bài e2e.
+2. **Có chạy `pnpm db:reset-learning --apply` trước ngày 1 không?** (mục 3b). Tôi nghiêng về có.
+3. **Đã thêm `edu.medifa.vn` vào danh sách mạng cho phép của tài khoản Claude chưa?** Nếu chưa thì
+   app trên điện thoại sẽ báo bị chặn ở tầng mạng, không phải lỗi máy chủ.
+
 ## Pha 8 — 12/09/2026 — Vận hành & nghiệm thu thực tế *(đang chạy: hai tuần dùng thật chưa bắt đầu)*
 
 Trạng thái: **hạ tầng xong, 4/7 tiêu chí đạt, 3 tiêu chí cần thời gian thật hoặc cần chủ dự án.**

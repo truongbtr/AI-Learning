@@ -55,6 +55,12 @@ export default auth(async (req) => {
   // (lib/auth/internal.ts) — CHILD and PARENT are refused there.
   if (pathname === "/api/evidence") return NextResponse.next();
 
+  // The door Claude chat comes in through (docs/13 §7.1). Cloudflare Access lets this branch past
+  // on purpose — the phone cannot answer an email code — and `INTERNAL_API_TOKEN` is what actually
+  // guards it, checked in every handler (lib/auth/internal.ts `requireInternalToken`). No cookie is
+  // involved, so the session check below would turn every call into a 401.
+  if (pathname.startsWith("/api/internal/")) return NextResponse.next();
+
   // Public: login page, Auth.js endpoints, health, and the web manifest — iOS fetches that one
   // before anybody has logged in, and a redirect to /login makes the icon uninstallable.
   if (

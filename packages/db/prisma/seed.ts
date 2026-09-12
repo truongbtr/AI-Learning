@@ -459,7 +459,7 @@ async function seedDevStudents() {
     {
       username: "thy",
       slug: "thy",
-      displayName: "Thy",
+      displayName: "Mai Thy",
       fullName: "Mai Thy",
       nickname: "Thy",
       avatarKey: "girl-1",
@@ -470,7 +470,7 @@ async function seedDevStudents() {
     {
       username: "thanh",
       slug: "thanh",
-      displayName: "Thanh",
+      displayName: "Chí Thanh",
       fullName: "Chí Thanh",
       nickname: "Thanh",
       avatarKey: "boy-1",
@@ -491,7 +491,7 @@ async function seedDevStudents() {
         pictureSetKey: DEFAULT_PICTURE_SET_KEY,
         isActive: true,
       },
-      update: {},
+      update: { displayName: s.displayName },
     });
     await prisma.student.upsert({
       where: { userId: user.id },

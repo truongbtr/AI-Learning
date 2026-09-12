@@ -72,6 +72,11 @@ export interface PlannerInput {
   /** Subjects on today's timetable, most important first. */
   todaySubjects?: Subject[];
   /**
+   * Focus / review shares for the practice half, when something has changed them from the 50/30
+   * of docs/04 §4 (an ops request, docs/14 §4). Review is clamped to `MIN_REVIEW_SHARE`.
+   */
+  mix?: { focus?: number; review?: number };
+  /**
    * Stations the database layer will put in front of this plan — the teacher's homework
    * (FR-LRN-07). The planner never builds them, but it has to count them: "half the session"
    * means half of what the child is handed, and homework is never displaced to make room.

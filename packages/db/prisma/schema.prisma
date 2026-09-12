@@ -57,20 +57,21 @@ model User {
   createdAt          DateTime  @default(now())
   updatedAt          DateTime  @updatedAt
 
-  student          Student?
-  guardianOf       StudentGuardian[]
-  loginAudits      LoginAudit[]
-  trustedDevices   TrustedDevice[]   @relation("TrustedDeviceUser")
-  approvedDevices  TrustedDevice[]   @relation("TrustedDeviceApprover")
-  intakeJobs       IntakeJob[]
-  reviewedResults  IntakeResult[]
-  evidences        Evidence[]
-  materials        Material[]
-  approvedPlans    Plan[]
-  conversations    Conversation[]
-  kidMails         KidMail[]
-  auditLogs        AuditLog[]
-  sentMessages     Message[]
+  student           Student?
+  guardianOf        StudentGuardian[]
+  loginAudits       LoginAudit[]
+  trustedDevices    TrustedDevice[]   @relation("TrustedDeviceUser")
+  approvedDevices   TrustedDevice[]   @relation("TrustedDeviceApprover")
+  intakeJobs        IntakeJob[]
+  reviewedResults   IntakeResult[]
+  evidences         Evidence[]
+  materials         Material[]
+  approvedPlans     Plan[]
+  conversations     Conversation[]
+  kidMails          KidMail[]
+  auditLogs         AuditLog[]
+  sentMessages      Message[]
+  undoneChatBatches ChatBatch[]
 }
 
 model LoginAudit {
@@ -121,32 +122,36 @@ model Student {
   createdAt  DateTime  @default(now())
   updatedAt  DateTime  @updatedAt
 
-  guardians          StudentGuardian[]
-  masteries          SkillMastery[]
-  errorStats         ErrorStat[]
-  remediationTracks  RemediationTrack[]
-  masteryHistories   MasteryHistory[]
-  evidences          Evidence[]
-  intakeJobs         IntakeJob[]
-  externalProgress   ExternalProgress[]
-  homeworks          Homework[]
-  sessions           Session[]
-  plans              Plan[]
-  planHints          PlanHint[]
-  reports            Report[]
-  streak             Streak?
-  badges             StudentBadge[]
-  starLedger         StarLedger[]
-  rewardGoals        RewardGoal[]
-  collectibles       StudentCollectible[]
-  pets               StudentPet[]
-  eggProgress        EggProgress[]
-  picturePieces      StudentPicturePiece[]
-  kidMails           KidMail[]
-  mascotMemories     MascotMemory[]
-  certificates       Certificate[]
-  conversations      Conversation[]
-  inboxItems         InboxItem[]
+  guardians         StudentGuardian[]
+  masteries         SkillMastery[]
+  errorStats        ErrorStat[]
+  remediationTracks RemediationTrack[]
+  masteryHistories  MasteryHistory[]
+  evidences         Evidence[]
+  intakeJobs        IntakeJob[]
+  externalProgress  ExternalProgress[]
+  homeworks         Homework[]
+  sessions          Session[]
+  plans             Plan[]
+  planHints         PlanHint[]
+  reports           Report[]
+  streak            Streak?
+  badges            StudentBadge[]
+  starLedger        StarLedger[]
+  rewardGoals       RewardGoal[]
+  collectibles      StudentCollectible[]
+  pets              StudentPet[]
+  eggProgress       EggProgress[]
+  picturePieces     StudentPicturePiece[]
+  kidMails          KidMail[]
+  mascotMemories    MascotMemory[]
+  certificates      Certificate[]
+  conversations     Conversation[]
+  inboxItems        InboxItem[]
+  chatBatches       ChatBatch[]
+  chatPhotos        ChatIntakePhoto[]
+  chatContexts      ChatContext[]
+  parentNotices     ParentNotice[]
 }
 
 model StudentGuardian {
@@ -184,29 +189,29 @@ enum SkillSource {
 }
 
 model Skill {
-  id                String      @id @default(cuid())
-  code              String      @unique // EM.OA.ADD10
+  id                String                   @id @default(cuid())
+  code              String                   @unique // EM.OA.ADD10
   subject           Subject
   strand            String
   nameVi            String
   nameEn            String
-  description       String      @default("")
+  description       String                   @default("")
   standardRef       String?
-  gradeLevel        String      @default("1") // K | 1 | 2
-  order             Int         @default(0)
+  gradeLevel        String                   @default("1") // K | 1 | 2
+  order             Int                      @default(0)
   expectedWeek      Int?
-  exerciseTypes     String[]    @default([])
-  difficultyMin     Int         @default(1)
-  difficultyMax     Int         @default(5)
-  relatedSkillCodes String[]    @default([])
+  exerciseTypes     String[]                 @default([])
+  difficultyMin     Int                      @default(1)
+  difficultyMax     Int                      @default(5)
+  relatedSkillCodes String[]                 @default([])
   /// Skills a 6-year-old mixes this one up with (b/d, s/x, have/has) — remediation rung 5 (ADR-13)
-  confusableWith    String[]    @default([])
-  isActive          Boolean     @default(true)
-  source            SkillSource @default(SEED)
+  confusableWith    String[]                 @default([])
+  isActive          Boolean                  @default(true)
+  source            SkillSource              @default(SEED)
   /// Full-text vector over code + names + description + strand, unaccented; kept by a trigger (ADR-12/13)
   searchVector      Unsupported("tsvector")?
-  createdAt         DateTime    @default(now())
-  updatedAt         DateTime    @updatedAt
+  createdAt         DateTime                 @default(now())
+  updatedAt         DateTime                 @updatedAt
 
   prerequisites     SkillPrerequisite[] @relation("SkillPrereqSkill")
   prerequisiteOf    SkillPrerequisite[] @relation("SkillPrereqPrerequisite")
@@ -287,6 +292,7 @@ enum EvidenceSource {
   PARENT_NOTE
   PARENT_OVERRIDE
   VOICE_TUTOR
+  CHAT_INTAKE
 }
 
 enum EvidenceOutcome {
@@ -384,6 +390,8 @@ model Evidence {
   attempt      Attempt?        @relation(fields: [attemptId], references: [id], onDelete: SetNull)
   intakeItemId String?
   intakeItem   IntakeItem?     @relation(fields: [intakeItemId], references: [id], onDelete: SetNull)
+  chatBatchId  String?
+  chatBatch    ChatBatch?      @relation(fields: [chatBatchId], references: [id], onDelete: SetNull)
   note         String?
   observedAt   DateTime        @default(now())
   createdById  String?
@@ -392,6 +400,7 @@ model Evidence {
   updatedAt    DateTime        @updatedAt
 
   @@index([studentId, skillId, observedAt(sort: Desc)])
+  @@index([chatBatchId])
 }
 
 // =====================================================================
@@ -440,9 +449,13 @@ enum ExternalPlatform {
 // docs/07 §2.2: a blank answer is never a wrong answer, but the two reasons for it mean very
 // different things — and the parent flips between them with one tap in P6.
 enum BlankReason {
-  /** Ran out of time — the blanks run to the end of the page. Barely counts as evidence. */
+  /**
+   * Ran out of time — the blanks run to the end of the page. Barely counts as evidence.
+   */
   NOT_FINISHED
-  /** Skipped in the middle of answered questions: probably did not know how. */
+  /**
+   * Skipped in the middle of answered questions: probably did not know how.
+   */
   DOES_NOT_KNOW
 }
 
@@ -457,7 +470,9 @@ model IntakeJob {
   subjectHint Subject?
   docTypeHint DocType?
   dateHint    DateTime?
-  /** One line the parent typed with the photos. */
+  /**
+   * One line the parent typed with the photos.
+   */
   note        String?
   files       Json         @default("[]") // IntakeFileRef[]
   error       String?
@@ -465,9 +480,9 @@ model IntakeJob {
   createdAt   DateTime     @default(now())
   updatedAt   DateTime     @updatedAt
 
-  results     IntakeResult[]
-  classDiary  ClassDiary[]
-  externals   ExternalProgress[]
+  results    IntakeResult[]
+  classDiary ClassDiary[]
+  externals  ExternalProgress[]
 
   @@index([status, createdAt])
 }
@@ -501,12 +516,16 @@ model IntakeItem {
   studentAnswer   String?
   expectedAnswer  String?
   outcome         IntakeItemOutcome @default(UNGRADED)
-  /** Only for outcome = BLANK (docs/07 §2.2). */
+  /**
+   * Only for outcome = BLANK (docs/07 §2.2).
+   */
   blankReason     BlankReason?
   errorCode       String?
   skillCodes      String[]          @default([])
   skillCodesFinal String[]          @default([])
-  /** What the parent changed in P6, kept as the few-shot examples of docs/07 §2.3. */
+  /**
+   * What the parent changed in P6, kept as the few-shot examples of docs/07 §2.3.
+   */
   editedByParent  Boolean           @default(false)
   bbox            Json?
   fileIndex       Int               @default(0)
@@ -642,9 +661,13 @@ model ClassDiary {
   sourceIntake   IntakeJob? @relation(fields: [sourceIntakeId], references: [id], onDelete: SetNull)
   parsedAt       DateTime?
   confidence     Float      @default(0)
-  /** Lines the pattern reader could not place; they go to the queue as DIARY_HARD (docs/13 §4). */
+  /**
+   * Lines the pattern reader could not place; they go to the queue as DIARY_HARD (docs/13 §4).
+   */
   unmatched      String[]   @default([])
-  /** A parent read what the pattern reader made of it and tapped "đúng rồi" (FR-INT-06). */
+  /**
+   * A parent read what the pattern reader made of it and tapped "đúng rồi" (FR-INT-06).
+   */
   confirmedAt    DateTime?
   confirmedById  String?
   createdAt      DateTime   @default(now())
@@ -918,16 +941,16 @@ model Plan {
 }
 
 model PlanItem {
-  id              String @id @default(cuid())
+  id              String  @id @default(cuid())
   planId          String
-  plan            Plan   @relation(fields: [planId], references: [id], onDelete: Cascade)
+  plan            Plan    @relation(fields: [planId], references: [id], onDelete: Cascade)
   skillId         String
-  skill           Skill  @relation(fields: [skillId], references: [id], onDelete: Cascade)
-  priority        Int    @default(3) // 1-5
+  skill           Skill   @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  priority        Int     @default(3) // 1-5
   reason          String?
-  targetMastery   Float  @default(70)
-  sessionsPlanned Int    @default(0)
-  sessionsDone    Int    @default(0)
+  targetMastery   Float   @default(70)
+  sessionsPlanned Int     @default(0)
+  sessionsDone    Int     @default(0)
 
   @@unique([planId, skillId])
 }
@@ -1424,4 +1447,137 @@ model AuditLog {
   at     DateTime @default(now())
 
   @@index([userId, at(sort: Desc)])
+}
+
+// =====================================================================
+// 2.12 Chế độ C — Claude chat đọc ảnh hằng ngày (docs/13 §7, pha 8b)
+//
+// Mẹ/ba chụp bài vở bằng app Claude trên điện thoại. Phiên chat ở đó không có cầu nối tới máy chủ
+// nên nó gọi `/api/internal/*` qua Cloudflare Tunnel. Mỗi tối là **một lô**: áp ngay, và hoàn tác
+// được bằng một chạm trên dashboard ba mẹ (docs/13 §7.3).
+// =====================================================================
+
+enum ChatBatchKind {
+  INTAKE
+  DIARY
+}
+
+enum ChatBatchStatus {
+  /// Mọi câu đã thành bằng chứng.
+  APPLIED
+  /// Có câu đã áp, có câu giữ lại chờ ba mẹ nhìn.
+  PARTIAL
+  /// Không áp gì — cả lô chờ người xem (confidence thấp, BLANK không rõ, kỹ năng lạ).
+  HELD
+  /// Ba mẹ đã bấm "Hoàn tác lô này".
+  UNDONE
+}
+
+model ChatBatch {
+  id        String          @id @default(cuid())
+  kind      ChatBatchKind   @default(INTAKE)
+  status    ChatBatchStatus @default(APPLIED)
+  studentId String?
+  student   Student?        @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  /// Ngày của bài vở (giờ Việt Nam), không phải giờ gửi.
+  date      DateTime?       @db.Date
+  /// Một câu cho ba mẹ đọc trên thẻ tối nay.
+  summary   String          @default("")
+  subject   Subject?
+  docType   DocType?
+
+  photoCount    Int      @default(0)
+  itemCount     Int      @default(0)
+  evidenceCount Int      @default(0)
+  heldCount     Int      @default(0)
+  /// Vì sao giữ lại, đã viết sẵn bằng tiếng Việt cho ba mẹ.
+  heldReasons   String[] @default([])
+  confidence    Float    @default(0)
+
+  /// IntakeResult:<id> | ClassDiary:<id>
+  resultRef       String?
+  /// Để mở đúng trang duyệt khi còn câu chờ người.
+  intakeResultId  String?
+  /// SkillMastery của những kỹ năng lô này chạm tới, **trước** khi áp — đường lùi (docs/14 §4).
+  masterySnapshot Json    @default("[]")
+  /// Thân yêu cầu đúng như chat gửi, để đối chiếu khi đọc sai.
+  raw             Json    @default("{}")
+
+  appliedAt  DateTime  @default(now())
+  undoneAt   DateTime?
+  undoneById String?
+  undoneBy   User?     @relation(fields: [undoneById], references: [id], onDelete: SetNull)
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  evidences Evidence[]
+
+  @@index([studentId, appliedAt(sort: Desc)])
+  @@index([status, appliedAt(sort: Desc)])
+}
+
+/// Ảnh chat tải lên trước khi gửi IntakeExtraction (`POST /api/internal/intake/photo`).
+model ChatIntakePhoto {
+  id        String   @id @default(cuid())
+  studentId String?
+  student   Student? @relation(fields: [studentId], references: [id], onDelete: SetNull)
+  /// Khoá trong FILE_ROOT — ảnh gốc giữ nguyên, không bao giờ sửa.
+  key       String
+  mime      String
+  bytes     Int      @default(0)
+  sha256    String
+  /// Lô đã dùng ảnh này (null = còn treo).
+  usedBy    String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt(sort: Desc)])
+}
+
+/// Ngữ cảnh `GET /api/internal/context` đã phát ra. Giữ lại để biết chat được mời chọn mã nào:
+/// mã ngoài danh sách này mà vẫn có trong bản đồ kỹ năng thì **giữ lại chờ người** (docs/13 §7.3).
+model ChatContext {
+  id         String   @id @default(cuid())
+  studentId  String?
+  student    Student? @relation(fields: [studentId], references: [id], onDelete: SetNull)
+  date       DateTime @db.Date
+  skillCodes String[] @default([])
+  createdAt  DateTime @default(now())
+
+  @@index([createdAt(sort: Desc)])
+}
+
+/// Mỗi lần gọi `/api/internal/*` — hiện trên /admin/inbox (docs/13 §7.5).
+model InternalApiCall {
+  id        String   @id @default(cuid())
+  route     String
+  method    String   @default("POST")
+  status    Int
+  studentId String?
+  batchId   String?
+  /// Địa chỉ gọi đến (Cloudflare gắn `cf-connecting-ip`).
+  ip        String?
+  bytes     Int      @default(0)
+  ms        Int      @default(0)
+  /// Một dòng tiếng Việt: đã ghi gì, hoặc từ chối vì sao.
+  note      String?
+  error     String?
+  at        DateTime @default(now())
+
+  @@index([at(sort: Desc)])
+}
+
+/// Thẻ nhắc trên dashboard ba mẹ, đặt được bằng `noteForParent` trong ops/requests (docs/14 §4).
+model ParentNotice {
+  id          String    @id @default(cuid())
+  studentId   String?
+  student     Student?  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  title       String
+  body        String    @default("")
+  tone        String    @default("info") // info | warn
+  createdBy   String    @default("ops")
+  dismissedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([dismissedAt, createdAt(sort: Desc)])
 }

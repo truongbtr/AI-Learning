@@ -11,7 +11,8 @@ export type EvidenceSource =
   | "EXTERNAL_REPORT"
   | "PARENT_NOTE"
   | "PARENT_OVERRIDE"
-  | "VOICE_TUTOR";
+  | "VOICE_TUTOR"
+  | "CHAT_INTAKE";
 
 export type EvidenceOutcome = "CORRECT" | "PARTIAL" | "INCORRECT" | "OBSERVED";
 

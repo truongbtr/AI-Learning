@@ -22,6 +22,8 @@
 | Chi phí và hạn mức | [§9](#9-chi-phí) |
 | Ba tối đầu của một bé mới | [§10](#10-ba-tối-đầu-phiên-chẩn-đoán) |
 | Việc hằng tuần | [§11](#11-việc-hằng-tuần) |
+| Chụp bài vở bằng app Claude trên điện thoại | [§12](#12-chụp-bài-vở-bằng-app-claude-trên-điện-thoại) |
+| Thư mục `ops/` — số liệu và cách nhờ đổi | [§13](#13-thư-mục-ops--số-liệu-và-cách-nhờ-đổi) |
 
 ---
 
@@ -470,6 +472,87 @@ Nếu bạn **đã biết rõ con đang ở đâu** và muốn bỏ qua: `pnpm p
 | Chủ nhật | Duyệt kế hoạch tuần | `/parent/<bé>/plan` |
 | Mỗi tuần | Liếc trang sức khoẻ | `/admin/health` |
 | Mỗi quý | Diễn tập khôi phục | `pwsh scripts/restore-drill.ps1` |
+
+---
+
+## 12. Chụp bài vở bằng app Claude trên điện thoại
+
+Đây là đường hằng ngày, và **anh không phải gõ lệnh nào** (docs/13 §7). Buổi tối:
+
+1. Mở app Claude trên điện thoại, chụp bài vở của con, gửi vào chat.
+2. Nói một câu kiểu *"bài của Thy tối nay"* (hoặc dán nguyên bài đăng Edi Parent của cô).
+3. Chat tự đọc ảnh rồi đẩy vào hệ thống qua `https://edu.medifa.vn/api/internal/*`.
+4. Mở `/parent` — **thẻ tối nay** hiện ngay: đọc mấy ảnh, ghi nhận gì, kỹ năng nào lên bao nhiêu.
+   Nếu thấy máy đọc sai thì bấm **"Hoàn tác lô này"**: bằng chứng của lô biến mất và điểm kỹ năng
+   quay về đúng giá trị trước đó.
+
+### Làm một lần, trước khi dùng
+
+| Việc | Ở đâu |
+|---|---|
+| Thêm `edu.medifa.vn` vào danh sách mạng cho phép của tài khoản Claude | cài đặt tài khoản Claude |
+| `INTERNAL_API_TOKEN` có giá trị trong `.env` (đã có, 43 ký tự) | `.env` trên máy chủ |
+| Nói cho phiên chat biết nó phải đọc ngữ cảnh trước | kỹ năng `nap-bai-vo-edison` đã cài sẵn |
+
+### Khi nào máy **không** tự ghi
+
+Ba trường hợp máy hay sai nhất thì nó **không** tự ghi, mà giữ lại cho anh xem (thẻ sẽ ghi rõ lý do):
+
+- máy đọc chưa chắc (`confidence` dưới 0,6);
+- không phân biệt được **ô trống** với **làm chưa đúng**;
+- kỹ năng nó chọn không nằm trong danh sách ngữ cảnh mà máy chủ đã phát ra.
+
+Những câu đó nằm trong `/parent/inbox` như ảnh vở bình thường, duyệt một chạm là xong.
+
+### Khi thẻ không hiện
+
+```powershell
+# 1. Máy chủ còn ra internet không?
+curl.exe https://edu.medifa.vn/api/health
+# 2. Token còn đúng không? (401 = token sai; 200 = ổn)
+curl.exe -H "Authorization: Bearer $env:INTERNAL_API_TOKEN" "https://edu.medifa.vn/api/internal/context?student=thy"
+```
+
+`/admin/inbox` có bảng **40 lời gọi nội bộ gần nhất**, kể cả lần bị từ chối và lý do — nhìn đó trước
+khi đoán.
+
+---
+
+## 13. Thư mục `ops/` — số liệu và cách nhờ đổi
+
+04:30 mỗi đêm máy tự chụp lại toàn bộ số liệu vận hành ra `ops/state/<ngày>/` (docs/14). Gọi tay
+bất cứ lúc nào:
+
+```powershell
+pnpm ops:export
+```
+
+| Muốn biết | Mở |
+|---|---|
+| Tuần này thế nào, có gì hỏng không | `ops/state/SUMMARY.md` — một trang, đọc 30 giây |
+| Bài nào con hay bỏ qua, bài nào ai cũng đúng / ai cũng sai | `ops/state/latest/exercise-health.csv` |
+| Kỹ năng nào chưa có bài | `ops/state/latest/content-coverage.csv` |
+| Con đang ở đâu từng kỹ năng | `ops/state/latest/mastery.csv` |
+
+Giữ 90 ngày, dưới 5 MB mỗi ngày, **chỉ có tên gọi ở nhà** (`thy`, `thanh`) — không tên đầy đủ,
+không ngày sinh. Thư mục này không lên git.
+
+### Nhờ Claude đổi một thứ gì
+
+Claude (Code hay chat) **không sửa thẳng cơ sở dữ liệu**. Nó đặt một file yêu cầu vào
+`ops/requests/`, rồi anh chạy:
+
+```powershell
+pnpm ops:apply
+```
+
+Lệnh in ra **trước → sau → đường lùi** của từng thay đổi rồi hỏi `y/N`. Gật thì áp, ghi kết quả vào
+`ops/applied/<ngày>/` và một dòng vào `ops/CHANGELOG.md`. Không gật thì không có gì xảy ra. Xem thử
+mà chưa muốn quyết: `pnpm ops:apply --dry-run`.
+
+**Không yêu cầu nào chạm được vào dữ liệu học của con** (`Evidence`, `Attempt`, `Session`,
+`SkillMastery`) hay vào tài khoản (`User`) — file nào nhắc tới chúng bị từ chối cả file. Sửa nhãn
+của con thì ba mẹ làm trên web, có ghi vết.
 
 ---
 
