@@ -1,0 +1,1945 @@
+{
+  "skillCode": "VIET.HV.AM_H_L",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B12"],
+  "note": "Bài 12: H h, L l. Tới đây lớp đã có 14 con chữ, nên câu đọc to bắt đầu dài ra được — 'hổ ở bờ hồ' là câu thật của bài.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-amhl-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm h?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hồ"
+        },
+        {
+          "id": "b",
+          "text": "hò",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "ba"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm h?"],
+      "explanation": "Tiếng \"hồ\" có âm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-amhl-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm h nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hỏ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "hổ"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm h thôi."],
+      "explanation": "Tiếng \"hổ\" có âm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amhl-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm l?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "bà"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ âm l viết thế nào không?"],
+      "explanation": "Tiếng \"lá\" có âm l.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-amhl-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm l?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lê"
+        },
+        {
+          "id": "b",
+          "text": "le",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "bí"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"lê\" có âm l.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng có âm l."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lợ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "lọ"
+        },
+        {
+          "id": "c",
+          "text": "bà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Tiếng \"lọ\" có âm l.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amhl-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba ô, ô nào có âm l?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bi",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "bà"
+        },
+        {
+          "id": "c",
+          "text": "li"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tìm con chữ của âm l trong từng ô nhé!"],
+      "explanation": "Tiếng \"li\" có âm l.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm h?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hè"
+        },
+        {
+          "id": "b",
+          "text": "hè",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm h?"],
+      "explanation": "Tiếng \"hè\" có âm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm h nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hệ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "hẹ"
+        },
+        {
+          "id": "c",
+          "text": "cà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm h thôi."],
+      "explanation": "Tiếng \"hẹ\" có âm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm h?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hợ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "bà"
+        },
+        {
+          "id": "c",
+          "text": "hộ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ âm h viết thế nào không?"],
+      "explanation": "Tiếng \"hộ\" có âm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm l?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lò"
+        },
+        {
+          "id": "b",
+          "text": "lờ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "bé"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"lò\" có âm l.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-amhl-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🏞️",
+          "labelVi": "cái hồ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hò",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "hồ"
+        },
+        {
+          "id": "c",
+          "text": "bồ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ cái hồ.", "Tiếng gọi cái hồ có âm h."],
+      "explanation": "Cái hồ đọc là \"hồ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng gọi tên bức tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐯",
+          "labelVi": "con hổ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hỏ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "bổ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "hổ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ con hổ.", "Tiếng gọi con hổ có âm h."],
+      "explanation": "Con hổ đọc là \"hổ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amhl-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tranh này là tiếng nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍃",
+          "labelVi": "chiếc lá",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lá"
+        },
+        {
+          "id": "b",
+          "text": "lò",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "cá",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ chiếc lá.", "Tiếng gọi chiếc lá có âm l."],
+      "explanation": "Chiếc lá đọc là \"lá\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào hợp với bức tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍐",
+          "labelVi": "quả lê",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "le",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "lê"
+        },
+        {
+          "id": "c",
+          "text": "bê",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ quả lê.", "Tiếng gọi quả lê có âm l."],
+      "explanation": "Quả lê đọc là \"lê\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn tranh rồi chọn tiếng.",
+        "image": {
+          "kind": "emoji",
+          "value": "🏺",
+          "labelVi": "cái lọ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lợ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "họ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "lọ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ cái lọ.", "Tiếng gọi cái lọ có âm l."],
+      "explanation": "Cái lọ đọc là \"lọ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amhl-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bức tranh này đọc là tiếng nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥛",
+          "labelVi": "cái li",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "li"
+        },
+        {
+          "id": "b",
+          "text": "lê",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "bi",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ cái li.", "Tiếng gọi cái li có âm l."],
+      "explanation": "Cái li đọc là \"li\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bốn ô trông rất giống nhau. Ô nào có âm h?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hò",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "bồ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "hồ"
+        },
+        {
+          "id": "d",
+          "text": "hà",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Chỉ \"hồ\" có âm h.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn thật kỹ: tiếng nào có âm h?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hỏ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "bổ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "hả",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "d",
+          "text": "hổ"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Chỉ \"hổ\" có âm h.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chỉ một ô có âm l. Con tìm ra không?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lê"
+        },
+        {
+          "id": "b",
+          "text": "le",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "bê",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "d",
+          "text": "lò",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tìm con chữ của âm l trong từng ô nhé!"],
+      "explanation": "Chỉ \"lê\" có âm l.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có âm l."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lợ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "lọ"
+        },
+        {
+          "id": "c",
+          "text": "họ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "d",
+          "text": "lá",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm l?"],
+      "explanation": "Chỉ \"lọ\" có âm l.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amhl-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "hồ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hồ"
+        },
+        {
+          "id": "b",
+          "text": "bồ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "hà",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"hồ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amhl-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "hổ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bổ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "hổ"
+        },
+        {
+          "id": "c",
+          "text": "hả",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"hổ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amhl-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "lá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "lò",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"lá\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amhl-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "lê"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lê"
+        },
+        {
+          "id": "b",
+          "text": "bê",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "lò",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"lê\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amhl-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "lọ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "họ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "lọ"
+        },
+        {
+          "id": "c",
+          "text": "lá",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Con vừa nghe tiếng \"lọ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amhl-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "li"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bi",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "lê",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "li"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"li\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amhl-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "hè"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hè"
+        },
+        {
+          "id": "b",
+          "text": "bè",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "hà",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"hè\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amhl-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "hẹ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bẹ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "hẹ"
+        },
+        {
+          "id": "c",
+          "text": "hạ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"hẹ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amhl-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "hộ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bộ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "hạ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "hộ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"hộ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "hò"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hồ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "hò"
+        },
+        {
+          "id": "c",
+          "text": "ba"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Tiếng con nghe là \"hò\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "hỏ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hổ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "cá"
+        },
+        {
+          "id": "c",
+          "text": "hỏ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Tiếng con nghe là \"hỏ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "le"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "le"
+        },
+        {
+          "id": "b",
+          "text": "lê",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "bí"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Tiếng con nghe là \"le\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "lợ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lọ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "lợ"
+        },
+        {
+          "id": "c",
+          "text": "bà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Tiếng con nghe là \"lợ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ: có âm h hay không có."
+      },
+      "dragItems": [
+        {
+          "id": "s0a",
+          "text": "hồ"
+        },
+        {
+          "id": "s0b",
+          "text": "ba"
+        },
+        {
+          "id": "s0c",
+          "text": "lọ"
+        },
+        {
+          "id": "s0d",
+          "text": "lợ",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm h",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s0a", "s0c"],
+        "khong": ["s0b", "s0d"]
+      },
+      "hints": ["Đọc to từng thẻ, thẻ nào có âm h thì xếp riêng."],
+      "explanation": "\"hồ\" và \"lọ\" có âm đang học.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amhl-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng có âm h sang một bên nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1a",
+          "text": "hổ"
+        },
+        {
+          "id": "s1b",
+          "text": "cá"
+        },
+        {
+          "id": "s1c",
+          "text": "li"
+        },
+        {
+          "id": "s1d",
+          "text": "bà"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm h",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s1a", "s1c"],
+        "khong": ["s1b", "s1d"]
+      },
+      "hints": ["Xếp hai thẻ dễ trước, còn lại xếp sau."],
+      "explanation": "\"hổ\" và \"li\" có âm đang học.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chia bốn tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "s2a",
+          "text": "lá"
+        },
+        {
+          "id": "s2b",
+          "text": "bà"
+        },
+        {
+          "id": "s2c",
+          "text": "hè"
+        },
+        {
+          "id": "s2d",
+          "text": "hè",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm l",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s2a", "s2c"],
+        "khong": ["s2b", "s2d"]
+      },
+      "hints": ["Nhìn từng con chữ trên thẻ nhé!"],
+      "explanation": "\"lá\" và \"hè\" có âm đang học.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Giỏ nào đựng tiếng có âm l?"
+      },
+      "dragItems": [
+        {
+          "id": "s3a",
+          "text": "lê"
+        },
+        {
+          "id": "s3b",
+          "text": "bí"
+        },
+        {
+          "id": "s3c",
+          "text": "hẹ"
+        },
+        {
+          "id": "s3d",
+          "text": "hệ",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm l",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s3a", "s3c"],
+        "khong": ["s3b", "s3d"]
+      },
+      "hints": ["Đánh vần thẻ rồi mới kéo."],
+      "explanation": "\"lê\" và \"hẹ\" có âm đang học.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng đúng vào ô dưới tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🏞️",
+          "labelVi": "cái hồ",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "hồ"
+        },
+        {
+          "id": "sai0",
+          "text": "hò",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "sai1",
+          "text": "bồ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ cái hồ.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Cái hồ viết là \"hồ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-amhl-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn thẻ đúng rồi thả vào ô trống.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐯",
+          "labelVi": "con hổ",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "hổ"
+        },
+        {
+          "id": "sai0",
+          "text": "hỏ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "sai1",
+          "text": "bổ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ con hổ.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Con hổ viết là \"hổ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amhl-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Thẻ nào gọi tên bức tranh? Kéo vào nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🍃",
+          "labelVi": "chiếc lá",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "lá"
+        },
+        {
+          "id": "sai0",
+          "text": "lò",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "cá",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ chiếc lá.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Chiếc lá viết là \"lá\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-amhl-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "hổ ở bờ hồ",
+        "words": ["hổ", "ở", "bờ", "hồ"]
+      },
+      "answerKey": {
+        "words": ["hổ", "ở", "bờ", "hồ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"hổ ở bờ hồ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amhl-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "bé có li",
+        "words": ["bé", "có", "li"]
+      },
+      "answerKey": {
+        "words": ["bé", "có", "li"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"bé có li\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amhl-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "lá đỏ",
+        "words": ["lá", "đỏ"]
+      },
+      "answerKey": {
+        "words": ["lá", "đỏ"]
+      },
+      "hints": ["Đánh vần tiếng nào khó rồi đọc trơn lại."],
+      "explanation": "Câu này đọc là \"lá đỏ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amhl-0044",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "dì hé lọ",
+        "words": ["dì", "hé", "lọ"]
+      },
+      "answerKey": {
+        "words": ["dì", "hé", "lọ"]
+      },
+      "hints": ["Ngắt rõ giữa các tiếng."],
+      "explanation": "Câu này đọc là \"dì hé lọ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amhl-0045",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "bé lễ độ",
+        "words": ["bé", "lễ", "độ"]
+      },
+      "answerKey": {
+        "words": ["bé", "lễ", "độ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"bé lễ độ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amhl-0046",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: hồ, hổ, hè."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["hồ hổ hè"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, đúng độ cao từng con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amhl-0047",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: lá, lê, lọ."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["lá lê lọ"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ đánh dấu thanh sau khi viết xong con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amhl-0048",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_H_L"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: li, lò, lỗ."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["li lò lỗ"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 12 tr.36 (H h, L l)"
+      }
+    }
+  ]
+}

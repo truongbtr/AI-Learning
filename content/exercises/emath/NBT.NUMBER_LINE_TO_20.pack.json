@@ -1,0 +1,1596 @@
+{
+  "skillCode": "EMATH.NBT.NUMBER_LINE_TO_20",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": [],
+  "note": "Tia số tới 20: liền trước, liền sau, số còn thiếu, xếp thứ tự. Bài số hai chữ số có ô nhiễu đảo chữ số (14 → 41) mang mã `nham_thu_tu_so`.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-line-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes after 11?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on one from there.", "Walk along the number line with your finger."],
+      "explanation": "12 comes after 11.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-line-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes before 12?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count back one from there.", "Walk along the number line with your finger."],
+      "explanation": "11 comes before 12.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-line-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes after 13?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on one from there.", "Walk along the number line with your finger."],
+      "explanation": "14 comes after 13.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-line-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes before 14?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count back one from there.", "Walk along the number line with your finger."],
+      "explanation": "13 comes before 14.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-line-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes after 15?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on one from there.", "Walk along the number line with your finger."],
+      "explanation": "16 comes after 15.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-line-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes before 16?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count back one from there.", "Walk along the number line with your finger."],
+      "explanation": "15 comes before 16.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes after 17?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on one from there.", "Walk along the number line with your finger."],
+      "explanation": "18 comes after 17.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes before 18?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count back one from there.", "Walk along the number line with your finger."],
+      "explanation": "17 comes before 18.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes after 19?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on one from there.", "Walk along the number line with your finger."],
+      "explanation": "20 comes after 19.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes before 6?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count back one from there.", "Walk along the number line with your finger."],
+      "explanation": "5 comes before 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes after 8?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on one from there.", "Walk along the number line with your finger."],
+      "explanation": "9 comes after 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which number comes before 9?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count back one from there.", "Walk along the number line with your finger."],
+      "explanation": "8 comes before 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "9, ?, 11. Which number is missing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from the first number.", "It sits right in the middle."],
+      "explanation": "9, 10, 11.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "12, ?, 14. Which number is missing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from the first number.", "It sits right in the middle."],
+      "explanation": "12, 13, 14.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "15, ?, 17. Which number is missing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on from the first number.", "It sits right in the middle."],
+      "explanation": "15, 16, 17.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "17, ?, 19. Which number is missing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from the first number.", "It sits right in the middle."],
+      "explanation": "17, 18, 19.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "4, ?, 6. Which number is missing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from the first number.", "It sits right in the middle."],
+      "explanation": "4, 5, 6.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "7, ?, 9. Which number is missing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on from the first number.", "It sits right in the middle."],
+      "explanation": "7, 8, 9.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "18, ?, 20. Which number is missing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "19"
+        },
+        {
+          "id": "c",
+          "text": "20",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from the first number.", "It sits right in the middle."],
+      "explanation": "18, 19, 20.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "10, ?, 12. Which number is missing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from the first number.", "It sits right in the middle."],
+      "explanation": "10, 11, 12.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the answer."
+      },
+      "listenTarget": {
+        "text": "What comes after ten?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen one more time."],
+      "explanation": "11 comes after 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a sum. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "What comes after 12?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the numbers out loud yourself."],
+      "explanation": "13 comes after 12.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "What comes after 14?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Use your fingers to help."],
+      "explanation": "15 comes after 14.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What is the answer? Tap it."
+      },
+      "listenTarget": {
+        "text": "What comes after 16?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start from the bigger number."],
+      "explanation": "17 comes after 16.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick a number."
+      },
+      "listenTarget": {
+        "text": "What comes after 18?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "19"
+        },
+        {
+          "id": "c",
+          "text": "20",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on, one at a time."],
+      "explanation": "19 comes after 18.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-line-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the number you worked out."
+      },
+      "listenTarget": {
+        "text": "What comes after five?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "6 comes after 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Put the three numbers in order, small to big."
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "13"
+        },
+        {
+          "id": "p2",
+          "text": "11"
+        },
+        {
+          "id": "p3",
+          "text": "12"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s1",
+          "label": "First",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s2",
+          "label": "Next",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s3",
+          "label": "Last",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "s1": ["p2"],
+        "s2": ["p3"],
+        "s3": ["p1"]
+      },
+      "hints": ["Say the numbers out loud in counting order."],
+      "explanation": "11, 12, 13.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put the three numbers in order, small to big."
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "16"
+        },
+        {
+          "id": "p2",
+          "text": "14"
+        },
+        {
+          "id": "p3",
+          "text": "15"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s1",
+          "label": "First",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s2",
+          "label": "Next",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s3",
+          "label": "Last",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "s1": ["p2"],
+        "s2": ["p3"],
+        "s3": ["p1"]
+      },
+      "hints": ["Say the numbers out loud in counting order."],
+      "explanation": "14, 15, 16.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Put the three numbers in order, small to big."
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "19"
+        },
+        {
+          "id": "p2",
+          "text": "17"
+        },
+        {
+          "id": "p3",
+          "text": "18"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s1",
+          "label": "First",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s2",
+          "label": "Next",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s3",
+          "label": "Last",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "s1": ["p2"],
+        "s2": ["p3"],
+        "s3": ["p1"]
+      },
+      "hints": ["Say the numbers out loud in counting order."],
+      "explanation": "17, 18, 19.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Put the three numbers in order, small to big."
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "20"
+        },
+        {
+          "id": "p2",
+          "text": "18"
+        },
+        {
+          "id": "p3",
+          "text": "19"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s1",
+          "label": "First",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s2",
+          "label": "Next",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s3",
+          "label": "Last",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "s1": ["p2"],
+        "s2": ["p3"],
+        "s3": ["p1"]
+      },
+      "hints": ["Say the numbers out loud in counting order."],
+      "explanation": "18, 19, 20.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put the three numbers in order, small to big."
+      },
+      "dragItems": [
+        {
+          "id": "p1",
+          "text": "9"
+        },
+        {
+          "id": "p2",
+          "text": "7"
+        },
+        {
+          "id": "p3",
+          "text": "8"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s1",
+          "label": "First",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s2",
+          "label": "Next",
+          "accepts": ["p1", "p2", "p3"]
+        },
+        {
+          "id": "s3",
+          "label": "Last",
+          "accepts": ["p1", "p2", "p3"]
+        }
+      ],
+      "answerKey": {
+        "s1": ["p2"],
+        "s2": ["p3"],
+        "s3": ["p1"]
+      },
+      "hints": ["Say the numbers out loud in counting order."],
+      "explanation": "7, 8, 9.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tap to count them all."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelEn": "balloons",
+          "repeat": 12
+        },
+        "correctCount": 12,
+        "layout": "grid"
+      },
+      "answerKey": 12,
+      "hints": ["Count in groups of five to keep your place."],
+      "explanation": "There are 12 balloons.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "stars",
+          "repeat": 15
+        },
+        "correctCount": 15,
+        "layout": "line"
+      },
+      "answerKey": 15,
+      "hints": ["Count in groups of five to keep your place."],
+      "explanation": "There are 15 stars.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Count with {ban}!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelEn": "bees",
+          "repeat": 11
+        },
+        "correctCount": 11,
+        "layout": "grid"
+      },
+      "answerKey": 11,
+      "hints": ["Count in groups of five to keep your place."],
+      "explanation": "There are 11 bees.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tap every picture to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍃",
+          "labelEn": "leaves",
+          "repeat": 18
+        },
+        "correctCount": 18,
+        "layout": "line"
+      },
+      "answerKey": 18,
+      "hints": ["Count in groups of five to keep your place."],
+      "explanation": "There are 18 leaves.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-line-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Eleven twelve thirteen fourteen fifteen.",
+        "words": ["Eleven", "twelve", "thirteen", "fourteen", "fifteen"]
+      },
+      "answerKey": {
+        "words": ["Eleven", "twelve", "thirteen", "fourteen", "fifteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Eleven twelve thirteen fourteen fifteen.\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0037",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Sixteen seventeen eighteen nineteen twenty.",
+        "words": ["Sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
+      },
+      "answerKey": {
+        "words": ["Sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
+      },
+      "hints": ["Say each number clearly."],
+      "explanation": "This says: \"Sixteen seventeen eighteen nineteen twenty.\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0038",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Ten eleven twelve thirteen.",
+        "words": ["Ten", "eleven", "twelve", "thirteen"]
+      },
+      "answerKey": {
+        "words": ["Ten", "eleven", "twelve", "thirteen"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Ten eleven twelve thirteen.\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0039",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Seventeen comes after sixteen.",
+        "words": ["Seventeen", "comes", "after", "sixteen"]
+      },
+      "answerKey": {
+        "words": ["Seventeen", "comes", "after", "sixteen"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Seventeen comes after sixteen.\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0040",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this number sentence."
+      },
+      "readTarget": {
+        "text": "Twelve comes before thirteen.",
+        "words": ["Twelve", "comes", "before", "thirteen"]
+      },
+      "answerKey": {
+        "words": ["Twelve", "comes", "before", "thirteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Twelve comes before thirteen.\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-line-0041",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "Nineteen twenty. That is the end!",
+        "words": ["Nineteen", "twenty", "That", "is", "the", "end!"]
+      },
+      "answerKey": {
+        "words": ["Nineteen", "twenty", "That", "is", "the", "end!"]
+      },
+      "hints": ["Say each number clearly."],
+      "explanation": "This says: \"Nineteen twenty. That is the end!\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT.A.1 (number line to 20) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

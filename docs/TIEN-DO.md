@@ -2,6 +2,118 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 6a — 12/09/2026 — Nội dung đợt 2, chạy song song với 14 ngày dùng thật
+
+Trạng thái: **5/6 tiêu chí đạt**; tiêu chí 1 (phủ hết tuần 1–12 của 5 môn) **không đạt và không thể
+đạt trong một đợt** — đề bài tự mâu thuẫn, số liệu ở mục 5. 1 commit, **chưa push**. `lint` sạch ·
+`test` xanh · `build` xanh · `content:validate` sạch · `content:import --dry-run` báo **0 thay đổi**.
+
+> Không sửa một dòng code nào của app, không dựng lại Docker lần nào, không ngày học nào bị gián
+> đoạn. Mọi lệnh chạy 08:30–10:30 giờ VN, xong trước giờ học hơn 7 tiếng.
+
+### 1. Đã soạn bao nhiêu
+
+**34 kỹ năng mới · 1.463 bài · tất cả đã `PUBLISHED`.** Ngân hàng: **1.236 → 2.676 bài**,
+**28 → 62 kỹ năng**.
+
+| Môn | Kỹ năng mới | Bài | Nội dung |
+|---|---|---|---|
+| **ESCI** | **10** | **442** | English Science, từ **0 bài** — vật sống, giác quan, nhu cầu sinh vật, vật liệu, tính chất, dự đoán, nổi–chìm, phân loại, ánh sáng, bóng |
+| VIET | 12 | 517 | 5 dấu thanh · âm ô, ơ, i–k, h–l · đánh vần ghép tiếng · đọc tiếng · đọc từ ngữ |
+| EMATH | 6 | 257 | cộng/trừ trong 5 và 10 · so sánh tới 10 · tia số tới 20 · số thứ tự first–tenth |
+| ESL | 4 | 167 | số đếm 1–20 · đánh vần CVC · con vật nông trại & sở thú · How many…? – There are… |
+| ENL | 2 | 80 | ghép âm · tách âm (Phonics Review) |
+
+**Ưu tiên 1 làm trước, và làm trúng:** nhật ký lớp 10–12/09 ghi *"Bài 13: U u – Ư ư"* và
+*"Unit 1 – Lesson 16 – Unit Review"*, gắn 7 kỹ năng — 6 trong số đó trước hôm nay **chưa có bài
+nào**. Cả 6 nay đã đủ 40 bài: `VIET.DOC.DOC_TIENG`, `VIET.DOC.DOC_TU`, `VIET.HV.DANH_VAN_TIENG`,
+`ESL.VOC.NUMBERS_1_20`, `ESL.PH.SPELL_CVC`, `ESL.VOC.ANIMALS_FARM`. Giọng đọc: **1.858/1.858 câu có
+mp3**, dùng 5% hạn mức Azure tháng 09.
+
+### 2. 20 mã bài mẫu (QC chấm lại đúng bộ này)
+
+`esl-animal-0037` · `emath-ord-0025` · `esci-predict-0037` · `viet-huyen-0044` · `esci-vocmat-0007` ·
+`viet-amhl-0028` · `viet-doctieng-0016` · `viet-nga-0014` · `esci-float-0021` · `enl-blend-0015` ·
+`esl-animal-0035` · `viet-hoi-0043` · `viet-amik-0030` · `esci-living-0035` · `enl-isolate-0017` ·
+`viet-huyen-0042` · `viet-amoo-0044` · `emath-line-0009` · `esl-cvc-0011` · `enl-isolate-0023`
+
+Bảng chấm từng bài ở `content/_reports/dot-2.md` §3. Lệnh dựng lại đúng bộ 20 nằm ở đầu §3 đó.
+**20/20 đạt — sau một vòng sửa**; vòng đầu chỉ 16/20 và 10 lỗi tìm ra ghi ở §4 của báo cáo.
+
+### 3. Học được gì từ dữ liệu thật
+
+**Đính chính trước:** đề bài ghi "đếm 10/14 ngày". `pnpm db:trial` nói **1/14** — mỗi bé đúng một
+phiên, 10 câu, 4–5 phút, đều trong hôm nay. `exercise-health.csv` mới có 20 dòng, mỗi bài một lượt
+gặp, nên chưa đủ để nói bài nào "quá dễ" hay "ai cũng sai" theo ngưỡng của đề bài.
+
+**Nhưng một dòng trong đó đủ để lộ một lỗi thật.** `viet-bd-0049` — *"Có bao nhiêu dế? Chạm để
+đếm"*, 5 con dế, 3 lần thử, 66 giây, vẫn chưa ra — là bài duy nhất bị làm sai. Nó nằm trong gói
+**phân biệt b và d**. Đếm dế không đo b/d chút nào; con đếm hụt thì hệ thống ghi "yếu b/d" và hạ
+mastery của một kỹ năng con **không hề mắc lỗi**.
+
+Rà lại thì **cả 23 bài `COUNT_TAP` trong các gói ngữ âm** (10 gói tiếng Việt + `ENL.RF.RHYME`,
+`ENL.RF.SIGHT_WORDS_PREPRIMER`, `ESL.PH.ALPHABET_SOUNDS`) đều cùng kiểu "chạm từng con vật để đếm"
+— đó là `VMATH.SO.DEM_VAT`, không phải học vần. `countTarget` theo thiết kế chỉ vẽ **một** loại vật
+lặp lại, nên dạng bài này *về nguyên tắc* không phân biệt được b với d; sửa câu lệnh không cứu được.
+
+→ **24 bài nghỉ hưu** (23 bài đếm + 1 bài đọc bị đổi mã khi dựng lại gói), bỏ `COUNT_TAP` khỏi
+`exerciseTypes` của **16 kỹ năng ngữ âm**, và bỏ luôn 14 bài đếm khỏi ba gói **đợt 2 vừa soạn** vì
+mắc đúng lỗi ấy. Nghỉ hưu chứ không xoá — `Evidence` con đã tạo vẫn trỏ đúng chỗ.
+
+### 4. Cách chạy thử
+
+```powershell
+pnpm content:validate                 # sạch
+pnpm content:stats                    # 62 kỹ năng · 2.676 PUBLISHED · 24 RETIRED · mọi kỹ năng >= 35 bài
+pnpm content:import --dry-run         # 0 new, 0 updated, 0 revived, 2676 unchanged, 0 retired
+node scripts/content-gen/viet-tones.mjs   # sinh lại gói bất kỳ, git diff phải trống
+```
+
+Xem tận mắt: `/admin/content` → lô "Dot 2 lo 1…4b"; `/dev/kit` để nhìn đúng như con thấy.
+
+### 5. Tồn đọng và câu hỏi cho chủ dự án
+
+**5.1 — Tiêu chí 1 của pha tự mâu thuẫn với mục tiêu của pha, cần chú chọn lại.**
+§3 đặt mục tiêu *"30–35 kỹ năng"*; §6.1 đòi *"không kỹ năng nào thuộc tuần 1–12 của VIET, VMATH,
+EMATH, ENL, ESL còn 0 bài"*. Năm môn đó có **190 kỹ năng** tuần 1–12; sau đợt 2 mới **51** kỹ năng
+có bài. Phủ nốt là **139 kỹ năng ≈ 4.900 bài** — gấp 3,6 lần mục tiêu §3 và nhiều hơn cả đợt 1 lẫn
+đợt 2 cộng lại. Cháu làm đúng con số §3 theo đúng thứ tự ưu tiên §3. Hiện trạng: VIET 22/75 ·
+ESL 9/45 · ENL 4/30 · VMATH 8/20 · EMATH 8/20 · **ESCI 10/17**.
+
+Đề nghị: đổi tiêu chí thành *"mọi kỹ năng **lớp đã dạy tính tới hôm nay** đều có bài"* — đo theo
+nhật ký lớp thay vì theo tuần dự kiến. Lớp 1B3 đang ở bài 13–14 (tuần 3), nên đo như vậy thì đợt 2
+đã phủ gần trọn phần con đã học. Đợt 3 xin nhắm **VIET bài 16–24** (m, n, g, gi, gh, nh, ng, ngh,
+r, s, t, tr, th, vần ia/ua/ưa) — thứ hai con gặp trong ba tuần tới.
+
+**5.2 — Mastery `NHAM_LAN_B_D` của một bé đang mang một lượt sai oan.** Bài gây ra nó đã nghỉ hưu,
+nhưng bằng chứng vẫn nằm đó; đợt này không đụng `Evidence`/`SkillMastery` (`10` §11). Chú vào
+dashboard → `VIET.HV.NHAM_LAN_B_D` → xem bằng chứng đó và ghi đè nếu thấy nên.
+
+**5.3 — 442 bài ESCI dựng theo NGSS, không theo sách của trường.** Rủi ro lớn nhất của đợt này: nếu
+trường dạy "Materials" ở học kỳ 2 thì con gặp bài trước khi học. Cần chú hỏi cô giáo môn English
+Science dùng giáo trình nào (`docs/09` §1 ưu tiên 3 vẫn còn nguyên).
+
+**5.4 — Mười gói ESCI không có thẻ lỗi nào.** Bộ 44 mã của `04` §11 không có mã nào tả được "con
+nghĩ ô tô là vật sống". Muốn thang ôn tập lái được môn khoa học thì phải bổ sung bộ mã — đụng hợp
+đồng dữ liệu, nên cần một ADR. Chưa làm.
+
+**5.5 — Đã phát hành hết ngay theo quyết định của chú trong phiên này.** 1.464 bài nạp ở `DRAFT`
+đúng `10` §5 bước ⑤, rồi bật `PUBLISHED` cho cả 10 lô bằng đúng `updateMany` + dòng
+`CONTENT_PUBLISH` mà nút "phát hành" của `/admin/content` ghi. Hoàn tác được bằng nút **"gỡ phát
+hành"** theo lô. Nếu tối nay thấy bài nào lạ, chú bấm gỡ lô đó rồi nhắn cháu.
+
+**5.6 — Còn nhỏ:** `ENL.RF.RHYME` còn 38 bài (trên sàn 35, dưới mốc 40) sau khi nghỉ hưu 3 bài
+hỏng; `lessonRef` mới của năm gói dấu thanh chưa nối lại vào `LessonUnitSkill`; hình vẫn là emoji vì
+`content/art/objects/manifest.json` chưa có.
+
+### 6. ADR
+
+Không có ADR mới. Ba quyết định đã ghi trong `content/_reports/dot-2.md` §6 (mở rộng hợp đồng
+`exerciseTypes`/`difficultyRange` cho kỹ năng đã có ngân hàng đủ; `lessonRef` của gói dấu thanh kéo
+tới bài 9 theo đúng quy ước `DAU_THANH` của đợt 1; bỏ `COUNT_TAP` khỏi mọi kỹ năng ngữ âm).
+
+---
+
 ## Pha 8b — 12/09/2026 — Cửa cho Claude chat và dữ liệu vận hành
 
 Trạng thái: **6/7 tiêu chí đạt và đã chạy thật qua `https://edu.medifa.vn`**; tiêu chí 3 (bấm nút

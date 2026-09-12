@@ -1,0 +1,1800 @@
+{
+  "skillCode": "EMATH.NBT.ORDINAL_NUMBERS",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": [],
+  "note": "Số thứ tự first–tenth theo hàng con vật. Ô nhiễu luôn là con đứng ngay cạnh — đúng lỗi đếm lệch một chỗ, mang mã `nham_thu_tu_so`.",
+  "exercises": [
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "emath-ord-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Who is first in the line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          }
+        },
+        {
+          "id": "b",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Point and count from the front.", "The front one is first."],
+      "explanation": "The cat is first.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "emath-ord-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Who is second in the line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "c",
+          "text": "cat",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Point and count from the front.", "The front one is first."],
+      "explanation": "The dog is second.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "emath-ord-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Who is third in the line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "c",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Point and count from the front.", "The front one is first."],
+      "explanation": "The bird is third.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "emath-ord-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Who is fourth in the line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        },
+        {
+          "id": "b",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Point and count from the front.", "The front one is first."],
+      "explanation": "The frog is fourth.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "emath-ord-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Who is fifth in the line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "duck",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "c",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Point and count from the front.", "The front one is first."],
+      "explanation": "The bee is fifth.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "emath-ord-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Who is sixth in the line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "c",
+          "text": "duck",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Point and count from the front.", "The front one is first."],
+      "explanation": "The duck is sixth.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Who is seventh in the line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "b",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "duck",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Point and count from the front.", "The front one is first."],
+      "explanation": "The fish is seventh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Who is eighth in the line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "c",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Point and count from the front.", "The front one is first."],
+      "explanation": "The cow is eighth.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 1 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "second",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "first"
+        },
+        {
+          "id": "c",
+          "text": "fourth"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 1 in a line is first.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 2 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "third",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "fifth"
+        },
+        {
+          "id": "c",
+          "text": "second"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 2 in a line is second.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 3 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "third"
+        },
+        {
+          "id": "b",
+          "text": "fourth",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "sixth"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 3 in a line is third.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 4 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fifth",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "fourth"
+        },
+        {
+          "id": "c",
+          "text": "seventh"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 4 in a line is fourth.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 5 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sixth",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "eighth"
+        },
+        {
+          "id": "c",
+          "text": "fifth"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 5 in a line is fifth.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 6 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sixth"
+        },
+        {
+          "id": "b",
+          "text": "seventh",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "ninth"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 6 in a line is sixth.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 7 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "eighth",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "seventh"
+        },
+        {
+          "id": "c",
+          "text": "tenth"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 7 in a line is seventh.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 8 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ninth",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "first"
+        },
+        {
+          "id": "c",
+          "text": "eighth"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 8 in a line is eighth.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 9 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ninth"
+        },
+        {
+          "id": "b",
+          "text": "tenth",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "second"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 9 in a line is ninth.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means number 10 in a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "first",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "tenth"
+        },
+        {
+          "id": "c",
+          "text": "third"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count out loud: first, second, third…", "Match the counting word to the place."],
+      "explanation": "Number 10 in a line is tenth.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the answer."
+      },
+      "listenTarget": {
+        "text": "Who is first?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          }
+        },
+        {
+          "id": "b",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          },
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen one more time."],
+      "explanation": "The cat is first in the line.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a sum. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Who is second?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the numbers out loud yourself."],
+      "explanation": "The dog is second in the line.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "Who is third?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        },
+        {
+          "id": "b",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          },
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Use your fingers to help."],
+      "explanation": "The bird is third in the line.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What is the answer? Tap it."
+      },
+      "listenTarget": {
+        "text": "Who is fourth?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "duck",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start from the bigger number."],
+      "explanation": "The frog is fourth in the line.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick a number."
+      },
+      "listenTarget": {
+        "text": "Who is fifth?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "b",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          },
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on, one at a time."],
+      "explanation": "The bee is fifth in the line.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-ord-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the number you worked out."
+      },
+      "listenTarget": {
+        "text": "Who is sixth?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          },
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "duck",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "The duck is sixth in the line.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "The cat is first. The bird is third. Fill the line."
+      },
+      "dragItems": [
+        {
+          "id": "q1",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        },
+        {
+          "id": "q2",
+          "text": "cat",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          }
+        },
+        {
+          "id": "q3",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z2",
+          "label": "Second",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z3",
+          "label": "Third",
+          "accepts": ["q1", "q2", "q3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["q2"],
+        "z2": ["q3"],
+        "z3": ["q1"]
+      },
+      "hints": ["Put the two you know first.", "Only one animal is left for the middle."],
+      "explanation": "cat is first, dog is second, bird is third.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "The dog is first. The frog is third. Fill the line."
+      },
+      "dragItems": [
+        {
+          "id": "q1",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        },
+        {
+          "id": "q2",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "q3",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z2",
+          "label": "Second",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z3",
+          "label": "Third",
+          "accepts": ["q1", "q2", "q3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["q2"],
+        "z2": ["q3"],
+        "z3": ["q1"]
+      },
+      "hints": ["Put the two you know first.", "Only one animal is left for the middle."],
+      "explanation": "dog is first, bird is second, frog is third.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "The bird is first. The bee is third. Fill the line."
+      },
+      "dragItems": [
+        {
+          "id": "q1",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "q2",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        },
+        {
+          "id": "q3",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z2",
+          "label": "Second",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z3",
+          "label": "Third",
+          "accepts": ["q1", "q2", "q3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["q2"],
+        "z2": ["q3"],
+        "z3": ["q1"]
+      },
+      "hints": ["Put the two you know first.", "Only one animal is left for the middle."],
+      "explanation": "bird is first, frog is second, bee is third.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "The frog is first. The duck is third. Fill the line."
+      },
+      "dragItems": [
+        {
+          "id": "q1",
+          "text": "duck",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          }
+        },
+        {
+          "id": "q2",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        },
+        {
+          "id": "q3",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z2",
+          "label": "Second",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z3",
+          "label": "Third",
+          "accepts": ["q1", "q2", "q3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["q2"],
+        "z2": ["q3"],
+        "z3": ["q1"]
+      },
+      "hints": ["Put the two you know first.", "Only one animal is left for the middle."],
+      "explanation": "frog is first, bee is second, duck is third.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "The bee is first. The fish is third. Fill the line."
+      },
+      "dragItems": [
+        {
+          "id": "q1",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "q2",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "q3",
+          "text": "duck",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z2",
+          "label": "Second",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z3",
+          "label": "Third",
+          "accepts": ["q1", "q2", "q3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["q2"],
+        "z2": ["q3"],
+        "z3": ["q1"]
+      },
+      "hints": ["Put the two you know first.", "Only one animal is left for the middle."],
+      "explanation": "bee is first, duck is second, fish is third.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "The duck is first. The cow is third. Fill the line."
+      },
+      "dragItems": [
+        {
+          "id": "q1",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "q2",
+          "text": "duck",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          }
+        },
+        {
+          "id": "q3",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z2",
+          "label": "Second",
+          "accepts": ["q1", "q2", "q3"]
+        },
+        {
+          "id": "z3",
+          "label": "Third",
+          "accepts": ["q1", "q2", "q3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["q2"],
+        "z2": ["q3"],
+        "z3": ["q1"]
+      },
+      "hints": ["Put the two you know first.", "Only one animal is left for the middle."],
+      "explanation": "duck is first, fish is second, cow is third.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap to count them all."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🦆",
+          "labelEn": "ducks",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Start at the front of the line."],
+      "explanation": "There are 5 ducks in the line.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐸",
+          "labelEn": "frogs",
+          "repeat": 7
+        },
+        "correctCount": 7,
+        "layout": "line"
+      },
+      "answerKey": 7,
+      "hints": ["Start at the front of the line."],
+      "explanation": "There are 7 frogs in the line.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count with {ban}!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelEn": "bees",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "line"
+      },
+      "answerKey": 6,
+      "hints": ["Start at the front of the line."],
+      "explanation": "There are 6 bees in the line.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tap every picture to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐕",
+          "labelEn": "dogs",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "line"
+      },
+      "answerKey": 4,
+      "hints": ["Start at the front of the line."],
+      "explanation": "There are 4 dogs in the line.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-ord-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "First second third fourth fifth.",
+        "words": ["First", "second", "third", "fourth", "fifth"]
+      },
+      "answerKey": {
+        "words": ["First", "second", "third", "fourth", "fifth"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"First second third fourth fifth.\"",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "The cat is first in line.",
+        "words": ["The", "cat", "is", "first", "in", "line"]
+      },
+      "answerKey": {
+        "words": ["The", "cat", "is", "first", "in", "line"]
+      },
+      "hints": ["Say each number clearly."],
+      "explanation": "This says: \"The cat is first in line.\"",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0037",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Sixth seventh eighth ninth tenth.",
+        "words": ["Sixth", "seventh", "eighth", "ninth", "tenth"]
+      },
+      "answerKey": {
+        "words": ["Sixth", "seventh", "eighth", "ninth", "tenth"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Sixth seventh eighth ninth tenth.\"",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0038",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "The duck is second.",
+        "words": ["The", "duck", "is", "second"]
+      },
+      "answerKey": {
+        "words": ["The", "duck", "is", "second"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"The duck is second.\"",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0039",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this number sentence."
+      },
+      "readTarget": {
+        "text": "The bird is third in line.",
+        "words": ["The", "bird", "is", "third", "in", "line"]
+      },
+      "answerKey": {
+        "words": ["The", "bird", "is", "third", "in", "line"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The bird is third in line.\"",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-ord-0040",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.ORDINAL_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "I am fourth. You are fifth.",
+        "words": ["I", "am", "fourth", "You", "are", "fifth"]
+      },
+      "answerKey": {
+        "words": ["I", "am", "fourth", "You", "are", "fifth"]
+      },
+      "hints": ["Say each number clearly."],
+      "explanation": "This says: \"I am fourth. You are fifth.\"",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.NBT / INTL ordinal numbers — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

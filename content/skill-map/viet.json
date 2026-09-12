@@ -24,15 +24,7 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_E_EE"],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "TRACE",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -49,15 +41,7 @@
       "prerequisites": ["VIET.HV.AM_A"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_D_DD"],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "TRACE",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -70,12 +54,12 @@
       "gradeLevel": "1",
       "order": 3,
       "expectedWeek": 1,
-      "lessonRef": "KNTT-TV1-T1-B02",
+      "lessonRef": ["KNTT-TV1-T1-B02", "KNTT-TV1-T1-B09"],
       "prerequisites": ["VIET.HV.AM_B"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.HV.AM_C",
@@ -91,15 +75,7 @@
       "prerequisites": ["VIET.HV.AM_B"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_I_K"],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "TRACE",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -112,12 +88,12 @@
       "gradeLevel": "1",
       "order": 5,
       "expectedWeek": 1,
-      "lessonRef": "KNTT-TV1-T1-B03",
+      "lessonRef": ["KNTT-TV1-T1-B03", "KNTT-TV1-T1-B09"],
       "prerequisites": ["VIET.HV.DAU_HUYEN", "VIET.HV.AM_C"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.HV.AM_E_EE",
@@ -133,15 +109,7 @@
       "prerequisites": ["VIET.HV.AM_C"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_A"],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "TRACE",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -158,15 +126,7 @@
       "prerequisites": ["VIET.HV.AM_E_EE"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_OO"],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "TRACE",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -179,12 +139,12 @@
       "gradeLevel": "1",
       "order": 8,
       "expectedWeek": 2,
-      "lessonRef": "KNTT-TV1-T1-B06",
+      "lessonRef": ["KNTT-TV1-T1-B06", "KNTT-TV1-T1-B09"],
       "prerequisites": ["VIET.HV.DAU_SAC", "VIET.HV.AM_O"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.DAU_NGA"],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.HV.AM_OO",
@@ -200,8 +160,8 @@
       "prerequisites": ["VIET.HV.AM_O"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_OW", "VIET.HV.AM_O"],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.HV.DAU_NANG",
@@ -213,12 +173,12 @@
       "gradeLevel": "1",
       "order": 10,
       "expectedWeek": 2,
-      "lessonRef": "KNTT-TV1-T1-B07",
+      "lessonRef": ["KNTT-TV1-T1-B07", "KNTT-TV1-T1-B09"],
       "prerequisites": ["VIET.HV.DAU_HOI", "VIET.HV.AM_OO"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.HV.AM_D_DD",
@@ -234,15 +194,7 @@
       "prerequisites": ["VIET.HV.AM_OO"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_B"],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "TRACE",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -259,8 +211,8 @@
       "prerequisites": ["VIET.HV.AM_D_DD"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_U_UW", "VIET.HV.AM_OO"],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.HV.DAU_NGA",
@@ -276,8 +228,8 @@
       "prerequisites": ["VIET.HV.DAU_NANG", "VIET.HV.AM_OW"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.DAU_HOI"],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.HV.AM_I_K",
@@ -293,8 +245,8 @@
       "prerequisites": ["VIET.HV.AM_OW"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_C"],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.HV.AM_H_L",
@@ -310,8 +262,8 @@
       "prerequisites": ["VIET.HV.AM_I_K"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.HV.AM_U_UW",
@@ -327,15 +279,7 @@
       "prerequisites": ["VIET.HV.AM_H_L"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_OW"],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "TRACE",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -352,15 +296,7 @@
       "prerequisites": ["VIET.HV.AM_U_UW"],
       "relatedSkillCodes": [],
       "confusableWith": ["VIET.HV.AM_T_TR"],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "TRACE",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -1289,14 +1225,7 @@
         "VIET.HV.DAU_NANG",
         "VIET.HV.DAU_NGA"
       ],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -1312,8 +1241,9 @@
       "order": 20,
       "expectedWeek": 2,
       "prerequisites": ["VIET.HV.AM_B", "VIET.HV.DAU_HUYEN"],
-      "exerciseTypes": ["READ_ALOUD", "DRAG_DROP", "LISTEN_CHOOSE", "MCQ"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": ["READ_ALOUD", "DRAG_DROP", "LISTEN_CHOOSE", "MCQ", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5],
+      "lessonRef": ["KNTT-TV1-T1-B13"]
     },
     {
       "strand": "HV",
@@ -1329,15 +1259,7 @@
       "expectedWeek": 2,
       "lessonRef": ["KNTT-TV1-T1-B02", "KNTT-TV1-T1-B08"],
       "prerequisites": ["VIET.HV.AM_B", "VIET.HV.AM_D_DD"],
-      "exerciseTypes": [
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "READ_ALOUD",
-        "TRACE",
-        "DRAG_DROP",
-        "WRITE_PHOTO",
-        "COUNT_TAP"
-      ],
+      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "READ_ALOUD", "TRACE", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -1456,8 +1378,8 @@
       "prerequisites": ["VIET.HV.DANH_VAN_TIENG"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.DOC.DOC_TU",
@@ -1473,8 +1395,8 @@
       "prerequisites": ["VIET.DOC.DOC_TIENG"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MCQ", "LISTEN_CHOOSE", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.DOC.DOC_CAU",

@@ -23,8 +23,15 @@
       "prerequisites": [],
       "relatedSkillCodes": ["VMATH.SO.CONG_PV_5"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "DRAG_DROP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "MCQ",
+        "COUNT_TAP",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.SUB_WITHIN_5",
@@ -39,8 +46,15 @@
       "prerequisites": ["EMATH.OA.ADD_WITHIN_5"],
       "relatedSkillCodes": ["VMATH.SO.TRU_PV_5"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "DRAG_DROP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "MCQ",
+        "COUNT_TAP",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.NUMBER_BONDS_10",
@@ -94,8 +108,15 @@
       "prerequisites": ["EMATH.OA.ADD_WITHIN_10"],
       "relatedSkillCodes": ["VMATH.SO.TRU_PV_10"],
       "confusableWith": ["EMATH.OA.ADD_WITHIN_10"],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "DRAG_DROP", "LISTEN_CHOOSE"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "COUNT_TAP",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.DOUBLES",
@@ -341,8 +362,8 @@
       "prerequisites": ["EMATH.NBT.COUNT_TO_20"],
       "relatedSkillCodes": ["VMATH.SO.SO_SANH_1_10"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "COUNT_TAP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": ["MCQ", "DRAG_DROP", "COUNT_TAP", "LISTEN_CHOOSE", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.NBT.NUMBER_LINE_TO_20",
@@ -357,8 +378,8 @@
       "prerequisites": ["EMATH.NBT.COUNT_TO_20"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ", "COUNT_TAP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["DRAG_DROP", "MCQ", "COUNT_TAP", "LISTEN_CHOOSE", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.NBT.ORDINAL_NUMBERS",
@@ -373,8 +394,8 @@
       "prerequisites": ["EMATH.NBT.COUNT_TO_20"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "COUNT_TAP", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.NBT.SKIP_COUNT_10S",

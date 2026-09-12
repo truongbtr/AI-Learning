@@ -1,0 +1,2041 @@
+{
+  "skillCode": "ESCI.INQ.SORT_CLASSIFY",
+  "subject": "ESCI",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": [],
+  "note": "Phân loại theo một tiêu chí. Bài khó nhất của gói là khi hai tiêu chí cùng đúng — con phải đọc kỹ đề mới biết xếp theo tiêu chí nào.",
+  "exercises": [
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-sort-0001",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which one is an animal?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "b",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        },
+        {
+          "id": "c",
+          "text": "cactus",
+          "image": {
+            "kind": "emoji",
+            "value": "🌵",
+            "labelEn": "cactus"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think: It can move by itself and it eats.", "A dog is an animal."],
+      "explanation": "A dog is an animal.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-sort-0002",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Find an animal."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "flower",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelEn": "flower"
+          }
+        },
+        {
+          "id": "b",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        },
+        {
+          "id": "c",
+          "text": "leaf",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelEn": "leaf"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think: It can move by itself and it eats.", "A bird is an animal."],
+      "explanation": "A bird is an animal.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-sort-0003",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap an animal."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "grass",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "b",
+          "text": "seedling",
+          "image": {
+            "kind": "emoji",
+            "value": "🌱",
+            "labelEn": "seedling"
+          }
+        },
+        {
+          "id": "c",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think: It can move by itself and it eats.", "A fish is an animal."],
+      "explanation": "A fish is an animal.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-sort-0004",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which picture shows an animal?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "b",
+          "text": "cactus",
+          "image": {
+            "kind": "emoji",
+            "value": "🌵",
+            "labelEn": "cactus"
+          }
+        },
+        {
+          "id": "c",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think: It can move by itself and it eats.", "A bee is an animal."],
+      "explanation": "A bee is an animal.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0005",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} find an animal."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "leaf",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelEn": "leaf"
+          }
+        },
+        {
+          "id": "b",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "c",
+          "text": "flower",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelEn": "flower"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think: It can move by itself and it eats.", "A cow is an animal."],
+      "explanation": "A cow is an animal.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0006",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Only one is an animal. Which one?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "seedling",
+          "image": {
+            "kind": "emoji",
+            "value": "🌱",
+            "labelEn": "seedling"
+          }
+        },
+        {
+          "id": "b",
+          "text": "grass",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "c",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think: It can move by itself and it eats.", "A frog is an animal."],
+      "explanation": "A frog is an animal.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0007",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tap a plant."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "b",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        },
+        {
+          "id": "c",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think: It stays in one place and grows from a seed.", "A tree is a plant."],
+      "explanation": "A tree is a plant.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0008",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which picture shows a plant?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        },
+        {
+          "id": "b",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        },
+        {
+          "id": "c",
+          "text": "flower",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelEn": "flower"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think: It stays in one place and grows from a seed.", "A flower is a plant."],
+      "explanation": "A flower is a plant.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0009",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} find a plant."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "grass",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "b",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "c",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think: It stays in one place and grows from a seed.", "A grass is a plant."],
+      "explanation": "A grass is a plant.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0010",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Only one is a plant. Which one?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "b",
+          "text": "cactus",
+          "image": {
+            "kind": "emoji",
+            "value": "🌵",
+            "labelEn": "cactus"
+          }
+        },
+        {
+          "id": "c",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think: It stays in one place and grows from a seed.", "A cactus is a plant."],
+      "explanation": "A cactus is a plant.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-sort-0011",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which one does not belong: dog, cat, tree?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tree"
+        },
+        {
+          "id": "b",
+          "text": "dog"
+        },
+        {
+          "id": "c",
+          "text": "cat"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Two of them are animals."],
+      "explanation": "A tree is a plant. The others are animals.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-sort-0012",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which one does not belong: red, blue, big?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "red"
+        },
+        {
+          "id": "b",
+          "text": "big"
+        },
+        {
+          "id": "c",
+          "text": "blue"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Two of them are colours."],
+      "explanation": "Big is a size, not a colour.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0013",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How can you sort these buttons?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "By name"
+        },
+        {
+          "id": "b",
+          "text": "By age"
+        },
+        {
+          "id": "c",
+          "text": "By colour"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["What can you see about a button?"],
+      "explanation": "We sort by things we can see: colour, size, shape.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0014",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which one does not belong: ball, orange, box?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "box"
+        },
+        {
+          "id": "b",
+          "text": "ball"
+        },
+        {
+          "id": "c",
+          "text": "orange"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Two of them are round."],
+      "explanation": "A box has corners. The others are round.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0015",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "A red ball and a red car. What is the same?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "shape"
+        },
+        {
+          "id": "b",
+          "text": "colour"
+        },
+        {
+          "id": "c",
+          "text": "size"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Look at the word 'red'."],
+      "explanation": "They are both red, so the colour is the same.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0016",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Sort by shape: where does a wheel go?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Square things"
+        },
+        {
+          "id": "b",
+          "text": "Red things"
+        },
+        {
+          "id": "c",
+          "text": "Round things"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Draw a wheel in the air."],
+      "explanation": "A wheel is round.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0017",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which group has only living things?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dog, tree, bee"
+        },
+        {
+          "id": "b",
+          "text": "dog, rock, bee"
+        },
+        {
+          "id": "c",
+          "text": "car, tree, cup"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Check every one in the group."],
+      "explanation": "A dog, a tree and a bee all grow and need food.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0018",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Why do scientists sort things into groups?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "To make a mess"
+        },
+        {
+          "id": "b",
+          "text": "To find patterns"
+        },
+        {
+          "id": "c",
+          "text": "To hide them"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Groups make things easier to see."],
+      "explanation": "Sorting helps us see what is the same and what is different.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0019",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the right picture."
+      },
+      "listenTarget": {
+        "text": "Tap an animal."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        },
+        {
+          "id": "b",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "c",
+          "text": "leaf",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelEn": "leaf"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Remember: It can move by itself and it eats."],
+      "explanation": "A dog is an animal.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0020",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} asks you to do something. Listen!"
+      },
+      "listenTarget": {
+        "text": "Tap an animal."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "flower",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelEn": "flower"
+          }
+        },
+        {
+          "id": "b",
+          "text": "seedling",
+          "image": {
+            "kind": "emoji",
+            "value": "🌱",
+            "labelEn": "seedling"
+          }
+        },
+        {
+          "id": "c",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Remember: It can move by itself and it eats."],
+      "explanation": "A fish is an animal.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0021",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to {ban} and tap one."
+      },
+      "listenTarget": {
+        "text": "Tap an animal."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "b",
+          "text": "grass",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "c",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Remember: It can move by itself and it eats."],
+      "explanation": "A cow is an animal.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-sort-0022",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right picture."
+      },
+      "listenTarget": {
+        "text": "dog"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "b",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        },
+        {
+          "id": "c",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard \"dog\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-sort-0023",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Tap it!"
+      },
+      "listenTarget": {
+        "text": "bird"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "b",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        },
+        {
+          "id": "c",
+          "text": "flower",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelEn": "flower"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the word out loud yourself."],
+      "explanation": "You heard \"bird\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0024",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "fish"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "b",
+          "text": "grass",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "c",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard \"fish\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0025",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "bee"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "b",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "c",
+          "text": "cactus",
+          "image": {
+            "kind": "emoji",
+            "value": "🌵",
+            "labelEn": "cactus"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the first sound."],
+      "explanation": "You heard \"bee\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0026",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick the picture."
+      },
+      "listenTarget": {
+        "text": "cow"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        },
+        {
+          "id": "b",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "c",
+          "text": "leaf",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelEn": "leaf"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what the word means."],
+      "explanation": "You heard \"cow\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0027",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the picture you heard."
+      },
+      "listenTarget": {
+        "text": "frog"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        },
+        {
+          "id": "b",
+          "text": "seedling",
+          "image": {
+            "kind": "emoji",
+            "value": "🌱",
+            "labelEn": "seedling"
+          }
+        },
+        {
+          "id": "c",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard \"frog\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0028",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right picture."
+      },
+      "listenTarget": {
+        "text": "tree"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        },
+        {
+          "id": "b",
+          "text": "flower",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelEn": "flower"
+          }
+        },
+        {
+          "id": "c",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the word out loud yourself."],
+      "explanation": "You heard \"tree\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0029",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Put each one in the right basket."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "c2",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        },
+        {
+          "id": "c3",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "c4",
+          "text": "grass",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelEn": "grass"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "ga",
+          "label": "Animals",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "gb",
+          "label": "Plants",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "ga": ["c1", "c3"],
+        "gb": ["c2", "c4"]
+      },
+      "hints": ["Ask yourself: it can move by itself and it eats."],
+      "explanation": "Dog and bee go in \"Animals\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0030",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort them into two baskets."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        },
+        {
+          "id": "c2",
+          "text": "flower",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelEn": "flower"
+          }
+        },
+        {
+          "id": "c3",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "c4",
+          "text": "cactus",
+          "image": {
+            "kind": "emoji",
+            "value": "🌵",
+            "labelEn": "cactus"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "ga",
+          "label": "Animals",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "gb",
+          "label": "Plants",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "ga": ["c1", "c3"],
+        "gb": ["c2", "c4"]
+      },
+      "hints": ["Ask yourself: it can move by itself and it eats."],
+      "explanation": "Bird and cow go in \"Animals\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0031",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each picture to its basket."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "fish",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "c2",
+          "text": "grass",
+          "image": {
+            "kind": "emoji",
+            "value": "🌿",
+            "labelEn": "grass"
+          }
+        },
+        {
+          "id": "c3",
+          "text": "frog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸",
+            "labelEn": "frog"
+          }
+        },
+        {
+          "id": "c4",
+          "text": "leaf",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelEn": "leaf"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "ga",
+          "label": "Animals",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "gb",
+          "label": "Plants",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "ga": ["c1", "c3"],
+        "gb": ["c2", "c4"]
+      },
+      "hints": ["Ask yourself: it can move by itself and it eats."],
+      "explanation": "Fish and frog go in \"Animals\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0032",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} sort these four."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "bee",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        },
+        {
+          "id": "c2",
+          "text": "cactus",
+          "image": {
+            "kind": "emoji",
+            "value": "🌵",
+            "labelEn": "cactus"
+          }
+        },
+        {
+          "id": "c3",
+          "text": "dog",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "c4",
+          "text": "seedling",
+          "image": {
+            "kind": "emoji",
+            "value": "🌱",
+            "labelEn": "seedling"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "ga",
+          "label": "Animals",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "gb",
+          "label": "Plants",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "ga": ["c1", "c3"],
+        "gb": ["c2", "c4"]
+      },
+      "hints": ["Ask yourself: it can move by itself and it eats."],
+      "explanation": "Bee and dog go in \"Animals\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0033",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Two go here, two go there. Which is which?"
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "cow",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelEn": "cow"
+          }
+        },
+        {
+          "id": "c2",
+          "text": "leaf",
+          "image": {
+            "kind": "emoji",
+            "value": "🍃",
+            "labelEn": "leaf"
+          }
+        },
+        {
+          "id": "c3",
+          "text": "bird",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦",
+            "labelEn": "bird"
+          }
+        },
+        {
+          "id": "c4",
+          "text": "tree",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "ga",
+          "label": "Animals",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "gb",
+          "label": "Plants",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "ga": ["c1", "c3"],
+        "gb": ["c2", "c4"]
+      },
+      "hints": ["Ask yourself: it can move by itself and it eats."],
+      "explanation": "Cow and bird go in \"Animals\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0034",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count the animals."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelEn": "bees",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["These are all animals. Touch each one."],
+      "explanation": "There are 6 bees.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0035",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many plants? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelEn": "flowers",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "line"
+      },
+      "answerKey": 4,
+      "hints": ["These are all plants. Touch each one."],
+      "explanation": "There are 4 flowers.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0036",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap every one. How many plants?"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌳",
+          "labelEn": "trees",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["These are all plants. Touch each one."],
+      "explanation": "There are 5 trees.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0037",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Count them all: animals."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐸",
+          "labelEn": "frogs",
+          "repeat": 3
+        },
+        "correctCount": 3,
+        "layout": "line"
+      },
+      "answerKey": 3,
+      "hints": ["These are all animals. Touch each one."],
+      "explanation": "There are 3 frogs.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-sort-0038",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "A dog is an animal.",
+        "words": ["A", "dog", "is", "an", "animal"]
+      },
+      "answerKey": {
+        "words": ["A", "dog", "is", "an", "animal"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A dog is an animal.\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0039",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "A tree is a plant.",
+        "words": ["A", "tree", "is", "a", "plant"]
+      },
+      "answerKey": {
+        "words": ["A", "tree", "is", "a", "plant"]
+      },
+      "hints": ["Sound out the hard word first."],
+      "explanation": "This says: \"A tree is a plant.\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0040",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "These two are both red.",
+        "words": ["These", "two", "are", "both", "red"]
+      },
+      "answerKey": {
+        "words": ["These", "two", "are", "both", "red"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"These two are both red.\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0041",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "I can sort by colour or size.",
+        "words": ["I", "can", "sort", "by", "colour", "or", "size"]
+      },
+      "answerKey": {
+        "words": ["I", "can", "sort", "by", "colour", "or", "size"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"I can sort by colour or size.\"",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0042",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw three animals in one box."
+      },
+      "rubric": {
+        "criteria": ["Vẽ ba con vật", "Ghi tên từng con"],
+        "sampleAnswers": ["dog, bird, fish"]
+      },
+      "answerKey": null,
+      "hints": ["Draw first, then write the word."],
+      "explanation": "Animals move by themselves and eat food.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0043",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write two plants you can see outside."
+      },
+      "rubric": {
+        "criteria": ["Viết hai loài thực vật", "Chính tả đúng"],
+        "sampleAnswers": ["tree, grass"]
+      },
+      "answerKey": null,
+      "hints": ["Copy the word letter by letter."],
+      "explanation": "Plants grow in one place from a seed.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-sort-0044",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.SORT_CLASSIFY"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Sort your toys by colour. Draw two groups."
+      },
+      "rubric": {
+        "criteria": ["Vẽ hai nhóm", "Ghi tên màu của từng nhóm"],
+        "sampleAnswers": ["red group, blue group"]
+      },
+      "answerKey": null,
+      "hints": ["Say the word out loud before you write."],
+      "explanation": "Colour is one way to sort things.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS K-2 Science Practices (classifying) — chưa có sách English Science của trường"
+      }
+    }
+  ]
+}

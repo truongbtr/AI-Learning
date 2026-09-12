@@ -2,18 +2,27 @@
  * Reproducible random sample for the rubric review (docs/10 §6).
  * Pool = every PUBLISHED exercise in content/exercises; order = sha256(seed + stableId).
  * QC can regenerate the exact same 20 with: node sample.mjs pha-2-dot-1
+ *
+ * `--only=<regex>` narrows the pool to the packs whose "<subject>/<file>" path matches — how a
+ * later batch draws its twenty from its own packs instead of the whole bank:
+ *   node scripts/sample-exercises.mjs pha-6a-dot-2 20 "" --only='^(esci|emath)/'
  */
 import { createHash } from "node:crypto";
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const SEED = process.argv[2] ?? "pha-2-dot-1";
-const N = Number(process.argv[3] ?? 20);
+const argv = process.argv.slice(2);
+const onlyArg = argv.find((a) => a.startsWith("--only="));
+const positional = argv.filter((a) => !a.startsWith("--"));
+const SEED = positional[0] || "pha-2-dot-1";
+const N = Number(positional[1] ?? 20);
+const only = onlyArg ? new RegExp(onlyArg.slice("--only=".length)) : null;
 const root = join(fileURLToPath(new URL("..", import.meta.url)), "content", "exercises");
 const all = [];
 for (const sub of readdirSync(root))
   for (const f of readdirSync(join(root, sub))) {
+    if (only && !only.test(`${sub}/${f}`)) continue;
     const p = JSON.parse(readFileSync(join(root, sub, f), "utf8"));
     for (const e of p.exercises) all.push({ pack: `${sub}/${f}`, skill: p.skillCode, ...e });
   }

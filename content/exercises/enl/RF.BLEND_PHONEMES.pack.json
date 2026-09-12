@@ -1,0 +1,1640 @@
+{
+  "skillCode": "ENL.RF.BLEND_PHONEMES",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": [],
+  "note": "Ghép âm thành từ (Phonics Review). Hai ô nhiễu tách bạch: cùng âm đầu khác vần là doc_nham_van, cùng vần khác âm đầu là nham_am_dau — nên bảng lỗi nói được con nghe sót ở đầu hay ở cuối.",
+  "exercises": [
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "enl-blend-0001",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right one."
+      },
+      "listenTarget": {
+        "text": "c a t"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat"
+        },
+        {
+          "id": "b",
+          "text": "cap",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "bat",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"cat\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "enl-blend-0002",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Tap it!"
+      },
+      "listenTarget": {
+        "text": "d o g"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dot",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "dog"
+        },
+        {
+          "id": "c",
+          "text": "log",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"dog\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "enl-blend-0003",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "p i g"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "pin",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "big",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "pig"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"pig\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0004",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "s u n"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sun"
+        },
+        {
+          "id": "b",
+          "text": "sub",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "run",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"sun\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "enl-blend-0005",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "b e d"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bet",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "bed"
+        },
+        {
+          "id": "c",
+          "text": "red",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"bed\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0006",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap what you heard."
+      },
+      "listenTarget": {
+        "text": "c u p"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cut",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "pup",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "cup"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"cup\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "enl-blend-0007",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right one."
+      },
+      "listenTarget": {
+        "text": "h a t"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hat"
+        },
+        {
+          "id": "b",
+          "text": "ham",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "bat",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"hat\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0008",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Tap it!"
+      },
+      "listenTarget": {
+        "text": "b u s"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "but",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "bus"
+        },
+        {
+          "id": "c",
+          "text": "pus",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"bus\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "enl-blend-0009",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "n e t"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "neck",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "pet",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "net"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"net\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0010",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "m a p"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "map"
+        },
+        {
+          "id": "b",
+          "text": "mat",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "cap",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the sounds fast, one after the other."],
+      "explanation": "Those sounds make \"map\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "enl-blend-0011",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "c - a - t. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bat",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "cat"
+        },
+        {
+          "id": "c",
+          "text": "cap",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "c - a - t makes \"cat\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "enl-blend-0012",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "d - o - g. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "log",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "dot",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "dog"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "d - o - g makes \"dog\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "enl-blend-0013",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "p - i - g. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "pig"
+        },
+        {
+          "id": "b",
+          "text": "big",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "pin",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "p - i - g makes \"pig\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0014",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "s - u - n. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "run",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "sun"
+        },
+        {
+          "id": "c",
+          "text": "sub",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "s - u - n makes \"sun\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0015",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "b - e - d. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "red",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "bet",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "bed"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "b - e - d makes \"bed\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0016",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "c - u - p. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cup"
+        },
+        {
+          "id": "b",
+          "text": "pup",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "cut",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "c - u - p makes \"cup\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0017",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "h - a - t. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bat",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "hat"
+        },
+        {
+          "id": "c",
+          "text": "ham",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "h - a - t makes \"hat\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0018",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "b - u - s. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "pus",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "but",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "bus"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "b - u - s makes \"bus\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0019",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "n - e - t. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "net"
+        },
+        {
+          "id": "b",
+          "text": "pet",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "neck",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "n - e - t makes \"net\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "enl-blend-0020",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "m - a - p. Which word is it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cap",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "map"
+        },
+        {
+          "id": "c",
+          "text": "mat",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Blend them: say it faster each time.", "Start with the first sound."],
+      "explanation": "m - a - p makes \"map\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0021",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Blend the sounds. Put them in order.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈",
+          "labelEn": "cat",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "s2",
+          "text": "a"
+        },
+        {
+          "id": "s1",
+          "text": "c"
+        },
+        {
+          "id": "s3",
+          "text": "t"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z2",
+          "label": "Middle sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z3",
+          "label": "Last sound",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["s1"],
+        "z2": ["s2"],
+        "z3": ["s3"]
+      },
+      "hints": ["Say the word slowly and stretch each sound."],
+      "explanation": "c - a - t makes \"cat\".",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0022",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Blend the sounds. Put them in order.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐕",
+          "labelEn": "dog",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "s2",
+          "text": "o"
+        },
+        {
+          "id": "s1",
+          "text": "d"
+        },
+        {
+          "id": "s3",
+          "text": "g"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z2",
+          "label": "Middle sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z3",
+          "label": "Last sound",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["s1"],
+        "z2": ["s2"],
+        "z3": ["s3"]
+      },
+      "hints": ["Say the word slowly and stretch each sound."],
+      "explanation": "d - o - g makes \"dog\".",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0023",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Blend the sounds. Put them in order.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐖",
+          "labelEn": "pig",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "s2",
+          "text": "i"
+        },
+        {
+          "id": "s1",
+          "text": "p"
+        },
+        {
+          "id": "s3",
+          "text": "g"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z2",
+          "label": "Middle sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z3",
+          "label": "Last sound",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["s1"],
+        "z2": ["s2"],
+        "z3": ["s3"]
+      },
+      "hints": ["Say the word slowly and stretch each sound."],
+      "explanation": "p - i - g makes \"pig\".",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0024",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Blend the sounds. Put them in order.",
+        "image": {
+          "kind": "emoji",
+          "value": "☀️",
+          "labelEn": "sun",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "s2",
+          "text": "u"
+        },
+        {
+          "id": "s1",
+          "text": "s"
+        },
+        {
+          "id": "s3",
+          "text": "n"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z2",
+          "label": "Middle sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z3",
+          "label": "Last sound",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["s1"],
+        "z2": ["s2"],
+        "z3": ["s3"]
+      },
+      "hints": ["Say the word slowly and stretch each sound."],
+      "explanation": "s - u - n makes \"sun\".",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0025",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Blend the sounds. Put them in order.",
+        "image": {
+          "kind": "emoji",
+          "value": "🛏️",
+          "labelEn": "bed",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "s2",
+          "text": "e"
+        },
+        {
+          "id": "s1",
+          "text": "b"
+        },
+        {
+          "id": "s3",
+          "text": "d"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z2",
+          "label": "Middle sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z3",
+          "label": "Last sound",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["s1"],
+        "z2": ["s2"],
+        "z3": ["s3"]
+      },
+      "hints": ["Say the word slowly and stretch each sound."],
+      "explanation": "b - e - d makes \"bed\".",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0026",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Blend the sounds. Put them in order.",
+        "image": {
+          "kind": "emoji",
+          "value": "☕",
+          "labelEn": "cup",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "s2",
+          "text": "u"
+        },
+        {
+          "id": "s1",
+          "text": "c"
+        },
+        {
+          "id": "s3",
+          "text": "p"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z2",
+          "label": "Middle sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z3",
+          "label": "Last sound",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["s1"],
+        "z2": ["s2"],
+        "z3": ["s3"]
+      },
+      "hints": ["Say the word slowly and stretch each sound."],
+      "explanation": "c - u - p makes \"cup\".",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0027",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Blend the sounds. Put them in order.",
+        "image": {
+          "kind": "emoji",
+          "value": "🎩",
+          "labelEn": "hat",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "s2",
+          "text": "a"
+        },
+        {
+          "id": "s1",
+          "text": "h"
+        },
+        {
+          "id": "s3",
+          "text": "t"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z2",
+          "label": "Middle sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z3",
+          "label": "Last sound",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["s1"],
+        "z2": ["s2"],
+        "z3": ["s3"]
+      },
+      "hints": ["Say the word slowly and stretch each sound."],
+      "explanation": "h - a - t makes \"hat\".",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0028",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Blend the sounds. Put them in order.",
+        "image": {
+          "kind": "emoji",
+          "value": "🚌",
+          "labelEn": "bus",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "s2",
+          "text": "u"
+        },
+        {
+          "id": "s1",
+          "text": "b"
+        },
+        {
+          "id": "s3",
+          "text": "s"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z1",
+          "label": "First sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z2",
+          "label": "Middle sound",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "z3",
+          "label": "Last sound",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "z1": ["s1"],
+        "z2": ["s2"],
+        "z3": ["s3"]
+      },
+      "hints": ["Say the word slowly and stretch each sound."],
+      "explanation": "b - u - s makes \"bus\".",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-blend-0029",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "cat dog pig",
+        "words": ["cat", "dog", "pig"]
+      },
+      "answerKey": {
+        "words": ["cat", "dog", "pig"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "Blend each one: \"cat dog pig\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0030",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "sun bed cup",
+        "words": ["sun", "bed", "cup"]
+      },
+      "answerKey": {
+        "words": ["sun", "bed", "cup"]
+      },
+      "hints": ["Sound out the hard word first."],
+      "explanation": "Blend each one: \"sun bed cup\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0031",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "hat bus net",
+        "words": ["hat", "bus", "net"]
+      },
+      "answerKey": {
+        "words": ["hat", "bus", "net"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "Blend each one: \"hat bus net\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0032",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "map log run",
+        "words": ["map", "log", "run"]
+      },
+      "answerKey": {
+        "words": ["map", "log", "run"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "Blend each one: \"map log run\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0033",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "big red pet",
+        "words": ["big", "red", "pet"]
+      },
+      "answerKey": {
+        "words": ["big", "red", "pet"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "Blend each one: \"big red pet\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0034",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "cap dot pin",
+        "words": ["cap", "dot", "pin"]
+      },
+      "answerKey": {
+        "words": ["cap", "dot", "pin"]
+      },
+      "hints": ["Sound out the hard word first."],
+      "explanation": "Blend each one: \"cap dot pin\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0035",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "bat bun cut",
+        "words": ["bat", "bun", "cut"]
+      },
+      "answerKey": {
+        "words": ["bat", "bun", "cut"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "Blend each one: \"bat bun cut\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0036",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "log mat sit",
+        "words": ["log", "mat", "sit"]
+      },
+      "answerKey": {
+        "words": ["log", "mat", "sit"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "Blend each one: \"log mat sit\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0037",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "pen tip nut",
+        "words": ["pen", "tip", "nut"]
+      },
+      "answerKey": {
+        "words": ["pen", "tip", "nut"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "Blend each one: \"pen tip nut\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0038",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "cut hop rib",
+        "words": ["cut", "hop", "rib"]
+      },
+      "answerKey": {
+        "words": ["cut", "hop", "rib"]
+      },
+      "hints": ["Sound out the hard word first."],
+      "explanation": "Blend each one: \"cut hop rib\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0039",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "sun sat sit",
+        "words": ["sun", "sat", "sit"]
+      },
+      "answerKey": {
+        "words": ["sun", "sat", "sit"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "Blend each one: \"sun sat sit\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-blend-0040",
+      "language": "en",
+      "skillCodes": ["ENL.RF.BLEND_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "map mop mud",
+        "words": ["map", "mop", "mud"]
+      },
+      "answerKey": {
+        "words": ["map", "mop", "mud"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "Blend each one: \"map mop mud\".",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R) — chưa chụp trang sách"
+      }
+    }
+  ]
+}

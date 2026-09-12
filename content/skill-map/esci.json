@@ -23,8 +23,16 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "SPEAK_ANSWER",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.PS.LIGHT_MATERIALS",
@@ -39,8 +47,16 @@
       "prerequisites": ["ESCI.PS.LIGHT_SEE"],
       "relatedSkillCodes": ["ESCI.VOC.MATERIALS"],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ", "SPEAK_ANSWER"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "DRAG_DROP",
+        "MCQ",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.PS.SOUND_VIBRATION",
@@ -103,8 +119,16 @@
       "prerequisites": [],
       "relatedSkillCodes": ["ESCI.VOC.MATERIALS"],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "DRAG_DROP",
+        "MCQ",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.PS.FLOAT_SINK",
@@ -119,8 +143,15 @@
       "prerequisites": ["ESCI.PS.MATERIALS_PROPERTIES"],
       "relatedSkillCodes": ["ESCI.INQ.PREDICT"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.PS.PUSH_PULL",
@@ -183,8 +214,16 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": ["ESCI.INQ.SORT_CLASSIFY"],
-      "exerciseTypes": ["DRAG_DROP", "MCQ", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "DRAG_DROP",
+        "MCQ",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.LS.NEEDS_OF_LIVING_THINGS",
@@ -199,8 +238,16 @@
       "prerequisites": ["ESCI.LS.LIVING_NONLIVING"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.LS.PLANT_PARTS",
@@ -519,8 +566,16 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["SPEAK_ANSWER", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "SPEAK_ANSWER",
+        "MCQ",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.INQ.ASK_QUESTIONS",
@@ -551,8 +606,16 @@
       "prerequisites": ["ESCI.INQ.ASK_QUESTIONS"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "COUNT_TAP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.INQ.SORT_CLASSIFY",
@@ -567,8 +630,15 @@
       "prerequisites": ["ESCI.INQ.OBSERVE_DESCRIBE"],
       "relatedSkillCodes": ["ENL.L.CATEGORIES"],
       "confusableWith": ["ESCI.LS.LIVING_NONLIVING"],
-      "exerciseTypes": ["DRAG_DROP", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "DRAG_DROP",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.INQ.MEASURE_COMPARE",
@@ -647,8 +717,15 @@
       "prerequisites": [],
       "relatedSkillCodes": ["ESL.VOC.SCHOOL_OBJECTS"],
       "confusableWith": [],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "READ_ALOUD"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "LISTEN_CHOOSE",
+        "MCQ",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "COUNT_TAP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.VOC.SENSES",

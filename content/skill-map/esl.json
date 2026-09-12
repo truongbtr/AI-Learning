@@ -102,8 +102,15 @@
       "prerequisites": [],
       "relatedSkillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "confusableWith": ["ESL.LIS.NUMBERS_LETTERS_DICTATION"],
-      "exerciseTypes": ["LISTEN_CHOOSE", "COUNT_TAP", "MCQ", "READ_ALOUD"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "MCQ",
+        "READ_ALOUD",
+        "DRAG_DROP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.VOC.SCHOOL_OBJECTS",
@@ -198,8 +205,15 @@
       "prerequisites": ["ESL.VOC.ANIMALS_PETS"],
       "relatedSkillCodes": ["ESCI.VOC.ANIMAL_WORDS"],
       "confusableWith": [],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "READ_ALOUD"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "LISTEN_CHOOSE",
+        "MCQ",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "COUNT_TAP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.VOC.FOOD",
@@ -425,14 +439,7 @@
       "prerequisites": ["ESL.PH.ALPHABET_NAMES"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": [
-        "READ_ALOUD",
-        "LISTEN_CHOOSE",
-        "MCQ",
-        "DRAG_DROP",
-        "COUNT_TAP",
-        "WRITE_PHOTO"
-      ],
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
       "difficultyRange": [1, 5]
     },
     {
@@ -560,8 +567,8 @@
       "prerequisites": ["ESL.PH.CVC_SHORT_U"],
       "relatedSkillCodes": ["ENL.L.SPELL_PHONETICALLY"],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ", "WRITE_PHOTO", "READ_ALOUD"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["DRAG_DROP", "MCQ", "WRITE_PHOTO", "READ_ALOUD", "LISTEN_CHOOSE"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.PH.BLENDS_INITIAL",
@@ -928,8 +935,15 @@
       "prerequisites": ["ESL.GR.PLURAL_S"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "COUNT_TAP",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.GR.CAN_CANT",

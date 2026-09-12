@@ -1,0 +1,1724 @@
+{
+  "skillCode": "EMATH.OA.SUB_WITHIN_5",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": [],
+  "note": "Trừ trong phạm vi 5. Ô nhiễu `nham_cong_tru` là kết quả của phép cộng — đúng lỗi trẻ 6 tuổi hay mắc khi nhìn lướt dấu.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "id": "emath-sub5-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "2 - 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start at 2 and count back 1.", "Use your fingers if you like."],
+      "explanation": "2 minus 1 is 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-sub5-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "3 - 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at 3 and count back 1.", "Use your fingers if you like."],
+      "explanation": "3 minus 1 is 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-sub5-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "3 - 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Start at 3 and count back 2.", "Use your fingers if you like."],
+      "explanation": "3 minus 2 is 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "id": "emath-sub5-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start at 4 and count back 1.", "Use your fingers if you like."],
+      "explanation": "4 minus 1 is 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-sub5-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at 4 and count back 2.", "Use your fingers if you like."],
+      "explanation": "4 minus 2 is 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Start at 4 and count back 3.", "Use your fingers if you like."],
+      "explanation": "4 minus 3 is 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-sub5-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start at 5 and count back 1.", "Use your fingers if you like."],
+      "explanation": "5 minus 1 is 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at 5 and count back 2.", "Use your fingers if you like."],
+      "explanation": "5 minus 2 is 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Start at 5 and count back 3.", "Use your fingers if you like."],
+      "explanation": "5 minus 3 is 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-sub5-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start at 5 and count back 4.", "Use your fingers if you like."],
+      "explanation": "5 minus 4 is 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 0 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at 5 and count back 0.", "Use your fingers if you like."],
+      "explanation": "5 minus 0 is 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "3 - 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Start at 3 and count back 3.", "Use your fingers if you like."],
+      "explanation": "3 minus 3 is 0.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-sub5-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Five apples. He eats two. How many are left?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "apples",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Take away two and count what is left.", "Draw the pictures if it helps."],
+      "explanation": "5 minus 2 is 3.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Four birds. One flies away. How many are left?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelEn": "birds",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["One less than four.", "Draw the pictures if it helps."],
+      "explanation": "4 minus 1 is 3.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-sub5-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Three cakes. She eats one. How many are left?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍰",
+          "labelEn": "cakes",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count back one from three.", "Draw the pictures if it helps."],
+      "explanation": "3 minus 1 is 2.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Five stars. Three go out. How many are left?",
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "stars",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count back three from five.", "Draw the pictures if it helps."],
+      "explanation": "5 minus 3 is 2.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-sub5-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Four fish. Two swim away. How many are left?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelEn": "fish",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Take away two from four.", "Draw the pictures if it helps."],
+      "explanation": "4 minus 2 is 2.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Five balls. He gives one away. How many are left?",
+        "image": {
+          "kind": "emoji",
+          "value": "⚽",
+          "labelEn": "balls",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["One less than five.", "Draw the pictures if it helps."],
+      "explanation": "5 minus 1 is 4.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-sub5-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the answer."
+      },
+      "listenTarget": {
+        "text": "two minus one"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen one more time."],
+      "explanation": "2 minus 1 is 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-sub5-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a sum. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "three minus one"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the numbers out loud yourself."],
+      "explanation": "3 minus 1 is 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-sub5-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "three minus two"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Use your fingers to help."],
+      "explanation": "3 minus 2 is 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-sub5-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What is the answer? Tap it."
+      },
+      "listenTarget": {
+        "text": "four minus one"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start from the bigger number."],
+      "explanation": "4 minus 1 is 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-sub5-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick a number."
+      },
+      "listenTarget": {
+        "text": "four minus two"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on, one at a time."],
+      "explanation": "4 minus 2 is 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-sub5-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the number you worked out."
+      },
+      "listenTarget": {
+        "text": "four minus three"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "4 minus 3 is 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-sub5-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the answer."
+      },
+      "listenTarget": {
+        "text": "five minus one"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the numbers out loud yourself."],
+      "explanation": "5 minus 1 is 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "3 - 2 = ?  Drag the answer into the box."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "1"
+        },
+        {
+          "id": "x1",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "x2",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "Answer",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "box": ["ok"]
+      },
+      "hints": ["Count back 2 from 3."],
+      "explanation": "3 minus 2 is 1.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 1 = ?  Which card fits? Drag it in."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "3"
+        },
+        {
+          "id": "x1",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "x2",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "Answer",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "box": ["ok"]
+      },
+      "hints": ["Count back 1 from 4."],
+      "explanation": "4 minus 1 is 3.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 2 = ?  Put the right number in."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "2"
+        },
+        {
+          "id": "x1",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "x2",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "Answer",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "box": ["ok"]
+      },
+      "hints": ["Count back 2 from 4."],
+      "explanation": "4 minus 2 is 2.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 3 = ?  Help {ban} fill the box."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "1"
+        },
+        {
+          "id": "x1",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "x2",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "Answer",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "box": ["ok"]
+      },
+      "hints": ["Count back 3 from 4."],
+      "explanation": "4 minus 3 is 1.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 1 = ?  Find the answer card."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "4"
+        },
+        {
+          "id": "x1",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "x2",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "Answer",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "box": ["ok"]
+      },
+      "hints": ["Count back 1 from 5."],
+      "explanation": "5 minus 1 is 4.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 2 = ?  Drag the number that fits."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "3"
+        },
+        {
+          "id": "x1",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "x2",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "Answer",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "box": ["ok"]
+      },
+      "hints": ["Count back 2 from 5."],
+      "explanation": "5 minus 2 is 3.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-sub5-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 3 = ?  Drag the answer into the box."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "2"
+        },
+        {
+          "id": "x1",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "x2",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "box",
+          "label": "Answer",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "box": ["ok"]
+      },
+      "hints": ["Count back 3 from 5."],
+      "explanation": "5 minus 3 is 2.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap to count them all."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍰",
+          "labelEn": "cakes",
+          "repeat": 3
+        },
+        "correctCount": 3,
+        "layout": "grid"
+      },
+      "answerKey": 3,
+      "hints": ["Touch each one as you say the number."],
+      "explanation": "There are 3 cakes.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⚽",
+          "labelEn": "balls",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Touch each one as you say the number."],
+      "explanation": "There are 5 balls.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count with {ban}!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelEn": "birds",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Touch each one as you say the number."],
+      "explanation": "There are 4 birds.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tap every picture to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "stars",
+          "repeat": 2
+        },
+        "correctCount": 2,
+        "layout": "line"
+      },
+      "answerKey": 2,
+      "hints": ["Touch each one as you say the number."],
+      "explanation": "There are 2 stars.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0037",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count them one by one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "apples",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Touch each one as you say the number."],
+      "explanation": "There are 5 apples.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-sub5-0038",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Five minus two is three.",
+        "words": ["Five", "minus", "two", "is", "three"]
+      },
+      "answerKey": {
+        "words": ["Five", "minus", "two", "is", "three"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Five minus two is three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0039",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Four minus one is three.",
+        "words": ["Four", "minus", "one", "is", "three"]
+      },
+      "answerKey": {
+        "words": ["Four", "minus", "one", "is", "three"]
+      },
+      "hints": ["Say each number clearly."],
+      "explanation": "This says: \"Four minus one is three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0040",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Three minus three is zero.",
+        "words": ["Three", "minus", "three", "is", "zero"]
+      },
+      "answerKey": {
+        "words": ["Three", "minus", "three", "is", "zero"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Three minus three is zero.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0041",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Five minus four is one.",
+        "words": ["Five", "minus", "four", "is", "one"]
+      },
+      "answerKey": {
+        "words": ["Five", "minus", "four", "is", "one"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Five minus four is one.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0042",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this number sentence."
+      },
+      "readTarget": {
+        "text": "Four minus two is two.",
+        "words": ["Four", "minus", "two", "is", "two"]
+      },
+      "answerKey": {
+        "words": ["Four", "minus", "two", "is", "two"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Four minus two is two.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0043",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write in your book: 5 - 2 = ?"
+      },
+      "rubric": {
+        "criteria": ["Chép lại đúng phép tính", "Kết quả đúng", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["5 - 2 = 3"]
+      },
+      "answerKey": null,
+      "hints": ["Work one line at a time."],
+      "explanation": "Check each line again before you take the photo.",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0044",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write in your book: 4 - 3 = ?"
+      },
+      "rubric": {
+        "criteria": ["Chép lại đúng phép tính", "Kết quả đúng", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["4 - 3 = 1"]
+      },
+      "answerKey": null,
+      "hints": ["Check with your fingers."],
+      "explanation": "Check each line again before you take the photo.",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-sub5-0045",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.SUB_WITHIN_5"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write in your book: 5 - 4 = ?"
+      },
+      "rubric": {
+        "criteria": ["Chép lại đúng phép tính", "Kết quả đúng", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["5 - 4 = 1"]
+      },
+      "answerKey": null,
+      "hints": ["Write the numbers neatly."],
+      "explanation": "Check each line again before you take the photo.",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (subtract within 5) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1630 @@
+{
+  "skillCode": "VIET.DOC.DOC_TU",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B13"],
+  "note": "Từ ngữ hai tiếng của sách: đu đủ, cá cờ, lá cờ, bí đỏ… Phương án nhiễu lệch đúng một dấu hoặc một con chữ, nên con phải đọc cả hai tiếng.",
+  "exercises": [
+    {
+      "assetTheme": "garden",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "model",
+      "id": "viet-doctu-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn từ đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🍈",
+          "labelVi": "quả đu đủ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đu đủ"
+        },
+        {
+          "id": "b",
+          "text": "đu đu",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "đa đủ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ quả đu đủ.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Quả đu đủ đọc là \"đu đủ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-doctu-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn từ gọi tên bức tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐠",
+          "labelVi": "con cá cờ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá cỏ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "cá cờ"
+        },
+        {
+          "id": "c",
+          "text": "cà cờ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ con cá cờ.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Con cá cờ đọc là \"cá cờ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "model",
+      "id": "viet-doctu-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tranh này là từ nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚩",
+          "labelVi": "lá cờ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "là cờ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "lá cỏ"
+        },
+        {
+          "id": "c",
+          "text": "lá cờ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ lá cờ.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Lá cờ đọc là \"lá cờ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "model",
+      "id": "viet-doctu-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Từ nào hợp với bức tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "🎃",
+          "labelVi": "quả bí đỏ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bí đỏ"
+        },
+        {
+          "id": "b",
+          "text": "bí đò",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "bì đỏ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ quả bí đỏ.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Quả bí đỏ đọc là \"bí đỏ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn tranh rồi chọn từ.",
+        "image": {
+          "kind": "emoji",
+          "value": "👧",
+          "labelVi": "cô bé",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cô be",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "cô bé"
+        },
+        {
+          "id": "c",
+          "text": "cô bê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ cô bé.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Cô bé đọc là \"cô bé\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Bức tranh này đọc là từ nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🏞️",
+          "labelVi": "hồ cá",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hổ cá",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "hồ cà"
+        },
+        {
+          "id": "c",
+          "text": "hồ cá"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ hồ cá.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Hồ cá đọc là \"hồ cá\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn từ đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "bể cá",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bể cá"
+        },
+        {
+          "id": "b",
+          "text": "bệ cá",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "bể cà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ bể cá.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Bể cá đọc là \"bể cá\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn từ gọi tên bức tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "👵",
+          "labelVi": "bà cụ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bà củ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bà cụ"
+        },
+        {
+          "id": "c",
+          "text": "bá cụ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ bà cụ.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Bà cụ đọc là \"bà cụ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tranh này là từ nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌿",
+          "labelVi": "bó cỏ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bò cỏ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bó có"
+        },
+        {
+          "id": "c",
+          "text": "bó cỏ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ bó cỏ.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Bó cỏ đọc là \"bó cỏ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Từ nào hợp với bức tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "🏞️",
+          "labelVi": "bờ đê",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bờ đê"
+        },
+        {
+          "id": "b",
+          "text": "bở đê",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "bô đê"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ bờ đê.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Bờ đê đọc là \"bờ đê\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn tranh rồi chọn từ.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐯",
+          "labelVi": "hổ dữ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hồ dữ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "hổ dữ"
+        },
+        {
+          "id": "c",
+          "text": "hổ dừ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ hổ dữ.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Hổ dữ đọc là \"hổ dữ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Bức tranh này đọc là từ nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🛶",
+          "labelVi": "con đò cũ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đó cũ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "đò cú"
+        },
+        {
+          "id": "c",
+          "text": "đò cũ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ con đò cũ.", "Đọc cả hai tiếng rồi hãy chọn nhé!"],
+      "explanation": "Con đò cũ đọc là \"đò cũ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "đu đủ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đu đu",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "đu đủ"
+        },
+        {
+          "id": "c",
+          "text": "đa đủ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe từ \"đu đủ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-doctu-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "cá cờ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá cỏ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "cà cờ"
+        },
+        {
+          "id": "c",
+          "text": "cá cờ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Các ô gần giống nhau, nghe kỹ phần đầu."],
+      "explanation": "Con vừa nghe từ \"cá cờ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào ô con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "lá cờ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lá cờ"
+        },
+        {
+          "id": "b",
+          "text": "là cờ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "lá cỏ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe từ \"lá cờ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng ô nhé!"
+      },
+      "listenTarget": {
+        "text": "bí đỏ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bí đò",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bí đỏ"
+        },
+        {
+          "id": "c",
+          "text": "bì đỏ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe từ \"bí đỏ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, con nghe thấy gì nào?"
+      },
+      "listenTarget": {
+        "text": "cô bé"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cô be",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "cô bê"
+        },
+        {
+          "id": "c",
+          "text": "cô bé"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chú ý dấu thanh của tiếng con nghe."],
+      "explanation": "Con vừa nghe từ \"cô bé\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "hồ cá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hồ cá"
+        },
+        {
+          "id": "b",
+          "text": "hổ cá",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "hồ cà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe từ \"hồ cá\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "bể cá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bệ cá",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bể cá"
+        },
+        {
+          "id": "c",
+          "text": "bể cà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô gần giống nhau, nghe kỹ phần đầu."],
+      "explanation": "Con vừa nghe từ \"bể cá\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "bà cụ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bà củ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "bá cụ"
+        },
+        {
+          "id": "c",
+          "text": "bà cụ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe từ \"bà cụ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Từ bắt đầu bằng \"đu\". Kéo tiếng còn lại vào ô nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🍈",
+          "labelVi": "quả đu đủ",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "đủ"
+        },
+        {
+          "id": "sai",
+          "text": "đu",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Tiếng thứ hai",
+          "accepts": ["dung", "sai"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ quả đu đủ.", "Đọc thử cả hai cách xem cách nào nghe đúng."],
+      "explanation": "Quả đu đủ là \"đu đủ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-doctu-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Từ bắt đầu bằng \"cá\". Kéo tiếng còn lại vào ô nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐠",
+          "labelVi": "con cá cờ",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "cờ"
+        },
+        {
+          "id": "sai",
+          "text": "cỏ",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Tiếng thứ hai",
+          "accepts": ["dung", "sai"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ con cá cờ.", "Đọc thử cả hai cách xem cách nào nghe đúng."],
+      "explanation": "Con cá cờ là \"cá cờ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Từ bắt đầu bằng \"lá\". Kéo tiếng còn lại vào ô nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🚩",
+          "labelVi": "lá cờ",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "cờ"
+        },
+        {
+          "id": "sai",
+          "text": "cờ",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Tiếng thứ hai",
+          "accepts": ["dung", "sai"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ lá cờ.", "Đọc thử cả hai cách xem cách nào nghe đúng."],
+      "explanation": "Lá cờ là \"lá cờ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Từ bắt đầu bằng \"bí\". Kéo tiếng còn lại vào ô nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🎃",
+          "labelVi": "quả bí đỏ",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "đỏ"
+        },
+        {
+          "id": "sai",
+          "text": "đò",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Tiếng thứ hai",
+          "accepts": ["dung", "sai"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ quả bí đỏ.", "Đọc thử cả hai cách xem cách nào nghe đúng."],
+      "explanation": "Quả bí đỏ là \"bí đỏ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Từ bắt đầu bằng \"cô\". Kéo tiếng còn lại vào ô nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "👧",
+          "labelVi": "cô bé",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "bé"
+        },
+        {
+          "id": "sai",
+          "text": "be",
+          "errorTag": "thieu_dau_thanh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Tiếng thứ hai",
+          "accepts": ["dung", "sai"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ cô bé.", "Đọc thử cả hai cách xem cách nào nghe đúng."],
+      "explanation": "Cô bé là \"cô bé\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Từ bắt đầu bằng \"hồ\". Kéo tiếng còn lại vào ô nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🏞️",
+          "labelVi": "hồ cá",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "cá"
+        },
+        {
+          "id": "sai",
+          "text": "cá",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Tiếng thứ hai",
+          "accepts": ["dung", "sai"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ hồ cá.", "Đọc thử cả hai cách xem cách nào nghe đúng."],
+      "explanation": "Hồ cá là \"hồ cá\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Từ bắt đầu bằng \"bể\". Kéo tiếng còn lại vào ô nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "bể cá",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "cá"
+        },
+        {
+          "id": "sai",
+          "text": "cá",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Tiếng thứ hai",
+          "accepts": ["dung", "sai"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ bể cá.", "Đọc thử cả hai cách xem cách nào nghe đúng."],
+      "explanation": "Bể cá là \"bể cá\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-doctu-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Từ bắt đầu bằng \"bà\". Kéo tiếng còn lại vào ô nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "👵",
+          "labelVi": "bà cụ",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "cụ"
+        },
+        {
+          "id": "sai",
+          "text": "củ",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Tiếng thứ hai",
+          "accepts": ["dung", "sai"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ bà cụ.", "Đọc thử cả hai cách xem cách nào nghe đúng."],
+      "explanation": "Bà cụ là \"bà cụ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-doctu-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "đu đủ",
+        "words": ["đu", "đủ"]
+      },
+      "answerKey": {
+        "words": ["đu", "đủ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Từ này đọc là \"đu đủ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-doctu-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "cá cờ",
+        "words": ["cá", "cờ"]
+      },
+      "answerKey": {
+        "words": ["cá", "cờ"]
+      },
+      "hints": ["Đánh vần thầm rồi đọc trơn lại."],
+      "explanation": "Từ này đọc là \"cá cờ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "lá cờ",
+        "words": ["lá", "cờ"]
+      },
+      "answerKey": {
+        "words": ["lá", "cờ"]
+      },
+      "hints": ["Đọc thầm một lần trước đã."],
+      "explanation": "Từ này đọc là \"lá cờ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "bí đỏ",
+        "words": ["bí", "đỏ"]
+      },
+      "answerKey": {
+        "words": ["bí", "đỏ"]
+      },
+      "hints": ["Ngắt rõ giữa các tiếng nhé!"],
+      "explanation": "Từ này đọc là \"bí đỏ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "cô bé",
+        "words": ["cô", "bé"]
+      },
+      "answerKey": {
+        "words": ["cô", "bé"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Từ này đọc là \"cô bé\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc trơn, đừng đánh vần nhé!"
+      },
+      "readTarget": {
+        "text": "hồ cá",
+        "words": ["hồ", "cá"]
+      },
+      "answerKey": {
+        "words": ["hồ", "cá"]
+      },
+      "hints": ["Đánh vần thầm rồi đọc trơn lại."],
+      "explanation": "Từ này đọc là \"hồ cá\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "bà cụ",
+        "words": ["bà", "cụ"]
+      },
+      "answerKey": {
+        "words": ["bà", "cụ"]
+      },
+      "hints": ["Đọc thầm một lần trước đã."],
+      "explanation": "Từ này đọc là \"bà cụ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "bờ đê",
+        "words": ["bờ", "đê"]
+      },
+      "answerKey": {
+        "words": ["bờ", "đê"]
+      },
+      "hints": ["Ngắt rõ giữa các tiếng nhé!"],
+      "explanation": "Từ này đọc là \"bờ đê\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "hổ dữ",
+        "words": ["hổ", "dữ"]
+      },
+      "answerKey": {
+        "words": ["hổ", "dữ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Từ này đọc là \"hổ dữ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "đò cũ",
+        "words": ["đò", "cũ"]
+      },
+      "answerKey": {
+        "words": ["đò", "cũ"]
+      },
+      "hints": ["Đánh vần thầm rồi đọc trơn lại."],
+      "explanation": "Từ này đọc là \"đò cũ\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: đu đủ, cá cờ."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ hai từ",
+          "Hai tiếng trong một từ viết cách nhau",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["đu đủ, cá cờ"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, đúng độ cao từng con chữ."],
+      "explanation": "Viết xong con đọc lại cả từ nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: lá cờ, bí đỏ."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ hai từ",
+          "Hai tiếng trong một từ viết cách nhau",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["lá cờ, bí đỏ"]
+      },
+      "answerKey": null,
+      "hints": ["Viết con chữ trước, đánh dấu thanh sau."],
+      "explanation": "Viết xong con đọc lại cả từ nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: hồ cá, bà cụ."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ hai từ",
+          "Hai tiếng trong một từ viết cách nhau",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["hồ cá, bà cụ"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo nhé!"],
+      "explanation": "Viết xong con đọc lại cả từ nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-doctu-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_TU"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chép vào vở nhé: bờ đê, đò cũ."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ hai từ",
+          "Hai tiếng trong một từ viết cách nhau",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["bờ đê, đò cũ"]
+      },
+      "answerKey": null,
+      "hints": ["Viết xong đọc lại xem đã đúng tiếng chưa."],
+      "explanation": "Viết xong con đọc lại cả từ nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B13",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)"
+      }
+    }
+  ]
+}
