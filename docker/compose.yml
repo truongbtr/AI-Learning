@@ -78,6 +78,49 @@ services:
       web:
         condition: service_started
 
+  # ── Mở ra internet (docs/08 pha 8 việc 1) ─────────────────────────────────────────────────
+  # Outbound only: the tunnel dials Cloudflare, so no port is opened on the house router and the
+  # machine's other services (ports 80 and 443 belong to something else here) are untouched.
+  # Start it with the profile so a LAN-only run never needs a token:
+  #   docker compose --env-file .env -f docker/compose.yml --profile tunnel up -d cloudflared
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    profiles: ["tunnel"]
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      # Empty by default: compose interpolates every service in the file, so a mandatory `:?` here
+      # would break `--profile backup` too. cloudflared refuses to start without it and says so.
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN:-}
+      TZ: Asia/Ho_Chi_Minh
+    depends_on:
+      web:
+        condition: service_started
+
+  # ── Sao lưu hằng đêm (docs/08 pha 8 việc 2) ───────────────────────────────────────────────
+  # pg_dump + a copy of the files, written to BACKUP_DIR on the host so the folder is visible in
+  # Explorer and can be synced to a NAS by whatever the family already uses.
+  #   docker compose --env-file .env -f docker/compose.yml --profile backup up -d backup
+  backup:
+    image: postgres:16
+    profiles: ["backup"]
+    restart: unless-stopped
+    env_file:
+      - ../.env
+    environment:
+      TZ: Asia/Ho_Chi_Minh
+      PGHOST: postgres
+      BACKUP_HOUR: ${BACKUP_HOUR:-1}
+      BACKUP_KEEP_DAYS: ${BACKUP_KEEP_DAYS:-30}
+    entrypoint: ["/bin/sh", "/backup/backup-loop.sh"]
+    volumes:
+      - ./backup:/backup:ro
+      - files:/data/files:ro
+      - ${BACKUP_DIR:-../_sao-luu}:/out
+    depends_on:
+      postgres:
+        condition: service_healthy
+
 volumes:
   pgdata:
   files:

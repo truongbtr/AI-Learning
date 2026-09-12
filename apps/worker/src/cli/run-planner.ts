@@ -1,7 +1,11 @@
 /**
- * `pnpm plan:run [--student thy] [--date 2026-09-14] [--force]` — plans today's Daily Quest from
- * the command line (docs/08 pha 3 việc 4: "job planner.daily 04:00 + gọi tay"). Same code path as
- * the scheduled job, so what you test by hand is what runs at four in the morning.
+ * `pnpm plan:run [--student thy] [--date 2026-09-14] [--force] [--no-assessment]` — plans today's
+ * Daily Quest from the command line (docs/08 pha 3 việc 4: "job planner.daily 04:00 + gọi tay").
+ * Same code path as the scheduled job, so what you test by hand is what runs at four in the morning.
+ *
+ * `--no-assessment` skips the three diagnostic evenings of docs/04 §10 and plans an ordinary quest.
+ * For a child whose level the family already knows — and for the acceptance suites, which are
+ * about the Daily Quest and would otherwise meet a diagnostic on a freshly seeded database.
  */
 import { existsSync } from "node:fs";
 import { join } from "node:path";
@@ -37,6 +41,9 @@ async function main(): Promise<void> {
   const result = await runPlannerDailyJob(prisma, log, {
     date,
     force: process.argv.includes("--force"),
+    // A child whose level the family already knows, and the acceptance suites, skip the three
+    // diagnostic evenings of docs/04 §10 and get an ordinary Daily Quest straight away.
+    skipAssessment: process.argv.includes("--no-assessment"),
     studentId: student?.id,
   });
 

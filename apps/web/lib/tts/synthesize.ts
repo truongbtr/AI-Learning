@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getOrSynthesize, ttsConfigFromEnv } from "@mtct/core/tts";
+import { prisma, recordTtsUsage } from "@mtct/db";
 import { fileStorage } from "@/lib/storage";
 
 /**
@@ -43,6 +44,10 @@ export async function speakAudio(
     const bytes = await recordedClip(clip, lang);
     if (bytes) return { bytes, source: "clip" };
   }
-  const result = await getOrSynthesize(text, lang, ttsConfigFromEnv(), fileStorage());
+  const cfg = ttsConfigFromEnv();
+  const result = await getOrSynthesize(text, lang, cfg, fileStorage());
+  // Only a `cloud` result cost anything; a `cache` hit is a file on disk. Counted so the free
+  // Azure allowance is visible on /admin/health (docs/08 pha 8, tiêu chí 5) rather than on a bill.
+  if (result?.source === "cloud") await recordTtsUsage(prisma, text.length, cfg.provider);
   return result ? { bytes: result.bytes, source: result.source } : null;
 }

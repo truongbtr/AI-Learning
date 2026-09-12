@@ -270,7 +270,7 @@ test("3. duyệt kế hoạch → phiên hôm sau có ≥ 40% bài thuộc kế 
   await expect(page.getByTestId("plan-notice")).toContainText("Đã duyệt", { timeout: 30_000 });
 
   // The planner, run the way the scheduled job runs it, inside the plan's week.
-  pnpm("plan:run", "--", "--student", "thy", "--date", PLAN_WEEK, "--force");
+  pnpm("plan:run", "--", "--student", "thy", "--date", PLAN_WEEK, "--force", "--no-assessment");
   const sessions = await page.request
     .get(`/api/sessions?studentId=${studentId}`)
     .then((r) => r.json());
@@ -336,7 +336,7 @@ test("2. đổi thời khoá biểu → Daily Quest ngày hôm sau đổi môn �
 
 /** Which subject the planner says it favoured on `date`, straight out of the session's own log. */
 async function priorityFor(page: Page, date: string): Promise<string> {
-  pnpm("plan:run", "--", "--student", "thy", "--date", date, "--force");
+  pnpm("plan:run", "--", "--student", "thy", "--date", date, "--force", "--no-assessment");
   const detail = await page.request
     .post("/api/sessions", { data: { studentId, date: `${date}T08:00:00+07:00` } })
     .then((r) => r.json());

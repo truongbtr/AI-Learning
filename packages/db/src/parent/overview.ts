@@ -208,10 +208,11 @@ export async function studentOverview(
       select: { rung: true, errorCode: true, status: true, skill: { select: { code: true } } },
     }),
     db.session.findFirst({
-      // The Daily Quest specifically. A TARGETED session a parent made from the skill drawer is
-      // an extra, and showing it as "tonight" would say the quest had not been started when it
-      // had — or worse, that it was done when it had not.
-      where: { studentId, date: todayDate, kind: "DAILY_QUEST" },
+      // Tonight's session: the Daily Quest, or — on the first three evenings of a new child — the
+      // diagnostic that stands in for it (docs/04 §10). A TARGETED session a parent made from the
+      // skill drawer is an extra, and showing it as "tonight" would say the quest had not been
+      // started when it had, or worse that it was done when it had not.
+      where: { studentId, date: todayDate, kind: { in: ["DAILY_QUEST", "ASSESSMENT"] } },
       orderBy: { createdAt: "desc" },
       select: {
         id: true,

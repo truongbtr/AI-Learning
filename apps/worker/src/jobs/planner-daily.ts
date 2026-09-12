@@ -35,7 +35,7 @@ export interface PlannerDailyResult {
 export async function runPlannerDailyJob(
   prisma: PrismaClient,
   log: Logger,
-  opts: { date?: Date; force?: boolean; studentId?: string } = {},
+  opts: { date?: Date; force?: boolean; studentId?: string; skipAssessment?: boolean } = {},
 ): Promise<PlannerDailyResult> {
   const started = Date.now();
   const date = opts.date ?? new Date();
@@ -52,7 +52,10 @@ export async function runPlannerDailyJob(
   };
   for (const student of students) {
     try {
-      const quest = await planDailyQuest(prisma, student.id, date, { force: opts.force });
+      const quest = await planDailyQuest(prisma, student.id, date, {
+        force: opts.force,
+        skipAssessment: opts.skipAssessment,
+      });
       result.planned.push({
         studentId: student.id,
         nickname: student.nickname,

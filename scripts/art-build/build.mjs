@@ -10,6 +10,7 @@ import { join } from "node:path";
 import { buildAudio } from "./audio.mjs";
 import { buildAvatars } from "./avatars.mjs";
 import { buildEffects } from "./effects.mjs";
+import { buildIcons } from "./icons.mjs";
 import { ART_ROOT, svg, write } from "./lib.mjs";
 import { buildMascots } from "./mascots.mjs";
 import { buildObjects } from "./objects.mjs";
@@ -23,6 +24,7 @@ const worlds = buildWorlds(write, svg);
 const avatars = buildAvatars(write, svg);
 const effects = buildEffects(write, svg);
 const pictures = buildPictures(write, svg);
+const icons = buildIcons(write);
 const audio = buildAudio(write);
 
 writeFileSync(
@@ -41,7 +43,16 @@ writeFileSync(
   "utf8",
 );
 
-const all = [...objects, ...mascots, ...worlds, ...avatars, ...effects, ...pictures, ...audio];
+const all = [
+  ...objects,
+  ...mascots,
+  ...worlds,
+  ...avatars,
+  ...effects,
+  ...pictures,
+  ...icons,
+  ...audio,
+];
 writeFileSync(
   join(ART_ROOT, "manifest.json"),
   `${JSON.stringify(
@@ -55,6 +66,7 @@ writeFileSync(
         avatars: avatars.length,
         effects: effects.length,
         pictures: pictures.length,
+        icons: icons.length,
         audio: audio.length,
       },
       files: all.map((f) => ({ file: f.file ?? f.path, bytes: f.bytes, kind: f.kind ?? "object" })),

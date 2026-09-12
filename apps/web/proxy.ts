@@ -2,6 +2,13 @@ import { roleAllowsArea } from "@mtct/core";
 import { NextResponse } from "next/server";
 import NextAuth from "next-auth";
 import { authConfig } from "./auth.config";
+import {
+  ACCESS_DENIED_HTML,
+  accessConfigFromEnv,
+  accessTokenFrom,
+  needsAccess,
+  verifyAccess,
+} from "./lib/auth/cf-access";
 
 /**
  * Route-level authorization (docs/02 §6): first line of defence; every handler/page checks again.
@@ -20,18 +27,42 @@ function isAuthJsInternal(path: string): boolean {
   return path.startsWith("/api/auth/") && path !== "/api/auth/change-password";
 }
 
-export default auth((req) => {
+export default auth(async (req) => {
   const { pathname, search } = req.nextUrl;
   const user = req.auth?.user;
   const isApi = pathname.startsWith("/api/");
+
+  // Cloudflare Access, when it is configured: the adults' two areas need a valid assertion before
+  // anything else is considered — including before the session cookie (docs/08 pha 8 việc 1). The
+  // child's area never goes through this; see lib/auth/cf-access.ts for why.
+  const access = accessConfigFromEnv();
+  if (access && needsAccess(pathname)) {
+    const token = accessTokenFrom(req);
+    const result = token ? await verifyAccess(token, access) : { ok: false, reason: "thiếu token" };
+    if (!result.ok) {
+      console.warn("[access] từ chối", pathname, result.reason);
+      return isApi
+        ? NextResponse.json({ error: "Cần qua Cloudflare Access" }, { status: 403 })
+        : new NextResponse(ACCESS_DENIED_HTML, {
+            status: 403,
+            headers: { "content-type": "text/html; charset=utf-8" },
+          });
+    }
+  }
 
   // Internal endpoint for the worker: it authenticates with a bearer token, not a cookie, so the
   // session check here would reject it. The handler itself demands an ADMIN session or that token
   // (lib/auth/internal.ts) — CHILD and PARENT are refused there.
   if (pathname === "/api/evidence") return NextResponse.next();
 
-  // Public: login page, Auth.js endpoints, health.
-  if (pathname === "/login" || isAuthJsInternal(pathname) || pathname === "/api/health") {
+  // Public: login page, Auth.js endpoints, health, and the web manifest — iOS fetches that one
+  // before anybody has logged in, and a redirect to /login makes the icon uninstallable.
+  if (
+    pathname === "/login" ||
+    isAuthJsInternal(pathname) ||
+    pathname === "/api/health" ||
+    pathname === "/manifest.webmanifest"
+  ) {
     if (user && pathname === "/login") {
       return NextResponse.redirect(
         new URL(homeFor(user.role, user.mustChangePassword), req.nextUrl),

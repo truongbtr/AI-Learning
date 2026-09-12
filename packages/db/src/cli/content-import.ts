@@ -26,6 +26,7 @@ import { LocalFileStorage } from "@mtct/core/storage";
 import { pregenerateAudio, ttsConfigFromEnv } from "@mtct/core/tts";
 import { importExercises, importLessons } from "../content/import";
 import { prisma } from "../index";
+import { readTtsUsage, recordTtsUsage, summariseTtsUsage } from "../ops/tts-usage";
 import { parseArgs } from "./args";
 
 const args = parseArgs();
@@ -127,6 +128,20 @@ async function main() {
       );
     },
   });
+  // The bill, counted where it is incurred (docs/08 pha 8, tiêu chí 5). `generated` is the number
+  // of lines that actually went to Azure; cached ones cost nothing. Characters, because that is
+  // the unit the free F0 tier is measured in.
+  if (audio.generated > 0) {
+    const generatedChars = lines.slice(0, audio.generated).reduce((n, l) => n + l.text.length, 0);
+    await recordTtsUsage(prisma, generatedChars, cfg.provider);
+    const usage = summariseTtsUsage(await readTtsUsage(prisma));
+    console.log(
+      `tts: tháng ${usage.month} đã dùng ${usage.chars.toLocaleString("vi-VN")}/${usage.limit.toLocaleString("vi-VN")} ký tự ` +
+        `(${Math.round(usage.fraction * 100)}% hạn mức miễn phí F0)` +
+        (usage.level !== "ok" ? " — sắp hết, xem /admin/health" : ""),
+    );
+  }
+
   if (audio.requested > 0 && audio.skipped === audio.requested) {
     console.log(
       `tts: skipped ${audio.requested} line(s) — no TTS_API_KEY, the app will use Web Speech`,

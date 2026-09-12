@@ -34,6 +34,10 @@
     "clean-test-students": "dotenv -e ../../.env -- tsx src/cli/clean-test-students.ts",
     "clean-test-parents": "dotenv -e ../../.env -- tsx src/cli/clean-test-parents.ts",
     "reset-learning": "dotenv -e ../../.env -- tsx src/cli/reset-learning.ts",
+    "export-student": "dotenv -e ../../.env -- tsx src/cli/export-student.ts",
+    "delete-student": "dotenv -e ../../.env -- tsx src/cli/delete-student.ts",
+    "assess": "dotenv -e ../../.env -- tsx src/cli/assess.ts",
+    "usage": "dotenv -e ../../.env -- tsx src/cli/usage.ts",
     "tts:voices": "dotenv -e ../../.env -- tsx src/cli/tts-voices.ts",
     "tts:smoke": "dotenv -e ../../.env -- tsx src/cli/tts-smoke.ts"
   },

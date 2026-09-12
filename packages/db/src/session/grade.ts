@@ -13,6 +13,7 @@ import {
 import type { Prisma, PrismaClient } from "../../generated/client";
 import { grantSessionRewards, rememberForTomorrow, type SessionRewards } from "../kid/rewards";
 import { commitEvidence } from "../mastery/service";
+import { adaptAssessment, assessmentWeightFactor } from "./assess";
 import type { PickedSlot } from "./plan";
 
 /**
@@ -471,7 +472,7 @@ interface StoredResponse {
 export async function submitAttempt(db: Db, input: SubmitAttemptInput): Promise<AttemptFeedback> {
   const session = await db.session.findFirst({
     where: { id: input.sessionId, ...(input.studentId ? { studentId: input.studentId } : {}) },
-    select: { id: true, studentId: true, slots: true, status: true },
+    select: { id: true, studentId: true, slots: true, status: true, kind: true },
   });
   if (!session) throw new SessionError("SESSION_NOT_FOUND", "Không tìm thấy phiên học");
 
@@ -603,7 +604,15 @@ export async function submitAttempt(db: Db, input: SubmitAttemptInput): Promise<
         errorCode: mark.errorCode,
         attemptId: attempt.id,
         note: slot.reason,
+        // A diagnostic answer says a little less than an ordinary one: the child has met neither
+        // the format nor, often, the skill (docs/04 §10).
+        weightFactor: assessmentWeightFactor(session.kind),
       });
+    }
+    // And the diagnostic moves: right → up the strand, wrong → back to the prerequisite. Only the
+    // station the child has not reached yet is rewritten (docs/04 §10).
+    if (session.kind === "ASSESSMENT") {
+      await adaptAssessment(db, session.id, input.order, mark.correct);
     }
   } else if (mark.pending && (input.response.photoKey || input.response.heard)) {
     // Only real work goes to the queue: a skipped station has nothing for anyone to grade.

@@ -10,6 +10,7 @@ import {
 } from "@mtct/core";
 import type { Prisma, PrismaClient } from "../../generated/client";
 import { activePlanSkills } from "../parent/plans";
+import { assessmentState, planAssessment } from "./assess";
 
 type Db = PrismaClient;
 
@@ -355,9 +356,13 @@ export async function planDailyQuest(
   db: Db,
   studentId: string,
   date = new Date(),
-  opts: { force?: boolean } = {},
+  opts: { force?: boolean; skipAssessment?: boolean } = {},
 ): Promise<PlannedSession> {
   const day = vnDayDate(date);
+
+  // A session already planned for today wins over everything below, diagnostics included: a child
+  // halfway through an evening must not have the ground move, and `pnpm plan:run` having already
+  // built the day must not be undone by the next request that comes in.
   const existing = await db.session.findFirst({
     where: { studentId, kind: "DAILY_QUEST", date: day },
     orderBy: { createdAt: "desc" },
@@ -373,6 +378,26 @@ export async function planDailyQuest(
         log: ((existing.generationLog as { log?: string[] })?.log ?? []) as string[],
       },
       created: false,
+    };
+  }
+
+  // The first three evenings of a child who has never used this are diagnostics (docs/04 §10).
+  // They are returned from here rather than from a screen of their own, so nothing new appears to
+  // the child: she taps the same button and gets the same map. A child told she is being assessed
+  // answers differently, and usually worse.
+  const assessment = opts.skipAssessment
+    ? { nextRound: null }
+    : await assessmentState(db as PrismaClient, studentId);
+  if (assessment.nextRound !== null) {
+    const built = await planAssessment(db as PrismaClient, studentId, date, {
+      round: assessment.nextRound,
+      force: opts.force,
+    });
+    return {
+      sessionId: built.sessionId,
+      slots: built.slots,
+      plan: { slots: built.slots, remediating: [], log: built.log },
+      created: built.created,
     };
   }
 
