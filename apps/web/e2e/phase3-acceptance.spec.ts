@@ -274,6 +274,19 @@ test("K4 → K5: the whole quest, with hints and never the word a child should n
       await page.waitForTimeout(300);
     }
 
+    // Nothing to answer here. A quest is planned once a day, so on a re-run the session is
+    // already COMPLETED and its stations render no exercise: stop walking rather than time out
+    // reading a header that is not there.
+    if (
+      !(await page
+        .getByTestId("exercise-prompt")
+        .isVisible()
+        .catch(() => false))
+    ) {
+      console.log(`[stop] không còn bài để làm ở ${page.url()} — phiên hôm nay đã xong`);
+      break;
+    }
+
     const header = await page.locator("header").innerText();
     const subject = header.split("·").pop()?.trim();
     if (subject) subjects.add(subject);

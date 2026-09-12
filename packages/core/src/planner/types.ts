@@ -71,6 +71,12 @@ export interface PlannerInput {
   recentExerciseIds?: string[];
   /** Subjects on today's timetable, most important first. */
   todaySubjects?: Subject[];
+  /**
+   * Stations the database layer will put in front of this plan — the teacher's homework
+   * (FR-LRN-07). The planner never builds them, but it has to count them: "half the session"
+   * means half of what the child is handed, and homework is never displaced to make room.
+   */
+  extraSlots?: number;
 }
 
 export interface Slot {

@@ -380,15 +380,17 @@ export async function planDailyQuest(
     where: { id: studentId },
     select: { mascot: true },
   });
+  // What the teacher set comes first, then the app's own practice — the order a family works in.
+  // The planner is told how many of these there will be so "half the session belongs to the
+  // approved plan" counts the whole session and not just the half the planner builds.
+  const homework = await homeworkSlots(db, studentId, date);
   const input = await plannerSnapshot(db, studentId, date);
-  const plan = planSession(input);
+  const plan = planSession({ ...input, extraSlots: homework.length });
   const practice = await pickExercises(db, plan.slots, {
     recentExerciseIds: input.recentExerciseIds,
     theme: student?.mascot === "OWL" ? "GARDEN" : "ROBOT",
   });
 
-  // What the teacher set comes first, then the app's own practice — the order a family works in.
-  const homework = await homeworkSlots(db, studentId, date);
   const picked: PickedSlot[] = [
     ...homework,
     ...practice.map((slot, i) => ({ ...slot, order: homework.length + i + 1 })),

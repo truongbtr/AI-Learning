@@ -333,9 +333,22 @@ export function planSession(input: PlannerInput): SessionPlan {
   // filler first, then a new skill, then a review. Homework, the warm-up, the closer, the ladder
   // and anything the class did today are never displaced — those outrank a plan by design.
   if (planSkills.size > 0) {
-    const target = Math.ceil(n / 2);
+    // Half of what the child will actually be handed, homework included. The teacher's stations
+    // are prepended after this and are never displaced (FR-LRN-07), so the plan has to make up
+    // the difference out of the practice half.
+    const target = Math.ceil((n + (input.extraSlots ?? 0)) / 2);
     const isPlan = (s: Slot) => planSkills.has(s.skillCode);
-    const spare = [...planSkills].filter((code) => !used.has(code) && skillsByCode.has(code));
+    // Cycled, not consumed: a plan of four skills still fills six slots, and the picker gives a
+    // different exercise each time. A plan with fewer skills is a narrower fortnight, not a
+    // quieter one.
+    const usable = [...planSkills].filter((code) => skillsByCode.has(code));
+    const unused = usable.filter((code) => !used.has(code));
+    let cycle = 0;
+    const nextPlanSkill = (): string | null => {
+      if (unused.length > 0) return unused.shift() as string;
+      if (usable.length === 0) return null;
+      return usable[cycle++ % usable.length] as string;
+    };
     const displaceable = (s: Slot) =>
       !isPlan(s) &&
       s.kind !== "warmup" &&
@@ -355,8 +368,9 @@ export function planSession(input: PlannerInput): SessionPlan {
       .sort((a, b) => cost(a.slot) - cost(b.slot));
 
     for (const { index } of swappable) {
-      if (planned >= target || spare.length === 0) break;
-      const code = spare.shift() as string;
+      if (planned >= target) break;
+      const code = nextPlanSkill();
+      if (!code) break;
       const skill = skillsByCode.get(code) as SkillSnapshot;
       slots[index] = {
         ...(slots[index] as Slot),

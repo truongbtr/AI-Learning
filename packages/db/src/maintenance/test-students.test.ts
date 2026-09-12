@@ -92,3 +92,20 @@ describe("cleaning up e2e child profiles (docs/08 pha 5 việc 0.2)", () => {
     expect(why).toContain("12 lượt làm bài");
   });
 });
+
+/**
+ * The database integration tests build a child with `createTempStudent` and remove it in
+ * `afterAll` — unless the run is interrupted, in which case one is left in the dev database. The
+ * first real run of the cleanup script found one, which is how this pattern got here.
+ */
+describe("leftovers from the integration tests", () => {
+  it("recognises the temp students createTempStudent makes", () => {
+    expect(looksLikeTestSlug("test-session-mtxnqp3y")).toBe(true);
+    expect(looksLikeTestSlug("itest-mastery-ab12cd")).toBe(true);
+  });
+
+  it("still refuses to touch a name that merely starts with the same letters", () => {
+    expect(looksLikeTestSlug("teo")).toBe(false);
+    expect(looksLikeTestSlug("testudo van A")).toBe(false);
+  });
+});

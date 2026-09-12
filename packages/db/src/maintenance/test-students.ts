@@ -25,10 +25,18 @@ import type { PrismaClient } from "../../generated/client";
 export const PROTECTED_SLUGS = ["thy", "thanh"] as const;
 
 /**
- * Slugs the acceptance suites generate: `p1kid-<5>` (phase 1), `thy-<5>` / `thanh-<5>` (phases
- * 3–4 seed a whole family), `e2e-<anything>`. A slug outside these is reported, never deleted.
+ * Slugs the test suites generate: `p1kid-<5>` (phase 1), `thy-<5>` / `thanh-<5>` (phases 3–4 seed
+ * a whole family), `e2e-<anything>`, and `test-<name>-<id>` / `itest-<name>-<id>` from
+ * `createTempStudent` in the database integration tests — that last one turns up whenever a run is
+ * interrupted before its `afterAll` gets to tidy up. A slug outside these is reported, never
+ * deleted.
  */
-const TEST_SLUG_PATTERNS = [/^p1kid-[a-z0-9]{4,8}$/, /^(thy|thanh)-[a-z0-9]{4,8}$/, /^e2e-/];
+const TEST_SLUG_PATTERNS = [
+  /^p1kid-[a-z0-9]{4,8}$/,
+  /^(thy|thanh)-[a-z0-9]{4,8}$/,
+  /^e2e-/,
+  /^i?test-[a-z0-9-]+$/,
+];
 
 /** Parent accounts the same suites create beside each family. Only removed with an extra flag. */
 const TEST_PARENT_USERNAME = /^(me|ba)-[a-z0-9]{4,8}$/;

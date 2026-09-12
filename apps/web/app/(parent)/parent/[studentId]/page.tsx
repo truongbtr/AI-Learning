@@ -83,6 +83,7 @@ export default async function StudentPage({ params }: { params: Promise<{ studen
           label="Hôm nay"
           value={today ? `${today.done}/${today.total} bài` : "chưa có phiên"}
           caption={today ? `${today.minutes} phút · ${today.starsEarned} sao` : undefined}
+          testId="stat-today"
         />
         <StatLink
           href={`/parent/${studentId}/evidence?days=30`}
@@ -90,6 +91,7 @@ export default async function StudentPage({ params }: { params: Promise<{ studen
           label="Đã học"
           value={`${streak.current} ngày`}
           caption={`dài nhất ${streak.longest} ngày`}
+          testId="stat-streak"
         />
         <StatLink
           href={`/parent/${studentId}/evidence?days=7`}
@@ -97,6 +99,7 @@ export default async function StudentPage({ params }: { params: Promise<{ studen
           label="Bằng chứng 7 ngày"
           value={String(totals.evidence7d)}
           caption={`tổng ${totals.evidence} từ trước tới nay`}
+          testId="stat-evidence7d"
         />
         <StatLink
           href={`/parent/${studentId}/evidence?source=INTAKE_PHOTO`}
@@ -104,6 +107,7 @@ export default async function StudentPage({ params }: { params: Promise<{ studen
           label="Từ ảnh bài vở"
           value={String(totals.photos)}
           caption="bấm để xem lại từng ảnh"
+          testId="stat-photos"
         />
       </div>
 
@@ -158,15 +162,17 @@ function StatLink({
   label,
   value,
   caption,
+  testId,
 }: {
   href: string;
   icon: React.ReactNode;
   label: string;
   value: string;
   caption?: string;
+  testId: string;
 }) {
   return (
-    <Link href={href} className="group">
+    <Link href={href} className="group" data-testid={testId}>
       <article className="flex items-center gap-3 rounded-card border border-ink-100 bg-white p-4 shadow-card transition-colors group-hover:border-brand-300">
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-ink-100 text-ink-600">
           {icon}

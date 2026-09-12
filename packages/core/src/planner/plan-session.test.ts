@@ -322,3 +322,23 @@ describe("the timetable and the approved plan steer tomorrow (docs/05 §2, FR-PA
     expect(plan.log.join("\n")).not.toMatch(/kế hoạch tuần đã duyệt/);
   });
 });
+
+describe("an approved plan owns half the whole session, homework included", () => {
+  const share = (plan: ReturnType<typeof planSession>, codes: string[]) =>
+    plan.slots.filter((s) => codes.includes(s.skillCode)).length;
+
+  it("fills a plan of few skills by coming back to them, not by giving up", () => {
+    const codes = ["VMATH.SO.CONG_PV_10", "VIET.HV.AM_B"];
+    const plan = planSession(base({ planSkills: codes }));
+    expect(share(plan, codes)).toBeGreaterThanOrEqual(Math.ceil(plan.slots.length / 2));
+  });
+
+  it("counts the teacher's homework in the half it has to reach", () => {
+    const codes = ["VMATH.SO.CONG_PV_10", "VIET.HV.AM_B", "VMATH.SO.SO_0_5"];
+    const withHomework = planSession(base({ planSkills: codes, extraSlots: 4 }));
+    const without = planSession(base({ planSkills: codes }));
+    // Four stations the planner does not build still have to be paid for out of the ones it does.
+    expect(share(withHomework, codes)).toBeGreaterThan(share(without, codes));
+    expect(share(withHomework, codes) * 2).toBeGreaterThanOrEqual(withHomework.slots.length + 4);
+  });
+});
