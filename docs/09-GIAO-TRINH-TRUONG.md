@@ -46,6 +46,67 @@ Tất cả đều thuộc bộ **Kết nối tri thức với cuộc sống** (N
 
 **Lưu ý dùng SGV:** SGV chứa mục tiêu, tiến trình dạy và **đáp án** từng bài — rất tốt để Claude Code soạn bài luyện bám sách và để app chấm bài mở. Nhưng nội dung bài tập thực tế nằm ở SGK/VBT; khi có SGK, `LessonUnit` lấy `sampleTasks` từ SGK và `objectives` từ SGV. Bản quyền NXB GDVN — chỉ dùng nội bộ gia đình, không hiển thị ảnh trang cho con.
 
+
+## 1c. English Maths — "MATH NOTES Grade 1" (tài liệu nội bộ Edison Schools)
+
+Chủ dự án chụp bìa 14/09/2026: môn English Maths học theo quyển **MATH NOTES · Grade 1 · Volume 1**,
+in nội bộ của Edison Schools (logo trường trên bìa). **Không có bản công khai** — đã tìm, không nhà
+sách hay thư viện số nào có; đây là học liệu trường tự soạn.
+
+Cách lấy, theo thứ tự ưu tiên:
+1. Xin cô giáo **bản mềm PDF** qua Teams / Edi Parent (trường tự soạn thì thường có file gốc để in).
+2. Chụp **trang mục lục / danh sách unit** → đủ để dựng bảng unit → kỹ năng → tuần, như đã làm với
+   Global Stage 1. Có bảng này là nội dung bám chương trình ngay, chưa cần chụp hết quyển.
+3. Chụp dần 2–3 trang mỗi bài theo tiến độ lớp.
+
+### 1c.1 Mục lục Volume 1 (chủ dự án chụp 14/09/2026)
+
+Volume 1 **chỉ gồm Unit 3 và Unit 4**, 60 trang. Mã tài liệu dùng trong `sourceRef`: `EDI-MN1`.
+
+| Unit | Mục | Trang | Kỹ năng `EMATH.*` tương ứng |
+|---|---|---|---|
+| 3 | Unit Introduction · Learning Tips | 3–4 | — |
+| 3 | **Numbers 1 to 10** | 5–7 | `NBT.COUNT_WRITE_1_10`, `NBT.COMPARE_1_10` |
+| 3 | **Numbers 11 to 20** | 8–10 | `NBT.TEEN_NUMBERS`, `NBT.PLACE_VALUE_TEENS` |
+| 3 | **Patterns on a Number Chart to 20** | 11–12 | `NBT.NUMBER_CHART_100`(rút gọn tới 20), `G.PATTERNS` |
+| 3 | **Patterns on a Number Line to 20** | 14–16 | `NBT.NUMBER_LINE_TO_20` |
+| 3 | Lesson 3-2 · 3-3 · 3-6 · 3-7 · 3-8 | 17–31 | **chưa rõ tên bài — cần chụp trang đầu mỗi bài** |
+| 3 | Math in Real Life | 32 | (vận dụng — chưa mô hình hoá) |
+| 3 | Student Self-Reflection | 33–34 | (tự đánh giá — chưa mô hình hoá) |
+| 4 | Unit Introduction · Learning Tips | 35–36 | — |
+| 4 | Lesson 4-1 | 37–39 | chưa rõ |
+| 4 | **Addition within 10** | 40–42 | `OA.ADD_WITHIN_10`, `OA.COUNT_ON`, `OA.NUMBER_BONDS_10` |
+| 4 | Lesson 4-2 · 4-3 · 4-5 · 4-7 · 4-8 | 43–57 | **chưa rõ tên bài — cần chụp trang đầu mỗi bài** |
+| 4 | Math in Real Life | 58 | (vận dụng) |
+| 4 | Student Self-Reflection | 59–60 | (tự đánh giá) |
+
+**Nhận xét:**
+- Nội dung khớp với giả định cũ: ngân hàng `EMATH` hiện bám **CCSS 1.NBT.A.1** (số tới 20) và
+  **1.OA.C.6** (cộng trong 10) — đúng hai thứ Unit 3 và 4 dạy. Không phải soạn lại, chỉ gắn lại nguồn.
+- Quyển **bắt đầu từ Unit 3** → Unit 1–2 ở quyển khác hoặc đã học từ mẫu giáo. **Cần hỏi cô.**
+- Các bài đánh số trần (3-2, 3-6, 4-5…) mục lục không nói dạy gì; **chụp trang đầu mỗi bài** là đủ.
+- Trường có **"Math in Real Life"** (toán vận dụng đời sống) và **"Student Self-Reflection"** (trẻ tự
+  đánh giá) — hai thứ hệ thống chưa có. Đáng cân nhắc cho pha 7: một dạng bài vận dụng, và một bước
+  "hôm nay con thấy thế nào" cuối phiên.
+
+**Việc phải làm khi có sách:** 346 bài `EMATH.*` hiện dựa trên CCSS, `sourceRef` ghi *"chưa có giáo
+trình English Maths của trường"*. Rà lại toàn bộ: đổi `sourceRef` sang unit và trang thật, sửa thứ tự
+`expectedWeek` cho khớp, RETIRE những bài dạy thứ không có trong quyển này. Còn Volume 2 (học kỳ 2)
+thì hỏi sau.
+
+**Đã làm 15/09/2026 (pha 6c):** rà 5 kỹ năng có tên bài khớp thẳng với mục lục — `NBT.COUNT_TO_20`
+(→ tr.5–10, gộp cả hai mục "Numbers 1 to 10" và "Numbers 11 to 20" vì ngân hàng chỉ có một kỹ năng đếm
+tới 20, không tách riêng 1–10/11–20 như sách), `NBT.NUMBER_LINE_TO_20` (→ tr.14–16), `OA.ADD_WITHIN_10`
++ `OA.COUNT_ON` + `OA.NUMBER_BONDS_10` (→ tr.40–42, cả ba đều là chiến lược dạy trong cùng bài "Addition
+within 10") — **205 bài** đổi `sourceRef` sang `EDI-MN1`, giữ nguyên nội dung. **Chưa đổi**
+`NBT.COMPARE_1_10` và `G.PATTERNS` (tuần 4): mục lục ghi tên bài nhưng không chắc đúng nội dung (so
+sánh 1–10 có thể nằm ở Lesson 3-2/3-3 "chưa rõ"; "Patterns on a Number Chart" nhiều khả năng dạy đọc
+bảng 100 chứ không phải quy luật lặp AB/ABB mà `G.PATTERNS` đo) — để CCSS, chờ ảnh trang xác nhận thay
+vì đoán. `NBT.ORDINAL_NUMBERS` không có trong mục lục Volume 1 — có thể ở quyển khác, để CCSS.
+`expectedWeek` không đổi (chưa có tiến độ dạy 2026-2027 để lùi tuần). Còn 141/346 bài EMATH khác (các
+kỹ năng `EMATH.G.*`, `EMATH.MP.*`, `EMATH.OA.SUB_*`, `EMATH.OA.DOUBLES`… và Unit 5+ chưa có trong
+Volume 1) vẫn ghi CCSS — đúng, vì sách chưa dạy tới hoặc mục lục chưa đủ rõ.
+
 ## 2. Toán 1 (Kết nối tri thức) — cấu trúc cả năm
 
 Định mức 3 tiết/tuần; HK1 = 18 tuần (54 tiết), HK2 = 17 tuần (51 tiết). Tuần dự kiến tính từ số tiết trong mục lục; phụ huynh chỉnh theo thông báo lớp. `code` đặt `KNTT-T1-B<số bài>`.
