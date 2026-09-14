@@ -1,0 +1,1448 @@
+{
+  "skillCode": "VIET.HV.NHAM_LAN_DAU_HOI_NGA",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-TV1-T1-B06", "KNTT-TV1-T1-B09", "KNTT-TV1-T1-B19"],
+  "note": "Phân biệt dấu hỏi và dấu ngã. Mỗi cặp là hai tiếng thật chỉ khác dấu (mũ / mủ, nghỉ / nghĩ, cũ / củ) — ô nhiễu mang nham_hoi_nga; ô thứ ba không có dấu hỏi lẫn ngã nên câu 'có dấu X' chỉ có một ô đúng. lessonRef mở tới bài 19 để có đủ cặp tiếng thật.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "model",
+      "id": "viet-hoinga-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có dấu ngã?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mũ"
+        },
+        {
+          "id": "b",
+          "text": "mủ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "c",
+          "text": "bé"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Dấu ngã như sợi dây lượn sóng."],
+      "explanation": "\"mũ\" có dấu ngã.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "model",
+      "id": "viet-hoinga-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng mang dấu hỏi nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghĩ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "nghỉ"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Dấu hỏi như cái móc câu."],
+      "explanation": "\"nghỉ\" có dấu hỏi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "model",
+      "id": "viet-hoinga-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: ô nào có dấu ngã?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngả",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "nhà"
+        },
+        {
+          "id": "c",
+          "text": "ngã"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Dấu ngã như sợi dây lượn sóng."],
+      "explanation": "\"ngã\" có dấu ngã.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "model",
+      "id": "viet-hoinga-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có dấu hỏi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mở"
+        },
+        {
+          "id": "b",
+          "text": "mỡ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Dấu hỏi như cái móc câu."],
+      "explanation": "\"mở\" có dấu hỏi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "model",
+      "id": "viet-hoinga-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng mang dấu ngã nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "giả",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "giã"
+        },
+        {
+          "id": "c",
+          "text": "mẹ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Dấu ngã như sợi dây lượn sóng."],
+      "explanation": "\"giã\" có dấu ngã.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "model",
+      "id": "viet-hoinga-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: ô nào có dấu hỏi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cũ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "cô"
+        },
+        {
+          "id": "c",
+          "text": "củ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Dấu hỏi như cái móc câu."],
+      "explanation": "\"củ\" có dấu hỏi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có dấu ngã?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lẽ"
+        },
+        {
+          "id": "b",
+          "text": "lẻ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "c",
+          "text": "gà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Dấu ngã như sợi dây lượn sóng."],
+      "explanation": "\"lẽ\" có dấu ngã.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng mang dấu hỏi nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kĩ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "kỉ"
+        },
+        {
+          "id": "c",
+          "text": "bé"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Dấu hỏi như cái móc câu."],
+      "explanation": "\"kỉ\" có dấu hỏi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: ô nào có dấu ngã?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đổ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "cá"
+        },
+        {
+          "id": "c",
+          "text": "đỗ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Dấu ngã như sợi dây lượn sóng."],
+      "explanation": "\"đỗ\" có dấu ngã.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có dấu hỏi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cổ"
+        },
+        {
+          "id": "b",
+          "text": "cỗ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "c",
+          "text": "nhà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Dấu hỏi như cái móc câu."],
+      "explanation": "\"cổ\" có dấu hỏi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng mang dấu ngã nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bả",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "bã"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Dấu ngã như sợi dây lượn sóng."],
+      "explanation": "\"bã\" có dấu ngã.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: ô nào có dấu hỏi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngõ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "mẹ"
+        },
+        {
+          "id": "c",
+          "text": "ngỏ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Dấu hỏi như cái móc câu."],
+      "explanation": "\"ngỏ\" có dấu hỏi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có dấu ngã?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mẽ"
+        },
+        {
+          "id": "b",
+          "text": "mẻ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "c",
+          "text": "cô"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Dấu ngã như sợi dây lượn sóng."],
+      "explanation": "\"mẽ\" có dấu ngã.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng mang dấu hỏi nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kẽ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "kẻ"
+        },
+        {
+          "id": "c",
+          "text": "gà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Dấu hỏi như cái móc câu."],
+      "explanation": "\"kẻ\" có dấu hỏi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🧢",
+          "labelVi": "cái mũ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mũ"
+        },
+        {
+          "id": "b",
+          "text": "mủ",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ cái mũ."],
+      "explanation": "Cái mũ viết là mũ, dấu ngã.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🥕",
+          "labelVi": "củ cà rốt",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cũ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "củ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ một củ cà rốt."],
+      "explanation": "Củ cà rốt viết là củ, dấu hỏi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "mủ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mũ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "mủ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"mủ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "nghĩ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghĩ"
+        },
+        {
+          "id": "b",
+          "text": "nghỉ",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"nghĩ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ dấu thanh rồi chọn."
+      },
+      "listenTarget": {
+        "text": "ngả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngã",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "ngả"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"ngả\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "mỡ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mỡ"
+        },
+        {
+          "id": "b",
+          "text": "mở",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"mỡ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe: giọng đi lên nhẹ hay gãy?"
+      },
+      "listenTarget": {
+        "text": "giả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "giã",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "giả"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"giả\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "cũ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cũ"
+        },
+        {
+          "id": "b",
+          "text": "củ",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"cũ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "lẻ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lẽ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "lẻ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"lẻ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "kĩ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kĩ"
+        },
+        {
+          "id": "b",
+          "text": "kỉ",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"kĩ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ dấu thanh rồi chọn."
+      },
+      "listenTarget": {
+        "text": "đổ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đỗ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b",
+          "text": "đổ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"đổ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "cỗ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cỗ"
+        },
+        {
+          "id": "b",
+          "text": "cổ",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"cỗ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp tiếng vào giỏ dấu hỏi, dấu ngã."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "mủ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b0",
+          "text": "mũ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "a1",
+          "text": "củ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b1",
+          "text": "cũ",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Dấu hỏi",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Dấu ngã",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Dấu hỏi như móc câu, dấu ngã như lượn sóng."],
+      "explanation": "mủ, củ về giỏ \"Dấu hỏi\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chia các tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "nghỉ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b0",
+          "text": "nghĩ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "a1",
+          "text": "mở",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b1",
+          "text": "mỡ",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Dấu hỏi",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Dấu ngã",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Đọc từng thẻ rồi mới kéo nhé!"],
+      "explanation": "nghỉ, mở về giỏ \"Dấu hỏi\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào về giỏ dấu ngã?"
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "đỗ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b1",
+          "text": "đổ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "a0",
+          "text": "ngõ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b0",
+          "text": "ngỏ",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Dấu ngã",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "Dấu hỏi",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Đọc từng thẻ rồi mới kéo nhé!"],
+      "explanation": "ngõ, đỗ về giỏ \"Dấu ngã\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_hoi_nga",
+      "scaffold": "none",
+      "id": "viet-hoinga-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi tiếng về đúng giỏ dấu thanh."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "giã",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b0",
+          "text": "giả",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "a1",
+          "text": "kĩ",
+          "errorTag": "nham_hoi_nga"
+        },
+        {
+          "id": "b1",
+          "text": "kỉ",
+          "errorTag": "nham_hoi_nga"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Dấu ngã",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Dấu hỏi",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Đọc từng thẻ rồi mới kéo nhé!"],
+      "explanation": "giã, kĩ về giỏ \"Dấu ngã\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-hoinga-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "mũ đỏ",
+        "words": ["mũ", "đỏ"]
+      },
+      "answerKey": {
+        "words": ["mũ", "đỏ"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"mũ đỏ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-hoinga-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "đồ cũ",
+        "words": ["đồ", "cũ"]
+      },
+      "answerKey": {
+        "words": ["đồ", "cũ"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"đồ cũ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-hoinga-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "nghỉ hè",
+        "words": ["nghỉ", "hè"]
+      },
+      "answerKey": {
+        "words": ["nghỉ", "hè"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"nghỉ hè\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-hoinga-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "ngõ nhỏ",
+        "words": ["ngõ", "nhỏ"]
+      },
+      "answerKey": {
+        "words": ["ngõ", "nhỏ"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"ngõ nhỏ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-hoinga-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Bé nghĩ kĩ",
+        "words": ["Bé", "nghĩ", "kĩ"]
+      },
+      "answerKey": {
+        "words": ["Bé", "nghĩ", "kĩ"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Bé nghĩ kĩ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-hoinga-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "mỡ gà",
+        "words": ["mỡ", "gà"]
+      },
+      "answerKey": {
+        "words": ["mỡ", "gà"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"mỡ gà\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-hoinga-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: cái mũ, đồ cũ, nghỉ hè."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu của đề", "Chữ rõ ràng, đúng dấu thanh"],
+        "sampleAnswers": ["cái mũ, đồ cũ, nghỉ hè"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: cái mũ, đồ cũ, nghỉ hè",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-hoinga-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: củ cà, ngõ nhỏ."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu của đề", "Chữ rõ ràng, đúng dấu thanh"],
+        "sampleAnswers": ["củ cà, ngõ nhỏ"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: củ cà, ngõ nhỏ",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-hoinga-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_DAU_HOI_NGA"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: Bé nghĩ kĩ."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu của đề", "Chữ rõ ràng, đúng dấu thanh"],
+        "sampleAnswers": ["Bé nghĩ kĩ."]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: Bé nghĩ kĩ.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B09",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 6 (dấu hỏi) và Bài 9 (dấu ngã); tiếng lấy trong phạm vi chữ đã học tới Bài 19"
+      }
+    }
+  ]
+}

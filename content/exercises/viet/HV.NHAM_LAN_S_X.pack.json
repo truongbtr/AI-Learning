@@ -1,0 +1,1751 @@
+{
+  "skillCode": "VIET.HV.NHAM_LAN_S_X",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B21", "KNTT-TV1-T1-B27"],
+  "note": "Phân biệt s và x. Mọi cặp là hai tiếng thật cùng vần, cùng dấu (sẻ / xẻ, sổ / xổ, xô / sô, xưa / sưa) — con chọn nhầm là nhầm âm đầu, mã nham_s_x.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "model",
+      "id": "viet-sx-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm x?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xa"
+        },
+        {
+          "id": "b",
+          "text": "sa",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "c",
+          "text": "bà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Âm x và âm s đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"xa\" có âm x, \"sa\" có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "xa"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sa",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "xa"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe \"xa\", có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "sa"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sa"
+        },
+        {
+          "id": "b",
+          "text": "xa",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng s đọc nhẹ hơn tiếng x."],
+      "explanation": "Con vừa nghe \"sa\", có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "model",
+      "id": "viet-sx-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm s nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xẻ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "sẻ"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"sẻ\" có âm s, \"xẻ\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "sẻ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sẻ"
+        },
+        {
+          "id": "b",
+          "text": "xẻ",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Con vừa nghe \"sẻ\", có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "chim sẻ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xẻ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "sẻ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ chim sẻ."],
+      "explanation": "Tranh vẽ chim sẻ, viết là \"sẻ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "model",
+      "id": "viet-sx-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm s?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xổ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "bé"
+        },
+        {
+          "id": "c",
+          "text": "sổ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Âm s và âm x đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"sổ\" có âm s, \"xổ\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "sổ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xổ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "sổ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Con vừa nghe \"sổ\", có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "xổ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xổ"
+        },
+        {
+          "id": "b",
+          "text": "sổ",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng x đọc nhẹ hơn tiếng s."],
+      "explanation": "Con vừa nghe \"xổ\", có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "📒",
+          "labelVi": "quyển sổ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sổ"
+        },
+        {
+          "id": "b",
+          "text": "xổ",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ quyển sổ."],
+      "explanation": "Tranh vẽ quyển sổ, viết là \"sổ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "model",
+      "id": "viet-sx-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm s?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sứ"
+        },
+        {
+          "id": "b",
+          "text": "xứ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "c",
+          "text": "hồ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"sứ\" có âm s, \"xứ\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "sứ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sứ"
+        },
+        {
+          "id": "b",
+          "text": "xứ",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe \"sứ\", có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "model",
+      "id": "viet-sx-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm x?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sả",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "xả"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Âm x và âm s đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"xả\" có âm x, \"sả\" có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "xả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sả",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "xả"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Con vừa nghe \"xả\", có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "sả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sả"
+        },
+        {
+          "id": "b",
+          "text": "xả",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng s đọc nhẹ hơn tiếng x."],
+      "explanation": "Con vừa nghe \"sả\", có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "model",
+      "id": "viet-sx-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm x nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sô",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "cô"
+        },
+        {
+          "id": "c",
+          "text": "xô"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"xô\" có âm x, \"sô\" có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "xô"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xô"
+        },
+        {
+          "id": "b",
+          "text": "sô",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Con vừa nghe \"xô\", có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🪣",
+          "labelVi": "cái xô",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sô",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "xô"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ cái xô."],
+      "explanation": "Tranh vẽ cái xô, viết là \"xô\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm x?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xu"
+        },
+        {
+          "id": "b",
+          "text": "su",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "c",
+          "text": "bà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Âm x và âm s đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"xu\" có âm x, \"su\" có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "xu"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "su",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "xu"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe \"xu\", có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "su"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "su"
+        },
+        {
+          "id": "b",
+          "text": "xu",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng s đọc nhẹ hơn tiếng x."],
+      "explanation": "Con vừa nghe \"su\", có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🪙",
+          "labelVi": "đồng xu",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xu"
+        },
+        {
+          "id": "b",
+          "text": "su",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ đồng xu."],
+      "explanation": "Tranh vẽ đồng xu, viết là \"xu\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm x?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sơ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "xơ"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"xơ\" có âm x, \"sơ\" có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "xơ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xơ"
+        },
+        {
+          "id": "b",
+          "text": "sơ",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Con vừa nghe \"xơ\", có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm s?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xà",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "bé"
+        },
+        {
+          "id": "c",
+          "text": "sà"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Âm s và âm x đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"sà\" có âm s, \"xà\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "sà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xà",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "sà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Con vừa nghe \"sà\", có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "xà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xà"
+        },
+        {
+          "id": "b",
+          "text": "sà",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng x đọc nhẹ hơn tiếng s."],
+      "explanation": "Con vừa nghe \"xà\", có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm x nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xưa"
+        },
+        {
+          "id": "b",
+          "text": "sưa",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "c",
+          "text": "hồ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"xưa\" có âm x, \"sưa\" có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "xưa"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xưa"
+        },
+        {
+          "id": "b",
+          "text": "sưa",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe \"xưa\", có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm s?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xử",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "sử"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Âm s và âm x đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"sử\" có âm s, \"xử\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "sử"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xử",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "sử"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Con vừa nghe \"sử\", có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "xử"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xử"
+        },
+        {
+          "id": "b",
+          "text": "sử",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng x đọc nhẹ hơn tiếng s."],
+      "explanation": "Con vừa nghe \"xử\", có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm s?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xả",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "cô"
+        },
+        {
+          "id": "c",
+          "text": "sả"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"sả\" có âm s, \"xả\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "sả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sả"
+        },
+        {
+          "id": "b",
+          "text": "xả",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Con vừa nghe \"sả\", có âm s.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🌿",
+          "labelVi": "cây sả",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xả",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b",
+          "text": "sả"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ cây sả."],
+      "explanation": "Tranh vẽ cây sả, viết là \"sả\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "sẻ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "a1",
+          "text": "sổ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b0",
+          "text": "xa",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b1",
+          "text": "xô",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm s",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm x",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn chữ đầu của thẻ: s hay x?"],
+      "explanation": "sẻ, sổ về giỏ \"Có âm s\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chia các tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "xu",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "a1",
+          "text": "xả",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b0",
+          "text": "sứ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b1",
+          "text": "sà",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm x",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm s",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn chữ đầu của thẻ: s hay x?"],
+      "explanation": "xu, xả về giỏ \"Có âm x\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi tiếng về giỏ của nó."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "sử",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "a1",
+          "text": "sa",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b0",
+          "text": "xơ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b1",
+          "text": "xưa",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm s",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm x",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn chữ đầu của thẻ: s hay x?"],
+      "explanation": "sử, sa về giỏ \"Có âm s\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_s_x",
+      "scaffold": "none",
+      "id": "viet-sx-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào về giỏ nào?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "xẻ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "a1",
+          "text": "xứ",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b0",
+          "text": "sả",
+          "errorTag": "nham_s_x"
+        },
+        {
+          "id": "b1",
+          "text": "su",
+          "errorTag": "nham_s_x"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm x",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm s",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn chữ đầu của thẻ: s hay x?"],
+      "explanation": "xẻ, xứ về giỏ \"Có âm x\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-sx-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "bà xẻ gỗ",
+        "words": ["bà", "xẻ", "gỗ"]
+      },
+      "answerKey": {
+        "words": ["bà", "xẻ", "gỗ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"bà xẻ gỗ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-sx-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "xe lu",
+        "words": ["xe", "lu"]
+      },
+      "answerKey": {
+        "words": ["xe", "lu"]
+      },
+      "hints": ["Đọc rõ âm đầu của từng tiếng."],
+      "explanation": "Câu này đọc là \"xe lu\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-sx-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "thị xã",
+        "words": ["thị", "xã"]
+      },
+      "answerKey": {
+        "words": ["thị", "xã"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"thị xã\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-sx-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "Quê Hà là xứ sở của dừa",
+        "words": ["Quê", "Hà", "là", "xứ", "sở", "của", "dừa"]
+      },
+      "answerKey": {
+        "words": ["Quê", "Hà", "là", "xứ", "sở", "của", "dừa"]
+      },
+      "hints": ["Đọc rõ âm đầu của từng tiếng."],
+      "explanation": "Câu này đọc là \"Quê Hà là xứ sở của dừa\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-sx-0044",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Nhà bà ở xa",
+        "words": ["Nhà", "bà", "ở", "xa"]
+      },
+      "answerKey": {
+        "words": ["Nhà", "bà", "ở", "xa"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Nhà bà ở xa\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-sx-0045",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: chim sẻ, xe lu."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Viết đúng s, x", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["chim sẻ xe lu"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm tiếng trước khi viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-sx-0046",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: xứ sở, quả su su."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Viết đúng s, x", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["xứ sở quả su su"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-sx-0047",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_S_X"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: sổ, xô, xa."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Viết đúng s, x", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["sổ xô xa"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm tiếng trước khi viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 21 tr.54–55 (R r, S s) và Bài 27 tr.66–67 (V v, X x)"
+      }
+    }
+  ]
+}

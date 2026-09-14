@@ -1,0 +1,1539 @@
+{
+  "skillCode": "VIET.NN.KE_LAI",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-TV1-T1-B30", "KNTT-TV1-T1-B35", "KNTT-TV1-T1-B40"],
+  "note": "Kể lại chuyện theo tranh. Câu hỏi bám câu hỏi dưới tranh của sách ('Mùa thu đến, đàn kiến làm gì?', 'Vịt đã làm gì để giúp gà?'). Xếp tranh theo thứ tự bằng thẻ tranh (không in chữ). Ô nhiễu là việc của nhân vật khác trong cùng truyện — đúng lỗi 'nhầm nhân vật, nhầm thứ tự'. lessonRef mở tới bài 40 để in được câu trả lời.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-kelai-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Truyện Kiến và dế mèn: mùa thu, ai chăm chỉ tha mồi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐜",
+            "labelVi": "đàn kiến"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🦗",
+            "labelVi": "dế mèn"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐔",
+            "labelVi": "chú gà"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: đàn kiến",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-kelai-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Mùa thu, dế mèn làm gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tha mồi"
+        },
+        {
+          "id": "b",
+          "text": "ca múa"
+        },
+        {
+          "id": "c",
+          "text": "ngủ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: ca múa",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-kelai-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đông sang, vì sao dế mèn đi xin ăn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vì dế mèn no"
+        },
+        {
+          "id": "b",
+          "text": "vì dế mèn ốm"
+        },
+        {
+          "id": "c",
+          "text": "vì dế mèn đói"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: vì dế mèn đói",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-kelai-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xuân về, dế mèn làm gì cùng đàn kiến?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tha mồi"
+        },
+        {
+          "id": "b",
+          "text": "ca múa"
+        },
+        {
+          "id": "c",
+          "text": "ngủ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: tha mồi",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-kelai-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Truyện Kiến và dế mèn khuyên con điều gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chỉ ca múa"
+        },
+        {
+          "id": "b",
+          "text": "phải chăm chỉ"
+        },
+        {
+          "id": "c",
+          "text": "bỏ nhà đi"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: phải chăm chỉ",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-kelai-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Truyện Gà nâu và vịt xám: ai cõng bạn qua sông?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐔",
+            "labelVi": "gà nâu"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "con cá"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelVi": "vịt xám"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: vịt xám",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Thương vịt vất vả, gà nâu giúp vịt việc gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🥚",
+            "labelVi": "ấp trứng"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🏊",
+            "labelVi": "bơi qua sông"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🌽",
+            "labelVi": "ăn ngô"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: ấp trứng",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Truyện Gà nâu và vịt xám khuyên con điều gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chê bạn"
+        },
+        {
+          "id": "b",
+          "text": "đỡ đần bạn"
+        },
+        {
+          "id": "c",
+          "text": "bỏ bạn"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: đỡ đần bạn",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Truyện Hai người bạn và con gấu: hai bạn gặp con gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐯",
+            "labelVi": "con hổ"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐘",
+            "labelVi": "con voi"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐻",
+            "labelVi": "con gấu"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: con gấu",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Thấy gấu, người bạn thứ nhất làm gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelVi": "trèo lên cây"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "😴",
+            "labelVi": "nằm im"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🏃",
+            "labelVi": "chạy về nhà"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: trèo lên cây",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con gấu làm gì với người nằm im?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🍯",
+            "labelVi": "ăn mật"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "👃",
+            "labelVi": "ngửi mặt rồi bỏ đi"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelVi": "trèo lên cây"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: ngửi mặt rồi bỏ đi",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kể chuyện, con kể thế nào cho bạn nghe rõ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nói thầm"
+        },
+        {
+          "id": "b",
+          "text": "kể lộn xộn"
+        },
+        {
+          "id": "c",
+          "text": "nói to, chậm rãi"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc hết các ô rồi mới chọn nhé!"],
+      "explanation": "Đáp án: nói to, chậm rãi",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Mùa thu, đàn kiến làm gì?"
+      },
+      "listenTarget": {
+        "text": "Mùa thu đến, đàn kiến chăm chỉ tha mồi về tổ."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ca múa"
+        },
+        {
+          "id": "b",
+          "text": "tha mồi về tổ"
+        },
+        {
+          "id": "c",
+          "text": "ngủ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Mùa thu đến, đàn kiến chăm chỉ tha mồi về tổ.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Dế mèn làm gì?"
+      },
+      "listenTarget": {
+        "text": "Còn dế mèn thì chỉ mải ca hát, nhảy múa."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tha mồi"
+        },
+        {
+          "id": "b",
+          "text": "đi chợ"
+        },
+        {
+          "id": "c",
+          "text": "ca múa"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Còn dế mèn thì chỉ mải ca hát, nhảy múa.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đông sang, dế mèn làm gì?"
+      },
+      "listenTarget": {
+        "text": "Đông sang, dế mèn đói quá, phải đi xin ăn."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đi xin ăn"
+        },
+        {
+          "id": "b",
+          "text": "đi ngủ"
+        },
+        {
+          "id": "c",
+          "text": "đi bơi"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Đông sang, dế mèn đói quá, phải đi xin ăn.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xuân về, dế mèn làm gì?"
+      },
+      "listenTarget": {
+        "text": "Xuân về, dế mèn cùng đàn kiến tha mồi."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ca múa"
+        },
+        {
+          "id": "b",
+          "text": "tha mồi"
+        },
+        {
+          "id": "c",
+          "text": "đi xin ăn"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Xuân về, dế mèn cùng đàn kiến tha mồi.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Gà nâu chơi với ai?"
+      },
+      "listenTarget": {
+        "text": "Hằng ngày, gà nâu và vịt xám đi chơi cùng nhau."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐱",
+            "labelVi": "con mèo"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "con chó"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelVi": "vịt xám"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Hằng ngày, gà nâu và vịt xám đi chơi cùng nhau.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ai giúp gà nâu qua sông?"
+      },
+      "listenTarget": {
+        "text": "Vịt xám cõng gà nâu qua sông."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelVi": "vịt xám"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐔",
+            "labelVi": "gà mẹ"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "con cá"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Vịt xám cõng gà nâu qua sông.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hai người bạn gặp con gì?"
+      },
+      "listenTarget": {
+        "text": "Hai người bạn đi vào rừng thì gặp một con gấu."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐯",
+            "labelVi": "con hổ"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐻",
+            "labelVi": "con gấu"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐘",
+            "labelVi": "con voi"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Hai người bạn đi vào rừng thì gặp một con gấu.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Người bạn thứ nhất làm gì?"
+      },
+      "listenTarget": {
+        "text": "Một người vội trèo lên cây, người kia nằm im dưới đất."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "😴",
+            "labelVi": "nằm im"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🏃",
+            "labelVi": "chạy đi"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelVi": "trèo lên cây"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Một người vội trèo lên cây, người kia nằm im dưới đất.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Gấu làm gì?"
+      },
+      "listenTarget": {
+        "text": "Gấu ngửi mặt người nằm im rồi bỏ đi."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "👃",
+            "labelVi": "ngửi rồi bỏ đi"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍯",
+            "labelVi": "ăn mật"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelVi": "trèo cây"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Gấu ngửi mặt người nằm im rồi bỏ đi.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chị kiến dặn dế mèn điều gì?"
+      },
+      "listenTarget": {
+        "text": "Chị kiến cho dế mèn ăn và dặn dế mèn phải chăm chỉ."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chỉ ca múa"
+        },
+        {
+          "id": "b",
+          "text": "phải chăm chỉ"
+        },
+        {
+          "id": "c",
+          "text": "bỏ nhà đi"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Chị kiến cho dế mèn ăn và dặn dế mèn phải chăm chỉ.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Được giúp, thỏ con cần nói gì?"
+      },
+      "listenTarget": {
+        "text": "Thỏ mẹ dặn: được ai giúp thì phải nói cảm ơn."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ca múa"
+        },
+        {
+          "id": "b",
+          "text": "bỏ đi"
+        },
+        {
+          "id": "c",
+          "text": "cảm ơn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Thỏ mẹ dặn: được ai giúp thì phải nói cảm ơn.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp tranh truyện Kiến và dế mèn theo thứ tự."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🐜🍂",
+            "labelVi": "kiến tha mồi"
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸🐜🦗",
+            "labelVi": "dế mèn tha mồi cùng kiến"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "❄️🦗",
+            "labelVi": "dế mèn đói"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🦗🎶",
+            "labelVi": "dế mèn ca hát"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Thu, rồi đông, rồi xuân."],
+      "explanation": "Thứ tự đúng: kiến tha mồi → dế mèn ca hát → dế mèn đói → dế mèn tha mồi cùng kiến.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp tranh truyện Gà nâu và vịt xám."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🏞️🐔",
+            "labelVi": "gà đứng bên sông"
+          }
+        },
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🐔🦆",
+            "labelVi": "gà và vịt đi chơi"
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "emoji",
+            "value": "🥚🐔",
+            "labelVi": "gà ấp trứng giúp vịt"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌊🦆",
+            "labelVi": "vịt cõng gà qua sông"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Chuyện gì xảy ra trước?"],
+      "explanation": "Thứ tự đúng: gà và vịt đi chơi → gà đứng bên sông → vịt cõng gà qua sông → gà ấp trứng giúp vịt.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp tranh truyện Hai người bạn và con gấu."
+      },
+      "dragItems": [
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳😴",
+            "labelVi": "một bạn trèo cây, một bạn nằm im"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐻",
+            "labelVi": "gặp gấu"
+          }
+        },
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🚶🌲",
+            "labelVi": "hai bạn đi vào rừng"
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "emoji",
+            "value": "🗣️",
+            "labelVi": "hai bạn nói chuyện"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Gặp gấu xảy ra trước khi trèo cây."],
+      "explanation": "Thứ tự đúng: hai bạn đi vào rừng → gặp gấu → một bạn trèo cây, một bạn nằm im → hai bạn nói chuyện.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Truyện Kiến và dế mèn: mùa nào trước?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🍂",
+            "labelVi": "mùa thu"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "❄️",
+            "labelVi": "mùa đông"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌸",
+            "labelVi": "mùa xuân"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"]
+      },
+      "hints": ["Thu – đông – xuân."],
+      "explanation": "Thứ tự đúng: mùa thu → mùa đông → mùa xuân.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-kelai-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "Dế mèn chỉ ca múa.",
+        "words": ["Dế", "mèn", "chỉ", "ca", "múa"]
+      },
+      "answerKey": {
+        "words": ["Dế", "mèn", "chỉ", "ca", "múa"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Dế mèn chỉ ca múa.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "Dế mèn đói quá.",
+        "words": ["Dế", "mèn", "đói", "quá"]
+      },
+      "answerKey": {
+        "words": ["Dế", "mèn", "đói", "quá"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"Dế mèn đói quá.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "Dế mèn cần chăm chỉ.",
+        "words": ["Dế", "mèn", "cần", "chăm", "chỉ"]
+      },
+      "answerKey": {
+        "words": ["Dế", "mèn", "cần", "chăm", "chỉ"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Dế mèn cần chăm chỉ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "Bé kể cho mẹ nghe.",
+        "words": ["Bé", "kể", "cho", "mẹ", "nghe"]
+      },
+      "answerKey": {
+        "words": ["Bé", "kể", "cho", "mẹ", "nghe"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"Bé kể cho mẹ nghe.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Bé nói to, chậm rãi.",
+        "words": ["Bé", "nói", "to", "chậm", "rãi"]
+      },
+      "answerKey": {
+        "words": ["Bé", "nói", "to", "chậm", "rãi"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Bé nói to, chậm rãi.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ tranh con thích nhất trong truyện Kiến và dế mèn, kể lại cho ba mẹ."
+      },
+      "rubric": {
+        "criteria": ["Có tranh đúng truyện", "Kể lại được ít nhất 3 ý đúng thứ tự"],
+        "sampleAnswers": ["tranh dế mèn ca hát"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: tranh dế mèn ca hát",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Kể lại truyện Gà nâu và vịt xám cho ba mẹ nghe, vẽ một tranh."
+      },
+      "rubric": {
+        "criteria": ["Có tranh đúng truyện", "Kể đủ nhân vật gà nâu, vịt xám"],
+        "sampleAnswers": ["tranh vịt cõng gà"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: tranh vịt cõng gà",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-kelai-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.KE_LAI"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ đoạn con nhớ nhất trong truyện Hai người bạn và con gấu."
+      },
+      "rubric": {
+        "criteria": ["Có tranh đúng truyện", "Kể lại được đoạn đó"],
+        "sampleAnswers": ["tranh con gấu"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: tranh con gấu",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B30",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục Kể chuyện: Bài 30 tr.73 (Kiến và dế mèn), Bài 35 tr.83 (Gà nâu và vịt xám), Bài 40 tr.93 (Hai người bạn và con gấu)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1367 @@
+{
+  "skillCode": "VIET.HV.NHAM_LAN_P_Q",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-TV1-T1-B26"],
+  "note": "Phân biệt p và q. Mức con chữ: p / q là chữ gương, ô nhiễu mang nham_p_q. Mức tiếng: ph / qu cùng vần cùng dấu (phà / quà, phê / quê, phả / quả), ô nhiễu mang nham_am_dau. Không in 'qhà' hay 'pu': chữ q đứng một mình và vần uê chưa học.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "model",
+      "id": "viet-pq-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ p?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "p"
+        },
+        {
+          "id": "b",
+          "text": "q",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "c",
+          "text": "b"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ p có đuôi dài, bụng quay sang phải."],
+      "explanation": "Đáp án: p",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "model",
+      "id": "viet-pq-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ q?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "p",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "b",
+          "text": "q"
+        },
+        {
+          "id": "c",
+          "text": "d"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ q có bụng quay sang trái."],
+      "explanation": "Đáp án: q",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "model",
+      "id": "viet-pq-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} chữ p nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "q",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "b",
+          "text": "d"
+        },
+        {
+          "id": "c",
+          "text": "p"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Bụng chữ p ở bên phải cái đuôi."],
+      "explanation": "Đáp án: p",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "model",
+      "id": "viet-pq-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} chữ q nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "q"
+        },
+        {
+          "id": "b",
+          "text": "p",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "c",
+          "text": "b"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Bụng chữ q ở bên trái cái đuôi."],
+      "explanation": "Đáp án: q",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "model",
+      "id": "viet-pq-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ P viết thường là chữ nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "q",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "b",
+          "text": "p"
+        },
+        {
+          "id": "c",
+          "text": "g"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["P hoa và p thường đều có bụng bên phải."],
+      "explanation": "Đáp án: p",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "model",
+      "id": "viet-pq-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ Q viết thường là chữ nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "p",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "b",
+          "text": "g"
+        },
+        {
+          "id": "c",
+          "text": "q"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["q thường có bụng bên trái."],
+      "explanation": "Đáp án: q",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "none",
+      "id": "viet-pq-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào là chữ đứng đầu tiếng phà?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "p"
+        },
+        {
+          "id": "b",
+          "text": "q",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "c",
+          "text": "b"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["phà viết bằng p và h."],
+      "explanation": "Đáp án: p",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "none",
+      "id": "viet-pq-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào là chữ đứng đầu tiếng quà?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "p",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "b",
+          "text": "q"
+        },
+        {
+          "id": "c",
+          "text": "g"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["quà viết bằng q và u."],
+      "explanation": "Đáp án: q",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm ph?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "bà"
+        },
+        {
+          "id": "c",
+          "text": "phà"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["ph đọc là phờ."],
+      "explanation": "Đáp án: phà",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm qu?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà"
+        },
+        {
+          "id": "b",
+          "text": "phà",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "cà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["qu đọc là quờ."],
+      "explanation": "Đáp án: quà",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm qu nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "phê",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "quê"
+        },
+        {
+          "id": "c",
+          "text": "bê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn hai con chữ đầu: q và u."],
+      "explanation": "Đáp án: quê",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm ph nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quả",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "cả"
+        },
+        {
+          "id": "c",
+          "text": "phả"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhìn hai con chữ đầu: p và h."],
+      "explanation": "Đáp án: phả",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm qu?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quế"
+        },
+        {
+          "id": "b",
+          "text": "phế",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "dế"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["q luôn đi với u."],
+      "explanation": "Đáp án: quế",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "⛴️",
+          "labelVi": "bến phà",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "phà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ chiếc phà chở xe qua sông."],
+      "explanation": "Đáp án: phà",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🎁",
+          "labelVi": "gói quà",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà"
+        },
+        {
+          "id": "b",
+          "text": "phà",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ một gói quà."],
+      "explanation": "Đáp án: quà",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🏡",
+          "labelVi": "quê nhà",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "phê",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "quê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ ngôi nhà ở quê."],
+      "explanation": "Đáp án: quê",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🍜",
+          "labelVi": "bát phở",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "phở"
+        },
+        {
+          "id": "b",
+          "text": "bở",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ bát phở."],
+      "explanation": "Đáp án: phở",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng có âm ph."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bí",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "quạ"
+        },
+        {
+          "id": "c",
+          "text": "phí"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tìm tiếng bắt đầu bằng p và h."],
+      "explanation": "Đáp án: phí",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "phà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "phà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"phà\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "quà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà"
+        },
+        {
+          "id": "b",
+          "text": "phà",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"quà\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào ô con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "quê"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "phê",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "quê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"quê\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng ô nhé!"
+      },
+      "listenTarget": {
+        "text": "quả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quả"
+        },
+        {
+          "id": "b",
+          "text": "phả",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"quả\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "phở"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bở",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "phở"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"phở\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "phố"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "phố"
+        },
+        {
+          "id": "b",
+          "text": "bố",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"phố\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "quạ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tạ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "quạ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"quạ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "quế"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quế"
+        },
+        {
+          "id": "b",
+          "text": "phế",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"quế\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "phà",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b0",
+          "text": "quà",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "a1",
+          "text": "phố",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b1",
+          "text": "quê",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm ph",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm qu",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn hai con chữ đầu của thẻ."],
+      "explanation": "phà, phố về giỏ \"Có âm ph\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chia các tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "phở",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b0",
+          "text": "quả",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "a1",
+          "text": "phí",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b1",
+          "text": "quạ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm ph",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm qu",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["ph có chữ p, qu có chữ q."],
+      "explanation": "phở, phí về giỏ \"Có âm ph\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-pq-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có chữ p, tiếng nào có chữ q?"
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "phế",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b1",
+          "text": "que",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "a0",
+          "text": "pha",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b0",
+          "text": "quế",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có chữ p",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "Có chữ q",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Bụng chữ p bên phải, bụng chữ q bên trái."],
+      "explanation": "pha, phế về giỏ \"Có chữ p\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-pq-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "pha trà",
+        "words": ["pha", "trà"]
+      },
+      "answerKey": {
+        "words": ["pha", "trà"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"pha trà\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-pq-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "quả khế",
+        "words": ["quả", "khế"]
+      },
+      "answerKey": {
+        "words": ["quả", "khế"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"quả khế\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-pq-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "phố cổ",
+        "words": ["phố", "cổ"]
+      },
+      "answerKey": {
+        "words": ["phố", "cổ"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"phố cổ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-pq-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "quê nhà",
+        "words": ["quê", "nhà"]
+      },
+      "answerKey": {
+        "words": ["quê", "nhà"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"quê nhà\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-pq-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Bà cho bé quà quê",
+        "words": ["Bà", "cho", "bé", "quà", "quê"]
+      },
+      "answerKey": {
+        "words": ["Bà", "cho", "bé", "quà", "quê"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Bà cho bé quà quê\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-pq-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở mỗi chữ một dòng: p, q, ph, qu."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu của đề", "Chữ rõ ràng, đúng dấu thanh"],
+        "sampleAnswers": ["p q ph qu"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: p q ph qu",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-pq-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: pha trà, quả khế."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu của đề", "Chữ rõ ràng, đúng dấu thanh"],
+        "sampleAnswers": ["pha trà, quả khế"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: pha trà, quả khế",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-pq-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_P_Q"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: phố cổ, quê nhà."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu của đề", "Chữ rõ ràng, đúng dấu thanh"],
+        "sampleAnswers": ["phố cổ, quê nhà"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: phố cổ, quê nhà",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)"
+      }
+    }
+  ]
+}

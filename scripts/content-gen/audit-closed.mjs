@@ -157,9 +157,18 @@ for (const sub of readdirSync("content/exercises")) {
 
       // 7. viết đúng chính tả
       if (/viết đúng/u.test(p) && ex.language === "vi" && choices.length) {
-        const ok = choices.filter((c) => spelledRight(label(c)));
+        // Đề nêu sẵn tiếng cần viết ("…viết đúng của \"nghé\"") thì chỉ ô trùng tiếng đó là đúng.
+        const quoted = /"([^"]+)"/u.exec(p)?.[1];
+        const ok =
+          quoted && choices.some((c) => label(c) === quoted)
+            ? choices.filter((c) => label(c) === quoted)
+            : choices.filter((c) => spelledRight(label(c)));
+        // Có tranh thì tranh chỉ ra tiếng nào; chỉ còn phải chắc đáp án không phạm luật âm đầu.
+        if (ex.prompt.image && !quoted) {
+          if (!spelledRight(label(right))) bad(`đáp án "${label(right)}" phạm luật chính tả`);
+        }
         // Chỉ phán khi luật âm đầu phân biệt được các ô (gói ng/ngh, g/gh, c/k); ô sai vì dấu thì bỏ qua.
-        if (ok.length < choices.length && (ok.length !== 1 || ok[0] !== right))
+        else if ((quoted || ok.length < choices.length) && (ok.length !== 1 || ok[0] !== right))
           bad(`${ok.length} ô viết đúng luật: ${ok.map(label).join(", ")}`);
       }
     }

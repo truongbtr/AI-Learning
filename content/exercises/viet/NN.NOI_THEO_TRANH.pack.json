@@ -1,0 +1,1476 @@
+{
+  "skillCode": "VIET.NN.NOI_THEO_TRANH",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-TV1-T1-B01", "KNTT-TV1-T1-B31"],
+  "note": "Nhìn tranh, chọn câu nói đủ ý. Ô nhiễu: câu một từ ('Gà.') — đúng lỗi 'chỉ nói một từ' của bản đồ kỹ năng — và câu lạc đề. Nói thật vẫn cần ba mẹ nghe; phần này tập nhận ra câu đủ ý. lessonRef mở tới bài 31 để in được câu.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-noitranh-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn tranh. Câu nào nói đủ ý?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐔",
+          "labelVi": "gà mẹ và gà con",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Gà mẹ che cho gà nhỏ."
+        },
+        {
+          "id": "b",
+          "text": "Gà."
+        },
+        {
+          "id": "c",
+          "text": "Bé đi nhà trẻ."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ gà mẹ và gà con: \"Gà mẹ che cho gà nhỏ.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-noitranh-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn câu nói về tranh nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "cá ở hồ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cá."
+        },
+        {
+          "id": "b",
+          "text": "Cá ở hồ."
+        },
+        {
+          "id": "c",
+          "text": "Bà đi chợ."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ cá ở hồ: \"Cá ở hồ.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-noitranh-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Bạn nào nói đúng về tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍉",
+          "labelVi": "quả dưa",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Dưa."
+        },
+        {
+          "id": "b",
+          "text": "Bố đi xe."
+        },
+        {
+          "id": "c",
+          "text": "Mẹ bổ quả dưa."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ quả dưa: \"Mẹ bổ quả dưa.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-noitranh-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn tranh. Câu nào nói đủ ý?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚲",
+          "labelVi": "bé đi xe",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bé đi xe."
+        },
+        {
+          "id": "b",
+          "text": "Xe."
+        },
+        {
+          "id": "c",
+          "text": "Bà cho cá ăn."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ bé đi xe: \"Bé đi xe.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-noitranh-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn câu nói về tranh nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐄",
+          "labelVi": "con bò",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bò."
+        },
+        {
+          "id": "b",
+          "text": "Bò ăn cỏ ở bờ đê."
+        },
+        {
+          "id": "c",
+          "text": "Bé vẽ nhà."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ con bò: \"Bò ăn cỏ ở bờ đê.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-noitranh-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Bạn nào nói đúng về tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "👵",
+          "labelVi": "bà",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bà."
+        },
+        {
+          "id": "b",
+          "text": "Chó ở sân."
+        },
+        {
+          "id": "c",
+          "text": "Bà kể cho bé nghe."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ bà: \"Bà kể cho bé nghe.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn tranh. Câu nào nói đủ ý?",
+        "image": {
+          "kind": "emoji",
+          "value": "🏡",
+          "labelVi": "nhà ở quê",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Nhà bà ở quê."
+        },
+        {
+          "id": "b",
+          "text": "Nhà."
+        },
+        {
+          "id": "c",
+          "text": "Bé ăn chè."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ nhà ở quê: \"Nhà bà ở quê.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn câu nói về tranh nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🛶",
+          "labelVi": "con đò",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Đò."
+        },
+        {
+          "id": "b",
+          "text": "Bố chở bé đi đò."
+        },
+        {
+          "id": "c",
+          "text": "Mẹ nhổ cỏ."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ con đò: \"Bố chở bé đi đò.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bạn nào nói đúng về tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐕",
+          "labelVi": "con chó",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Chó."
+        },
+        {
+          "id": "b",
+          "text": "Bé ghi chữ."
+        },
+        {
+          "id": "c",
+          "text": "Chó nhà Hà đi ra ngõ."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ con chó: \"Chó nhà Hà đi ra ngõ.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn tranh. Câu nào nói đủ ý?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌧️",
+          "labelVi": "trời mưa",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mưa to quá."
+        },
+        {
+          "id": "b",
+          "text": "Mưa."
+        },
+        {
+          "id": "c",
+          "text": "Bé đi ngủ."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ trời mưa: \"Mưa to quá.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn câu nói về tranh nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🍜",
+          "labelVi": "bát phở",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Phở."
+        },
+        {
+          "id": "b",
+          "text": "Bố ăn phở."
+        },
+        {
+          "id": "c",
+          "text": "Bé tô chữ a."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ bát phở: \"Bố ăn phở.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Bạn nào nói đúng về tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "🎨",
+          "labelVi": "bé vẽ tranh",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Vẽ."
+        },
+        {
+          "id": "b",
+          "text": "Bà đi phà."
+        },
+        {
+          "id": "c",
+          "text": "Hà vẽ quả na."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ bé vẽ tranh: \"Hà vẽ quả na.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn tranh. Câu nào nói đủ ý?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐐",
+          "labelVi": "con dê",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Dê ăn lá."
+        },
+        {
+          "id": "b",
+          "text": "Dê."
+        },
+        {
+          "id": "c",
+          "text": "Bố đi phố."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ con dê: \"Dê ăn lá.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn câu nói về tranh nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🧺",
+          "labelVi": "giỏ đi chợ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Chợ."
+        },
+        {
+          "id": "b",
+          "text": "Mẹ đi chợ."
+        },
+        {
+          "id": "c",
+          "text": "Bé ngủ."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ giỏ đi chợ: \"Mẹ đi chợ.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Bạn nào nói đúng về tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍐",
+          "labelVi": "quả lê",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lê."
+        },
+        {
+          "id": "b",
+          "text": "Chó ở ngõ."
+        },
+        {
+          "id": "c",
+          "text": "Bà cho bé quả lê."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Câu đủ ý nói ai và làm gì.", "Câu đó có nói về tranh không?"],
+      "explanation": "Tranh vẽ quả lê: \"Bà cho bé quả lê.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe câu rồi chọn tranh đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Bò ăn cỏ ở bờ đê."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐔",
+            "labelVi": "con gà"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "con bò"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "con cá"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Bò ăn cỏ ở bờ đê.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} nói một câu. Tranh nào hợp?"
+      },
+      "listenTarget": {
+        "text": "Bà kể cho bé nghe."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelVi": "con chó"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🚲",
+            "labelVi": "xe"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "👵",
+            "labelVi": "bà"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Bà kể cho bé nghe.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tranh."
+      },
+      "listenTarget": {
+        "text": "Mẹ bổ quả dưa."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🍉",
+            "labelVi": "quả dưa"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍐",
+            "labelVi": "quả lê"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🍜",
+            "labelVi": "bát phở"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Mẹ bổ quả dưa.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm tranh nhé!"
+      },
+      "listenTarget": {
+        "text": "Bố chở bé đi đò."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚲",
+            "labelVi": "xe"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🛶",
+            "labelVi": "con đò"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🏡",
+            "labelVi": "nhà"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Bố chở bé đi đò.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe cả câu rồi mới chọn."
+      },
+      "listenTarget": {
+        "text": "Trời mưa to quá."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "☀️",
+            "labelVi": "trời nắng"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🌙",
+            "labelVi": "ban đêm"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🌧️",
+            "labelVi": "trời mưa"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Trời mưa to quá.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn tranh."
+      },
+      "listenTarget": {
+        "text": "Dê ăn lá cây."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelVi": "con dê"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄",
+            "labelVi": "con bò"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelVi": "con cá"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Dê ăn lá cây.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các tiếng thành câu nói về tranh."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Bà"
+        },
+        {
+          "id": "c3",
+          "text": "bé"
+        },
+        {
+          "id": "c2",
+          "text": "cho"
+        },
+        {
+          "id": "c1",
+          "text": "kể"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Tiếng viết hoa đứng đầu câu."],
+      "explanation": "Thứ tự đúng: Bà → kể → cho → bé.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng vào đúng chỗ để thành câu."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "bổ"
+        },
+        {
+          "id": "c0",
+          "text": "Mẹ"
+        },
+        {
+          "id": "c3",
+          "text": "dưa"
+        },
+        {
+          "id": "c2",
+          "text": "quả"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Tiếng viết hoa đứng đầu câu."],
+      "explanation": "Thứ tự đúng: Mẹ → bổ → quả → dưa.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp giúp {ban} câu nói về tranh."
+      },
+      "dragItems": [
+        {
+          "id": "c2",
+          "text": "quả"
+        },
+        {
+          "id": "c1",
+          "text": "vẽ"
+        },
+        {
+          "id": "c0",
+          "text": "Hà"
+        },
+        {
+          "id": "c3",
+          "text": "na"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Tiếng viết hoa đứng đầu câu."],
+      "explanation": "Thứ tự đúng: Hà → vẽ → quả → na.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các tiếng thành câu nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Cá"
+        },
+        {
+          "id": "c1",
+          "text": "ở"
+        },
+        {
+          "id": "c2",
+          "text": "hồ"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"]
+      },
+      "hints": ["Tiếng viết hoa đứng đầu câu."],
+      "explanation": "Thứ tự đúng: Cá → ở → hồ.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-noitranh-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "Gà mẹ che cho gà nhỏ.",
+        "words": ["Gà", "mẹ", "che", "cho", "gà", "nhỏ"]
+      },
+      "answerKey": {
+        "words": ["Gà", "mẹ", "che", "cho", "gà", "nhỏ"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Gà mẹ che cho gà nhỏ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "Bò ăn cỏ ở bờ đê.",
+        "words": ["Bò", "ăn", "cỏ", "ở", "bờ", "đê"]
+      },
+      "answerKey": {
+        "words": ["Bò", "ăn", "cỏ", "ở", "bờ", "đê"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"Bò ăn cỏ ở bờ đê.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "Bà kể cho bé nghe.",
+        "words": ["Bà", "kể", "cho", "bé", "nghe"]
+      },
+      "answerKey": {
+        "words": ["Bà", "kể", "cho", "bé", "nghe"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Bà kể cho bé nghe.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "Bố chở bé đi đò.",
+        "words": ["Bố", "chở", "bé", "đi", "đò"]
+      },
+      "answerKey": {
+        "words": ["Bố", "chở", "bé", "đi", "đò"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"Bố chở bé đi đò.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Nhà bà ở quê.",
+        "words": ["Nhà", "bà", "ở", "quê"]
+      },
+      "answerKey": {
+        "words": ["Nhà", "bà", "ở", "quê"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Nhà bà ở quê.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "Mẹ đi chợ.",
+        "words": ["Mẹ", "đi", "chợ"]
+      },
+      "answerKey": {
+        "words": ["Mẹ", "đi", "chợ"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"Mẹ đi chợ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ nhà con, rồi nói một câu về tranh cho ba mẹ nghe."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Nói (hoặc viết) được một câu đủ ai – làm gì"],
+        "sampleAnswers": ["Nhà con có mẹ và bé."]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: Nhà con có mẹ và bé.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ con vật con thích, nói một câu về nó."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Câu nói đủ ý, đúng tranh"],
+        "sampleAnswers": ["Chó nhà con ở sân."]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: Chó nhà con ở sân.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ bữa cơm nhà con, kể một câu về tranh."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Câu nói đủ ý"],
+        "sampleAnswers": ["Bố mẹ và bé ăn cơm."]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: Bố mẹ và bé ăn cơm.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-noitranh-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.NN.NOI_THEO_TRANH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ đường tới trường, nói một câu về tranh."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Câu nói đủ ý"],
+        "sampleAnswers": ["Mẹ chở bé đi học."]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: Mẹ chở bé đi học.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": "KNTT-TV1-T1-B31",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, mục 'Nói theo tranh' của các bài học âm (Bài 1–31); tranh emoji thay tranh sách"
+      }
+    }
+  ]
+}

@@ -62,6 +62,8 @@ export function spellTag(rightIn, wrongIn) {
   return null;
 }
 const opt = (right, t) => {
+  // [chữ, mã] khi mã phải khai tay (ng/ngh, g/gh, c/k — spellTag không tả được).
+  if (Array.isArray(t)) return t[1] ? { text: t[0], errorTag: t[1] } : { text: t[0] };
   const tag = spellTag(right, t);
   return tag ? { text: t, errorTag: tag } : { text: t };
 };
@@ -81,7 +83,9 @@ export function writingPack(cfg) {
       type: "WRITE_PHOTO",
       difficulty: Math.min(5, 1 + (i % 5)),
       scaffold: i < 2 ? "model" : "none",
-      prompt: { text: `${WRITE[i % 6]} ${set.join(", ")}.` },
+      prompt: {
+        text: `${(cfg.writePrompts ?? WRITE)[i % (cfg.writePrompts ?? WRITE).length]} ${set.join(", ")}${/[.!?]$/.test(set.at(-1)) ? "" : "."}`,
+      },
       rubric: {
         criteria: cfg.criteria ?? [
           `Viết đủ ${set.length} phần`,
@@ -122,10 +126,12 @@ export function writingPack(cfg) {
             image: img(wd.pic, wd.gloss, null, 1),
           }
         : {
+            // Không tranh thì phải nêu tiếng cần viết: "Ô nào viết đúng?" trơ trọi có hai ô đúng khi ô
+            // sai là tiếng thật khác dấu (kẻ / kẽ).
             text: [
               `Chọn cách viết đúng của "${wd.say ?? wd.w}".`,
-              "Ô nào viết đúng?",
-              "Đố con: ô nào viết đúng chính tả?",
+              `Ô nào viết đúng "${wd.say ?? wd.w}"?`,
+              `Đố con: "${wd.say ?? wd.w}" viết thế nào?`,
             ][i % 3],
           },
       choices,
@@ -207,10 +213,13 @@ export function writingPack(cfg) {
 export function situationPack(cfg) {
   const P = mkPack({ ...cfg, dir: "viet", subject: "VIET", language: "vi" });
   const add = P.add;
+  // Ô chữ, [chữ, mã], hoặc ô tranh { e: emoji, w: tên } / [{ e, w }, mã].
+  const face = (t) =>
+    typeof t === "object" && t !== null ? { image: img(t.e, t.w, null) } : { text: t };
   const o = (w) =>
-    Array.isArray(w) ? (w[1] ? { text: w[0], errorTag: w[1] } : { text: w[0] }) : { text: w };
+    Array.isArray(w) ? { ...face(w[0]), ...(w[1] ? { errorTag: w[1] } : {}) } : face(w);
   cfg.items.forEach((it, i) => {
-    const { choices, answerKey } = choicesOf({ text: it.right }, it.wrongs.map(o), i);
+    const { choices, answerKey } = choicesOf(face(it.right), it.wrongs.map(o), i);
     add({
       type: "MCQ",
       difficulty: it.d ?? 1 + (i % 5),
@@ -223,16 +232,16 @@ export function situationPack(cfg) {
       choices,
       answerKey,
       hints: Array.isArray(it.hint) ? it.hint : [it.hint ?? "Đọc hết các ô rồi mới chọn nhé!"],
-      explanation: it.why ?? `Đáp án: ${it.right}`,
+      explanation: it.why ?? `Đáp án: ${it.right.w ?? it.right}`,
     });
   });
   (cfg.listens ?? []).forEach((it, i) => {
-    const { choices, answerKey } = choicesOf({ text: it.right }, it.wrongs.map(o), i + 1);
+    const { choices, answerKey } = choicesOf(face(it.right), it.wrongs.map(o), i + 1);
     add({
       type: "LISTEN_CHOOSE",
       difficulty: it.d ?? 1 + (i % 5),
       targetsError: choices.find((c) => c.errorTag)?.errorTag ?? null,
-      prompt: { text: listenPrompt(cfg.listenPrompts ?? LISTEN, it.say, i) },
+      prompt: { text: it.q ?? listenPrompt(cfg.listenPrompts ?? LISTEN, it.say, i) },
       listenTarget: { text: it.say },
       choices,
       answerKey,
@@ -241,7 +250,7 @@ export function situationPack(cfg) {
     });
   });
   (cfg.orders ?? []).forEach((ord, i) => {
-    const cards = ord.steps.map((t, k) => ({ id: `c${k}`, text: t }));
+    const cards = ord.steps.map((t, k) => ({ id: `c${k}`, ...face(t) }));
     const shown = [...cards].sort(
       (a, b) =>
         ((a.id.charCodeAt(1) * 3 + i) % cards.length) -
@@ -259,8 +268,31 @@ export function situationPack(cfg) {
       })),
       answerKey: Object.fromEntries(ord.steps.map((_, k) => [`o${k}`, [`c${k}`]])),
       hints: [ord.hint ?? "Việc nào xảy ra trước thì xếp trước."],
-      explanation: `Thứ tự đúng: ${ord.steps.join(" → ")}.`,
+      explanation: `Thứ tự đúng: ${ord.steps.map((t) => t.w ?? t).join(" → ")}.`,
       meta: { estSeconds: 50 },
+    });
+  });
+  // Hai giỏ: { q, zones: [A, B], a: [..], b: [..], tag?, d, hint }. Thẻ mang `tag` khi xếp nhầm
+  // giỏ chính là lỗi đó (b/d, hỏi/ngã…).
+  (cfg.sorts ?? []).forEach((st, i) => {
+    const cards = [
+      ...st.a.map((t, k) => ({ id: `a${k}`, text: t, ...(st.tag ? { errorTag: st.tag } : {}) })),
+      ...st.b.map((t, k) => ({ id: `b${k}`, text: t, ...(st.tag ? { errorTag: st.tag } : {}) })),
+    ].sort((x, y) => ((x.id.charCodeAt(1) + i) % 3) - ((y.id.charCodeAt(1) + i) % 3));
+    add({
+      type: "DRAG_DROP",
+      difficulty: st.d ?? 2 + (i % 4),
+      targetsError: st.tag ?? null,
+      prompt: { text: st.q },
+      dragItems: cards,
+      dropZones: [
+        { id: "za", label: st.zones[0], accepts: cards.map((c) => c.id) },
+        { id: "zb", label: st.zones[1], accepts: cards.map((c) => c.id) },
+      ],
+      answerKey: { za: st.a.map((_, k) => `a${k}`), zb: st.b.map((_, k) => `b${k}`) },
+      hints: [st.hint ?? "Đọc từng thẻ rồi mới kéo nhé!"],
+      explanation: `${st.a.join(", ")} về giỏ "${st.zones[0]}".`,
+      meta: { estSeconds: 45 },
     });
   });
   (cfg.reads ?? []).forEach((r, i) => {
@@ -276,13 +308,13 @@ export function situationPack(cfg) {
       explanation: `Câu này đọc là "${r}".`,
     });
   });
-  (cfg.writes ?? []).forEach(([q, sample], i) => {
+  (cfg.writes ?? []).forEach(([q, sample, criteria], i) => {
     add({
       type: "WRITE_PHOTO",
       difficulty: 3 + (i % 3),
       prompt: { text: q },
       rubric: {
-        criteria: ["Làm đúng yêu cầu của đề", "Chữ rõ ràng, đúng dấu thanh"],
+        criteria: criteria ?? ["Làm đúng yêu cầu của đề", "Chữ rõ ràng, đúng dấu thanh"],
         sampleAnswers: [sample],
       },
       answerKey: null,

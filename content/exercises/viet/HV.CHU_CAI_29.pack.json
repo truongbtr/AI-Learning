@@ -1,0 +1,1667 @@
+{
+  "skillCode": "VIET.HV.CHU_CAI_29",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Bảng chữ cái 29 chữ: nhận mặt chữ, chữ hoa – chữ thường, thứ tự. Mỗi câu có một ô nhiễu là chữ gần giống (b/d, p/q, ă/â, o/ô/ơ, u/ư, d/đ). Tên chữ khi nghe đọc theo cách đọc âm của lớp 1 (bờ, dờ, pờ).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "model",
+      "id": "viet-chucai-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ b?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b"
+        },
+        {
+          "id": "b",
+          "text": "d",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "c",
+          "text": "h"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ b có bụng bên phải."],
+      "explanation": "Đáp án: b",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "model",
+      "id": "viet-chucai-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ d?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "d"
+        },
+        {
+          "id": "c",
+          "text": "đ",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ d có bụng bên trái, không có gạch ngang."],
+      "explanation": "Đáp án: d",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-chucai-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ ă?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "â",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "a",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "ă"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chữ ă đội cái trăng khuyết."],
+      "explanation": "Đáp án: ă",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-chucai-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ â?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "â"
+        },
+        {
+          "id": "b",
+          "text": "ă",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "ê"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ â đội cái nón."],
+      "explanation": "Đáp án: â",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-chucai-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ ô?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ơ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "ô"
+        },
+        {
+          "id": "c",
+          "text": "o",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ ô đội nón, chữ ơ có râu."],
+      "explanation": "Đáp án: ô",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-chucai-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ ư?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "u",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "n"
+        },
+        {
+          "id": "c",
+          "text": "ư"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chữ ư có râu bên phải."],
+      "explanation": "Đáp án: ư",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "none",
+      "id": "viet-chucai-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ q?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "q"
+        },
+        {
+          "id": "b",
+          "text": "p",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "c",
+          "text": "g"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ q có bụng bên trái cái đuôi."],
+      "explanation": "Đáp án: q",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào là chữ đ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "d",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "đ"
+        },
+        {
+          "id": "c",
+          "text": "b"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ đ có một gạch ngang."],
+      "explanation": "Đáp án: đ",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào đứng ngay sau chữ a?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "â",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "b"
+        },
+        {
+          "id": "c",
+          "text": "ă"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc lại: a, ă, â, b…"],
+      "explanation": "Đáp án: ă",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào đứng ngay sau chữ ă?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "â"
+        },
+        {
+          "id": "b",
+          "text": "a",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "b"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc lại: a, ă, â, b…"],
+      "explanation": "Đáp án: â",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào đứng ngay sau chữ o?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ơ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "ô"
+        },
+        {
+          "id": "c",
+          "text": "p"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc lại: o, ô, ơ, p…"],
+      "explanation": "Đáp án: ô",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào đứng ngay sau chữ ô?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "o",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "p"
+        },
+        {
+          "id": "c",
+          "text": "ơ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc lại: o, ô, ơ, p…"],
+      "explanation": "Đáp án: ơ",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào đứng ngay sau chữ e?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ê"
+        },
+        {
+          "id": "b",
+          "text": "e",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "g"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc lại: e, ê, g, h…"],
+      "explanation": "Đáp án: ê",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào đứng ngay sau chữ u?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "u",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "ư"
+        },
+        {
+          "id": "c",
+          "text": "v"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc lại: u, ư, v, x, y."],
+      "explanation": "Đáp án: ư",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "id": "viet-chucai-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ B viết thường là chữ nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "d",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "p"
+        },
+        {
+          "id": "c",
+          "text": "b"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["B hoa và b thường đều có bụng bên phải."],
+      "explanation": "Đáp án: b",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "id": "viet-chucai-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào đứng ngay trước chữ đ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "d"
+        },
+        {
+          "id": "b",
+          "text": "b",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "c",
+          "text": "e"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc lại: c, d, đ, e…"],
+      "explanation": "Đáp án: d",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "id": "viet-chucai-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn chữ đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "bờ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "d",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "b"
+        },
+        {
+          "id": "c",
+          "text": "h"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"bờ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "id": "viet-chucai-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một chữ, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "dờ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b",
+          "text": "đ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "d"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"dờ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào chữ con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "đờ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đ"
+        },
+        {
+          "id": "b",
+          "text": "d",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "b"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"đờ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, chữ nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "ô"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "o",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "ô"
+        },
+        {
+          "id": "c",
+          "text": "ơ",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"ô\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, chữ nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "ơ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ô",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "c",
+          "text": "ơ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"ơ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn chữ."
+      },
+      "listenTarget": {
+        "text": "ư"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ư"
+        },
+        {
+          "id": "b",
+          "text": "u",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "n"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"ư\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_p_q",
+      "scaffold": "none",
+      "id": "viet-chucai-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn chữ đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "pờ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "q",
+          "errorTag": "nham_p_q"
+        },
+        {
+          "id": "b",
+          "text": "p"
+        },
+        {
+          "id": "c",
+          "text": "b"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"pờ\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một chữ, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "ê"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "e",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "â"
+        },
+        {
+          "id": "c",
+          "text": "ê"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"ê\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các chữ theo thứ tự bảng chữ cái."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "a"
+        },
+        {
+          "id": "c3",
+          "text": "b"
+        },
+        {
+          "id": "c2",
+          "text": "â"
+        },
+        {
+          "id": "c1",
+          "text": "ă"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: a → ă → â → b.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo các chữ vào đúng thứ tự nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "d"
+        },
+        {
+          "id": "c0",
+          "text": "c"
+        },
+        {
+          "id": "c3",
+          "text": "e"
+        },
+        {
+          "id": "c2",
+          "text": "đ"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: c → d → đ → e.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp giúp {ban} các chữ theo thứ tự."
+      },
+      "dragItems": [
+        {
+          "id": "c2",
+          "text": "i"
+        },
+        {
+          "id": "c1",
+          "text": "h"
+        },
+        {
+          "id": "c0",
+          "text": "g"
+        },
+        {
+          "id": "c3",
+          "text": "k"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: g → h → i → k.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các chữ theo thứ tự bảng chữ cái."
+      },
+      "dragItems": [
+        {
+          "id": "c3",
+          "text": "ô"
+        },
+        {
+          "id": "c2",
+          "text": "o"
+        },
+        {
+          "id": "c1",
+          "text": "n"
+        },
+        {
+          "id": "c0",
+          "text": "m"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: m → n → o → ô.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo các chữ vào đúng thứ tự nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "p"
+        },
+        {
+          "id": "c3",
+          "text": "s"
+        },
+        {
+          "id": "c2",
+          "text": "r"
+        },
+        {
+          "id": "c1",
+          "text": "q"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: p → q → r → s.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp giúp {ban} các chữ cuối bảng."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "ư"
+        },
+        {
+          "id": "c0",
+          "text": "u"
+        },
+        {
+          "id": "c3",
+          "text": "x"
+        },
+        {
+          "id": "c2",
+          "text": "v"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o2",
+          "label": "Sau đó",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        },
+        {
+          "id": "o3",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2", "c3"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"],
+        "o3": ["c3"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: u → ư → v → x.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chucai-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ nào có dấu phụ? Xếp vào giỏ."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "ă",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b0",
+          "text": "a",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "a1",
+          "text": "ơ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b1",
+          "text": "o",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có mũ, móc hoặc râu",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Không có",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn trên đầu chữ và bên phải chữ."],
+      "explanation": "ă, ơ về giỏ \"Có mũ, móc hoặc râu\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_b_d",
+      "scaffold": "none",
+      "id": "viet-chucai-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp chữ b và chữ d vào đúng giỏ."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "b",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b0",
+          "text": "d",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "a1",
+          "text": "B",
+          "errorTag": "nham_b_d"
+        },
+        {
+          "id": "b1",
+          "text": "D",
+          "errorTag": "nham_b_d"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Chữ b",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Chữ d",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["b thường có bụng bên phải, d có bụng bên trái."],
+      "explanation": "b, B về giỏ \"Chữ b\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-chucai-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "a ă â b c",
+        "words": ["a", "ă", "â", "b", "c"]
+      },
+      "answerKey": {
+        "words": ["a", "ă", "â", "b", "c"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"a ă â b c\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "d đ e ê g",
+        "words": ["d", "đ", "e", "ê", "g"]
+      },
+      "answerKey": {
+        "words": ["d", "đ", "e", "ê", "g"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"d đ e ê g\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "h i k l m",
+        "words": ["h", "i", "k", "l", "m"]
+      },
+      "answerKey": {
+        "words": ["h", "i", "k", "l", "m"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"h i k l m\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "n o ô ơ p",
+        "words": ["n", "o", "ô", "ơ", "p"]
+      },
+      "answerKey": {
+        "words": ["n", "o", "ô", "ơ", "p"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"n o ô ơ p\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "q r s t u",
+        "words": ["q", "r", "s", "t", "u"]
+      },
+      "answerKey": {
+        "words": ["q", "r", "s", "t", "u"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"q r s t u\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "ư v x y",
+        "words": ["ư", "v", "x", "y"]
+      },
+      "answerKey": {
+        "words": ["ư", "v", "x", "y"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"ư v x y\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: a, ă, â."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 chữ", "Dấu phụ đặt đúng chỗ", "Chữ cao 1 ô li"],
+        "sampleAnswers": ["a ă â"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: a ă â",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chucai-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.CHU_CAI_29"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: o, ô, ơ."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 chữ", "Dấu phụ đặt đúng chỗ", "Chữ cao 1 ô li"],
+        "sampleAnswers": ["o ô ơ"]
+      },
+      "answerKey": null,
+      "hints": ["Nghĩ trước câu mình sẽ viết nhé!"],
+      "explanation": "Ví dụ: o ô ơ",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, bảng chữ cái cuối sách (29 chữ) — chưa gắn bài cụ thể"
+      }
+    }
+  ]
+}

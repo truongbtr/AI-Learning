@@ -1,0 +1,1664 @@
+{
+  "skillCode": "VIET.HV.NHAM_LAN_C_K_Q",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B03", "KNTT-TV1-T1-B11", "KNTT-TV1-T1-B26"],
+  "note": "Quy tắc c / k / q: k trước e, ê, i; c trước a, o, ô, ơ, u, ư; q luôn đi với u. Ô sai là cách viết phạm đúng quy tắc (ká, cẻ, kả, cê) — không dùng 'kê' làm ô sai của 'quê' vì kê cũng là tiếng đúng.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "model",
+      "id": "viet-ckq-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá"
+        },
+        {
+          "id": "b",
+          "text": "ká",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["k đứng trước e, ê, i."],
+      "explanation": "Viết đúng là \"cá\". c đứng trước a, o, ô, ơ, u, ư.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "cá"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ká",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"cá\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá"
+        },
+        {
+          "id": "b",
+          "text": "ká",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ con cá."],
+      "explanation": "Tranh vẽ con cá, viết là \"cá\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "model",
+      "id": "viet-ckq-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng viết đúng chính tả nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cẻ",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "kẻ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["c đứng trước a, o, ô, ơ, u, ư."],
+      "explanation": "Viết đúng là \"kẻ\". k đứng trước e, ê, i.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "kẻ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kẻ"
+        },
+        {
+          "id": "b",
+          "text": "cẻ",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"kẻ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "model",
+      "id": "viet-ckq-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: ô nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cô"
+        },
+        {
+          "id": "b",
+          "text": "kô",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["q luôn đi với u thành qu."],
+      "explanation": "Viết đúng là \"cô\". c đứng trước a, o, ô, ơ, u, ư.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "cô"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kô",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cô"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Tiếng con nghe viết là \"cô\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "model",
+      "id": "viet-ckq-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng viết đúng."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cí",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "kí"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["k đứng trước e, ê, i."],
+      "explanation": "Viết đúng là \"kí\". k đứng trước e, ê, i.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "kí"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kí"
+        },
+        {
+          "id": "b",
+          "text": "cí",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"kí\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "model",
+      "id": "viet-ckq-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Hai ô đọc giống nhau. Ô nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cỏ"
+        },
+        {
+          "id": "b",
+          "text": "kỏ",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["c đứng trước a, o, ô, ơ, u, ư."],
+      "explanation": "Viết đúng là \"cỏ\". c đứng trước a, o, ô, ơ, u, ư.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "cỏ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kỏ",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cỏ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"cỏ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🌿",
+          "labelVi": "cỏ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cỏ"
+        },
+        {
+          "id": "b",
+          "text": "kỏ",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ cỏ."],
+      "explanation": "Tranh vẽ cỏ, viết là \"cỏ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "model",
+      "id": "viet-ckq-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào viết đúng luật chính tả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cê",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "kê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["q luôn đi với u thành qu."],
+      "explanation": "Viết đúng là \"kê\". k đứng trước e, ê, i.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "kê"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kê"
+        },
+        {
+          "id": "b",
+          "text": "cê",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Tiếng con nghe viết là \"kê\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cà"
+        },
+        {
+          "id": "b",
+          "text": "kà",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["k đứng trước e, ê, i."],
+      "explanation": "Viết đúng là \"cà\". c đứng trước a, o, ô, ơ, u, ư.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "cà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kà",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"cà\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🍆",
+          "labelVi": "quả cà",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cà"
+        },
+        {
+          "id": "b",
+          "text": "kà",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ quả cà."],
+      "explanation": "Tranh vẽ quả cà, viết là \"cà\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng viết đúng chính tả nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kờ",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cờ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["c đứng trước a, o, ô, ơ, u, ư."],
+      "explanation": "Viết đúng là \"cờ\". c đứng trước a, o, ô, ơ, u, ư.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "cờ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cờ"
+        },
+        {
+          "id": "b",
+          "text": "kờ",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"cờ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🚩",
+          "labelVi": "lá cờ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kờ",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cờ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ lá cờ."],
+      "explanation": "Tranh vẽ lá cờ, viết là \"cờ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: ô nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kể"
+        },
+        {
+          "id": "b",
+          "text": "cể",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["q luôn đi với u thành qu."],
+      "explanation": "Viết đúng là \"kể\". k đứng trước e, ê, i.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "kể"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cể",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "kể"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Tiếng con nghe viết là \"kể\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng viết đúng."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kua",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cua"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["k đứng trước e, ê, i."],
+      "explanation": "Viết đúng là \"cua\". c đứng trước a, o, ô, ơ, u, ư.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "cua"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cua"
+        },
+        {
+          "id": "b",
+          "text": "kua",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"cua\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🦀",
+          "labelVi": "con cua",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kua",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cua"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ con cua."],
+      "explanation": "Tranh vẽ con cua, viết là \"cua\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hai ô đọc giống nhau. Ô nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quả"
+        },
+        {
+          "id": "b",
+          "text": "kả",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["c đứng trước a, o, ô, ơ, u, ư."],
+      "explanation": "Viết đúng là \"quả\". q luôn đi với u thành qu.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "quả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kả",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "quả"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"quả\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào viết đúng luật chính tả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cê",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "quê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["q luôn đi với u thành qu."],
+      "explanation": "Viết đúng là \"quê\". q luôn đi với u thành qu.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "quê"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quê"
+        },
+        {
+          "id": "b",
+          "text": "cê",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Tiếng con nghe viết là \"quê\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kì"
+        },
+        {
+          "id": "b",
+          "text": "cì",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["k đứng trước e, ê, i."],
+      "explanation": "Viết đúng là \"kì\". k đứng trước e, ê, i.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "kì"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cì",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "kì"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"kì\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng viết đúng chính tả nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kú",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cú"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["c đứng trước a, o, ô, ơ, u, ư."],
+      "explanation": "Viết đúng là \"cú\". c đứng trước a, o, ô, ơ, u, ư.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "cú"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cú"
+        },
+        {
+          "id": "b",
+          "text": "kú",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"cú\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🦉",
+          "labelVi": "con cú",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kú",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "cú"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ con cú."],
+      "explanation": "Tranh vẽ con cú, viết là \"cú\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "cá",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "a1",
+          "text": "cô",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b0",
+          "text": "kẻ",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b1",
+          "text": "kê",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Viết với c",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Viết với k",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn con chữ đứng ngay sau c, k: e, ê, i thì viết k."],
+      "explanation": "cá, cô về giỏ \"Viết với c\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chia các tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "kí",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "a1",
+          "text": "kể",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b0",
+          "text": "cỏ",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b1",
+          "text": "cà",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Viết với k",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Viết với c",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn con chữ đứng ngay sau c, k: e, ê, i thì viết k."],
+      "explanation": "kí, kể về giỏ \"Viết với k\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi tiếng về giỏ của nó."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "cờ",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "a1",
+          "text": "cua",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b0",
+          "text": "quả",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b1",
+          "text": "quê",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Viết với c",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Viết với qu",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn con chữ đứng ngay sau c, k: e, ê, i thì viết k."],
+      "explanation": "cờ, cua về giỏ \"Viết với c\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-ckq-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào về giỏ nào?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "quà",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "a1",
+          "text": "quạ",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b0",
+          "text": "kì",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b1",
+          "text": "kẻ",
+          "errorTag": "nham_c_k_q"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Viết với qu",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Viết với k",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn con chữ đứng ngay sau c, k: e, ê, i thì viết k."],
+      "explanation": "quà, quạ về giỏ \"Viết với qu\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-ckq-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "cá cờ",
+        "words": ["cá", "cờ"]
+      },
+      "answerKey": {
+        "words": ["cá", "cờ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"cá cờ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ckq-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "cô kể",
+        "words": ["cô", "kể"]
+      },
+      "answerKey": {
+        "words": ["cô", "kể"]
+      },
+      "hints": ["Đọc rõ âm đầu của từng tiếng."],
+      "explanation": "Câu này đọc là \"cô kể\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ckq-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "quả khế",
+        "words": ["quả", "khế"]
+      },
+      "answerKey": {
+        "words": ["quả", "khế"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"quả khế\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ckq-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "kì cọ",
+        "words": ["kì", "cọ"]
+      },
+      "answerKey": {
+        "words": ["kì", "cọ"]
+      },
+      "hints": ["Đọc rõ âm đầu của từng tiếng."],
+      "explanation": "Câu này đọc là \"kì cọ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ckq-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Bà kể cho bé nghe",
+        "words": ["Bà", "kể", "cho", "bé", "nghe"]
+      },
+      "answerKey": {
+        "words": ["Bà", "kể", "cho", "bé", "nghe"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Bà kể cho bé nghe\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ckq-0044",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: cá, kẻ, quả."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Viết đúng c, k, qu", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["cá kẻ quả"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm tiếng trước khi viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ckq-0045",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: cờ, kê, quê."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Viết đúng c, k, qu", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["cờ kê quê"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ckq-0046",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_C_K_Q"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: cua, kì, cô."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Viết đúng c, k, qu", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["cua kì cô"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm tiếng trước khi viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B26",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 3 (C c), Bài 11 (I i, K k), Bài 26 tr.64–65 (Qu qu); Bài 29 tr.70 (Luyện tập chính tả c/k)"
+      }
+    }
+  ]
+}

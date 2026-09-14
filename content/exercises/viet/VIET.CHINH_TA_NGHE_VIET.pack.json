@@ -1,182 +1,30 @@
 {
-  "skillCode": "VIET.VIET.VIET_TU_VAN",
+  "skillCode": "VIET.VIET.CHINH_TA_NGHE_VIET",
   "subject": "VIET",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v3",
-  "lessonRefs": ["KNTT-TV1-T1-B13"],
-  "note": "Viết tiếng và từ trong phạm vi bài 13. Ô sai là cách viết sai thật: quên dấu (bi / bí), nhầm dấu (cà / cá), nhìn nhầm con chữ (le / lê, đo / do). Mã lỗi tính theo đúng tiếng bị viết sai.",
+  "lessonRefs": ["KNTT-TV1-T1-B29"],
+  "note": "Chính tả nghe – viết. Bài viết vào vở in chữ để ba mẹ đọc cho con viết (dặn che chữ) — trình hiển thị chưa phát tiếng ở dạng viết. Bài nghe rồi chọn cách viết đúng đo phần nghe: ô sai là lỗi theo phát âm (s/x, ch/tr, hỏi/ngã) và theo quy tắc (c/k, g/gh, ng/ngh).",
   "exercises": [
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
-      "id": "viet-viettu-0001",
+      "id": "viet-nghevt-0001",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "WRITE_PHOTO",
       "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Viết vào vở: bà, bé, bố."
+        "text": "Ba mẹ đọc, con nghe rồi viết (ba mẹ che chữ này): cá cờ."
       },
       "rubric": {
-        "criteria": ["Viết đủ 3 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["bà, bé, bố"]
-      },
-      "answerKey": null,
-      "hints": ["Viết chậm, nhìn mẫu nhé!"],
-      "explanation": "Viết xong con đọc lại một lượt nhé!",
-      "meta": {
-        "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "model",
-      "id": "viet-viettu-0002",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "WRITE_PHOTO",
-      "difficulty": 2,
-      "prompt": {
-        "tts": true,
-        "text": "Con chép vào vở: cá, cờ, cô."
-      },
-      "rubric": {
-        "criteria": ["Viết đủ 3 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["cá, cờ, cô"]
-      },
-      "answerKey": null,
-      "hints": ["Viết con chữ trước, đánh dấu sau."],
-      "explanation": "Viết xong con đọc lại một lượt nhé!",
-      "meta": {
-        "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0003",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "WRITE_PHOTO",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "Viết lại giúp {ban}: hồ, hổ, lá."
-      },
-      "rubric": {
-        "criteria": ["Viết đủ 3 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["hồ, hổ, lá"]
-      },
-      "answerKey": null,
-      "hints": ["Đọc thầm rồi mới viết."],
-      "explanation": "Viết xong con đọc lại một lượt nhé!",
-      "meta": {
-        "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0004",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "WRITE_PHOTO",
-      "difficulty": 4,
-      "prompt": {
-        "tts": true,
-        "text": "Chép vào vở nhé: lê, li, bí."
-      },
-      "rubric": {
-        "criteria": ["Viết đủ 3 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["lê, li, bí"]
-      },
-      "answerKey": null,
-      "hints": ["Viết chậm, nhìn mẫu nhé!"],
-      "explanation": "Viết xong con đọc lại một lượt nhé!",
-      "meta": {
-        "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0005",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "WRITE_PHOTO",
-      "difficulty": 5,
-      "prompt": {
-        "tts": true,
-        "text": "Viết vào vở rồi chụp cho ba mẹ xem: cú, củ, dù."
-      },
-      "rubric": {
-        "criteria": ["Viết đủ 3 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["cú, củ, dù"]
-      },
-      "answerKey": null,
-      "hints": ["Viết con chữ trước, đánh dấu sau."],
-      "explanation": "Viết xong con đọc lại một lượt nhé!",
-      "meta": {
-        "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0006",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "WRITE_PHOTO",
-      "difficulty": 1,
-      "prompt": {
-        "tts": true,
-        "text": "Con viết vào vở: đu đủ."
-      },
-      "rubric": {
-        "criteria": ["Viết đủ 1 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["đu đủ"]
-      },
-      "answerKey": null,
-      "hints": ["Đọc thầm rồi mới viết."],
-      "explanation": "Viết xong con đọc lại một lượt nhé!",
-      "meta": {
-        "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0007",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "WRITE_PHOTO",
-      "difficulty": 2,
-      "prompt": {
-        "tts": true,
-        "text": "Viết vào vở: cá cờ."
-      },
-      "rubric": {
-        "criteria": ["Viết đủ 1 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
         "sampleAnswers": ["cá cờ"]
       },
       "answerKey": null,
@@ -184,147 +32,347 @@
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0008",
+      "scaffold": "model",
+      "id": "viet-nghevt-0002",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "WRITE_PHOTO",
-      "difficulty": 3,
+      "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Con chép vào vở: bí đỏ, lá cờ."
+        "text": "Nghe ba mẹ đọc rồi viết vào vở, không nhìn chữ: ghế gỗ."
       },
       "rubric": {
-        "criteria": ["Viết đủ 2 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["bí đỏ, lá cờ"]
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["ghế gỗ"]
       },
       "answerKey": null,
       "hints": ["Viết con chữ trước, đánh dấu sau."],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-viettu-0009",
+      "id": "viet-nghevt-0003",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "WRITE_PHOTO",
-      "difficulty": 4,
+      "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Viết lại giúp {ban}: hồ cá, bể cá."
+        "text": "Ba mẹ đọc chậm hai lần, con viết: củ nghệ."
       },
       "rubric": {
-        "criteria": ["Viết đủ 2 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["hồ cá, bể cá"]
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["củ nghệ"]
       },
       "answerKey": null,
       "hints": ["Đọc thầm rồi mới viết."],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-viettu-0010",
+      "id": "viet-nghevt-0004",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "WRITE_PHOTO",
-      "difficulty": 5,
+      "difficulty": 4,
       "prompt": {
         "tts": true,
-        "text": "Chép vào vở nhé: bà cụ, bó cỏ."
+        "text": "Ba mẹ đọc, con nghe rồi viết (ba mẹ che chữ này): cá ngừ."
       },
       "rubric": {
-        "criteria": ["Viết đủ 2 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["bà cụ, bó cỏ"]
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["cá ngừ"]
       },
       "answerKey": null,
       "hints": ["Viết chậm, nhìn mẫu nhé!"],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-viettu-0011",
+      "id": "viet-nghevt-0005",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "WRITE_PHOTO",
-      "difficulty": 1,
+      "difficulty": 5,
       "prompt": {
         "tts": true,
-        "text": "Viết vào vở rồi chụp cho ba mẹ xem: bờ đê, đò cũ."
+        "text": "Nghe ba mẹ đọc rồi viết vào vở, không nhìn chữ: chữ kí."
       },
       "rubric": {
-        "criteria": ["Viết đủ 2 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["bờ đê, đò cũ"]
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["chữ kí"]
       },
       "answerKey": null,
       "hints": ["Viết con chữ trước, đánh dấu sau."],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-viettu-0012",
+      "id": "viet-nghevt-0006",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "WRITE_PHOTO",
-      "difficulty": 2,
+      "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Con viết vào vở: Bé có đu đủ."
+        "text": "Ba mẹ đọc chậm hai lần, con viết: gà gô."
       },
       "rubric": {
-        "criteria": ["Viết đủ 1 phần", "Chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["Bé có đu đủ."]
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["gà gô"]
       },
       "answerKey": null,
       "hints": ["Đọc thầm rồi mới viết."],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 80,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
-      "scaffold": "model",
-      "id": "viet-viettu-0013",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0007",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Ba mẹ đọc, con nghe rồi viết (ba mẹ che chữ này): nghỉ hè."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["nghỉ hè"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe ba mẹ đọc rồi viết vào vở, không nhìn chữ: kẻ vở."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["kẻ vở"]
+      },
+      "answerKey": null,
+      "hints": ["Viết con chữ trước, đánh dấu sau."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ba mẹ đọc chậm hai lần, con viết: xe lu."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["xe lu"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm rồi mới viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Ba mẹ đọc, con nghe rồi viết (ba mẹ che chữ này): lá tre."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["lá tre"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe ba mẹ đọc rồi viết vào vở, không nhìn chữ: Bé nghe bà kể."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Bé nghe bà kể."]
+      },
+      "answerKey": null,
+      "hints": ["Viết con chữ trước, đánh dấu sau."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Ba mẹ đọc chậm hai lần, con viết: Nhà bà có ghế gỗ."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ tiếng nghe được",
+          "Đúng quy tắc c/k, g/gh, ng/ngh",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Nhà bà có ghế gỗ."]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm rồi mới viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "model",
+      "id": "viet-nghevt-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 1,
       "prompt": {
@@ -332,43 +380,43 @@
         "text": "Tranh vẽ gì? Chọn chữ viết đúng.",
         "image": {
           "kind": "emoji",
-          "value": "🎃",
-          "labelVi": "quả bí",
+          "value": "🐃",
+          "labelVi": "con nghé",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bí"
+          "text": "nghé"
         },
         {
           "id": "b",
-          "text": "bi",
-          "errorTag": "thieu_dau_thanh"
+          "text": "ngé",
+          "errorTag": "nham_ng_ngh"
         },
         {
           "id": "c",
-          "text": "bì",
-          "errorTag": "sai_dau_thanh"
+          "text": "nghe",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "answerKey": "a",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"bí\".",
+      "explanation": "Viết đúng là \"nghé\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_g_gh",
       "scaffold": "model",
-      "id": "viet-viettu-0014",
+      "id": "viet-nghevt-0014",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 2,
       "prompt": {
@@ -376,43 +424,43 @@
         "text": "Chọn cách viết đúng tên tranh.",
         "image": {
           "kind": "emoji",
-          "value": "🐟",
-          "labelVi": "con cá",
+          "value": "✍️",
+          "labelVi": "ghi chép",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "ca",
-          "errorTag": "thieu_dau_thanh"
+          "text": "gi",
+          "errorTag": "nham_g_gh"
         },
         {
           "id": "b",
-          "text": "cá"
+          "text": "ghi"
         },
         {
           "id": "c",
-          "text": "cà",
+          "text": "ghì",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "b",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"cá\".",
+      "explanation": "Viết đúng là \"ghi\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": "nham_c_k_q",
       "scaffold": "model",
-      "id": "viet-viettu-0015",
+      "id": "viet-nghevt-0015",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 3,
       "prompt": {
@@ -420,43 +468,43 @@
         "text": "Tên tranh viết thế nào?",
         "image": {
           "kind": "emoji",
-          "value": "🚩",
-          "labelVi": "lá cờ",
+          "value": "📏",
+          "labelVi": "kẻ vở",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "cơ",
-          "errorTag": "sai_dau_thanh"
+          "text": "cẻ",
+          "errorTag": "nham_c_k_q"
         },
         {
           "id": "b",
-          "text": "cớ",
-          "errorTag": "sai_dau_thanh"
+          "text": "kẽ",
+          "errorTag": "nham_hoi_nga"
         },
         {
           "id": "c",
-          "text": "cờ"
+          "text": "kẻ"
         }
       ],
       "answerKey": "c",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"cờ\".",
+      "explanation": "Viết đúng là \"kẻ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": "nham_g_gh",
       "scaffold": "model",
-      "id": "viet-viettu-0016",
+      "id": "viet-nghevt-0016",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 4,
       "prompt": {
@@ -464,43 +512,43 @@
         "text": "Tranh vẽ gì? Chọn chữ viết đúng.",
         "image": {
           "kind": "emoji",
-          "value": "🐯",
-          "labelVi": "con hổ",
+          "value": "🐦",
+          "labelVi": "con gà gô",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "hổ"
+          "text": "gà gô"
         },
         {
           "id": "b",
-          "text": "hồ",
-          "errorTag": "sai_dau_thanh"
+          "text": "ghà gô",
+          "errorTag": "nham_g_gh"
         },
         {
           "id": "c",
-          "text": "hô",
+          "text": "gà gồ",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "a",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"hổ\".",
+      "explanation": "Viết đúng là \"gà gô\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_ng_ngh",
       "scaffold": "none",
-      "id": "viet-viettu-0017",
+      "id": "viet-nghevt-0017",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 5,
       "prompt": {
@@ -508,43 +556,43 @@
         "text": "Chọn cách viết đúng tên tranh.",
         "image": {
           "kind": "emoji",
-          "value": "🍃",
-          "labelVi": "chiếc lá",
+          "value": "😴",
+          "labelVi": "bé ngủ",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "la",
-          "errorTag": "thieu_dau_thanh"
+          "text": "nghủ",
+          "errorTag": "nham_ng_ngh"
         },
         {
           "id": "b",
-          "text": "lá"
+          "text": "ngủ"
         },
         {
           "id": "c",
-          "text": "là",
+          "text": "ngũ",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "b",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"lá\".",
+      "explanation": "Viết đúng là \"ngủ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_s_x",
       "scaffold": "none",
-      "id": "viet-viettu-0018",
+      "id": "viet-nghevt-0018",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 1,
       "prompt": {
@@ -552,43 +600,43 @@
         "text": "Tên tranh viết thế nào?",
         "image": {
           "kind": "emoji",
-          "value": "🍐",
-          "labelVi": "quả lê",
+          "value": "📒",
+          "labelVi": "quyển sổ",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "le",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "xổ",
+          "errorTag": "nham_s_x"
         },
         {
           "id": "b",
-          "text": "lề",
+          "text": "sô",
           "errorTag": "sai_dau_thanh"
         },
         {
           "id": "c",
-          "text": "lê"
+          "text": "sổ"
         }
       ],
       "answerKey": "c",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"lê\".",
+      "explanation": "Viết đúng là \"sổ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_s_x",
       "scaffold": "none",
-      "id": "viet-viettu-0019",
+      "id": "viet-nghevt-0019",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 2,
       "prompt": {
@@ -596,43 +644,43 @@
         "text": "Tranh vẽ gì? Chọn chữ viết đúng.",
         "image": {
           "kind": "emoji",
-          "value": "☂️",
-          "labelVi": "cái dù",
+          "value": "🚲",
+          "labelVi": "xe đạp",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "dù"
+          "text": "xe"
         },
         {
           "id": "b",
-          "text": "du",
-          "errorTag": "thieu_dau_thanh"
+          "text": "se",
+          "errorTag": "nham_s_x"
         },
         {
           "id": "c",
-          "text": "dụ",
+          "text": "xé",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "a",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"dù\".",
+      "explanation": "Viết đúng là \"xe\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_ch_tr",
       "scaffold": "none",
-      "id": "viet-viettu-0020",
+      "id": "viet-nghevt-0020",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 3,
       "prompt": {
@@ -640,43 +688,43 @@
         "text": "Chọn cách viết đúng tên tranh.",
         "image": {
           "kind": "emoji",
-          "value": "🦉",
-          "labelVi": "con cú",
+          "value": "🍵",
+          "labelVi": "chén chè",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "cu",
-          "errorTag": "thieu_dau_thanh"
+          "text": "trè",
+          "errorTag": "nham_ch_tr"
         },
         {
           "id": "b",
-          "text": "cú"
+          "text": "chè"
         },
         {
           "id": "c",
-          "text": "củ",
-          "errorTag": "sai_dau_thanh"
+          "text": "che",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "answerKey": "b",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"cú\".",
+      "explanation": "Viết đúng là \"chè\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_ch_tr",
       "scaffold": "none",
-      "id": "viet-viettu-0021",
+      "id": "viet-nghevt-0021",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 4,
       "prompt": {
@@ -684,43 +732,43 @@
         "text": "Tên tranh viết thế nào?",
         "image": {
           "kind": "emoji",
-          "value": "🛶",
-          "labelVi": "con đò",
+          "value": "🎋",
+          "labelVi": "cây tre",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "đo",
-          "errorTag": "thieu_dau_thanh"
+          "text": "che",
+          "errorTag": "nham_ch_tr"
         },
         {
           "id": "b",
-          "text": "do",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "trẻ",
+          "errorTag": "sai_dau_thanh"
         },
         {
           "id": "c",
-          "text": "đò"
+          "text": "tre"
         }
       ],
       "answerKey": "c",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"đò\".",
+      "explanation": "Viết đúng là \"tre\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_hoi_nga",
       "scaffold": "none",
-      "id": "viet-viettu-0022",
+      "id": "viet-nghevt-0022",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 5,
       "prompt": {
@@ -728,81 +776,87 @@
         "text": "Tranh vẽ gì? Chọn chữ viết đúng.",
         "image": {
           "kind": "emoji",
-          "value": "🍈",
-          "labelVi": "quả đu đủ",
+          "value": "🧢",
+          "labelVi": "cái mũ",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "đu đủ"
+          "text": "mũ"
         },
         {
           "id": "b",
-          "text": "đu đu",
-          "errorTag": "thieu_dau_thanh"
+          "text": "mủ",
+          "errorTag": "nham_hoi_nga"
         },
         {
           "id": "c",
-          "text": "đủ đủ",
-          "errorTag": "sai_dau_thanh"
+          "text": "mu",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "answerKey": "a",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"đu đủ\".",
+      "explanation": "Viết đúng là \"mũ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_hoi_nga",
       "scaffold": "none",
-      "id": "viet-viettu-0023",
+      "id": "viet-nghevt-0023",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Ô nào viết đúng \"bí đỏ\"?"
+        "text": "Chọn cách viết đúng tên tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🛌",
+          "labelVi": "nghỉ ngơi",
+          "repeat": 1
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bí đo",
-          "errorTag": "thieu_dau_thanh"
+          "text": "nghĩ",
+          "errorTag": "nham_hoi_nga"
         },
         {
           "id": "b",
-          "text": "bí đỏ"
+          "text": "nghỉ"
         },
         {
           "id": "c",
-          "text": "bi đỏ",
-          "errorTag": "thieu_dau_thanh"
+          "text": "ngỉ",
+          "errorTag": "nham_ng_ngh"
         }
       ],
       "answerKey": "b",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"bí đỏ\".",
+      "explanation": "Viết đúng là \"nghỉ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_ng_ngh",
       "scaffold": "none",
-      "id": "viet-viettu-0024",
+      "id": "viet-nghevt-0024",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "MCQ",
       "difficulty": 2,
       "prompt": {
@@ -810,43 +864,43 @@
         "text": "Tên tranh viết thế nào?",
         "image": {
           "kind": "emoji",
-          "value": "👧",
-          "labelVi": "cô bé",
+          "value": "🫚",
+          "labelVi": "củ nghệ",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "cô be",
-          "errorTag": "thieu_dau_thanh"
+          "text": "củ ngệ",
+          "errorTag": "nham_ng_ngh"
         },
         {
           "id": "b",
-          "text": "co bé",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "cũ nghệ",
+          "errorTag": "nham_hoi_nga"
         },
         {
           "id": "c",
-          "text": "cô bé"
+          "text": "củ nghệ"
         }
       ],
       "answerKey": "c",
       "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
-      "explanation": "Viết đúng là \"cô bé\".",
+      "explanation": "Viết đúng là \"củ nghệ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_ng_ngh",
       "scaffold": "none",
-      "id": "viet-viettu-0025",
+      "id": "viet-nghevt-0025",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 2,
       "prompt": {
@@ -854,40 +908,40 @@
         "text": "Nghe rồi chọn ô đúng nhé!"
       },
       "listenTarget": {
-        "text": "bí"
+        "text": "nghé"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bi",
-          "errorTag": "thieu_dau_thanh"
+          "text": "ngé",
+          "errorTag": "nham_ng_ngh"
         },
         {
           "id": "b",
-          "text": "bí"
+          "text": "nghé"
         },
         {
           "id": "c",
-          "text": "bì",
-          "errorTag": "sai_dau_thanh"
+          "text": "nghe",
+          "errorTag": "thieu_dau_thanh"
         }
       ],
       "answerKey": "b",
       "hints": ["Nghe lại rồi nhìn kỹ dấu thanh."],
-      "explanation": "Tiếng con nghe viết là \"bí\".",
+      "explanation": "Tiếng con nghe viết là \"nghé\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_g_gh",
       "scaffold": "none",
-      "id": "viet-viettu-0026",
+      "id": "viet-nghevt-0026",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 3,
       "prompt": {
@@ -895,40 +949,40 @@
         "text": "{ban} đọc, con chọn ô đúng."
       },
       "listenTarget": {
-        "text": "cá"
+        "text": "ghi"
       },
       "choices": [
         {
           "id": "a",
-          "text": "ca",
-          "errorTag": "thieu_dau_thanh"
+          "text": "gi",
+          "errorTag": "nham_g_gh"
         },
         {
           "id": "b",
-          "text": "cà",
+          "text": "ghì",
           "errorTag": "sai_dau_thanh"
         },
         {
           "id": "c",
-          "text": "cá"
+          "text": "ghi"
         }
       ],
       "answerKey": "c",
       "hints": ["Đánh vần thầm tiếng con nghe."],
-      "explanation": "Tiếng con nghe viết là \"cá\".",
+      "explanation": "Tiếng con nghe viết là \"ghi\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": "nham_c_k_q",
       "scaffold": "none",
-      "id": "viet-viettu-0027",
+      "id": "viet-nghevt-0027",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 4,
       "prompt": {
@@ -936,40 +990,40 @@
         "text": "Nghe kỹ rồi chỉ vào ô con vừa nghe."
       },
       "listenTarget": {
-        "text": "cờ"
+        "text": "kẻ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cờ"
+          "text": "kẻ"
         },
         {
           "id": "b",
-          "text": "cơ",
-          "errorTag": "sai_dau_thanh"
+          "text": "cẻ",
+          "errorTag": "nham_c_k_q"
         },
         {
           "id": "c",
-          "text": "cớ",
-          "errorTag": "sai_dau_thanh"
+          "text": "kẽ",
+          "errorTag": "nham_hoi_nga"
         }
       ],
       "answerKey": "a",
       "hints": ["Nghe lại rồi nhìn kỹ dấu thanh."],
-      "explanation": "Tiếng con nghe viết là \"cờ\".",
+      "explanation": "Tiếng con nghe viết là \"kẻ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "sai_dau_thanh",
+      "targetsError": "nham_g_gh",
       "scaffold": "none",
-      "id": "viet-viettu-0028",
+      "id": "viet-nghevt-0028",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 5,
       "prompt": {
@@ -977,40 +1031,40 @@
         "text": "Con nghe rồi tìm đúng ô nhé!"
       },
       "listenTarget": {
-        "text": "hổ"
+        "text": "gà gô"
       },
       "choices": [
         {
           "id": "a",
-          "text": "hồ",
-          "errorTag": "sai_dau_thanh"
+          "text": "ghà gô",
+          "errorTag": "nham_g_gh"
         },
         {
           "id": "b",
-          "text": "hổ"
+          "text": "gà gô"
         },
         {
           "id": "c",
-          "text": "hô",
+          "text": "gà gồ",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "b",
       "hints": ["Đánh vần thầm tiếng con nghe."],
-      "explanation": "Tiếng con nghe viết là \"hổ\".",
+      "explanation": "Tiếng con nghe viết là \"gà gô\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_ng_ngh",
       "scaffold": "none",
-      "id": "viet-viettu-0029",
+      "id": "viet-nghevt-0029",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 2,
       "prompt": {
@@ -1018,40 +1072,40 @@
         "text": "Lắng nghe rồi chọn nhé!"
       },
       "listenTarget": {
-        "text": "lá"
+        "text": "ngủ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "la",
-          "errorTag": "thieu_dau_thanh"
+          "text": "nghủ",
+          "errorTag": "nham_ng_ngh"
         },
         {
           "id": "b",
-          "text": "là",
+          "text": "ngũ",
           "errorTag": "sai_dau_thanh"
         },
         {
           "id": "c",
-          "text": "lá"
+          "text": "ngủ"
         }
       ],
       "answerKey": "c",
       "hints": ["Nghe lại rồi nhìn kỹ dấu thanh."],
-      "explanation": "Tiếng con nghe viết là \"lá\".",
+      "explanation": "Tiếng con nghe viết là \"ngủ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_s_x",
       "scaffold": "none",
-      "id": "viet-viettu-0030",
+      "id": "viet-nghevt-0030",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 3,
       "prompt": {
@@ -1059,40 +1113,40 @@
         "text": "Nghe lần nữa rồi chọn ô đúng."
       },
       "listenTarget": {
-        "text": "lê"
+        "text": "sổ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "lê"
+          "text": "sổ"
         },
         {
           "id": "b",
-          "text": "le",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "xổ",
+          "errorTag": "nham_s_x"
         },
         {
           "id": "c",
-          "text": "lề",
+          "text": "sô",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "a",
       "hints": ["Đánh vần thầm tiếng con nghe."],
-      "explanation": "Tiếng con nghe viết là \"lê\".",
+      "explanation": "Tiếng con nghe viết là \"sổ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_s_x",
       "scaffold": "none",
-      "id": "viet-viettu-0031",
+      "id": "viet-nghevt-0031",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 4,
       "prompt": {
@@ -1100,40 +1154,40 @@
         "text": "Nghe rồi chọn ô đúng nhé!"
       },
       "listenTarget": {
-        "text": "dù"
+        "text": "xe"
       },
       "choices": [
         {
           "id": "a",
-          "text": "du",
-          "errorTag": "thieu_dau_thanh"
+          "text": "se",
+          "errorTag": "nham_s_x"
         },
         {
           "id": "b",
-          "text": "dù"
+          "text": "xe"
         },
         {
           "id": "c",
-          "text": "dụ",
+          "text": "xé",
           "errorTag": "sai_dau_thanh"
         }
       ],
       "answerKey": "b",
       "hints": ["Nghe lại rồi nhìn kỹ dấu thanh."],
-      "explanation": "Tiếng con nghe viết là \"dù\".",
+      "explanation": "Tiếng con nghe viết là \"xe\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "thieu_dau_thanh",
+      "targetsError": "nham_ch_tr",
       "scaffold": "none",
-      "id": "viet-viettu-0032",
+      "id": "viet-nghevt-0032",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 5,
       "prompt": {
@@ -1141,158 +1195,54 @@
         "text": "{ban} đọc, con chọn ô đúng."
       },
       "listenTarget": {
-        "text": "cú"
+        "text": "chè"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cu",
-          "errorTag": "thieu_dau_thanh"
+          "text": "trè",
+          "errorTag": "nham_ch_tr"
         },
         {
           "id": "b",
-          "text": "củ",
-          "errorTag": "sai_dau_thanh"
+          "text": "che",
+          "errorTag": "thieu_dau_thanh"
         },
         {
           "id": "c",
-          "text": "cú"
+          "text": "chè"
         }
       ],
       "answerKey": "c",
       "hints": ["Đánh vần thầm tiếng con nghe."],
-      "explanation": "Tiếng con nghe viết là \"cú\".",
+      "explanation": "Tiếng con nghe viết là \"chè\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-viettu-0033",
+      "id": "viet-nghevt-0033",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "DRAG_DROP",
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Ghép \"cá\" bằng thẻ nhé!"
+        "text": "Ghép \"kẻ\" bằng thẻ nhé!"
       },
       "dragItems": [
         {
           "id": "d1",
-          "text": "c"
+          "text": "k"
         },
         {
           "id": "v1",
-          "text": "á"
-        },
-        {
-          "id": "d2",
-          "text": "b",
-          "errorTag": "nham_am_dau"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "Âm đầu",
-          "accepts": ["d1", "d2"]
-        },
-        {
-          "id": "van",
-          "label": "Vần",
-          "accepts": ["v1"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["d1"],
-        "van": ["v1"]
-      },
-      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
-      "explanation": "\"cá\" gồm c và á.",
-      "meta": {
-        "estSeconds": 40,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0034",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "DRAG_DROP",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "Kéo thẻ để viết tiếng \"hồ\"."
-      },
-      "dragItems": [
-        {
-          "id": "d1",
-          "text": "h"
-        },
-        {
-          "id": "v1",
-          "text": "ồ"
-        },
-        {
-          "id": "d2",
-          "text": "l",
-          "errorTag": "nham_am_dau"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "Âm đầu",
-          "accepts": ["d1", "d2"]
-        },
-        {
-          "id": "van",
-          "label": "Vần",
-          "accepts": ["v1"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["d1"],
-        "van": ["v1"]
-      },
-      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
-      "explanation": "\"hồ\" gồm h và ồ.",
-      "meta": {
-        "estSeconds": 40,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0035",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "DRAG_DROP",
-      "difficulty": 4,
-      "prompt": {
-        "tts": true,
-        "text": "Dựng tiếng \"lá\": âm đầu rồi vần."
-      },
-      "dragItems": [
-        {
-          "id": "d1",
-          "text": "l"
-        },
-        {
-          "id": "v1",
-          "text": "á"
+          "text": "ẻ"
         },
         {
           "id": "d2",
@@ -1317,142 +1267,38 @@
         "van": ["v1"]
       },
       "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
-      "explanation": "\"lá\" gồm l và á.",
+      "explanation": "\"kẻ\" gồm k và ẻ.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-viettu-0036",
+      "id": "viet-nghevt-0034",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "DRAG_DROP",
-      "difficulty": 5,
-      "prompt": {
-        "tts": true,
-        "text": "Ghép \"bí\" bằng thẻ nhé!"
-      },
-      "dragItems": [
-        {
-          "id": "d1",
-          "text": "b"
-        },
-        {
-          "id": "v1",
-          "text": "í"
-        },
-        {
-          "id": "d2",
-          "text": "l",
-          "errorTag": "nham_am_dau"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "Âm đầu",
-          "accepts": ["d1", "d2"]
-        },
-        {
-          "id": "van",
-          "label": "Vần",
-          "accepts": ["v1"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["d1"],
-        "van": ["v1"]
-      },
-      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
-      "explanation": "\"bí\" gồm b và í.",
-      "meta": {
-        "estSeconds": 40,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0037",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
-      "type": "DRAG_DROP",
-      "difficulty": 2,
-      "prompt": {
-        "tts": true,
-        "text": "Kéo thẻ để viết tiếng \"cờ\"."
-      },
-      "dragItems": [
-        {
-          "id": "d1",
-          "text": "c"
-        },
-        {
-          "id": "v1",
-          "text": "ờ"
-        },
-        {
-          "id": "d2",
-          "text": "b",
-          "errorTag": "nham_am_dau"
-        }
-      ],
-      "dropZones": [
-        {
-          "id": "dau",
-          "label": "Âm đầu",
-          "accepts": ["d1", "d2"]
-        },
-        {
-          "id": "van",
-          "label": "Vần",
-          "accepts": ["v1"]
-        }
-      ],
-      "answerKey": {
-        "dau": ["d1"],
-        "van": ["v1"]
-      },
-      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
-      "explanation": "\"cờ\" gồm c và ờ.",
-      "meta": {
-        "estSeconds": 40,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-viettu-0038",
-      "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "DRAG_DROP",
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Dựng tiếng \"dù\": âm đầu rồi vần."
+        "text": "Kéo thẻ để viết tiếng \"sổ\"."
       },
       "dragItems": [
         {
           "id": "d1",
-          "text": "d"
+          "text": "s"
         },
         {
           "id": "v1",
-          "text": "ù"
+          "text": "ổ"
         },
         {
           "id": "d2",
-          "text": "h",
+          "text": "x",
           "errorTag": "nham_am_dau"
         }
       ],
@@ -1473,20 +1319,228 @@
         "van": ["v1"]
       },
       "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
-      "explanation": "\"dù\" gồm d và ù.",
+      "explanation": "\"sổ\" gồm s và ổ.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Dựng tiếng \"tre\": âm đầu rồi vần."
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "tr"
+        },
+        {
+          "id": "v1",
+          "text": "e"
+        },
+        {
+          "id": "d2",
+          "text": "ch",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"tre\" gồm tr và e.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Ghép \"ngõ\" bằng thẻ nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "ng"
+        },
+        {
+          "id": "v1",
+          "text": "õ"
+        },
+        {
+          "id": "d2",
+          "text": "ngh",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"ngõ\" gồm ng và õ.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo thẻ để viết tiếng \"ghi\"."
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "gh"
+        },
+        {
+          "id": "v1",
+          "text": "i"
+        },
+        {
+          "id": "d2",
+          "text": "g",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"ghi\" gồm gh và i.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-nghevt-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Dựng tiếng \"xe\": âm đầu rồi vần."
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "x"
+        },
+        {
+          "id": "v1",
+          "text": "e"
+        },
+        {
+          "id": "d2",
+          "text": "s",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"xe\" gồm x và e.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
-      "id": "viet-viettu-0039",
+      "id": "viet-nghevt-0039",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "READ_ALOUD",
       "difficulty": 1,
       "prompt": {
@@ -1494,27 +1548,27 @@
         "text": "Con đọc to nhé!"
       },
       "readTarget": {
-        "text": "hồ cá",
-        "words": ["hồ", "cá"]
+        "text": "nghỉ hè",
+        "words": ["nghỉ", "hè"]
       },
       "answerKey": {
-        "words": ["hồ", "cá"]
+        "words": ["nghỉ", "hè"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"hồ cá\".",
+      "explanation": "Đọc là \"nghỉ hè\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-viettu-0040",
+      "id": "viet-nghevt-0040",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "READ_ALOUD",
       "difficulty": 2,
       "prompt": {
@@ -1522,27 +1576,27 @@
         "text": "Đọc chậm từng tiếng cho {ban} nghe."
       },
       "readTarget": {
-        "text": "Bé có đu đủ",
-        "words": ["Bé", "có", "đu", "đủ"]
+        "text": "ghế gỗ",
+        "words": ["ghế", "gỗ"]
       },
       "answerKey": {
-        "words": ["Bé", "có", "đu", "đủ"]
+        "words": ["ghế", "gỗ"]
       },
       "hints": ["Đọc thầm trước rồi mới đọc to."],
-      "explanation": "Đọc là \"Bé có đu đủ\".",
+      "explanation": "Đọc là \"ghế gỗ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-viettu-0041",
+      "id": "viet-nghevt-0041",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "READ_ALOUD",
       "difficulty": 3,
       "prompt": {
@@ -1550,27 +1604,27 @@
         "text": "Đọc to câu này nhé!"
       },
       "readTarget": {
-        "text": "Bà có lá cờ",
-        "words": ["Bà", "có", "lá", "cờ"]
+        "text": "kẻ vở",
+        "words": ["kẻ", "vở"]
       },
       "answerKey": {
-        "words": ["Bà", "có", "lá", "cờ"]
+        "words": ["kẻ", "vở"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Đọc là \"Bà có lá cờ\".",
+      "explanation": "Đọc là \"kẻ vở\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-viettu-0042",
+      "id": "viet-nghevt-0042",
       "language": "vi",
-      "skillCodes": ["VIET.VIET.VIET_TU_VAN"],
+      "skillCodes": ["VIET.VIET.CHINH_TA_NGHE_VIET"],
       "type": "READ_ALOUD",
       "difficulty": 4,
       "prompt": {
@@ -1578,18 +1632,18 @@
         "text": "Con đọc cho cả nhà cùng nghe."
       },
       "readTarget": {
-        "text": "cá cờ ở hồ",
-        "words": ["cá", "cờ", "ở", "hồ"]
+        "text": "lá tre",
+        "words": ["lá", "tre"]
       },
       "answerKey": {
-        "words": ["cá", "cờ", "ở", "hồ"]
+        "words": ["lá", "tre"]
       },
       "hints": ["Đọc thầm trước rồi mới đọc to."],
-      "explanation": "Đọc là \"cá cờ ở hồ\".",
+      "explanation": "Đọc là \"lá tre\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": "KNTT-TV1-T1-B13",
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (mục 3 Tô và viết)"
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
       }
     }
   ]

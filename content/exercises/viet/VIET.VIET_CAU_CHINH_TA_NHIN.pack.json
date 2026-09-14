@@ -1,0 +1,1640 @@
+{
+  "skillCode": "VIET.VIET.VIET_CAU_CHINH_TA_NHIN",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-TV1-T1-B29"],
+  "note": "Chép câu (nhìn – viết). Bài viết vào vở chấm theo ảnh: đủ tiếng, viết hoa đầu câu, dấu chấm cuối câu, dấu thanh. Trắc nghiệm: chọn bản chép đúng — ô sai là bản quên dấu, nhầm dấu, nhầm ng/ngh, g/gh, c/k, hoặc quên viết hoa / dấu chấm (hai lỗi cuối không có mã).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-chepcau-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn rồi chép vào vở: Bé Hà có bà."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Bé Hà có bà."]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-chepcau-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép câu này vào vở: Bà cho bé quà quê."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Bà cho bé quà quê."]
+      },
+      "answerKey": null,
+      "hints": ["Viết con chữ trước, đánh dấu sau."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chép lại giúp {ban}: Nhà bé ở Thủ đô."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Nhà bé ở Thủ đô."]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm rồi mới viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn kỹ rồi chép nhé: Phú Thọ có chè, có cọ."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Phú Thọ có chè, có cọ."]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn rồi chép vào vở: Xa nhà, bé nhớ mẹ."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Xa nhà, bé nhớ mẹ."]
+      },
+      "answerKey": null,
+      "hints": ["Viết con chữ trước, đánh dấu sau."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép câu này vào vở: Mẹ bế bé ở bờ hồ."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Mẹ bế bé ở bờ hồ."]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm rồi mới viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chép lại giúp {ban}: Bà che gió cho ba chú gà."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Bà che gió cho ba chú gà."]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn kỹ rồi chép nhé: Nghé đã no cỏ."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Nghé đã no cỏ."]
+      },
+      "answerKey": null,
+      "hints": ["Viết con chữ trước, đánh dấu sau."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn rồi chép vào vở: Hà chú ý nghe dì kể."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Hà chú ý nghe dì kể."]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm rồi mới viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép câu này vào vở: Quê Hà là xứ sở của dừa."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["Quê Hà là xứ sở của dừa."]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chép lại giúp {ban}: ghế gỗ, củ nghệ."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["ghế gỗ, củ nghệ"]
+      },
+      "answerKey": null,
+      "hints": ["Viết con chữ trước, đánh dấu sau."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn kỹ rồi chép nhé: cá ngừ, chữ kí."
+      },
+      "rubric": {
+        "criteria": [
+          "Chép đủ tiếng, không bỏ tiếng",
+          "Viết hoa chữ đầu câu, có dấu chấm cuối câu",
+          "Dấu thanh đúng chỗ"
+        ],
+        "sampleAnswers": ["cá ngừ, chữ kí"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm rồi mới viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 80,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "model",
+      "id": "viet-chepcau-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn cách viết đúng của \"Bé Hà có bà.\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bé Hà có bà."
+        },
+        {
+          "id": "b",
+          "text": "Bé Hà co bà.",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "bé Hà có bà."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"Bé Hà có bà.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "model",
+      "id": "viet-chepcau-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào viết đúng \"Bà cho bé quà quê.\"?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bà cho be quà quê.",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "Bà cho bé quà quê."
+        },
+        {
+          "id": "c",
+          "text": "Bà cho bé quà quê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"Bà cho bé quà quê.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-chepcau-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: \"Nhà bé ở Thủ đô.\" viết thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Nhà bé ở Thủ đo.",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "Nhà bé Thủ đô."
+        },
+        {
+          "id": "c",
+          "text": "Nhà bé ở Thủ đô."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"Nhà bé ở Thủ đô.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "model",
+      "id": "viet-chepcau-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn cách viết đúng của \"Phú Thọ có chè, có cọ.\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Phú Thọ có chè, có cọ."
+        },
+        {
+          "id": "b",
+          "text": "Phú Thọ có chè, có cỏ.",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "phú thọ có chè, có cọ."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"Phú Thọ có chè, có cọ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào viết đúng \"Xa nhà, bé nhớ mẹ.\"?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Xa nhà, bé nhơ mẹ.",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "Xa nhà, bé nhớ mẹ."
+        },
+        {
+          "id": "c",
+          "text": "Xa nhà bé nhớ mẹ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"Xa nhà, bé nhớ mẹ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: \"Mẹ bế bé ở bờ hồ.\" viết thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mẹ bế bé ở bờ hô.",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "Mẹ bế bé ở bờ."
+        },
+        {
+          "id": "c",
+          "text": "Mẹ bế bé ở bờ hồ."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"Mẹ bế bé ở bờ hồ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn cách viết đúng của \"Nghé đã no cỏ.\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Nghé đã no cỏ."
+        },
+        {
+          "id": "b",
+          "text": "Ngé đã no cỏ.",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "c",
+          "text": "Nghé đã no có.",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"Nghé đã no cỏ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào viết đúng \"Hà chú ý nghe dì kể.\"?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hà chú ý nge dì kể.",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "Hà chú ý nghe dì kể."
+        },
+        {
+          "id": "c",
+          "text": "Hà chú ý nghe dì kê.",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"Hà chú ý nghe dì kể.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tên tranh viết thế nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🪑",
+          "labelVi": "ghế gỗ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gế gỗ",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b",
+          "text": "ghế gổ",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "ghế gỗ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"ghế gỗ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn cách viết đúng của \"củ nghệ\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "củ nghệ"
+        },
+        {
+          "id": "b",
+          "text": "củ ngệ",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "c",
+          "text": "cũ nghệ",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"củ nghệ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_c_k_q",
+      "scaffold": "none",
+      "id": "viet-chepcau-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn cách viết đúng tên tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "✍️",
+          "labelVi": "chữ kí",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chữ cí",
+          "errorTag": "nham_c_k_q"
+        },
+        {
+          "id": "b",
+          "text": "chữ kí"
+        },
+        {
+          "id": "c",
+          "text": "chử kí",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"chữ kí\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tên tranh viết thế nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "cá ngừ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá nghừ",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "cá ngư",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "cá ngừ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc thầm từng ô, nhìn kỹ dấu và con chữ."],
+      "explanation": "Viết đúng là \"cá ngừ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Bé Hà có bà."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bé Hà co bà.",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "Bé Hà có bà."
+        },
+        {
+          "id": "c",
+          "text": "bé Hà có bà."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi nhìn kỹ dấu thanh."],
+      "explanation": "Tiếng con nghe viết là \"Bé Hà có bà.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Bà cho bé quà quê."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bà cho be quà quê.",
+          "errorTag": "thieu_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "Bà cho bé quà quê"
+        },
+        {
+          "id": "c",
+          "text": "Bà cho bé quà quê."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đánh vần thầm tiếng con nghe."],
+      "explanation": "Tiếng con nghe viết là \"Bà cho bé quà quê.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-chepcau-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào ô con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "Nhà bé ở Thủ đô."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Nhà bé ở Thủ đô."
+        },
+        {
+          "id": "b",
+          "text": "Nhà bé ở Thủ đo.",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "Nhà bé Thủ đô."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nhìn kỹ dấu thanh."],
+      "explanation": "Tiếng con nghe viết là \"Nhà bé ở Thủ đô.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng ô nhé!"
+      },
+      "listenTarget": {
+        "text": "Phú Thọ có chè, có cọ."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Phú Thọ có chè, có cỏ.",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "Phú Thọ có chè, có cọ."
+        },
+        {
+          "id": "c",
+          "text": "phú thọ có chè, có cọ."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đánh vần thầm tiếng con nghe."],
+      "explanation": "Tiếng con nghe viết là \"Phú Thọ có chè, có cọ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Xa nhà, bé nhớ mẹ."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Xa nhà, bé nhơ mẹ.",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "b",
+          "text": "Xa nhà bé nhớ mẹ"
+        },
+        {
+          "id": "c",
+          "text": "Xa nhà, bé nhớ mẹ."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi nhìn kỹ dấu thanh."],
+      "explanation": "Tiếng con nghe viết là \"Xa nhà, bé nhớ mẹ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_dau_thanh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Mẹ bế bé ở bờ hồ."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mẹ bế bé ở bờ hồ."
+        },
+        {
+          "id": "b",
+          "text": "Mẹ bế bé ở bờ hô.",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "Mẹ bế bé ở bờ."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần thầm tiếng con nghe."],
+      "explanation": "Tiếng con nghe viết là \"Mẹ bế bé ở bờ hồ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Nghé đã no cỏ."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ngé đã no cỏ.",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "Nghé đã no cỏ."
+        },
+        {
+          "id": "c",
+          "text": "Nghé đã no có.",
+          "errorTag": "sai_dau_thanh"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi nhìn kỹ dấu thanh."],
+      "explanation": "Tiếng con nghe viết là \"Nghé đã no cỏ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-chepcau-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Hà chú ý nghe dì kể."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hà chú ý nge dì kể.",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "Hà chú ý nghe dì kê.",
+          "errorTag": "sai_dau_thanh"
+        },
+        {
+          "id": "c",
+          "text": "Hà chú ý nghe dì kể."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đánh vần thầm tiếng con nghe."],
+      "explanation": "Tiếng con nghe viết là \"Hà chú ý nghe dì kể.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Ghép \"nghệ\" bằng thẻ nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "ngh"
+        },
+        {
+          "id": "v1",
+          "text": "ệ"
+        },
+        {
+          "id": "d2",
+          "text": "ng",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"nghệ\" gồm ngh và ệ.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo thẻ để viết tiếng \"ghế\"."
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "gh"
+        },
+        {
+          "id": "v1",
+          "text": "ế"
+        },
+        {
+          "id": "d2",
+          "text": "g",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"ghế\" gồm gh và ế.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Dựng tiếng \"kí\": âm đầu rồi vần."
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "k"
+        },
+        {
+          "id": "v1",
+          "text": "í"
+        },
+        {
+          "id": "d2",
+          "text": "c",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"kí\" gồm k và í.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Ghép \"ngừ\" bằng thẻ nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "ng"
+        },
+        {
+          "id": "v1",
+          "text": "ừ"
+        },
+        {
+          "id": "d2",
+          "text": "ngh",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"ngừ\" gồm ng và ừ.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo thẻ để viết tiếng \"cờ\"."
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "c"
+        },
+        {
+          "id": "v1",
+          "text": "ờ"
+        },
+        {
+          "id": "d2",
+          "text": "k",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"cờ\" gồm c và ờ.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Dựng tiếng \"gô\": âm đầu rồi vần."
+      },
+      "dragItems": [
+        {
+          "id": "d1",
+          "text": "g"
+        },
+        {
+          "id": "v1",
+          "text": "ô"
+        },
+        {
+          "id": "d2",
+          "text": "gh",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Âm đầu",
+          "accepts": ["d1", "d2"]
+        },
+        {
+          "id": "van",
+          "label": "Vần",
+          "accepts": ["v1"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["d1"],
+        "van": ["v1"]
+      },
+      "hints": ["Đọc chậm tiếng đó, phần đầu là âm đầu."],
+      "explanation": "\"gô\" gồm g và ô.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-chepcau-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "cá cờ",
+        "words": ["cá", "cờ"]
+      },
+      "answerKey": {
+        "words": ["cá", "cờ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là \"cá cờ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "chữ kí",
+        "words": ["chữ", "kí"]
+      },
+      "answerKey": {
+        "words": ["chữ", "kí"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Đọc là \"chữ kí\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "gà gô",
+        "words": ["gà", "gô"]
+      },
+      "answerKey": {
+        "words": ["gà", "gô"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là \"gà gô\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "ghế gỗ",
+        "words": ["ghế", "gỗ"]
+      },
+      "answerKey": {
+        "words": ["ghế", "gỗ"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Đọc là \"ghế gỗ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "cá ngừ",
+        "words": ["cá", "ngừ"]
+      },
+      "answerKey": {
+        "words": ["cá", "ngừ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Đọc là \"cá ngừ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chepcau-0044",
+      "language": "vi",
+      "skillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "củ nghệ",
+        "words": ["củ", "nghệ"]
+      },
+      "answerKey": {
+        "words": ["củ", "nghệ"]
+      },
+      "hints": ["Đọc thầm trước rồi mới đọc to."],
+      "explanation": "Đọc là \"củ nghệ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B29",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 29 tr.70–71 (Luyện tập chính tả); câu chép từ mục 4 Đọc của Bài 16–28"
+      }
+    }
+  ]
+}
