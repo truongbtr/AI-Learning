@@ -1,0 +1,1331 @@
+{
+  "skillCode": "ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE",
+  "subject": "ESCI",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Nối bộ phận (beak, claws, fur, fins, shell, wings) với chức năng giúp con vật sống sót. Ô nhiễu nhắm lỗi nói bộ phận mà không nói chức năng, nghĩ mọi con vật đều có lông.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-bodyparts-0001",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How does a bird's beak help it?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦜",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it helps it eat"
+        },
+        {
+          "id": "b",
+          "text": "it helps it swim"
+        },
+        {
+          "id": "c",
+          "text": "it helps it hear"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it helps it eat",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-bodyparts-0002",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How do a cat's claws help it?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐱",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "they help it fly"
+        },
+        {
+          "id": "b",
+          "text": "they help it climb and grab"
+        },
+        {
+          "id": "c",
+          "text": "they help it breathe underwater"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: they help it climb and grab",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-bodyparts-0003",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How does a fish's fins help it?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "they help it fly"
+        },
+        {
+          "id": "b",
+          "text": "they help it dig"
+        },
+        {
+          "id": "c",
+          "text": "they help it swim"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: they help it swim",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-bodyparts-0004",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How does a turtle's shell help it?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐢",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it protects its body"
+        },
+        {
+          "id": "b",
+          "text": "it helps it fly"
+        },
+        {
+          "id": "c",
+          "text": "it helps it hear"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it protects its body",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-bodyparts-0005",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How does a bird's wings help it?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦅",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "they help it swim"
+        },
+        {
+          "id": "b",
+          "text": "they help it fly"
+        },
+        {
+          "id": "c",
+          "text": "they help it dig"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: they help it fly",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-bodyparts-0006",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Do all animals have fur?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "yes, all animals do"
+        },
+        {
+          "id": "b",
+          "text": "only fish have fur"
+        },
+        {
+          "id": "c",
+          "text": "no, only some animals do"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: no, only some animals do",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0007",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How does thick fur help a bear?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐻",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it helps keep it warm"
+        },
+        {
+          "id": "b",
+          "text": "it helps it fly"
+        },
+        {
+          "id": "c",
+          "text": "it helps it breathe underwater"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it helps keep it warm",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0008",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A rabbit has strong back legs. How does that help it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it helps it swim"
+        },
+        {
+          "id": "b",
+          "text": "it helps it hop away fast"
+        },
+        {
+          "id": "c",
+          "text": "it helps it dig for food"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it helps it hop away fast",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0009",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A duck has webbed feet. How does that help it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it helps it climb trees"
+        },
+        {
+          "id": "b",
+          "text": "it helps it dig burrows"
+        },
+        {
+          "id": "c",
+          "text": "it helps it swim"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it helps it swim",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0010",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A woodpecker has a strong, pointy beak. How does that help it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it helps it peck into wood for food"
+        },
+        {
+          "id": "b",
+          "text": "it helps it swim fast"
+        },
+        {
+          "id": "c",
+          "text": "it helps it fly higher"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it helps it peck into wood for food",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0011",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "An owl has sharp claws called talons. How do they help it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "they help it swim"
+        },
+        {
+          "id": "b",
+          "text": "they help it catch prey"
+        },
+        {
+          "id": "c",
+          "text": "they help it sing"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: they help it catch prey",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0012",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A camel has humps that store fat. How does that help it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it helps it fly"
+        },
+        {
+          "id": "b",
+          "text": "it helps it swim"
+        },
+        {
+          "id": "c",
+          "text": "it helps it survive without food for a while"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it helps it survive without food for a while",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0013",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A skunk sprays a bad smell. How does that help it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it scares predators away"
+        },
+        {
+          "id": "b",
+          "text": "it helps it fly"
+        },
+        {
+          "id": "c",
+          "text": "it helps it swim"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it scares predators away",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0014",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A chameleon changes colour. How does that help it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it helps it fly"
+        },
+        {
+          "id": "b",
+          "text": "it hides from predators"
+        },
+        {
+          "id": "c",
+          "text": "it helps it dig"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it hides from predators",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0015",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Why do some birds have long legs, like a flamingo?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "to fly higher"
+        },
+        {
+          "id": "b",
+          "text": "to keep them warm"
+        },
+        {
+          "id": "c",
+          "text": "to wade in water and reach food"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: to wade in water and reach food",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0016",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A porcupine has sharp quills. How do they help it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "they protect it from predators"
+        },
+        {
+          "id": "b",
+          "text": "they help it swim"
+        },
+        {
+          "id": "c",
+          "text": "they help it fly"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: they protect it from predators",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0017",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "An elephant has a long trunk. How does it help?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it helps it fly"
+        },
+        {
+          "id": "b",
+          "text": "it grabs food and drinks water"
+        },
+        {
+          "id": "c",
+          "text": "it helps it swim fast"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it grabs food and drinks water",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0018",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A giraffe has a very long neck. How does that help it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "it helps it swim"
+        },
+        {
+          "id": "b",
+          "text": "it helps it dig burrows"
+        },
+        {
+          "id": "c",
+          "text": "it reaches leaves high in trees"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: it reaches leaves high in trees",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-bodyparts-0019",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "A bird's beak helps it do what?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "swim"
+        },
+        {
+          "id": "b",
+          "text": "eat"
+        },
+        {
+          "id": "c",
+          "text": "hear"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"A bird's beak helps it do what?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-bodyparts-0020",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} talks about an animal part. Tap it!"
+      },
+      "listenTarget": {
+        "text": "A fish's fins help it do what?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fly"
+        },
+        {
+          "id": "b",
+          "text": "dig"
+        },
+        {
+          "id": "c",
+          "text": "swim"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"A fish's fins help it do what?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0021",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "A turtle's shell helps it do what?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "protect its body"
+        },
+        {
+          "id": "b",
+          "text": "fly"
+        },
+        {
+          "id": "c",
+          "text": "hear better"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"A turtle's shell helps it do what?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0022",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How does it help? Tap it."
+      },
+      "listenTarget": {
+        "text": "Thick fur helps a bear do what?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fly"
+        },
+        {
+          "id": "b",
+          "text": "stay warm"
+        },
+        {
+          "id": "c",
+          "text": "breathe underwater"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Thick fur helps a bear do what?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0023",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "A duck's webbed feet help it do what?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "climb trees"
+        },
+        {
+          "id": "b",
+          "text": "dig"
+        },
+        {
+          "id": "c",
+          "text": "swim"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"A duck's webbed feet help it do what?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0024",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Think about survival, then tap."
+      },
+      "listenTarget": {
+        "text": "Sharp quills help a porcupine do what?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "stay protected"
+        },
+        {
+          "id": "b",
+          "text": "swim"
+        },
+        {
+          "id": "c",
+          "text": "fly"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Sharp quills help a porcupine do what?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0025",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "A long trunk helps an elephant do what?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fly"
+        },
+        {
+          "id": "b",
+          "text": "grab food and drink water"
+        },
+        {
+          "id": "c",
+          "text": "swim fast"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"A long trunk helps an elephant do what?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0026",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the parts: for moving, or for protecting?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "wings"
+        },
+        {
+          "id": "b0",
+          "text": "shell"
+        },
+        {
+          "id": "a1",
+          "text": "fins"
+        },
+        {
+          "id": "b1",
+          "text": "fur"
+        },
+        {
+          "id": "a2",
+          "text": "claws"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "For moving",
+          "accepts": ["a0", "b0", "a1", "b1", "a2"]
+        },
+        {
+          "id": "zb",
+          "label": "For protecting",
+          "accepts": ["a0", "b0", "a1", "b1", "a2"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1", "a2"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Some parts help an animal go places, others keep it safe."],
+      "explanation": "wings, fins, claws go in \"For moving\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0027",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Match each body part to what it helps the animal do."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🦜"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐢"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐻"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "eat",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "protect its body",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "stay warm",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Beak for eating, shell for protecting, fur for warmth."],
+      "explanation": "Beak-eat, shell-protect, fur-warmth.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0028",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Match each animal to how it survives."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🦔"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐘"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "sharp quills protect it",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "a trunk grabs food and water",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Think about what each body part does."],
+      "explanation": "Porcupine-quills protect, elephant-trunk grabs.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-bodyparts-0029",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "A bird's beak helps it eat.",
+        "words": ["A", "bird's", "beak", "helps", "it", "eat"]
+      },
+      "answerKey": {
+        "words": ["A", "bird's", "beak", "helps", "it", "eat"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A bird's beak helps it eat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0030",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "A turtle's shell protects its body.",
+        "words": ["A", "turtle's", "shell", "protects", "its", "body"]
+      },
+      "answerKey": {
+        "words": ["A", "turtle's", "shell", "protects", "its", "body"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"A turtle's shell protects its body.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0031",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Thick fur keeps an animal warm.",
+        "words": ["Thick", "fur", "keeps", "an", "animal", "warm"]
+      },
+      "answerKey": {
+        "words": ["Thick", "fur", "keeps", "an", "animal", "warm"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Thick fur keeps an animal warm.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0032",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Fins help a fish swim.",
+        "words": ["Fins", "help", "a", "fish", "swim"]
+      },
+      "answerKey": {
+        "words": ["Fins", "help", "a", "fish", "swim"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Fins help a fish swim.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0033",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Sharp quills protect a porcupine.",
+        "words": ["Sharp", "quills", "protect", "a", "porcupine"]
+      },
+      "answerKey": {
+        "words": ["Sharp", "quills", "protect", "a", "porcupine"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Sharp quills protect a porcupine.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0034",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw an animal and one body part that helps it survive."
+      },
+      "rubric": {
+        "criteria": ["Có tranh động vật", "Nêu đúng chức năng"],
+        "sampleAnswers": ["a bird's wings help it fly"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: a bird's wings help it fly",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-bodyparts-0035",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_BODY_PARTS_SURVIVE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw two animals with different body parts. Label the parts."
+      },
+      "rubric": {
+        "criteria": ["Hai con vật", "Hai nhãn đúng"],
+        "sampleAnswers": ["fins, wings"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: fins, wings",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (body parts and survival) — chưa có sách English Science của trường"
+      }
+    }
+  ]
+}

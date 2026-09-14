@@ -1,0 +1,1325 @@
+{
+  "skillCode": "ESCI.LS.ANIMAL_GROUPS",
+  "subject": "ESCI",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Phân loại mammals, birds, fish, reptiles, amphibians, insects theo đặc điểm. Ô nhiễu nhắm lỗi thật (xếp dolphin vào fish, penguin không bay được vẫn là chim, spider không phải insect).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-animalgroup-0001",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "A dog has fur and feeds babies milk. What group?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐶",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mammal"
+        },
+        {
+          "id": "b",
+          "text": "bird"
+        },
+        {
+          "id": "c",
+          "text": "fish"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: mammal",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-animalgroup-0002",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "An eagle has feathers and wings. What group is it?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦅",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mammal"
+        },
+        {
+          "id": "b",
+          "text": "bird"
+        },
+        {
+          "id": "c",
+          "text": "reptile"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: bird",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-animalgroup-0003",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "A shark has scales, gills, and lives in water. What group?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦈",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mammal"
+        },
+        {
+          "id": "b",
+          "text": "amphibian"
+        },
+        {
+          "id": "c",
+          "text": "fish"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: fish",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-animalgroup-0004",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "A snake has dry scales and lays eggs. What group is it?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐍",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "reptile"
+        },
+        {
+          "id": "b",
+          "text": "amphibian"
+        },
+        {
+          "id": "c",
+          "text": "insect"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: reptile",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-animalgroup-0005",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A frog lives in water, then on land. What group?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐸",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "reptile"
+        },
+        {
+          "id": "b",
+          "text": "amphibian"
+        },
+        {
+          "id": "c",
+          "text": "fish"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: amphibian",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-animalgroup-0006",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "An ant has six legs, three body parts. What group?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐜",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mammal"
+        },
+        {
+          "id": "b",
+          "text": "reptile"
+        },
+        {
+          "id": "c",
+          "text": "insect"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: insect",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0007",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Is a dolphin a fish?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "no, it is a mammal"
+        },
+        {
+          "id": "b",
+          "text": "yes, it is a fish"
+        },
+        {
+          "id": "c",
+          "text": "it is a bird"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: no, it is a mammal",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0008",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Is a penguin still a bird, even though it cannot fly?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "no, it is a fish"
+        },
+        {
+          "id": "b",
+          "text": "yes, it is a bird"
+        },
+        {
+          "id": "c",
+          "text": "no, it is a mammal"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: yes, it is a bird",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0009",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Is a spider an insect?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "yes, it is an insect"
+        },
+        {
+          "id": "b",
+          "text": "it is a bird"
+        },
+        {
+          "id": "c",
+          "text": "no, spiders have 8 legs, not 6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: no, spiders have 8 legs, not 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0010",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which group has feathers?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "birds"
+        },
+        {
+          "id": "b",
+          "text": "mammals"
+        },
+        {
+          "id": "c",
+          "text": "fish"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: birds",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0011",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which group has fur or hair and feeds babies milk?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "birds"
+        },
+        {
+          "id": "b",
+          "text": "mammals"
+        },
+        {
+          "id": "c",
+          "text": "insects"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: mammals",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0012",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which group has 6 legs?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mammals"
+        },
+        {
+          "id": "b",
+          "text": "reptiles"
+        },
+        {
+          "id": "c",
+          "text": "insects"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: insects",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0013",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which group breathes with gills and lives fully in water?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish"
+        },
+        {
+          "id": "b",
+          "text": "mammals"
+        },
+        {
+          "id": "c",
+          "text": "birds"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: fish",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0014",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which group has dry, waterproof scales and lays eggs on land?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "amphibians"
+        },
+        {
+          "id": "b",
+          "text": "reptiles"
+        },
+        {
+          "id": "c",
+          "text": "fish"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: reptiles",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0015",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "A whale lives in the sea, breathes air, feeds milk. What group?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish"
+        },
+        {
+          "id": "b",
+          "text": "amphibian"
+        },
+        {
+          "id": "c",
+          "text": "mammal"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: mammal",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0016",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Is a bat a bird because it flies?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "no, it is a mammal with fur"
+        },
+        {
+          "id": "b",
+          "text": "yes, it is a bird"
+        },
+        {
+          "id": "c",
+          "text": "no, it is an insect"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: no, it is a mammal with fur",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0017",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which group starts in water, then lives on land as adults?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "reptiles"
+        },
+        {
+          "id": "b",
+          "text": "amphibians"
+        },
+        {
+          "id": "c",
+          "text": "fish"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: amphibians",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0018",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which group usually has three body parts and six legs?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mammals"
+        },
+        {
+          "id": "b",
+          "text": "birds"
+        },
+        {
+          "id": "c",
+          "text": "insects"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see outside every day."],
+      "explanation": "The answer is: insects",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-animalgroup-0019",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the animal group."
+      },
+      "listenTarget": {
+        "text": "It has fur and feeds its babies milk. What group?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bird"
+        },
+        {
+          "id": "b",
+          "text": "mammal"
+        },
+        {
+          "id": "c",
+          "text": "fish"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"It has fur and feeds its babies milk. What group?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-animalgroup-0020",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} describes an animal. Tap the group!"
+      },
+      "listenTarget": {
+        "text": "It has feathers and wings. What group?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mammal"
+        },
+        {
+          "id": "b",
+          "text": "reptile"
+        },
+        {
+          "id": "c",
+          "text": "bird"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"It has feathers and wings. What group?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0021",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "It has scales, gills, and lives in water. What group?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish"
+        },
+        {
+          "id": "b",
+          "text": "amphibian"
+        },
+        {
+          "id": "c",
+          "text": "mammal"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"It has scales, gills, and lives in water. What group?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0022",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which group is it? Tap it."
+      },
+      "listenTarget": {
+        "text": "It has six legs and three body parts. What group?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "reptile"
+        },
+        {
+          "id": "b",
+          "text": "insect"
+        },
+        {
+          "id": "c",
+          "text": "mammal"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"It has six legs and three body parts. What group?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0023",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "Is a dolphin a fish or a mammal?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish"
+        },
+        {
+          "id": "b",
+          "text": "mammal"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Is a dolphin a fish or a mammal?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0024",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Think about the clues, then tap."
+      },
+      "listenTarget": {
+        "text": "It has dry scales and lays eggs on land. What group?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "reptile"
+        },
+        {
+          "id": "b",
+          "text": "amphibian"
+        },
+        {
+          "id": "c",
+          "text": "fish"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"It has dry scales and lays eggs on land. What group?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0025",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the animal group."
+      },
+      "listenTarget": {
+        "text": "It starts in water, then lives on land as an adult. What group?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "reptile"
+        },
+        {
+          "id": "b",
+          "text": "amphibian"
+        },
+        {
+          "id": "c",
+          "text": "fish"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"It starts in water, then lives on land as an adult. What group?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0026",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the animals: mammal or bird?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "dog"
+        },
+        {
+          "id": "b0",
+          "text": "eagle"
+        },
+        {
+          "id": "a1",
+          "text": "cat"
+        },
+        {
+          "id": "b1",
+          "text": "duck"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Mammal",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Bird",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Fur and milk means mammal; feathers means bird."],
+      "explanation": "dog, cat go in \"Mammal\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0027",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the animals: fish or reptile?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "shark"
+        },
+        {
+          "id": "b0",
+          "text": "snake"
+        },
+        {
+          "id": "a1",
+          "text": "tuna"
+        },
+        {
+          "id": "b1",
+          "text": "lizard"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Fish",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Reptile",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Fish live fully in water with gills; reptiles have dry scales."],
+      "explanation": "shark, tuna go in \"Fish\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0028",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each animal to its group."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🐶"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🦅"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐜"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "mammal",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "bird",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "insect",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Fur, feathers, or six legs?"],
+      "explanation": "Dog-mammal, eagle-bird, ant-insect.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-animalgroup-0029",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Mammals have fur and feed their babies milk.",
+        "words": ["Mammals", "have", "fur", "and", "feed", "their", "babies", "milk"]
+      },
+      "answerKey": {
+        "words": ["Mammals", "have", "fur", "and", "feed", "their", "babies", "milk"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Mammals have fur and feed their babies milk.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0030",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Birds have feathers and most can fly.",
+        "words": ["Birds", "have", "feathers", "and", "most", "can", "fly"]
+      },
+      "answerKey": {
+        "words": ["Birds", "have", "feathers", "and", "most", "can", "fly"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Birds have feathers and most can fly.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0031",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Fish live in water and have gills.",
+        "words": ["Fish", "live", "in", "water", "and", "have", "gills"]
+      },
+      "answerKey": {
+        "words": ["Fish", "live", "in", "water", "and", "have", "gills"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Fish live in water and have gills.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0032",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Insects have six legs.",
+        "words": ["Insects", "have", "six", "legs"]
+      },
+      "answerKey": {
+        "words": ["Insects", "have", "six", "legs"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Insects have six legs.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0033",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Reptiles have dry, waterproof scales.",
+        "words": ["Reptiles", "have", "dry", "waterproof", "scales"]
+      },
+      "answerKey": {
+        "words": ["Reptiles", "have", "dry", "waterproof", "scales"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Reptiles have dry, waterproof scales.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0034",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw one animal from each group: mammal, bird, fish."
+      },
+      "rubric": {
+        "criteria": ["Ba nhóm đúng", "Có tranh"],
+        "sampleAnswers": ["dog, eagle, shark"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: dog, eagle, shark",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-animalgroup-0035",
+      "language": "en",
+      "skillCodes": ["ESCI.LS.ANIMAL_GROUPS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw an insect. Label its legs."
+      },
+      "rubric": {
+        "criteria": ["Có tranh côn trùng", "Ghi đúng số chân"],
+        "sampleAnswers": ["ant, 6 legs"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: ant, 6 legs",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-LS1-1 (classifying animals) — chưa có sách English Science của trường"
+      }
+    }
+  ]
+}
