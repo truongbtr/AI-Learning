@@ -69,8 +69,15 @@
       "prerequisites": ["EMATH.OA.ADD_WITHIN_5"],
       "relatedSkillCodes": ["VMATH.SO.TACH_GOP_10"],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ", "COUNT_TAP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "DRAG_DROP",
+        "MCQ",
+        "COUNT_TAP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.ADD_WITHIN_10",
@@ -131,8 +138,15 @@
       "prerequisites": ["EMATH.OA.ADD_WITHIN_10"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.COUNT_ON",
@@ -147,8 +161,15 @@
       "prerequisites": ["EMATH.NBT.COUNT_TO_20"],
       "relatedSkillCodes": [],
       "confusableWith": ["EMATH.NBT.TEN_MORE_LESS"],
-      "exerciseTypes": ["COUNT_TAP", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "COUNT_TAP",
+        "MCQ",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.COUNT_BACK",
@@ -163,8 +184,15 @@
       "prerequisites": ["EMATH.OA.COUNT_ON"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["COUNT_TAP", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "COUNT_TAP",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.MAKE_TEN",
@@ -227,8 +255,8 @@
       "prerequisites": ["EMATH.OA.SUB_WITHIN_10"],
       "relatedSkillCodes": ["VMATH.SO.BANG_CONG_TRU_10"],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["DRAG_DROP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.PROPERTIES_COMMUTATIVE",
@@ -243,8 +271,8 @@
       "prerequisites": ["EMATH.OA.ADD_WITHIN_10"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["MCQ", "DRAG_DROP", "LISTEN_CHOOSE", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.OA.THREE_ADDENDS",
@@ -698,8 +726,15 @@
       "prerequisites": [],
       "relatedSkillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN", "ESL.VOC.SHAPES"],
       "confusableWith": ["EMATH.G.NAME_3D_SHAPES"],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "COUNT_TAP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.G.NAME_3D_SHAPES",
@@ -730,8 +765,15 @@
       "prerequisites": ["EMATH.G.NAME_2D_SHAPES"],
       "relatedSkillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "DRAG_DROP"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "COUNT_TAP",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.G.COMPOSE_SHAPES",
@@ -746,8 +788,15 @@
       "prerequisites": ["EMATH.G.SHAPE_ATTRIBUTES"],
       "relatedSkillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": [
+        "DRAG_DROP",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.G.HALVES_QUARTERS",
@@ -797,8 +846,15 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "DRAG_DROP",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.MP.MATH_VOCAB_EN",
@@ -813,8 +869,8 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.MP.READ_WORD_PROBLEM_EN",
@@ -829,8 +885,15 @@
       "prerequisites": ["EMATH.MP.MATH_VOCAB_EN"],
       "relatedSkillCodes": ["VMATH.GT.DOC_HIEU_DE_TOAN"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "MINI_STORY", "LISTEN_CHOOSE"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "MINI_STORY",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "EMATH.MP.USE_TOOLS_DRAW_MODEL",

@@ -1,0 +1,1366 @@
+{
+  "skillCode": "EMATH.G.PATTERNS",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Quy luật lặp và quy luật đếm. Trắc nghiệm dùng dãy số để ô nhiễu có mã đúng nghĩa: bước hụt/dư một (dem_thieu_1/dem_thua_1), chọn nhầm vị trí trong đơn vị lặp (nham_thu_tu_so, đề có chữ 'order'). Quy luật màu và hình đi bằng kéo thẻ tranh.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "emath-pattern-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next in the order? 1, 2, 1, 2, 1, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud: 1, 2, 1, 2…"],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-pattern-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "2, 4, 6, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on by twos."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-pattern-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "5, 10, 15, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "21",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on by fives."],
+      "explanation": "The answer is: 20",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-pattern-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "10, 9, 8, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count back by ones."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "emath-pattern-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next in the order? 3, 3, 4, 3, 3, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The part that repeats is 3, 3, 4."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-pattern-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "1, 3, 5, 7, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Jump by twos."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "10, 20, 30, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "40"
+        },
+        {
+          "id": "b",
+          "text": "39",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "41",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on by tens."],
+      "explanation": "The answer is: 40",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "20, 18, 16, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count back by twos."],
+      "explanation": "The answer is: 14",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-pattern-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next in the order? 1, 2, 3, 1, 2, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The part that repeats is 1, 2, 3."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "0, 5, 10, 15, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "20"
+        },
+        {
+          "id": "b",
+          "text": "21",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on by fives."],
+      "explanation": "The answer is: 20",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "3, 6, 9, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on by threes."],
+      "explanation": "The answer is: 12",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-pattern-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Next in the order? 7, 8, 8, 7, 8, 8, ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The part that repeats is 7, 8, 8."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-pattern-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next?"
+      },
+      "listenTarget": {
+        "text": "two, four, six, eight"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"two, four, six, eight\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-pattern-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next in the order?"
+      },
+      "listenTarget": {
+        "text": "one, two, one, two, one"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"one, two, one, two, one\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next?"
+      },
+      "listenTarget": {
+        "text": "five, ten, fifteen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "20"
+        },
+        {
+          "id": "b",
+          "text": "21",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"five, ten, fifteen\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next?"
+      },
+      "listenTarget": {
+        "text": "ten, nine, eight, seven"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"ten, nine, eight, seven\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next in the order?"
+      },
+      "listenTarget": {
+        "text": "one, one, two, one, one"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"one, one, two, one, one\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next?"
+      },
+      "listenTarget": {
+        "text": "ten, twenty, thirty"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "40"
+        },
+        {
+          "id": "b",
+          "text": "41",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "39",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"ten, twenty, thirty\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next?"
+      },
+      "listenTarget": {
+        "text": "one, three, five, seven"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"one, three, five, seven\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-pattern-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What comes next?"
+      },
+      "listenTarget": {
+        "text": "twelve, ten, eight"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"twelve, ten, eight\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Red, blue, red, blue, … Drag what comes next."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔵"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🟢"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Say the colours out loud."],
+      "explanation": "Red comes after blue.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Star, heart, star, heart, … Drag what comes next."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "💛"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "⭐"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"]
+      },
+      "hints": ["Say the pattern out loud."],
+      "explanation": "Star comes after heart.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Circle, circle, square, circle, … Drag the next one."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["The part that repeats is circle, circle, square."],
+      "explanation": "Another circle comes next.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Cat, dog, dog, cat, dog, … Drag what comes next."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["The part that repeats is cat, dog, dog."],
+      "explanation": "Dog comes next.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Apple, banana, grape, apple, … Drag the next one."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🍌"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🍇"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["The part that repeats has three things."],
+      "explanation": "Banana comes after apple.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Sun, moon, moon, sun, moon, … Drag the next one."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🌙"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "☀️"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "⭐"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["The part that repeats is sun, moon, moon."],
+      "explanation": "Moon comes next.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Red, blue, red, blue… Tap the red beads."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔴",
+          "labelEn": "red beads",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 4 red beads.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count the stars in the pattern."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "stars",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "line"
+      },
+      "answerKey": 6,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 6 stars.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each heart in the pattern."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "❤️",
+          "labelEn": "hearts",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 5 hearts.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-pattern-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Red, blue, red, blue.",
+        "words": ["Red", "blue", "red", "blue"]
+      },
+      "answerKey": {
+        "words": ["Red", "blue", "red", "blue"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Red, blue, red, blue.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Two, four, six, eight.",
+        "words": ["Two", "four", "six", "eight"]
+      },
+      "answerKey": {
+        "words": ["Two", "four", "six", "eight"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Two, four, six, eight.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "The pattern repeats.",
+        "words": ["The", "pattern", "repeats"]
+      },
+      "answerKey": {
+        "words": ["The", "pattern", "repeats"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"The pattern repeats.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Make an AB pattern with two colours. Draw it."
+      },
+      "rubric": {
+        "criteria": ["Có ít nhất 6 hình", "Lặp đúng hai màu"],
+        "sampleAnswers": ["red blue red blue"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: red blue red blue",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Continue the pattern: 5, 10, 15, _, _."
+      },
+      "rubric": {
+        "criteria": ["Viết 20 và 25", "Đếm thêm 5"],
+        "sampleAnswers": ["20, 25"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 20, 25",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pattern-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.G.PATTERNS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Make an ABB pattern with shapes. Draw it."
+      },
+      "rubric": {
+        "criteria": ["Có ít nhất 6 hình", "Lặp đúng kiểu ABB"],
+        "sampleAnswers": ["circle square square"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: circle square square",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.OA / 1.OA (repeating and growing patterns) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

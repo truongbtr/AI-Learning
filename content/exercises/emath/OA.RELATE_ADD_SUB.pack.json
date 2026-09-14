@@ -1,0 +1,1463 @@
+{
+  "skillCode": "EMATH.OA.RELATE_ADD_SUB",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Quan hệ cộng – trừ (fact family). Ô nhiễu: chép lại số trong đề (lap_lai_tong), hụt/dư một, viết phép cộng thay phép trừ (nham_cong_tru, chỉ ở câu chọn phép tính — ở câu hai phép tính validator đọc phép đầu), và phép tính đảo chỗ số lớn–nhỏ ('4 - 10 = 6', nham_thu_tu_so) — lỗi của bản đồ kỹ năng.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-factfam-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "3 + 5 = 8. So 8 - 5 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["The parts are 3 and 5. The whole is 8."],
+      "explanation": "8 - 5 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-factfam-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "4 + 6 = 10. So 10 - 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Take one part away from the whole."],
+      "explanation": "10 - 6 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-factfam-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "2 + 7 = 9. So 9 - 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Take one part away from the whole."],
+      "explanation": "9 - 2 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-factfam-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "5 + 4 = 9. So 9 - 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The parts are 5 and 4."],
+      "explanation": "9 - 4 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-factfam-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "7 - 3 = 4. So 4 + 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Put the parts back together."],
+      "explanation": "4 + 3 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-factfam-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "10 - 7 = 3. So 3 + 7 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Put the parts back together."],
+      "explanation": "3 + 7 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-factfam-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 2 = 8. So 8 - 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Take away the 6."],
+      "explanation": "8 - 6 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-factfam-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "8 + 4 = 12. So 12 - 8 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Take away the 8."],
+      "explanation": "12 - 8 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-factfam-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "7 + 7 = 14. So 14 - 7 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The two parts are the same."],
+      "explanation": "14 - 7 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-factfam-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "9 + 5 = 14. So 14 - 5 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Take away the 5."],
+      "explanation": "14 - 5 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-factfam-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which fact belongs with 4, 6 and 10?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4 - 10 = 6",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "10 - 6 = 4"
+        },
+        {
+          "id": "c",
+          "text": "6 + 10 = 4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Subtract from the biggest number."],
+      "explanation": "The answer is: 10 - 6 = 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-factfam-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which fact belongs with 3, 5 and 8?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3 - 8 = 5",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "8 + 3 = 5",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "8 - 3 = 5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Subtract from the biggest number."],
+      "explanation": "The answer is: 8 - 3 = 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-factfam-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which fact belongs with 2, 9 and 11?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 + 2 = 11"
+        },
+        {
+          "id": "b",
+          "text": "2 - 11 = 9",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "11 + 2 = 9",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["The two small numbers add to the big one."],
+      "explanation": "The answer is: 9 + 2 = 11",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-factfam-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which fact belongs with 7, 1 and 8?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7 - 8 = 1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "8 - 7 = 1"
+        },
+        {
+          "id": "c",
+          "text": "8 + 7 = 1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Subtract from the biggest number."],
+      "explanation": "The answer is: 8 - 7 = 1",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-factfam-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Five plus three is eight. So eight minus three is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Five plus three is eight. So eight minus three is?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-factfam-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a fact. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Six plus four is ten. So ten minus four is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Six plus four is ten. So ten minus four is?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-factfam-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "Two plus seven is nine. So nine minus seven is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Two plus seven is nine. So nine minus seven is?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-factfam-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What is the answer? Tap it."
+      },
+      "listenTarget": {
+        "text": "Eight minus five is three. So three plus five is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Eight minus five is three. So three plus five is?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-factfam-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "Nine plus three is twelve. So twelve minus nine is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Nine plus three is twelve. So twelve minus nine is?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-factfam-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Use the first fact to help."
+      },
+      "listenTarget": {
+        "text": "Seven plus six is thirteen. So thirteen minus six is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Seven plus six is thirteen. So thirteen minus six is?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-factfam-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Ten minus two is eight. So eight plus two is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Ten minus two is eight. So eight plus two is?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-factfam-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a fact. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Four plus five is nine. So nine minus five is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Four plus five is nine. So nine minus five is?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Is it in the family of 3, 4 and 7?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "3 + 4 = 7"
+        },
+        {
+          "id": "b0",
+          "text": "7 + 3 = 10"
+        },
+        {
+          "id": "a1",
+          "text": "7 - 3 = 4"
+        },
+        {
+          "id": "b1",
+          "text": "4 - 3 = 1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "In the family",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Not in the family",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Every fact uses only 3, 4 and 7."],
+      "explanation": "3 + 4 = 7, 7 - 3 = 4 go in \"In the family\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Is it in the family of 2, 6 and 8?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "8 - 6 = 2"
+        },
+        {
+          "id": "b0",
+          "text": "6 - 2 = 4"
+        },
+        {
+          "id": "a1",
+          "text": "6 + 2 = 8"
+        },
+        {
+          "id": "b1",
+          "text": "8 + 2 = 10"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "In the family",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Not in the family",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Every fact uses only 2, 6 and 8."],
+      "explanation": "8 - 6 = 2, 6 + 2 = 8 go in \"In the family\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Build 8 - 5 = 3 with the cards."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "3"
+        },
+        {
+          "id": "c1",
+          "text": "8"
+        },
+        {
+          "id": "c2",
+          "text": "="
+        },
+        {
+          "id": "c3",
+          "text": "5"
+        },
+        {
+          "id": "c4",
+          "text": "-"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "1",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z1",
+          "label": "2",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z2",
+          "label": "3",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z3",
+          "label": "4",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z4",
+          "label": "5",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c4"],
+        "z2": ["c3"],
+        "z3": ["c2"],
+        "z4": ["c0"]
+      },
+      "hints": ["Start with the whole, 8."],
+      "explanation": "8 - 5 = 3.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Build 3 + 5 = 8 with the cards."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "8"
+        },
+        {
+          "id": "c1",
+          "text": "+"
+        },
+        {
+          "id": "c2",
+          "text": "3"
+        },
+        {
+          "id": "c3",
+          "text": "="
+        },
+        {
+          "id": "c4",
+          "text": "5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "1",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z1",
+          "label": "2",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z2",
+          "label": "3",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z3",
+          "label": "4",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z4",
+          "label": "5",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c2"],
+        "z1": ["c1"],
+        "z2": ["c4"],
+        "z3": ["c3"],
+        "z4": ["c0"]
+      },
+      "hints": ["Start with a part, 3."],
+      "explanation": "3 + 5 = 8.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Build 10 - 4 = 6 with the cards."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "6"
+        },
+        {
+          "id": "c1",
+          "text": "-"
+        },
+        {
+          "id": "c2",
+          "text": "10"
+        },
+        {
+          "id": "c3",
+          "text": "4"
+        },
+        {
+          "id": "c4",
+          "text": "="
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "1",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z1",
+          "label": "2",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z2",
+          "label": "3",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z3",
+          "label": "4",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z4",
+          "label": "5",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c2"],
+        "z1": ["c1"],
+        "z2": ["c3"],
+        "z3": ["c4"],
+        "z4": ["c0"]
+      },
+      "hints": ["Start with the whole, 10."],
+      "explanation": "10 - 4 = 6.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Build 4 + 6 = 10 with the cards."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "="
+        },
+        {
+          "id": "c1",
+          "text": "10"
+        },
+        {
+          "id": "c2",
+          "text": "4"
+        },
+        {
+          "id": "c3",
+          "text": "+"
+        },
+        {
+          "id": "c4",
+          "text": "6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "1",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z1",
+          "label": "2",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z2",
+          "label": "3",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z3",
+          "label": "4",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z4",
+          "label": "5",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c2"],
+        "z1": ["c3"],
+        "z2": ["c4"],
+        "z3": ["c0"],
+        "z4": ["c1"]
+      },
+      "hints": ["Start with a part, 4."],
+      "explanation": "4 + 6 = 10.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-factfam-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Three plus five is eight.",
+        "words": ["Three", "plus", "five", "is", "eight"]
+      },
+      "answerKey": {
+        "words": ["Three", "plus", "five", "is", "eight"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Three plus five is eight.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Eight minus five is three.",
+        "words": ["Eight", "minus", "five", "is", "three"]
+      },
+      "answerKey": {
+        "words": ["Eight", "minus", "five", "is", "three"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Eight minus five is three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "These facts are a family.",
+        "words": ["These", "facts", "are", "a", "family"]
+      },
+      "answerKey": {
+        "words": ["These", "facts", "are", "a", "family"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"These facts are a family.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Take a part from the whole.",
+        "words": ["Take", "a", "part", "from", "the", "whole"]
+      },
+      "answerKey": {
+        "words": ["Take", "a", "part", "from", "the", "whole"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Take a part from the whole.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write the four facts for 4, 6 and 10."
+      },
+      "rubric": {
+        "criteria": ["Đủ 4 phép tính", "Không có phép 4 - 10"],
+        "sampleAnswers": ["4+6=10, 6+4=10, 10-6=4, 10-4=6"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 4+6=10, 6+4=10, 10-6=4, 10-4=6",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write the fact family for 2, 5 and 7."
+      },
+      "rubric": {
+        "criteria": ["Đủ 4 phép tính", "Mọi phép đúng"],
+        "sampleAnswers": ["2+5=7, 5+2=7, 7-5=2, 7-2=5"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 2+5=7, 5+2=7, 7-5=2, 7-2=5",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-factfam-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a bond for 9 = 6 + 3. Write two facts."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đúng sơ đồ", "Một phép cộng, một phép trừ"],
+        "sampleAnswers": ["6+3=9, 9-3=6"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 6+3=9, 9-3=6",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.4 (subtraction as an unknown-addend problem) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

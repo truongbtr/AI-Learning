@@ -1,0 +1,1351 @@
+{
+  "skillCode": "EMATH.MP.READ_WORD_PROBLEM_EN",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Đọc/nghe đề 2–3 câu, tìm số, từ khoá, câu hỏi. Ô nhiễu: chép lại số trong đề (lap_lai_tong — lỗi 'chỉ nhìn số rồi đoán'), làm phép ngược (nham_cong_tru), hụt/dư một. Đề ≤ 12 từ theo luật câu lệnh tiếng Anh.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordprob-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Sam has 5 balls. He gets 3 more. How many now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Gets more means add."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordprob-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Mia has 9 pens. She gives away 4. How many left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Gives away means take away."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordprob-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "There are 6 ducks. 6 more come. How many ducks?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["More come means add."],
+      "explanation": "The answer is: 12",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordprob-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "10 cookies. We eat 7. How many are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Eat means take away."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordprob-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "4 red fish and 7 gold fish. How many fish?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Put both groups together."],
+      "explanation": "The answer is: 11",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordprob-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "12 kids play. 5 go home. How many still play?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Go home means take away."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordprob-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Ben has 8 stickers. Ann has 3. How many more has Ben?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["How many more: find the difference."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-wordprob-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "7 birds sit. 2 fly away, then 1 more. How many left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Take away 2, then take away 1."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordprob-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "'How many are left?' What do you do?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "add",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "count the words",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "c",
+          "text": "take away"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Left means some went away."],
+      "explanation": "The answer is: take away",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordprob-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "'How many in all?' What do you do?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "add"
+        },
+        {
+          "id": "b",
+          "text": "take away",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "pick the biggest number",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["In all means put together."],
+      "explanation": "The answer is: add",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "id": "emath-wordprob-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sam has 5 balls. He gets 3 more. What is the question?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "He gets 3 more.",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "How many now?"
+        },
+        {
+          "id": "c",
+          "text": "Sam has 5 balls.",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The question ends with a question mark."],
+      "explanation": "The answer is: How many now?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordprob-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "10 cookies. We eat 7. Which numbers do you use?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10 and 17",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "7 and 3",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "c",
+          "text": "10 and 7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Find the numbers in the story."],
+      "explanation": "The answer is: 10 and 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordprob-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Mia has 9 pens. She gives 4 away. Which fact?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 - 4 = 5"
+        },
+        {
+          "id": "b",
+          "text": "9 + 4 = 13",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "4 - 9 = 5",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Gives away means take away."],
+      "explanation": "The answer is: 9 - 4 = 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordprob-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "4 cats and 2 more come. Which fact?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4 - 2 = 2",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "4 + 2 = 6"
+        },
+        {
+          "id": "c",
+          "text": "4 + 2 = 5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["More come means add."],
+      "explanation": "The answer is: 4 + 2 = 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordprob-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the story, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Tom has four apples. He gets two more. How many apples now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Tom has four apples. He gets two more. How many apples now?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordprob-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} tells a maths story. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "There are nine frogs. Three jump away. How many are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"There are nine frogs. Three jump away. How many are left?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordprob-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "Five girls and five boys play. How many children in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Five girls and five boys play. How many children in all?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordprob-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap it."
+      },
+      "listenTarget": {
+        "text": "Eleven balloons. Two pop. How many balloons are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Eleven balloons. Two pop. How many balloons are left?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordprob-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the whole story first."
+      },
+      "listenTarget": {
+        "text": "Lily reads three books on Monday and four on Tuesday. How many books?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Lily reads three books on Monday and four on Tuesday. How many books?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordprob-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "Eight bees. Five fly to a flower. How many are not on the flower?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Eight bees. Five fly to a flower. How many are not on the flower?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordprob-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the story, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Ann has six stars. Ben has two. How many more does Ann have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Ann has six stars. Ben has two. How many more does Ann have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-wordprob-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} tells a maths story. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Ten ants. Four go in. Two come out. How many are outside?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Ten ants. Four go in. Two come out. How many are outside?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Add story or take-away story? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "3 more come"
+        },
+        {
+          "id": "b0",
+          "text": "2 fly away"
+        },
+        {
+          "id": "a1",
+          "text": "in all"
+        },
+        {
+          "id": "b1",
+          "text": "how many left"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Add",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Take away",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Do the things get more or fewer?"],
+      "explanation": "3 more come, in all go in \"Add\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the story words."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "join"
+        },
+        {
+          "id": "b0",
+          "text": "eat"
+        },
+        {
+          "id": "a1",
+          "text": "altogether"
+        },
+        {
+          "id": "b1",
+          "text": "give away"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Add",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Take away",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Do the things get more or fewer?"],
+      "explanation": "join, altogether go in \"Add\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sam has 5 balls, gets 3 more. Drag the sign."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "+"
+        },
+        {
+          "id": "c1",
+          "text": "-",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "sign",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Gets more means add."],
+      "explanation": "5 + 3 = 8.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "9 pens, 4 given away. Drag the sign."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "-"
+        },
+        {
+          "id": "c1",
+          "text": "+",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "sign",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Given away means take away."],
+      "explanation": "9 - 4 = 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the question part of the story."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "How many now?"
+        },
+        {
+          "id": "c1",
+          "text": "Sam has 5 balls."
+        },
+        {
+          "id": "c2",
+          "text": "He gets 3 more."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "question",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["It ends with a question mark."],
+      "explanation": "The question is: How many now?",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the numbers from: 7 birds, 2 fly away."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "7"
+        },
+        {
+          "id": "c1",
+          "text": "2"
+        },
+        {
+          "id": "c2",
+          "text": "9",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first number",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "second number",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Find the numbers in the story."],
+      "explanation": "The numbers are 7 and 2.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-wordprob-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Sam has five balls.",
+        "words": ["Sam", "has", "five", "balls"]
+      },
+      "answerKey": {
+        "words": ["Sam", "has", "five", "balls"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Sam has five balls.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "He gets three more.",
+        "words": ["He", "gets", "three", "more"]
+      },
+      "answerKey": {
+        "words": ["He", "gets", "three", "more"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"He gets three more.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "How many does he have now?",
+        "words": ["How", "many", "does", "he", "have", "now"]
+      },
+      "answerKey": {
+        "words": ["How", "many", "does", "he", "have", "now"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"How many does he have now?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Read the question twice.",
+        "words": ["Read", "the", "question", "twice"]
+      },
+      "answerKey": {
+        "words": ["Read", "the", "question", "twice"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Read the question twice.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write a story for 4 + 3. Draw it."
+      },
+      "rubric": {
+        "criteria": ["Câu chuyện có số 4 và 3", "Có tranh đúng"],
+        "sampleAnswers": ["4 cats, 3 more come"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 4 cats, 3 more come",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Solve: 9 fish, 5 swim away. Write the fact."
+      },
+      "rubric": {
+        "criteria": ["Viết đúng phép trừ", "Kết quả 4"],
+        "sampleAnswers": ["9 - 5 = 4"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 9 - 5 = 4",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordprob-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.READ_WORD_PROBLEM_EN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Circle the question in a story your parent reads."
+      },
+      "rubric": {
+        "criteria": ["Tìm đúng câu hỏi", "Viết lại câu hỏi"],
+        "sampleAnswers": ["How many are left?"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: How many are left?",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP1 (making sense of word problems) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

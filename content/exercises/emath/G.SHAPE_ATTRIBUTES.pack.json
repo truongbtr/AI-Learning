@@ -1,0 +1,1305 @@
+{
+  "skillCode": "EMATH.G.SHAPE_ATTRIBUTES",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Đặc điểm xác định hình (số cạnh, số góc, khép kín) khác đặc điểm không xác định (màu, hướng, to nhỏ). Câu 'hình to và hình nhỏ có mấy cạnh' nhắm lỗi 'hình xoay/đổi cỡ là hình khác'.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-shapeattr-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "A big triangle and a tiny triangle. How many sides each?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Size does not change the sides."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-shapeattr-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "A red square and a blue square. How many corners each?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Colour does not change the corners."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-shapeattr-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "I have 3 sides and 3 corners. How many sides?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read the clue again."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-shapeattr-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "A rectangle has how many sides?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trace each side."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-shapeattr-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many corners does a circle have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A circle is round all the way."],
+      "explanation": "The answer is: 0",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-shapeattr-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many sides does a hexagon have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count around the shape."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A square is turned on its corner. How many sides?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Turning does not change the sides."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Two squares side by side. How many corners in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Each square has 4 corners."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A triangle and a rectangle. How many sides in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["3 sides and 4 sides."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Three triangles. How many corners in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["3 + 3 + 3."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "A hexagon and a triangle. How many sides in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["6 sides and 3 sides."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "I have 4 equal sides. How many corners do I have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Every side meets another at a corner."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many sides do 2 rectangles have in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["4 + 4."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-shapeattr-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "How many sides does a big blue triangle have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"How many sides does a big blue triangle have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-shapeattr-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} gives a clue. Tap the number!"
+      },
+      "listenTarget": {
+        "text": "How many corners does a tiny square have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"How many corners does a tiny square have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "How many corners does a rectangle have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"How many corners does a rectangle have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap it."
+      },
+      "listenTarget": {
+        "text": "How many sides does a hexagon have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"How many sides does a hexagon have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "How many corners do two triangles have in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"How many corners do two triangles have in all?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Picture the shape, then tap."
+      },
+      "listenTarget": {
+        "text": "How many sides do a square and a hexagon have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"How many sides do a square and a hexagon have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "How many corners does a circle have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"How many corners does a circle have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapeattr-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} gives a clue. Tap the number!"
+      },
+      "listenTarget": {
+        "text": "How many sides do three squares have in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"How many sides do three squares have in all?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Does it tell the shape? Sort the clues."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "3 sides"
+        },
+        {
+          "id": "b0",
+          "text": "red"
+        },
+        {
+          "id": "a1",
+          "text": "4 corners"
+        },
+        {
+          "id": "b1",
+          "text": "big"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Tells the shape",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Does not",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Colour and size do not make a shape."],
+      "explanation": "3 sides, 4 corners go in \"Tells the shape\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the shapes by number of sides."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "triangle"
+        },
+        {
+          "id": "b0",
+          "text": "square"
+        },
+        {
+          "id": "a1",
+          "text": "turned triangle"
+        },
+        {
+          "id": "b1",
+          "text": "rectangle"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "3 sides",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "4 sides",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Count the sides."],
+      "explanation": "triangle, turned triangle go in \"3 sides\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Round or has corners? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "oval"
+        },
+        {
+          "id": "b1",
+          "text": "triangle"
+        },
+        {
+          "id": "a0",
+          "text": "circle"
+        },
+        {
+          "id": "b0",
+          "text": "hexagon"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "No corners",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "Has corners",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Corners are pointy."],
+      "explanation": "circle, oval go in \"No corners\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each corner card as you count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "📐",
+          "labelEn": "corners",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 4 corners.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each side card. How many sides?"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "📏",
+          "labelEn": "sides",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "line"
+      },
+      "answerKey": 6,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 6 sides.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many triangles? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelEn": "triangles",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 5 triangles.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many squares? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelEn": "squares",
+          "repeat": 3
+        },
+        "correctCount": 3,
+        "layout": "line"
+      },
+      "answerKey": 3,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 3 squares.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-shapeattr-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "A triangle has three sides and three corners.",
+        "words": ["A", "triangle", "has", "three", "sides", "and", "three", "corners"]
+      },
+      "answerKey": {
+        "words": ["A", "triangle", "has", "three", "sides", "and", "three", "corners"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A triangle has three sides and three corners.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Colour does not change a shape.",
+        "words": ["Colour", "does", "not", "change", "a", "shape"]
+      },
+      "answerKey": {
+        "words": ["Colour", "does", "not", "change", "a", "shape"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Colour does not change a shape.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "A circle has no corners.",
+        "words": ["A", "circle", "has", "no", "corners"]
+      },
+      "answerKey": {
+        "words": ["A", "circle", "has", "no", "corners"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"A circle has no corners.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "A square has four equal sides.",
+        "words": ["A", "square", "has", "four", "equal", "sides"]
+      },
+      "answerKey": {
+        "words": ["A", "square", "has", "four", "equal", "sides"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"A square has four equal sides.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a big and a small triangle. Write their sides."
+      },
+      "rubric": {
+        "criteria": ["Hai tam giác to nhỏ khác nhau", "Ghi 3 cạnh cho cả hai"],
+        "sampleAnswers": ["3 and 3"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 3 and 3",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a shape with 4 corners. Name it."
+      },
+      "rubric": {
+        "criteria": ["Hình có 4 góc", "Ghi tên đúng"],
+        "sampleAnswers": ["square"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: square",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapeattr-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a closed shape and an open shape."
+      },
+      "rubric": {
+        "criteria": ["Có một hình khép kín", "Có một hình hở"],
+        "sampleAnswers": ["closed square, open line"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: closed square, open line",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.1 (defining attributes) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

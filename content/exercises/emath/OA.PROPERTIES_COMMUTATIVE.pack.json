@@ -1,0 +1,1345 @@
+{
+  "skillCode": "EMATH.OA.PROPERTIES_COMMUTATIVE",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Đổi chỗ các số hạng thì tổng không đổi; cộng theo thứ tự thuận (2 + 8 + 5 = 10 + 5). Ô nhiễu: tưởng đổi chỗ là đổi kết quả (dem_thua_1/dem_thieu_1), áp giao hoán cho phép trừ ('7 - 4' làm ô 'giống 4 + 7', nham_cong_tru).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-commute-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 2 = 8. What is 2 + 6?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Same numbers, same total."],
+      "explanation": "2 + 6 = 8, the same as 6 + 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-commute-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "3 + 5 = 8. What is 5 + 3?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Same numbers, same total."],
+      "explanation": "5 + 3 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-commute-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "4 + 7 = 11. What is 7 + 4?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Same numbers, same total."],
+      "explanation": "7 + 4 = 11.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-commute-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "9 + 1 = 10. What is 1 + 9?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Same numbers, same total."],
+      "explanation": "1 + 9 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-commute-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "2 + 8 + 5 = ?  Add 2 + 8 first."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["2 + 8 makes 10."],
+      "explanation": "10 + 5 = 15.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-commute-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "7 + 3 + 4 = ?  Make 10 first."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["7 + 3 makes 10."],
+      "explanation": "10 + 4 = 14.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-commute-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 5 + 4 = ?  Make 10 first."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["6 + 4 makes 10."],
+      "explanation": "10 + 5 = 15.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-commute-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "1 + 6 + 9 = ?  Make 10 first."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["1 + 9 makes 10."],
+      "explanation": "10 + 6 = 16.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-commute-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which is the same as 4 + 7?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7 - 4",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "4 + 8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7 + 4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Swap the numbers, keep the plus."],
+      "explanation": "The answer is: 7 + 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-commute-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which is the same as 5 + 9?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 + 5"
+        },
+        {
+          "id": "b",
+          "text": "9 - 5",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "5 + 8",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Swap the numbers, keep the plus."],
+      "explanation": "The answer is: 9 + 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-commute-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which is the same as 3 + 8?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8 - 3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "8 + 3"
+        },
+        {
+          "id": "c",
+          "text": "3 + 9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Swap the numbers, keep the plus."],
+      "explanation": "The answer is: 8 + 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-commute-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which is the same as 6 + 2?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 - 2",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "2 + 5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2 + 6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Swap the numbers, keep the plus."],
+      "explanation": "The answer is: 2 + 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-commute-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which is the same as 1 + 5?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5 + 1"
+        },
+        {
+          "id": "b",
+          "text": "5 - 1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "1 + 6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Swap the numbers, keep the plus."],
+      "explanation": "The answer is: 5 + 1",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-commute-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "8 + 0 = 8. What is 0 + 8?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Same numbers, same total."],
+      "explanation": "0 + 8 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-commute-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Five plus two is seven. What is two plus five?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Five plus two is seven. What is two plus five?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-commute-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} swaps the numbers. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Four plus six is ten. What is six plus four?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Four plus six is ten. What is six plus four?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-commute-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "Three plus nine is twelve. What is nine plus three?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Three plus nine is twelve. What is nine plus three?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-commute-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What is the total? Tap it."
+      },
+      "listenTarget": {
+        "text": "Eight plus seven is fifteen. What is seven plus eight?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Eight plus seven is fifteen. What is seven plus eight?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-commute-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "one plus four plus nine"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"one plus four plus nine\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-commute-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Same numbers, same total. Tap it."
+      },
+      "listenTarget": {
+        "text": "five plus three plus five"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"five plus three plus five\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-commute-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "two plus seven plus eight"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"two plus seven plus eight\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-commute-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} swaps the numbers. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "six plus six plus four"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"six plus six plus four\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Same total as 6 + 3? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "3 + 6"
+        },
+        {
+          "id": "b0",
+          "text": "6 - 3"
+        },
+        {
+          "id": "a1",
+          "text": "4 + 5"
+        },
+        {
+          "id": "b1",
+          "text": "6 + 4"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Same total",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Different",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Work out each total."],
+      "explanation": "3 + 6, 4 + 5 go in \"Same total\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Same total as 2 + 7? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "7 + 2"
+        },
+        {
+          "id": "b0",
+          "text": "7 - 2"
+        },
+        {
+          "id": "a1",
+          "text": "5 + 4"
+        },
+        {
+          "id": "b1",
+          "text": "2 + 8"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Same total",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Different",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Work out each total."],
+      "explanation": "7 + 2, 5 + 4 go in \"Same total\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the card that equals 3 + 5."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "5 + 3"
+        },
+        {
+          "id": "c1",
+          "text": "5 - 3"
+        },
+        {
+          "id": "c2",
+          "text": "3 + 6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "3 + 5",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Swap the numbers, keep the plus."],
+      "explanation": "5 + 3 = 3 + 5 = 8.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the card that equals 8 + 1."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "1 + 8"
+        },
+        {
+          "id": "c1",
+          "text": "8 - 1"
+        },
+        {
+          "id": "c2",
+          "text": "1 + 7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "8 + 1",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Swap the numbers, keep the plus."],
+      "explanation": "1 + 8 = 8 + 1 = 9.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the pair that makes 10 first: 4 + 3 + 6."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "4 + 6"
+        },
+        {
+          "id": "c1",
+          "text": "4 + 3"
+        },
+        {
+          "id": "c2",
+          "text": "3 + 6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "make 10",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Which two numbers make 10?"],
+      "explanation": "4 + 6 = 10, then 10 + 3 = 13.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the pair that makes 10 first: 5 + 2 + 5."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "5 + 5"
+        },
+        {
+          "id": "c1",
+          "text": "5 + 2"
+        },
+        {
+          "id": "c2",
+          "text": "2 + 5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "make 10",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Which two numbers make 10?"],
+      "explanation": "5 + 5 = 10, then 10 + 2 = 12.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-commute-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Six plus two is two plus six.",
+        "words": ["Six", "plus", "two", "is", "two", "plus", "six"]
+      },
+      "answerKey": {
+        "words": ["Six", "plus", "two", "is", "two", "plus", "six"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Six plus two is two plus six.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Swap the numbers, the total stays the same.",
+        "words": ["Swap", "the", "numbers", "the", "total", "stays", "the", "same"]
+      },
+      "answerKey": {
+        "words": ["Swap", "the", "numbers", "the", "total", "stays", "the", "same"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Swap the numbers, the total stays the same.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Make ten first.",
+        "words": ["Make", "ten", "first"]
+      },
+      "answerKey": {
+        "words": ["Make", "ten", "first"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Make ten first.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Two plus eight plus five is fifteen.",
+        "words": ["Two", "plus", "eight", "plus", "five", "is", "fifteen"]
+      },
+      "answerKey": {
+        "words": ["Two", "plus", "eight", "plus", "five", "is", "fifteen"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Two plus eight plus five is fifteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write 3 + 4 = 7 the other way round."
+      },
+      "rubric": {
+        "criteria": ["Đổi chỗ đúng hai số", "Tổng vẫn là 7"],
+        "sampleAnswers": ["4 + 3 = 7"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 4 + 3 = 7",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Solve 7 + 5 + 3 by making 10 first. Show steps."
+      },
+      "rubric": {
+        "criteria": ["Có bước tạo 10", "Kết quả 15"],
+        "sampleAnswers": ["7 + 3 = 10, 10 + 5 = 15"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 7 + 3 = 10, 10 + 5 = 15",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-commute-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.PROPERTIES_COMMUTATIVE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw 2 red and 5 blue dots. Write two facts."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đúng số chấm", "Hai phép cộng đổi chỗ"],
+        "sampleAnswers": ["2 + 5 = 7, 5 + 2 = 7"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 2 + 5 = 7, 5 + 2 = 7",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.B.3 (properties of operations) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

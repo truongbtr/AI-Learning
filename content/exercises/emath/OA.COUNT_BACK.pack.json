@@ -1,0 +1,1347 @@
+{
+  "skillCode": "EMATH.OA.COUNT_BACK",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Đếm lùi để trừ. Ô 'dừng muộn một' mang dem_thua_1 — lỗi đếm cả số bắt đầu (10, 9 cho 10 − 2); ô dừng quá một bước mang dem_thieu_1.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-countback-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Start at 10, count back 2. Where do you stop?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say 10 in your head, then count 2 down on your fingers."],
+      "explanation": "10… 9, 8. The answer is 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-countback-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "7 - 3 = ?  Count back from 7."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say 7 in your head, then count 3 down on your fingers."],
+      "explanation": "7… 6, 5, 4. The answer is 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-countback-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count back 3 from 12. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say 12 in your head, then count 3 down on your fingers."],
+      "explanation": "12… 11, 10, 9. The answer is 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-countback-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Start at 9, count back 4. Where do you stop?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say 9 in your head, then count 4 down on your fingers."],
+      "explanation": "9… 8, 7, 6, 5. The answer is 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-countback-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "15 - 2 = ?  Count back from 15."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say 15 in your head, then count 2 down on your fingers."],
+      "explanation": "15… 14, 13. The answer is 13.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-countback-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count back 3 from 11. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say 11 in your head, then count 3 down on your fingers."],
+      "explanation": "11… 10, 9, 8. The answer is 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Start at 8, count back 5. Where do you stop?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say 8 in your head, then count 5 down on your fingers."],
+      "explanation": "8… 7, 6, 5, 4, 3. The answer is 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "14 - 4 = ?  Count back from 14."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say 14 in your head, then count 4 down on your fingers."],
+      "explanation": "14… 13, 12, 11, 10. The answer is 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Count back 2 from 6. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say 6 in your head, then count 2 down on your fingers."],
+      "explanation": "6… 5, 4. The answer is 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Start at 13, count back 5. Where do you stop?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say 13 in your head, then count 5 down on your fingers."],
+      "explanation": "13… 12, 11, 10, 9, 8. The answer is 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "20 - 3 = ?  Count back from 20."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say 20 in your head, then count 3 down on your fingers."],
+      "explanation": "20… 19, 18, 17. The answer is 17.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count back 4 from 16. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say 16 in your head, then count 4 down on your fingers."],
+      "explanation": "16… 15, 14, 13, 12. The answer is 12.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-countback-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap where you stop."
+      },
+      "listenTarget": {
+        "text": "Start at nine. Count back two."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Start at nine. Count back two.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-countback-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says where to start. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Start at ten. Count back three."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Start at ten. Count back three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then count."
+      },
+      "listenTarget": {
+        "text": "Start at eight. Count back four."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Start at eight. Count back four.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Where do you stop? Tap it."
+      },
+      "listenTarget": {
+        "text": "Start at twelve. Count back two."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Start at twelve. Count back two.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "Start at fifteen. Count back three."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Start at fifteen. Count back three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count in your head, then tap."
+      },
+      "listenTarget": {
+        "text": "Start at eleven. Count back four."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Start at eleven. Count back four.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap where you stop."
+      },
+      "listenTarget": {
+        "text": "Start at eighteen. Count back two."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Start at eighteen. Count back two.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-countback-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says where to start. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Start at fourteen. Count back five."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Start at fourteen. Count back five.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count back 2 from 10. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "8"
+        },
+        {
+          "id": "c1",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 10, then 2 jumps."],
+      "explanation": "The answer is 8.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count back 3 from 7. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "4"
+        },
+        {
+          "id": "c1",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 7, then 3 jumps."],
+      "explanation": "The answer is 4.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Count back 3 from 12. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "9"
+        },
+        {
+          "id": "c1",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 12, then 3 jumps."],
+      "explanation": "The answer is 9.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Count back 4 from 9. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "5"
+        },
+        {
+          "id": "c1",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 9, then 4 jumps."],
+      "explanation": "The answer is 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count back 2 from 15. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "13"
+        },
+        {
+          "id": "c1",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 15, then 2 jumps."],
+      "explanation": "The answer is 13.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "9 birds, 2 flew away. Tap the birds left."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelEn": "birds left",
+          "repeat": 7
+        },
+        "correctCount": 7,
+        "layout": "grid"
+      },
+      "answerKey": 7,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 7 birds left.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "8 balloons, 2 popped. Tap the ones left."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelEn": "balloons left",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "line"
+      },
+      "answerKey": 6,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 6 balloons left.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "7 cookies, 2 eaten. Tap the ones left."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍪",
+          "labelEn": "cookies left",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 5 cookies left.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "12 fish, 3 swam away. Tap the ones left."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelEn": "fish left",
+          "repeat": 9
+        },
+        "correctCount": 9,
+        "layout": "line"
+      },
+      "answerKey": 9,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 9 fish left.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-countback-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Start at ten and count back two.",
+        "words": ["Start", "at", "ten", "and", "count", "back", "two"]
+      },
+      "answerKey": {
+        "words": ["Start", "at", "ten", "and", "count", "back", "two"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Start at ten and count back two.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Nine, eight.",
+        "words": ["Nine", "eight"]
+      },
+      "answerKey": {
+        "words": ["Nine", "eight"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Nine, eight.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Twelve minus three is nine.",
+        "words": ["Twelve", "minus", "three", "is", "nine"]
+      },
+      "answerKey": {
+        "words": ["Twelve", "minus", "three", "is", "nine"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Twelve minus three is nine.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Count back to take away.",
+        "words": ["Count", "back", "to", "take", "away"]
+      },
+      "answerKey": {
+        "words": ["Count", "back", "to", "take", "away"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Count back to take away.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Show 12 - 3 by counting back. Write the numbers you say."
+      },
+      "rubric": {
+        "criteria": ["Bắt đầu từ 12, viết 3 số lùi", "Kết quả 9"],
+        "sampleAnswers": ["11, 10, 9"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 11, 10, 9",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a number line. Count back 4 from 10."
+      },
+      "rubric": {
+        "criteria": ["Có tia số", "Bốn bước lùi, dừng ở 6"],
+        "sampleAnswers": ["10 → 6"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 10 → 6",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-countback-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_BACK"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write three facts you can do by counting back."
+      },
+      "rubric": {
+        "criteria": ["Ba phép trừ", "Số trừ nhỏ (1–3)"],
+        "sampleAnswers": ["10 - 2, 9 - 1, 15 - 3"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 10 - 2, 9 - 1, 15 - 3",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting back to subtract) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

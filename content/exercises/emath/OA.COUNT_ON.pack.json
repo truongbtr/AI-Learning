@@ -1,0 +1,1347 @@
+{
+  "skillCode": "EMATH.OA.COUNT_ON",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Đếm tiếp để cộng: bắt đầu từ số lớn, đếm thêm số nhỏ. Ô 'dừng sớm một' mang dem_thieu_1 — chính là lỗi đếm cả số bắt đầu (8, 9, 10 cho 8 + 3).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-counton-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Start at 8, count on 3. Where do you stop?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say 8 in your head, then count 3 up on your fingers."],
+      "explanation": "8… 9, 10, 11. The answer is 11.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-counton-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "5 + 2 = ?  Count on from 5."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say 5 in your head, then count 2 up on your fingers."],
+      "explanation": "5… 6, 7. The answer is 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-counton-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count on 3 from 7. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say 7 in your head, then count 3 up on your fingers."],
+      "explanation": "7… 8, 9, 10. The answer is 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-counton-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Start at 9, count on 2. Where do you stop?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say 9 in your head, then count 2 up on your fingers."],
+      "explanation": "9… 10, 11. The answer is 11.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-counton-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 4 = ?  Count on from 6."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say 6 in your head, then count 4 up on your fingers."],
+      "explanation": "6… 7, 8, 9, 10. The answer is 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-counton-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count on 3 from 4. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say 4 in your head, then count 3 up on your fingers."],
+      "explanation": "4… 5, 6, 7. The answer is 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Start at 10, count on 2. Where do you stop?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say 10 in your head, then count 2 up on your fingers."],
+      "explanation": "10… 11, 12. The answer is 12.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "12 + 3 = ?  Count on from 12."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say 12 in your head, then count 3 up on your fingers."],
+      "explanation": "12… 13, 14, 15. The answer is 15.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Count on 4 from 15. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "20",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "19"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say 15 in your head, then count 4 up on your fingers."],
+      "explanation": "15… 16, 17, 18, 19. The answer is 19.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Start at 11, count on 5. Where do you stop?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say 11 in your head, then count 5 up on your fingers."],
+      "explanation": "11… 12, 13, 14, 15, 16. The answer is 16.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "13 + 2 = ?  Count on from 13."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say 13 in your head, then count 2 up on your fingers."],
+      "explanation": "13… 14, 15. The answer is 15.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count on 5 from 9. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say 9 in your head, then count 5 up on your fingers."],
+      "explanation": "9… 10, 11, 12, 13, 14. The answer is 14.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-counton-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap where you stop."
+      },
+      "listenTarget": {
+        "text": "Start at seven. Count on two."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Start at seven. Count on two.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-counton-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says where to start. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Start at five. Count on three."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Start at five. Count on three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then count."
+      },
+      "listenTarget": {
+        "text": "Start at nine. Count on three."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Start at nine. Count on three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Where do you stop? Tap it."
+      },
+      "listenTarget": {
+        "text": "Start at six. Count on two."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Start at six. Count on two.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "Start at ten. Count on four."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Start at ten. Count on four.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count in your head, then tap."
+      },
+      "listenTarget": {
+        "text": "Start at twelve. Count on two."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Start at twelve. Count on two.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap where you stop."
+      },
+      "listenTarget": {
+        "text": "Start at fourteen. Count on three."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Start at fourteen. Count on three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-counton-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says where to start. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Start at eight. Count on five."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Start at eight. Count on five.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count on 3 from 8. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "11"
+        },
+        {
+          "id": "c1",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 8, then 3 jumps."],
+      "explanation": "The answer is 11.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count on 2 from 5. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "7"
+        },
+        {
+          "id": "c1",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 5, then 2 jumps."],
+      "explanation": "The answer is 7.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Count on 3 from 7. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "10"
+        },
+        {
+          "id": "c1",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 7, then 3 jumps."],
+      "explanation": "The answer is 10.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Count on 2 from 9. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "11"
+        },
+        {
+          "id": "c1",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 9, then 2 jumps."],
+      "explanation": "The answer is 11.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count on 4 from 6. Drag the stop."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "10"
+        },
+        {
+          "id": "c1",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Start at 6, then 4 jumps."],
+      "explanation": "The answer is 10.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count all the dots. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔵",
+          "labelEn": "dots",
+          "repeat": 8
+        },
+        "correctCount": 8,
+        "layout": "grid"
+      },
+      "answerKey": 8,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 8 dots.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count all the beads. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "📿",
+          "labelEn": "beads",
+          "repeat": 11
+        },
+        "correctCount": 11,
+        "layout": "line"
+      },
+      "answerKey": 11,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 11 beads.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count every apple. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "apples",
+          "repeat": 9
+        },
+        "correctCount": 9,
+        "layout": "grid"
+      },
+      "answerKey": 9,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 9 apples.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many stars in all? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "stars",
+          "repeat": 12
+        },
+        "correctCount": 12,
+        "layout": "line"
+      },
+      "answerKey": 12,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 12 stars.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-counton-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Start at eight and count on three.",
+        "words": ["Start", "at", "eight", "and", "count", "on", "three"]
+      },
+      "answerKey": {
+        "words": ["Start", "at", "eight", "and", "count", "on", "three"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Start at eight and count on three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Nine, ten, eleven.",
+        "words": ["Nine", "ten", "eleven"]
+      },
+      "answerKey": {
+        "words": ["Nine", "ten", "eleven"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Nine, ten, eleven.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Start with the bigger number.",
+        "words": ["Start", "with", "the", "bigger", "number"]
+      },
+      "answerKey": {
+        "words": ["Start", "with", "the", "bigger", "number"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Start with the bigger number.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Seven plus three is ten.",
+        "words": ["Seven", "plus", "three", "is", "ten"]
+      },
+      "answerKey": {
+        "words": ["Seven", "plus", "three", "is", "ten"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Seven plus three is ten.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Show 8 + 3 by counting on. Write the numbers you say."
+      },
+      "rubric": {
+        "criteria": ["Bắt đầu từ 8, viết 3 số tiếp theo", "Kết quả 11"],
+        "sampleAnswers": ["9, 10, 11"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 9, 10, 11",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a number line. Count on 4 from 6."
+      },
+      "rubric": {
+        "criteria": ["Có tia số", "Bốn bước nhảy, dừng ở 10"],
+        "sampleAnswers": ["6 → 10"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 6 → 10",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-counton-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write three facts you can do by counting on."
+      },
+      "rubric": {
+        "criteria": ["Ba phép cộng", "Số thêm vào nhỏ (1–3)"],
+        "sampleAnswers": ["9 + 2, 7 + 3, 12 + 1"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 9 + 2, 7 + 3, 12 + 1",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.5 (counting on to add) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

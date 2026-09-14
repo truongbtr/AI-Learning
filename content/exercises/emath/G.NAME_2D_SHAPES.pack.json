@@ -1,0 +1,1448 @@
+{
+  "skillCode": "EMATH.G.NAME_2D_SHAPES",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Gọi tên circle, square, triangle, rectangle, hexagon. Nhận dạng bằng kéo thẻ tranh (thẻ không in tên) vào ô tên hình; trắc nghiệm đếm số hình, số cạnh. Không có trapezoid: emoji không vẽ được, sẽ bổ sung khi có tranh.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-shapename-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many triangles?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔺",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Touch each triangle as you count."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-shapename-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many circles?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔴",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Touch each circle as you count."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-shapename-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many squares?",
+        "image": {
+          "kind": "emoji",
+          "value": "🟦",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Touch each square as you count."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-shapename-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many hexagons?",
+        "image": {
+          "kind": "emoji",
+          "value": "⬢",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Touch each hexagon as you count."],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-shapename-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many rectangles?",
+        "image": {
+          "kind": "emoji",
+          "value": "▬",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Touch each rectangle as you count."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-shapename-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many sides does a triangle have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tri means three."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many sides does a square have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trace each side with your finger."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many sides does a hexagon have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Hex means six."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many corners does a rectangle have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Touch each corner."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many corners does a hexagon have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Touch each corner."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many triangles?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔺",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count in a line, one by one."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "A triangle is turned upside down. How many sides now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Turning a shape does not change its sides."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-shapename-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "How many sides does a triangle have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"How many sides does a triangle have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-shapename-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} asks about a shape. Tap it!"
+      },
+      "listenTarget": {
+        "text": "How many corners does a square have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"How many corners does a square have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "How many sides does a rectangle have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"How many sides does a rectangle have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap the number."
+      },
+      "listenTarget": {
+        "text": "How many corners does a triangle have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"How many corners does a triangle have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "How many sides does a hexagon have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"How many sides does a hexagon have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Think of the shape, then tap."
+      },
+      "listenTarget": {
+        "text": "How many corners does a hexagon have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"How many corners does a hexagon have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Two triangles. How many sides in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Two triangles. How many sides in all?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-shapename-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} asks about a shape. Tap it!"
+      },
+      "listenTarget": {
+        "text": "A square and a triangle. How many corners in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"A square and a triangle. How many corners in all?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the triangle to its name."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "triangle",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["A triangle has 3 sides."],
+      "explanation": "🔺 is a triangle.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the circle to its name."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "⬢"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "circle",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"]
+      },
+      "hints": ["A circle is round, with no corners."],
+      "explanation": "🔴 is a circle.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Match each shape to its name."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "▬"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "square",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "rectangle",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["A square has 4 equal sides."],
+      "explanation": "🟦 is a square and ▬ is a rectangle.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Match each shape to its name."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "⬢"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "hexagon",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "triangle",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Count the sides."],
+      "explanation": "⬢ has 6 sides, 🔺 has 3.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the hexagon to its name."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "⭐"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "⬢"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "hexagon",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"]
+      },
+      "hints": ["A hexagon has 6 sides."],
+      "explanation": "⬢ is a hexagon.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Match each shape to its name."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "circle",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "square",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "triangle",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Round, 4 equal sides, 3 sides."],
+      "explanation": "🔴 circle, 🟦 square, 🔺 triangle.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many triangles? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelEn": "triangles",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 5 triangles.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count the circles. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔴",
+          "labelEn": "circles",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "line"
+      },
+      "answerKey": 6,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 6 circles.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many squares? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelEn": "squares",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 4 squares.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Count the hexagons. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⬢",
+          "labelEn": "hexagons",
+          "repeat": 3
+        },
+        "correctCount": 3,
+        "layout": "line"
+      },
+      "answerKey": 3,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 3 hexagons.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-shapename-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "A triangle has three sides.",
+        "words": ["A", "triangle", "has", "three", "sides"]
+      },
+      "answerKey": {
+        "words": ["A", "triangle", "has", "three", "sides"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A triangle has three sides.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "A square has four equal sides.",
+        "words": ["A", "square", "has", "four", "equal", "sides"]
+      },
+      "answerKey": {
+        "words": ["A", "square", "has", "four", "equal", "sides"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"A square has four equal sides.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "A hexagon has six sides.",
+        "words": ["A", "hexagon", "has", "six", "sides"]
+      },
+      "answerKey": {
+        "words": ["A", "hexagon", "has", "six", "sides"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"A hexagon has six sides.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a triangle, a square and a circle. Label them."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đúng ba hình", "Ghi đúng tên dưới mỗi hình"],
+        "sampleAnswers": ["triangle, square, circle"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: triangle, square, circle",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Find a rectangle at home. Draw it."
+      },
+      "rubric": {
+        "criteria": ["Vẽ vật có dạng hình chữ nhật", "Có ghi tên vật"],
+        "sampleAnswers": ["a door"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: a door",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-shapename-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_2D_SHAPES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a hexagon. Count and write its sides."
+      },
+      "rubric": {
+        "criteria": ["Hình có 6 cạnh", "Viết số 6"],
+        "sampleAnswers": ["6"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 6",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (naming shapes) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

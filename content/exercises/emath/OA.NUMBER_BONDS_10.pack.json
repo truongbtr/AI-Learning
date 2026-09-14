@@ -1,0 +1,1461 @@
+{
+  "skillCode": "EMATH.OA.NUMBER_BONDS_10",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Tách số đến 10 (part-part-whole). Ô nhiễu: chép lại phần đã cho (lap_lai_tong — lỗi 'nhầm phần và tổng') và hụt/dư một. Câu 'cặp nào làm thành 10' đặt cặp hụt một (6 and 3) làm ô nhiễu.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-bonds-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "10 is 6 and ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "6 and 4 make 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-bonds-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "3 and ? make 10."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "3 and 7 make 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-bonds-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Split 7: 4 and how many?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "4 and 3 make 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-bonds-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "8 is 5 and ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "5 and 3 make 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-bonds-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "2 and ? make 9."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "2 and 7 make 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-bonds-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Split 6: 1 and how many?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "1 and 5 make 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-bonds-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "10 is 8 and ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "8 and 2 make 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "3 and ? make 5."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "3 and 2 make 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-bonds-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Split 9: 6 and how many?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "6 and 3 make 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "8 is 2 and ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "2 and 6 make 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "5 and ? make 10."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "5 and 5 make 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-bonds-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Split 7: 7 and how many?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Hold up the part you know, count on to the whole."],
+      "explanation": "7 and 0 make 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which pair makes 10?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 and 4"
+        },
+        {
+          "id": "b",
+          "text": "6 and 3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6 and 5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on from 6 to 10."],
+      "explanation": "The answer is: 6 and 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which pair makes 8?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5 and 2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5 and 3"
+        },
+        {
+          "id": "c",
+          "text": "5 and 4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on from 5 to 8."],
+      "explanation": "The answer is: 5 and 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which pair makes 9?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7 and 1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7 and 3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7 and 2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from 7 to 9."],
+      "explanation": "The answer is: 7 and 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-bonds-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the missing part."
+      },
+      "listenTarget": {
+        "text": "seven and how many make ten?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"seven and how many make ten?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-bonds-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a number bond. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "three and how many make eight?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"three and how many make eight?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "four and how many make nine?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"four and how many make nine?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What is the missing part? Tap it."
+      },
+      "listenTarget": {
+        "text": "two and how many make six?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"two and how many make six?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "one and how many make ten?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"one and how many make ten?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the number that completes it."
+      },
+      "listenTarget": {
+        "text": "five and how many make seven?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"five and how many make seven?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the missing part."
+      },
+      "listenTarget": {
+        "text": "four and how many make five?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"four and how many make five?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-bonds-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a number bond. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "nine and how many make ten?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"nine and how many make ten?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "10 is 6 and ?  Drag the part."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "4"
+        },
+        {
+          "id": "c1",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Count on from 6 to 10."],
+      "explanation": "The answer is 4.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "7 is 3 and ?  Drag the part."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "4"
+        },
+        {
+          "id": "c1",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Count on from 3 to 7."],
+      "explanation": "The answer is 4.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "9 is 5 and ?  Drag the part."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "4"
+        },
+        {
+          "id": "c1",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Count on from 5 to 9."],
+      "explanation": "The answer is 4.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "8 is 6 and ?  Drag the part."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "2"
+        },
+        {
+          "id": "c1",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Count on from 6 to 8."],
+      "explanation": "The answer is 2.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "10 is 2 and ?  Drag the part."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "8"
+        },
+        {
+          "id": "c1",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Count on from 2 to 10."],
+      "explanation": "The answer is 8.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "6 is 3 and ?  Drag the part."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "3"
+        },
+        {
+          "id": "c1",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Double 3 is 6."],
+      "explanation": "The answer is 3.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count all the dots. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔵",
+          "labelEn": "dots",
+          "repeat": 7
+        },
+        "correctCount": 7,
+        "layout": "grid"
+      },
+      "answerKey": 7,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 7 dots.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many stars in all? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "stars",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "line"
+      },
+      "answerKey": 10,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 10 stars.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count the apples. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "apples",
+          "repeat": 8
+        },
+        "correctCount": 8,
+        "layout": "grid"
+      },
+      "answerKey": 8,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 8 apples.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-bonds-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Six and four make ten.",
+        "words": ["Six", "and", "four", "make", "ten"]
+      },
+      "answerKey": {
+        "words": ["Six", "and", "four", "make", "ten"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Six and four make ten.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Ten is three and seven.",
+        "words": ["Ten", "is", "three", "and", "seven"]
+      },
+      "answerKey": {
+        "words": ["Ten", "is", "three", "and", "seven"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Ten is three and seven.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Eight is five and three.",
+        "words": ["Eight", "is", "five", "and", "three"]
+      },
+      "answerKey": {
+        "words": ["Eight", "is", "five", "and", "three"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Eight is five and three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Nine is two and seven.",
+        "words": ["Nine", "is", "two", "and", "seven"]
+      },
+      "answerKey": {
+        "words": ["Nine", "is", "two", "and", "seven"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Nine is two and seven.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0037",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write two ways to make 10."
+      },
+      "rubric": {
+        "criteria": ["Hai cách đều bằng 10", "Viết số rõ ràng"],
+        "sampleAnswers": ["6 + 4, 7 + 3"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 6 + 4, 7 + 3",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0038",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a number bond for 8."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đủ tổng và hai phần", "Hai phần cộng lại đúng 8"],
+        "sampleAnswers": ["8 = 5 and 3"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 8 = 5 and 3",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-bonds-0039",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write all the ways to make 5."
+      },
+      "rubric": {
+        "criteria": ["Có ít nhất 4 cách", "Mọi cách đều bằng 5"],
+        "sampleAnswers": ["0+5, 1+4, 2+3, 3+2, 4+1, 5+0"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 0+5, 1+4, 2+3, 3+2, 4+1, 5+0",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (part-part-whole to 10) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

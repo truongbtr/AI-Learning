@@ -1,0 +1,1353 @@
+{
+  "skillCode": "EMATH.MP.MATH_VOCAB_EN",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Từ toán trong đề: plus, minus, sum, difference, altogether, in all, left, more than, fewer than. Ô nhiễu: làm phép ngược (nham_cong_tru — lỗi 'nhầm more/fewer', 'hiểu left là bên trái'), hụt/dư một, chép lại số trong đề.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-vocab-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is the sum of 3 and 4?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Sum means add."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-vocab-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is 9 minus 2?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Minus means take away."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-vocab-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is 5 more than 3?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["More than means add."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-vocab-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is 2 fewer than 6?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Fewer than means take away."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-vocab-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "8 apples. 3 are eaten. How many are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Left means what is still there."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-vocab-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "4 red and 5 blue cars. How many in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["In all means add them together."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-vocab-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What is the difference between 10 and 4?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Difference means take away."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-vocab-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "6 birds and 6 more come. How many altogether?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Altogether means add."],
+      "explanation": "The answer is: 12",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-vocab-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means add?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "minus",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "left",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "plus"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Plus is +."],
+      "explanation": "The answer is: plus",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-vocab-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means take away?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "minus"
+        },
+        {
+          "id": "b",
+          "text": "sum",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "altogether",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Minus is -."],
+      "explanation": "The answer is: minus",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-vocab-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "'How many are left?' Which sign do you use?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "+",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "-"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Left means some went away."],
+      "explanation": "The answer is: -",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-vocab-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "'How many in all?' Which sign do you use?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "-",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "=",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "+"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["In all means put together."],
+      "explanation": "The answer is: +",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-vocab-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "the sum of two and five"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"the sum of two and five\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-vocab-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a maths question. Tap it!"
+      },
+      "listenTarget": {
+        "text": "eight minus three"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"eight minus three\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-vocab-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "four more than four"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"four more than four\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-vocab-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is the answer? Tap it."
+      },
+      "listenTarget": {
+        "text": "three fewer than ten"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"three fewer than ten\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-vocab-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "six and three altogether"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"six and three altogether\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-vocab-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the maths word, then tap."
+      },
+      "listenTarget": {
+        "text": "the difference between nine and five"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"the difference between nine and five\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-vocab-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Ten children. Four go home. How many are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Ten children. Four go home. How many are left?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-vocab-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a maths question. Tap it!"
+      },
+      "listenTarget": {
+        "text": "Seven cats and two dogs. How many in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Seven cats and two dogs. How many in all?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Add words or take-away words? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "plus"
+        },
+        {
+          "id": "b0",
+          "text": "minus"
+        },
+        {
+          "id": "a1",
+          "text": "sum"
+        },
+        {
+          "id": "b1",
+          "text": "left"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Add",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Take away",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Does the number get bigger or smaller?"],
+      "explanation": "plus, sum go in \"Add\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the maths words."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "in all"
+        },
+        {
+          "id": "b0",
+          "text": "difference"
+        },
+        {
+          "id": "a1",
+          "text": "altogether"
+        },
+        {
+          "id": "b1",
+          "text": "fewer than"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Add",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Take away",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Does the number get bigger or smaller?"],
+      "explanation": "in all, altogether go in \"Add\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each word to its sign."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "plus"
+        },
+        {
+          "id": "c1",
+          "text": "minus"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "+",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "-",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Plus is add."],
+      "explanation": "plus is +, minus is -.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each word to its sign."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "equals"
+        },
+        {
+          "id": "c1",
+          "text": "plus"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "=",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "+",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Equals means the same as."],
+      "explanation": "equals is =, plus is +.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the word that means +."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "altogether"
+        },
+        {
+          "id": "c1",
+          "text": "left"
+        },
+        {
+          "id": "c2",
+          "text": "fewer"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "+",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Which word puts things together?"],
+      "explanation": "Altogether means add.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the word that means -."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "left"
+        },
+        {
+          "id": "c1",
+          "text": "sum"
+        },
+        {
+          "id": "c2",
+          "text": "in all"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "-",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Which word takes things away?"],
+      "explanation": "Left means take away.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Match each word to its sign."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "difference"
+        },
+        {
+          "id": "c1",
+          "text": "sum"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "-",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "+",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Sum is add."],
+      "explanation": "difference is -, sum is +.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-vocab-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Seven minus three equals four.",
+        "words": ["Seven", "minus", "three", "equals", "four"]
+      },
+      "answerKey": {
+        "words": ["Seven", "minus", "three", "equals", "four"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Seven minus three equals four.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Three plus four equals seven.",
+        "words": ["Three", "plus", "four", "equals", "seven"]
+      },
+      "answerKey": {
+        "words": ["Three", "plus", "four", "equals", "seven"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Three plus four equals seven.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "The sum of two and three is five.",
+        "words": ["The", "sum", "of", "two", "and", "three", "is", "five"]
+      },
+      "answerKey": {
+        "words": ["The", "sum", "of", "two", "and", "three", "is", "five"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"The sum of two and three is five.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Six minus two leaves four.",
+        "words": ["Six", "minus", "two", "leaves", "four"]
+      },
+      "answerKey": {
+        "words": ["Six", "minus", "two", "leaves", "four"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Six minus two leaves four.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "How many are left?",
+        "words": ["How", "many", "are", "left"]
+      },
+      "answerKey": {
+        "words": ["How", "many", "are", "left"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"How many are left?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write a plus sentence with the word sum."
+      },
+      "rubric": {
+        "criteria": ["Có từ sum", "Phép tính đúng"],
+        "sampleAnswers": ["The sum of 2 and 3 is 5."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: The sum of 2 and 3 is 5.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw 7 balloons. 2 pop. Write how many are left."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đúng 7 bóng, gạch 2", "Viết 5"],
+        "sampleAnswers": ["5"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 5",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-vocab-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.MATH_VOCAB_EN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write one add word and one take-away word."
+      },
+      "rubric": {
+        "criteria": ["Một từ cộng", "Một từ trừ"],
+        "sampleAnswers": ["plus, minus"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: plus, minus",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP6 (math vocabulary in English) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

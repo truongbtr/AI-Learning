@@ -1,0 +1,1327 @@
+{
+  "skillCode": "EMATH.OA.DOUBLES",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Doubles và doubles + 1. Với near doubles, ô 'chỉ dùng double' (5 + 6 → 10) mang dem_thieu_1 — đúng lỗi 'không cộng thêm 1'; ô chép lại số trong đề mang lap_lai_tong.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-doubles-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Double 4 is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Double means the same number twice."],
+      "explanation": "4 + 4 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-doubles-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "3 + 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on 3 from 3."],
+      "explanation": "3 + 3 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-doubles-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Double 5 is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Five fingers and five fingers."],
+      "explanation": "5 + 5 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-doubles-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "2 + 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Two and two more."],
+      "explanation": "2 + 2 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-doubles-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on 6 from 6."],
+      "explanation": "6 + 6 = 12.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-doubles-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Double 7 is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["7 + 7: count on from 7."],
+      "explanation": "7 + 7 = 14.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "4 + 5 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["4 + 4 is 8. One more is…"],
+      "explanation": "4 + 4 = 8, and 1 more is 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "5 + 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["5 + 5 is 10. One more is…"],
+      "explanation": "5 + 5 = 10, and 1 more is 11.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "3 + 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["3 + 3 is 6. One more is…"],
+      "explanation": "3 + 3 = 6, and 1 more is 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 7 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["6 + 6 is 12. One more is…"],
+      "explanation": "6 + 6 = 12, and 1 more is 13.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "7 + 8 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["7 + 7 is 14. One more is…"],
+      "explanation": "7 + 7 = 14, and 1 more is 15.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Double 8 is?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["8 + 8: count on from 8."],
+      "explanation": "8 + 8 = 16.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-doubles-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "double three"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"double three\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-doubles-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a double. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "double two"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"double two\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "five plus five"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"five plus five\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is the answer? Tap it."
+      },
+      "listenTarget": {
+        "text": "double six"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"double six\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "four plus five"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"four plus five\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the number you need."
+      },
+      "listenTarget": {
+        "text": "double nine"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"double nine\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "six plus seven"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"six plus seven\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-doubles-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a double. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "eight plus nine"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"eight plus nine\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Doubles or not doubles? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "3 + 3"
+        },
+        {
+          "id": "b0",
+          "text": "3 + 4"
+        },
+        {
+          "id": "a1",
+          "text": "5 + 5"
+        },
+        {
+          "id": "b1",
+          "text": "5 + 6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Doubles",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Not doubles",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["A double has the same number twice."],
+      "explanation": "3 + 3, 5 + 5 go in \"Doubles\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Find the doubles. Sort the cards."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "6 + 6"
+        },
+        {
+          "id": "b0",
+          "text": "6 + 7"
+        },
+        {
+          "id": "a1",
+          "text": "2 + 2"
+        },
+        {
+          "id": "b1",
+          "text": "1 + 2"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Doubles",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Not doubles",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["A double has the same number twice."],
+      "explanation": "6 + 6, 2 + 2 go in \"Doubles\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which double helps with 6 + 7? Drag it."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "6 + 6"
+        },
+        {
+          "id": "c1",
+          "text": "7 + 8"
+        },
+        {
+          "id": "c2",
+          "text": "5 + 5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "helper",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Use the smaller number twice."],
+      "explanation": "6 + 6 = 12, then one more is 13.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which double helps with 4 + 5? Drag it."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "4 + 4"
+        },
+        {
+          "id": "c1",
+          "text": "5 + 6"
+        },
+        {
+          "id": "c2",
+          "text": "3 + 3"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "helper",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Use the smaller number twice."],
+      "explanation": "4 + 4 = 8, then one more is 9.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Double 5 = ?  Drag the answer."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "10"
+        },
+        {
+          "id": "c1",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c2",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Five fingers and five fingers."],
+      "explanation": "The answer is 10.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Double 3: count all the dots."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔵",
+          "labelEn": "dots",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 6 dots.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Four pairs of socks. Count them all."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🧦",
+          "labelEn": "socks",
+          "repeat": 8
+        },
+        "correctCount": 8,
+        "layout": "line"
+      },
+      "answerKey": 8,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 8 socks.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Five faces have two eyes each. Count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "👀",
+          "labelEn": "eyes",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 10 eyes.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-doubles-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Double four is eight.",
+        "words": ["Double", "four", "is", "eight"]
+      },
+      "answerKey": {
+        "words": ["Double", "four", "is", "eight"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Double four is eight.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Five plus five is ten.",
+        "words": ["Five", "plus", "five", "is", "ten"]
+      },
+      "answerKey": {
+        "words": ["Five", "plus", "five", "is", "ten"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Five plus five is ten.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Six plus seven is thirteen.",
+        "words": ["Six", "plus", "seven", "is", "thirteen"]
+      },
+      "answerKey": {
+        "words": ["Six", "plus", "seven", "is", "thirteen"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Six plus seven is thirteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Double means twice.",
+        "words": ["Double", "means", "twice"]
+      },
+      "answerKey": {
+        "words": ["Double", "means", "twice"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Double means twice.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write the doubles from 1 + 1 to 5 + 5."
+      },
+      "rubric": {
+        "criteria": ["Đủ 5 phép tính", "Kết quả đúng"],
+        "sampleAnswers": ["1+1=2, 2+2=4, 3+3=6, 4+4=8, 5+5=10"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 1+1=2, 2+2=4, 3+3=6, 4+4=8, 5+5=10",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a double with dots. Write the fact."
+      },
+      "rubric": {
+        "criteria": ["Hai nhóm chấm bằng nhau", "Viết đúng phép tính"],
+        "sampleAnswers": ["3 + 3 = 6"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 3 + 3 = 6",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-doubles-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Use a double to solve 7 + 8. Show your steps."
+      },
+      "rubric": {
+        "criteria": ["Có bước dùng double", "Kết quả 15"],
+        "sampleAnswers": ["7 + 7 = 14, 14 + 1 = 15"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 7 + 7 = 14, 14 + 1 = 15",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

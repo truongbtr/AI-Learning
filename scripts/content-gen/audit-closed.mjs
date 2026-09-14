@@ -102,7 +102,8 @@ for (const sub of readdirSync("content/exercises")) {
 
       // 4. phép tính
       let expect = null;
-      const ar = /(\d+)\s*([+\-−])\s*(\d+)\s*=\s*\?/.exec(p);
+      // Chỉ phép tính hai số: "2 + 8 + 5 = ?" không được đọc thành "8 + 5 = ?".
+      const ar = /(?<![\d+\-−]\s*)(\d+)\s*([+\-−])\s*(\d+)\s*=\s*\?/.exec(p);
       if (ar) expect = ar[2] === "+" ? +ar[1] + +ar[3] : +ar[1] - +ar[3];
       const vm = /(\d+)\s+và\s+mấy\s+(?:thì\s+)?được\s+(\d+)/u.exec(p);
       if (vm) expect = +vm[2] - +vm[1];

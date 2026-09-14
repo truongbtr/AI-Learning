@@ -479,10 +479,12 @@ export function sentencePack(cfg) {
   });
   // Kéo-thả tự do: thẻ (chữ và/hoặc tranh) vào giỏ; thẻ không có trong `key` là thẻ nhiễu nằm lại khay.
   (cfg.places ?? []).forEach((p, i) => {
-    const cards = p.items.map(([t, e], k) => ({
+    // [chữ | null, emoji?, mã lỗi?] — chữ null là thẻ chỉ có tranh (thẻ hình không in tên hình).
+    const cards = p.items.map(([t, e, tag], k) => ({
       id: `c${k}`,
-      text: t,
-      ...(e ? { image: img(e, null, t) } : {}),
+      ...(t ? { text: t } : {}),
+      ...(e ? { image: img(e, null, t ?? null) } : {}),
+      ...(tag ? { errorTag: tag } : {}),
     }));
     add({
       type: "DRAG_DROP",

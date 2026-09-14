@@ -1,0 +1,1360 @@
+{
+  "skillCode": "EMATH.G.COMPOSE_SHAPES",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Ghép hình phẳng thành hình mới (2 tam giác → hình vuông, 6 tam giác → lục giác). Trắc nghiệm đếm số mảnh ghép (dem_thieu_1 là 'đếm thiếu mảnh', dem_thua_1 là 'dùng thừa hình'); kéo-thả chọn mảnh ghép bằng thẻ tranh.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-compose-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many triangles make one square?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Cut a square corner to corner."],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-compose-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many squares make a bigger square, 2 by 2?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Two on top, two below."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-compose-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many triangles make a hexagon?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Pattern blocks: count around the middle."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-compose-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many squares make a long rectangle of 3?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Put them in a row."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-compose-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many half circles make a circle?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Two halves make a whole."],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-compose-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many triangles make two squares?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Each square needs 2."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-compose-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many triangles make two hexagons?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Each hexagon needs 6."],
+      "explanation": "The answer is: 12",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-compose-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "A house: 1 square and 1 triangle. How many shapes?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count the shapes you used."],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-compose-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A rocket: 3 rectangles and 2 triangles. How many shapes?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["3 + 2."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-compose-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A robot: 4 squares and 4 rectangles. How many shapes?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["4 + 4."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-compose-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many small squares make a rectangle of 2 rows of 3?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["3 + 3."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-compose-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many quarter circles make a whole circle?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Four quarters make a whole."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-compose-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Two triangles make one square. How many triangles for one square?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Two triangles make one square. How many triangles for one square?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-compose-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} builds a shape. How many pieces?"
+      },
+      "listenTarget": {
+        "text": "How many squares make a two by two square?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"How many squares make a two by two square?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-compose-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "How many triangles make a hexagon?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"How many triangles make a hexagon?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-compose-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many pieces? Tap it."
+      },
+      "listenTarget": {
+        "text": "A boat is made of one triangle and two rectangles. How many shapes?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"A boat is made of one triangle and two rectangles. How many shapes?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-compose-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "How many halves make a whole circle?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"How many halves make a whole circle?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-compose-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Picture the pieces, then tap."
+      },
+      "listenTarget": {
+        "text": "A flower is made of six circles and one square. How many shapes?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"A flower is made of six circles and one square. How many shapes?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-compose-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "How many triangles make three squares?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"How many triangles make three squares?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-compose-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} builds a shape. How many pieces?"
+      },
+      "listenTarget": {
+        "text": "How many squares make a row of five?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"How many squares make a row of five?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the pieces that make a square."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "◤"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "◢"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "square",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0", "c1"]
+      },
+      "hints": ["Two triangles fit together."],
+      "explanation": "◤ and ◢ make a square.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the shapes for a house: roof and walls."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "roof",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "walls",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["A roof is pointy."],
+      "explanation": "🔺 roof, 🟦 walls.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the shapes for a snowman."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "⚪"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "⚪"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "snowman",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0", "c1"]
+      },
+      "hints": ["A snowman is made of circles."],
+      "explanation": "Two circles make a snowman.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the shape that finishes the hexagon."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "missing piece",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["A hexagon is made of triangles."],
+      "explanation": "The hexagon needs one more triangle.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the shapes for a rocket: body and nose."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "▬"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "body",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "nose",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["The nose is pointy."],
+      "explanation": "▬ body, 🔺 nose.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each triangle in the hexagon."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelEn": "triangles",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 6 triangles.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each small square."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelEn": "squares",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "line"
+      },
+      "answerKey": 4,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 4 squares.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many puzzle pieces? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🧩",
+          "labelEn": "pieces",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 5 pieces.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-compose-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Two triangles make a square.",
+        "words": ["Two", "triangles", "make", "a", "square"]
+      },
+      "answerKey": {
+        "words": ["Two", "triangles", "make", "a", "square"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Two triangles make a square.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Six triangles make a hexagon.",
+        "words": ["Six", "triangles", "make", "a", "hexagon"]
+      },
+      "answerKey": {
+        "words": ["Six", "triangles", "make", "a", "hexagon"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Six triangles make a hexagon.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "I can build a house with shapes.",
+        "words": ["I", "can", "build", "a", "house", "with", "shapes"]
+      },
+      "answerKey": {
+        "words": ["I", "can", "build", "a", "house", "with", "shapes"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"I can build a house with shapes.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a house with a square and a triangle."
+      },
+      "rubric": {
+        "criteria": ["Có hình vuông và tam giác", "Ghép đúng: mái trên, tường dưới"],
+        "sampleAnswers": ["house"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: house",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a robot with shapes. Write how many you used."
+      },
+      "rubric": {
+        "criteria": ["Vẽ được robot bằng hình", "Số hình ghi đúng"],
+        "sampleAnswers": ["8 shapes"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 8 shapes",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Cut a paper square into 2 triangles. Draw it."
+      },
+      "rubric": {
+        "criteria": ["Cắt chéo góc", "Hai tam giác bằng nhau"],
+        "sampleAnswers": ["2 triangles"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 2 triangles",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-compose-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.G.COMPOSE_SHAPES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Build a shape with 4 triangles. Draw it."
+      },
+      "rubric": {
+        "criteria": ["Dùng đúng 4 tam giác", "Hình ghép khép kín"],
+        "sampleAnswers": ["a big triangle"]
+      },
+      "answerKey": null,
+      "hints": ["Check your letters when you finish."],
+      "explanation": "For example: a big triangle",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.G.A.2 (composing shapes) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}
