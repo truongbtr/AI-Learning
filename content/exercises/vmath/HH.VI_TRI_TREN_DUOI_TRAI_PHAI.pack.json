@@ -1,0 +1,1451 @@
+{
+  "skillCode": "VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B15", "KNTT-T1-B16"],
+  "note": "Không có mã lỗi cho 'nhầm trái/phải/trước/sau'. Theo cách EMATH.G.POSITION_WORDS đã làm: MCQ/LISTEN_CHOOSE là bài toán cộng/trừ có bối cảnh vị trí (đáp số thật); gọi đúng vị trí trong tranh đi bằng kéo-thả.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-vitri-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Hàng trước có 3 bạn xem phim, hàng sau có 7 bạn. Có tất cả mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Có tất cả nghĩa là cộng."],
+      "explanation": "3 + 7 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-vitri-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 2 viên gạch ở hàng trên cùng, 3 viên ở hàng giữa. Hai hàng có mấy viên?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Có tất cả nghĩa là cộng."],
+      "explanation": "2 + 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-vitri-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Toa tàu có 4 toa, 2 toa ở trước bị tháo ra. Còn mấy toa?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Còn lại nghĩa là trừ."],
+      "explanation": "4 - 2 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-vitri-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 khối ở bên trái, 3 khối ở bên phải. Có tất cả mấy khối?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Có tất cả nghĩa là cộng."],
+      "explanation": "5 + 3 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-vitri-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 8 con vịt bơi dưới ao, 3 con lên bờ trước. Còn mấy con dưới ao?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Còn lại nghĩa là trừ."],
+      "explanation": "8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-vitri-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Có 6 bạn đứng trước, 4 bạn đứng sau. Có tất cả mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Có tất cả nghĩa là cộng."],
+      "explanation": "6 + 4 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Hàng dưới cùng có 4 viên gạch. Bớt đi 2 viên. Còn mấy viên?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Còn lại nghĩa là trừ."],
+      "explanation": "4 - 2 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 7 bạn ngồi bên trái bàn, 2 bạn rời đi. Còn mấy bạn bên trái?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Còn lại nghĩa là trừ."],
+      "explanation": "7 - 2 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 4 quyển sách xếp trên kệ trên, 5 quyển ở kệ dưới. Có tất cả mấy quyển?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Có tất cả nghĩa là cộng."],
+      "explanation": "4 + 5 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 9 bạn đứng phía trước cửa. 4 bạn đi vào trong. Còn mấy bạn phía trước?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Còn lại nghĩa là trừ."],
+      "explanation": "9 - 4 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Có 3 quả táo bên phải đĩa, 6 quả bên trái đĩa. Có tất cả mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Có tất cả nghĩa là cộng."],
+      "explanation": "3 + 6 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 10 bạn xếp hàng, 6 bạn ở phía sau bước lên trước. Còn mấy bạn ở phía sau?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Còn lại nghĩa là trừ."],
+      "explanation": "10 - 6 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 chậu hoa ở trên bậc thang, 4 chậu ở dưới bậc thang. Có tất cả mấy chậu?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Có tất cả nghĩa là cộng."],
+      "explanation": "5 + 4 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 8 xe ở bên trái sân, 3 xe rời đi. Còn mấy xe bên trái?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Còn lại nghĩa là trừ."],
+      "explanation": "8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Hàng trước có 3 bạn xem phim, hàng sau có 7 bạn. Có tất cả mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "3 + 7 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 2 viên gạch ở hàng trên cùng, 3 viên ở hàng giữa. Hai hàng có mấy viên?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "2 + 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Toa tàu có 4 toa, 2 toa ở trước bị tháo ra. Còn mấy toa?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "4 - 2 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Có 5 khối ở bên trái, 3 khối ở bên phải. Có tất cả mấy khối?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "5 + 3 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 8 con vịt bơi dưới ao, 3 con lên bờ trước. Còn mấy con dưới ao?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "Có 6 bạn đứng trước, 4 bạn đứng sau. Có tất cả mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "6 + 4 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Hàng dưới cùng có 4 viên gạch. Bớt đi 2 viên. Còn mấy viên?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "4 - 2 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 7 bạn ngồi bên trái bàn, 2 bạn rời đi. Còn mấy bạn bên trái?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "7 - 2 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 4 quyển sách xếp trên kệ trên, 5 quyển ở kệ dưới. Có tất cả mấy quyển?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "4 + 5 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Có 9 bạn đứng phía trước cửa. 4 bạn đi vào trong. Còn mấy bạn phía trước?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "9 - 4 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 3 quả táo bên phải đĩa, 6 quả bên trái đĩa. Có tất cả mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "3 + 6 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "Có 10 bạn xếp hàng, 6 bạn ở phía sau bước lên trước. Còn mấy bạn ở phía sau?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "10 - 6 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 5 chậu hoa ở trên bậc thang, 4 chậu ở dưới bậc thang. Có tất cả mấy chậu?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "5 + 4 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-vitri-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 8 xe ở bên trái sân, 3 xe rời đi. Còn mấy xe bên trái?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi tính."],
+      "explanation": "8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-vitri-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi con vật vào đúng vị trí trong hình (thỏ nâu, thỏ khoang, thỏ xám đứng cạnh cà rốt)."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "thỏ nâu"
+        },
+        {
+          "id": "c1",
+          "text": "thỏ khoang"
+        },
+        {
+          "id": "c2",
+          "text": "thỏ xám"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "trước (gần cà rốt nhất)",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "ở giữa",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "sau (xa cà rốt nhất)",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Con nào gần cà rốt nhất đứng trước."],
+      "explanation": "Thỏ nâu trước, thỏ khoang giữa, thỏ xám sau.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-vitri-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi đèn giao thông vào đúng vị trí (trên cùng, giữa, dưới cùng)."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "đèn đỏ"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🟡",
+            "labelVi": "đèn vàng"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🟢",
+            "labelVi": "đèn xanh"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Trên cùng",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "Ở giữa",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "Dưới cùng",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Đèn đỏ luôn ở trên cùng."],
+      "explanation": "Đỏ trên cùng, vàng giữa, xanh dưới cùng.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-vitri-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các hình vào đúng giỏ: bên trái, hay bên phải con thỏ?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "con thỏ (hồng)"
+        },
+        {
+          "id": "b0",
+          "text": "con rùa (mai xanh)"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Bên trái",
+          "accepts": ["a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "Bên phải",
+          "accepts": ["a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0"],
+        "zb": ["b0"]
+      },
+      "hints": ["Thỏ đứng bên trái, rùa đứng bên phải."],
+      "explanation": "con thỏ (hồng) thuộc \"Bên trái\"; con rùa (mai xanh) thuộc \"Bên phải\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-vitri-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số con chim đậu."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim đậu",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có 6 con chim đậu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-vitri-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số con chim bay đi."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim bay đi",
+          "repeat": 2
+        },
+        "correctCount": 2,
+        "layout": "line"
+      },
+      "answerKey": 2,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có 2 con chim bay đi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-vitri-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "thỏ nâu đứng trước thỏ khoang",
+        "words": ["thỏ", "nâu", "đứng", "trước", "thỏ", "khoang"]
+      },
+      "answerKey": {
+        "words": ["thỏ", "nâu", "đứng", "trước", "thỏ", "khoang"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"thỏ nâu đứng trước thỏ khoang\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-vitri-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "đèn đỏ ở trên cùng đèn xanh ở dưới cùng",
+        "words": ["đèn", "đỏ", "ở", "trên", "cùng", "đèn", "xanh", "ở", "dưới", "cùng"]
+      },
+      "answerKey": {
+        "words": ["đèn", "đỏ", "ở", "trên", "cùng", "đèn", "xanh", "ở", "dưới", "cùng"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"đèn đỏ ở trên cùng đèn xanh ở dưới cùng\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-vitri-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ ba đồ vật: một cái ở trên, một cái ở dưới, một cái ở giữa."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["sách trên, dép dưới, hộp bút giữa"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: sách trên, dép dưới, hộp bút giữa.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-vitri-0037",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ hai bạn: một bạn bên trái, một bạn bên phải."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["Mai bên trái, Nam bên phải"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: Mai bên trái, Nam bên phải.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B15",
+        "sourceRef": "SGK Toán 1 tập một, Bài 15 tr.96–99 — Vị trí trên-dưới, trái-phải, trước-sau, ở giữa"
+      }
+    }
+  ]
+}

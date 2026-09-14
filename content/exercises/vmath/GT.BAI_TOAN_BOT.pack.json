@@ -1,0 +1,1340 @@
+{
+  "skillCode": "VMATH.GT.BAI_TOAN_BOT",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B11", "KNTT-T1-B32"],
+  "note": "Bài toán bớt đi (rụng, bay mất, ăn mất): còn lại = bớt bằng phép trừ. Ô nhiễu: nham_cong_tru (cộng thay vì trừ), lap_lai_tong (chép lại số trong đề), hụt/dư một.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-baitoanbot-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Trên cây có 8 quả cam. Rụng 3 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "8 bớt 3."],
+      "explanation": "8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-baitoanbot-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 6 quả bóng bay. Bay mất 2 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "6 bớt 2."],
+      "explanation": "6 - 2 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-baitoanbot-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 9 con gà. Bán đi 4 con. Còn mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "9 bớt 4."],
+      "explanation": "9 - 4 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-baitoanbot-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 7 quyển vở. Cho bạn 2 quyển. Còn mấy quyển?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "7 bớt 2."],
+      "explanation": "7 - 2 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-baitoanbot-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 10 quả trứng. Đã nở 6 quả. Còn mấy quả chưa nở?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "10 bớt 6."],
+      "explanation": "10 - 6 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-baitoanbot-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 con cá. Vớt ra 2 con. Còn mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "5 bớt 2."],
+      "explanation": "5 - 2 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 8 cây nến đang cháy. Tắt mất 5 cây. Còn mấy cây?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "8 bớt 5."],
+      "explanation": "8 - 5 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 9 bông hoa. Cắt đi 3 bông. Còn mấy bông?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "9 bớt 3."],
+      "explanation": "9 - 3 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 6 bạn thỏ. Chạy đi 4 bạn. Còn mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "6 bớt 4."],
+      "explanation": "6 - 4 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 10 con vịt. Bơi đi 7 con. Còn mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "10 bớt 7."],
+      "explanation": "10 - 7 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Có 7 quả bưởi. Rụng 2 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "7 bớt 2."],
+      "explanation": "7 - 2 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 9 chiếc lá. Rụng hết 9 chiếc. Còn mấy chiếc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "9 bớt 9."],
+      "explanation": "9 - 9 = 0.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 8 quả chuối. Ăn mất 3 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "8 bớt 3."],
+      "explanation": "8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 6 chiếc bút. Mất 1 chiếc. Còn mấy chiếc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "6 bớt 1."],
+      "explanation": "6 - 1 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 9 viên bi. Cho bạn 6 viên. Còn mấy viên?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "9 bớt 6."],
+      "explanation": "9 - 6 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Có 7 chiếc lá vàng. Rụng 4 chiếc. Còn mấy chiếc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "7 bớt 4."],
+      "explanation": "7 - 4 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 10 quả bóng. Vỡ mất 4 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "10 bớt 4."],
+      "explanation": "10 - 4 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 con bướm. Bay đi 3 con. Còn mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["'Còn mấy' nghĩa là làm phép trừ.", "5 bớt 3."],
+      "explanation": "5 - 3 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "'Rụng mất, bay mất, bớt đi' là dấu hiệu của phép tính nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "phép trừ"
+        },
+        {
+          "id": "b",
+          "text": "phép cộng",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Bớt đi là mất bớt, dùng phép trừ."],
+      "explanation": "Các từ 'rụng, bay mất, bớt đi' đều là dấu hiệu phép trừ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Trên cây có 8 quả cam. Rụng 3 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi làm phép trừ."],
+      "explanation": "8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 6 quả bóng bay. Bay mất 2 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi làm phép trừ."],
+      "explanation": "6 - 2 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 9 con gà. Bán đi 4 con. Còn mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi làm phép trừ."],
+      "explanation": "9 - 4 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Có 7 quyển vở. Cho bạn 2 quyển. Còn mấy quyển?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi làm phép trừ."],
+      "explanation": "7 - 2 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 10 quả trứng. Đã nở 6 quả. Còn mấy quả chưa nở?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi làm phép trừ."],
+      "explanation": "10 - 6 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "Có 5 con cá. Vớt ra 2 con. Còn mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi làm phép trừ."],
+      "explanation": "5 - 2 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 8 cây nến đang cháy. Tắt mất 5 cây. Còn mấy cây?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi làm phép trừ."],
+      "explanation": "8 - 5 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 9 bông hoa. Cắt đi 3 bông. Còn mấy bông?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi làm phép trừ."],
+      "explanation": "9 - 3 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 6 bạn thỏ. Chạy đi 4 bạn. Còn mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi làm phép trừ."],
+      "explanation": "6 - 4 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nối mỗi tình huống với phép tính đúng."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Trên cây có 8 quả, rụng 3 quả"
+        },
+        {
+          "id": "c1",
+          "text": "Có 6 quả bóng, bay mất 2 quả"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "8 - 3 = 5",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "6 - 2 = 4",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Bớt đi là trừ."],
+      "explanation": "8-3=5 và 6-2=4.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nối mỗi tình huống với phép tính đúng."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Có 9 con gà, bán đi 4 con"
+        },
+        {
+          "id": "c1",
+          "text": "Có 10 quả trứng, đã nở 6 quả"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "9 - 4 = 5",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "10 - 6 = 4",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Bớt đi là trừ."],
+      "explanation": "9-4=5 và 10-6=4.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nối mỗi tình huống với phép tính đúng."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Có 8 quả chuối, ăn mất 3 quả"
+        },
+        {
+          "id": "c1",
+          "text": "Có 10 quả bóng, vỡ mất 4 quả"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "8 - 3 = 5",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "10 - 4 = 6",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Bớt đi là trừ."],
+      "explanation": "8-3=5 và 10-4=6.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-baitoanbot-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "có tám quả cam rụng ba quả còn năm quả",
+        "words": ["có", "tám", "quả", "cam", "rụng", "ba", "quả", "còn", "năm", "quả"]
+      },
+      "answerKey": {
+        "words": ["có", "tám", "quả", "cam", "rụng", "ba", "quả", "còn", "năm", "quả"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"có tám quả cam rụng ba quả còn năm quả\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "có chín con gà bán đi bốn con còn năm con",
+        "words": ["có", "chín", "con", "gà", "bán", "đi", "bốn", "con", "còn", "năm", "con"]
+      },
+      "answerKey": {
+        "words": ["có", "chín", "con", "gà", "bán", "đi", "bốn", "con", "còn", "năm", "con"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"có chín con gà bán đi bốn con còn năm con\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đặt một bài toán bớt rồi viết phép tính."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["Có 7 quả, ăn 2 quả. 7 - 2 = 5"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: Có 7 quả, ăn 2 quả. 7 - 2 = 5.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-baitoanbot-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_BOT"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đặt một bài toán bớt khác rồi viết phép tính."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["Có 9 viên bi, cho 3 viên. 9 - 3 = 6"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: Có 9 viên bi, cho 3 viên. 9 - 3 = 6.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 tr.68–71 — Bớt đi còn lại mấy"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1432 @@
+{
+  "skillCode": "VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B12", "KNTT-T1-B13"],
+  "note": "Từ tình huống ngắn (không tranh) chọn đúng phép tính, không chỉ đúng đáp số. Ô nhiễu: nham_cong_tru (chọn ngược dấu), nham_thu_tu_so (đảo số bị trừ/số trừ), lap_lai_tong.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "id": "vmath-viettinhhuong-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 6 bạn đang chơi. 2 bạn về trước. Còn mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 - 2 = 4"
+        },
+        {
+          "id": "b",
+          "text": "6 + 2 = 8",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2 - 6 = 4",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 6 - 2 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-viettinhhuong-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 4 quả táo. Mẹ mua thêm 3 quả. Có tất cả mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4 + 3 = 7"
+        },
+        {
+          "id": "b",
+          "text": "4 - 3 = 1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "3 - 4 = 1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 4 + 3 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "id": "vmath-viettinhhuong-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 9 chiếc kẹo. Cho em 5 chiếc. Còn mấy chiếc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 - 5 = 4"
+        },
+        {
+          "id": "b",
+          "text": "9 + 5 = 14",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "5 - 9 = 4",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 9 - 5 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-viettinhhuong-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 3 con chó. Có thêm 5 con chó nữa đến. Có tất cả mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3 + 5 = 8"
+        },
+        {
+          "id": "b",
+          "text": "3 - 5 = 2",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "5 - 3 = 2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 3 + 5 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "id": "vmath-viettinhhuong-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 8 bạn trên xe buýt. 3 bạn xuống xe. Còn mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8 - 3 = 5"
+        },
+        {
+          "id": "b",
+          "text": "8 + 3 = 11",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3 - 8 = 5",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-viettinhhuong-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 2 con mèo. Có thêm 6 con mèo nữa. Có tất cả mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2 + 6 = 8"
+        },
+        {
+          "id": "b",
+          "text": "2 - 6 = 4",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "6 - 2 = 4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 2 + 6 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 10 quả bóng. Cho bạn 4 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10 - 4 = 6"
+        },
+        {
+          "id": "b",
+          "text": "10 + 4 = 14",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "4 - 10 = 6",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 10 - 4 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 bạn nữ và 4 bạn nam đang chơi. Có tất cả mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5 + 4 = 9"
+        },
+        {
+          "id": "b",
+          "text": "5 - 4 = 1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "4 - 5 = 1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 5 + 4 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 7 quả cam. Ăn mất 3 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7 - 3 = 4"
+        },
+        {
+          "id": "b",
+          "text": "7 + 3 = 10",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3 - 7 = 4",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 7 - 3 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 4 con chim. Thêm 4 con chim nữa bay đến. Có tất cả mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4 + 4 = 8"
+        },
+        {
+          "id": "b",
+          "text": "4 - 4 = 0",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "4 - 4 = 4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 4 + 4 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 9 quyển sách. Mượn đi 2 quyển. Còn mấy quyển?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 - 2 = 7"
+        },
+        {
+          "id": "b",
+          "text": "9 + 2 = 11",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2 - 9 = 7",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 9 - 2 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 6 bông hoa đỏ và 3 bông hoa vàng. Có tất cả mấy bông?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 + 3 = 9"
+        },
+        {
+          "id": "b",
+          "text": "6 - 3 = 3",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "3 - 6 = 3",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 6 + 3 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 10 bạn. 7 bạn đã về nhà. Còn mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10 - 7 = 3"
+        },
+        {
+          "id": "b",
+          "text": "10 + 7 = 17",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "7 - 10 = 3",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 10 - 7 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 8 chiếc thuyền. Thêm 2 chiếc nữa hạ thuỷ. Có tất cả mấy chiếc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8 + 2 = 10"
+        },
+        {
+          "id": "b",
+          "text": "8 - 2 = 6",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "2 - 8 = 6",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 8 + 2 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 9 quả trứng. Vỡ mất 6 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 - 6 = 3"
+        },
+        {
+          "id": "b",
+          "text": "9 + 6 = 15",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "6 - 9 = 3",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 9 - 6 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 3 bạn nam, thêm 7 bạn nữ đến chơi cùng. Có tất cả mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3 + 7 = 10"
+        },
+        {
+          "id": "b",
+          "text": "3 - 7 = 4",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "7 - 3 = 4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào là cộng, bớt đi là trừ."],
+      "explanation": "Phép tính đúng: 3 + 7 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 6 bạn đang chơi. 2 bạn về trước. Còn mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 - 2 = 4"
+        },
+        {
+          "id": "b",
+          "text": "6 + 2 = 8",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2 - 6 = 4"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 6 - 2 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 4 quả táo. Mẹ mua thêm 3 quả. Có tất cả mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4 + 3 = 7"
+        },
+        {
+          "id": "b",
+          "text": "4 - 3 = 1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "3 - 4 = 1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 4 + 3 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 9 chiếc kẹo. Cho em 5 chiếc. Còn mấy chiếc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 - 5 = 4"
+        },
+        {
+          "id": "b",
+          "text": "9 + 5 = 14",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "5 - 9 = 4"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 9 - 5 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Có 3 con chó. Có thêm 5 con chó nữa đến. Có tất cả mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3 + 5 = 8"
+        },
+        {
+          "id": "b",
+          "text": "3 - 5 = 2",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "5 - 3 = 2"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 3 + 5 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 8 bạn trên xe buýt. 3 bạn xuống xe. Còn mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8 - 3 = 5"
+        },
+        {
+          "id": "b",
+          "text": "8 + 3 = 11",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3 - 8 = 5"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "Có 2 con mèo. Có thêm 6 con mèo nữa. Có tất cả mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2 + 6 = 8"
+        },
+        {
+          "id": "b",
+          "text": "2 - 6 = 4",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "6 - 2 = 4"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 2 + 6 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 10 quả bóng. Cho bạn 4 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10 - 4 = 6"
+        },
+        {
+          "id": "b",
+          "text": "10 + 4 = 14",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "4 - 10 = 6"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 10 - 4 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 5 bạn nữ và 4 bạn nam đang chơi. Có tất cả mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5 + 4 = 9"
+        },
+        {
+          "id": "b",
+          "text": "5 - 4 = 1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "4 - 5 = 1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 5 + 4 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 7 quả cam. Ăn mất 3 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7 - 3 = 4"
+        },
+        {
+          "id": "b",
+          "text": "7 + 3 = 10",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3 - 7 = 4"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 7 - 3 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Có 4 con chim. Thêm 4 con chim nữa bay đến. Có tất cả mấy con?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4 + 4 = 8"
+        },
+        {
+          "id": "b",
+          "text": "4 - 4 = 0",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "4 - 4 = 4"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 4 + 4 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 9 quyển sách. Mượn đi 2 quyển. Còn mấy quyển?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 - 2 = 7"
+        },
+        {
+          "id": "b",
+          "text": "9 + 2 = 11",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2 - 9 = 7"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 9 - 2 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "Có 6 bông hoa đỏ và 3 bông hoa vàng. Có tất cả mấy bông?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 + 3 = 9"
+        },
+        {
+          "id": "b",
+          "text": "6 - 3 = 3",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "3 - 6 = 3"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 6 + 3 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 10 bạn. 7 bạn đã về nhà. Còn mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10 - 7 = 3"
+        },
+        {
+          "id": "b",
+          "text": "10 + 7 = 17",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "7 - 10 = 3"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 10 - 7 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có 8 chiếc thuyền. Thêm 2 chiếc nữa hạ thuỷ. Có tất cả mấy chiếc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8 + 2 = 10"
+        },
+        {
+          "id": "b",
+          "text": "8 - 2 = 6",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "2 - 8 = 6"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 8 + 2 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Có 9 quả trứng. Vỡ mất 6 quả. Còn mấy quả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 - 6 = 3"
+        },
+        {
+          "id": "b",
+          "text": "9 + 6 = 15",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "6 - 9 = 3"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 9 - 6 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Có 3 bạn nam, thêm 7 bạn nữ đến chơi cùng. Có tất cả mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3 + 7 = 10"
+        },
+        {
+          "id": "b",
+          "text": "3 - 7 = 4",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "7 - 3 = 4"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi nghĩ: thêm hay bớt?"],
+      "explanation": "Phép tính đúng: 3 + 7 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nối mỗi tình huống với phép tính đúng."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "6 bạn, 2 bạn về trước"
+        },
+        {
+          "id": "c1",
+          "text": "4 quả táo, mua thêm 3 quả"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "6 - 2 = 4",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "4 + 3 = 7",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Về trước là bớt (trừ); mua thêm là thêm vào (cộng)."],
+      "explanation": "6-2=4 và 4+3=7.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nối mỗi tình huống với phép tính đúng."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "9 chiếc kẹo, cho em 5 chiếc"
+        },
+        {
+          "id": "c1",
+          "text": "3 con chó, thêm 5 con nữa"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "9 - 5 = 4",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "3 + 5 = 8",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Cho đi là bớt; thêm đến là cộng."],
+      "explanation": "9-5=4 và 3+5=8.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-viettinhhuong-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "sáu bạn hai bạn về trước còn bốn bạn",
+        "words": ["sáu", "bạn", "hai", "bạn", "về", "trước", "còn", "bốn", "bạn"]
+      },
+      "answerKey": {
+        "words": ["sáu", "bạn", "hai", "bạn", "về", "trước", "còn", "bốn", "bạn"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"sáu bạn hai bạn về trước còn bốn bạn\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đặt một tình huống rồi viết phép tính cộng."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["Có 3 xe, thêm 4 xe. 3 + 4 = 7"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: Có 3 xe, thêm 4 xe. 3 + 4 = 7.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-viettinhhuong-0037",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đặt một tình huống rồi viết phép tính trừ."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["Có 8 bút, cho 3 cái. 8 - 3 = 5"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: Có 8 bút, cho 3 cái. 8 - 3 = 5.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B12",
+        "sourceRef": "SGK Toán 1 tập một, Bài 12–13 tr.80, 88 — Viết phép tính thích hợp cho tình huống"
+      }
+    }
+  ]
+}

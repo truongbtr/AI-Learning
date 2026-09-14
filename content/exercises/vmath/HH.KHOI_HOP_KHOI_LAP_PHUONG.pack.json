@@ -1,0 +1,1406 @@
+{
+  "skillCode": "VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B14", "KNTT-T1-B16", "KNTT-T1-B19"],
+  "note": "Không có mã lỗi cho 'gọi nhầm tên khối', nên MCQ/LISTEN_CHOOSE chỉ hỏi số mặt/số khối đếm được (dem_thieu_1/dem_thua_1), còn gọi tên khối đi bằng kéo-thả.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-khoihopklp-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Khối lập phương có mấy mặt?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm từng mặt xung quanh khối."],
+      "explanation": "Đáp án: 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-khoihopklp-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Khối hộp chữ nhật có mấy mặt?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm từng mặt xung quanh khối."],
+      "explanation": "Đáp án: 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-khoihopklp-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Khối lập phương có mấy đỉnh (góc)?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm từng mặt xung quanh khối."],
+      "explanation": "Đáp án: 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-khoihopklp-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Khối hộp chữ nhật có mấy đỉnh (góc)?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm từng mặt xung quanh khối."],
+      "explanation": "Đáp án: 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Khối lập phương có mấy mặt"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Khối hộp chữ nhật có mấy mặt"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Khối lập phương có mấy đỉnh (góc)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Khối hộp chữ nhật có mấy đỉnh (góc)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-khoihopklp-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ngôi nhà bạn Mai xếp có mấy khối lập phương ở hàng dưới cùng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-khoihopklp-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ngôi nhà bạn Mai xếp có mấy khối hộp chữ nhật màu đỏ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-khoihopklp-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ H được xếp từ mấy khối lập phương nhỏ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-khoihopklp-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ T được xếp từ mấy khối lập phương nhỏ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chữ C được xếp từ mấy khối lập phương nhỏ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp một khối lập phương lớn cần mấy khối lập phương nhỏ (2×2×2)?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có mấy khối lập phương màu vàng ở nền nhà bạn Mai xếp?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có mấy khối lập phương màu xanh dương ở nền nhà bạn Mai xếp?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Xúc xắc có mấy chấm ở mặt trước trong hình?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xúc xắc có mấy chấm ở mặt trên trong hình?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm từng khối một, đừng đếm sót."],
+      "explanation": "Đáp án: 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Ngôi nhà bạn Mai xếp có mấy khối lập phương ở hàng dưới cùng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Ngôi nhà bạn Mai xếp có mấy khối hộp chữ nhật màu đỏ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Chữ H được xếp từ mấy khối lập phương nhỏ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Chữ T được xếp từ mấy khối lập phương nhỏ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Chữ C được xếp từ mấy khối lập phương nhỏ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "Xếp một khối lập phương lớn cần mấy khối lập phương nhỏ (2×2×2)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Có mấy khối lập phương màu vàng ở nền nhà bạn Mai xếp"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có mấy khối lập phương màu xanh dương ở nền nhà bạn Mai xếp"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Xúc xắc có mấy chấm ở mặt trước trong hình"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Xúc xắc có mấy chấm ở mặt trên trong hình"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi đếm."],
+      "explanation": "Đáp án: 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi đồ vật vào đúng tên khối."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🎲",
+            "labelVi": "xúc xắc"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "📦",
+            "labelVi": "hộp bánh quy"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🧊",
+            "labelVi": "khối Rubik"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Khối lập phương",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "Khối hộp chữ nhật",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0", "c2"],
+        "z1": ["c1"]
+      },
+      "hints": ["Khối lập phương có các mặt vuông bằng nhau."],
+      "explanation": "Xúc xắc và Rubik là khối lập phương; hộp bánh quy là khối hộp chữ nhật.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các hình khối vào đúng giỏ."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "hình A (vuông đều)"
+        },
+        {
+          "id": "a1",
+          "text": "hình C (vuông đều, lớn hơn)"
+        },
+        {
+          "id": "b0",
+          "text": "hình B (chữ nhật đứng)"
+        },
+        {
+          "id": "b1",
+          "text": "hình G (nằm ngang, dài)"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Khối lập phương",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Khối hộp chữ nhật",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Khối lập phương có ba chiều bằng nhau."],
+      "explanation": "hình A (vuông đều), hình C (vuông đều, lớn hơn) thuộc \"Khối lập phương\"; hình B (chữ nhật đứng), hình G (nằm ngang, dài) thuộc \"Khối hộp chữ nhật\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số khối hộp chữ nhật."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "📦",
+          "labelVi": "khối hộp chữ nhật",
+          "repeat": 2
+        },
+        "correctCount": 2,
+        "layout": "grid"
+      },
+      "answerKey": 2,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có 2 khối hộp chữ nhật.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số khối lập phương."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎲",
+          "labelVi": "khối lập phương",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có 5 khối lập phương.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-khoihopklp-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "khối lập phương có sáu mặt bằng nhau",
+        "words": ["khối", "lập", "phương", "có", "sáu", "mặt", "bằng", "nhau"]
+      },
+      "answerKey": {
+        "words": ["khối", "lập", "phương", "có", "sáu", "mặt", "bằng", "nhau"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"khối lập phương có sáu mặt bằng nhau\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "khối hộp chữ nhật có sáu mặt",
+        "words": ["khối", "hộp", "chữ", "nhật", "có", "sáu", "mặt"]
+      },
+      "answerKey": {
+        "words": ["khối", "hộp", "chữ", "nhật", "có", "sáu", "mặt"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"khối hộp chữ nhật có sáu mặt\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm và vẽ một đồ vật ở nhà có dạng khối lập phương."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["viên xúc xắc"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: viên xúc xắc.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-khoihopklp-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm và vẽ một đồ vật ở nhà có dạng khối hộp chữ nhật."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["hộp bánh quy"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: hộp bánh quy.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B14",
+        "sourceRef": "SGK Toán 1 tập một, Bài 14 tr.92–95 — Khối lập phương, khối hộp chữ nhật"
+      }
+    }
+  ]
+}

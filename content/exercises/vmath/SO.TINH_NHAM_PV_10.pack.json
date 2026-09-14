@@ -1,0 +1,1901 @@
+{
+  "skillCode": "VMATH.SO.TINH_NHAM_PV_10",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B12"],
+  "note": "Nói ngay kết quả cộng/trừ trong 10, không đếm ngón tay. Ô nhiễu: hụt/dư một (đặc biệt cặp gần nhau như 6+3/6+4), nham_cong_tru.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-tinhnham-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "8 - 5 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "8 - 5 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "vmath-tinhnham-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "4 + 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "4 + 4 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "vmath-tinhnham-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "6 + 3 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-tinhnham-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "9 - 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "9 - 6 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-tinhnham-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "7 - 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "7 - 4 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "vmath-tinhnham-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "5 + 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "5 + 2 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "10 - 7 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "10 - 7 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "3 + 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "3 + 6 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "8 - 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "8 - 2 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "6 - 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "6 - 4 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "7 + 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "7 + 2 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "9 - 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "9 - 3 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "4 + 5 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "4 + 5 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "10 - 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "10 - 6 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "9 + 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "9 + 1 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "10 - 9 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "10 - 9 = 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "5 + 5 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "5 + 5 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "8 + 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "8 + 1 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "7 - 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "7 - 1 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "6 + 2 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "9 - 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "9 - 4 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "3 + 5 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Trả lời thật nhanh, không đếm ngón tay."],
+      "explanation": "3 + 5 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "8 trừ 5 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "8 - 5 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "4 cộng 4 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "4 + 4 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "6 cộng 3 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "6 + 3 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "9 trừ 6 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "9 - 6 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "7 trừ 4 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "7 - 4 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "5 cộng 2 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "5 + 2 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "10 trừ 7 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "10 - 7 = 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "3 cộng 6 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "3 + 6 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "8 trừ 2 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "8 - 2 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "6 trừ 4 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "6 - 4 = 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "7 cộng 2 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "7 + 2 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "9 trừ 3 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "9 - 3 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "4 cộng 5 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "4 + 5 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "10 trừ 6 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "10 - 6 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0037",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "9 cộng 1 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "9 + 1 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0038",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "10 trừ 9 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "10 - 9 = 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0039",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "5 cộng 5 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "5 + 5 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0040",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "8 cộng 1 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "8 + 1 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0041",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "7 trừ 1 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "7 - 1 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0042",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "6 cộng 2 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "6 + 2 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0043",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "9 trừ 4 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "9 - 4 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0044",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "3 cộng 5 bằng mấy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe rồi trả lời thật nhanh."],
+      "explanation": "3 + 5 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0045",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các phép tính vào đúng giỏ theo kết quả."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "6 + 3"
+        },
+        {
+          "id": "a1",
+          "text": "3 + 6"
+        },
+        {
+          "id": "a2",
+          "text": "7 + 2"
+        },
+        {
+          "id": "b0",
+          "text": "6 + 4"
+        },
+        {
+          "id": "b1",
+          "text": "8 - 2"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Bằng 9",
+          "accepts": ["a0", "a1", "a2", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Không bằng 9",
+          "accepts": ["a0", "a1", "a2", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1", "a2"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Tính nhanh rồi so với 9."],
+      "explanation": "6 + 3, 3 + 6, 7 + 2 thuộc \"Bằng 9\"; 6 + 4, 8 - 2 thuộc \"Không bằng 9\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0046",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nối mỗi phép tính với đáp số đúng."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "8 - 5"
+        },
+        {
+          "id": "c1",
+          "text": "9 - 6"
+        },
+        {
+          "id": "c2",
+          "text": "10 - 7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "3",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "3 ",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "3  ",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Ba phép tính này đều bằng 3."],
+      "explanation": "8-5=3, 9-6=3, 10-7=3.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-tinhnham-0047",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "tám trừ năm bằng ba",
+        "words": ["tám", "trừ", "năm", "bằng", "ba"]
+      },
+      "answerKey": {
+        "words": ["tám", "trừ", "năm", "bằng", "ba"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"tám trừ năm bằng ba\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0048",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "sáu cộng ba bằng chín",
+        "words": ["sáu", "cộng", "ba", "bằng", "chín"]
+      },
+      "answerKey": {
+        "words": ["sáu", "cộng", "ba", "bằng", "chín"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"sáu cộng ba bằng chín\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tinhnham-0049",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TINH_NHAM_PV_10"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết 3 phép tính có kết quả bằng 6."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["10-4=6, 2+4=6, 9-3=6"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 10-4=6, 2+4=6, 9-3=6.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B13",
+        "sourceRef": "SGK Toán 1 tập một, Bài 13 tr.86–91 — Luyện tập chung (tính nhẩm nhanh)"
+      }
+    }
+  ]
+}

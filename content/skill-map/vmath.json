@@ -403,8 +403,15 @@
       "prerequisites": ["VMATH.SO.TRU_PV_10"],
       "relatedSkillCodes": ["EMATH.OA.SUB_WITHIN_10"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.BANG_CONG_TRU_10",
@@ -420,8 +427,15 @@
       "prerequisites": ["VMATH.SO.CONG_PV_10", "VMATH.SO.TRU_PV_10"],
       "relatedSkillCodes": ["EMATH.OA.RELATE_ADD_SUB"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "LISTEN_CHOOSE"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.TINH_NHAM_PV_10",
@@ -437,8 +451,8 @@
       "prerequisites": ["VMATH.SO.BANG_CONG_TRU_10"],
       "relatedSkillCodes": ["EMATH.OA.ADD_WITHIN_10"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "SPEAK_ANSWER"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.SO_11_20",
@@ -696,8 +710,15 @@
       "prerequisites": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
       "relatedSkillCodes": ["EMATH.G.NAME_3D_SHAPES"],
       "confusableWith": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "COUNT_TAP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.HH.VI_TRI_TREN_DUOI_TRAI_PHAI",
@@ -713,8 +734,15 @@
       "prerequisites": [],
       "relatedSkillCodes": ["EMATH.G.POSITION_WORDS"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "LISTEN_CHOOSE"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.HH.DIEM_DOAN_THANG",
@@ -915,8 +943,8 @@
       "prerequisites": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.TRU_PV_10"],
       "relatedSkillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
       "confusableWith": ["VMATH.GT.BAI_TOAN_THEM"],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "SPEAK_ANSWER"],
-      "difficultyRange": [2, 5]
+      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG",
@@ -932,8 +960,8 @@
       "prerequisites": ["VMATH.GT.BAI_TOAN_THEM", "VMATH.GT.BAI_TOAN_BOT"],
       "relatedSkillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.GT.DOC_HIEU_DE_TOAN",
