@@ -258,7 +258,7 @@ sống lại.
 | Không dựng lại Docker trong giờ học 18:00–21:00 | **Không dựng lại lần nào.** `content:import` chạy khi web đang sống; không restart container nào |
 | Nạp theo lô nhỏ, `--dry-run` trước | 5 lô nội dung + 3 lô sửa sau QC. Lô đầu chạy `--dry-run` (517 mới, 0 nghỉ hưu) trước khi nạp thật |
 | Không đụng `Evidence`/`SkillMastery`/`Session`/`Attempt` | Không. Chỉ `Exercise`, `ExerciseSkill`, `ContentBatch`, `Skill`, `AuditLog` |
-| Không ngày nào bị gián đoạn | Mọi lệnh chạy trong khoảng **08:30–10:30 giờ VN**, xong trước giờ học hơn 7 tiếng. Hai bé chưa vào học lúc nạp |
+| Không ngày nào bị gián đoạn | ~~Mọi lệnh chạy 08:30–10:30 giờ VN.~~ **Đính chính 14/09:** đó là giờ UTC đọc nhầm. Giờ VN thật: nạp 15:29–15:55, nghỉ hưu 24 bài lúc **19:39** (trong giờ học). Không có phiên nào mở lúc đó, nên không ai bị gián đoạn — xem mục 10 |
 
 **Phát hành:** 1.464 bài nạp ở trạng thái `DRAFT` theo đúng `10` §5 bước ⑤. Chủ dự án quyết định
 trong phiên này là **phát hành hết ngay**, nên 10 lô được bật `PUBLISHED` từ dòng lệnh bằng đúng
@@ -336,3 +336,142 @@ Cháu làm đúng con số §3 (**34 kỹ năng**) theo **đúng thứ tự ưu 
 
 Cháu nghiêng về **(b)**, và đề nghị đợt 3 nhắm vào VIET bài 16–24 (âm m, n, g, gi, gh, nh, ng, ngh,
 r, s, t, tr, th, vần ia/ua/ưa) — đó là thứ hai con gặp trong ba tuần tới.
+
+---
+
+## 10. Lô 5–7 — 14/09/2026
+
+### 10.1 Sự cố trước khi soạn: web chết từ sáng 13/09
+
+Máy chủ khởi động lại lúc **07:02 ngày 13/09** nhưng Docker Desktop không tự bật, nên web, worker và
+Postgres tắt suốt **~36 giờ**. Bảng `Session` xác nhận: **không có phiên học nào kể từ 13/09** (mỗi bé
+vẫn 1/14 ngày). Kéo theo: `ops:export` 04:30 và `planner.daily` không chạy.
+
+Cháu bật lại Docker Desktop lúc **19:36 ngày 14/09** và nạp nội dung 19:56–20:06 — **trong giờ học**.
+Cháu đọc nhầm giờ: `TZ=Asia/Ho_Chi_Minh date` trong Git Bash không nhận múi giờ nên in giờ UTC (12:35),
+cháu tưởng là giờ VN. Không có phiên nào đang mở khi đó, và web vốn đã chết từ trước, nên việc bật lại
+chỉ *khôi phục* chứ không cắt ngang buổi học nào — nhưng vẫn sai luật §0, và cháu đã báo sai với chú
+lúc làm. Cùng lỗi đọc giờ ấy làm sai câu "08:30–10:30" trong báo cáo ngày 12/09 (đã đính chính ở mục 7).
+
+**Lần khởi động đó lộ thêm một lỗi vận hành:** `docker/entrypoint-web.sh` chạy `prisma/seed.ts` mỗi lần
+container web khởi động, bằng `content/skill-map/` **nằm trong image** — image dựng trước 12/09. Seed
+ghi đè `exerciseTypes` và biên độ khó của 47 kỹ năng đã mở rộng hôm 12/09 (ví dụ `ESCI.PS.FLOAT_SINK`
+về lại `[MCQ, DRAG_DROP]`, mức 1–2), và bật lại `isActive` cho ba kỹ năng ESL đã cố ý tắt
+(`VOC.WEATHER`, `VOC.DAYS_OF_WEEK`, `VOC.TRANSPORT`). Cháu đã đồng bộ lại 47 kỹ năng. Chừng nào image
+chưa dựng lại thì **mỗi lần restart sẽ ghi đè lần nữa** (mục 10.6).
+
+### 10.2 Lỗi thật tìm ra trong nội dung đã phát hành hôm 12/09
+
+Khi tách khuôn gói "âm" để dùng lại cho bài 16–24, cháu viết `scripts/content-gen/audit-has-letter.mjs`
+soát câu *"Tiếng nào có âm X?"*. Kết quả: **31 bài có hai (hoặc ba) đáp án đúng**, tất cả trong 4 gói
+âm của đợt 2 (`AM_H_L` 15, `AM_I_K` 7, `AM_OO` 5, `AM_OW` 4). Ví dụ `viet-amhl-0001`: *"Tiếng nào có âm
+h?"* với `hồ` / `hò` / `cá` — cả `hồ` lẫn `hò` đều có h.
+
+Nguyên nhân: ô nhiễu "gần giống" (`hò`, `bô` cho `cô`) được chọn vì nhìn giống — nhưng nhìn giống thì
+thường **cũng chứa âm đang hỏi**. Gói hai âm còn lỗi thứ hai: giỏ "có âm i" nhận cả `kẻ`. Bộ 20 bài mẫu
+hôm 12/09 không bốc trúng bài nào như vậy.
+
+Sửa ở khuôn (`lib-viet-letters.mjs`): câu "có âm X" chỉ dùng ô nhiễu **không chứa X** (soát theo âm,
+không theo con chữ — `vn-units.mjs`: `giò` có âm gi chứ không có âm g); giỏ kéo-thả tính theo âm thật
+của từng thẻ. Bộ soát nay báo **0** trên toàn ngân hàng.
+
+Soát thêm "hai ô cùng chữ" tìm ra **7 bài**, gồm 3 bài của **đợt 1** viết tay:
+
+| Bài | Lỗi | Sửa |
+|---|---|---|
+| `viet-am-b-0036` | thẻ `b`, `à`, `à` — kéo thẻ `à` thứ hai vào ô vần bị chấm chưa đúng | thẻ thứ ba thành `a` (`thieu_dau_thanh`) |
+| `viet-am-u-0036` | thẻ `c`, `ũ`, `ũ` | thẻ thứ ba thành `ú` (`sai_dau_thanh`) |
+| `viet-bd-0035` | "Tìm chữ b" với thẻ `b`, `d`, `b` — chỉ một thẻ `b` được tính | đề thành "Tìm các chữ b", nhận cả hai thẻ |
+| `viet-doctu-0023`, `0026`, `0027` | thẻ nhiễu trùng thẻ đúng (`cờ` / `cờ`) vì từ nhiễu lệch ở tiếng đầu | lấy tiếng thứ hai **khác** tiếng đúng, tính lại mã lỗi |
+| `viet-amik-0003` | `đa` / `đa` | sửa dữ liệu vần thành `đo` |
+
+`lib.mjs → choicesOf` nay tự bỏ ô trùng, nên không bộ sinh nào mắc lại được.
+
+### 10.3 Đã soạn
+
+**17 kỹ năng · 753 bài · đã `PUBLISHED`.** Ngân hàng: **3.433 bài / 79 kỹ năng**, 27 bài nghỉ hưu.
+
+Tiếng Việt đọc từ **ảnh trang SGK thật** (trang sách = ảnh PDF − 1; ghi chú "+3" của đợt 1 không đúng
+với cách tách ảnh này). Toán đọc tr.24–49. ESL dựng từ bảng scope and sequence Unit 2.
+
+| Kỹ năng | Bài | Mức 1/2/3/4/5 | MCQ/LISTEN/DRAG/COUNT/READ/WRITE | Nhiễu có mã | `targetsError` |
+|---|---|---|---|---|---|
+| `VIET.HV.AM_M_N` (bài 16) | 47 | 6/12/13/10/6 | 19/13/7/0/5/3 | 39 | 39 |
+| `VIET.HV.AM_G_GI` (bài 17) | 48 | 6/12/13/11/6 | 20/13/7/0/5/3 | 40 | 40 |
+| `VIET.HV.AM_GH_NH` (bài 18) | 43 | 6/12/11/9/5 | 18/10/7/0/5/3 | 35 | 35 |
+| `VIET.HV.AM_NG_NGH` (bài 19) | 44 | 6/11/11/10/6 | 17/11/7/0/6/3 | 35 | 35 |
+| `VIET.HV.AM_R_S` (bài 21) | 42 | 6/12/10/9/5 | 18/9/7/0/5/3 | 34 | 34 |
+| `VIET.HV.AM_T_TR` (bài 22) | 47 | 6/12/13/10/6 | 19/13/7/0/5/3 | 39 | 39 |
+| `VIET.HV.AM_TH` (bài 23) | 42 | 6/11/11/9/5 | 17/10/7/0/5/3 | 34 | 34 |
+| `VIET.HV.VAN_IA` (bài 23) | 41 | 6/11/10/9/5 | 17/9/7/0/5/3 | 33 | 33 |
+| `VIET.HV.VAN_UA_UWA` (bài 24) | 50 | 6/13/14/11/6 | 22/13/7/0/5/3 | 42 | 42 |
+| `VIET.HV.NHAM_LAN_CH_TR` | 52 | 4/9/14/14/11 | 21/20/4/0/4/3 | 45 | 45 |
+| `VIET.HV.NHAM_LAN_NG_NGH_G_GH` | 46 | 4/12/14/9/7 | 19/14/5/0/5/3 | 38 | 38 |
+| `VMATH.SO.THU_TU_SO` | 43 | 5/11/12/10/5 | 24/6/6/0/4/3 | 30 | 30 |
+| `VMATH.SO.DOC_VIET_SO_0_10` | 42 | 6/12/11/8/5 | 16/8/6/5/4/3 | 24 | 24 |
+| `VMATH.SO.SO_1_10` | 45 | 5/10/11/11/8 | 24/6/4/4/4/3 | 30 | 30 |
+| `ESL.VOC.FOOD` | 40 | 5/11/10/7/7 | 18/8/6/0/5/3 | 0 | 0 |
+| `ESL.VOC.FRUITS` | 41 | 7/11/10/7/6 | 24/8/0/4/5/0 | 6 | 6 |
+| `ESL.GR.LIKE_DONT_LIKE` | 40 | 5/6/11/10/8 | 20/8/4/0/5/3 | 6 | 6 |
+
+Hai gói phân biệt khác nhau về nhiễu, có chủ ý: gói **ch/tr** chỉ dùng cặp tiếng **thật** (`tre`/`che`,
+`chợ`/`trợ`); gói **ng/ngh, g/gh** là luật chính tả, nên ô sai là **lỗi chính tả thật** (`ngé`, `gế`,
+`ghà`) — đó chính là thứ gói dạy con nhận ra.
+
+**Chưa soạn được `VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN` (bài 7).** Toán bắt mọi câu trắc nghiệm có ô
+nhiễu mang mã lỗi, mà 44 mã không có mã nào cho "gọi nhầm tên hình". Gắn tạm một mã khác là đúng lỗi #8
+của đợt 1. Cần bổ sung mã (ví dụ `nham_ten_hinh`) — đụng `04` §11, cần ADR.
+
+### 10.4 Tự chấm 20 bài — lô 5–7
+
+Chọn ngẫu nhiên trong 753 bài của 17 gói, seed `pha-6a-lo-5-7`:
+
+```powershell
+node scripts/sample-exercises.mjs pha-6a-lo-5-7 20 "" --only='^(viet/HV\.(AM_M_N|AM_G_GI|AM_GH_NH|AM_NG_NGH|AM_R_S|AM_T_TR|AM_TH|VAN_IA|VAN_UA_UWA|NHAM_LAN_CH_TR|NHAM_LAN_NG_NGH_G_GH)|vmath/SO\.(THU_TU_SO|DOC_VIET_SO_0_10|SO_1_10)|esl/(VOC\.FOOD|VOC\.FRUITS|GR\.LIKE_DONT_LIKE))\.pack'
+```
+
+| # | `stableId` | Dạng | Khó | Đọc kỹ thấy gì | Đạt? |
+|---|---|---|---|---|---|
+| 1 | `viet-amngngh-0009` | MCQ | 3 | "Ô nào chứa âm ngh?" → `nghĩ`; `kĩ` (`nham_am_dau`), `cá` | ✅ |
+| 2 | `viet-amggi-0001` | MCQ | 1 | "Tiếng nào có âm g?" → `gà`; `già` có âm gi chứ không phải g — đúng cặp g/gi | ✅ |
+| 3 | `viet-amttr-0014` | MCQ | 2 | Tranh 🗄️ → `tủ`; `tá` (`doc_nham_van`), `củ` (`nham_am_dau`) | ✅ |
+| 4 | `viet-ngngh-0014` | MCQ | 2 | "Ô nào viết đúng luật chính tả?" → `ngủ` / `nghủ` | ✅ |
+| 5 | `vmath-docviet-0040` | WRITE_PHOTO | 3 | Viết các số 0–5; rubric có "chữ số không ngược" | ✅ |
+| 6 | `esl-like-0035` | READ_ALOUD | 3 | "Do you like pasta?" | ✅ |
+| 7 | `viet-amrs-0015` | MCQ | 4 | "Ô nào có âm r?" → `rổ` giữa `cổ`, `cá`, `bé` — không ô nhiễu nào có r | ✅ |
+| 8 | `viet-amrs-0031` | DRAG_DROP | 2 | Giỏ "có âm s": `số`, `sò`; giỏ kia `hè`, `cò` | ✅ |
+| 9 | `esl-food-0010` | MCQ | 5 | Tranh 🍝 → `pasta` | ✅ |
+| 10 | `viet-amngngh-0033` | DRAG_DROP | 2 | Tranh 🐃 → `nghé`; thẻ nhiễu `nghe`, `ghé` | ✅ |
+| 11 | `esl-fruit-0030` | MCQ | 5 | 5 🍊 → `five oranges`; `five orange` mang `thieu_s_so_nhieu` | ✅ |
+| 12 | `esl-like-0036` | READ_ALOUD | 4 | "Yes, I do." | ✅ |
+| 13 | `esl-fruit-0028` | MCQ | 3 | 2 🍐 → `two pears` | ✅ |
+| 14 | `vmath-so110-0002` | MCQ | 2 | 5 🍎 → 5; `4` `dem_thieu_1`, `6` `dem_thua_1` | ✅ |
+| 15 | `viet-amrs-0008` | MCQ | 2 | "Chọn tiếng có âm s" → `sả`; `cả`, `lê` | ✅ |
+| 16 | `viet-ngngh-0040` | READ_ALOUD | 3 | "Mẹ nhờ Hà bê ghế nhỏ" — câu bài 18 tr.49 | ✅ |
+| 17 | `viet-ngngh-0006` | MCQ | 3 | `ghế` / `gế` (`nham_g_gh`); giải thích nêu luật e, ê, i | ✅ |
+| 18 | `viet-ammn-0006` | MCQ | 3 | "Ô nào có âm n?" → `nề`; `lề`, `lá` | ✅ |
+| 19 | `viet-vanua-0038` | DRAG_DROP | 4 | Giỏ "có vần ua": `rùa`, `lúa`; `lứa` là cặp u/ư | ✅ |
+| 20 | `viet-vanua-0015` | MCQ | 3 | Tranh 🚪 "cái cửa" → `cửa`; `của`, `sửa` | ✅ |
+
+**20/20 — sau một vòng sửa; vòng đầu 17/20.** Ba lỗi cùng một loại *tranh không khớp tên*: 🚪 ghi
+"cửa sổ" (là cái cửa), 👂 dùng cho "nghe" (con thấy cái tai), 🥒 dùng cho "su su" (con thấy dưa chuột).
+Đã bỏ hai tranh, sửa một tên. Kèm một lỗi lời: giải thích giỏ kéo-thả của gói vần ghi "có âm đang học"
+— nay ghi đúng "có vần ua".
+
+### 10.5 Dữ liệu thật
+
+Không có gì mới: máy tắt từ sáng 13/09, `exercise-health.csv` vẫn 20 dòng của 12/09.
+
+### 10.6 Tồn đọng — việc cần chủ dự án
+
+1. **Bật Docker Desktop tự khởi động cùng Windows** (Settings → General → *Start Docker Desktop when
+   you sign in*) — cháu không đổi cài đặt hệ thống. Không có nó, mỗi lần máy khởi động lại là mất một
+   buổi học.
+2. **Dựng lại image vào buổi sáng** (`docker compose -f docker/compose.yml up -d --build`, ngoài
+   18:00–21:00) để seed lúc khởi động mang bản đồ kỹ năng mới. Trước khi dựng, mỗi lần restart sẽ ghi đè
+   47 kỹ năng về bản cũ và bật lại ba kỹ năng ESL đã tắt.
+3. **Sao lưu hằng đêm chưa chạy**: bản gần nhất ở `E:\SAO-LUU-MTCT` là 12/09 10:43 (việc số 7 trong
+   `docs/nhat-ky-chay-that.md`).
+4. **Bộ mã lỗi còn thiếu** cho hình phẳng và cho khoa học — cần ADR trước khi soạn bài 7 Toán.
+5. Nên đưa `audit-has-letter.mjs` vào `content:validate` sau đợt dùng thật (đụng code package, nên chưa
+   làm trong pha 8c).

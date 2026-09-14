@@ -228,8 +228,15 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "SPEAK_ANSWER", "DRAG_DROP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "LISTEN_CHOOSE",
+        "MCQ",
+        "SPEAK_ANSWER",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.VOC.FRUITS",
@@ -244,8 +251,8 @@
       "prerequisites": ["ESL.VOC.FOOD"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "COUNT_TAP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "COUNT_TAP", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.VOC.TOYS",
@@ -990,8 +997,15 @@
       "prerequisites": ["ESL.VOC.FOOD", "ESL.GR.PLURAL_S"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "SPEAK_ANSWER", "LISTEN_CHOOSE"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.GR.THERE_IS_ARE",

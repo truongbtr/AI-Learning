@@ -23,7 +23,12 @@ export function seeded(seed) {
 }
 
 /** Places the answer at a different position each time — the answer is never "always b". */
-export function choicesOf(correct, wrongs, slot) {
+export function choicesOf(correct, wrongsIn, slot) {
+  // Hai ô cùng chữ là một câu hỏi hỏng (bấm ô nào cũng "đúng" mà máy chỉ nhận một): bỏ ô trùng.
+  const key = (c) => c.text ?? c.image?.value;
+  const wrongs = wrongsIn.filter(
+    (w, i) => key(w) !== key(correct) && wrongsIn.findIndex((x) => key(x) === key(w)) === i,
+  );
   const all = [correct, ...wrongs];
   const at = slot % all.length;
   const ordered = [...wrongs];

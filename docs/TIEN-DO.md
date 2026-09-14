@@ -2,6 +2,78 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 6a (tiếp) — 14/09/2026 — Học vần bài 16–24, Toán bài 1–6, ESL Unit 2
+
+Trạng thái: **3 lô mới đã phát hành**, sửa **38 bài lỗi** trong nội dung cũ, và phát hiện **web đã chết
+~36 giờ**. Pha 6 **chưa xong** (xem 5.1). `content:validate` sạch · `audit-has-letter` báo 0 ·
+`content:import --dry-run` 0 thay đổi · `lint` / `test` / `build` xanh. 1 commit, **chưa push**.
+
+> ⚠️ **Đọc trước:** máy khởi động lại lúc 07:02 ngày 13/09, Docker không tự bật, **tối 13/09 hai bé
+> không học được**. Cháu bật lại lúc **19:36 ngày 14/09 — trong giờ học** vì đọc nhầm giờ UTC (Git
+> Bash) thành giờ VN. Không có phiên nào bị cắt ngang (bảng `Session` trống từ 13/09), nhưng đó là
+> sai luật §0 và cháu đã báo chú sai giờ lúc làm. Ba việc chú cần làm ở mục 5.2.
+
+### 1. Đã soạn
+
+**17 kỹ năng · 753 bài.** Ngân hàng: **3.433 bài / 79 kỹ năng**, 27 bài nghỉ hưu, mọi kỹ năng ≥ 35 bài.
+
+| Lô | Kỹ năng | Bài | Nguồn |
+|---|---|---|---|
+| 5 — Tiếng Việt | âm m–n, g–gi, gh–nh, ng–ngh, r–s, t–tr, th · vần ia, ua–ưa · phân biệt ch/tr, luật ng/ngh–g/gh | 509 | Ảnh trang SGK bài 16–24 (tr.44–61) |
+| 6 — Toán | thứ tự số · đọc viết số 0–10 · các số 1–10 | 130 | SGK tr.24–45 (đoàn tàu số, bể cá, điền dấu) |
+| 7 — ESL | food · fruits · I like / I don't like | 121 | Global Stage 1 Unit 2 (scope and sequence) |
+
+Phủ: **78/207** kỹ năng tuần 1–12 có ≥ 30 bài (12/09: 62) · **79/271** kỹ năng học kỳ 1.
+
+**Không soạn được `VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN`** (bài 7): Toán bắt mọi câu trắc nghiệm có mã
+lỗi, mà bộ 44 mã không có mã nào cho "gọi nhầm tên hình". Cần ADR bổ sung mã.
+
+### 2. Lỗi tìm ra trong nội dung **đã phát hành**
+
+- **31 bài "Tiếng nào có âm X?" có hai đáp án đúng** — tất cả trong 4 gói âm cháu soạn ngày 12/09
+  (`hồ` / `hò` cho "âm h"). Ô nhiễu "nhìn giống" thường cũng chứa chính âm đó. Viết
+  `scripts/content-gen/audit-has-letter.mjs` soát theo **âm** chứ không theo con chữ, sửa khuôn; nay 0.
+- **7 bài có hai thẻ/ô cùng chữ**, gồm 3 bài đợt 1 viết tay (`viet-am-b-0036`: thẻ `b`, `à`, `à` — kéo
+  thẻ `à` thứ hai bị chấm chưa đúng). Đã sửa; `choicesOf` nay tự bỏ ô trùng.
+- Tự chấm 20 bài của lô 5–7: **17/20 → 20/20** sau khi sửa 3 tranh không khớp tên (🚪 "cửa sổ",
+  👂 "nghe", 🥒 "su su").
+
+Không bài nào trong số đó từng được con làm (20 lượt thật đều thuộc gói khác), nên không có bằng
+chứng nào của con bị ảnh hưởng.
+
+### 3. 20 mã bài mẫu lô 5–7
+
+`viet-amngngh-0009` · `viet-amggi-0001` · `viet-amttr-0014` · `viet-ngngh-0014` · `vmath-docviet-0040` ·
+`esl-like-0035` · `viet-amrs-0015` · `viet-amrs-0031` · `esl-food-0010` · `viet-amngngh-0033` ·
+`esl-fruit-0030` · `esl-like-0036` · `esl-fruit-0028` · `vmath-so110-0002` · `viet-amrs-0008` ·
+`viet-ngngh-0040` · `viet-ngngh-0006` · `viet-ammn-0006` · `viet-vanua-0038` · `viet-vanua-0015`
+
+Bảng chấm và lệnh dựng lại: `content/_reports/dot-2.md` §10.4.
+
+### 4. Dữ liệu thật
+
+Không có gì mới — máy tắt từ sáng 13/09. Mỗi bé vẫn 1/14 ngày.
+
+### 5. Tồn đọng và câu hỏi
+
+**5.1 — Pha 6 chưa xong.** Đợt 6a mới làm được một phần việc 1 trong 4 việc của `docs/08`. Việc 2
+(bài học đầy đủ, `/parent/materials`), việc 3 (bám tuần học) và việc 4 (thư viện ≥ 200 hình) đều cần
+sửa code, nên để sau khi xong 14 ngày chạy thật. Câu hỏi hôm 12/09 về tiêu chí 1 vẫn chờ chú trả lời.
+
+**5.2 — Ba việc vận hành, cần chú làm:**
+1. Bật Docker Desktop *Start when you sign in*. Cháu không đổi cài đặt hệ thống.
+2. **Dựng lại image vào buổi sáng** (`docker compose -f docker/compose.yml up -d --build`). Container
+   web chạy seed mỗi lần khởi động bằng bản đồ kỹ năng **nằm trong image cũ** (trước 12/09): lần khởi
+   động tối nay đã ghi đè dạng bài / mức khó của 47 kỹ năng và bật lại 3 kỹ năng ESL đã tắt. Cháu đã
+   đồng bộ lại 47 kỹ năng, nhưng restart lần sau sẽ ghi đè tiếp cho tới khi dựng image mới. Ba kỹ năng
+   ESL chưa tắt lại (chưa có bài nào nên planner không chọn tới).
+3. Sao lưu hằng đêm chưa chạy — bản gần nhất 12/09 10:43.
+
+**5.3 — Đính chính báo cáo 12/09:** câu "mọi lệnh chạy 08:30–10:30" là giờ UTC đọc nhầm. Giờ VN thật:
+nạp 15:29–15:55, nghỉ hưu 24 bài lúc 19:39. Đã sửa tại chỗ.
+
+---
+
 ## Pha 6a — 12/09/2026 — Nội dung đợt 2, chạy song song với 14 ngày dùng thật
 
 Trạng thái: **5/6 tiêu chí đạt**; tiêu chí 1 (phủ hết tuần 1–12 của 5 môn) **không đạt và không thể
@@ -9,7 +81,9 @@ Trạng thái: **5/6 tiêu chí đạt**; tiêu chí 1 (phủ hết tuần 1–1
 `test` xanh · `build` xanh · `content:validate` sạch · `content:import --dry-run` báo **0 thay đổi**.
 
 > Không sửa một dòng code nào của app, không dựng lại Docker lần nào, không ngày học nào bị gián
-> đoạn. Mọi lệnh chạy 08:30–10:30 giờ VN, xong trước giờ học hơn 7 tiếng.
+> đoạn. ~~Mọi lệnh chạy 08:30–10:30 giờ VN.~~ **Đính chính 14/09:** giờ đó đọc nhầm UTC. Giờ thật: 5
+> lô nạp 15:29–15:55; lượt nghỉ hưu 24 bài và lượt sinh mp3 cuối lúc **19:39–19:42**, tức trong giờ
+> học. Hôm đó không có phiên nào đang mở nên không ai bị gián đoạn — nhưng câu cũ sai.
 
 ### 1. Đã soạn bao nhiêu
 

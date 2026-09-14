@@ -1,0 +1,1696 @@
+{
+  "skillCode": "VIET.HV.NHAM_LAN_NG_NGH_G_GH",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B17", "KNTT-TV1-T1-B18", "KNTT-TV1-T1-B19"],
+  "note": "Quy tắc chính tả: ngh và gh chỉ đứng trước e, ê, i; còn lại viết ng và g. Ô sai là lỗi chính tả thật của trẻ ('ngé', 'gế', 'ghà') — gói này tồn tại để con nhận ra chúng.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "model",
+      "id": "viet-ngngh-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghé"
+        },
+        {
+          "id": "b",
+          "text": "ngé",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn con chữ đứng sau âm đầu.", "Trước e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "Viết đúng là \"nghé\". Đứng trước e, ê, i nên viết thêm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "nghé"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngé",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "nghé"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"nghé\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐃",
+          "labelVi": "con nghé",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghé"
+        },
+        {
+          "id": "b",
+          "text": "ngé",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ con nghé."],
+      "explanation": "Tranh vẽ con nghé, viết là \"nghé\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "model",
+      "id": "viet-ngngh-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng viết đúng chính tả nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghõ",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "ngõ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Có chữ e, ê hay i ngay sau không?"],
+      "explanation": "Viết đúng là \"ngõ\". Không đứng trước e, ê, i nên không viết h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "ngõ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngõ"
+        },
+        {
+          "id": "b",
+          "text": "nghõ",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"ngõ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "model",
+      "id": "viet-ngngh-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: ô nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ghế"
+        },
+        {
+          "id": "b",
+          "text": "gế",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhớ luật: ngh, gh đi với e, ê, i."],
+      "explanation": "Viết đúng là \"ghế\". Đứng trước e, ê, i nên viết thêm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "ghế"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gế",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b",
+          "text": "ghế"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Tiếng con nghe viết là \"ghế\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🪑",
+          "labelVi": "cái ghế",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ghế"
+        },
+        {
+          "id": "b",
+          "text": "gế",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ cái ghế."],
+      "explanation": "Tranh vẽ cái ghế, viết là \"ghế\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "model",
+      "id": "viet-ngngh-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng viết đúng."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ghà",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b",
+          "text": "gà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn con chữ đứng sau âm đầu.", "Trước e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "Viết đúng là \"gà\". Không đứng trước e, ê, i nên không viết h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "gà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gà"
+        },
+        {
+          "id": "b",
+          "text": "ghà",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"gà\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐔",
+          "labelVi": "con gà",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ghà",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b",
+          "text": "gà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ con gà."],
+      "explanation": "Tranh vẽ con gà, viết là \"gà\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "model",
+      "id": "viet-ngngh-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Hai ô đọc giống nhau. Ô nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghe"
+        },
+        {
+          "id": "b",
+          "text": "nge",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Có chữ e, ê hay i ngay sau không?"],
+      "explanation": "Viết đúng là \"nghe\". Đứng trước e, ê, i nên viết thêm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "nghe"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nge",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "nghe"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"nghe\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "model",
+      "id": "viet-ngngh-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào viết đúng luật chính tả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghủ",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "ngủ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhớ luật: ngh, gh đi với e, ê, i."],
+      "explanation": "Viết đúng là \"ngủ\". Không đứng trước e, ê, i nên không viết h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "ngủ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngủ"
+        },
+        {
+          "id": "b",
+          "text": "nghủ",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Tiếng con nghe viết là \"ngủ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ghẹ"
+        },
+        {
+          "id": "b",
+          "text": "gẹ",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn con chữ đứng sau âm đầu.", "Trước e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "Viết đúng là \"ghẹ\". Đứng trước e, ê, i nên viết thêm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "ghẹ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gẹ",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b",
+          "text": "ghẹ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"ghẹ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🦀",
+          "labelVi": "con ghẹ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ghẹ"
+        },
+        {
+          "id": "b",
+          "text": "gẹ",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ con ghẹ."],
+      "explanation": "Tranh vẽ con ghẹ, viết là \"ghẹ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng viết đúng chính tả nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ghỗ",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b",
+          "text": "gỗ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Có chữ e, ê hay i ngay sau không?"],
+      "explanation": "Viết đúng là \"gỗ\". Không đứng trước e, ê, i nên không viết h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "gỗ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gỗ"
+        },
+        {
+          "id": "b",
+          "text": "ghỗ",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"gỗ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: ô nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghỉ"
+        },
+        {
+          "id": "b",
+          "text": "ngỉ",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhớ luật: ngh, gh đi với e, ê, i."],
+      "explanation": "Viết đúng là \"nghỉ\". Đứng trước e, ê, i nên viết thêm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "nghỉ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngỉ",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "nghỉ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Tiếng con nghe viết là \"nghỉ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng viết đúng."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghô",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "ngô"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn con chữ đứng sau âm đầu.", "Trước e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "Viết đúng là \"ngô\". Không đứng trước e, ê, i nên không viết h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "ngô"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngô"
+        },
+        {
+          "id": "b",
+          "text": "nghô",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"ngô\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🌽",
+          "labelVi": "bắp ngô",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghô",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "ngô"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ bắp ngô."],
+      "explanation": "Tranh vẽ bắp ngô, viết là \"ngô\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hai ô đọc giống nhau. Ô nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ghé"
+        },
+        {
+          "id": "b",
+          "text": "gé",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Có chữ e, ê hay i ngay sau không?"],
+      "explanation": "Viết đúng là \"ghé\". Đứng trước e, ê, i nên viết thêm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "ghé"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gé",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b",
+          "text": "ghé"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"ghé\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào viết đúng luật chính tả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ghò",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b",
+          "text": "gò"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhớ luật: ngh, gh đi với e, ê, i."],
+      "explanation": "Viết đúng là \"gò\". Không đứng trước e, ê, i nên không viết h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "gò"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gò"
+        },
+        {
+          "id": "b",
+          "text": "ghò",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Tiếng con nghe viết là \"gò\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào viết đúng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghệ"
+        },
+        {
+          "id": "b",
+          "text": "ngệ",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhìn con chữ đứng sau âm đầu.", "Trước e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "Viết đúng là \"nghệ\". Đứng trước e, ê, i nên viết thêm h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "nghệ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngệ",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "nghệ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Tiếng con nghe viết là \"nghệ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng viết đúng chính tả nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nghà",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b",
+          "text": "ngà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Có chữ e, ê hay i ngay sau không?"],
+      "explanation": "Viết đúng là \"ngà\". Không đứng trước e, ê, i nên không viết h.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "ngà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngà"
+        },
+        {
+          "id": "b",
+          "text": "nghà",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Tiếng con nghe viết là \"ngà\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "nghé",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "a1",
+          "text": "nghe",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b0",
+          "text": "ngõ",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b1",
+          "text": "ngủ",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Viết ngh",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Viết ng",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn chữ đứng sau: e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "nghé, nghe về giỏ \"Viết ngh\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chia các tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "ghế",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "a1",
+          "text": "ghẹ",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b0",
+          "text": "gà",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b1",
+          "text": "gỗ",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Viết gh",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Viết g",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn chữ đứng sau: e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "ghế, ghẹ về giỏ \"Viết gh\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi tiếng về giỏ của nó."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "ngô",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "a1",
+          "text": "ngà",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b0",
+          "text": "nghỉ",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b1",
+          "text": "nghệ",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Viết ng",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Viết ngh",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn chữ đứng sau: e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "ngô, ngà về giỏ \"Viết ng\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_g_gh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào về giỏ nào?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "gò",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "a1",
+          "text": "ga",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b0",
+          "text": "ghé",
+          "errorTag": "nham_g_gh"
+        },
+        {
+          "id": "b1",
+          "text": "ghi",
+          "errorTag": "nham_g_gh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Viết g",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Viết gh",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn chữ đứng sau: e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "gò, ga về giỏ \"Viết g\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ng_ngh",
+      "scaffold": "none",
+      "id": "viet-ngngh-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "nghĩ",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "a1",
+          "text": "nghề",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b0",
+          "text": "ngã",
+          "errorTag": "nham_ng_ngh"
+        },
+        {
+          "id": "b1",
+          "text": "ngơ",
+          "errorTag": "nham_ng_ngh"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Viết ngh",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Viết ng",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Nhìn chữ đứng sau: e, ê, i thì viết ngh hoặc gh."],
+      "explanation": "nghĩ, nghề về giỏ \"Viết ngh\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-ngngh-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "Nghé ngủ ở bờ đê",
+        "words": ["Nghé", "ngủ", "ở", "bờ", "đê"]
+      },
+      "answerKey": {
+        "words": ["Nghé", "ngủ", "ở", "bờ", "đê"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Nghé ngủ ở bờ đê\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ngngh-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "Mẹ nhờ Hà bê ghế nhỏ",
+        "words": ["Mẹ", "nhờ", "Hà", "bê", "ghế", "nhỏ"]
+      },
+      "answerKey": {
+        "words": ["Mẹ", "nhờ", "Hà", "bê", "ghế", "nhỏ"]
+      },
+      "hints": ["Đọc rõ âm đầu của từng tiếng."],
+      "explanation": "Câu này đọc là \"Mẹ nhờ Hà bê ghế nhỏ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ngngh-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "ngõ nhỏ",
+        "words": ["ngõ", "nhỏ"]
+      },
+      "answerKey": {
+        "words": ["ngõ", "nhỏ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"ngõ nhỏ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ngngh-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "ghế gỗ",
+        "words": ["ghế", "gỗ"]
+      },
+      "answerKey": {
+        "words": ["ghế", "gỗ"]
+      },
+      "hints": ["Đọc rõ âm đầu của từng tiếng."],
+      "explanation": "Câu này đọc là \"ghế gỗ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ngngh-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "nghỉ hè",
+        "words": ["nghỉ", "hè"]
+      },
+      "answerKey": {
+        "words": ["nghỉ", "hè"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"nghỉ hè\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ngngh-0044",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: nghé, ngõ, ngủ."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ 3 tiếng",
+          "Viết đúng ng/ngh, g/gh theo luật",
+          "Dấu thanh đặt đúng chỗ"
+        ],
+        "sampleAnswers": ["nghé ngõ ngủ"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm tiếng trước khi viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ngngh-0045",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: ghế, gà, gỗ."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ 3 tiếng",
+          "Viết đúng ng/ngh, g/gh theo luật",
+          "Dấu thanh đặt đúng chỗ"
+        ],
+        "sampleAnswers": ["ghế gà gỗ"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-ngngh-0046",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_NG_NGH_G_GH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: nghe, ghi, ngô."
+      },
+      "rubric": {
+        "criteria": [
+          "Viết đủ 3 tiếng",
+          "Viết đúng ng/ngh, g/gh theo luật",
+          "Dấu thanh đặt đúng chỗ"
+        ],
+        "sampleAnswers": ["nghe ghi ngô"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm tiếng trước khi viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B19",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17–19 tr.46–51 (g, gh, ng, ngh)"
+      }
+    }
+  ]
+}

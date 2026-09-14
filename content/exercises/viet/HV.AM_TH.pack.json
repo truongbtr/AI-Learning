@@ -1,144 +1,33 @@
 {
-  "skillCode": "VIET.HV.AM_OW",
+  "skillCode": "VIET.HV.AM_TH",
   "subject": "VIET",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v2",
-  "lessonRefs": ["KNTT-TV1-T1-B09"],
-  "note": "Bài 9: Ơ ơ và dấu ngã — bài cuối cùng bổ sung dấu, nên từ đây đủ sáu dấu. Nhiễu chính là ba con chữ o – ô – ơ nhìn gần giống nhau.",
+  "lessonRefs": ["KNTT-TV1-T1-B23"],
+  "note": "Bài 23: Th th. Từ của sách: thẻ, thọ, thơ, thủ đô, lá thư, thìa đĩa. Ô nhiễu 'hư' cho 'thư' đúng lỗi nghe sót chữ t đầu.",
   "exercises": [
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "model",
-      "id": "viet-amow-0001",
+      "id": "viet-amth-0001",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Tiếng nào có âm ơ?"
+        "text": "Tiếng nào có âm th?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bơ"
+          "text": "thỏ"
         },
         {
           "id": "b",
-          "text": "bô",
-          "errorTag": "nham_chu_gan_giong"
-        },
-        {
-          "id": "c",
-          "text": "cá"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm ơ?"],
-      "explanation": "Tiếng \"bơ\" có âm ơ.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
-      "scaffold": "model",
-      "id": "viet-amow-0002",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "MCQ",
-      "difficulty": 2,
-      "prompt": {
-        "tts": true,
-        "text": "Chọn tiếng có âm ơ nhé!"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cồ",
-          "errorTag": "nham_chu_gan_giong"
-        },
-        {
-          "id": "b",
-          "text": "cờ"
-        },
-        {
-          "id": "c",
-          "text": "bé"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm ơ thôi."],
-      "explanation": "Tiếng \"cờ\" có âm ơ.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
-      "scaffold": "model",
-      "id": "viet-amow-0003",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "MCQ",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "Ô nào chứa âm ơ?"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bồ",
-          "errorTag": "nham_chu_gan_giong"
-        },
-        {
-          "id": "b",
-          "text": "cá"
-        },
-        {
-          "id": "c",
-          "text": "bờ"
-        }
-      ],
-      "answerKey": "c",
-      "hints": ["Con nhớ âm ơ viết thế nào không?"],
-      "explanation": "Tiếng \"bờ\" có âm ơ.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
-      "scaffold": "model",
-      "id": "viet-amow-0004",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "MCQ",
-      "difficulty": 1,
-      "prompt": {
-        "tts": true,
-        "text": "Đố con: tiếng nào có âm ơ?"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cơ"
-        },
-        {
-          "id": "b",
-          "text": "cô",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "cỏ",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
@@ -146,243 +35,354 @@
         }
       ],
       "answerKey": "a",
-      "hints": ["Đánh vần từng ô lên là ra ngay."],
-      "explanation": "Tiếng \"cơ\" có âm ơ.",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm th?"],
+      "explanation": "Tiếng \"thỏ\" có âm th.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
-      "scaffold": "none",
-      "id": "viet-amow-0005",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amth-0002",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Tìm giúp {ban} tiếng có âm ơ."
+        "text": "Chọn tiếng có âm th nhé!"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cố",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "hư",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "cớ"
+          "text": "thư"
         },
         {
           "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm th thôi."],
+      "explanation": "Tiếng \"thư\" có âm th.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amth-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm th?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chìa",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
           "text": "bé"
+        },
+        {
+          "id": "c",
+          "text": "thìa"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ âm th viết thế nào không?"],
+      "explanation": "Tiếng \"thìa\" có âm th.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amth-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm th?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thẻ"
+        },
+        {
+          "id": "b",
+          "text": "bẻ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "cô"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"thẻ\" có âm th.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng có âm th."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "họ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "thọ"
+        },
+        {
+          "id": "c",
+          "text": "hè"
         }
       ],
       "answerKey": "b",
       "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
-      "explanation": "Tiếng \"cớ\" có âm ơ.",
+      "explanation": "Tiếng \"thọ\" có âm th.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0006",
+      "id": "viet-amth-0006",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Trong ba ô, ô nào có âm ơ?"
+        "text": "Trong ba ô, ô nào có âm th?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cỗ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "bơ",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "bà"
+          "text": "cá"
         },
         {
           "id": "c",
-          "text": "cỡ"
+          "text": "thơ"
         }
       ],
       "answerKey": "c",
-      "hints": ["Tìm con chữ của âm ơ trong từng ô nhé!"],
-      "explanation": "Tiếng \"cỡ\" có âm ơ.",
+      "hints": ["Tìm con chữ của âm th trong từng ô nhé!"],
+      "explanation": "Tiếng \"thơ\" có âm th.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0007",
+      "id": "viet-amth-0007",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Tiếng nào có âm ơ?"
+        "text": "Tiếng nào có âm th?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "đỡ"
+          "text": "thủ"
         },
         {
           "id": "b",
-          "text": "đỗ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "củ",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "ca"
+          "text": "bé"
         }
       ],
       "answerKey": "a",
-      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm ơ?"],
-      "explanation": "Tiếng \"đỡ\" có âm ơ.",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm th?"],
+      "explanation": "Tiếng \"thủ\" có âm th.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0008",
+      "id": "viet-amth-0008",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Chọn tiếng có âm ơ nhé!"
+        "text": "Chọn tiếng có âm th nhé!"
       },
       "choices": [
         {
           "id": "a",
-          "text": "đồ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "cả",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "đờ"
+          "text": "thả"
         },
         {
           "id": "c",
-          "text": "cá"
+          "text": "hồ"
         }
       ],
       "answerKey": "b",
-      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm ơ thôi."],
-      "explanation": "Tiếng \"đờ\" có âm ơ.",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm th thôi."],
+      "explanation": "Tiếng \"thả\" có âm th.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0009",
+      "id": "viet-amth-0009",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Ô nào chứa âm ơ?"
+        "text": "Ô nào chứa âm th?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "độ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "đi",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "bé"
+          "text": "bò"
         },
         {
           "id": "c",
-          "text": "đợ"
+          "text": "thi"
         }
       ],
       "answerKey": "c",
-      "hints": ["Con nhớ âm ơ viết thế nào không?"],
-      "explanation": "Tiếng \"đợ\" có âm ơ.",
+      "hints": ["Con nhớ âm th viết thế nào không?"],
+      "explanation": "Tiếng \"thi\" có âm th.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0010",
+      "id": "viet-amth-0010",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Đố con: tiếng nào có âm ơ?"
+        "text": "Đố con: tiếng nào có âm th?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bợ"
+          "text": "thợ"
         },
         {
           "id": "b",
-          "text": "bộ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "mợ",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "cà"
+          "text": "lá"
         }
       ],
       "answerKey": "a",
       "hints": ["Đánh vần từng ô lên là ra ngay."],
-      "explanation": "Tiếng \"bợ\" có âm ơ.",
+      "explanation": "Tiếng \"thợ\" có âm th.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "garden",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "doc_nham_van",
       "scaffold": "model",
-      "id": "viet-amow-0011",
+      "id": "viet-amth-0011",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 2,
       "prompt": {
@@ -390,43 +390,43 @@
         "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
         "image": {
           "kind": "emoji",
-          "value": "🥑",
-          "labelVi": "quả bơ",
+          "value": "🐇",
+          "labelVi": "con thỏ",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bô",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "thơ",
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "bơ"
+          "text": "thỏ"
         },
         {
           "id": "c",
-          "text": "cơ",
+          "text": "cỏ",
           "errorTag": "nham_am_dau"
         }
       ],
       "answerKey": "b",
-      "hints": ["Tranh vẽ quả bơ.", "Tiếng gọi quả bơ có âm ơ."],
-      "explanation": "Quả bơ đọc là \"bơ\".",
+      "hints": ["Tranh vẽ con thỏ.", "Tiếng gọi con thỏ có âm th."],
+      "explanation": "Con thỏ đọc là \"thỏ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "robot",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
-      "id": "viet-amow-0012",
+      "id": "viet-amth-0012",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 3,
       "prompt": {
@@ -434,63 +434,106 @@
         "text": "Chọn tiếng gọi tên bức tranh.",
         "image": {
           "kind": "emoji",
-          "value": "🚩",
-          "labelVi": "lá cờ",
+          "value": "✉️",
+          "labelVi": "lá thư",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "cồ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "thơ",
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "bờ",
+          "text": "hư",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "cờ"
+          "text": "thư"
         }
       ],
       "answerKey": "c",
-      "hints": ["Tranh vẽ lá cờ.", "Tiếng gọi lá cờ có âm ơ."],
-      "explanation": "Lá cờ đọc là \"cờ\".",
+      "hints": ["Tranh vẽ lá thư.", "Tiếng gọi lá thư có âm th."],
+      "explanation": "Lá thư đọc là \"thư\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
-      "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
-      "id": "viet-amow-0013",
+      "id": "viet-amth-0013",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 4,
       "prompt": {
         "tts": true,
-        "text": "Bốn ô trông rất giống nhau. Ô nào có âm ơ?"
+        "text": "Đố con: tranh này là tiếng nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥄",
+          "labelVi": "cái thìa",
+          "repeat": 1
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bô",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "thìa"
         },
         {
           "id": "b",
-          "text": "bò",
+          "text": "thì",
           "errorTag": "doc_nham_van"
         },
         {
           "id": "c",
-          "text": "bơ"
+          "text": "chìa",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ cái thìa.", "Tiếng gọi cái thìa có âm th."],
+      "explanation": "Cái thìa đọc là \"thìa\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bốn ô trông rất giống nhau. Ô nào có âm th?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cỏ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "cá"
+        },
+        {
+          "id": "c",
+          "text": "thỏ"
         },
         {
           "id": "d",
@@ -499,704 +542,581 @@
       ],
       "answerKey": "c",
       "hints": ["Đánh vần từng ô lên là ra ngay."],
-      "explanation": "Chỉ \"bơ\" có âm ơ.",
+      "explanation": "Chỉ \"thỏ\" có âm th.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0014",
+      "id": "viet-amth-0015",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 4,
       "prompt": {
         "tts": true,
-        "text": "Nhìn thật kỹ: tiếng nào có âm ơ?"
+        "text": "Nhìn thật kỹ: tiếng nào có âm th?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "cồ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "hư",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "cò",
-          "errorTag": "doc_nham_van"
+          "text": "bà"
         },
         {
           "id": "c",
-          "text": "cá"
+          "text": "bé"
         },
         {
           "id": "d",
-          "text": "cờ"
+          "text": "thư"
         }
       ],
       "answerKey": "d",
       "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
-      "explanation": "Chỉ \"cờ\" có âm ơ.",
+      "explanation": "Chỉ \"thư\" có âm th.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0015",
+      "id": "viet-amth-0016",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "MCQ",
       "difficulty": 5,
       "prompt": {
         "tts": true,
-        "text": "Chỉ một ô có âm ơ. Con tìm ra không?"
+        "text": "Chỉ một ô có âm th. Con tìm ra không?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bờ"
+          "text": "thìa"
         },
         {
           "id": "b",
-          "text": "bồ",
-          "errorTag": "nham_chu_gan_giong"
-        },
-        {
-          "id": "c",
-          "text": "bò",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "d",
-          "text": "bé"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Tìm con chữ của âm ơ trong từng ô nhé!"],
-      "explanation": "Chỉ \"bờ\" có âm ơ.",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
-      "scaffold": "none",
-      "id": "viet-amow-0016",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "MCQ",
-      "difficulty": 5,
-      "prompt": {
-        "tts": true,
-        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có âm ơ."
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cô",
-          "errorTag": "nham_chu_gan_giong"
-        },
-        {
-          "id": "b",
-          "text": "cơ"
-        },
-        {
-          "id": "c",
-          "text": "co",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "d",
-          "text": "cá"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm ơ?"],
-      "explanation": "Chỉ \"cơ\" có âm ơ.",
-      "meta": {
-        "estSeconds": 30,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "model",
-      "id": "viet-amow-0017",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 1,
-      "prompt": {
-        "tts": true,
-        "text": "Nghe rồi chọn ô đúng nhé!"
-      },
-      "listenTarget": {
-        "text": "bơ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bơ"
-        },
-        {
-          "id": "b",
-          "text": "cơ",
+          "text": "chìa",
           "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "c",
-          "text": "bò",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Nghe lại một lần nữa nhé!"],
-      "explanation": "Con vừa nghe tiếng \"bơ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "model",
-      "id": "viet-amow-0018",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 2,
-      "prompt": {
-        "tts": true,
-        "text": "{ban} đọc một tiếng, con chọn ô đúng."
-      },
-      "listenTarget": {
-        "text": "cờ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bờ",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "cờ"
-        },
-        {
-          "id": "c",
-          "text": "cò",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
-      "explanation": "Con vừa nghe tiếng \"cờ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amow-0019",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
-      },
-      "listenTarget": {
-        "text": "bờ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cờ",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "bò",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "c",
-          "text": "bờ"
-        }
-      ],
-      "answerKey": "c",
-      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
-      "explanation": "Con vừa nghe tiếng \"bờ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amow-0020",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 4,
-      "prompt": {
-        "tts": true,
-        "text": "Con nghe rồi tìm đúng tiếng nhé!"
-      },
-      "listenTarget": {
-        "text": "cơ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cơ"
-        },
-        {
-          "id": "b",
-          "text": "bơ",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "c",
-          "text": "co",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
-      "explanation": "Con vừa nghe tiếng \"cơ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amow-0021",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 5,
-      "prompt": {
-        "tts": true,
-        "text": "Lắng nghe, tiếng nào vừa vang lên?"
-      },
-      "listenTarget": {
-        "text": "cớ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bớ",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "cớ"
-        },
-        {
-          "id": "c",
-          "text": "có",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Chú ý âm đầu của tiếng con nghe."],
-      "explanation": "Con vừa nghe tiếng \"cớ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amow-0022",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 1,
-      "prompt": {
-        "tts": true,
-        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
-      },
-      "listenTarget": {
-        "text": "cỡ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dỡ",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "cõ",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "c",
-          "text": "cỡ"
-        }
-      ],
-      "answerKey": "c",
-      "hints": ["Nghe lại một lần nữa nhé!"],
-      "explanation": "Con vừa nghe tiếng \"cỡ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amow-0023",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 2,
-      "prompt": {
-        "tts": true,
-        "text": "Nghe rồi chọn ô đúng nhé!"
-      },
-      "listenTarget": {
-        "text": "đỡ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "đỡ"
-        },
-        {
-          "id": "b",
-          "text": "bỡ",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "c",
-          "text": "đã",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
-      "explanation": "Con vừa nghe tiếng \"đỡ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amow-0024",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "{ban} đọc một tiếng, con chọn ô đúng."
-      },
-      "listenTarget": {
-        "text": "đờ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bờ",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "đờ"
-        },
-        {
-          "id": "c",
-          "text": "đò",
-          "errorTag": "doc_nham_van"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
-      "explanation": "Con vừa nghe tiếng \"đờ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amow-0025",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 4,
-      "prompt": {
-        "tts": true,
-        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
-      },
-      "listenTarget": {
-        "text": "đợ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bợ",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "đọ",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "c",
-          "text": "đợ"
-        }
-      ],
-      "answerKey": "c",
-      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
-      "explanation": "Con vừa nghe tiếng \"đợ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
-      "scaffold": "none",
-      "id": "viet-amow-0026",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
-      },
-      "listenTarget": {
-        "text": "bô"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bơ",
-          "errorTag": "nham_chu_gan_giong"
-        },
-        {
-          "id": "b",
-          "text": "bô"
-        },
-        {
-          "id": "c",
-          "text": "cá"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
-      "explanation": "Tiếng con nghe là \"bô\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
-      "scaffold": "none",
-      "id": "viet-amow-0027",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 4,
-      "prompt": {
-        "tts": true,
-        "text": "Con nghe rồi tìm đúng tiếng nhé!"
-      },
-      "listenTarget": {
-        "text": "cồ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cờ",
-          "errorTag": "nham_chu_gan_giong"
-        },
-        {
-          "id": "b",
-          "text": "bé"
-        },
-        {
-          "id": "c",
-          "text": "cồ"
-        }
-      ],
-      "answerKey": "c",
-      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
-      "explanation": "Tiếng con nghe là \"cồ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
-      "scaffold": "none",
-      "id": "viet-amow-0028",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 5,
-      "prompt": {
-        "tts": true,
-        "text": "Lắng nghe, tiếng nào vừa vang lên?"
-      },
-      "listenTarget": {
-        "text": "bồ"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bồ"
-        },
-        {
-          "id": "b",
-          "text": "bờ",
-          "errorTag": "nham_chu_gan_giong"
-        },
-        {
-          "id": "c",
-          "text": "cá"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
-      "explanation": "Tiếng con nghe là \"bồ\".",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
-      "scaffold": "none",
-      "id": "viet-amow-0029",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
-      "type": "LISTEN_CHOOSE",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
-      },
-      "listenTarget": {
-        "text": "cô"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "cơ",
-          "errorTag": "nham_chu_gan_giong"
-        },
-        {
-          "id": "b",
-          "text": "cô"
         },
         {
           "id": "c",
           "text": "bà"
+        },
+        {
+          "id": "d",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tìm con chữ của âm th trong từng ô nhé!"],
+      "explanation": "Chỉ \"thìa\" có âm th.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có âm th."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bẻ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "thẻ"
+        },
+        {
+          "id": "c",
+          "text": "bà"
+        },
+        {
+          "id": "d",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm th?"],
+      "explanation": "Chỉ \"thẻ\" có âm th.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amth-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "thỏ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thỏ"
+        },
+        {
+          "id": "b",
+          "text": "cỏ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "thơ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"thỏ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amth-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "thư"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hư",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "thư"
+        },
+        {
+          "id": "c",
+          "text": "thơ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"thư\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "thìa"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chìa",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "thì",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "thìa"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"thìa\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "thẻ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thẻ"
+        },
+        {
+          "id": "b",
+          "text": "bẻ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "thỏ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"thẻ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "thọ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "họ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "thọ"
+        },
+        {
+          "id": "c",
+          "text": "thẻ",
+          "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "b",
       "hints": ["Chú ý âm đầu của tiếng con nghe."],
-      "explanation": "Tiếng con nghe là \"cô\".",
+      "explanation": "Con vừa nghe tiếng \"thọ\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "thơ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bơ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "thư",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "thơ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"thơ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "thủ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thủ"
+        },
+        {
+          "id": "b",
+          "text": "củ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "thỏ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"thủ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "thả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cả",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "thả"
+        },
+        {
+          "id": "c",
+          "text": "thỏ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"thả\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "thi"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đi",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "thơ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "thi"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"thi\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_chu_gan_giong",
       "scaffold": "none",
-      "id": "viet-amow-0030",
+      "id": "viet-amth-0027",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "thô"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thơ",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "thô"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Tiếng con nghe là \"thô\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amth-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "DRAG_DROP",
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Xếp mỗi tiếng vào đúng giỏ: có âm ơ hay không có."
+        "text": "Xếp mỗi tiếng vào đúng giỏ: có âm th hay không có."
       },
       "dragItems": [
         {
           "id": "s0a",
-          "text": "bơ"
+          "text": "thỏ"
         },
         {
           "id": "s0b",
-          "text": "cá"
+          "text": "bà"
         },
         {
           "id": "s0c",
-          "text": "cớ"
+          "text": "thọ"
         },
         {
           "id": "s0d",
-          "text": "cố",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "họ",
+          "errorTag": "nham_am_dau"
         }
       ],
       "dropZones": [
         {
           "id": "co",
-          "label": "Có âm ơ",
+          "label": "Có âm th",
           "accepts": ["s0a", "s0b", "s0c", "s0d"]
         },
         {
@@ -1209,50 +1129,50 @@
         "co": ["s0a", "s0c"],
         "khong": ["s0b", "s0d"]
       },
-      "hints": ["Đọc to từng thẻ, thẻ nào có âm ơ thì xếp riêng."],
-      "explanation": "\"bơ\" và \"cớ\" có âm ơ.",
+      "hints": ["Đọc to từng thẻ, thẻ nào có âm th thì xếp riêng."],
+      "explanation": "\"thỏ\" và \"thọ\" có âm th.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0031",
+      "id": "viet-amth-0029",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "DRAG_DROP",
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Kéo tiếng có âm ơ sang một bên nhé!"
+        "text": "Kéo tiếng có âm th sang một bên nhé!"
       },
       "dragItems": [
         {
           "id": "s1a",
-          "text": "cờ"
+          "text": "thư"
         },
         {
           "id": "s1b",
-          "text": "bé"
+          "text": "cá"
         },
         {
           "id": "s1c",
-          "text": "cỡ"
+          "text": "thơ"
         },
         {
           "id": "s1d",
-          "text": "cỗ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "bơ",
+          "errorTag": "nham_am_dau"
         }
       ],
       "dropZones": [
         {
           "id": "co",
-          "label": "Có âm ơ",
+          "label": "Có âm th",
           "accepts": ["s1a", "s1b", "s1c", "s1d"]
         },
         {
@@ -1266,20 +1186,20 @@
         "khong": ["s1b", "s1d"]
       },
       "hints": ["Xếp hai thẻ dễ trước, còn lại xếp sau."],
-      "explanation": "\"cờ\" và \"cỡ\" có âm ơ.",
+      "explanation": "\"thư\" và \"thơ\" có âm th.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0032",
+      "id": "viet-amth-0030",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "DRAG_DROP",
       "difficulty": 4,
       "prompt": {
@@ -1289,26 +1209,26 @@
       "dragItems": [
         {
           "id": "s2a",
-          "text": "bờ"
+          "text": "thìa"
         },
         {
           "id": "s2b",
-          "text": "cá"
+          "text": "bé"
         },
         {
           "id": "s2c",
-          "text": "đỡ"
+          "text": "thủ"
         },
         {
           "id": "s2d",
-          "text": "đỗ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "củ",
+          "errorTag": "nham_am_dau"
         }
       ],
       "dropZones": [
         {
           "id": "co",
-          "label": "Có âm ơ",
+          "label": "Có âm th",
           "accepts": ["s2a", "s2b", "s2c", "s2d"]
         },
         {
@@ -1322,49 +1242,49 @@
         "khong": ["s2b", "s2d"]
       },
       "hints": ["Nhìn từng con chữ trên thẻ nhé!"],
-      "explanation": "\"bờ\" và \"đỡ\" có âm ơ.",
+      "explanation": "\"thìa\" và \"thủ\" có âm th.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amow-0033",
+      "id": "viet-amth-0031",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "DRAG_DROP",
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Giỏ nào đựng tiếng có âm ơ?"
+        "text": "Giỏ nào đựng tiếng có âm th?"
       },
       "dragItems": [
         {
           "id": "s3a",
-          "text": "cơ"
+          "text": "thẻ"
         },
         {
           "id": "s3b",
-          "text": "bà"
+          "text": "cô"
         },
         {
           "id": "s3c",
-          "text": "đờ"
+          "text": "thả"
         },
         {
           "id": "s3d",
-          "text": "đồ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "cả",
+          "errorTag": "nham_am_dau"
         }
       ],
       "dropZones": [
         {
           "id": "co",
-          "label": "Có âm ơ",
+          "label": "Có âm th",
           "accepts": ["s3a", "s3b", "s3c", "s3d"]
         },
         {
@@ -1378,20 +1298,20 @@
         "khong": ["s3b", "s3d"]
       },
       "hints": ["Đánh vần thẻ rồi mới kéo."],
-      "explanation": "\"cơ\" và \"đờ\" có âm ơ.",
+      "explanation": "\"thẻ\" và \"thả\" có âm th.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "garden",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
-      "id": "viet-amow-0034",
+      "id": "viet-amth-0032",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "DRAG_DROP",
       "difficulty": 2,
       "prompt": {
@@ -1399,24 +1319,24 @@
         "text": "Kéo tiếng đúng vào ô dưới tranh.",
         "image": {
           "kind": "emoji",
-          "value": "🥑",
-          "labelVi": "quả bơ",
+          "value": "🐇",
+          "labelVi": "con thỏ",
           "repeat": 1
         }
       },
       "dragItems": [
         {
           "id": "dung",
-          "text": "bơ"
+          "text": "thỏ"
         },
         {
           "id": "sai0",
-          "text": "bô",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "thơ",
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "sai1",
-          "text": "cơ",
+          "text": "cỏ",
           "errorTag": "nham_am_dau"
         }
       ],
@@ -1430,21 +1350,21 @@
       "answerKey": {
         "o": ["dung"]
       },
-      "hints": ["Tranh vẽ quả bơ.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
-      "explanation": "Quả bơ viết là \"bơ\".",
+      "hints": ["Tranh vẽ con thỏ.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Con thỏ viết là \"thỏ\".",
       "meta": {
         "estSeconds": 35,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "robot",
-      "targetsError": "nham_chu_gan_giong",
+      "targetsError": "doc_nham_van",
       "scaffold": "none",
-      "id": "viet-amow-0035",
+      "id": "viet-amth-0033",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "DRAG_DROP",
       "difficulty": 3,
       "prompt": {
@@ -1452,24 +1372,24 @@
         "text": "Chọn thẻ đúng rồi thả vào ô trống.",
         "image": {
           "kind": "emoji",
-          "value": "🚩",
-          "labelVi": "lá cờ",
+          "value": "✉️",
+          "labelVi": "lá thư",
           "repeat": 1
         }
       },
       "dragItems": [
         {
           "id": "dung",
-          "text": "cờ"
+          "text": "thư"
         },
         {
           "id": "sai0",
-          "text": "cồ",
-          "errorTag": "nham_chu_gan_giong"
+          "text": "thơ",
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "sai1",
-          "text": "bờ",
+          "text": "hư",
           "errorTag": "nham_am_dau"
         }
       ],
@@ -1483,21 +1403,74 @@
       "answerKey": {
         "o": ["dung"]
       },
-      "hints": ["Tranh vẽ lá cờ.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
-      "explanation": "Lá cờ viết là \"cờ\".",
+      "hints": ["Tranh vẽ lá thư.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Lá thư viết là \"thư\".",
       "meta": {
         "estSeconds": 35,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amth-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_TH"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Thẻ nào gọi tên bức tranh? Kéo vào nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🥄",
+          "labelVi": "cái thìa",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "thìa"
+        },
+        {
+          "id": "sai0",
+          "text": "thì",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "chìa",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ cái thìa.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Cái thìa viết là \"thìa\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
-      "id": "viet-amow-0036",
+      "id": "viet-amth-0035",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "READ_ALOUD",
       "difficulty": 2,
       "prompt": {
@@ -1505,27 +1478,27 @@
         "text": "Con đọc to các tiếng này nhé!"
       },
       "readTarget": {
-        "text": "bé có bơ",
-        "words": ["bé", "có", "bơ"]
+        "text": "Bé chia thìa chia đĩa cho cả nhà",
+        "words": ["Bé", "chia", "thìa", "chia", "đĩa", "cho", "cả", "nhà"]
       },
       "answerKey": {
-        "words": ["bé", "có", "bơ"]
+        "words": ["Bé", "chia", "thìa", "chia", "đĩa", "cho", "cả", "nhà"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Câu này đọc là \"bé có bơ\".",
+      "explanation": "Câu này đọc là \"Bé chia thìa chia đĩa cho cả nhà\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amow-0037",
+      "id": "viet-amth-0036",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "READ_ALOUD",
       "difficulty": 2,
       "prompt": {
@@ -1533,27 +1506,27 @@
         "text": "Đọc chậm từng tiếng cho {ban} nghe."
       },
       "readTarget": {
-        "text": "cờ đỏ",
-        "words": ["cờ", "đỏ"]
+        "text": "thủ đô",
+        "words": ["thủ", "đô"]
       },
       "answerKey": {
-        "words": ["cờ", "đỏ"]
+        "words": ["thủ", "đô"]
       },
       "hints": ["Đọc thầm một lần rồi mới đọc to."],
-      "explanation": "Câu này đọc là \"cờ đỏ\".",
+      "explanation": "Câu này đọc là \"thủ đô\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amow-0038",
+      "id": "viet-amth-0037",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "READ_ALOUD",
       "difficulty": 5,
       "prompt": {
@@ -1561,27 +1534,27 @@
         "text": "Đọc to câu này nhé!"
       },
       "readTarget": {
-        "text": "bố đỡ bà",
-        "words": ["bố", "đỡ", "bà"]
+        "text": "lá thư",
+        "words": ["lá", "thư"]
       },
       "answerKey": {
-        "words": ["bố", "đỡ", "bà"]
+        "words": ["lá", "thư"]
       },
       "hints": ["Đánh vần tiếng nào khó rồi đọc trơn lại."],
-      "explanation": "Câu này đọc là \"bố đỡ bà\".",
+      "explanation": "Câu này đọc là \"lá thư\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amow-0039",
+      "id": "viet-amth-0038",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "READ_ALOUD",
       "difficulty": 3,
       "prompt": {
@@ -1589,27 +1562,27 @@
         "text": "Con đọc cho cả nhà cùng nghe."
       },
       "readTarget": {
-        "text": "cô ở bờ đê",
-        "words": ["cô", "ở", "bờ", "đê"]
+        "text": "thìa đĩa",
+        "words": ["thìa", "đĩa"]
       },
       "answerKey": {
-        "words": ["cô", "ở", "bờ", "đê"]
+        "words": ["thìa", "đĩa"]
       },
       "hints": ["Ngắt rõ giữa các tiếng."],
-      "explanation": "Câu này đọc là \"cô ở bờ đê\".",
+      "explanation": "Câu này đọc là \"thìa đĩa\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amow-0040",
+      "id": "viet-amth-0039",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "READ_ALOUD",
       "difficulty": 4,
       "prompt": {
@@ -1617,96 +1590,96 @@
         "text": "Đọc rõ từng tiếng nhé!"
       },
       "readTarget": {
-        "text": "bà dỗ bé",
-        "words": ["bà", "dỗ", "bé"]
+        "text": "Thỏ có cỏ",
+        "words": ["Thỏ", "có", "cỏ"]
       },
       "answerKey": {
-        "words": ["bà", "dỗ", "bé"]
+        "words": ["Thỏ", "có", "cỏ"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Câu này đọc là \"bà dỗ bé\".",
+      "explanation": "Câu này đọc là \"Thỏ có cỏ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amow-0041",
+      "id": "viet-amth-0040",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "WRITE_PHOTO",
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Viết vào vở: bơ, cờ, bờ."
+        "text": "Viết vào vở: thỏ, thư, thìa."
       },
       "rubric": {
         "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["bơ cờ bờ"]
+        "sampleAnswers": ["thỏ thư thìa"]
       },
       "answerKey": null,
       "hints": ["Viết chậm, đúng độ cao từng con chữ."],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 70,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amow-0042",
+      "id": "viet-amth-0041",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "WRITE_PHOTO",
       "difficulty": 4,
       "prompt": {
         "tts": true,
-        "text": "Con chép vào vở: cơ, ở, đỡ."
+        "text": "Con chép vào vở: thủ đô, lá thư."
       },
       "rubric": {
-        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["cơ ở đỡ"]
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["thủ đô lá thư"]
       },
       "answerKey": null,
       "hints": ["Nhớ đánh dấu thanh sau khi viết xong con chữ."],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 70,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amow-0043",
+      "id": "viet-amth-0042",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_OW"],
+      "skillCodes": ["VIET.HV.AM_TH"],
       "type": "WRITE_PHOTO",
       "difficulty": 5,
       "prompt": {
         "tts": true,
-        "text": "Viết lại giúp {ban}: dơ, bở, cỡ."
+        "text": "Viết lại giúp {ban}: thẻ, thọ, thơ."
       },
       "rubric": {
         "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["dơ bở cỡ"]
+        "sampleAnswers": ["thẻ thọ thơ"]
       },
       "answerKey": null,
       "hints": ["Nhìn mẫu rồi viết theo nhé!"],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 70,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 9 tr.30 (Ơ ơ, dấu ngã)"
+        "lessonUnitCode": "KNTT-TV1-T1-B23",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 23 tr.58–59 (Th th, ia)"
       }
     }
   ]

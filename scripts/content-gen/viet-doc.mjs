@@ -8,6 +8,22 @@
  *   node scripts/content-gen/viet-doc.mjs
  */
 import { cap, choicesOf, ex, img, listenPrompt, numberId, writePack } from "./lib.mjs";
+import { bare } from "./vn-units.mjs";
+
+const NEAR = ["aăâ", "oôơ", "eê", "uư", "dđ"];
+/** Mã lỗi đúng nghĩa cho một thẻ sai so với thẻ đúng — null khi không có mã nào tả được. */
+function tagOf(right, wrong) {
+  if (bare(right) === bare(wrong))
+    return right.normalize("NFD").length > bare(right).length && bare(wrong) === wrong
+      ? "thieu_dau_thanh"
+      : "sai_dau_thanh";
+  const [a, b] = [bare(right), bare(wrong)];
+  if (a.length !== b.length) return null;
+  const diff = [...a].map((ch, i) => [ch, b[i]]).filter(([x, y]) => x !== y);
+  if (diff.length === 1 && NEAR.some((f) => f.includes(diff[0][0]) && f.includes(diff[0][1])))
+    return "nham_chu_gan_giong";
+  return null;
+}
 
 const REF = ["KNTT-TV1-T1-B13"];
 const SRC = "SGK Tiếng Việt 1 tập một, Bài 13 tr.38–39 (U u, Ư ư)";
@@ -535,10 +551,13 @@ const WORDS = [
   });
 
   // ③ Ghép hai tiếng thành từ — kéo tiếng thứ hai vào chỗ trống.
-  WORDS.slice(0, 8).forEach(([w, pic, gloss, near1, tag1], i) => {
+  WORDS.slice(0, 8).forEach(([w, pic, gloss, near1, _tag1, near2], i) => {
     const [first, second] = w.split(" ");
-    // Thẻ nhiễu là **đúng tiếng thứ hai của từ nhiễu**, nên mã lỗi của từ cũng đúng cho thẻ.
-    const decoy = near1.split(" ")[1];
+    // Thẻ nhiễu là tiếng thứ hai của một từ nhiễu — nhưng chỉ khi nó **khác** tiếng đúng: từ nhiễu
+    // "là cờ" lệch ở tiếng đầu, nên tiếng thứ hai của nó lại chính là "cờ" (3 bài từng có hai thẻ
+    // giống hệt nhau). Mã lỗi tính lại theo đúng hai tiếng được so.
+    const decoy = [near1, near2].map((x) => x.split(" ")[1]).find((x) => x !== second);
+    const tag1 = tagOf(second, decoy);
     add({
       type: "DRAG_DROP",
       difficulty: 2 + (i % 4),
@@ -549,7 +568,7 @@ const WORDS = [
       },
       dragItems: [
         { id: "dung", text: second },
-        { id: "sai", text: decoy, errorTag: tag1 },
+        tag1 ? { id: "sai", text: decoy, errorTag: tag1 } : { id: "sai", text: decoy },
       ],
       dropZones: [{ id: "o", label: "Tiếng thứ hai", accepts: ["dung", "sai"] }],
       answerKey: { o: ["dung"] },

@@ -1,0 +1,1748 @@
+{
+  "skillCode": "VMATH.SO.SO_1_10",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-T1-B06", "KNTT-T1-B17"],
+  "note": "Các số từ 1 đến 10 — tổng hợp theo Luyện tập chung bài 6: đếm bể cá, điền dấu, mấy và mấy, bé hơn / lớn hơn 5.",
+  "exercises": [
+    {
+      "assetTheme": "garden",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-so110-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Có bao nhiêu con cá?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 3 con cá.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-so110-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm xem có mấy quả táo nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 5 quả táo.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-so110-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh có mấy ngôi sao?",
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 1 ngôi sao.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-so110-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có bao nhiêu con ong?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 6 con ong.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-so110-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm xem có mấy bông hoa nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 2 bông hoa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-so110-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh có mấy ô tô?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚗",
+          "labelVi": "ô tô",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 4 ô tô.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có bao nhiêu con bọ rùa?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "con bọ rùa",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 8 con bọ rùa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm xem có mấy quả bóng bay nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "quả bóng bay",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 7 quả bóng bay.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh có mấy con cá?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "repeat": 9
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 9 con cá.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có bao nhiêu quả táo?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "repeat": 10
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chạm từng cái khi đếm để không sót."],
+      "explanation": "Có 10 quả táo.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "vmath-so110-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Điền dấu thích hợp: 1 ? 2"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<"
+        },
+        {
+          "id": "b",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "="
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn há về phía số lớn hơn.", "Hai số bằng nhau thì dùng dấu bằng."],
+      "explanation": "1 < 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "vmath-so110-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Điền dấu thích hợp: 6 ? 5"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": ">"
+        },
+        {
+          "id": "c",
+          "text": "="
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Miệng dấu luôn há về phía số lớn hơn.", "Hai số bằng nhau thì dùng dấu bằng."],
+      "explanation": "6 > 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "vmath-so110-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Điền dấu thích hợp: 4 ? 4"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": ">"
+        },
+        {
+          "id": "c",
+          "text": "="
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Miệng dấu luôn há về phía số lớn hơn.", "Hai số bằng nhau thì dùng dấu bằng."],
+      "explanation": "4 = 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "vmath-so110-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Điền dấu thích hợp: 8 ? 7"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">"
+        },
+        {
+          "id": "b",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "="
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn há về phía số lớn hơn.", "Hai số bằng nhau thì dùng dấu bằng."],
+      "explanation": "8 > 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "vmath-so110-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Điền dấu thích hợp: 10 ? 5"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": ">"
+        },
+        {
+          "id": "c",
+          "text": "="
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Miệng dấu luôn há về phía số lớn hơn.", "Hai số bằng nhau thì dùng dấu bằng."],
+      "explanation": "10 > 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "vmath-so110-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Điền dấu thích hợp: 2 ? 3"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "="
+        },
+        {
+          "id": "c",
+          "text": "<"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Miệng dấu luôn há về phía số lớn hơn.", "Hai số bằng nhau thì dùng dấu bằng."],
+      "explanation": "2 < 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "vmath-so110-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Điền dấu thích hợp: 9 ? 9"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "="
+        },
+        {
+          "id": "b",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": ">"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Miệng dấu luôn há về phía số lớn hơn.", "Hai số bằng nhau thì dùng dấu bằng."],
+      "explanation": "9 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "vmath-so110-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Điền dấu thích hợp: 3 ? 7"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "<"
+        },
+        {
+          "id": "c",
+          "text": "="
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Miệng dấu luôn há về phía số lớn hơn.", "Hai số bằng nhau thì dùng dấu bằng."],
+      "explanation": "3 < 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-so110-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "2 và mấy được 5?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ 2 tới 5."],
+      "explanation": "2 và 3 được 5.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-so110-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "3 và mấy được 7?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ 3 tới 7."],
+      "explanation": "3 và 4 được 7.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-so110-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "4 và mấy được 6?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ 4 tới 6."],
+      "explanation": "4 và 2 được 6.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-so110-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "1 và mấy được 8?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm tiếp từ 1 tới 8."],
+      "explanation": "1 và 7 được 8.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-so110-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "5 và mấy được 10?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm tiếp từ 5 tới 10."],
+      "explanation": "5 và 5 được 10.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-so110-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "6 và mấy được 9?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm tiếp từ 6 tới 9."],
+      "explanation": "6 và 3 được 9.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "bốn"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe số 4.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một số, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "bảy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm trên ngón tay tới số con nghe."],
+      "explanation": "Con vừa nghe số 7.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào số con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "mười"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe số 10.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng số nhé!"
+      },
+      "listenTarget": {
+        "text": "hai"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe cả phần cuối của số."],
+      "explanation": "Con vừa nghe số 2.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "chín"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe số 9.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-so110-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn số."
+      },
+      "listenTarget": {
+        "text": "năm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm trên ngón tay tới số con nghe."],
+      "explanation": "Con vừa nghe số 5.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp số vào giỏ: bé hơn 5 hay lớn hơn 5."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "2"
+        },
+        {
+          "id": "c2",
+          "text": "8"
+        },
+        {
+          "id": "c3",
+          "text": "4"
+        },
+        {
+          "id": "c4",
+          "text": "9"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be",
+          "label": "Bé hơn 5",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "lon",
+          "label": "Lớn hơn 5",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "be": ["c1", "c3"],
+        "lon": ["c2", "c4"]
+      },
+      "hints": ["Đếm tới 5 rồi xem số đứng trước hay sau."],
+      "explanation": "2 và 4 bé hơn 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Số nào bé hơn 5, số nào lớn hơn 5?"
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "1"
+        },
+        {
+          "id": "c2",
+          "text": "6"
+        },
+        {
+          "id": "c3",
+          "text": "3"
+        },
+        {
+          "id": "c4",
+          "text": "10"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be",
+          "label": "Bé hơn 5",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "lon",
+          "label": "Lớn hơn 5",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "be": ["c1", "c3"],
+        "lon": ["c2", "c4"]
+      },
+      "hints": ["Đếm tới 5 rồi xem số đứng trước hay sau."],
+      "explanation": "1 và 3 bé hơn 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp số vào giỏ: bé hơn 5 hay lớn hơn 5."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "0"
+        },
+        {
+          "id": "c2",
+          "text": "7"
+        },
+        {
+          "id": "c3",
+          "text": "4"
+        },
+        {
+          "id": "c4",
+          "text": "6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be",
+          "label": "Bé hơn 5",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "lon",
+          "label": "Lớn hơn 5",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "be": ["c1", "c3"],
+        "lon": ["c2", "c4"]
+      },
+      "hints": ["Đếm tới 5 rồi xem số đứng trước hay sau."],
+      "explanation": "0 và 4 bé hơn 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Số nào bé hơn 5, số nào lớn hơn 5?"
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "text": "3"
+        },
+        {
+          "id": "c2",
+          "text": "9"
+        },
+        {
+          "id": "c3",
+          "text": "2"
+        },
+        {
+          "id": "c4",
+          "text": "8"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "be",
+          "label": "Bé hơn 5",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "lon",
+          "label": "Lớn hơn 5",
+          "accepts": ["c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "be": ["c1", "c3"],
+        "lon": ["c2", "c4"]
+      },
+      "hints": ["Đếm tới 5 rồi xem số đứng trước hay sau."],
+      "explanation": "3 và 2 bé hơn 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Trong bể có mấy con ong? Chạm để đếm."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Đếm theo hàng từ trái sang phải."],
+      "explanation": "Có 6 con ong.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Trong bể có mấy bông hoa? Chạm để đếm."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Đếm theo hàng từ trái sang phải."],
+      "explanation": "Có 4 bông hoa.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0037",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trong bể có mấy ô tô? Chạm để đếm."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🚗",
+          "labelVi": "ô tô",
+          "repeat": 9
+        },
+        "correctCount": 9,
+        "layout": "grid"
+      },
+      "answerKey": 9,
+      "hints": ["Đếm theo hàng từ trái sang phải."],
+      "explanation": "Có 9 ô tô.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0038",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Trong bể có mấy con bọ rùa? Chạm để đếm."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "con bọ rùa",
+          "repeat": 7
+        },
+        "correctCount": 7,
+        "layout": "grid"
+      },
+      "answerKey": 7,
+      "hints": ["Đếm theo hàng từ trái sang phải."],
+      "explanation": "Có 7 con bọ rùa.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-so110-0039",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to dãy số này nhé!"
+      },
+      "readTarget": {
+        "text": "sáu lớn hơn năm",
+        "words": ["sáu", "lớn", "hơn", "năm"]
+      },
+      "answerKey": {
+        "words": ["sáu", "lớn", "hơn", "năm"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"sáu lớn hơn năm\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0040",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "hai bé hơn ba",
+        "words": ["hai", "bé", "hơn", "ba"]
+      },
+      "answerKey": {
+        "words": ["hai", "bé", "hơn", "ba"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"hai bé hơn ba\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0041",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng số nhé!"
+      },
+      "readTarget": {
+        "text": "bốn bằng bốn",
+        "words": ["bốn", "bằng", "bốn"]
+      },
+      "answerKey": {
+        "words": ["bốn", "bằng", "bốn"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"bốn bằng bốn\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0042",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "ba và hai được năm",
+        "words": ["ba", "và", "hai", "được", "năm"]
+      },
+      "answerKey": {
+        "words": ["ba", "và", "hai", "được", "năm"]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"ba và hai được năm\".",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0043",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết dấu thích hợp: 6 … 5 vào vở nhé!"
+      },
+      "rubric": {
+        "criteria": ["Điền đúng", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["6 > 5"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc to đề rồi mới viết."],
+      "explanation": "Đáp án: 6 > 5.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0044",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết: 3 và … được 7 vào vở nhé!"
+      },
+      "rubric": {
+        "criteria": ["Điền đúng", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["3 và 4 được 7"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc to đề rồi mới viết."],
+      "explanation": "Đáp án: 3 và 4 được 7.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-so110-0045",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.SO_1_10"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết ba số liền nhau bắt đầu từ 8 vào vở nhé!"
+      },
+      "rubric": {
+        "criteria": ["Điền đúng", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["8 9 10"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc to đề rồi mới viết."],
+      "explanation": "Đáp án: 8 9 10.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 Luyện tập chung tr.38–45"
+      }
+    }
+  ]
+}

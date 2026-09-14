@@ -1,0 +1,1749 @@
+{
+  "skillCode": "VMATH.SO.THU_TU_SO",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-T1-B04", "KNTT-T1-B06"],
+  "note": "Thứ tự số: liền trước, liền sau, số còn thiếu, xếp bé → lớn. Ô nhiễu 'nhầm liền trước với liền sau' mang mã nham_thu_tu_so; chép lại số có sẵn trên đoàn tàu mang mã lap_lai_tong.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-thutu-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Số liền sau của 3 là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": [
+        "Đếm tiếp từ 3 thêm một số.",
+        "Liền sau thì lớn hơn một, liền trước thì bé hơn một."
+      ],
+      "explanation": "Số liền sau của 3 là 4.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-thutu-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Số đứng liền trước 5 là số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lùi từ 5 một số.", "Liền sau thì lớn hơn một, liền trước thì bé hơn một."],
+      "explanation": "Số liền trước của 5 là 4.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-thutu-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sau số 7 là số nào nhỉ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": [
+        "Đếm tiếp từ 7 thêm một số.",
+        "Liền sau thì lớn hơn một, liền trước thì bé hơn một."
+      ],
+      "explanation": "Số liền sau của 7 là 8.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-thutu-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Số liền trước của 2 là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ 2 một số.", "Liền sau thì lớn hơn một, liền trước thì bé hơn một."],
+      "explanation": "Số liền trước của 2 là 1.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-thutu-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp sau 8 là số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": [
+        "Đếm tiếp từ 8 thêm một số.",
+        "Liền sau thì lớn hơn một, liền trước thì bé hơn một."
+      ],
+      "explanation": "Số liền sau của 8 là 9.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-thutu-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Trước số 6 là số nào nhỉ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi từ 6 một số.", "Liền sau thì lớn hơn một, liền trước thì bé hơn một."],
+      "explanation": "Số liền trước của 6 là 5.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Số liền sau của 4 là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": [
+        "Đếm tiếp từ 4 thêm một số.",
+        "Liền sau thì lớn hơn một, liền trước thì bé hơn một."
+      ],
+      "explanation": "Số liền sau của 4 là 5.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Số đứng liền trước 9 là số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lùi từ 9 một số.", "Liền sau thì lớn hơn một, liền trước thì bé hơn một."],
+      "explanation": "Số liền trước của 9 là 8.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Sau số 1 là số nào nhỉ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": [
+        "Đếm tiếp từ 1 thêm một số.",
+        "Liền sau thì lớn hơn một, liền trước thì bé hơn một."
+      ],
+      "explanation": "Số liền sau của 1 là 2.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Số liền trước của 5 là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi từ 5 một số.", "Liền sau thì lớn hơn một, liền trước thì bé hơn một."],
+      "explanation": "Số liền trước của 5 là 4.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp sau 6 là số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": [
+        "Đếm tiếp từ 6 thêm một số.",
+        "Liền sau thì lớn hơn một, liền trước thì bé hơn một."
+      ],
+      "explanation": "Số liền sau của 6 là 7.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Trước số 2 là số nào nhỉ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi từ 2 một số.", "Liền sau thì lớn hơn một, liền trước thì bé hơn một."],
+      "explanation": "Số liền trước của 2 là 1.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-thutu-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đoàn tàu số: 3, ?, 5. Toa ở giữa là số mấy?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚂",
+          "labelVi": "đoàn tàu"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm từ 3 tới 5.", "Số ở giữa đứng ngay sau số đầu."],
+      "explanation": "3, 4, 5.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-thutu-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đoàn tàu số: 4, ?, 6. Toa ở giữa là số mấy?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚂",
+          "labelVi": "đoàn tàu"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm từ 4 tới 6.", "Số ở giữa đứng ngay sau số đầu."],
+      "explanation": "4, 5, 6.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-thutu-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đoàn tàu số: 7, ?, 9. Toa ở giữa là số mấy?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚂",
+          "labelVi": "đoàn tàu"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm từ 7 tới 9.", "Số ở giữa đứng ngay sau số đầu."],
+      "explanation": "7, 8, 9.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-thutu-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đoàn tàu số: 8, ?, 10. Toa ở giữa là số mấy?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚂",
+          "labelVi": "đoàn tàu"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm từ 8 tới 10.", "Số ở giữa đứng ngay sau số đầu."],
+      "explanation": "8, 9, 10.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-thutu-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đoàn tàu số: 0, ?, 2. Toa ở giữa là số mấy?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚂",
+          "labelVi": "đoàn tàu"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm từ 0 tới 2.", "Số ở giữa đứng ngay sau số đầu."],
+      "explanation": "0, 1, 2.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-thutu-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đoàn tàu số: 5, ?, 7. Toa ở giữa là số mấy?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚂",
+          "labelVi": "đoàn tàu"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm từ 5 tới 7.", "Số ở giữa đứng ngay sau số đầu."],
+      "explanation": "5, 6, 7.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-thutu-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đoàn tàu số: 1, ?, 3. Toa ở giữa là số mấy?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚂",
+          "labelVi": "đoàn tàu"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm từ 1 tới 3.", "Số ở giữa đứng ngay sau số đầu."],
+      "explanation": "1, 2, 3.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-thutu-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đoàn tàu số: 6, ?, 8. Toa ở giữa là số mấy?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚂",
+          "labelVi": "đoàn tàu"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm từ 6 tới 8.", "Số ở giữa đứng ngay sau số đầu."],
+      "explanation": "6, 7, 8.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "số liền sau của hai"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Số liền sau của 2 là 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một số, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "số liền sau của bốn"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm trên ngón tay tới số con nghe."],
+      "explanation": "Số liền sau của 4 là 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào số con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "số liền sau của năm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Số liền sau của 5 là 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng số nhé!"
+      },
+      "listenTarget": {
+        "text": "số liền sau của bảy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe cả phần cuối của số."],
+      "explanation": "Số liền sau của 7 là 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "số liền sau của tám"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Số liền sau của 8 là 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-thutu-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn số."
+      },
+      "listenTarget": {
+        "text": "số liền sau của chín"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm trên ngón tay tới số con nghe."],
+      "explanation": "Số liền sau của 9 là 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các số theo thứ tự từ bé đến lớn."
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "8"
+        },
+        {
+          "id": "s2",
+          "text": "2"
+        },
+        {
+          "id": "s3",
+          "text": "5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Tìm số bé nhất trước, rồi số lớn nhất."],
+      "explanation": "2, 5, 8.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo ba số vào ô, số bé nhất đứng đầu."
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "6"
+        },
+        {
+          "id": "s2",
+          "text": "1"
+        },
+        {
+          "id": "s3",
+          "text": "4"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Tìm số bé nhất trước, rồi số lớn nhất."],
+      "explanation": "1, 4, 6.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ai bé nhất đứng trước nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "9"
+        },
+        {
+          "id": "s2",
+          "text": "3"
+        },
+        {
+          "id": "s3",
+          "text": "7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Tìm số bé nhất trước, rồi số lớn nhất."],
+      "explanation": "3, 7, 9.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các số theo thứ tự từ bé đến lớn."
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "10"
+        },
+        {
+          "id": "s2",
+          "text": "0"
+        },
+        {
+          "id": "s3",
+          "text": "5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Tìm số bé nhất trước, rồi số lớn nhất."],
+      "explanation": "0, 5, 10.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo ba số vào ô, số bé nhất đứng đầu."
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "7"
+        },
+        {
+          "id": "s2",
+          "text": "4"
+        },
+        {
+          "id": "s3",
+          "text": "6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Tìm số bé nhất trước, rồi số lớn nhất."],
+      "explanation": "4, 6, 7.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ai bé nhất đứng trước nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "9"
+        },
+        {
+          "id": "s2",
+          "text": "2"
+        },
+        {
+          "id": "s3",
+          "text": "3"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Tìm số bé nhất trước, rồi số lớn nhất."],
+      "explanation": "2, 3, 9.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "vmath-thutu-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba số 4, 7, 2, số nào lớn hơn cả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lần lượt, số nào đếm tới sau cùng thì lớn nhất."],
+      "explanation": "7 lớn hơn cả.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "vmath-thutu-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba số 9, 3, 6, số nào lớn hơn cả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lần lượt, số nào đếm tới sau cùng thì lớn nhất."],
+      "explanation": "9 lớn hơn cả.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "vmath-thutu-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba số 5, 8, 1, số nào lớn hơn cả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lần lượt, số nào đếm tới sau cùng thì lớn nhất."],
+      "explanation": "8 lớn hơn cả.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "vmath-thutu-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba số 6, 10, 7, số nào lớn hơn cả?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lần lượt, số nào đếm tới sau cùng thì lớn nhất."],
+      "explanation": "10 lớn hơn cả.",
+      "meta": {
+        "estSeconds": 28,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-thutu-0037",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các số này nhé!"
+      },
+      "readTarget": {
+        "text": "một hai ba bốn năm",
+        "words": ["một", "hai", "ba", "bốn", "năm"]
+      },
+      "answerKey": {
+        "words": ["một", "hai", "ba", "bốn", "năm"]
+      },
+      "hints": ["Đếm xuôi từng số một."],
+      "explanation": "Dãy số đọc là \"một hai ba bốn năm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0038",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng số cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "sáu bảy tám chín mười",
+        "words": ["sáu", "bảy", "tám", "chín", "mười"]
+      },
+      "answerKey": {
+        "words": ["sáu", "bảy", "tám", "chín", "mười"]
+      },
+      "hints": ["Đếm xuôi từng số một."],
+      "explanation": "Dãy số đọc là \"sáu bảy tám chín mười\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0039",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to dãy số này nhé!"
+      },
+      "readTarget": {
+        "text": "mười chín tám bảy sáu",
+        "words": ["mười", "chín", "tám", "bảy", "sáu"]
+      },
+      "answerKey": {
+        "words": ["mười", "chín", "tám", "bảy", "sáu"]
+      },
+      "hints": ["Đếm lùi, chậm thôi nhé!"],
+      "explanation": "Dãy số đọc là \"mười chín tám bảy sáu\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0040",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "năm bốn ba hai một không",
+        "words": ["năm", "bốn", "ba", "hai", "một", "không"]
+      },
+      "answerKey": {
+        "words": ["năm", "bốn", "ba", "hai", "một", "không"]
+      },
+      "hints": ["Đếm lùi, chậm thôi nhé!"],
+      "explanation": "Dãy số đọc là \"năm bốn ba hai một không\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0041",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết số liền sau của 2 và của 3 vào vở nhé!"
+      },
+      "rubric": {
+        "criteria": ["Viết đúng các số", "Đúng thứ tự", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["2, 3, 4"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm thành tiếng rồi mới viết."],
+      "explanation": "Đáp án: 2, 3, 4.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0042",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết số còn thiếu: 7, …, 9 vào vở nhé!"
+      },
+      "rubric": {
+        "criteria": ["Viết đúng các số", "Đúng thứ tự", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["7, 8, 9"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm thành tiếng rồi mới viết."],
+      "explanation": "Đáp án: 7, 8, 9.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-thutu-0043",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.THU_TU_SO"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết ba số đếm lùi từ 10 vào vở nhé!"
+      },
+      "rubric": {
+        "criteria": ["Viết đúng các số", "Đúng thứ tự", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["10, 9, 8"]
+      },
+      "answerKey": null,
+      "hints": ["Đếm thành tiếng rồi mới viết."],
+      "explanation": "Đáp án: 10, 9, 8.",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": "KNTT-T1-B06",
+        "sourceRef": "SGK Toán 1 tập một, Bài 6 tr.40 (đoàn tàu số) và Bài 4 tr.24"
+      }
+    }
+  ]
+}

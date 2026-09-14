@@ -1,365 +1,143 @@
 {
-  "skillCode": "VIET.HV.AM_I_K",
+  "skillCode": "VIET.HV.AM_G_GI",
   "subject": "VIET",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v2",
-  "lessonRefs": ["KNTT-TV1-T1-B11"],
-  "note": "Bài 11: I i, K k. Chữ k chỉ đứng trước i, e, ê — mọi tiếng có k trong gói này đều theo đúng quy tắc đó (quy tắc c/k/q có gói riêng).",
+  "lessonRefs": ["KNTT-TV1-T1-B17"],
+  "note": "Bài 17: G g, Gi gi. Cặp nhiễu chính là g ↔ gi (gà / già, gỗ / giỗ, gò / giò): cùng vần, khác âm đầu, nên mã là nham_am_dau. 'giò' có âm gi chứ không có âm g.",
   "exercises": [
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "model",
-      "id": "viet-amik-0001",
+      "id": "viet-amggi-0001",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Tiếng nào có âm i?"
+        "text": "Tiếng nào có âm g?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bi"
+          "text": "gà"
         },
         {
           "id": "b",
-          "text": "bà",
-          "errorTag": "doc_nham_van"
+          "text": "già",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "ba"
+          "text": "bò"
         }
       ],
       "answerKey": "a",
-      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm i?"],
-      "explanation": "Tiếng \"bi\" có âm i.",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm g?"],
+      "explanation": "Tiếng \"gà\" có âm g.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "model",
-      "id": "viet-amik-0002",
+      "id": "viet-amggi-0002",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Chọn tiếng có âm i nhé!"
+        "text": "Chọn tiếng có âm gi nhé!"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bá",
-          "errorTag": "doc_nham_van"
+          "text": "gà",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "bí"
+          "text": "già"
         },
         {
           "id": "c",
-          "text": "bà"
+          "text": "bé"
         }
       ],
       "answerKey": "b",
-      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm i thôi."],
-      "explanation": "Tiếng \"bí\" có âm i.",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm gi thôi."],
+      "explanation": "Tiếng \"già\" có âm gi.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "model",
-      "id": "viet-amik-0003",
+      "id": "viet-amggi-0003",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Ô nào chứa âm i?"
+        "text": "Ô nào chứa âm g?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "đo",
-          "errorTag": "doc_nham_van"
+          "text": "giỗ",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "đa"
+          "text": "lá"
         },
         {
           "id": "c",
-          "text": "đi"
+          "text": "gỗ"
         }
       ],
       "answerKey": "c",
-      "hints": ["Con nhớ âm i viết thế nào không?"],
-      "explanation": "Tiếng \"đi\" có âm i.",
+      "hints": ["Con nhớ âm g viết thế nào không?"],
+      "explanation": "Tiếng \"gỗ\" có âm g.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "model",
-      "id": "viet-amik-0004",
+      "id": "viet-amggi-0004",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Đố con: tiếng nào có âm i?"
+        "text": "Đố con: tiếng nào có âm gi?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "dì"
+          "text": "giỏ"
         },
         {
           "id": "b",
-          "text": "dà",
-          "errorTag": "doc_nham_van"
-        },
-        {
-          "id": "c",
-          "text": "da"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Đánh vần từng ô lên là ra ngay."],
-      "explanation": "Tiếng \"dì\" có âm i.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amik-0005",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
-      "type": "MCQ",
-      "difficulty": 2,
-      "prompt": {
-        "tts": true,
-        "text": "Tìm giúp {ban} tiếng có âm k."
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bẻ",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "kẻ"
-        },
-        {
-          "id": "c",
-          "text": "bà"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
-      "explanation": "Tiếng \"kẻ\" có âm k.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amik-0006",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
-      "type": "MCQ",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "Trong ba ô, ô nào có âm k?"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bể",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "ba"
-        },
-        {
-          "id": "c",
-          "text": "kể"
-        }
-      ],
-      "answerKey": "c",
-      "hints": ["Tìm con chữ của âm k trong từng ô nhé!"],
-      "explanation": "Tiếng \"kể\" có âm k.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amik-0007",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
-      "type": "MCQ",
-      "difficulty": 1,
-      "prompt": {
-        "tts": true,
-        "text": "Tiếng nào có âm k?"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "kê"
-        },
-        {
-          "id": "b",
-          "text": "bê",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "c",
-          "text": "cà"
-        }
-      ],
-      "answerKey": "a",
-      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm k?"],
-      "explanation": "Tiếng \"kê\" có âm k.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amik-0008",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
-      "type": "MCQ",
-      "difficulty": 2,
-      "prompt": {
-        "tts": true,
-        "text": "Chọn tiếng có âm k nhé!"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "bế",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "kế"
-        },
-        {
-          "id": "c",
-          "text": "cỏ"
-        }
-      ],
-      "answerKey": "b",
-      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm k thôi."],
-      "explanation": "Tiếng \"kế\" có âm k.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amik-0009",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
-      "type": "MCQ",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "Ô nào chứa âm k?"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "dì",
-          "errorTag": "nham_am_dau"
-        },
-        {
-          "id": "b",
-          "text": "bà"
-        },
-        {
-          "id": "c",
-          "text": "kì"
-        }
-      ],
-      "answerKey": "c",
-      "hints": ["Con nhớ âm k viết thế nào không?"],
-      "explanation": "Tiếng \"kì\" có âm k.",
-      "meta": {
-        "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": "nham_am_dau",
-      "scaffold": "none",
-      "id": "viet-amik-0010",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
-      "type": "MCQ",
-      "difficulty": 1,
-      "prompt": {
-        "tts": true,
-        "text": "Đố con: tiếng nào có âm k?"
-      },
-      "choices": [
-        {
-          "id": "a",
-          "text": "kí"
-        },
-        {
-          "id": "b",
-          "text": "bí",
+          "text": "đỏ",
           "errorTag": "nham_am_dau"
         },
         {
@@ -369,20 +147,242 @@
       ],
       "answerKey": "a",
       "hints": ["Đánh vần từng ô lên là ra ngay."],
-      "explanation": "Tiếng \"kí\" có âm k.",
+      "explanation": "Tiếng \"giỏ\" có âm gi.",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
-      "assetTheme": "robot",
-      "targetsError": "doc_nham_van",
-      "scaffold": "model",
-      "id": "viet-amik-0011",
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0005",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng có âm gi."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "có",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "gió"
+        },
+        {
+          "id": "c",
+          "text": "hè"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Tiếng \"gió\" có âm gi.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba ô, ô nào có âm gi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cá",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "bò"
+        },
+        {
+          "id": "c",
+          "text": "giá"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tìm con chữ của âm gi trong từng ô nhé!"],
+      "explanation": "Tiếng \"giá\" có âm gi.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm g?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gò"
+        },
+        {
+          "id": "b",
+          "text": "giò",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "kể"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm g?"],
+      "explanation": "Tiếng \"gò\" có âm g.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm g nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cụ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "gụ"
+        },
+        {
+          "id": "c",
+          "text": "hổ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm g thôi."],
+      "explanation": "Tiếng \"gụ\" có âm g.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm gi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gỗ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "bé"
+        },
+        {
+          "id": "c",
+          "text": "giỗ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ âm gi viết thế nào không?"],
+      "explanation": "Tiếng \"giỗ\" có âm gi.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm g?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ga"
+        },
+        {
+          "id": "b",
+          "text": "ca",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "lê"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"ga\" có âm g.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amggi-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 2,
       "prompt": {
@@ -390,43 +390,43 @@
         "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
         "image": {
           "kind": "emoji",
-          "value": "🔵",
-          "labelVi": "viên bi",
+          "value": "🐔",
+          "labelVi": "con gà",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bà",
-          "errorTag": "doc_nham_van"
+          "text": "già",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "bi"
+          "text": "gà"
         },
         {
           "id": "c",
-          "text": "đi",
+          "text": "cà",
           "errorTag": "nham_am_dau"
         }
       ],
       "answerKey": "b",
-      "hints": ["Tranh vẽ viên bi.", "Tiếng gọi viên bi có âm i."],
-      "explanation": "Viên bi đọc là \"bi\".",
+      "hints": ["Tranh vẽ con gà.", "Tiếng gọi con gà có âm g."],
+      "explanation": "Con gà đọc là \"gà\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "garden",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0012",
+      "id": "viet-amggi-0012",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 3,
       "prompt": {
@@ -434,43 +434,43 @@
         "text": "Chọn tiếng gọi tên bức tranh.",
         "image": {
           "kind": "emoji",
-          "value": "🎃",
-          "labelVi": "quả bí",
+          "value": "👴",
+          "labelVi": "cụ già",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bá",
-          "errorTag": "doc_nham_van"
+          "text": "gà",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "kí",
+          "text": "bà",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "bí"
+          "text": "già"
         }
       ],
       "answerKey": "c",
-      "hints": ["Tranh vẽ quả bí.", "Tiếng gọi quả bí có âm i."],
-      "explanation": "Quả bí đọc là \"bí\".",
+      "hints": ["Tranh vẽ cụ già.", "Tiếng gọi cụ già có âm gi."],
+      "explanation": "Cụ già đọc là \"già\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "robot",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0013",
+      "id": "viet-amggi-0013",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 4,
       "prompt": {
@@ -478,43 +478,43 @@
         "text": "Đố con: tranh này là tiếng nào?",
         "image": {
           "kind": "emoji",
-          "value": "🚶",
-          "labelVi": "đi bộ",
+          "value": "🪵",
+          "labelVi": "đồ gỗ",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "đi"
+          "text": "gỗ"
         },
         {
           "id": "b",
-          "text": "đo",
-          "errorTag": "doc_nham_van"
+          "text": "giỗ",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "bi",
+          "text": "đỗ",
           "errorTag": "nham_am_dau"
         }
       ],
       "answerKey": "a",
-      "hints": ["Tranh vẽ đi bộ.", "Tiếng gọi đi bộ có âm i."],
-      "explanation": "Đi bộ đọc là \"đi\".",
+      "hints": ["Tranh vẽ đồ gỗ.", "Tiếng gọi đồ gỗ có âm g."],
+      "explanation": "Đồ gỗ đọc là \"gỗ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "garden",
       "targetsError": "doc_nham_van",
       "scaffold": "none",
-      "id": "viet-amik-0014",
+      "id": "viet-amggi-0014",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 2,
       "prompt": {
@@ -522,43 +522,43 @@
         "text": "Tiếng nào hợp với bức tranh?",
         "image": {
           "kind": "emoji",
-          "value": "👩",
-          "labelVi": "dì",
+          "value": "🧺",
+          "labelVi": "cái giỏ",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "dà",
+          "text": "giá",
           "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "dì"
+          "text": "giỏ"
         },
         {
           "id": "c",
-          "text": "kì",
+          "text": "đỏ",
           "errorTag": "nham_am_dau"
         }
       ],
       "answerKey": "b",
-      "hints": ["Tranh vẽ dì.", "Tiếng gọi dì có âm i."],
-      "explanation": "Dì đọc là \"dì\".",
+      "hints": ["Tranh vẽ cái giỏ.", "Tiếng gọi cái giỏ có âm gi."],
+      "explanation": "Cái giỏ đọc là \"giỏ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
-      "assetTheme": "robot",
+      "assetTheme": "garden",
       "targetsError": "doc_nham_van",
       "scaffold": "none",
-      "id": "viet-amik-0015",
+      "id": "viet-amggi-0015",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 3,
       "prompt": {
@@ -566,207 +566,255 @@
         "text": "Nhìn tranh rồi chọn tiếng.",
         "image": {
           "kind": "emoji",
-          "value": "📏",
-          "labelVi": "kẻ ô",
+          "value": "🌬️",
+          "labelVi": "cơn gió",
           "repeat": 1
         }
       },
       "choices": [
         {
           "id": "a",
-          "text": "kè",
+          "text": "giá",
           "errorTag": "doc_nham_van"
         },
         {
           "id": "b",
-          "text": "bẻ",
+          "text": "có",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "kẻ"
+          "text": "gió"
         }
       ],
       "answerKey": "c",
-      "hints": ["Tranh vẽ kẻ ô.", "Tiếng gọi kẻ ô có âm k."],
-      "explanation": "Kẻ ô đọc là \"kẻ\".",
+      "hints": ["Tranh vẽ cơn gió.", "Tiếng gọi cơn gió có âm gi."],
+      "explanation": "Cơn gió đọc là \"gió\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
-      "assetTheme": "neutral",
+      "assetTheme": "garden",
       "targetsError": "doc_nham_van",
       "scaffold": "none",
-      "id": "viet-amik-0016",
+      "id": "viet-amggi-0016",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 4,
       "prompt": {
         "tts": true,
-        "text": "Bốn ô trông rất giống nhau. Ô nào có âm i?"
+        "text": "Bức tranh này đọc là tiếng nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌱",
+          "labelVi": "giá đỗ",
+          "repeat": 1
+        }
       },
       "choices": [
         {
           "id": "a",
-          "text": "bà",
-          "errorTag": "doc_nham_van"
+          "text": "giá"
         },
         {
           "id": "b",
-          "text": "đa"
+          "text": "giò",
+          "errorTag": "doc_nham_van"
         },
         {
           "id": "c",
-          "text": "bi"
+          "text": "cá",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ giá đỗ.", "Tiếng gọi giá đỗ có âm gi."],
+      "explanation": "Giá đỗ đọc là \"giá\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bốn ô trông rất giống nhau. Ô nào có âm g?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "già",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "cà",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "gà"
         },
         {
           "id": "d",
-          "text": "da"
+          "text": "bé"
         }
       ],
       "answerKey": "c",
       "hints": ["Đánh vần từng ô lên là ra ngay."],
-      "explanation": "Chỉ \"bi\" có âm i.",
+      "explanation": "Chỉ \"gà\" có âm g.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0017",
+      "id": "viet-amggi-0018",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 4,
       "prompt": {
         "tts": true,
-        "text": "Nhìn thật kỹ: tiếng nào có âm i?"
+        "text": "Nhìn thật kỹ: tiếng nào có âm gi?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bá",
-          "errorTag": "doc_nham_van"
+          "text": "gà",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "ba"
+          "text": "bà",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "đa"
+          "text": "bò"
         },
         {
           "id": "d",
-          "text": "bí"
+          "text": "già"
         }
       ],
       "answerKey": "d",
       "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
-      "explanation": "Chỉ \"bí\" có âm i.",
+      "explanation": "Chỉ \"già\" có âm gi.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0018",
+      "id": "viet-amggi-0019",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 5,
       "prompt": {
         "tts": true,
-        "text": "Chỉ một ô có âm i. Con tìm ra không?"
+        "text": "Chỉ một ô có âm g. Con tìm ra không?"
       },
       "choices": [
         {
           "id": "a",
-          "text": "đi"
+          "text": "gỗ"
         },
         {
           "id": "b",
-          "text": "đo",
-          "errorTag": "doc_nham_van"
+          "text": "giỗ",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "ba"
+          "text": "đỗ",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "d",
-          "text": "bà"
+          "text": "bò"
         }
       ],
       "answerKey": "a",
-      "hints": ["Tìm con chữ của âm i trong từng ô nhé!"],
-      "explanation": "Chỉ \"đi\" có âm i.",
+      "hints": ["Tìm con chữ của âm g trong từng ô nhé!"],
+      "explanation": "Chỉ \"gỗ\" có âm g.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0019",
+      "id": "viet-amggi-0020",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "MCQ",
       "difficulty": 5,
       "prompt": {
         "tts": true,
-        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có âm i."
+        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có âm g."
       },
       "choices": [
         {
           "id": "a",
-          "text": "dà",
-          "errorTag": "doc_nham_van"
+          "text": "giò",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "dì"
+          "text": "gò"
         },
         {
           "id": "c",
-          "text": "ba"
+          "text": "cò",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "d",
-          "text": "bà"
+          "text": "bò"
         }
       ],
       "answerKey": "b",
-      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm i?"],
-      "explanation": "Chỉ \"dì\" có âm i.",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm g?"],
+      "explanation": "Chỉ \"gò\" có âm g.",
       "meta": {
         "estSeconds": 30,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "model",
-      "id": "viet-amik-0020",
+      "id": "viet-amggi-0021",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 1,
       "prompt": {
@@ -774,40 +822,40 @@
         "text": "Nghe rồi chọn ô đúng nhé!"
       },
       "listenTarget": {
-        "text": "bi"
+        "text": "gà"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bi"
+          "text": "gà"
         },
         {
           "id": "b",
-          "text": "đi",
+          "text": "cà",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "bà",
+          "text": "gỗ",
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
       "hints": ["Nghe lại một lần nữa nhé!"],
-      "explanation": "Con vừa nghe tiếng \"bi\".",
+      "explanation": "Con vừa nghe tiếng \"gà\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "model",
-      "id": "viet-amik-0021",
+      "id": "viet-amggi-0022",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 2,
       "prompt": {
@@ -815,40 +863,40 @@
         "text": "{ban} đọc một tiếng, con chọn ô đúng."
       },
       "listenTarget": {
-        "text": "bí"
+        "text": "già"
       },
       "choices": [
         {
           "id": "a",
-          "text": "kí",
+          "text": "bà",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "bí"
+          "text": "già"
         },
         {
           "id": "c",
-          "text": "bá",
+          "text": "giò",
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "b",
       "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
-      "explanation": "Con vừa nghe tiếng \"bí\".",
+      "explanation": "Con vừa nghe tiếng \"già\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0022",
+      "id": "viet-amggi-0023",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 3,
       "prompt": {
@@ -856,40 +904,40 @@
         "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
       },
       "listenTarget": {
-        "text": "đi"
+        "text": "gỗ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bi",
+          "text": "đỗ",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "đo",
+          "text": "gà",
           "errorTag": "doc_nham_van"
         },
         {
           "id": "c",
-          "text": "đi"
+          "text": "gỗ"
         }
       ],
       "answerKey": "c",
       "hints": ["Nhắm mắt nghe rồi hãy chọn."],
-      "explanation": "Con vừa nghe tiếng \"đi\".",
+      "explanation": "Con vừa nghe tiếng \"gỗ\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0023",
+      "id": "viet-amggi-0024",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 4,
       "prompt": {
@@ -897,40 +945,40 @@
         "text": "Con nghe rồi tìm đúng tiếng nhé!"
       },
       "listenTarget": {
-        "text": "dì"
+        "text": "giỏ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "dì"
+          "text": "giỏ"
         },
         {
           "id": "b",
-          "text": "kì",
+          "text": "đỏ",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "dà",
+          "text": "giá",
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
       "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
-      "explanation": "Con vừa nghe tiếng \"dì\".",
+      "explanation": "Con vừa nghe tiếng \"giỏ\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0024",
+      "id": "viet-amggi-0025",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 5,
       "prompt": {
@@ -938,40 +986,40 @@
         "text": "Lắng nghe, tiếng nào vừa vang lên?"
       },
       "listenTarget": {
-        "text": "kẻ"
+        "text": "gió"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bẻ",
+          "text": "có",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "kẻ"
+          "text": "gió"
         },
         {
           "id": "c",
-          "text": "kè",
+          "text": "giá",
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "b",
       "hints": ["Chú ý âm đầu của tiếng con nghe."],
-      "explanation": "Con vừa nghe tiếng \"kẻ\".",
+      "explanation": "Con vừa nghe tiếng \"gió\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0025",
+      "id": "viet-amggi-0026",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 1,
       "prompt": {
@@ -979,40 +1027,40 @@
         "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
       },
       "listenTarget": {
-        "text": "kể"
+        "text": "giá"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bể",
+          "text": "cá",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "kê",
+          "text": "giò",
           "errorTag": "doc_nham_van"
         },
         {
           "id": "c",
-          "text": "kể"
+          "text": "giá"
         }
       ],
       "answerKey": "c",
       "hints": ["Nghe lại một lần nữa nhé!"],
-      "explanation": "Con vừa nghe tiếng \"kể\".",
+      "explanation": "Con vừa nghe tiếng \"giá\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0026",
+      "id": "viet-amggi-0027",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 2,
       "prompt": {
@@ -1020,40 +1068,40 @@
         "text": "Nghe rồi chọn ô đúng nhé!"
       },
       "listenTarget": {
-        "text": "kê"
+        "text": "gò"
       },
       "choices": [
         {
           "id": "a",
-          "text": "kê"
+          "text": "gò"
         },
         {
           "id": "b",
-          "text": "bê",
+          "text": "cò",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "c",
-          "text": "kì",
+          "text": "gà",
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "a",
       "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
-      "explanation": "Con vừa nghe tiếng \"kê\".",
+      "explanation": "Con vừa nghe tiếng \"gò\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0027",
+      "id": "viet-amggi-0028",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 3,
       "prompt": {
@@ -1061,40 +1109,40 @@
         "text": "{ban} đọc một tiếng, con chọn ô đúng."
       },
       "listenTarget": {
-        "text": "kế"
+        "text": "gụ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "bế",
+          "text": "cụ",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "kế"
+          "text": "gụ"
         },
         {
           "id": "c",
-          "text": "kí",
+          "text": "gõ",
           "errorTag": "doc_nham_van"
         }
       ],
       "answerKey": "b",
       "hints": ["Nhắm mắt nghe rồi hãy chọn."],
-      "explanation": "Con vừa nghe tiếng \"kế\".",
+      "explanation": "Con vừa nghe tiếng \"gụ\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0028",
+      "id": "viet-amggi-0029",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "LISTEN_CHOOSE",
       "difficulty": 4,
       "prompt": {
@@ -1102,69 +1150,229 @@
         "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
       },
       "listenTarget": {
-        "text": "kì"
+        "text": "giỗ"
       },
       "choices": [
         {
           "id": "a",
-          "text": "dì",
+          "text": "đỗ",
           "errorTag": "nham_am_dau"
         },
         {
           "id": "b",
-          "text": "kê",
+          "text": "giò",
           "errorTag": "doc_nham_van"
         },
         {
           "id": "c",
-          "text": "kì"
+          "text": "giỗ"
         }
       ],
       "answerKey": "c",
       "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
-      "explanation": "Con vừa nghe tiếng \"kì\".",
+      "explanation": "Con vừa nghe tiếng \"giỗ\".",
       "meta": {
         "estSeconds": 20,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0029",
+      "id": "viet-amggi-0030",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "già"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gà",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "già"
+        },
+        {
+          "id": "c",
+          "text": "bò"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Tiếng con nghe là \"già\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "gà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "già",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "bé"
+        },
+        {
+          "id": "c",
+          "text": "gà"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Tiếng con nghe là \"gà\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "giỗ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "giỗ"
+        },
+        {
+          "id": "b",
+          "text": "gỗ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Tiếng con nghe là \"giỗ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "giò"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gò",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "giò"
+        },
+        {
+          "id": "c",
+          "text": "kể"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Tiếng con nghe là \"giò\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amggi-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "DRAG_DROP",
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Xếp mỗi tiếng vào đúng giỏ: có âm i hay không có."
+        "text": "Xếp mỗi tiếng vào đúng giỏ: có âm g hay không có."
       },
       "dragItems": [
         {
           "id": "s0a",
-          "text": "bi"
+          "text": "gà"
         },
         {
           "id": "s0b",
-          "text": "ba"
+          "text": "bò"
         },
         {
           "id": "s0c",
-          "text": "bì"
+          "text": "ga"
         },
         {
           "id": "s0d",
-          "text": "bà",
-          "errorTag": "doc_nham_van"
+          "text": "ca",
+          "errorTag": "nham_am_dau"
         }
       ],
       "dropZones": [
         {
           "id": "co",
-          "label": "Có âm i",
+          "label": "Có âm g",
           "accepts": ["s0a", "s0b", "s0c", "s0d"]
         },
         {
@@ -1177,50 +1385,50 @@
         "co": ["s0a", "s0c"],
         "khong": ["s0b", "s0d"]
       },
-      "hints": ["Đọc to từng thẻ, thẻ nào có âm i thì xếp riêng."],
-      "explanation": "\"bi\" và \"bì\" có âm i.",
+      "hints": ["Đọc to từng thẻ, thẻ nào có âm g thì xếp riêng."],
+      "explanation": "\"gà\" và \"ga\" có âm g.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0030",
+      "id": "viet-amggi-0035",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "DRAG_DROP",
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Kéo tiếng có âm i sang một bên nhé!"
+        "text": "Kéo tiếng có âm gi sang một bên nhé!"
       },
       "dragItems": [
         {
           "id": "s1a",
-          "text": "bí"
+          "text": "già"
         },
         {
           "id": "s1b",
-          "text": "bà"
+          "text": "bé"
         },
         {
           "id": "s1c",
-          "text": "bị"
+          "text": "giò"
         },
         {
           "id": "s1d",
-          "text": "bạ",
-          "errorTag": "doc_nham_van"
+          "text": "gò",
+          "errorTag": "nham_am_dau"
         }
       ],
       "dropZones": [
         {
           "id": "co",
-          "label": "Có âm i",
+          "label": "Có âm gi",
           "accepts": ["s1a", "s1b", "s1c", "s1d"]
         },
         {
@@ -1234,20 +1442,20 @@
         "khong": ["s1b", "s1d"]
       },
       "hints": ["Xếp hai thẻ dễ trước, còn lại xếp sau."],
-      "explanation": "\"bí\" và \"bị\" có âm i.",
+      "explanation": "\"già\" và \"giò\" có âm gi.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0031",
+      "id": "viet-amggi-0036",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "DRAG_DROP",
       "difficulty": 4,
       "prompt": {
@@ -1257,26 +1465,26 @@
       "dragItems": [
         {
           "id": "s2a",
-          "text": "đi"
+          "text": "gỗ"
         },
         {
           "id": "s2b",
-          "text": "đa"
+          "text": "lá"
         },
         {
           "id": "s2c",
-          "text": "bi"
+          "text": "gà"
         },
         {
           "id": "s2d",
-          "text": "bà",
-          "errorTag": "doc_nham_van"
+          "text": "già",
+          "errorTag": "nham_am_dau"
         }
       ],
       "dropZones": [
         {
           "id": "co",
-          "label": "Có âm i",
+          "label": "Có âm g",
           "accepts": ["s2a", "s2b", "s2c", "s2d"]
         },
         {
@@ -1290,49 +1498,49 @@
         "khong": ["s2b", "s2d"]
       },
       "hints": ["Nhìn từng con chữ trên thẻ nhé!"],
-      "explanation": "\"đi\" và \"bi\" có âm i.",
+      "explanation": "\"gỗ\" và \"gà\" có âm g.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0032",
+      "id": "viet-amggi-0037",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "DRAG_DROP",
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Giỏ nào đựng tiếng có âm i?"
+        "text": "Giỏ nào đựng tiếng có âm gi?"
       },
       "dragItems": [
         {
           "id": "s3a",
-          "text": "dì"
+          "text": "giỏ"
         },
         {
           "id": "s3b",
-          "text": "da"
+          "text": "cá"
         },
         {
           "id": "s3c",
-          "text": "bí"
+          "text": "gió"
         },
         {
           "id": "s3d",
-          "text": "bá",
-          "errorTag": "doc_nham_van"
+          "text": "có",
+          "errorTag": "nham_am_dau"
         }
       ],
       "dropZones": [
         {
           "id": "co",
-          "label": "Có âm i",
+          "label": "Có âm gi",
           "accepts": ["s3a", "s3b", "s3c", "s3d"]
         },
         {
@@ -1346,20 +1554,20 @@
         "khong": ["s3b", "s3d"]
       },
       "hints": ["Đánh vần thẻ rồi mới kéo."],
-      "explanation": "\"dì\" và \"bí\" có âm i.",
+      "explanation": "\"giỏ\" và \"gió\" có âm gi.",
       "meta": {
         "estSeconds": 40,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
-      "assetTheme": "robot",
-      "targetsError": "doc_nham_van",
+      "assetTheme": "garden",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0033",
+      "id": "viet-amggi-0038",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "DRAG_DROP",
       "difficulty": 2,
       "prompt": {
@@ -1367,24 +1575,24 @@
         "text": "Kéo tiếng đúng vào ô dưới tranh.",
         "image": {
           "kind": "emoji",
-          "value": "🔵",
-          "labelVi": "viên bi",
+          "value": "🐔",
+          "labelVi": "con gà",
           "repeat": 1
         }
       },
       "dragItems": [
         {
           "id": "dung",
-          "text": "bi"
+          "text": "gà"
         },
         {
           "id": "sai0",
-          "text": "bà",
-          "errorTag": "doc_nham_van"
+          "text": "già",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "sai1",
-          "text": "đi",
+          "text": "cà",
           "errorTag": "nham_am_dau"
         }
       ],
@@ -1398,21 +1606,21 @@
       "answerKey": {
         "o": ["dung"]
       },
-      "hints": ["Tranh vẽ viên bi.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
-      "explanation": "Viên bi viết là \"bi\".",
+      "hints": ["Tranh vẽ con gà.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Con gà viết là \"gà\".",
       "meta": {
         "estSeconds": 35,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "garden",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0034",
+      "id": "viet-amggi-0039",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "DRAG_DROP",
       "difficulty": 3,
       "prompt": {
@@ -1420,24 +1628,24 @@
         "text": "Chọn thẻ đúng rồi thả vào ô trống.",
         "image": {
           "kind": "emoji",
-          "value": "🎃",
-          "labelVi": "quả bí",
+          "value": "👴",
+          "labelVi": "cụ già",
           "repeat": 1
         }
       },
       "dragItems": [
         {
           "id": "dung",
-          "text": "bí"
+          "text": "già"
         },
         {
           "id": "sai0",
-          "text": "bá",
-          "errorTag": "doc_nham_van"
+          "text": "gà",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "sai1",
-          "text": "kí",
+          "text": "bà",
           "errorTag": "nham_am_dau"
         }
       ],
@@ -1451,21 +1659,21 @@
       "answerKey": {
         "o": ["dung"]
       },
-      "hints": ["Tranh vẽ quả bí.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
-      "explanation": "Quả bí viết là \"bí\".",
+      "hints": ["Tranh vẽ cụ già.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Cụ già viết là \"già\".",
       "meta": {
         "estSeconds": 35,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "robot",
-      "targetsError": "doc_nham_van",
+      "targetsError": "nham_am_dau",
       "scaffold": "none",
-      "id": "viet-amik-0035",
+      "id": "viet-amggi-0040",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "DRAG_DROP",
       "difficulty": 4,
       "prompt": {
@@ -1473,24 +1681,24 @@
         "text": "Thẻ nào gọi tên bức tranh? Kéo vào nhé!",
         "image": {
           "kind": "emoji",
-          "value": "🚶",
-          "labelVi": "đi bộ",
+          "value": "🪵",
+          "labelVi": "đồ gỗ",
           "repeat": 1
         }
       },
       "dragItems": [
         {
           "id": "dung",
-          "text": "đi"
+          "text": "gỗ"
         },
         {
           "id": "sai0",
-          "text": "đo",
-          "errorTag": "doc_nham_van"
+          "text": "giỗ",
+          "errorTag": "nham_am_dau"
         },
         {
           "id": "sai1",
-          "text": "bi",
+          "text": "đỗ",
           "errorTag": "nham_am_dau"
         }
       ],
@@ -1504,21 +1712,21 @@
       "answerKey": {
         "o": ["dung"]
       },
-      "hints": ["Tranh vẽ đi bộ.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
-      "explanation": "Đi bộ viết là \"đi\".",
+      "hints": ["Tranh vẽ đồ gỗ.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Đồ gỗ viết là \"gỗ\".",
       "meta": {
         "estSeconds": 35,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
-      "id": "viet-amik-0036",
+      "id": "viet-amggi-0041",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "READ_ALOUD",
       "difficulty": 2,
       "prompt": {
@@ -1526,27 +1734,27 @@
         "text": "Con đọc to các tiếng này nhé!"
       },
       "readTarget": {
-        "text": "bé đi bộ",
-        "words": ["bé", "đi", "bộ"]
+        "text": "Bà che gió cho ba chú gà",
+        "words": ["Bà", "che", "gió", "cho", "ba", "chú", "gà"]
       },
       "answerKey": {
-        "words": ["bé", "đi", "bộ"]
+        "words": ["Bà", "che", "gió", "cho", "ba", "chú", "gà"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Câu này đọc là \"bé đi bộ\".",
+      "explanation": "Câu này đọc là \"Bà che gió cho ba chú gà\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amik-0037",
+      "id": "viet-amggi-0042",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "READ_ALOUD",
       "difficulty": 2,
       "prompt": {
@@ -1554,27 +1762,27 @@
         "text": "Đọc chậm từng tiếng cho {ban} nghe."
       },
       "readTarget": {
-        "text": "dì kể bé",
-        "words": ["dì", "kể", "bé"]
+        "text": "gà gô",
+        "words": ["gà", "gô"]
       },
       "answerKey": {
-        "words": ["dì", "kể", "bé"]
+        "words": ["gà", "gô"]
       },
       "hints": ["Đọc thầm một lần rồi mới đọc to."],
-      "explanation": "Câu này đọc là \"dì kể bé\".",
+      "explanation": "Câu này đọc là \"gà gô\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amik-0038",
+      "id": "viet-amggi-0043",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "READ_ALOUD",
       "difficulty": 5,
       "prompt": {
@@ -1582,27 +1790,27 @@
         "text": "Đọc to câu này nhé!"
       },
       "readTarget": {
-        "text": "bi đỏ",
-        "words": ["bi", "đỏ"]
+        "text": "đồ gỗ",
+        "words": ["đồ", "gỗ"]
       },
       "answerKey": {
-        "words": ["bi", "đỏ"]
+        "words": ["đồ", "gỗ"]
       },
       "hints": ["Đánh vần tiếng nào khó rồi đọc trơn lại."],
-      "explanation": "Câu này đọc là \"bi đỏ\".",
+      "explanation": "Câu này đọc là \"đồ gỗ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amik-0039",
+      "id": "viet-amggi-0044",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "READ_ALOUD",
       "difficulty": 3,
       "prompt": {
@@ -1610,27 +1818,27 @@
         "text": "Con đọc cho cả nhà cùng nghe."
       },
       "readTarget": {
-        "text": "cô kẻ ô",
-        "words": ["cô", "kẻ", "ô"]
+        "text": "giá đỗ",
+        "words": ["giá", "đỗ"]
       },
       "answerKey": {
-        "words": ["cô", "kẻ", "ô"]
+        "words": ["giá", "đỗ"]
       },
       "hints": ["Ngắt rõ giữa các tiếng."],
-      "explanation": "Câu này đọc là \"cô kẻ ô\".",
+      "explanation": "Câu này đọc là \"giá đỗ\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amik-0040",
+      "id": "viet-amggi-0045",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "READ_ALOUD",
       "difficulty": 4,
       "prompt": {
@@ -1638,150 +1846,96 @@
         "text": "Đọc rõ từng tiếng nhé!"
       },
       "readTarget": {
-        "text": "bé có bí đỏ",
-        "words": ["bé", "có", "bí", "đỏ"]
+        "text": "Cụ già có giỏ gà",
+        "words": ["Cụ", "già", "có", "giỏ", "gà"]
       },
       "answerKey": {
-        "words": ["bé", "có", "bí", "đỏ"]
+        "words": ["Cụ", "già", "có", "giỏ", "gà"]
       },
       "hints": ["Đọc chậm từng tiếng một."],
-      "explanation": "Câu này đọc là \"bé có bí đỏ\".",
+      "explanation": "Câu này đọc là \"Cụ già có giỏ gà\".",
       "meta": {
         "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amik-0041",
+      "id": "viet-amggi-0046",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
-      "type": "READ_ALOUD",
-      "difficulty": 5,
-      "prompt": {
-        "tts": true,
-        "text": "Cùng đọc to nào!"
-      },
-      "readTarget": {
-        "text": "dì đi đò",
-        "words": ["dì", "đi", "đò"]
-      },
-      "answerKey": {
-        "words": ["dì", "đi", "đò"]
-      },
-      "hints": ["Đọc thầm một lần rồi mới đọc to."],
-      "explanation": "Câu này đọc là \"dì đi đò\".",
-      "meta": {
-        "estSeconds": 25,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-amik-0042",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "WRITE_PHOTO",
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Viết vào vở: bi, bí, đi."
+        "text": "Viết vào vở: gà gô, giá đỗ."
       },
       "rubric": {
-        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["bi bí đi"]
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["gà gô giá đỗ"]
       },
       "answerKey": null,
       "hints": ["Viết chậm, đúng độ cao từng con chữ."],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 70,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amik-0043",
+      "id": "viet-amggi-0047",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "WRITE_PHOTO",
       "difficulty": 4,
       "prompt": {
         "tts": true,
-        "text": "Con chép vào vở: kẻ, kể, kê."
+        "text": "Con chép vào vở: giỏ, gió, gỗ."
       },
       "rubric": {
         "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["kẻ kể kê"]
+        "sampleAnswers": ["giỏ gió gỗ"]
       },
       "answerKey": null,
       "hints": ["Nhớ đánh dấu thanh sau khi viết xong con chữ."],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 70,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     },
     {
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
-      "id": "viet-amik-0044",
+      "id": "viet-amggi-0048",
       "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
+      "skillCodes": ["VIET.HV.AM_G_GI"],
       "type": "WRITE_PHOTO",
       "difficulty": 5,
       "prompt": {
         "tts": true,
-        "text": "Viết lại giúp {ban}: dì, kì, kí."
+        "text": "Viết lại giúp {ban}: cụ già, đồ gỗ."
       },
       "rubric": {
-        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["dì kì kí"]
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["cụ già đồ gỗ"]
       },
       "answerKey": null,
       "hints": ["Nhìn mẫu rồi viết theo nhé!"],
       "explanation": "Viết xong con đọc lại một lượt nhé!",
       "meta": {
         "estSeconds": 70,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
-      }
-    },
-    {
-      "assetTheme": "neutral",
-      "targetsError": null,
-      "scaffold": "none",
-      "id": "viet-amik-0045",
-      "language": "vi",
-      "skillCodes": ["VIET.HV.AM_I_K"],
-      "type": "WRITE_PHOTO",
-      "difficulty": 3,
-      "prompt": {
-        "tts": true,
-        "text": "Chép vào vở nhé: bì, bị, kế."
-      },
-      "rubric": {
-        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
-        "sampleAnswers": ["bì bị kế"]
-      },
-      "answerKey": null,
-      "hints": ["Viết xong đọc lại xem có đúng tiếng không."],
-      "explanation": "Viết xong con đọc lại một lượt nhé!",
-      "meta": {
-        "estSeconds": 70,
-        "lessonUnitCode": null,
-        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 11 tr.34 (I i, K k)"
+        "lessonUnitCode": "KNTT-TV1-T1-B17",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 17 tr.46–47 (G g, Gi gi)"
       }
     }
   ]

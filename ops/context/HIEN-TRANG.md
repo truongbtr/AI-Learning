@@ -1,14 +1,14 @@
-# Hiện trạng — 2026-09-12
+# Hiện trạng — 2026-09-14
 
 > Sinh tự động mỗi lần `pnpm ops:export`. **Đây là file một phiên chat mới đọc đầu tiên** (docs/14 §5).
 
 ## Hệ thống đang ở đâu
 
-- Pha gần nhất ghi trong `docs/TIEN-DO.md`: **Pha 8 — 12/09/2026 — Vận hành & nghiệm thu thực tế *(đang chạy: hai tuần dùng thật chưa bắt đầu)***
-- 2 bé đang học · 376 kỹ năng trong bản đồ · 1236 bài đã xuất bản
+- Pha gần nhất ghi trong `docs/TIEN-DO.md`: **Pha 6a — 12/09/2026 — Nội dung đợt 2, chạy song song với 14 ngày dùng thật**
+- 2 bé đang học · 376 kỹ năng trong bản đồ · 2676 bài đã xuất bản
 - 2 phiên, 19 bằng chứng, 0 lô ảnh gửi qua chat
 - Ngày học đầu tiên có trong DB: 2026-09-12
-- Lần xuất trước: 2026-09-12T06:56:15.947Z
+- Lần xuất trước: 2026-09-12T06:57:51.816Z
 
 ## Đọc gì, ở đâu
 

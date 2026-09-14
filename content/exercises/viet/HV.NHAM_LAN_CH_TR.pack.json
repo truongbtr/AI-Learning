@@ -1,0 +1,1949 @@
+{
+  "skillCode": "VIET.HV.NHAM_LAN_CH_TR",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B14", "KNTT-TV1-T1-B22"],
+  "note": "Phân biệt ch và tr. Mọi cặp đều là hai tiếng thật cùng vần (tre / che, trà / chà, chợ / trợ) — không có tiếng bịa như đợt 1 từng mắc (lỗi #9).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "model",
+      "id": "viet-chtr-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm tr?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tre"
+        },
+        {
+          "id": "b",
+          "text": "che",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "c",
+          "text": "bà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Âm tr và âm ch đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"tre\" có âm tr, \"che\" có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "tre"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "che",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "tre"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe \"tre\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "che"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "che"
+        },
+        {
+          "id": "b",
+          "text": "tre",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng ch đọc nhẹ hơn tiếng tr."],
+      "explanation": "Con vừa nghe \"che\", có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🎋",
+          "labelVi": "cây tre",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tre"
+        },
+        {
+          "id": "b",
+          "text": "che",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ cây tre."],
+      "explanation": "Tranh vẽ cây tre, viết là \"tre\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "model",
+      "id": "viet-chtr-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm tr nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chà",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "trà"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"trà\" có âm tr, \"chà\" có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "trà"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trà"
+        },
+        {
+          "id": "b",
+          "text": "chà",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Con vừa nghe \"trà\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🍵",
+          "labelVi": "chén trà",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chà",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "trà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ chén trà."],
+      "explanation": "Tranh vẽ chén trà, viết là \"trà\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "model",
+      "id": "viet-chtr-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm ch?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trị",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "bé"
+        },
+        {
+          "id": "c",
+          "text": "chị"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Âm ch và âm tr đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"chị\" có âm ch, \"trị\" có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "chị"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trị",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chị"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Con vừa nghe \"chị\", có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "trị"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trị"
+        },
+        {
+          "id": "b",
+          "text": "chị",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng tr đọc nhẹ hơn tiếng ch."],
+      "explanation": "Con vừa nghe \"trị\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "👧",
+          "labelVi": "chị",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chị"
+        },
+        {
+          "id": "b",
+          "text": "trị",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ chị."],
+      "explanation": "Tranh vẽ chị, viết là \"chị\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "model",
+      "id": "viet-chtr-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm tr?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trí"
+        },
+        {
+          "id": "b",
+          "text": "chí",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "c",
+          "text": "hồ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"trí\" có âm tr, \"chí\" có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "trí"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trí"
+        },
+        {
+          "id": "b",
+          "text": "chí",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe \"trí\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "model",
+      "id": "viet-chtr-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm ch?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trợ",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chợ"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Âm ch và âm tr đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"chợ\" có âm ch, \"trợ\" có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "chợ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trợ",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chợ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Con vừa nghe \"chợ\", có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "trợ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trợ"
+        },
+        {
+          "id": "b",
+          "text": "chợ",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng tr đọc nhẹ hơn tiếng ch."],
+      "explanation": "Con vừa nghe \"trợ\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🏪",
+          "labelVi": "cái chợ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chợ"
+        },
+        {
+          "id": "b",
+          "text": "trợ",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ cái chợ."],
+      "explanation": "Tranh vẽ cái chợ, viết là \"chợ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "model",
+      "id": "viet-chtr-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm tr nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chê",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "cô"
+        },
+        {
+          "id": "c",
+          "text": "trê"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"trê\" có âm tr, \"chê\" có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "trê"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trê"
+        },
+        {
+          "id": "b",
+          "text": "chê",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Con vừa nghe \"trê\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "cá trê",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chê",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "trê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ cá trê."],
+      "explanation": "Tranh vẽ cá trê, viết là \"trê\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm ch?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chì"
+        },
+        {
+          "id": "b",
+          "text": "trì",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "c",
+          "text": "bà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Âm ch và âm tr đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"chì\" có âm ch, \"trì\" có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "chì"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trì",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chì"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe \"chì\", có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "trì"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trì"
+        },
+        {
+          "id": "b",
+          "text": "chì",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng tr đọc nhẹ hơn tiếng ch."],
+      "explanation": "Con vừa nghe \"trì\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "✏️",
+          "labelVi": "bút chì",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chì"
+        },
+        {
+          "id": "b",
+          "text": "trì",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ bút chì."],
+      "explanation": "Tranh vẽ bút chì, viết là \"chì\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm tr?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chò",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "trò"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"trò\" có âm tr, \"chò\" có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "trò"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trò"
+        },
+        {
+          "id": "b",
+          "text": "chò",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Con vừa nghe \"trò\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm ch?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trở",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "bé"
+        },
+        {
+          "id": "c",
+          "text": "chở"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Âm ch và âm tr đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"chở\" có âm ch, \"trở\" có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "chở"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trở",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chở"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Con vừa nghe \"chở\", có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "trở"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trở"
+        },
+        {
+          "id": "b",
+          "text": "chở",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng tr đọc nhẹ hơn tiếng ch."],
+      "explanation": "Con vừa nghe \"trở\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm tr nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trú"
+        },
+        {
+          "id": "b",
+          "text": "chú",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "c",
+          "text": "hồ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"trú\" có âm tr, \"chú\" có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "trú"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trú"
+        },
+        {
+          "id": "b",
+          "text": "chú",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe \"trú\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm ch?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trữ",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chữ"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Âm ch và âm tr đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"chữ\" có âm ch, \"trữ\" có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "chữ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trữ",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chữ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng."],
+      "explanation": "Con vừa nghe \"chữ\", có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "trữ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trữ"
+        },
+        {
+          "id": "b",
+          "text": "chữ",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng tr đọc nhẹ hơn tiếng ch."],
+      "explanation": "Con vừa nghe \"trữ\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🔤",
+          "labelVi": "chữ cái",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chữ"
+        },
+        {
+          "id": "b",
+          "text": "trữ",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ chữ cái."],
+      "explanation": "Tranh vẽ chữ cái, viết là \"chữ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm tr?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chẻ",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "cô"
+        },
+        {
+          "id": "c",
+          "text": "trẻ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc to từng ô lên."],
+      "explanation": "\"trẻ\" có âm tr, \"chẻ\" có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "trẻ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trẻ"
+        },
+        {
+          "id": "b",
+          "text": "chẻ",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm hai ô rồi so."],
+      "explanation": "Con vừa nghe \"trẻ\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "👶",
+          "labelVi": "trẻ nhỏ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chẻ",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "trẻ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ trẻ nhỏ."],
+      "explanation": "Tranh vẽ trẻ nhỏ, viết là \"trẻ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm ch?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chả"
+        },
+        {
+          "id": "b",
+          "text": "trả",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "c",
+          "text": "bà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Âm ch và âm tr đọc khác nhau, nhìn chữ đầu nhé."],
+      "explanation": "\"chả\" có âm ch, \"trả\" có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "chả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trả",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b",
+          "text": "chả"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe \"chả\", có âm ch.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "trả"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trả"
+        },
+        {
+          "id": "b",
+          "text": "chả",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tiếng tr đọc nhẹ hơn tiếng ch."],
+      "explanation": "Con vừa nghe \"trả\", có âm tr.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "che",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "a1",
+          "text": "chợ",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b0",
+          "text": "tre",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b1",
+          "text": "trò",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm ch",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm tr",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Đọc to từng thẻ, nghe âm đầu là ch hay tr."],
+      "explanation": "che, chợ về giỏ \"Có âm ch\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chia các tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "trà",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "a1",
+          "text": "trí",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b0",
+          "text": "chà",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b1",
+          "text": "chị",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm tr",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm ch",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Đọc to từng thẻ, nghe âm đầu là ch hay tr."],
+      "explanation": "trà, trí về giỏ \"Có âm tr\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0044",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi tiếng về giỏ của nó."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "chì",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "a1",
+          "text": "chữ",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b0",
+          "text": "trê",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b1",
+          "text": "trẻ",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm ch",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm tr",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Đọc to từng thẻ, nghe âm đầu là ch hay tr."],
+      "explanation": "chì, chữ về giỏ \"Có âm ch\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_ch_tr",
+      "scaffold": "none",
+      "id": "viet-chtr-0045",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào về giỏ nào?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "trú",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "a1",
+          "text": "trở",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b0",
+          "text": "chú",
+          "errorTag": "nham_ch_tr"
+        },
+        {
+          "id": "b1",
+          "text": "chở",
+          "errorTag": "nham_ch_tr"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Có âm tr",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Có âm ch",
+          "accepts": ["a0", "a1", "b0", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Đọc to từng thẻ, nghe âm đầu là ch hay tr."],
+      "explanation": "trú, trở về giỏ \"Có âm tr\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-chtr-0046",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "Hà tô tre",
+        "words": ["Hà", "tô", "tre"]
+      },
+      "answerKey": {
+        "words": ["Hà", "tô", "tre"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Hà tô tre\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chtr-0047",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "Chị có chè",
+        "words": ["Chị", "có", "chè"]
+      },
+      "answerKey": {
+        "words": ["Chị", "có", "chè"]
+      },
+      "hints": ["Đọc rõ âm đầu của từng tiếng."],
+      "explanation": "Câu này đọc là \"Chị có chè\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chtr-0048",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "Bà đi chợ",
+        "words": ["Bà", "đi", "chợ"]
+      },
+      "answerKey": {
+        "words": ["Bà", "đi", "chợ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Bà đi chợ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chtr-0049",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "trẻ nhỏ đi trú",
+        "words": ["trẻ", "nhỏ", "đi", "trú"]
+      },
+      "answerKey": {
+        "words": ["trẻ", "nhỏ", "đi", "trú"]
+      },
+      "hints": ["Đọc rõ âm đầu của từng tiếng."],
+      "explanation": "Câu này đọc là \"trẻ nhỏ đi trú\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chtr-0050",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: tre, che, trà."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Viết đúng ch hay tr", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["tre che trà"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm tiếng trước khi viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chtr-0051",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: chợ, chị, chữ."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Viết đúng ch hay tr", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["chợ chị chữ"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, nhìn mẫu nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-chtr-0052",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.NHAM_LAN_CH_TR"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: trê, trò, trẻ."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Viết đúng ch hay tr", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["trê trò trẻ"]
+      },
+      "answerKey": null,
+      "hints": ["Đọc thầm tiếng trước khi viết."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B22",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 14 tr.40 và Bài 22 tr.56 (ch, tr)"
+      }
+    }
+  ]
+}

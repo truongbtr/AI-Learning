@@ -131,8 +131,16 @@
       "prerequisites": ["VMATH.SO.SO_0_5"],
       "relatedSkillCodes": ["EMATH.NBT.READ_WRITE_NUMERALS_120"],
       "confusableWith": [],
-      "exerciseTypes": ["TRACE", "WRITE_PHOTO", "LISTEN_CHOOSE", "MCQ"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "TRACE",
+        "WRITE_PHOTO",
+        "LISTEN_CHOOSE",
+        "MCQ",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.NHIEU_HON_IT_HON",
@@ -196,8 +204,8 @@
       "prerequisites": ["VMATH.SO.SO_SANH_1_10"],
       "relatedSkillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["DRAG_DROP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.TACH_GOP_10",
@@ -237,8 +245,15 @@
       "prerequisites": ["VMATH.SO.THU_TU_SO", "VMATH.SO.TACH_GOP_10"],
       "relatedSkillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "COUNT_TAP", "READ_ALOUD"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "LISTEN_CHOOSE",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.CONG_PV_5",

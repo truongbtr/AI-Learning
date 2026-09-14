@@ -77,6 +77,30 @@ const PATCHES = {
   "VIET.DOC.DOC_TIENG": { types: ["DRAG_DROP", "WRITE_PHOTO"], range: [1, 5] },
   "VIET.DOC.DOC_TU": { types: ["WRITE_PHOTO"], range: [1, 5] },
 
+  // Bài 16–24 (lô 5, 14/09): gói âm và vần thêm DRAG_DROP/WRITE_PHOTO như bài 7–12; hai gói
+  // phân biệt thêm dạng bài để đủ bốn dạng pha 3.
+  "VIET.HV.AM_M_N": { types: ["DRAG_DROP", "WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.AM_G_GI": { types: ["DRAG_DROP", "WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.AM_GH_NH": { types: ["DRAG_DROP", "WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.AM_NG_NGH": { types: ["DRAG_DROP", "WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.AM_R_S": { types: ["DRAG_DROP", "WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.AM_T_TR": { types: ["DRAG_DROP", "WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.AM_TH": { types: ["DRAG_DROP", "WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.VAN_IA": { types: ["WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.VAN_UA_UWA": { types: ["WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.NHAM_LAN_CH_TR": { types: ["DRAG_DROP", "WRITE_PHOTO"], range: [1, 5] },
+  "VIET.HV.NHAM_LAN_NG_NGH_G_GH": { types: ["LISTEN_CHOOSE"], range: [1, 5] },
+
+  // Toán bài 1–6 (lô 6, 14/09).
+  "VMATH.SO.THU_TU_SO": { types: ["LISTEN_CHOOSE", "READ_ALOUD", "WRITE_PHOTO"], range: [1, 5] },
+  "VMATH.SO.DOC_VIET_SO_0_10": { types: ["DRAG_DROP", "COUNT_TAP", "READ_ALOUD"], range: [1, 5] },
+  "VMATH.SO.SO_1_10": { types: ["LISTEN_CHOOSE", "WRITE_PHOTO"], range: [1, 5] },
+
+  // ESL Unit 2 (lô 7, 14/09).
+  "ESL.VOC.FOOD": { types: ["READ_ALOUD", "WRITE_PHOTO"], range: [1, 5] },
+  "ESL.VOC.FRUITS": { types: ["READ_ALOUD"], range: [1, 5] },
+  "ESL.GR.LIKE_DONT_LIKE": { types: ["DRAG_DROP", "READ_ALOUD", "WRITE_PHOTO"], range: [1, 5] },
+
   // English Science chưa có gói nào. Bốn dạng pha 3 là sàn của validator; khoa học lớp 1 hợp
   // với COUNT_TAP (đếm vật sống trong tranh) và LISTEN_CHOOSE (nghe tên vật liệu) hơn là
   // SPEAK_ANSWER, thứ phải chờ hàng chờ AI mới có phản hồi.
