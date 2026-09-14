@@ -1,0 +1,1259 @@
+{
+  "skillCode": "ENL.RF.LONG_SHORT_VOWEL_DISTINCTION",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Phân biệt nguyên âm ngắn – dài (cap / cape, bit / bite, hop / hope). Ô nhiễu là chính cặp đó; cặp khác một chữ e mang sai_chinh_ta_tu (lỗi 'nhìn e cuối mà không nghe').",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-longshort-0001",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Does kite have a long i or a short i?",
+        "image": {
+          "kind": "emoji",
+          "value": "🪁",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "long i"
+        },
+        {
+          "id": "b",
+          "text": "short i"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A long vowel says its name."],
+      "explanation": "The answer is: long i",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-longshort-0002",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Does cat have a long a or a short a?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "long a"
+        },
+        {
+          "id": "b",
+          "text": "short a"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A long vowel says its name."],
+      "explanation": "The answer is: short a",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-longshort-0003",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Does bone have a long o or a short o?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦴",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "long o"
+        },
+        {
+          "id": "b",
+          "text": "short o"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A long vowel says its name."],
+      "explanation": "The answer is: long o",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-longshort-0004",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Does fish have a long i or a short i?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "long i"
+        },
+        {
+          "id": "b",
+          "text": "short i"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A long vowel says its name."],
+      "explanation": "The answer is: short i",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "enl-longshort-0005",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which word has a long a?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cap",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "cape"
+        },
+        {
+          "id": "c",
+          "text": "cat"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Long a says ay."],
+      "explanation": "The answer is: cape",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "enl-longshort-0006",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which word has a short o?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hope",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "home"
+        },
+        {
+          "id": "c",
+          "text": "hop"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Short o, like in dog."],
+      "explanation": "The answer is: hop",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-longshort-0007",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which word has a long i?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bite"
+        },
+        {
+          "id": "b",
+          "text": "bit",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "c",
+          "text": "big"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Long i says eye."],
+      "explanation": "The answer is: bite",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-longshort-0008",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which word has a short u?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cube",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "cub"
+        },
+        {
+          "id": "c",
+          "text": "cute"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Short u, like in sun."],
+      "explanation": "The answer is: cub",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0009",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which word has a long e?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ten"
+        },
+        {
+          "id": "b",
+          "text": "bed"
+        },
+        {
+          "id": "c",
+          "text": "tree"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Long e says ee."],
+      "explanation": "The answer is: tree",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0010",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which word has a short e?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "pet"
+        },
+        {
+          "id": "b",
+          "text": "seed"
+        },
+        {
+          "id": "c",
+          "text": "tree"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Short e, like in bed."],
+      "explanation": "The answer is: pet",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-longshort-0011",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which word has a long o?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "not",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "note"
+        },
+        {
+          "id": "c",
+          "text": "pot"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Long o says oh."],
+      "explanation": "The answer is: note",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-longshort-0012",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which word has a short a?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "made",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "rain"
+        },
+        {
+          "id": "c",
+          "text": "mad"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Short a, like in cat."],
+      "explanation": "The answer is: mad",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0013",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Does rain have a long a or a short a?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌧️",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "long a"
+        },
+        {
+          "id": "b",
+          "text": "short a"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["ai says the name of a."],
+      "explanation": "The answer is: long a",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0014",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Does sun have a long u or a short u?",
+        "image": {
+          "kind": "emoji",
+          "value": "☀️",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "long u"
+        },
+        {
+          "id": "b",
+          "text": "short u"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A long vowel says its name."],
+      "explanation": "The answer is: short u",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-longshort-0015",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. Long vowel or short vowel?"
+      },
+      "listenTarget": {
+        "text": "cake"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"cake\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-longshort-0016",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Long or short?"
+      },
+      "listenTarget": {
+        "text": "hat"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"hat\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0017",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the middle sound, then choose."
+      },
+      "listenTarget": {
+        "text": "bike"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"bike\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0018",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Long or short? Tap it."
+      },
+      "listenTarget": {
+        "text": "pig"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"pig\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0019",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "rope"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"rope\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0020",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Does the vowel say its name?"
+      },
+      "listenTarget": {
+        "text": "dog"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"dog\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0021",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. Long vowel or short vowel?"
+      },
+      "listenTarget": {
+        "text": "feet"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"feet\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0022",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Long or short?"
+      },
+      "listenTarget": {
+        "text": "bus"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"bus\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0023",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the middle sound, then choose."
+      },
+      "listenTarget": {
+        "text": "cute"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"cute\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0024",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Long or short? Tap it."
+      },
+      "listenTarget": {
+        "text": "bed"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "short vowel"
+        },
+        {
+          "id": "b",
+          "text": "long vowel"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"bed\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0025",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Short vowel or long vowel? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "cap"
+        },
+        {
+          "id": "b0",
+          "text": "cape"
+        },
+        {
+          "id": "a1",
+          "text": "kit"
+        },
+        {
+          "id": "b1",
+          "text": "kite"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Short vowel",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Long vowel",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Say each word out loud."],
+      "explanation": "cap, kit go in \"Short vowel\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0026",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the words by vowel sound."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "hop"
+        },
+        {
+          "id": "b0",
+          "text": "hope"
+        },
+        {
+          "id": "a1",
+          "text": "bed"
+        },
+        {
+          "id": "b1",
+          "text": "tree"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Short vowel",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Long vowel",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Does the vowel say its name?"],
+      "explanation": "hop, bed go in \"Short vowel\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0027",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which ones have a long vowel?"
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "fish"
+        },
+        {
+          "id": "b1",
+          "text": "bone"
+        },
+        {
+          "id": "a0",
+          "text": "sun"
+        },
+        {
+          "id": "b0",
+          "text": "rain"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Short vowel",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "Long vowel",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Does the vowel say its name?"],
+      "explanation": "sun, fish go in \"Short vowel\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-longshort-0028",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "cap, cape",
+        "words": ["cap", "cape"]
+      },
+      "answerKey": {
+        "words": ["cap", "cape"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"cap, cape\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0029",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "kit, kite",
+        "words": ["kit", "kite"]
+      },
+      "answerKey": {
+        "words": ["kit", "kite"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"kit, kite\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0030",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "hop, hope",
+        "words": ["hop", "hope"]
+      },
+      "answerKey": {
+        "words": ["hop", "hope"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"hop, hope\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0031",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "cub, cube",
+        "words": ["cub", "cube"]
+      },
+      "answerKey": {
+        "words": ["cub", "cube"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"cub, cube\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0032",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "The kite is in the tree.",
+        "words": ["The", "kite", "is", "in", "the", "tree"]
+      },
+      "answerKey": {
+        "words": ["The", "kite", "is", "in", "the", "tree"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The kite is in the tree.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0033",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write a short vowel word and a long vowel word."
+      },
+      "rubric": {
+        "criteria": ["Một từ nguyên âm ngắn", "Một từ nguyên âm dài"],
+        "sampleAnswers": ["cat, cake"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: cat, cake",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0034",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Add e to make a new word: pin → ___"
+      },
+      "rubric": {
+        "criteria": ["Viết pine", "Đọc đúng âm dài"],
+        "sampleAnswers": ["pine"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: pine",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-longshort-0035",
+      "language": "en",
+      "skillCodes": ["ENL.RF.LONG_SHORT_VOWEL_DISTINCTION"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a kite and a kit. Label them."
+      },
+      "rubric": {
+        "criteria": ["Hai tranh", "Nhãn đúng"],
+        "sampleAnswers": ["kite, kit"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: kite, kit",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1–3 (GS1-LIT.U1) (long o, long e, long a, bảng chương trình) — chưa chụp trang sách"
+      }
+    }
+  ]
+}

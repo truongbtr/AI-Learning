@@ -1,0 +1,1362 @@
+{
+  "skillCode": "ENL.RF.SEGMENT_PHONEMES",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Tách từ thành âm: ship = sh-i-p (3 âm, 4 chữ). Ô 'đếm theo chữ cái' là dem_thua_1 (ship → 4) — đúng lỗi 'tách theo chữ cái với digraph'; ô gộp âm là dem_thieu_1.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-segment-0001",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many sounds in cat?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["sh, ch and th make one sound each."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-segment-0002",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Say ship slowly. How many sounds?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["sh, ch and th make one sound each."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-segment-0003",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many sounds in fish?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["sh, ch and th make one sound each."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-segment-0004",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Say chin slowly. How many sounds?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["sh, ch and th make one sound each."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-segment-0005",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many sounds in cup?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["sh, ch and th make one sound each."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-segment-0006",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Say frog slowly. How many sounds?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["sh, ch and th make one sound each."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-segment-0007",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many sounds in hat?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["sh, ch and th make one sound each."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-segment-0008",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Say go slowly. How many sounds?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["sh, ch and th make one sound each."],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0009",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which shows the sounds in see?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "s-ee"
+        },
+        {
+          "id": "b",
+          "text": "s-e-e"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the word very slowly."],
+      "explanation": "The answer is: s-ee",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0010",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which shows the sounds in the?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "t-h-e"
+        },
+        {
+          "id": "b",
+          "text": "th-e"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the word very slowly."],
+      "explanation": "The answer is: th-e",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0011",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which shows the sounds in duck?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "d-u-ck"
+        },
+        {
+          "id": "b",
+          "text": "d-u-c-k"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the word very slowly."],
+      "explanation": "The answer is: d-u-ck",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0012",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which shows the sounds in bell?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b-e-l-l"
+        },
+        {
+          "id": "b",
+          "text": "b-e-ll"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the word very slowly."],
+      "explanation": "The answer is: b-e-ll",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0013",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which shows the sounds in milk?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "m-i-l-k"
+        },
+        {
+          "id": "b",
+          "text": "m-i-k"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the word very slowly."],
+      "explanation": "The answer is: m-i-l-k",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0014",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which shows the sounds in lamp?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "l-a-p"
+        },
+        {
+          "id": "b",
+          "text": "l-a-m-p"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the word very slowly."],
+      "explanation": "The answer is: l-a-m-p",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-segment-0015",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. How many sounds?"
+      },
+      "listenTarget": {
+        "text": "dog"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"dog\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-segment-0016",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Count the sounds!"
+      },
+      "listenTarget": {
+        "text": "shop"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"shop\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-segment-0017",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then count the sounds."
+      },
+      "listenTarget": {
+        "text": "tree"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"tree\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-segment-0018",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many sounds? Tap the number."
+      },
+      "listenTarget": {
+        "text": "me"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"me\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-segment-0019",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and stretch the word."
+      },
+      "listenTarget": {
+        "text": "stop"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"stop\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-segment-0020",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Say it slowly, then tap."
+      },
+      "listenTarget": {
+        "text": "chick"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"chick\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-segment-0021",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. How many sounds?"
+      },
+      "listenTarget": {
+        "text": "sun"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"sun\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-segment-0022",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Count the sounds!"
+      },
+      "listenTarget": {
+        "text": "nest"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"nest\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0023",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Three sounds or four sounds? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "cat"
+        },
+        {
+          "id": "b0",
+          "text": "frog"
+        },
+        {
+          "id": "a1",
+          "text": "ship"
+        },
+        {
+          "id": "b1",
+          "text": "milk"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "3 sounds",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "4 sounds",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["sh is one sound."],
+      "explanation": "cat, ship go in \"3 sounds\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0024",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the words by sounds."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "go"
+        },
+        {
+          "id": "b0",
+          "text": "chin"
+        },
+        {
+          "id": "a1",
+          "text": "the"
+        },
+        {
+          "id": "b1",
+          "text": "duck"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "2 sounds",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "3 sounds",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["th and ck are one sound each."],
+      "explanation": "go, the go in \"2 sounds\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0025",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Build pig: drag the sounds in order."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "g"
+        },
+        {
+          "id": "c1",
+          "text": "p"
+        },
+        {
+          "id": "c2",
+          "text": "i"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "middle",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "last",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c2"],
+        "z2": ["c0"]
+      },
+      "hints": ["p-i-g."],
+      "explanation": "pig is p-i-g.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0026",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Build ship: drag the sounds in order."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "p"
+        },
+        {
+          "id": "c1",
+          "text": "sh"
+        },
+        {
+          "id": "c2",
+          "text": "i"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "middle",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "last",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c2"],
+        "z2": ["c0"]
+      },
+      "hints": ["sh is one sound."],
+      "explanation": "ship is sh-i-p.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0027",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Build chop: drag the sounds in order."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "o"
+        },
+        {
+          "id": "c1",
+          "text": "p"
+        },
+        {
+          "id": "c2",
+          "text": "ch"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "middle",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "last",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c2"],
+        "z1": ["c0"],
+        "z2": ["c1"]
+      },
+      "hints": ["ch is one sound."],
+      "explanation": "chop is ch-o-p.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0028",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Build bath: drag the sounds in order."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "th"
+        },
+        {
+          "id": "c1",
+          "text": "b"
+        },
+        {
+          "id": "c2",
+          "text": "a"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "middle",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "last",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c2"],
+        "z2": ["c0"]
+      },
+      "hints": ["th is one sound."],
+      "explanation": "bath is b-a-th.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-segment-0029",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "c-a-t, cat",
+        "words": ["c-a-t", "cat"]
+      },
+      "answerKey": {
+        "words": ["c-a-t", "cat"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"c-a-t, cat\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0030",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "sh-i-p, ship",
+        "words": ["sh-i-p", "ship"]
+      },
+      "answerKey": {
+        "words": ["sh-i-p", "ship"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"sh-i-p, ship\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0031",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "f-r-o-g, frog",
+        "words": ["f-r-o-g", "frog"]
+      },
+      "answerKey": {
+        "words": ["f-r-o-g", "frog"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"f-r-o-g, frog\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0032",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "m-i-l-k, milk",
+        "words": ["m-i-l-k", "milk"]
+      },
+      "answerKey": {
+        "words": ["m-i-l-k", "milk"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"m-i-l-k, milk\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0033",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write the sounds in dog, one box each."
+      },
+      "rubric": {
+        "criteria": ["Ba ô, mỗi ô một âm", "Đúng d, o, g"],
+        "sampleAnswers": ["d | o | g"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: d | o | g",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0034",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write the sounds in fish, one box each."
+      },
+      "rubric": {
+        "criteria": ["Ba ô", "sh viết chung một ô"],
+        "sampleAnswers": ["f | i | sh"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: f | i | sh",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-segment-0035",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SEGMENT_PHONEMES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a frog. Write its 4 sounds."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Đúng 4 âm"],
+        "sampleAnswers": ["f-r-o-g"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: f-r-o-g",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Phonics Review (GS1-LIT.R) (segmenting sounds, bảng chương trình) — chưa chụp trang sách"
+      }
+    }
+  ]
+}

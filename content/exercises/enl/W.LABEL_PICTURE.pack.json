@@ -1,0 +1,1406 @@
+{
+  "skillCode": "ENL.W.LABEL_PICTURE",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Viết từ đơn gọi tên tranh. Trắc nghiệm chọn nhãn viết đúng: ô lệch chữ (sai_chinh_ta_tu) và ô đổi nguyên âm (nham_nguyen_am_ngan) — đúng lỗi 'đánh vần theo âm sai'. Kéo nhãn vào tranh; phần chính là vẽ và ghi nhãn vào vở.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "enl-label-0001",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which label goes with the picture?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat"
+        },
+        {
+          "id": "b",
+          "text": "kat",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "c",
+          "text": "cot",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: cat",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "enl-label-0002",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Pick the right label.",
+        "image": {
+          "kind": "emoji",
+          "value": "☀️",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sunn",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "sun"
+        },
+        {
+          "id": "c",
+          "text": "sin",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: sun",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "enl-label-0003",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which word should we write here?",
+        "image": {
+          "kind": "emoji",
+          "value": "🛏️",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bedd",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "bad",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "c",
+          "text": "bed"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: bed",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "enl-label-0004",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which label goes with the picture?",
+        "image": {
+          "kind": "emoji",
+          "value": "☕",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cup"
+        },
+        {
+          "id": "b",
+          "text": "kup",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "c",
+          "text": "cap",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: cup",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "enl-label-0005",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Pick the right label.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐖",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "pigg",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "pig"
+        },
+        {
+          "id": "c",
+          "text": "peg",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: pig",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "enl-label-0006",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which word should we write here?",
+        "image": {
+          "kind": "emoji",
+          "value": "🎩",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hatt",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "hot",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "c",
+          "text": "hat"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: hat",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-label-0007",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which label goes with the picture?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish"
+        },
+        {
+          "id": "b",
+          "text": "fis",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "c",
+          "text": "fesh",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: fish",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-label-0008",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Pick the right label.",
+        "image": {
+          "kind": "emoji",
+          "value": "🚢",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sip",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "ship"
+        },
+        {
+          "id": "c",
+          "text": "shop",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: ship",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-label-0009",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which word should we write here?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦵",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "legg",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "log",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "c",
+          "text": "leg"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: leg",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-label-0010",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which label goes with the picture?",
+        "image": {
+          "kind": "emoji",
+          "value": "📦",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "box"
+        },
+        {
+          "id": "b",
+          "text": "boks",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "c",
+          "text": "bux",
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the word slowly, sound by sound."],
+      "explanation": "The answer is: box",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "model",
+      "id": "enl-label-0011",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the right spelling."
+      },
+      "listenTarget": {
+        "text": "dog"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dig",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "dog"
+        },
+        {
+          "id": "c",
+          "text": "dogg",
+          "errorTag": "sai_chinh_ta_tu"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"dog\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "model",
+      "id": "enl-label-0012",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a label. Tap it!"
+      },
+      "listenTarget": {
+        "text": "hen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hin",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "henn",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "c",
+          "text": "hen"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"hen\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "id": "enl-label-0013",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "tap"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tap"
+        },
+        {
+          "id": "b",
+          "text": "tep",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "c",
+          "text": "tapp",
+          "errorTag": "sai_chinh_ta_tu"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"tap\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "id": "enl-label-0014",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which word did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "nut"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nat",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "nut"
+        },
+        {
+          "id": "c",
+          "text": "nutt",
+          "errorTag": "sai_chinh_ta_tu"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"nut\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "id": "enl-label-0015",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "jam"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "jem",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "text": "jamm",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "c",
+          "text": "jam"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"jam\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "id": "enl-label-0016",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Say the sounds, then tap."
+      },
+      "listenTarget": {
+        "text": "web"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "web"
+        },
+        {
+          "id": "b",
+          "text": "wab",
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "c",
+          "text": "webb",
+          "errorTag": "sai_chinh_ta_tu"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"web\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0017",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each label to its picture."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "cat"
+        },
+        {
+          "id": "c1",
+          "text": "dog"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "picture 1"
+          },
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "picture 2"
+          },
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Read each label."],
+      "explanation": "🐈 cat, 🐕 dog.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0018",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Label the fruit."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "banana"
+        },
+        {
+          "id": "c1",
+          "text": "apple"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelEn": "picture 1"
+          },
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍌",
+            "labelEn": "picture 2"
+          },
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c0"]
+      },
+      "hints": ["Read each label."],
+      "explanation": "🍎 apple, 🍌 banana.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0019",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Label the things in the bedroom."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "lamp"
+        },
+        {
+          "id": "c1",
+          "text": "bed"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "🛏️",
+            "labelEn": "picture 1"
+          },
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "💡",
+            "labelEn": "picture 2"
+          },
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c0"]
+      },
+      "hints": ["Read each label."],
+      "explanation": "🛏️ bed, 💡 lamp.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0020",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Label the body parts."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "hand"
+        },
+        {
+          "id": "c1",
+          "text": "foot"
+        },
+        {
+          "id": "c2",
+          "text": "nose"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "✋",
+            "labelEn": "picture 1"
+          },
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🦶",
+            "labelEn": "picture 2"
+          },
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "picture 3",
+          "image": {
+            "kind": "emoji",
+            "value": "👃",
+            "labelEn": "picture 3"
+          },
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Read each label."],
+      "explanation": "✋ hand, 🦶 foot, 👃 nose.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0021",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Label the weather."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "rain"
+        },
+        {
+          "id": "c1",
+          "text": "sun"
+        },
+        {
+          "id": "c2",
+          "text": "snow"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "☀️",
+            "labelEn": "picture 1"
+          },
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🌧️",
+            "labelEn": "picture 2"
+          },
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "picture 3",
+          "image": {
+            "kind": "emoji",
+            "value": "❄️",
+            "labelEn": "picture 3"
+          },
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c0"],
+        "z2": ["c2"]
+      },
+      "hints": ["Read each label."],
+      "explanation": "☀️ sun, 🌧️ rain, ❄️ snow.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0022",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Label the toys."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "kite"
+        },
+        {
+          "id": "c1",
+          "text": "ball"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "⚽",
+            "labelEn": "picture 1"
+          },
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🪁",
+            "labelEn": "picture 2"
+          },
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c0"]
+      },
+      "hints": ["Read each label."],
+      "explanation": "⚽ ball, 🪁 kite.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-label-0023",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "cat, dog, fish",
+        "words": ["cat", "dog", "fish"]
+      },
+      "answerKey": {
+        "words": ["cat", "dog", "fish"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"cat, dog, fish\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0024",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "apple, banana, pear",
+        "words": ["apple", "banana", "pear"]
+      },
+      "answerKey": {
+        "words": ["apple", "banana", "pear"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"apple, banana, pear\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0025",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "sun, rain, snow",
+        "words": ["sun", "rain", "snow"]
+      },
+      "answerKey": {
+        "words": ["sun", "rain", "snow"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"sun, rain, snow\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0026",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "hand, foot, nose",
+        "words": ["hand", "foot", "nose"]
+      },
+      "answerKey": {
+        "words": ["hand", "foot", "nose"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"hand, foot, nose\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0027",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "bed, lamp, box",
+        "words": ["bed", "lamp", "box"]
+      },
+      "answerKey": {
+        "words": ["bed", "lamp", "box"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"bed, lamp, box\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0028",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a cat. Label: head, tail, legs."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Ghi đủ 3 nhãn", "Chính tả gần đúng theo âm"],
+        "sampleAnswers": ["head, tail, legs"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: head, tail, legs",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0029",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw your face. Label: eyes, nose, mouth."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Ghi đủ 3 nhãn"],
+        "sampleAnswers": ["eyes, nose, mouth"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: eyes, nose, mouth",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0030",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a tree. Label: leaf, branch, root."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Có ít nhất 2 nhãn"],
+        "sampleAnswers": ["leaf, branch, root"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: leaf, branch, root",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0031",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw your bag. Label two things in it."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Hai nhãn"],
+        "sampleAnswers": ["book, pen"]
+      },
+      "answerKey": null,
+      "hints": ["Check your letters when you finish."],
+      "explanation": "For example: book, pen",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0032",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a house. Label: door, window, roof."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Ghi nhãn đúng chỗ"],
+        "sampleAnswers": ["door, window, roof"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: door, window, roof",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0033",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a fish. Label: fin, tail, eye."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Ghi nhãn đúng chỗ"],
+        "sampleAnswers": ["fin, tail, eye"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: fin, tail, eye",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0034",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw your lunch. Label each food."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Mỗi món một nhãn"],
+        "sampleAnswers": ["rice, egg"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: rice, egg",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-label-0035",
+      "language": "en",
+      "skillCodes": ["ENL.W.LABEL_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a bike. Label: wheel, seat."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Hai nhãn đúng"],
+        "sampleAnswers": ["wheel, seat"]
+      },
+      "answerKey": null,
+      "hints": ["Check your letters when you finish."],
+      "explanation": "For example: wheel, seat",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS W.1.2 (labelling pictures) — ENL chưa có giáo trình của trường"
+      }
+    }
+  ]
+}

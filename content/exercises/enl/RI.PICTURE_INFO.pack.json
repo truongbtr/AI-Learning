@@ -1,0 +1,1395 @@
+{
+  "skillCode": "ENL.RI.PICTURE_INFO",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Kết hợp tranh và chữ. Mỗi câu có tranh và một câu thông tin; khi tranh chỉ vẽ một phần (một con nhện emoji không đếm được chân), chữ quyết định — ô nhiễu là con số 'đoán theo tranh' hoặc hụt/dư một (dem_thieu_1/dem_thua_1).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-picinfo-0001",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Read: A spider has 8 legs. How many legs?",
+        "image": {
+          "kind": "emoji",
+          "value": "🕷️",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read the number in the words."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-picinfo-0002",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Read: An ant has 6 legs. How many legs?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐜",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read the number in the words."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "enl-picinfo-0003",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read: A bird has 2 wings. How many wings?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read the number in the words."],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-picinfo-0004",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read: A starfish has 5 arms. How many arms?",
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read the number in the words."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-picinfo-0005",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Frogs live near ponds. Where do frogs live?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐸",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "in trees"
+        },
+        {
+          "id": "b",
+          "text": "near ponds"
+        },
+        {
+          "id": "c",
+          "text": "in the sand"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find the place in the words."],
+      "explanation": "The answer is: near ponds",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-picinfo-0006",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Bees make honey. What do bees make?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "milk"
+        },
+        {
+          "id": "b",
+          "text": "eggs"
+        },
+        {
+          "id": "c",
+          "text": "honey"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Find the thing in the words."],
+      "explanation": "The answer is: honey",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0007",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read: A cow gives us milk. What does a cow give?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐄",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "milk"
+        },
+        {
+          "id": "b",
+          "text": "honey"
+        },
+        {
+          "id": "c",
+          "text": "wool"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read the words, not just the picture."],
+      "explanation": "The answer is: milk",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0008",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Penguins cannot fly. Can penguins fly?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐧",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read the words carefully."],
+      "explanation": "The answer is: No",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-picinfo-0009",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read: An octopus has 8 arms. How many arms?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐙",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read the number in the words."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0010",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Owls hunt at night. When do owls hunt?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦉",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "at night"
+        },
+        {
+          "id": "b",
+          "text": "in the morning"
+        },
+        {
+          "id": "c",
+          "text": "at lunch"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find the time in the words."],
+      "explanation": "The answer is: at night",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0011",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read: A giraffe eats leaves. What does it eat?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦒",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "fish"
+        },
+        {
+          "id": "b",
+          "text": "leaves"
+        },
+        {
+          "id": "c",
+          "text": "meat"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find the food in the words."],
+      "explanation": "The answer is: leaves",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-picinfo-0012",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read: A ladybug has 6 legs. How many legs?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐞",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The words tell the number."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0013",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Camels can live in the desert. Where?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐫",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "in the desert"
+        },
+        {
+          "id": "b",
+          "text": "in the sea"
+        },
+        {
+          "id": "c",
+          "text": "in the snow"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find the place in the words."],
+      "explanation": "The answer is: in the desert",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0014",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read: A bat sleeps in the day. When does it sleep?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦇",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "at night"
+        },
+        {
+          "id": "b",
+          "text": "in the day"
+        },
+        {
+          "id": "c",
+          "text": "in winter"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read the words carefully."],
+      "explanation": "The answer is: in the day",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-picinfo-0015",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many wings does a butterfly have?"
+      },
+      "listenTarget": {
+        "text": "A butterfly has four wings."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"A butterfly has four wings.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-picinfo-0016",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What do fish breathe with?"
+      },
+      "listenTarget": {
+        "text": "Fish breathe with gills."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "noses"
+        },
+        {
+          "id": "b",
+          "text": "wings"
+        },
+        {
+          "id": "c",
+          "text": "gills"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Fish breathe with gills.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0017",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Where is the snail's shell?"
+      },
+      "listenTarget": {
+        "text": "A snail carries its shell on its back."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "on its back"
+        },
+        {
+          "id": "b",
+          "text": "on its head"
+        },
+        {
+          "id": "c",
+          "text": "in a box"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"A snail carries its shell on its back.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0018",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Where do polar bears live?"
+      },
+      "listenTarget": {
+        "text": "Polar bears live where it is very cold."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "where it is hot"
+        },
+        {
+          "id": "b",
+          "text": "where it is cold"
+        },
+        {
+          "id": "c",
+          "text": "in the city"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Polar bears live where it is very cold.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-picinfo-0019",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many legs does a crab have?"
+      },
+      "listenTarget": {
+        "text": "A crab has ten legs."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"A crab has ten legs.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0020",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What do squirrels hide?"
+      },
+      "listenTarget": {
+        "text": "Squirrels hide nuts for the winter."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nuts"
+        },
+        {
+          "id": "b",
+          "text": "fish"
+        },
+        {
+          "id": "c",
+          "text": "shoes"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Squirrels hide nuts for the winter.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0021",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What is a baby frog called?"
+      },
+      "listenTarget": {
+        "text": "A baby frog is called a tadpole."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a puppy"
+        },
+        {
+          "id": "b",
+          "text": "a tadpole"
+        },
+        {
+          "id": "c",
+          "text": "a chick"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"A baby frog is called a tadpole.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0022",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What do elephants use to drink?"
+      },
+      "listenTarget": {
+        "text": "Elephants use their trunks to drink water."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "their ears"
+        },
+        {
+          "id": "b",
+          "text": "their tails"
+        },
+        {
+          "id": "c",
+          "text": "their trunks"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Elephants use their trunks to drink water.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0023",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Does the picture or the words tell it? Sort."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "the colour"
+        },
+        {
+          "id": "b0",
+          "text": "the number of legs"
+        },
+        {
+          "id": "a1",
+          "text": "the shape"
+        },
+        {
+          "id": "b1",
+          "text": "what it eats"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Picture shows it",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Words tell it",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["A small picture cannot show everything."],
+      "explanation": "the colour, the shape go in \"Picture shows it\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0024",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Fact or not a fact? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "A spider has 8 legs."
+        },
+        {
+          "id": "b0",
+          "text": "Cats can fly."
+        },
+        {
+          "id": "a1",
+          "text": "Bees make honey."
+        },
+        {
+          "id": "b1",
+          "text": "Fish live in trees."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Fact",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Not a fact",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Is it true?"],
+      "explanation": "A spider has 8 legs., Bees make honey. go in \"Fact\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0025",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the animal: It has 8 legs and spins webs."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🕷️"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐜"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐦"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Which one spins webs?"],
+      "explanation": "A spider has 8 legs and spins webs.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0026",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the animal: It makes honey."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐄"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐸"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Think about honey."],
+      "explanation": "Bees make honey.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0027",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the animal: It cannot fly but it swims."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🐧"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🦉"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["It is a bird that swims."],
+      "explanation": "Penguins swim but cannot fly.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-picinfo-0028",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "A spider has eight legs.",
+        "words": ["A", "spider", "has", "eight", "legs"]
+      },
+      "answerKey": {
+        "words": ["A", "spider", "has", "eight", "legs"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A spider has eight legs.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0029",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Bees make honey.",
+        "words": ["Bees", "make", "honey"]
+      },
+      "answerKey": {
+        "words": ["Bees", "make", "honey"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Bees make honey.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0030",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Owls hunt at night.",
+        "words": ["Owls", "hunt", "at", "night"]
+      },
+      "answerKey": {
+        "words": ["Owls", "hunt", "at", "night"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Owls hunt at night.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0031",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Penguins cannot fly.",
+        "words": ["Penguins", "cannot", "fly"]
+      },
+      "answerKey": {
+        "words": ["Penguins", "cannot", "fly"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Penguins cannot fly.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0032",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Frogs live near ponds.",
+        "words": ["Frogs", "live", "near", "ponds"]
+      },
+      "answerKey": {
+        "words": ["Frogs", "live", "near", "ponds"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Frogs live near ponds.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0033",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw an ant. Write how many legs it has."
+      },
+      "rubric": {
+        "criteria": ["Có tranh con kiến", "Ghi 6 legs"],
+        "sampleAnswers": ["6 legs"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 6 legs",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0034",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write one fact about a cow."
+      },
+      "rubric": {
+        "criteria": ["Một câu thông tin đúng", "Chữ hoa và dấu chấm"],
+        "sampleAnswers": ["A cow gives us milk."]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: A cow gives us milk.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-picinfo-0035",
+      "language": "en",
+      "skillCodes": ["ENL.RI.PICTURE_INFO"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a spider. Label its 8 legs."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đủ 8 chân", "Có nhãn"],
+        "sampleAnswers": ["8 legs"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 8 legs",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1 (predict from pictures, bảng chương trình) + CCSS RI.1.7"
+      }
+    }
+  ]
+}

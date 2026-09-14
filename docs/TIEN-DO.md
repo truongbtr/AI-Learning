@@ -2,6 +2,80 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 6b — 14/09/2026 — Vá 129 kỹ năng trống của tuần 1–12
+
+Trạng thái: **129 → 0 kỹ năng tuần 1–12 còn trống ở cả 6 môn.** 130 gói · **5.010 bài** · tất cả
+`PUBLISHED`. `content:validate` sạch · `audit-closed` 0/5.173 · `lint` / `test` xanh · `build`: xem 5.
+Báo cáo đầy đủ: `content/_reports/dot-3.md`. ADR mới: **ADR-19**. Chưa push.
+
+> Nạp 8 lô từ **21:01 tới 23:08** (PowerShell `Get-Date`, giờ VN), mỗi lô `--dry-run` trước và kiểm
+> bảng `Session` trước; 0 phiên mở. Không dựng lại, không khởi động lại container nào.
+
+### 1. Số kỹ năng / bài theo môn
+
+| Môn | Kỹ năng mới | Bài | Nguồn |
+|---|---|---|---|
+| VIET | 42 | 1.801 | **Ảnh trang SGK tr.64–133** (âm ph–qu, v–x, y; 24 bài vần 31–59) + bài 29 chính tả; phân biệt s/x, c/k/q, p/q, hỏi/ngã; bảng chữ cái; đọc câu; tô chữ, chữ số; chép, nghe–viết; 4 kỹ năng nói–nghe |
+| ESL | 34 | 1.258 | Global Stage 1 (bảng chương trình): 7 chủ đề từ vựng, CVC a/e/i/o/u, chữ cái, âm đầu, vần, magic e, 5 nghe, 5 nói, 6 ngữ pháp |
+| ENL | 26 | 931 | CCSS ELA + Global Stage Literacy; đọc trôi chảy aa–D bằng **sách nhỏ viết mới** (không chép Raz-Kids) |
+| EMATH | 12 | 427 | CCSS: number bonds, doubles, count on/back, fact family, giao hoán, hình, quy luật, từ vựng toán, đọc đề |
+| VMATH | 9 | 348 | SGK Toán 1: đếm 1–10, số lượng 1–5, cộng/trừ phạm vi 5, cộng với 0, bài toán thêm, **3 kỹ năng hình tuần 8** |
+| ESCI | 7 | 245 | NGSS: âm thanh, to–nhỏ/cao–trầm, tín hiệu, đẩy–kéo, nam châm, nóng–lạnh, đặt câu hỏi |
+
+Ngân hàng: **8.443 bài `PUBLISHED` / 209 kỹ năng** (sáng 14/09: 3.433 / 79). **207/207** kỹ năng tuần
+1–12 đang dùng có ≥ 35 bài.
+
+### 2. Tiêu chí xong (đề bài §4)
+
+1. **0 kỹ năng tuần 1–12 còn 0 bài** — đạt. Đo bằng script riêng đọc DB (`ExerciseSkill` ⨝
+   `Exercise.status = PUBLISHED`, `Skill.isActive`, `expectedWeek ≤ 12`): trống 0, dưới 35 bài 0.
+2. **≥ 35 bài, đủ 5 mức khó** — đạt 130/130. **"Đủ 6 dạng": 26/130** — 103 gói cố ý không có COUNT_TAP
+   (ngữ pháp, ngữ âm, đọc hiểu, khoa học: bài đếm ghi bằng chứng sai kỹ năng, như `viet-bd-0049` đợt 2),
+   1 gói viết chữ số không có đọc to. Lý do và cách lùi: **ADR-19**. Mọi gói ≥ 5 dạng trừ 1 gói 4 dạng.
+3. **Không bài đóng nào hai đáp án đúng** — `scripts/content-gen/audit-closed.mjs` đếm số ô thoả câu
+   hỏi cho mọi dạng máy suy được (ô trùng, có âm/vần/dấu X, phép tính, câu đếm có tranh, điền dấu,
+   luật chính tả); dạng nghĩa soát bằng cấu trúc + tay (dữ kiện trong ngoặc cho điều emoji không vẽ được,
+   tranh chỉ một tên, ô nhiễu chỉ định tay ở truyện có nhân vật lặp). Kết quả **0/5.173**. Bắt được và
+   sửa trước khi nạp: 6 câu chính tả "Ô nào viết đúng?" có hai tiếng thật, 2 bài quy luật có hai cách xếp.
+4. **`content:import --dry-run` 0 thay đổi** — xem 5 (chạy lại sau lần nạp bản sửa cuối).
+5. **Không ngày học nào gián đoạn** — đạt (0 phiên trong 10 giờ trước 23:15; mọi lần nạp sau 21:00).
+6. **20 mã mẫu đợt 3** (seed `pha-6b-dot-3`, pool 5.010):
+   `esl-greet-0014` · `enl-label-0011` · `viet-vanan-0002` · `esl-shapes-0023` · `viet-vanep-0042` ·
+   `vmath-toanthem-0010` · `viet-hoinga-0015` · `enl-longshort-0026` · `emath-compose-0018` ·
+   `vmath-cong5-0020` · `viet-vanat-0012` · `esl-intro-0024` · `esci-vibrate-0005` · `esl-color-0008` ·
+   `viet-vanat-0046` · `esl-school-0022` · `esl-intro-0021` · `esl-instruct-0002` · `viet-amphqu-0038` ·
+   `emath-pattern-0015`. Tự chấm **18/20 → 20/20** (2 bài viết ghi "Viết đủ 2 tiếng" cho 4 tiếng — lỗi
+   đếm cụm, sửa cho 70 bài của cả ba đợt).
+
+### 3. Bài học từ `exercise-health.csv`
+
+Mới 20 dòng, mỗi bài 1 lượt — chưa đủ để RETIRE hay nâng khó. Nhưng một dòng lạ (119 giây, 3 lần thử)
+dẫn tới lỗi thật: **cả 20 câu trắc nghiệm của `EMATH.NBT.COUNT_TO_20` vẽ một vật** mà hỏi 2…20, câu lệnh
+"Point to the right one." không nói phải làm gì. Đã sửa (tranh lặp đúng số, câu lệnh "How many? Count,
+then tap."); quét toàn kho không còn gói nào như vậy. Bài học: đọc từng dòng lạ ngay cả khi số lượt ít —
+thời gian dài + nhiều lần thử là dấu hiệu đề hỏng, không phải con yếu.
+
+### 4. Thay đổi ngoài nội dung (ADR-19)
+
+- `packages/content/src/tieng-viet-progression.ts`: bài 26 dạy thêm chữ **p** (SGK tr.64 "p – ph") + test.
+  Chỉ validator dùng; không cần dựng lại image.
+- `content/skill-map/viet.json`: mở `lessonRef` của hỏi/ngã (→ bài 19), nói theo tranh (→ 31), kể lại
+  (→ 40). `enl.json`: bỏ COUNT_TAP của 3 kỹ năng âm/chữ in.
+
+### 5. Tồn đọng
+
+- **Đang chạy khi viết mục này:** sinh mp3 cho ~3.450 câu mới (~96 nghìn ký tự; tháng 09 đã dùng 48
+  nghìn / 500 nghìn). `pnpm build` phải chạy lại sau khi job xong — lần chạy lúc 23:20 lỗi EPERM vì
+  job đang giữ file `query_engine` của Prisma, không phải lỗi code.
+- **Sau restart container phải chạy lại `sync-skill-types` cho 130 kỹ năng** tới khi chú dựng lại image
+  buổi sáng (seed trong image cũ ghi đè `exerciseTypes`).
+- Chưa có ảnh trang Global Stage, sách English Science / English Maths: 2.861 bài đang bám bảng chương
+  trình / chuẩn.
+- TRACE và MINI_STORY chưa có trình hiển thị → tô chữ và truyện đi bằng bài viết và bài nghe.
+- Mã lỗi còn thiếu (gọi nhầm tên hình, viết hoa, dấu câu, lễ phép, từ vựng): nhiều gói tiếng Anh/khoa học
+  có `targetsError` = 0.
+- Đọc lại `exercise-health.csv` ngày 17/09.
+
 ## Pha 6a (tiếp) — 14/09/2026 — Học vần bài 16–24, Toán bài 1–6, ESL Unit 2
 
 Trạng thái: **3 lô mới đã phát hành**, sửa **38 bài lỗi** trong nội dung cũ, và phát hiện **web đã chết

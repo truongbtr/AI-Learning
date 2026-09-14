@@ -419,7 +419,10 @@ export function sentencePack(cfg) {
   const add = P.add;
   // Ô chữ, hoặc ô tranh khi viết { e: emoji, w: tên }.
   const face = (t) => (typeof t === "object" ? { image: img(t.e, null, t.w) } : { text: t });
-  const opt = ([t, tag]) => ({ ...face(t), ...(tag ? { errorTag: tag } : {}) });
+  const opt = (w) => {
+    const [t, tag] = Array.isArray(w) ? w : [w];
+    return { ...face(t), ...(tag ? { errorTag: tag } : {}) };
+  };
 
   cfg.items.forEach((it, i) => {
     const { choices, answerKey } = choicesOf(face(it.right), it.wrongs.map(opt), i);

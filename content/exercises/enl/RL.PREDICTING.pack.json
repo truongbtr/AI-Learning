@@ -1,0 +1,1349 @@
+{
+  "skillCode": "ENL.RL.PREDICTING",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Dự đoán từ tranh, nhan đề, đoạn đầu; xem lại dự đoán. Ô đúng là dự đoán dùng được manh mối trong đề; ô nhiễu là điều không liên quan (lỗi 'kể lại tranh thay vì đoán', 'không dùng manh mối'). Không có đáp án 'chắc chắn đúng' ngoài đời, nên hai ô nhiễu luôn là điều không thể suy ra từ đề.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-predict-0001",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "The title is 'The Lost Kite'. What will it be about?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "someone looking for a kite"
+        },
+        {
+          "id": "b",
+          "text": "a fish learning to swim"
+        },
+        {
+          "id": "c",
+          "text": "baking a birthday cake"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Use the words in the title."],
+      "explanation": "The answer is: someone looking for a kite",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-predict-0002",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "The title is 'Rainy Day'. What might the children do?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "swim at the beach"
+        },
+        {
+          "id": "b",
+          "text": "play inside"
+        },
+        {
+          "id": "c",
+          "text": "build a snowman"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about rain."],
+      "explanation": "The answer is: play inside",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-predict-0003",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "The picture shows a boy with a big present. What next?",
+        "image": {
+          "kind": "emoji",
+          "value": "🎁",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "He goes to sleep."
+        },
+        {
+          "id": "b",
+          "text": "He climbs a tree."
+        },
+        {
+          "id": "c",
+          "text": "He opens the present."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["What do you do with a present?"],
+      "explanation": "The answer is: He opens the present.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-predict-0004",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Dark clouds are in the sky. What will happen?",
+        "image": {
+          "kind": "emoji",
+          "value": "⛈️",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It will rain."
+        },
+        {
+          "id": "b",
+          "text": "It will snow sugar."
+        },
+        {
+          "id": "c",
+          "text": "The sun will get hotter."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Look at the clouds."],
+      "explanation": "The answer is: It will rain.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-predict-0005",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "The title is 'Butterfly Forest'. Where will it happen?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "in a kitchen"
+        },
+        {
+          "id": "b",
+          "text": "in a forest"
+        },
+        {
+          "id": "c",
+          "text": "on a bus"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Use the words in the title."],
+      "explanation": "The answer is: in a forest",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-predict-0006",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A dog sees a ball roll into the pond. What next?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐕",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "The dog reads a book."
+        },
+        {
+          "id": "b",
+          "text": "The dog flies away."
+        },
+        {
+          "id": "c",
+          "text": "The dog jumps in to get it."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["What do dogs do with balls?"],
+      "explanation": "The answer is: The dog jumps in to get it.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0007",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "The title is 'Hurry Up, Hugo!'. What is Hugo?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "slow or late"
+        },
+        {
+          "id": "b",
+          "text": "very tall"
+        },
+        {
+          "id": "c",
+          "text": "a big tree"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Why would someone say hurry up?"],
+      "explanation": "The answer is: slow or late",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0008",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Mia plants a seed and waters it. What next?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌱",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "A cat will grow."
+        },
+        {
+          "id": "b",
+          "text": "A plant will grow."
+        },
+        {
+          "id": "c",
+          "text": "The seed will fly."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["What happens to seeds?"],
+      "explanation": "The answer is: A plant will grow.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0009",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "The cover shows a storm at sea. What is the story about?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌊",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a picnic in the park"
+        },
+        {
+          "id": "b",
+          "text": "a trip to the shops"
+        },
+        {
+          "id": "c",
+          "text": "a boat in a storm"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Use the picture on the cover."],
+      "explanation": "The answer is: a boat in a storm",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0010",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ben forgets his lunch. What might happen at school?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "He gets hungry."
+        },
+        {
+          "id": "b",
+          "text": "He grows wings."
+        },
+        {
+          "id": "c",
+          "text": "He wins a car."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["What happens without lunch?"],
+      "explanation": "The answer is: He gets hungry.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0011",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "I predicted rain, but the sun came out. What now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "keep it the same"
+        },
+        {
+          "id": "b",
+          "text": "change my prediction"
+        },
+        {
+          "id": "c",
+          "text": "stop reading"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Good readers check their predictions."],
+      "explanation": "The answer is: change my prediction",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0012",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "The title is 'The Storm'. How might the animals feel?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sleepy and bored"
+        },
+        {
+          "id": "b",
+          "text": "hungry for cake"
+        },
+        {
+          "id": "c",
+          "text": "scared"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["How do storms make you feel?"],
+      "explanation": "The answer is: scared",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-predict-0013",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What will Sam do next?"
+      },
+      "listenTarget": {
+        "text": "Sam put on his coat, hat and boots. Snow was falling outside."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "swim in the sea"
+        },
+        {
+          "id": "b",
+          "text": "play in the snow"
+        },
+        {
+          "id": "c",
+          "text": "go to bed"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Sam put on his coat, hat and boots. Snow was falling outside.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-predict-0014",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What will the bird do?"
+      },
+      "listenTarget": {
+        "text": "The little bird was hungry. It saw a worm on the grass."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "read a book"
+        },
+        {
+          "id": "b",
+          "text": "drive a car"
+        },
+        {
+          "id": "c",
+          "text": "eat the worm"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"The little bird was hungry. It saw a worm on the grass.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0015",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What will happen next?"
+      },
+      "listenTarget": {
+        "text": "Kim's ice cream was melting in the hot sun."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It will drip."
+        },
+        {
+          "id": "b",
+          "text": "It will freeze."
+        },
+        {
+          "id": "c",
+          "text": "It will sing."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Kim's ice cream was melting in the hot sun.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0016",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What will Dad do?"
+      },
+      "listenTarget": {
+        "text": "The baby was crying. Dad got a bottle of milk."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "wash the car"
+        },
+        {
+          "id": "b",
+          "text": "feed the baby"
+        },
+        {
+          "id": "c",
+          "text": "paint the wall"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"The baby was crying. Dad got a bottle of milk.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0017",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What might happen?"
+      },
+      "listenTarget": {
+        "text": "Tom's tower of blocks was very tall and wobbly."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It might fly."
+        },
+        {
+          "id": "b",
+          "text": "It might eat."
+        },
+        {
+          "id": "c",
+          "text": "It might fall down."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Tom's tower of blocks was very tall and wobbly.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0018",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What will they do at the park?"
+      },
+      "listenTarget": {
+        "text": "The class packed a picnic basket and walked to the park."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "have a picnic"
+        },
+        {
+          "id": "b",
+          "text": "take a bath"
+        },
+        {
+          "id": "c",
+          "text": "go to sleep"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"The class packed a picnic basket and walked to the park.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0019",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What might the cat do?"
+      },
+      "listenTarget": {
+        "text": "A cat was hiding behind the tree. A mouse walked by."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bake a cake"
+        },
+        {
+          "id": "b",
+          "text": "chase the mouse"
+        },
+        {
+          "id": "c",
+          "text": "ride a bike"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"A cat was hiding behind the tree. A mouse walked by.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0020",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Was the prediction right?"
+      },
+      "listenTarget": {
+        "text": "I thought the box had a toy. When we opened it, there was a puppy!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it was a toy."
+        },
+        {
+          "id": "b",
+          "text": "There was nothing."
+        },
+        {
+          "id": "c",
+          "text": "No, it was a puppy."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"I thought the box had a toy. When we opened it, there was a puppy!\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0021",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Good prediction or not? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "Clouds, so rain."
+        },
+        {
+          "id": "b0",
+          "text": "Clouds, so a cake."
+        },
+        {
+          "id": "a1",
+          "text": "Hungry, so eat."
+        },
+        {
+          "id": "b1",
+          "text": "Hungry, so fly."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Uses clues",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "No clues",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Does it match the clue?"],
+      "explanation": "Clouds, so rain., Hungry, so eat. go in \"Uses clues\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0022",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which ones use the title? Sort."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "'Lost Kite': find a kite"
+        },
+        {
+          "id": "b0",
+          "text": "'Lost Kite': a fish"
+        },
+        {
+          "id": "a1",
+          "text": "'Rainy Day': stay in"
+        },
+        {
+          "id": "b1",
+          "text": "'Rainy Day': a beach"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Uses the title",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Does not",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Look at the title words."],
+      "explanation": "'Lost Kite': find a kite, 'Rainy Day': stay in go in \"Uses the title\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0023",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Snow is falling. Drag what the girl will wear."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🧣"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🩱"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🕶️"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["It is cold."],
+      "explanation": "In the snow she will wear a scarf.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0024",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "The dog is hungry. Drag what happens next."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🦴"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "📚"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🚗"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["What do hungry dogs want?"],
+      "explanation": "The dog eats a bone.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0025",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A seed is planted. Drag what grows."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🌻"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🚲"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Seeds grow into plants."],
+      "explanation": "A flower grows.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0026",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Dark clouds. Drag what comes next."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🌧️"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🌈"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🎂"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Dark clouds bring…"],
+      "explanation": "Rain comes next.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-predict-0027",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "I think it will rain.",
+        "words": ["I", "think", "it", "will", "rain"]
+      },
+      "answerKey": {
+        "words": ["I", "think", "it", "will", "rain"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"I think it will rain.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0028",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "I predict the dog will eat.",
+        "words": ["I", "predict", "the", "dog", "will", "eat"]
+      },
+      "answerKey": {
+        "words": ["I", "predict", "the", "dog", "will", "eat"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"I predict the dog will eat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0029",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "My prediction was right.",
+        "words": ["My", "prediction", "was", "right"]
+      },
+      "answerKey": {
+        "words": ["My", "prediction", "was", "right"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"My prediction was right.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0030",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "I changed my prediction.",
+        "words": ["I", "changed", "my", "prediction"]
+      },
+      "answerKey": {
+        "words": ["I", "changed", "my", "prediction"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"I changed my prediction.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0031",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Look at the cover and think.",
+        "words": ["Look", "at", "the", "cover", "and", "think"]
+      },
+      "answerKey": {
+        "words": ["Look", "at", "the", "cover", "and", "think"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Look at the cover and think.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0032",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Look at a book cover. Write what you predict."
+      },
+      "rubric": {
+        "criteria": ["Có một câu dự đoán", "Dựa vào bìa sách"],
+        "sampleAnswers": ["I think a boy finds a dog."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: I think a boy finds a dog.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0033",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write a title. Draw what you think happens."
+      },
+      "rubric": {
+        "criteria": ["Có nhan đề", "Tranh khớp nhan đề"],
+        "sampleAnswers": ["The Big Rain"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: The Big Rain",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0034",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read a story with a parent. Was your prediction right?"
+      },
+      "rubric": {
+        "criteria": ["Nói rõ đúng hay chưa", "Viết lại điều thật xảy ra"],
+        "sampleAnswers": ["No, it was a cat."]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: No, it was a cat.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-predict-0035",
+      "language": "en",
+      "skillCodes": ["ENL.RL.PREDICTING"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw what happens after a snowman meets the sun."
+      },
+      "rubric": {
+        "criteria": ["Tranh hợp lí", "Có một câu giải thích"],
+        "sampleAnswers": ["The snowman melts."]
+      },
+      "answerKey": null,
+      "hints": ["Check your letters when you finish."],
+      "explanation": "For example: The snowman melts.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book Unit 1, 3, 7, 8, 10 (predict from pictures / title / ending, bảng chương trình) — truyện viết mới"
+      }
+    }
+  ]
+}

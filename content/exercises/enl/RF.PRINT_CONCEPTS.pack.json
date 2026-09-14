@@ -1,0 +1,1288 @@
+{
+  "skillCode": "ENL.RF.PRINT_CONCEPTS",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Câu bắt đầu bằng chữ hoa, kết thúc bằng dấu chấm, đọc từ trái sang phải, đếm từ trong câu. Ô nhiễu đếm hụt/dư một từ (dem_thieu_1/dem_thua_1); ô 'đếm chữ cái' để không mã.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-print-0001",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many words? I see a cat."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Put a finger on each word."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-print-0002",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many words? I like my dog."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Put a finger on each word."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-print-0003",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many words? Look at me."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Put a finger on each word."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-print-0004",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many words? The sun is hot."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Put a finger on each word."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-print-0005",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many words? We can run fast."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Put a finger on each word."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-print-0006",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many words? My cat is big and fat."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Put a finger on each word."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-print-0007",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many words? I see a red bus."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Put a finger on each word."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-print-0008",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many words? Mom has a hat."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Put a finger on each word."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0009",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is written correctly?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "the cat is big."
+        },
+        {
+          "id": "b",
+          "text": "The cat is big"
+        },
+        {
+          "id": "c",
+          "text": "The cat is big."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Capital letter first, full stop at the end."],
+      "explanation": "The answer is: The cat is big.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0010",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is written correctly?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I can hop."
+        },
+        {
+          "id": "b",
+          "text": "i can hop."
+        },
+        {
+          "id": "c",
+          "text": "I can hop"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Capital letter first, full stop at the end."],
+      "explanation": "The answer is: I can hop.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0011",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What goes at the end of a telling sentence?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "?"
+        },
+        {
+          "id": "b",
+          "text": "."
+        },
+        {
+          "id": "c",
+          "text": ","
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A telling sentence stops with a dot."],
+      "explanation": "The answer is: .",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0012",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Where do we start reading a line?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "on the right"
+        },
+        {
+          "id": "b",
+          "text": "at the bottom"
+        },
+        {
+          "id": "c",
+          "text": "on the left"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Point to where your finger starts."],
+      "explanation": "The answer is: on the left",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0013",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which one is a letter, not a word?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "b"
+        },
+        {
+          "id": "b",
+          "text": "bed"
+        },
+        {
+          "id": "c",
+          "text": "big"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A letter is just one."],
+      "explanation": "The answer is: b",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0014",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which one is a word?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "c"
+        },
+        {
+          "id": "b",
+          "text": "cat"
+        },
+        {
+          "id": "c",
+          "text": "t"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A word can be read and has meaning."],
+      "explanation": "The answer is: cat",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0015",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which letter should be a capital? my dog is fun."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "d"
+        },
+        {
+          "id": "b",
+          "text": "f"
+        },
+        {
+          "id": "c",
+          "text": "m"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The first letter of a sentence is a capital."],
+      "explanation": "The answer is: m",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-print-0016",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many sentences? I run. I jump."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count the full stops."],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-print-0017",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. How many words did you hear?"
+      },
+      "listenTarget": {
+        "text": "I can see."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"I can see.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-print-0018",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a sentence. Count the words!"
+      },
+      "listenTarget": {
+        "text": "The dog is big."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"The dog is big.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-print-0019",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and count the words."
+      },
+      "listenTarget": {
+        "text": "We like to play."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"We like to play.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-print-0020",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many words? Tap the number."
+      },
+      "listenTarget": {
+        "text": "Look at the red bird."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Look at the red bird.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-print-0021",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again, count on your fingers."
+      },
+      "listenTarget": {
+        "text": "I am six."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"I am six.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-print-0022",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count each word you hear."
+      },
+      "listenTarget": {
+        "text": "My mom can sing."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"My mom can sing.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-print-0023",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. How many words did you hear?"
+      },
+      "listenTarget": {
+        "text": "The cat sat on a mat."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"The cat sat on a mat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-print-0024",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a sentence. Count the words!"
+      },
+      "listenTarget": {
+        "text": "Go."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Go.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0025",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Letter or word? Sort the cards."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "b"
+        },
+        {
+          "id": "b0",
+          "text": "bed"
+        },
+        {
+          "id": "a1",
+          "text": "m"
+        },
+        {
+          "id": "b1",
+          "text": "mom"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Letter",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Word",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["A letter is just one."],
+      "explanation": "b, m go in \"Letter\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0026",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sentence or not a sentence? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "I see a cat."
+        },
+        {
+          "id": "b0",
+          "text": "cat see I"
+        },
+        {
+          "id": "a1",
+          "text": "We can hop."
+        },
+        {
+          "id": "b1",
+          "text": "a big"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Sentence",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Not a sentence",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["A sentence makes sense and ends with a full stop."],
+      "explanation": "I see a cat., We can hop. go in \"Sentence\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-print-0027",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "I like my dog.",
+        "words": ["I", "like", "my", "dog"]
+      },
+      "answerKey": {
+        "words": ["I", "like", "my", "dog"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"I like my dog.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0028",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "I see a cat.",
+        "words": ["I", "see", "a", "cat"]
+      },
+      "answerKey": {
+        "words": ["I", "see", "a", "cat"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"I see a cat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0029",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "The sun is hot.",
+        "words": ["The", "sun", "is", "hot"]
+      },
+      "answerKey": {
+        "words": ["The", "sun", "is", "hot"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"The sun is hot.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0030",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "My cat is big and fat.",
+        "words": ["My", "cat", "is", "big", "and", "fat"]
+      },
+      "answerKey": {
+        "words": ["My", "cat", "is", "big", "and", "fat"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"My cat is big and fat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0031",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Look at me.",
+        "words": ["Look", "at", "me"]
+      },
+      "answerKey": {
+        "words": ["Look", "at", "me"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Look at me.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0032",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "We can run fast.",
+        "words": ["We", "can", "run", "fast"]
+      },
+      "answerKey": {
+        "words": ["We", "can", "run", "fast"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"We can run fast.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0033",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write a sentence. Start with a capital, end with a full stop."
+      },
+      "rubric": {
+        "criteria": ["Chữ hoa đầu câu", "Dấu chấm cuối câu", "Có khoảng cách giữa các từ"],
+        "sampleAnswers": ["I like my dog."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: I like my dog.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0034",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Copy: The sun is hot. Circle the capital letter."
+      },
+      "rubric": {
+        "criteria": ["Chép đúng câu", "Khoanh chữ T"],
+        "sampleAnswers": ["The sun is hot."]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: The sun is hot.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-print-0035",
+      "language": "en",
+      "skillCodes": ["ENL.RF.PRINT_CONCEPTS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write your own 3-word sentence."
+      },
+      "rubric": {
+        "criteria": ["Đúng 3 từ", "Chữ hoa và dấu chấm"],
+        "sampleAnswers": ["I can run."]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: I can run.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.1 (print concepts) — ENL chưa có giáo trình của trường"
+      }
+    }
+  ]
+}

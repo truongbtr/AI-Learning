@@ -10,21 +10,6 @@
  */
 import { sentencePack } from "./lib-en.mjs";
 
-const EN = [
-  "zero",
-  "one",
-  "two",
-  "three",
-  "four",
-  "five",
-  "six",
-  "seven",
-  "eight",
-  "nine",
-  "ten",
-  "eleven",
-  "twelve",
-];
 const base = { dir: "emath", subject: "EMATH" };
 const CCSS = (std, topic) => `CCSS ${std} (${topic}) — chưa có giáo trình English Maths của trường`;
 function N(ans, kinds, g = {}) {

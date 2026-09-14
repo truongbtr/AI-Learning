@@ -24,8 +24,8 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "READ_ALOUD"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": ["MCQ", "READ_ALOUD", "LISTEN_CHOOSE", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.RHYME",
@@ -56,8 +56,8 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "COUNT_TAP", "READ_ALOUD"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "READ_ALOUD", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.ISOLATE_SOUNDS",
@@ -104,8 +104,15 @@
       "prerequisites": ["ENL.RF.BLEND_PHONEMES"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["SPEAK_ANSWER", "MCQ", "COUNT_TAP", "READ_ALOUD"],
-      "difficultyRange": [2, 3]
+      "exerciseTypes": [
+        "SPEAK_ANSWER",
+        "MCQ",
+        "READ_ALOUD",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.SIGHT_WORDS_PREPRIMER",
@@ -136,8 +143,8 @@
       "prerequisites": ["ENL.RF.SIGHT_WORDS_PREPRIMER"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.SIGHT_WORDS_GRADE1",
@@ -200,8 +207,8 @@
       "prerequisites": ["ENL.RF.SIGHT_WORDS_PRIMER"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["READ_ALOUD", "MCQ", "DRAG_DROP", "LISTEN_CHOOSE", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.TWO_SYLLABLE",
@@ -232,8 +239,8 @@
       "prerequisites": ["ESL.PH.MAGIC_E"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "READ_ALOUD"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "READ_ALOUD", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RL.KEY_DETAILS",
@@ -248,8 +255,16 @@
       "prerequisites": ["ENL.RF.SIGHT_WORDS_PREPRIMER"],
       "relatedSkillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
       "confusableWith": [],
-      "exerciseTypes": ["MINI_STORY", "MCQ", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": [
+        "MINI_STORY",
+        "MCQ",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RL.CHARACTERS_SETTING",
@@ -264,8 +279,15 @@
       "prerequisites": ["ENL.RL.KEY_DETAILS"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MINI_STORY", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": [
+        "MINI_STORY",
+        "MCQ",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RL.SEQUENCE_EVENTS",
@@ -376,8 +398,15 @@
       "prerequisites": ["ENL.RI.MAIN_TOPIC"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MINI_STORY", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "MINI_STORY",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RI.CONNECT_TWO_IDEAS",
@@ -408,8 +437,8 @@
       "prerequisites": ["ESL.PH.SPELL_CVC"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["WRITE_PHOTO", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["WRITE_PHOTO", "DRAG_DROP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.W.SENTENCE",
@@ -424,8 +453,8 @@
       "prerequisites": ["ENL.W.LABEL_PICTURE", "ENL.RF.SIGHT_WORDS_PREPRIMER"],
       "relatedSkillCodes": ["VIET.VIET.VIET_CAU_CHINH_TA_NHIN"],
       "confusableWith": [],
-      "exerciseTypes": ["WRITE_PHOTO", "DRAG_DROP"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": ["WRITE_PHOTO", "DRAG_DROP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.W.OPINION",
@@ -472,8 +501,8 @@
       "prerequisites": ["ENL.W.OPINION", "ENL.RI.MAIN_TOPIC"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["WRITE_PHOTO"],
-      "difficultyRange": [3, 5]
+      "exerciseTypes": ["WRITE_PHOTO", "MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.SL.FOLLOW_RULES_DISCUSSION",
@@ -488,8 +517,15 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["SPEAK_ANSWER", "LISTEN_CHOOSE"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "MCQ",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.SL.ASK_ANSWER",
@@ -504,8 +540,16 @@
       "prerequisites": ["ENL.SL.FOLLOW_RULES_DISCUSSION", "ESL.SPK.ANSWER_WH"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["SPEAK_ANSWER", "MCQ", "MINI_STORY"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "SPEAK_ANSWER",
+        "MCQ",
+        "MINI_STORY",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.SL.DESCRIBE_DETAILS",
@@ -520,8 +564,15 @@
       "prerequisites": ["ESL.SPK.DESCRIBE_PICTURE"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["SPEAK_ANSWER", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "SPEAK_ANSWER",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.SL.COMPLETE_SENTENCES",
@@ -536,8 +587,15 @@
       "prerequisites": ["ESL.SPK.ANSWER_YES_NO"],
       "relatedSkillCodes": ["VIET.NN.TRA_LOI_CAU_HOI"],
       "confusableWith": [],
-      "exerciseTypes": ["SPEAK_ANSWER", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "SPEAK_ANSWER",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.L.CAPITALIZATION",
@@ -552,8 +610,8 @@
       "prerequisites": ["ENL.W.SENTENCE"],
       "relatedSkillCodes": ["VIET.TV.VIET_HOA_DAU_CAU"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "WRITE_PHOTO"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["MCQ", "DRAG_DROP", "WRITE_PHOTO", "LISTEN_CHOOSE", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.L.END_PUNCTUATION",
@@ -568,8 +626,8 @@
       "prerequisites": ["ENL.W.SENTENCE"],
       "relatedSkillCodes": ["VIET.TV.DAU_CHAM_HOI"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["MCQ", "DRAG_DROP", "LISTEN_CHOOSE", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.L.NOUNS_VERBS",
@@ -648,8 +706,8 @@
       "prerequisites": ["ESL.VOC.FOOD"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["DRAG_DROP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.L.SPELL_PHONETICALLY",
@@ -664,8 +722,8 @@
       "prerequisites": ["ESL.PH.SPELL_CVC", "ESL.PH.DIGRAPHS_SH_CH_TH"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["WRITE_PHOTO", "DRAG_DROP", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["WRITE_PHOTO", "DRAG_DROP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.FLUENCY_LEVEL_AA",
@@ -680,8 +738,15 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MINI_STORY", "MCQ"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "READ_ALOUD",
+        "MINI_STORY",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.FLUENCY_LEVEL_A",
@@ -696,8 +761,15 @@
       "prerequisites": ["ENL.RF.FLUENCY_LEVEL_AA"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MINI_STORY", "MCQ"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "READ_ALOUD",
+        "MINI_STORY",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.FLUENCY_LEVEL_B",
@@ -712,8 +784,15 @@
       "prerequisites": ["ENL.RF.FLUENCY_LEVEL_A"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MINI_STORY", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "READ_ALOUD",
+        "MINI_STORY",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.FLUENCY_LEVEL_C",
@@ -728,8 +807,15 @@
       "prerequisites": ["ENL.RF.FLUENCY_LEVEL_B"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MINI_STORY", "MCQ"],
-      "difficultyRange": [2, 3]
+      "exerciseTypes": [
+        "READ_ALOUD",
+        "MINI_STORY",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.FLUENCY_LEVEL_D",
@@ -744,8 +830,15 @@
       "prerequisites": ["ENL.RF.FLUENCY_LEVEL_C"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MINI_STORY", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "READ_ALOUD",
+        "MINI_STORY",
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.FLUENCY_LEVEL_E",
@@ -856,7 +949,14 @@
       "prerequisites": ["ENL.RI.PICTURE_INFO"],
       "relatedSkillCodes": ["ENL.RL.KEY_DETAILS", "ENL.RL.SEQUENCE_EVENTS"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "SPEAK_ANSWER", "READ_ALOUD", "DRAG_DROP"],
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "SPEAK_ANSWER",
+        "READ_ALOUD",
+        "DRAG_DROP",
+        "WRITE_PHOTO"
+      ],
       "difficultyRange": [1, 5]
     }
   ]

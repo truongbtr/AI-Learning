@@ -222,7 +222,11 @@ export function pairPack(cfg) {
       difficulty: 3 + (i % 3),
       prompt: { text: `${WRITE[i % 4]} ${set.join(", ")}.` },
       rubric: {
-        criteria: [`Viết đủ ${set.length} tiếng`, cfg.rubricRule, "Dấu thanh đặt đúng chỗ"],
+        criteria: [
+          `Viết đủ ${set.join(" ").split(" ").length} tiếng`,
+          cfg.rubricRule,
+          "Dấu thanh đặt đúng chỗ",
+        ],
         sampleAnswers: [set.join(" ")],
       },
       answerKey: null,

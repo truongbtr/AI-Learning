@@ -1,0 +1,1425 @@
+{
+  "skillCode": "ENL.RF.SYLLABLES",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Vỗ tay đếm âm tiết. Ô nhiễu hụt một (gộp hai âm tiết khi nói nhanh, dem_thieu_1) và dư một (dem_thua_1). Tranh chỉ để gợi từ; từ được đọc to trong câu hỏi.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-syll-0001",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many claps in cat?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈",
+          "labelEn": "cat",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "cat has 1 clap.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-syll-0002",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Clap it out: apple. How many claps?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "apple",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "apple has 2 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-syll-0003",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Say banana. How many parts?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍌",
+          "labelEn": "banana",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "banana has 3 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-syll-0004",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many claps in elephant?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐘",
+          "labelEn": "elephant",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "elephant has 3 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-syll-0005",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Clap it out: butterfly. How many claps?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦋",
+          "labelEn": "butterfly",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "butterfly has 3 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-syll-0006",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Say pencil. How many parts?",
+        "image": {
+          "kind": "emoji",
+          "value": "✏️",
+          "labelEn": "pencil",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "pencil has 2 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0007",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many claps in dinosaur?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦕",
+          "labelEn": "dinosaur",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "dinosaur has 3 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0008",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Clap it out: rabbit. How many claps?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐇",
+          "labelEn": "rabbit",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "rabbit has 2 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0009",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Say dog. How many parts?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐕",
+          "labelEn": "dog",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "dog has 1 clap.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0010",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many claps in tomato?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍅",
+          "labelEn": "tomato",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "tomato has 3 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0011",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Clap it out: watermelon. How many claps?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍉",
+          "labelEn": "watermelon",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "watermelon has 4 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0012",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Say computer. How many parts?",
+        "image": {
+          "kind": "emoji",
+          "value": "💻",
+          "labelEn": "computer",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "computer has 3 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0013",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many claps in sun?",
+        "image": {
+          "kind": "emoji",
+          "value": "☀️",
+          "labelEn": "sun",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "sun has 1 clap.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0014",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Clap it out: tiger. How many claps?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐯",
+          "labelEn": "tiger",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "tiger has 2 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0015",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Say umbrella. How many parts?",
+        "image": {
+          "kind": "emoji",
+          "value": "☂️",
+          "labelEn": "umbrella",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "umbrella has 3 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0016",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many claps in caterpillar?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐛",
+          "labelEn": "caterpillar",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Clap once for each part you say."],
+      "explanation": "caterpillar has 4 claps.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-syll-0017",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. How many claps?"
+      },
+      "listenTarget": {
+        "text": "monkey"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"monkey\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "enl-syll-0018",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Clap and tap!"
+      },
+      "listenTarget": {
+        "text": "hippo"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"hippo\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0019",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, clap, then choose."
+      },
+      "listenTarget": {
+        "text": "pizza"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"pizza\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0020",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many parts? Tap the number."
+      },
+      "listenTarget": {
+        "text": "bus"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"bus\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0021",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and clap it out."
+      },
+      "listenTarget": {
+        "text": "kangaroo"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"kangaroo\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0022",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Clap the word, then tap."
+      },
+      "listenTarget": {
+        "text": "crocodile"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"crocodile\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0023",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. How many claps?"
+      },
+      "listenTarget": {
+        "text": "helicopter"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"helicopter\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "enl-syll-0024",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Clap and tap!"
+      },
+      "listenTarget": {
+        "text": "fish"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"fish\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0025",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "One clap or two claps? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "cat"
+        },
+        {
+          "id": "b0",
+          "text": "apple"
+        },
+        {
+          "id": "a1",
+          "text": "dog"
+        },
+        {
+          "id": "b1",
+          "text": "tiger"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "1 clap",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "2 claps",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Clap each word."],
+      "explanation": "cat, dog go in \"1 clap\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0026",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Two claps or three claps? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "pencil"
+        },
+        {
+          "id": "b0",
+          "text": "banana"
+        },
+        {
+          "id": "a1",
+          "text": "rabbit"
+        },
+        {
+          "id": "b1",
+          "text": "tomato"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "2 claps",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "3 claps",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Clap each word."],
+      "explanation": "pencil, rabbit go in \"2 claps\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0027",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the words by claps."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "computer"
+        },
+        {
+          "id": "b1",
+          "text": "caterpillar"
+        },
+        {
+          "id": "a0",
+          "text": "elephant"
+        },
+        {
+          "id": "b0",
+          "text": "watermelon"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "3 claps",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "4 claps",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Clap each word slowly."],
+      "explanation": "elephant, computer go in \"3 claps\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-syll-0028",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "cat, apple, banana",
+        "words": ["cat", "apple", "banana"]
+      },
+      "answerKey": {
+        "words": ["cat", "apple", "banana"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"cat, apple, banana\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0029",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "dog, tiger, dinosaur",
+        "words": ["dog", "tiger", "dinosaur"]
+      },
+      "answerKey": {
+        "words": ["dog", "tiger", "dinosaur"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"dog, tiger, dinosaur\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0030",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "sun, pencil, umbrella",
+        "words": ["sun", "pencil", "umbrella"]
+      },
+      "answerKey": {
+        "words": ["sun", "pencil", "umbrella"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"sun, pencil, umbrella\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0031",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "rabbit, elephant, watermelon",
+        "words": ["rabbit", "elephant", "watermelon"]
+      },
+      "answerKey": {
+        "words": ["rabbit", "elephant", "watermelon"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"rabbit, elephant, watermelon\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0032",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "I clap for each part.",
+        "words": ["I", "clap", "for", "each", "part"]
+      },
+      "answerKey": {
+        "words": ["I", "clap", "for", "each", "part"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"I clap for each part.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0033",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw something with 2 claps. Write its name."
+      },
+      "rubric": {
+        "criteria": ["Vẽ vật có 2 âm tiết", "Viết tên vật"],
+        "sampleAnswers": ["apple"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: apple",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0034",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write your name. Draw a clap for each part."
+      },
+      "rubric": {
+        "criteria": ["Viết tên", "Số vỗ tay đúng với tên"],
+        "sampleAnswers": ["Thanh: 1 clap"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: Thanh: 1 clap",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-syll-0035",
+      "language": "en",
+      "skillCodes": ["ENL.RF.SYLLABLES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw one thing with 1 clap and one with 3 claps."
+      },
+      "rubric": {
+        "criteria": ["Hai vật", "Đúng 1 và 3 âm tiết"],
+        "sampleAnswers": ["cat, banana"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: cat, banana",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RF.1.2 (syllables) — ENL chưa có giáo trình của trường"
+      }
+    }
+  ]
+}

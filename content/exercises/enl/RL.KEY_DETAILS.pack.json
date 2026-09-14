@@ -1,0 +1,1313 @@
+{
+  "skillCode": "ENL.RL.KEY_DETAILS",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Nghe truyện ngắn rồi trả lời who / what / where / when. Ô nhiễu là chi tiết có thật trong truyện nhưng trả lời câu hỏi khác (nơi khác, người khác) — đúng lỗi 'nhầm nhân vật, đoán khi không nhớ'.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-keydet-0001",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Sam ran to the park. Where did Sam go?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "to the park"
+        },
+        {
+          "id": "b",
+          "text": "to school"
+        },
+        {
+          "id": "c",
+          "text": "to the shop"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find the place word."],
+      "explanation": "The answer is: to the park",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-keydet-0002",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Lily ate a red apple. What did Lily eat?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a banana"
+        },
+        {
+          "id": "b",
+          "text": "an apple"
+        },
+        {
+          "id": "c",
+          "text": "a cake"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find the food word."],
+      "explanation": "The answer is: an apple",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-keydet-0003",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read: At night, the owl flew. When did the owl fly?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "in the morning"
+        },
+        {
+          "id": "b",
+          "text": "at lunch"
+        },
+        {
+          "id": "c",
+          "text": "at night"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Find the time words."],
+      "explanation": "The answer is: at night",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-keydet-0004",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Dad fixed the bike. Who fixed the bike?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Dad"
+        },
+        {
+          "id": "b",
+          "text": "Mom"
+        },
+        {
+          "id": "c",
+          "text": "the bike"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Who did it?"],
+      "explanation": "The answer is: Dad",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-keydet-0005",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read: The cat hid under the bed. Where was the cat?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "on the bed"
+        },
+        {
+          "id": "b",
+          "text": "under the bed"
+        },
+        {
+          "id": "c",
+          "text": "in the box"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find the place words."],
+      "explanation": "The answer is: under the bed",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-keydet-0006",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read: On Monday, Ben drew a dog. What did Ben draw?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a cat"
+        },
+        {
+          "id": "b",
+          "text": "Monday"
+        },
+        {
+          "id": "c",
+          "text": "a dog"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["What did he make?"],
+      "explanation": "The answer is: a dog",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0007",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Grandma baked cookies for Kim. Who baked cookies?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Grandma"
+        },
+        {
+          "id": "b",
+          "text": "Kim"
+        },
+        {
+          "id": "c",
+          "text": "Mom"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Who did the baking?"],
+      "explanation": "The answer is: Grandma",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0008",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read: The frog jumped into the pond. What jumped?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "the pond"
+        },
+        {
+          "id": "b",
+          "text": "the frog"
+        },
+        {
+          "id": "c",
+          "text": "the fish"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Who did the jumping?"],
+      "explanation": "The answer is: the frog",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0009",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read: In winter, the bear sleeps. When does the bear sleep?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "in summer"
+        },
+        {
+          "id": "b",
+          "text": "at school"
+        },
+        {
+          "id": "c",
+          "text": "in winter"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Find the time words."],
+      "explanation": "The answer is: in winter",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0010",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read: Ana gave Tom a pen. Who got the pen?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tom"
+        },
+        {
+          "id": "b",
+          "text": "Ana"
+        },
+        {
+          "id": "c",
+          "text": "the pen"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Who was given the pen?"],
+      "explanation": "The answer is: Tom",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-keydet-0011",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Who is the story about?"
+      },
+      "listenTarget": {
+        "text": "A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a big fish"
+        },
+        {
+          "id": "b",
+          "text": "a little bear"
+        },
+        {
+          "id": "c",
+          "text": "a river"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-keydet-0012",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Where did the bear go?"
+      },
+      "listenTarget": {
+        "text": "A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "to the forest"
+        },
+        {
+          "id": "b",
+          "text": "to school"
+        },
+        {
+          "id": "c",
+          "text": "to the river"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0013",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What did the bear catch?"
+      },
+      "listenTarget": {
+        "text": "A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a fish"
+        },
+        {
+          "id": "b",
+          "text": "a bird"
+        },
+        {
+          "id": "c",
+          "text": "a kite"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0014",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "When did the bear wake up?"
+      },
+      "listenTarget": {
+        "text": "A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "at night"
+        },
+        {
+          "id": "b",
+          "text": "in the morning"
+        },
+        {
+          "id": "c",
+          "text": "at lunch"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0015",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What colour was the kite?"
+      },
+      "listenTarget": {
+        "text": "Mia had a red kite. On Saturday, she went to the beach with her grandpa. The wind was strong. The kite flew up high, over the sea."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "blue"
+        },
+        {
+          "id": "b",
+          "text": "yellow"
+        },
+        {
+          "id": "c",
+          "text": "red"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Mia had a red kite. On Saturday, she went to the beach with her grandpa. The wind was strong. The kite flew up high, over the sea.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0016",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Who went with Mia?"
+      },
+      "listenTarget": {
+        "text": "Mia had a red kite. On Saturday, she went to the beach with her grandpa. The wind was strong. The kite flew up high, over the sea."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "her grandpa"
+        },
+        {
+          "id": "b",
+          "text": "her mom"
+        },
+        {
+          "id": "c",
+          "text": "her friend"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Mia had a red kite. On Saturday, she went to the beach with her grandpa. The wind was strong. The kite flew up high, over the sea.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0017",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Where did they go?"
+      },
+      "listenTarget": {
+        "text": "Mia had a red kite. On Saturday, she went to the beach with her grandpa. The wind was strong. The kite flew up high, over the sea."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "to the park"
+        },
+        {
+          "id": "b",
+          "text": "to the beach"
+        },
+        {
+          "id": "c",
+          "text": "to school"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Mia had a red kite. On Saturday, she went to the beach with her grandpa. The wind was strong. The kite flew up high, over the sea.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0018",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "When did they go?"
+      },
+      "listenTarget": {
+        "text": "Mia had a red kite. On Saturday, she went to the beach with her grandpa. The wind was strong. The kite flew up high, over the sea."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "on Monday"
+        },
+        {
+          "id": "b",
+          "text": "at night"
+        },
+        {
+          "id": "c",
+          "text": "on Saturday"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Mia had a red kite. On Saturday, she went to the beach with her grandpa. The wind was strong. The kite flew up high, over the sea.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0019",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What did Tom lose?"
+      },
+      "listenTarget": {
+        "text": "Tom lost his blue ball at school. He looked in the classroom. He looked in the library. At last, his friend Ana found it under a bench in the playground."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a blue ball"
+        },
+        {
+          "id": "b",
+          "text": "a red kite"
+        },
+        {
+          "id": "c",
+          "text": "a blue pen"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Tom lost his blue ball at school. He looked in the classroom. He looked in the library. At last, his friend Ana found it under a bench in the playground.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0020",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Who found the ball?"
+      },
+      "listenTarget": {
+        "text": "Tom lost his blue ball at school. He looked in the classroom. He looked in the library. At last, his friend Ana found it under a bench in the playground."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tom"
+        },
+        {
+          "id": "b",
+          "text": "Ana"
+        },
+        {
+          "id": "c",
+          "text": "the teacher"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Tom lost his blue ball at school. He looked in the classroom. He looked in the library. At last, his friend Ana found it under a bench in the playground.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0021",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Where was the ball?"
+      },
+      "listenTarget": {
+        "text": "Tom lost his blue ball at school. He looked in the classroom. He looked in the library. At last, his friend Ana found it under a bench in the playground."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "in the library"
+        },
+        {
+          "id": "b",
+          "text": "in the classroom"
+        },
+        {
+          "id": "c",
+          "text": "under a bench"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Tom lost his blue ball at school. He looked in the classroom. He looked in the library. At last, his friend Ana found it under a bench in the playground.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0022",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Where did Tom look first?"
+      },
+      "listenTarget": {
+        "text": "Tom lost his blue ball at school. He looked in the classroom. He looked in the library. At last, his friend Ana found it under a bench in the playground."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "in the classroom"
+        },
+        {
+          "id": "b",
+          "text": "in the library"
+        },
+        {
+          "id": "c",
+          "text": "under a bench"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Tom lost his blue ball at school. He looked in the classroom. He looked in the library. At last, his friend Ana found it under a bench in the playground.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0023",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "When did the bear eat the fish?"
+      },
+      "listenTarget": {
+        "text": "A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "for breakfast"
+        },
+        {
+          "id": "b",
+          "text": "for lunch"
+        },
+        {
+          "id": "c",
+          "text": "at night"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"A little bear woke up in the morning. He was hungry. He went to the river to catch a fish. He caught a big fish and ate it for lunch.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0024",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Put the bear story in order."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "He ate the fish."
+        },
+        {
+          "id": "c1",
+          "text": "He woke up."
+        },
+        {
+          "id": "c2",
+          "text": "He went to the river."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "last",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c2"],
+        "z2": ["c0"]
+      },
+      "hints": ["What happened first?"],
+      "explanation": "Woke up, went to the river, ate the fish.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0025",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put Tom's story in order."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Ana found the ball."
+        },
+        {
+          "id": "c1",
+          "text": "Tom lost his ball."
+        },
+        {
+          "id": "c2",
+          "text": "Tom looked in the library."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "last",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c2"],
+        "z2": ["c0"]
+      },
+      "hints": ["What happened first?"],
+      "explanation": "Lost it, looked for it, Ana found it.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0026",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Put Mia's story in order."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "The kite flew high."
+        },
+        {
+          "id": "c1",
+          "text": "Mia went to the beach."
+        },
+        {
+          "id": "c2",
+          "text": "The wind was strong."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "last",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c2"],
+        "z2": ["c0"]
+      },
+      "hints": ["What happened first?"],
+      "explanation": "Beach, strong wind, kite flew high.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0027",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the who card to Who, the where card to Where."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Mia"
+        },
+        {
+          "id": "c1",
+          "text": "the beach"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Who",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "Where",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Who is a person. Where is a place."],
+      "explanation": "Mia is who; the beach is where.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-keydet-0028",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "A little bear went to the river.",
+        "words": ["A", "little", "bear", "went", "to", "the", "river"]
+      },
+      "answerKey": {
+        "words": ["A", "little", "bear", "went", "to", "the", "river"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A little bear went to the river.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0029",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Mia had a red kite.",
+        "words": ["Mia", "had", "a", "red", "kite"]
+      },
+      "answerKey": {
+        "words": ["Mia", "had", "a", "red", "kite"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Mia had a red kite.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0030",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Tom lost his blue ball.",
+        "words": ["Tom", "lost", "his", "blue", "ball"]
+      },
+      "answerKey": {
+        "words": ["Tom", "lost", "his", "blue", "ball"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Tom lost his blue ball.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0031",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Ana found it under a bench.",
+        "words": ["Ana", "found", "it", "under", "a", "bench"]
+      },
+      "answerKey": {
+        "words": ["Ana", "found", "it", "under", "a", "bench"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Ana found it under a bench.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0032",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "The kite flew up high.",
+        "words": ["The", "kite", "flew", "up", "high"]
+      },
+      "answerKey": {
+        "words": ["The", "kite", "flew", "up", "high"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The kite flew up high.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0033",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw the bear story. Write who and where."
+      },
+      "rubric": {
+        "criteria": ["Tranh đúng truyện", "Ghi đúng ai và ở đâu"],
+        "sampleAnswers": ["bear, river"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: bear, river",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0034",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write one thing Mia did."
+      },
+      "rubric": {
+        "criteria": ["Một câu đúng chi tiết truyện", "Chữ hoa và dấu chấm"],
+        "sampleAnswers": ["Mia flew her kite."]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: Mia flew her kite.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-keydet-0035",
+      "language": "en",
+      "skillCodes": ["ENL.RL.KEY_DETAILS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Who found Tom's ball? Write the answer."
+      },
+      "rubric": {
+        "criteria": ["Trả lời đúng Ana", "Viết thành câu"],
+        "sampleAnswers": ["Ana found the ball."]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: Ana found the ball.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS RL.1.1 (key details) — truyện ngắn viết mới"
+      }
+    }
+  ]
+}

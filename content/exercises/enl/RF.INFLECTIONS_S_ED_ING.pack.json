@@ -1,0 +1,1306 @@
+{
+  "skillCode": "ENL.RF.INFLECTIONS_S_ED_ING",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Đuôi -s, -ed, -ing và từ gốc. Ô nhiễu: đánh vần sai -ing (runing → sai_chinh_ta_tu), quên -s số nhiều (thieu_s_so_nhieu, không có dấu chấm cuối), chọn đuôi sai thời.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-inflect-0001",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is the base word of playing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "play"
+        },
+        {
+          "id": "b",
+          "text": "plays"
+        },
+        {
+          "id": "c",
+          "text": "played"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Take off the ending."],
+      "explanation": "The answer is: play",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-inflect-0002",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is the base word of jumped?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "jumps"
+        },
+        {
+          "id": "b",
+          "text": "jump"
+        },
+        {
+          "id": "c",
+          "text": "jumping"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Take off -ed."],
+      "explanation": "The answer is: jump",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-inflect-0003",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is the base word of looks?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "looked"
+        },
+        {
+          "id": "b",
+          "text": "looking"
+        },
+        {
+          "id": "c",
+          "text": "look"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Take off -s."],
+      "explanation": "The answer is: look",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-inflect-0004",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which word tells it happened yesterday?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "jumped"
+        },
+        {
+          "id": "b",
+          "text": "jumps"
+        },
+        {
+          "id": "c",
+          "text": "jumping"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["-ed tells it already happened."],
+      "explanation": "The answer is: jumped",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-inflect-0005",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which word tells it is happening now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "reads"
+        },
+        {
+          "id": "b",
+          "text": "reading"
+        },
+        {
+          "id": "c",
+          "text": "read"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["-ing tells it is happening now."],
+      "explanation": "The answer is: reading",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "enl-inflect-0006",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "She is ___ fast. (run)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "runing",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "runs"
+        },
+        {
+          "id": "c",
+          "text": "running"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["run → double the n, add -ing."],
+      "explanation": "The answer is: running",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-inflect-0007",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "He is ___ in the pool. (swim)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "swimming"
+        },
+        {
+          "id": "b",
+          "text": "swiming",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "c",
+          "text": "swims"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["swim → double the m, add -ing."],
+      "explanation": "The answer is: swimming",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "enl-inflect-0008",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I have two dog",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "I have two dogs"
+        },
+        {
+          "id": "c",
+          "text": "I have two doging"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Two means more than one: add -s."],
+      "explanation": "The answer is: I have two dogs",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0009",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Three cat sleep"
+        },
+        {
+          "id": "b",
+          "text": "Three cated sleep"
+        },
+        {
+          "id": "c",
+          "text": "Three cats sleep"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["More than one: add -s."],
+      "explanation": "The answer is: Three cats sleep",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-inflect-0010",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Yesterday we ___ a cake. (bake)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "baked"
+        },
+        {
+          "id": "b",
+          "text": "bakeed",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "c",
+          "text": "bakes"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["bake ends in e: just add -d."],
+      "explanation": "The answer is: baked",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-inflect-0011",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "The baby is ___. (smile)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "smileing",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "smiling"
+        },
+        {
+          "id": "c",
+          "text": "smiles"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Drop the e, add -ing."],
+      "explanation": "The answer is: smiling",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "enl-inflect-0012",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Two ___ are in the box. (fox)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "foxs",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "fox"
+        },
+        {
+          "id": "c",
+          "text": "foxes"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["x words add -es."],
+      "explanation": "The answer is: foxes",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-inflect-0013",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the word."
+      },
+      "listenTarget": {
+        "text": "jumped"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "jumps"
+        },
+        {
+          "id": "b",
+          "text": "jumped"
+        },
+        {
+          "id": "c",
+          "text": "jumping"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"jumped\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-inflect-0014",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Tap it!"
+      },
+      "listenTarget": {
+        "text": "playing"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "played"
+        },
+        {
+          "id": "b",
+          "text": "plays"
+        },
+        {
+          "id": "c",
+          "text": "playing"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"playing\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0015",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen for the ending, then choose."
+      },
+      "listenTarget": {
+        "text": "looks"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "looks"
+        },
+        {
+          "id": "b",
+          "text": "looked"
+        },
+        {
+          "id": "c",
+          "text": "looking"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"looks\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0016",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which word did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "wanted"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "wants"
+        },
+        {
+          "id": "b",
+          "text": "wanted"
+        },
+        {
+          "id": "c",
+          "text": "wanting"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"wanted\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0017",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "cats"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat"
+        },
+        {
+          "id": "b",
+          "text": "catch"
+        },
+        {
+          "id": "c",
+          "text": "cats"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"cats\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0018",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the end of the word."
+      },
+      "listenTarget": {
+        "text": "helping"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "helping"
+        },
+        {
+          "id": "b",
+          "text": "helped"
+        },
+        {
+          "id": "c",
+          "text": "helps"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"helping\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0019",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the word."
+      },
+      "listenTarget": {
+        "text": "kicked"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kicks"
+        },
+        {
+          "id": "b",
+          "text": "kicked"
+        },
+        {
+          "id": "c",
+          "text": "kicking"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"kicked\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0020",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Tap it!"
+      },
+      "listenTarget": {
+        "text": "buses"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bus"
+        },
+        {
+          "id": "b",
+          "text": "busy"
+        },
+        {
+          "id": "c",
+          "text": "buses"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"buses\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0021",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Happened yesterday or happening now?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "jumped"
+        },
+        {
+          "id": "b0",
+          "text": "jumping"
+        },
+        {
+          "id": "a1",
+          "text": "played"
+        },
+        {
+          "id": "b1",
+          "text": "playing"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "-ed (yesterday)",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "-ing (now)",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Look at the ending."],
+      "explanation": "jumped, played go in \"-ed (yesterday)\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0022",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "One or more than one? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "dog"
+        },
+        {
+          "id": "b0",
+          "text": "dogs"
+        },
+        {
+          "id": "a1",
+          "text": "box"
+        },
+        {
+          "id": "b1",
+          "text": "boxes"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "One",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "More than one",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["-s or -es means more than one."],
+      "explanation": "dog, box go in \"One\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0023",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Double the last letter or just add -ing?"
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "hopping"
+        },
+        {
+          "id": "b1",
+          "text": "jumping"
+        },
+        {
+          "id": "a0",
+          "text": "sitting"
+        },
+        {
+          "id": "b0",
+          "text": "reading"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Double it",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "Just add -ing",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Short words like sit, hop double the last letter."],
+      "explanation": "sitting, hopping go in \"Double it\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0024",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the ending to make jumping."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "-ing"
+        },
+        {
+          "id": "c1",
+          "text": "-ed"
+        },
+        {
+          "id": "c2",
+          "text": "-s"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "jump___",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Happening now."],
+      "explanation": "jump + ing = jumping.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0025",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the ending to make played."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "-ed"
+        },
+        {
+          "id": "c1",
+          "text": "-ing"
+        },
+        {
+          "id": "c2",
+          "text": "-s"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "play___",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["It already happened."],
+      "explanation": "play + ed = played.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0026",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the ending to make boxes."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "-es"
+        },
+        {
+          "id": "c1",
+          "text": "-s"
+        },
+        {
+          "id": "c2",
+          "text": "-ing"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "box___",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["x words take -es."],
+      "explanation": "box + es = boxes.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-inflect-0027",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "She plays.",
+        "words": ["She", "plays"]
+      },
+      "answerKey": {
+        "words": ["She", "plays"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"She plays.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0028",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "He jumps.",
+        "words": ["He", "jumps"]
+      },
+      "answerKey": {
+        "words": ["He", "jumps"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"He jumps.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0029",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "He jumped.",
+        "words": ["He", "jumped"]
+      },
+      "answerKey": {
+        "words": ["He", "jumped"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"He jumped.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0030",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "He is jumping.",
+        "words": ["He", "is", "jumping"]
+      },
+      "answerKey": {
+        "words": ["He", "is", "jumping"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"He is jumping.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0031",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "We wanted to play.",
+        "words": ["We", "wanted", "to", "play"]
+      },
+      "answerKey": {
+        "words": ["We", "wanted", "to", "play"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"We wanted to play.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0032",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "The dogs are running.",
+        "words": ["The", "dogs", "are", "running"]
+      },
+      "answerKey": {
+        "words": ["The", "dogs", "are", "running"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"The dogs are running.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0033",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Add -ing: play, read, jump."
+      },
+      "rubric": {
+        "criteria": ["Đúng ba từ", "Không nhân đôi chữ thừa"],
+        "sampleAnswers": ["playing, reading, jumping"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: playing, reading, jumping",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0034",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Add -ed: look, help, kick."
+      },
+      "rubric": {
+        "criteria": ["Đúng ba từ", "Chính tả đúng"],
+        "sampleAnswers": ["looked, helped, kicked"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: looked, helped, kicked",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-inflect-0035",
+      "language": "en",
+      "skillCodes": ["ENL.RF.INFLECTIONS_S_ED_ING"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write: run → running, sit → sitting."
+      },
+      "rubric": {
+        "criteria": ["Nhân đôi n và t", "Chính tả đúng"],
+        "sampleAnswers": ["running, sitting"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: running, sitting",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 (viết: chính tả động từ đuôi -ing, bảng chương trình) + CCSS RF.1.3f"
+      }
+    }
+  ]
+}

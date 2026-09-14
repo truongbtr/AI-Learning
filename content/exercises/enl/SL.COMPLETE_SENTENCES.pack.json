@@ -1,0 +1,1463 @@
+{
+  "skillCode": "ENL.SL.COMPLETE_SENTENCES",
+  "subject": "ENL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Trả lời bằng câu đủ chủ ngữ – động từ. Ô nhiễu: một từ ('bird'), cụm không có động từ ('a red bird' — doc_bo_tu_tieng_anh khi ô là câu đúng rơi động từ).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "enl-fullsent-0001",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What do you see? Pick a complete sentence.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I see a red bird."
+        },
+        {
+          "id": "b",
+          "text": "bird"
+        },
+        {
+          "id": "c",
+          "text": "I a red bird.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A sentence has who and a doing word."],
+      "explanation": "The answer is: I see a red bird.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "enl-fullsent-0002",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is it? Pick a complete sentence.",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "apple"
+        },
+        {
+          "id": "b",
+          "text": "It is an apple."
+        },
+        {
+          "id": "c",
+          "text": "It an apple.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A sentence has is or a doing word."],
+      "explanation": "The answer is: It is an apple.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-fullsent-0003",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What can the fish do? Answer in a sentence.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "swim"
+        },
+        {
+          "id": "b",
+          "text": "The fish swim can."
+        },
+        {
+          "id": "c",
+          "text": "The fish can swim."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Who + can + doing word."],
+      "explanation": "The answer is: The fish can swim.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "enl-fullsent-0004",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What do you like? Pick a complete sentence."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I like ice cream."
+        },
+        {
+          "id": "b",
+          "text": "ice cream"
+        },
+        {
+          "id": "c",
+          "text": "I ice cream.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Don't forget like."],
+      "explanation": "The answer is: I like ice cream.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "enl-fullsent-0005",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Where is the cat? Answer in a sentence.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bed"
+        },
+        {
+          "id": "b",
+          "text": "The cat is on the bed."
+        },
+        {
+          "id": "c",
+          "text": "The cat on the bed.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Don't forget is."],
+      "explanation": "The answer is: The cat is on the bed.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "enl-fullsent-0006",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What is the boy doing? Pick a complete sentence.",
+        "image": {
+          "kind": "emoji",
+          "value": "🏃",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "running"
+        },
+        {
+          "id": "b",
+          "text": "The boy running.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "c",
+          "text": "The boy is running."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["is + running."],
+      "explanation": "The answer is: The boy is running.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "none",
+      "id": "enl-fullsent-0007",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many dogs? Answer in a sentence.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐕",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "There are three dogs."
+        },
+        {
+          "id": "b",
+          "text": "three"
+        },
+        {
+          "id": "c",
+          "text": "There three dogs.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["There are + number + dogs."],
+      "explanation": "The answer is: There are three dogs.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "none",
+      "id": "enl-fullsent-0008",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What colour is the sky? Pick a sentence."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "blue"
+        },
+        {
+          "id": "b",
+          "text": "The sky is blue."
+        },
+        {
+          "id": "c",
+          "text": "The sky blue.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Don't forget is."],
+      "explanation": "The answer is: The sky is blue.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "none",
+      "id": "enl-fullsent-0009",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Who is your teacher? Pick a complete sentence."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ms. Lan"
+        },
+        {
+          "id": "b",
+          "text": "My teacher Ms. Lan.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "c",
+          "text": "My teacher is Ms. Lan."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Don't forget is."],
+      "explanation": "The answer is: My teacher is Ms. Lan.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "none",
+      "id": "enl-fullsent-0010",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What did you eat? Pick a complete sentence."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I ate rice and fish."
+        },
+        {
+          "id": "b",
+          "text": "rice"
+        },
+        {
+          "id": "c",
+          "text": "I rice and fish.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Don't forget ate."],
+      "explanation": "The answer is: I ate rice and fish.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "none",
+      "id": "enl-fullsent-0011",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which answer is a complete sentence?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "green bag"
+        },
+        {
+          "id": "b",
+          "text": "My bag is green."
+        },
+        {
+          "id": "c",
+          "text": "My bag green.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Who or what + is + detail."],
+      "explanation": "The answer is: My bag is green.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "none",
+      "id": "enl-fullsent-0012",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which answer is a complete sentence?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "football"
+        },
+        {
+          "id": "b",
+          "text": "We football.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "c",
+          "text": "We play football."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Who + doing word."],
+      "explanation": "The answer is: We play football.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-fullsent-0013",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the question, then pick a full answer."
+      },
+      "listenTarget": {
+        "text": "What is your name?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sam"
+        },
+        {
+          "id": "b",
+          "text": "My name is Sam."
+        },
+        {
+          "id": "c",
+          "text": "Yes."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"What is your name?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-fullsent-0014",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} asks you. Answer in a sentence!"
+      },
+      "listenTarget": {
+        "text": "How old are you?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "six"
+        },
+        {
+          "id": "b",
+          "text": "Yes."
+        },
+        {
+          "id": "c",
+          "text": "I am six years old."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"How old are you?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0015",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "What do you have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I have a kite."
+        },
+        {
+          "id": "b",
+          "text": "kite"
+        },
+        {
+          "id": "c",
+          "text": "Yes."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"What do you have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0016",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which is a complete answer? Tap it."
+      },
+      "listenTarget": {
+        "text": "Where do you live?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hanoi"
+        },
+        {
+          "id": "b",
+          "text": "I live in Hanoi."
+        },
+        {
+          "id": "c",
+          "text": "Yes."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Where do you live?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0017",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "What can you do?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bike"
+        },
+        {
+          "id": "b",
+          "text": "Yes."
+        },
+        {
+          "id": "c",
+          "text": "I can ride a bike."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"What can you do?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0018",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Choose the answer with a doing word."
+      },
+      "listenTarget": {
+        "text": "What is your favourite colour?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "My favourite colour is pink."
+        },
+        {
+          "id": "b",
+          "text": "pink"
+        },
+        {
+          "id": "c",
+          "text": "Yes."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"What is your favourite colour?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0019",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the question, then pick a full answer."
+      },
+      "listenTarget": {
+        "text": "Who is with you?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mom"
+        },
+        {
+          "id": "b",
+          "text": "My mom is with me."
+        },
+        {
+          "id": "c",
+          "text": "Yes."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Who is with you?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0020",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} asks you. Answer in a sentence!"
+      },
+      "listenTarget": {
+        "text": "What are you eating?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "noodles"
+        },
+        {
+          "id": "b",
+          "text": "Yes."
+        },
+        {
+          "id": "c",
+          "text": "I am eating noodles."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"What are you eating?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0021",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put the words in order."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "I"
+        },
+        {
+          "id": "w3",
+          "text": "red"
+        },
+        {
+          "id": "w1",
+          "text": "see"
+        },
+        {
+          "id": "w4",
+          "text": "bird"
+        },
+        {
+          "id": "w2",
+          "text": "a"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s4",
+          "label": "5",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"],
+        "s4": ["w4"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"I see a red bird.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0022",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Build the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "fish"
+        },
+        {
+          "id": "w0",
+          "text": "The"
+        },
+        {
+          "id": "w3",
+          "text": "swim"
+        },
+        {
+          "id": "w2",
+          "text": "can"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"The fish can swim.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0023",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the words to make a sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w4",
+          "text": "the"
+        },
+        {
+          "id": "w5",
+          "text": "bed"
+        },
+        {
+          "id": "w0",
+          "text": "My"
+        },
+        {
+          "id": "w1",
+          "text": "cat"
+        },
+        {
+          "id": "w2",
+          "text": "is"
+        },
+        {
+          "id": "w3",
+          "text": "on"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w4", "w5", "w0", "w1", "w2", "w3"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w4", "w5", "w0", "w1", "w2", "w3"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w4", "w5", "w0", "w1", "w2", "w3"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w4", "w5", "w0", "w1", "w2", "w3"]
+        },
+        {
+          "id": "s4",
+          "label": "5",
+          "accepts": ["w4", "w5", "w0", "w1", "w2", "w3"]
+        },
+        {
+          "id": "s5",
+          "label": "6",
+          "accepts": ["w4", "w5", "w0", "w1", "w2", "w3"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"],
+        "s4": ["w4"],
+        "s5": ["w5"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"My cat is on the bed.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0024",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} fix the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w3",
+          "text": "cream"
+        },
+        {
+          "id": "w2",
+          "text": "ice"
+        },
+        {
+          "id": "w1",
+          "text": "like"
+        },
+        {
+          "id": "w0",
+          "text": "I"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"I like ice cream.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0025",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Make a sentence with these words."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "My"
+        },
+        {
+          "id": "w3",
+          "text": "green"
+        },
+        {
+          "id": "w2",
+          "text": "is"
+        },
+        {
+          "id": "w1",
+          "text": "bag"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"My bag is green.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0026",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Order the words, then read it."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "play"
+        },
+        {
+          "id": "w2",
+          "text": "football"
+        },
+        {
+          "id": "w0",
+          "text": "We"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w1", "w2", "w0"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w1", "w2", "w0"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w1", "w2", "w0"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"We play football.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "enl-fullsent-0027",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "I see a red bird.",
+        "words": ["I", "see", "a", "red", "bird"]
+      },
+      "answerKey": {
+        "words": ["I", "see", "a", "red", "bird"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"I see a red bird.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0028",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "The boy is running.",
+        "words": ["The", "boy", "is", "running"]
+      },
+      "answerKey": {
+        "words": ["The", "boy", "is", "running"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"The boy is running.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0029",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "There are three dogs.",
+        "words": ["There", "are", "three", "dogs"]
+      },
+      "answerKey": {
+        "words": ["There", "are", "three", "dogs"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"There are three dogs.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0030",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "My name is Sam.",
+        "words": ["My", "name", "is", "Sam"]
+      },
+      "answerKey": {
+        "words": ["My", "name", "is", "Sam"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"My name is Sam.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0031",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "I can ride a bike.",
+        "words": ["I", "can", "ride", "a", "bike"]
+      },
+      "answerKey": {
+        "words": ["I", "can", "ride", "a", "bike"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"I can ride a bike.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0032",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "The sky is blue.",
+        "words": ["The", "sky", "is", "blue"]
+      },
+      "answerKey": {
+        "words": ["The", "sky", "is", "blue"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"The sky is blue.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0033",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Answer in a sentence: What do you see?"
+      },
+      "rubric": {
+        "criteria": ["Câu đủ chủ ngữ và động từ", "Chữ hoa và dấu chấm"],
+        "sampleAnswers": ["I see a tree."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: I see a tree.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0034",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Answer in a sentence: What can you do?"
+      },
+      "rubric": {
+        "criteria": ["Câu đủ", "Có động từ"],
+        "sampleAnswers": ["I can jump."]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: I can jump.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "enl-fullsent-0035",
+      "language": "en",
+      "skillCodes": ["ENL.SL.COMPLETE_SENTENCES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Answer in a sentence: What do you like?"
+      },
+      "rubric": {
+        "criteria": ["Câu đủ", "Có like"],
+        "sampleAnswers": ["I like my dog."]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: I like my dog.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS SL.1.6 (speaking in complete sentences) — ENL chưa có giáo trình của trường"
+      }
+    }
+  ]
+}

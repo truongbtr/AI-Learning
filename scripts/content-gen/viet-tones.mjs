@@ -333,7 +333,7 @@ function tonePack(cfg) {
       prompt: { text: `${WRITE[i % 6]} ${set.join(", ")}.` },
       rubric: {
         criteria: [
-          `Viết đủ ${set.length} tiếng`,
+          `Viết đủ ${set.join(" ").split(" ").length} tiếng`,
           `${cap(tone)} đặt đúng trên con chữ`,
           "Chữ viết đúng độ cao, đúng nét",
         ],

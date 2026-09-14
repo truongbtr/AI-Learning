@@ -365,7 +365,7 @@ export function letterPack(cfg) {
       prompt: { text: `${WRITE[i % 6]} ${set.join(", ")}.` },
       rubric: {
         criteria: [
-          `Viết đủ ${set.length} tiếng`,
+          `Viết đủ ${set.join(" ").split(" ").length} tiếng`,
           "Con chữ đúng nét, đúng độ cao",
           "Dấu thanh đặt đúng chỗ",
         ],
