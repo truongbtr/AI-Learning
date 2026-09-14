@@ -65,9 +65,8 @@ thời gian dài + nhiều lần thử là dấu hiệu đề hỏng, không ph�
 
 ### 5. Tồn đọng
 
-- **Giọng đọc đang sinh nền** (từ 23:27, nhịp 3,3 giây/câu, khoảng 3 giờ): ~3.450 câu mới, ~96 nghìn ký
-  tự; tháng 09 đã dùng 48 nghìn / 500 nghìn. Câu nào chưa có mp3 thì app đọc bằng Web Speech. Nếu job
-  dừng giữa chừng, chạy lại `pnpm content:import` — câu đã có mp3 được bỏ qua.
+- **Giọng đọc: xong** lúc 02:37 ngày 15/09 — 2.966 câu mới sinh, 2.804 đã có sẵn, 0 lỗi. Tháng 09
+  đã dùng 136.832 / 500.000 ký tự Azure (27%).
 - **English Maths học theo "MATH NOTES Grade 1"** (tài liệu nội bộ Edison, ghi vào `docs/09` §1c trong
   lúc làm pha này): 773 bài EMATH đang bám CCSS, cần rà lại khi có ảnh mục lục.
 - **Sau restart container phải chạy lại `sync-skill-types` cho 130 kỹ năng** tới khi chú dựng lại image

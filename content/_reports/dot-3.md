@@ -127,7 +127,7 @@ Mỗi lần nạp: `Get-Date` PowerShell (giờ máy UTC+7) > 21:00, bảng `Ses
 
 ## 8. Tồn đọng
 
-- **Giọng đọc:** chạy `content:import` sinh mp3 sau lần nạp cuối (số liệu cuối ở TIEN-DO).
+- **Giọng đọc: xong** 02:37 ngày 15/09 — 2.966 câu mới có mp3, 0 lỗi; tháng 09 dùng 136.832 / 500.000 ký tự (27%).
 - **Seed ghi đè `exerciseTypes`** mỗi lần container web khởi động (image cũ): sau restart phải chạy lại
   `sync-skill-types` cho 130 kỹ năng đợt 3 tới khi dựng lại image.
 - Ảnh trang **Global Stage** và **sách English Science / English Maths**: vẫn chưa có; 1.258 + 931 + 427
