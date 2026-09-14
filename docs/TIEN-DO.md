@@ -5,7 +5,8 @@
 ## Pha 6b — 14/09/2026 — Vá 129 kỹ năng trống của tuần 1–12
 
 Trạng thái: **129 → 0 kỹ năng tuần 1–12 còn trống ở cả 6 môn.** 130 gói · **5.010 bài** · tất cả
-`PUBLISHED`. `content:validate` sạch · `audit-closed` 0/5.173 · `lint` / `test` xanh · `build`: xem 5.
+`PUBLISHED`. `content:validate` sạch · `audit-closed` 0/5.173 · `lint` / `test` / `build` xanh ·
+`content:import --dry-run` **0 thay đổi** (sau lần nạp bản sửa 90 bài lúc 23:25).
 Báo cáo đầy đủ: `content/_reports/dot-3.md`. ADR mới: **ADR-19**. Chưa push.
 
 > Nạp 8 lô từ **21:01 tới 23:08** (PowerShell `Get-Date`, giờ VN), mỗi lô `--dry-run` trước và kiểm
@@ -37,7 +38,7 @@ Ngân hàng: **8.443 bài `PUBLISHED` / 209 kỹ năng** (sáng 14/09: 3.433 / 7
    luật chính tả); dạng nghĩa soát bằng cấu trúc + tay (dữ kiện trong ngoặc cho điều emoji không vẽ được,
    tranh chỉ một tên, ô nhiễu chỉ định tay ở truyện có nhân vật lặp). Kết quả **0/5.173**. Bắt được và
    sửa trước khi nạp: 6 câu chính tả "Ô nào viết đúng?" có hai tiếng thật, 2 bài quy luật có hai cách xếp.
-4. **`content:import --dry-run` 0 thay đổi** — xem 5 (chạy lại sau lần nạp bản sửa cuối).
+4. **`content:import --dry-run` 0 thay đổi** — đạt: `0 new, 0 updated, 0 revived, 8443 unchanged, 0 retired`.
 5. **Không ngày học nào gián đoạn** — đạt (0 phiên trong 10 giờ trước 23:15; mọi lần nạp sau 21:00).
 6. **20 mã mẫu đợt 3** (seed `pha-6b-dot-3`, pool 5.010):
    `esl-greet-0014` · `enl-label-0011` · `viet-vanan-0002` · `esl-shapes-0023` · `viet-vanep-0042` ·
@@ -64,9 +65,11 @@ thời gian dài + nhiều lần thử là dấu hiệu đề hỏng, không ph�
 
 ### 5. Tồn đọng
 
-- **Đang chạy khi viết mục này:** sinh mp3 cho ~3.450 câu mới (~96 nghìn ký tự; tháng 09 đã dùng 48
-  nghìn / 500 nghìn). `pnpm build` phải chạy lại sau khi job xong — lần chạy lúc 23:20 lỗi EPERM vì
-  job đang giữ file `query_engine` của Prisma, không phải lỗi code.
+- **Giọng đọc đang sinh nền** (từ 23:27, nhịp 3,3 giây/câu, khoảng 3 giờ): ~3.450 câu mới, ~96 nghìn ký
+  tự; tháng 09 đã dùng 48 nghìn / 500 nghìn. Câu nào chưa có mp3 thì app đọc bằng Web Speech. Nếu job
+  dừng giữa chừng, chạy lại `pnpm content:import` — câu đã có mp3 được bỏ qua.
+- **English Maths học theo "MATH NOTES Grade 1"** (tài liệu nội bộ Edison, ghi vào `docs/09` §1c trong
+  lúc làm pha này): 773 bài EMATH đang bám CCSS, cần rà lại khi có ảnh mục lục.
 - **Sau restart container phải chạy lại `sync-skill-types` cho 130 kỹ năng** tới khi chú dựng lại image
   buổi sáng (seed trong image cũ ghi đè `exerciseTypes`).
 - Chưa có ảnh trang Global Stage, sách English Science / English Maths: 2.861 bài đang bám bảng chương
