@@ -1,0 +1,1570 @@
+{
+  "skillCode": "VIET.DOC.DOC_HIEU_TRA_LOI",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-TV1-T1-B81", "KNTT-TV1-T2-CD1-B01"],
+  "note": "Đọc đoạn văn/câu chuyện rồi trả lời câu hỏi thật của sách (a/b/c). Dùng lại ba đoạn của VIET.DOC.DOC_DOAN_NGAN với câu hỏi khác, thêm SPEAK_ANSWER cho câu hỏi mở ('Vì sao...', 'Em thích...'). Strand DOC không bắt buộc mã lỗi.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-dochieu-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MINI_STORY",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc đoạn văn rồi trả lời câu hỏi."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Thua hổ trong một cuộc thi tài, voi phải nộp mạng cho hổ."
+          },
+          {
+            "text": "Khỉ bày mưu giúp voi."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vì thua hổ trong một cuộc thi tài"
+        },
+        {
+          "id": "b",
+          "text": "vì voi ăn trộm của hổ"
+        },
+        {
+          "id": "c",
+          "text": "vì voi làm hổ tức giận"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc lại đoạn văn một lần nữa rồi mới chọn."],
+      "explanation": "Sách nói rõ: voi thua hổ trong một cuộc thi tài.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-dochieu-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MINI_STORY",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe {ban} đọc rồi chọn ý đúng."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Khỉ bày mưu giúp voi."
+          },
+          {
+            "text": "Khỉ cưỡi voi đi gặp hổ."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chim"
+        },
+        {
+          "id": "b",
+          "text": "khỉ"
+        },
+        {
+          "id": "c",
+          "text": "rùa"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tìm câu có chứa câu trả lời rồi đọc kỹ."],
+      "explanation": "Khỉ là người bày mưu giúp voi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-dochieu-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MINI_STORY",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc kỹ rồi chọn câu trả lời đúng."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Khỉ cưỡi voi đi gặp hổ."
+          },
+          {
+            "text": "Đến điểm hẹn, khỉ quát lớn: Hổ ở đâu?"
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Voi ở đâu?"
+        },
+        {
+          "id": "b",
+          "text": "Ai gọi đó?"
+        },
+        {
+          "id": "c",
+          "text": "Hổ ở đâu?"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc chậm từng câu một, đừng vội chọn."],
+      "explanation": "Khỉ quát lớn: 'Hổ ở đâu?'.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-dochieu-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MINI_STORY",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc xong, con chọn ý đúng nhé!"
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Voi tỏ vẻ lễ phép: Thưa ông, hổ sắp tới rồi ạ."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lễ phép"
+        },
+        {
+          "id": "b",
+          "text": "giận dữ"
+        },
+        {
+          "id": "c",
+          "text": "im lặng không nói"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhớ lại chi tiết trong bài rồi mới chọn."],
+      "explanation": "Voi trả lời rất lễ phép.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MINI_STORY",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc đoạn văn, rồi trả lời nhé!"
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Hổ thấy voi to lớn mà sợ một con vật nhỏ bé."
+          },
+          {
+            "text": "Hổ sợ quá, liền bỏ chạy."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vì trời tối"
+        },
+        {
+          "id": "b",
+          "text": "thấy voi to lớn mà sợ con vật nhỏ bé"
+        },
+        {
+          "id": "c",
+          "text": "vì đói bụng quá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc lại đoạn văn một lần nữa rồi mới chọn."],
+      "explanation": "Hổ sợ vì thấy voi to mà vẫn sợ một con vật nhỏ bé.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MINI_STORY",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thầm một lượt rồi chọn ý đúng."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Sân nhà đầy nắng."
+          },
+          {
+            "text": "Mẹ phơi áo hoa."
+          },
+          {
+            "text": "Em dán tranh gà."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ông"
+        },
+        {
+          "id": "b",
+          "text": "mẹ"
+        },
+        {
+          "id": "c",
+          "text": "em"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tìm câu có chứa câu trả lời rồi đọc kỹ."],
+      "explanation": "Em là người dán tranh gà.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MINI_STORY",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc đoạn văn rồi trả lời câu hỏi."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Vườn cây lại rộn rã tiếng chim."
+          },
+          {
+            "text": "Những anh chích choè nhanh nhảu."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chim"
+        },
+        {
+          "id": "b",
+          "text": "chó"
+        },
+        {
+          "id": "c",
+          "text": "mèo"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm từng câu một, đừng vội chọn."],
+      "explanation": "Tiếng chim làm vườn cây rộn rã.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MINI_STORY",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe {ban} đọc rồi chọn ý đúng."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Khỉ bày mưu giúp voi."
+          },
+          {
+            "text": "Hổ sợ quá, liền bỏ chạy."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hổ"
+        },
+        {
+          "id": "b",
+          "text": "khỉ"
+        },
+        {
+          "id": "c",
+          "text": "voi"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhớ lại chi tiết trong bài rồi mới chọn."],
+      "explanation": "Khỉ là con vật khôn ngoan nhất trong câu chuyện.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Khỉ bày mưu giúp voi thoát nạn. Voi có thoát được không?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "không"
+        },
+        {
+          "id": "b",
+          "text": "có"
+        },
+        {
+          "id": "c",
+          "text": "không rõ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: có.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Voi phải nộp mạng vì thua cuộc thi. Ai thắng cuộc thi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "voi"
+        },
+        {
+          "id": "b",
+          "text": "khỉ"
+        },
+        {
+          "id": "c",
+          "text": "hổ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: hổ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Khỉ quát to để doạ hổ. Khỉ muốn hổ làm gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sợ mà bỏ đi"
+        },
+        {
+          "id": "b",
+          "text": "đến gần hơn"
+        },
+        {
+          "id": "c",
+          "text": "ngủ quên"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: sợ mà bỏ đi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hổ nấp trong bụi cây nhìn ra. Hổ đang làm gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngủ say"
+        },
+        {
+          "id": "b",
+          "text": "rình xem"
+        },
+        {
+          "id": "c",
+          "text": "ăn cỏ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: rình xem.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Voi tỏ vẻ lễ phép khi nói với hổ. Vì sao voi lễ phép?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vì sợ hổ thật sự"
+        },
+        {
+          "id": "b",
+          "text": "vì không biết nói gì"
+        },
+        {
+          "id": "c",
+          "text": "để làm đúng ý khỉ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: để làm đúng ý khỉ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đất trời nở hoa khi Tết đến. Tết là dịp thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vui vẻ, ấm áp"
+        },
+        {
+          "id": "b",
+          "text": "buồn bã"
+        },
+        {
+          "id": "c",
+          "text": "lạnh lẽo"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: vui vẻ, ấm áp.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Mẹ phơi áo hoa trong sân đầy nắng. Sân nhà thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đầy mưa"
+        },
+        {
+          "id": "b",
+          "text": "đầy nắng"
+        },
+        {
+          "id": "c",
+          "text": "tối om"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: đầy nắng.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Hoa nhãn ngọt, hoa cau thơm dịu trong vườn xuân. Vườn có mấy loại hoa được nhắc tới?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "một loại"
+        },
+        {
+          "id": "b",
+          "text": "năm loại"
+        },
+        {
+          "id": "c",
+          "text": "ba loại"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: ba loại.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chim chóc rộn rã trong vườn khi xuân về. Vì sao vườn rộn rã?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vì có nhiều tiếng chim"
+        },
+        {
+          "id": "b",
+          "text": "vì có xe cộ"
+        },
+        {
+          "id": "c",
+          "text": "vì có máy móc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: vì có nhiều tiếng chim.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Khỉ khôn ngoan bày mưu cứu voi khỏi hổ. Câu chuyện khen con vật nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hổ"
+        },
+        {
+          "id": "b",
+          "text": "khỉ"
+        },
+        {
+          "id": "c",
+          "text": "voi"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: khỉ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Voi to lớn nhưng vẫn sợ theo lời khỉ dặn. Vì sao voi giả vờ sợ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vì voi thật sự yếu"
+        },
+        {
+          "id": "b",
+          "text": "vì voi không biết gì"
+        },
+        {
+          "id": "c",
+          "text": "để đánh lừa hổ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: để đánh lừa hổ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Hổ bỏ chạy sau khi thấy voi. Hổ bỏ chạy vì hiểu lầm điều gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tưởng voi cũng sợ con vật nhỏ như khỉ"
+        },
+        {
+          "id": "b",
+          "text": "tưởng trời sắp mưa"
+        },
+        {
+          "id": "c",
+          "text": "tưởng voi sắp tấn công"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: tưởng voi cũng sợ con vật nhỏ như khỉ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Khỉ đứng trên đầu voi để trông oai hơn. Khỉ đứng ở đâu?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dưới chân voi"
+        },
+        {
+          "id": "b",
+          "text": "trên đầu voi"
+        },
+        {
+          "id": "c",
+          "text": "trên cây cao"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: trên đầu voi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "SPEAK_ANSWER",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Vì sao voi phải nộp mạng cho hổ?"
+      },
+      "rubric": {
+        "criteria": ["Trả lời đúng nội dung bài đọc", "Nói thành câu rõ ràng"],
+        "sampleAnswers": ["vì voi thua hổ trong một cuộc thi tài"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ lại đoạn văn vừa đọc rồi trả lời."],
+      "explanation": "Nói xong con nghe lại xem đã rõ ràng chưa nhé!",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "SPEAK_ANSWER",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Những từ ngữ nào chỉ vóc dáng của voi và của khỉ?"
+      },
+      "rubric": {
+        "criteria": ["Trả lời đúng nội dung bài đọc", "Nói thành câu rõ ràng"],
+        "sampleAnswers": ["voi to lớn, khỉ bé nhỏ"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ lại đoạn văn vừa đọc rồi trả lời."],
+      "explanation": "Nói xong con nghe lại xem đã rõ ràng chưa nhé!",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "SPEAK_ANSWER",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Trong câu chuyện trên, em thích con vật nào nhất? Vì sao?"
+      },
+      "rubric": {
+        "criteria": ["Trả lời đúng nội dung bài đọc", "Nói thành câu rõ ràng"],
+        "sampleAnswers": ["em thích khỉ vì khỉ thông minh"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ lại đoạn văn vừa đọc rồi trả lời."],
+      "explanation": "Nói xong con nghe lại xem đã rõ ràng chưa nhé!",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "SPEAK_ANSWER",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tết đang vào nhà, em thích nhất điều gì?"
+      },
+      "rubric": {
+        "criteria": ["Trả lời đúng nội dung bài đọc", "Nói thành câu rõ ràng"],
+        "sampleAnswers": ["em thích được mặc áo mới"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ lại đoạn văn vừa đọc rồi trả lời."],
+      "explanation": "Nói xong con nghe lại xem đã rõ ràng chưa nhé!",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "SPEAK_ANSWER",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Mùa xuân đến, em thấy vườn cây thế nào?"
+      },
+      "rubric": {
+        "criteria": ["Trả lời đúng nội dung bài đọc", "Nói thành câu rõ ràng"],
+        "sampleAnswers": ["vườn cây xanh tươi, đâm chồi nảy lộc"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ lại đoạn văn vừa đọc rồi trả lời."],
+      "explanation": "Nói xong con nghe lại xem đã rõ ràng chưa nhé!",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "SPEAK_ANSWER",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Ai giúp voi thoát nạn? Kể lại bằng lời của em."
+      },
+      "rubric": {
+        "criteria": ["Trả lời đúng nội dung bài đọc", "Nói thành câu rõ ràng"],
+        "sampleAnswers": ["khỉ đã bày mưu giúp voi"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ lại đoạn văn vừa đọc rồi trả lời."],
+      "explanation": "Nói xong con nghe lại xem đã rõ ràng chưa nhé!",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "SPEAK_ANSWER",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Vì sao hổ sợ quá rồi bỏ chạy?"
+      },
+      "rubric": {
+        "criteria": ["Trả lời đúng nội dung bài đọc", "Nói thành câu rõ ràng"],
+        "sampleAnswers": ["vì hổ tưởng voi cũng sợ như mình"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ lại đoạn văn vừa đọc rồi trả lời."],
+      "explanation": "Nói xong con nghe lại xem đã rõ ràng chưa nhé!",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "SPEAK_ANSWER",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Em học được điều gì từ câu chuyện Voi, hổ và khỉ?"
+      },
+      "rubric": {
+        "criteria": ["Trả lời đúng nội dung bài đọc", "Nói thành câu rõ ràng"],
+        "sampleAnswers": ["phải thông minh và bình tĩnh khi gặp khó khăn"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ lại đoạn văn vừa đọc rồi trả lời."],
+      "explanation": "Nói xong con nghe lại xem đã rõ ràng chưa nhé!",
+      "meta": {
+        "estSeconds": 60,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-dochieu-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ý đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Khỉ bày mưu giúp voi."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chim"
+        },
+        {
+          "id": "b",
+          "text": "rùa"
+        },
+        {
+          "id": "c",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Khỉ bày mưu giúp voi.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-dochieu-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một câu, con chọn ý đúng."
+      },
+      "listenTarget": {
+        "text": "Voi tỏ vẻ lễ phép."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lễ phép"
+        },
+        {
+          "id": "b",
+          "text": "giận dữ"
+        },
+        {
+          "id": "c",
+          "text": "im lặng"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Voi tỏ vẻ lễ phép.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn câu trả lời đúng."
+      },
+      "listenTarget": {
+        "text": "Hổ sợ quá, liền bỏ chạy."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ở lại"
+        },
+        {
+          "id": "b",
+          "text": "bỏ chạy"
+        },
+        {
+          "id": "c",
+          "text": "đi ngủ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Hổ sợ quá, liền bỏ chạy.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm ý đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Em dán tranh gà."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ông"
+        },
+        {
+          "id": "b",
+          "text": "mẹ"
+        },
+        {
+          "id": "c",
+          "text": "em"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Em dán tranh gà.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, rồi chọn ý đúng."
+      },
+      "listenTarget": {
+        "text": "Vườn cây rộn rã tiếng chim."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tiếng chim"
+        },
+        {
+          "id": "b",
+          "text": "tiếng xe"
+        },
+        {
+          "id": "c",
+          "text": "tiếng trống"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Vườn cây rộn rã tiếng chim.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lại rồi chọn ý đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Đất trời nở hoa."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "rụng lá"
+        },
+        {
+          "id": "b",
+          "text": "nở hoa"
+        },
+        {
+          "id": "c",
+          "text": "khô héo"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Đất trời nở hoa.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp đúng thứ tự chuyện Voi, hổ và khỉ."
+      },
+      "dragItems": [
+        {
+          "id": "c2",
+          "text": "Hổ sợ quá, bỏ chạy."
+        },
+        {
+          "id": "c1",
+          "text": "Khỉ quát: Hổ ở đâu?"
+        },
+        {
+          "id": "c0",
+          "text": "Khỉ cưỡi voi đi gặp hổ."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o2",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: Khỉ cưỡi voi đi gặp hổ. → Khỉ quát: Hổ ở đâu? → Hổ sợ quá, bỏ chạy..",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp đúng thứ tự bài Mùa xuân đến."
+      },
+      "dragItems": [
+        {
+          "id": "c2",
+          "text": "Chim chóc rộn rã."
+        },
+        {
+          "id": "c1",
+          "text": "Vườn cây đâm chồi."
+        },
+        {
+          "id": "c0",
+          "text": "Bầu trời thêm xanh."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o2",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: Bầu trời thêm xanh. → Vườn cây đâm chồi. → Chim chóc rộn rã..",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-dochieu-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "Khỉ bày mưu giúp voi.",
+        "words": ["Khỉ", "bày", "mưu", "giúp", "voi."]
+      },
+      "answerKey": {
+        "words": ["Khỉ", "bày", "mưu", "giúp", "voi."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Khỉ bày mưu giúp voi.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "Hổ sợ quá, liền bỏ chạy.",
+        "words": ["Hổ", "sợ", "quá,", "liền", "bỏ", "chạy."]
+      },
+      "answerKey": {
+        "words": ["Hổ", "sợ", "quá,", "liền", "bỏ", "chạy."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Hổ sợ quá, liền bỏ chạy.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "Voi tỏ vẻ lễ phép.",
+        "words": ["Voi", "tỏ", "vẻ", "lễ", "phép."]
+      },
+      "answerKey": {
+        "words": ["Voi", "tỏ", "vẻ", "lễ", "phép."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Voi tỏ vẻ lễ phép.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Hoa đào trước ngõ.",
+        "words": ["Hoa", "đào", "trước", "ngõ."]
+      },
+      "answerKey": {
+        "words": ["Hoa", "đào", "trước", "ngõ."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Hoa đào trước ngõ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "Vườn cây rộn rã tiếng chim.",
+        "words": ["Vườn", "cây", "rộn", "rã", "tiếng", "chim."]
+      },
+      "answerKey": {
+        "words": ["Vườn", "cây", "rộn", "rã", "tiếng", "chim."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Vườn cây rộn rã tiếng chim.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-dochieu-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_HIEU_TRA_LOI"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thong thả câu này nhé!"
+      },
+      "readTarget": {
+        "text": "Đất trời nở hoa.",
+        "words": ["Đất", "trời", "nở", "hoa."]
+      },
+      "answerKey": {
+        "words": ["Đất", "trời", "nở", "hoa."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Đất trời nở hoa.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (câu hỏi thật trong sách: a/b/c của bài Voi, hổ và khỉ)"
+      }
+    }
+  ]
+}

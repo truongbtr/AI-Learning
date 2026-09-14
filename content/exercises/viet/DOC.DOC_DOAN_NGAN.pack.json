@@ -1,0 +1,1668 @@
+{
+  "skillCode": "VIET.DOC.DOC_DOAN_NGAN",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-TV1-T1-B81", "KNTT-TV1-T1-B82", "KNTT-TV1-T1-B83"],
+  "note": "Đọc đoạn ngắn 2-4 câu rồi trả lời trắc nghiệm. Ba đoạn từ sách: bài thơ 'Tết đang vào nhà' (bài 81), đoạn văn 'Mùa xuân đến' (bài 82), chuyện 'Voi, hổ và khỉ' (bài 83). Strand DOC không bắt buộc mã lỗi.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-docngan-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MINI_STORY",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc đoạn văn rồi trả lời câu hỏi."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Hoa đào trước ngõ."
+          },
+          {
+            "text": "Cười tươi sáng hồng."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trước ngõ"
+        },
+        {
+          "id": "b",
+          "text": "trong vườn"
+        },
+        {
+          "id": "c",
+          "text": "trên mái nhà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc lại đoạn văn một lần nữa rồi mới chọn."],
+      "explanation": "Bài thơ nói hoa đào ở trước ngõ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-docngan-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MINI_STORY",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe {ban} đọc rồi chọn ý đúng."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Sân nhà đầy nắng."
+          },
+          {
+            "text": "Mẹ phơi áo hoa."
+          },
+          {
+            "text": "Em dán tranh gà."
+          },
+          {
+            "text": "Ông treo câu đối."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mẹ"
+        },
+        {
+          "id": "b",
+          "text": "ông"
+        },
+        {
+          "id": "c",
+          "text": "em"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tìm câu có chứa câu trả lời rồi đọc kỹ."],
+      "explanation": "Ông là người treo câu đối.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-docngan-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MINI_STORY",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc kỹ rồi chọn câu trả lời đúng."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Bầu trời ngày một thêm xanh."
+          },
+          {
+            "text": "Vườn cây lại đâm chồi nảy lộc."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "rụng hết lá"
+        },
+        {
+          "id": "b",
+          "text": "không thay đổi"
+        },
+        {
+          "id": "c",
+          "text": "đâm chồi nảy lộc"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc chậm từng câu một, đừng vội chọn."],
+      "explanation": "Khi xuân đến, vườn cây đâm chồi nảy lộc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-docngan-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MINI_STORY",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc xong, con chọn ý đúng nhé!"
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Hoa bưởi nồng nàn."
+          },
+          {
+            "text": "Hoa nhãn ngọt."
+          },
+          {
+            "text": "Hoa cau thơm dịu."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngọt"
+        },
+        {
+          "id": "b",
+          "text": "chua"
+        },
+        {
+          "id": "c",
+          "text": "đắng"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhớ lại chi tiết trong bài rồi mới chọn."],
+      "explanation": "Hoa nhãn có vị ngọt.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MINI_STORY",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc đoạn văn, rồi trả lời nhé!"
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Thua hổ trong một cuộc thi tài, voi phải nộp mạng cho hổ."
+          },
+          {
+            "text": "Khỉ bày mưu giúp voi."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hổ"
+        },
+        {
+          "id": "b",
+          "text": "khỉ"
+        },
+        {
+          "id": "c",
+          "text": "chim"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc lại đoạn văn một lần nữa rồi mới chọn."],
+      "explanation": "Khỉ là người bày mưu giúp voi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MINI_STORY",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thầm một lượt rồi chọn ý đúng."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Hổ thấy voi to lớn mà sợ một con vật nhỏ bé."
+          },
+          {
+            "text": "Hổ sợ quá, liền bỏ chạy."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ở lại"
+        },
+        {
+          "id": "b",
+          "text": "đi ngủ"
+        },
+        {
+          "id": "c",
+          "text": "bỏ chạy"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tìm câu có chứa câu trả lời rồi đọc kỹ."],
+      "explanation": "Cuối cùng hổ sợ quá và bỏ chạy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MINI_STORY",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc đoạn văn rồi trả lời câu hỏi."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Hoa đào trước ngõ."
+          },
+          {
+            "text": "Hoa mai trong vườn."
+          },
+          {
+            "text": "Tết đang vào nhà."
+          },
+          {
+            "text": "Sắp thêm một tuổi."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tết"
+        },
+        {
+          "id": "b",
+          "text": "mùa hè"
+        },
+        {
+          "id": "c",
+          "text": "trung thu"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc chậm từng câu một, đừng vội chọn."],
+      "explanation": "Bài thơ nói về ngày Tết.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MINI_STORY",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe {ban} đọc rồi chọn ý đúng."
+      },
+      "story": {
+        "sentences": [
+          {
+            "text": "Khỉ cưỡi voi đi gặp hổ."
+          },
+          {
+            "text": "Hổ thấy voi to lớn mà sợ khỉ bé nhỏ."
+          },
+          {
+            "text": "Hổ sợ quá, liền bỏ chạy."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vì trời mưa to"
+        },
+        {
+          "id": "b",
+          "text": "thấy voi to lớn mà sợ khỉ bé nhỏ"
+        },
+        {
+          "id": "c",
+          "text": "vì đói bụng"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhớ lại chi tiết trong bài rồi mới chọn."],
+      "explanation": "Hổ sợ vì thấy voi to mà lại sợ một con vật nhỏ bé.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Hoa đào trước ngõ, hoa mai trong vườn. Hoa mai ở đâu?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trước ngõ"
+        },
+        {
+          "id": "b",
+          "text": "trong vườn"
+        },
+        {
+          "id": "c",
+          "text": "trên mái"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: trong vườn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Mẹ phơi áo hoa, ông treo câu đối. Ông làm gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "phơi áo hoa"
+        },
+        {
+          "id": "b",
+          "text": "dán tranh gà"
+        },
+        {
+          "id": "c",
+          "text": "treo câu đối"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: treo câu đối.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Em dán tranh gà đón Tết. Em dán tranh gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tranh gà"
+        },
+        {
+          "id": "b",
+          "text": "tranh mèo"
+        },
+        {
+          "id": "c",
+          "text": "tranh hoa"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: tranh gà.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Vườn cây đâm chồi nảy lộc khi xuân đến. Mùa nào cây đâm chồi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mùa hè"
+        },
+        {
+          "id": "b",
+          "text": "mùa xuân"
+        },
+        {
+          "id": "c",
+          "text": "mùa đông"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: mùa xuân.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hoa bưởi nồng nàn, hoa nhãn ngọt. Hoa bưởi có mùi gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngọt lịm"
+        },
+        {
+          "id": "b",
+          "text": "không mùi"
+        },
+        {
+          "id": "c",
+          "text": "nồng nàn"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: nồng nàn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chích choè nhanh nhảu, khướu lắm điều. Khướu thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lắm điều"
+        },
+        {
+          "id": "b",
+          "text": "nhanh nhảu"
+        },
+        {
+          "id": "c",
+          "text": "trầm ngâm"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: lắm điều.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Voi thua hổ, phải nộp mạng cho hổ. Ai thua cuộc thi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hổ"
+        },
+        {
+          "id": "b",
+          "text": "voi"
+        },
+        {
+          "id": "c",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: voi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Khỉ bày mưu giúp voi thoát nạn. Ai bày mưu?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "voi"
+        },
+        {
+          "id": "b",
+          "text": "hổ"
+        },
+        {
+          "id": "c",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: khỉ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Khỉ cưỡi voi đi gặp hổ. Khỉ cưỡi con gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "voi"
+        },
+        {
+          "id": "b",
+          "text": "hổ"
+        },
+        {
+          "id": "c",
+          "text": "ngựa"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: voi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Hổ thấy voi to lớn mà sợ khỉ bé nhỏ. Hổ sợ ai?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "voi"
+        },
+        {
+          "id": "b",
+          "text": "khỉ"
+        },
+        {
+          "id": "c",
+          "text": "chính mình"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: khỉ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hổ sợ quá liền bỏ chạy. Cuối cùng hổ đã làm gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ở lại"
+        },
+        {
+          "id": "b",
+          "text": "ngủ quên"
+        },
+        {
+          "id": "c",
+          "text": "bỏ chạy"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: bỏ chạy.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sân nhà đầy nắng, mẹ phơi áo hoa. Ai phơi áo hoa?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mẹ"
+        },
+        {
+          "id": "b",
+          "text": "ông"
+        },
+        {
+          "id": "c",
+          "text": "em"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: mẹ.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đất trời nở hoa, Tết đang vào nhà. Bài thơ nói về dịp gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hè về"
+        },
+        {
+          "id": "b",
+          "text": "Tết"
+        },
+        {
+          "id": "c",
+          "text": "khai giảng"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: Tết.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Vườn cây rộn rã tiếng chim khi xuân về. Tiếng gì rộn rã?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tiếng xe"
+        },
+        {
+          "id": "b",
+          "text": "tiếng trống"
+        },
+        {
+          "id": "c",
+          "text": "tiếng chim"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: tiếng chim.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nắng vàng ngày càng rực rỡ khi xuân đến. Nắng có màu gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vàng"
+        },
+        {
+          "id": "b",
+          "text": "đỏ"
+        },
+        {
+          "id": "c",
+          "text": "tím"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: vàng.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Ông treo câu đối, em dán tranh gà. Ai dán tranh gà?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ông"
+        },
+        {
+          "id": "b",
+          "text": "em"
+        },
+        {
+          "id": "c",
+          "text": "mẹ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: em.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Hoa mai trong vườn có cánh trắng. Cánh hoa mai màu gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đỏ"
+        },
+        {
+          "id": "b",
+          "text": "vàng"
+        },
+        {
+          "id": "c",
+          "text": "trắng"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: trắng.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Vườn cây lại đâm chồi nảy lộc khi xuân sang. Vườn cây làm gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đâm chồi nảy lộc"
+        },
+        {
+          "id": "b",
+          "text": "rụng hết lá"
+        },
+        {
+          "id": "c",
+          "text": "khô héo dần"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: đâm chồi nảy lộc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hoa cau thơm dịu trong vườn xuân. Hoa cau có mùi thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hôi nồng"
+        },
+        {
+          "id": "b",
+          "text": "thơm dịu"
+        },
+        {
+          "id": "c",
+          "text": "không có mùi"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: thơm dịu.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Cu gáy chậm rãi đậu trên cành cây. Cu gáy có tính thế nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nhanh nhảu"
+        },
+        {
+          "id": "b",
+          "text": "ồn ào"
+        },
+        {
+          "id": "c",
+          "text": "chậm rãi"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: chậm rãi.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Voi tỏ vẻ lễ phép khi gặp hổ. Voi có thái độ gì?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lễ phép"
+        },
+        {
+          "id": "b",
+          "text": "hỗn láo"
+        },
+        {
+          "id": "c",
+          "text": "sợ hãi run rẩy"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ câu hỏi rồi chọn ý đúng."],
+      "explanation": "Đáp án đúng: lễ phép.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-docngan-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ý đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Hoa đào trước ngõ."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trong vườn"
+        },
+        {
+          "id": "b",
+          "text": "trên mái"
+        },
+        {
+          "id": "c",
+          "text": "trước ngõ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Hoa đào trước ngõ.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-docngan-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một câu, con chọn ý đúng."
+      },
+      "listenTarget": {
+        "text": "Ông treo câu đối."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ông"
+        },
+        {
+          "id": "b",
+          "text": "mẹ"
+        },
+        {
+          "id": "c",
+          "text": "em"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Ông treo câu đối.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn câu trả lời đúng."
+      },
+      "listenTarget": {
+        "text": "Hoa nhãn có vị ngọt."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chua"
+        },
+        {
+          "id": "b",
+          "text": "ngọt"
+        },
+        {
+          "id": "c",
+          "text": "đắng"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Hoa nhãn có vị ngọt.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm ý đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Khỉ bày mưu giúp voi."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hổ"
+        },
+        {
+          "id": "b",
+          "text": "chim"
+        },
+        {
+          "id": "c",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Khỉ bày mưu giúp voi.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, rồi chọn ý đúng."
+      },
+      "listenTarget": {
+        "text": "Hổ sợ quá, liền bỏ chạy."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bỏ chạy"
+        },
+        {
+          "id": "b",
+          "text": "ở lại"
+        },
+        {
+          "id": "c",
+          "text": "đi ngủ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe: \"Hổ sợ quá, liền bỏ chạy.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lại rồi chọn ý đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Vườn cây rộn rã tiếng chim."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tiếng xe"
+        },
+        {
+          "id": "b",
+          "text": "tiếng chim"
+        },
+        {
+          "id": "c",
+          "text": "tiếng trống"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe hết cả câu rồi mới chọn."],
+      "explanation": "Con vừa nghe: \"Vườn cây rộn rã tiếng chim.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp đúng thứ tự bài thơ 'Tết đang vào nhà'."
+      },
+      "dragItems": [
+        {
+          "id": "c2",
+          "text": "Tết đang vào nhà."
+        },
+        {
+          "id": "c1",
+          "text": "Sân nhà đầy nắng."
+        },
+        {
+          "id": "c0",
+          "text": "Hoa đào trước ngõ."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o2",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: Hoa đào trước ngõ. → Sân nhà đầy nắng. → Tết đang vào nhà..",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp đúng thứ tự chuyện Voi, hổ và khỉ."
+      },
+      "dragItems": [
+        {
+          "id": "c2",
+          "text": "Hổ sợ quá, bỏ chạy."
+        },
+        {
+          "id": "c1",
+          "text": "Khỉ bày mưu giúp voi."
+        },
+        {
+          "id": "c0",
+          "text": "Voi thua hổ trong cuộc thi."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o0",
+          "label": "Đầu tiên",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o1",
+          "label": "Tiếp theo",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "o2",
+          "label": "Cuối cùng",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "o0": ["c0"],
+        "o1": ["c1"],
+        "o2": ["c2"]
+      },
+      "hints": ["Việc nào xảy ra trước thì xếp trước."],
+      "explanation": "Thứ tự đúng: Voi thua hổ trong cuộc thi. → Khỉ bày mưu giúp voi. → Hổ sợ quá, bỏ chạy..",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-docngan-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "Hoa đào trước ngõ.",
+        "words": ["Hoa", "đào", "trước", "ngõ."]
+      },
+      "answerKey": {
+        "words": ["Hoa", "đào", "trước", "ngõ."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Hoa đào trước ngõ.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "Sân nhà đầy nắng.",
+        "words": ["Sân", "nhà", "đầy", "nắng."]
+      },
+      "answerKey": {
+        "words": ["Sân", "nhà", "đầy", "nắng."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Sân nhà đầy nắng.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "Tết đang vào nhà.",
+        "words": ["Tết", "đang", "vào", "nhà."]
+      },
+      "answerKey": {
+        "words": ["Tết", "đang", "vào", "nhà."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Tết đang vào nhà.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Hoa bưởi nồng nàn.",
+        "words": ["Hoa", "bưởi", "nồng", "nàn."]
+      },
+      "answerKey": {
+        "words": ["Hoa", "bưởi", "nồng", "nàn."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Hoa bưởi nồng nàn.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "Khỉ bày mưu giúp voi.",
+        "words": ["Khỉ", "bày", "mưu", "giúp", "voi."]
+      },
+      "answerKey": {
+        "words": ["Khỉ", "bày", "mưu", "giúp", "voi."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Khỉ bày mưu giúp voi.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-docngan-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.DOC.DOC_DOAN_NGAN"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thong thả câu này nhé!"
+      },
+      "readTarget": {
+        "text": "Hổ sợ quá, liền bỏ chạy.",
+        "words": ["Hổ", "sợ", "quá,", "liền", "bỏ", "chạy."]
+      },
+      "answerKey": {
+        "words": ["Hổ", "sợ", "quá,", "liền", "bỏ", "chạy."]
+      },
+      "hints": ["Đọc chậm, rõ từng tiếng."],
+      "explanation": "Câu này đọc là \"Hổ sợ quá, liền bỏ chạy.\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 81-83 tr.174-179 (Ôn tập: Tết đang vào nhà, Mùa xuân đến, Voi hổ và khỉ)"
+      }
+    }
+  ]
+}

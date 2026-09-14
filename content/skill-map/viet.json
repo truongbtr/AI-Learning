@@ -1436,8 +1436,8 @@
       "prerequisites": ["VIET.DOC.DOC_CAU"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MINI_STORY", "MCQ"],
-      "difficultyRange": [2, 5]
+      "exerciseTypes": ["READ_ALOUD", "MINI_STORY", "MCQ", "LISTEN_CHOOSE", "DRAG_DROP"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.DOC.DOC_HIEU_TRA_LOI",
@@ -1453,8 +1453,15 @@
       "prerequisites": ["VIET.DOC.DOC_DOAN_NGAN"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MINI_STORY", "MCQ", "SPEAK_ANSWER", "READ_ALOUD"],
-      "difficultyRange": [2, 5]
+      "exerciseTypes": [
+        "MINI_STORY",
+        "MCQ",
+        "SPEAK_ANSWER",
+        "READ_ALOUD",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VIET.DOC.DOC_THO",
