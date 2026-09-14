@@ -1,0 +1,1951 @@
+{
+  "skillCode": "ESL.LIS.WORD_PICTURE",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Nghe một từ, chạm tranh. Ba tranh mỗi câu có tên nghe gần giống (ship / sheep / shop); ô chỉ khác nguyên âm ngắn mang nham_nguyen_am_ngan, chỉ khác âm đầu mang nham_am_dau. Mỗi tranh có đúng một tên.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "model",
+      "id": "esl-wordpic-0001",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right one."
+      },
+      "listenTarget": {
+        "text": "ship"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚢",
+            "labelEn": "ship"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🏪",
+            "labelEn": "shop"
+          },
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐑",
+            "labelEn": "sheep"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole word."],
+      "explanation": "You heard \"ship\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "esl-wordpic-0002",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says something. Tap it!"
+      },
+      "listenTarget": {
+        "text": "hat"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🎩",
+            "labelEn": "hat"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🦇",
+            "labelEn": "bat"
+          },
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the middle sound."],
+      "explanation": "You heard \"hat\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "model",
+      "id": "esl-wordpic-0003",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "pen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "📌",
+            "labelEn": "pin"
+          },
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍳",
+            "labelEn": "pan"
+          },
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🖊️",
+            "labelEn": "pen"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the first sound."],
+      "explanation": "You heard \"pen\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-wordpic-0004",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "bag"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "👜",
+            "labelEn": "bag"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🦇",
+            "labelEn": "bat"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🛏️",
+            "labelEn": "bed"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen again."],
+      "explanation": "You heard \"bag\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "model",
+      "id": "esl-wordpic-0005",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "cup"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🧢",
+            "labelEn": "cap"
+          },
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "☕",
+            "labelEn": "cup"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐶",
+            "labelEn": "pup"
+          },
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole word."],
+      "explanation": "You heard \"cup\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0006",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap what you heard."
+      },
+      "listenTarget": {
+        "text": "fan"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚐",
+            "labelEn": "van"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍳",
+            "labelEn": "pan"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🪭",
+            "labelEn": "fan"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the middle sound."],
+      "explanation": "You heard \"fan\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0007",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right one."
+      },
+      "listenTarget": {
+        "text": "red"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🟥",
+            "labelEn": "red"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🛏️",
+            "labelEn": "bed"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "💍",
+            "labelEn": "ring"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the first sound."],
+      "explanation": "You heard \"red\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0008",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says something. Tap it!"
+      },
+      "listenTarget": {
+        "text": "dog"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🪵",
+            "labelEn": "log"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen again."],
+      "explanation": "You heard \"dog\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0009",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "bee"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🔑",
+            "labelEn": "key"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🌳",
+            "labelEn": "tree"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐝",
+            "labelEn": "bee"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole word."],
+      "explanation": "You heard \"bee\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0010",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "moon"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🌙",
+            "labelEn": "moon"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🥄",
+            "labelEn": "spoon"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐁",
+            "labelEn": "mouse"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the middle sound."],
+      "explanation": "You heard \"moon\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0011",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "goat"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🧥",
+            "labelEn": "coat"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelEn": "goat"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "⛵",
+            "labelEn": "boat"
+          },
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the first sound."],
+      "explanation": "You heard \"goat\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0012",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tap what you heard."
+      },
+      "listenTarget": {
+        "text": "train"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🌧️",
+            "labelEn": "rain"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "⛓️",
+            "labelEn": "chain"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🚂",
+            "labelEn": "train"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Close your eyes and listen again."],
+      "explanation": "You heard \"train\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0013",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right one."
+      },
+      "listenTarget": {
+        "text": "fish"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍽️",
+            "labelEn": "dish"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "✊",
+            "labelEn": "fist"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole word."],
+      "explanation": "You heard \"fish\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0014",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says something. Tap it!"
+      },
+      "listenTarget": {
+        "text": "mouse"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🏠",
+            "labelEn": "house"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐁",
+            "labelEn": "mouse"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐴",
+            "labelEn": "horse"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the middle sound."],
+      "explanation": "You heard \"mouse\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0015",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "bike"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🪁",
+            "labelEn": "kite"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "📕",
+            "labelEn": "book"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🚲",
+            "labelEn": "bike"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the first sound."],
+      "explanation": "You heard \"bike\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0016",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "sock"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🧦",
+            "labelEn": "sock"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelEn": "rock"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🕐",
+            "labelEn": "clock"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen again."],
+      "explanation": "You heard \"sock\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0017",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "pear"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐻",
+            "labelEn": "bear"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍐",
+            "labelEn": "pear"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🪑",
+            "labelEn": "chair"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole word."],
+      "explanation": "You heard \"pear\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0018",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap what you heard."
+      },
+      "listenTarget": {
+        "text": "star"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚗",
+            "labelEn": "car"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🫙",
+            "labelEn": "jar"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "⭐",
+            "labelEn": "star"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the middle sound."],
+      "explanation": "You heard \"star\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0019",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right one."
+      },
+      "listenTarget": {
+        "text": "nose"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "👃",
+            "labelEn": "nose"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🌹",
+            "labelEn": "rose"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🦴",
+            "labelEn": "bone"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the first sound."],
+      "explanation": "You heard \"nose\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0020",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says something. Tap it!"
+      },
+      "listenTarget": {
+        "text": "sheep"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚢",
+            "labelEn": "ship"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐑",
+            "labelEn": "sheep"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🏪",
+            "labelEn": "shop"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen again."],
+      "explanation": "You heard \"sheep\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "id": "esl-wordpic-0021",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the picture: ship."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🏪",
+            "labelEn": "shop"
+          },
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🚢",
+            "labelEn": "ship"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐑",
+            "labelEn": "sheep"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the word, then look at each picture."],
+      "explanation": "The ship is 🚢.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0022",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Find the hat."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🦇",
+            "labelEn": "bat"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🎩",
+            "labelEn": "hat"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the word, then look at each picture."],
+      "explanation": "The hat is 🎩.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "id": "esl-wordpic-0023",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Where is the pen?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🖊️",
+            "labelEn": "pen"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "📌",
+            "labelEn": "pin"
+          },
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🍳",
+            "labelEn": "pan"
+          },
+          "errorTag": "nham_nguyen_am_ngan"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the word, then look at each picture."],
+      "explanation": "The pen is 🖊️.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0024",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Show {ban} the bag."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🦇",
+            "labelEn": "bat"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "👜",
+            "labelEn": "bag"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🛏️",
+            "labelEn": "bed"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the word, then look at each picture."],
+      "explanation": "The bag is 👜.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_nguyen_am_ngan",
+      "scaffold": "none",
+      "id": "esl-wordpic-0025",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the picture: cup."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🧢",
+            "labelEn": "cap"
+          },
+          "errorTag": "nham_nguyen_am_ngan"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐶",
+            "labelEn": "pup"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "☕",
+            "labelEn": "cup"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the word, then look at each picture."],
+      "explanation": "The cup is ☕.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0026",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Find the fan."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🪭",
+            "labelEn": "fan"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🚐",
+            "labelEn": "van"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🍳",
+            "labelEn": "pan"
+          },
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the word, then look at each picture."],
+      "explanation": "The fan is 🪭.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0027",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Where is the red?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🛏️",
+            "labelEn": "bed"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🟥",
+            "labelEn": "red"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "💍",
+            "labelEn": "ring"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the word, then look at each picture."],
+      "explanation": "The red is 🟥.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "esl-wordpic-0028",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Show {ban} the dog."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🪵",
+            "labelEn": "log"
+          },
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🦆",
+            "labelEn": "duck"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the word, then look at each picture."],
+      "explanation": "The dog is 🐕.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0029",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each word under its picture."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "sheep"
+        },
+        {
+          "id": "w2",
+          "text": "ship"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "p1",
+          "label": "Picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "🚢",
+            "labelEn": "ship"
+          },
+          "accepts": ["w1", "w2"]
+        },
+        {
+          "id": "p2",
+          "label": "Picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐑",
+            "labelEn": "sheep"
+          },
+          "accepts": ["w1", "w2"]
+        }
+      ],
+      "answerKey": {
+        "p1": ["w2"],
+        "p2": ["w1"]
+      },
+      "hints": ["Say both words. Listen for the difference."],
+      "explanation": "🚢 is \"ship\" and 🐑 is \"sheep\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0030",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "These words sound alike. Match them."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "cat"
+        },
+        {
+          "id": "w2",
+          "text": "hat"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "p1",
+          "label": "Picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "🎩",
+            "labelEn": "hat"
+          },
+          "accepts": ["w1", "w2"]
+        },
+        {
+          "id": "p2",
+          "label": "Picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          },
+          "accepts": ["w1", "w2"]
+        }
+      ],
+      "answerKey": {
+        "p1": ["w2"],
+        "p2": ["w1"]
+      },
+      "hints": ["Say both words. Listen for the difference."],
+      "explanation": "🎩 is \"hat\" and 🐈 is \"cat\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0031",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put each word on its picture."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "cap"
+        },
+        {
+          "id": "w2",
+          "text": "cup"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "p1",
+          "label": "Picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "☕",
+            "labelEn": "cup"
+          },
+          "accepts": ["w1", "w2"]
+        },
+        {
+          "id": "p2",
+          "label": "Picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🧢",
+            "labelEn": "cap"
+          },
+          "accepts": ["w1", "w2"]
+        }
+      ],
+      "answerKey": {
+        "p1": ["w2"],
+        "p2": ["w1"]
+      },
+      "hints": ["Say both words. Listen for the difference."],
+      "explanation": "☕ is \"cup\" and 🧢 is \"cap\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0032",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each word under its picture."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "coat"
+        },
+        {
+          "id": "w2",
+          "text": "goat"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "p1",
+          "label": "Picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐐",
+            "labelEn": "goat"
+          },
+          "accepts": ["w1", "w2"]
+        },
+        {
+          "id": "p2",
+          "label": "Picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🧥",
+            "labelEn": "coat"
+          },
+          "accepts": ["w1", "w2"]
+        }
+      ],
+      "answerKey": {
+        "p1": ["w2"],
+        "p2": ["w1"]
+      },
+      "hints": ["Say both words. Listen for the difference."],
+      "explanation": "🐐 is \"goat\" and 🧥 is \"coat\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0033",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "These words sound alike. Match them."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "house"
+        },
+        {
+          "id": "w2",
+          "text": "mouse"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "p1",
+          "label": "Picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "🐁",
+            "labelEn": "mouse"
+          },
+          "accepts": ["w1", "w2"]
+        },
+        {
+          "id": "p2",
+          "label": "Picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🏠",
+            "labelEn": "house"
+          },
+          "accepts": ["w1", "w2"]
+        }
+      ],
+      "answerKey": {
+        "p1": ["w2"],
+        "p2": ["w1"]
+      },
+      "hints": ["Say both words. Listen for the difference."],
+      "explanation": "🐁 is \"mouse\" and 🏠 is \"house\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0034",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Put each word on its picture."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "bear"
+        },
+        {
+          "id": "w2",
+          "text": "pear"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "p1",
+          "label": "Picture 1",
+          "image": {
+            "kind": "emoji",
+            "value": "🍐",
+            "labelEn": "pear"
+          },
+          "accepts": ["w1", "w2"]
+        },
+        {
+          "id": "p2",
+          "label": "Picture 2",
+          "image": {
+            "kind": "emoji",
+            "value": "🐻",
+            "labelEn": "bear"
+          },
+          "accepts": ["w1", "w2"]
+        }
+      ],
+      "answerKey": {
+        "p1": ["w2"],
+        "p2": ["w1"]
+      },
+      "hints": ["Say both words. Listen for the difference."],
+      "explanation": "🍐 is \"pear\" and 🐻 is \"bear\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-wordpic-0035",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "ship, sheep, shop",
+        "words": ["ship", "sheep", "shop"]
+      },
+      "answerKey": {
+        "words": ["ship", "sheep", "shop"]
+      },
+      "hints": ["Say each word clearly. They sound alike!"],
+      "explanation": "These words sound alike: ship, sheep, shop.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0036",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "hat, cat, bat",
+        "words": ["hat", "cat", "bat"]
+      },
+      "answerKey": {
+        "words": ["hat", "cat", "bat"]
+      },
+      "hints": ["Say each word clearly. They sound alike!"],
+      "explanation": "These words sound alike: hat, cat, bat.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0037",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "coat, goat, boat",
+        "words": ["coat", "goat", "boat"]
+      },
+      "answerKey": {
+        "words": ["coat", "goat", "boat"]
+      },
+      "hints": ["Say each word clearly. They sound alike!"],
+      "explanation": "These words sound alike: coat, goat, boat.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0038",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "mouse, house, horse",
+        "words": ["mouse", "house", "horse"]
+      },
+      "answerKey": {
+        "words": ["mouse", "house", "horse"]
+      },
+      "hints": ["Say each word clearly. They sound alike!"],
+      "explanation": "These words sound alike: mouse, house, horse.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0039",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a ship and a sheep. Label them."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đúng hai thứ", "Ghi đúng tên dưới mỗi tranh", "Chữ rõ ràng"],
+        "sampleAnswers": ["ship, sheep"]
+      },
+      "answerKey": null,
+      "hints": ["Say the words before you write."],
+      "explanation": "For example: ship, sheep",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-wordpic-0040",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.WORD_PICTURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a goat in a coat. Label them."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đúng hai thứ", "Ghi đúng tên dưới mỗi tranh", "Chữ rõ ràng"],
+        "sampleAnswers": ["goat, coat"]
+      },
+      "answerKey": null,
+      "hints": ["Say the words before you write."],
+      "explanation": "For example: goat, coat",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book, từ vựng Language Review + Unit 1–3 (bảng chương trình) — chưa chụp trang sách"
+      }
+    }
+  ]
+}

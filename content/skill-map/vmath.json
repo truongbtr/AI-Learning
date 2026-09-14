@@ -23,8 +23,15 @@
       "prerequisites": [],
       "relatedSkillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ"],
-      "difficultyRange": [1, 1]
+      "exerciseTypes": [
+        "READ_ALOUD",
+        "LISTEN_CHOOSE",
+        "MCQ",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.NHAN_BIET_SO_LUONG_1_5",
@@ -40,8 +47,15 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "LISTEN_CHOOSE"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "MCQ",
+        "COUNT_TAP",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.SO_0_5",
@@ -269,8 +283,15 @@
       "prerequisites": ["VMATH.SO.TACH_GOP_10"],
       "relatedSkillCodes": ["EMATH.OA.ADD_WITHIN_5"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "DRAG_DROP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "MCQ",
+        "COUNT_TAP",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.CONG_PV_10",
@@ -310,8 +331,15 @@
       "prerequisites": ["VMATH.SO.CONG_PV_10"],
       "relatedSkillCodes": ["EMATH.OA.ADD_WITHIN_10"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.TRU_PV_5",
@@ -327,8 +355,15 @@
       "prerequisites": ["VMATH.SO.CONG_PV_5"],
       "relatedSkillCodes": ["EMATH.OA.SUB_WITHIN_5"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "COUNT_TAP", "DRAG_DROP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "MCQ",
+        "COUNT_TAP",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.SO.TRU_PV_10",
@@ -589,8 +624,15 @@
       "prerequisites": [],
       "relatedSkillCodes": ["EMATH.G.NAME_2D_SHAPES", "EMATH.G.SHAPE_ATTRIBUTES"],
       "confusableWith": ["VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG"],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "COUNT_TAP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.HH.LAP_GHEP_XEP_HINH",
@@ -606,8 +648,15 @@
       "prerequisites": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
       "relatedSkillCodes": ["EMATH.G.COMPOSE_SHAPES"],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ", "COUNT_TAP"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": [
+        "DRAG_DROP",
+        "MCQ",
+        "COUNT_TAP",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.HH.NHAN_DANG_HINH_THUC_TE",
@@ -623,8 +672,15 @@
       "prerequisites": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
       "relatedSkillCodes": ["EMATH.G.SHAPE_ATTRIBUTES"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG",
@@ -834,8 +890,16 @@
       "prerequisites": ["VMATH.GT.BAI_TOAN_TRANH", "VMATH.SO.CONG_PV_10"],
       "relatedSkillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
       "confusableWith": ["VMATH.GT.BAI_TOAN_BOT"],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "SPEAK_ANSWER"],
-      "difficultyRange": [2, 5]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "SPEAK_ANSWER",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "VMATH.GT.BAI_TOAN_BOT",

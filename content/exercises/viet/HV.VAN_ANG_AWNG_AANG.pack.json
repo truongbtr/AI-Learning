@@ -1,0 +1,1838 @@
+{
+  "skillCode": "VIET.HV.VAN_ANG_AWNG_AANG",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B59"],
+  "note": "Bài 59: ang, ăng, âng. Từ của sách: làng, rạng, sáng, bằng, rặng, tầng, vâng, cá vàng, măng tre, nhà tầng; câu 'Vầng trăng sáng lấp ló sau rặng tre'; bài thơ 'Mèo con đi học'. Ô gần giống: a/ă/â cùng dấu (vàng / vầng, rặng / rạng, vâng / vang); ô khác vần là vần n (làng / làn, trăng / trăn).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-vanang-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có vần ang?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vàng"
+        },
+        {
+          "id": "b",
+          "text": "vầng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "đỏ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy vần ang?"],
+      "explanation": "Tiếng \"vàng\" có vần ang.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-vanang-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có vần âng nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tìm",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "tầng"
+        },
+        {
+          "id": "c",
+          "text": "lầu"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có vần âng thôi."],
+      "explanation": "Tiếng \"tầng\" có vần âng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-vanang-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa vần ăng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trăn",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "sao"
+        },
+        {
+          "id": "c",
+          "text": "trăng"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ vần ăng viết thế nào không?"],
+      "explanation": "Tiếng \"trăng\" có vần ăng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-vanang-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có vần ăng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "măng"
+        },
+        {
+          "id": "b",
+          "text": "mây",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "rau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"măng\" có vần ăng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanang-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng có vần ang."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "làn",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "làng"
+        },
+        {
+          "id": "c",
+          "text": "phố"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Tiếng \"làng\" có vần ang.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanang-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba ô, ô nào có vần ang?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sáo",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "tối"
+        },
+        {
+          "id": "c",
+          "text": "sáng"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tìm con chữ của vần ang trong từng ô nhé!"],
+      "explanation": "Tiếng \"sáng\" có vần ang.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có vần ăng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bằng"
+        },
+        {
+          "id": "b",
+          "text": "bàng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "gỗ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy vần ăng?"],
+      "explanation": "Tiếng \"bằng\" có vần ăng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có vần ăng nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "rạng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "rặng"
+        },
+        {
+          "id": "c",
+          "text": "cây"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có vần ăng thôi."],
+      "explanation": "Tiếng \"rặng\" có vần ăng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa vần âng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vang",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "dạ"
+        },
+        {
+          "id": "c",
+          "text": "vâng"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ vần âng viết thế nào không?"],
+      "explanation": "Tiếng \"vâng\" có vần âng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanang-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có vần ăng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nắng"
+        },
+        {
+          "id": "b",
+          "text": "nấu",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "mưa"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"nắng\" có vần ăng.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-vanang-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐠",
+          "labelVi": "cá vàng",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vầng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "vàng"
+        },
+        {
+          "id": "c",
+          "text": "làng",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ cá vàng.", "Tiếng gọi cá vàng có vần ang."],
+      "explanation": "Cá vàng đọc là \"vàng\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanang-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng gọi tên bức tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🏢",
+          "labelVi": "nhà tầng",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tìm",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "vầng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "tầng"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ nhà tầng.", "Tiếng gọi nhà tầng có vần âng."],
+      "explanation": "Nhà tầng đọc là \"tầng\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanang-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tranh này là tiếng nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌙",
+          "labelVi": "vầng trăng",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trăng"
+        },
+        {
+          "id": "b",
+          "text": "trăn",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "măng",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ vầng trăng.", "Tiếng gọi vầng trăng có vần ăng."],
+      "explanation": "Vầng trăng đọc là \"trăng\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bốn ô trông rất giống nhau. Ô nào có vần ang?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vầng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "vàn",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "vàng"
+        },
+        {
+          "id": "d",
+          "text": "lầu"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Chỉ \"vàng\" có vần ang.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn thật kỹ: tiếng nào có vần ăng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bàng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "bà",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "đỏ"
+        },
+        {
+          "id": "d",
+          "text": "bằng"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Chỉ \"bằng\" có vần ăng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chỉ một ô có vần ăng. Con tìm ra không?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "rặng"
+        },
+        {
+          "id": "b",
+          "text": "rạng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "rạ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "d",
+          "text": "đỏ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tìm con chữ của vần ăng trong từng ô nhé!"],
+      "explanation": "Chỉ \"rặng\" có vần ăng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có vần âng."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vang",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "vâng"
+        },
+        {
+          "id": "c",
+          "text": "vô",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "d",
+          "text": "đỏ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy vần âng?"],
+      "explanation": "Chỉ \"vâng\" có vần âng.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-vanang-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "vàng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vàng"
+        },
+        {
+          "id": "b",
+          "text": "làng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "vàn",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"vàng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-vanang-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "tầng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vầng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "tầng"
+        },
+        {
+          "id": "c",
+          "text": "tìm",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"tầng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanang-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "trăng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "măng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "trăn",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "trăng"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"trăng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanang-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "măng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "măng"
+        },
+        {
+          "id": "b",
+          "text": "trăng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "mây",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"măng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanang-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "làng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hàng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "làng"
+        },
+        {
+          "id": "c",
+          "text": "làn",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Con vừa nghe tiếng \"làng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanang-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "sáng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tráng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "sáo",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "sáng"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"sáng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanang-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "bằng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bằng"
+        },
+        {
+          "id": "b",
+          "text": "hằng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "bà",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"bằng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanang-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "rặng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nặng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "rặng"
+        },
+        {
+          "id": "c",
+          "text": "rạ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"rặng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanang-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "vâng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tâng",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "vô",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "vâng"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"vâng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "vầng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vàng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "vầng"
+        },
+        {
+          "id": "c",
+          "text": "đỏ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Tiếng con nghe là \"vầng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "bàng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bằng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "gỗ"
+        },
+        {
+          "id": "c",
+          "text": "bàng"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Tiếng con nghe là \"bàng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "rạng"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "rạng"
+        },
+        {
+          "id": "b",
+          "text": "rặng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "cây"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Tiếng con nghe là \"rạng\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "vang"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vâng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "vang"
+        },
+        {
+          "id": "c",
+          "text": "dạ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Tiếng con nghe là \"vang\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanang-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ: có vần ang hay không có."
+      },
+      "dragItems": [
+        {
+          "id": "s0a",
+          "text": "vàng"
+        },
+        {
+          "id": "s0b",
+          "text": "đỏ"
+        },
+        {
+          "id": "s0c",
+          "text": "mang"
+        },
+        {
+          "id": "s0d",
+          "text": "may",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần ang",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s0a", "s0c"],
+        "khong": ["s0b", "s0d"]
+      },
+      "hints": ["Đọc to từng thẻ, thẻ nào có vần ang thì xếp riêng."],
+      "explanation": "\"vàng\" và \"mang\" có vần ang.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng có vần âng sang một bên nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1a",
+          "text": "tầng"
+        },
+        {
+          "id": "s1b",
+          "text": "lầu"
+        },
+        {
+          "id": "s1c",
+          "text": "vâng"
+        },
+        {
+          "id": "s1d",
+          "text": "vang",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần âng",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s1a", "s1c"],
+        "khong": ["s1b", "s1d"]
+      },
+      "hints": ["Xếp hai thẻ dễ trước, còn lại xếp sau."],
+      "explanation": "\"tầng\" và \"vâng\" có vần âng.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chia bốn tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "s2a",
+          "text": "trăng"
+        },
+        {
+          "id": "s2b",
+          "text": "sao"
+        },
+        {
+          "id": "s2c",
+          "text": "bằng"
+        },
+        {
+          "id": "s2d",
+          "text": "bàng",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần ăng",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s2a", "s2c"],
+        "khong": ["s2b", "s2d"]
+      },
+      "hints": ["Nhìn từng con chữ trên thẻ nhé!"],
+      "explanation": "\"trăng\" và \"bằng\" có vần ăng.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Giỏ nào đựng tiếng có vần ăng?"
+      },
+      "dragItems": [
+        {
+          "id": "s3a",
+          "text": "măng"
+        },
+        {
+          "id": "s3b",
+          "text": "rau"
+        },
+        {
+          "id": "s3c",
+          "text": "rặng"
+        },
+        {
+          "id": "s3d",
+          "text": "rạng",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần ăng",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s3a", "s3c"],
+        "khong": ["s3b", "s3d"]
+      },
+      "hints": ["Đánh vần thẻ rồi mới kéo."],
+      "explanation": "\"măng\" và \"rặng\" có vần ăng.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanang-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng đúng vào ô dưới tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐠",
+          "labelVi": "cá vàng",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "vàng"
+        },
+        {
+          "id": "sai0",
+          "text": "vầng",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "sai1",
+          "text": "làng",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ cá vàng.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Cá vàng viết là \"vàng\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanang-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn thẻ đúng rồi thả vào ô trống.",
+        "image": {
+          "kind": "emoji",
+          "value": "🏢",
+          "labelVi": "nhà tầng",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "tầng"
+        },
+        {
+          "id": "sai0",
+          "text": "tìm",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "vầng",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ nhà tầng.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Nhà tầng viết là \"tầng\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanang-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Thẻ nào gọi tên bức tranh? Kéo vào nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🌙",
+          "labelVi": "vầng trăng",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "trăng"
+        },
+        {
+          "id": "sai0",
+          "text": "trăn",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "măng",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ vầng trăng.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Vầng trăng viết là \"trăng\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-vanang-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "cá vàng",
+        "words": ["cá", "vàng"]
+      },
+      "answerKey": {
+        "words": ["cá", "vàng"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"cá vàng\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanang-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "măng tre",
+        "words": ["măng", "tre"]
+      },
+      "answerKey": {
+        "words": ["măng", "tre"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"măng tre\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanang-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "nhà tầng",
+        "words": ["nhà", "tầng"]
+      },
+      "answerKey": {
+        "words": ["nhà", "tầng"]
+      },
+      "hints": ["Đánh vần tiếng nào khó rồi đọc trơn lại."],
+      "explanation": "Câu này đọc là \"nhà tầng\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanang-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "Vầng trăng sáng lấp ló sau rặng tre",
+        "words": ["Vầng", "trăng", "sáng", "lấp", "ló", "sau", "rặng", "tre"]
+      },
+      "answerKey": {
+        "words": ["Vầng", "trăng", "sáng", "lấp", "ló", "sau", "rặng", "tre"]
+      },
+      "hints": ["Ngắt rõ giữa các tiếng."],
+      "explanation": "Câu này đọc là \"Vầng trăng sáng lấp ló sau rặng tre\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanang-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Hôm nay trời nắng chang chang",
+        "words": ["Hôm", "nay", "trời", "nắng", "chang", "chang"]
+      },
+      "answerKey": {
+        "words": ["Hôm", "nay", "trời", "nắng", "chang", "chang"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Hôm nay trời nắng chang chang\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanang-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "Chỉ mang một cái bút chì",
+        "words": ["Chỉ", "mang", "một", "cái", "bút", "chì"]
+      },
+      "answerKey": {
+        "words": ["Chỉ", "mang", "một", "cái", "bút", "chì"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"Chỉ mang một cái bút chì\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanang-0044",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: cá vàng, măng tre."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["cá vàng măng tre"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, đúng độ cao từng con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanang-0045",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: nhà tầng, vầng trăng."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["nhà tầng vầng trăng"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ đánh dấu thanh sau khi viết xong con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanang-0046",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_ANG_AWNG_AANG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: nắng, làng, vâng."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["nắng làng vâng"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B59",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 59 tr.130–131 (ang ăng âng)"
+      }
+    }
+  ]
+}

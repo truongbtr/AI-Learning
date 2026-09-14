@@ -1,0 +1,1512 @@
+{
+  "skillCode": "VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B07", "KNTT-T1-B09", "KNTT-T1-B19"],
+  "note": "Nhận dạng hình bằng kéo-thả; câu trắc nghiệm hỏi số cạnh, số góc, số hình — thứ đếm được và có mã lỗi đúng nghĩa.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinh-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Có mấy hình tam giác?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelVi": "hình tam giác",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chạm từng hình khi đếm."],
+      "explanation": "Có ba hình tam giác.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinh-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm xem có bao nhiêu hình vuông.",
+        "image": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelVi": "hình vuông",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chạm từng hình khi đếm."],
+      "explanation": "Có bốn hình vuông.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinh-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh có mấy hình tròn?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔴",
+          "labelVi": "hình tròn",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chạm từng hình khi đếm."],
+      "explanation": "Có năm hình tròn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinh-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có mấy hình tam giác?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelVi": "hình tam giác",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chạm từng hình khi đếm."],
+      "explanation": "Có sáu hình tam giác.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinh-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm xem có bao nhiêu hình vuông.",
+        "image": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelVi": "hình vuông",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chạm từng hình khi đếm."],
+      "explanation": "Có hai hình vuông.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinh-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh có mấy hình tròn?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔴",
+          "labelVi": "hình tròn",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chạm từng hình khi đếm."],
+      "explanation": "Có bảy hình tròn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có mấy hình tam giác?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelVi": "hình tam giác",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chạm từng hình khi đếm."],
+      "explanation": "Có bốn hình tam giác.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm xem có bao nhiêu hình vuông.",
+        "image": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelVi": "hình vuông",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chạm từng hình khi đếm."],
+      "explanation": "Có năm hình vuông.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Hình tam giác có mấy cạnh?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Lấy tay chỉ vào từng cạnh rồi đếm."],
+      "explanation": "Hình tam giác có ba cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số cạnh của hình vuông nhé."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Lấy tay chỉ vào từng cạnh rồi đếm."],
+      "explanation": "Hình vuông có bốn cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Hình chữ nhật có mấy cạnh?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Lấy tay chỉ vào từng cạnh rồi đếm."],
+      "explanation": "Hình chữ nhật có bốn cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số góc của hình tam giác nhé."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Lấy tay chỉ vào từng góc rồi đếm."],
+      "explanation": "Hình tam giác có ba góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Hình vuông có mấy góc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Lấy tay chỉ vào từng góc rồi đếm."],
+      "explanation": "Hình vuông có bốn góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số góc của hình chữ nhật nhé."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Lấy tay chỉ vào từng góc rồi đếm."],
+      "explanation": "Hình chữ nhật có bốn góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Hình tròn có mấy góc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Hình tròn không có chỗ nhọn nào."],
+      "explanation": "Hình tròn không có góc nào.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelVi": "hình tam giác",
+          "repeat": 3
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy hình tam giác?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe câu hỏi rồi đếm hình."],
+      "explanation": "Có ba hình tam giác.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng.",
+        "image": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelVi": "hình vuông",
+          "repeat": 6
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy hình vuông?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm chậm từng hình."],
+      "explanation": "Có sáu hình vuông.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🔴",
+          "labelVi": "hình tròn",
+          "repeat": 4
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy hình tròn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe câu hỏi rồi đếm hình."],
+      "explanation": "Có bốn hình tròn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng.",
+        "image": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelVi": "hình tam giác",
+          "repeat": 5
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy hình tam giác?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm chậm từng hình."],
+      "explanation": "Có năm hình tam giác.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng.",
+        "image": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelVi": "hình vuông",
+          "repeat": 3
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy hình vuông?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe câu hỏi rồi đếm hình."],
+      "explanation": "Có ba hình vuông.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinh-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn.",
+        "image": {
+          "kind": "emoji",
+          "value": "🔴",
+          "labelVi": "hình tròn",
+          "repeat": 6
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy hình tròn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm chậm từng hình."],
+      "explanation": "Có sáu hình tròn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi đồ vật về đúng tên hình."
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "đồng hồ",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "đồng hồ"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "khăn tay vuông",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "khăn tay vuông"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình tròn",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình vuông",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v1"],
+        "h2": ["v2"]
+      },
+      "hints": ["Nhìn đồ vật có góc nhọn không, có mấy cạnh."],
+      "explanation": "đồng hồ có dạng hình tròn, khăn tay vuông có dạng hình vuông.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đồ vật này có dạng hình gì? Kéo vào nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "biển báo",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "biển báo"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "cái đĩa",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "cái đĩa"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình tam giác",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình tròn",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v1"],
+        "h2": ["v2"]
+      },
+      "hints": ["Nhìn đồ vật có góc nhọn không, có mấy cạnh."],
+      "explanation": "biển báo có dạng hình tam giác, cái đĩa có dạng hình tròn.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp đồ vật vào đúng ô hình."
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "viên gạch vuông",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "viên gạch vuông"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "miếng bánh tam giác",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "miếng bánh tam giác"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình vuông",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình tam giác",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v1"],
+        "h2": ["v2"]
+      },
+      "hints": ["Nhìn đồ vật có góc nhọn không, có mấy cạnh."],
+      "explanation": "viên gạch vuông có dạng hình vuông, miếng bánh tam giác có dạng hình tam giác.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi đồ vật về đúng tên hình."
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "bánh xe",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "bánh xe"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "lá cờ đuôi nheo",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "lá cờ đuôi nheo"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình tròn",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình tam giác",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v1"],
+        "h2": ["v2"]
+      },
+      "hints": ["Nhìn đồ vật có góc nhọn không, có mấy cạnh."],
+      "explanation": "bánh xe có dạng hình tròn, lá cờ đuôi nheo có dạng hình tam giác.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đồ vật này có dạng hình gì? Kéo vào nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "ô cửa sổ vuông",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "ô cửa sổ vuông"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "quả bóng",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "quả bóng"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình vuông",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình tròn",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v1"],
+        "h2": ["v2"]
+      },
+      "hints": ["Nhìn đồ vật có góc nhọn không, có mấy cạnh."],
+      "explanation": "ô cửa sổ vuông có dạng hình vuông, quả bóng có dạng hình tròn.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm để đếm hình tam giác nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelVi": "hình tam giác",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có năm hình tam giác.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm để đếm hình vuông nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelVi": "hình vuông",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "line"
+      },
+      "answerKey": 4,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có bốn hình vuông.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm để đếm hình tròn nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔴",
+          "labelVi": "hình tròn",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có sáu hình tròn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm để đếm hình tam giác nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelVi": "hình tam giác",
+          "repeat": 7
+        },
+        "correctCount": 7,
+        "layout": "line"
+      },
+      "answerKey": 7,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có bảy hình tam giác.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-hinh-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "hình tròn",
+        "words": ["hình", "tròn"]
+      },
+      "answerKey": {
+        "words": ["hình", "tròn"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"hình tròn\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "hình vuông có bốn cạnh",
+        "words": ["hình", "vuông", "có", "bốn", "cạnh"]
+      },
+      "answerKey": {
+        "words": ["hình", "vuông", "có", "bốn", "cạnh"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"hình vuông có bốn cạnh\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to phép tính này nhé!"
+      },
+      "readTarget": {
+        "text": "hình tam giác có ba cạnh",
+        "words": ["hình", "tam", "giác", "có", "ba", "cạnh"]
+      },
+      "answerKey": {
+        "words": ["hình", "tam", "giác", "có", "ba", "cạnh"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"hình tam giác có ba cạnh\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà nghe."
+      },
+      "readTarget": {
+        "text": "hình chữ nhật có bốn góc",
+        "words": ["hình", "chữ", "nhật", "có", "bốn", "góc"]
+      },
+      "answerKey": {
+        "words": ["hình", "chữ", "nhật", "có", "bốn", "góc"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"hình chữ nhật có bốn góc\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ một hình vuông và một hình tròn vào vở."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["hình vuông, hình tròn"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: hình vuông, hình tròn.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ ngôi nhà bằng hình vuông và hình tam giác."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["mái tam giác, thân vuông"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: mái tam giác, thân vuông.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinh-0037",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm 2 đồ vật hình tròn trong nhà, vẽ lại."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["đồng hồ, cái đĩa"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: đồng hồ, cái đĩa.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B07",
+        "sourceRef": "SGK Toán 1 tập một, Bài 7 tr.46–49"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1365 @@
+{
+  "skillCode": "ESCI.PS.SOUND_VIBRATION",
+  "subject": "ESCI",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Vật rung tạo ra âm; hết rung thì hết âm. Ô nhiễu nhắm hai lỗi: 'chỉ loa mới phát ra âm' và không nối rung động với âm (chọn 'nó sáng lên', 'nó tan ra').",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-vibrate-0001",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "You hit a drum. What does the drum skin do?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥁",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It shakes."
+        },
+        {
+          "id": "b",
+          "text": "It melts."
+        },
+        {
+          "id": "c",
+          "text": "It glows."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: It shakes.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-vibrate-0002",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which one is vibrating to make a sound?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🪨",
+            "labelEn": "rock"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🔔",
+            "labelEn": "ringing bell"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "📕",
+            "labelEn": "closed book"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: ringing bell",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-vibrate-0003",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sounds come from things that…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sleep"
+        },
+        {
+          "id": "b",
+          "text": "melt"
+        },
+        {
+          "id": "c",
+          "text": "vibrate (shake fast)"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: vibrate (shake fast)",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-vibrate-0004",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Touch your throat and hum. What do you feel?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a buzzing shake"
+        },
+        {
+          "id": "b",
+          "text": "cold water"
+        },
+        {
+          "id": "c",
+          "text": "nothing at all"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: a buzzing shake",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-vibrate-0005",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "You pluck a guitar string. What happens?",
+        "image": {
+          "kind": "emoji",
+          "value": "🎸",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It stays still."
+        },
+        {
+          "id": "b",
+          "text": "It shakes and makes a sound."
+        },
+        {
+          "id": "c",
+          "text": "It gets longer."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: It shakes and makes a sound.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-vibrate-0006",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which word means 'shake fast'?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vanish"
+        },
+        {
+          "id": "b",
+          "text": "valley"
+        },
+        {
+          "id": "c",
+          "text": "vibrate"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: vibrate",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0007",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "You stop the shaking. What happens to the sound?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "The sound stops."
+        },
+        {
+          "id": "b",
+          "text": "It gets louder."
+        },
+        {
+          "id": "c",
+          "text": "It turns into light."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: The sound stops.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0008",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "You hold a ringing bell tight. What happens?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It rings louder."
+        },
+        {
+          "id": "b",
+          "text": "The ringing stops."
+        },
+        {
+          "id": "c",
+          "text": "It flies away."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: The ringing stops.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0009",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "You pluck a rubber band. What do you see?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It changes colour."
+        },
+        {
+          "id": "b",
+          "text": "It disappears."
+        },
+        {
+          "id": "c",
+          "text": "It shakes fast."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: It shakes fast.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0010",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Rice on a drum jumps when you hit it. Why?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "The drum is shaking."
+        },
+        {
+          "id": "b",
+          "text": "The rice is alive."
+        },
+        {
+          "id": "c",
+          "text": "The rice is hot."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: The drum is shaking.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0011",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is true?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Only speakers make sound."
+        },
+        {
+          "id": "b",
+          "text": "Many things make sound when they shake."
+        },
+        {
+          "id": "c",
+          "text": "Sound comes from light."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Many things make sound when they shake.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0012",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Why does the bell ring?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔔",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It is shiny."
+        },
+        {
+          "id": "b",
+          "text": "It is round."
+        },
+        {
+          "id": "c",
+          "text": "It shakes when you hit it."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: It shakes when you hit it.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0013",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "A bee buzzes. What makes the buzz?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Its wings shake fast."
+        },
+        {
+          "id": "b",
+          "text": "Its eyes are big."
+        },
+        {
+          "id": "c",
+          "text": "It is yellow."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Its wings shake fast.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0014",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Put your hand on a speaker playing music. You feel…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cold"
+        },
+        {
+          "id": "b",
+          "text": "shaking"
+        },
+        {
+          "id": "c",
+          "text": "wet"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: shaking",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0015",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "You talk. What shakes inside your throat?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "your teeth"
+        },
+        {
+          "id": "b",
+          "text": "your hair"
+        },
+        {
+          "id": "c",
+          "text": "your voice box"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: your voice box",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-vibrate-0016",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right one."
+      },
+      "listenTarget": {
+        "text": "drum"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🎸",
+            "labelEn": "guitar"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🥁",
+            "labelEn": "drum"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🔔",
+            "labelEn": "bell"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"drum\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-vibrate-0017",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says something. Tap it!"
+      },
+      "listenTarget": {
+        "text": "bell"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🥁",
+            "labelEn": "drum"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🎺",
+            "labelEn": "trumpet"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🔔",
+            "labelEn": "bell"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"bell\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0018",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "guitar"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🎸",
+            "labelEn": "guitar"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🎻",
+            "labelEn": "violin"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🥁",
+            "labelEn": "drum"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"guitar\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0019",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "trumpet"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🎸",
+            "labelEn": "guitar"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🎺",
+            "labelEn": "trumpet"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🔔",
+            "labelEn": "bell"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"trumpet\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0020",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. What should you do?"
+      },
+      "listenTarget": {
+        "text": "Hum and touch your throat."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hát to và vỗ tay"
+        },
+        {
+          "id": "b",
+          "text": "Chạm vào tai"
+        },
+        {
+          "id": "c",
+          "text": "Ngân nga và chạm vào cổ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Hum and touch your throat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0021",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap what you heard."
+      },
+      "listenTarget": {
+        "text": "violin"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🎻",
+            "labelEn": "violin"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🎺",
+            "labelEn": "trumpet"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🥁",
+            "labelEn": "drum"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"violin\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0022",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What makes the sound stop?"
+      },
+      "listenTarget": {
+        "text": "When the string stops shaking, the sound stops."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "The string gets longer."
+        },
+        {
+          "id": "b",
+          "text": "The string stops shaking."
+        },
+        {
+          "id": "c",
+          "text": "The room gets dark."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"When the string stops shaking, the sound stops.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0023",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Why does the rice jump?"
+      },
+      "listenTarget": {
+        "text": "Put rice on a drum. Hit it. The rice jumps."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "The rice is hungry."
+        },
+        {
+          "id": "b",
+          "text": "The drum is cold."
+        },
+        {
+          "id": "c",
+          "text": "The drum shakes."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Put rice on a drum. Hit it. The rice jumps.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0024",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Does it make a sound when you play it?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "drum"
+        },
+        {
+          "id": "b0",
+          "text": "pillow"
+        },
+        {
+          "id": "a1",
+          "text": "bell"
+        },
+        {
+          "id": "b1",
+          "text": "sock"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Makes music",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Silent",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "drum, bell go in \"Makes music\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0025",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Shaking or still? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "a ringing bell"
+        },
+        {
+          "id": "b0",
+          "text": "a sleeping cat"
+        },
+        {
+          "id": "a1",
+          "text": "a buzzing bee"
+        },
+        {
+          "id": "b1",
+          "text": "a closed book"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Shaking",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Still",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "a ringing bell, a buzzing bee go in \"Shaking\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0026",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Pluck it or hit it? Sort the instruments."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "harp"
+        },
+        {
+          "id": "b1",
+          "text": "xylophone"
+        },
+        {
+          "id": "a0",
+          "text": "guitar"
+        },
+        {
+          "id": "b0",
+          "text": "drum"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Pluck it",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "Hit it",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "guitar, harp go in \"Pluck it\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-vibrate-0027",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Sound comes from vibration.",
+        "words": ["Sound", "comes", "from", "vibration"]
+      },
+      "answerKey": {
+        "words": ["Sound", "comes", "from", "vibration"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Sound comes from vibration.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0028",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "The drum skin shakes.",
+        "words": ["The", "drum", "skin", "shakes"]
+      },
+      "answerKey": {
+        "words": ["The", "drum", "skin", "shakes"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"The drum skin shakes.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0029",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "I hum and feel my throat.",
+        "words": ["I", "hum", "and", "feel", "my", "throat"]
+      },
+      "answerKey": {
+        "words": ["I", "hum", "and", "feel", "my", "throat"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"I hum and feel my throat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0030",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "When the shaking stops, the sound stops.",
+        "words": ["When", "the", "shaking", "stops", "the", "sound", "stops"]
+      },
+      "answerKey": {
+        "words": ["When", "the", "shaking", "stops", "the", "sound", "stops"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"When the shaking stops, the sound stops.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0031",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Vibrate means shake fast.",
+        "words": ["Vibrate", "means", "shake", "fast"]
+      },
+      "answerKey": {
+        "words": ["Vibrate", "means", "shake", "fast"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Vibrate means shake fast.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0032",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "A guitar string shakes to make music.",
+        "words": ["A", "guitar", "string", "shakes", "to", "make", "music"]
+      },
+      "answerKey": {
+        "words": ["A", "guitar", "string", "shakes", "to", "make", "music"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"A guitar string shakes to make music.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0033",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a drum. Write: vibrate."
+      },
+      "rubric": {
+        "criteria": ["Vẽ cái trống", "Viết đúng từ vibrate"],
+        "sampleAnswers": ["a drum, vibrate"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: a drum, vibrate",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0034",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Hum and touch your throat. Draw what you feel."
+      },
+      "rubric": {
+        "criteria": ["Vẽ cổ họng có vạch rung", "Có ghi chú ngắn"],
+        "sampleAnswers": ["a buzzing throat"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: a buzzing throat",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-vibrate-0035",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.SOUND_VIBRATION"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw two things that make sound."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đủ hai vật", "Hai vật đều phát ra âm"],
+        "sampleAnswers": ["bell, drum"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: bell, drum",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-1 (sound and vibration) — chưa có sách English Science của trường"
+      }
+    }
+  ]
+}

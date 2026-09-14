@@ -103,3 +103,51 @@ export function listenPrompt(list, spoken, i) {
 
 /** Capitalises a sentence that starts with an interpolated label ("dấu huyền là ..."). */
 export const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : s);
+
+/**
+ * A pack being built: `add` fills id, language, skill and the meta every exercise shares; `save`
+ * writes the file. Used by the đợt-3 generators so a pack is data plus a handful of `add` calls.
+ */
+export function mkPack({
+  dir,
+  code,
+  subject,
+  prefix,
+  language,
+  src,
+  unit = null,
+  lessonRefs = [],
+  note,
+}) {
+  const list = [];
+  let n = 0;
+  return {
+    list,
+    add(e) {
+      n += 1;
+      list.push(
+        ex({
+          id: numberId(prefix, n),
+          language,
+          skillCodes: [code],
+          ...e,
+          meta: { estSeconds: 25, lessonUnitCode: unit, sourceRef: src, ...(e.meta ?? {}) },
+        }),
+      );
+    },
+    save() {
+      writePack(`content/exercises/${dir}/${code.split(".").slice(1).join(".")}.pack.json`, {
+        skillCode: code,
+        subject,
+        generatedBy: "claude-code",
+        promptVersion: "exercise-gen-v3",
+        lessonRefs,
+        note,
+        exercises: list,
+      });
+    },
+  };
+}
+
+/** i-th item of a list, wrapping. */
+export const at = (list, i) => list[((i % list.length) + list.length) % list.length];

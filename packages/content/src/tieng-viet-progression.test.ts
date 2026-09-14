@@ -89,6 +89,12 @@ describe("the phase-2 bugs this check exists for", () => {
     expect(untaughtPartsOf("tay", taughtUpTo(38))).toEqual([]);
   });
 
+  it("counts p as taught with ph (SGK tr.64 prints p – ph), so the p-rimes of bài 53–56 pass", () => {
+    expect(untaughtPartsOf("đạp", taughtUpTo(25))).toContain('chữ "p"');
+    expect(untaughtPartsOf("đạp", taughtUpTo(53))).toEqual([]);
+    expect(untaughtPartsOf("búp", taughtUpTo(56))).toEqual([]);
+  });
+
   it("lets a single letter through — picking a out of unknown letters is the bài 1 task", () => {
     expect(isSingleGrapheme("o")).toBe(true);
     expect(isSingleGrapheme("ngh")).toBe(true);

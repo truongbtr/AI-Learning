@@ -1,0 +1,1403 @@
+{
+  "skillCode": "VMATH.GT.BAI_TOAN_THEM",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B10", "KNTT-T1-B18", "KNTT-T1-B30"],
+  "note": "Bài toán 'thêm': đọc đề, chọn phép cộng, tính. Ô 'làm phép trừ' mang nham_cong_tru, ô 'chép lại số trong đề' mang lap_lai_tong.",
+  "exercises": [
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "id": "vmath-toanthem-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Lan có 3 cái kẹo, mẹ cho thêm 2 cái. Lan có tất cả mấy cái kẹo?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍬",
+          "labelVi": "cái kẹo",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 3 cộng 2."],
+      "explanation": "3 + 2 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-toanthem-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trên cây có 4 con chim, 3 con bay tới. Có tất cả mấy con chim?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 4 cộng 3."],
+      "explanation": "4 + 3 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-toanthem-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bể có 5 con cá, thả thêm 4 con. Bể có tất cả mấy con cá?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 5 cộng 4."],
+      "explanation": "5 + 4 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "id": "vmath-toanthem-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 6 quả bóng, mua thêm 2 quả. Có tất cả mấy quả bóng?",
+        "image": {
+          "kind": "emoji",
+          "value": "⚽",
+          "labelVi": "quả bóng",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 6 cộng 2."],
+      "explanation": "6 + 2 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-toanthem-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Vườn có 2 cây cam, trồng thêm 5 cây. Có tất cả mấy cây?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌳",
+          "labelVi": "cây cam",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 2 cộng 5."],
+      "explanation": "2 + 5 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "vmath-toanthem-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nam có 7 viên bi, được cho thêm 1 viên. Nam có tất cả mấy viên?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔵",
+          "labelVi": "viên bi",
+          "repeat": 7
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 7 cộng 1."],
+      "explanation": "7 + 1 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 3 bạn đang chơi, 3 bạn nữa đến chơi. Có tất cả mấy bạn?",
+        "image": {
+          "kind": "emoji",
+          "value": "🧒",
+          "labelVi": "bạn",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 3 cộng 3."],
+      "explanation": "3 + 3 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lọ có 4 bông hoa, cắm thêm 4 bông. Lọ có tất cả mấy bông?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 4 cộng 4."],
+      "explanation": "4 + 4 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 con gà, 5 con gà nữa chạy tới. Có tất cả mấy con gà?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐔",
+          "labelVi": "con gà",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 5 cộng 5."],
+      "explanation": "5 + 5 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Mi có 1 quyển sách, được tặng thêm 6 quyển. Mi có tất cả mấy quyển?",
+        "image": {
+          "kind": "emoji",
+          "value": "📖",
+          "labelVi": "quyển sách",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 1 cộng 6."],
+      "explanation": "1 + 6 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 8 quả táo, hái thêm 2 quả. Có tất cả mấy quả táo?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 8 cộng 2."],
+      "explanation": "8 + 2 = 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 2 con vịt, 7 con vịt bơi tới. Có tất cả mấy con vịt?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦆",
+          "labelVi": "con vịt",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chữ 'thêm' báo hiệu phép cộng.", "Lấy 2 cộng 7."],
+      "explanation": "2 + 7 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 3 cái kẹo, thêm 2 cái kẹo. Kéo dấu đúng: 3 ? 2"
+      },
+      "dragItems": [
+        {
+          "id": "cong",
+          "text": "+"
+        },
+        {
+          "id": "tru",
+          "text": "-",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Dấu",
+          "accepts": ["cong", "tru"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["cong"]
+      },
+      "hints": ["Thêm vào thì số lượng nhiều lên."],
+      "explanation": "Thêm vào nên dùng dấu cộng: 3 + 2.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 4 con chim, thêm 3 con chim. Kéo dấu đúng: 4 ? 3"
+      },
+      "dragItems": [
+        {
+          "id": "cong",
+          "text": "+"
+        },
+        {
+          "id": "tru",
+          "text": "-",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Dấu",
+          "accepts": ["cong", "tru"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["cong"]
+      },
+      "hints": ["Thêm vào thì số lượng nhiều lên."],
+      "explanation": "Thêm vào nên dùng dấu cộng: 4 + 3.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 con cá, thêm 4 con cá. Kéo dấu đúng: 5 ? 4"
+      },
+      "dragItems": [
+        {
+          "id": "cong",
+          "text": "+"
+        },
+        {
+          "id": "tru",
+          "text": "-",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Dấu",
+          "accepts": ["cong", "tru"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["cong"]
+      },
+      "hints": ["Thêm vào thì số lượng nhiều lên."],
+      "explanation": "Thêm vào nên dùng dấu cộng: 5 + 4.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 6 quả bóng, thêm 2 quả bóng. Kéo dấu đúng: 6 ? 2"
+      },
+      "dragItems": [
+        {
+          "id": "cong",
+          "text": "+"
+        },
+        {
+          "id": "tru",
+          "text": "-",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Dấu",
+          "accepts": ["cong", "tru"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["cong"]
+      },
+      "hints": ["Thêm vào thì số lượng nhiều lên."],
+      "explanation": "Thêm vào nên dùng dấu cộng: 6 + 2.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 2 cây cam, thêm 5 cây cam. Kéo dấu đúng: 2 ? 5"
+      },
+      "dragItems": [
+        {
+          "id": "cong",
+          "text": "+"
+        },
+        {
+          "id": "tru",
+          "text": "-",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Dấu",
+          "accepts": ["cong", "tru"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["cong"]
+      },
+      "hints": ["Thêm vào thì số lượng nhiều lên."],
+      "explanation": "Thêm vào nên dùng dấu cộng: 2 + 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 7 viên bi, thêm 1 viên bi. Kéo dấu đúng: 7 ? 1"
+      },
+      "dragItems": [
+        {
+          "id": "cong",
+          "text": "+"
+        },
+        {
+          "id": "tru",
+          "text": "-",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "dau",
+          "label": "Dấu",
+          "accepts": ["cong", "tru"]
+        }
+      ],
+      "answerKey": {
+        "dau": ["cong"]
+      },
+      "hints": ["Thêm vào thì số lượng nhiều lên."],
+      "explanation": "Thêm vào nên dùng dấu cộng: 7 + 1.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Có ba cái kẹo, thêm hai cái kẹo. Có tất cả mấy cái kẹo?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại đề, nhớ hai con số."],
+      "explanation": "3 + 2 = 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có bốn con chim, thêm ba con chim. Có tất cả mấy con chim?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Thêm vào là cộng."],
+      "explanation": "4 + 3 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "Có năm con cá, thêm bốn con cá. Có tất cả mấy con cá?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại đề, nhớ hai con số."],
+      "explanation": "5 + 4 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "Có sáu quả bóng, thêm hai quả bóng. Có tất cả mấy quả bóng?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Thêm vào là cộng."],
+      "explanation": "6 + 2 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có hai cây cam, thêm năm cây cam. Có tất cả mấy cây cam?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại đề, nhớ hai con số."],
+      "explanation": "2 + 5 = 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "Có bảy viên bi, thêm một viên bi. Có tất cả mấy viên bi?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Thêm vào là cộng."],
+      "explanation": "7 + 1 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "Có ba bạn, thêm ba bạn. Có tất cả mấy bạn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại đề, nhớ hai con số."],
+      "explanation": "3 + 3 = 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-toanthem-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "Có bốn bông hoa, thêm bốn bông hoa. Có tất cả mấy bông hoa?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Thêm vào là cộng."],
+      "explanation": "4 + 4 = 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-toanthem-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm tất cả cái kẹo sau khi thêm nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍬",
+          "labelVi": "cái kẹo",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có năm cái kẹo.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-toanthem-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm tất cả con chim sau khi thêm nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "repeat": 7
+        },
+        "correctCount": 7,
+        "layout": "line"
+      },
+      "answerKey": 7,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có bảy con chim.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-toanthem-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm tất cả con cá sau khi thêm nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "repeat": 9
+        },
+        "correctCount": 9,
+        "layout": "grid"
+      },
+      "answerKey": 9,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có chín con cá.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-toanthem-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm tất cả quả bóng sau khi thêm nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⚽",
+          "labelVi": "quả bóng",
+          "repeat": 8
+        },
+        "correctCount": 8,
+        "layout": "line"
+      },
+      "answerKey": 8,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có tám quả bóng.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-toanthem-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "ba cộng hai bằng năm",
+        "words": ["ba", "cộng", "hai", "bằng", "năm"]
+      },
+      "answerKey": {
+        "words": ["ba", "cộng", "hai", "bằng", "năm"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"ba cộng hai bằng năm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-toanthem-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "bốn thêm ba là bảy",
+        "words": ["bốn", "thêm", "ba", "là", "bảy"]
+      },
+      "answerKey": {
+        "words": ["bốn", "thêm", "ba", "là", "bảy"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"bốn thêm ba là bảy\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-toanthem-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to phép tính này nhé!"
+      },
+      "readTarget": {
+        "text": "có tất cả tám quả táo",
+        "words": ["có", "tất", "cả", "tám", "quả", "táo"]
+      },
+      "answerKey": {
+        "words": ["có", "tất", "cả", "tám", "quả", "táo"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"có tất cả tám quả táo\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-toanthem-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết phép tính cho bài: 3 cái kẹo thêm 2 cái."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["3 + 2 = 5"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 3 + 2 = 5.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-toanthem-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết phép tính cho bài: 6 quả bóng thêm 2 quả."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["6 + 2 = 8"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 6 + 2 = 8.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-toanthem-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.GT.BAI_TOAN_THEM"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con tự nghĩ một bài toán thêm, viết phép tính."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["4 + 1 = 5"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 4 + 1 = 5.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B10",
+        "sourceRef": "SGK Toán 1 tập một, Bài 10 tr.56 và Bài 18 (bài toán có lời văn dạng thêm)"
+      }
+    }
+  ]
+}

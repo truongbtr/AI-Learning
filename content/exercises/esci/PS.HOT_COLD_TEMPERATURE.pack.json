@@ -1,0 +1,1336 @@
+{
+  "skillCode": "ESCI.PS.HOT_COLD_TEMPERATURE",
+  "subject": "ESCI",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Nóng – lạnh, nhiệt kế, đá tan. Ô nhiễu nhắm hai lỗi của bản đồ kỹ năng: 'cột nhiệt kế cao là lạnh' và 'áo len tạo ra nhiệt' (áo giữ hơi ấm của cơ thể).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-hotcold-0001",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which is colder?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🧊",
+            "labelEn": "ice"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🍲",
+            "labelEn": "hot soup"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "☕",
+            "labelEn": "hot tea"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: ice",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-hotcold-0002",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which is hotter?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🧊",
+            "labelEn": "ice"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelEn": "fire"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "⛄",
+            "labelEn": "snowman"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: fire",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-hotcold-0003",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What does a thermometer measure?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "how long it is"
+        },
+        {
+          "id": "b",
+          "text": "how heavy it is"
+        },
+        {
+          "id": "c",
+          "text": "how hot or cold it is"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: how hot or cold it is",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-hotcold-0004",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is this?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌡️",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a thermometer"
+        },
+        {
+          "id": "b",
+          "text": "a ruler"
+        },
+        {
+          "id": "c",
+          "text": "a pencil"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: a thermometer",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-hotcold-0005",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "You leave ice in the sun. What happens?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It gets bigger."
+        },
+        {
+          "id": "b",
+          "text": "It melts."
+        },
+        {
+          "id": "c",
+          "text": "It turns into a stone."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: It melts.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-hotcold-0006",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which one feels warm?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🧊",
+            "labelEn": "ice cube"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "❄️",
+            "labelEn": "snowflake"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "☀️",
+            "labelEn": "sunshine"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: sunshine",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0007",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which drink is cold?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "iced water"
+        },
+        {
+          "id": "b",
+          "text": "hot cocoa"
+        },
+        {
+          "id": "c",
+          "text": "hot tea"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: iced water",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0008",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "The red line in a thermometer goes up. It is getting…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "colder"
+        },
+        {
+          "id": "b",
+          "text": "hotter"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: hotter",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0009",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "The red line goes down. It is getting…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "colder"
+        },
+        {
+          "id": "b",
+          "text": "hotter"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: colder",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0010",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which place is the coldest?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🏔️",
+            "labelEn": "snowy mountain"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🏖️",
+            "labelEn": "beach"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🏜️",
+            "labelEn": "desert"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: snowy mountain",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0011",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Water in the freezer turns into…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "steam"
+        },
+        {
+          "id": "b",
+          "text": "ice"
+        },
+        {
+          "id": "c",
+          "text": "juice"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: ice",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0012",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What is the safest way to try hot soup?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Drink it fast."
+        },
+        {
+          "id": "b",
+          "text": "Put your hand in it."
+        },
+        {
+          "id": "c",
+          "text": "Let it cool, then taste a little."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Let it cool, then taste a little.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0013",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "On a hot day, the thermometer line is…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "high"
+        },
+        {
+          "id": "b",
+          "text": "low"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: high",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0014",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A cup of hot tea sits for an hour. It gets…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hotter"
+        },
+        {
+          "id": "b",
+          "text": "cooler"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: cooler",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0015",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Why do we wear a sweater in winter?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It makes heat like a heater."
+        },
+        {
+          "id": "b",
+          "text": "It makes us colder."
+        },
+        {
+          "id": "c",
+          "text": "It keeps our body warmth in."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "A sweater does not make heat. It keeps the warmth of your body close to you.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0016",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chocolate in a hot hand will…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "melt"
+        },
+        {
+          "id": "b",
+          "text": "freeze"
+        },
+        {
+          "id": "c",
+          "text": "grow"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: melt",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-hotcold-0017",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right one."
+      },
+      "listenTarget": {
+        "text": "hot"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lạnh"
+        },
+        {
+          "id": "b",
+          "text": "nóng"
+        },
+        {
+          "id": "c",
+          "text": "ướt"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"hot\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-hotcold-0018",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says something. Tap it!"
+      },
+      "listenTarget": {
+        "text": "cold"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nóng"
+        },
+        {
+          "id": "b",
+          "text": "khô"
+        },
+        {
+          "id": "c",
+          "text": "lạnh"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"cold\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0019",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "thermometer"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🌡️",
+            "labelEn": "thermometer"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "📏",
+            "labelEn": "ruler"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "⏰",
+            "labelEn": "clock"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"thermometer\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0020",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "ice"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🔥",
+            "labelEn": "fire"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🧊",
+            "labelEn": "ice"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "💧",
+            "labelEn": "water"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"ice\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0021",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What happens to the snow?"
+      },
+      "listenTarget": {
+        "text": "The snow melts in the warm sun."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It grows."
+        },
+        {
+          "id": "b",
+          "text": "It gets colder."
+        },
+        {
+          "id": "c",
+          "text": "It melts."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"The snow melts in the warm sun.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0022",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Where does the line go on a hot day?"
+      },
+      "listenTarget": {
+        "text": "The thermometer goes up on a hot day."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "up"
+        },
+        {
+          "id": "b",
+          "text": "down"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"The thermometer goes up on a hot day.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0023",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Where should the ice cream go?"
+      },
+      "listenTarget": {
+        "text": "Put the ice cream in the freezer, or it will melt."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ra nắng"
+        },
+        {
+          "id": "b",
+          "text": "vào ngăn đá"
+        },
+        {
+          "id": "c",
+          "text": "vào lò nướng"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Put the ice cream in the freezer, or it will melt.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0024",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Does a sweater make heat?"
+      },
+      "listenTarget": {
+        "text": "A sweater keeps you warm, but it does not make heat."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "No"
+        },
+        {
+          "id": "b",
+          "text": "Yes"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"A sweater keeps you warm, but it does not make heat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0025",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Hot or cold? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "fire"
+        },
+        {
+          "id": "b0",
+          "text": "ice"
+        },
+        {
+          "id": "a1",
+          "text": "hot soup"
+        },
+        {
+          "id": "b1",
+          "text": "snow"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Hot",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Cold",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "fire, hot soup go in \"Hot\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0026",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the things: hot or cold?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "the sun"
+        },
+        {
+          "id": "b0",
+          "text": "a freezer"
+        },
+        {
+          "id": "a1",
+          "text": "an oven"
+        },
+        {
+          "id": "b1",
+          "text": "ice cream"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Hot",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Cold",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "the sun, an oven go in \"Hot\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0027",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which ones are hot? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "a campfire"
+        },
+        {
+          "id": "b1",
+          "text": "a snowball"
+        },
+        {
+          "id": "a0",
+          "text": "hot cocoa"
+        },
+        {
+          "id": "b0",
+          "text": "an icicle"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Hot",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "Cold",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "hot cocoa, a campfire go in \"Hot\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-hotcold-0028",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Ice is cold.",
+        "words": ["Ice", "is", "cold"]
+      },
+      "answerKey": {
+        "words": ["Ice", "is", "cold"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Ice is cold.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0029",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Fire is hot.",
+        "words": ["Fire", "is", "hot"]
+      },
+      "answerKey": {
+        "words": ["Fire", "is", "hot"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Fire is hot.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0030",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "A thermometer tells how hot it is.",
+        "words": ["A", "thermometer", "tells", "how", "hot", "it", "is"]
+      },
+      "answerKey": {
+        "words": ["A", "thermometer", "tells", "how", "hot", "it", "is"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"A thermometer tells how hot it is.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0031",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Ice melts in the sun.",
+        "words": ["Ice", "melts", "in", "the", "sun"]
+      },
+      "answerKey": {
+        "words": ["Ice", "melts", "in", "the", "sun"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Ice melts in the sun.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0032",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "The red line goes up when it is hot.",
+        "words": ["The", "red", "line", "goes", "up", "when", "it", "is", "hot"]
+      },
+      "answerKey": {
+        "words": ["The", "red", "line", "goes", "up", "when", "it", "is", "hot"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The red line goes up when it is hot.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0033",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "A sweater keeps my body warm.",
+        "words": ["A", "sweater", "keeps", "my", "body", "warm"]
+      },
+      "answerKey": {
+        "words": ["A", "sweater", "keeps", "my", "body", "warm"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"A sweater keeps my body warm.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0034",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw something hot and something cold."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đủ hai vật", "Một vật nóng, một vật lạnh", "Có ghi hot / cold"],
+        "sampleAnswers": ["fire, ice"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: fire, ice",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-hotcold-0035",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.HOT_COLD_TEMPERATURE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a thermometer on a hot day."
+      },
+      "rubric": {
+        "criteria": ["Vẽ nhiệt kế", "Vạch đỏ lên cao"],
+        "sampleAnswers": ["a thermometer with a high line"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: a thermometer with a high line",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Chuẩn quốc tế INTL.MATERIALS (hot and cold, thermometers) — chưa có sách English Science của trường"
+      }
+    }
+  ]
+}

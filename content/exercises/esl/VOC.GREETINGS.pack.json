@@ -1,0 +1,1429 @@
+{
+  "skillCode": "ESL.VOC.GREETINGS",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Chào hỏi, hỏi tên, hỏi tuổi. Ô nhiễu là câu trả lời cho câu hỏi khác (con hay trả lời 'I'm six' khi được hỏi tên) và câu rơi mất một từ ('My name Sam').",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-greet-0001",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Someone says hello to you. What do you say?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hello!"
+        },
+        {
+          "id": "b",
+          "text": "Goodbye!"
+        },
+        {
+          "id": "c",
+          "text": "Thank you!"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Hello!",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-greet-0002",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "It is time to go home. What do you say?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hello!"
+        },
+        {
+          "id": "b",
+          "text": "Goodbye!"
+        },
+        {
+          "id": "c",
+          "text": "Good morning!"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Goodbye!",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-greet-0003",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What's your name?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm six."
+        },
+        {
+          "id": "b",
+          "text": "I'm fine."
+        },
+        {
+          "id": "c",
+          "text": "I'm Sam."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The question asks for a name."],
+      "explanation": "The answer is: I'm Sam.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-greet-0004",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How old are you?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm six."
+        },
+        {
+          "id": "b",
+          "text": "I'm Sam."
+        },
+        {
+          "id": "c",
+          "text": "I'm fine."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["The question asks for a number."],
+      "explanation": "The answer is: I'm six.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-greet-0005",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How are you?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm six."
+        },
+        {
+          "id": "b",
+          "text": "I'm fine, thank you."
+        },
+        {
+          "id": "c",
+          "text": "My name is Sam."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The question asks how you feel."],
+      "explanation": "The answer is: I'm fine, thank you.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "esl-greet-0006",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which answer is right? What's your name?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "My name Sam.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "b",
+          "text": "Name is my Sam."
+        },
+        {
+          "id": "c",
+          "text": "My name is Sam."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: My name is Sam.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "none",
+      "id": "esl-greet-0007",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Choose the right sentence."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I am six years old."
+        },
+        {
+          "id": "b",
+          "text": "I six years old.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "c",
+          "text": "I am six year old."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I am six years old.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0008",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "It is morning at school. What do you say?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Good night!"
+        },
+        {
+          "id": "b",
+          "text": "Good morning!"
+        },
+        {
+          "id": "c",
+          "text": "Goodbye!"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Good morning!",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0009",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A new friend says \"Nice to meet you!\" You say:"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Goodbye!"
+        },
+        {
+          "id": "b",
+          "text": "I'm six."
+        },
+        {
+          "id": "c",
+          "text": "Nice to meet you, too!"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Nice to meet you, too!",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0010",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which question asks how old you are?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "How old are you?"
+        },
+        {
+          "id": "b",
+          "text": "What's your name?"
+        },
+        {
+          "id": "c",
+          "text": "How are you?"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: How old are you?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0011",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which question asks your name?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "How old are you?"
+        },
+        {
+          "id": "b",
+          "text": "What's your name?"
+        },
+        {
+          "id": "c",
+          "text": "How are you?"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: What's your name?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0012",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tom says \"I'm seven.\" Seven is Tom's…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "name"
+        },
+        {
+          "id": "b",
+          "text": "class"
+        },
+        {
+          "id": "c",
+          "text": "age"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Seven is a number."],
+      "explanation": "The answer is: age",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-greet-0013",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. What do you say back?"
+      },
+      "listenTarget": {
+        "text": "What's your name?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm six."
+        },
+        {
+          "id": "b",
+          "text": "I'm Sam."
+        },
+        {
+          "id": "c",
+          "text": "Goodbye!"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"What's your name?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-greet-0014",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} talks to you. Tap your answer."
+      },
+      "listenTarget": {
+        "text": "How old are you?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm Sam."
+        },
+        {
+          "id": "b",
+          "text": "Hello!"
+        },
+        {
+          "id": "c",
+          "text": "I'm six."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"How old are you?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0015",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then pick the best answer."
+      },
+      "listenTarget": {
+        "text": "Hello! I'm Ben."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hello, Ben!"
+        },
+        {
+          "id": "b",
+          "text": "Goodbye, Ben!"
+        },
+        {
+          "id": "c",
+          "text": "I'm six."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Hello! I'm Ben.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0016",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is a good reply? Tap it."
+      },
+      "listenTarget": {
+        "text": "Goodbye! See you tomorrow."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hello!"
+        },
+        {
+          "id": "b",
+          "text": "Bye! See you!"
+        },
+        {
+          "id": "c",
+          "text": "Nice to meet you!"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Goodbye! See you tomorrow.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0017",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then answer."
+      },
+      "listenTarget": {
+        "text": "How are you today?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm seven."
+        },
+        {
+          "id": "b",
+          "text": "My name is Sam."
+        },
+        {
+          "id": "c",
+          "text": "I'm fine, thank you."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"How are you today?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0018",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and choose a reply."
+      },
+      "listenTarget": {
+        "text": "Good morning, class!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Good morning, teacher!"
+        },
+        {
+          "id": "b",
+          "text": "Good night, teacher!"
+        },
+        {
+          "id": "c",
+          "text": "Goodbye, teacher!"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Good morning, class!\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0019",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. What do you say back?"
+      },
+      "listenTarget": {
+        "text": "I'm Lily. What's your name?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm seven years old."
+        },
+        {
+          "id": "b",
+          "text": "My name is Sam."
+        },
+        {
+          "id": "c",
+          "text": "Yes, it is."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"I'm Lily. What's your name?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0020",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} talks to you. Tap your answer."
+      },
+      "listenTarget": {
+        "text": "This is my friend, Nam."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Goodbye, Nam!"
+        },
+        {
+          "id": "b",
+          "text": "I'm fine, Nam."
+        },
+        {
+          "id": "c",
+          "text": "Nice to meet you, Nam!"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"This is my friend, Nam.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0021",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put the words in order."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "My"
+        },
+        {
+          "id": "w3",
+          "text": "Sam"
+        },
+        {
+          "id": "w2",
+          "text": "is"
+        },
+        {
+          "id": "w1",
+          "text": "name"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"My name is Sam.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0022",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Build the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w2",
+          "text": "six"
+        },
+        {
+          "id": "w0",
+          "text": "I"
+        },
+        {
+          "id": "w3",
+          "text": "years"
+        },
+        {
+          "id": "w1",
+          "text": "am"
+        },
+        {
+          "id": "w4",
+          "text": "old"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        },
+        {
+          "id": "s4",
+          "label": "5",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"],
+        "s4": ["w4"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"I am six years old.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0023",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the words to make a sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w2",
+          "text": "meet"
+        },
+        {
+          "id": "w1",
+          "text": "to"
+        },
+        {
+          "id": "w0",
+          "text": "Nice"
+        },
+        {
+          "id": "w3",
+          "text": "you"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"Nice to meet you.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0024",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} fix the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w3",
+          "text": "you"
+        },
+        {
+          "id": "w2",
+          "text": "are"
+        },
+        {
+          "id": "w1",
+          "text": "old"
+        },
+        {
+          "id": "w0",
+          "text": "How"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"How old are you?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0025",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Make a sentence with these words."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "What"
+        },
+        {
+          "id": "w3",
+          "text": "name"
+        },
+        {
+          "id": "w2",
+          "text": "your"
+        },
+        {
+          "id": "w1",
+          "text": "is"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"What is your name?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0026",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Hello words or goodbye words? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "Hi!"
+        },
+        {
+          "id": "b0",
+          "text": "Bye!"
+        },
+        {
+          "id": "a1",
+          "text": "Good morning!"
+        },
+        {
+          "id": "b1",
+          "text": "See you!"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Hello",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Goodbye",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "Hi!, Good morning! go in \"Hello\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0027",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Is it a question or an answer?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "How old are you?"
+        },
+        {
+          "id": "b0",
+          "text": "I'm six."
+        },
+        {
+          "id": "a1",
+          "text": "What's your name?"
+        },
+        {
+          "id": "b1",
+          "text": "I'm Sam."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Question",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Answer",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "How old are you?, What's your name? go in \"Question\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-greet-0028",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Hello! My name is Sam.",
+        "words": ["Hello", "My", "name", "is", "Sam"]
+      },
+      "answerKey": {
+        "words": ["Hello", "My", "name", "is", "Sam"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Hello! My name is Sam.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0029",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "I am six years old.",
+        "words": ["I", "am", "six", "years", "old"]
+      },
+      "answerKey": {
+        "words": ["I", "am", "six", "years", "old"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"I am six years old.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0030",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "How are you?",
+        "words": ["How", "are", "you"]
+      },
+      "answerKey": {
+        "words": ["How", "are", "you"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"How are you?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0031",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "I'm fine, thank you.",
+        "words": ["I'm", "fine", "thank", "you"]
+      },
+      "answerKey": {
+        "words": ["I'm", "fine", "thank", "you"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"I'm fine, thank you.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0032",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Goodbye! See you tomorrow.",
+        "words": ["Goodbye", "See", "you", "tomorrow"]
+      },
+      "answerKey": {
+        "words": ["Goodbye", "See", "you", "tomorrow"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Goodbye! See you tomorrow.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0033",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write how old you are: I am ___ years old."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["I am six years old."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: I am six years old.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0034",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw you and a friend. Write: Hello!"
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["Hello!"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: Hello!",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-greet-0035",
+      "language": "en",
+      "skillCodes": ["ESL.VOC.GREETINGS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write a question for a new friend."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["How old are you?"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: How old are you?",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân (bảng chương trình) — chưa chụp trang sách"
+      }
+    }
+  ]
+}

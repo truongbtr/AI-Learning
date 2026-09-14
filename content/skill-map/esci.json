@@ -71,8 +71,15 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": ["ESCI.PS.LOUD_SOFT_HIGH_LOW"],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "SPEAK_ANSWER",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.PS.LOUD_SOFT_HIGH_LOW",
@@ -87,8 +94,8 @@
       "prerequisites": ["ESCI.PS.SOUND_VIBRATION"],
       "relatedSkillCodes": [],
       "confusableWith": ["ESCI.PS.SOUND_VIBRATION"],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.PS.COMMUNICATE_LIGHT_SOUND",
@@ -103,8 +110,15 @@
       "prerequisites": ["ESCI.PS.LIGHT_SEE", "ESCI.PS.SOUND_VIBRATION"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "SPEAK_ANSWER"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.PS.MATERIALS_PROPERTIES",
@@ -166,8 +180,8 @@
       "prerequisites": [],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.PS.MAGNETS",
@@ -182,8 +196,8 @@
       "prerequisites": ["ESCI.PS.MATERIALS_PROPERTIES"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["DRAG_DROP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.PS.HOT_COLD_TEMPERATURE",
@@ -198,8 +212,8 @@
       "prerequisites": [],
       "relatedSkillCodes": ["ESCI.ES.WATER_FORMS"],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.LS.LIVING_NONLIVING",
@@ -590,8 +604,15 @@
       "prerequisites": ["ESCI.INQ.OBSERVE_DESCRIBE"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESCI.INQ.PREDICT",

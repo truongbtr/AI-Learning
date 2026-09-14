@@ -1,0 +1,1382 @@
+{
+  "skillCode": "ESL.SPK.ANSWER_YES_NO",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Trả lời Is it…? / Do you…? / Can you…? / Are you…? bằng câu ngắn đúng. Dữ kiện (con thích gì, biết làm gì) cho trong ngoặc tiếng Việt để chỉ một câu đúng. Ô nhiễu là trợ động từ nhầm (Yes, it is cho câu Do you) — lỗi thường gặp ghi trong bản đồ kỹ năng.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-yesno-0001",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Is it a cat?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "No, it isn't."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I do."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, it is.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-yesno-0002",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Is it a cat?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐕",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "No, it isn't."
+        },
+        {
+          "id": "c",
+          "text": "No, I don't."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: No, it isn't.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-yesno-0003",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Do you like ice cream? (Con thích.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "No, I don't."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I do."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, I do.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-yesno-0004",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Do you like snakes? (Con không thích.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "No, I don't."
+        },
+        {
+          "id": "b",
+          "text": "No, it isn't."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I do."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: No, I don't.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-yesno-0005",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Can you swim? (Con biết bơi.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I do."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I can."
+        },
+        {
+          "id": "c",
+          "text": "No, I can't."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, I can.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-yesno-0006",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Can you fly? (Con không bay được.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I can't."
+        },
+        {
+          "id": "b",
+          "text": "No, I don't."
+        },
+        {
+          "id": "c",
+          "text": "No, I can't."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: No, I can't.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0007",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Is it red?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "Yes, it's."
+        },
+        {
+          "id": "c",
+          "text": "No, it isn't."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, it is.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0008",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Is it red?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍌",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "No, it isn't."
+        },
+        {
+          "id": "c",
+          "text": "No, it not."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: No, it isn't.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0009",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Have you got a pen? (Con có bút.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I am."
+        },
+        {
+          "id": "b",
+          "text": "No, I haven't."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I have."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, I have.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_is_are",
+      "scaffold": "none",
+      "id": "esl-yesno-0010",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Are you six? (Con sáu tuổi.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I am."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I do."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I is.",
+          "errorTag": "nham_am_is_are"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, I am.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0011",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Do you like apples? Which answer is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I like."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I do."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I am."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, I do.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0012",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Is your bag blue? (Cặp con màu đỏ.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "No, I don't."
+        },
+        {
+          "id": "c",
+          "text": "No, it isn't."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: No, it isn't.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0013",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Do you have a sister? (Con có em gái.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I do."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I am."
+        },
+        {
+          "id": "c",
+          "text": "Yes, it is."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, I do.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0014",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Is it a bird? Look carefully.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "No, it's a fish."
+        },
+        {
+          "id": "c",
+          "text": "No, it's a bird."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: No, it's a fish.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-yesno-0015",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Con có một con mèo.)"
+      },
+      "listenTarget": {
+        "text": "Do you have a cat?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I do."
+        },
+        {
+          "id": "c",
+          "text": "No, I don't."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Do you have a cat?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-yesno-0016",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Tranh là một con chó.)"
+      },
+      "listenTarget": {
+        "text": "Is it a dog?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I do."
+        },
+        {
+          "id": "b",
+          "text": "No, it isn't."
+        },
+        {
+          "id": "c",
+          "text": "Yes, it is."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Is it a dog?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0017",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Con biết đi xe đạp.)"
+      },
+      "listenTarget": {
+        "text": "Can you ride a bike?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I can."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I do."
+        },
+        {
+          "id": "c",
+          "text": "No, I can't."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Can you ride a bike?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0018",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Con không thích cà rốt.)"
+      },
+      "listenTarget": {
+        "text": "Do you like carrots?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "No, it isn't."
+        },
+        {
+          "id": "b",
+          "text": "No, I don't."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I do."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Do you like carrots?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0019",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Con sáu tuổi.)"
+      },
+      "listenTarget": {
+        "text": "Are you seven?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I am."
+        },
+        {
+          "id": "b",
+          "text": "No, I don't."
+        },
+        {
+          "id": "c",
+          "text": "No, I'm not."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Are you seven?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0020",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Hôm nay trời xanh.)"
+      },
+      "listenTarget": {
+        "text": "Is the sky blue?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I am."
+        },
+        {
+          "id": "c",
+          "text": "No, it isn't."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Is the sky blue?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0021",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then answer."
+      },
+      "listenTarget": {
+        "text": "Can a fish walk?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it can."
+        },
+        {
+          "id": "b",
+          "text": "No, it can't."
+        },
+        {
+          "id": "c",
+          "text": "No, I don't."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Can a fish walk?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0022",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Trời đang nắng.)"
+      },
+      "listenTarget": {
+        "text": "Is it raining?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "No, I can't."
+        },
+        {
+          "id": "c",
+          "text": "No, it isn't."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Is it raining?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0023",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Put the words in order."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "Yes"
+        },
+        {
+          "id": "w1",
+          "text": "I"
+        },
+        {
+          "id": "w2",
+          "text": "can"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w1", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w1", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w1", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"Yes, I can.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0024",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Build the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w2",
+          "text": "don't"
+        },
+        {
+          "id": "w0",
+          "text": "No"
+        },
+        {
+          "id": "w1",
+          "text": "I"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w2", "w0", "w1"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w2", "w0", "w1"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w2", "w0", "w1"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"No, I don't.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0025",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the words to make a sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "it"
+        },
+        {
+          "id": "w2",
+          "text": "is"
+        },
+        {
+          "id": "w0",
+          "text": "Yes"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w1", "w2", "w0"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w1", "w2", "w0"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w1", "w2", "w0"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"Yes, it is.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0026",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} fix the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "No"
+        },
+        {
+          "id": "w1",
+          "text": "it"
+        },
+        {
+          "id": "w2",
+          "text": "isn't"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w1", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w1", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w1", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"No, it isn't.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0027",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Yes answers or no answers? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b0",
+          "text": "No, it isn't."
+        },
+        {
+          "id": "a1",
+          "text": "Yes, I can."
+        },
+        {
+          "id": "b1",
+          "text": "No, I can't."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Yes",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "No",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "Yes, it is., Yes, I can. go in \"Yes\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0028",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which question do they answer? Sort."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "Yes, I do."
+        },
+        {
+          "id": "b0",
+          "text": "Yes, I can."
+        },
+        {
+          "id": "a1",
+          "text": "No, I don't."
+        },
+        {
+          "id": "b1",
+          "text": "No, I can't."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Do you…?",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Can you…?",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "Yes, I do., No, I don't. go in \"Do you…?\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-yesno-0029",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Is it a cat? Yes, it is.",
+        "words": ["Is", "it", "a", "cat", "Yes", "it", "is"]
+      },
+      "answerKey": {
+        "words": ["Is", "it", "a", "cat", "Yes", "it", "is"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Is it a cat? Yes, it is.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0030",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Do you like milk? No, I don't.",
+        "words": ["Do", "you", "like", "milk", "No", "I", "don't"]
+      },
+      "answerKey": {
+        "words": ["Do", "you", "like", "milk", "No", "I", "don't"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Do you like milk? No, I don't.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0031",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Can you swim? Yes, I can.",
+        "words": ["Can", "you", "swim", "Yes", "I", "can"]
+      },
+      "answerKey": {
+        "words": ["Can", "you", "swim", "Yes", "I", "can"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Can you swim? Yes, I can.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0032",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Are you six? Yes, I am.",
+        "words": ["Are", "you", "six", "Yes", "I", "am"]
+      },
+      "answerKey": {
+        "words": ["Are", "you", "six", "Yes", "I", "am"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Are you six? Yes, I am.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0033",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Is it red? No, it isn't.",
+        "words": ["Is", "it", "red", "No", "it", "isn't"]
+      },
+      "answerKey": {
+        "words": ["Is", "it", "red", "No", "it", "isn't"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Is it red? No, it isn't.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0034",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Can you swim? Write your answer."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["Yes, I can."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: Yes, I can.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-yesno-0035",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_YES_NO"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Do you like apples? Write your answer."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["Yes, I do."]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: Yes, I do.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Language Review + Unit 1–3 — Be, Can, Like (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    }
+  ]
+}

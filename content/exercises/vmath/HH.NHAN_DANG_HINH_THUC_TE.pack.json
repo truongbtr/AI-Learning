@@ -1,0 +1,1563 @@
+{
+  "skillCode": "VMATH.HH.NHAN_DANG_HINH_THUC_TE",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B09", "KNTT-T1-B16"],
+  "note": "Nhận dạng hình trong đồ vật thật. Trắc nghiệm hỏi số cạnh, số góc của đồ vật; nhận dạng tên hình bằng kéo-thả.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinhthucte-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Biển báo nguy hiểm có mấy góc?",
+        "image": {
+          "kind": "emoji",
+          "value": "⚠️",
+          "labelVi": "biển báo nguy hiểm",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Biển báo nguy hiểm có dạng hình tam giác."],
+      "explanation": "Biển báo nguy hiểm có dạng hình tam giác, có ba góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinhthucte-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số cạnh của khung tranh nhé.",
+        "image": {
+          "kind": "emoji",
+          "value": "🖼️",
+          "labelVi": "khung tranh",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Khung tranh có dạng hình chữ nhật."],
+      "explanation": "Khung tranh có dạng hình chữ nhật, có bốn cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinhthucte-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Cái bánh vuông có mấy góc?",
+        "image": {
+          "kind": "emoji",
+          "value": "🧇",
+          "labelVi": "cái bánh vuông",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Cái bánh vuông có dạng hình vuông."],
+      "explanation": "Cái bánh vuông có dạng hình vuông, có bốn góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinhthucte-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số cạnh của cái ê ke nhé.",
+        "image": {
+          "kind": "emoji",
+          "value": "📐",
+          "labelVi": "cái ê ke",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Cái ê ke có dạng hình tam giác."],
+      "explanation": "Cái ê ke có dạng hình tam giác, có ba cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinhthucte-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Cái điện thoại có mấy góc?",
+        "image": {
+          "kind": "emoji",
+          "value": "📱",
+          "labelVi": "cái điện thoại",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Cái điện thoại có dạng hình chữ nhật."],
+      "explanation": "Cái điện thoại có dạng hình chữ nhật, có bốn góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-hinhthucte-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số cạnh của viên gạch hoa nhé.",
+        "image": {
+          "kind": "emoji",
+          "value": "🔲",
+          "labelVi": "viên gạch hoa",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Viên gạch hoa có dạng hình vuông."],
+      "explanation": "Viên gạch hoa có dạng hình vuông, có bốn cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Cánh cửa có mấy góc?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚪",
+          "labelVi": "cánh cửa",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Cánh cửa có dạng hình chữ nhật."],
+      "explanation": "Cánh cửa có dạng hình chữ nhật, có bốn góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm số cạnh của cái phong bì nhé.",
+        "image": {
+          "kind": "emoji",
+          "value": "✉️",
+          "labelVi": "cái phong bì",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Cái phong bì có dạng hình chữ nhật."],
+      "explanation": "Cái phong bì có dạng hình chữ nhật, có bốn cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Lá cờ đuôi nheo có mấy góc?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚩",
+          "labelVi": "lá cờ đuôi nheo",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Lá cờ đuôi nheo có dạng hình tam giác."],
+      "explanation": "Lá cờ đuôi nheo có dạng hình tam giác, có ba góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Mặt đồng hồ có mấy góc?",
+        "image": {
+          "kind": "emoji",
+          "value": "🕐",
+          "labelVi": "mặt đồng hồ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Hình tròn không có chỗ nhọn nào."],
+      "explanation": "Mặt đồng hồ có dạng hình tròn, không có góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Cái bánh quy có mấy góc?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍪",
+          "labelVi": "cái bánh quy",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Hình tròn không có chỗ nhọn nào."],
+      "explanation": "Cái bánh quy có dạng hình tròn, không có góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Quả bóng có mấy góc?",
+        "image": {
+          "kind": "emoji",
+          "value": "⚽",
+          "labelVi": "quả bóng",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Hình tròn không có chỗ nhọn nào."],
+      "explanation": "Quả bóng có dạng hình tròn, không có góc.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "⚠️",
+          "labelVi": "biển báo nguy hiểm",
+          "repeat": 1
+        }
+      },
+      "listenTarget": {
+        "text": "Đồ vật này có mấy cạnh?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe câu hỏi, chỉ tay vào từng cạnh."],
+      "explanation": "Biển báo nguy hiểm có dạng hình tam giác, có ba cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng.",
+        "image": {
+          "kind": "emoji",
+          "value": "🖼️",
+          "labelVi": "khung tranh",
+          "repeat": 1
+        }
+      },
+      "listenTarget": {
+        "text": "Đồ vật này có mấy cạnh?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đồ vật có dạng hình gì trước đã."],
+      "explanation": "Khung tranh có dạng hình chữ nhật, có bốn cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🧇",
+          "labelVi": "cái bánh vuông",
+          "repeat": 1
+        }
+      },
+      "listenTarget": {
+        "text": "Đồ vật này có mấy cạnh?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe câu hỏi, chỉ tay vào từng cạnh."],
+      "explanation": "Cái bánh vuông có dạng hình vuông, có bốn cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng.",
+        "image": {
+          "kind": "emoji",
+          "value": "📐",
+          "labelVi": "cái ê ke",
+          "repeat": 1
+        }
+      },
+      "listenTarget": {
+        "text": "Đồ vật này có mấy cạnh?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đồ vật có dạng hình gì trước đã."],
+      "explanation": "Cái ê ke có dạng hình tam giác, có ba cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng.",
+        "image": {
+          "kind": "emoji",
+          "value": "📱",
+          "labelVi": "cái điện thoại",
+          "repeat": 1
+        }
+      },
+      "listenTarget": {
+        "text": "Đồ vật này có mấy cạnh?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe câu hỏi, chỉ tay vào từng cạnh."],
+      "explanation": "Cái điện thoại có dạng hình chữ nhật, có bốn cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn.",
+        "image": {
+          "kind": "emoji",
+          "value": "🔲",
+          "labelVi": "viên gạch hoa",
+          "repeat": 1
+        }
+      },
+      "listenTarget": {
+        "text": "Đồ vật này có mấy cạnh?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đồ vật có dạng hình gì trước đã."],
+      "explanation": "Viên gạch hoa có dạng hình vuông, có bốn cạnh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đồ vật này có dạng hình gì? Kéo vào nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "mặt đồng hồ",
+          "image": {
+            "kind": "emoji",
+            "value": "🕐",
+            "labelVi": "mặt đồng hồ"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "biển báo nguy hiểm",
+          "image": {
+            "kind": "emoji",
+            "value": "⚠️",
+            "labelVi": "biển báo nguy hiểm"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình tam giác",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình tròn",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v2"],
+        "h2": ["v1"]
+      },
+      "hints": ["Nhìn xem đồ vật có góc không, có mấy cạnh."],
+      "explanation": "biển báo nguy hiểm có dạng hình tam giác, mặt đồng hồ có dạng hình tròn.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi đồ vật về đúng tên hình."
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "khung tranh",
+          "image": {
+            "kind": "emoji",
+            "value": "🖼️",
+            "labelVi": "khung tranh"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "mặt đồng hồ",
+          "image": {
+            "kind": "emoji",
+            "value": "🕐",
+            "labelVi": "mặt đồng hồ"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình tròn",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình chữ nhật",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v2"],
+        "h2": ["v1"]
+      },
+      "hints": ["Nhìn xem đồ vật có góc không, có mấy cạnh."],
+      "explanation": "mặt đồng hồ có dạng hình tròn, khung tranh có dạng hình chữ nhật.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp đồ vật vào ô hình của nó."
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "cái bánh vuông",
+          "image": {
+            "kind": "emoji",
+            "value": "🧇",
+            "labelVi": "cái bánh vuông"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "khung tranh",
+          "image": {
+            "kind": "emoji",
+            "value": "🖼️",
+            "labelVi": "khung tranh"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình chữ nhật",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình vuông",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v2"],
+        "h2": ["v1"]
+      },
+      "hints": ["Nhìn xem đồ vật có góc không, có mấy cạnh."],
+      "explanation": "khung tranh có dạng hình chữ nhật, cái bánh vuông có dạng hình vuông.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đồ vật này có dạng hình gì? Kéo vào nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "cái ê ke",
+          "image": {
+            "kind": "emoji",
+            "value": "📐",
+            "labelVi": "cái ê ke"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "cái bánh vuông",
+          "image": {
+            "kind": "emoji",
+            "value": "🧇",
+            "labelVi": "cái bánh vuông"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình vuông",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình tam giác",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v2"],
+        "h2": ["v1"]
+      },
+      "hints": ["Nhìn xem đồ vật có góc không, có mấy cạnh."],
+      "explanation": "cái bánh vuông có dạng hình vuông, cái ê ke có dạng hình tam giác.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi đồ vật về đúng tên hình."
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "cái bánh quy",
+          "image": {
+            "kind": "emoji",
+            "value": "🍪",
+            "labelVi": "cái bánh quy"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "cái ê ke",
+          "image": {
+            "kind": "emoji",
+            "value": "📐",
+            "labelVi": "cái ê ke"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình tam giác",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình tròn",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v2"],
+        "h2": ["v1"]
+      },
+      "hints": ["Nhìn xem đồ vật có góc không, có mấy cạnh."],
+      "explanation": "cái ê ke có dạng hình tam giác, cái bánh quy có dạng hình tròn.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp đồ vật vào ô hình của nó."
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "cái điện thoại",
+          "image": {
+            "kind": "emoji",
+            "value": "📱",
+            "labelVi": "cái điện thoại"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "cái bánh quy",
+          "image": {
+            "kind": "emoji",
+            "value": "🍪",
+            "labelVi": "cái bánh quy"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình tròn",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình chữ nhật",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v2"],
+        "h2": ["v1"]
+      },
+      "hints": ["Nhìn xem đồ vật có góc không, có mấy cạnh."],
+      "explanation": "cái bánh quy có dạng hình tròn, cái điện thoại có dạng hình chữ nhật.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đồ vật này có dạng hình gì? Kéo vào nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "viên gạch hoa",
+          "image": {
+            "kind": "emoji",
+            "value": "🔲",
+            "labelVi": "viên gạch hoa"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "cái điện thoại",
+          "image": {
+            "kind": "emoji",
+            "value": "📱",
+            "labelVi": "cái điện thoại"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình chữ nhật",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình vuông",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v2"],
+        "h2": ["v1"]
+      },
+      "hints": ["Nhìn xem đồ vật có góc không, có mấy cạnh."],
+      "explanation": "cái điện thoại có dạng hình chữ nhật, viên gạch hoa có dạng hình vuông.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo mỗi đồ vật về đúng tên hình."
+      },
+      "dragItems": [
+        {
+          "id": "v1",
+          "text": "cánh cửa",
+          "image": {
+            "kind": "emoji",
+            "value": "🚪",
+            "labelVi": "cánh cửa"
+          }
+        },
+        {
+          "id": "v2",
+          "text": "viên gạch hoa",
+          "image": {
+            "kind": "emoji",
+            "value": "🔲",
+            "labelVi": "viên gạch hoa"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "hình vuông",
+          "accepts": ["v1", "v2"]
+        },
+        {
+          "id": "h2",
+          "label": "hình chữ nhật",
+          "accepts": ["v1", "v2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["v2"],
+        "h2": ["v1"]
+      },
+      "hints": ["Nhìn xem đồ vật có góc không, có mấy cạnh."],
+      "explanation": "viên gạch hoa có dạng hình vuông, cánh cửa có dạng hình chữ nhật.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm cái bánh tròn nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍪",
+          "labelVi": "cái bánh tròn",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có năm cái bánh tròn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm khung tranh nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🖼️",
+          "labelVi": "khung tranh",
+          "repeat": 3
+        },
+        "correctCount": 3,
+        "layout": "line"
+      },
+      "answerKey": 3,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có ba khung tranh.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm biển báo tam giác nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⚠️",
+          "labelVi": "biển báo tam giác",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có bốn biển báo tam giác.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm viên gạch vuông nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔲",
+          "labelVi": "viên gạch vuông",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "line"
+      },
+      "answerKey": 6,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có sáu viên gạch vuông.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-hinhthucte-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "mặt đồng hồ có dạng hình tròn",
+        "words": ["mặt", "đồng", "hồ", "có", "dạng", "hình", "tròn"]
+      },
+      "answerKey": {
+        "words": ["mặt", "đồng", "hồ", "có", "dạng", "hình", "tròn"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"mặt đồng hồ có dạng hình tròn\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "cánh cửa có dạng hình chữ nhật",
+        "words": ["cánh", "cửa", "có", "dạng", "hình", "chữ", "nhật"]
+      },
+      "answerKey": {
+        "words": ["cánh", "cửa", "có", "dạng", "hình", "chữ", "nhật"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"cánh cửa có dạng hình chữ nhật\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to phép tính này nhé!"
+      },
+      "readTarget": {
+        "text": "biển báo có dạng hình tam giác",
+        "words": ["biển", "báo", "có", "dạng", "hình", "tam", "giác"]
+      },
+      "answerKey": {
+        "words": ["biển", "báo", "có", "dạng", "hình", "tam", "giác"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"biển báo có dạng hình tam giác\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm một đồ vật hình vuông trong nhà, vẽ lại."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["viên gạch"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: viên gạch.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm một đồ vật hình chữ nhật, vẽ và ghi tên."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["quyển sách"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: quyển sách.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-hinhthucte-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.NHAN_DANG_HINH_THUC_TE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ 3 đồ vật hình tròn con thấy hôm nay."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["đồng hồ, bánh xe, cái đĩa"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: đồng hồ, bánh xe, cái đĩa.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B09",
+        "sourceRef": "SGK Toán 1 tập một, Bài 9 Luyện tập chung tr.54–55"
+      }
+    }
+  ]
+}

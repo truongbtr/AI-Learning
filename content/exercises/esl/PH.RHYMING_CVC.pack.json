@@ -1,0 +1,1363 @@
+{
+  "skillCode": "ESL.PH.RHYMING_CVC",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Từ cùng vần (word families). Mỗi câu đúng một ô có hai chữ cuối trùng từ gốc; ô nhiễu (doc_nham_van) cố ý cùng chữ đầu với từ gốc — lỗi 'chọn cùng chữ đầu thay vì cùng vần'.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "esl-rhymecvc-0001",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which word rhymes with \"cat\"?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hat"
+        },
+        {
+          "id": "b",
+          "text": "cup",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "can",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"cat\" and \"hat\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "esl-rhymecvc-0002",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Find a rhyme for \"dog\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dig",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "log"
+        },
+        {
+          "id": "c",
+          "text": "cat",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"dog\" and \"log\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "esl-rhymecvc-0003",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the word that rhymes with \"bug\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bus",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "big",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "hug"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"bug\" and \"hug\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "esl-rhymecvc-0004",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which word rhymes with \"pen\"?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ten"
+        },
+        {
+          "id": "b",
+          "text": "pet",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "pin",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"pen\" and \"ten\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "esl-rhymecvc-0005",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Find a rhyme for \"pig\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "pin",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "wig"
+        },
+        {
+          "id": "c",
+          "text": "peg",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"pig\" and \"wig\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "esl-rhymecvc-0006",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the word that rhymes with \"hot\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hat",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "hop",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "pot"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"hot\" and \"pot\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0007",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which word rhymes with \"sun\"?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "run"
+        },
+        {
+          "id": "b",
+          "text": "sit",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "sad",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"sun\" and \"run\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0008",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Find a rhyme for \"map\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mat",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "cap"
+        },
+        {
+          "id": "c",
+          "text": "mop",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"map\" and \"cap\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0009",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the word that rhymes with \"bed\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bad",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "bet",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "red"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"bed\" and \"red\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0010",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which word rhymes with \"fox\"?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "box"
+        },
+        {
+          "id": "b",
+          "text": "fan",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "fix",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"fox\" and \"box\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0011",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Find a rhyme for \"hen\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hat",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "men"
+        },
+        {
+          "id": "c",
+          "text": "hem",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"hen\" and \"men\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0012",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the word that rhymes with \"mug\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mud",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "map",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "rug"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"mug\" and \"rug\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0013",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which word rhymes with \"wet\"?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "net"
+        },
+        {
+          "id": "b",
+          "text": "web",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "wig",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"wet\" and \"net\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0014",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Find a rhyme for \"tub\"."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tap",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "cub"
+        },
+        {
+          "id": "c",
+          "text": "ten",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the end of the word."],
+      "explanation": "\"tub\" and \"cub\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "esl-rhymecvc-0015",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. Which word rhymes with it?"
+      },
+      "listenTarget": {
+        "text": "hat"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hot",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "bat"
+        },
+        {
+          "id": "c",
+          "text": "him",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "\"hat\" and \"bat\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "esl-rhymecvc-0016",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Tap a rhyme!"
+      },
+      "listenTarget": {
+        "text": "log"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "leg",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "lip",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "fog"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "\"log\" and \"fog\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0017",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Hear the word. Find its rhyming friend."
+      },
+      "listenTarget": {
+        "text": "run"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bun"
+        },
+        {
+          "id": "b",
+          "text": "ram",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "rug",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "\"run\" and \"bun\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0018",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the word that rhymes."
+      },
+      "listenTarget": {
+        "text": "ten"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tan",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "hen"
+        },
+        {
+          "id": "c",
+          "text": "tip",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "\"ten\" and \"hen\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0019",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which word sounds the same at the end?"
+      },
+      "listenTarget": {
+        "text": "big"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bag",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "bus",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "dig"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "\"big\" and \"dig\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0020",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again. Tap the rhyme."
+      },
+      "listenTarget": {
+        "text": "mop"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "top"
+        },
+        {
+          "id": "b",
+          "text": "map",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "mug",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "\"mop\" and \"top\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0021",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. Which word rhymes with it?"
+      },
+      "listenTarget": {
+        "text": "nut"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "net",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "hut"
+        },
+        {
+          "id": "c",
+          "text": "nap",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "\"nut\" and \"hut\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0022",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a word. Tap a rhyme!"
+      },
+      "listenTarget": {
+        "text": "wet"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "wig",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "win",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "jet"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "\"wet\" and \"jet\" rhyme.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0023",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the words into word families."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "cat"
+        },
+        {
+          "id": "b0",
+          "text": "dog"
+        },
+        {
+          "id": "a1",
+          "text": "bat"
+        },
+        {
+          "id": "b1",
+          "text": "log"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "-at words",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "-og words",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Look at the last two letters."],
+      "explanation": "cat, bat go in \"-at words\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0024",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which family? Drag each word."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "pen"
+        },
+        {
+          "id": "b0",
+          "text": "bug"
+        },
+        {
+          "id": "a1",
+          "text": "hen"
+        },
+        {
+          "id": "b1",
+          "text": "rug"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "-en words",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "-ug words",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Look at the last two letters."],
+      "explanation": "pen, hen go in \"-en words\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0025",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Put each word in its family."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "zip"
+        },
+        {
+          "id": "b1",
+          "text": "mop"
+        },
+        {
+          "id": "a0",
+          "text": "lip"
+        },
+        {
+          "id": "b0",
+          "text": "top"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "-ip words",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "-op words",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Say the words. Listen to the end."],
+      "explanation": "lip, zip go in \"-ip words\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0026",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Sort by the ending sound."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "fan"
+        },
+        {
+          "id": "b0",
+          "text": "net"
+        },
+        {
+          "id": "a1",
+          "text": "man"
+        },
+        {
+          "id": "b1",
+          "text": "pet"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "-an words",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "-et words",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Say the words. Listen to the end."],
+      "explanation": "fan, man go in \"-an words\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0027",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} sort the rhyming words."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "sit"
+        },
+        {
+          "id": "b0",
+          "text": "sun"
+        },
+        {
+          "id": "a1",
+          "text": "hit"
+        },
+        {
+          "id": "b1",
+          "text": "fun"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "-it words",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "-un words",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Say the words. Listen to the end."],
+      "explanation": "sit, hit go in \"-it words\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-rhymecvc-0028",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "A fat cat sat on a mat.",
+        "words": ["A", "fat", "cat", "sat", "on", "a", "mat"]
+      },
+      "answerKey": {
+        "words": ["A", "fat", "cat", "sat", "on", "a", "mat"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A fat cat sat on a mat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0029",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "The dog sat on a log.",
+        "words": ["The", "dog", "sat", "on", "a", "log"]
+      },
+      "answerKey": {
+        "words": ["The", "dog", "sat", "on", "a", "log"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"The dog sat on a log.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0030",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "A bug in a rug.",
+        "words": ["A", "bug", "in", "a", "rug"]
+      },
+      "answerKey": {
+        "words": ["A", "bug", "in", "a", "rug"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"A bug in a rug.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0031",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Ten hens in a pen.",
+        "words": ["Ten", "hens", "in", "a", "pen"]
+      },
+      "answerKey": {
+        "words": ["Ten", "hens", "in", "a", "pen"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Ten hens in a pen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0032",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "The fox is in the box.",
+        "words": ["The", "fox", "is", "in", "the", "box"]
+      },
+      "answerKey": {
+        "words": ["The", "fox", "is", "in", "the", "box"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The fox is in the box.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0033",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write two words that rhyme with cat."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["hat, bat"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: hat, bat",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0034",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a dog on a log. Write both words."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["dog, log"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: dog, log",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-rhymecvc-0035",
+      "language": "en",
+      "skillCodes": ["ESL.PH.RHYMING_CVC"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write a word that rhymes with sun."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["run"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: run",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Literacy Book, Phonics Review (GS1-LIT.R, bảng chương trình) — chưa chụp trang sách"
+      }
+    }
+  ]
+}

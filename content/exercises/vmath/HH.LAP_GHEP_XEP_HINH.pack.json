@@ -1,0 +1,1629 @@
+{
+  "skillCode": "VMATH.HH.LAP_GHEP_XEP_HINH",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B08"],
+  "note": "Lắp ghép, xếp hình bằng que tính và miếng ghép. Câu trắc nghiệm hỏi số que, số miếng — đếm được, có mã lỗi.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-lapghep-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Cần mấy que tính để xếp một hình tam giác?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-lapghep-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Cần mấy que tính để xếp một hình vuông?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-lapghep-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp 2 hình tam giác rời nhau cần mấy que tính?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-lapghep-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp 2 hình vuông rời nhau cần mấy que tính?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-lapghep-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Ghép mấy hình vuông nhỏ thì được hình vuông to 2 hàng 2 cột?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-lapghep-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Ghép 2 hình tam giác giống nhau được mấy hình vuông?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Hình vuông bằng que tính, bỏ đi 1 que. Còn mấy que?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Một hình tam giác và một hình vuông rời nhau cần mấy que?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ghép mấy hình vuông nhỏ thành một hàng dài 3 ô?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp 3 hình tam giác rời nhau cần mấy que tính?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 que tính. Xếp một hình tam giác, còn thừa mấy que?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 7 que tính. Xếp một hình vuông, còn thừa mấy que?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hình tam giác bằng que tính, thêm 1 que. Tất cả mấy que?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Mỗi cạnh là một que tính.", "Vẽ ra giấy rồi đếm cạnh."],
+      "explanation": "Cần 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính",
+          "repeat": 3
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy que tính?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm từng que một."],
+      "explanation": "Có ba que tính.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng.",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính",
+          "repeat": 4
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy que tính?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Chạm vào từng que khi đếm."],
+      "explanation": "Có bốn que tính.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính",
+          "repeat": 6
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy que tính?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm từng que một."],
+      "explanation": "Có sáu que tính.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng.",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính",
+          "repeat": 8
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy que tính?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chạm vào từng que khi đếm."],
+      "explanation": "Có tám que tính.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng.",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính",
+          "repeat": 5
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy que tính?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm từng que một."],
+      "explanation": "Có năm que tính.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-lapghep-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn.",
+        "image": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính",
+          "repeat": 7
+        }
+      },
+      "listenTarget": {
+        "text": "Có mấy que tính?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chạm vào từng que khi đếm."],
+      "explanation": "Có bảy que tính.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các miếng ghép vào đúng hộp hình."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "hình vuông"
+          },
+          "text": "hình vuông"
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "hình tam giác"
+          },
+          "text": "hình tam giác"
+        },
+        {
+          "id": "a2",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "hình vuông",
+            "repeat": 2
+          },
+          "text": "2 hình vuông"
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "hình tam giác",
+            "repeat": 2
+          },
+          "text": "2 hình tam giác"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "Hộp hình vuông",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        },
+        {
+          "id": "h2",
+          "label": "Hộp hình tam giác",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["a1", "a2"],
+        "h2": ["b1", "b2"]
+      },
+      "hints": ["Nhìn số góc của miếng ghép."],
+      "explanation": "Miếng hình vuông về hộp hình vuông.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Miếng nào về hộp nào? Kéo nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "hình tròn"
+          },
+          "text": "hình tròn"
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "hình vuông"
+          },
+          "text": "hình vuông"
+        },
+        {
+          "id": "a2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "hình tròn",
+            "repeat": 2
+          },
+          "text": "2 hình tròn"
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "hình vuông",
+            "repeat": 2
+          },
+          "text": "2 hình vuông"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "Hộp hình tròn",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        },
+        {
+          "id": "h2",
+          "label": "Hộp hình vuông",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["a1", "a2"],
+        "h2": ["b1", "b2"]
+      },
+      "hints": ["Nhìn số góc của miếng ghép."],
+      "explanation": "Miếng hình tròn về hộp hình tròn.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Phân loại miếng ghép theo hình."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "hình tam giác"
+          },
+          "text": "hình tam giác"
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "hình tròn"
+          },
+          "text": "hình tròn"
+        },
+        {
+          "id": "a2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "hình tam giác",
+            "repeat": 2
+          },
+          "text": "2 hình tam giác"
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "hình tròn",
+            "repeat": 2
+          },
+          "text": "2 hình tròn"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "Hộp hình tam giác",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        },
+        {
+          "id": "h2",
+          "label": "Hộp hình tròn",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["a1", "a2"],
+        "h2": ["b1", "b2"]
+      },
+      "hints": ["Nhìn số góc của miếng ghép."],
+      "explanation": "Miếng hình tam giác về hộp hình tam giác.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các miếng ghép vào đúng hộp hình."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "hình vuông"
+          },
+          "text": "hình vuông"
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "hình tròn"
+          },
+          "text": "hình tròn"
+        },
+        {
+          "id": "a2",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "hình vuông",
+            "repeat": 2
+          },
+          "text": "2 hình vuông"
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "hình tròn",
+            "repeat": 2
+          },
+          "text": "2 hình tròn"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "Hộp hình vuông",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        },
+        {
+          "id": "h2",
+          "label": "Hộp hình tròn",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["a1", "a2"],
+        "h2": ["b1", "b2"]
+      },
+      "hints": ["Nhìn số góc của miếng ghép."],
+      "explanation": "Miếng hình vuông về hộp hình vuông.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Miếng nào về hộp nào? Kéo nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "hình tam giác"
+          },
+          "text": "hình tam giác"
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "hình vuông"
+          },
+          "text": "hình vuông"
+        },
+        {
+          "id": "a2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "hình tam giác",
+            "repeat": 2
+          },
+          "text": "2 hình tam giác"
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelVi": "hình vuông",
+            "repeat": 2
+          },
+          "text": "2 hình vuông"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "Hộp hình tam giác",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        },
+        {
+          "id": "h2",
+          "label": "Hộp hình vuông",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["a1", "a2"],
+        "h2": ["b1", "b2"]
+      },
+      "hints": ["Nhìn số góc của miếng ghép."],
+      "explanation": "Miếng hình tam giác về hộp hình tam giác.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Phân loại miếng ghép theo hình."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "hình tròn"
+          },
+          "text": "hình tròn"
+        },
+        {
+          "id": "b1",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "hình tam giác"
+          },
+          "text": "hình tam giác"
+        },
+        {
+          "id": "a2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔴",
+            "labelVi": "hình tròn",
+            "repeat": 2
+          },
+          "text": "2 hình tròn"
+        },
+        {
+          "id": "b2",
+          "image": {
+            "kind": "emoji",
+            "value": "🔺",
+            "labelVi": "hình tam giác",
+            "repeat": 2
+          },
+          "text": "2 hình tam giác"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "h1",
+          "label": "Hộp hình tròn",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        },
+        {
+          "id": "h2",
+          "label": "Hộp hình tam giác",
+          "accepts": ["a1", "b1", "a2", "b2"]
+        }
+      ],
+      "answerKey": {
+        "h1": ["a1", "a2"],
+        "h2": ["b1", "b2"]
+      },
+      "hints": ["Nhìn số góc của miếng ghép."],
+      "explanation": "Miếng hình tròn về hộp hình tròn.",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm que tính nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có sáu que tính.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm miếng ghép vuông nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelVi": "miếng ghép vuông",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "line"
+      },
+      "answerKey": 4,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có bốn miếng ghép vuông.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm miếng ghép tam giác nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelVi": "miếng ghép tam giác",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có năm miếng ghép tam giác.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm que tính nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que tính",
+          "repeat": 8
+        },
+        "correctCount": 8,
+        "layout": "line"
+      },
+      "answerKey": 8,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có tám que tính.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-lapghep-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "ba que tính xếp hình tam giác",
+        "words": ["ba", "que", "tính", "xếp", "hình", "tam", "giác"]
+      },
+      "answerKey": {
+        "words": ["ba", "que", "tính", "xếp", "hình", "tam", "giác"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"ba que tính xếp hình tam giác\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "bốn que tính xếp hình vuông",
+        "words": ["bốn", "que", "tính", "xếp", "hình", "vuông"]
+      },
+      "answerKey": {
+        "words": ["bốn", "que", "tính", "xếp", "hình", "vuông"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"bốn que tính xếp hình vuông\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to phép tính này nhé!"
+      },
+      "readTarget": {
+        "text": "ghép hình thành ngôi nhà",
+        "words": ["ghép", "hình", "thành", "ngôi", "nhà"]
+      },
+      "answerKey": {
+        "words": ["ghép", "hình", "thành", "ngôi", "nhà"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"ghép hình thành ngôi nhà\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Dùng que tính xếp một hình tam giác rồi chụp lại."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["hình tam giác 3 que"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: hình tam giác 3 que.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Dùng que tính xếp một hình vuông rồi chụp lại."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["hình vuông 4 que"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: hình vuông 4 que.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp que tính thành ngôi nhà, đếm số que, chụp lại."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["ngôi nhà 7 que"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: ngôi nhà 7 que.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-lapghep-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.HH.LAP_GHEP_XEP_HINH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Cắt giấy ghép thành con cá, chụp cho ba mẹ xem."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["con cá bằng hình tam giác"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: con cá bằng hình tam giác.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B08",
+        "sourceRef": "SGK Toán 1 tập một, Bài 8 Thực hành lắp ghép, xếp hình tr.50–53"
+      }
+    }
+  ]
+}

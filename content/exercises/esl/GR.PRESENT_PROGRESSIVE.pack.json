@@ -1,0 +1,1522 @@
+{
+  "skillCode": "ESL.GR.PRESENT_PROGRESSIVE",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "be + V-ing. Ô nhiễu đúng ba lỗi của bản đồ kỹ năng: quên to be (The frog jumping → doc_bo_tu_tieng_anh), quên -ing (is jump), viết sai -ing (swiming, runing → sai_chinh_ta_tu); am/is/are nhầm → nham_am_is_are.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_is_are",
+      "scaffold": "model",
+      "id": "esl-preprog-0001",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "The tiger ___ sleeping.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐅",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "is"
+        },
+        {
+          "id": "b",
+          "text": "are",
+          "errorTag": "nham_am_is_are"
+        },
+        {
+          "id": "c",
+          "text": "am",
+          "errorTag": "nham_am_is_are"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: is",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "esl-preprog-0002",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is right?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐸",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "The frog jumping.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "b",
+          "text": "The frog is jumping."
+        },
+        {
+          "id": "c",
+          "text": "The frog is jump."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: The frog is jumping.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "esl-preprog-0003",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "The parrot is ___. (ăn)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "eatting",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "eat"
+        },
+        {
+          "id": "c",
+          "text": "eating"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: eating",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_is_are",
+      "scaffold": "model",
+      "id": "esl-preprog-0004",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "The zebras ___ eating grass."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "are"
+        },
+        {
+          "id": "b",
+          "text": "is",
+          "errorTag": "nham_am_is_are"
+        },
+        {
+          "id": "c",
+          "text": "am",
+          "errorTag": "nham_am_is_are"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: are",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "esl-preprog-0005",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "The hippo is ___ in the river. (bơi)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "swiming",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "swimming"
+        },
+        {
+          "id": "c",
+          "text": "swim"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: swimming",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "model",
+      "id": "esl-preprog-0006",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "The children are ___. (chạy)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "runing",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "run"
+        },
+        {
+          "id": "c",
+          "text": "running"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: running",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "none",
+      "id": "esl-preprog-0007",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What is the elephant doing? (uống nước)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It is drinking."
+        },
+        {
+          "id": "b",
+          "text": "It drinking.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "c",
+          "text": "It is drink."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: It is drinking.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0008",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Is the frog jumping? (Có, nó đang nhảy.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it does."
+        },
+        {
+          "id": "b",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "c",
+          "text": "No, it isn't."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, it is.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0009",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Is the giraffe sleeping? (Không, nó đang ăn.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "No, it doesn't."
+        },
+        {
+          "id": "c",
+          "text": "No, it isn't."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: No, it isn't.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_is_are",
+      "scaffold": "none",
+      "id": "esl-preprog-0010",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "The penguins are swimming."
+        },
+        {
+          "id": "b",
+          "text": "The penguins is swimming.",
+          "errorTag": "nham_am_is_are"
+        },
+        {
+          "id": "c",
+          "text": "The penguins are swim."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: The penguins are swimming.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_chinh_ta_tu",
+      "scaffold": "none",
+      "id": "esl-preprog-0011",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "The crocodile is ___ in the water. (trốn)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hideing",
+          "errorTag": "sai_chinh_ta_tu"
+        },
+        {
+          "id": "b",
+          "text": "hiding"
+        },
+        {
+          "id": "c",
+          "text": "hide"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: hiding",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "none",
+      "id": "esl-preprog-0012",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What are the monkeys doing? (leo cây)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "They climbing.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "b",
+          "text": "They is climbing.",
+          "errorTag": "nham_am_is_are"
+        },
+        {
+          "id": "c",
+          "text": "They are climbing."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: They are climbing.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-preprog-0013",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. What is happening? Tap it."
+      },
+      "listenTarget": {
+        "text": "She is swimming."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🏃",
+            "labelEn": "running"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🏊",
+            "labelEn": "swimming"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "😴",
+            "labelEn": "sleeping"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"She is swimming.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-preprog-0014",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a sentence. Tap the picture!"
+      },
+      "listenTarget": {
+        "text": "He is sleeping."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🏊",
+            "labelEn": "swimming"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "💃",
+            "labelEn": "dancing"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "😴",
+            "labelEn": "sleeping"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"He is sleeping.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0015",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and find the action."
+      },
+      "listenTarget": {
+        "text": "They are dancing."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "💃",
+            "labelEn": "dancing"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🧗",
+            "labelEn": "climbing"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🎤",
+            "labelEn": "singing"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"They are dancing.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0016",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which picture matches? Tap it."
+      },
+      "listenTarget": {
+        "text": "The boy is reading."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "✍️",
+            "labelEn": "writing"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "📖",
+            "labelEn": "reading"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🎨",
+            "labelEn": "painting"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"The boy is reading.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0017",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "The girl is singing."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "💃",
+            "labelEn": "dancing"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "📖",
+            "labelEn": "reading"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🎤",
+            "labelEn": "singing"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"The girl is singing.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0018",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "The man is climbing."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🧗",
+            "labelEn": "climbing"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🚶",
+            "labelEn": "walking"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🏊",
+            "labelEn": "swimming"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"The man is climbing.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0019",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What is the tiger doing?"
+      },
+      "listenTarget": {
+        "text": "What is the tiger doing? It is eating."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "ngủ"
+        },
+        {
+          "id": "b",
+          "text": "ăn"
+        },
+        {
+          "id": "c",
+          "text": "chạy"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"What is the tiger doing? It is eating.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0020",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What is the hippo doing?"
+      },
+      "listenTarget": {
+        "text": "Is the hippo swimming? No, it is sleeping."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bơi"
+        },
+        {
+          "id": "b",
+          "text": "ăn"
+        },
+        {
+          "id": "c",
+          "text": "ngủ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Is the hippo swimming? No, it is sleeping.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0021",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put the words in order."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "The"
+        },
+        {
+          "id": "w3",
+          "text": "sleeping"
+        },
+        {
+          "id": "w2",
+          "text": "is"
+        },
+        {
+          "id": "w1",
+          "text": "tiger"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"The tiger is sleeping.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0022",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Build the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "frogs"
+        },
+        {
+          "id": "w0",
+          "text": "The"
+        },
+        {
+          "id": "w3",
+          "text": "jumping"
+        },
+        {
+          "id": "w2",
+          "text": "are"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"The frogs are jumping.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0023",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the words to make a sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w4",
+          "text": "doing"
+        },
+        {
+          "id": "w2",
+          "text": "the"
+        },
+        {
+          "id": "w0",
+          "text": "What"
+        },
+        {
+          "id": "w3",
+          "text": "hippo"
+        },
+        {
+          "id": "w1",
+          "text": "is"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w4", "w2", "w0", "w3", "w1"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w4", "w2", "w0", "w3", "w1"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w4", "w2", "w0", "w3", "w1"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w4", "w2", "w0", "w3", "w1"]
+        },
+        {
+          "id": "s4",
+          "label": "5",
+          "accepts": ["w4", "w2", "w0", "w3", "w1"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"],
+        "s4": ["w4"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"What is the hippo doing?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0024",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} fix the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w3",
+          "text": "eating"
+        },
+        {
+          "id": "w2",
+          "text": "zebra"
+        },
+        {
+          "id": "w1",
+          "text": "the"
+        },
+        {
+          "id": "w0",
+          "text": "Is"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"Is the zebra eating?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0025",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Make a sentence with these words."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "The"
+        },
+        {
+          "id": "w3",
+          "text": "flying"
+        },
+        {
+          "id": "w2",
+          "text": "is"
+        },
+        {
+          "id": "w1",
+          "text": "parrot"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"The parrot is flying.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0026",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "One animal or many? Sort the sentences."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "The tiger is sleeping."
+        },
+        {
+          "id": "b0",
+          "text": "The zebras are eating."
+        },
+        {
+          "id": "a1",
+          "text": "The frog is jumping."
+        },
+        {
+          "id": "b1",
+          "text": "The birds are flying."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "One animal",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Many animals",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "The tiger is sleeping., The frog is jumping. go in \"One animal\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0027",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Double the last letter, or just add -ing?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "running"
+        },
+        {
+          "id": "b0",
+          "text": "eating"
+        },
+        {
+          "id": "a1",
+          "text": "swimming"
+        },
+        {
+          "id": "b1",
+          "text": "jumping"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Double it",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Just add -ing",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["run → running, eat → eating."],
+      "explanation": "running, swimming go in \"Double it\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-preprog-0028",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "The tiger is sleeping.",
+        "words": ["The", "tiger", "is", "sleeping"]
+      },
+      "answerKey": {
+        "words": ["The", "tiger", "is", "sleeping"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The tiger is sleeping.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0029",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "The frog is jumping.",
+        "words": ["The", "frog", "is", "jumping"]
+      },
+      "answerKey": {
+        "words": ["The", "frog", "is", "jumping"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"The frog is jumping.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0030",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "The elephants are drinking.",
+        "words": ["The", "elephants", "are", "drinking"]
+      },
+      "answerKey": {
+        "words": ["The", "elephants", "are", "drinking"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"The elephants are drinking.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0031",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "What is the hippo doing?",
+        "words": ["What", "is", "the", "hippo", "doing"]
+      },
+      "answerKey": {
+        "words": ["What", "is", "the", "hippo", "doing"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"What is the hippo doing?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0032",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "The parrot is flying.",
+        "words": ["The", "parrot", "is", "flying"]
+      },
+      "answerKey": {
+        "words": ["The", "parrot", "is", "flying"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The parrot is flying.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0033",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw an animal. Write what it is doing."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["The cat is sleeping."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: The cat is sleeping.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0034",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write: The frog is jumping."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["The frog is jumping."]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: The frog is jumping.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-preprog-0035",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PRESENT_PROGRESSIVE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Add -ing: run, swim, eat."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["running, swimming, eating"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: running, swimming, eating",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 4 Animals Are Awesome tr.48 — Present Progressive; viết: chính tả -ing (bảng chương trình) — chưa chụp trang sách"
+      }
+    }
+  ]
+}

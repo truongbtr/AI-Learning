@@ -1,0 +1,1475 @@
+{
+  "skillCode": "ESL.SPK.ANSWER_WH",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Trả lời What / Where / How many / Who bằng câu ngắn. Ô nhiễu: trả lời yes/no cho câu Wh-, rơi 'a' (It's robot → doc_bo_tu_tieng_anh), thiếu -s (Three cat → thieu_s_so_nhieu, không chấm cuối), nhầm he/she.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "esl-whans-0001",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What's this?",
+        "image": {
+          "kind": "emoji",
+          "value": "🤖",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's a robot."
+        },
+        {
+          "id": "b",
+          "text": "It's robot.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "c",
+          "text": "Yes, it is."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: It's a robot.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-whans-0002",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What colour is it?",
+        "image": {
+          "kind": "emoji",
+          "value": "🟦",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "It's blue."
+        },
+        {
+          "id": "c",
+          "text": "It's a bag."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: It's blue.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-whans-0003",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What's your name?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I am."
+        },
+        {
+          "id": "b",
+          "text": "I'm six."
+        },
+        {
+          "id": "c",
+          "text": "My name is Sam."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: My name is Sam.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "model",
+      "id": "esl-whans-0004",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many cats?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Three cats"
+        },
+        {
+          "id": "b",
+          "text": "Three cat",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "Yes, cats"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Three cats",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-whans-0005",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How old are you? (Con sáu tuổi.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm fine."
+        },
+        {
+          "id": "b",
+          "text": "I'm six."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I am."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I'm six.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-whans-0006",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Where's the ball? (Ở dưới bàn.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's on the table."
+        },
+        {
+          "id": "b",
+          "text": "It's a ball."
+        },
+        {
+          "id": "c",
+          "text": "It's under the table."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: It's under the table.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0007",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Who is she? (Đó là mẹ của con.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "She is my mom."
+        },
+        {
+          "id": "b",
+          "text": "He is my mom."
+        },
+        {
+          "id": "c",
+          "text": "She is six."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: She is my mom.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0008",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What is it?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's a apple."
+        },
+        {
+          "id": "b",
+          "text": "It's an apple."
+        },
+        {
+          "id": "c",
+          "text": "It's a banana."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: It's an apple.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0009",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Where's the cat? (Ở trên ghế.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's under the chair."
+        },
+        {
+          "id": "b",
+          "text": "It's a chair."
+        },
+        {
+          "id": "c",
+          "text": "It's on the chair."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: It's on the chair.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-whans-0010",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many stars?",
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Five stars"
+        },
+        {
+          "id": "b",
+          "text": "Five star",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "Yellow stars"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Five stars",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0011",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What can you do? (Con biết bơi.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I can."
+        },
+        {
+          "id": "b",
+          "text": "I can swim."
+        },
+        {
+          "id": "c",
+          "text": "I swim can."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I can swim.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0012",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Who is he? (Đó là bố của con.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "She is my dad."
+        },
+        {
+          "id": "b",
+          "text": "Yes, he is."
+        },
+        {
+          "id": "c",
+          "text": "He is my dad."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: He is my dad.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-whans-0013",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Cặp của con màu hồng.)"
+      },
+      "listenTarget": {
+        "text": "What colour is your bag?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "It's pink."
+        },
+        {
+          "id": "c",
+          "text": "It's a bag."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"What colour is your bag?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-whans-0014",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Tranh là quả bóng.)"
+      },
+      "listenTarget": {
+        "text": "What's this?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "It's a bag."
+        },
+        {
+          "id": "c",
+          "text": "It's a ball."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"What's this?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0015",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Con có hai anh trai.)"
+      },
+      "listenTarget": {
+        "text": "How many brothers do you have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Two brothers."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I do."
+        },
+        {
+          "id": "c",
+          "text": "Two sisters."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"How many brothers do you have?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0016",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Bút chì ở trong cặp.)"
+      },
+      "listenTarget": {
+        "text": "Where is your pencil?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's on my bag."
+        },
+        {
+          "id": "b",
+          "text": "It's in my bag."
+        },
+        {
+          "id": "c",
+          "text": "It's a pencil."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Where is your pencil?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0017",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Đó là bà của con.)"
+      },
+      "listenTarget": {
+        "text": "Who is this?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "This is my grandpa."
+        },
+        {
+          "id": "b",
+          "text": "This is my bag."
+        },
+        {
+          "id": "c",
+          "text": "This is my grandma."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Who is this?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0018",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Con thích kem.)"
+      },
+      "listenTarget": {
+        "text": "What do you like?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I like ice cream."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I like."
+        },
+        {
+          "id": "c",
+          "text": "I'm ice cream."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"What do you like?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0019",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Em gái con bốn tuổi.)"
+      },
+      "listenTarget": {
+        "text": "How old is your sister?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "He is four."
+        },
+        {
+          "id": "b",
+          "text": "She is four."
+        },
+        {
+          "id": "c",
+          "text": "She is my sister."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"How old is your sister?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0020",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. (Con chó ở sau cái cây.)"
+      },
+      "listenTarget": {
+        "text": "Where is the dog?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's in the tree."
+        },
+        {
+          "id": "b",
+          "text": "It's a tree."
+        },
+        {
+          "id": "c",
+          "text": "It's behind the tree."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Where is the dog?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0021",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put the words in order."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "It"
+        },
+        {
+          "id": "w3",
+          "text": "the"
+        },
+        {
+          "id": "w1",
+          "text": "is"
+        },
+        {
+          "id": "w4",
+          "text": "table"
+        },
+        {
+          "id": "w2",
+          "text": "under"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s4",
+          "label": "5",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"],
+        "s4": ["w4"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"It is under the table.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0022",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Build the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "name"
+        },
+        {
+          "id": "w0",
+          "text": "My"
+        },
+        {
+          "id": "w3",
+          "text": "Sam"
+        },
+        {
+          "id": "w2",
+          "text": "is"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"My name is Sam.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0023",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the words to make a sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w2",
+          "text": "two"
+        },
+        {
+          "id": "w1",
+          "text": "have"
+        },
+        {
+          "id": "w0",
+          "text": "I"
+        },
+        {
+          "id": "w3",
+          "text": "brothers"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"I have two brothers.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0024",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} fix the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w3",
+          "text": "mom"
+        },
+        {
+          "id": "w2",
+          "text": "my"
+        },
+        {
+          "id": "w1",
+          "text": "is"
+        },
+        {
+          "id": "w0",
+          "text": "She"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"She is my mom.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0025",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Make a sentence with these words."
+      },
+      "dragItems": [
+        {
+          "id": "w3",
+          "text": "red"
+        },
+        {
+          "id": "w1",
+          "text": "is"
+        },
+        {
+          "id": "w4",
+          "text": "ball"
+        },
+        {
+          "id": "w2",
+          "text": "a"
+        },
+        {
+          "id": "w0",
+          "text": "It"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w3", "w1", "w4", "w2", "w0"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w3", "w1", "w4", "w2", "w0"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w3", "w1", "w4", "w2", "w0"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w3", "w1", "w4", "w2", "w0"]
+        },
+        {
+          "id": "s4",
+          "label": "5",
+          "accepts": ["w3", "w1", "w4", "w2", "w0"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"],
+        "s4": ["w4"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"It is a red ball.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0026",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which question does each answer fit?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "It's a kite."
+        },
+        {
+          "id": "b0",
+          "text": "Two kites."
+        },
+        {
+          "id": "a1",
+          "text": "It's a robot."
+        },
+        {
+          "id": "b1",
+          "text": "Five robots."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "What?",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "How many?",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "It's a kite., It's a robot. go in \"What?\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0027",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Where or who? Sort the answers."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "It's on the desk."
+        },
+        {
+          "id": "b0",
+          "text": "She is my mom."
+        },
+        {
+          "id": "a1",
+          "text": "It's in the box."
+        },
+        {
+          "id": "b1",
+          "text": "He is my dad."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Where?",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Who?",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "It's on the desk., It's in the box. go in \"Where?\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0028",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many cats? Tap and count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐈",
+          "labelEn": "cats",
+          "repeat": 3
+        },
+        "correctCount": 3,
+        "layout": "grid"
+      },
+      "answerKey": 3,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 3 cats.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0029",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many stars? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "stars",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 5 stars.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-whans-0030",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "What colour is it? It's blue.",
+        "words": ["What", "colour", "is", "it", "It's", "blue"]
+      },
+      "answerKey": {
+        "words": ["What", "colour", "is", "it", "It's", "blue"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"What colour is it? It's blue.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0031",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "How many cats? Three cats.",
+        "words": ["How", "many", "cats", "Three", "cats"]
+      },
+      "answerKey": {
+        "words": ["How", "many", "cats", "Three", "cats"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"How many cats? Three cats.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0032",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Where's the ball? It's under the table.",
+        "words": ["Where's", "the", "ball", "It's", "under", "the", "table"]
+      },
+      "answerKey": {
+        "words": ["Where's", "the", "ball", "It's", "under", "the", "table"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Where's the ball? It's under the table.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0033",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Who is he? He is my dad.",
+        "words": ["Who", "is", "he", "He", "is", "my", "dad"]
+      },
+      "answerKey": {
+        "words": ["Who", "is", "he", "He", "is", "my", "dad"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Who is he? He is my dad.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0034",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What colour is your bag? Write the answer."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["It's blue."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: It's blue.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-whans-0035",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.ANSWER_WH"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many pencils do you have? Write it."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["Three pencils."]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: Three pencils.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1–2 — How many…? / What…? (bảng chương trình) — chưa chụp trang sách; CCSS SL.1.1"
+      }
+    }
+  ]
+}

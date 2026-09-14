@@ -1,0 +1,1828 @@
+{
+  "skillCode": "VIET.HV.VAN_OM_OOM_OWM",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B36"],
+  "note": "Bài 36: om, ôm, ơm. Từ của sách: khóm, vòm, nộm, tôm, bờm, rơm, đom đóm, chó đốm, mâm cơm; bài đọc 'Hôm qua, cô Mơ ở xóm Hạ…'. Câu nhận biết 'Hương cốm thơm thôn xóm' không dùng — vần ương tới bài 73. Ô gần giống là cặp o/ô/ơ (đóm / đốm, rơm / rôm).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-vanom-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có vần ôm?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đốm"
+        },
+        {
+          "id": "b",
+          "text": "đóm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "chó"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy vần ôm?"],
+      "explanation": "Tiếng \"đốm\" có vần ôm.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-vanom-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có vần ơm nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cơ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "cơm"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có vần ơm thôi."],
+      "explanation": "Tiếng \"cơm\" có vần ơm.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-vanom-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa vần ôm?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tô",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "cá"
+        },
+        {
+          "id": "c",
+          "text": "tôm"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ vần ôm viết thế nào không?"],
+      "explanation": "Tiếng \"tôm\" có vần ôm.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-vanom-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có vần om?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đóm"
+        },
+        {
+          "id": "b",
+          "text": "đốm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "dế"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"đóm\" có vần om.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng có vần om."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xó",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "xóm"
+        },
+        {
+          "id": "c",
+          "text": "phố"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Tiếng \"xóm\" có vần om.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba ô, ô nào có vần ơm?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "rôm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "rạ"
+        },
+        {
+          "id": "c",
+          "text": "rơm"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tìm con chữ của vần ơm trong từng ô nhé!"],
+      "explanation": "Tiếng \"rơm\" có vần ơm.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có vần om?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vòm"
+        },
+        {
+          "id": "b",
+          "text": "vò",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "cửa"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy vần om?"],
+      "explanation": "Tiếng \"vòm\" có vần om.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có vần ôm nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nụ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "nộm"
+        },
+        {
+          "id": "c",
+          "text": "bún"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có vần ôm thôi."],
+      "explanation": "Tiếng \"nộm\" có vần ôm.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa vần ơm?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bờ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "vó"
+        },
+        {
+          "id": "c",
+          "text": "bờm"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ vần ơm viết thế nào không?"],
+      "explanation": "Tiếng \"bờm\" có vần ơm.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có vần ơm?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thơm"
+        },
+        {
+          "id": "b",
+          "text": "thơ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "chua"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"thơm\" có vần ơm.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-vanom-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐕",
+          "labelVi": "chó đốm",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đóm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "đốm"
+        },
+        {
+          "id": "c",
+          "text": "cốm",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ chó đốm.", "Tiếng gọi chó đốm có vần ôm."],
+      "explanation": "Chó đốm đọc là \"đốm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng gọi tên bức tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🍚",
+          "labelVi": "mâm cơm",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cơ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "thơm",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "cơm"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ mâm cơm.", "Tiếng gọi mâm cơm có vần ơm."],
+      "explanation": "Mâm cơm đọc là \"cơm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tranh này là tiếng nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦐",
+          "labelVi": "con tôm",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tôm"
+        },
+        {
+          "id": "b",
+          "text": "tô",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "hôm",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ con tôm.", "Tiếng gọi con tôm có vần ôm."],
+      "explanation": "Con tôm đọc là \"tôm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bốn ô trông rất giống nhau. Ô nào có vần ôm?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đóm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "đố",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "đốm"
+        },
+        {
+          "id": "d",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Chỉ \"đốm\" có vần ôm.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn thật kỹ: tiếng nào có vần om?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đốm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "đá",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "chó"
+        },
+        {
+          "id": "d",
+          "text": "đóm"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Chỉ \"đóm\" có vần om.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chỉ một ô có vần ơm. Con tìm ra không?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "rơm"
+        },
+        {
+          "id": "b",
+          "text": "rôm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "ra",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "d",
+          "text": "chó"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tìm con chữ của vần ơm trong từng ô nhé!"],
+      "explanation": "Chỉ \"rơm\" có vần ơm.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có vần om."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chồm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "chòm"
+        },
+        {
+          "id": "c",
+          "text": "chè",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "d",
+          "text": "chó"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy vần om?"],
+      "explanation": "Chỉ \"chòm\" có vần om.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-vanom-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "đốm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đốm"
+        },
+        {
+          "id": "b",
+          "text": "cốm",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "đố",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"đốm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-vanom-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "cơm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thơm",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "cơm"
+        },
+        {
+          "id": "c",
+          "text": "cơ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"cơm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanom-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "tôm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hôm",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "tô",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "tôm"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"tôm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanom-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "đóm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đóm"
+        },
+        {
+          "id": "b",
+          "text": "khóm",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "đá",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"đóm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanom-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "xóm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "khóm",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "xóm"
+        },
+        {
+          "id": "c",
+          "text": "xó",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Con vừa nghe tiếng \"xóm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanom-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "rơm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thơm",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "ra",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "rơm"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"rơm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanom-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "vòm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vòm"
+        },
+        {
+          "id": "b",
+          "text": "chòm",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "vò",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"vòm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "nộm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "nụ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "nộm"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"nộm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "bờm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bờm"
+        },
+        {
+          "id": "b",
+          "text": "bờ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"bờm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "đóm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đốm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "đóm"
+        },
+        {
+          "id": "c",
+          "text": "chó"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Tiếng con nghe là \"đóm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "đốm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đóm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "dế"
+        },
+        {
+          "id": "c",
+          "text": "đốm"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Tiếng con nghe là \"đốm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "rôm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "rôm"
+        },
+        {
+          "id": "b",
+          "text": "rơm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "rạ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Tiếng con nghe là \"rôm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "chồm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chòm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "chồm"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Tiếng con nghe là \"chồm\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ: có vần ôm hay không có."
+      },
+      "dragItems": [
+        {
+          "id": "s0a",
+          "text": "đốm"
+        },
+        {
+          "id": "s0b",
+          "text": "chó"
+        },
+        {
+          "id": "s0c",
+          "text": "tôm"
+        },
+        {
+          "id": "s0d",
+          "text": "tô",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần ôm",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s0a", "s0c"],
+        "khong": ["s0b", "s0d"]
+      },
+      "hints": ["Đọc to từng thẻ, thẻ nào có vần ôm thì xếp riêng."],
+      "explanation": "\"đốm\" và \"tôm\" có vần ôm.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng có vần ơm sang một bên nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1a",
+          "text": "cơm"
+        },
+        {
+          "id": "s1b",
+          "text": "cá"
+        },
+        {
+          "id": "s1c",
+          "text": "bờm"
+        },
+        {
+          "id": "s1d",
+          "text": "bờ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần ơm",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s1a", "s1c"],
+        "khong": ["s1b", "s1d"]
+      },
+      "hints": ["Xếp hai thẻ dễ trước, còn lại xếp sau."],
+      "explanation": "\"cơm\" và \"bờm\" có vần ơm.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chia bốn tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "s2a",
+          "text": "tôm"
+        },
+        {
+          "id": "s2b",
+          "text": "cá"
+        },
+        {
+          "id": "s2c",
+          "text": "hôm"
+        },
+        {
+          "id": "s2d",
+          "text": "hô",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần ôm",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s2a", "s2c"],
+        "khong": ["s2b", "s2d"]
+      },
+      "hints": ["Nhìn từng con chữ trên thẻ nhé!"],
+      "explanation": "\"tôm\" và \"hôm\" có vần ôm.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Giỏ nào đựng tiếng có vần om?"
+      },
+      "dragItems": [
+        {
+          "id": "s3a",
+          "text": "đóm"
+        },
+        {
+          "id": "s3b",
+          "text": "dế"
+        },
+        {
+          "id": "s3c",
+          "text": "xóm"
+        },
+        {
+          "id": "s3d",
+          "text": "xó",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần om",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s3a", "s3c"],
+        "khong": ["s3b", "s3d"]
+      },
+      "hints": ["Đánh vần thẻ rồi mới kéo."],
+      "explanation": "\"đóm\" và \"xóm\" có vần om.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanom-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng đúng vào ô dưới tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐕",
+          "labelVi": "chó đốm",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "đốm"
+        },
+        {
+          "id": "sai0",
+          "text": "đóm",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "sai1",
+          "text": "cốm",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ chó đốm.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Chó đốm viết là \"đốm\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn thẻ đúng rồi thả vào ô trống.",
+        "image": {
+          "kind": "emoji",
+          "value": "🍚",
+          "labelVi": "mâm cơm",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "cơm"
+        },
+        {
+          "id": "sai0",
+          "text": "cơ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "thơm",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ mâm cơm.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Mâm cơm viết là \"cơm\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanom-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Thẻ nào gọi tên bức tranh? Kéo vào nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🦐",
+          "labelVi": "con tôm",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "tôm"
+        },
+        {
+          "id": "sai0",
+          "text": "tô",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "hôm",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ con tôm.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Con tôm viết là \"tôm\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-vanom-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "đom đóm",
+        "words": ["đom", "đóm"]
+      },
+      "answerKey": {
+        "words": ["đom", "đóm"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"đom đóm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanom-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "chó đốm",
+        "words": ["chó", "đốm"]
+      },
+      "answerKey": {
+        "words": ["chó", "đốm"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"chó đốm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanom-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "mâm cơm",
+        "words": ["mâm", "cơm"]
+      },
+      "answerKey": {
+        "words": ["mâm", "cơm"]
+      },
+      "hints": ["Đánh vần tiếng nào khó rồi đọc trơn lại."],
+      "explanation": "Câu này đọc là \"mâm cơm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanom-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "cô Mơ ở xóm Hạ",
+        "words": ["cô", "Mơ", "ở", "xóm", "Hạ"]
+      },
+      "answerKey": {
+        "words": ["cô", "Mơ", "ở", "xóm", "Hạ"]
+      },
+      "hints": ["Ngắt rõ giữa các tiếng."],
+      "explanation": "Câu này đọc là \"cô Mơ ở xóm Hạ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanom-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Cô cho Hà giỏ cam",
+        "words": ["Cô", "cho", "Hà", "giỏ", "cam"]
+      },
+      "answerKey": {
+        "words": ["Cô", "cho", "Hà", "giỏ", "cam"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Cô cho Hà giỏ cam\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanom-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "Mẹ khen và thơm lên má Hà",
+        "words": ["Mẹ", "khen", "và", "thơm", "lên", "má", "Hà"]
+      },
+      "answerKey": {
+        "words": ["Mẹ", "khen", "và", "thơm", "lên", "má", "Hà"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"Mẹ khen và thơm lên má Hà\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanom-0044",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: đom đóm, chó đốm."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["đom đóm chó đốm"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, đúng độ cao từng con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanom-0045",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: mâm cơm, tôm."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["mâm cơm tôm"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ đánh dấu thanh sau khi viết xong con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanom-0046",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OM_OOM_OWM"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: xóm, rơm, thơm."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["xóm rơm thơm"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B36",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 36 tr.84–85 (om ôm ơm)"
+      }
+    }
+  ]
+}

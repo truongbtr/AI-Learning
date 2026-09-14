@@ -1,0 +1,1441 @@
+{
+  "skillCode": "ESL.LIS.SHORT_DIALOGUE",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Nghe hội thoại 2–4 lượt rồi trả lời câu hỏi in trên màn hình (câu hỏi in ra không lộ đáp án). Ô chứa thứ được nhắc ở nửa đầu hội thoại là nhiễu có chủ đích (không gắn mã: chua_nghe_het_de là mã hành vi).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-dialog-0001",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "\"What's this?\" \"It's a ___.\"",
+        "image": {
+          "kind": "emoji",
+          "value": "🪁",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kite"
+        },
+        {
+          "id": "b",
+          "text": "bike"
+        },
+        {
+          "id": "c",
+          "text": "cake"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: kite",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-dialog-0002",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "\"What's your name?\" Which answer fits?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm six."
+        },
+        {
+          "id": "b",
+          "text": "I'm Lily."
+        },
+        {
+          "id": "c",
+          "text": "I'm fine."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I'm Lily.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-dialog-0003",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "\"How are you?\" Which answer fits?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm a robot."
+        },
+        {
+          "id": "b",
+          "text": "It's blue."
+        },
+        {
+          "id": "c",
+          "text": "I'm fine, thanks."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I'm fine, thanks.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-dialog-0004",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "\"Is it a dog?\" Look at the picture. Answer:",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "No, it isn't."
+        },
+        {
+          "id": "b",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "c",
+          "text": "It's a dog."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: No, it isn't.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-dialog-0005",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "\"Can you jump?\" Which answer is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, I can't."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I can."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I do."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, I can.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-dialog-0006",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "\"Do you like apples?\" You like apples. You say:"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "No, I don't."
+        },
+        {
+          "id": "b",
+          "text": "Yes, I am."
+        },
+        {
+          "id": "c",
+          "text": "Yes, I do."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Yes, I do.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0007",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "\"Where is the ball?\" (Quả bóng ở trong hộp.)"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's in the box."
+        },
+        {
+          "id": "b",
+          "text": "It's on the box."
+        },
+        {
+          "id": "c",
+          "text": "It's a box."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: It's in the box.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0008",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "\"What colour is your bag?\" Which answer fits?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's a bag."
+        },
+        {
+          "id": "b",
+          "text": "It's pink."
+        },
+        {
+          "id": "c",
+          "text": "Yes, it is."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: It's pink.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0009",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "\"How many pens?\" Which answer fits?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Blue pens."
+        },
+        {
+          "id": "b",
+          "text": "Yes, pens."
+        },
+        {
+          "id": "c",
+          "text": "Two pens."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Two pens.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0010",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "\"Who is she?\" Which answer fits?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "She is my sister."
+        },
+        {
+          "id": "b",
+          "text": "She is six."
+        },
+        {
+          "id": "c",
+          "text": "It is my bag."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: She is my sister.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-dialog-0011",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is it?"
+      },
+      "listenTarget": {
+        "text": "What's this? It's a robot."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚂",
+            "labelEn": "train"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🤖",
+            "labelEn": "robot"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🪁",
+            "labelEn": "kite"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"What's this? It's a robot.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-dialog-0012",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which colour?"
+      },
+      "listenTarget": {
+        "text": "What colour is it? It's green."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🟦",
+            "labelEn": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🟥",
+            "labelEn": "red"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🟩",
+            "labelEn": "green"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"What colour is it? It's green.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0013",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What animal is it?"
+      },
+      "listenTarget": {
+        "text": "Is it a cat? No, it's a dog."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐇",
+            "labelEn": "rabbit"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Is it a cat? No, it's a dog.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0014",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many?"
+      },
+      "listenTarget": {
+        "text": "How many apples? Three apples."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"How many apples? Three apples.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0015",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Who has a dog?"
+      },
+      "listenTarget": {
+        "text": "Tom: I have a cat. Anna: I have a dog."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tom"
+        },
+        {
+          "id": "b",
+          "text": "Sam"
+        },
+        {
+          "id": "c",
+          "text": "Anna"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Tom: I have a cat. Anna: I have a dog.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0016",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What does the child like?"
+      },
+      "listenTarget": {
+        "text": "Do you like milk? No, I don't. I like juice."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🧃",
+            "labelEn": "juice"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🥛",
+            "labelEn": "milk"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🍎",
+            "labelEn": "apple"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Do you like milk? No, I don't. I like juice.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0017",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Where is the ball?"
+      },
+      "listenTarget": {
+        "text": "Where is my ball? It's under the bed."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "trên giường"
+        },
+        {
+          "id": "b",
+          "text": "dưới giường"
+        },
+        {
+          "id": "c",
+          "text": "trong hộp"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Where is my ball? It's under the bed.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0018",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Is the robot big?"
+      },
+      "listenTarget": {
+        "text": "Is the robot big? No, it's small."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, it is."
+        },
+        {
+          "id": "b",
+          "text": "It's a robot."
+        },
+        {
+          "id": "c",
+          "text": "No, it's small."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Is the robot big? No, it's small.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0019",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What can the child do?"
+      },
+      "listenTarget": {
+        "text": "Can you swim? Yes, I can. Can you fly? No, I can't."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "swim"
+        },
+        {
+          "id": "b",
+          "text": "fly"
+        },
+        {
+          "id": "c",
+          "text": "climb"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Can you swim? Yes, I can. Can you fly? No, I can't.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0020",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How old is Mai?"
+      },
+      "listenTarget": {
+        "text": "Ben: How old are you, Mai? Mai: I'm seven."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Ben: How old are you, Mai? Mai: I'm seven.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0021",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Where is the cat?"
+      },
+      "listenTarget": {
+        "text": "Where's the cat? It's on the chair."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dưới ghế"
+        },
+        {
+          "id": "b",
+          "text": "cạnh ghế"
+        },
+        {
+          "id": "c",
+          "text": "trên ghế"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Where's the cat? It's on the chair.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0022",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What is in the bag?"
+      },
+      "listenTarget": {
+        "text": "What's in your bag? A book and a pen."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a book and a pen"
+        },
+        {
+          "id": "b",
+          "text": "a book"
+        },
+        {
+          "id": "c",
+          "text": "a pen and a ruler"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"What's in your bag? A book and a pen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0023",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What is the weather like?"
+      },
+      "listenTarget": {
+        "text": "Is it hot today? Yes, it's very hot."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "❄️",
+            "labelEn": "cold"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "☀️",
+            "labelEn": "hot"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🌧️",
+            "labelEn": "rainy"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Is it hot today? Yes, it's very hot.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0024",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What colour is Sam's kite?"
+      },
+      "listenTarget": {
+        "text": "Lily: My kite is red. Sam: My kite is blue."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "red"
+        },
+        {
+          "id": "b",
+          "text": "green"
+        },
+        {
+          "id": "c",
+          "text": "blue"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Lily: My kite is red. Sam: My kite is blue.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0025",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Put the words in order."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "What"
+        },
+        {
+          "id": "w1",
+          "text": "is"
+        },
+        {
+          "id": "w2",
+          "text": "this"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w1", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w1", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w1", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"What is this?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0026",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Build the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "is"
+        },
+        {
+          "id": "w0",
+          "text": "It"
+        },
+        {
+          "id": "w3",
+          "text": "robot"
+        },
+        {
+          "id": "w2",
+          "text": "a"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"It is a robot.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0027",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the words to make a sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "it"
+        },
+        {
+          "id": "w2",
+          "text": "big"
+        },
+        {
+          "id": "w0",
+          "text": "Is"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w1", "w2", "w0"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w1", "w2", "w0"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w1", "w2", "w0"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"Is it big?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0028",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Question or answer? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "What's this?"
+        },
+        {
+          "id": "b0",
+          "text": "It's a robot."
+        },
+        {
+          "id": "a1",
+          "text": "Is it big?"
+        },
+        {
+          "id": "b1",
+          "text": "No, it's small."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Question",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Answer",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "What's this?, Is it big? go in \"Question\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0029",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Match: which cards are questions?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "Where is my ball?"
+        },
+        {
+          "id": "b0",
+          "text": "It's under the bed."
+        },
+        {
+          "id": "a1",
+          "text": "Can you swim?"
+        },
+        {
+          "id": "b1",
+          "text": "Yes, I can."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Question",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Answer",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "Where is my ball?, Can you swim? go in \"Question\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-dialog-0030",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "What's this? It's a robot.",
+        "words": ["What's", "this", "It's", "a", "robot"]
+      },
+      "answerKey": {
+        "words": ["What's", "this", "It's", "a", "robot"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"What's this? It's a robot.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0031",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Is it big? No, it's small.",
+        "words": ["Is", "it", "big", "No", "it's", "small"]
+      },
+      "answerKey": {
+        "words": ["Is", "it", "big", "No", "it's", "small"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Is it big? No, it's small.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0032",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Where is my ball? It's under the bed.",
+        "words": ["Where", "is", "my", "ball", "It's", "under", "the", "bed"]
+      },
+      "answerKey": {
+        "words": ["Where", "is", "my", "ball", "It's", "under", "the", "bed"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Where is my ball? It's under the bed.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0033",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Can you swim? Yes, I can.",
+        "words": ["Can", "you", "swim", "Yes", "I", "can"]
+      },
+      "answerKey": {
+        "words": ["Can", "you", "swim", "Yes", "I", "can"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Can you swim? Yes, I can.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0034",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What colour is your bag? Write the answer."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["It's blue."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: It's blue.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-dialog-0035",
+      "language": "en",
+      "skillCodes": ["ESL.LIS.SHORT_DIALOGUE"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a toy. Write: What's this? It's a ___."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["What's this? It's a car."]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: What's this? It's a car.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Kỹ năng nghe CCSS SL.1.2, dùng từ vựng Global Stage 1 Language Review–Unit 4 — sách chưa có bài nghe tương ứng"
+      }
+    }
+  ]
+}

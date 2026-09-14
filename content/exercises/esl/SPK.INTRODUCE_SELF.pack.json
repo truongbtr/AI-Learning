@@ -1,0 +1,1421 @@
+{
+  "skillCode": "ESL.SPK.INTRODUCE_SELF",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Tự giới thiệu 2–3 câu. Kỹ năng nói được luyện qua đọc to (8 bài) và xếp câu; trắc nghiệm hỏi câu nào nói tên / tuổi / sở thích và câu nào đúng ngữ pháp (I six → doc_bo_tu_tieng_anh, I is → nham_am_is_are). Tên trong bài là tên chung (Sam, Lily), không phải tên của con.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-intro-0001",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence tells your name?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "My name is Sam."
+        },
+        {
+          "id": "b",
+          "text": "I am six."
+        },
+        {
+          "id": "c",
+          "text": "I like robots."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: My name is Sam.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-intro-0002",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence tells how old you are?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "My name is Sam."
+        },
+        {
+          "id": "b",
+          "text": "I am six years old."
+        },
+        {
+          "id": "c",
+          "text": "I like cats."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I am six years old.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-intro-0003",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Start your talk. What do you say first?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Goodbye!"
+        },
+        {
+          "id": "b",
+          "text": "Thank you!"
+        },
+        {
+          "id": "c",
+          "text": "Hello!"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Hello!",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-intro-0004",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence tells what you like?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I like robots."
+        },
+        {
+          "id": "b",
+          "text": "I am six."
+        },
+        {
+          "id": "c",
+          "text": "I'm in class 1B."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I like robots.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "esl-intro-0005",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I six.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "b",
+          "text": "I am six."
+        },
+        {
+          "id": "c",
+          "text": "I is six.",
+          "errorTag": "nham_am_is_are"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I am six.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_bo_tu_tieng_anh",
+      "scaffold": "model",
+      "id": "esl-intro-0006",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "My name Sam.",
+          "errorTag": "doc_bo_tu_tieng_anh"
+        },
+        {
+          "id": "b",
+          "text": "My name are Sam.",
+          "errorTag": "nham_am_is_are"
+        },
+        {
+          "id": "c",
+          "text": "My name is Sam."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: My name is Sam.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-intro-0007",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I like dogs"
+        },
+        {
+          "id": "b",
+          "text": "I like dog",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "I likes dogs"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I like dogs",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0008",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "End your talk. What do you say?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hello!"
+        },
+        {
+          "id": "b",
+          "text": "Thank you!"
+        },
+        {
+          "id": "c",
+          "text": "How old are you?"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Thank you!",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0009",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is about you, not a friend?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "He is in class 1B."
+        },
+        {
+          "id": "b",
+          "text": "She is in class 1B."
+        },
+        {
+          "id": "c",
+          "text": "I am in class 1B."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I am in class 1B.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0010",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence tells your class?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm in class 1B."
+        },
+        {
+          "id": "b",
+          "text": "I'm six."
+        },
+        {
+          "id": "c",
+          "text": "I like red."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: I'm in class 1B.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0011",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which is a good way to start?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hi! You're Sam. You're six."
+        },
+        {
+          "id": "b",
+          "text": "Hi! I'm Sam. I'm six."
+        },
+        {
+          "id": "c",
+          "text": "Bye! I'm Sam."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: Hi! I'm Sam. I'm six.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0012",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence tells your favourite colour?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I have a blue bag."
+        },
+        {
+          "id": "b",
+          "text": "I am blue."
+        },
+        {
+          "id": "c",
+          "text": "My favourite colour is blue."
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Read every choice before you tap."],
+      "explanation": "The answer is: My favourite colour is blue.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-intro-0013",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How old is Ben?"
+      },
+      "listenTarget": {
+        "text": "Hi! I'm Ben. I'm seven. I like trains."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Hi! I'm Ben. I'm seven. I like trains.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-intro-0014",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What does Ben like?"
+      },
+      "listenTarget": {
+        "text": "Hi! I'm Ben. I'm seven. I like trains."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚲",
+            "labelEn": "bikes"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🪁",
+            "labelEn": "kites"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🚂",
+            "labelEn": "trains"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Hi! I'm Ben. I'm seven. I like trains.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0015",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is her name?"
+      },
+      "listenTarget": {
+        "text": "Hello! My name is Lily. I'm six. I like cats."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lily"
+        },
+        {
+          "id": "b",
+          "text": "Lucy"
+        },
+        {
+          "id": "c",
+          "text": "Kitty"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Hello! My name is Lily. I'm six. I like cats.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0016",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What does Nam like?"
+      },
+      "listenTarget": {
+        "text": "Hi! I'm Nam. I'm in class 1B. I like football."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🏀",
+            "labelEn": "basketball"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "⚽",
+            "labelEn": "football"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🎸",
+            "labelEn": "guitar"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Hi! I'm Nam. I'm in class 1B. I like football.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0017",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What colour does Mia like?"
+      },
+      "listenTarget": {
+        "text": "Hello! I'm Mia. I'm seven years old. I like pink."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🟥",
+            "labelEn": "red"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🟪",
+            "labelEn": "purple"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🩷",
+            "labelEn": "pink"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Hello! I'm Mia. I'm seven years old. I like pink.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0018",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What pet does Tom have?"
+      },
+      "listenTarget": {
+        "text": "Hi, I'm Tom. I'm six. I have a dog."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🐕",
+            "labelEn": "dog"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🐈",
+            "labelEn": "cat"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🐟",
+            "labelEn": "fish"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Hi, I'm Tom. I'm six. I have a dog.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0019",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put the words in order."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "My"
+        },
+        {
+          "id": "w3",
+          "text": "Sam"
+        },
+        {
+          "id": "w2",
+          "text": "is"
+        },
+        {
+          "id": "w1",
+          "text": "name"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w0", "w3", "w2", "w1"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"My name is Sam.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0020",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Build the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w2",
+          "text": "six"
+        },
+        {
+          "id": "w0",
+          "text": "I"
+        },
+        {
+          "id": "w3",
+          "text": "years"
+        },
+        {
+          "id": "w1",
+          "text": "am"
+        },
+        {
+          "id": "w4",
+          "text": "old"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        },
+        {
+          "id": "s4",
+          "label": "5",
+          "accepts": ["w2", "w0", "w3", "w1", "w4"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"],
+        "s4": ["w4"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"I am six years old.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0021",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the words to make a sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w2",
+          "text": "red"
+        },
+        {
+          "id": "w1",
+          "text": "like"
+        },
+        {
+          "id": "w0",
+          "text": "I"
+        },
+        {
+          "id": "w3",
+          "text": "kites"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"I like red kites.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0022",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} fix the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "am"
+        },
+        {
+          "id": "w4",
+          "text": "1B"
+        },
+        {
+          "id": "w2",
+          "text": "in"
+        },
+        {
+          "id": "w0",
+          "text": "I"
+        },
+        {
+          "id": "w3",
+          "text": "class"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w1", "w4", "w2", "w0", "w3"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w1", "w4", "w2", "w0", "w3"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w1", "w4", "w2", "w0", "w3"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w1", "w4", "w2", "w0", "w3"]
+        },
+        {
+          "id": "s4",
+          "label": "5",
+          "accepts": ["w1", "w4", "w2", "w0", "w3"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"],
+        "s4": ["w4"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"I am in class 1B.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0023",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Make a sentence with these words."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "Hello"
+        },
+        {
+          "id": "w1",
+          "text": "everyone"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w1"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w1"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"Hello everyone.\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0024",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "About me or about a friend? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "I am six."
+        },
+        {
+          "id": "b0",
+          "text": "He is seven."
+        },
+        {
+          "id": "a1",
+          "text": "I like cats."
+        },
+        {
+          "id": "b1",
+          "text": "She likes dogs."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "About me",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "About a friend",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "I am six., I like cats. go in \"About me\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-intro-0025",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Hello! My name is Sam.",
+        "words": ["Hello", "My", "name", "is", "Sam"]
+      },
+      "answerKey": {
+        "words": ["Hello", "My", "name", "is", "Sam"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Hello! My name is Sam.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0026",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "I am six years old.",
+        "words": ["I", "am", "six", "years", "old"]
+      },
+      "answerKey": {
+        "words": ["I", "am", "six", "years", "old"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"I am six years old.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0027",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "I am in class 1B.",
+        "words": ["I", "am", "in", "class", "1B"]
+      },
+      "answerKey": {
+        "words": ["I", "am", "in", "class", "1B"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"I am in class 1B.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0028",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "I like robots.",
+        "words": ["I", "like", "robots"]
+      },
+      "answerKey": {
+        "words": ["I", "like", "robots"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"I like robots.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0029",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "My favourite colour is blue.",
+        "words": ["My", "favourite", "colour", "is", "blue"]
+      },
+      "answerKey": {
+        "words": ["My", "favourite", "colour", "is", "blue"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"My favourite colour is blue.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0030",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "I have a cat.",
+        "words": ["I", "have", "a", "cat"]
+      },
+      "answerKey": {
+        "words": ["I", "have", "a", "cat"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"I have a cat.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0031",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Hi! I'm Lily. I'm six.",
+        "words": ["Hi", "I'm", "Lily", "I'm", "six"]
+      },
+      "answerKey": {
+        "words": ["Hi", "I'm", "Lily", "I'm", "six"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Hi! I'm Lily. I'm six.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0032",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Thank you for listening.",
+        "words": ["Thank", "you", "for", "listening"]
+      },
+      "answerKey": {
+        "words": ["Thank", "you", "for", "listening"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Thank you for listening.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0033",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write: I am ___ years old."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["I am six years old."]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: I am six years old.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0034",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw something you like. Write: I like ___."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["I like kites."]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: I like kites.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-intro-0035",
+      "language": "en",
+      "skillCodes": ["ESL.SPK.INTRODUCE_SELF"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Write two sentences about you."
+      },
+      "rubric": {
+        "criteria": ["Viết/vẽ đúng yêu cầu của đề", "Chính tả tiếng Anh đúng", "Chữ rõ ràng"],
+        "sampleAnswers": ["I am six. I like cats."]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: I am six. I like cats.",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "Global Stage 1 Language Book Unit 1 Meet My Family tr.10 — nói: giới thiệu bản thân và gia đình (bảng chương trình) — chưa chụp trang sách"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1411 @@
+{
+  "skillCode": "ESCI.INQ.ASK_QUESTIONS",
+  "subject": "ESCI",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Chọn câu hỏi thử được và đúng chủ đề ('Which ball bounces higher?'). Ô nhiễu nhắm hai lỗi của bản đồ kỹ năng: câu hỏi không thử được (ý thích: 'Is red the best colour?') và câu hỏi ngoài chủ đề.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-askq-0001",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which one is a question?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Why is the sky blue?"
+        },
+        {
+          "id": "b",
+          "text": "The sky is blue."
+        },
+        {
+          "id": "c",
+          "text": "Blue sky."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Why is the sky blue?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-askq-0002",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which is a question word?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "blue"
+        },
+        {
+          "id": "b",
+          "text": "why"
+        },
+        {
+          "id": "c",
+          "text": "run"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: why",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-askq-0003",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which is a question about plants?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌱",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "What is your name?"
+        },
+        {
+          "id": "b",
+          "text": "Can I have a cookie?"
+        },
+        {
+          "id": "c",
+          "text": "Why do plants need water?"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Why do plants need water?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-askq-0004",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which question can we test with balls?",
+        "image": {
+          "kind": "emoji",
+          "value": "⚽",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Which ball bounces higher?"
+        },
+        {
+          "id": "b",
+          "text": "Is my ball happy?"
+        },
+        {
+          "id": "c",
+          "text": "Do you like balls?"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Which ball bounces higher?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-askq-0005",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which is a science question?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Do you like pink?"
+        },
+        {
+          "id": "b",
+          "text": "What happens if we put ice in the sun?"
+        },
+        {
+          "id": "c",
+          "text": "Where is my bag?"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: What happens if we put ice in the sun?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-askq-0006",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "We are learning about magnets. Which question fits?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "What is for lunch?"
+        },
+        {
+          "id": "b",
+          "text": "Who is the tallest?"
+        },
+        {
+          "id": "c",
+          "text": "What things stick to a magnet?"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: What things stick to a magnet?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0007",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "You find a feather. Which question is about it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Is it light or heavy?"
+        },
+        {
+          "id": "b",
+          "text": "Where is my lunch?"
+        },
+        {
+          "id": "c",
+          "text": "Can I watch TV?"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Is it light or heavy?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0008",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "You see a snail. Which question helps you learn?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Is the snail sad?"
+        },
+        {
+          "id": "b",
+          "text": "What does a snail eat?"
+        },
+        {
+          "id": "c",
+          "text": "Snail."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: What does a snail eat?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0009",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which question starts with 'what happens if'?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Red and blue are colours."
+        },
+        {
+          "id": "b",
+          "text": "I like painting."
+        },
+        {
+          "id": "c",
+          "text": "What happens if we mix red and blue paint?"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: What happens if we mix red and blue paint?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0010",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "We want to test sinking. Which question?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Does a coin sink or float?"
+        },
+        {
+          "id": "b",
+          "text": "Is a coin pretty?"
+        },
+        {
+          "id": "c",
+          "text": "How old is the coin?"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Does a coin sink or float?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0011",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which question can you answer by testing?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Is red the best colour?"
+        },
+        {
+          "id": "b",
+          "text": "Does a toy car go faster down a steep ramp?"
+        },
+        {
+          "id": "c",
+          "text": "Are dogs nicer than cats?"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Does a toy car go faster down a steep ramp?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0012",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which question uses 'which… more'?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Is this a cup?"
+        },
+        {
+          "id": "b",
+          "text": "Do you like cups?"
+        },
+        {
+          "id": "c",
+          "text": "Which cup holds more water?"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Which cup holds more water?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0013",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "A good science question is one we can…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "find out by looking or testing"
+        },
+        {
+          "id": "b",
+          "text": "only guess"
+        },
+        {
+          "id": "c",
+          "text": "never answer"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: find out by looking or testing",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0014",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which question is NOT about light?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Why is it dark at night?"
+        },
+        {
+          "id": "b",
+          "text": "What do cats eat?"
+        },
+        {
+          "id": "c",
+          "text": "Can light go through glass?"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: What do cats eat?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-askq-0015",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. Is it a science question?"
+      },
+      "listenTarget": {
+        "text": "Which ball rolls farther?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "not a science question"
+        },
+        {
+          "id": "b",
+          "text": "science question"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Which ball rolls farther?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-askq-0016",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} asks a question. Can we test it?"
+      },
+      "listenTarget": {
+        "text": "Do you like my shoes?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "not a science question"
+        },
+        {
+          "id": "b",
+          "text": "science question"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Do you like my shoes?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0017",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the question, then choose."
+      },
+      "listenTarget": {
+        "text": "What happens if we put a plant in the dark?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "not a science question"
+        },
+        {
+          "id": "b",
+          "text": "science question"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"What happens if we put a plant in the dark?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0018",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Is this a science question? Tap it."
+      },
+      "listenTarget": {
+        "text": "What is your favourite food?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "not a science question"
+        },
+        {
+          "id": "b",
+          "text": "science question"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"What is your favourite food?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0019",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "Why does ice melt?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "not a science question"
+        },
+        {
+          "id": "b",
+          "text": "science question"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Why does ice melt?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0020",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and choose."
+      },
+      "listenTarget": {
+        "text": "Can I play now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "not a science question"
+        },
+        {
+          "id": "b",
+          "text": "science question"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Can I play now?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0021",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. Is it a science question?"
+      },
+      "listenTarget": {
+        "text": "Which paper towel soaks up more water?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "not a science question"
+        },
+        {
+          "id": "b",
+          "text": "science question"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Which paper towel soaks up more water?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0022",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} asks a question. Can we test it?"
+      },
+      "listenTarget": {
+        "text": "Is purple prettier than green?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "not a science question"
+        },
+        {
+          "id": "b",
+          "text": "science question"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Is purple prettier than green?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0023",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Put the words in order."
+      },
+      "dragItems": [
+        {
+          "id": "w0",
+          "text": "Why"
+        },
+        {
+          "id": "w3",
+          "text": "need"
+        },
+        {
+          "id": "w1",
+          "text": "do"
+        },
+        {
+          "id": "w4",
+          "text": "water"
+        },
+        {
+          "id": "w2",
+          "text": "plants"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        },
+        {
+          "id": "s4",
+          "label": "5",
+          "accepts": ["w0", "w3", "w1", "w4", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"],
+        "s4": ["w4"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"Why do plants need water?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0024",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Build the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w1",
+          "text": "ball"
+        },
+        {
+          "id": "w0",
+          "text": "Which"
+        },
+        {
+          "id": "w3",
+          "text": "higher"
+        },
+        {
+          "id": "w2",
+          "text": "bounces"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w1", "w0", "w3", "w2"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"Which ball bounces higher?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0025",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the words to make a sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w2",
+          "text": "snails"
+        },
+        {
+          "id": "w1",
+          "text": "do"
+        },
+        {
+          "id": "w0",
+          "text": "What"
+        },
+        {
+          "id": "w3",
+          "text": "eat"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w2", "w1", "w0", "w3"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"What do snails eat?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0026",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Help {ban} fix the sentence."
+      },
+      "dragItems": [
+        {
+          "id": "w3",
+          "text": "sink"
+        },
+        {
+          "id": "w2",
+          "text": "coin"
+        },
+        {
+          "id": "w1",
+          "text": "a"
+        },
+        {
+          "id": "w0",
+          "text": "Does"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "s0",
+          "label": "1",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s1",
+          "label": "2",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s2",
+          "label": "3",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        },
+        {
+          "id": "s3",
+          "label": "4",
+          "accepts": ["w3", "w2", "w1", "w0"]
+        }
+      ],
+      "answerKey": {
+        "s0": ["w0"],
+        "s1": ["w1"],
+        "s2": ["w2"],
+        "s3": ["w3"]
+      },
+      "hints": ["Find the word with a capital letter first.", "Say the sentence, then build it."],
+      "explanation": "The sentence is: \"Does a coin sink?\"",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0027",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Question or not a question? Sort."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "Why is the sea salty?"
+        },
+        {
+          "id": "b0",
+          "text": "Birds can fly."
+        },
+        {
+          "id": "a1",
+          "text": "How do birds fly?"
+        },
+        {
+          "id": "b1",
+          "text": "The sea is big."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Question",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Not a question",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "Why is the sea salty?, How do birds fly? go in \"Question\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0028",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Science question or not? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "Why do leaves fall?"
+        },
+        {
+          "id": "b0",
+          "text": "Can I go out?"
+        },
+        {
+          "id": "a1",
+          "text": "What do fish eat?"
+        },
+        {
+          "id": "b1",
+          "text": "Where is my pen?"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Science question",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Not science",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "Why do leaves fall?, What do fish eat? go in \"Science question\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0029",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Can we test it? Sort the questions."
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "Does salt melt ice faster?"
+        },
+        {
+          "id": "b1",
+          "text": "Is my teddy happy?"
+        },
+        {
+          "id": "a0",
+          "text": "Which ball bounces higher?"
+        },
+        {
+          "id": "b0",
+          "text": "Is blue the best colour?"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "We can test it",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "We can't test it",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "Which ball bounces higher?, Does salt melt ice faster? go in \"We can test it\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-askq-0030",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "I wonder why the sky is blue.",
+        "words": ["I", "wonder", "why", "the", "sky", "is", "blue"]
+      },
+      "answerKey": {
+        "words": ["I", "wonder", "why", "the", "sky", "is", "blue"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"I wonder why the sky is blue.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0031",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "What happens if we add water?",
+        "words": ["What", "happens", "if", "we", "add", "water"]
+      },
+      "answerKey": {
+        "words": ["What", "happens", "if", "we", "add", "water"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"What happens if we add water?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0032",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Which ball bounces higher?",
+        "words": ["Which", "ball", "bounces", "higher"]
+      },
+      "answerKey": {
+        "words": ["Which", "ball", "bounces", "higher"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Which ball bounces higher?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0033",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Scientists ask questions.",
+        "words": ["Scientists", "ask", "questions"]
+      },
+      "answerKey": {
+        "words": ["Scientists", "ask", "questions"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Scientists ask questions.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0034",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Look at a plant. Write one question about it."
+      },
+      "rubric": {
+        "criteria": ["Viết đúng một câu hỏi", "Câu hỏi về cái cây", "Có dấu hỏi cuối câu"],
+        "sampleAnswers": ["Why are leaves green?"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: Why are leaves green?",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-askq-0035",
+      "language": "en",
+      "skillCodes": ["ESCI.INQ.ASK_QUESTIONS"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw something you wonder about. Write your question."
+      },
+      "rubric": {
+        "criteria": ["Có tranh", "Có một câu hỏi có dấu ?"],
+        "sampleAnswers": ["Why does the moon change?"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: Why does the moon change?",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS SEP.1 (asking questions) — chưa có sách English Science của trường"
+      }
+    }
+  ]
+}

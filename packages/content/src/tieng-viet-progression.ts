@@ -73,7 +73,8 @@ export const LESSON_TEACHES: Readonly<Record<number, LessonTeaches>> = {
   22: { letters: ["t", "tr"] },
   23: { letters: ["th"], rimes: ["ia"] },
   24: { rimes: ["ua", "ưa"] },
-  26: { letters: ["ph", "qu"] },
+  // SGK tr.64 dạy "p – ph": p đứng một mình chỉ gặp lại ở vần ap/op/ep/ip/up (bài 53–56).
+  26: { letters: ["p", "ph", "qu"] },
   27: { letters: ["v", "x"] },
   28: { letters: ["y"] },
   31: { letters: ["ă", "â"], rimes: ["an", "ăn", "ân"] },

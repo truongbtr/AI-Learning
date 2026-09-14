@@ -1,0 +1,1335 @@
+{
+  "skillCode": "VIET.HV.AM_Y",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B28"],
+  "note": "Bài 28: Y y. Từ của sách: quy, quỳ, quý, quỹ, quỵ, ý, y tá, dã quỳ, đá quý; câu đọc 'Hà chú ý nghe dì kể'. Sách lớp 1 chỉ để y sau qu hoặc đứng một mình, nên ô nhiễu là tiếng qu khác vần (quê, quà, que, quạ, quế — doc_nham_van); bù số bài bằng đọc to và viết.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-amy-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm y?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quý"
+        },
+        {
+          "id": "b",
+          "text": "quế",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm y?"],
+      "explanation": "Tiếng \"quý\" có âm y.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-amy-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm y nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "quỳ"
+        },
+        {
+          "id": "c",
+          "text": "cỏ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm y thôi."],
+      "explanation": "Tiếng \"quỳ\" có âm y.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-amy-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm y?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quê",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "sổ"
+        },
+        {
+          "id": "c",
+          "text": "quỹ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ âm y viết thế nào không?"],
+      "explanation": "Tiếng \"quỹ\" có âm y.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-amy-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm y?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quy"
+        },
+        {
+          "id": "b",
+          "text": "que",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "củ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"quy\" có âm y.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng có âm y."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quạ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "quỵ"
+        },
+        {
+          "id": "c",
+          "text": "ngã"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Tiếng \"quỵ\" có âm y.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-amy-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "💎",
+          "labelVi": "đá quý",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quế",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "quý"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ đá quý.", "Tiếng gọi đá quý có âm y."],
+      "explanation": "Đá quý đọc là \"quý\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng gọi tên bức tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🌼",
+          "labelVi": "hoa dã quỳ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "cỏ"
+        },
+        {
+          "id": "c",
+          "text": "quỳ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ hoa dã quỳ.", "Tiếng gọi hoa dã quỳ có âm y."],
+      "explanation": "Hoa dã quỳ đọc là \"quỳ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bốn ô trông rất giống nhau. Ô nào có âm y?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quế",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "cỏ"
+        },
+        {
+          "id": "c",
+          "text": "quý"
+        },
+        {
+          "id": "d",
+          "text": "sổ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Chỉ \"quý\" có âm y.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn thật kỹ: tiếng nào có âm y?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "cá"
+        },
+        {
+          "id": "c",
+          "text": "sổ"
+        },
+        {
+          "id": "d",
+          "text": "quỳ"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Chỉ \"quỳ\" có âm y.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chỉ một ô có âm y. Con tìm ra không?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quỹ"
+        },
+        {
+          "id": "b",
+          "text": "quê",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        },
+        {
+          "id": "d",
+          "text": "cỏ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tìm con chữ của âm y trong từng ô nhé!"],
+      "explanation": "Chỉ \"quỹ\" có âm y.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có âm y."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "que",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "quy"
+        },
+        {
+          "id": "c",
+          "text": "cá"
+        },
+        {
+          "id": "d",
+          "text": "cỏ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm y?"],
+      "explanation": "Chỉ \"quy\" có âm y.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-amy-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "quý"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quý"
+        },
+        {
+          "id": "b",
+          "text": "quế",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"quý\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-amy-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "quỳ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quà",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "quỳ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"quỳ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "quỹ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quỹ"
+        },
+        {
+          "id": "b",
+          "text": "quê",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"quỹ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "quy"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "que",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "quy"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"quy\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "quỵ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "quỵ"
+        },
+        {
+          "id": "b",
+          "text": "quạ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Con vừa nghe tiếng \"quỵ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ: có âm y hay không có."
+      },
+      "dragItems": [
+        {
+          "id": "s0a",
+          "text": "quý"
+        },
+        {
+          "id": "s0b",
+          "text": "cá"
+        },
+        {
+          "id": "s0c",
+          "text": "quỵ"
+        },
+        {
+          "id": "s0d",
+          "text": "quạ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm y",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s0a", "s0c"],
+        "khong": ["s0b", "s0d"]
+      },
+      "hints": ["Đọc to từng thẻ, thẻ nào có âm y thì xếp riêng."],
+      "explanation": "\"quý\" và \"quỵ\" có âm y.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng có âm y sang một bên nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1a",
+          "text": "quỳ"
+        },
+        {
+          "id": "s1b",
+          "text": "cỏ"
+        },
+        {
+          "id": "s1c",
+          "text": "quý"
+        },
+        {
+          "id": "s1d",
+          "text": "quế",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm y",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s1a", "s1c"],
+        "khong": ["s1b", "s1d"]
+      },
+      "hints": ["Xếp hai thẻ dễ trước, còn lại xếp sau."],
+      "explanation": "\"quỳ\" và \"quý\" có âm y.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chia bốn tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "s2a",
+          "text": "quỹ"
+        },
+        {
+          "id": "s2b",
+          "text": "sổ"
+        },
+        {
+          "id": "s2c",
+          "text": "quỳ"
+        },
+        {
+          "id": "s2d",
+          "text": "quà",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm y",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s2a", "s2c"],
+        "khong": ["s2b", "s2d"]
+      },
+      "hints": ["Nhìn từng con chữ trên thẻ nhé!"],
+      "explanation": "\"quỹ\" và \"quỳ\" có âm y.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Giỏ nào đựng tiếng có âm y?"
+      },
+      "dragItems": [
+        {
+          "id": "s3a",
+          "text": "quy"
+        },
+        {
+          "id": "s3b",
+          "text": "củ"
+        },
+        {
+          "id": "s3c",
+          "text": "quỹ"
+        },
+        {
+          "id": "s3d",
+          "text": "quê",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm y",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s3a", "s3c"],
+        "khong": ["s3b", "s3d"]
+      },
+      "hints": ["Đánh vần thẻ rồi mới kéo."],
+      "explanation": "\"quy\" và \"quỹ\" có âm y.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng đúng vào ô dưới tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "💎",
+          "labelVi": "đá quý",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "quý"
+        },
+        {
+          "id": "sai0",
+          "text": "quế",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "cá"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ đá quý.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Đá quý viết là \"quý\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amy-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn thẻ đúng rồi thả vào ô trống.",
+        "image": {
+          "kind": "emoji",
+          "value": "🌼",
+          "labelVi": "hoa dã quỳ",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "quỳ"
+        },
+        {
+          "id": "sai0",
+          "text": "quà",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "cỏ"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ hoa dã quỳ.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Hoa dã quỳ viết là \"quỳ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-amy-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "y tá",
+        "words": ["y", "tá"]
+      },
+      "answerKey": {
+        "words": ["y", "tá"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"y tá\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "dã quỳ",
+        "words": ["dã", "quỳ"]
+      },
+      "answerKey": {
+        "words": ["dã", "quỳ"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"dã quỳ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "đá quý",
+        "words": ["đá", "quý"]
+      },
+      "answerKey": {
+        "words": ["đá", "quý"]
+      },
+      "hints": ["Đánh vần tiếng nào khó rồi đọc trơn lại."],
+      "explanation": "Câu này đọc là \"đá quý\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "Hà chú ý nghe dì kể",
+        "words": ["Hà", "chú", "ý", "nghe", "dì", "kể"]
+      },
+      "answerKey": {
+        "words": ["Hà", "chú", "ý", "nghe", "dì", "kể"]
+      },
+      "hints": ["Ngắt rõ giữa các tiếng."],
+      "explanation": "Câu này đọc là \"Hà chú ý nghe dì kể\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Mẹ Hà là y tá",
+        "words": ["Mẹ", "Hà", "là", "y", "tá"]
+      },
+      "answerKey": {
+        "words": ["Mẹ", "Hà", "là", "y", "tá"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Mẹ Hà là y tá\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "quà quý",
+        "words": ["quà", "quý"]
+      },
+      "answerKey": {
+        "words": ["quà", "quý"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"quà quý\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "Dì Kha là y tá",
+        "words": ["Dì", "Kha", "là", "y", "tá"]
+      },
+      "answerKey": {
+        "words": ["Dì", "Kha", "là", "y", "tá"]
+      },
+      "hints": ["Đánh vần tiếng nào khó rồi đọc trơn lại."],
+      "explanation": "Câu này đọc là \"Dì Kha là y tá\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "Bố có quỹ nhỏ",
+        "words": ["Bố", "có", "quỹ", "nhỏ"]
+      },
+      "answerKey": {
+        "words": ["Bố", "có", "quỹ", "nhỏ"]
+      },
+      "hints": ["Ngắt rõ giữa các tiếng."],
+      "explanation": "Câu này đọc là \"Bố có quỹ nhỏ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "Bé chú ý nghe bà kể",
+        "words": ["Bé", "chú", "ý", "nghe", "bà", "kể"]
+      },
+      "answerKey": {
+        "words": ["Bé", "chú", "ý", "nghe", "bà", "kể"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Bé chú ý nghe bà kể\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: y tá, đá quý."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["y tá đá quý"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, đúng độ cao từng con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: quý, quỳ, quỹ."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["quý quỳ quỹ"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ đánh dấu thanh sau khi viết xong con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: dã quỳ."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 1 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["dã quỳ"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chép vào vở nhé: chú ý."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 1 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["chú ý"]
+      },
+      "answerKey": null,
+      "hints": ["Viết xong đọc lại xem có đúng tiếng không."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amy-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_Y"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở rồi chụp cho ba mẹ xem: Hà chú ý nghe."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 1 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["Hà chú ý nghe"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, đúng độ cao từng con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B28",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 28 tr.68–69 (Y y)"
+      }
+    }
+  ]
+}

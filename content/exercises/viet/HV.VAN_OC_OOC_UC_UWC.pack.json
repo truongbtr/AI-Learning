@@ -1,0 +1,1880 @@
+{
+  "skillCode": "VIET.HV.VAN_OC_OOC_UC_UWC",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B47"],
+  "note": "Bài 47: oc, ôc, uc, ưc. Từ của sách: học, sóc, cốc, lộc, chục, cúc, đức, mực, con sóc, cái cốc, máy xúc, con mực; bài đọc 'Đi học về, Hà thấy mấy khóm cúc đã nở rực rỡ…'. Ô gần giống: o/ô (sóc / sốc, lộc / lọc) và u/ư (mực / mục, đức / đúc).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-vanoc-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có vần oc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sóc"
+        },
+        {
+          "id": "b",
+          "text": "sốc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy vần oc?"],
+      "explanation": "Tiếng \"sóc\" có vần oc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-vanoc-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có vần ôc nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cóc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "cốc"
+        },
+        {
+          "id": "c",
+          "text": "chén"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có vần ôc thôi."],
+      "explanation": "Tiếng \"cốc\" có vần ôc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-vanoc-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa vần ưc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mục",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "tôm"
+        },
+        {
+          "id": "c",
+          "text": "mực"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ vần ưc viết thế nào không?"],
+      "explanation": "Tiếng \"mực\" có vần ưc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-vanoc-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có vần uc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cúc"
+        },
+        {
+          "id": "b",
+          "text": "cú",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "sen"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"cúc\" có vần uc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng có vần uc."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xức",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "xúc"
+        },
+        {
+          "id": "c",
+          "text": "đào"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Tiếng \"xúc\" có vần uc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba ô, ô nào có vần oc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hộc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "chơi"
+        },
+        {
+          "id": "c",
+          "text": "học"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tìm con chữ của vần oc trong từng ô nhé!"],
+      "explanation": "Tiếng \"học\" có vần oc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có vần ôc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lộc"
+        },
+        {
+          "id": "b",
+          "text": "lọc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "lá"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy vần ôc?"],
+      "explanation": "Tiếng \"lộc\" có vần ôc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có vần uc nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chực",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "chục"
+        },
+        {
+          "id": "c",
+          "text": "trăm"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có vần uc thôi."],
+      "explanation": "Tiếng \"chục\" có vần uc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa vần ưc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "đúc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "tài"
+        },
+        {
+          "id": "c",
+          "text": "đức"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ vần ưc viết thế nào không?"],
+      "explanation": "Tiếng \"đức\" có vần ưc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có vần oc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "góc"
+        },
+        {
+          "id": "b",
+          "text": "gốc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "giữa"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"góc\" có vần oc.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "model",
+      "id": "viet-vanoc-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🐿️",
+          "labelVi": "con sóc",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sốc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "sóc"
+        },
+        {
+          "id": "c",
+          "text": "cóc",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ con sóc.", "Tiếng gọi con sóc có vần oc."],
+      "explanation": "Con sóc đọc là \"sóc\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng gọi tên bức tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🥛",
+          "labelVi": "cái cốc",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cóc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "gốc",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "cốc"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ cái cốc.", "Tiếng gọi cái cốc có vần ôc."],
+      "explanation": "Cái cốc đọc là \"cốc\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tranh này là tiếng nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦑",
+          "labelVi": "con mực",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mực"
+        },
+        {
+          "id": "b",
+          "text": "mục",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "lực",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ con mực.", "Tiếng gọi con mực có vần ưc."],
+      "explanation": "Con mực đọc là \"mực\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanoc-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào hợp với bức tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌼",
+          "labelVi": "hoa cúc",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cú",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "cúc"
+        },
+        {
+          "id": "c",
+          "text": "xúc",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ hoa cúc.", "Tiếng gọi hoa cúc có vần uc."],
+      "explanation": "Hoa cúc đọc là \"cúc\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bốn ô trông rất giống nhau. Ô nào có vần ôc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cóc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "cố",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "cốc"
+        },
+        {
+          "id": "d",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Chỉ \"cốc\" có vần ôc.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn thật kỹ: tiếng nào có vần ưc?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mục",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "mạ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "khỉ"
+        },
+        {
+          "id": "d",
+          "text": "mực"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Chỉ \"mực\" có vần ưc.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chỉ một ô có vần uc. Con tìm ra không?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xúc"
+        },
+        {
+          "id": "b",
+          "text": "xức",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "xé",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "d",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tìm con chữ của vần uc trong từng ô nhé!"],
+      "explanation": "Chỉ \"xúc\" có vần uc.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có vần oc."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "hộc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "học"
+        },
+        {
+          "id": "c",
+          "text": "họ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "d",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy vần oc?"],
+      "explanation": "Chỉ \"học\" có vần oc.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-vanoc-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "sóc"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sóc"
+        },
+        {
+          "id": "b",
+          "text": "cóc",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"sóc\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-vanoc-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "cốc"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "gốc",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "cốc"
+        },
+        {
+          "id": "c",
+          "text": "cố",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"cốc\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanoc-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "mực"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lực",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "mạ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "mực"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"mực\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanoc-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "cúc"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cúc"
+        },
+        {
+          "id": "b",
+          "text": "xúc",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "cú",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"cúc\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanoc-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "xúc"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cúc",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "xúc"
+        },
+        {
+          "id": "c",
+          "text": "xé",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Con vừa nghe tiếng \"xúc\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanoc-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "học"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bọc",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "họ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "học"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"học\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanoc-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "lộc"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lộc"
+        },
+        {
+          "id": "b",
+          "text": "hộc",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "lộ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"lộc\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanoc-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "chục"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "lục",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "chục"
+        },
+        {
+          "id": "c",
+          "text": "trăm"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"chục\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-vanoc-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "đức"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sức",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "đá",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "đức"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"đức\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "sốc"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sóc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "sốc"
+        },
+        {
+          "id": "c",
+          "text": "khỉ"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Tiếng con nghe là \"sốc\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "cóc"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cốc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "chén"
+        },
+        {
+          "id": "c",
+          "text": "cóc"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Tiếng con nghe là \"cóc\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "mục"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "mục"
+        },
+        {
+          "id": "b",
+          "text": "mực",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "c",
+          "text": "tôm"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Tiếng con nghe là \"mục\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "xức"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xúc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "b",
+          "text": "xức"
+        },
+        {
+          "id": "c",
+          "text": "đào"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Tiếng con nghe là \"xức\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ: có vần oc hay không có."
+      },
+      "dragItems": [
+        {
+          "id": "s0a",
+          "text": "sóc"
+        },
+        {
+          "id": "s0b",
+          "text": "khỉ"
+        },
+        {
+          "id": "s0c",
+          "text": "học"
+        },
+        {
+          "id": "s0d",
+          "text": "hộc",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần oc",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s0a", "s0c"],
+        "khong": ["s0b", "s0d"]
+      },
+      "hints": ["Đọc to từng thẻ, thẻ nào có vần oc thì xếp riêng."],
+      "explanation": "\"sóc\" và \"học\" có vần oc.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng có vần ôc sang một bên nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1a",
+          "text": "cốc"
+        },
+        {
+          "id": "s1b",
+          "text": "chén"
+        },
+        {
+          "id": "s1c",
+          "text": "lộc"
+        },
+        {
+          "id": "s1d",
+          "text": "lọc",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần ôc",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s1a", "s1c"],
+        "khong": ["s1b", "s1d"]
+      },
+      "hints": ["Xếp hai thẻ dễ trước, còn lại xếp sau."],
+      "explanation": "\"cốc\" và \"lộc\" có vần ôc.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-vanoc-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chia bốn tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "s2a",
+          "text": "mực"
+        },
+        {
+          "id": "s2b",
+          "text": "tôm"
+        },
+        {
+          "id": "s2c",
+          "text": "rực"
+        },
+        {
+          "id": "s2d",
+          "text": "rạ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần ưc",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s2a", "s2c"],
+        "khong": ["s2b", "s2d"]
+      },
+      "hints": ["Nhìn từng con chữ trên thẻ nhé!"],
+      "explanation": "\"mực\" và \"rực\" có vần ưc.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Giỏ nào đựng tiếng có vần uc?"
+      },
+      "dragItems": [
+        {
+          "id": "s3a",
+          "text": "cúc"
+        },
+        {
+          "id": "s3b",
+          "text": "sen"
+        },
+        {
+          "id": "s3c",
+          "text": "xúc"
+        },
+        {
+          "id": "s3d",
+          "text": "xức",
+          "errorTag": "nham_chu_gan_giong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có vần uc",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s3a", "s3c"],
+        "khong": ["s3b", "s3d"]
+      },
+      "hints": ["Đánh vần thẻ rồi mới kéo."],
+      "explanation": "\"cúc\" và \"xúc\" có vần uc.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng đúng vào ô dưới tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐿️",
+          "labelVi": "con sóc",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "sóc"
+        },
+        {
+          "id": "sai0",
+          "text": "sốc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "sai1",
+          "text": "cóc",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ con sóc.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Con sóc viết là \"sóc\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn thẻ đúng rồi thả vào ô trống.",
+        "image": {
+          "kind": "emoji",
+          "value": "🥛",
+          "labelVi": "cái cốc",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "cốc"
+        },
+        {
+          "id": "sai0",
+          "text": "cóc",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "sai1",
+          "text": "gốc",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ cái cốc.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Cái cốc viết là \"cốc\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_chu_gan_giong",
+      "scaffold": "none",
+      "id": "viet-vanoc-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Thẻ nào gọi tên bức tranh? Kéo vào nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🦑",
+          "labelVi": "con mực",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "mực"
+        },
+        {
+          "id": "sai0",
+          "text": "mục",
+          "errorTag": "nham_chu_gan_giong"
+        },
+        {
+          "id": "sai1",
+          "text": "lực",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ con mực.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Con mực viết là \"mực\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-vanoc-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "con sóc",
+        "words": ["con", "sóc"]
+      },
+      "answerKey": {
+        "words": ["con", "sóc"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"con sóc\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanoc-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "cái cốc",
+        "words": ["cái", "cốc"]
+      },
+      "answerKey": {
+        "words": ["cái", "cốc"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"cái cốc\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanoc-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "máy xúc",
+        "words": ["máy", "xúc"]
+      },
+      "answerKey": {
+        "words": ["máy", "xúc"]
+      },
+      "hints": ["Đánh vần tiếng nào khó rồi đọc trơn lại."],
+      "explanation": "Câu này đọc là \"máy xúc\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanoc-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "con mực",
+        "words": ["con", "mực"]
+      },
+      "answerKey": {
+        "words": ["con", "mực"]
+      },
+      "hints": ["Ngắt rõ giữa các tiếng."],
+      "explanation": "Câu này đọc là \"con mực\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanoc-0043",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Đi học về Hà thấy mấy khóm cúc đã nở rực rỡ",
+        "words": ["Đi", "học", "về", "Hà", "thấy", "mấy", "khóm", "cúc", "đã", "nở", "rực", "rỡ"]
+      },
+      "answerKey": {
+        "words": ["Đi", "học", "về", "Hà", "thấy", "mấy", "khóm", "cúc", "đã", "nở", "rực", "rỡ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Đi học về Hà thấy mấy khóm cúc đã nở rực rỡ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanoc-0044",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Cùng đọc to nào!"
+      },
+      "readTarget": {
+        "text": "Mẹ tấm tắc khen Hà khéo tay",
+        "words": ["Mẹ", "tấm", "tắc", "khen", "Hà", "khéo", "tay"]
+      },
+      "answerKey": {
+        "words": ["Mẹ", "tấm", "tắc", "khen", "Hà", "khéo", "tay"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"Mẹ tấm tắc khen Hà khéo tay\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanoc-0045",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: con sóc, máy xúc."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["con sóc máy xúc"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, đúng độ cao từng con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanoc-0046",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: cái cốc, con mực."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["cái cốc con mực"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ đánh dấu thanh sau khi viết xong con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-vanoc-0047",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.VAN_OC_OOC_UC_UWC"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: học, cúc, rực."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["học cúc rực"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B47",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 47 tr.106–107 (oc ôc uc ưc)"
+      }
+    }
+  ]
+}

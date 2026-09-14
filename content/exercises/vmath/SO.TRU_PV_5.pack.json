@@ -1,0 +1,1612 @@
+{
+  "skillCode": "VMATH.SO.TRU_PV_5",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B11"],
+  "note": "Trừ trong phạm vi 5 theo bài 11: bớt đi, còn lại. Ô 'nham_cong_tru' là kết quả phép cộng.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "id": "vmath-tru5-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "2 - 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Có 2, bớt đi 1.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "2 trừ 1 bằng 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "vmath-tru5-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tính: 3 - 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Có 3, bớt đi 1.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "3 trừ 1 bằng 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-tru5-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con tính giúp {ban}: 3 - 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Có 3, bớt đi 2.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "3 trừ 2 bằng 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "model",
+      "id": "vmath-tru5-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Có 4, bớt đi 1.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "4 trừ 1 bằng 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "vmath-tru5-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tính: 4 - 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Có 4, bớt đi 2.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "4 trừ 2 bằng 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "vmath-tru5-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con tính giúp {ban}: 4 - 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Có 4, bớt đi 3.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "4 trừ 3 bằng 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-tru5-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 1 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Có 5, bớt đi 1.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "5 trừ 1 bằng 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tính: 5 - 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Có 5, bớt đi 2.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "5 trừ 2 bằng 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con tính giúp {ban}: 5 - 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Có 5, bớt đi 3.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "5 trừ 3 bằng 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-tru5-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Có 5, bớt đi 4.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "5 trừ 4 bằng 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tính: 4 - 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Có 4, bớt đi 4.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "4 trừ 4 bằng 0.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con tính giúp {ban}: 5 - 0 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Có 5, bớt đi 0.", "Dùng ngón tay nếu cần nhé."],
+      "explanation": "5 trừ 0 bằng 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-tru5-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 quả táo, ăn mất 2 quả. Còn lại mấy quả?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ: thêm vào hay bớt đi?", "Vẽ ra giấy nếu cần."],
+      "explanation": "5 trừ 2 bằng 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 4 con chim, 1 con bay đi. Còn lại mấy con?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ: thêm vào hay bớt đi?", "Vẽ ra giấy nếu cần."],
+      "explanation": "4 trừ 1 bằng 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-tru5-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Có 3 quả bóng, 1 quả bay đi. Còn lại mấy quả?",
+        "image": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "quả bóng bay",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào hay bớt đi?", "Vẽ ra giấy nếu cần."],
+      "explanation": "3 trừ 1 bằng 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 con cá, 3 con bơi đi. Còn lại mấy con?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc kỹ: thêm vào hay bớt đi?", "Vẽ ra giấy nếu cần."],
+      "explanation": "5 trừ 3 bằng 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "vmath-tru5-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Có 4 bông hoa, bớt 2 bông. Còn lại mấy bông?",
+        "image": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc kỹ: thêm vào hay bớt đi?", "Vẽ ra giấy nếu cần."],
+      "explanation": "4 trừ 2 bằng 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Có 5 ngôi sao, 4 ngôi sao tắt. Còn lại mấy ngôi sao?",
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc kỹ: thêm vào hay bớt đi?", "Vẽ ra giấy nếu cần."],
+      "explanation": "5 trừ 4 bằng 1.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "hai trừ một"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi tính nhé."],
+      "explanation": "hai trừ một bằng một.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "ba trừ một"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm trên ngón tay."],
+      "explanation": "ba trừ một bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "ba trừ hai"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi tính nhé."],
+      "explanation": "ba trừ hai bằng một.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "bốn trừ một"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm trên ngón tay."],
+      "explanation": "bốn trừ một bằng ba.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "bốn trừ hai"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi tính nhé."],
+      "explanation": "bốn trừ hai bằng hai.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "bốn trừ ba"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm trên ngón tay."],
+      "explanation": "bốn trừ ba bằng một.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "vmath-tru5-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "năm trừ một"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi tính nhé."],
+      "explanation": "năm trừ một bằng bốn.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "3 - 1 = ? Kéo kết quả vào ô."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "2"
+        },
+        {
+          "id": "x1",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "x2",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Kết quả",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["ok"]
+      },
+      "hints": ["Tính xong rồi mới kéo."],
+      "explanation": "3 - 1 = 2.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "3 - 2 = ? Thẻ nào đúng? Kéo vào nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "1"
+        },
+        {
+          "id": "x1",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "x2",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Kết quả",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["ok"]
+      },
+      "hints": ["Tính xong rồi mới kéo."],
+      "explanation": "3 - 2 = 1.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 1 = ? Điền số vào ô trống."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "3"
+        },
+        {
+          "id": "x1",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "x2",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Kết quả",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["ok"]
+      },
+      "hints": ["Tính xong rồi mới kéo."],
+      "explanation": "4 - 1 = 3.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 2 = ? Kéo kết quả vào ô."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "2"
+        },
+        {
+          "id": "x1",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "x2",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Kết quả",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["ok"]
+      },
+      "hints": ["Tính xong rồi mới kéo."],
+      "explanation": "4 - 2 = 2.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "4 - 3 = ? Thẻ nào đúng? Kéo vào nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "1"
+        },
+        {
+          "id": "x1",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "x2",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Kết quả",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["ok"]
+      },
+      "hints": ["Tính xong rồi mới kéo."],
+      "explanation": "4 - 3 = 1.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "vmath-tru5-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "5 - 1 = ? Điền số vào ô trống."
+      },
+      "dragItems": [
+        {
+          "id": "ok",
+          "text": "4"
+        },
+        {
+          "id": "x1",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "x2",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Kết quả",
+          "accepts": ["ok", "x1", "x2"]
+        }
+      ],
+      "answerKey": {
+        "o": ["ok"]
+      },
+      "hints": ["Tính xong rồi mới kéo."],
+      "explanation": "5 - 1 = 4.",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm số quả táo lúc đầu nhé."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có năm quả táo.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm số con chim lúc đầu nhé."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "line"
+      },
+      "answerKey": 4,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có bốn con chim.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm số quả bóng bay lúc đầu nhé."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "quả bóng bay",
+          "repeat": 3
+        },
+        "correctCount": 3,
+        "layout": "grid"
+      },
+      "answerKey": 3,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có ba quả bóng bay.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm đếm số con cá lúc đầu nhé."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có năm con cá.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-tru5-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "năm trừ hai bằng ba",
+        "words": ["năm", "trừ", "hai", "bằng", "ba"]
+      },
+      "answerKey": {
+        "words": ["năm", "trừ", "hai", "bằng", "ba"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"năm trừ hai bằng ba\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0037",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "bốn trừ một bằng ba",
+        "words": ["bốn", "trừ", "một", "bằng", "ba"]
+      },
+      "answerKey": {
+        "words": ["bốn", "trừ", "một", "bằng", "ba"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"bốn trừ một bằng ba\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0038",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to phép tính này nhé!"
+      },
+      "readTarget": {
+        "text": "ba trừ hai bằng một",
+        "words": ["ba", "trừ", "hai", "bằng", "một"]
+      },
+      "answerKey": {
+        "words": ["ba", "trừ", "hai", "bằng", "một"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"ba trừ hai bằng một\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0039",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà nghe."
+      },
+      "readTarget": {
+        "text": "năm trừ năm bằng không",
+        "words": ["năm", "trừ", "năm", "bằng", "không"]
+      },
+      "answerKey": {
+        "words": ["năm", "trừ", "năm", "bằng", "không"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"năm trừ năm bằng không\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0040",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết phép tính: 5 - 2 = … vào vở."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["5 - 2 = 3"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 5 - 2 = 3.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0041",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết phép tính: 4 - 3 = … vào vở."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["4 - 3 = 1"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 4 - 3 = 1.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-tru5-0042",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.TRU_PV_5"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Vẽ 5 quả táo, gạch 1 quả, viết phép trừ."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["5 - 1 = 4"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 5 - 1 = 4.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B11",
+        "sourceRef": "SGK Toán 1 tập một, Bài 11 Phép trừ trong phạm vi 10 tr.68–79 (phần phạm vi 5)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1528 @@
+{
+  "skillCode": "VMATH.SO.DEM_DEN_10_THUOC_LONG",
+  "subject": "VMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["KNTT-T1-B00"],
+  "note": "Đếm xuôi 1–10 và đếm lùi. Ô nhiễu 'nói nhầm thứ tự' mang mã nham_thu_tu_so (đề có 'đếm tiếp'/'liền sau').",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-demlong-0001",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp: 1, rồi đến số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 1 là 2.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-demlong-0002",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sau số 2, đếm tiếp là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 2 là 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-demlong-0003",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp sau 3 nhé: số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 3 là 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-demlong-0004",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp: 4, rồi đến số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 4 là 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-demlong-0005",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sau số 5, đếm tiếp là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 5 là 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "vmath-demlong-0006",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp sau 6 nhé: số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 6 là 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0007",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp: 7, rồi đến số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 7 là 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0008",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sau số 8, đếm tiếp là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 8 là 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0009",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp sau 9 nhé: số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 9 là 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0010",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp: 2, rồi đến số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 2 là 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0011",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sau số 6, đếm tiếp là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 6 là 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0012",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm tiếp sau 8 nhé: số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm to từ 1 lên nhé.", "Số tiếp theo lớn hơn một."],
+      "explanation": "Đếm tiếp sau 8 là 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "vmath-demlong-0013",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm lùi: 10, rồi đến số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lùi là đếm ngược lại.", "Số tiếp theo bé hơn một."],
+      "explanation": "Đếm lùi sau 10 là 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0014",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm lùi từ 9, số tiếp là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi là đếm ngược lại.", "Số tiếp theo bé hơn một."],
+      "explanation": "Đếm lùi sau 9 là 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0015",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm lùi: 8, rồi đến số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi là đếm ngược lại.", "Số tiếp theo bé hơn một."],
+      "explanation": "Đếm lùi sau 8 là 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0016",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm lùi từ 7, số tiếp là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm lùi là đếm ngược lại.", "Số tiếp theo bé hơn một."],
+      "explanation": "Đếm lùi sau 7 là 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0017",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm lùi: 6, rồi đến số mấy?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đếm lùi là đếm ngược lại.", "Số tiếp theo bé hơn một."],
+      "explanation": "Đếm lùi sau 6 là 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0018",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm lùi từ 5, số tiếp là số nào?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm lùi là đếm ngược lại.", "Số tiếp theo bé hơn một."],
+      "explanation": "Đếm lùi sau 5 là 4.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0019",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn số đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "đếm tiếp sau số hai"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại rồi đếm to lên."],
+      "explanation": "Sau 2 là 3.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0020",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "đếm tiếp sau số bốn"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm trên ngón tay nhé."],
+      "explanation": "Sau 4 là 5.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0021",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chọn nhé!"
+      },
+      "listenTarget": {
+        "text": "đếm tiếp sau số năm"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại rồi đếm to lên."],
+      "explanation": "Sau 5 là 6.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0022",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm số đúng."
+      },
+      "listenTarget": {
+        "text": "đếm tiếp sau số sáu"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đếm trên ngón tay nhé."],
+      "explanation": "Sau 6 là 7.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0023",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe rồi chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "đếm tiếp sau số tám"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nghe lại rồi đếm to lên."],
+      "explanation": "Sau 8 là 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "vmath-demlong-0024",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn."
+      },
+      "listenTarget": {
+        "text": "đếm tiếp sau số chín"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đếm trên ngón tay nhé."],
+      "explanation": "Sau 9 là 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0025",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các số theo thứ tự đếm nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "3"
+        },
+        {
+          "id": "s2",
+          "text": "1"
+        },
+        {
+          "id": "s3",
+          "text": "2"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Đếm to từ số bé nhất."],
+      "explanation": "1, 2, 3.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0026",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo số vào ô, đếm từ bé đến lớn."
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "6"
+        },
+        {
+          "id": "s2",
+          "text": "4"
+        },
+        {
+          "id": "s3",
+          "text": "5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Đếm to từ số bé nhất."],
+      "explanation": "4, 5, 6.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0027",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm xuôi: số nào đứng trước?"
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "8"
+        },
+        {
+          "id": "s2",
+          "text": "6"
+        },
+        {
+          "id": "s3",
+          "text": "7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Đếm to từ số bé nhất."],
+      "explanation": "6, 7, 8.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0028",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp các số theo thứ tự đếm nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "10"
+        },
+        {
+          "id": "s2",
+          "text": "8"
+        },
+        {
+          "id": "s3",
+          "text": "9"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Đếm to từ số bé nhất."],
+      "explanation": "8, 9, 10.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0029",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo số vào ô, đếm từ bé đến lớn."
+      },
+      "dragItems": [
+        {
+          "id": "s1",
+          "text": "5"
+        },
+        {
+          "id": "s2",
+          "text": "3"
+        },
+        {
+          "id": "s3",
+          "text": "4"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o1",
+          "label": "Thứ nhất",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o2",
+          "label": "Thứ hai",
+          "accepts": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "o3",
+          "label": "Thứ ba",
+          "accepts": ["s1", "s2", "s3"]
+        }
+      ],
+      "answerKey": {
+        "o1": ["s2"],
+        "o2": ["s3"],
+        "o3": ["s1"]
+      },
+      "hints": ["Đếm to từ số bé nhất."],
+      "explanation": "3, 4, 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0030",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm và đếm to số con cá nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐟",
+          "labelVi": "con cá",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có sáu con cá.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0031",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm xem có mấy ngôi sao."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "repeat": 9
+        },
+        "correctCount": 9,
+        "layout": "line"
+      },
+      "answerKey": 9,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có chín ngôi sao.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0032",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chạm và đếm to số bông hoa nhé!"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "repeat": 7
+        },
+        "correctCount": 7,
+        "layout": "grid"
+      },
+      "answerKey": 7,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có bảy bông hoa.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0033",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đếm xem có mấy con ong."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "line"
+      },
+      "answerKey": 10,
+      "hints": ["Chạm từng cái và đếm to lên."],
+      "explanation": "Có mười con ong.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "vmath-demlong-0034",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to nhé!"
+      },
+      "readTarget": {
+        "text": "một hai ba bốn năm",
+        "words": ["một", "hai", "ba", "bốn", "năm"]
+      },
+      "answerKey": {
+        "words": ["một", "hai", "ba", "bốn", "năm"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"một hai ba bốn năm\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0035",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "sáu bảy tám chín mười",
+        "words": ["sáu", "bảy", "tám", "chín", "mười"]
+      },
+      "answerKey": {
+        "words": ["sáu", "bảy", "tám", "chín", "mười"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"sáu bảy tám chín mười\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0036",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to phép tính này nhé!"
+      },
+      "readTarget": {
+        "text": "ba bốn năm sáu bảy",
+        "words": ["ba", "bốn", "năm", "sáu", "bảy"]
+      },
+      "answerKey": {
+        "words": ["ba", "bốn", "năm", "sáu", "bảy"]
+      },
+      "hints": ["Đọc chậm từng tiếng."],
+      "explanation": "Đọc là \"ba bốn năm sáu bảy\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0037",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà nghe."
+      },
+      "readTarget": {
+        "text": "năm bốn ba hai một",
+        "words": ["năm", "bốn", "ba", "hai", "một"]
+      },
+      "answerKey": {
+        "words": ["năm", "bốn", "ba", "hai", "một"]
+      },
+      "hints": ["Đọc rõ từng số."],
+      "explanation": "Đọc là \"năm bốn ba hai một\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0038",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết các số từ 1 đến 10 vào vở nhé!"
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["1 2 3 4 5 6 7 8 9 10"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 1 2 3 4 5 6 7 8 9 10.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0039",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Viết các số đếm lùi từ 10 đến 6 nhé!"
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["10 9 8 7 6"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 10 9 8 7 6.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "vmath-demlong-0040",
+      "language": "vi",
+      "skillCodes": ["VMATH.SO.DEM_DEN_10_THUOC_LONG"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết số còn thiếu: 3, 4, …, 6 vào vở."
+      },
+      "rubric": {
+        "criteria": ["Làm đúng yêu cầu", "Chữ số viết đúng chiều"],
+        "sampleAnswers": ["5"]
+      },
+      "answerKey": null,
+      "hints": ["Làm từng bước, chậm thôi nhé!"],
+      "explanation": "Đáp án: 5.",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-T1-B00",
+        "sourceRef": "SGK Toán 1 tập một, Tiết học đầu tiên tr.6–7"
+      }
+    }
+  ]
+}

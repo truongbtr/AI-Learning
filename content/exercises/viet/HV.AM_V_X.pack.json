@@ -1,0 +1,1690 @@
+{
+  "skillCode": "VIET.HV.AM_V_X",
+  "subject": "VIET",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v2",
+  "lessonRefs": ["KNTT-TV1-T1-B27"],
+  "note": "Bài 27: V v, X x. Từ của sách: võ, vở, vua, xỉa, xứ, xưa, vở vẽ, vỉa hè, xe lu, thị xã; câu đọc 'Quê Hà là xứ sở của dừa'. Câu nhận biết 'Hà vẽ xe đạp' không dùng — vần ap tới bài 53.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amvx-0001",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm v?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vẽ"
+        },
+        {
+          "id": "b",
+          "text": "kẽ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "bé"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm v?"],
+      "explanation": "Tiếng \"vẽ\" có âm v.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amvx-0002",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm x nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "che",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "xe"
+        },
+        {
+          "id": "c",
+          "text": "bò"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm x thôi."],
+      "explanation": "Tiếng \"xe\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amvx-0003",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm v?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bở",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "cờ"
+        },
+        {
+          "id": "c",
+          "text": "vở"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ âm v viết thế nào không?"],
+      "explanation": "Tiếng \"vở\" có âm v.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amvx-0004",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm v?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vua"
+        },
+        {
+          "id": "b",
+          "text": "cua",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "quà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"vua\" có âm v.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0005",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tìm giúp {ban} tiếng có âm x."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sứ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "xứ"
+        },
+        {
+          "id": "c",
+          "text": "quê"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Tiếng \"xứ\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0006",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Trong ba ô, ô nào có âm x?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "giã",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "phố"
+        },
+        {
+          "id": "c",
+          "text": "xã"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tìm con chữ của âm x trong từng ô nhé!"],
+      "explanation": "Tiếng \"xã\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0007",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào có âm v?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "võ"
+        },
+        {
+          "id": "b",
+          "text": "gõ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "hè"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm v?"],
+      "explanation": "Tiếng \"võ\" có âm v.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0008",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng có âm x nhé!"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thưa",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "xưa"
+        },
+        {
+          "id": "c",
+          "text": "nhà"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhìn từng con chữ một từ trái sang phải.", "Chỉ một ô có âm x thôi."],
+      "explanation": "Tiếng \"xưa\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0009",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ô nào chứa âm v?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tỉa",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "hè"
+        },
+        {
+          "id": "c",
+          "text": "vỉa"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Con nhớ âm v viết thế nào không?"],
+      "explanation": "Tiếng \"vỉa\" có âm v.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0010",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tiếng nào có âm x?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xa"
+        },
+        {
+          "id": "b",
+          "text": "ca",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "gà"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Tiếng \"xa\" có âm x.",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "model",
+      "id": "viet-amvx-0011",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tranh vẽ gì? Chọn tiếng đúng nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "🎨",
+          "labelVi": "bức vẽ",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vở",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "vẽ"
+        },
+        {
+          "id": "c",
+          "text": "kẽ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ bức vẽ.", "Tiếng gọi bức vẽ có âm v."],
+      "explanation": "Bức vẽ đọc là \"vẽ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amvx-0012",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn tiếng gọi tên bức tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🚲",
+          "labelVi": "xe đạp",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "xa",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "che",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "xe"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tranh vẽ xe đạp.", "Tiếng gọi xe đạp có âm x."],
+      "explanation": "Xe đạp đọc là \"xe\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amvx-0013",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đố con: tranh này là tiếng nào?",
+        "image": {
+          "kind": "emoji",
+          "value": "📒",
+          "labelVi": "quyển vở",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vở"
+        },
+        {
+          "id": "b",
+          "text": "vẽ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "bở",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tranh vẽ quyển vở.", "Tiếng gọi quyển vở có âm v."],
+      "explanation": "Quyển vở đọc là \"vở\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amvx-0014",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tiếng nào hợp với bức tranh?",
+        "image": {
+          "kind": "emoji",
+          "value": "👑",
+          "labelVi": "nhà vua",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "võ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "b",
+          "text": "vua"
+        },
+        {
+          "id": "c",
+          "text": "cua",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Tranh vẽ nhà vua.", "Tiếng gọi nhà vua có âm v."],
+      "explanation": "Nhà vua đọc là \"vua\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0015",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Bốn ô trông rất giống nhau. Ô nào có âm v?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kẽ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "bò"
+        },
+        {
+          "id": "c",
+          "text": "vẽ"
+        },
+        {
+          "id": "d",
+          "text": "cờ"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đánh vần từng ô lên là ra ngay."],
+      "explanation": "Chỉ \"vẽ\" có âm v.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0016",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nhìn thật kỹ: tiếng nào có âm x?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "che",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "bé"
+        },
+        {
+          "id": "c",
+          "text": "cờ"
+        },
+        {
+          "id": "d",
+          "text": "xe"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["So hai ô giống nhau nhất xem khác chỗ nào."],
+      "explanation": "Chỉ \"xe\" có âm x.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0017",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Chỉ một ô có âm v. Con tìm ra không?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vở"
+        },
+        {
+          "id": "b",
+          "text": "bở",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "bé"
+        },
+        {
+          "id": "d",
+          "text": "bò"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Tìm con chữ của âm v trong từng ô nhé!"],
+      "explanation": "Chỉ \"vở\" có âm v.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0018",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc thầm bốn tiếng rồi chọn tiếng có âm v."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cua",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "vua"
+        },
+        {
+          "id": "c",
+          "text": "bé"
+        },
+        {
+          "id": "d",
+          "text": "bò"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Đọc thầm từng ô, ô nào nghe thấy âm v?"],
+      "explanation": "Chỉ \"vua\" có âm v.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amvx-0019",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "vẽ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vẽ"
+        },
+        {
+          "id": "b",
+          "text": "kẽ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "vở",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"vẽ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "model",
+      "id": "viet-amvx-0020",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "xe"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "che",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "xe"
+        },
+        {
+          "id": "c",
+          "text": "xa",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"xe\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0021",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "vở"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bở",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "vẽ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "vở"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"vở\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0022",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con nghe rồi tìm đúng tiếng nhé!"
+      },
+      "listenTarget": {
+        "text": "vua"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "vua"
+        },
+        {
+          "id": "b",
+          "text": "cua",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "võ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"vua\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0023",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Lắng nghe, tiếng nào vừa vang lên?"
+      },
+      "listenTarget": {
+        "text": "xứ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sứ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "xứ"
+        },
+        {
+          "id": "c",
+          "text": "xưa",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Chú ý âm đầu của tiếng con nghe."],
+      "explanation": "Con vừa nghe tiếng \"xứ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0024",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe lần nữa rồi chọn ô con nghe thấy."
+      },
+      "listenTarget": {
+        "text": "xã"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "giã",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "xẻ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "xã"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Nghe lại một lần nữa nhé!"],
+      "explanation": "Con vừa nghe tiếng \"xã\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0025",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe rồi chọn ô đúng nhé!"
+      },
+      "listenTarget": {
+        "text": "võ"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "võ"
+        },
+        {
+          "id": "b",
+          "text": "gõ",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "c",
+          "text": "vẽ",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Các ô viết gần giống nhau, nghe kỹ phần giữa."],
+      "explanation": "Con vừa nghe tiếng \"võ\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0026",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} đọc một tiếng, con chọn ô đúng."
+      },
+      "listenTarget": {
+        "text": "xưa"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "thưa",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "xưa"
+        },
+        {
+          "id": "c",
+          "text": "xa",
+          "errorTag": "doc_nham_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Nhắm mắt nghe rồi hãy chọn."],
+      "explanation": "Con vừa nghe tiếng \"xưa\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0027",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Nghe kỹ rồi chỉ vào tiếng con vừa nghe."
+      },
+      "listenTarget": {
+        "text": "vỉa"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "tỉa",
+          "errorTag": "nham_am_dau"
+        },
+        {
+          "id": "b",
+          "text": "vở",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "c",
+          "text": "vỉa"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Đọc thầm từng ô rồi so với tiếng vừa nghe."],
+      "explanation": "Con vừa nghe tiếng \"vỉa\".",
+      "meta": {
+        "estSeconds": 20,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0028",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Xếp mỗi tiếng vào đúng giỏ: có âm v hay không có."
+      },
+      "dragItems": [
+        {
+          "id": "s0a",
+          "text": "vẽ"
+        },
+        {
+          "id": "s0b",
+          "text": "bé"
+        },
+        {
+          "id": "s0c",
+          "text": "vỉa"
+        },
+        {
+          "id": "s0d",
+          "text": "tỉa",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm v",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s0a", "s0b", "s0c", "s0d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s0a", "s0c"],
+        "khong": ["s0b", "s0d"]
+      },
+      "hints": ["Đọc to từng thẻ, thẻ nào có âm v thì xếp riêng."],
+      "explanation": "\"vẽ\" và \"vỉa\" có âm v.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0029",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng có âm x sang một bên nhé!"
+      },
+      "dragItems": [
+        {
+          "id": "s1a",
+          "text": "xe"
+        },
+        {
+          "id": "s1b",
+          "text": "bò"
+        },
+        {
+          "id": "s1c",
+          "text": "xẻ"
+        },
+        {
+          "id": "s1d",
+          "text": "kẻ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm x",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s1a", "s1b", "s1c", "s1d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s1a", "s1c"],
+        "khong": ["s1b", "s1d"]
+      },
+      "hints": ["Xếp hai thẻ dễ trước, còn lại xếp sau."],
+      "explanation": "\"xe\" và \"xẻ\" có âm x.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0030",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Chia bốn tiếng thành hai giỏ giúp {ban}."
+      },
+      "dragItems": [
+        {
+          "id": "s2a",
+          "text": "vở"
+        },
+        {
+          "id": "s2b",
+          "text": "cờ"
+        },
+        {
+          "id": "s2c",
+          "text": "vẽ"
+        },
+        {
+          "id": "s2d",
+          "text": "kẽ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm v",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s2a", "s2b", "s2c", "s2d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s2a", "s2c"],
+        "khong": ["s2b", "s2d"]
+      },
+      "hints": ["Nhìn từng con chữ trên thẻ nhé!"],
+      "explanation": "\"vở\" và \"vẽ\" có âm v.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_am_dau",
+      "scaffold": "none",
+      "id": "viet-amvx-0031",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Giỏ nào đựng tiếng có âm v?"
+      },
+      "dragItems": [
+        {
+          "id": "s3a",
+          "text": "vua"
+        },
+        {
+          "id": "s3b",
+          "text": "quà"
+        },
+        {
+          "id": "s3c",
+          "text": "vở"
+        },
+        {
+          "id": "s3d",
+          "text": "bở",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "co",
+          "label": "Có âm v",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        },
+        {
+          "id": "khong",
+          "label": "Không có",
+          "accepts": ["s3a", "s3b", "s3c", "s3d"]
+        }
+      ],
+      "answerKey": {
+        "co": ["s3a", "s3c"],
+        "khong": ["s3b", "s3d"]
+      },
+      "hints": ["Đánh vần thẻ rồi mới kéo."],
+      "explanation": "\"vua\" và \"vở\" có âm v.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "garden",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amvx-0032",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kéo tiếng đúng vào ô dưới tranh.",
+        "image": {
+          "kind": "emoji",
+          "value": "🎨",
+          "labelVi": "bức vẽ",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "vẽ"
+        },
+        {
+          "id": "sai0",
+          "text": "vở",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "kẽ",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ bức vẽ.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Bức vẽ viết là \"vẽ\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amvx-0033",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Chọn thẻ đúng rồi thả vào ô trống.",
+        "image": {
+          "kind": "emoji",
+          "value": "🚲",
+          "labelVi": "xe đạp",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "xe"
+        },
+        {
+          "id": "sai0",
+          "text": "xa",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "che",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ xe đạp.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Xe đạp viết là \"xe\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "robot",
+      "targetsError": "doc_nham_van",
+      "scaffold": "none",
+      "id": "viet-amvx-0034",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Thẻ nào gọi tên bức tranh? Kéo vào nhé!",
+        "image": {
+          "kind": "emoji",
+          "value": "📒",
+          "labelVi": "quyển vở",
+          "repeat": 1
+        }
+      },
+      "dragItems": [
+        {
+          "id": "dung",
+          "text": "vở"
+        },
+        {
+          "id": "sai0",
+          "text": "vẽ",
+          "errorTag": "doc_nham_van"
+        },
+        {
+          "id": "sai1",
+          "text": "bở",
+          "errorTag": "nham_am_dau"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "o",
+          "label": "Ô trống",
+          "accepts": ["dung", "sai0", "sai1"]
+        }
+      ],
+      "answerKey": {
+        "o": ["dung"]
+      },
+      "hints": ["Tranh vẽ quyển vở.", "Đọc to từng thẻ rồi hãy kéo nhé!"],
+      "explanation": "Quyển vở viết là \"vở\".",
+      "meta": {
+        "estSeconds": 35,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "viet-amvx-0035",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc to các tiếng này nhé!"
+      },
+      "readTarget": {
+        "text": "vở vẽ",
+        "words": ["vở", "vẽ"]
+      },
+      "answerKey": {
+        "words": ["vở", "vẽ"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"vở vẽ\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amvx-0036",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc chậm từng tiếng cho {ban} nghe."
+      },
+      "readTarget": {
+        "text": "vỉa hè",
+        "words": ["vỉa", "hè"]
+      },
+      "answerKey": {
+        "words": ["vỉa", "hè"]
+      },
+      "hints": ["Đọc thầm một lần rồi mới đọc to."],
+      "explanation": "Câu này đọc là \"vỉa hè\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amvx-0037",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc to câu này nhé!"
+      },
+      "readTarget": {
+        "text": "xe lu",
+        "words": ["xe", "lu"]
+      },
+      "answerKey": {
+        "words": ["xe", "lu"]
+      },
+      "hints": ["Đánh vần tiếng nào khó rồi đọc trơn lại."],
+      "explanation": "Câu này đọc là \"xe lu\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amvx-0038",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Con đọc cho cả nhà cùng nghe."
+      },
+      "readTarget": {
+        "text": "thị xã",
+        "words": ["thị", "xã"]
+      },
+      "answerKey": {
+        "words": ["thị", "xã"]
+      },
+      "hints": ["Ngắt rõ giữa các tiếng."],
+      "explanation": "Câu này đọc là \"thị xã\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amvx-0039",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Đọc rõ từng tiếng nhé!"
+      },
+      "readTarget": {
+        "text": "Quê Hà là xứ sở của dừa",
+        "words": ["Quê", "Hà", "là", "xứ", "sở", "của", "dừa"]
+      },
+      "answerKey": {
+        "words": ["Quê", "Hà", "là", "xứ", "sở", "của", "dừa"]
+      },
+      "hints": ["Đọc chậm từng tiếng một."],
+      "explanation": "Câu này đọc là \"Quê Hà là xứ sở của dừa\".",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amvx-0040",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Viết vào vở: vở vẽ, xe lu."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["vở vẽ xe lu"]
+      },
+      "answerKey": null,
+      "hints": ["Viết chậm, đúng độ cao từng con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amvx-0041",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Con chép vào vở: vỉa hè, thị xã."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 2 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["vỉa hè thị xã"]
+      },
+      "answerKey": null,
+      "hints": ["Nhớ đánh dấu thanh sau khi viết xong con chữ."],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "viet-amvx-0042",
+      "language": "vi",
+      "skillCodes": ["VIET.HV.AM_V_X"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Viết lại giúp {ban}: vẽ, xa, vua."
+      },
+      "rubric": {
+        "criteria": ["Viết đủ 3 tiếng", "Con chữ đúng nét, đúng độ cao", "Dấu thanh đặt đúng chỗ"],
+        "sampleAnswers": ["vẽ xa vua"]
+      },
+      "answerKey": null,
+      "hints": ["Nhìn mẫu rồi viết theo nhé!"],
+      "explanation": "Viết xong con đọc lại một lượt nhé!",
+      "meta": {
+        "estSeconds": 70,
+        "lessonUnitCode": "KNTT-TV1-T1-B27",
+        "sourceRef": "SGK Tiếng Việt 1 tập một, Bài 27 tr.66–67 (V v, X x)"
+      }
+    }
+  ]
+}

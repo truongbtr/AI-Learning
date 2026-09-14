@@ -1,0 +1,1372 @@
+{
+  "skillCode": "ESCI.PS.COMMUNICATE_LIGHT_SOUND",
+  "subject": "ESCI",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Dùng ánh sáng và âm thanh để báo tin từ xa. Ô nhiễu là cách không dùng ánh sáng hay âm (thì thầm, trốn im lặng), đúng lỗi 'chọn cách không truyền được tín hiệu'.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-signal-0001",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "The light is red. What does it tell cars?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚦",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop."
+        },
+        {
+          "id": "b",
+          "text": "Go."
+        },
+        {
+          "id": "c",
+          "text": "Sing."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Stop.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-signal-0002",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What does a green traffic light tell you?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚦",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop."
+        },
+        {
+          "id": "b",
+          "text": "Go."
+        },
+        {
+          "id": "c",
+          "text": "Sleep."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Go.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-signal-0003",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "A ship at night wants to send a message. It can…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "stay dark and quiet"
+        },
+        {
+          "id": "b",
+          "text": "paint the boat"
+        },
+        {
+          "id": "c",
+          "text": "flash a light"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: flash a light",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-signal-0004",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Why does a fire truck use a loud siren?",
+        "image": {
+          "kind": "emoji",
+          "value": "🚒",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "To tell cars to move away."
+        },
+        {
+          "id": "b",
+          "text": "To play music."
+        },
+        {
+          "id": "c",
+          "text": "To wake up the fish."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: To tell cars to move away.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-signal-0005",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which one sends a signal with light?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🥁",
+            "labelEn": "drum"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🔦",
+            "labelEn": "flashlight"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🔔",
+            "labelEn": "bell"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: flashlight",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-signal-0006",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which one sends a signal with sound?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🔦",
+            "labelEn": "flashlight"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🚦",
+            "labelEn": "traffic light"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🔔",
+            "labelEn": "bell"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: bell",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0007",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A signal is…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a way to send a message"
+        },
+        {
+          "id": "b",
+          "text": "a kind of food"
+        },
+        {
+          "id": "c",
+          "text": "a big animal"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: a way to send a message",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0008",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A car horn beeps at you. What does it say?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Good night!"
+        },
+        {
+          "id": "b",
+          "text": "Watch out!"
+        },
+        {
+          "id": "c",
+          "text": "I am hungry!"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Watch out!",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0009",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "An ambulance needs to get past. It uses…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a quiet voice"
+        },
+        {
+          "id": "b",
+          "text": "a small sticker"
+        },
+        {
+          "id": "c",
+          "text": "a siren"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: a siren",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0010",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Why do bikes have a bell?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "To warn people."
+        },
+        {
+          "id": "b",
+          "text": "To go faster."
+        },
+        {
+          "id": "c",
+          "text": "To carry food."
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: To warn people.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0011",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "You are lost in the woods at night. Best signal?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Whisper very softly."
+        },
+        {
+          "id": "b",
+          "text": "Blow a whistle and shine a flashlight."
+        },
+        {
+          "id": "c",
+          "text": "Hide and stay quiet."
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: Blow a whistle and shine a flashlight.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0012",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your friend is far away and can't hear you. You can…"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "whisper"
+        },
+        {
+          "id": "b",
+          "text": "close your eyes"
+        },
+        {
+          "id": "c",
+          "text": "wave a bright flag"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: wave a bright flag",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0013",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which one is NOT a signal?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a sleeping cat"
+        },
+        {
+          "id": "b",
+          "text": "a traffic light"
+        },
+        {
+          "id": "c",
+          "text": "a fire alarm"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: a sleeping cat",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0014",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which signal works in the dark?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a thumbs-up"
+        },
+        {
+          "id": "b",
+          "text": "a flashing light"
+        },
+        {
+          "id": "c",
+          "text": "a smile"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: a flashing light",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0015",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which signal works when you cannot see?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "a waving flag"
+        },
+        {
+          "id": "b",
+          "text": "a smile"
+        },
+        {
+          "id": "c",
+          "text": "a loud whistle"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think about what you see and hear every day."],
+      "explanation": "The answer is: a loud whistle",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-signal-0016",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the right one."
+      },
+      "listenTarget": {
+        "text": "flashlight"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚦",
+            "labelEn": "traffic light"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🔦",
+            "labelEn": "flashlight"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🔔",
+            "labelEn": "bell"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"flashlight\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-signal-0017",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says something. Tap it!"
+      },
+      "listenTarget": {
+        "text": "bell"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🔦",
+            "labelEn": "flashlight"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🚦",
+            "labelEn": "traffic light"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🔔",
+            "labelEn": "bell"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"bell\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0018",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "siren"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚨",
+            "labelEn": "siren"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🔦",
+            "labelEn": "flashlight"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "📕",
+            "labelEn": "book"
+          }
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"siren\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0019",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "traffic light"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🚨",
+            "labelEn": "siren"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "🚦",
+            "labelEn": "traffic light"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🔦",
+            "labelEn": "flashlight"
+          }
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"traffic light\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0020",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What does green mean?"
+      },
+      "listenTarget": {
+        "text": "Red means stop. Green means go."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stop"
+        },
+        {
+          "id": "b",
+          "text": "Wait"
+        },
+        {
+          "id": "c",
+          "text": "Go"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Red means stop. Green means go.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0021",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What does the fire truck use?"
+      },
+      "listenTarget": {
+        "text": "The fire truck turns on its siren and its lights."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "sound and light"
+        },
+        {
+          "id": "b",
+          "text": "only sound"
+        },
+        {
+          "id": "c",
+          "text": "only light"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"The fire truck turns on its siren and its lights.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0022",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many flashes mean help?"
+      },
+      "listenTarget": {
+        "text": "Flash the light three times if you need help."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Flash the light three times if you need help.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0023",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How does the ship say hello?"
+      },
+      "listenTarget": {
+        "text": "At night, the ship flashes a light to say hello."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "emoji",
+            "value": "🥁",
+            "labelEn": "drum"
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "emoji",
+            "value": "📕",
+            "labelEn": "book"
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "emoji",
+            "value": "🔦",
+            "labelEn": "light"
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"At night, the ship flashes a light to say hello.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0024",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Light signal or sound signal? Sort them."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "traffic light"
+        },
+        {
+          "id": "b0",
+          "text": "bell"
+        },
+        {
+          "id": "a1",
+          "text": "flashlight"
+        },
+        {
+          "id": "b1",
+          "text": "car horn"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Light signal",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Sound signal",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "traffic light, flashlight go in \"Light signal\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0025",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the signals: light or sound?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "flashing lights"
+        },
+        {
+          "id": "b0",
+          "text": "siren"
+        },
+        {
+          "id": "a1",
+          "text": "lighthouse"
+        },
+        {
+          "id": "b1",
+          "text": "whistle"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Light signal",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Sound signal",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "flashing lights, lighthouse go in \"Light signal\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0026",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Do we see it or hear it?"
+      },
+      "dragItems": [
+        {
+          "id": "a1",
+          "text": "a flashing light"
+        },
+        {
+          "id": "b1",
+          "text": "a drum beat"
+        },
+        {
+          "id": "a0",
+          "text": "a waving flag"
+        },
+        {
+          "id": "b0",
+          "text": "clapping"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "We see it",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        },
+        {
+          "id": "zb",
+          "label": "We hear it",
+          "accepts": ["a1", "b1", "a0", "b0"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Read each card, then decide."],
+      "explanation": "a waving flag, a flashing light go in \"We see it\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esci-signal-0027",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "A signal sends a message.",
+        "words": ["A", "signal", "sends", "a", "message"]
+      },
+      "answerKey": {
+        "words": ["A", "signal", "sends", "a", "message"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A signal sends a message.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0028",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "A red light means stop.",
+        "words": ["A", "red", "light", "means", "stop"]
+      },
+      "answerKey": {
+        "words": ["A", "red", "light", "means", "stop"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"A red light means stop.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0029",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "The siren is loud.",
+        "words": ["The", "siren", "is", "loud"]
+      },
+      "answerKey": {
+        "words": ["The", "siren", "is", "loud"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"The siren is loud.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0030",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Flash the light to say hello.",
+        "words": ["Flash", "the", "light", "to", "say", "hello"]
+      },
+      "answerKey": {
+        "words": ["Flash", "the", "light", "to", "say", "hello"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Flash the light to say hello.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0031",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "We can use light and sound.",
+        "words": ["We", "can", "use", "light", "and", "sound"]
+      },
+      "answerKey": {
+        "words": ["We", "can", "use", "light", "and", "sound"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"We can use light and sound.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0032",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "Green light means go.",
+        "words": ["Green", "light", "means", "go"]
+      },
+      "answerKey": {
+        "words": ["Green", "light", "means", "go"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Green light means go.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0033",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a traffic light. Colour red, yellow, green."
+      },
+      "rubric": {
+        "criteria": ["Vẽ đèn giao thông", "Tô đúng thứ tự đỏ, vàng, xanh"],
+        "sampleAnswers": ["traffic light"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: traffic light",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0034",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw one light signal and one sound signal."
+      },
+      "rubric": {
+        "criteria": ["Một tín hiệu ánh sáng", "Một tín hiệu âm thanh"],
+        "sampleAnswers": ["flashlight, bell"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: flashlight, bell",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esci-signal-0035",
+      "language": "en",
+      "skillCodes": ["ESCI.PS.COMMUNICATE_LIGHT_SOUND"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Make a signal with a friend. Draw it."
+      },
+      "rubric": {
+        "criteria": ["Vẽ tín hiệu", "Ghi tín hiệu đó nghĩa là gì"],
+        "sampleAnswers": ["two claps = come here"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: two claps = come here",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "NGSS 1-PS4-4 (communicating with light and sound) — chưa có sách English Science của trường"
+      }
+    }
+  ]
+}
