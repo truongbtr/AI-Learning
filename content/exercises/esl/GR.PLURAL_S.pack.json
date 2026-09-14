@@ -1,0 +1,1342 @@
+{
+  "skillCode": "ESL.GR.PLURAL_S",
+  "subject": "ESL",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Thêm -s (cats) hoặc -es (boxes, buses) khi có nhiều hơn một. Ô nhiễu: quên s (thieu_s_so_nhieu, không có dấu chấm cuối), thêm s vào câu số ít.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "model",
+      "id": "esl-plurals-0001",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Two ___ (dog).",
+        "image": {
+          "kind": "emoji",
+          "value": "🐕",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dogs"
+        },
+        {
+          "id": "b",
+          "text": "dog",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "doges"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Add -s for more than one."],
+      "explanation": "The answer is: dogs",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "model",
+      "id": "esl-plurals-0002",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Three ___ (pen).",
+        "image": {
+          "kind": "emoji",
+          "value": "🖊️",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "pen",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "pens"
+        },
+        {
+          "id": "c",
+          "text": "penes"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Add -s for more than one."],
+      "explanation": "The answer is: pens",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "model",
+      "id": "esl-plurals-0003",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Three ___ (box).",
+        "image": {
+          "kind": "emoji",
+          "value": "📦",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "box",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "boxs"
+        },
+        {
+          "id": "c",
+          "text": "boxes"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Words ending in x add -es."],
+      "explanation": "The answer is: boxes",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "model",
+      "id": "esl-plurals-0004",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Two ___ (bus).",
+        "image": {
+          "kind": "emoji",
+          "value": "🚌",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "buses"
+        },
+        {
+          "id": "b",
+          "text": "bus",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "buss"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Words ending in s add -es."],
+      "explanation": "The answer is: buses",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-plurals-0005",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "One ___ (cat).",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈",
+          "repeat": 1
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cats"
+        },
+        {
+          "id": "b",
+          "text": "cat"
+        },
+        {
+          "id": "c",
+          "text": "cates"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["One thing has no -s."],
+      "explanation": "The answer is: cat",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "model",
+      "id": "esl-plurals-0006",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Four ___ (chair).",
+        "image": {
+          "kind": "emoji",
+          "value": "🪑",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "chair",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "chaires"
+        },
+        {
+          "id": "c",
+          "text": "chairs"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Add -s for more than one."],
+      "explanation": "The answer is: chairs",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0007",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Two ___ (dish).",
+        "image": {
+          "kind": "emoji",
+          "value": "🍽️",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dishes"
+        },
+        {
+          "id": "b",
+          "text": "dish",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "dishs"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Words ending in sh add -es."],
+      "explanation": "The answer is: dishes",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0008",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Five ___ (apple).",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "apple",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "apples"
+        },
+        {
+          "id": "c",
+          "text": "applies"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Add -s for more than one."],
+      "explanation": "The answer is: apples",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0009",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "I have two cat",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "I have two catss"
+        },
+        {
+          "id": "c",
+          "text": "I have two cats"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Two means more than one."],
+      "explanation": "The answer is: I have two cats",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0010",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Three watches"
+        },
+        {
+          "id": "b",
+          "text": "Three watch",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "Three watchs"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Words ending in ch add -es."],
+      "explanation": "The answer is: Three watches",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0011",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "One box, two box"
+        },
+        {
+          "id": "b",
+          "text": "One box, two boxes"
+        },
+        {
+          "id": "c",
+          "text": "One boxs, two boxes"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Only the plural gets -es."],
+      "explanation": "The answer is: One box, two boxes",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0012",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which needs -es, not -s?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat"
+        },
+        {
+          "id": "b",
+          "text": "pen"
+        },
+        {
+          "id": "c",
+          "text": "brush"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Words ending in sh, ch, x, s add -es."],
+      "explanation": "The answer is: brush",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0013",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Six ___ (fox).",
+        "image": {
+          "kind": "emoji",
+          "value": "🦊",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "foxes"
+        },
+        {
+          "id": "b",
+          "text": "fox",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "foxs"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Words ending in x add -es."],
+      "explanation": "The answer is: foxes",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0014",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Two ___ (kite).",
+        "image": {
+          "kind": "emoji",
+          "value": "🪁",
+          "repeat": 2
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "kite",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "kites"
+        },
+        {
+          "id": "c",
+          "text": "kitees"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Add -s for more than one."],
+      "explanation": "The answer is: kites",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0015",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Five fox",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "Five foxs"
+        },
+        {
+          "id": "c",
+          "text": "Five foxes"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Words ending in x add -es."],
+      "explanation": "The answer is: Five foxes",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0016",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which is right?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Two brushes"
+        },
+        {
+          "id": "b",
+          "text": "Two brush",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "Two brushs"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Words ending in sh add -es."],
+      "explanation": "The answer is: Two brushes",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "model",
+      "id": "esl-plurals-0017",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the right word."
+      },
+      "listenTarget": {
+        "text": "two dogs"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dog",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "dogs"
+        },
+        {
+          "id": "c",
+          "text": "doges"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"two dogs\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "model",
+      "id": "esl-plurals-0018",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} counts something. Tap the word!"
+      },
+      "listenTarget": {
+        "text": "three boxes"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "box",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "boxs"
+        },
+        {
+          "id": "c",
+          "text": "boxes"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"three boxes\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0019",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "one cat"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "cat"
+        },
+        {
+          "id": "b",
+          "text": "cats"
+        },
+        {
+          "id": "c",
+          "text": "cates"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"one cat\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0020",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "One or many? Tap the word."
+      },
+      "listenTarget": {
+        "text": "four buses"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "bus",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "buses"
+        },
+        {
+          "id": "c",
+          "text": "buss"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"four buses\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0021",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "five pens"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "pen",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "b",
+          "text": "penes"
+        },
+        {
+          "id": "c",
+          "text": "pens"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"five pens\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "thieu_s_so_nhieu",
+      "scaffold": "none",
+      "id": "esl-plurals-0022",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen for the ending sound."
+      },
+      "listenTarget": {
+        "text": "two dishes"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "dishes"
+        },
+        {
+          "id": "b",
+          "text": "dish",
+          "errorTag": "thieu_s_so_nhieu"
+        },
+        {
+          "id": "c",
+          "text": "dishs"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"two dishes\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0023",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Add -s or -es? Sort the words."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "cat"
+        },
+        {
+          "id": "b0",
+          "text": "box"
+        },
+        {
+          "id": "a1",
+          "text": "pen"
+        },
+        {
+          "id": "b1",
+          "text": "bus"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Add -s",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Add -es",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Words ending in x, s, sh, ch add -es."],
+      "explanation": "cat, pen go in \"Add -s\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0024",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "One or many? Sort the words."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "dog"
+        },
+        {
+          "id": "b0",
+          "text": "dogs"
+        },
+        {
+          "id": "a1",
+          "text": "box"
+        },
+        {
+          "id": "b1",
+          "text": "boxes"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "One",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Many",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Look for the -s or -es."],
+      "explanation": "dog, box go in \"One\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0025",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the right plural for box."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "boxes"
+        },
+        {
+          "id": "c1",
+          "text": "boxs"
+        },
+        {
+          "id": "c2",
+          "text": "box"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "plural",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Words ending in x add -es."],
+      "explanation": "box + es = boxes.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0026",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the right plural for cat."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "cats"
+        },
+        {
+          "id": "c1",
+          "text": "cates"
+        },
+        {
+          "id": "c2",
+          "text": "cat"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "plural",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Just add -s."],
+      "explanation": "cat + s = cats.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0027",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many dogs? Tap each one, then say dogs."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐕",
+          "labelEn": "dogs",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "grid"
+      },
+      "answerKey": 4,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 4 dogs.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0028",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many boxes? Tap each one, then say boxes."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "📦",
+          "labelEn": "boxes",
+          "repeat": 3
+        },
+        "correctCount": 3,
+        "layout": "line"
+      },
+      "answerKey": 3,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 3 boxes.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "esl-plurals-0029",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "I have two cats.",
+        "words": ["I", "have", "two", "cats"]
+      },
+      "answerKey": {
+        "words": ["I", "have", "two", "cats"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"I have two cats.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0030",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "There are three boxes.",
+        "words": ["There", "are", "three", "boxes"]
+      },
+      "answerKey": {
+        "words": ["There", "are", "three", "boxes"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"There are three boxes.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0031",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "She has five pens.",
+        "words": ["She", "has", "five", "pens"]
+      },
+      "answerKey": {
+        "words": ["She", "has", "five", "pens"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"She has five pens.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0032",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "We have two buses.",
+        "words": ["We", "have", "two", "buses"]
+      },
+      "answerKey": {
+        "words": ["We", "have", "two", "buses"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"We have two buses.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0033",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write the plural: one cat, two ___."
+      },
+      "rubric": {
+        "criteria": ["Thêm đúng -s"],
+        "sampleAnswers": ["cats"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: cats",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0034",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write the plural: one box, two ___."
+      },
+      "rubric": {
+        "criteria": ["Thêm đúng -es"],
+        "sampleAnswers": ["boxes"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: boxes",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "esl-plurals-0035",
+      "language": "en",
+      "skillCodes": ["ESL.GR.PLURAL_S"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw 3 pens and write: three pens."
+      },
+      "rubric": {
+        "criteria": ["Có tranh 3 cái bút", "Viết đúng pens"],
+        "sampleAnswers": ["three pens"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: three pens",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS L.1.1c (regular plural nouns) — ESL chưa có giáo trình của trường"
+      }
+    }
+  ]
+}
