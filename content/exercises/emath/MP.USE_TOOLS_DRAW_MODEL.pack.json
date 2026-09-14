@@ -1,0 +1,1442 @@
+{
+  "skillCode": "EMATH.MP.USE_TOOLS_DRAW_MODEL",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Chọn công cụ phù hợp (ten frame, tia số, vẽ vòng tròn) để giải bài; không có mã lỗi cho 'chọn sai công cụ' nên trắc nghiệm chọn công cụ để untagged, còn ô đếm số chấm/số bước dùng dem_thieu_1/dem_thua_1.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-tool-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Mai draws circles for 6 + 3. How many for 6?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["One circle for each unit in 6."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-tool-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ben draws 9 circles, crosses out 4. How many left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["9 circles, cross out 4, count what's left."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-tool-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "On a ten frame showing 7, how many empty boxes are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["A ten frame has 10 boxes total."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-tool-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "On a ten frame showing 4, how many empty boxes are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["10 minus 4 empty boxes."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-tool-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A number line jump from 5 to 5+4. Where do you land?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Jump 4 steps forward from 5."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-tool-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A number line jump from 10 back 3. Where do you land?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Jump 3 steps backward from 10."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ten frame: 10 full dots plus 2 loose. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["10 and 2 more."],
+      "explanation": "The answer is: 12",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ten frame: 10 full dots plus 5 loose. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["10 and 5 more."],
+      "explanation": "The answer is: 15",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A number line jump from 8 to 8+5. Where do you land?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Jump 5 steps forward from 8."],
+      "explanation": "The answer is: 13",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A number line jump from 15 back 6. Where do you land?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Jump 6 steps backward from 15."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lan draws 12 circles, crosses out 5. How many left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Draw 12, cross out 5, count what's left."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Ten frame: 10 full dots plus 8 loose. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["10 and 8 more."],
+      "explanation": "The answer is: 18",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "On a ten frame showing 9, how many empty boxes are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["10 minus 9 empty boxes."],
+      "explanation": "The answer is: 1",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Drawing circles to solve 9 + 6, how many circles for 9?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["One circle for each unit in 9."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Number line jump from 7 to 7+8. Where do you land?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Jump 8 steps forward from 7."],
+      "explanation": "The answer is: 15",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "On a ten frame showing 6, how many empty boxes are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["10 minus 6 empty boxes."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "On a ten frame showing 3, how many empty boxes are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["10 minus 3 empty boxes."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A number line jump from 6 to 6+7. Where do you land?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Jump 7 steps forward from 6."],
+      "explanation": "The answer is: 13",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Ten frame: 10 full dots plus 4 loose. What number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["10 and 4 more."],
+      "explanation": "The answer is: 14",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Drawing circles to solve 8 + 5, how many circles for 5?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["One circle for each unit in 5."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-tool-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "On a ten frame showing 8, how many empty boxes are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["10 minus 8 empty boxes."],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Sort each problem by the best tool."
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "8 + 5 (make ten)"
+        },
+        {
+          "id": "b0",
+          "text": "counting on from 12 to 15"
+        },
+        {
+          "id": "a1",
+          "text": "find 7 + 6 fast"
+        },
+        {
+          "id": "b1",
+          "text": "compare 12 and 15"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Ten frame",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Number line",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Ten frame for make-ten, number line for order and comparing."],
+      "explanation": "8 + 5 (make ten), find 7 + 6 fast go in \"Ten frame\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Match the problem to the best tool."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "8 + 5"
+        },
+        {
+          "id": "c1",
+          "text": "12, 15, or 18?"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "ten frame",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "number line",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Ten frame for making ten, number line for comparing."],
+      "explanation": "8 + 5 uses make-ten; comparing numbers uses a number line.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the number that matches: ten frame full + 3 loose dots."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "13"
+        },
+        {
+          "id": "c1",
+          "text": "10"
+        },
+        {
+          "id": "c2",
+          "text": "3"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["10 and 3 more."],
+      "explanation": "10 + 3 = 13.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the number that matches: ten frame full + 6 loose dots."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "16"
+        },
+        {
+          "id": "c1",
+          "text": "6"
+        },
+        {
+          "id": "c2",
+          "text": "10"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["10 and 6 more."],
+      "explanation": "10 + 6 = 16.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Order the steps to solve 9 + 4 with a drawing."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Count all the circles."
+        },
+        {
+          "id": "c1",
+          "text": "Draw 9 circles, then 4 more."
+        },
+        {
+          "id": "c2",
+          "text": "Write the total."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "last",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c1"],
+        "z1": ["c0"],
+        "z2": ["c2"]
+      },
+      "hints": ["Draw first, then count, then write."],
+      "explanation": "Draw, count, write the answer.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Match each problem to the best model."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Compare 9 and 13"
+        },
+        {
+          "id": "c1",
+          "text": "Make ten with 8 + 6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "number line",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "ten frame",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Comparing needs a number line; make-ten needs a ten frame."],
+      "explanation": "Number line for comparing, ten frame for make-ten.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the number that matches: ten frame full + 9 loose dots."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "19"
+        },
+        {
+          "id": "c1",
+          "text": "9"
+        },
+        {
+          "id": "c2",
+          "text": "10"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "Answer",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["10 and 9 more."],
+      "explanation": "10 + 9 = 19.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Match each problem to the best tool."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "'how many more' between 6 and 14"
+        },
+        {
+          "id": "c1",
+          "text": "8 + 5 by making ten"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "number line",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "ten frame",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Number line for comparing distance, ten frame for make-ten."],
+      "explanation": "Comparing uses a number line; make-ten uses a ten frame.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which model matches each grouping?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "3 equal groups of 4"
+        },
+        {
+          "id": "c1",
+          "text": "4 equal groups of 3"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "3 circles with 4 dots each",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "4 circles with 3 dots each",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Each group needs its own circle."],
+      "explanation": "One circle drawn per group.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Order the steps to solve 8 + 7 with a model."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Write the total."
+        },
+        {
+          "id": "c1",
+          "text": "Draw 8 dots, then 7 more."
+        },
+        {
+          "id": "c2",
+          "text": "Count all the dots."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "first",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "next",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "last",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c2"],
+        "z1": ["c0"],
+        "z2": ["c1"]
+      },
+      "hints": ["Draw first, then count, then write."],
+      "explanation": "Draw, count, write the answer.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count all the circles Mai drew. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⚪",
+          "labelEn": "circles drawn for 6 + 3",
+          "repeat": 9
+        },
+        "correctCount": 9,
+        "layout": "grid"
+      },
+      "answerKey": 9,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 9 circles drawn for 6 + 3.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count the jump marks. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔵",
+          "labelEn": "dots on the number line jumps",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 5 dots on the number line jumps.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a ten frame to show 8 + 4. Write the total."
+      },
+      "rubric": {
+        "criteria": ["Ten frame đúng 10 ô", "Tổng đúng 12"],
+        "sampleAnswers": ["12"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: 12",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Draw a number line jump: 6 to 6+5. Where do you land?"
+      },
+      "rubric": {
+        "criteria": ["Vẽ đủ 5 bước nhảy", "Đáp số đúng 11"],
+        "sampleAnswers": ["11"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: 11",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tool-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.MP.USE_TOOLS_DRAW_MODEL"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Draw circles to solve 10 - 3. Write the answer."
+      },
+      "rubric": {
+        "criteria": ["Vẽ 10 vòng tròn, gạch 3", "Đáp số đúng 7"],
+        "sampleAnswers": ["7"]
+      },
+      "answerKey": null,
+      "hints": ["Leave a finger space between words."],
+      "explanation": "For example: 7",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS MP.5 (use appropriate tools strategically) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

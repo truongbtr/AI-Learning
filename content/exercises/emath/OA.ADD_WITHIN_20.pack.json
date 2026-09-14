@@ -1,0 +1,1614 @@
+{
+  "skillCode": "EMATH.OA.ADD_WITHIN_20",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Cộng hai số có tổng đến 20 bằng make ten, doubles, counting on. Ô nhiễu: hụt/dư một (đặc biệt lỗi qua 10), chép lại một số trong đề.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-add20-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "9 + 7 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Make ten: 9 + 1 = 10, then 10 + 6."],
+      "explanation": "The answer is: 16",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-add20-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "8 + 8 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Double 8 is 16."],
+      "explanation": "The answer is: 16",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-add20-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 9 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Make ten with the 9."],
+      "explanation": "The answer is: 15",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-add20-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "7 + 7 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Double 7 is 14."],
+      "explanation": "The answer is: 14",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-add20-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "5 + 9 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Make ten with the 9."],
+      "explanation": "The answer is: 14",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-add20-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "8 + 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Make ten with the 8."],
+      "explanation": "The answer is: 14",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "9 + 9 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Double 9 is 18."],
+      "explanation": "The answer is: 18",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "7 + 8 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Make ten with the 8."],
+      "explanation": "The answer is: 15",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Double 6 is 12."],
+      "explanation": "The answer is: 12",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "4 + 9 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Make ten with the 9."],
+      "explanation": "The answer is: 13",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "9 + 8 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Make ten: 9 + 1, then + 7."],
+      "explanation": "The answer is: 17",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "7 + 9 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Make ten with the 9."],
+      "explanation": "The answer is: 16",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "3 + 9 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Make ten with the 9."],
+      "explanation": "The answer is: 12",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "8 + 7 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Make ten with the 8."],
+      "explanation": "The answer is: 15",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "9 + 6 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Make ten with the 9."],
+      "explanation": "The answer is: 15",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "5 + 8 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Make ten with the 8."],
+      "explanation": "The answer is: 13",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "6 + 7 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Make ten with the 7."],
+      "explanation": "The answer is: 13",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "4 + 8 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Make ten with the 8."],
+      "explanation": "The answer is: 12",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "5 + 7 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Make ten with the 7."],
+      "explanation": "The answer is: 12",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "2 + 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on 3 from 2."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "4 + 2 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on 2 from 4."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "9 + 4 + 3 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["9 + 1 = 10 first, then + 3, then + 3 more."],
+      "explanation": "The answer is: 16",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "8 + 5 + 4 = ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["8 + 2 = 10 first, then + 3, then + 4 more."],
+      "explanation": "The answer is: 17",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-add20-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the answer."
+      },
+      "listenTarget": {
+        "text": "Nine plus seven."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Nine plus seven.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-add20-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a sum. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Eight plus eight."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Eight plus eight.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "Seven plus eight."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Seven plus eight.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What is the answer? Tap it."
+      },
+      "listenTarget": {
+        "text": "Nine plus nine."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Nine plus nine.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick a number."
+      },
+      "listenTarget": {
+        "text": "Six plus nine."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Six plus nine.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the number you worked out."
+      },
+      "listenTarget": {
+        "text": "Eight plus six."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Eight plus six.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the answer."
+      },
+      "listenTarget": {
+        "text": "Nine plus six."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Nine plus six.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a sum. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "Five plus eight."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Five plus eight.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-add20-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "Six plus seven."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Six plus seven.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-add20-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is the answer? Tap it."
+      },
+      "listenTarget": {
+        "text": "Two plus three."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Two plus three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-add20-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the sum: 9 + 7 ="
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "16"
+        },
+        {
+          "id": "c1",
+          "text": "17"
+        },
+        {
+          "id": "c2",
+          "text": "15"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "9 + 7",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Make ten first."],
+      "explanation": "9 + 7 = 16.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-add20-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the sum: 8 + 6 ="
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "14"
+        },
+        {
+          "id": "c1",
+          "text": "15"
+        },
+        {
+          "id": "c2",
+          "text": "13"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "8 + 6",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Make ten first."],
+      "explanation": "8 + 6 = 14.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-add20-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the sum: 7 + 9 ="
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "16"
+        },
+        {
+          "id": "c1",
+          "text": "15"
+        },
+        {
+          "id": "c2",
+          "text": "17"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "7 + 9",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Make ten first."],
+      "explanation": "7 + 9 = 16.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-add20-0037",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the sum: 9 + 4 + 3 ="
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "16"
+        },
+        {
+          "id": "c1",
+          "text": "15"
+        },
+        {
+          "id": "c2",
+          "text": "17"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "9 + 4 + 3",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"]
+      },
+      "hints": ["Make ten first, then add the rest."],
+      "explanation": "9 + 4 + 3 = 16.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-add20-0038",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Nine plus six is fifteen.",
+        "words": ["Nine", "plus", "six", "is", "fifteen"]
+      },
+      "answerKey": {
+        "words": ["Nine", "plus", "six", "is", "fifteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Nine plus six is fifteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-add20-0039",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Eight plus eight is sixteen.",
+        "words": ["Eight", "plus", "eight", "is", "sixteen"]
+      },
+      "answerKey": {
+        "words": ["Eight", "plus", "eight", "is", "sixteen"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Eight plus eight is sixteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-add20-0040",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Nine plus eight is seventeen.",
+        "words": ["Nine", "plus", "eight", "is", "seventeen"]
+      },
+      "answerKey": {
+        "words": ["Nine", "plus", "eight", "is", "seventeen"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Nine plus eight is seventeen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-add20-0041",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Nine plus nine is eighteen.",
+        "words": ["Nine", "plus", "nine", "is", "eighteen"]
+      },
+      "answerKey": {
+        "words": ["Nine", "plus", "nine", "is", "eighteen"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Nine plus nine is eighteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-add20-0042",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Nine plus seven is sixteen.",
+        "words": ["Nine", "plus", "seven", "is", "sixteen"]
+      },
+      "answerKey": {
+        "words": ["Nine", "plus", "seven", "is", "sixteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Nine plus seven is sixteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.C.6 (add within 20) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1420 @@
+{
+  "skillCode": "EMATH.OA.EQUAL_SIGN_MEANING",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Dấu = nghĩa là 'bằng nhau' hai vế. Không có mã lỗi cho 'hiểu sai dấu bằng' nên câu true/false (chấm đúng-sai, không phải số) chuyển hết sang kéo-thả (DRAG_DROP không cần mã lỗi); MCQ/LISTEN_CHOOSE chỉ dùng cho dạng 'tìm số còn thiếu' — có đáp số thật, hụt/dư một nói đúng lỗi.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-eqsign-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "? + 2 = 3 + 4"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["3 + 4 = 7, so ? + 2 must also be 7."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-eqsign-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "6 = ? - 2"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["? - 2 must equal 6."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-eqsign-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "4 + 3 = 2 + ?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["4 + 3 = 7, so 2 + ? must also be 7."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-eqsign-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "9 = ? + 4"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["? + 4 must equal 9."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-eqsign-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "? + 3 = 5 + 5"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["5 + 5 = 10, so ? + 3 must also be 10."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-eqsign-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "10 = ? + 6"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["? + 6 must equal 10."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "? + 4 = 7 + 2"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["7 + 2 = 9, so ? + 4 must also be 9."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "12 = ? + 7"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["? + 7 must equal 12."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "? + 5 = 6 + 6"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["6 + 6 = 12, so ? + 5 must also be 12."],
+      "explanation": "The answer is: 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "? + 1 = 2 + 3"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["2 + 3 = 5, so ? + 1 must also be 5."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "4 = ? + 1"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["? + 1 must equal 4."],
+      "explanation": "The answer is: 3",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "? + 3 = 8 + 1"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["8 + 1 = 9, so ? + 3 must also be 9."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-eqsign-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the missing number."
+      },
+      "listenTarget": {
+        "text": "Three plus four equals what plus two?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Three plus four equals what plus two?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-eqsign-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} says a number sentence. Tap the missing number!"
+      },
+      "listenTarget": {
+        "text": "Six equals what minus two?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Six equals what minus two?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "Nine equals what plus four?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Nine equals what plus four?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What number is missing? Tap it."
+      },
+      "listenTarget": {
+        "text": "Ten equals what plus six?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Ten equals what plus six?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "Two plus three equals what plus one?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Two plus three equals what plus one?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-eqsign-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Work out both sides, then tap."
+      },
+      "listenTarget": {
+        "text": "Seven plus two equals what plus four?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Seven plus two equals what plus four?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the equations: true or false?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "6 = 6"
+        },
+        {
+          "id": "c1",
+          "text": "7 = 8 - 1"
+        },
+        {
+          "id": "c2",
+          "text": "6 + 3 = 10"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "false",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Work out both sides of each equation."],
+      "explanation": "6=6 true, 8-1=7 true, 6+3=9 not 10.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the equations: true or false?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "5 + 2 = 2 + 5"
+        },
+        {
+          "id": "c1",
+          "text": "10 - 4 = 5"
+        },
+        {
+          "id": "c2",
+          "text": "4 + 1 = 5 + 0"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "false",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Work out both sides of each equation."],
+      "explanation": "5+2=2+5 true, 10-4=6 not 5, both sides equal 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the equations: true or false?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "12 = 6 + 6"
+        },
+        {
+          "id": "c1",
+          "text": "4 + 4 = 9"
+        },
+        {
+          "id": "c2",
+          "text": "7 + 0 = 7"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "false",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Work out both sides of each equation."],
+      "explanation": "6+6=12 true, 4+4=8 not 9, 7+0=7 true.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the equations: true or false?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "8 = 3 + 5"
+        },
+        {
+          "id": "c1",
+          "text": "9 - 2 = 3 + 4"
+        },
+        {
+          "id": "c2",
+          "text": "3 + 4 = 4 + 3"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Work out both sides of each equation."],
+      "explanation": "8=3+5, 9-2=7=3+4, both sides always equal 7.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the equations: true or false?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "2 + 6 = 6 + 2"
+        },
+        {
+          "id": "c1",
+          "text": "9 = 9 + 0"
+        },
+        {
+          "id": "c2",
+          "text": "15 - 5 = 10"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Work out both sides of each equation."],
+      "explanation": "All three equations are true.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the equations: true or false?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "8 - 3 = 4 + 1"
+        },
+        {
+          "id": "c1",
+          "text": "2 + 3 + 1 = 6"
+        },
+        {
+          "id": "c2",
+          "text": "10 = 4 + 5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "false",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Work out both sides of each equation."],
+      "explanation": "8-3=5=4+1, 2+3+1=6, but 4+5=9 not 10.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the equations: true or false?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "11 = 5 + 6"
+        },
+        {
+          "id": "c1",
+          "text": "3 + 6 = 8"
+        },
+        {
+          "id": "c2",
+          "text": "14 = 20 - 6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "false",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Work out both sides of each equation."],
+      "explanation": "5+6=11 true, 3+6=9 not 8, 20-6=14 true.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the equations: true or false?"
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "4 + 1 = 5 + 0"
+        },
+        {
+          "id": "c1",
+          "text": "6 + 3 = 10"
+        },
+        {
+          "id": "c2",
+          "text": "10 - 4 = 5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "true",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "false",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "false",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Work out both sides of each equation."],
+      "explanation": "4+1=5=5+0 true, 6+3=9 not 10, 10-4=6 not 5.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-eqsign-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Six equals six.",
+        "words": ["Six", "equals", "six"]
+      },
+      "answerKey": {
+        "words": ["Six", "equals", "six"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Six equals six.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Seven equals eight minus one.",
+        "words": ["Seven", "equals", "eight", "minus", "one"]
+      },
+      "answerKey": {
+        "words": ["Seven", "equals", "eight", "minus", "one"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Seven equals eight minus one.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Five plus two equals two plus five.",
+        "words": ["Five", "plus", "two", "equals", "two", "plus", "five"]
+      },
+      "answerKey": {
+        "words": ["Five", "plus", "two", "equals", "two", "plus", "five"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Five plus two equals two plus five.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Eight equals three plus five.",
+        "words": ["Eight", "equals", "three", "plus", "five"]
+      },
+      "answerKey": {
+        "words": ["Eight", "equals", "three", "plus", "five"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Eight equals three plus five.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "Nine equals nine plus zero.",
+        "words": ["Nine", "equals", "nine", "plus", "zero"]
+      },
+      "answerKey": {
+        "words": ["Nine", "equals", "nine", "plus", "zero"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Nine equals nine plus zero.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "Twelve equals six plus six.",
+        "words": ["Twelve", "equals", "six", "plus", "six"]
+      },
+      "answerKey": {
+        "words": ["Twelve", "equals", "six", "plus", "six"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"Twelve equals six plus six.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Eleven equals five plus six.",
+        "words": ["Eleven", "equals", "five", "plus", "six"]
+      },
+      "answerKey": {
+        "words": ["Eleven", "equals", "five", "plus", "six"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"Eleven equals five plus six.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Fourteen equals twenty minus six.",
+        "words": ["Fourteen", "equals", "twenty", "minus", "six"]
+      },
+      "answerKey": {
+        "words": ["Fourteen", "equals", "twenty", "minus", "six"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"Fourteen equals twenty minus six.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-eqsign-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.EQUAL_SIGN_MEANING"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Three plus four equals four plus three.",
+        "words": ["Three", "plus", "four", "equals", "four", "plus", "three"]
+      },
+      "answerKey": {
+        "words": ["Three", "plus", "four", "equals", "four", "plus", "three"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Three plus four equals four plus three.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.D.7 (understanding the equal sign) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

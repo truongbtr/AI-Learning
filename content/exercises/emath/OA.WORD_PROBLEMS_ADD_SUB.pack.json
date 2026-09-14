@@ -1,0 +1,1364 @@
+{
+  "skillCode": "EMATH.OA.WORD_PROBLEMS_ADD_SUB",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Bài toán lời văn cộng/trừ trong phạm vi 20 (add to, take from, put together, take apart). Ô nhiễu: chọn phép ngược (nham_cong_tru), chép lại số trong đề (lap_lai_tong), hiểu sai từ khoá (khong_hieu_de_loi_van).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordadd-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Sam has 6 cars. He gets 3 more. How many cars now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Gets more means add."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordadd-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Mia has 14 stickers. She gives away 5. How many left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Gives away means take away."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordadd-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "There are 8 ducks. 5 more come. How many ducks now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["More come means add."],
+      "explanation": "The answer is: 13",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordadd-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "16 cookies. We eat 7. How many are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Eat means take away."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordadd-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "6 red fish and 8 gold fish. How many fish in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Put both groups together."],
+      "explanation": "The answer is: 14",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordadd-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "15 kids play. 6 go home. How many still play?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Go home means take away."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Ben has 12 stickers. Ann has 7. How many more has Ben?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["How many more: find the difference."],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-wordadd-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "9 birds sit. 3 fly away, then 2 more. How many left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Take away 3, then take away 2."],
+      "explanation": "The answer is: 4",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "9 apples. Some are eaten. 4 are left. How many eaten?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Think: 9 take away what leaves 4?"],
+      "explanation": "The answer is: 5",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "5 red balls and some blue balls make 13. How many blue?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Think: 5 plus what makes 13?"],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordadd-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "'How many are left?' What do you do?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "add",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "take away"
+        },
+        {
+          "id": "c",
+          "text": "count the words",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Left means some went away."],
+      "explanation": "The answer is: take away",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordadd-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "'How many in all?' What do you do?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "take away",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "pick the biggest number",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "c",
+          "text": "add"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["In all means put together."],
+      "explanation": "The answer is: add",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordadd-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "'How many more' means you should..."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "find the difference"
+        },
+        {
+          "id": "b",
+          "text": "add both numbers",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "repeat the bigger number",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Compare the two amounts by subtracting."],
+      "explanation": "The answer is: find the difference",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "khong_hieu_de_loi_van",
+      "scaffold": "none",
+      "id": "emath-wordadd-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sam has 6 cars. He gets 3 more. What is the question?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "He gets 3 more.",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "b",
+          "text": "How many cars now?"
+        },
+        {
+          "id": "c",
+          "text": "Sam has 6 cars.",
+          "errorTag": "khong_hieu_de_loi_van"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The question ends with a question mark."],
+      "explanation": "The answer is: How many cars now?",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordadd-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "16 cookies. We eat 7. Which numbers do you use?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16 and 23",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "7 and 9",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "c",
+          "text": "16 and 7"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Find the numbers in the story."],
+      "explanation": "The answer is: 16 and 7",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordadd-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Mia has 14 stickers. She gives 5 away. Which fact?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14 - 5 = 9"
+        },
+        {
+          "id": "b",
+          "text": "14 + 5 = 19",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "5 - 14 = 9",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Gives away means take away."],
+      "explanation": "The answer is: 14 - 5 = 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordadd-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "6 cats and 3 more come. Which fact?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 - 3 = 3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "6 + 3 = 9"
+        },
+        {
+          "id": "c",
+          "text": "6 + 3 = 8",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["More come means add."],
+      "explanation": "The answer is: 6 + 3 = 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "There are 7 apples and 6 oranges. How many fruits in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Put both groups together."],
+      "explanation": "The answer is: 13",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A shelf has 18 books. 9 are borrowed. How many are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Borrowed means taken away."],
+      "explanation": "The answer is: 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Lan has 8 candies. She gets 9 more. How many now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Gets more means add."],
+      "explanation": "The answer is: 17",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordadd-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "'She gives some away' means you should..."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "add",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "b",
+          "text": "multiply",
+          "errorTag": "khong_hieu_de_loi_van"
+        },
+        {
+          "id": "c",
+          "text": "subtract"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Giving away means some are taken."],
+      "explanation": "The answer is: subtract",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-wordadd-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "A shelf has 18 books, 9 are borrowed. Which fact?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18 - 9 = 9"
+        },
+        {
+          "id": "b",
+          "text": "18 + 9 = 27",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "c",
+          "text": "9 - 18 = 9",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Borrowed means take away."],
+      "explanation": "The answer is: 18 - 9 = 9",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Farmer has 9 hens and 8 ducks. How many birds in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Put both groups together."],
+      "explanation": "The answer is: 17",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordadd-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the story, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Tom has eight apples. He gets five more. How many apples now?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Tom has eight apples. He gets five more. How many apples now?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "model",
+      "id": "emath-wordadd-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} tells a maths story. Tap the answer!"
+      },
+      "listenTarget": {
+        "text": "There are fourteen frogs. Six jump away. How many are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"There are fourteen frogs. Six jump away. How many are left?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "Seven girls and six boys play. How many children in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Seven girls and six boys play. How many children in all?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap it."
+      },
+      "listenTarget": {
+        "text": "Sixteen balloons. Nine pop. How many balloons are left?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"Sixteen balloons. Nine pop. How many balloons are left?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the whole story first."
+      },
+      "listenTarget": {
+        "text": "Lily reads eight books on Monday and five on Tuesday. How many books?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"Lily reads eight books on Monday and five on Tuesday. How many books?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "Twelve bees. Five fly to a flower. How many are not on the flower?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"Twelve bees. Five fly to a flower. How many are not on the flower?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-wordadd-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen to the story, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "Nine red cars and eight blue cars. How many cars in all?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"Nine red cars and eight blue cars. How many cars in all?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordadd-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Match the story to the right operation."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "He gets 3 more."
+        },
+        {
+          "id": "c1",
+          "text": "She gives 5 away."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "add",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "subtract",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Getting more is add; giving away is subtract."],
+      "explanation": "Gets more = add, gives away = subtract.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordadd-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Match the story to the right operation."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "Two groups put together."
+        },
+        {
+          "id": "c1",
+          "text": "Some go away, how many are left?"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "add",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "subtract",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Putting together is add; how many left is subtract."],
+      "explanation": "Put together = add, left = subtract.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordadd-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Match the story to the right operation."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "text": "9 are borrowed from the shelf."
+        },
+        {
+          "id": "c1",
+          "text": "Lan gets 9 more candies."
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "subtract",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "add",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["Borrowed means gone; gets more means add."],
+      "explanation": "Borrowed = subtract, gets more = add.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordadd-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write your own word problem where the answer is 9."
+      },
+      "rubric": {
+        "criteria": ["Có đủ hai số", "Câu hỏi rõ ràng", "Đáp số đúng 9"],
+        "sampleAnswers": ["I had 5 balloons. I got 4 more. How many now?"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: I had 5 balloons. I got 4 more. How many now?",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-wordadd-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.WORD_PROBLEMS_ADD_SUB"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Write your own word problem where you subtract."
+      },
+      "rubric": {
+        "criteria": ["Có tình huống trừ", "Đáp số đúng"],
+        "sampleAnswers": ["I had 12 candies. I ate 4. How many are left?"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: I had 12 candies. I ate 4. How many are left?",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS 1.OA.A.1 (add to, take from, put together, take apart) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}

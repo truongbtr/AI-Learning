@@ -1,0 +1,1443 @@
+{
+  "skillCode": "EMATH.G.NAME_3D_SHAPES",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": [],
+  "note": "Không có mã lỗi cho 'gọi nhầm tên hình khối', nên theo đúng cách EMATH.G.NAME_2D_SHAPES đã làm: MCQ/LISTEN_CHOOSE chỉ hỏi thứ đếm được (số mặt phẳng, số góc) — nơi dem_thieu_1/dem_thua_1 nói đúng lỗi; gọi tên hình đi bằng kéo-thả (không cần mã lỗi).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-3dshape-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many flat faces does a cube have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count the top, bottom, and four sides."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-3dshape-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many corners does a cube have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Touch each corner of the dice."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-3dshape-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many flat faces does a rectangular prism have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count every flat side of the box."],
+      "explanation": "The answer is: 6",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-3dshape-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many corners does a rectangular prism have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Touch each corner of the box."],
+      "explanation": "The answer is: 8",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-3dshape-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many flat faces does a cylinder have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Only the top and bottom of a can are flat."],
+      "explanation": "The answer is: 2",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-3dshape-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many corners does a cylinder have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["A can has no sharp corners."],
+      "explanation": "The answer is: 0",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-3dshape-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many flat faces does a cone have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Only the round base is flat."],
+      "explanation": "The answer is: 1",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-3dshape-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many points does a cone have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A cone comes to one point at the top."],
+      "explanation": "The answer is: 1",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-3dshape-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many flat faces does a sphere have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["A sphere is round all over."],
+      "explanation": "The answer is: 0",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-3dshape-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many corners does a sphere have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A sphere has no corners at all."],
+      "explanation": "The answer is: 0",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-3dshape-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many corners does a cone have?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A cone has one point at the top."],
+      "explanation": "The answer is: 1",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-3dshape-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "How many flat faces on a cube?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"How many flat faces on a cube?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-3dshape-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "{ban} asks about a shape. Tap it!"
+      },
+      "listenTarget": {
+        "text": "How many corners on a rectangular prism?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"How many corners on a rectangular prism?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-3dshape-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully, then choose."
+      },
+      "listenTarget": {
+        "text": "How many flat faces on a cylinder?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Close your eyes and listen."],
+      "explanation": "You heard: \"How many flat faces on a cylinder?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-3dshape-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap the number."
+      },
+      "listenTarget": {
+        "text": "How many flat faces on a cone?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen to the whole thing."],
+      "explanation": "You heard: \"How many flat faces on a cone?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-3dshape-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen again and pick one."
+      },
+      "listenTarget": {
+        "text": "How many corners on a cube?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen one more time."],
+      "explanation": "You heard: \"How many corners on a cube?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-3dshape-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Think of the shape, then tap."
+      },
+      "listenTarget": {
+        "text": "How many flat faces on a sphere?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say it out loud yourself."],
+      "explanation": "You heard: \"How many flat faces on a sphere?\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the objects: round shapes or shapes with flat faces?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "ball"
+        },
+        {
+          "id": "b0",
+          "text": "dice"
+        },
+        {
+          "id": "a1",
+          "text": "can"
+        },
+        {
+          "id": "b1",
+          "text": "book"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Round (sphere/cone/cylinder)",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "All flat faces (cube/prism)",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Does it roll, or does it only slide?"],
+      "explanation": "ball, can go in \"Round (sphere/cone/cylinder)\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Sort the shapes: rolls, or does not roll?"
+      },
+      "dragItems": [
+        {
+          "id": "a0",
+          "text": "sphere"
+        },
+        {
+          "id": "b0",
+          "text": "cube"
+        },
+        {
+          "id": "a1",
+          "text": "cylinder"
+        },
+        {
+          "id": "b1",
+          "text": "rectangular prism"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "za",
+          "label": "Rolls",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        },
+        {
+          "id": "zb",
+          "label": "Does not roll",
+          "accepts": ["a0", "b0", "a1", "b1"]
+        }
+      ],
+      "answerKey": {
+        "za": ["a0", "a1"],
+        "zb": ["b0", "b1"]
+      },
+      "hints": ["Flat faces stop a shape from rolling."],
+      "explanation": "sphere, cylinder go in \"Rolls\".",
+      "meta": {
+        "estSeconds": 45,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each object to its 3D shape name."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "⚽"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🎲"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🥫"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "sphere",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "cube",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "cylinder",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Round ball, square-faced dice, can with flat ends."],
+      "explanation": "⚽ sphere, 🎲 cube, 🥫 cylinder.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each object to its 3D shape name."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🍦"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "📦"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "cone",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "rectangular prism",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["One comes to a point, one is box-shaped."],
+      "explanation": "🍦 cone, 📦 rectangular prism.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Match each 3D shape to a real object."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🎲"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "⚽"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍦"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "a die",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z1",
+          "label": "a ball",
+          "accepts": ["c0", "c1", "c2"]
+        },
+        {
+          "id": "z2",
+          "label": "an ice-cream cone",
+          "accepts": ["c0", "c1", "c2"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"]
+      },
+      "hints": ["Think about which real object matches each shape."],
+      "explanation": "Cube-die, sphere-ball, cone-ice-cream.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each real object to its shape."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🥫"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "📦"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "cylinder",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "rectangular prism",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["One is round with flat ends, one is box-shaped."],
+      "explanation": "🥫 cylinder, 📦 rectangular prism.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Match all five 3D shapes to their names."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "🎲"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "⚽"
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "emoji",
+            "value": "🍦"
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "emoji",
+            "value": "🥫"
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "emoji",
+            "value": "📦"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "cube",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z1",
+          "label": "sphere",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z2",
+          "label": "cone",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z3",
+          "label": "cylinder",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        },
+        {
+          "id": "z4",
+          "label": "rectangular prism",
+          "accepts": ["c0", "c1", "c2", "c3", "c4"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"],
+        "z2": ["c2"],
+        "z3": ["c3"],
+        "z4": ["c4"]
+      },
+      "hints": ["Think about faces, points and round parts."],
+      "explanation": "🎲 cube, ⚽ sphere, 🍦 cone, 🥫 cylinder, 📦 rectangular prism.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag each real object to its shape."
+      },
+      "dragItems": [
+        {
+          "id": "c0",
+          "image": {
+            "kind": "emoji",
+            "value": "⚽"
+          }
+        },
+        {
+          "id": "c1",
+          "image": {
+            "kind": "emoji",
+            "value": "🍦"
+          }
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "sphere",
+          "accepts": ["c0", "c1"]
+        },
+        {
+          "id": "z1",
+          "label": "cone",
+          "accepts": ["c0", "c1"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["c0"],
+        "z1": ["c1"]
+      },
+      "hints": ["One is round all over, one comes to a point."],
+      "explanation": "⚽ sphere, 🍦 cone.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count the balls. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⚽",
+          "labelEn": "balls (spheres)",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
+      },
+      "answerKey": 6,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 6 balls (spheres).",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count the cans. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🥫",
+          "labelEn": "cans (cylinders)",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "line"
+      },
+      "answerKey": 5,
+      "hints": ["Say the number as you tap."],
+      "explanation": "There are 5 cans (cylinders).",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-3dshape-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "A cube has six flat faces.",
+        "words": ["A", "cube", "has", "six", "flat", "faces"]
+      },
+      "answerKey": {
+        "words": ["A", "cube", "has", "six", "flat", "faces"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A cube has six flat faces.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "A sphere has no flat faces.",
+        "words": ["A", "sphere", "has", "no", "flat", "faces"]
+      },
+      "answerKey": {
+        "words": ["A", "sphere", "has", "no", "flat", "faces"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"A sphere has no flat faces.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "A cone has one point.",
+        "words": ["A", "cone", "has", "one", "point"]
+      },
+      "answerKey": {
+        "words": ["A", "cone", "has", "one", "point"]
+      },
+      "hints": ["Take a breath, then read."],
+      "explanation": "This says: \"A cone has one point.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "A cylinder has two flat faces.",
+        "words": ["A", "cylinder", "has", "two", "flat", "faces"]
+      },
+      "answerKey": {
+        "words": ["A", "cylinder", "has", "two", "flat", "faces"]
+      },
+      "hints": ["Point to each word as you read."],
+      "explanation": "This says: \"A cylinder has two flat faces.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this line out loud."
+      },
+      "readTarget": {
+        "text": "A rectangular prism has eight corners.",
+        "words": ["A", "rectangular", "prism", "has", "eight", "corners"]
+      },
+      "answerKey": {
+        "words": ["A", "rectangular", "prism", "has", "eight", "corners"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A rectangular prism has eight corners.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Let's read together!"
+      },
+      "readTarget": {
+        "text": "A cylinder has no corners.",
+        "words": ["A", "cylinder", "has", "no", "corners"]
+      },
+      "answerKey": {
+        "words": ["A", "cylinder", "has", "no", "corners"]
+      },
+      "hints": ["Read it in your head first."],
+      "explanation": "This says: \"A cylinder has no corners.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Find a cube-shaped object at home. Draw it."
+      },
+      "rubric": {
+        "criteria": ["Vẽ vật hình khối lập phương", "Có ghi tên vật"],
+        "sampleAnswers": ["a dice"]
+      },
+      "answerKey": null,
+      "hints": ["Say it before you write it."],
+      "explanation": "For example: a dice",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-3dshape-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.G.NAME_3D_SHAPES"],
+      "type": "WRITE_PHOTO",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Find a cylinder-shaped object at home. Draw it."
+      },
+      "rubric": {
+        "criteria": ["Vẽ vật hình trụ", "Có ghi tên vật"],
+        "sampleAnswers": ["a can"]
+      },
+      "answerKey": null,
+      "hints": ["Copy it letter by letter."],
+      "explanation": "For example: a can",
+      "meta": {
+        "estSeconds": 90,
+        "lessonUnitCode": null,
+        "sourceRef": "CCSS K.G.A.2 (identifying 3D shapes) — chưa có giáo trình English Maths của trường"
+      }
+    }
+  ]
+}
