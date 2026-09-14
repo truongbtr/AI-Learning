@@ -302,8 +302,15 @@
       "prerequisites": ["ENL.RL.CHARACTERS_SETTING"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MINI_STORY", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO",
+        "MINI_STORY"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RL.RETELL",
@@ -318,8 +325,16 @@
       "prerequisites": ["ENL.RL.SEQUENCE_EVENTS"],
       "relatedSkillCodes": ["VIET.NN.KE_LAI"],
       "confusableWith": [],
-      "exerciseTypes": ["SPEAK_ANSWER", "MINI_STORY", "DRAG_DROP"],
-      "difficultyRange": [2, 5]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO",
+        "SPEAK_ANSWER",
+        "MINI_STORY"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RL.CENTRAL_MESSAGE",
@@ -642,8 +657,8 @@
       "prerequisites": ["ENL.W.SENTENCE"],
       "relatedSkillCodes": ["VIET.TV.TU_CHI_SU_VAT"],
       "confusableWith": ["ENL.L.ADJECTIVES"],
-      "exerciseTypes": ["DRAG_DROP", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "READ_ALOUD", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.L.PRONOUNS",
@@ -674,8 +689,15 @@
       "prerequisites": ["ENL.L.NOUNS_VERBS"],
       "relatedSkillCodes": ["ESL.VOC.ADJECTIVES", "VIET.TV.TU_CHI_DAC_DIEM"],
       "confusableWith": ["ENL.L.NOUNS_VERBS"],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "SPEAK_ANSWER"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO",
+        "SPEAK_ANSWER"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.L.CONTEXT_CLUES",
@@ -853,8 +875,15 @@
       "prerequisites": ["ENL.RF.FLUENCY_LEVEL_D"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MINI_STORY", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO",
+        "MINI_STORY"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.FLUENCY_LEVEL_F",
@@ -869,8 +898,15 @@
       "prerequisites": ["ENL.RF.FLUENCY_LEVEL_E"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "MINI_STORY", "MCQ"],
-      "difficultyRange": [3, 5]
+      "exerciseTypes": [
+        "MCQ",
+        "LISTEN_CHOOSE",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "WRITE_PHOTO",
+        "MINI_STORY"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ENL.RF.FLUENCY_LEVEL_G",
