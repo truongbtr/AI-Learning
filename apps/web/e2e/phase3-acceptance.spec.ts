@@ -13,7 +13,7 @@ import { expect, type Page, test } from "@playwright/test";
  * hint-hint-answer ladder after three wrong tries, and reaches a celebration with stars. The
  * screenshots land in docs/screens/pha-3/.
  */
-const KID = { name: "Thy", slug: "thy", pin: ["Mèo", "Thỏ", "Bướm", "Cá"] };
+const KID = { name: "Mai Thy", slug: "thy", pin: ["Mèo", "Thỏ", "Bướm", "Cá"] };
 const ADMIN_USER = process.env.E2E_ADMIN_USER ?? "admin";
 const ADMIN_PASSWORD = process.env.E2E_ADMIN_PASSWORD;
 const SHOTS = join(__dirname, "..", "..", "..", "docs", "screens", "pha-3");
@@ -41,7 +41,7 @@ async function replanQuest(page: Page): Promise<void> {
   await page.waitForURL(/\/admin\/users|\/change-password/);
 
   const users = await page.request.get("/api/admin/users").then((r) => r.json());
-  // By slug, not by name: a dev database can hold more than one "Thy" from earlier test runs.
+  // By slug, not by name: a dev database can hold more than one "Mai Thy" from earlier test runs.
   const child = (users.items as { student?: { id: string; slug: string } }[] | undefined)?.find(
     (u) => u.student?.slug === KID.slug,
   );
@@ -169,7 +169,16 @@ test("K4 → K5: the whole quest, with hints and never the word a child should n
       continue;
     }
 
-    // A break or a choice can come first; deal with whichever is on screen.
+    // Wait for the station to show something (a choice loads its two exercises first).
+    await page
+      .locator(
+        '[data-testid="choice-station"], [data-testid="exercise-prompt"], [data-testid="homework-rounds"], [data-testid="homework-record"], [data-testid="carry-on"], [data-testid="model-first"]',
+      )
+      .first()
+      .waitFor({ state: "visible", timeout: 8000 })
+      .catch(() => {});
+
+    // A choice can come first; deal with whichever is on screen.
     if (
       await page
         .getByTestId("choice-station")
@@ -182,24 +191,11 @@ test("K4 → K5: the whole quest, with hints and never the word a child should n
         .first()
         .click({ timeout: 6000, force: true })
         .catch(() => {});
-      await page.waitForTimeout(600);
-    }
-    if (
+      // the pick is saved before the exercise shows; a cold dev server needs a moment
       await page
-        .getByTestId("movement-break")
-        .isVisible()
-        .catch(() => false)
-    ) {
-      await page.waitForTimeout(1200);
-      await page.screenshot({ path: join(SHOTS, "k4-movement-break.png") });
-      const skipBreak = page.getByRole("button", { name: /Bỏ qua/ });
-      if (await skipBreak.isVisible().catch(() => false)) {
-        await skipBreak.click({ timeout: 2000 }).catch(() => {});
-      } else {
-        // The first break of a session cannot be skipped: stand up and count to thirty.
-        await page.waitForTimeout(31_000).catch(() => {});
-      }
-      continue;
+        .getByTestId("exercise-prompt")
+        .waitFor({ state: "visible", timeout: 8000 })
+        .catch(() => {});
     }
     if (
       await page

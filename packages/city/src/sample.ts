@@ -1,6 +1,6 @@
 // Sample city views for the bench, screenshots and budget tests (not real children's data).
 
-import type { BuildingLevel, CityView } from "@mtct/core";
+import type { BuildingLevel, CityView, GrowthStep } from "@mtct/core";
 import { DECORATIONS, PLOT_CATALOGUE, PUBLIC_BUILDINGS } from "./build/civic";
 import { WONDER_PIECES } from "./build/wonders";
 import type { CityId } from "./palette";
@@ -57,6 +57,7 @@ export function sampleView(city: CityId, size: SampleSize): CityView {
       skillId: `${city}-skill-${i}`,
       label: LABELS[city][i % LABELS[city].length] as string,
       level: size === "day1" ? (Math.min(level, 2) as BuildingLevel) : level,
+      step: (level > 0 && level < 4 ? i % 3 : 0) as GrowthStep,
       needsHelp: i % 9 === 4,
       mission: i % 6 === 1,
     };

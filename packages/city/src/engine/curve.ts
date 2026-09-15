@@ -10,6 +10,10 @@ export interface CurveUniforms {
   curveCenter: { value: Vector2 };
   curveStart: { value: number };
   curveK: { value: number };
+  /** "Growing from the ground" (việc 4): centre and half-size (x,z) of one lot, and growth 0…1+. */
+  riseCenter: { value: Vector2 };
+  riseHalf: { value: Vector2 };
+  riseProgress: { value: number };
 }
 
 export function createCurveUniforms(): CurveUniforms {
@@ -17,14 +21,26 @@ export function createCurveUniforms(): CurveUniforms {
     curveCenter: { value: new Vector2() },
     curveStart: { value: 60 },
     curveK: { value: CURVE_K },
+    riseCenter: { value: new Vector2() },
+    riseHalf: { value: new Vector2(0, 0) },
+    riseProgress: { value: 1 },
   };
 }
+
+/** Height of lot pads: anything above it on the rising lot scales up from here. */
+export const RISE_BASE = 0.16;
 
 const CURVE_FN = /* glsl */ `
 uniform vec2 curveCenter;
 uniform float curveStart;
 uniform float curveK;
+uniform vec2 riseCenter;
+uniform vec2 riseHalf;
+uniform float riseProgress;
 vec4 curveWorld(vec4 w) {
+  if (abs(w.x - riseCenter.x) < riseHalf.x && abs(w.z - riseCenter.y) < riseHalf.y && w.y > ${RISE_BASE.toFixed(2)}) {
+    w.y = ${RISE_BASE.toFixed(2)} + (w.y - ${RISE_BASE.toFixed(2)}) * riseProgress;
+  }
   float d = max(0.0, length(w.xz - curveCenter) - curveStart);
   w.y -= curveK * d * d;
   return w;

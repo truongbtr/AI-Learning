@@ -18,6 +18,7 @@ import {
   skillLabel,
   snapshotOf,
   starsForPlots,
+  stepFor,
   townHallOrderFor,
   unlockedPlotBuilds,
   wonderProgress,
@@ -300,5 +301,19 @@ describe("cityChanges", () => {
       }),
     ).view;
     expect(cityChanges(seen, decayed)).toEqual([]);
+  });
+});
+
+describe("growth step inside a level", () => {
+  it("splits each band in thirds, so a station of practice usually adds a floor", () => {
+    expect(stepFor(40, 1)).toBe(0);
+    expect(stepFor(47, 1)).toBe(1);
+    expect(stepFor(59, 1)).toBe(2);
+    expect(stepFor(60, 2)).toBe(0);
+    expect(stepFor(70, 2)).toBe(1);
+    expect(stepFor(84, 2)).toBe(2);
+    expect(stepFor(100, 3)).toBe(2);
+    expect(stepFor(20, 0)).toBe(0);
+    expect(stepFor(95, 4)).toBe(0);
   });
 });

@@ -160,3 +160,24 @@ export const CITY: Record<CityId, CityPalette> = {
 };
 
 export const ROAD = { road: WORLD.road, curb: WORLD.curb } as const;
+
+/** Colours every city shares, mixed into each city's own two-colour palette (Pha 10 bổ sung §6). */
+export const COMMON_ROOFS = [0xff7a5c, 0x3fa7d6, 0xffbe2e, 0x2bb3a3, 0x8e6fd8] as const;
+export const COMMON_WALLS = [0xfff4dc, 0xffffff, 0xffd9b8, 0xd8f3dc, 0xdcecff, 0xffe9a8] as const;
+/** Odd list lengths: picks by a fixed index and by the seed both walk every colour. */
+export const LOT_ROOF_COLOURS = 5;
+export const LOT_WALL_COLOURS = 7;
+
+const uniq = (xs: readonly number[]) => [...new Set(xs)];
+const rotate = <T>(xs: readonly T[], by: number) => xs.map((_, i) => xs[(i + by) % xs.length] as T);
+
+/**
+ * The palette one building is painted with: the city's roofs and walls, its two signature colours
+ * and the shared colours, turned by the lot's seed. Neighbouring lots therefore never share a roof
+ * and a street shows at least three roof colours and four wall colours.
+ */
+export function lotPalette(city: CityPalette, seed: number): CityPalette {
+  const roofs = uniq([...city.roofs, city.a, city.b, ...COMMON_ROOFS]).slice(0, LOT_ROOF_COLOURS);
+  const walls = uniq([...city.walls, ...COMMON_WALLS]).slice(0, LOT_WALL_COLOURS);
+  return { ...city, roofs: rotate(roofs, seed), walls: rotate(walls, seed) };
+}

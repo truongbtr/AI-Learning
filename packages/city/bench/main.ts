@@ -65,6 +65,7 @@ async function main() {
 
   const bubbles = new Map<string, HTMLButtonElement>();
   const syncBubbles = () => {
+    if (q.has("nobubbles")) return;
     const view = sampleView(city, size);
     const wanted = new Set<string>(["townHall:order", "wonder"]);
     for (const s of view.skills)

@@ -6,15 +6,21 @@ export type CitySubject = "viet" | "vmath" | "esl" | "enl" | "emath" | "esci";
 
 /** 0 = scaffold (0–39) · 1 (40–59) · 2 (60–84) · 3 (85+) · 4 = skyscraper (MASTERED ≥ 30 days). */
 export type BuildingLevel = 0 | 1 | 2 | 3 | 4;
+export type GrowthStep = 0 | 1 | 2;
 
 export interface CitySkillBuilding {
   skillId: string;
   /** Short sign on the building: a letter, a number, a word ("ă", "10", "cat"). ≤ 5 chars. */
   label: string;
   level: BuildingLevel;
+  /**
+   * Growth inside the level band, in thirds (0–2): each step is one more floor on the roof, so a
+   * finished station shows the building taller even when the level has not changed yet.
+   */
+  step: GrowthStep;
   /** High ErrorStat → scaffold + waiting worker, tapping starts a TARGETED session. */
   needsHelp: boolean;
-  /** Planner has an exercise for this skill today → sparkling mission bubble on the roof. */
+  /** A station of the city session still waits here → a star on the roof. */
   mission: boolean;
 }
 

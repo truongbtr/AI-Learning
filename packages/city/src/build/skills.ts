@@ -4,7 +4,7 @@
 
 import type { BuildingLevel } from "@mtct/core";
 import type { Object3D } from "three";
-import type { CityId } from "../palette";
+import { type CityId, lotPalette } from "../palette";
 import {
   type Built,
   building,
@@ -26,7 +26,7 @@ export function skillBuilding(
   seed: number,
   label: string,
 ): Built {
-  return THEMES[ctx.city.id](ctx, level, seed, label);
+  return THEMES[ctx.city.id]({ ...ctx, city: lotPalette(ctx.city, seed) }, level, seed, label);
 }
 
 const white = "#ffffff";

@@ -13,7 +13,6 @@ import {
   cityRead,
   markCitySeen,
   starsBySubject,
-  startCityPractice,
   worldRead,
 } from "./state";
 
@@ -209,23 +208,6 @@ describe("subject city from learning data (integration)", () => {
     expect((await cityRead(db, sid(), "viet", at)).state.view.land.builds).toEqual([
       { plot: 0, build: "pond" },
     ]);
-  });
-
-  it("opens a targeted session only for a building that is waiting, once per day", async (ctx) => {
-    needDb(ctx);
-    const db = testDb();
-    const waiting = skills[0] as { id: string; code: string };
-    const first = await startCityPractice(db, sid(), "viet", waiting.id, at);
-    expect(first.skillCode).toBe(waiting.code);
-    const again = await startCityPractice(db, sid(), "viet", waiting.id, at);
-    expect(again).toMatchObject({ sessionId: first.sessionId, created: false });
-    const steady = skills[2] as { id: string };
-    await expect(startCityPractice(db, sid(), "viet", steady.id, at)).rejects.toMatchObject({
-      code: "SKILL_NOT_WAITING",
-    });
-    await expect(startCityPractice(db, sid(), "vmath", waiting.id, at)).rejects.toMatchObject({
-      code: "SKILL_NOT_IN_CITY",
-    });
   });
 
   it("summarises all six cities for the world map", async (ctx) => {

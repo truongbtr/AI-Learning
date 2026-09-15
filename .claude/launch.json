@@ -14,6 +14,28 @@
       "runtimeArgs": ["--filter", "@mtct/web", "exec", "next", "start", "--port", "5000"],
       "port": 5000,
       "url": "http://localhost:5000"
+    },
+    {
+      "name": "web-city",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@mtct/web", "exec", "next", "dev", "--port", "5001"],
+      "port": 5001,
+      "url": "http://localhost:5001",
+      "env": {
+        "KID_UI": "city",
+        "AUTH_URL": "http://localhost:5001"
+      }
+    },
+    {
+      "name": "web-world",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@mtct/web", "exec", "next", "dev", "--port", "5002"],
+      "port": 5002,
+      "url": "http://localhost:5002",
+      "env": {
+        "KID_UI": "world",
+        "AUTH_URL": "http://localhost:5002"
+      }
     }
   ]
 }

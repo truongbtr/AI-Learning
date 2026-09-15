@@ -13,10 +13,13 @@ import type { CityView } from "@mtct/core";
 export const TILE = 3.2;
 export const BLOCK_PITCH = 6; // tiles: 5 interior + 1 road
 export const LOT_TILES = 2;
-/** Blocks always present, even on day one, so a new city already looks like a town. */
-export const MIN_BLOCKS = 6;
-/** Plots shown behind a fence ahead of what the kid owns (first one carries the star cost). */
-export const LOCKED_PLOTS_SHOWN = 2;
+/**
+ * Blocks on day one: a new city is two streets and the town hall, the rest is grass, forest and
+ * water waiting for land (Pha 10 bổ sung §5). The city grows with the child.
+ */
+export const MIN_BLOCKS = 2;
+/** Plots shown behind a fence ahead of what the kid owns (it carries the star cost, "70★"). */
+export const LOCKED_PLOTS_SHOWN = 1;
 
 export type BlockKind = "townhall" | "wonder" | "lots";
 export type LotRole = "skill" | "public" | "plot";

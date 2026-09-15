@@ -48,7 +48,7 @@ Khi đọc mã và schema thì có năm chỗ đề bài không khớp thẳng v
      ngưỡng `ACTIVE_ERROR_COUNT_7D` của thang khắc phục);
    - kỹ năng đang có thang khắc phục ACTIVE;
    - trạng thái NEEDS_PRACTICE.
-5. **Cửa riêng cho con: `POST /api/kid/city/practice`.** Route cũ vẫn chặn CHILD. Cửa mới không nhận
+5. ~~**Cửa riêng cho con: `POST /api/kid/city/practice`.**~~ *(bỏ ngày 15/09 — xem "Bổ sung" bên dưới)* Route cũ vẫn chặn CHILD. Cửa mới không nhận
    tên kỹ năng tự do: máy chủ tự tính lại thành phố và chỉ mở phiên cho **công trình mà chính thành phố
    đang hiện là chưa vững** (mức 0 hoặc cần giúp). Mỗi kỹ năng chỉ một phiên mỗi ngày, chạm lại thì mở lại
    phiên cũ. Nhờ vậy con không tự chọn được kỹ năng dễ, đúng tinh thần của route cũ.
@@ -82,3 +82,34 @@ Khi đọc mã và schema thì có năm chỗ đề bài không khớp thẳng v
   6 thành phố. Nếu sau này chậm thì cache theo `(bé, ngày, updatedAt lớn nhất)`.
 - Còn mở cho việc 4: khi ẩn cửa hàng, con nhận vật trang trí bằng cách nào. Đề xuất: mỗi ô đất mở tặng
   một vật trang trí, cộng quà trong thư của ba mẹ như hiện nay.
+
+## Bổ sung 15/09/2026 — cách chơi trong thành phố (chủ dự án: "giờ làm cho nó CHƠI được")
+
+1. **Trạm thay cho bong bóng.** Trong thành phố chỉ có **3–4 ngôi sao**. Phiên của thành phố (12 bài của
+   môn, cùng planner với Daily Quest, `planCitySession`) được gom theo kỹ năng thành trạm bằng hàm thuần
+   `planStations` (`packages/core/src/city/stations.ts`, có test): số trạm = 12/3 làm tròn, tối đa 4;
+   nhóm kỹ năng lớn nhất làm trạm, nhóm nhỏ nhập vào trạm ít bài nhất; một kỹ năng quá nhiều bài thì tách
+   làm hai trạm cùng công trình. Bài cô giao không thành trạm mà nằm ở toà thị chính. `CityView.skills[].mission`
+   giờ nghĩa là "còn trạm chưa xong ở công trình này". Kỹ năng của trạm mà con chưa từng làm vẫn có công
+   trình (giàn giáo) ngay tối đó.
+   - **Vì sao không lấy nguyên 12 bài của Daily Quest**: Daily Quest trộn môn (hôm 15/09 của Mai Thy: 5
+     ESL + 5 ENL), nên một thành phố chỉ còn 0–2 sao, không thành "4 trạm → mở đất". Thành phố dùng phiên
+     riêng của môn đó nhưng **cùng thuật toán planner**; bản đồ thế giới lấy các môn của Daily Quest tối
+     nay (cộng bài cô giao, cộng thành phố đang làm dở) để quyết đảo nào lấp lánh.
+2. **Bỏ cửa `POST /api/kid/city/practice`** và hàm `startCityPractice`. Luật mới: mọi công trình không có
+   sao **không bấm được** (chạm chỉ hiện tên kỹ năng + mức, đọc to). Giàn giáo và thợ vẫn hiện để con
+   thấy chỗ đang xây; kỹ năng yếu vẫn vào phiên qua planner (thang khắc phục, sàn ôn 30%).
+3. **Bậc trong mức** (`stepFor`): mỗi phần ba của dải mastery thêm một tầng (engine kéo cao công trình
+   14%/bậc, không thêm tam giác). Nhờ vậy xong một trạm thường thấy nhà cao lên dù chưa sang mức. Ngay
+   sau trạm, màn hình không cho công trình vừa làm hiện nhỏ đi.
+4. **Chơi thêm**: `POST /api/kid/city/again` → `planCitySession(..., { again: true })` lập phiên mới cùng
+   môn khi phiên hôm nay đã xong; còn phiên đang mở thì trả lại phiên đó.
+5. **Thành phố bắt đầu nhỏ**: `MIN_BLOCKS` 6 → 2, ô đất khoá hiện trước 2 → 1. Quy tắc "vai trò lô chỉ
+   phụ thuộc số thứ tự khối" giữ nguyên nên không công trình nào đổi chỗ khi thành phố lớn.
+6. **Màu theo lô** (`lotPalette`): bảng của từng công trình = mái/tường của thành phố + hai màu đặc trưng +
+   bảng chung, xoay theo lô (5 màu mái, 7 màu tường) → khu phố ≥ 3 màu mái, ≥ 4 màu tường (test).
+7. **Nghỉ vận động 30 giây bị bỏ** ở cả hai thế giới (chủ dự án, 15/09). Component `MovementBreak` và
+   `POST /api/kid/break` đã xoá; sao nghỉ vận động cũ trong sổ sao vẫn giữ nguyên.
+
+Hệ quả thêm: migration dữ liệu `20260915200000_rename_kid_nicknames` đổi tên gọi "Thy" → "Mai Thy",
+"Thanh" → "Chí Thanh" (theo yêu cầu chủ dự án), có điều kiện theo giá trị cũ nên chạy lại không đổi gì.

@@ -8,7 +8,8 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
-    "./engine": "./src/engine/index.ts"
+    "./engine": "./src/engine/index.ts",
+    "./palette": "./src/palette.ts"
   },
   "scripts": {
     "test": "vitest run",

@@ -133,7 +133,8 @@ export function DragDropExercise({
           setSelected((s) => (s === item.id ? null : item.id));
         }}
         animate={inZone && !reduce ? { scale: [1.15, 0.95, 1] } : {}}
-        transition={SPRING.press}
+        // a three-step pop cannot be a spring (motion allows two keyframes per spring)
+        transition={inZone ? { duration: 0.35, ease: "easeOut" } : SPRING.press}
         className={`flex min-h-[104px] min-w-[104px] cursor-grab touch-none select-none items-center justify-center rounded-[26px] bg-white px-5 py-3 shadow-[0_12px_28px_-14px_rgba(43,43,58,0.55)] ${
           selected === item.id ? "ring-4 ring-[#FFD447]" : inZone ? "ring-4 ring-[#34C759]" : ""
         }`}

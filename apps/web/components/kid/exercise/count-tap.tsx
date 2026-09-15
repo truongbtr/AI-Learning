@@ -67,7 +67,8 @@ export function CountTapExercise({
                 disabled={disabled}
                 whileTap={reduce ? undefined : { scale: 0.88 }}
                 animate={done && !reduce ? { scale: [1, 1.25, 1.05], rotate: [0, -8, 0] } : {}}
-                transition={SPRING.press}
+                // a three-step pop cannot be a spring (motion allows two keyframes per spring)
+                transition={done ? { duration: 0.35, ease: "easeOut" } : SPRING.press}
                 className="relative flex min-h-[96px] min-w-[96px] items-center justify-center rounded-[26px]"
                 data-testid="count-object"
                 data-counted={done ? "true" : undefined}

@@ -71,6 +71,9 @@ export interface Composition {
   panBounds: { minX: number; maxX: number; minZ: number; maxZ: number };
 }
 
+/** Height added per growth step, as a share of the building (≈ one floor of a level-2 house). */
+export const GROWTH_PER_STEP = 0.14;
+
 const hash = (s: string) => [...s].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7);
 
 export function composeCity(ctx: BuildCtx, view: CityView): Composition {
@@ -415,8 +418,11 @@ function buildLot(ctx: BuildCtx, view: CityView, lot: LayoutLot): Object3D {
     const s = view.skills[c.skill];
     if (!s) return g;
     const b = skillBuilding(ctx, s.level, c.skill + 1, s.label);
+    // growth inside a level: each step makes the building a floor taller (Pha 10 bổ sung §3)
+    const stretch = 1 + GROWTH_PER_STEP * (s.step ?? 0);
+    b.root.scale.y = stretch;
     add(g, b.root);
-    let top = b.top;
+    let top = b.top * stretch;
     if (s.needsHelp && s.level > 0) {
       add(g, scaffold(4.0, 3.8, Math.min(b.top, 4.2)), 0, 0.1, 0);
       const wk = worker();

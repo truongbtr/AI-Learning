@@ -2,11 +2,75 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
-## Pha 10 — 15/09/2026 — Thế giới Học Đường: thành phố 3D *(việc 1–3 xong, việc 4–5 chưa làm)*
+## Pha 10 — 15/09/2026 — Thế giới Học Đường: thành phố 3D *(việc 1–4 xong, việc 5 cần hai bé)*
 
-Trạng thái: **việc 1 đã duyệt; việc 2 (engine) và việc 3 (nối dữ liệu) xong.** Giao diện con đang
-chạy chưa bị đụng tới (chưa có màn hình, chưa có cờ `KID_UI` — việc 4). Chủ dự án xác nhận hai bé dùng
-**trên web, không dùng iPad** → ADR-20 đã chốt 3D thật.
+Trạng thái: **việc 1 đã duyệt; việc 2, 3, 4 xong** (gồm phần bổ sung "cách chơi" và hai yêu cầu giữa
+chừng: bỏ nghỉ vận động, đổi tên gọi hai bé). Giao diện thành phố chạy sau cờ `KID_UI=city`; mặc định
+`world` vẫn là thế giới cũ. **Việc 5 (nghiệm thu với hai bé, video 2 phút) cần chủ dự án.**
+
+### Việc 4 — màn hình thành phố + bổ sung "cách chơi" (15/09)
+
+Thiết kế: `docs/06` §1.2b (mới). Quyết định dữ liệu: ADR-21 mục "Bổ sung 15/09".
+
+**Cách chạy thử (máy dev):** thêm `KID_UI=city` vào `.env` rồi `pnpm dev` (hoặc cấu hình `web-city` trong
+`.claude/launch.json`, cổng 5001) → `/login` → thẻ **Mai Thy** → 4 hình → bản đồ 6 đảo. Tắt cờ (hoặc
+`KID_UI=world`) là về thế giới cũ ngay, không cần build lại dữ liệu.
+
+Đã làm:
+
+- **Bản đồ thế giới** `/kid/city`: một mặt biển, 6 đảo xếp vòng quanh mascot. Mỗi đảo có biểu tượng môn
+  và ảnh thành phố **của chính con** lúc rời đi (lưu theo từng bé trên trình duyệt; chưa ghé thì ảnh ngày
+  đầu). Đảo có việc tối nay (môn trong Daily Quest, bài cô giao, thành phố đang làm dở) lấp lánh kèm
+  "⭐ số trạm"; đảo khác yên; xong thì ✓. Chạm đảo → bản đồ phóng vào đảo → camera thành phố bay từ trời
+  xuống. `/kid/home` chuyển về đây khi cờ bật.
+- **Thành phố** `/kid/city/[city]`: **3–4 sao trên nóc** các công trình của trạm tối nay; toà thị chính có
+  📜 khi có bài cô giao; hàng sao trạm trên HUD; sao kế tiếp to và nhấp nháy. Chạm công trình khác → thẻ
+  tên kỹ năng + mức, đọc to. Chạm sao → camera tới (0,6 s) → **bảng trượt lên ~76% màn hình**, thành phố
+  mờ phía sau → 6 component bài hiện có (tách thành `components/kid/exercise-play.tsx`, dùng chung với
+  thế giới cũ) → hết bài của trạm → bảng hạ → công trình mọc tầng trước mắt (2 s, tiếng, confetti) →
+  camera lùi ra, sao kế tiếp ở giữa màn hình. **URL không đổi suốt buổi** (e2e kiểm).
+- **Xong phiên**: gọi `/api/sessions/:id/finish` → camera bay một vòng, sao đếm vào túi → ăn mừng công
+  trình công cộng/kỳ quan mới → có ô đất trống thì **chọn 1 trong 3 công trình hình to** (hoặc "Để sau")
+  → nhà mọc → "Về bản đồ" / "Chơi thêm" (`POST /api/kid/city/again`).
+- **Engine**: thành phố mới chỉ 2 khu phố (`MIN_BLOCKS` 2, 1 ô khoá "N★"); màu theo lô (≥ 3 mái, ≥ 4 tường
+  mỗi khu phố, test); bậc tăng trưởng trong mức (`step`); `hold/rise`, `home()`, `tour()`, `snapshot()`.
+  Ảnh đảo ngày đầu vẽ lại từ engine (`content/art/city/thumbs/*.webp`, ~35 KB).
+- **Dữ liệu**: `planStations` (core, 6 test) + `stepFor`; `cityRead` trả trạm của phiên; `worldRead` đếm
+  trạm còn lại; `planCitySession(..., { again })`. **Bỏ** `POST /api/kid/city/practice` (luật mới: công
+  trình không sao thì không mở gì).
+- **Bỏ nghỉ vận động 30 giây** ở cả hai thế giới (theo yêu cầu 15/09): xoá `MovementBreak`,
+  `/api/kid/break`, cập nhật `docs/06` §1.5b, §1.8b, checklist §4.
+- **Đổi tên gọi**: "Thy" → **Mai Thy**, "Thanh" → **Chí Thanh** trong code, nội dung bài (`RF.SYLLABLES`
+  "Chí Thanh: 2 claps", `esl.json`), seed, tài liệu; dữ liệu qua migration
+  `20260915200000_rename_kid_nicknames` (có điều kiện theo giá trị cũ). Máy dev đã chạy.
+- **Sửa lỗi có sẵn phát hiện nhờ e2e**: bài **đếm** và **kéo thả** ném lỗi Framer Motion ("chỉ 2 keyframe
+  với spring") ngay khi con chạm → bài đứng im. Đã sửa ở cả hai thế giới. Lớp phủ phản hồi và sao bay
+  giờ vẽ qua portal nên không bị kẹt trong bảng trượt.
+
+Tiêu chí xong (docs/08 pha 10 + bổ sung):
+
+| # | Tiêu chí | Kết quả |
+|---|---|---|
+| 1 | Mai Thy vào bản đồ 6 thành phố → Thành Số → nhiệm vụ ≥ 3 dạng → xong → mở đất + công trình mọc + ăn mừng | **Đạt** — `e2e/phase10-city.spec.ts`: 4 trạm × 3 bài, dạng kéo thả / chọn / đếm / nghe; vòng bay; chọn xây (ảnh `docs/screens/pha-10/c1…c7`) |
+| 1b | Đúng 3–4 sao; chạm sao → bảng lên, làm 3 bài, bảng xuống, nhà mọc tầng trước mắt; hết 4 trạm → mở đất → chọn xây; không rời màn thành phố | **Đạt** — e2e kiểm số trạm 3–4, `data-mode`, URL không đổi |
+| 2 | Mastery đổi → công trình đổi lần mở sau; lỗi nhiều → giàn giáo + thợ | **Đạt** (test tích hợp việc 3 + `stepFor`). Phần "chạm giàn giáo mở phiên TARGETED" **đã thay** theo bổ sung: công trình không sao không bấm được |
+| 3 | Huy hiệu → công trình công cộng; tuần 4/7 → mảnh kỳ quan | **Đạt** — test core/db; màn thành phố ăn mừng khi thấy thay đổi |
+| 4 | 60 fps web, không màn nào chờ > 1,5 s | **Đạt trên máy dev** — thành phố sẵn sàng 1,5–1,7 s đo trong e2e (gồm tải three.js lần đầu), ngân sách ≤ 150 draw call / ≤ 80k tam giác vẫn giữ (test) |
+| 5 | Không "sai", không đỏ, không đồng hồ, không tiền | **Đạt** — e2e quét chữ trên mọi màn thành phố/bảng bài |
+| 6 | Cờ `KID_UI` bật/tắt hai chiều, thế giới cũ vẫn chạy | **Đạt** — test `ui-mode`; e2e thế giới cũ (`login`, `phase3` K1→K7) xanh trên máy chủ `KID_UI=world` |
+| 7 | docs/06 + ADR + README Kenney | **Đạt** — `docs/06` §1.2b, ADR-20, ADR-21 (+ bổ sung) |
+| 8 | lint/test/build xanh, e2e cũ xanh | **Đạt** — lint xanh (chỉ cảnh báo cũ); test: core 242, db 125, web 47, city 47, content 67, inbox 18; build xanh |
+
+Tồn đọng / cần chủ dự án:
+
+1. **Việc 5**: chạy thử có giám sát với hai bé, quay video 2 phút, chấm checklist `docs/06` §4 (mục 13 mới).
+2. **Triển khai Ubuntu**: `pnpm db:deploy` (2 migration: `phase10_city`, `rename_kid_nicknames`), `pnpm content:import`
+   (bài `RF.SYLLABLES` đổi tên), thêm `KID_UI=city` vào `.env` khi muốn bật. Tôi không tự triển khai.
+3. Test `content/import.test.ts > never writes a child's learning data` đếm dữ liệu toàn DB nên thỉnh thoảng
+   đỏ khi chạy song song với test khác ghi bằng chứng; chạy lại thì xanh (có từ trước pha 10).
+4. `content/skill-map/esl.json`, `docs/nhat-ky-chay-that.md` và vài gói bài `emath` đang có thay đổi **từ
+   trước phiên này** chưa commit; tôi đã đổi tên trong hai file đầu nhưng **không commit** chúng để khỏi gộp
+   thay đổi không phải của tôi.
 
 ### Việc 3 — nối dữ liệu học vào thành phố (15/09)
 
@@ -31,8 +95,8 @@ Quyết định: `docs/adr/ADR-21-du-lieu-thanh-pho.md`.
 - **API** (mọi route kiểm `requireStudentAccess`, chỉ nhận định danh, máy chủ tự tính lại):
   - `GET /api/kid/world`, `GET /api/kid/city?city=`;
   - `POST /api/kid/city/seen`, `POST /api/kid/city/plot`;
-  - `POST /api/kid/city/practice`: con chạm giàn giáo → phiên TARGETED, **chỉ cho công trình đang chưa
-    vững**, mỗi kỹ năng một phiên mỗi ngày.
+  - ~~`POST /api/kid/city/practice`~~ (con chạm giàn giáo → phiên TARGETED) — **đã bỏ ở việc 4** theo
+    luật "chỉ công trình có sao mới bấm được".
 - **Sửa kèm**: `kidHome` chỉ đọc phiên `DAILY_QUEST` (trước đây phiên TARGETED trong ngày sẽ bị hiểu
   nhầm là nhiệm vụ hôm nay).
 - **Test hợp đồng** `packages/city/src/contract.test.ts`: mọi mã core sinh ra đều có trong catalogue
@@ -819,8 +883,8 @@ pnpm db:trial                    # số liệu 14 ngày (hôm nay còn trống)
 
 ```
 HAI TUẦN CHẠY THẬT — 2026-08-30 → 2026-09-12 (14 ngày)
-Thy   : học 0/14 ngày · 0 phút · 0 câu · bỏ dở 0 phiên · đạt 0/14
-Thanh : học 0/14 ngày · 0 phút · 0 câu · bỏ dở 0 phiên · đạt 0/14
+Mai Thy   : học 0/14 ngày · 0 phút · 0 câu · bỏ dở 0 phiên · đạt 0/14
+Chí Thanh : học 0/14 ngày · 0 phút · 0 câu · bỏ dở 0 phiên · đạt 0/14
 ```
 
 Đúng như phải thế: dữ liệu học dev đã xoá ở việc 0.3, và hai bé chưa bắt đầu.
@@ -1051,7 +1115,7 @@ kỹ năng khác nhau.
 1. **Tôi không chạy được 23/39 bài e2e.** Mật khẩu admin đã được chủ dự án đổi (tài khoản `admin`
    có `mustChangePassword=false` và đã đăng nhập), nên mọi bài cần vùng `/admin/*` — pha 0, 1, 2, 4
    và `screens.spec.ts` — đều `skip`. Để tự kiểm phần ba mẹ tôi đã **tạo một tài khoản PARENT tạm**
-   `qc-pha5-tam`, gắn với Thy và Thanh, chụp ảnh, rồi **xoá đi** (đã kiểm: `select ... where
+   `qc-pha5-tam`, gắn với Mai Thy và Chí Thanh, chụp ảnh, rồi **xoá đi** (đã kiểm: `select ... where
    username like 'qc-%'` trả 0 dòng). Bộ nghiệm thu pha 5 nay nhận cả hai đường:
    `E2E_ADMIN_PASSWORD`, hoặc `E2E_PARENT_USER` + `E2E_PARENT_PASSWORD`. **Chủ dự án chạy lại cả bộ
    với mật khẩu admin giúp tôi** — đó là nửa còn lại của tiêu chí 8.
@@ -1069,8 +1133,8 @@ kỹ năng khác nhau.
    liên tiếp khi thử. Với nhật ký thật mỗi ngày một khác thì không lặp. Nếu vẫn rối, đề nghị gộp
    theo nội dung ở pha 6.
 5. **P10 báo cáo, P11 "Hỏi về con" chưa có** — đúng lịch, cả hai ở pha 7.
-6. **Chưa có ai dùng thật.** Toàn bộ pha 5 chạy trên dữ liệu của Thy (321 bằng chứng, phần lớn do
-   e2e sinh) và hồ sơ Thanh gần như trống. "3 điều cần chú ý" của Thanh hiện đúng là "chưa có gì
+6. **Chưa có ai dùng thật.** Toàn bộ pha 5 chạy trên dữ liệu của Mai Thy (321 bằng chứng, phần lớn do
+   e2e sinh) và hồ sơ Chí Thanh gần như trống. "3 điều cần chú ý" của Chí Thanh hiện đúng là "chưa có gì
    phải chú ý" — đúng, nhưng chưa chứng minh được gì.
 
 ### 8. Câu hỏi cho chủ dự án
@@ -1192,7 +1256,7 @@ pnpm --filter @mtct/web exec playwright test e2e/phase4-acceptance.spec.ts
 | 1 | Dán nhật ký mẫu → **3 mục đã học + 3 bài cô giao + 1 nhắc đồng phục**; Daily Quest đổi trọng tâm | **Đạt** — bộ đọc mẫu giải thích **100%** bài đăng, không dòng nào phải vào hàng chờ. Bài "quay video" nhận đúng là **tuỳ chọn** ("cô khuyến khích") và đúng nơi nộp (Teams – Chương trình Việt). Phiên sau đó: trạm 1 = bài cô giao, phần trọng tâm có kỹ năng Tiếng Việt của bài 13. Ảnh `docs/screens/pha-4/diary-parsed.png` |
 | 2 | Phiếu ESL làm dở → **`BLANK` chứ không phải sai**, đổi nhãn một chạm | **Đạt** — 2/6 câu làm được, 4 câu trống dồn về cuối → cả 4 là "con chưa làm xong" (trọng số 0,3), không dòng nào bị gắn nhãn sai. Ảnh `review-blank.png` |
 | 3 | 5 ảnh vở Tiếng Việt → **≤ 90 giây** | **Đạt — 12 giây** (tiền xử lý 5 ảnh: 450 ms). Xem ADR-17 mục 1 về việc "có kết quả" nghĩa là gì sau ADR-10 |
-| 4 | Duyệt → **mastery đổi và bằng chứng hiện trong drawer kỹ năng** | **Đạt** — mastery `VIET.HV.AM_U_UW` tăng sau khi duyệt; `GET /mastery/history?skill=…` trả bằng chứng `source=INTAKE_PHOTO`. **118 bằng chứng** từ ảnh/bài cô giao trên hồ sơ Thy. Ảnh `review-workbook.png` |
+| 4 | Duyệt → **mastery đổi và bằng chứng hiện trong drawer kỹ năng** | **Đạt** — mastery `VIET.HV.AM_U_UW` tăng sau khi duyệt; `GET /mastery/history?skill=…` trả bằng chứng `source=INTAKE_PHOTO`. **118 bằng chứng** từ ảnh/bài cô giao trên hồ sơ Mai Thy. Ảnh `review-workbook.png` |
 | 5 | Ảnh Raz-Kids → `raz_level` + `ENL.RF.FLUENCY_LEVEL_*` | **Đạt** — mức D cho: `AA=95 · A=95 · B=95 · C=85 · D=70 · E=30`, **đúng bảng `05` §5** |
 | 6 | Việc 0 xong | **Đạt** — sao 1/bài làm xong (test ép sai 3 lần vẫn +1 sao), trứng 4/7 không reset (test đi qua ranh giới tuần), Vườn Kỳ Diệu 4 khu |
 | 7 | `lint && test && build` xanh; **e2e pha 0–3 vẫn xanh** | **Đạt** — lint sạch · 295 test đơn vị (core 157, content 66, db 35, web 25, inbox 12) · build 4 gói · **32/32 e2e** (pha 0: 6 · pha 1: 7 · pha 2: 5 · pha 3: 5 · pha 4: 4 · login + screens: 5) |
@@ -1350,7 +1414,7 @@ pnpm plan:run -- --student thy                                  # lên Daily Que
 pnpm dev                                                        # web 5000 + worker (planner.daily 04:00)
 ```
 
-Vào `http://localhost:5000/login` → thẻ **Thy** → 4 hình **Mèo › Thỏ › Bướm › Cá** → K2. Component: `/dev/kit`. Gửi thư / khen con: `/parent/<id>`.
+Vào `http://localhost:5000/login` → thẻ **Mai Thy** → 4 hình **Mèo › Thỏ › Bướm › Cá** → K2. Component: `/dev/kit`. Gửi thư / khen con: `/parent/<id>`.
 
 Chạy bộ nghiệm thu pha 3 (tự đi hết con đường và chụp ảnh):
 
@@ -1363,10 +1427,10 @@ pnpm --filter @mtct/web exec playwright test e2e/phase3-acceptance.spec.ts
 
 | # | Tiêu chí | Kết quả |
 |---|---|---|
-| 1 | Thy đăng nhập → Daily Quest **12 bài ≥ 3 dạng, ≥ 2 môn** | **Đạt** — phiên hôm nay (`cmtx3003f00zh…`): **12 trạm, đủ cả 6 dạng** (MCQ 4 · LISTEN_CHOOSE 2 · COUNT_TAP 2 · DRAG_DROP 2 · READ_ALOUD 1 · WRITE_PHOTO 1), **4 môn** (ESL 4 · VIET 3 · VMATH 3 · ENL 2). Ảnh `k3-map.png` |
+| 1 | Mai Thy đăng nhập → Daily Quest **12 bài ≥ 3 dạng, ≥ 2 môn** | **Đạt** — phiên hôm nay (`cmtx3003f00zh…`): **12 trạm, đủ cả 6 dạng** (MCQ 4 · LISTEN_CHOOSE 2 · COUNT_TAP 2 · DRAG_DROP 2 · READ_ALOUD 1 · WRITE_PHOTO 1), **4 môn** (ESL 4 · VIET 3 · VMATH 3 · ENL 2). Ảnh `k3-map.png` |
 | 2 | Xong phiên có **kịch bản ăn mừng và sao** | **Đạt** — `SessionFinale` 4–6 giây, `+21 (tất cả 156 sao)`, trứng 1/5, tranh 1/6. Ảnh `k5-finale.png` |
 | 3 | **Sai 3 lần** thấy gợi ý rồi đáp án, **không có chữ "sai"** | **Đạt** — test tích hợp `session.test.ts` ép sai 3 lần: gợi ý 1 → gợi ý 2 → `Đáp án là …` + giải thích; e2e quét toàn bộ `body` mỗi trạm, không trang nào chứa chữ "sai" hay "điểm số" |
-| 4 | **Mastery các kỹ năng trong phiên thay đổi** | **Đạt** — sau các phiên hôm nay: **119 dòng `Evidence`**, **23 dòng `SkillMastery`**, và `ErrorStat` của Thy có `dem_thieu_1:6 · dem_thua_1:5 · lap_lai_tong:1 · nham_am_dau:1` — tức chẩn đoán từ `choices[].errorTag` đã chạy suốt từ lúc con chạm tới bảng thống kê lỗi |
+| 4 | **Mastery các kỹ năng trong phiên thay đổi** | **Đạt** — sau các phiên hôm nay: **119 dòng `Evidence`**, **23 dòng `SkillMastery`**, và `ErrorStat` của Mai Thy có `dem_thieu_1:6 · dem_thua_1:5 · lap_lai_tong:1 · nham_am_dau:1` — tức chẩn đoán từ `choices[].errorTag` đã chạy suốt từ lúc con chạm tới bảng thống kê lỗi |
 | 5 | **Playwright K1→K5 xanh** | **Đạt** — 5 test pha 3 xanh; chạy cả bộ: **28/28 e2e xanh** (pha 0: 6 · pha 1: 7 · pha 2: 5 · pha 3: 5 · login+screens: 5) |
 | 6 | **Checklist `06` §4** trên iPad Safari | **Tự kiểm 11/12 trên Edge/Chromium** (bảng ở mục 4 dưới). Mục 8 (60 fps đo bằng Safari Web Inspector trên iPad thật) **chủ dự án cần chấm** — máy này không có iPad |
 | 7 | **Video 2 phút** một phiên học | **Đạt** — `docs/screens/pha-3/phien-hoc-k1-k5.webm` (2 phút 47 giây, 4,8 MB): đăng nhập bằng hình → bản đồ → 12 trạm → nghỉ vận động → "chơi tiếp hay nghỉ" → ăn mừng |
@@ -1416,14 +1480,14 @@ Thêm hai tiêu chí chủ dự án bổ sung: `docs/09` **có bảng unit Globa
 1. ~~Sinh mp3 cho cả ngân hàng~~ — **xong 11/09/2026, 22:35–23:41.** `pnpm content:import` sinh **986/986 câu, 0 lỗi, 0 bỏ qua** trong 66 phút (1236 đề bài gộp lại còn 986 câu khác nhau; nhịp 3,3 giây/câu để không đụng trần 20 yêu cầu/phút của tầng F0). **22 MB** trong `FILE_ROOT/tts`, ngoài git. `content:stats` báo `audio: 986/986 câu đã có mp3 (azure)`. Kiểm bằng đúng đường dẫn app dùng (`speakAudio` → `getOrSynthesize`): cả đề bài lẫn `listenTarget` đều trả `source: cache` — con nghe giọng Hoài My đã sinh sẵn, không gọi mạng và không rơi về giọng máy. Sinh lại chỉ cần chạy lại lệnh; câu nào đã có mp3 thì bỏ qua.
 2. **Chấm mục 8 của checklist trên iPad thật** (60 fps trong lúc làm bài, đo bằng Safari Web Inspector) — và nếu được, để hai bé dùng thử 10 phút không cần ba mẹ trợ giúp.
 3. **K6 "chơi thêm theo môn"** và **K8 "Hỏi bạn Cú"** không thuộc pha 3 (`docs/08` giao K1–K5 và K7) — K6 ở pha 7, K8 là gia sư giọng nói P2. Trang chủ vì thế **chưa có 3 icon môn** như `06` §1.2 mô tả, để không dẫn con vào màn hình trống.
-4. **Dọn dữ liệu dev:** máy đang có **28 lô `content:import`** và một loạt tài khoản "Bé Thử"/"Thy"/"Thanh" do các bộ e2e cũ tạo — ảnh chụp màn hình đăng nhập vì thế hơi rối. Không ảnh hưởng bản thật (seed chỉ tạo 1 admin), nhưng nên dọn trước khi cho hai bé dùng.
+4. **Dọn dữ liệu dev:** máy đang có **28 lô `content:import`** và một loạt tài khoản "Bé Thử"/"Mai Thy"/"Chí Thanh" do các bộ e2e cũ tạo — ảnh chụp màn hình đăng nhập vì thế hơi rối. Không ảnh hưởng bản thật (seed chỉ tạo 1 admin), nhưng nên dọn trước khi cho hai bé dùng.
 5. **Giọng mascot thu sẵn** (`06` §1.8b mục 5: 40–60 câu thoại thu giọng thật) chưa làm — hiện mascot nói bằng TTS. Việc này hợp với pha 7, hoặc làm sớm nếu chủ dự án muốn tự thu.
 
 ### 8. Câu hỏi cho chủ dự án
 
 1. **Luật sao** (ADR-15 mục 5): đúng ngay lần đầu 2 sao · làm xong 1 sao · xong phiên 3 sao · nghỉ vận động 1 sao · ba mẹ khen 5 sao. Vật phẩm K7 từ 8 đến 50 sao. Có muốn đổi tỉ lệ không?
 2. **Trứng nở cần 5 ngày học/tuần** — với lịch nhà mình (học các ngày trong tuần) thì con phải học gần như đủ tuần mới nở. Giữ 5, hay hạ xuống 4?
-3. Hai bé dùng **cùng một thế giới cho mọi môn** (Thy: Vườn Kỳ Diệu, Thanh: Thành phố Robot) — pha 3 mới vẽ **1 khu vườn**, 4 khu robot. Có muốn tôi vẽ đủ 4 khu vườn ở pha sau không, hay để tài sản nhẹ như hiện tại?
+3. Hai bé dùng **cùng một thế giới cho mọi môn** (Mai Thy: Vườn Kỳ Diệu, Chí Thanh: Thành phố Robot) — pha 3 mới vẽ **1 khu vườn**, 4 khu robot. Có muốn tôi vẽ đủ 4 khu vườn ở pha sau không, hay để tài sản nhẹ như hiện tại?
 
 ### 9. Bàn giao cho người làm pha 4
 
@@ -1625,7 +1689,7 @@ Trạng thái: **xong** (8/8 tiêu chí đạt trên máy dev; mục 1 kiểm b�
 |---|---|---|---|
 | 1 | `docker compose -f docker/compose.yml up -d --build` → `/login` → admin bị ép đổi mật khẩu, trang khác về `/change-password` | **Đạt** — build image, chạy stack thứ hai với volume DB mới (`-p mtct-clean`, cổng 3001/5434): log web `migrate deploy → seed: admin created (mustChangePassword=true) → next start`, rồi chạy cả 10 test e2e lên stack đó (10/10 xanh, ảnh chụp lấy từ stack sạch này) | `docker compose -f docker/compose.yml up -d --build` (máy này phải thêm `--env-file .env` vì cổng 5432 bận) → mở <http://localhost:5000/login>, đăng nhập `ADMIN_USERNAME`/`ADMIN_PASSWORD` → tự chuyển `/change-password`; gõ `/admin/users` hay `Invoke-RestMethod /api/admin/users` (403) đều không vào được |
 | 2 | Admin tạo 1 phụ huynh + 2 bé (hồ sơ Student + mã 4 hình), gắn quan hệ < 3 phút | **Đạt** | `/admin/users` → "+ Tạo tài khoản" (chọn Con: điền tên gọi, chọn 4 hình) ×2, tạo Phụ huynh (tick con); e2e mục 2 đo thời gian |
-| 3 | Đăng xuất, con chạm thẻ ảnh + mã 4 hình → `/kid/home` hiện tên gọi ở nhà | **Đạt** | `/login` → chạm thẻ → chọn 4 hình → "Chào Thy!" (ảnh `docs/screens/pha-0/kid-home.png`); e2e mục 3 |
+| 3 | Đăng xuất, con chạm thẻ ảnh + mã 4 hình → `/kid/home` hiện tên gọi ở nhà | **Đạt** | `/login` → chạm thẻ → chọn 4 hình → "Chào Mai Thy!" (ảnh `docs/screens/pha-0/kid-home.png`); e2e mục 3 |
 | 4 | Sai 5 lần → khoá 10 phút, `LoginAudit` đủ 5 dòng; sai tên và sai mật khẩu cùng thông báo | **Đạt** | e2e mục 4 (5 × WRONG_PASSWORD + LOCKED, thông báo "Mình nghỉ 10 phút…"); `login.spec` so hai thông báo bằng nhau; admin xem "Nhật ký" của tài khoản |
 | 5 | CHILD gọi mastery của bé kia → 403; phụ huynh chưa gắn → 403; chưa đăng nhập vào `/parent` → `/login` | **Đạt** | e2e mục 5; hoặc đăng nhập con rồi `fetch('/api/students/<id bé kia>/mastery')` trong console → 403 |
 | 6 | `GET /api/health` → `db:"ok"`, `worker.lastPing ≤ 6 phút`; worker log `ping ok` | **Đạt** | `Invoke-RestMethod http://localhost:5000/api/health`; `docker compose -f docker/compose.yml logs worker` |

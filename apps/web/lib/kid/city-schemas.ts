@@ -19,6 +19,4 @@ export const cityPlotSchema = cityQuerySchema.extend({
   build: z.enum(PLOT_BUILD_ORDER as unknown as [string, ...string[]]),
 });
 
-export const cityPracticeSchema = cityQuerySchema.extend({
-  skillId: z.string().min(1).max(64),
-});
+export const cityAgainSchema = cityQuerySchema;

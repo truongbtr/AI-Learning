@@ -4,7 +4,7 @@
 // back (Pha 10 §1.5–1.6). Code lists mirror the catalogues in @mtct/city — a test there keeps the
 // two in step.
 
-import type { BuildingLevel, CityPlotBuild, CitySubject, CityView } from "./view";
+import type { BuildingLevel, CityPlotBuild, CitySubject, CityView, GrowthStep } from "./view";
 
 export const CITY_SUBJECTS: readonly CitySubject[] = [
   "viet",
@@ -47,6 +47,15 @@ export function levelFor(m: MasterySnapshot, now: Date): BuildingLevel {
   if (m.mastery >= LEVEL_BANDS[1]) return 2;
   if (m.mastery >= LEVEL_BANDS[0]) return 1;
   return 0;
+}
+
+/** Thirds of the way through the level's mastery band (levels 0 and 4 have no steps). */
+export function stepFor(mastery: number, level: BuildingLevel): GrowthStep {
+  if (level === 0 || level === 4) return 0;
+  const lo = [0, LEVEL_BANDS[0], LEVEL_BANDS[1], LEVEL_BANDS[2]][level] as number;
+  const hi = [LEVEL_BANDS[0], LEVEL_BANDS[1], LEVEL_BANDS[2], 101][level] as number;
+  const t = Math.floor(((mastery - lo) / (hi - lo)) * 3);
+  return Math.max(0, Math.min(2, t)) as GrowthStep;
 }
 
 /**
@@ -459,7 +468,7 @@ export interface CityInput {
   todayKey: string;
   skills: readonly CitySkillInput[];
   storedOrder: readonly string[];
-  /** Skill codes with an unanswered station in today's Daily Quest. */
+  /** Skill codes carrying a station not done yet in this city's session (a star on the roof). */
   missionSkillCodes: readonly string[];
   starsEarned: number;
   plotBuilds: readonly CityPlotBuild[];
@@ -507,13 +516,22 @@ export function buildCityState(input: CityInput): CityState {
     // a skill whose evidence was undone keeps its lot as scaffolding — nothing disappears
     if (!s)
       return [
-        { skillId: id, label: "…", level: 0 as BuildingLevel, needsHelp: false, mission: false },
+        {
+          skillId: id,
+          label: "…",
+          level: 0 as BuildingLevel,
+          step: 0 as GrowthStep,
+          needsHelp: false,
+          mission: false,
+        },
       ];
+    const level = levelFor(s, input.now);
     return [
       {
         skillId: s.skillId,
         label: skillLabel(input.city, s.code, s.nameVi, s.nameEn),
-        level: levelFor(s, input.now),
+        level,
+        step: stepFor(s.mastery, level),
         needsHelp: needsHelp(s),
         mission: missions.has(s.code),
       },

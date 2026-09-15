@@ -14,7 +14,7 @@
 4. **Không có thất bại đỏ.** Sai → rung nhẹ + mascot "Gần đúng rồi, thử lại nhé" + gợi ý; không có chữ "SAI", không đếm ngược gây áp lực; không điểm số.
 5. **Phần thưởng tức thì & rõ ràng.** Sao bay lên góc túi sao, âm thanh vui ngắn (≤ 1 s), confetti khi xong phiên; huy hiệu có "lễ trao" riêng. **Sao đo công sức, không đo đúng sai** (§1.5b).
 6. **Mascot đồng hành.** Mỗi bé chọn mascot (cú, mèo, robot, khủng long, kỳ lân…); mascot nói bằng bong bóng + giọng; là cửa vào gia sư giọng nói.
-7. **Cá nhân hoá nhìn thấy được.** Chủ đề màu/hình theo sở thích (Thanh: robot – xanh dương/cam; Thy: vườn – hồng/tím); tên gọi ở nhà trong lời chào.
+7. **Cá nhân hoá nhìn thấy được.** Chủ đề màu/hình theo sở thích (Chí Thanh: robot – xanh dương/cam; Mai Thy: vườn – hồng/tím); tên gọi ở nhà trong lời chào.
 8. **Không lối thoát ra ngoài.** Không link ngoài, không nút mở tab, không nội dung không do hệ thống sinh. Nút "ba mẹ" ở góc (giữ 2 giây) để mở khoá về trang phụ huynh.
 9. **Sống động nhưng không làm phân tâm.** Màn hình luôn có chuyển động nền nhẹ (mây trôi, mascot chớp mắt, sao lấp lánh) và mọi thao tác đều có phản hồi hoạt hình; nhưng trong lúc con đang trả lời, vùng đề bài đứng yên, hoạt hình chỉ ở nền và mascot (chậm, mờ). Tôn trọng `prefers-reduced-motion`.
 10. **Tablet ngang là mặc định**; dọc vẫn dùng được; laptop chuột hoạt động (kéo thả hỗ trợ cả pointer).
@@ -23,8 +23,8 @@
 
 ```
 Màu nền chính:   #FFF8EC (kem ấm)  · nền tối (tuỳ chọn, không bắt buộc v1)
-Chủ đề Thanh:    primary #2F80ED · accent #FF8C42 · thưởng #FFD447
-Chủ đề Thy:      primary #E85D9C · accent #7C5CFF · thưởng #FFD447
+Chủ đề Chí Thanh:    primary #2F80ED · accent #FF8C42 · thưởng #FFD447
+Chủ đề Mai Thy:      primary #E85D9C · accent #7C5CFF · thưởng #FFD447
 Đúng:            #34C759 (kèm icon ✓ + âm) · Gần đúng: #FFB020 (kèm icon ↻)   — không dùng đỏ
 Bo góc: 24 px · Bóng mềm · Nút: cao 72 px, chữ 24 px, icon 32 px
 Font: Nunito 700/800; tiếng Việt: Baloo 2 / Be Vietnam Pro
@@ -35,7 +35,7 @@ Font: Nunito 700/800; tiếng Việt: Baloo 2 / Be Vietnam Pro
 
 | # | Màn hình | Route | Nội dung & hành vi |
 |---|---|---|---|
-| K1 | Chọn bé | `/login` (phần trên của trang đăng nhập chung, `12` §4) | 2 thẻ ảnh đại diện to (Thy / Thanh). Chạm → chọn **4 hình theo thứ tự** trên lưới 9–12 hình; có nút loa hướng dẫn. |
+| K1 | Chọn bé | `/login` (phần trên của trang đăng nhập chung, `12` §4) | 2 thẻ ảnh đại diện to (Mai Thy / Chí Thanh). Chạm → chọn **4 hình theo thứ tự** trên lưới 9–12 hình; có nút loa hướng dẫn. |
 | K2 | Trang chủ | `/kid/home` | Mascot chào bằng giọng; nút to **"Nhiệm vụ hôm nay"** (hiện ✓ nếu xong); túi sao, ngọn lửa streak; 3 icon môn "chơi thêm"; icon "Bộ sưu tập"; icon mascot "Hỏi bạn Cú" (nếu bật). |
 | K3 | Nhiệm vụ hôm nay — bản đồ | `/kid/quest` | Con đường 8–15 ô (mỗi ô 1 bài, icon môn), vị trí nhân vật; nút "Đi thôi!". |
 | K4 | Làm bài | `/kid/quest/[n]` | Khung đề (đọc tự động, nút loa), vùng tương tác theo dạng bài, nút gợi ý (bóng đèn), nút "Xong" (chỉ hiện khi có đáp án). Phản hồi overlay ngắn rồi tự sang bài kế sau 1,5 s (đúng) hoặc chờ (gợi ý). |
@@ -44,6 +44,33 @@ Font: Nunito 700/800; tiếng Việt: Baloo 2 / Be Vietnam Pro
 | K7 | Bộ sưu tập / vườn | `/kid/collection` | Lưới vật phẩm, mua bằng sao; trang trí góc mascot; thanh mục tiêu phần thưởng đời thực (nếu ba mẹ đặt). |
 | K8 | Hỏi bạn Cú | `/kid/ask` | Nút mic to giữ-để-nói; transcript hiện chữ + mascot trả lời bằng giọng; nút thoát. |
 | K9 | Bài viết/vẽ chụp lại | trong K4 | Hiện đề, con làm ra giấy; nút "Gọi ba mẹ chụp" → camera; ảnh gửi → "Bạn Cú sẽ chấm sau nhé!" và sang bài kế. |
+
+### 1.2b Chế độ thành phố — Thế giới Học Đường *(Pha 10, cờ `KID_UI=city`, ADR-20/21)*
+
+Bật bằng `KID_UI=city` trong `.env` (mặc định `world` = thế giới cũ ở §1.2, vẫn chạy nguyên). Mỗi môn là
+một thành phố; **cả buổi tối diễn ra trong thành phố**, không có trang bài tập riêng.
+
+| # | Màn hình | Route | Nội dung & hành vi |
+|---|---|---|---|
+| C1 | Bản đồ thế giới | `/kid/city` (`/kid/home` chuyển về đây) | Một mặt biển, **6 đảo** = 6 thành phố, mỗi đảo một biểu tượng môn và ảnh chính thành phố của con lúc rời đi (chưa ghé thì ảnh ngày đầu). Đảo **có việc tối nay** (môn trong Daily Quest, bài cô giao, hoặc thành phố đang làm dở) lấp lánh + **"⭐ số trạm còn lại"**; đảo khác yên; xong hôm nay thì ✓. Chạm đảo → bản đồ phóng vào đảo, màn thành phố tiếp bằng camera bay từ trời xuống. |
+| C2 | Thành phố | `/kid/city/[city]` | 3D (`@mtct/city`). Góc trái nút 🌍 về bản đồ + thanh mở đất (`sao/ngưỡng`), giữa tên thành phố + hàng sao trạm (★ xong / ☆ chưa), phải túi sao của môn. **Chỉ 3–4 công trình có sao trên nóc** (các trạm tối nay); toà thị chính có 📜 khi có bài cô giao. Sao của trạm kế tiếp to hơn và nhấp nháy. Chạm công trình khác → thẻ tên kỹ năng + mức, đọc to; không mở gì. Ô đất trống của con: chạm → chọn xây. |
+| C3 | Làm bài (trong C2) | cùng route | Chạm sao → camera phóng tới công trình (0,6 s) → **bảng trượt lên** che ~76% màn hình, thành phố phía sau mờ + tối nhẹ, vẫn thấy → 6 component bài hiện có (`ExercisePlay`) chạy nguyên trong bảng, lần lượt 3–4 bài của trạm → bảng hạ → công trình **mọc thêm tầng / dựng lên từ đất ngay trước mắt** (2 s, có tiếng, confetti) → camera lùi ra, sao kế tiếp ở giữa màn hình và nhấp nháy. |
+| C4 | Xong phiên (trong C2) | cùng route | Camera bay một vòng quanh thành phố, sao đếm nhảy vào túi, (công trình công cộng/kỳ quan mới nếu có) → đủ sao mở ô đất mới (hoặc còn ô trống) → **con chọn 1 trong 3 công trình, hình to**, nhà mọc lên → mascot ăn mừng → hai nút **"Về bản đồ"** / **"Chơi thêm"** (một phiên mới cùng môn, cùng planner). |
+
+**Luật chơi trong thành phố**
+
+- **Phiên của thành phố**: 12 bài của môn đó, do *chính planner của Daily Quest* lập (lọc theo môn, ≥ 3
+  dạng bài, bài cô giao của môn đứng đầu). **Gom theo kỹ năng thành 3–4 trạm** ≈ 3 bài/trạm
+  (`planStations`, `packages/core/src/city/stations.ts`); mỗi trạm là một công trình. Trạm xong → sao tắt.
+- **Công trình lớn lên theo tiến bộ thật**: mức theo mastery (0–39 giàn giáo · 40–59 · 60–84 · 85+ ·
+  chọc trời khi MASTERED ≥ 30 ngày) **và bậc trong mức** (mỗi phần ba của dải mastery = cao thêm một tầng).
+  Sau một trạm, công trình vừa làm không bao giờ hiện nhỏ đi.
+- **Thành phố bắt đầu nhỏ**: ngày đầu chỉ 2 khu phố + toà thị chính + khu kỳ quan, còn lại đồi cỏ, rừng,
+  sông chờ mở đất; một ô đất khoá hiện biển "N★". Cỡ thành phố = tiến bộ của con.
+- **Màu**: mỗi công trình tô bằng bảng riêng = hai màu của thành phố + mái/tường của thành phố + **bảng
+  chung**, xoay theo lô → một khu phố luôn có ≥ 3 màu mái và ≥ 4 màu tường (test `palette.test.ts`).
+- Không có gì hỏng, không "sai", không đỏ, không đồng hồ, không tiền; cửa hàng đồ sưu tầm không có lối vào
+  từ chế độ thành phố.
 
 ### 1.3 Component kid (bắt buộc có trong `components/kid/`)
 
@@ -75,7 +102,6 @@ K1 chọn bé → mã 4 hình → K2 (mascot chào bằng giọng)
 |---|---|
 | **Làm xong một bài** — đúng, gần đúng, hay phải xem đáp án rồi mới xong | **1** |
 | Xong cả phiên | 3 |
-| Nghỉ vận động 30 giây | 1 |
 | Ba mẹ bấm "Khen" | 5 (sao vàng lớn) |
 | Chạm "để sau" (bỏ qua trạm) | 0 — không phải phạt, chỉ là chưa làm |
 
@@ -142,7 +168,7 @@ Chạm vào mascot bất kỳ lúc nào → phản ứng vui ngẫu nhiên (nh�
 
 1. **Sự kiện tuần** — mỗi tuần một "chủ đề khách" (tuần khủng long, tuần vũ trụ, tuần Trung thu…) đổi vài chi tiết trang trí trong thế giới + 1 huy hiệu giới hạn chỉ tuần đó mới lấy được. Nội dung bài không đổi, chỉ đổi "áo".
 2. **Trạm chọn** — 2–3 vị trí trên bản đồ nhiệm vụ cho con **chọn 1 trong 2 bài** (cùng kỹ năng, khác ngữ cảnh/dạng). Trẻ chọn được thì chịu làm hơn.
-3. **Nghỉ vận động 30 giây** — giữa phiên (sau bài 6–7) mascot rủ "đứng lên nhảy 5 cái / vươn vai / xoay người" với đếm ngược hình ảnh; xong tặng 1 sao. Không bỏ qua được lần đầu, các lần sau bỏ qua được.
+3. ~~**Nghỉ vận động 30 giây**~~ — **đã bỏ** theo yêu cầu chủ dự án (15/09/2026): màn đếm ngược chen giữa phiên làm con mất nhịp. Trong chế độ thành phố, giữa các trạm đã có khoảng nghỉ tự nhiên (bảng hạ, công trình mọc lên).
 4. **Dừng khi mệt** — sau 8 bài mascot hỏi "Chơi tiếp hay nghỉ?"; chọn nghỉ vẫn giữ streak và nhận sao ngày. Dấu hiệu `met_cuoi_phien` (sai dồn 3 bài cuối) → hôm sau planner rút ngắn phiên 20%.
 5. **Giọng mascot thu sẵn** — 40–60 câu thoại cố định (chào, khen, động viên, nghỉ, tạm biệt…) **thu âm giọng thật ấm hoặc TTS neural chất lượng cao**, không dùng giọng máy trên thiết bị; chọn ngẫu nhiên, không lặp câu trong một phiên. Đề bài thì dùng TTS neural đã sinh sẵn lúc nạp nội dung (NFR-04).
 6. **Cây chung của nhà** *(P1)* — một cây lớn ở "sân chung" hai bé cùng nuôi bằng sao của cả hai; lớn theo tổng sao, ra hoa khi cả hai cùng đủ streak 5 ngày. Hợp tác thay vì so sánh — đúng nguyên tắc §00 mục 6.
@@ -227,7 +253,7 @@ Dự án gia đình không có hoạ sĩ, nên tài sản đến từ ba nguồn
 
 | Loại tài sản | Nguồn đề xuất | Giấy phép | Ghi chú |
 |---|---|---|---|
-| Mascot 5 nhân vật × 9 trạng thái, avatar, nhân vật thế giới | **Lottie có sẵn** trên LottieFiles (miễn phí, chọn cùng phong cách) cho v1; **hoặc** sinh bằng AI ảnh (Midjourney/DALL·E/Ideogram) một bộ tư thế nhất quán theo prompt trong `STYLE.md` → tách nền → làm **sprite/frame animation** hoặc rig đơn giản bằng Lottie/Rive | LottieFiles Free (ghi công nếu yêu cầu); ảnh AI: dùng nội bộ | Thanh/Thy có thể chọn cùng chủ dự án — coi như một hoạt động gia đình |
+| Mascot 5 nhân vật × 9 trạng thái, avatar, nhân vật thế giới | **Lottie có sẵn** trên LottieFiles (miễn phí, chọn cùng phong cách) cho v1; **hoặc** sinh bằng AI ảnh (Midjourney/DALL·E/Ideogram) một bộ tư thế nhất quán theo prompt trong `STYLE.md` → tách nền → làm **sprite/frame animation** hoặc rig đơn giản bằng Lottie/Rive | LottieFiles Free (ghi công nếu yêu cầu); ảnh AI: dùng nội bộ | Chí Thanh/Mai Thy có thể chọn cùng chủ dự án — coi như một hoạt động gia đình |
 | Nền thế giới (3 lớp × 2 thế giới × 4 khu môn) | Sinh bằng AI ảnh theo prompt cố định + chỉnh màu; hoặc bộ minh hoạ vector (Storyset/Freepik, Kenney.nl CC0 cho props game) | Storyset: ghi công; Kenney: CC0 | Xuất WebP nhiều kích thước |
 | Icon môn, vật phẩm bộ sưu tập, huy hiệu | Bộ icon SVG phong cách phẳng (Phosphor/Iconoir cho UI; **Kenney CC0**, **OpenMoji CC-BY-SA** cho vật thể trong bài) | CC0 / CC-BY-SA | Huy hiệu vẽ SVG theo mẫu (khung + icon + ruy băng) |
 | Hình trong bài luyện (đếm táo, con vật, đồ vật) | OpenMoji/Twemoji + thư viện SVG nội bộ theo chủ đề (≥ 200 vật thể), gắn nhãn EN/VI để AI chọn theo tên | CC-BY 4.0 / CC-BY-SA | `ImageRef.kind='asset'` tra theo nhãn; không sinh ảnh AI lúc chạy ở v1 |
@@ -289,6 +315,7 @@ Quy trình: mọi tài sản đặt trong `content/art/<loại>/` kèm `manifest
   7. Tải/trống/mất mạng có minh hoạ + mascot, không spinner trơn.
   8. 60 fps khi làm bài trên iPad (đo bằng Safari Web Inspector), tài sản màn hình ≤ 1.5 MB.
   9. Quay video 2 phút một phiên học để chủ dự án xem (lưu `docs/screens/pha-3/`).
-  10. Có ít nhất 1 trạm chọn "1 trong 2" trong phiên; có nghỉ vận động giữa phiên; mascot hỏi "chơi tiếp hay nghỉ" sau 8 bài (§1.8b).
+  10. Có ít nhất 1 trạm chọn "1 trong 2" trong phiên; mascot hỏi "chơi tiếp hay nghỉ" sau 8 bài ở thế giới cũ (§1.8b).
   11. Mascot làm mẫu được một bài (`scaffold: model`): nói to cách nghĩ rồi đưa bài sinh đôi cho con (`04` §11.4 bậc 3).
   12. Bảy cơ chế P0 của §1.8c có mặt và chạy được: trứng nứt thêm sau phiên, mảnh tranh tuần lật thêm một mảnh, thế giới đổi theo giờ thật, thư của ba mẹ đọc được bằng giọng, mascot nhắc đúng một việc hôm qua, sao vàng lớn của ba mẹ rơi xuống, giấy chứng nhận in ra được.
+  13. Chế độ thành phố (§1.2b): vào một thành phố thấy đúng 3–4 sao; chạm sao → bảng trượt lên trên nền thành phố, làm hết bài của trạm, bảng hạ, công trình mọc tầng trước mắt; hết trạm → vòng bay + mở đất + chọn xây; URL không rời màn thành phố (Playwright `e2e/phase10-city.spec.ts`).

@@ -90,6 +90,20 @@ export interface CityEngine {
   anchors(ids?: string[]): ScreenAnchor[];
   flyTo(x: number, z: number, dist?: number, ms?: number): Promise<void>;
   focus(target: TapTarget, ms?: number): Promise<void>;
+  /** The resting camera for this city: centred on the town, close for a small city, farther as it grows. */
+  home(): CameraState;
+  /** Session finale: one slow loop over the whole city, ending at `home()`. */
+  tour(ms?: number): Promise<void>;
+  /** Where a target sits: world centre and footprint (null when it is not in this city). */
+  lotOf(target: TapTarget): { x: number; z: number; width: number; depth: number } | null;
+  /** Flatten the target's building to the ground until `rise` (so it is not seen before it grows). */
+  hold(target: TapTarget): void;
+  /** Celebration: the target's building grows out of the ground with a springy overshoot. */
+  rise(target: TapTarget, ms?: number): Promise<void>;
+  /** The current frame as an image (JPEG data URL) — the blurred backdrop behind exercises. */
+  snapshot(quality?: number): string;
+  /** Stop/start the render loop (a sheet or exercise covers the city). */
+  pause(paused: boolean): void;
   camera(): CameraState;
   setCamera(s: Partial<CameraState>): void;
   renderOnce(): void;
@@ -646,29 +660,97 @@ export async function createCityEngine(
       });
     },
     async focus(target, ms) {
+      const lot = api.lotOf(target);
+      if (!lot) return;
+      await api.flyTo(lot.x, lot.z, CAMERA.minDist + 14, ms);
+    },
+    home() {
+      if (!built) return { ...cam };
+      const b = built.composition.layout.bounds;
+      const extent = Math.max(b.maxX - b.minX, b.maxZ - b.minZ);
+      return clampState(
+        {
+          x: (b.minX + b.maxX) / 2,
+          z: (b.minZ + b.maxZ) / 2,
+          dist: Math.min(CAMERA.defaultDist, Math.max(62, extent * 1.2)),
+        },
+        built.composition.panBounds,
+      );
+    },
+    async tour(ms = 6000) {
       if (!built) return;
+      const b = built.composition.panBounds;
+      const home = api.home();
+      const dist = Math.min(CAMERA.maxDist, home.dist + 16);
+      const stops: [number, number][] = [
+        [b.maxX, b.maxZ],
+        [b.maxX, b.minZ],
+        [b.minX, b.minZ],
+        [b.minX, b.maxZ],
+      ];
+      const leg = ms / (stops.length + 1);
+      for (const [x, z] of stops) await api.flyTo(x, z, dist, leg);
+      await api.flyTo(home.x, home.z, home.dist, leg);
+    },
+    lotOf(target) {
+      if (!built) return null;
       const { layout } = built.composition;
       const view = currentView();
-      let x = 0;
-      let z = 0;
-      if (target.type === "wonder") ({ x, z } = layout.wonder);
-      else if (target.type === "skill") {
-        const idx = view?.skills.findIndex((s) => s.skillId === target.skillId) ?? -1;
-        const lot = layout.lots.find((l) => l.content.type === "skill" && l.content.skill === idx);
-        if (lot) ({ x, z } = lot);
-      } else if (target.type === "plot") {
-        const lot = layout.lots.find(
-          (l) => l.content.type === "plot" && l.content.plot === target.plot,
-        );
-        if (lot) ({ x, z } = lot);
-      } else if (target.type === "public") {
-        const idx = view?.publicBuildings.indexOf(target.code) ?? -1;
-        const lot = layout.lots.find(
-          (l) => l.content.type === "public" && l.content.publicIndex === idx,
-        );
-        if (lot) ({ x, z } = lot);
+      if (target.type === "wonder") return { ...layout.wonder, width: 15, depth: 15 };
+      if (target.type === "townHall") return { x: 0, z: -1.6, width: 9, depth: 9 };
+      const lot = layout.lots.find((l) => {
+        const c = l.content;
+        if (target.type === "skill")
+          return c.type === "skill" && view?.skills[c.skill]?.skillId === target.skillId;
+        if (target.type === "plot") return c.type === "plot" && c.plot === target.plot;
+        return c.type === "public" && view?.publicBuildings[c.publicIndex] === target.code;
+      });
+      return lot ? { x: lot.x, z: lot.z, width: lot.width, depth: lot.depth } : null;
+    },
+    hold(target) {
+      const lot = api.lotOf(target);
+      if (!lot) return;
+      uniforms.riseCenter.value.set(lot.x, lot.z);
+      uniforms.riseHalf.value.set(lot.width / 2 + 0.6, lot.depth / 2 + 0.6);
+      uniforms.riseProgress.value = 0;
+      renderer.shadowMap.needsUpdate = true;
+    },
+    rise(target, ms = 2000) {
+      const lot = api.lotOf(target);
+      if (!lot) return Promise.resolve();
+      api.hold(target);
+      const start = performance.now();
+      return new Promise((resolve) => {
+        const step = () => {
+          const t = Math.min(1, (performance.now() - start) / ms);
+          // grow, overshoot a little, settle — a spring, not a slide
+          const grow = 1 - (1 - t) ** 3;
+          const wobble = Math.sin(t * Math.PI * 2.5) * (1 - t) * 0.12;
+          uniforms.riseProgress.value = Math.max(0, grow + wobble * t);
+          renderer.shadowMap.needsUpdate = true;
+          if (opts.manualLoop) api.renderOnce();
+          if (t < 1) requestAnimationFrame(step);
+          else {
+            uniforms.riseProgress.value = 1;
+            uniforms.riseHalf.value.set(0, 0);
+            renderer.shadowMap.needsUpdate = true;
+            resolve();
+          }
+        };
+        requestAnimationFrame(step);
+      });
+    },
+    snapshot(quality = 0.72) {
+      api.renderOnce();
+      return canvas.toDataURL("image/jpeg", quality);
+    },
+    pause(paused) {
+      if (paused) cancelAnimationFrame(raf);
+      else if (!opts.manualLoop) {
+        cancelAnimationFrame(raf);
+        last = performance.now();
+        raf = requestAnimationFrame(frame);
       }
-      await api.flyTo(x, z, CAMERA.minDist + 14, ms);
     },
     camera: () => ({ ...cam }),
     setCamera(s) {

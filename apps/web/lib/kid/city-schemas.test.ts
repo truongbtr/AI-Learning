@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { cityPlotSchema, cityPracticeSchema, cityQuerySchema } from "./city-schemas";
+import { cityAgainSchema, cityPlotSchema, cityQuerySchema } from "./city-schemas";
 
 describe("city request schemas (never trust the device)", () => {
   it("accepts the six city codes only", () => {
@@ -28,10 +28,8 @@ describe("city request schemas (never trust the device)", () => {
     expect(extra.success && !("owned" in extra.data)).toBe(true);
   });
 
-  it("asks only which building was tapped", () => {
-    expect(
-      cityPracticeSchema.safeParse({ studentId: "s1", city: "vmath", skillId: "abc" }).success,
-    ).toBe(true);
-    expect(cityPracticeSchema.safeParse({ studentId: "s1", city: "vmath" }).success).toBe(false);
+  it("play again names only the city", () => {
+    expect(cityAgainSchema.safeParse({ studentId: "s1", city: "vmath" }).success).toBe(true);
+    expect(cityAgainSchema.safeParse({ studentId: "s1", city: "mars" }).success).toBe(false);
   });
 });

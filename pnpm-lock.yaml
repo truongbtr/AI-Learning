@@ -20,6 +20,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@mtct/city':
+        specifier: workspace:*
+        version: link:../../packages/city
       '@mtct/content':
         specifier: workspace:*
         version: link:../../packages/content
@@ -68,6 +71,9 @@ importers:
       tailwind-merge:
         specifier: ^3.0.0
         version: 3.6.0
+      three:
+        specifier: ^0.186.0
+        version: 0.186.0
       zod:
         specifier: ^4.0.0
         version: 4.6.1
