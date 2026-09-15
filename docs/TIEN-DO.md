@@ -2,6 +2,127 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 10b — 15/09/2026 — Chỉnh hình thành phố, sửa lỗi nhỏ, deploy pha 10 lên Ubuntu
+
+Trạng thái: **việc 1–6 xong, đã deploy** — `edu.medifa.vn` chạy code pha 10b với `migrations: 8`,
+`host: ubuntu-edison`, **vẫn thế giới cũ** cho hai bé (không đặt `KID_UI`). Mỗi việc một commit, không push.
+
+### Việc 1 — thành phố ngày đầu không còn là công trường (commit `42e4ff4`)
+
+- Luật mới trong `packages/core/src/city/rules.ts`:
+  - kỹ năng mức 0 không cần giúp (chưa attempt, hoặc mastery < 40 mà không lỗi lặp) → **"mầm nhà"**:
+    ô đất xanh gọn, hàng rào trắng thấp, một cây con, biển tên nhỏ; không khung gỗ, không thợ;
+  - giàn giáo + thợ **chỉ** khi cần giúp (`remediationActive`, `errorCount7d ≥ 2`, `NEEDS_PRACTICE`), **tối
+    đa 3** cái (`MAX_SCAFFOLDS`), ưu tiên lỗi nhiều nhất; kỹ năng yếu còn lại vẽ ở bậc thường.
+- Test: 20 kỹ năng chưa attempt → 0 giàn giáo; 6 kỹ năng cần giúp → đúng 3 (đúng 3 kỹ năng lỗi nhiều nhất).
+- Lô trống dự phòng dùng nhà nhỏ chi tiết hoặc vườn thay cho khối cao ốc sơ sài → trần tam giác xấu nhất
+  **giảm** từ 79,5k xuống 74,6k (Phố Chữ).
+- 6 ảnh đảo vẽ lại từ mẫu `size=start` mới. Ảnh: `docs/screens/pha-10b/ngay-dau-vmath.jpg`,
+  `ngay-dau-viet.jpg`; màn thật `docs/screens/pha-10/c2-city-stars.png` (chỉ còn 1 giàn giáo).
+
+### Việc 2 — màu theo bảng phong cách (commit `218c1c4`)
+
+- Đường `0x8793a8` → **`0xB9B3A8`** (xám ấm sáng), lề `0xFFF3DD` giữ.
+- Toà chọc trời Thành Số: bỏ khối kính lớn (shader kính phản trời nên trông gần navy) → **tầng pastel xen
+  kẽ xanh ngọc / kem / hồng phấn** + dải cửa sổ sáng từng tầng, viền vàng giữ nguyên.
+- Bảng màu công trình (mái, tường, khối) nhân **cùng hệ số bão hoà ×1,18** như bảng phong cách
+  (`styleColour` trong `palette.ts`); test "≥ 3 mái, ≥ 4 tường mỗi khu phố" giữ nguyên và xanh.
+- Ảnh đối chiếu **`docs/screens/pha-10b/so-sanh.jpg`** (trái: `thanh-so.jpg`; phải trên: engine
+  `size=full`, phải dưới: `size=start`, cùng giờ 10:00). Trước khi sửa: `truoc-vmath-full.jpg`.
+- **Tôi tự nhìn, còn lệch ở:**
+  1. **Ánh sáng buổi tối** — lệch lớn nhất, và nằm ngoài bảng màu. Engine đổi sáng theo **giờ thật**; hai
+     bé học 18–21 giờ nên thành phố ở ánh hoàng hôn/đêm, tối và xỉn hơn hẳn bảng phong cách (chụp ban
+     ngày). Ảnh pha 10 cũ chụp buổi tối, nên đây có lẽ là phần lớn cái "xỉn" chủ dự án thấy. Chưa sửa vì
+     "ngày/đêm theo giờ thật" là quyết định đã chốt. **Đề xuất:** giữ trời tối nhưng nâng ánh sáng môi
+     trường buổi tối để màu nhà vẫn tươi. Cần chủ dự án gật.
+  2. Cỏ engine hơi vàng chanh, rừng thưa hơn bảng (bảng có rừng dày bao quanh).
+  3. Cao ốc bảng phong cách chủ yếu vàng/cam kính xanh; engine giờ là pastel ngọc/kem/hồng (theo yêu cầu),
+     nên khác bảng về tông nhưng không còn xanh đậm.
+  4. Đường engine giờ sáng hơn đường của bảng (bảng là xám xanh vừa) — đúng yêu cầu "xám ấm sáng".
+
+### Việc 3 — ba chỗ nhỏ trên màn thành phố (commit `179d622`)
+
+- Thẻ chọn xây: **ảnh render thật** của từng công trình (`pnpm --filter @mtct/city shoot:builds` →
+  `content/art/city/builds/*.webp`, 13–21 KB, 10 ảnh), thẻ to hơn, ảnh chiếm ~73% thẻ (e2e kiểm ≥ 60%).
+  Ảnh: `docs/screens/pha-10/c6-choose-build.png`.
+- Bong bóng mascot **ẩn khi có bảng mở** (bảng bài hoặc bảng chọn xây); e2e kiểm bong bóng không hiện dưới
+  bảng.
+- Nút "ba mẹ" góc bản đồ: trên **bản build production** (`next start`) không có huy hiệu dev của Next,
+  không bị gì chồng — e2e lấy `elementFromPoint` ở tâm nút và trúng đúng nút; nút to hơn (72 px) để chữ
+  không tràn (`docs/screens/pha-10/c1-world-map.png`).
+
+### Việc 4 — `ops:export` ghi đè QUYET-DINH.md (commit `2899eef`)
+
+- **Nguyên nhân**: `.dockerignore` loại `docs/` khỏi image. Worker trong container tìm được gốc repo (có
+  `pnpm-workspace.yaml`) nhưng không có `docs/02-KIEN-TRUC.md`, rồi ghi dòng lỗi vào `ops/context/` của
+  máy chủ qua bind mount. Không phải do cwd.
+- **Sửa**: `docsRoot()` tìm lần lượt `DOCS_ROOT`, `docs/` ở gốc repo, `docs/` cạnh thư mục ops (không
+  phụ thuộc cwd); compose mount `../docs:/data/docs:ro` cho worker (đã kiểm trên Ubuntu: worker thấy
+  `/data/docs/02-KIEN-TRUC.md`). Nếu vẫn không đọc được: **giữ nguyên QUYET-DINH.md cũ**, giữ nhãn pha
+  của HIEN-TRANG.md lần trước, ghi cảnh báo vào SUMMARY.md. 3 test mới (thiếu docs, khác cwd, `DOCS_ROOT`).
+- QUYET-DINH.md đã khôi phục (git checkout rồi chạy lại export, nay có thêm ADR-19–21).
+
+### Việc 5 — dọn 8 file treo (commit `f5221d3`)
+
+`content:validate` sạch; 4 gói emath giống hệt khi rút gọn JSON (41/40/36/39 bài, không đổi); esl.json,
+nhat-ky, ops/context vào một commit.
+
+### Việc 6 — deploy pha 10 lên Ubuntu, thế giới cũ vẫn chạy (commit `b7a2717`, `18b6bdb`)
+
+**Bật thử riêng một máy**: `/admin/health` có thẻ "Giao diện của con trên máy này" với nút **"Bật thành
+phố trên máy này"** / **"Tắt"** (chỉ ADMIN). Nút ghi cookie `mtct_ui=city` (httpOnly, 30 ngày, còn sau
+khi đăng xuất). Máy chủ đọc cookie trước rồi mới tới `KID_UI`. Test đơn vị: cookie thắng env cả hai chiều;
+không cookie → env. E2E: có cookie → bản đồ 6 đảo, trình duyệt khác → thế giới cũ.
+
+**Triển khai** (SSH khoá như pha 9; **không push** — commit chuyển lên bằng `git bundle` qua `scp`):
+
+1. Máy chủ đang ở `31e60f2` có vài sửa tay (trường `host`, bind loopback, gói nội dung). Đối chiếu: tất
+   cả đã có trong `master`, riêng nhật ký/esl chỉ khác tên bé. Lưu `~/pre-pha10b-20260915-2235.patch`,
+   `git stash`, fast-forward tới `18b6bdb`.
+2. Sao lưu DB trước: `~/pre-pha10b-20260915-2235.dump` (2,8 MB).
+3. **Build lần đầu hỏng** — lỗi có sẵn từ pha 10 (chưa ai build image): Dockerfile không chép
+   `packages/city/package.json` nên thiếu `three`, và image dùng bản `public/art` cũ nằm sẵn trong thư mục
+   máy chủ (không có `art/city`). Sửa Dockerfile (`18b6bdb`): chép package city và chạy `art-sync` trong
+   image. Lúc build hỏng, container cũ vẫn chạy nên web không gián đoạn.
+4. `docker compose up -d web worker`: web tự `prisma migrate deploy` (2 migration mới) + seed idempotent.
+5. `content:import` trong container: `exercises: 0 new, 1 updated` (bài `enl-syll-0034` đổi tên), TTS sinh
+   104 câu còn thiếu mp3 từ pha 9 (hạn mức tháng 30%). Lưu ý: lần chạy thật báo `lessons: 107 updated`
+   dù dry-run báo `unchanged`. Nội dung bài học không đổi; có lẽ bộ nạp ghi lại dòng — chưa tìm hiểu thêm.
+
+**Xác nhận**:
+
+| Kiểm | Kết quả |
+|---|---|
+| `curl https://edu.medifa.vn/api/health` | `status: ok`, `host: ubuntu-edison`, `db.migrations: 8`, worker ok |
+| Tên bé trong DB | `thy → Mai Thy`, `thanh → Chí Thanh` |
+| `KID_UI` trong `.env` Ubuntu | không đặt → **thế giới cũ** |
+| `/login` trên domain thật | trang đăng nhập thế giới cũ, thẻ "Mai Thy" |
+| Ảnh thành phố được phục vụ | `/art/city/thumbs/vmath.webp` 200, `/art/city/builds/house.webp` 200, `kenney.bin` 200 |
+| `/kid/city`, `/admin/health` khi chưa đăng nhập | 307 về `/login` |
+| Bật cookie trên một trình duyệt → bản đồ 6 đảo | **Đạt trên máy dev** (e2e). **Trên domain thật cần chủ dự án bấm**: tôi không đăng nhập bằng mật khẩu admin hay mã hình của con |
+
+`/etc/sudoers.d/010-deploy-temp` **giữ nguyên**, không gỡ.
+
+### Việc 7 — kiểm tra
+
+- `pnpm lint` xanh (chỉ cảnh báo cũ) · `pnpm test`: core 245, db 128, web 49, city 47, content 67,
+  inbox 18 · `pnpm build` xanh.
+- `e2e/phase10-city.spec.ts` **3/3 xanh trên bản build production** (4 trạm × 3 bài, chọn xây có ảnh thật).
+- Thế giới cũ `login.spec.ts` + `phase3-acceptance.spec.ts` **9/9 xanh** trên máy chủ `KID_UI=world`. K4
+  chỉ kiểm màn ăn mừng vì Daily Quest hôm nay của Mai Thy đã xong từ lần chạy trước.
+- `phase10b-ui-cookie.spec.ts`: kiểm cookie xanh; phần bấm nút admin **bỏ qua** vì `.env` không có
+  `E2E_ADMIN_PASSWORD`. Chủ dự án thêm biến đó thì test tự chạy cả luồng nút.
+
+### Chủ dự án cần làm
+
+1. **Đo bench trên iPad của con** (ADR-20): mở https://claude.ai/artifact/RMeiUU6jNn2rPNWzdaVKSy trên iPad, bấm "Đo 20 giây", gửi số. Pha 10 đã chốt
+   "chạy trên web" nên ngân sách hiện chỉ là lưới an toàn. Nay ba định mở trên iPad, nên số đo iPad lại
+   quyết định: **dưới 50 fps trung bình, hoặc 5% chậm nhất dưới 40 fps**, thì phải xem lại đường WebP.
+2. **Test với hai bé** (việc 5 pha 10): trên iPad của con, ba đăng nhập admin → `/admin/health` → "Bật
+   thành phố trên máy này" → đăng xuất → con đăng nhập, chơi một buổi có người lớn ngồi cạnh, quay video 2
+   phút, chấm checklist `docs/06` §4 (mục 13). Máy khác của nhà vẫn thế giới cũ.
+3. Gật hay không cho đề xuất **nâng ánh sáng buổi tối** (việc 2, mục lệch 1).
+
 ## Pha 10 — 15/09/2026 — Thế giới Học Đường: thành phố 3D *(việc 1–4 xong, việc 5 cần hai bé)*
 
 Trạng thái: **việc 1 đã duyệt; việc 2, 3, 4 xong** (gồm phần bổ sung "cách chơi" và hai yêu cầu giữa
