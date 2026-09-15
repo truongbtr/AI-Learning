@@ -47,7 +47,7 @@ Font: Nunito 700/800; tiếng Việt: Baloo 2 / Be Vietnam Pro
 
 ### 1.2b Chế độ thành phố — Thế giới Học Đường *(Pha 10, cờ `KID_UI=city`, ADR-20/21)*
 
-Bật bằng `KID_UI=city` trong `.env` (mặc định `world` = thế giới cũ ở §1.2, vẫn chạy nguyên). Mỗi môn là
+Bật bằng `KID_UI=city` trong `.env` (mặc định `world` = thế giới cũ ở §1.2, vẫn chạy nguyên). Thử riêng một máy mà các máy khác không đổi: ADMIN mở `/admin/health` trên máy đó → **"Bật thành phố trên máy này"** (cookie `mtct_ui`, sống 30 ngày, còn sau khi đăng xuất, thắng `KID_UI`; nút **"Tắt"** gỡ cookie) *(Pha 10b)*. Mỗi môn là
 một thành phố; **cả buổi tối diễn ra trong thành phố**, không có trang bài tập riêng.
 
 | # | Màn hình | Route | Nội dung & hành vi |

@@ -9,10 +9,13 @@ import {
   HardDrive,
   Volume2,
 } from "lucide-react";
+import { cookies } from "next/headers";
 import { PageHeader } from "@/components/admin/page-header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Stat, type StatTone } from "@/components/ui/stat";
+import { kidUiMode, UI_COOKIE } from "@/lib/kid/ui-mode";
 import { formatDateTime } from "@/lib/utils";
+import { setCityOnThisDevice } from "./ui-actions";
 
 export const dynamic = "force-dynamic";
 
@@ -33,6 +36,9 @@ export default async function AdminHealthPage() {
   // The same list `pnpm db:usage` prints, from packages/db/src/ops/health.ts, so the screen and
   // the command line can never drift apart — and so the rule is testable without a browser.
   const advice = healthAdvice(h);
+  const deviceUi = (await cookies()).get(UI_COOKIE)?.value ?? null;
+  const serverUi = kidUiMode(process.env);
+  const thisDeviceUi = kidUiMode(process.env, deviceUi);
   return (
     <div className="flex flex-col gap-6">
       <PageHeader
@@ -232,6 +238,45 @@ export default async function AdminHealthPage() {
               </div>
             ))}
           </dl>
+        </CardContent>
+      </Card>
+
+      <Card data-testid="kid-ui-device">
+        <CardHeader>
+          <div>
+            <CardTitle>Giao diện của con trên máy này</CardTitle>
+            <CardDescription>
+              Máy chủ đang dùng <strong>{serverUi === "city" ? "thành phố" : "thế giới cũ"}</strong>{" "}
+              (KID_UI). Nút dưới chỉ đổi <strong>trình duyệt này</strong> trong 30 ngày — đăng xuất
+              rồi để con đăng nhập trên chính máy này là chơi thử được; các máy khác không đổi.
+            </CardDescription>
+          </div>
+        </CardHeader>
+        <CardContent className="flex flex-wrap items-center gap-3">
+          <span className="text-sm text-ink-600" data-testid="kid-ui-device-mode">
+            Máy này: <strong>{thisDeviceUi === "city" ? "thành phố" : "thế giới cũ"}</strong>
+            {deviceUi ? " (đã bật riêng)" : ""}
+          </span>
+          <form action={setCityOnThisDevice}>
+            <input type="hidden" name="mode" value="city" />
+            <button
+              type="submit"
+              className="rounded-control bg-brand-600 px-4 py-2 text-sm font-semibold text-white"
+              data-testid="kid-ui-city-on"
+            >
+              Bật thành phố trên máy này
+            </button>
+          </form>
+          <form action={setCityOnThisDevice}>
+            <input type="hidden" name="mode" value="off" />
+            <button
+              type="submit"
+              className="rounded-control border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-700"
+              data-testid="kid-ui-city-off"
+            >
+              Tắt
+            </button>
+          </form>
         </CardContent>
       </Card>
     </div>
