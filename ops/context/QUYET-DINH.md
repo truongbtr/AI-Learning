@@ -26,6 +26,9 @@
 - `docs/adr/ADR-16-sao-trung-va-vuon-ky-dieu.md` — ADR-16 — Sao theo công sức, trứng không reset, Vườn Kỳ Diệu đủ 4 khu
 - `docs/adr/ADR-17-nap-anh-bai-vo-pha-4.md` — ADR-17 — Nạp ảnh bài vở & nhật ký lớp: năm chỗ lệch tài liệu ở pha 4
 - `docs/adr/ADR-18-bang-dieu-khien-ba-me-pha-5.md` — ADR-18 — Bảng điều khiển ba mẹ: bốn chỗ lệch tài liệu ở pha 5
+- `docs/adr/ADR-19-dang-bai-va-pham-vi-chu-dot-3.md` — ADR-19 — Đợt 3: dạng bài bắt buộc, phạm vi chữ và chữ p
+- `docs/adr/ADR-20-thanh-pho-3d-that-hay-webp.md` — ADR-20 — Thành phố 3D: render thật trên máy, không dựng sẵn WebP
+- `docs/adr/ADR-21-du-lieu-thanh-pho.md` — ADR-21 — Nối dữ liệu học vào thành phố
 
 ## Hai thứ bị đảo ngược, đừng đọc bản cũ
 

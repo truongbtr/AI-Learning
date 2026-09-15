@@ -41,7 +41,7 @@ Chưa phải ngày học. Ghi lại trạng thái lúc giao máy, để hai tu�
 
 | Thứ | Số |
 |---|---|
-| Hồ sơ bé | 2 — `thy` (Thy, mascot Cú → Vườn Kỳ Diệu), `thanh` (Thanh, mascot Robot → Thành phố Robot) |
+| Hồ sơ bé | 2 — `thy` (Mai Thy, mascot Cú → Vườn Kỳ Diệu), `thanh` (Chí Thanh, mascot Robot → Thành phố Robot) |
 | Tài khoản | 2 `ADMIN`, **0 `PARENT`** ← xem "việc chủ dự án phải làm" bên dưới |
 | Dữ liệu học | **0** phiên, 0 bằng chứng, 0 mastery — sạch hoàn toàn (pha 8 việc 0.3) |
 | Ngân hàng bài | 1.236 bài đã phát hành, 376 kỹ năng, 182 bài học, 44 mã lỗi |
@@ -61,7 +61,7 @@ bấm "Học ngay" như mọi hôm. Xem trước: `pnpm db:assess -- --status`.
 2. **Đặt mã 4 hình cho từng bé** ở `/admin/users` → chọn bé → mã hình. Cho chính con chọn 4 hình
    con thích — con nhớ được mã của con hơn là mã của người lớn đặt.
 3. **Sửa ngày sinh hai bé** — hiện là `2020-01-01`, giá trị tạm của seed.
-4. **Kiểm tra mascot đã đúng bé chưa**: Thy = Cú (Vườn Kỳ Diệu), Thanh = Robot (Thành phố Robot).
+4. **Kiểm tra mascot đã đúng bé chưa**: Mai Thy = Cú (Vườn Kỳ Diệu), Chí Thanh = Robot (Thành phố Robot).
    Đổi ở `/parent/<bé>/settings` nếu con muốn khác.
 5. **Cài app lên iPad** cho từng bé (`docs/VAN-HANH.md` §5) và để con **tự đăng nhập một lần** có
    ba mẹ ngồi cạnh — đó là lần duy nhất nên ngồi cạnh.
@@ -74,14 +74,14 @@ bấm "Học ngay" như mọi hôm. Xem trước: `pnpm db:assess -- --status`.
 
 <!-- Chép mẫu ở đầu file xuống đây, mỗi tối một khối cho mỗi bé. -->
 
-### Thứ …, ../09 — Thy
+### Thứ …, ../09 — Mai Thy
 
 - Học lúc:
 - Phải nhờ ba mẹ:
 - Bỏ dở ở đâu:
 - Con nói gì:
 
-### Thứ …, ../09 — Thanh
+### Thứ …, ../09 — Chí Thanh
 
 - Học lúc:
 - Phải nhờ ba mẹ:
@@ -106,8 +106,8 @@ pnpm db:trial
 
 | Câu hỏi | Trả lời |
 |---|---|
-| Máy nói đạt bao nhiêu ngày? | Thy …/14 · Thanh …/14 |
-| Nhật ký nói bao nhiêu ngày thật sự không cần trợ giúp? | Thy … · Thanh … |
+| Máy nói đạt bao nhiêu ngày? | Mai Thy …/14 · Chí Thanh …/14 |
+| Nhật ký nói bao nhiêu ngày thật sự không cần trợ giúp? | Mai Thy … · Chí Thanh … |
 | Hai con số lệch nhau vì sao? | |
 | Bỏ dở nhiều nhất ở trạm nào, dạng bài nào? | |
 | Dạng bài con thích nhất / chán nhất | |
@@ -116,3 +116,11 @@ pnpm db:trial
 
 Rồi chuyển phần "dạng bài con chán / kỹ năng hụt bài" sang **danh sách việc pha 6** ở cuối mục
 Pha 8 trong `docs/TIEN-DO.md`.
+
+## Việc chờ sau 14 ngày (không sửa trong lúc chạy thật)
+
+- **Màn "ảnh hôm nay" cho ba mẹ** (chủ dự án nêu 14/09): một chỗ duy nhất trả lời "ảnh tôi gửi qua
+  chat đã xử lý chưa" — theo ngày, mỗi ảnh một dòng: đã đọc / đang chờ / không đọc được, bao nhiêu câu
+  ghi nhận, bao nhiêu câu chờ ba mẹ xem, bấm vào ra ảnh gốc và các bằng chứng sinh ra từ nó. Gộp cả
+  ảnh chụp bằng app lẫn ảnh đẩy qua `/api/internal/intake/photo` (`source=CHAT_INTAKE`).
+  Hiện phải nhìn ở ba chỗ rời nhau: `/parent/intake`, thẻ tối nay trên dashboard, `/admin/inbox`.

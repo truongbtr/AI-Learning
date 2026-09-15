@@ -15,7 +15,7 @@
       "strand": "VOC",
       "nameVi": "Chào hỏi, giới thiệu tên và tuổi",
       "nameEn": "Greetings and introductions",
-      "description": "Nghe – nói – nhận biết các mẫu chào hỏi: Hello, Hi, Goodbye, What's your name? I'm…, How old are you? I'm six. Ví dụ: nghe 'What's your name?' chọn câu trả lời 'I'm Thy.'; nói tên và tuổi với mascot. Lỗi thường gặp: trả lời 'I'm six' cho câu hỏi tên, quên 'I'm', nói 'My name Thy'.",
+      "description": "Nghe – nói – nhận biết các mẫu chào hỏi: Hello, Hi, Goodbye, What's your name? I'm…, How old are you? I'm six. Ví dụ: nghe 'What's your name?' chọn câu trả lời 'I'm Mai Thy.'; nói tên và tuổi với mascot. Lỗi thường gặp: trả lời 'I'm six' cho câu hỏi tên, quên 'I'm', nói 'My name Mai Thy'.",
       "standardRef": "GS1-LB.U1",
       "gradeLevel": "1",
       "order": 1,
@@ -330,8 +330,15 @@
       "prerequisites": ["ESL.VOC.COLORS"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "DRAG_DROP"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "LISTEN_CHOOSE",
+        "MCQ",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.VOC.WEATHER",
@@ -460,8 +467,16 @@
       "prerequisites": ["ESL.VOC.ACTIONS_VERBS"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["LISTEN_CHOOSE", "MCQ", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 2]
+      "exerciseTypes": [
+        "LISTEN_CHOOSE",
+        "MCQ",
+        "SPEAK_ANSWER",
+        "DRAG_DROP",
+        "COUNT_TAP",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.VOC.JOBS",
@@ -652,8 +667,8 @@
       "prerequisites": ["ESL.PH.CVC_SHORT_U"],
       "relatedSkillCodes": ["ENL.RF.BLEND_PHONEMES"],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.PH.BLENDS_FINAL",
@@ -668,8 +683,8 @@
       "prerequisites": ["ESL.PH.BLENDS_INITIAL"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": ["READ_ALOUD", "LISTEN_CHOOSE", "MCQ", "DRAG_DROP", "WRITE_PHOTO"],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.PH.DIGRAPHS_SH_CH_TH",
@@ -802,7 +817,7 @@
       "strand": "SPK",
       "nameVi": "Tự giới thiệu 2–3 câu",
       "nameEn": "Introducing yourself",
-      "description": "Nói tên, tuổi, lớp, một điều mình thích: Hello, I'm Thanh. I'm six. I like robots. Ví dụ: mascot hỏi 'Tell me about you' và con nói 2–3 câu. Lỗi thường gặp: nói tiếng Việt xen, thiếu động từ (I six), nói quá nhỏ.",
+      "description": "Nói tên, tuổi, lớp, một điều mình thích: Hello, I'm Chí Thanh. I'm six. I like robots. Ví dụ: mascot hỏi 'Tell me about you' và con nói 2–3 câu. Lỗi thường gặp: nói tiếng Việt xen, thiếu động từ (I six), nói quá nhỏ.",
       "standardRef": "GS1-LB.U1",
       "gradeLevel": "1",
       "order": 43,
@@ -990,8 +1005,15 @@
       "prerequisites": ["ESL.GR.HAVE_HAS"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "SPEAK_ANSWER"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.GR.THIS_THAT",
@@ -1045,8 +1067,15 @@
       "prerequisites": ["ESL.VOC.NUMBERS_1_20", "ESL.GR.IS_ARE"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "READ_ALOUD"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "READ_ALOUD",
+        "LISTEN_CHOOSE",
+        "COUNT_TAP",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.GR.HOW_MANY",
@@ -1153,8 +1182,15 @@
       "prerequisites": ["ESL.GR.HOW_MANY", "ESL.VOC.HOUSE_ROOMS"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["MCQ", "DRAG_DROP", "SPEAK_ANSWER"],
-      "difficultyRange": [2, 4]
+      "exerciseTypes": [
+        "MCQ",
+        "DRAG_DROP",
+        "SPEAK_ANSWER",
+        "LISTEN_CHOOSE",
+        "READ_ALOUD",
+        "WRITE_PHOTO"
+      ],
+      "difficultyRange": [1, 5]
     },
     {
       "code": "ESL.VOC.BEDROOM_FURNITURE",
