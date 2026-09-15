@@ -2,6 +2,115 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 9 — 15/09/2026 — Dựng máy chủ Ubuntu, chuyển dữ liệu (chưa cắt tunnel)
+
+Trạng thái: **§1 và §2 xong, kiểm chứng đầy đủ. §3 (vận hành) làm được phần sao lưu + diễn tập +
+khởi động lại; chưa cắt Cloudflare Tunnel sang máy mới, chưa đăng nhập thật bằng mã 4 hình của hai
+bé.** Hệ thống Windows **vẫn là bản chính đang chạy** — chưa tắt gì, đúng nguyên tắc "chạy song
+song, nghiệm thu, rồi mới đổi tunnel" của đề bài. Máy Ubuntu đã sẵn sàng để nghiệm thu qua LAN
+(`http://192.168.1.102:5000`, nhưng cổng này **không** mở ra ngoài — chỉ vào được từ chính máy chủ
+hoặc qua một đường hầm SSH tạm khi cần xem thử).
+
+### §0 — chuẩn bị máy (đổi kế hoạch so với đề bài)
+
+- Máy ảo đổi sang **IP tĩnh `192.168.1.102`** (đề bài ghi `.94` — chủ dự án đổi ý giữa chừng, đã
+  làm theo, không phải sai lệch tài liệu).
+- **Sự cố giữa chừng, đã sửa**: `netplan apply` liên tục bị kernel OOM-kill dù `free -h` báo còn
+  dư RAM — nguyên nhân là VM chỉ có 1 vCPU / 2.1 GiB RAM (Hyper-V Dynamic Memory đặt sàn quá thấp).
+  Chủ dự án đã tự nâng lên 4 vCPU / 3.2 GiB qua Hyper-V Manager (tôi không có quyền admin để tự
+  làm) — sau đó mọi thao tác hệ thống chạy bình thường. **Khuyến nghị**: nếu sau này thấy máy chậm
+  bất thường khi có nhiều gia đình dùng cùng lúc, cân nhắc nâng thêm — 3.2 GiB là mức tối thiểu đã
+  kiểm chứng chạy được, không phải mức dư dả.
+- SSH chỉ vào bằng khoá (`PasswordAuthentication no`, kiểm chứng bằng thử đăng nhập mật khẩu và bị
+  từ chối thẳng), `ufw` chỉ mở cổng 22 trong LAN, Docker Engine + compose plugin (không phải Docker
+  Desktop), `unattended-upgrades` bật, múi giờ `Asia/Ho_Chi_Minh`. Khởi động lại một lần để lên
+  kernel mới — lên lại sạch.
+- **Sự cố khác phát hiện giữa chừng, đã sửa**: trong lúc làm, phát hiện **Docker Desktop trên máy
+  Windows đang chạy thật bị tắt dịch vụ** (không rõ từ bao lâu) — nghĩa là hệ thống thật của hai bé
+  đang không vào được. Đã bật lại Docker Desktop và `docker compose up -d`, xác nhận `/api/health`
+  trả `200` trở lại. Không rõ nguyên nhân gốc (Windows Update? treo máy?) — nên chủ dự án để ý xem
+  còn tái diễn không; nếu có, cân nhắc đặt Docker Desktop tự khởi động cùng Windows.
+
+### §2 — chuyển dữ liệu: bảng đối chiếu (không lệch dòng nào)
+
+Nguồn: bản sao lưu mới chụp lúc chuyển (`mtct-2026-09-15-0948.dump`), không dùng bản cũ 3 ngày
+trước đó. Đếm hai lần — trước khi sao lưu và sau khi phục hồi trên Ubuntu — khớp tuyệt đối:
+
+| Bảng | Windows (trước) | Ubuntu (sau) | Lệch |
+|---|---:|---:|---:|
+| Student | 2 | 2 | 0 |
+| User | 4 | 4 | 0 |
+| Session | 4 | 4 | 0 |
+| Attempt | 20 | 20 | 0 |
+| Evidence | 19 | 19 | 0 |
+| SkillMastery | 18 | 18 | 0 |
+| ClassDiary | 3 | 3 | 0 |
+
+`content:import --dry-run` trên Ubuntu báo **"0 changes"** — nội dung (376 kỹ năng, 10759 bài
+luyện) khớp tuyệt đối với Windows. Phát hiện thêm: **165 MB / 7509 file** (chủ yếu cache mp3 giọng
+đọc đã sinh sẵn, `pnpm content:import` chạy trực tiếp trên máy Windows chứ không qua Docker) nằm ở
+`E:\data\files` — một thư mục **ngoài** volume Docker mà container thật dùng — đã gộp cả hai nguồn
+vào volume `mtct_files` trên Ubuntu để không sót gì; `content:stats` sau đó khớp y hệt Windows
+(kể cả dòng "audio: 7288/7392 câu đã có mp3").
+
+Bí mật production **hoàn toàn mới**: mật khẩu Postgres, `AUTH_SECRET`, `INTERNAL_API_TOKEN` — không
+cái nào chép từ `.env` dev. `TTS_*` giữ y hệt (cùng khoá Azure, cùng vùng `eastasia`). **Token mới
+đã báo riêng cho chủ dự án qua chat** (không ghi vào file này — đây là bí mật, không nên nằm trong
+git).
+
+### Sửa một chỗ nhỏ trong code — thêm trường `host` vào `/api/health`
+
+Tiêu chí xong đòi hỏi phân biệt được máy nào đang trả lời. `os.hostname()` bên trong container chỉ
+ra một chuỗi ngẫu nhiên (id container), không nói lên gì — nên đổi sang đọc biến môi trường mới
+`DEPLOY_HOST` (đặt `ubuntu-edison` trong `.env` trên Ubuntu), rơi về `hostname()` nếu không đặt.
+Sửa `packages/db/src/ops/health.ts` (+ test), `apps/web/app/(admin)/admin/health/page.tsx` (thêm
+dòng "Máy chủ" ở khối Chi tiết), `.env.example`. `lint`/`test`/`build` xanh trên máy Windows sau khi
+sửa. Chưa commit (đề bài không yêu cầu commit trong việc vận hành; hỏi chủ dự án có muốn commit
+riêng thay đổi code này không).
+
+### §3 — vận hành
+
+- **Sao lưu hằng đêm**: đổi kế hoạch so với đề bài khi hỏi chủ dự án — chưa có NAS/ổ chia sẻ riêng,
+  nên tạm thời Ubuntu tự sao lưu cục bộ lúc 1:00 sáng (như cũ), rồi một **Task Scheduler trên máy
+  Windows** (`MTCT-PullUbuntuBackup`, 1:20 sáng, không cần quyền admin) tự kéo bản mới nhất về
+  `E:\SAO-LUU-MTCT` qua LAN bằng khoá SSH sẵn có. Đã chạy thử tay, log ở
+  `docs/dien-tap/pull-ubuntu-backup.log`. Kịch bản: `scripts/pull-ubuntu-backup.ps1` +
+  `scripts/register-backup-pull-task.ps1`. **Đây là giải pháp tạm** — nên bàn lại khi có chỗ lưu
+  cố định (NAS, ổ ngoài).
+- **Diễn tập khôi phục thật trên Ubuntu**: phục hồi bản sao lưu vào database tạm `mtct_restore`
+  (không đụng `mtct` thật), đếm khớp, rồi xoá. Log: `docs/dien-tap/khoi-phuc-20260915-ubuntu-pha9.md`.
+  Chưa dựng bản Bash tương đương `scripts/restore-drill.ps1` để lần sau tự sinh log — để lại làm
+  sau nếu chủ dự án muốn.
+- **Khởi động lại máy ảo**: đã thử thật (reboot qua SSH) — cả 4 dịch vụ (postgres, web, worker,
+  backup) tự lên lại, `/api/health` trả `200` sau ~30 giây, không gõ gì. Đạt tiêu chí 5.
+- Đã cập nhật `docs/VAN-HANH.md`: thêm §0 "Vào máy chủ Ubuntu" (cách SSH bằng khoá, khởi động lại
+  qua Hyper-V Manager), sửa §6 để nói rõ sao lưu giờ đi hai chặng.
+
+### Chưa làm — cần chủ dự án quyết định trước khi cắt hẳn
+
+1. **Cắt Cloudflare Tunnel sang Ubuntu**: cần token của tunnel hiện tại (đang chạy trên Windows dưới
+   dạng Windows Service `Cloudflared`, đọc từ `C:\ProgramData\cloudflared\token` — file này khoá
+   quyền SYSTEM, tôi không đọc được). Chủ dự án lấy lại token ở Zero Trust dashboard → Networks →
+   Tunnels → tunnel đang dùng → Configure, dán vào chat khi sẵn sàng cắt. Sau khi có token: dựng
+   `cloudflared` trên Ubuntu bằng cùng tunnel, kiểm tra `https://edu.medifa.vn/api/health` trả
+   `"host":"ubuntu-edison"`, rồi mới tắt Windows Service `Cloudflared`.
+2. **Đăng nhập thật bằng mã 4 hình của hai bé, đi trọn một phiên học** (tiêu chí 4) — tôi chỉ kiểm
+   tra được trang `/login` hiện đúng tên và ảnh đại diện hai bé (dữ liệu đã sang đúng), không tự
+   đoán mã của con. Chủ dự án tự làm việc này qua đường hầm SSH tạm hoặc sau khi cắt tunnel.
+3. Sau khi cắt tunnel và nghiệm thu xong: gỡ `/etc/sudoers.d/010-deploy-temp` trên Ubuntu (tự đặt
+   khi mở đầu pha 9 để tôi chạy `sudo` không cần hỏi mật khẩu) — hỏi lại chủ dự án trước khi gỡ,
+   phòng khi còn việc dở dang.
+4. Ổ đĩa Ubuntu hiện dùng 62.5/125 GB (còn ~62 GB chưa gán vào LVM) — đủ dùng, không cần làm gì
+   ngay, ghi lại để biết còn dư địa mở rộng sau này nếu cần.
+
+### Câu hỏi cho chủ dự án
+
+- Token tunnel Cloudflare hiện tại — gửi khi nào sẵn sàng cắt (không vội).
+- Chỗ sao lưu cố định lâu dài (NAS? ổ ngoài?) hay cứ để tạm ở `E:\SAO-LUU-MTCT` qua LAN như hiện
+  tại?
+- Có muốn commit riêng thay đổi `host` trong `/api/health` (mã nguồn, không phải bí mật) trước khi
+  merge các việc pha 9 khác không?
+
 ## Pha 6d — 15/09/2026 — Đọc phản hồi thật, ruột bài học, thư viện vật thể
 
 Trạng thái: **Việc 1 và việc 4 xong. Việc 2 xong đúng phần ưu tiên (107/182), phần còn lại (HK2) để

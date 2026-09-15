@@ -1,16 +1,18 @@
 # VAN-HANH.md — Sổ tay vận hành
 
 > Viết cho **chủ dự án**, không phải cho lập trình viên. Mỗi mục trả lời một câu hỏi thật, theo
-> thứ tự bạn sẽ cần đến chúng. Mọi lệnh chạy trong **PowerShell**, tại thư mục
-> `E:\PROJECT\EDISON_LEARNING`.
+> thứ tự bạn sẽ cần đến chúng.
 >
-> Mở PowerShell đúng chỗ: mở thư mục dự án trong File Explorer → gõ `powershell` vào ô địa chỉ →
-> Enter.
+> **Từ pha 9**: máy chủ thật chạy trên **Ubuntu** (`192.168.1.102`), không còn trên máy Windows.
+> Mọi lệnh `docker compose ...` trong sổ tay này giờ chạy **sau khi vào được máy Ubuntu** — xem
+> [§0](#0-vào-máy-chủ-ubuntu) — chứ không mở PowerShell tại `E:\PROJECT\EDISON_LEARNING` trên máy
+> Windows nữa (máy Windows chỉ còn giữ bản sao lưu kéo về qua LAN, xem [§6](#6-sao-lưu-và-khôi-phục)).
 
 ## Mục lục
 
 | Cần gì | Mục |
 |---|---|
+| Vào máy chủ Ubuntu | [§0](#0-vào-máy-chủ-ubuntu) |
 | Web không vào được — làm gì trước tiên | [§1](#1-web-không-vào-được) |
 | Khởi động / tắt / khởi động lại | [§2](#2-khởi-động-tắt-khởi-động-lại) |
 | Xem log | [§3](#3-xem-log) |
@@ -24,6 +26,34 @@
 | Việc hằng tuần | [§11](#11-việc-hằng-tuần) |
 | Chụp bài vở bằng app Claude trên điện thoại | [§12](#12-chụp-bài-vở-bằng-app-claude-trên-điện-thoại) |
 | Thư mục `ops/` — số liệu và cách nhờ đổi | [§13](#13-thư-mục-ops--số-liệu-và-cách-nhờ-đổi) |
+
+---
+
+## 0. Vào máy chủ Ubuntu
+
+Máy chủ là một máy ảo Ubuntu chạy trên chính máy Windows này (Hyper-V), địa chỉ `192.168.1.102`.
+Vào bằng khoá — **không có mật khẩu** để gõ (đã tắt từ pha 9, an toàn hơn).
+
+Mở PowerShell (ở đâu cũng được, không cần đúng thư mục), gõ:
+
+```powershell
+ssh -i $env:USERPROFILE\.ssh\medifa_deploy_ed25519 truong@192.168.1.102
+```
+
+Vào được thì thấy dấu nhắc `truong@eduserver:~$`. Dự án nằm ở `/opt/edison-learning` — mọi lệnh
+`docker compose ...` trong sổ tay này chạy tại đó:
+
+```bash
+cd /opt/edison-learning
+docker compose --env-file .env -f docker/compose.yml ps
+```
+
+**Khởi động lại cả máy ảo** (ví dụ sau khi cúp điện): vào Hyper-V Manager trên máy Windows này →
+chọn máy ảo → **Start** (hoặc **Restart** nếu đang chạy). Không cần gõ gì thêm — mọi dịch vụ
+(Postgres, web, worker, sao lưu) tự khởi động lại cùng máy (đã kiểm chứng ở pha 9).
+
+**Xem máy ảo có đang chạy không, không cần vào máy**: mở Hyper-V Manager trên máy Windows, nhìn
+trạng thái máy ảo trong danh sách.
 
 ---
 
@@ -290,10 +320,19 @@ Mở Chrome → menu ba chấm → **Cài đặt ứng dụng** / *Install app*.
 
 ## 6. Sao lưu và khôi phục
 
-### 6.1 Sao lưu chạy tự động
+> **Từ pha 9, sao lưu đi hai chặng**: container `backup` trên máy Ubuntu tự chạy mỗi đêm 1 giờ,
+> ghi vào `/opt/edison-learning/_sao-luu` trên chính máy Ubuntu; rồi một tác vụ trên máy Windows
+> (`Task Scheduler` → `MTCT-PullUbuntuBackup`, chạy 1:20 sáng, không cần quyền admin) tự kéo bản
+> mới nhất về `E:\SAO-LUU-MTCT` như cũ qua mạng LAN. Muốn kéo tay ngay: mở PowerShell tại
+> `E:\PROJECT\EDISON_LEARNING`, chạy `pwsh scripts\pull-ubuntu-backup.ps1`. Nhật ký ở
+> `docs\dien-tap\pull-ubuntu-backup.log`. Đây là giải pháp tạm — khi nào có NAS hay ổ chia sẻ
+> riêng, đổi `BACKUP_DIR` trong `.env` trên Ubuntu và bỏ tác vụ kéo này đi.
+
+### 6.1 Sao lưu chạy tự động (trên máy Ubuntu)
 
 Container `backup` chạy mỗi đêm lúc `BACKUP_HOUR` (mặc định 1 giờ sáng) và ghi vào `BACKUP_DIR`
-(mặc định `E:\SAO-LUU-MTCT`):
+(mặc định `/opt/edison-learning/_sao-luu` trên Ubuntu — không phải `E:\SAO-LUU-MTCT` nữa, xem
+khung trên):
 
 ```
 E:\SAO-LUU-MTCT\
