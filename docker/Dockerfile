@@ -22,6 +22,7 @@ COPY packages/content/package.json packages/content/
 COPY packages/inbox/package.json packages/inbox/
 COPY packages/db/package.json packages/db/
 COPY packages/config/package.json packages/config/
+COPY packages/city/package.json packages/city/
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 
 # ---------- build: prisma generate, db dist, next build; then re-link prod deps only ----------
@@ -29,7 +30,10 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 FROM deps AS build
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm --filter @mtct/core build \
+# art:sync copies content/art into apps/web/public/art (ignored by git): the image must not depend
+# on whatever copy happens to sit in the build folder (pha 10b: the city art was missing).
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store node scripts/art-sync.mjs \
+  && pnpm --filter @mtct/core build \
   && pnpm --filter @mtct/db generate \
   && pnpm --filter @mtct/db build \
   && pnpm --filter @mtct/web build \
