@@ -116,3 +116,11 @@ Khi đọc mã và schema thì có năm chỗ đề bài không khớp thẳng v
 
 Hệ quả thêm: migration dữ liệu `20260915200000_rename_kid_nicknames` đổi tên gọi "Thy" → "Mai Thy",
 "Thanh" → "Chí Thanh" (theo yêu cầu chủ dự án), có điều kiện theo giá trị cũ nên chạy lại không đổi gì.
+
+## Bổ sung 16/09/2026 — đồng hồ game
+
+"Đồng hồ thật → ngày/đêm" (§3 của đề pha 10) đổi thành **đồng hồ game: 15 phút thật = 1 ngày game**
+(chủ dự án). Hai bé học 18–21 giờ nên theo giờ thật thì thành phố luôn tối; nay con thấy đủ sáng, chiều,
+tối, đêm trong một buổi. `gameHour(now) = (now mod 15 phút) / 15 phút × 24` (`packages/city/src/engine/
+daynight.ts`, có test) — lấy từ đồng hồ máy chứ không từ lúc mở màn, để mọi màn cùng một giờ. Engine vẫn
+nhận `hour` cố định cho bench/ảnh chụp và `dayLengthMs` nếu cần đổi nhịp.

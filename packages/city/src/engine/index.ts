@@ -44,7 +44,7 @@ import { type BuiltCity, buildCity } from "../scene/build-city";
 import { AGENT_MAX, buildAgentTemplates } from "./agents";
 import { applyCamera, CAMERA, type CameraState, clampState, easeInOut, panDelta } from "./camera";
 import { bend, createCurveUniforms } from "./curve";
-import { type Lighting, lightingAt } from "./daynight";
+import { GAME_DAY_MS, gameHour, type Lighting, lightingAt } from "./daynight";
 import { pathLength, sampleAt } from "./paths";
 import { surfaceShader } from "./surface";
 
@@ -73,8 +73,10 @@ export interface EngineStats {
 
 export interface CityEngineOptions {
   assetsBase: string;
-  /** Override the real clock (hours, 0–24) — for tests, previews and the bench. */
+  /** Freeze the game clock at this hour (0–24) — for tests, previews and the bench. */
   hour?: number;
+  /** Real milliseconds per game day (default GAME_DAY_MS = 15 minutes). */
+  dayLengthMs?: number;
   maxPixelRatio?: number;
   shadowMapSize?: number;
   /** Start without the render loop (bench screenshots call renderOnce). */
@@ -306,8 +308,8 @@ export async function createCityEngine(
   }
 
   function applyLighting() {
-    const now = new Date();
-    const hour = hourOverride ?? now.getHours() + now.getMinutes() / 60;
+    // the game clock: a whole day passes in GAME_DAY_MS, not in 24 real hours
+    const hour = hourOverride ?? gameHour(Date.now(), opts.dayLengthMs ?? GAME_DAY_MS);
     const L: Lighting = lightingAt(hour);
     skyMat.uniforms.top?.value.set(L.skyTop);
     skyMat.uniforms.bottom?.value.set(L.skyHorizon);

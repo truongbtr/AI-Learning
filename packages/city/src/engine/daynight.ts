@@ -1,4 +1,4 @@
-// Real clock → light in the city. Pure: hour in, colours and factors out. Night is friendly deep
+// Game clock → light in the city. Pure: hour in, colours and factors out. Night is friendly deep
 // blue with warm windows and street lights — never dark or scary.
 
 export interface Lighting {
@@ -130,4 +130,17 @@ export function lightingAt(hour: number): Lighting {
     lights: mix(a.l.lights, b.l.lights, s),
     windows: mix(a.l.windows, b.l.windows, s),
   };
+}
+
+/** One game day lasts this long in real time (owner, pha 10b: 15 minutes = one day). */
+export const GAME_DAY_MS = 15 * 60 * 1000;
+
+/**
+ * The hour in the game (0–24), running GAME_DAY_MS per day. Derived from the wall clock rather than
+ * from when a screen opened, so the map, the city and a reload all agree on the time of day and the
+ * sky never jumps back to morning when the child changes screen.
+ */
+export function gameHour(nowMs: number, dayMs: number = GAME_DAY_MS): number {
+  const day = Math.max(1, dayMs);
+  return ((((nowMs % day) + day) % day) / day) * 24;
 }

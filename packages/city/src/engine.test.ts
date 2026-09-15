@@ -20,7 +20,7 @@ import { WONDER_PIECES, wonder } from "./build/wonders";
 import { hexToRgb, rgbToHsl } from "./color";
 import { CAMERA, clampState, panDelta, toCameraDir } from "./engine/camera";
 import { CURVE_K, curvedBoundingSphere } from "./engine/curve";
-import { lightingAt } from "./engine/daynight";
+import { GAME_DAY_MS, gameHour, lightingAt } from "./engine/daynight";
 import { pathLength, sampleAt } from "./engine/paths";
 import type { KenneyManifest } from "./kenney/set";
 import { CITY_IDS } from "./palette";
@@ -212,3 +212,26 @@ describe("no error-red anywhere in the city palette (06 §1.1)", () => {
 // keep unused helpers referenced for type-only imports in some toolchains
 void Mesh;
 void Float32BufferAttribute;
+
+describe("game clock (pha 10b: 15 real minutes = one game day)", () => {
+  it("runs a whole day in fifteen minutes", () => {
+    expect(GAME_DAY_MS).toBe(15 * 60 * 1000);
+    const start = 1_800_000_000_000 - (1_800_000_000_000 % GAME_DAY_MS);
+    expect(gameHour(start)).toBe(0);
+    expect(gameHour(start + GAME_DAY_MS / 2)).toBe(12);
+    expect(gameHour(start + GAME_DAY_MS / 4)).toBe(6);
+    // one real minute is about 1.6 game hours
+    expect(gameHour(start + 60_000)).toBeCloseTo(1.6, 5);
+    // a new day starts again at midnight
+    expect(gameHour(start + GAME_DAY_MS)).toBe(0);
+  });
+
+  it("stays within 0–24 for any clock, and honours a custom day length", () => {
+    for (const t of [0, 1, 123_456_789, 1_799_999_999_999]) {
+      const h = gameHour(t);
+      expect(h).toBeGreaterThanOrEqual(0);
+      expect(h).toBeLessThan(24);
+    }
+    expect(gameHour(30_000, 60_000)).toBe(12);
+  });
+});
