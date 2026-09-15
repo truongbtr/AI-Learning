@@ -11,9 +11,7 @@
       "type": "MCQ",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "robot",
       "targetsError": null,
       "scaffold": "model",
@@ -44,10 +42,7 @@
         }
       ],
       "answerKey": "c",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are one.",
       "meta": {
         "estSeconds": 20,
@@ -57,963 +52,610 @@
     },
     {
       "id": "emath-count20-0002",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "garden",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
         "text": "Count them. Which number?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐝",
-          "labelEn": "things",
-          "repeat": 2
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "3",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "b",
-          "text": "2"
-        },
-        {
-          "id": "c",
-          "text": "1",
-          "errorTag": "dem_thieu_1"
-        }
-      ],
-      "answerKey": "b",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 2,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are two.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelEn": "things",
+          "repeat": 2
+        },
+        "correctCount": 2,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0003",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
         "text": "How many can you see?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🎈",
-          "labelEn": "things",
-          "repeat": 3
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "5",
-          "errorTag": "dem_lai_tu_dau"
-        },
-        {
-          "id": "b",
-          "text": "3"
-        },
-        {
-          "id": "c",
-          "text": "2",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "d",
-          "text": "4",
-          "errorTag": "dem_thua_1"
-        }
-      ],
-      "answerKey": "b",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 3,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are three.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelEn": "things",
+          "repeat": 3
+        },
+        "correctCount": 3,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0004",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "robot",
       "targetsError": null,
       "scaffold": "model",
       "prompt": {
         "text": "Count one by one. How many?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🍊",
-          "labelEn": "things",
-          "repeat": 4
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "3",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "b",
-          "text": "5",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "c",
-          "text": "4"
-        }
-      ],
-      "answerKey": "c",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 4,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are four.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍊",
+          "labelEn": "things",
+          "repeat": 4
+        },
+        "correctCount": 4,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0005",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "garden",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Touch and count. How many?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐞",
-          "labelEn": "things",
-          "repeat": 5
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "6",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "b",
-          "text": "5"
-        },
-        {
-          "id": "c",
-          "text": "4",
-          "errorTag": "dem_thieu_1"
-        }
-      ],
-      "answerKey": "b",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 5,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are five.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelEn": "things",
+          "repeat": 5
+        },
+        "correctCount": 5,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0006",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "How many? Count, then tap.",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🚗",
-          "labelEn": "things",
-          "repeat": 6
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "7",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "b",
-          "text": "8",
-          "errorTag": "dem_lai_tu_dau"
-        },
-        {
-          "id": "c",
-          "text": "6"
-        },
-        {
-          "id": "d",
-          "text": "5",
-          "errorTag": "dem_thieu_1"
-        }
-      ],
-      "answerKey": "c",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 6,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are six.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🚗",
+          "labelEn": "things",
+          "repeat": 6
+        },
+        "correctCount": 6,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0007",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "robot",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Count them. Which number?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🌸",
-          "labelEn": "things",
-          "repeat": 7
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "6",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "b",
-          "text": "8",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "c",
-          "text": "7"
-        }
-      ],
-      "answerKey": "c",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 7,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are seven.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelEn": "things",
+          "repeat": 7
+        },
+        "correctCount": 7,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0008",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "garden",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "How many can you see?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🍌",
-          "labelEn": "things",
-          "repeat": 8
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "9",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "b",
-          "text": "8"
-        },
-        {
-          "id": "c",
-          "text": "7",
-          "errorTag": "dem_thieu_1"
-        }
-      ],
-      "answerKey": "b",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 8,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are eight.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍌",
+          "labelEn": "things",
+          "repeat": 8
+        },
+        "correctCount": 8,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0009",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Count one by one. How many?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "⚙️",
-          "labelEn": "things",
-          "repeat": 9
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "8",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "b",
-          "text": "10",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "c",
-          "text": "11",
-          "errorTag": "dem_lai_tu_dau"
-        },
-        {
-          "id": "d",
-          "text": "9"
-        }
-      ],
-      "answerKey": "d",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 9,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are nine.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⚙️",
+          "labelEn": "things",
+          "repeat": 9
+        },
+        "correctCount": 9,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0010",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "robot",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Touch and count. How many?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🍎",
-          "labelEn": "things",
-          "repeat": 10
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "9",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "b",
-          "text": "11",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "c",
-          "text": "10"
-        }
-      ],
-      "answerKey": "c",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 10,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are ten.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "things",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0011",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 3,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "garden",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "How many? Count, then tap.",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "⭐",
-          "labelEn": "things",
-          "repeat": 11
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "12",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "b",
-          "text": "11"
-        },
-        {
-          "id": "c",
-          "text": "10",
-          "errorTag": "dem_thieu_1"
-        }
-      ],
-      "answerKey": "b",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 11,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are eleven.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelEn": "things",
+          "repeat": 11
+        },
+        "correctCount": 11,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0012",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 3,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Count them. Which number?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐝",
-          "labelEn": "things",
-          "repeat": 12
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "12"
-        },
-        {
-          "id": "b",
-          "text": "11",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "c",
-          "text": "13",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "d",
-          "text": "21",
-          "errorTag": "nham_thu_tu_so"
-        }
-      ],
-      "answerKey": "a",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 12,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are twelve.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelEn": "things",
+          "repeat": 12
+        },
+        "correctCount": 12,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0013",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 3,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "robot",
       "targetsError": "dem_thieu_1",
       "scaffold": "none",
       "prompt": {
         "text": "How many can you see?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🎈",
-          "labelEn": "things",
-          "repeat": 13
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "12",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "b",
-          "text": "14",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "c",
-          "text": "13"
-        }
-      ],
-      "answerKey": "c",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 13,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are thirteen.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelEn": "things",
+          "repeat": 13
+        },
+        "correctCount": 13,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0014",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 4,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "garden",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Count one by one. How many?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🍊",
-          "labelEn": "things",
-          "repeat": 14
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "15",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "b",
-          "text": "14"
-        },
-        {
-          "id": "c",
-          "text": "13",
-          "errorTag": "dem_thieu_1"
-        }
-      ],
-      "answerKey": "b",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 14,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are fourteen.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍊",
+          "labelEn": "things",
+          "repeat": 14
+        },
+        "correctCount": 14,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0015",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 4,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": "nham_thu_tu_so",
       "scaffold": "none",
       "prompt": {
         "text": "Touch and count. How many?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🐞",
-          "labelEn": "things",
-          "repeat": 15
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "51",
-          "errorTag": "nham_thu_tu_so"
-        },
-        {
-          "id": "b",
-          "text": "15"
-        },
-        {
-          "id": "c",
-          "text": "14",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "d",
-          "text": "16",
-          "errorTag": "dem_thua_1"
-        }
-      ],
-      "answerKey": "b",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 15,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are fifteen.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelEn": "things",
+          "repeat": 15
+        },
+        "correctCount": 15,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0016",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 4,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "robot",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "How many? Count, then tap.",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🚗",
-          "labelEn": "things",
-          "repeat": 16
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "15",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "b",
-          "text": "17",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "c",
-          "text": "16"
-        }
-      ],
-      "answerKey": "c",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 16,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are sixteen.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🚗",
+          "labelEn": "things",
+          "repeat": 16
+        },
+        "correctCount": 16,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0017",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "garden",
       "targetsError": "dem_thua_1",
       "scaffold": "none",
       "prompt": {
         "text": "Count them. Which number?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🌸",
-          "labelEn": "things",
-          "repeat": 17
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "18",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "b",
-          "text": "17"
-        },
-        {
-          "id": "c",
-          "text": "16",
-          "errorTag": "dem_thieu_1"
-        }
-      ],
-      "answerKey": "b",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 17,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are seventeen.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelEn": "things",
+          "repeat": 17
+        },
+        "correctCount": 17,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0018",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "How many can you see?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🍌",
-          "labelEn": "things",
-          "repeat": 18
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "19",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "b",
-          "text": "81",
-          "errorTag": "nham_thu_tu_so"
-        },
-        {
-          "id": "c",
-          "text": "18"
-        },
-        {
-          "id": "d",
-          "text": "17",
-          "errorTag": "dem_thieu_1"
-        }
-      ],
-      "answerKey": "c",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 18,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are eighteen.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍌",
+          "labelEn": "things",
+          "repeat": 18
+        },
+        "correctCount": 18,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0019",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "robot",
       "targetsError": "dem_thieu_1",
       "scaffold": "none",
       "prompt": {
         "text": "Count one by one. How many?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "⚙️",
-          "labelEn": "things",
-          "repeat": 19
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "18",
-          "errorTag": "dem_thieu_1"
-        },
-        {
-          "id": "b",
-          "text": "20",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "c",
-          "text": "19"
-        }
-      ],
-      "answerKey": "c",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 19,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are nineteen.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⚙️",
+          "labelEn": "things",
+          "repeat": 19
+        },
+        "correctCount": 19,
+        "layout": "grid"
       }
     },
     {
       "id": "emath-count20-0020",
-      "type": "MCQ",
+      "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "garden",
       "targetsError": null,
       "scaffold": "none",
       "prompt": {
         "text": "Touch and count. How many?",
-        "tts": true,
-        "image": {
-          "kind": "emoji",
-          "value": "🍎",
-          "labelEn": "things",
-          "repeat": 20
-        }
+        "tts": true
       },
-      "choices": [
-        {
-          "id": "a",
-          "text": "21",
-          "errorTag": "dem_thua_1"
-        },
-        {
-          "id": "b",
-          "text": "20"
-        },
-        {
-          "id": "c",
-          "text": "19",
-          "errorTag": "dem_thieu_1"
-        }
-      ],
-      "answerKey": "b",
-      "hints": [
-        "Count them one by one.",
-        "Touch each one as you say the number."
-      ],
+      "answerKey": 20,
+      "hints": ["Count them one by one.", "Touch each one as you say the number."],
       "explanation": "There are twenty.",
       "meta": {
         "estSeconds": 20,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelEn": "things",
+          "repeat": 20
+        },
+        "correctCount": 20,
+        "layout": "grid"
       }
     },
     {
@@ -1021,9 +663,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1041,9 +681,7 @@
         "layout": "line"
       },
       "answerKey": 2,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are two.",
       "meta": {
         "estSeconds": 30,
@@ -1056,9 +694,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1076,9 +712,7 @@
         "layout": "line"
       },
       "answerKey": 4,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are four.",
       "meta": {
         "estSeconds": 30,
@@ -1091,9 +725,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1111,9 +743,7 @@
         "layout": "line"
       },
       "answerKey": 6,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are six.",
       "meta": {
         "estSeconds": 30,
@@ -1126,9 +756,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1146,9 +774,7 @@
         "layout": "line"
       },
       "answerKey": 8,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are eight.",
       "meta": {
         "estSeconds": 30,
@@ -1161,9 +787,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1181,9 +805,7 @@
         "layout": "line"
       },
       "answerKey": 10,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are ten.",
       "meta": {
         "estSeconds": 30,
@@ -1196,9 +818,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1216,9 +836,7 @@
         "layout": "grid"
       },
       "answerKey": 12,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are twelve.",
       "meta": {
         "estSeconds": 30,
@@ -1231,9 +849,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 4,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1251,9 +867,7 @@
         "layout": "grid"
       },
       "answerKey": 14,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are fourteen.",
       "meta": {
         "estSeconds": 30,
@@ -1266,9 +880,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 4,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1286,9 +898,7 @@
         "layout": "grid"
       },
       "answerKey": 16,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are sixteen.",
       "meta": {
         "estSeconds": 30,
@@ -1301,9 +911,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1321,9 +929,7 @@
         "layout": "grid"
       },
       "answerKey": 18,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are eighteen.",
       "meta": {
         "estSeconds": 30,
@@ -1336,9 +942,7 @@
       "type": "COUNT_TAP",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1356,9 +960,7 @@
         "layout": "grid"
       },
       "answerKey": 20,
-      "hints": [
-        "Don't count the same one twice."
-      ],
+      "hints": ["Don't count the same one twice."],
       "explanation": "There are twenty.",
       "meta": {
         "estSeconds": 30,
@@ -1371,9 +973,7 @@
       "type": "LISTEN_CHOOSE",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1401,9 +1001,7 @@
         }
       ],
       "answerKey": "a",
-      "hints": [
-        "Press the speaker to hear it again."
-      ],
+      "hints": ["Press the speaker to hear it again."],
       "explanation": "five is written 5.",
       "meta": {
         "estSeconds": 20,
@@ -1416,9 +1014,7 @@
       "type": "LISTEN_CHOOSE",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1446,9 +1042,7 @@
         }
       ],
       "answerKey": "c",
-      "hints": [
-        "Say it in your head, then choose."
-      ],
+      "hints": ["Say it in your head, then choose."],
       "explanation": "nine is written 9.",
       "meta": {
         "estSeconds": 20,
@@ -1461,9 +1055,7 @@
       "type": "LISTEN_CHOOSE",
       "language": "en",
       "difficulty": 3,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": "nham_thu_tu_so",
       "scaffold": "none",
@@ -1491,9 +1083,7 @@
         }
       ],
       "answerKey": "b",
-      "hints": [
-        "Listen to the end of the word."
-      ],
+      "hints": ["Listen to the end of the word."],
       "explanation": "twelve is written 12.",
       "meta": {
         "estSeconds": 20,
@@ -1506,9 +1096,7 @@
       "type": "LISTEN_CHOOSE",
       "language": "en",
       "difficulty": 4,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": "nham_thu_tu_so",
       "scaffold": "none",
@@ -1536,9 +1124,7 @@
         }
       ],
       "answerKey": "a",
-      "hints": [
-        "Read each box, then match the sound."
-      ],
+      "hints": ["Read each box, then match the sound."],
       "explanation": "sixteen is written 16.",
       "meta": {
         "estSeconds": 20,
@@ -1551,9 +1137,7 @@
       "type": "LISTEN_CHOOSE",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": "nham_thu_tu_so",
       "scaffold": "none",
@@ -1581,9 +1165,7 @@
         }
       ],
       "answerKey": "c",
-      "hints": [
-        "Listen once more for the first sound."
-      ],
+      "hints": ["Listen once more for the first sound."],
       "explanation": "nineteen is written 19.",
       "meta": {
         "estSeconds": 20,
@@ -1596,9 +1178,7 @@
       "type": "DRAG_DROP",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
@@ -1622,31 +1202,19 @@
         {
           "id": "first",
           "label": "first",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         },
         {
           "id": "second",
           "label": "second",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         }
       ],
       "answerKey": {
-        "first": [
-          "x1"
-        ],
-        "second": [
-          "x2"
-        ]
+        "first": ["x1"],
+        "second": ["x2"]
       },
-      "hints": [
-        "The smaller number comes first."
-      ],
+      "hints": ["The smaller number comes first."],
       "explanation": "three comes before four.",
       "meta": {
         "estSeconds": 30,
@@ -1659,9 +1227,7 @@
       "type": "DRAG_DROP",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "model",
@@ -1685,31 +1251,19 @@
         {
           "id": "first",
           "label": "first",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         },
         {
           "id": "second",
           "label": "second",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         }
       ],
       "answerKey": {
-        "first": [
-          "x1"
-        ],
-        "second": [
-          "x2"
-        ]
+        "first": ["x1"],
+        "second": ["x2"]
       },
-      "hints": [
-        "The smaller number comes first."
-      ],
+      "hints": ["The smaller number comes first."],
       "explanation": "seven comes before eight.",
       "meta": {
         "estSeconds": 30,
@@ -1722,9 +1276,7 @@
       "type": "DRAG_DROP",
       "language": "en",
       "difficulty": 3,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1748,31 +1300,19 @@
         {
           "id": "first",
           "label": "first",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         },
         {
           "id": "second",
           "label": "second",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         }
       ],
       "answerKey": {
-        "first": [
-          "x1"
-        ],
-        "second": [
-          "x2"
-        ]
+        "first": ["x1"],
+        "second": ["x2"]
       },
-      "hints": [
-        "The smaller number comes first."
-      ],
+      "hints": ["The smaller number comes first."],
       "explanation": "eleven comes before twelve.",
       "meta": {
         "estSeconds": 30,
@@ -1785,9 +1325,7 @@
       "type": "DRAG_DROP",
       "language": "en",
       "difficulty": 4,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1811,31 +1349,19 @@
         {
           "id": "first",
           "label": "first",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         },
         {
           "id": "second",
           "label": "second",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         }
       ],
       "answerKey": {
-        "first": [
-          "x1"
-        ],
-        "second": [
-          "x2"
-        ]
+        "first": ["x1"],
+        "second": ["x2"]
       },
-      "hints": [
-        "The smaller number comes first."
-      ],
+      "hints": ["The smaller number comes first."],
       "explanation": "fifteen comes before sixteen.",
       "meta": {
         "estSeconds": 30,
@@ -1848,9 +1374,7 @@
       "type": "DRAG_DROP",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1874,31 +1398,19 @@
         {
           "id": "first",
           "label": "first",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         },
         {
           "id": "second",
           "label": "second",
-          "accepts": [
-            "x1",
-            "x2"
-          ]
+          "accepts": ["x1", "x2"]
         }
       ],
       "answerKey": {
-        "first": [
-          "x1"
-        ],
-        "second": [
-          "x2"
-        ]
+        "first": ["x1"],
+        "second": ["x2"]
       },
-      "hints": [
-        "The smaller number comes first."
-      ],
+      "hints": ["The smaller number comes first."],
       "explanation": "eighteen comes before nineteen.",
       "meta": {
         "estSeconds": 30,
@@ -1911,9 +1423,7 @@
       "type": "READ_ALOUD",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1923,26 +1433,12 @@
       },
       "readTarget": {
         "text": "1  2  3  4  5",
-        "words": [
-          "one",
-          "two",
-          "three",
-          "four",
-          "five"
-        ]
+        "words": ["one", "two", "three", "four", "five"]
       },
       "answerKey": {
-        "words": [
-          "one",
-          "two",
-          "three",
-          "four",
-          "five"
-        ]
+        "words": ["one", "two", "three", "four", "five"]
       },
-      "hints": [
-        "Take a breath, then read out loud."
-      ],
+      "hints": ["Take a breath, then read out loud."],
       "explanation": "It reads \"one, two, three, four, five\".",
       "meta": {
         "estSeconds": 30,
@@ -1955,9 +1451,7 @@
       "type": "READ_ALOUD",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -1967,26 +1461,12 @@
       },
       "readTarget": {
         "text": "6  7  8  9  10",
-        "words": [
-          "six",
-          "seven",
-          "eight",
-          "nine",
-          "ten"
-        ]
+        "words": ["six", "seven", "eight", "nine", "ten"]
       },
       "answerKey": {
-        "words": [
-          "six",
-          "seven",
-          "eight",
-          "nine",
-          "ten"
-        ]
+        "words": ["six", "seven", "eight", "nine", "ten"]
       },
-      "hints": [
-        "Point with your finger as you read."
-      ],
+      "hints": ["Point with your finger as you read."],
       "explanation": "It reads \"six, seven, eight, nine, ten\".",
       "meta": {
         "estSeconds": 30,
@@ -1999,9 +1479,7 @@
       "type": "READ_ALOUD",
       "language": "en",
       "difficulty": 3,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -2011,22 +1489,12 @@
       },
       "readTarget": {
         "text": "11  12  13",
-        "words": [
-          "eleven",
-          "twelve",
-          "thirteen"
-        ]
+        "words": ["eleven", "twelve", "thirteen"]
       },
       "answerKey": {
-        "words": [
-          "eleven",
-          "twelve",
-          "thirteen"
-        ]
+        "words": ["eleven", "twelve", "thirteen"]
       },
-      "hints": [
-        "Read it like you are telling a friend."
-      ],
+      "hints": ["Read it like you are telling a friend."],
       "explanation": "It reads \"eleven, twelve, thirteen\".",
       "meta": {
         "estSeconds": 30,
@@ -2039,9 +1507,7 @@
       "type": "READ_ALOUD",
       "language": "en",
       "difficulty": 4,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -2051,24 +1517,12 @@
       },
       "readTarget": {
         "text": "14  15  16  17",
-        "words": [
-          "fourteen",
-          "fifteen",
-          "sixteen",
-          "seventeen"
-        ]
+        "words": ["fourteen", "fifteen", "sixteen", "seventeen"]
       },
       "answerKey": {
-        "words": [
-          "fourteen",
-          "fifteen",
-          "sixteen",
-          "seventeen"
-        ]
+        "words": ["fourteen", "fifteen", "sixteen", "seventeen"]
       },
-      "hints": [
-        "Slow is fine — clear is what counts."
-      ],
+      "hints": ["Slow is fine — clear is what counts."],
       "explanation": "It reads \"fourteen, fifteen, sixteen, seventeen\".",
       "meta": {
         "estSeconds": 30,
@@ -2081,9 +1535,7 @@
       "type": "READ_ALOUD",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -2093,22 +1545,12 @@
       },
       "readTarget": {
         "text": "18  19  20",
-        "words": [
-          "eighteen",
-          "nineteen",
-          "twenty"
-        ]
+        "words": ["eighteen", "nineteen", "twenty"]
       },
       "answerKey": {
-        "words": [
-          "eighteen",
-          "nineteen",
-          "twenty"
-        ]
+        "words": ["eighteen", "nineteen", "twenty"]
       },
-      "hints": [
-        "Take your time, one word at a time."
-      ],
+      "hints": ["Take your time, one word at a time."],
       "explanation": "It reads \"eighteen, nineteen, twenty\".",
       "meta": {
         "estSeconds": 30,
@@ -2121,9 +1563,7 @@
       "type": "WRITE_PHOTO",
       "language": "en",
       "difficulty": 1,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -2132,19 +1572,11 @@
         "tts": true
       },
       "rubric": {
-        "criteria": [
-          "Đủ các số",
-          "Viết đúng chiều",
-          "Thứ tự tăng dần"
-        ],
-        "sampleAnswers": [
-          "1 to 5"
-        ]
+        "criteria": ["Đủ các số", "Viết đúng chiều", "Thứ tự tăng dần"],
+        "sampleAnswers": ["1 to 5"]
       },
       "answerKey": null,
-      "hints": [
-        "Write them in order."
-      ],
+      "hints": ["Write them in order."],
       "explanation": "Viết lần lượt các số 1 to 5.",
       "meta": {
         "estSeconds": 70,
@@ -2157,9 +1589,7 @@
       "type": "WRITE_PHOTO",
       "language": "en",
       "difficulty": 2,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -2168,19 +1598,11 @@
         "tts": true
       },
       "rubric": {
-        "criteria": [
-          "Đủ các số",
-          "Viết đúng chiều",
-          "Thứ tự tăng dần"
-        ],
-        "sampleAnswers": [
-          "6 to 10"
-        ]
+        "criteria": ["Đủ các số", "Viết đúng chiều", "Thứ tự tăng dần"],
+        "sampleAnswers": ["6 to 10"]
       },
       "answerKey": null,
-      "hints": [
-        "Write them in order."
-      ],
+      "hints": ["Write them in order."],
       "explanation": "Viết lần lượt các số 6 to 10.",
       "meta": {
         "estSeconds": 70,
@@ -2193,9 +1615,7 @@
       "type": "WRITE_PHOTO",
       "language": "en",
       "difficulty": 4,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -2204,19 +1624,11 @@
         "tts": true
       },
       "rubric": {
-        "criteria": [
-          "Đủ các số",
-          "Viết đúng chiều",
-          "Thứ tự tăng dần"
-        ],
-        "sampleAnswers": [
-          "11 to 15"
-        ]
+        "criteria": ["Đủ các số", "Viết đúng chiều", "Thứ tự tăng dần"],
+        "sampleAnswers": ["11 to 15"]
       },
       "answerKey": null,
-      "hints": [
-        "Write them in order."
-      ],
+      "hints": ["Write them in order."],
       "explanation": "Viết lần lượt các số 11 to 15.",
       "meta": {
         "estSeconds": 70,
@@ -2229,9 +1641,7 @@
       "type": "WRITE_PHOTO",
       "language": "en",
       "difficulty": 5,
-      "skillCodes": [
-        "EMATH.NBT.COUNT_TO_20"
-      ],
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
       "assetTheme": "neutral",
       "targetsError": null,
       "scaffold": "none",
@@ -2240,19 +1650,11 @@
         "tts": true
       },
       "rubric": {
-        "criteria": [
-          "Đủ các số",
-          "Viết đúng chiều",
-          "Thứ tự tăng dần"
-        ],
-        "sampleAnswers": [
-          "16 to 20"
-        ]
+        "criteria": ["Đủ các số", "Viết đúng chiều", "Thứ tự tăng dần"],
+        "sampleAnswers": ["16 to 20"]
       },
       "answerKey": null,
-      "hints": [
-        "Write them in order."
-      ],
+      "hints": ["Write them in order."],
       "explanation": "Viết lần lượt các số 16 to 20.",
       "meta": {
         "estSeconds": 70,
