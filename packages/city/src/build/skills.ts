@@ -31,6 +31,10 @@ export function skillBuilding(
 
 const white = "#ffffff";
 
+/** Tall-building bodies from the approved style board: turquoise glass, cream, blush pink. */
+export const TOWER_BODY = [0x8fe6dc, 0xfff0c8, 0xffcfe0] as const;
+const TOWER_WINDOW = 0xbdf3ff;
+
 // ------------------------------------------------------------------ Thành Số (vmath)
 const vmath: ThemeBuilder = (ctx, level, seed, label) => {
   const C = ctx.city;
@@ -110,18 +114,33 @@ const vmath: ThemeBuilder = (ctx, level, seed, label) => {
     add(g, plate(ctx, label, C.b, css(C.a), 1.8), 0, b.top + 1.0, -0.73);
     return { root: g, top: b.top + 2.0 };
   }
-  // skyscraper: glass tiers with golden fins and crown
+  // skyscraper: pastel tiers (turquoise / cream / blush, alternating by lot) with light window
+  // bands, golden fins and crown — never a dark glass slab (Pha 10b việc 2)
   const fin = C.b;
+  const bodies = [TOWER_BODY[seed % 3], TOWER_BODY[(seed + 1) % 3], TOWER_BODY[(seed + 2) % 3]];
   add(g, box(4.6, 0.3, 4.4, 0xf0e8d4), 0, 0.15, 0);
   add(g, cbox(4.0, 1.3, 3.8, pick(C.walls, 2)), 0, 0.95, 0);
   add(g, quad(3.6, 1.0, tok(0xa6eeff, "glass")), 0, 0.9, 1.91);
   let y = 1.6;
-  for (const [w, d, n] of [
-    [3.8, 3.6, 7],
-    [3.1, 2.9, 4],
-    [2.3, 2.1, 2],
-  ] as const) {
-    add(g, cbox(w, n, d, tok(0x6fc9ff, "glass"), 0.2), 0, y + n / 2, 0);
+  for (const [t, [w, d, n]] of (
+    [
+      [3.8, 3.6, 7],
+      [3.1, 2.9, 4],
+      [2.3, 2.1, 2],
+    ] as const
+  ).entries()) {
+    add(g, cbox(w, n, d, bodies[t] as number, 0.2), 0, y + n / 2, 0);
+    for (let f = 0; f < n; f++) {
+      // one window band per floor on the two faces the camera sees
+      add(g, quad(w * 0.82, 0.52, tok(TOWER_WINDOW, "glass")), 0, y + f + 0.5, d / 2 + 0.012);
+      add(
+        g,
+        quad(d * 0.82, 0.52, tok(TOWER_WINDOW, "glass")),
+        w / 2 + 0.012,
+        y + f + 0.5,
+        0,
+      ).rotation.y = Math.PI / 2;
+    }
     for (let f = 1; f < n; f++) add(g, box(w + 0.06, 0.08, d + 0.06, 0xffffff), 0, y + f, 0);
     for (let i = 1; i < 4; i++)
       add(g, box(0.08, n, 0.08, fin), -w / 2 + (i * w) / 4, y + n / 2, d / 2 + 0.03);

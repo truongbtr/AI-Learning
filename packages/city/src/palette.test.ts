@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { CITY, CITY_IDS, LOT_ROOF_COLOURS, LOT_WALL_COLOURS, lotPalette } from "./palette";
+import {
+  CITY,
+  CITY_IDS,
+  LOT_ROOF_COLOURS,
+  LOT_WALL_COLOURS,
+  lotPalette,
+  styleColour,
+} from "./palette";
 
 describe("lot palettes", () => {
   it.each(CITY_IDS)("%s: four neighbouring lots show ≥ 3 roof and ≥ 4 wall colours", (id) => {
@@ -20,7 +27,7 @@ describe("lot palettes", () => {
 
   it("mixes the city's own colours with the shared ones", () => {
     const p = lotPalette(CITY.vmath, 0);
-    expect(p.roofs).toContain(CITY.vmath.roofs[0]);
-    expect(p.walls.some((w) => !CITY.vmath.walls.includes(w))).toBe(true);
+    expect(p.roofs).toContain(styleColour(CITY.vmath.roofs[0] as number));
+    expect(p.walls.some((w) => !CITY.vmath.walls.map(styleColour).includes(w))).toBe(true);
   });
 });

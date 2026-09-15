@@ -1,4 +1,4 @@
-import type { KitSpec } from "./color";
+import { hexToRgb, hslToRgb, type KitSpec, rgbToHex, rgbToHsl } from "./color";
 
 export const CITY_IDS = ["viet", "vmath", "esl", "enl", "emath", "esci"] as const;
 export type CityId = (typeof CITY_IDS)[number];
@@ -16,7 +16,7 @@ export const WORLD = {
   skyHorizon: 0xd2f3ff,
   hill: [0x6fd244, 0x5cc53f, 0x86e052] as const,
   mountain: [0x9ad7c4, 0x8fd0b0] as const,
-  road: 0x8793a8,
+  road: 0xb9b3a8,
   curb: 0xfff3dd,
   leaves: [0x3fb83a, 0x4fc93a, 0x8ee64f] as const,
   blossom: [0xff8fbf, 0xff9ec7, 0xffc2dd] as const,
@@ -169,6 +169,16 @@ export const LOT_ROOF_COLOURS = 5;
 export const LOT_WALL_COLOURS = 7;
 
 const uniq = (xs: readonly number[]) => [...new Set(xs)];
+
+/**
+ * Pha 10 việc 1 (style board) lifted colour saturation by ×1.18; building colours go through the
+ * same lift so the engine matches the approved board.
+ */
+export const STYLE_SATURATION = 1.18;
+export function styleColour(hex: number): number {
+  const [h, s, l] = rgbToHsl(hexToRgb(hex));
+  return rgbToHex(hslToRgb(h, Math.min(1, s * STYLE_SATURATION), l));
+}
 const rotate = <T>(xs: readonly T[], by: number) => xs.map((_, i) => xs[(i + by) % xs.length] as T);
 
 /**
@@ -179,5 +189,10 @@ const rotate = <T>(xs: readonly T[], by: number) => xs.map((_, i) => xs[(i + by)
 export function lotPalette(city: CityPalette, seed: number): CityPalette {
   const roofs = uniq([...city.roofs, city.a, city.b, ...COMMON_ROOFS]).slice(0, LOT_ROOF_COLOURS);
   const walls = uniq([...city.walls, ...COMMON_WALLS]).slice(0, LOT_WALL_COLOURS);
-  return { ...city, roofs: rotate(roofs, seed), walls: rotate(walls, seed) };
+  return {
+    ...city,
+    roofs: rotate(roofs, seed).map(styleColour),
+    walls: rotate(walls, seed).map(styleColour),
+    blocks: city.blocks.map(styleColour),
+  };
 }
