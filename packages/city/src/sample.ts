@@ -46,25 +46,40 @@ const LABELS: Record<CityId, string[]> = {
   esci: ["sun", "moon", "leaf", "rain", "rock", "bug", "star", "sky", "seed", "fish"],
 };
 
-export type SampleSize = "day1" | "mid" | "full";
+/** start = a real first evening: a handful of skills, most not built yet, nothing needing help. */
+export type SampleSize = "start" | "day1" | "mid" | "full";
 
 export function sampleView(city: CityId, size: SampleSize): CityView {
   const n =
-    size === "day1" ? 5 : size === "mid" ? Math.min(28, SKILL_COUNT[city]) : SKILL_COUNT[city];
+    size === "start"
+      ? 6
+      : size === "day1"
+        ? 5
+        : size === "mid"
+          ? Math.min(28, SKILL_COUNT[city])
+          : SKILL_COUNT[city];
   const skills = Array.from({ length: n }, (_, i) => {
-    const level = ((i * 7 + 3) % 5) as BuildingLevel;
+    const raw = ((i * 7 + 3) % 5) as BuildingLevel;
+    const level =
+      size === "start"
+        ? ((i < 2 ? 1 : 0) as BuildingLevel)
+        : size === "day1"
+          ? (Math.min(raw, 2) as BuildingLevel)
+          : raw;
     return {
       skillId: `${city}-skill-${i}`,
       label: LABELS[city][i % LABELS[city].length] as string,
-      level: size === "day1" ? (Math.min(level, 2) as BuildingLevel) : level,
+      level,
       step: (level > 0 && level < 4 ? i % 3 : 0) as GrowthStep,
-      needsHelp: i % 9 === 4,
+      // the city caps scaffolding at three (MAX_SCAFFOLDS)
+      needsHelp: size !== "start" && i % 9 === 4 && i < 9 * 3,
       mission: i % 6 === 1,
     };
   });
   const publics = Object.keys(PUBLIC_BUILDINGS);
   const plotCodes = Object.keys(PLOT_CATALOGUE);
-  const owned = size === "day1" ? 0 : size === "mid" ? 3 : 10;
+  const owned = size === "day1" || size === "start" ? 0 : size === "mid" ? 3 : 10;
+  const first = size === "day1" || size === "start";
   return {
     subject: city,
     skills,
@@ -77,19 +92,19 @@ export function sampleView(city: CityId, size: SampleSize): CityView {
         build: plotCodes[i % plotCodes.length] as string,
       })),
     },
-    publicBuildings:
-      size === "day1" ? [] : size === "mid" ? publics.slice(0, 5) : publics.slice(0, 14),
+    publicBuildings: first ? [] : size === "mid" ? publics.slice(0, 5) : publics.slice(0, 14),
     wonder: {
-      pieces:
-        size === "day1"
-          ? 1
-          : size === "mid"
-            ? Math.floor(WONDER_PIECES[city] / 2)
-            : WONDER_PIECES[city] - 1,
+      pieces: first
+        ? size === "start"
+          ? 0
+          : 1
+        : size === "mid"
+          ? Math.floor(WONDER_PIECES[city] / 2)
+          : WONDER_PIECES[city] - 1,
     },
-    bustle: size === "day1" ? 1 : size === "mid" ? 3 : 4,
-    decorations: size === "day1" ? [] : Object.keys(DECORATIONS).slice(0, size === "mid" ? 4 : 10),
-    pets: size === "day1" ? [] : ["dog", "cat"],
+    bustle: first ? 1 : size === "mid" ? 3 : 4,
+    decorations: first ? [] : Object.keys(DECORATIONS).slice(0, size === "mid" ? 4 : 10),
+    pets: first ? [] : ["dog", "cat"],
     townHallOrder: "open",
   };
 }

@@ -4,7 +4,7 @@
 
 export type CitySubject = "viet" | "vmath" | "esl" | "enl" | "emath" | "esci";
 
-/** 0 = scaffold (0–39) · 1 (40–59) · 2 (60–84) · 3 (85+) · 4 = skyscraper (MASTERED ≥ 30 days). */
+/** 0 = not built yet (0–39) · 1 (40–59) · 2 (60–84) · 3 (85+) · 4 = skyscraper (MASTERED ≥ 30 days). */
 export type BuildingLevel = 0 | 1 | 2 | 3 | 4;
 export type GrowthStep = 0 | 1 | 2;
 
@@ -18,7 +18,10 @@ export interface CitySkillBuilding {
    * finished station shows the building taller even when the level has not changed yet.
    */
   step: GrowthStep;
-  /** High ErrorStat → scaffold + waiting worker, tapping starts a TARGETED session. */
+  /**
+   * Scaffolding + a waiting worker (repeated errors, a remediation ladder, NEEDS_PRACTICE) — at most
+   * three per city. Level 0 without it is a sprout plot: a tidy green lot, a sapling and a name sign.
+   */
   needsHelp: boolean;
   /** A station of the city session still waits here → a star on the roof. */
   mission: boolean;

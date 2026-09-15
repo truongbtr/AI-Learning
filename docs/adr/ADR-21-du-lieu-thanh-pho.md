@@ -48,6 +48,9 @@ Khi đọc mã và schema thì có năm chỗ đề bài không khớp thẳng v
      ngưỡng `ACTIVE_ERROR_COUNT_7D` của thang khắc phục);
    - kỹ năng đang có thang khắc phục ACTIVE;
    - trạng thái NEEDS_PRACTICE.
+
+   *Pha 10b:* tối đa `MAX_SCAFFOLDS = 3` công trình hiện giàn giáo cùng lúc (lỗi nhiều nhất trước,
+   rồi thang khắc phục, rồi mastery thấp). Mức 0 không cần giúp vẽ thành "mầm nhà".
 5. ~~**Cửa riêng cho con: `POST /api/kid/city/practice`.**~~ *(bỏ ngày 15/09 — xem "Bổ sung" bên dưới)* Route cũ vẫn chặn CHILD. Cửa mới không nhận
    tên kỹ năng tự do: máy chủ tự tính lại thành phố và chỉ mở phiên cho **công trình mà chính thành phố
    đang hiện là chưa vững** (mức 0 hoặc cần giúp). Mỗi kỹ năng chỉ một phiên mỗi ngày, chạm lại thì mở lại

@@ -507,13 +507,44 @@ export function needsHelp(
   );
 }
 
+/**
+ * At most this many buildings wear scaffolding and a worker at once (Pha 10b việc 1): a city full
+ * of wooden frames reads as a building site, not as a town being grown.
+ */
+export const MAX_SCAFFOLDS = 3;
+
+/**
+ * Which skills get the scaffolding: those that need help, most errors first (then an active
+ * remediation ladder, then the lowest mastery). The rest are drawn at their ordinary step.
+ */
+export function scaffoldedSkills(
+  skills: readonly CitySkillInput[],
+  max = MAX_SCAFFOLDS,
+): Set<string> {
+  return new Set(
+    skills
+      .filter(needsHelp)
+      .map((s, i) => ({ s, i }))
+      .sort(
+        (a, b) =>
+          b.s.errorCount7d - a.s.errorCount7d ||
+          Number(b.s.remediationActive) - Number(a.s.remediationActive) ||
+          a.s.mastery - b.s.mastery ||
+          a.i - b.i,
+      )
+      .slice(0, max)
+      .map(({ s }) => s.skillId),
+  );
+}
+
 export function buildCityState(input: CityInput): CityState {
   const skillOrder = mergeSkillOrder(input.storedOrder, input.skills);
   const byId = new Map(input.skills.map((s) => [s.skillId, s]));
+  const scaffolded = scaffoldedSkills(input.skills);
   const missions = new Set(input.missionSkillCodes);
   const skills = skillOrder.flatMap((id) => {
     const s = byId.get(id);
-    // a skill whose evidence was undone keeps its lot as scaffolding — nothing disappears
+    // a skill whose evidence was undone keeps its lot as a sprout plot — nothing disappears
     if (!s)
       return [
         {
@@ -532,7 +563,7 @@ export function buildCityState(input: CityInput): CityState {
         label: skillLabel(input.city, s.code, s.nameVi, s.nameEn),
         level,
         step: stepFor(s.mastery, level),
-        needsHelp: needsHelp(s),
+        needsHelp: scaffolded.has(s.skillId),
         mission: missions.has(s.code),
       },
     ];

@@ -417,6 +417,12 @@ function buildLot(ctx: BuildCtx, view: CityView, lot: LayoutLot): Object3D {
   if (c.type === "skill") {
     const s = view.skills[c.skill];
     if (!s) return g;
+    if (s.level === 0 && !s.needsHelp) {
+      // not built yet: a tidy sprout plot, never a building site (Pha 10b việc 1)
+      const top = sproutPlot(ctx, g, s.label, c.skill + 1);
+      anchor(g, `skill:${s.skillId}`, 0, top + 1.2, 0);
+      return g;
+    }
     const b = skillBuilding(ctx, s.level, c.skill + 1, s.label);
     // growth inside a level: each step makes the building a floor taller (Pha 10 bổ sung §3)
     const stretch = 1 + GROWTH_PER_STEP * (s.step ?? 0);
@@ -455,31 +461,25 @@ function buildLot(ctx: BuildCtx, view: CityView, lot: LayoutLot): Object3D {
     anchor(g, `plot:${c.plot}`, 0, 2.6, 0);
     return g;
   }
-  if (c.type === "decorHouse" && c.variant % 4 !== 2) {
-    // Filler lots (skills not started yet) are the city's cheapest part: one in four is a detailed
-    // Kenney house (≈ 600 visible triangles), half are Kenney low-detail blocks (≈ 90), the rest gardens.
+  if (c.type === "decorHouse" && c.variant % 4 === 0) {
+    // Filler lots (skills not started yet): one in four is a small detailed Kenney house
+    // (≈ 600 visible triangles), the rest are gardens. The tall low-detail blocks read as
+    // unfinished boxes on a young city, so they are no longer used here (Pha 10b việc 1).
     const detailed = [
       "suburban/building-type-a",
-      "commercial/building-c",
       "suburban/building-type-o",
       "suburban/building-type-k",
+      "commercial/building-c",
     ] as const;
-    const low = [
-      "commercial/low-detail-building-a",
-      "commercial/low-detail-building-wide-a",
-      "commercial/low-detail-building-c",
-      "commercial/low-detail-building-h",
-    ] as const;
-    const key = c.variant % 4 === 0 ? pick(detailed, c.variant / 4) : pick(low, c.variant);
+    const key = pick(detailed, c.variant / 4);
     const spec = pick(ctx.city.kit, c.variant);
     const m = ctx.lib.model(
       key,
       { type: "kit", spec, key: `${ctx.city.id}${c.variant % ctx.city.kit.length}` },
-      TILE * (c.variant % 4 === 0 ? 1.25 : 1.6),
+      TILE * 1.25,
     );
-    add(g, m, 0, 0, 0).rotation.y = c.variant % 2 ? 0 : Math.PI / 2;
-    if (c.variant % 4 !== 0)
-      add(g, tree(ctx, c.variant * 3, 0.9), lot.width * 0.3, 0, lot.depth * 0.3);
+    add(g, m, 0, 0, 0).rotation.y = c.variant % 8 ? 0 : Math.PI / 2;
+    add(g, tree(ctx, c.variant * 3, 0.8), lot.width * 0.32, 0, lot.depth * 0.3);
     return g;
   }
   // garden
@@ -494,6 +494,41 @@ function buildLot(ctx: BuildCtx, view: CityView, lot: LayoutLot): Object3D {
   add(g, flowerBed(1.6, 0.6, lot.x), lot.width * 0.15, 0.03, lot.depth * 0.2);
   add(g, bench(), lot.width * 0.2, 0.03, -lot.depth * 0.18);
   return g;
+}
+
+/**
+ * "Mầm nhà": a skill the child has not built yet. A fresh green lot with a low white fence, one
+ * sapling and a small name sign — it reads as "still to build", not as something broken.
+ * Returns the height of the tallest thing, for the star above it.
+ */
+export function sproutPlot(ctx: BuildCtx, g: Object3D, label: string, seed: number): number {
+  const w = 4.4;
+  const d = 4.2;
+  add(g, box(w, 0.1, d, 0x9fe86a), 0, 0.05, 0);
+  add(g, box(w - 1.2, 0.04, d - 1.2, 0x8fdc5c), 0, 0.12, 0);
+  const fence = 0xfffaf0;
+  const h = 0.36;
+  for (const [x, z, len, alongX] of [
+    [0, -d / 2, w, true],
+    [0, d / 2, w, true],
+    [-w / 2, 0, d, false],
+    [w / 2, 0, d, false],
+  ] as const) {
+    add(g, box(alongX ? len : 0.07, 0.07, alongX ? 0.07 : len, fence), x, h, z);
+  }
+  for (const [x, z] of [
+    [-w / 2, -d / 2],
+    [w / 2, -d / 2],
+    [-w / 2, d / 2],
+    [w / 2, d / 2],
+  ] as const)
+    add(g, box(0.12, h + 0.12, 0.12, fence), x, (h + 0.12) / 2, z);
+  add(g, tree(ctx, seed * 11 + 3, 0.45, ctx.city.id === "viet" && seed % 3 === 0), -0.7, 0.1, -0.4);
+  // the name sign on a short post, facing the camera
+  add(g, cyl(0.05, 0.05, 1.0, 0x9a623e, 4), 1.2, 0.5, 1.2);
+  const sign = plate(ctx, label, ctx.city.a, "#ffffff", 0.9);
+  add(g, sign, 1.2, 1.1, 1.25).rotation.y = Math.PI / 4;
+  return 1.6;
 }
 
 function openPlot(ctx: BuildCtx, g: Object3D) {

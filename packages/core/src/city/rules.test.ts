@@ -317,3 +317,30 @@ describe("growth step inside a level", () => {
     expect(stepFor(95, 4)).toBe(0);
   });
 });
+
+describe("sprouts and scaffolding (Pha 10b việc 1)", () => {
+  it("a day-one city of 20 untouched skills has no scaffolding at all", () => {
+    const skills = Array.from({ length: 20 }, (_, i) =>
+      skill(`s${i}`, { mastery: 0, status: "NEW", firstAt: daysAgo(1) }),
+    );
+    const { view } = buildCityState(input({ skills }));
+    expect(view.skills).toHaveLength(20);
+    expect(view.skills.filter((s) => s.needsHelp)).toHaveLength(0);
+    expect(view.skills.every((s) => s.level === 0)).toBe(true);
+  });
+
+  it("six skills needing help show exactly three scaffolds, most errors first", () => {
+    const skills = [2, 5, 2, 4, 3, 2].map((errors, i) =>
+      skill(`h${i}`, { mastery: 30, errorCount7d: errors }),
+    );
+    const { view } = buildCityState(input({ skills }));
+    const shown = view.skills.filter((s) => s.needsHelp).map((s) => s.skillId);
+    expect(shown).toHaveLength(3);
+    expect(new Set(shown)).toEqual(new Set(["h1", "h3", "h4"]));
+  });
+
+  it("a weak skill without repeated errors is a sprout, not a building site", () => {
+    const { view } = buildCityState(input({ skills: [skill("w", { mastery: 25 })] }));
+    expect(view.skills[0]).toMatchObject({ level: 0, needsHelp: false });
+  });
+});

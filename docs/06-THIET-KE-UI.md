@@ -65,6 +65,11 @@ một thành phố; **cả buổi tối diễn ra trong thành phố**, không c
 - **Công trình lớn lên theo tiến bộ thật**: mức theo mastery (0–39 giàn giáo · 40–59 · 60–84 · 85+ ·
   chọc trời khi MASTERED ≥ 30 ngày) **và bậc trong mức** (mỗi phần ba của dải mastery = cao thêm một tầng).
   Sau một trạm, công trình vừa làm không bao giờ hiện nhỏ đi.
+- **Mầm nhà, không phải công trường** *(Pha 10b)*: kỹ năng chưa xây (mức 0) là **ô đất xanh gọn có
+  hàng rào thấp, một cây con và biển tên nhỏ** — không khung gỗ, không thợ. Giàn giáo + thợ **chỉ** khi
+  kỹ năng cần giúp (lỗi 7 ngày ≥ 2, thang khắc phục đang chạy, NEEDS_PRACTICE) và **tối đa 3 cái** trong
+  một thành phố, ưu tiên kỹ năng lỗi nhiều nhất; kỹ năng yếu còn lại vẽ ở bậc thường. Lô trống dự phòng
+  là nhà nhỏ chi tiết hoặc vườn, không dùng khối cao ốc sơ sài.
 - **Thành phố bắt đầu nhỏ**: ngày đầu chỉ 2 khu phố + toà thị chính + khu kỳ quan, còn lại đồi cỏ, rừng,
   sông chờ mở đất; một ô đất khoá hiện biển "N★". Cỡ thành phố = tiến bộ của con.
 - **Màu**: mỗi công trình tô bằng bảng riêng = hai màu của thành phố + mái/tường của thành phố + **bảng

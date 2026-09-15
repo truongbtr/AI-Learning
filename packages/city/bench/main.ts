@@ -113,7 +113,7 @@ async function main() {
       load();
     };
     const sizeSel = document.createElement("select");
-    for (const s of ["day1", "mid", "full"])
+    for (const s of ["start", "day1", "mid", "full"])
       sizeSel.append(new Option(s, s, s === size, s === size));
     sizeSel.onchange = () => {
       size = sizeSel.value as SampleSize;
