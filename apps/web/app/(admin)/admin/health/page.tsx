@@ -206,6 +206,7 @@ export default async function AdminHealthPage() {
         <CardContent>
           <dl className="grid gap-3 text-sm sm:grid-cols-2">
             {[
+              ["Máy chủ", h.host],
               ["Worker ping cuối", formatDateTime(h.worker.lastPing)],
               ["Môi trường", process.env.NODE_ENV ?? "—"],
               [

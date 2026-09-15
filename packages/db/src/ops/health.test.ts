@@ -13,6 +13,7 @@ import { type HealthReport, healthAdvice } from "./health";
 const healthy: HealthReport = {
   status: "ok",
   time: "2026-09-12T12:00:00.000Z",
+  host: "eduserver",
   db: { ok: true, migrations: 5, sizeMb: 20 },
   worker: { ok: true, lastPing: "2026-09-12T11:59:30.000Z", ageSeconds: 30 },
   jobs: { ok: true, failed24h: 0, byQueue: [], stuckActive: 0 },

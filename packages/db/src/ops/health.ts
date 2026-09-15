@@ -1,5 +1,6 @@
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { statfs } from "node:fs/promises";
+import { hostname } from "node:os";
 import { join } from "node:path";
 import type { PrismaClient } from "../../generated/client";
 import { readTtsUsage, summariseTtsUsage, type TtsUsageSummary } from "./tts-usage";
@@ -31,6 +32,8 @@ export type Level = "ok" | "warn" | "error";
 export interface HealthReport {
   status: Level;
   time: string;
+  /** Which machine answered — pha 9: phân biệt máy Ubuntu mới với máy Windows cũ khi chạy song song. */
+  host: string;
   db: { ok: boolean; migrations: number; sizeMb: number | null };
   worker: { ok: boolean; lastPing: string | null; ageSeconds: number | null };
   jobs: {
@@ -195,6 +198,9 @@ export async function healthReport(db: PrismaClient, env = process.env): Promise
       tts.level === "over" ? "warn" : "ok",
     ]),
     time,
+    // DEPLOY_HOST is what pha 9 tiêu chí 1 actually needs: a container's own hostname is a random
+    // id, useless for telling "which machine answered" apart from a browser tab.
+    host: env.DEPLOY_HOST || hostname(),
     db: { ok: dbOk, migrations, sizeMb },
     worker: {
       ok: workerOk,
