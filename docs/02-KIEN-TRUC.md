@@ -84,13 +84,14 @@ EDISON_LEARNING/
 │  ├─ core/                   # domain: skills, mastery, planner, exercise, intake, reports
 │  ├─ inbox/                  # hàng chờ AI: schemas, pull/validate/push (Claude Code xử lý theo lô)
 │  ├─ content/                # schema + validator + importer + stats cho content/ (CLI)
+│  ├─ city/                   # thành phố 3D của góc con (Pha 10, three.js): bố cục, nhà theo mastery, kỳ quan, engine — ADR-20
 │  ├─ db/                     # prisma schema, migrations, seed (skill map, TKB)
 │  └─ config/                 # tsconfig, eslint, tailwind preset
 ├─ content/                   # NỘI DUNG do Claude Code soạn — vào git, xem 10-NAP-NOI-DUNG.md
 │  ├─ skill-map/              # *.json bản đồ kỹ năng theo môn (nguồn seed)
 │  ├─ lessons/                # bài học rút từ sách, theo môn
 │  ├─ exercises/              # ngân hàng bài luyện, một file / một kỹ năng
-│  ├─ art/                    # STYLE.md, objects/, manifest.json
+│  ├─ art/                    # STYLE.md, objects/, manifest.json; city/kenney.{bin,json} (Kenney CC0 tính sẵn, ADR-20)
 │  ├─ timetable/1B3-2026.json
 │  ├─ _reports/               # báo cáo kiểm định mỗi lô nội dung
 │  └─ prompts/                # *.md prompt template (đọc vào packages/ai lúc build)

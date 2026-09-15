@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>City bench</title>
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#d2f3ff;font-family:"Baloo 2","Nunito","Segoe UI",Arial,sans-serif}
+#city{position:fixed;inset:0;width:100%;height:100%;display:block}
+#hud{position:fixed;left:12px;top:12px;background:rgba(255,255,255,.92);border-radius:14px;padding:8px 12px;font:600 14px/1.4 ui-monospace,Menlo,Consolas,monospace;color:#1f3b63;white-space:pre;pointer-events:none}
+#hud.hide{display:none}
+.bubble{position:fixed;transform:translate(-50%,-100%);width:64px;height:64px;border-radius:50%;border:4px solid #fff3b0;background:#fff;box-shadow:0 6px 0 rgba(31,59,99,.18);display:flex;align-items:center;justify-content:center;font-size:34px;color:#ffb400;padding:0;cursor:pointer}
+.bubble.help{color:#ff8a2a}
+.bubble[hidden]{display:none}
+#controls{position:fixed;right:12px;top:12px;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;max-width:70vw}
+#controls button,#controls select{min-height:48px;border-radius:14px;border:0;background:#fff;color:#1f3b63;font:700 16px "Nunito","Segoe UI",sans-serif;padding:0 14px;box-shadow:0 4px 0 rgba(31,59,99,.15)}
+#controls.hide{display:none}
+#result{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#fff;border-radius:20px;padding:16px 22px;font:700 20px/1.5 "Nunito","Segoe UI",sans-serif;color:#1f3b63;white-space:pre;box-shadow:0 8px 0 rgba(31,59,99,.18);max-width:calc(100vw - 32px);overflow:auto}
+#result[hidden]{display:none}
+</style>
+</head>
+<body>
+<canvas id="city"></canvas>
+<div id="hud"></div>
+<div id="controls"></div>
+<div id="result" hidden></div>
+<script src="./dist/bench.js"></script>
+</body>
+</html>

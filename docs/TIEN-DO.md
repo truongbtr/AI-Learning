@@ -2,14 +2,64 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
-## Pha 10 — 15/09/2026 — Thế giới Học Đường: thành phố 3D *(việc 1 xong — dừng chờ duyệt)*
+## Pha 10 — 15/09/2026 — Thế giới Học Đường: thành phố 3D *(việc 1–2 xong, việc 3–5 chưa làm)*
 
-Trạng thái: **việc 1 (tải kit + bảng phong cách render thật) xong, đang chờ chủ dự án duyệt.** Chưa
-dựng `packages/city`, chưa gắn dữ liệu, chưa đụng giao diện con đang chạy — hai bé không bị ảnh hưởng.
+Trạng thái: **việc 1 đã được duyệt; việc 2 (engine `packages/city`) xong.** Giao diện con đang chạy
+chưa bị đụng tới, hai bé không bị ảnh hưởng. Riêng quyết định 3D thật hay WebP **đang chờ số đo trên iPad
+thật** (ADR-20).
+
+### Việc 2 — engine `packages/city` (15/09)
+
+Bench cho iPad: https://claude.ai/artifact/RMeiUU6jNn2rPNWzdaVKSy · ảnh `docs/screens/3d-city/engine-*.jpg`.
+
+- **Kiểu dữ liệu `CityView`** đặt ở `packages/core/src/city/view.ts` (chỉ khai báo kiểu; việc 3 viết
+  hàm thuần sinh ra nó).
+- **Bố cục** (`layout.ts`): khối 5×5 ô, mỗi khối 4 lô 2×2, xếp xoắn ốc từ toà thị chính ra. Vai trò của
+  lô (kỹ năng / công trình công cộng / ô đất của con) chỉ phụ thuộc số thứ tự khối, nên thêm kỹ năng,
+  huy hiệu hay đất **không làm công trình nào đổi chỗ** (có test). Môn lớn nhất (102 kỹ năng) cần 41 khối.
+- **Tài sản Kenney tính trước** (`bake:kenney`): 70 mô hình thành màu theo đỉnh,
+  `content/art/city/kenney.{bin,json}` 1,56 MB, vào git và được `art:sync` phục vụ. Lúc chạy không cần
+  texture; tô màu theo thành phố chạy trên CPU (đỏ luôn giữ sáng dạng san hô, có test).
+- **Nhà kỹ năng 5 mức × 6 thành phố**, gồm bốn thành phố mới: Bến Cảng Từ (hải đăng), Vườn Sách (chồng
+  sách khổng lồ), Xưởng Máy (tháp bánh răng), Trạm Khám Phá (tên lửa). **6 kỳ quan ghép mảnh**: Kim tự
+  tháp 8, Chùa Một Cột 6, Tượng Nữ thần Tự do 7, Parthenon 7, Tháp Eiffel 7, Vạn Lý Trường Thành 8.
+  **15 công trình công cộng** (đề yêu cầu ≥ 12). **10 công trình con chọn xây** trên ô đất, **10 vật
+  trang trí**. Ngoài ra có toà thị chính với bảng đơn, cổng mang tên thành phố, cảnh vật (rừng viền,
+  sông/hồ/biển theo từng thành phố, đồi, núi, mây), ngày/đêm theo giờ thật, xe/buýt/người/thuyền/thú
+  cưng chạy theo mức nhộn nhịp (streak).
+- **Engine** (`@mtct/city/engine`): `setView`, chạm để chọn (kỹ năng / công trình công cộng / ô đất /
+  toà thị chính / kỳ quan), `focus` bay camera tới, `anchors()` trả toạ độ màn hình cho bong bóng HTML,
+  kéo/chụm để di chuyển và thu phóng trong giới hạn, tự hạ độ phân giải khi chậm, dừng khi tab ẩn.
+- **Test**: 37 test (layout, màu, ngày/đêm, đường đi, camera, bước gộp, đất cong, atlas chữ, danh mục,
+  **ngân sách iPad cho cả 6 thành phố ở cỡ lớn nhất**, không có đỏ báo lỗi).
+
+**Quyết định 3D thật hay WebP (ADR-20): render 3D thật.** Số đo xấu nhất lấy từ test (9 vị trí camera ×
+2 mức zoom × iPad ngang/dọc, tính cả xe/người): ngày đầu **47–55 draw call, ~23k tam giác**; đầy đủ
+**69–73 draw call, 67,5k–79,5k tam giác** (Phố Chữ 102 kỹ năng là ca sát nhất). Trên máy dev, ở độ phân
+giải iPad DPR 2, đạt 60 fps (trung bình và 5% chậm nhất), kể cả khi hãm CPU 4×. **Chưa có số iPad thật**:
+ADR ghi rõ ngưỡng để chuyển sang WebP (< 50 fps trung bình hoặc < 40 fps ở 5% chậm nhất sau khi đã hạ
+độ phân giải; hoặc dựng > 1.200 ms).
+
+Cách chạy thử:
+
+```powershell
+pnpm --filter @mtct/city test
+pnpm --filter @mtct/city bench:build
+pnpm --filter @mtct/city bench:shoot -- "city=viet&size=full&hour=10" engine-viet.jpg
+```
+
+Cần chủ dự án (việc 2):
+
+1. **Mở bench trên iPad của hai bé** (link trên), xoay ngang, bấm "Đo 20 giây", chụp kết quả gửi lại.
+   Đây là số đo quyết định cho ADR-20.
+2. Xem thiết kế nhà 5 mức của bốn thành phố mới trong bench (đổi thành phố ở góc phải) và nói nếu có
+   thành phố nào chưa đúng ý.
+
+### Việc 1 — bảng phong cách (15/09, đã duyệt)
 
 Trang duyệt: https://claude.ai/artifact/FxS1xjZj3oYRFmik5q65Tq · ảnh gốc `docs/screens/3d-city/`.
 
-### Đã làm
+#### Đã làm
 
 - **Tải 5 kit Kenney** (City Suburban 2.0, Commercial 2.1, Industrial 2.0, Roads, Nature Kit — CC0)
   vào `content/art/kenney/`. ~98 MB → gitignore toàn bộ trừ `README.md` (ghi nguồn, phiên bản, ngày
@@ -28,7 +78,7 @@ Trang duyệt: https://claude.ai/artifact/FxS1xjZj3oYRFmik5q65Tq · ảnh gốc 
 - 8 ảnh: `thanh-so.jpg`, `pho-chu.jpg` (+ bản `-khong-hud`), `thanh-so-5-muc.jpg`,
   `pho-chu-5-muc.jpg`, `kim-tu-thap-ghep-manh.jpg`, `chua-mot-cot-ghep-manh.jpg`.
 
-### Quyết định kỹ thuật (ghi lại, chưa phải ADR)
+#### Quyết định kỹ thuật
 
 - **Đất cong ra xa** thay cho camera trực giao của mẫu: thành phố phẳng trong bán kính 62, ngoài
   đó hạ `0,0055·d²`. Camera nghiêng 27° vẫn thấy trời có mây (yêu cầu mới) mà không phải hạ góc
@@ -37,7 +87,7 @@ Trang duyệt: https://claude.ai/artifact/FxS1xjZj3oYRFmik5q65Tq · ảnh gốc 
   ô-liu (đã thử, thấy rõ trên ảnh).
 - Kỳ quan và nhà kỹ năng tự dựng; Kenney chỉ cho phố, nhà trang trí, cao ốc nền, cây.
 
-### Số đo (máy render GTX 1060 — chưa phải iPad)
+#### Số đo bảng phong cách (máy render GTX 1060)
 
 | Cảnh | Draw call | Tam giác |
 |---|---|---|
@@ -48,7 +98,7 @@ Trang duyệt: https://claude.ai/artifact/FxS1xjZj3oYRFmik5q65Tq · ảnh gốc 
 **Vượt xa ngân sách iPad** (≤ 150 draw call, ≤ 80k tam giác) — đúng dự kiến cho ảnh chất lượng mục
 tiêu. Việc 2 đo trên iPad thật rồi chọn InstancedMesh/gộp theo ô hay đường WebP, ghi ADR.
 
-### Cần chủ dự án
+#### Đã hỏi chủ dự án (đã duyệt 15/09)
 
 1. Duyệt hướng hình (độ tươi, góc có trời, mật độ), 5 mức công trình, cách hiện mảnh kỳ quan.
 2. **Link bảng phong cách 6 khung trên claude.ai chưa nhận được** — bản này dựng theo đề bài chữ; nếu
@@ -57,9 +107,10 @@ tiêu. Việc 2 đo trên iPad thật rồi chọn InstancedMesh/gộp theo ô h
 
 ### Tồn đọng
 
-- Việc 2–5 chưa bắt đầu (chờ duyệt). Bốn thành phố và bốn kỳ quan còn lại chưa dựng.
-- `pnpm lint && pnpm test && pnpm build` xanh (15/09). Có sửa lint tối thiểu trong `3d-proto/`
-  (thêm `lang`, sắp import) — thư mục mẫu này nay vào git cùng ảnh của nó.
+- Việc 3 (gắn dữ liệu), việc 4 (màn hình, cờ `KID_UI`), việc 5 (nghiệm thu, hai bé dùng thử) chưa làm.
+- Số đo iPad thật cho ADR-20. Link bảng phong cách 6 khung vẫn chưa nhận được.
+- `docs/06` chưa cập nhật hướng thành phố (tiêu chí 7, sẽ làm cùng việc 4).
+- `pnpm lint && pnpm test && pnpm build` xanh (15/09).
 
 ## Pha 9 — 15/09/2026 — Dựng máy chủ Ubuntu, chuyển dữ liệu, cắt tunnel
 

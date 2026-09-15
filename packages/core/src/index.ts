@@ -2,6 +2,7 @@
 export * from "./attention";
 export * from "./auth";
 export * from "./calendar";
+export * from "./city";
 export * from "./diary";
 export * from "./grading";
 export * from "./intake";

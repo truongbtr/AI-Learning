@@ -1,0 +1,39 @@
+{
+  "name": "@mtct/city",
+  "version": "0.1.0",
+  "private": true,
+  "description": "3D city world for the kid UI (three.js): layout, parametric buildings, wonders, merged chunks, day/night, agents",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./engine": "./src/engine/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json",
+    "bake:kenney": "tsx scripts/bake-kenney.ts",
+    "bench:build": "tsx scripts/build-bench.ts",
+    "bench:shoot": "tsx scripts/shoot-bench.ts"
+  },
+  "dependencies": {
+    "three": "^0.186.0",
+    "@mtct/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@mtct/config": "workspace:*",
+    "@types/node": "^22.0.0",
+    "@types/three": "^0.186.0",
+    "esbuild": "^0.28.0",
+    "playwright-core": "^1.63.0",
+    "sharp": "^0.35.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^5.0.0"
+  },
+  "files": [
+    "src",
+    "package.json"
+  ]
+}

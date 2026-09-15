@@ -34,7 +34,7 @@ Nền tảng web gia đình, dùng AI cá nhân hoá việc học ở nhà cho h
 pnpm + Turborepo · Next.js 15+ App Router · TypeScript strict · Tailwind 4 + shadcn/ui (phụ huynh) + `components/kid/*` (trẻ em) · Prisma + PostgreSQL 16 · pg-boss (worker) · Auth.js v5 · **không có SDK LLM** (hàng chờ cho Claude Code) · TTS/STT Web Speech mặc định, cloud TTS tuỳ chọn · Docker Compose · Cloudflare Tunnel.
 
 ```
-apps/web  apps/worker  packages/{core,inbox,content,db,config}
+apps/web  apps/worker  packages/{core,inbox,content,db,config,city}
 content/{skill-map,lessons,exercises,art,timetable,prompts}  "sach giao khoa"/  docs/  docker/  scripts/
 ```
 
