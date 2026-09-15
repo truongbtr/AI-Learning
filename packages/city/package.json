@@ -16,7 +16,8 @@
     "typecheck": "tsc -p tsconfig.json",
     "bake:kenney": "tsx scripts/bake-kenney.ts",
     "bench:build": "tsx scripts/build-bench.ts",
-    "bench:shoot": "tsx scripts/shoot-bench.ts"
+    "bench:shoot": "tsx scripts/shoot-bench.ts",
+    "shoot:builds": "tsx scripts/shoot-builds.ts"
   },
   "dependencies": {
     "three": "^0.186.0",

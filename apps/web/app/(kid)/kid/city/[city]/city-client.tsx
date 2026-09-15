@@ -719,7 +719,8 @@ export function CityClient({
       <footer className="pointer-events-none fixed inset-x-0 bottom-0 z-20 flex items-end gap-2 p-3">
         <Mascot name={mascot} state={mascotState} size={120} speaking={speakState === "speaking"} />
         <AnimatePresence>
-          {line && mode !== "panel" ? (
+          {/* a sheet over the city (exercises, choosing a build) hides the bubble: its words are never cut */}
+          {line && !panel && !chooser ? (
             <motion.p
               key={line}
               initial={{ opacity: 0, scale: 0.9, y: 10 }}
@@ -996,7 +997,7 @@ function BuildChooser({
       data-plot={plot}
     >
       <motion.div
-        className="w-full max-w-3xl rounded-t-[36px] bg-[#FFF8EC] p-5 shadow-2xl"
+        className="w-full max-w-4xl rounded-t-[36px] bg-[#FFF8EC] p-5 shadow-2xl"
         initial={{ y: 400 }}
         animate={{ y: 0 }}
         exit={{ y: 400 }}
@@ -1025,10 +1026,16 @@ function BuildChooser({
                     onSpeak(b.nameVi);
                     onBuild(code);
                   }}
-                  className="flex min-h-[200px] w-full flex-col items-center justify-center gap-2 rounded-[28px] border-4 border-white bg-white p-3 shadow-[0_10px_0_rgba(31,59,99,0.12)]"
+                  className="flex w-full flex-col items-center gap-2 overflow-hidden rounded-[28px] border-4 border-white bg-white p-2 pb-3 shadow-[0_10px_0_rgba(31,59,99,0.12)]"
                   data-testid={`build-${code}`}
                 >
-                  <span className="text-[96px] leading-none">{b.emoji}</span>
+                  {/* biome-ignore lint/performance/noImgElement: pre-rendered by the city engine (shoot:builds) */}
+                  <img
+                    src={`/art/city/builds/${code}.webp`}
+                    alt=""
+                    className="aspect-square w-full rounded-[22px] bg-[#e9f7dc] object-cover"
+                    data-testid="build-picture"
+                  />
                   <span className="text-center font-extrabold text-[24px] text-[#2B2B3A] leading-tight">
                     {b.nameVi}
                   </span>

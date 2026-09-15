@@ -278,10 +278,10 @@ export function ParentDoor({ onOpen }: { onOpen: () => void }) {
       onPointerDown={() => setHeld(1)}
       onPointerUp={() => setHeld(0)}
       onPointerLeave={() => setHeld(0)}
-      className="relative flex h-16 w-16 items-center justify-center rounded-full bg-white/70 text-[#6B6B7B]"
+      className="relative flex h-[72px] w-[72px] items-center justify-center rounded-full bg-white/90 text-[#6B6B7B] shadow"
       data-testid="parent-door"
     >
-      <span className="font-extrabold text-[15px]">ba mẹ</span>
+      <span className="text-center font-extrabold text-[14px] leading-tight">ba mẹ</span>
       {held > 0 ? (
         <span
           className="absolute inset-0 rounded-full border-4 border-[#2F80ED]"

@@ -23,6 +23,8 @@ const assets =
   document.querySelector<HTMLMetaElement>("meta[name=city-assets]")?.content ||
   "../../../content/art/city";
 const shot = q.has("shot");
+/** solo=<plot build code>: one plot build alone, camera close — the build chooser pictures. */
+const solo = q.get("solo");
 
 async function main() {
   const canvas = document.getElementById("city") as HTMLCanvasElement;
@@ -51,6 +53,20 @@ async function main() {
     maxPixelRatio: Number(q.get("dpr") || 2),
   });
   const load = () => {
+    if (solo) {
+      const base = sampleView(city, "start");
+      engine.setView({
+        ...base,
+        skills: [],
+        // plot 1 stands away from the city gate
+        land: { owned: 2, nextCost: 30, progress: 0, builds: [{ plot: 1, build: solo }] },
+        townHallOrder: "none",
+        pets: [],
+      });
+      const lot = engine.lotOf({ type: "plot", plot: 1 });
+      if (lot) engine.setCamera({ x: lot.x, z: lot.z, dist: 48 });
+      return;
+    }
     engine.setView(sampleView(city, size));
     const cx = q.get("cx");
     const cz = q.get("cz");
@@ -177,6 +193,10 @@ Màn hình ${screen.width}×${screen.height} @${devicePixelRatio} · dựng ${st
   };
   if (shot) {
     engine.renderOnce();
+    if (solo) {
+      const [a] = engine.anchors(["plot:1"]);
+      (window as unknown as { __crop?: unknown }).__crop = a ? { x: a.x, y: a.y } : null;
+    }
     syncBubbles();
     window.__bench = { ...engine.stats(), camera: engine.camera() };
     window.__ready = true;

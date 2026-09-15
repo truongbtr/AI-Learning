@@ -36,6 +36,17 @@
         "KID_UI": "world",
         "AUTH_URL": "http://localhost:5002"
       }
+    },
+    {
+      "name": "web-city-prod",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@mtct/web", "exec", "next", "start", "--port", "5003"],
+      "port": 5003,
+      "url": "http://localhost:5003",
+      "env": {
+        "KID_UI": "city",
+        "AUTH_URL": "http://localhost:5003"
+      }
     }
   ]
 }

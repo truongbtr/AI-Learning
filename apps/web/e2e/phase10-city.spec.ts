@@ -170,6 +170,16 @@ test("the kid lands on the six-island map; tonight's islands sparkle with a coun
   await kidSafe(page);
   await page.waitForTimeout(1800);
   await page.screenshot({ path: join(SHOTS, "c1-world-map.png") });
+
+  // the parents' door in the corner is really on top: nothing (no island, no badge) covers it
+  const door = page.getByTestId("parent-door");
+  await expect(door).toBeVisible();
+  const box = await door.boundingBox();
+  const onTop = await page.evaluate(
+    ({ x, y }) => document.elementFromPoint(x, y)?.closest('[data-testid="parent-door"]') !== null,
+    { x: (box?.x ?? 0) + (box?.width ?? 0) / 2, y: (box?.y ?? 0) + (box?.height ?? 0) / 2 },
+  );
+  expect(onTop).toBe(true);
 });
 
 test("Thành Số: 3–4 stars, panel over the city, the building grows, land opens to build", async ({
@@ -268,9 +278,24 @@ test("Thành Số: 3–4 stars, panel over the city, the building grows, land op
   if (await chooser.isVisible().catch(() => false)) {
     await page.waitForTimeout(800);
     await page.screenshot({ path: join(SHOTS, "c6-choose-build.png") });
-    const options = chooser.locator('[data-testid^="build-"]:not([data-testid="build-later"])');
+    const options = chooser.locator(
+      'button[data-testid^="build-"]:not([data-testid="build-later"])',
+    );
     expect(await options.count()).toBeGreaterThanOrEqual(1);
     expect(await options.count()).toBeLessThanOrEqual(3);
+    // real engine pictures, taking at least 60% of each card (Pha 10b việc 3)
+    for (let i = 0; i < (await options.count()); i++) {
+      const card = await options.nth(i).boundingBox();
+      const pic = options.nth(i).getByTestId("build-picture");
+      await expect(pic).toHaveJSProperty("complete", true);
+      expect(await pic.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
+      const box = await pic.boundingBox();
+      expect((box?.height ?? 0) * (box?.width ?? 0)).toBeGreaterThanOrEqual(
+        0.6 * (card?.height ?? 1) * (card?.width ?? 1),
+      );
+    }
+    // the mascot's bubble never sits cut under the sheet
+    await expect(page.getByTestId("city-line")).toBeHidden();
     await options.first().click();
   }
   await expect(page.getByTestId("city-done")).toBeVisible({ timeout: 30_000 });
