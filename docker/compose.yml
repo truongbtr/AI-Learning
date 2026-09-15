@@ -82,11 +82,15 @@ services:
       # a Docker volume: the whole point is that Claude chat reaching the project folder and Claude
       # Code in the repo read the same files. In a volume nobody would ever see them.
       OPS_ROOT: /data/ops
+      # The image is built without docs/ (.dockerignore); ops:export reads the ADRs and TIEN-DO from
+      # the host copy, read-only. Without it the export keeps the old QUYET-DINH.md and warns.
+      DOCS_ROOT: /data/docs
       TZ: Asia/Ho_Chi_Minh
     volumes:
       - files:/data/files
       - inbox:/data/inbox
       - ../ops:/data/ops
+      - ../docs:/data/docs:ro
     depends_on:
       postgres:
         condition: service_healthy

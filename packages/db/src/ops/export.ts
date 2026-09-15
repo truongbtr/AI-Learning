@@ -12,7 +12,7 @@ import { join } from "node:path";
 import { dayKey, vnDayDate } from "@mtct/core";
 import type { PrismaClient } from "../../generated/client";
 import { csvFile, median, ratio } from "./csv";
-import { opsRoot, workspaceRoot } from "./paths";
+import { docsRoot, opsRoot } from "./paths";
 
 /**
  * `pnpm ops:export` — the nightly snapshot two AI agents share (docs/14 §2, §3).
@@ -57,6 +57,8 @@ export interface OpsExportOptions {
   now?: Date;
   /** Skip `latest/` (the copy doubles the bytes written; the nightly job wants it). */
   skipLatest?: boolean;
+  /** Project documents folder; `null` = not reachable (tests). Default: `docsRoot()`. */
+  docsRoot?: string | null;
 }
 
 export async function exportOpsState(
@@ -65,6 +67,7 @@ export async function exportOpsState(
 ): Promise<OpsExportResult> {
   const now = opts.now ?? new Date();
   const root = opts.root ?? opsRoot();
+  const docs = opts.docsRoot === undefined ? docsRoot() : opts.docsRoot;
   const day = dayKey(now);
   const dir = join(root, "state", day);
   mkdirSync(dir, { recursive: true });
@@ -676,7 +679,7 @@ export async function exportOpsState(
   };
   write("meta.json", `${JSON.stringify(meta, null, 2)}\n`, out.files.length);
 
-  const summary = await buildSummary(db, {
+  let summary = await buildSummary(db, {
     now,
     students: students.map((s) => ({ id: s.id, slug: s.slug })),
     masteries,
@@ -688,6 +691,15 @@ export async function exportOpsState(
     health,
     diaries: diaries.length,
   });
+  if (!docs) {
+    // Never overwrite the decisions with an error line: keep yesterday's context, say so here.
+    out.warnings.push("không tìm thấy docs/ — giữ nguyên ops/context/QUYET-DINH.md");
+    summary = `${summary}
+## ⚠️ Cảnh báo khi xuất
+
+- Không tìm thấy thư mục \`docs/\` (đã thử DOCS_ROOT, gốc repo, cạnh \`ops/\`). **\`ops/context/QUYET-DINH.md\` được giữ nguyên bản cũ**; phiên bản pha trong HIEN-TRANG.md lấy từ lần xuất trước. Trong container worker, mount \`../docs:/data/docs:ro\` (docker/compose.yml).
+`;
+  }
   write("SUMMARY.md", summary, summary.split("\n").length);
 
   if (out.totalBytes > MAX_DAY_BYTES)
@@ -707,7 +719,7 @@ export async function exportOpsState(
   }
 
   out.pruned = pruneOldDays(join(root, "state"), now);
-  await writeContextFiles(db, root, { now, summary });
+  await writeContextFiles(db, root, { now, summary, docs });
   return out;
 }
 
@@ -877,18 +889,33 @@ async function buildSummary(db: Db, input: SummaryInput): Promise<string> {
 async function writeContextFiles(
   db: Db,
   root: string,
-  opts: { now: Date; summary: string },
+  opts: { now: Date; summary: string; docs: string | null },
 ): Promise<void> {
   const dir = join(root, "context");
   mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, "HIEN-TRANG.md"), await buildCurrentState(db, opts), "utf8");
-  writeFileSync(join(dir, "QUYET-DINH.md"), buildDecisions(), "utf8");
+  const statePath = join(dir, "HIEN-TRANG.md");
+  const previousPhase = existsSync(statePath)
+    ? /\*\*(.+)\*\*/.exec(
+        readFileSync(statePath, "utf8")
+          .split("\n")
+          .find((l) => l.includes("Pha gần nhất")) ?? "",
+      )?.[1]
+    : undefined;
+  writeFileSync(statePath, await buildCurrentState(db, { ...opts, previousPhase }), "utf8");
+  // Without the documents the decisions cannot be rebuilt: the old file stays as it is.
+  if (opts.docs) writeFileSync(join(dir, "QUYET-DINH.md"), buildDecisions(opts.docs), "utf8");
 }
 
 /** docs/14 §5 — the first file a new chat session opens. */
-async function buildCurrentState(db: Db, opts: { now: Date; summary: string }): Promise<string> {
+async function buildCurrentState(
+  db: Db,
+  opts: { now: Date; summary: string; docs: string | null; previousPhase?: string },
+): Promise<string> {
   const { now } = opts;
-  const phase = latestPhaseHeading();
+  const phase =
+    (opts.docs ? latestPhaseHeading(opts.docs) : null) ??
+    opts.previousPhase ??
+    "không đọc được docs/TIEN-DO.md";
   const [students, skills, exercises, sessions, evidence, batches, lastExport] = await Promise.all([
     db.student.count({ where: { isActive: true } }),
     db.skill.count({ where: { isActive: true } }),
@@ -944,14 +971,12 @@ async function buildCurrentState(db: Db, opts: { now: Date; summary: string }): 
 }
 
 /** The first line of the newest phase entry in docs/TIEN-DO.md, when it can be read. */
-function latestPhaseHeading(): string {
+function latestPhaseHeading(docs: string): string | null {
   try {
-    // The one place this package reads the docs, and only for a label.
-    const text = readFileSync(join(workspaceRoot(), "docs", "TIEN-DO.md"), "utf8");
-    const match = /^## (.+)$/m.exec(text);
-    return match?.[1]?.trim() ?? "không đọc được docs/TIEN-DO.md";
+    const text = readFileSync(join(docs, "TIEN-DO.md"), "utf8");
+    return /^## (.+)$/m.exec(text)?.[1]?.trim() ?? null;
   } catch {
-    return "không đọc được docs/TIEN-DO.md";
+    return null;
   }
 }
 
@@ -962,8 +987,7 @@ function latestPhaseHeading(): string {
  * ADR files in `docs/adr/`) rather than retyped here, because a summary that drifts from the ADRs
  * is worse than no summary: it would be believed.
  */
-function buildDecisions(): string {
-  const docs = join(workspaceRoot(), "docs");
+function buildDecisions(docs: string): string {
   const lines = [
     `# Quyết định đã chốt`,
     "",

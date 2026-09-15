@@ -25,3 +25,22 @@ export function workspaceRoot(): string {
   }
   return process.cwd();
 }
+
+/**
+ * Where the project documents are, whatever the current directory: `DOCS_ROOT`, then `docs/` at
+ * the workspace root, then `docs/` beside the ops folder (the worker container mounts the host's
+ * `ops/` and `docs/` side by side under /data, because the image itself is built without docs).
+ * Null when none of them holds the architecture document.
+ */
+export function docsRoot(): string | null {
+  const candidates = [
+    process.env.DOCS_ROOT,
+    join(workspaceRoot(), "docs"),
+    resolve(opsRoot(), "..", "docs"),
+  ].filter((c): c is string => !!c);
+  for (const dir of candidates) {
+    const abs = isAbsolute(dir) ? dir : resolve(workspaceRoot(), dir);
+    if (existsSync(join(abs, "02-KIEN-TRUC.md"))) return abs;
+  }
+  return null;
+}

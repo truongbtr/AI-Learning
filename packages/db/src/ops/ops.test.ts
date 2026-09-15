@@ -12,6 +12,7 @@ import {
 } from "../test-db";
 import { applyOpsPlan, formatPlan, PLANNER_MIX_SETTING, planOpsRequests } from "./apply";
 import { exportOpsState, pruneOldDays } from "./export";
+import { docsRoot } from "./paths";
 import { parseOpsRequest } from "./requests";
 
 /**
@@ -226,6 +227,37 @@ describe("ops:export — the snapshot Claude chat reads (docs/14 §3)", () => {
     await disconnectTestDb();
   });
 
+  it("without docs/ it keeps QUYET-DINH.md and the phase label, and warns in SUMMARY.md", async (ctx) => {
+    needDb(ctx);
+    const db = testDb();
+    const root = tempOps();
+    roots.push(root);
+    mkdirSync(join(root, "context"), { recursive: true });
+    const decisions = "# Quyết định đã chốt\n\n- **ADR-10** — bản cũ còn đúng\n";
+    writeFileSync(join(root, "context", "QUYET-DINH.md"), decisions, "utf8");
+    writeFileSync(
+      join(root, "context", "HIEN-TRANG.md"),
+      "# Hiện trạng\n\n- Pha gần nhất ghi trong `docs/TIEN-DO.md`: **Pha 10 — thành phố**\n",
+      "utf8",
+    );
+
+    const result = await exportOpsState(db, {
+      root,
+      now: new Date(),
+      docsRoot: null,
+      skipLatest: true,
+    });
+
+    expect(readFileSync(join(root, "context", "QUYET-DINH.md"), "utf8")).toBe(decisions);
+    const state = readFileSync(join(root, "context", "HIEN-TRANG.md"), "utf8");
+    expect(state).toContain("**Pha 10 — thành phố**");
+    expect(state).not.toContain("không đọc được");
+    const summary = readFileSync(join(root, "state", "SUMMARY.md"), "utf8");
+    expect(summary).toContain("Cảnh báo khi xuất");
+    expect(summary).toContain("QUYET-DINH.md");
+    expect(result.warnings.some((w) => w.includes("docs/"))).toBe(true);
+  });
+
   it("writes every file docs/14 §3 lists, with no full name and no birth date in any of them", async (ctx) => {
     needDb(ctx);
     const db = testDb();
@@ -299,5 +331,35 @@ describe("ops:export — the snapshot Claude chat reads (docs/14 §3)", () => {
     const pruned = pruneOldDays(state, new Date());
     expect(pruned.sort()).toEqual([day(200), day(91)].sort());
     expect(readdirSync(state).sort()).toEqual([day(0), day(30), "latest"].sort());
+  });
+});
+
+describe("docsRoot — the documents are found whatever the current directory", () => {
+  it("finds the repository docs from another working directory", () => {
+    const cwd = process.cwd();
+    const away = mkdtempSync(join(tmpdir(), "mtct-cwd-"));
+    try {
+      process.chdir(away);
+      const found = docsRoot();
+      expect(found).not.toBeNull();
+      expect(readFileSync(join(found as string, "02-KIEN-TRUC.md"), "utf8")).toContain("ADR-10");
+    } finally {
+      process.chdir(cwd);
+      rmSync(away, { recursive: true, force: true });
+    }
+  });
+
+  it("prefers DOCS_ROOT when it holds the architecture document", () => {
+    const dir = mkdtempSync(join(tmpdir(), "mtct-docs-"));
+    writeFileSync(join(dir, "02-KIEN-TRUC.md"), "| ADR-1 | x | y | z |\n", "utf8");
+    const before = process.env.DOCS_ROOT;
+    process.env.DOCS_ROOT = dir;
+    try {
+      expect(docsRoot()).toBe(dir);
+    } finally {
+      if (before === undefined) delete process.env.DOCS_ROOT;
+      else process.env.DOCS_ROOT = before;
+      rmSync(dir, { recursive: true, force: true });
+    }
   });
 });
