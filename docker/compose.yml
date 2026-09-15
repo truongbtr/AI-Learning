@@ -45,7 +45,12 @@ services:
       BACKUP_DIR: /backup-out
       TZ: Asia/Ho_Chi_Minh
     ports:
-      - "${PORT:-3000}:3000"
+      # 127.0.0.1 only: Docker writes its own iptables NAT rules for published ports, which bypass
+      # ufw's filter table entirely — a bare "${PORT}:3000" is reachable from the whole LAN even
+      # with ufw showing only 22 open (found in pha 9). The public path is the Cloudflare Tunnel,
+      # which reaches this container by its Compose network name ("web:3000"), never through this
+      # host-published port — so binding it to loopback costs nothing and closes the LAN hole.
+      - "127.0.0.1:${PORT:-3000}:3000"
     volumes:
       - files:/data/files
       - inbox:/data/inbox

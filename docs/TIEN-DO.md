@@ -2,14 +2,13 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
-## Pha 9 — 15/09/2026 — Dựng máy chủ Ubuntu, chuyển dữ liệu (chưa cắt tunnel)
+## Pha 9 — 15/09/2026 — Dựng máy chủ Ubuntu, chuyển dữ liệu, cắt tunnel
 
-Trạng thái: **§1 và §2 xong, kiểm chứng đầy đủ. §3 (vận hành) làm được phần sao lưu + diễn tập +
-khởi động lại; chưa cắt Cloudflare Tunnel sang máy mới, chưa đăng nhập thật bằng mã 4 hình của hai
-bé.** Hệ thống Windows **vẫn là bản chính đang chạy** — chưa tắt gì, đúng nguyên tắc "chạy song
-song, nghiệm thu, rồi mới đổi tunnel" của đề bài. Máy Ubuntu đã sẵn sàng để nghiệm thu qua LAN
-(`http://192.168.1.102:5000`, nhưng cổng này **không** mở ra ngoài — chỉ vào được từ chính máy chủ
-hoặc qua một đường hầm SSH tạm khi cần xem thử).
+Trạng thái: **§1, §2, §3 xong và đã cắt tunnel — `edu.medifa.vn` trả lời từ máy Ubuntu thật.** Chỉ
+còn việc chủ dự án tự làm: đăng nhập thật bằng mã 4 hình của hai bé (tiêu chí 4), và dọn quyền
+`sudo` tạm sau khi nghiệm thu xong. Máy Windows **không tắt** — vẫn giữ Docker chạy vì Windows còn
+phục vụ tunnel cho một site khác (`one2.medifa.vn`, không liên quan dự án này); chỉ riêng
+`edu.medifa.vn` đã chuyển hẳn sang Ubuntu.
 
 ### §0 — chuẩn bị máy (đổi kế hoạch so với đề bài)
 
@@ -86,26 +85,41 @@ riêng thay đổi code này không).
 - Đã cập nhật `docs/VAN-HANH.md`: thêm §0 "Vào máy chủ Ubuntu" (cách SSH bằng khoá, khởi động lại
   qua Hyper-V Manager), sửa §6 để nói rõ sao lưu giờ đi hai chặng.
 
-### Chưa làm — cần chủ dự án quyết định trước khi cắt hẳn
+### Cắt tunnel — xong, cập nhật sau khi viết mục trên
 
-1. **Cắt Cloudflare Tunnel sang Ubuntu**: cần token của tunnel hiện tại (đang chạy trên Windows dưới
-   dạng Windows Service `Cloudflared`, đọc từ `C:\ProgramData\cloudflared\token` — file này khoá
-   quyền SYSTEM, tôi không đọc được). Chủ dự án lấy lại token ở Zero Trust dashboard → Networks →
-   Tunnels → tunnel đang dùng → Configure, dán vào chat khi sẵn sàng cắt. Sau khi có token: dựng
-   `cloudflared` trên Ubuntu bằng cùng tunnel, kiểm tra `https://edu.medifa.vn/api/health` trả
-   `"host":"ubuntu-edison"`, rồi mới tắt Windows Service `Cloudflared`.
-2. **Đăng nhập thật bằng mã 4 hình của hai bé, đi trọn một phiên học** (tiêu chí 4) — tôi chỉ kiểm
+Đề bài giả định tunnel Windows chỉ phục vụ riêng dự án này và có thể tắt hẳn sau khi cắt — **thực tế
+không phải vậy**: tunnel "118 Mimosa" trên Windows phục vụ **chung hai site**
+(`edu.medifa.vn` + `one2.medifa.vn`, site kia không liên quan dự án này). Tắt hẳn connector Windows
+sẽ làm sập luôn `one2.medifa.vn`. Xử lý: chủ dự án tạo **tunnel mới riêng cho dự án** (`edison-learning`),
+chuyển route `edu.medifa.vn` sang tunnel mới, dựng connector cho tunnel mới ngay trong
+docker-compose trên Ubuntu (`cloudflared` service, `Service: http://web:3000` — không mở cổng nào,
+đúng thiết kế outbound-only), giữ tunnel "118 Mimosa" nguyên vẹn cho `one2.medifa.vn`. Đã kiểm chứng:
+
+- `https://edu.medifa.vn/api/health` → `200`, `"host":"ubuntu-edison"`, ổn định qua 5 lần gọi liên tiếp.
+- `https://edu.medifa.vn/api/internal/context?student=thy` với token mới → `200` kèm `skillCandidates`;
+  token dev cũ → `401`.
+- Trang `/login` qua domain thật hiện đúng tên và ảnh cả hai bé.
+- **Không đụng gì tới Windows Service `Cloudflared`** — vẫn phải chạy, vì còn phục vụ `one2.medifa.vn`.
+
+**Phát hiện thêm giữa chừng, đã sửa**: cổng web (5000) trên Ubuntu **lộ ra cả LAN** dù `ufw` báo chỉ
+mở cổng 22 — nguyên nhân là Docker tự ghi luật iptables riêng, vượt mặt `ufw`. Sửa bằng cách đổi
+`docker/compose.yml`: `ports: "${PORT}:3000"` → `"127.0.0.1:${PORT}:3000"` (giống cách `postgres` đã
+làm sẵn) — khớp đúng nguyên tắc "không mở cổng web ra ngoài" của đề bài, và không ảnh hưởng gì vì
+tunnel nói chuyện với `web` qua tên service trong mạng Docker nội bộ, không qua cổng này.
+
+### Còn lại
+
+1. **Đăng nhập thật bằng mã 4 hình của hai bé, đi trọn một phiên học** (tiêu chí 4) — tôi chỉ kiểm
    tra được trang `/login` hiện đúng tên và ảnh đại diện hai bé (dữ liệu đã sang đúng), không tự
-   đoán mã của con. Chủ dự án tự làm việc này qua đường hầm SSH tạm hoặc sau khi cắt tunnel.
-3. Sau khi cắt tunnel và nghiệm thu xong: gỡ `/etc/sudoers.d/010-deploy-temp` trên Ubuntu (tự đặt
-   khi mở đầu pha 9 để tôi chạy `sudo` không cần hỏi mật khẩu) — hỏi lại chủ dự án trước khi gỡ,
-   phòng khi còn việc dở dang.
-4. Ổ đĩa Ubuntu hiện dùng 62.5/125 GB (còn ~62 GB chưa gán vào LVM) — đủ dùng, không cần làm gì
+   đoán mã của con. Giờ đã cắt tunnel, chủ dự án làm thử trực tiếp trên domain thật được rồi.
+2. Sau khi nghiệm thu xong: gỡ `/etc/sudoers.d/010-deploy-temp` trên Ubuntu (tự đặt khi mở đầu pha 9
+   để tôi chạy `sudo` không cần hỏi mật khẩu) — hỏi lại chủ dự án trước khi gỡ, phòng khi còn việc
+   dở dang.
+3. Ổ đĩa Ubuntu hiện dùng 62.5/125 GB (còn ~62 GB chưa gán vào LVM) — đủ dùng, không cần làm gì
    ngay, ghi lại để biết còn dư địa mở rộng sau này nếu cần.
 
 ### Câu hỏi cho chủ dự án
 
-- Token tunnel Cloudflare hiện tại — gửi khi nào sẵn sàng cắt (không vội).
 - Chỗ sao lưu cố định lâu dài (NAS? ổ ngoài?) hay cứ để tạm ở `E:\SAO-LUU-MTCT` qua LAN như hiện
   tại?
 - Có muốn commit riêng thay đổi `host` trong `/api/health` (mã nguồn, không phải bí mật) trước khi
