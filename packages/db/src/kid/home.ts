@@ -62,8 +62,9 @@ export async function kidHome(db: Db, studentId: string, at = new Date()): Promi
 
   const day = vnDayDate(at);
   const [session, streak, stars, memory, mailRows, pets, collectibles, badges] = await Promise.all([
+    // the Daily Quest only: a TARGETED session a building opened today is not "today's quest"
     db.session.findFirst({
-      where: { studentId, date: day },
+      where: { studentId, date: day, kind: "DAILY_QUEST" },
       orderBy: { createdAt: "desc" },
       select: {
         id: true,

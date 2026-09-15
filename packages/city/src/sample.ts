@@ -70,6 +70,7 @@ export function sampleView(city: CityId, size: SampleSize): CityView {
     land: {
       owned,
       nextCost: 20 + owned * 5,
+      progress: 7,
       builds: Array.from({ length: Math.max(0, owned - 1) }, (_, i) => ({
         plot: i,
         build: plotCodes[i % plotCodes.length] as string,

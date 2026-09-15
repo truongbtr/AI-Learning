@@ -1,7 +1,7 @@
 # ADR-20 — Thành phố 3D: render thật trên máy, không dựng sẵn WebP
 
-Ngày: 15/09/2026 · Pha 10 việc 2 · Trạng thái: **áp dụng; chờ số đo trên iPad thật để chốt** (xem
-"Điều kiện lật quyết định")
+Ngày: 15/09/2026 · Pha 10 việc 2 · Trạng thái: **chốt** (15/09/2026 — chủ dự án xác nhận hai bé dùng
+trên web, không dùng iPad; xem "Thiết bị đích")
 
 ## Bối cảnh
 
@@ -11,6 +11,16 @@ thì render sẵn từng ô thành WebP bằng Playwright rồi ghép 2D. Quyế
 Cảnh mẫu của việc 1 (bảng phong cách) vượt rất xa ngưỡng: khoảng 4.300 draw call và 730k tam giác, vì
 mỗi cửa sổ, cây, đèn là một mesh. Thêm nữa, thành phố của môn lớn nhất (Tiếng Việt, 102 kỹ năng) cần tới
 41 khối nhà.
+
+## Thiết bị đích
+
+Đề bài viết theo iPad. Sau việc 2, chủ dự án cho biết **hai bé chạy trên web** (trình duyệt máy
+tính), không chạy trên iPad. Vì vậy:
+
+- số đo quyết định là số đo trên trình duyệt web — bảng "Fps" dưới đây, 60 fps ở độ phân giải cao;
+- ngân sách ≤ 150 draw call, ≤ 80k tam giác **vẫn giữ** làm lưới an toàn, để một máy tính yếu hoặc
+  laptop cũ (GPU tích hợp) vẫn mượt, và test `budget.test.ts` vẫn chặn khi vượt;
+- bench trên iPad không còn là điều kiện nghiệm thu; đường WebP không cần làm.
 
 ## Quyết định
 
@@ -60,7 +70,7 @@ cộng tải tối đa của xe/người. Vượt ngưỡng thì test đỏ.
 Draw call còn dư gấp đôi. Tam giác của Phố Chữ đầy đủ chỉ còn dư 0,6%. Nếu sau này thêm chi tiết mà vượt
 ngưỡng, ưu tiên cắt theo thứ tự: mật độ rừng viền, `CAMERA.maxDist`, số tầng mái của toà chọc trời Phố Chữ.
 
-### Fps: đo thay thế trên máy dev, chưa phải iPad
+### Fps trên trình duyệt web (máy dev)
 
 Chrome headless trên GPU GTX 1060, khung 1180×820 với DPR 2 (bằng độ phân giải iPad Air/Pro 11"),
 thành phố Phố Chữ đầy đủ, camera lượn vòng 20 giây:
@@ -70,19 +80,14 @@ thành phố Phố Chữ đầy đủ, camera lượn vòng 20 giây:
 | Bình thường | 60 fps | 60 fps | 51–55 | 71,7k–75,0k |
 | CPU hãm 4× | 60 fps | 60 fps | 55 | 75,0k |
 
-Kết quả cho thấy phần việc CPU mỗi khung hình rất nhẹ. Nhưng GPU của máy này mạnh hơn và khác loại với
-chip iPad, nên **đây chưa phải số đo nghiệm thu**.
+Phần việc CPU mỗi khung hình rất nhẹ (vẫn 60 fps khi hãm CPU 4×), nên máy tính bàn/laptop thường của
+gia đình đủ sức. Nghiệm thu việc 5 sẽ đo lại trên đúng máy hai bé dùng bằng nút "Đo 20 giây".
 
-## Điều kiện lật quyết định
+## Khi nào xem lại
 
-Chủ dự án mở bench (https://claude.ai/artifact/RMeiUU6jNn2rPNWzdaVKSy) trên iPad của hai bé và bấm
-"Đo 20 giây". Sẽ **làm đường WebP** (việc 2b, trước việc 4) nếu có một trong hai điều sau:
-
-- trung bình < 50 fps, hoặc 5% khung chậm nhất < 40 fps, **sau khi** độ phân giải đã tự hạ về 1×;
-- thời gian dựng thành phố (dòng "dựng … ms") > 1.200 ms. Với thời gian tải trang, con số này sẽ phá
-  tiêu chí "không màn hình nào chờ quá 1,5 s".
-
-Nếu đạt cả hai thì ghi số đo iPad vào bảng trên và đổi trạng thái ADR thành **chốt**.
+Chỉ xem lại quyết định này nếu trên máy hai bé thật (việc 5, bench "Đo 20 giây") trung bình < 50 fps
+hoặc 5% khung chậm nhất < 40 fps sau khi độ phân giải đã tự hạ về 1×, hoặc dựng thành phố > 1.200 ms.
+Khi đó thứ tự xử lý: giảm `maxPixelRatio`, tắt bóng đổ mềm, rồi mới tính tới ảnh dựng sẵn.
 
 ## Hệ quả
 

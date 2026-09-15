@@ -176,6 +176,7 @@ export async function deleteForStudents(db: PrismaClient, studentIds: string[]):
   await db.studentCollectible.deleteMany({ where });
   await db.studentPicturePiece.deleteMany({ where });
   await db.studentBadge.deleteMany({ where });
+  await db.studentCity.deleteMany({ where });
   await db.certificate.deleteMany({ where });
   await db.kidMail.deleteMany({ where });
   await db.mascotMemory.deleteMany({ where });

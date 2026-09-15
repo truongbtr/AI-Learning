@@ -19,7 +19,7 @@ export interface CitySkillBuilding {
 }
 
 export interface CityPlotBuild {
-  /** Index among the kid's bought plots (0 = first plot bought). */
+  /** Index among the kid's unlocked plots (0 = first plot). */
   plot: number;
   /** Catalogue code of what the kid chose to build (see @mtct/city PLOT_CATALOGUE). */
   build: string;
@@ -30,10 +30,15 @@ export interface CityView {
   /** In activation order — append-only, so a skill keeps its lot forever. */
   skills: CitySkillBuilding[];
   land: {
-    /** Plots the kid has bought with stars. */
+    /**
+     * Plots unlocked by stars EARNED in this subject. Nothing is ever spent (Pha 10 §1.4): a plot
+     * opens when the running total passes its threshold, and stays open.
+     */
     owned: number;
-    /** Stars needed for the next plot (shown on the first locked plot). */
+    /** Stars the next plot needs, counted from the previous threshold (shown on the locked plot). */
     nextCost: number;
+    /** Stars already earned toward the next plot (0 … nextCost − 1) — the HUD's land bar. */
+    progress: number;
     builds: CityPlotBuild[];
   };
   /** Public buildings unlocked by badges, in unlock order (codes from @mtct/city PUBLIC_BUILDINGS). */

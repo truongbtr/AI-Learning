@@ -13,6 +13,7 @@ import {
   type EvidenceSource,
   emptyMasteryState,
   type MasteryState,
+  nextMasteredSince,
   SOURCE_WEIGHT,
   updateMastery,
 } from "@mtct/core";
@@ -261,6 +262,14 @@ export async function commitEvidence(
     const after: MasteryState = { ...state, trend14d };
     // trend can flip SOLID -> NEEDS_PRACTICE (docs/04 sec. 3.3)
     if (after.status === "SOLID" && trend14d <= -8) after.status = "NEEDS_PRACTICE";
+    // counted from when we learnt it, not from a back-dated observation (old photos): the 30 days
+    // to a skyscraper must be 30 real days (Pha 10, ADR-21)
+    const masteredSince = nextMasteredSince(
+      row?.status,
+      row?.masteredSince,
+      after.status,
+      new Date(),
+    );
 
     await tx.skillMastery.upsert({
       where: { studentId_skillId: { studentId: input.studentId, skillId: skill.id } },
@@ -276,6 +285,7 @@ export async function commitEvidence(
         nextReviewAt: after.nextReviewAt,
         intervalDays: after.intervalDays,
         easeFactor: after.easeFactor,
+        masteredSince,
       },
       update: {
         mastery: after.mastery,
@@ -287,6 +297,7 @@ export async function commitEvidence(
         nextReviewAt: after.nextReviewAt,
         intervalDays: after.intervalDays,
         easeFactor: after.easeFactor,
+        masteredSince,
       },
     });
     await tx.masteryHistory.create({
@@ -359,7 +370,12 @@ export async function runMasteryDecay(
     if (next === state) continue;
     await db.skillMastery.update({
       where: { id: row.id },
-      data: { mastery: next.mastery, confidence: next.confidence, status: next.status },
+      data: {
+        mastery: next.mastery,
+        confidence: next.confidence,
+        status: next.status,
+        masteredSince: nextMasteredSince(row.status, row.masteredSince, next.status, now),
+      },
     });
     changed++;
     const recentDecay = await db.masteryHistory.findFirst({

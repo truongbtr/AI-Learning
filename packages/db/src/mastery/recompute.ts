@@ -5,6 +5,7 @@ import {
   DECAY_AFTER_DAYS,
   emptyMasteryState,
   type MasteryState,
+  nextMasteredSince,
   SOURCE_WEIGHT,
   updateMastery,
 } from "@mtct/core";
@@ -117,6 +118,7 @@ export async function recomputeSkillMastery(
           nextReviewAt: null,
           intervalDays: 0,
           easeFactor: 2.5,
+          masteredSince: null,
         },
       });
       // A skill falling back to nothing is the largest move this function can make, so it is the
@@ -166,6 +168,7 @@ export async function recomputeSkillMastery(
     nextReviewAt: after.nextReviewAt,
     intervalDays: after.intervalDays,
     easeFactor: after.easeFactor,
+    masteredSince: nextMasteredSince(existing?.status, existing?.masteredSince, after.status, now),
   };
   await db.skillMastery.upsert({
     where: { studentId_skillId: { studentId, skillId } },

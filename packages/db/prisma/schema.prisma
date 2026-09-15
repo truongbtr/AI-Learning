@@ -152,6 +152,7 @@ model Student {
   chatPhotos        ChatIntakePhoto[]
   chatContexts      ChatContext[]
   parentNotices     ParentNotice[]
+  cities            StudentCity[]
 }
 
 model StudentGuardian {
@@ -317,6 +318,8 @@ model SkillMastery {
   nextReviewAt   DateTime?
   intervalDays   Int           @default(0)
   easeFactor     Float         @default(2.5)
+  /// When status last became MASTERED (null otherwise) — MASTERED held 30 days = skyscraper (Pha 10)
+  masteredSince  DateTime?
   createdAt      DateTime      @default(now())
   updatedAt      DateTime      @updatedAt
 
@@ -1035,6 +1038,25 @@ model StudentBadge {
   seen      Boolean  @default(false)
 
   @@unique([studentId, badgeCode])
+}
+
+/// One subject city of the kid UI (Pha 10, ADR-21). Everything else in the city is computed from
+/// learning data; this keeps only what cannot be recomputed stably.
+model StudentCity {
+  id         String   @id @default(cuid())
+  studentId  String
+  student    Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  subject    Subject
+  /// Skill ids in the order they got a building. Append-only, so a building never moves.
+  skillOrder String[] @default([])
+  /// The kid's choices: [{ plot, build, at }]
+  plotBuilds Json     @default("[]")
+  /// Snapshot of the city the kid last saw, so each celebration plays once
+  seen       Json?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([studentId, subject])
 }
 
 model StarLedger {

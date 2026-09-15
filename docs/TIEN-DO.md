@@ -2,11 +2,43 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
-## Pha 10 — 15/09/2026 — Thế giới Học Đường: thành phố 3D *(việc 1–2 xong, việc 3–5 chưa làm)*
+## Pha 10 — 15/09/2026 — Thế giới Học Đường: thành phố 3D *(việc 1–3 xong, việc 4–5 chưa làm)*
 
-Trạng thái: **việc 1 đã được duyệt; việc 2 (engine `packages/city`) xong.** Giao diện con đang chạy
-chưa bị đụng tới, hai bé không bị ảnh hưởng. Riêng quyết định 3D thật hay WebP **đang chờ số đo trên iPad
-thật** (ADR-20).
+Trạng thái: **việc 1 đã duyệt; việc 2 (engine) và việc 3 (nối dữ liệu) xong.** Giao diện con đang
+chạy chưa bị đụng tới (chưa có màn hình, chưa có cờ `KID_UI` — việc 4). Chủ dự án xác nhận hai bé dùng
+**trên web, không dùng iPad** → ADR-20 đã chốt 3D thật.
+
+### Việc 3 — nối dữ liệu học vào thành phố (15/09)
+
+Quyết định: `docs/adr/ADR-21-du-lieu-thanh-pho.md`.
+
+- **Hàm thuần `packages/core/src/city/rules.ts`** (20 test):
+  - mastery → mức công trình (0–39 / 40–59 / 60–84 / 85+; MASTERED giữ ≥ 30 ngày → chọc trời);
+  - sao **đã kiếm** theo môn → ô đất (20, 25, 30 … sao, **không trừ sao**);
+  - huy hiệu → công trình công cộng theo thứ tự riêng từng thành phố;
+  - tuần ≥ 4 ngày học → mảnh kỳ quan (không reset);
+  - streak → mức nhộn nhịp; đồ sưu tầm → vật trang trí; thú cưng → con vật; bài cô giao → đơn toà thị
+    chính;
+  - nhãn biển nhà; thứ tự lô chỉ nối thêm; công trình mở theo độ vững; phát hiện thay đổi để ăn mừng.
+- **Schema** (migration `20260915114558_phase10_city`, đã gỡ dòng Prisma định xoá chỉ mục full-text):
+  - cột `SkillMastery.masteredSince`, điền sẵn từ lịch sử cho các dòng đang MASTERED, và được giữ đúng ở
+    cả 4 chỗ ghi mastery;
+  - **bảng `StudentCity`** (thứ tự lô, lựa chọn xây của con, lần cuối con xem). Đây là bảng mới duy nhất;
+    lý do ở ADR-21.
+- **`packages/db/src/city`**: `cityRead`, `worldRead`, `markCitySeen`, `choosePlotBuild`,
+  `startCityPractice`, `starsBySubject` — 6 test tích hợp trên Postgres thật (học sinh tạm).
+  `StudentCity` đã vào công cụ xoá dữ liệu học và file xuất dữ liệu một bé.
+- **API** (mọi route kiểm `requireStudentAccess`, chỉ nhận định danh, máy chủ tự tính lại):
+  - `GET /api/kid/world`, `GET /api/kid/city?city=`;
+  - `POST /api/kid/city/seen`, `POST /api/kid/city/plot`;
+  - `POST /api/kid/city/practice`: con chạm giàn giáo → phiên TARGETED, **chỉ cho công trình đang chưa
+    vững**, mỗi kỹ năng một phiên mỗi ngày.
+- **Sửa kèm**: `kidHome` chỉ đọc phiên `DAILY_QUEST` (trước đây phiên TARGETED trong ngày sẽ bị hiểu
+  nhầm là nhiệm vụ hôm nay).
+- **Test hợp đồng** `packages/city/src/contract.test.ts`: mọi mã core sinh ra đều có trong catalogue
+  engine vẽ được.
+
+Cần làm khi triển khai lên Ubuntu: `pnpm db:deploy` (migration mới). Tôi không tự triển khai.
 
 ### Việc 2 — engine `packages/city` (15/09)
 
@@ -107,8 +139,9 @@ tiêu. Việc 2 đo trên iPad thật rồi chọn InstancedMesh/gộp theo ô h
 
 ### Tồn đọng
 
-- Việc 3 (gắn dữ liệu), việc 4 (màn hình, cờ `KID_UI`), việc 5 (nghiệm thu, hai bé dùng thử) chưa làm.
-- Số đo iPad thật cho ADR-20. Link bảng phong cách 6 khung vẫn chưa nhận được.
+- Việc 4 (màn hình, cờ `KID_UI`), việc 5 (nghiệm thu, hai bé dùng thử) chưa làm.
+- Còn mở cho việc 4: khi ẩn cửa hàng đồ sưu tầm ở chế độ thành phố, con nhận vật trang trí bằng cách nào
+  (đề xuất ở ADR-21). Link bảng phong cách 6 khung vẫn chưa nhận được.
 - `docs/06` chưa cập nhật hướng thành phố (tiêu chí 7, sẽ làm cùng việc 4).
 - `pnpm lint && pnpm test && pnpm build` xanh (15/09).
 

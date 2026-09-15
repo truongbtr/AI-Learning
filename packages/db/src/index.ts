@@ -2,6 +2,7 @@ import { PrismaClient } from "../generated/client";
 
 export * from "../generated/client";
 export * from "./chat";
+export * from "./city";
 export * from "./content/export";
 export * from "./content/import";
 export * from "./content/stats";

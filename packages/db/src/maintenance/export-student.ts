@@ -107,6 +107,12 @@ export async function exportStudent(db: PrismaClient, slug: string): Promise<Stu
     db.streak.findUnique({ where: { studentId } }),
   ]);
 
+  // The kid's cities (Pha 10): the lot order and what the child chose to build on each plot.
+  const cities = await db.studentCity.findMany({
+    where: { studentId },
+    orderBy: { subject: "asc" },
+  });
+
   const out: StudentExport = {
     $schema: "mtct/student-export/1",
     exportedAt: new Date().toISOString(),
@@ -253,6 +259,11 @@ export async function exportStudent(db: PrismaClient, slug: string): Promise<Stu
       starsTotal: stars.reduce((n, s) => n + s.delta, 0),
       ledger: stars.map((s) => ({ at: stamp(s.at), delta: s.delta, reason: s.reason })),
       badges: badges.map((b) => ({ code: b.badgeCode, earnedAt: stamp(b.earnedAt) })),
+      cities: cities.map((c) => ({
+        subject: c.subject,
+        buildings: c.skillOrder.map((id) => named(id)?.code ?? id),
+        plotBuilds: c.plotBuilds,
+      })),
       pets: pets.map((p) => ({ code: p.petCode, hatchedAt: stamp(p.hatchedAt) })),
       certificates: certificates.map((c) => ({
         kind: c.kind,
