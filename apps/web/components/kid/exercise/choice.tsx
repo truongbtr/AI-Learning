@@ -7,7 +7,8 @@ import { playSound } from "../sound";
 import { SPRING, STAGGER } from "../tokens";
 import { useSpeak } from "../use-speak";
 import { ExerciseFrame } from "./frame";
-import { type ExerciseProps, fillPlaceholders, imageSrc } from "./types";
+import { Picture } from "./picture";
+import { type ExerciseProps, fillPlaceholders } from "./types";
 
 /**
  * MCQ and LISTEN_CHOOSE — the same card grid, answered by tapping.
@@ -36,7 +37,6 @@ function ChoiceCard({
 }) {
   const reduce = useReducedMotion();
   const ref = useRef<HTMLButtonElement>(null);
-  const src = image ? imageSrc(image.value, image.kind) : null;
   const ring =
     state === "correct"
       ? "ring-[6px] ring-[#34C759]"
@@ -67,14 +67,7 @@ function ChoiceCard({
       data-testid="choice"
       data-picked={picked ? "true" : undefined}
     >
-      {image ? (
-        src ? (
-          // biome-ignore lint/performance/noImgElement: local SVG asset
-          <img src={src} alt={image.labelVi ?? ""} className="h-24 w-24 object-contain" />
-        ) : (
-          <span className="text-[64px] leading-none">{image.value}</span>
-        )
-      ) : null}
+      {image ? <Picture image={image} size={128} /> : null}
       {label ? (
         <span className="font-extrabold text-[34px] text-[#2B2B3A] leading-tight">{label}</span>
       ) : null}

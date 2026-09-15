@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import { HintBulb, SpeakerButton } from "../buttons";
 import { Mascot } from "../mascot";
 import { SPRING, STAGGER } from "../tokens";
-import { type ExerciseProps, fillPlaceholders, imageSrc } from "./types";
+import { Picture } from "./picture";
+import { speechLang } from "./speech-lang";
+import { type ExerciseProps, fillPlaceholders } from "./types";
 
 /**
  * The frame every exercise sits in: the question card, the speaker that reads it, the hint lamp,
@@ -35,7 +37,6 @@ export function ExerciseFrame({
 }) {
   const text = fillPlaceholders(spec.prompt.text, vars);
   const img = spec.prompt.image;
-  const src = img ? imageSrc(img.value, img.kind) : null;
 
   return (
     <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-5">
@@ -66,12 +67,7 @@ export function ExerciseFrame({
           className="flex items-center justify-center"
           data-testid="prompt-image"
         >
-          {src ? (
-            // biome-ignore lint/performance/noImgElement: a local SVG asset
-            <img src={src} alt={img.labelVi ?? ""} className="h-40 w-40 object-contain" />
-          ) : (
-            <span className="text-[92px] leading-none">{img.value}</span>
-          )}
+          <Picture image={img} size={208} />
         </motion.div>
       ) : null}
 
@@ -99,10 +95,13 @@ export function ModelFirst({
   line,
   onReady,
   mascot = "robot",
+  language,
 }: {
   line: string;
   onReady: () => void;
   mascot?: "robot" | "cu";
+  /** The exercise's language: an English model line is read by the English voice. */
+  language?: string;
 }) {
   return (
     <motion.div
@@ -122,7 +121,7 @@ export function ModelFirst({
           Con hiểu rồi!
         </button>
       </div>
-      <SpeakerButton text={line} auto />
+      <SpeakerButton text={line} lang={speechLang(line, language)} auto />
     </motion.div>
   );
 }

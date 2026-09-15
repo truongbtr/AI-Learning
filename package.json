@@ -51,10 +51,12 @@
     "art:build": "node scripts/art-build/build.mjs",
     "art:icons": "node scripts/art-icons.mjs",
     "art:check": "node scripts/art-check.mjs",
-    "art:sync": "node scripts/art-sync.mjs"
+    "art:sync": "node scripts/art-sync.mjs",
+    "art:emoji": "node scripts/emoji-vendor.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.0",
+    "@iconify-json/noto": "^1.2.7",
     "turbo": "^2.10.0",
     "typescript": "^5.9.0"
   }

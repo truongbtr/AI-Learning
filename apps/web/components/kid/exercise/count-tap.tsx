@@ -5,7 +5,8 @@ import { useState } from "react";
 import { playSound } from "../sound";
 import { SPRING, STAGGER } from "../tokens";
 import { ExerciseFrame } from "./frame";
-import { type ExerciseProps, imageSrc } from "./types";
+import { Picture } from "./picture";
+import type { ExerciseProps } from "./types";
 
 /**
  * COUNT_TAP: the child touches each thing and it is counted for them — the way a six-year-old
@@ -28,7 +29,6 @@ export function CountTapExercise({
   const target = spec.countTarget;
   const objects = target?.objects;
   const total = Math.max(1, Math.min(20, objects?.repeat ?? 6));
-  const src = objects ? imageSrc(objects.value, objects.kind) : null;
   const grid = target?.layout === "line";
 
   const tap = (i: number) => {
@@ -73,16 +73,12 @@ export function CountTapExercise({
                 data-testid="count-object"
                 data-counted={done ? "true" : undefined}
               >
-                {src ? (
-                  // biome-ignore lint/performance/noImgElement: local SVG asset
-                  <img
-                    src={src}
-                    alt=""
-                    className={`h-20 w-20 object-contain ${done ? "" : "opacity-90"}`}
-                  />
-                ) : (
-                  <span className="text-[62px] leading-none">{objects?.value ?? "⭐"}</span>
-                )}
+                <Picture
+                  image={objects ?? { kind: "emoji", value: "⭐" }}
+                  size={88}
+                  alt=""
+                  className={`pointer-events-none ${done ? "" : "opacity-90"}`}
+                />
                 {done ? (
                   <motion.span
                     initial={{ scale: 0 }}
