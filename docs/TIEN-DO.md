@@ -2,6 +2,68 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 6d — 15/09/2026 — Đọc phản hồi thật, ruột bài học, thư viện vật thể
+
+Trạng thái: **Việc 1 và việc 4 xong. Việc 2 xong đúng phần ưu tiên (107/182), phần còn lại (HK2) để
+sau. Việc 3 vượt mục tiêu (212/200 vật thể).** Không soạn bài luyện mới, đúng yêu cầu đề bài. `lint`
+/ `test` / `build` xanh · `content:validate` sạch · `content:import --dry-run` **0 thay đổi** sau khi
+nạp thật. Chạy song song với pha 8c, không dựng lại Docker. Chưa push.
+
+### Việc 1 — đọc `exercise-health.csv`, sửa theo dữ liệu thật
+
+Báo cáo đầy đủ: `content/_reports/dot-4.md`. Tóm tắt: chỉ có 20 lượt làm thật (2 phiên, 12/09).
+Phát hiện lại đúng lỗi pha 6b tưởng đã sửa — `EMATH.NBT.COUNT_TO_20` vẽ ảnh lặp (`repeat`) nhưng
+`frame.tsx`/`choice.tsx` (MCQ/LISTEN_CHOOSE) không đọc field này, chỉ vẽ một hình; pha 6b chỉ sửa
+đúng số liệu chứ chưa sửa hiển thị. Sửa bằng cách chuyển 19 bài MCQ → `COUNT_TAP` (cơ chế có sẵn vẽ
+đúng). Xác nhận `viet-bd-0049` (bài sai duy nhất khác) là dữ liệu cũ trước khi RETIRE ở đợt 2, không
+phải lỗi mới. Việc 4 (2 kỹ năng ESL "trống") xác nhận là quyết định đã chốt (`isActive=false`, docs/09
+§4b.3) — không soạn bài, không tự đổi quyết định.
+
+### Việc 2 — ruột 182 LessonUnit
+
+**107/182 kỹ năng đã có `objectives`/`vocabulary`/`concepts`/`sampleTasks`/`answerKeyNotes`/
+`contentText`** — đúng toàn bộ phần ưu tiên đề bài nêu: 86 bài Tiếng Việt tập một (Bài 0–83 +
+Ôn tập + Đánh giá cuối kỳ 1) và 21 bài Toán tập một (Bài 0–20), đọc thật từ
+`sach giao khoa/01-sgk-tieng-viet-1-tap-mot.pdf` và `01-sgk-toan-1-tap-mot.pdf`. **Chưa làm 75 bài
+còn lại** — Tiếng Việt tập hai (54 bài, HK2) và Toán tập hai (21 bài, HK2) chưa có số trang xác nhận
+trong DB (`pageFrom=null`) và thuộc chương trình các tuần sau 18, ngoài phạm vi khẩn của đợt này; ESL/
+ENL/EMATH ("Global Stage và MATH NOTES") **hiện chưa có `LessonUnit` nào cả** (182 unit hiện tại toàn
+bộ là VIET+VMATH) nên "làm sau" chưa có gì để làm — cần tạo skeleton trước ở một đợt khác nếu muốn.
+`answerKeyNotes` viết trong file nguồn nhưng **không tới được DB** (`lessonToRow()` ở
+`packages/content/src/to-rows.ts:99-116` không map field này — lỗi đã biết, không tự sửa code app);
+đã gộp nội dung đó vào `contentText` để phụ huynh không mất thông tin.
+
+**Phát hiện khi đọc sách:**
+- `01-sgk-toan-1-tap-mot.pdf` có ít nhất 2 đoạn trang bị **đóng nhầm trang sách Tiếng Việt** vào đúng
+  chỗ thiếu trang Toán (PDF tr.39–42 và 61–64, đáng lẽ là trang sách Toán 38–41 và 60–63). Bài 6 và
+  Bài 10 soạn thiếu phần bị mất trang, không bịa. Đã gửi việc riêng (`spawn_task`) đề nghị chủ dự án
+  kiểm tra/quét lại 8 trang này.
+- Mã `KNTT-TV1-T1-ONTAP` (skeleton ghi trang sách 174–179) trùng hoàn toàn phạm vi trang với Bài 81–83
+  (cũng 174–179) — vì Bài 81 và 82 trong sách thật ra chính là "ÔN TẬP" (trang 174, 176), không phải
+  "Bài đọc tổng hợp" như tên skeleton ghi; chỉ Bài 83 (trang 178) mới là bài đọc thật ("Voi, hổ và
+  khỉ"). Không tự sửa tên/trang skeleton (ngoài phạm vi "điền nội dung" của việc 2) — ghi lại để chủ
+  dự án hoặc đợt sau đối chiếu và quyết định gộp/sửa.
+
+### Việc 3 — thư viện vật thể
+
+**70 → 212 vật thể** (mục tiêu ≥ 200), thêm đúng 7 nhóm bám sát từ vựng các gói `ESL VOC.*` đang dạy
+(trái cây/món ăn, con vật, quần áo/cơ thể, đồ dùng học tập/hình khối, đồ chơi/sân chơi, nội thất/gia
+đình, phương tiện/thời tiết/nhạc cụ/vật đếm Toán). `pnpm art:check` sạch — 0.63 MB / 40 MB, vật thể
+nặng nhất 1.8 KB (trần 6 KB). Đã `art:sync` sang `apps/web/public/art`. Ghi chú thật: 0 bài luyện nào
+hiện dùng `ImageRef.kind="asset"` (toàn bộ dùng emoji) — mở rộng này là hạ tầng cho tương lai, chưa có
+bài nào trỏ tới (nên cũng không có bài nào trỏ tới hình thiếu).
+
+### Ghi vào danh sách cho sau (không sửa vì đụng code app hoặc ngoài phạm vi)
+
+1. `frame.tsx`/`choice.tsx` cần vẽ lặp theo `ImageRef.repeat` cho MCQ/LISTEN_CHOOSE — hiện chỉ
+   `COUNT_TAP` vẽ đúng, dù schema (`packages/content/src/exercise.ts:48-51`) ghi rõ ý định khác.
+2. Planner nên tránh xếp `WRITE_PHOTO`/`SPEAK_ANSWER` làm câu đầu phiên (cần người lớn ngay lúc đó).
+3. `lessonToRow()` cần lưu `answerKeyNotes` vào DB (thêm cột hoặc gộp có kiểm soát vào `contentText`
+   ở tầng import, thay vì để từng lesson tự gộp tay như đợt này).
+4. Đối chiếu lại trang/tên `KNTT-TV1-T1-ONTAP` vs Bài 81–82 (mục Việc 2 ở trên).
+5. Xin 8 trang Toán bị đóng nhầm (mục Việc 2 ở trên) — cần bản quét đúng để soạn nốt Bài 6, Bài 10.
+6. 75 bài LessonUnit còn lại (Tiếng Việt tập hai, Toán tập hai) — cần trang sách trước khi soạn.
+
 ## Pha 6b — 14/09/2026 — Vá 129 kỹ năng trống của tuần 1–12
 
 Trạng thái: **129 → 0 kỹ năng tuần 1–12 còn trống ở cả 6 môn.** 130 gói · **5.010 bài** · tất cả

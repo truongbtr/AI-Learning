@@ -44,10 +44,20 @@ Lượt làm sai của thanh xảy ra **trước khi bài đó nghỉ hưu** —
 `Evidence`/`SkillMastery` (§0), nên vẫn để ba mẹ tự quyết ở dashboard, đúng như đợt 2 đã ghi. Không
 sửa gì thêm ở đây — chỉ xác nhận lại.
 
-## 3. Phát hiện thật — mở gói kiểm tra, tìm ra lỗi hiển thị
+## 3. Phát hiện thật — một lỗi pha 6b tưởng đã sửa, hoá ra sửa chưa tới nơi
 
 > `emath-count20-0016` — thy làm, **3 lần thử, dùng cả 3 gợi ý, 119 giây** mới đúng. Bài: "How many?
 > Count, then tap." — 🚗 lặp **16** lần, chọn 15/16/17.
+
+**Đây chính là lượt làm mà `docs/TIEN-DO.md` (pha 6b, 14/09) đã nhắc tới** — thanh/thy làm bài này
+ngày 12/09, và đúng lượt làm 119 giây/3 lần thử này là thứ khiến pha 6b phát hiện "cả 20 câu trắc
+nghiệm của `EMATH.NBT.COUNT_TO_20` vẽ một vật mà hỏi 2…20". Pha 6b đã **sửa dữ liệu** (đặt đúng
+`repeat` 1→20, đổi câu lệnh thành "How many? Count, then tap.") và ghi "quét toàn kho không còn gói
+nào như vậy". Nhưng lượt làm thật của thy xảy ra **trước** lần sửa đó (12/09, sửa xong 14/09) — nên
+dữ liệu quan sát được là hàng thật của bản **chưa sửa**. Vấn đề: dò lại hôm nay thì bài
+`emath-count20-0016` **vẫn còn `repeat: 16` trong file — đúng như pha 6b đã sửa** — nhưng con vẫn
+chỉ nhìn thấy **một** con xe. Tức là **pha 6b sửa đúng dữ liệu nhưng chưa sửa tới gốc**: họ kiểm bằng
+cách đọc file JSON (thấy `repeat` đúng số), không mở app lên xem app có **vẽ** đúng số lần hay không.
 
 Mở `content/exercises/emath/NBT.COUNT_TO_20.pack.json` thì bài này là **MCQ**, ảnh
 `{kind:"emoji", value:"🚗", repeat:16}`. Đọc code hiển thị

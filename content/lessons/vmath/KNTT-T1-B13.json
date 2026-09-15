@@ -1,0 +1,62 @@
+{
+  "code": "KNTT-T1-B13",
+  "subject": "VMATH",
+  "title": "Bài 13. Luyện tập chung",
+  "book": {
+    "name": "Toán 1 — tập một (Kết nối tri thức với cuộc sống)",
+    "file": "01-sgk-toan-1-tap-mot.pdf",
+    "pageFrom": 86,
+    "pageTo": 91
+  },
+  "weekFrom": 14,
+  "weekTo": 14,
+  "objectives": [
+    "Ôn tập tổng hợp phép cộng, phép trừ trong phạm vi 10 qua nhiều dạng bài khác nhau.",
+    "Luyện tính nhẩm nhanh và chính xác các phép cộng, phép trừ đã học.",
+    "Tập nhận ra mối liên hệ giữa các phép tính (một phép cộng biết trước, suy ra được các phép trừ liên quan).",
+    "Làm quen dạng so sánh một số với một phép tính bằng dấu >, <, =."
+  ],
+  "vocabulary": ["cộng", "trừ", "lớn hơn", "bé hơn", "bằng nhau", "so sánh"],
+  "concepts": [
+    "quan hệ giữa phép cộng và phép trừ (phép tính ngược nhau)",
+    "so sánh một số với kết quả một phép tính",
+    "sơ đồ \"nhà số\", \"tháp số\"",
+    "chuỗi phép tính nhiều bước"
+  ],
+  "sampleTasks": [
+    {
+      "text": "Số? Biết 3+5=8, tính tiếp: 8-3=?, 8-5=?",
+      "answer": "8-3=5; 8-5=3",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Số? Ba \"ngôi nhà\" số: nhà mái hồng ghi 9, các hàng bên dưới là hai số cộng lại bằng 9: (5,4) đã cho sẵn, (6,?), (?,2), (0,?)",
+      "answer": "6+3=9; 7+2=9; 0+9=9",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Số? Tháp số 4 tầng: tầng đáy ghi 1, 2, 1, 0; mỗi ô ở tầng trên bằng tổng hai ô liền kề bên dưới. Tính các ô còn thiếu và đỉnh tháp.",
+      "answer": "Tầng 3: 3, 3, 1; tầng 2: 6, 4; đỉnh tháp: 10",
+      "type": "luyen tap"
+    },
+    {
+      "text": ">; <; =? a) 9 ? 4+1;  8 ? 10-2;  7 ? 2+6",
+      "answer": "9 > 5; 8 = 8; 7 < 8",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Tìm kết quả phép tính ghi trên mỗi quả bưởi (7-2, 3+3, 8-3, 3+1, 8-4, 2+4, 0+4, 10-4, 4+1, 2+3), rồi cho biết có mấy quả ghi phép tính bằng 5.",
+      "answer": "7-2=5; 3+3=6; 8-3=5; 3+1=4; 8-4=4; 2+4=6; 0+4=4; 10-4=6; 4+1=5; 2+3=5 → có 4 quả bằng 5",
+      "type": "luyen tap"
+    }
+  ],
+  "answerKeyNotes": "Trang 86: 8-3=5, 8-5=3, 6-4=2, 6-2=4, 10-2=8, 10-8=2. Trang 87: 3+4=7, 7-4=3, 1+7=8, 8-1=7, 5-0=5, 5-5=0; nhà số 9: 6+3=9, 7+2=9, 0+9=9; nhà 8: 5+3=8, 7+1=8, 0+8=8; nhà 7: 3+4=7, 6+1=7, 7+0=7; tháp số: tầng 3 là 3,3,1 rồi tầng 2 là 6,4, đỉnh là 10. Trang 91: so sánh a) 9>5(=), 8=8, 7<8; b) 3+4=7(=), 7+2=9>8, 10-2=8>7. Trang 89: 4 quả bưởi ghi phép tính bằng 5.",
+  "contentText": "Bài luyện tập chung ôn lại phép cộng, phép trừ trong phạm vi 10 dưới nhiều hình thức mới lạ: cột số liên quan (biết 3+5=8 thì tính luôn 8-3, 8-5), \"ngôi nhà số\" (mái ghi tổng, tìm hai số cộng lại bằng đúng số đó), và \"tháp số\" (mỗi tầng trên bằng tổng hai ô liền kề bên dưới, ví dụ đáy 1-2-1-0 dẫn tới đỉnh tháp là 10). Bé cũng luyện so sánh bằng dấu >, <, = giữa một số và một phép tính, ví dụ 9 so với 4+1 (9 > 5). Cuối bài có bài đếm phép tính bằng 5 trên các quả bưởi để luyện tính nhẩm nhanh và chính xác.",
+  "skills": [
+    { "code": "VMATH.SO.CONG_PV_10", "weight": 1 },
+    { "code": "VMATH.SO.TRU_PV_10", "weight": 0.7 },
+    { "code": "VMATH.SO.BANG_CONG_TRU_10", "weight": 0.7 },
+    { "code": "VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG", "weight": 1 }
+  ],
+  "source": { "extractedBy": "claude-code", "at": "2026-09-15", "verified": true }
+}

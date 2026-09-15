@@ -22,6 +22,13 @@ import {
   shade,
   star,
 } from "./lib.mjs";
+import { OBJECTS_ANIMALS } from "./objects-animals.mjs";
+import { OBJECTS_CLOTHES_BODY } from "./objects-clothes-body.mjs";
+import { OBJECTS_FOOD } from "./objects-food.mjs";
+import { OBJECTS_HOME_FAMILY } from "./objects-home-family.mjs";
+import { OBJECTS_SCHOOL_SHAPES } from "./objects-school-shapes.mjs";
+import { OBJECTS_TOYS_PLAYGROUND } from "./objects-toys-playground.mjs";
+import { OBJECTS_VEHICLES_WEATHER_MUSIC } from "./objects-vehicles-weather-music.mjs";
 
 const C = {
   apple: "#E8604C",
@@ -1078,6 +1085,15 @@ export const OBJECTS = [
       rect(42, 44, 16, 20, 4, P.reward) +
       circle(50, 56, 4, shade(P.reward)),
   },
+  // ---------------------------------------------------------------- đợt 4 (pha 6d, việc 3): thêm
+  // vật thể theo đúng từ vựng các gói ESL VOC.* đang dạy, để thư viện lên ≥ 200 hình.
+  ...OBJECTS_FOOD,
+  ...OBJECTS_ANIMALS,
+  ...OBJECTS_CLOTHES_BODY,
+  ...OBJECTS_SCHOOL_SHAPES,
+  ...OBJECTS_TOYS_PLAYGROUND,
+  ...OBJECTS_HOME_FAMILY,
+  ...OBJECTS_VEHICLES_WEATHER_MUSIC,
 ];
 
 export function buildObjects(write, svg) {

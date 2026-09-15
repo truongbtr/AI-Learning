@@ -1,0 +1,62 @@
+{
+  "code": "KNTT-T1-B19",
+  "subject": "VMATH",
+  "title": "Bài 19. Ôn tập hình học",
+  "book": {
+    "name": "Toán 1 — tập một (Kết nối tri thức với cuộc sống)",
+    "file": "01-sgk-toan-1-tap-mot.pdf",
+    "pageFrom": 110,
+    "pageTo": 111
+  },
+  "weekFrom": 18,
+  "weekTo": 18,
+  "objectives": [
+    "Ôn nhận biết và gọi đúng tên hình vuông, hình tròn, hình tam giác, hình chữ nhật.",
+    "Ôn nhận biết khối lập phương giữa nhiều loại khối khác (khối hộp chữ nhật, khối trụ).",
+    "Nhận ra quy luật lặp lại của một dãy hình.",
+    "Tập ghép các hình tam giác bằng nhau thành hình mới."
+  ],
+  "vocabulary": [
+    "hình vuông",
+    "hình tròn",
+    "hình tam giác",
+    "hình chữ nhật",
+    "khối lập phương",
+    "quy luật"
+  ],
+  "concepts": [
+    "gọi tên hình phẳng cơ bản",
+    "phân biệt khối lập phương với các khối khác",
+    "quy luật lặp lại của dãy hình",
+    "ghép hình từ các hình tam giác bằng nhau"
+  ],
+  "sampleTasks": [
+    {
+      "text": "Cho 10 hình dán nhãn A đến K. a) Những hình nào là hình vuông? b) Những hình nào là hình tam giác? c) Những hình nào là hình tròn? d) Những hình nào là hình chữ nhật?",
+      "answer": "a) A; b) G, K; c) B, E; d) C, I (D là hình thoi, H là ngôi sao, không thuộc 4 loại được hỏi)",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Trong 6 khối vẽ 3D dán nhãn A đến G, những hình nào là khối lập phương?",
+      "answer": "A, C, E (B và D là khối hộp chữ nhật, G là khối trụ)",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Hình thích hợp đặt vào dấu \"?\" trong dãy hình lặp lại theo chu kỳ 3 là hình nào? (tròn xanh lá, tam giác xanh dương, vuông đỏ, tròn xanh lá, tam giác xanh dương, vuông đỏ, tròn xanh lá, ?, vuông đỏ)",
+      "answer": "B (hình tam giác xanh dương) — theo đúng chu kỳ lặp tròn-tam giác-vuông",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Từ bốn hình tam giác như nhau, em hãy ghép thành: a) hình mũi tên chỉ lên trên; b) một hình tam giác lớn.",
+      "answer": "a) Ghép 2 tam giác nhỏ thành hình vuông làm thân mũi tên, 2 tam giác còn lại ghép thành 1 tam giác lớn hơn làm đầu mũi tên; b) ghép cả 4 tam giác nhỏ thành một tam giác lớn duy nhất",
+      "type": "luyen tap"
+    }
+  ],
+  "answerKeyNotes": "Trang 110 bài 1: hình vuông A; hình tam giác G, K; hình tròn B, E; hình chữ nhật C, I (D là hình thoi, H là ngôi sao không tính). Trang 110 bài 2: khối lập phương là A, C, E (B, D là khối hộp chữ nhật; G là khối trụ). Trang 111 bài 3: dãy hình lặp theo chu kỳ 3 (tròn-tam giác-vuông), ô trống là hình tam giác xanh dương (đáp án B). Trang 111 bài 4: ghép 4 tam giác thành hình mũi tên (2 tam giác ghép thành hình vuông làm thân, 2 tam giác ghép thành tam giác lớn làm đầu mũi tên) hoặc ghép cả 4 tam giác thành 1 tam giác lớn.",
+  "contentText": "Bài ôn tập cuối chương hình học: bé gọi tên đúng hình vuông, hình tròn, hình tam giác, hình chữ nhật trong 10 hình dán nhãn (chú ý có thêm hình thoi và ngôi sao không thuộc 4 loại này), rồi tìm khối lập phương giữa 6 khối 3D khác nhau (phân biệt với khối hộp chữ nhật và khối trụ). Bé luyện đoán hình tiếp theo trong một dãy lặp lại theo quy luật 3 hình (tròn - tam giác - vuông). Bài cuối là ghép hình sáng tạo: dùng 4 hình tam giác bằng nhau để ghép thành một mũi tên chỉ lên hoặc một hình tam giác lớn hơn — bài không có đáp số bằng số mà là cách ghép hợp lý.",
+  "skills": [
+    { "code": "VMATH.HH.HINH_VUONG_TRON_TAM_GIAC_CN", "weight": 1 },
+    { "code": "VMATH.HH.KHOI_HOP_KHOI_LAP_PHUONG", "weight": 0.7 }
+  ],
+  "source": { "extractedBy": "claude-code", "at": "2026-09-15", "verified": true }
+}

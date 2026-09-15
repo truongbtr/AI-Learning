@@ -1,0 +1,61 @@
+{
+  "code": "KNTT-T1-B12",
+  "subject": "VMATH",
+  "title": "Bài 12. Bảng cộng, bảng trừ trong phạm vi 10",
+  "book": {
+    "name": "Toán 1 — tập một (Kết nối tri thức với cuộc sống)",
+    "file": "01-sgk-toan-1-tap-mot.pdf",
+    "pageFrom": 80,
+    "pageTo": 85
+  },
+  "weekFrom": 13,
+  "weekTo": 14,
+  "objectives": [
+    "Thuộc bảng cộng và bảng trừ trong phạm vi 10.",
+    "Nhận ra quy luật: các phép cộng có cùng tổng \"họ hàng\" với nhau (1+6=2+5=3+4=... =7).",
+    "Tính nhẩm nhanh phép cộng, phép trừ trong phạm vi 10.",
+    "Thấy được mối liên hệ giữa phép cộng và phép trừ (một phép cộng suy ra được hai phép trừ)."
+  ],
+  "vocabulary": ["bảng cộng", "bảng trừ", "tổng", "tính nhẩm", "dấu +", "dấu –"],
+  "concepts": [
+    "các phép cộng cùng tổng",
+    "các phép trừ cùng số bị trừ",
+    "quan hệ cộng-trừ (phép tính ngược nhau)",
+    "chuỗi phép tính hai, ba bước"
+  ],
+  "sampleTasks": [
+    {
+      "text": "Bảng cộng: 6 hàng hoa (đỏ và vàng), mỗi hàng 7 bông với số hoa đỏ tăng dần: 1+6, 2+5, 3+4, 4+3, 5+2, 6+1. Tất cả các phép tính này có gì giống nhau?",
+      "answer": "Tất cả đều bằng 7",
+      "type": "kham pha"
+    },
+    {
+      "text": "Em hoàn thành bảng cộng hình tam giác: 6+2=?, 8+2=?, 6+3=?, 4+4=?, 6+4=?, 4+5=?, 2+6=?, 4+6=?, 2+7=?, 2+8=?",
+      "answer": "6+2=8; 8+2=10; 6+3=9; 4+4=8; 6+4=10; 4+5=9; 2+6=8; 4+6=10; 2+7=9; 2+8=10",
+      "type": "hoat dong"
+    },
+    {
+      "text": "Bảng trừ: 6 hàng hoa (cam và tím), mỗi hàng 8 bông với số hoa tím tăng dần: 8-1, 8-2, 8-3, 8-4, 8-5, 8-6, 8-7.",
+      "answer": "8-1=7; 8-2=6; 8-3=5; 8-4=4; 8-5=3; 8-6=2; 8-7=1",
+      "type": "kham pha"
+    },
+    {
+      "text": "Số? Khung tranh có 4 quả bóng đỏ và 3 quả bóng xanh dương. Bốn phép tính: 4+3=?, 3+4=?, 7-3=?, 7-4=?",
+      "answer": "4+3=7; 3+4=7; 7-3=4; 7-4=3",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Số? Sơ đồ chuỗi phép tính: 8 --(-2)--> ? --(+2)--> ? --(+2)--> ?",
+      "answer": "8-2=6; 6+2=8; 8+2=10",
+      "type": "luyen tap"
+    }
+  ],
+  "answerKeyNotes": "Bảng cộng tam giác (trang 81): 6+2=8, 8+2=10, 6+3=9, 4+4=8, 6+4=10, 4+5=9, 2+6=8, 4+6=10, 2+7=9, 2+8=10. Bảng trừ tam giác (trang 83): 3-2=1, 5-2=3, 5-3=2, 5-4=1, 7-4=3, 7-5=2, 7-6=1, 9-6=3, 9-7=2, 9-8=1. Trang 84: 4+3=7, 3+4=7, 7-3=4, 7-4=3; 5+3=8, 3+5=8, 8-3=5, 8-5=3; chuỗi 5+4=9 rồi 9-4=5; chuỗi 8-2=6, 6+2=8, 8+2=10.",
+  "contentText": "Hôm nay bé ôn lại bảng cộng và bảng trừ trong phạm vi 10 bằng tranh hoa nhiều màu: các phép cộng có cùng tổng (như 1+6, 2+5, 3+4 đều bằng 7) được xếp cạnh nhau để bé thấy quy luật, tương tự với các phép trừ cùng số bị trừ (8-1=7, 8-2=6,... đến 8-7=1). Bé điền bảng cộng, bảng trừ hình tam giác còn thiếu và chơi ghép cánh hoa với chú ong theo đúng kết quả. Sách cũng cho bé thấy cộng và trừ liên quan tới nhau qua các cặp phép tính như 4+3=7 và 7-4=3, hoặc chuỗi ba bước như 8-2=6, 6+2=8, 8+2=10. Ba mẹ có thể cùng bé đọc to bảng cộng, bảng trừ mỗi ngày vài phút để bé nhớ nhanh hơn.",
+  "skills": [
+    { "code": "VMATH.SO.BANG_CONG_TRU_10", "weight": 1 },
+    { "code": "VMATH.SO.TINH_NHAM_PV_10", "weight": 0.7 },
+    { "code": "VMATH.GT.VIET_PHEP_TINH_TU_TINH_HUONG", "weight": 0.7 }
+  ],
+  "source": { "extractedBy": "claude-code", "at": "2026-09-15", "verified": true }
+}

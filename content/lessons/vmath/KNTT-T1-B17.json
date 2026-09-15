@@ -1,0 +1,61 @@
+{
+  "code": "KNTT-T1-B17",
+  "subject": "VMATH",
+  "title": "Bài 17. Ôn tập các số trong phạm vi 10",
+  "book": {
+    "name": "Toán 1 — tập một (Kết nối tri thức với cuộc sống)",
+    "file": "01-sgk-toan-1-tap-mot.pdf",
+    "pageFrom": 102,
+    "pageTo": 105
+  },
+  "weekFrom": 17,
+  "weekTo": 17,
+  "objectives": [
+    "Ôn đọc, đếm và nối các số từ 0 đến 10 với từ chỉ số tương ứng (một, hai, ba...).",
+    "Ôn so sánh hai số hoặc so sánh một số với một phép tính bằng dấu >, <, =.",
+    "Sắp xếp các số theo thứ tự từ bé đến lớn, tìm số lớn nhất và số bé nhất.",
+    "Giải bài toán suy luận đơn giản về thứ tự và về chia số trong phạm vi 10."
+  ],
+  "vocabulary": ["một, hai, ba... mười", "lớn hơn", "bé hơn", "bằng nhau", "thứ tự"],
+  "concepts": [
+    "đọc số và từ chỉ số",
+    "so sánh số với số, số với phép tính",
+    "sắp xếp thứ tự tăng dần",
+    "suy luận về vị trí và về số lượng"
+  ],
+  "sampleTasks": [
+    {
+      "text": "Số? Nối mỗi bể cá (đếm số con cá) với số và từ chỉ số tương ứng: một, hai, ba, bốn, năm, sáu, bảy, tám, chín, mười.",
+      "answer": "một=1, hai=2, ba=3, bốn=4, năm=5, sáu=6, bảy=7, tám=8, chín=9, mười=10",
+      "type": "luyen tap"
+    },
+    {
+      "text": ">; <; =? a) 6 ? 8   b) 9 ? 9-1   c) 10 ? 8+2   d) 4+3 ? 7   e) 5+1 ? 8   g) 3+0 ? 2",
+      "answer": "a) <  b) >  c) =  d) =  e) <  g) >",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Cho các số: 6, 8, 5, 7. a) Sắp xếp các số đó theo thứ tự từ bé đến lớn. b) Trong các số đó, số nào lớn nhất? Số nào bé nhất? c) Những số nào vừa lớn hơn 5, vừa bé hơn 8?",
+      "answer": "a) 5, 6, 7, 8; b) lớn nhất: 8, bé nhất: 5; c) 6 và 7",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Bài toán suy luận: Có 3 bạn rùa đi dạo, rùa xanh đi thứ nhất, rùa vàng đi thứ hai, rùa nâu đi thứ ba. Nếu bạn rùa đỏ vào giữa rùa xanh và rùa vàng thì khi đó rùa nâu đi thứ mấy?",
+      "answer": "Rùa nâu đi thứ tư (vì rùa đỏ chen vào vị trí thứ hai, đẩy rùa vàng xuống thứ ba và rùa nâu xuống thứ tư)",
+      "type": "luyen tap"
+    },
+    {
+      "text": "Có 3 bạn thỏ đang chơi thì trời mưa, các bạn chạy vào cả hai chuồng A và B. Hỏi mỗi chuồng có mấy bạn thỏ, biết rằng số thỏ ở chuồng A nhiều hơn số thỏ ở chuồng B?",
+      "answer": "Chuồng A có 2 con, chuồng B có 1 con (vì 2 + 1 = 3 và A nhiều hơn B)",
+      "type": "luyen tap"
+    }
+  ],
+  "answerKeyNotes": "Trang 102: nối đủ 10 số với từ chỉ số từ một đến mười. Trang 103: so sánh — a) 6<8; b) 9>8; c) 10=10; d) 7=7; e) 6<8; g) 3>2. Trang 104: sắp xếp 5,6,7,8 (lớn nhất 8, bé nhất 5, vừa lớn hơn 5 vừa bé hơn 8 là 6 và 7); ngôi sao nối các số chẵn 2,4,6,8,10. Trang 105: rùa nâu đi thứ tư; thỏ chuồng A có 2 con, chuồng B có 1 con.",
+  "contentText": "Bài ôn tập tổng hợp về các số từ 0 đến 10: đọc số, nối số với từ chỉ số (một, hai, ba... mười), và so sánh hai số hoặc so sánh số với một phép tính bằng dấu >, <, = (ví dụ 9 so với 9-1 thì 9 > 8). Bé luyện sắp xếp các số 5, 6, 7, 8 theo thứ tự từ bé đến lớn và tìm số lớn nhất, số bé nhất. Hai bài cuối là bài toán suy luận vui: đoán thứ tự của rùa nâu khi có thêm một bạn rùa đỏ chen vào giữa (đáp án: thứ tư), và chia 3 bạn thỏ vào 2 chuồng sao cho chuồng A nhiều hơn chuồng B (đáp án hợp lý: A có 2 con, B có 1 con).",
+  "skills": [
+    { "code": "VMATH.SO.SO_1_10", "weight": 1 },
+    { "code": "VMATH.SO.SO_SANH_1_10", "weight": 0.7 },
+    { "code": "VMATH.SO.TACH_GOP_10", "weight": 0.7 }
+  ],
+  "source": { "extractedBy": "claude-code", "at": "2026-09-15", "verified": true }
+}
