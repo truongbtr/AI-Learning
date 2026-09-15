@@ -11,7 +11,7 @@ export function Logo({ className, markOnly = false }: { className?: string; mark
       {markOnly ? null : (
         <span className="flex flex-col leading-none">
           <span className="font-kid text-[15px] font-extrabold tracking-tight text-ink-900">
-            Thy &amp; Thanh
+            Mai Thy &amp; Chí Thanh
           </span>
           <span className="mt-0.5 text-[11px] font-bold uppercase tracking-[0.18em] text-ink-400">
             Học cùng

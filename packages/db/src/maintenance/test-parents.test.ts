@@ -4,7 +4,7 @@ import { classifyParent, type ParentChildLink } from "./test-parents";
 const child = (slug: string, isProtected = false): ParentChildLink => ({
   studentId: `id-${slug}`,
   slug,
-  nickname: slug === "thy" ? "Thy" : slug === "thanh" ? "Thanh" : "Bé Thử",
+  nickname: slug === "thy" ? "Mai Thy" : slug === "thanh" ? "Chí Thanh" : "Bé Thử",
   isProtected,
 });
 
@@ -24,7 +24,7 @@ describe("cleaning up e2e parent accounts (docs/08 pha 8 việc 0.2)", () => {
   /**
    * The one the owner asked to be checked before anything was deleted. A junk-looking username is
    * not enough: if Ba or Mẹ's real login happens to match the pattern, the link to Mai Thy or Chí
-   * Thanh is what decides, and it decides "keep".
+   * Chí Thanh is what decides, and it decides "keep".
    */
   it("keeps an account still linked to a real child, whatever its username looks like", () => {
     for (const slug of ["thy", "thanh"]) {

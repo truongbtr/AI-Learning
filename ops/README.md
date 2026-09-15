@@ -26,7 +26,7 @@ DB  ◀─(pnpm ops:apply, người duyệt)────────────
   "schemaVersion": 1,
   "createdBy": "claude-chat",
   "createdAt": "2026-09-12T21:10:00+07:00",
-  "reason": "Thy sai nham_b_d 4 lần trong 9 ngày, thang rèn đang đứng ở bậc 2",
+  "reason": "Mai Thy sai nham_b_d 4 lần trong 9 ngày, thang rèn đang đứng ở bậc 2",
   "ops": [
     {
       "type": "planHint",

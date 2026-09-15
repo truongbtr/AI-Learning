@@ -61,7 +61,7 @@ Cả ba đều tính lại từ `Session(status=COMPLETED)` theo **ngày riêng 
 Pha 3 vẽ 4 khu Thành phố Robot nhưng chỉ 1 khu Vườn Kỳ Diệu (`docs/08` pha 3 việc 1 chỉ đòi "tối
 thiểu 1 khu"). Chủ dự án yêu cầu vẽ nốt `thap-chu`, `tram-khong-gian`, `ben-tau-tieng-anh` phiên bản
 vườn, đủ 3 lớp, theo `content/art/STYLE.md` — để thế giới của Mai Thy cân với thế giới của Chí
-Thanh. Tổng lớp nền: 15 → **24**.
+Chí Thanh. Tổng lớp nền: 15 → **24**.
 
 ## Hệ quả
 

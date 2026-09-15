@@ -21,12 +21,12 @@ const suffix = Date.now().toString(36).slice(-5);
 const PARENT = { username: `me-${suffix}`, displayName: "Mẹ", password: "Me-TamThoi-2026!" };
 const THY = {
   username: `thy-${suffix}`,
-  nickname: "Thy",
+  nickname: "Mai Thy",
   pin: ["cat", "rabbit", "butterfly", "fish"],
 };
 const THANH = {
   username: `thanh-${suffix}`,
-  nickname: "Thanh",
+  nickname: "Chí Thanh",
   pin: ["dog", "lion", "elephant", "turtle"],
 };
 const PIC_LABEL: Record<string, string> = {
@@ -142,7 +142,7 @@ test("2. admin creates 1 parent + 2 children (UI dialog for a child, API for the
   await expect(dialog).toBeVisible();
   await dialog.getByLabel("Vai trò").selectOption("CHILD");
   await dialog.getByLabel("Tên đăng nhập").fill(THY.username);
-  await dialog.getByLabel("Tên hiển thị").fill("Thy");
+  await dialog.getByLabel("Tên hiển thị").fill("Mai Thy");
   await dialog.getByLabel("Họ tên đầy đủ").fill("Mai Thy");
   await dialog.getByLabel("Tên gọi ở nhà").fill(THY.nickname);
   await dialog.getByLabel("Sở thích (phẩy)").fill("múa, vẽ");
@@ -157,7 +157,7 @@ test("2. admin creates 1 parent + 2 children (UI dialog for a child, API for the
     data: {
       role: "CHILD",
       username: THANH.username,
-      displayName: "Thanh",
+      displayName: "Chí Thanh",
       avatarKey: "boy-1",
       pictureSetKey: "animals",
       pin: THANH.pin,
@@ -181,7 +181,7 @@ test("2. admin creates 1 parent + 2 children (UI dialog for a child, API for the
   ids.thyStudent = thyRow.student!.id;
   ids.thanhStudent = thanhRow.student!.id;
 
-  // Parent linked to Thy only (Thanh stays unlinked to prove the 403 later).
+  // Parent linked to Mai Thy only (Chí Thanh stays unlinked to prove the 403 later).
   const parent = await page.request.post("/api/admin/users", {
     data: {
       role: "PARENT",
@@ -208,14 +208,14 @@ test("3. child taps the avatar card, picks 4 pictures and sees the home name —
   await page.goto("/login");
   await page
     // The card carries a drawn character since phase 3, not an emoji (docs/08 pha 3 việc 5), and
-    // the newest card is this run's own child — a dev database also holds the seeded "Thy".
-    .getByRole("button", { name: "Thy", exact: true })
+    // the newest card is this run's own child — a dev database also holds the seeded "Mai Thy".
+    .getByRole("button", { name: "Mai Thy", exact: true })
     .last()
     .click();
   await expect(page.getByText("Chọn 4 hình của con nhé")).toBeVisible();
   await kidPickPin(page, THY.pin);
   await expect(page).toHaveURL(/\/kid\/home/);
-  await expect(page.getByText("Chào Thy!")).toBeVisible();
+  await expect(page.getByText("Chào Mai Thy!")).toBeVisible();
   await page.screenshot({ path: join(SHOTS, "kid-home.png"), fullPage: true });
   // Child cannot open the parent area.
   await page.goto("/parent");
@@ -228,7 +228,7 @@ test("4. five wrong pins lock the child for 10 minutes and write 5 LoginAudit ro
   await page.goto("/login");
   // The last card is the child this run created; locking the seeded one would make the test
   // unrepeatable for ten minutes.
-  await page.getByRole("button", { name: "Thanh", exact: true }).last().click();
+  await page.getByRole("button", { name: "Chí Thanh", exact: true }).last().click();
   test.setTimeout(240_000);
   const wrong = ["cat", "cat", "cat", "cat"];
   let wrongCount = 0;
@@ -266,16 +266,16 @@ test("4. five wrong pins lock the child for 10 minutes and write 5 LoginAudit ro
 test("5. authorization: child → other child 403, unlinked parent 403, guest → /login", async ({
   page,
 }) => {
-  // Child Thy asks for Thanh's mastery → 403; own → 200.
+  // Child Mai Thy asks for Chí Thanh's mastery → 403; own → 200.
   await page.goto("/login");
-  await page.getByRole("button", { name: "Thy", exact: true }).last().click();
+  await page.getByRole("button", { name: "Mai Thy", exact: true }).last().click();
   await kidPickPin(page, THY.pin);
   await expect(page).toHaveURL(/\/kid\/home/);
   expect((await page.request.get(`/api/students/${ids.thanhStudent}/mastery`)).status()).toBe(403);
   expect((await page.request.get(`/api/students/${ids.thyStudent}/mastery`)).status()).toBe(200);
   expect((await page.request.get("/api/admin/users")).status()).toBe(403);
 
-  // Parent (linked to Thy only) — first login forces a password change, then Thanh → 403, Thy → 200.
+  // Parent (linked to Mai Thy only) — first login forces a password change, then Chí Thanh → 403, Mai Thy → 200.
   await logout(page);
   await adultLogin(page, PARENT.username, PARENT.password);
   await expect(page).toHaveURL(/\/change-password/);

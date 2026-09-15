@@ -71,7 +71,7 @@ async function adminLogin(page: Page): Promise<void> {
   if (!studentId) studentId = await findStudent(page, "thy");
 }
 
-/** The dev child the phase-3 suite uses; by slug, since a dev database holds several "Thy". */
+/** The dev child the phase-3 suite uses; by slug, since a dev database holds several "Mai Thy". */
 async function findStudent(page: Page, slug: string): Promise<string> {
   const users = await page.request.get("/api/admin/users").then((r) => r.json());
   const child = (users.items as { student?: { id: string; slug: string } }[] | undefined)?.find(
@@ -270,7 +270,7 @@ test("2-5. 5 ảnh → hàng chờ → đọc → duyệt: BLANK, mastery, Raz-K
   expect(existsSync(join(vietItem.dir, vietContext.files[0] as string))).toBe(true);
   // Nothing but the nickname ever reaches the reader (NFR-06).
   expect(JSON.stringify(vietContext)).not.toContain("Mai Thy");
-  expect(vietContext.student.nickname).toBe("Thy");
+  expect(vietContext.student.nickname).toBe("Mai Thy");
   expect(vietContext.errorCodes.length).toBeGreaterThan(30);
 
   // ── what a reader writes back ────────────────────────────────────────────────────────────────

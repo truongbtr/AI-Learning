@@ -56,7 +56,7 @@
 - **AC:** sau `content:import`, unit hiện đủ trong `/parent/materials` kèm nguồn; đổi "tuần này" → Daily Quest hôm sau ưu tiên kỹ năng của bài đó; app **không** có nút tải PDF giáo trình.
 
 ### FR-INT-04 Ghi chép nhanh của phụ huynh (P1)
-- Nhập tay 1 dòng: "Hôm nay Thy đọc *cat, bat* chưa được, hay nhầm b/d" → AI gắn kỹ năng, tạo bằng chứng (loại `parent_note`, trọng số thấp).
+- Nhập tay 1 dòng: "Hôm nay Mai Thy đọc *cat, bat* chưa được, hay nhầm b/d" → AI gắn kỹ năng, tạo bằng chứng (loại `parent_note`, trọng số thấp).
 - **AC:** ghi chú ≤ 30 giây; AI gợi ý kỹ năng đúng ≥ 80% khi thử 20 ghi chú mẫu.
 
 ### FR-INT-06 Nạp nhật ký lớp hằng ngày (P0)
@@ -140,7 +140,7 @@
 - **AC:** báo cáo có dẫn chứng số liệu đúng với DB (QC đối chiếu 3 số bất kỳ).
 
 ### FR-PAR-05 Trợ lý "Hỏi về con" (P1 — thực hiện bằng Claude Code trong repo, không phải chat trong app)
-- Chat cho phụ huynh: "Thanh yếu nhất môn gì tháng này?", "Tuần sau con học Unit 4 NAVIO, cần chuẩn bị gì?" — AI trả lời dựa trên DB (tool-use/RAG), có trích dẫn bằng chứng.
+- Chat cho phụ huynh: "Chí Thanh yếu nhất môn gì tháng này?", "Tuần sau con học Unit 4 NAVIO, cần chuẩn bị gì?" — AI trả lời dựa trên DB (tool-use/RAG), có trích dẫn bằng chứng.
 - **AC:** trả lời có nêu nguồn; không bịa dữ liệu (kiểm thử 10 câu).
 
 ### FR-PAR-08 Gửi thư & khen con (P0)

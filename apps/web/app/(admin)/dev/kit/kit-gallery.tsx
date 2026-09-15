@@ -362,7 +362,7 @@ export function KitGallery() {
       <Section title="Mã hình của con (KidPinPad)">
         <div className="rounded-xl bg-[#FFF8EC] p-4">
           <KidPinPad
-            name="Thy"
+            name="Mai Thy"
             setKey="animals"
             mascot={who}
             onComplete={() => playSound("dung")}

@@ -5,7 +5,7 @@ import type { PrismaClient } from "../../generated/client";
  *
  * Four acceptance runs of phases 0–4 created a fresh family each time, and the dev database ended
  * up with fifty `Student` rows where there should be two. The list is unusable, and worse, a real
- * mistake is easy to make while staring at forty rows called "Thy".
+ * mistake is easy to make while staring at forty rows called "Mai Thy".
  *
  * The rule is deliberately timid, because the thing being deleted is a child's learning record:
  *

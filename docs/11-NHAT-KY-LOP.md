@@ -88,7 +88,7 @@ Nạp trùng một ngày → cập nhật bản ghi cũ, không tạo thêm.
 ```
 
 Quy tắc rút:
-- **Một nhật ký lớp → bài cô giao cho từng bé.** Nhật ký là của lớp 1B3, nhưng `Homework` gắn `studentId`; hệ thống tạo **một bản cho mỗi bé trong lớp** (Thy và Thanh) để mỗi bé có tiến độ riêng (Thy đọc 5/5, Thanh mới 2/5).
+- **Một nhật ký lớp → bài cô giao cho từng bé.** Nhật ký là của lớp 1B3, nhưng `Homework` gắn `studentId`; hệ thống tạo **một bản cho mỗi bé trong lớp** (Mai Thy và Chí Thanh) để mỗi bé có tiến độ riêng (Mai Thy đọc 5/5, Chí Thanh mới 2/5).
 - **Môn** chuẩn hoá về enum 6 môn cốt lõi; môn ngoài (Nghệ thuật, GDTC…) vẫn ghi `taught` nhưng `skillCodes` rỗng.
 - **Khớp bài học**: ưu tiên khớp `lessonUnitCode` với `LessonUnit` đã có; không khớp thì giữ nguyên `lessonRefText` và tạo unit tạm `isApproved=false` để ba duyệt sau.
 - **Gắn kỹ năng**: theo bản đồ kỹ năng + nội dung mô tả; ESL dựa vào phần "Con ôn tập…" vì chưa có sách.

@@ -9,7 +9,7 @@ import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 /**
  * FR-INT-04 — the one-line note a parent types in thirty seconds.
  *
- * "Hôm nay Thy đọc *cat*, *bat* chưa được, hay nhầm b/d" is worth more than it looks: it is the
+ * "Hôm nay Mai Thy đọc *cat*, *bat* chưa được, hay nhầm b/d" is worth more than it looks: it is the
  * only channel for what happened away from the screen. The requirement has AI attaching the skill;
  * with no AI in the app (ADR-10) the full-text search suggests and the parent taps — which also
  * means the parent can see exactly which skill their sentence is about to move.

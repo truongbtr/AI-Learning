@@ -51,10 +51,12 @@ describe("inbox result schemas (docs/13)", () => {
   });
 
   it("needs a note on a plan hint so the parent knows why", () => {
-    expect(() => parsePlanHint({ studentNickname: "Thy", focusErrors: ["nham_b_d"] })).toThrow();
+    expect(() =>
+      parsePlanHint({ studentNickname: "Mai Thy", focusErrors: ["nham_b_d"] }),
+    ).toThrow();
     expect(
       parsePlanHint({
-        studentNickname: "Thy",
+        studentNickname: "Mai Thy",
         focusErrors: ["nham_b_d"],
         note: "Tuần này con hay nhầm b với d.",
       }).validDays,
@@ -78,7 +80,7 @@ describe("validateInbox over a folder", () => {
         id,
         kind,
         createdAt: new Date().toISOString(),
-        student: { nickname: "Thy" },
+        student: { nickname: "Mai Thy" },
         errorCodes: [
           { code: "doc_bo_tieng", nameVi: "Đọc bỏ tiếng" },
           { code: "nham_b_d", nameVi: "Nhầm b với d" },
@@ -130,7 +132,7 @@ describe("validateInbox over a folder", () => {
 describe("PlanProposal (docs/04 §4 task PLAN, FR-PAR-03)", () => {
   const good = {
     kind: "PLAN",
-    studentNickname: "Thy",
+    studentNickname: "Mai Thy",
     weekStart: "2026-09-14",
     weekEnd: "2026-09-20",
     rationale:

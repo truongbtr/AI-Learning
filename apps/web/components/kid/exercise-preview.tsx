@@ -18,7 +18,7 @@ export type PreviewSpec = ClientSpec;
 
 export function ExercisePreview({
   spec,
-  nickname = "Thy",
+  nickname = "Mai Thy",
   theme = "robot",
   className,
 }: {

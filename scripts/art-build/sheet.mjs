@@ -70,7 +70,7 @@ export function buildGardenFrame() {
     g(
       `<rect x="-150" y="-70" width="300" height="120" rx="40" fill="#FFFFFF" fill-opacity="0.96"/>` +
         `<path d="M-60 50 -86 100 -12 54Z" fill="#FFFFFF" fill-opacity="0.96"/>` +
-        `<text x="0" y="-14" text-anchor="middle" font-family="Nunito, sans-serif" font-size="40" font-weight="800" fill="${P.ink}">Chào Thy!</text>` +
+        `<text x="0" y="-14" text-anchor="middle" font-family="Nunito, sans-serif" font-size="40" font-weight="800" fill="${P.ink}">Chào Mai Thy!</text>` +
         `<text x="0" y="30" text-anchor="middle" font-family="Nunito, sans-serif" font-size="28" fill="${P.inkSoft}">Vườn hôm nay nở hoa rồi</text>`,
       { transform: "translate(950 250)" },
     ) +

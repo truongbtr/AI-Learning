@@ -519,7 +519,7 @@ Nếu bạn **đã biết rõ con đang ở đâu** và muốn bỏ qua: `pnpm p
 Đây là đường hằng ngày, và **anh không phải gõ lệnh nào** (docs/13 §7). Buổi tối:
 
 1. Mở app Claude trên điện thoại, chụp bài vở của con, gửi vào chat.
-2. Nói một câu kiểu *"bài của Thy tối nay"* (hoặc dán nguyên bài đăng Edi Parent của cô).
+2. Nói một câu kiểu *"bài của Mai Thy tối nay"* (hoặc dán nguyên bài đăng Edi Parent của cô).
 3. Chat tự đọc ảnh rồi đẩy vào hệ thống qua `https://edu.medifa.vn/api/internal/*`.
 4. Mở `/parent` — **thẻ tối nay** hiện ngay: đọc mấy ảnh, ghi nhận gì, kỹ năng nào lên bao nhiêu.
    Nếu thấy máy đọc sai thì bấm **"Hoàn tác lô này"**: bằng chứng của lô biến mất và điểm kỹ năng

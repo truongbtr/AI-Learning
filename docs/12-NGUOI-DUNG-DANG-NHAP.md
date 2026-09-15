@@ -58,7 +58,7 @@ Một trang `/login` duy nhất, chia hai phần rõ ràng:
 │                                          │
 │   ┌────────┐   ┌────────┐                │   ← phần của con: 2 thẻ ảnh to
 │   │  🧒    │   │  👧    │                │      chạm vào → lưới 9–12 hình
-│   │ Thanh  │   │  Thy   │                │      chọn đúng 4 hình theo thứ tự
+│   │ Chí Thanh  │   │  Mai Thy   │                │      chọn đúng 4 hình theo thứ tự
 │   └────────┘   └────────┘                │
 │                                          │
 │   ─────────  Ba mẹ đăng nhập  ─────────  │   ← phần người lớn, chữ nhỏ hơn

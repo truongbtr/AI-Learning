@@ -166,7 +166,7 @@ export async function logInternalCall(entry: InternalCallLog): Promise<void> {
  * Wraps one internal handler: token, rate limit, the log, and a JSON error for anything thrown.
  *
  * The handler returns the response plus the one line the log should carry, because only the handler
- * knows what actually happened — "đã ghi 12 câu của Thy" is worth a hundred rows of status codes.
+ * knows what actually happened — "đã ghi 12 câu của Mai Thy" is worth a hundred rows of status codes.
  */
 export function internalHandler(
   route: InternalRoute,

@@ -19,7 +19,7 @@ const saveSchema = suggestSchema.extend({
 });
 
 /**
- * FR-INT-04 — the one-line note: "Hôm nay Thy đọc *cat*, *bat* chưa được, hay nhầm b/d".
+ * FR-INT-04 — the one-line note: "Hôm nay Mai Thy đọc *cat*, *bat* chưa được, hay nhầm b/d".
  *
  * The requirement says AI attaches the skill; under ADR-10 the app has no AI, so the phase-1
  * full-text search suggests and the parent taps one. Thirty seconds either way, and the parent

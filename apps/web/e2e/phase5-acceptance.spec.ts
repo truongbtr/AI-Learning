@@ -63,14 +63,14 @@ async function login(page: Page): Promise<void> {
   if (!studentId) await findStudent(page);
 }
 
-/** The real child, by the link on P2 — a dev database may hold more than one "Thy". */
+/** The real child, by the link on P2 — a dev database may hold more than one "Mai Thy". */
 async function findStudent(page: Page): Promise<void> {
   await page.goto("/parent");
   const card = page.getByTestId("child-card-thy");
   await expect(card).toBeVisible({ timeout: 30_000 });
   const href = await card.getByRole("link").first().getAttribute("href");
   studentId = (href ?? "").replace("/parent/", "");
-  nickname = "Thy";
+  nickname = "Mai Thy";
   expect(studentId, "không tìm thấy hồ sơ bé thy").toBeTruthy();
 }
 

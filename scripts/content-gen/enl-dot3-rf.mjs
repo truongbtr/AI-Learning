@@ -261,7 +261,7 @@ sentencePack({
     ],
     [
       "Write your name. Draw a clap for each part.",
-      "Thanh: 1 clap",
+      "Chí Thanh: 2 claps",
       ["Viết tên", "Số vỗ tay đúng với tên"],
     ],
     [

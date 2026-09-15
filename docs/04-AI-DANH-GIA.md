@@ -237,7 +237,7 @@ Con chọn "4" → hệ thống không chỉ ghi "sai" mà ghi **"đếm thiếu
 
 ### 11.3 Thống kê lỗi theo bé — `ErrorStat`
 
-Bảng `ErrorStat(studentId, errorCode, count7d, count30d, lastAt, lastEvidenceId)` cập nhật mỗi khi có bằng chứng mang mã lỗi (từ bài luyện, STT, ảnh vở). Đây là thứ planner và dashboard dùng để nói "**Thy hay nhầm b/d — 4 lần trong tuần**", thay vì chỉ "kỹ năng học vần 52/100".
+Bảng `ErrorStat(studentId, errorCode, count7d, count30d, lastAt, lastEvidenceId)` cập nhật mỗi khi có bằng chứng mang mã lỗi (từ bài luyện, STT, ảnh vở). Đây là thứ planner và dashboard dùng để nói "**Mai Thy hay nhầm b/d — 4 lần trong tuần**", thay vì chỉ "kỹ năng học vần 52/100".
 
 Quy tắc: `count7d ≥ 2` cùng một mã → mã đó là **lỗi đang hoạt động** của bé → kích hoạt thang rèn (§11.4) và đưa vào "3 điều cần chú ý" của ba mẹ.
 

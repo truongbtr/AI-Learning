@@ -150,7 +150,7 @@ Validator tự động bắt được 1 (một phần), 3, 4 (định dạng), 8
 
 ## 7. Cá nhân hoá dù bài dùng chung
 
-1. **Chỗ trống thay lúc hiển thị:** `{ten}` → tên gọi ở nhà, `{vat}` → vật thể theo thế giới của bé (Thanh: bánh răng, tên lửa; Thy: bông hoa, ngôi sao), `{ban}` → tên nhân vật mascot. App thay bằng bảng tra, không cần AI.
+1. **Chỗ trống thay lúc hiển thị:** `{ten}` → tên gọi ở nhà, `{vat}` → vật thể theo thế giới của bé (Chí Thanh: bánh răng, tên lửa; Mai Thy: bông hoa, ngôi sao), `{ban}` → tên nhân vật mascot. App thay bằng bảng tra, không cần AI.
 2. **Biến thể chủ đề:** bài có ngữ cảnh sinh 2 bản `assetTheme: robot | garden`; planner chọn bản hợp với thế giới của bé.
 3. **Thẻ lỗi:** bài nhắm đúng lỗi thường gặp gắn `targetsError`. Khi ảnh bài vở cho thấy con hay nhầm b/d, planner ưu tiên bài có `targetsError: "nham_b_d"` — trúng đích mà không cần sinh mới.
 

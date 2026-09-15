@@ -65,7 +65,7 @@ Kết quả: app **thuần tất định**, chi phí vận hành ≈ 0; Daily Qu
 | Mỗi tối | Mẹ/Ba | Chụp phiếu/vở, dán nhật ký lớp (phần "hôm nay học bài gì" có hiệu lực ngay, không cần AI) |
 | 2–3 tối/tuần (T3, T6…) | Ba | Mở Claude Code: "Xử lý hàng chờ AI" → 3–10 phút → duyệt kết quả trong app |
 | Chủ nhật | Ba | "Viết báo cáo tuần" → Claude Code đọc số liệu (`pnpm report:data`), viết báo cáo, `pnpm report:push` |
-| Khi cần | Ba | Hỏi thẳng Claude Code: "Thy yếu gì tháng này?" — nó chạy `pnpm export:student thy` rồi trả lời |
+| Khi cần | Ba | Hỏi thẳng Claude Code: "Mai Thy yếu gì tháng này?" — nó chạy `pnpm export:student thy` rồi trả lời |
 
 **Đánh đổi phải chấp nhận:** kết quả đọc ảnh vở **trễ 1–3 ngày** thay vì 90 giây; bài viết tay/nói đáp của con được chấm muộn (con vẫn nhận sao ngay, "Cú chấm sau"); không có gia sư giọng nói ở v1. Bù lại: không tốn phí, không lộ dữ liệu con qua API lúc chạy, và Ba nhìn thấy mọi kết quả AI trước khi vào hệ thống.
 

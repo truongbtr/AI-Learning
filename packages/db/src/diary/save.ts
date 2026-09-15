@@ -15,7 +15,7 @@ import { searchSkills } from "../skills/search";
  *  1. a lesson line is matched to a `LessonUnit` we already know, so tonight's quest can aim at
  *     exactly the lesson the class had this morning;
  *  2. one piece of homework becomes **one `Homework` row per child** — the diary belongs to class
- *     1B3, but Thy reading 5/5 and Thanh reading 2/5 are different facts;
+ *     1B3, but Mai Thy reading 5/5 and Chí Thanh reading 2/5 are different facts;
  *  3. lines the pattern reader could not place go to the AI queue as `DIARY_HARD`, so nothing the
  *     teacher wrote is quietly dropped.
  *

@@ -303,7 +303,7 @@ function CreateUserForm({
           <Input name="username" required pattern="[a-z0-9_.-]{2,32}" autoCapitalize="none" />
         </Field>
         <Field label="Tên hiển thị">
-          <Input name="displayName" required placeholder={role === "CHILD" ? "Thy" : "Mẹ"} />
+          <Input name="displayName" required placeholder={role === "CHILD" ? "Mai Thy" : "Mẹ"} />
         </Field>
         <Field label="Ảnh đại diện">
           <Select key={role} name="avatarKey" defaultValue={role === "CHILD" ? "girl-1" : "mom"}>
@@ -363,7 +363,7 @@ function CreateUserForm({
               <Input name="fullName" required placeholder="Mai Thy" />
             </Field>
             <Field label="Tên gọi ở nhà">
-              <Input name="nickname" required placeholder="Thy" />
+              <Input name="nickname" required placeholder="Mai Thy" />
             </Field>
             <Field label="Ngày sinh">
               <Input name="birthDate" type="date" />

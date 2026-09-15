@@ -33,7 +33,7 @@ export function KidHomeClient({ home, signOut }: { home: KidHome; signOut: React
   const [praise, setPraise] = useState<{ from: string } | null>(null);
   const theme = THEME[home.theme];
 
-  // "Chào Thy! Tối rồi, học nhẹ thôi nha!" — the name first, then the time of day.
+  // "Chào Mai Thy! Tối rồi, học nhẹ thôi nha!" — the name first, then the time of day.
   const hello = `Chào ${home.nickname}! ${TIME_GREETING[timeOfDay()]}`;
   const line = home.memory?.text ?? home.event.lineVi;
 
