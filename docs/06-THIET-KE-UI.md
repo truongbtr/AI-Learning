@@ -176,7 +176,7 @@ Chạm vào mascot bất kỳ lúc nào → phản ứng vui ngẫu nhiên (nh�
 Đồ hoạ đẹp chỉ giữ được trẻ 6 tuổi vài ngày; cái giữ được cả năm là **có gì mới** và **được tự quyết**. Bắt buộc có (pha 3 làm 1–4, pha 7 làm 5–6):
 
 1. **Sự kiện tuần** — mỗi tuần một "chủ đề khách" (tuần khủng long, tuần vũ trụ, tuần Trung thu…) đổi vài chi tiết trang trí trong thế giới + 1 huy hiệu giới hạn chỉ tuần đó mới lấy được. Nội dung bài không đổi, chỉ đổi "áo".
-2. **Trạm chọn** — 2–3 vị trí trên bản đồ nhiệm vụ cho con **chọn 1 trong 2 bài** (cùng kỹ năng, khác ngữ cảnh/dạng). Trẻ chọn được thì chịu làm hơn.
+2. ~~**Trạm chọn**~~ — **đã bỏ** theo yêu cầu chủ dự án (16/09/2026): màn "Con chọn bài nào?" (Bài này / Bài kia) là thêm một chạm không cần thiết; con vào thẳng bài planner đã chọn.
 3. ~~**Nghỉ vận động 30 giây**~~ — **đã bỏ** theo yêu cầu chủ dự án (15/09/2026): màn đếm ngược chen giữa phiên làm con mất nhịp. Trong chế độ thành phố, giữa các trạm đã có khoảng nghỉ tự nhiên (bảng hạ, công trình mọc lên).
 4. **Dừng khi mệt** — sau 8 bài mascot hỏi "Chơi tiếp hay nghỉ?"; chọn nghỉ vẫn giữ streak và nhận sao ngày. Dấu hiệu `met_cuoi_phien` (sai dồn 3 bài cuối) → hôm sau planner rút ngắn phiên 20%.
 5. **Giọng mascot thu sẵn** — 40–60 câu thoại cố định (chào, khen, động viên, nghỉ, tạm biệt…) **thu âm giọng thật ấm hoặc TTS neural chất lượng cao**, không dùng giọng máy trên thiết bị; chọn ngẫu nhiên, không lặp câu trong một phiên. Đề bài thì dùng TTS neural đã sinh sẵn lúc nạp nội dung (NFR-04).
@@ -324,7 +324,7 @@ Quy trình: mọi tài sản đặt trong `content/art/<loại>/` kèm `manifest
   7. Tải/trống/mất mạng có minh hoạ + mascot, không spinner trơn.
   8. 60 fps khi làm bài trên iPad (đo bằng Safari Web Inspector), tài sản màn hình ≤ 1.5 MB.
   9. Quay video 2 phút một phiên học để chủ dự án xem (lưu `docs/screens/pha-3/`).
-  10. Có ít nhất 1 trạm chọn "1 trong 2" trong phiên; mascot hỏi "chơi tiếp hay nghỉ" sau 8 bài ở thế giới cũ (§1.8b).
+  10. Mascot hỏi "chơi tiếp hay nghỉ" sau 8 bài ở thế giới cũ (§1.8b).
   11. Mascot làm mẫu được một bài (`scaffold: model`): nói to cách nghĩ rồi đưa bài sinh đôi cho con (`04` §11.4 bậc 3).
   12. Bảy cơ chế P0 của §1.8c có mặt và chạy được: trứng nứt thêm sau phiên, mảnh tranh tuần lật thêm một mảnh, thế giới đổi theo giờ thật, thư của ba mẹ đọc được bằng giọng, mascot nhắc đúng một việc hôm qua, sao vàng lớn của ba mẹ rơi xuống, giấy chứng nhận in ra được.
   13. Chế độ thành phố (§1.2b): vào một thành phố thấy đúng 3–4 sao; chạm sao → bảng trượt lên trên nền thành phố, làm hết bài của trạm, bảng hạ, công trình mọc tầng trước mắt; hết trạm → vòng bay + mở đất + chọn xây; URL không rời màn thành phố (Playwright `e2e/phase10-city.spec.ts`).

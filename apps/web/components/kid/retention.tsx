@@ -291,38 +291,3 @@ export function CarryOnPrompt({
     </div>
   );
 }
-
-/** The station where the child picks one of two exercises (docs/06 §1.8b item 2). */
-export function ChoiceStation({
-  options,
-  onPick,
-}: {
-  options: { order: number; label: string; icon: string }[];
-  onPick: (order: number) => void;
-}) {
-  return (
-    <div
-      data-testid="choice-station"
-      className="flex flex-col items-center gap-5 rounded-[32px] bg-white/92 p-8 text-center"
-    >
-      <p className="font-black text-[28px] text-[#2B2B3A]">Con chọn bài nào?</p>
-      <div className="flex flex-wrap justify-center gap-5">
-        {options.map((o) => (
-          <motion.button
-            key={o.order}
-            type="button"
-            whileTap={{ scale: 0.94 }}
-            onClick={() => {
-              playSound("cham");
-              onPick(o.order);
-            }}
-            className="flex min-h-[140px] w-[190px] flex-col items-center justify-center gap-2 rounded-[28px] bg-[#FFF3DC] p-5 font-extrabold text-[21px] text-[#2B2B3A] shadow-[0_10px_24px_-14px_rgba(43,43,58,0.7)]"
-          >
-            <span className="text-[44px]">{o.icon}</span>
-            {o.label}
-          </motion.button>
-        ))}
-      </div>
-    </div>
-  );
-}

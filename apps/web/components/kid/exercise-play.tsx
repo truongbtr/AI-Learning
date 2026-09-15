@@ -9,7 +9,6 @@ import { speechLang } from "@/components/kid/exercise/speech-lang";
 import type { ClientSpec } from "@/components/kid/exercise/types";
 import { type FeedbackKind, FeedbackOverlay, HintBubble } from "@/components/kid/feedback";
 import { HomeworkStation } from "@/components/kid/homework-station";
-import { ChoiceStation } from "@/components/kid/retention";
 import { StarFlyToPocket } from "@/components/kid/stars";
 import { OfflineNotice } from "@/components/kid/states";
 import { THEME } from "@/components/kid/tokens";
@@ -36,11 +35,7 @@ export function ExercisePlay({
   onStars?: (total: number) => void;
 }) {
   const { speak } = useSpeak();
-  const [item, setItem] = useState(initialItem);
-  const [phase, setPhase] = useState<"choice" | "exercise">(
-    initialItem.choice ? "choice" : "exercise",
-  );
-  const [choices, setChoices] = useState<KidItem[]>([]);
+  const item = initialItem;
   const [feedback, setFeedback] = useState<FeedbackKind>(null);
   const [message, setMessage] = useState<string>("");
   const [explanation, setExplanation] = useState<string | undefined>();
@@ -53,17 +48,6 @@ export function ExercisePlay({
   const [busy, setBusy] = useState(false);
   const [startedAt] = useState(() => Date.now());
   const mascot = session.theme === "garden" ? "cu" : "robot";
-
-  useEffect(() => {
-    if (phase !== "choice") return;
-    fetch(`/api/sessions/${session.id}/choice?order=${item.order}`)
-      .then((r) => r.json())
-      .then((d: { items: KidItem[] }) => {
-        if (d.items?.length > 1) setChoices(d.items);
-        else setPhase("exercise");
-      })
-      .catch(() => setPhase("exercise"));
-  }, [phase, session.id, item.order]);
 
   const submit = async (raw: unknown) => {
     if (busy) return;
@@ -117,28 +101,7 @@ export function ExercisePlay({
   return (
     <>
       <div className="flex w-full flex-1 flex-col items-center justify-center gap-4">
-        {phase === "choice" && choices.length > 1 ? (
-          <ChoiceStation
-            options={choices.map((_choice, i) => ({
-              order: i,
-              label: i === 0 ? "Bài này" : "Bài kia",
-              icon: i === 0 ? "🎈" : "🎁",
-            }))}
-            onPick={async (pick) => {
-              const chosen = choices[pick];
-              if (!chosen) return setPhase("exercise");
-              await fetch(`/api/sessions/${session.id}/choice`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ order: item.order, exerciseId: chosen.exerciseId }),
-              }).catch(() => {});
-              setItem(chosen);
-              setPhase("exercise");
-            }}
-          />
-        ) : null}
-
-        {phase === "exercise" && item.homework ? (
+        {item.homework ? (
           <HomeworkStation
             homework={item.homework}
             mascot={mascot}
@@ -147,7 +110,7 @@ export function ExercisePlay({
           />
         ) : null}
 
-        {phase === "exercise" && !item.homework ? (
+        {!item.homework ? (
           <>
             <ExerciseRenderer
               spec={item.spec as ClientSpec}
