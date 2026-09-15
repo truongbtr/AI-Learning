@@ -44,6 +44,8 @@ const visible = (page: Page, id: string) =>
     .isVisible()
     .catch(() => false);
 
+let dragChecks = 0;
+
 /** Answer whatever exercise the panel shows, the way a child would tap it. */
 async function answerOne(page: Page): Promise<string> {
   const settle = async () => {
@@ -110,6 +112,23 @@ async function answerOne(page: Page): Promise<string> {
     return "choice";
   }
   if (await visible(page, "drag-item")) {
+    // pha 10b bug: a card dropped in a basket vanished, and "Xong!" stayed off while any card was
+    // still in the tray. One card in the (single) basket must be visible and enough to submit.
+    const zones = await page.getByTestId("drop-zone").count();
+    const inTray = await page.getByTestId("drag-tray").getByTestId("drag-item").count();
+    const inZone = await page.getByTestId("drop-zone").getByTestId("drag-item").count();
+    // only on a fresh try: an exercise being retried may already have cards in its basket
+    if (inTray > 0 && inZone === 0) {
+      await page.getByTestId("drag-tray").getByTestId("drag-item").first().click({ timeout: 4000 });
+      await page.getByTestId("drop-zone").first().click({ timeout: 4000 });
+      const landed = page.getByTestId("drop-zone").first().getByTestId("drag-item").first();
+      await expect(landed).toBeVisible();
+      await expect
+        .poll(() => landed.evaluate((el) => Number(getComputedStyle(el).opacity)))
+        .toBeGreaterThan(0.9);
+      if (zones === 1) await expect(page.getByTestId("drag-submit")).toBeEnabled();
+      dragChecks++;
+    }
     for (let g = 0; g < 8; g++) {
       const cards = page.getByTestId("drag-tray").getByTestId("drag-item");
       if ((await cards.count()) === 0) break;
@@ -117,9 +136,10 @@ async function answerOne(page: Page): Promise<string> {
         .first()
         .click({ timeout: 4000 })
         .catch(() => {});
+      // spread the cards over the baskets, so every basket gets one
       await page
         .getByTestId("drop-zone")
-        .first()
+        .nth(g % Math.max(1, zones))
         .click({ timeout: 4000 })
         .catch(() => {});
     }
@@ -264,7 +284,7 @@ test("Thành Số: 3–4 stars, panel over the city, the building grows, land op
       await page.screenshot({ path: join(SHOTS, "c5-next-star.png") });
     }
   }
-  console.log(`[city] exercise kinds: ${[...types].join(",")}`);
+  console.log(`[city] exercise kinds: ${[...types].join(",")} · drag checks: ${dragChecks}`);
 
   // the finale: a loop over the city, then new land to build on (or straight to done)
   const chooser = page.getByTestId("build-chooser");

@@ -30,6 +30,11 @@ export interface AnswerBundle {
   /** choice id or drag-card id -> error code (docs/04 §11.2, ADR-15). */
   errorTags?: Record<string, string>;
   correctCount?: number;
+  /**
+   * DRAG_DROP: every card the child sees (from the spec). A card that is on screen but absent from
+   * the key is a distractor that belongs in the tray — dropping it in a zone is a real mistake.
+   */
+  cards?: string[];
 }
 
 /** What the kid renderer sends back. Every field is optional: a child may simply skip. */
@@ -103,12 +108,20 @@ function markDrag(key: AnswerBundle, res: AttemptResponse): MarkResult {
   const total = home.size;
   if (total === 0) return blank();
 
+  const shown = new Set(key.cards ?? []);
   const placed = new Set<string>();
   const wrongItems: string[] = [];
   let right = 0;
   for (const [zoneId, items] of Object.entries(got)) {
     for (const id of items ?? []) {
-      if (!home.has(id)) continue; // a card the key does not know: ignore rather than punish
+      if (!home.has(id)) {
+        // a distractor the child can see belongs in the tray (pha 10b: "kéo chữ ch vào giỏ")
+        if (shown.has(id)) {
+          placed.add(id);
+          wrongItems.push(id);
+        }
+        continue; // a card nobody showed the child: ignore rather than punish
+      }
       placed.add(id);
       if (home.get(id) === zoneId) right++;
       else wrongItems.push(id);
@@ -117,7 +130,7 @@ function markDrag(key: AnswerBundle, res: AttemptResponse): MarkResult {
   if (placed.size === 0 || res.skipped) return blank();
 
   const score = right / total;
-  const correct = right === total;
+  const correct = right === total && wrongItems.length === 0;
   return {
     correct,
     outcome: correct ? "CORRECT" : score > 0 ? "PARTIAL" : "INCORRECT",

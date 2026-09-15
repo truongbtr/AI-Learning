@@ -139,3 +139,32 @@ describe("the three tries (docs/04 §6)", () => {
     expect(feedbackForTry(2, []).stage).toBe("reveal");
   });
 });
+
+describe("drag and drop with distractors that stay in the tray", () => {
+  // "Kéo chữ ch vào giỏ": only ch belongs in the basket, kh and tr stay behind
+  const key = {
+    value: { gio: ["k1"] },
+    errorTags: { d2: "nham_ch_tr" },
+    cards: ["k1", "d1", "d2"],
+  };
+
+  it("is right with only the right card in the basket and the others left in the tray", () => {
+    const m = markAttempt("DRAG_DROP", key, { placements: { gio: ["k1"] } });
+    expect(m.correct).toBe(true);
+    expect(m.wrongItems).toEqual([]);
+  });
+
+  it("is not right when a distractor goes into the basket too, and names the mix-up", () => {
+    const m = markAttempt("DRAG_DROP", key, { placements: { gio: ["k1", "d2"] } });
+    expect(m.correct).toBe(false);
+    expect(m.wrongItems).toEqual(["d2"]);
+    expect(m.errorCode).toBe("nham_ch_tr");
+  });
+
+  it("a distractor alone in the basket is a wrong answer, not a blank", () => {
+    const m = markAttempt("DRAG_DROP", key, { placements: { gio: ["d1"] } });
+    expect(m.correct).toBe(false);
+    expect(m.outcome).toBe("INCORRECT");
+    expect(m.errorCode).not.toBe("bo_trong");
+  });
+});

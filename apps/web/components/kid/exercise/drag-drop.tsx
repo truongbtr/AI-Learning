@@ -5,7 +5,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { playSound } from "../sound";
 import { SPRING, STAGGER } from "../tokens";
 import { ExerciseFrame } from "./frame";
-import { type ExerciseProps, fillPlaceholders, imageSrc } from "./types";
+import { Picture } from "./picture";
+import { type ExerciseProps, fillPlaceholders } from "./types";
 
 /**
  * DRAG_DROP, with the three movements docs/06 §1.3 asks for by name:
@@ -46,7 +47,14 @@ export function DragDropExercise({
 
   const zones = spec.dropZones ?? [];
   const items = spec.dragItems ?? [];
-  const ready = items.every((i) => placed[i.id]);
+  // Ready once every basket holds a card, or once the tray is empty. Not "every card placed": in
+  // many exercises some cards are distractors that stay in the tray ("Kéo chữ ch vào giỏ" — kh and
+  // tr stay behind). And an empty tray is always enough, so a child who put every card in one basket
+  // can still press "Xong!" and get the hint, instead of a button that never lights up.
+  const trayEmpty = items.length > 0 && items.every((i) => placed[i.id]);
+  const everyZoneFilled =
+    zones.length > 0 && zones.every((z) => Object.values(placed).some((zoneId) => zoneId === z.id));
+  const ready = trayEmpty || everyZoneFilled;
 
   // The server has marked it: the cards that went to the wrong place float home so the child can
   // try those again — the ones that were right stay where they were put.
@@ -116,11 +124,13 @@ export function DragDropExercise({
   };
 
   const card = (item: (typeof items)[number], inZone: boolean) => {
-    const src = item.image ? imageSrc(item.image.value, item.image.kind) : null;
     return (
       <motion.div
         key={item.id}
-        variants={STAGGER.item}
+        // a card that has just landed in a zone is a new element outside the stagger: without its
+        // own initial state it would stay at the "hidden" variant and vanish from the basket
+        variants={inZone ? undefined : STAGGER.item}
+        initial={inZone ? { opacity: 1, scale: 1 } : undefined}
         drag={!disabled}
         dragSnapToOrigin
         dragElastic={0.18}
@@ -142,12 +152,7 @@ export function DragDropExercise({
         data-item={item.id}
       >
         {item.image ? (
-          src ? (
-            // biome-ignore lint/performance/noImgElement: local SVG asset
-            <img src={src} alt={item.image.labelVi ?? ""} className="h-20 w-20 object-contain" />
-          ) : (
-            <span className="text-[52px] leading-none">{item.image.value}</span>
-          )
+          <Picture image={item.image} size={96} className="pointer-events-none" />
         ) : (
           <span className="font-extrabold text-[34px] text-[#2B2B3A]">
             {fillPlaceholders(item.text ?? "", vars)}

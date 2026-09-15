@@ -28,7 +28,12 @@ export function ExerciseRenderer(props: ExerciseProps) {
       "Mình làm thử một bài giống hệt nhé, con xem rồi làm bài của con.";
     return (
       <div className="mx-auto w-full max-w-4xl">
-        <ModelFirst line={line} onReady={() => setModelled(true)} mascot={props.mascot} />
+        <ModelFirst
+          line={line}
+          onReady={() => setModelled(true)}
+          mascot={props.mascot}
+          language={spec.language}
+        />
       </div>
     );
   }

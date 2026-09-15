@@ -509,7 +509,7 @@ export async function submitAttempt(db: Db, input: SubmitAttemptInput): Promise<
     const replayTries = existing?.tries ?? 1;
     const replay = markAttempt(
       exercise.type as MarkableType,
-      answerBundleOf(exercise.answerKey),
+      bundleFor(exercise),
       stored?.last ?? input.response,
       { lang: exercise.language as "vi" | "en" },
     );
@@ -538,12 +538,9 @@ export async function submitAttempt(db: Db, input: SubmitAttemptInput): Promise<
   }
 
   const tries = (existing?.tries ?? 0) + 1;
-  const mark = markAttempt(
-    exercise.type as MarkableType,
-    answerBundleOf(exercise.answerKey),
-    input.response,
-    { lang: exercise.language as "vi" | "en" },
-  );
+  const mark = markAttempt(exercise.type as MarkableType, bundleFor(exercise), input.response, {
+    lang: exercise.language as "vi" | "en",
+  });
   const hints = hintsOf(exercise.spec);
   const ladder = feedbackForTry(tries, hints, input.order);
   const final = mark.correct || mark.pending || ladder.done;
@@ -653,6 +650,15 @@ export async function submitAttempt(db: Db, input: SubmitAttemptInput): Promise<
 /** `Exercise.answerKey` comes back as loose JSON; the shape is guaranteed by `content:import`. */
 function answerBundleOf(json: unknown): AnswerBundle {
   return (json ?? { value: null }) as AnswerBundle;
+}
+
+/** The key plus the cards the child actually sees (DRAG_DROP distractors are only in the spec). */
+function bundleFor(exercise: { answerKey: unknown; spec: unknown }): AnswerBundle {
+  const bundle = answerBundleOf(exercise.answerKey);
+  const items = (exercise.spec as { dragItems?: { id?: unknown }[] } | null)?.dragItems;
+  if (!Array.isArray(items)) return bundle;
+  const cards = items.map((i) => i?.id).filter((id): id is string => typeof id === "string");
+  return cards.length > 0 ? { ...bundle, cards } : bundle;
 }
 
 function hintsOf(spec: unknown): string[] {

@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { ExerciseRenderer } from "@/components/kid/exercise";
+import { speechLang } from "@/components/kid/exercise/speech-lang";
 import type { ClientSpec } from "@/components/kid/exercise/types";
 import { type FeedbackKind, FeedbackOverlay, HintBubble } from "@/components/kid/feedback";
 import { HomeworkStation } from "@/components/kid/homework-station";
@@ -101,7 +102,7 @@ export function ExercisePlay({
         if (data.hint) {
           setHint(data.hint);
           setHintsUsed((h) => h + 1);
-          speak(data.hint, { lang: item.language });
+          speak(data.hint, { lang: speechLang(data.hint, item.language) });
         }
       }
     } catch {
@@ -160,7 +161,7 @@ export function ExercisePlay({
                 if (!next) return;
                 setHint(next);
                 setHintsUsed((h) => Math.min(h + 1, spec.hints.length));
-                speak(next, { lang: item.language });
+                speak(next, { lang: speechLang(next, item.language) });
               }}
               onSubmit={(response) => void submit(response)}
             />
