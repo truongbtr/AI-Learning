@@ -19,6 +19,10 @@ rmSync(to, { recursive: true, force: true });
 mkdirSync(to, { recursive: true });
 cpSync(from, to, {
   recursive: true,
-  filter: (src) => !src.includes(`${"_"}contact-sheet`) && !src.endsWith("STYLE.md"),
+  // Raw Kenney kits (~98 MB) and the render workbenches are authoring-only, not served.
+  filter: (src) =>
+    !src.includes(`${"_"}contact-sheet`) &&
+    !src.endsWith("STYLE.md") &&
+    !/[\\/](kenney|3d-city|3d-proto|node_modules)([\\/]|$)/.test(src.slice(from.length)),
 });
 console.log("art:sync — content/art → apps/web/public/art");

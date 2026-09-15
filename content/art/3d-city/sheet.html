@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<style>
+html,body{margin:0;overflow:hidden;font-family:"Segoe UI","Nunito",Arial,sans-serif}
+canvas{display:block}
+.title{position:absolute;left:48px;top:32px;font-size:48px;font-weight:900;color:#1f3b63;text-shadow:0 3px 0 #fff}
+.sub{position:absolute;left:50px;top:98px;font-size:26px;font-weight:600;color:#35557f}
+.lab{position:absolute;transform:translateX(-50%);text-align:center;background:#fff;border-radius:22px;padding:10px 22px;box-shadow:0 6px 0 rgba(31,59,99,.15);white-space:nowrap}
+.lab b{display:block;font-size:30px;color:#1f3b63}
+.lab span{font-size:22px;color:#4a6a92;font-weight:600}
+</style></head><body>
+<div class="title" id="t"></div><div class="sub" id="s"></div>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import * as L from './lib.js';
+
+const q = new URLSearchParams(location.search);
+const W = +q.get('w') || 2400, H = +q.get('h') || 1100;
+const city = q.get('city') || 'vmath';
+const C = L.CITY[city];
+const { renderer, scene, camera } = L.createStage({ W, H, fov: 20, target: [q.get('x') ? +q.get('x') : 0, +(q.get('ty') || 4.2), 0], dist: +(q.get('dist') || 84), yaw: 32, pitch: 17, background: null, shadowSpan: 40 });
+scene.fog = null;
+document.getElementById('t').textContent = `${C.name} — một kỹ năng, năm mức công trình`;
+document.getElementById('s').textContent = 'Mức lấy từ SkillMastery.mastery · chạm vào giàn giáo là luyện đúng kỹ năng đó';
+
+const ground = L.box(80, 0.4, 24, L.mat(L.WORLD.grass, { roughness: 1 }), 0.1); ground.position.set(0, -0.2, 0); scene.add(ground);
+const labels = [
+  ['Đang xây', 'mastery 0–39'], ['Mức 1', '40–59'], ['Mức 2', '60–84'], ['Mức 3', '85+'], ['Chọc trời', 'vững ≥ 30 ngày'],
+];
+const gap = 9.2;
+const tops = [];
+for (let lv = 0; lv < 5; lv++) {
+  const x = (lv - 2) * gap;
+  const pad = L.box(7.2, 0.14, 7.2, L.mat(L.WORLD.plaza, { roughness: 1 }), 0.3); pad.position.set(x, 0.07, 0); scene.add(pad);
+  const b = L.skillBuilding(city, lv, lv + 3); b.position.set(x, 0.14, 0); scene.add(b);
+  for (const [dx, dz] of [[-3, 2.8], [3, -2.8]]) { const t = L.tree(1.1, L.WORLD.leaves[(lv + dx > 0) % 4], lv * 5 + dx); t.position.set(x + dx, 0.14, dz); scene.add(t); }
+  if (lv === 0) { const mb = L.missionBubble('★', { scale: 1.1 }); mb.position.set(x, 4.6, 0); scene.add(mb); }
+  tops.push(new THREE.Vector3(x, -1.2, 3.2));
+}
+L.faceCamera(scene, camera);
+renderer.render(scene, camera);
+tops.forEach((p, i) => {
+  const v = p.clone().project(camera);
+  const el = document.createElement('div'); el.className = 'lab';
+  el.innerHTML = `<b>${labels[i][0]}</b><span>${labels[i][1]}</span>`;
+  el.style.left = `${(v.x + 1) / 2 * W}px`; el.style.top = `${(1 - v.y) / 2 * H}px`;
+  document.body.appendChild(el);
+});
+window.__stats = L.stats(renderer, scene);
+window.__done = true;
+</script></body></html>

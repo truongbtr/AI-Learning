@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<style>
+html,body{margin:0;overflow:hidden;font-family:"Segoe UI","Nunito",Arial,sans-serif;background:#d2f3ff}
+canvas{display:block}
+.hud{position:absolute;left:36px;top:30px;display:flex;gap:18px;align-items:center}
+.pill{background:#fff;border-radius:40px;padding:14px 30px;font-size:40px;font-weight:900;color:#1f3b63;box-shadow:0 8px 0 rgba(31,59,99,.18);display:flex;align-items:center;gap:14px}
+.pill .dot{width:46px;height:46px;border-radius:50%}
+.land{position:absolute;right:36px;top:30px;background:#fff;border-radius:40px;padding:14px 26px;box-shadow:0 8px 0 rgba(31,59,99,.18);display:flex;align-items:center;gap:16px;font-size:30px;font-weight:800;color:#1f3b63}
+.bar{width:260px;height:30px;border-radius:15px;background:#ffeeb8;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,#ffc21a,#ffdd55);border-radius:15px}
+.tag{position:absolute;transform:translate(-50%,-100%);background:#fff;border-radius:26px;padding:8px 20px;font-size:26px;font-weight:800;color:#1f3b63;box-shadow:0 6px 0 rgba(31,59,99,.16);white-space:nowrap}
+</style></head><body>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import * as L from './lib.js';
+
+const { TILE, WORLD, add } = L;
+const q = new URLSearchParams(location.search);
+const W = +q.get('w') || 2400, H = +q.get('h') || 1500;
+const city = q.get('city') || 'vmath';
+const C = L.CITY[city];
+const hud = q.get('hud') !== '0';
+
+const COLS = 24, ROWS = 20;
+const grid = Array.from({ length: ROWS }, () => Array(COLS).fill('.'));
+const fill = (x0, z0, x1, z1, ch) => { for (let z = z0; z <= z1; z++) for (let x = x0; x <= x1; x++) if (grid[z] && x >= 0 && x < COLS) grid[z][x] = ch; };
+const wx = (tx) => (tx - COLS / 2) * TILE, wz = (tz) => (tz - ROWS / 2) * TILE;
+
+L.enableCurvature({ center: [0, 0], r0: +(q.get('r0') || 62), k: +(q.get('k') || 0.0055) });
+const { renderer, scene, camera } = L.createStage({ W, H, fov: +(q.get('fov') || 32), target: [+(q.get('tx') || -3), 0, +(q.get('tz') || -3)], dist: +(q.get('dist') || 132), yaw: 45, pitch: +(q.get('pitch') || 27), shadowSpan: 62 });
+scene.fog = new THREE.Fog(WORLD.skyHorizon, 190, 330);
+
+// ------------------------------------------------------------ Kenney preload
+const K = [
+  ...['building-a', 'building-b', 'building-c', 'building-d', 'building-f', 'building-g', 'building-h', 'building-i', 'building-l', 'building-m', 'building-skyscraper-a', 'building-skyscraper-b', 'building-skyscraper-c', 'building-skyscraper-d', 'building-skyscraper-e', 'detail-parasol-a'].map((n) => ['commercial', n]),
+  ...['building-type-a', 'building-type-b', 'building-type-c', 'building-type-e', 'building-type-k', 'building-type-o', 'building-type-s', 'fence-1x3', 'planter'].map((n) => ['suburban', n]),
+  ...['windmill', 'water-tower', 'shipping-container-a', 'shipping-container-b'].map((n) => ['industrial', n]),
+  ...['road-straight', 'road-crossroad', 'road-intersection', 'road-end', 'road-square', 'road-crossing', 'light-square', 'light-curved', 'traffic-light', 'bridge-pillar-wide', 'construction-cone'].map((n) => ['roads', n]),
+  ...['tree_default', 'tree_oak', 'tree_detailed', 'tree_fat', 'tree_cone', 'tree_plateau', 'tree_palmTall', 'tree_pineRoundA', 'plant_bushLarge', 'plant_bush', 'flower_redA', 'flower_yellowA', 'flower_purpleA', 'rock_largeA', 'rock_smallC', 'lily_large'].map((n) => ['nature', n]),
+];
+await L.preload(K);
+
+const specs = city === 'viet'
+  ? [{ wall: 0xffd98a, trim: 0xfff6e2, roof: 0xd9573d, glass: 0x9fe2f2, accent: 0xe76f51 }, { wall: 0xfff1d6, trim: 0xffd98a, roof: 0x8a5a44, glass: 0x9fe2f2, accent: 0x6fae5a }, { wall: 0xffc9a3, trim: 0xfff6e2, roof: 0xe76f51, glass: 0xa6eeff, accent: 0xffc93c }, { wall: 0xc9eeaa, trim: 0xfff6e2, roof: 0x5f8f4a, glass: 0x9fe2f2, accent: 0xe76f51 }]
+  : [{ wall: 0xffe27a, trim: 0xfff6dd, roof: 0x3f6fc0, glass: 0x7fdcff, accent: 0x5ec96b }, { wall: 0xa8d2ff, trim: 0xffffff, roof: 0x2f5fb3, glass: 0x8feaff, accent: 0xffc21a }, { wall: 0xffffff, trim: 0xffd447, roof: 0x5e93d6, glass: 0x7fdcff, accent: 0xff7a4d }, { wall: 0xffb77a, trim: 0xfff6dd, roof: 0x3f6fc0, glass: 0x8feaff, accent: 0x22b8a5 }];
+const kb = (kit, name, tx, tz, { rot = 0, v = 0, scale = TILE, y = 0 } = {}) => add(scene, L.kenney(kit, name, { rot, scale, spec: specs[v % specs.length], specKey: `${city}${v}` }), wx(tx), y, wz(tz));
+const leaves = [WORLD.leaves[3], WORLD.leaves[0], WORLD.leaves[2]];
+const blossom = [0xff8fbf, 0xff9ec7, 0xffc2dd];
+const TREES = ['tree_default', 'tree_oak', 'tree_detailed', 'tree_fat', 'tree_plateau', 'tree_cone', 'tree_pineRoundA'];
+const nat = (name, tx, tz, { s = 1, rot = 0, lv = leaves } = {}) => add(scene, L.kenney('nature', name, { scale: TILE * 0.6 * s, rot, leaves: lv }), wx(tx), 0, wz(tz));
+const place = (obj, tx, tz, { rot = 0, y = 0 } = {}) => { obj.rotation.y = rot; return add(scene, obj, wx(tx), y, wz(tz)); };
+const r = L.rng(city === 'viet' ? 77 : 13);
+
+// ------------------------------------------------------------ terrain grid
+const bubbles = [], tags = [];
+if (city === 'vmath') {
+  fill(0, 5, 19, 5, '#'); fill(0, 11, 23, 11, '#'); fill(0, 16, 19, 16, '#');
+  fill(4, 0, 4, 19, '#'); fill(11, 0, 11, 19, '#'); fill(17, 0, 17, 19, '#');
+  fill(19, 0, 19, 19, ','); fill(22, 0, 22, 19, ','); fill(20, 0, 21, 19, '~');
+  fill(19, 11, 22, 11, 'B');
+  fill(12, 0, 16, 4, 'p'); fill(5, 17, 10, 19, 'g'); fill(12, 17, 16, 19, 'g'); fill(0, 17, 3, 19, 'g');
+  fill(5, 6, 10, 10, 'p');
+} else {
+  fill(0, 6, 23, 6, '#'); fill(0, 12, 23, 12, '#'); fill(0, 17, 23, 17, '#');
+  fill(5, 0, 5, 19, '#'); fill(11, 6, 11, 19, '#'); fill(19, 0, 19, 19, '#');
+  fill(12, 0, 18, 4, '~'); fill(12, 5, 18, 5, 'p');
+  fill(6, 0, 10, 5, 'p'); fill(0, 18, 4, 19, 'g'); fill(6, 18, 18, 19, 'g'); fill(20, 18, 23, 19, 'g');
+  fill(6, 7, 10, 11, 'p');
+}
+
+// ground: one big grass plane + tinted tiles for plaza/lawn/sand/water
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(520, 520, 260, 260), L.mat(WORLD.grass, { roughness: 1 })); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+const tileMat = { p: L.mat(WORLD.plaza, { roughness: 1 }), g: L.mat(WORLD.lawn, { roughness: 1 }), ',': L.mat(WORLD.sand, { roughness: 1 }) };
+const waterMat = L.mat(WORLD.water, { roughness: 0.12, metalness: 0.15, emissive: 0x1a90c8, emissiveIntensity: 0.18 });
+for (let z = 0; z < ROWS; z++) for (let x = 0; x < COLS; x++) {
+  const ch = grid[z][x];
+  if (tileMat[ch]) { const t = new THREE.Mesh(new THREE.BoxGeometry(TILE, 0.06, TILE), tileMat[ch]); t.receiveShadow = true; add(scene, t, wx(x + 0.5), 0.03, wz(z + 0.5)); }
+  if (ch === '~' || ch === 'B') { const t = new THREE.Mesh(new THREE.BoxGeometry(TILE, 0.1, TILE), waterMat); t.receiveShadow = true; add(scene, t, wx(x + 0.5), -0.02, wz(z + 0.5)); }
+}
+// water continues past the map edge (river / lake shore line)
+if (city === 'vmath') { const river = new THREE.Mesh(new THREE.BoxGeometry(2 * TILE, 0.1, 400, 1, 1, 200), waterMat); add(scene, river, wx(21), -0.02, 0); const sandL = new THREE.Mesh(new THREE.BoxGeometry(TILE * 4, 0.06, 400, 1, 1, 200), tileMat[',']); sandL.receiveShadow = true; add(scene, sandL, wx(21), -0.06, 0); }
+add(scene, L.roadsFromMap(grid.map((row) => row.join('').replace(/B/g, '#')), L.ROAD_SPEC), wx(0), 0, wz(0));
+// bridge deck lift
+if (city === 'vmath') for (const tx of [19.5, 20.5, 21.5, 22.5]) { const p = L.kenney('roads', 'bridge-pillar-wide', { spec: L.ROAD_SPEC, specKey: 'road' }); add(scene, p, wx(tx), -0.9, wz(11.5)); }
+
+// ------------------------------------------------------------ surroundings: forest ring, hills, mountains, clouds
+const clear = city === 'vmath' ? [[22.4, 2.8, 24.9, 6.2], [22.4, 13.8, 24.9, 17.2]] : [[20.6, 0.8, 23.4, 4.2]];
+const forestBand = (x0, z0, x1, z1, step, lv = leaves) => { for (let x = x0; x <= x1; x += step) for (let z = z0; z <= z1; z += step) { if (clear.some(([a, b, cc, d]) => x > a && x < cc && z > b && z < d)) continue; nat(TREES[Math.floor(r() * TREES.length)], x + (r() - 0.5) * 0.5, z + (r() - 0.5) * 0.5, { s: 0.9 + r() * 0.5, rot: r() * 6, lv: r() < 0.05 && city === 'viet' ? blossom : lv }); } };
+forestBand(-9, -8, -1, 27, 0.9); forestBand(0, -8, 32, -1, 0.9); forestBand(24, 0, 32, 27, 0.9); forestBand(-1, 20.3, 23, 27, 0.9);
+for (let i = 0; i < 30; i++) { const a = i / 30 * Math.PI * 2; const rad = 88 + r() * 30; const h = L.hill(16 + r() * 14, 5 + r() * 7, WORLD.hill[i % 3], i); add(scene, h, Math.cos(a) * rad, 0, Math.sin(a) * rad); }
+for (let i = 0; i < 34; i++) { const a = i / 34 * Math.PI * 2; const rad = 128 + r() * 26; const m = L.hill(24 + r() * 16, 18 + r() * 16, i % 2 ? WORLD.mountain : 0x8fd0b0, 40 + i); add(scene, m, Math.cos(a) * rad, 0, Math.sin(a) * rad); }
+for (let i = 0; i < 26; i++) { const a = -3.75 + i * 0.1 + r() * 0.05; const rad = 118 + r() * 60; const c = L.cloud(2.6 + r() * 2.6, i + 3); add(scene, c, Math.cos(a) * rad, 11 - (rad - 118) * 0.3 - r() * 6, Math.sin(a) * rad); }
+
+// ------------------------------------------------------------ street furniture along roads
+for (let z = 0; z < ROWS; z++) for (let x = 0; x < COLS; x++) {
+  if (grid[z][x] !== '#') continue;
+  const isX = grid[z][x + 1] === '#' || grid[z][x - 1] === '#', isZ = grid[z + 1]?.[x] === '#' || grid[z - 1]?.[x] === '#';
+  if (isX && isZ && r() < 0.8) { const tl = L.kenney('roads', 'traffic-light', { spec: L.ROAD_SPEC, specKey: 'road' }); add(scene, tl, wx(x + 0.08), 0, wz(z + 0.08)); continue; }
+  if (!(isX && isZ) && (x + z) % 3 === 0) { const lamp = L.kenney('roads', 'light-curved', { spec: L.ROAD_SPEC, specKey: 'road', rot: isX ? Math.PI / 2 : 0 }); add(scene, lamp, wx(x + (isZ ? 0.02 : 0.5)), 0, wz(z + (isX ? 0.02 : 0.5))); }
+}
+
+// ------------------------------------------------------------ vehicles & people
+const carCols = [0xff6f61, 0x5e93d6, 0xffd447, 0x6fcf5a, 0xb283e0, 0xffffff, 0xff9f43];
+const onRoadX = (tx, tz, dir = 1, obj) => place(obj, tx, tz + (dir > 0 ? 0.25 : -0.25) + 0.5, { rot: dir > 0 ? 0 : Math.PI, y: 0.04 });
+const onRoadZ = (tx, tz, dir = 1, obj) => place(obj, tx + (dir > 0 ? -0.25 : 0.25) + 0.5, tz, { rot: dir > 0 ? -Math.PI / 2 : Math.PI / 2, y: 0.04 });
+const crowd = (tx, tz, n, spread = 1.2) => { for (let i = 0; i < n; i++) { const p = L.person(carCols[Math.floor(r() * carCols.length)], { hair: [0x3b2a20, 0x1f1a17, 0x6a3f22][i % 3], h: r() < 0.3 ? 0.7 : 0.95 }); place(p, tx + (r() - 0.5) * spread, tz + (r() - 0.5) * spread, { rot: r() * 6.28, y: 0.06 }); } };
+
+// ------------------------------------------------------------ city content
+const bubble = (tx, tz, y, icon = '★') => { const b = L.missionBubble(icon, { scale: 1.35 }); place(b, tx, tz, { y }); const s = L.sparkles(5, 1.6, Math.floor(tx * 7 + tz)); place(s, tx, tz, { y }); };
+const skill = (lv, tx, tz, { rot = 0, seed = 1, mission = false } = {}) => { const b = L.skillBuilding(city, lv, seed); place(b, tx, tz, { rot, y: 0.06 }); if (mission || lv === 0) bubble(tx, tz, b.userData.top + 1.6); return b; };
+
+if (city === 'vmath') {
+  // far block: downtown skyline + the skill skyscraper (mức 4)
+  kb('commercial', 'building-skyscraper-d', 1.2, 1.2, { v: 1, scale: TILE * 1.25 }); kb('commercial', 'building-skyscraper-b', 3.0, 1.0, { v: 2, scale: TILE * 1.2 });
+  kb('commercial', 'building-skyscraper-c', 1.1, 3.4, { v: 0, scale: TILE * 1.2 }); kb('commercial', 'building-skyscraper-e', 3.0, 3.3, { v: 3, scale: TILE * 1.15 });
+  skill(4, 7.0, 2.5, { seed: 2 });
+  kb('commercial', 'building-skyscraper-a', 9.6, 1.4, { v: 3, scale: TILE * 1.2 }); kb('commercial', 'building-l', 9.6, 3.6, { v: 1, scale: TILE * 1.1 });
+  // wonder in progress
+  const pyr = L.pyramid(5); place(pyr, 14.5, 2.4, { rot: 0, y: 0.06 });
+  tags.push([new THREE.Vector3(wx(14.5), 14, wz(2.4)), '🏛️ Kim tự tháp · 5/8 mảnh']);
+  nat('tree_palmTall', 12.3, 4.4, { s: 1.2 }); nat('tree_palmTall', 16.6, 4.4, { s: 1.1 }); nat('tree_palmTall', 16.7, 0.4, { s: 1.2 });
+  forestBand(18, 0.3, 18.6, 4.5, 1.1);
+  // town hall block with order board
+  const th = L.townHall(C); place(th, 8.0, 7.6, { y: 0.06 });
+  bubble(9.2, 9.6, 5.2, '📜');
+  place(L.fountain(1.4), 5.9, 9.8, { y: 0.06 });
+  crowd(7.6, 9.9, 5, 2.4);
+  // skill block
+  skill(2, 13.0, 7.2, { seed: 1 }); skill(1, 15.6, 7.1, { seed: 4, mission: true }); skill(3, 13.1, 9.6, { seed: 3 }); skill(0, 15.6, 9.6, { seed: 5 });
+  // school
+  place(L.school(C), 2.0, 7.4, { y: 0.06 });
+  // east strip by the river
+  kb('commercial', 'building-c', 18.4, 7.3, { v: 2 }); kb('commercial', 'building-a', 18.4, 9.6, { v: 0, rot: Math.PI / 2 });
+  // houses
+  kb('suburban', 'building-type-b', 1.2, 12.8, { v: 0, rot: 0 }); kb('suburban', 'building-type-o', 3.0, 12.8, { v: 1 }); kb('suburban', 'building-type-k', 1.2, 14.9, { v: 2 }); kb('suburban', 'building-type-s', 3.0, 14.9, { v: 3 });
+  // library + skills
+  place(L.library(C), 7.6, 13.2, { y: 0.06 }); skill(2, 6.3, 15.2, { seed: 6 }); skill(1, 9.8, 15.1, { seed: 7 });
+  skill(3, 13.1, 13.4, { seed: 8 }); place(L.openPlot(TILE * 1.5), 15.5, 13.4); tags.push([new THREE.Vector3(wx(15.5), 0, wz(14.6)), 'Ô đất mới — con chọn xây gì']);
+  kb('commercial', 'building-g', 13.0, 15.3, { v: 1 }); kb('commercial', 'building-d', 15.6, 15.3, { v: 0 });
+  place(L.ferrisWheel(), 18.5, 13.6, { rot: Math.PI / 2, y: 0.06 });
+  // park row
+  place(L.playground(), 7.9, 18.3, { y: 0.06 }); place(L.footballField(), 14.5, 18.4, { y: 0.06 });
+  place(L.pool(), 2.0, 18.3, { y: 0.06 });
+  place(L.iceCreamCart(), 10.4, 17.4, { rot: -0.6, y: 0.06 }); place(L.statue(0xffd447), 16.8, 17.3, { y: 0.06 });
+  // beyond the river: locked land
+  place(L.lockedPlot(TILE * 1.6, 20), 23.6, 4.5); place(L.lockedPlot(TILE * 1.6, 35), 23.6, 15.5);
+  // river life
+  place(L.boat(0xff7a4d), 20.9, 5.0, { rot: Math.PI / 2 }); place(L.boat(0x5e93d6), 21.0, 16.5, { rot: -Math.PI / 2 + 0.2 });
+  for (const tx of [19.5, 22.5]) { const s = L.decal(L.textTexture(tx < 21 ? '+' : '=', { bg: '#ffd447', fg: '#2f5fb3', size: 200, radius: 128 }), 1.6, 1.6, { emissive: 0.4 }); s.userData.billboard = true; place(s, tx, 11.5, { y: 3.4 }); const pole = L.cyl(0.08, 0.08, 2.6, L.mat(0xffffff)); place(pole, tx, 11.5, { y: 1.3 }); }
+  // traffic
+  onRoadX(2, 11, 1, L.bus(0xffc93c)); onRoadX(14, 11, -1, L.car(carCols[0])); onRoadX(8.5, 5, 1, L.car(carCols[1])); onRoadX(20.5, 11, 1, L.car(carCols[3]));
+  onRoadZ(11, 3, 1, L.car(carCols[2])); onRoadZ(17, 13, -1, L.bus(0x5e93d6)); onRoadZ(4, 9, 1, L.car(carCols[4])); onRoadX(14.5, 16, 1, L.car(carCols[5])); onRoadZ(11, 14.5, -1, L.car(carCols[6]));
+  crowd(12.5, 17.0, 3, 1.5); crowd(3.5, 10.6, 3, 1.0); crowd(18.4, 11.8, 2, 0.5);
+  const pet = L.dog(); place(pet, 9.6, 10.4, { rot: 0.8, y: 0.06 }); const owner = L.person(0xff8fb1, { h: 0.7 }); place(owner, 9.2, 10.2, { y: 0.06 });
+  // balloons
+  place(L.balloon(0xff6f61, 0xffd447), 5.5, 3, { y: 22 }); place(L.balloon(0x5e93d6, 0xffffff), 17, -1, { y: 27 });
+  // street trees & flowers
+  for (const [tx, tz] of [[0.3, 5.8], [3.7, 5.8], [5.3, 10.6], [10.7, 10.6], [12.3, 5.8], [16.7, 5.8], [0.4, 10.6], [5.3, 15.6], [10.7, 15.6], [12.3, 10.6], [16.7, 10.6], [0.3, 15.7], [3.7, 15.7], [18.4, 15.4], [18.5, 6.0]]) nat(TREES[Math.floor(r() * 3)], tx, tz, { s: 1.0 });
+  for (const [tx, tz] of [[6.6, 10.5], [9.8, 6.3], [5.4, 6.3]]) place(L.flowerBed(2.2, 0.8, tx * 3), tx, tz, { y: 0.06 });
+} else {
+  // far-left: modern quarter skyline + mức 4 tower
+  kb('commercial', 'building-skyscraper-b', 1.1, 1.1, { v: 1, scale: TILE * 1.2 }); kb('commercial', 'building-skyscraper-d', 3.2, 1.0, { v: 0, scale: TILE * 1.25 });
+  kb('commercial', 'building-skyscraper-e', 1.0, 3.4, { v: 2, scale: TILE * 1.15 }); skill(4, 3.3, 3.8, { seed: 2 });
+  // wonder in progress on the lake shore
+  const pag = L.onePillarPagoda(3); pag.scale.setScalar(1.35); place(pag, 8.2, 2.6, { y: 0.06 });
+  tags.push([new THREE.Vector3(wx(8.2), 13.5, wz(2.6)), '🏯 Chùa Một Cột · 3/6 mảnh']);
+  for (const [tx, tz] of [[6.3, 0.4], [10.4, 0.5], [6.4, 5.2], [10.5, 5.1]]) nat('tree_detailed', tx, tz, { s: 1.1, lv: r() < 0.5 ? blossom : leaves });
+  // lake: Tháp Rùa on an islet, lilies, boats
+  { const islet = L.cyl(2.2, 2.6, 0.5, L.mat(0x8fd06e, { roughness: 1 }), 16); place(islet, 15.4, 2.2, { y: 0.1 }); const t = new THREE.Group(); add(t, L.box(1.3, 1.1, 1.3, L.mat(0xfff1d6), 0.05), 0, 0.55, 0); add(t, L.curvedRoof(1.2, 1.2, 0.35, 0xd9573d, 0.2, 0.15), 0, 1.1, 0); add(t, L.box(1.0, 0.8, 1.0, L.mat(0xfff1d6), 0.05), 0, 1.8, 0); add(t, L.curvedRoof(0.9, 0.9, 0.3, 0xd9573d, 0.2, 0.15), 0, 2.2, 0); add(t, L.box(0.7, 0.6, 0.7, L.mat(0xfff1d6), 0.05), 0, 2.8, 0); add(t, L.curvedRoof(0.6, 0.6, 0.35, 0xd9573d, 0.2, 0.12), 0, 3.1, 0); t.scale.setScalar(1.3); place(t, 15.4, 2.2, { y: 0.35 }); nat('tree_oak', 14.6, 1.6, { s: 0.9 }); }
+  for (let i = 0; i < 10; i++) nat('lily_large', 12.6 + r() * 6, 0.4 + r() * 4, { s: 2.2, rot: r() * 6 });
+  place(L.boat(0xe76f51), 13.2, 3.6, { rot: 0.3 }); place(L.boat(0x6fae5a), 17.4, 0.9, { rot: -0.4 });
+  for (let i = 0; i < 7; i++) nat('tree_detailed', 12.2 + i, 5.45, { s: 0.85, lv: i % 2 ? blossom : leaves });
+  forestBand(20.3, 0.3, 23.6, 5.5, 1.1);
+  place(L.lockedPlot(TILE * 1.6, 20), 22.0, 2.5);
+  // town hall with lanterns, the banyan at the gate
+  const th = L.townHall(C, { lanterns: true }); place(th, 8.6, 8.4, { y: 0.06 });
+  bubble(9.8, 10.4, 5.2, '📜');
+  place(L.banyan(1.15), 6.3, 10.6, { y: 0.06 }); crowd(8.4, 10.8, 5, 2.4);
+  // school
+  place(L.school(C), 2.4, 8.6, { y: 0.06 });
+  // skill row along the lake
+  skill(1, 13.0, 8.2, { seed: 1 }); skill(2, 15.5, 8.2, { seed: 2, mission: true }); skill(0, 17.9, 8.3, { seed: 3 });
+  skill(3, 13.1, 10.7, { seed: 4 }); kb('suburban', 'building-type-c', 15.5, 10.9, { v: 0 }); kb('suburban', 'building-type-e', 17.8, 10.9, { v: 2 });
+  place(L.circusTent(), 21.8, 9.4, { y: 0.06 });
+  // old-quarter houses (Kenney, recoloured to ochre walls + tile roofs)
+  kb('suburban', 'building-type-a', 1.2, 13.8, { v: 0 }); kb('suburban', 'building-type-o', 3.3, 13.8, { v: 2 }); kb('suburban', 'building-type-s', 1.2, 15.9, { v: 1 }); kb('suburban', 'building-type-b', 3.3, 15.9, { v: 3 });
+  // market (chợ) + skill
+  place(L.market(C), 7.6, 14.4, { y: 0.06 }); skill(2, 9.8, 15.2, { seed: 5 });
+  add(scene, L.lanternString(TILE * 4.6, 12, 3.2), wx(8.3), 0, wz(13.1));
+  // zoo + library
+  place(L.zoo(), 14.0, 14.5, { y: 0.06 }); place(L.library(C), 17.6, 14.4, { y: 0.06 });
+  skill(1, 21.0, 13.8, { seed: 6 }); place(L.openPlot(TILE * 1.5), 21.2, 15.8); tags.push([new THREE.Vector3(wx(21.2), 0, wz(17.0)), 'Ô đất mới — con chọn xây gì']);
+  // park row
+  place(L.playground(), 8.2, 18.9, { y: 0.06 }); place(L.fountain(1.6), 13.4, 18.9, { y: 0.06 }); place(L.iceCreamCart(), 15.2, 18.5, { rot: -0.4, y: 0.06 }); place(L.statue(0xffd447), 17.4, 18.7, { y: 0.06 });
+  add(scene, L.lanternString(TILE * 5, 12, 3.0), wx(15.5), 0, wz(19.6));
+  place(L.lockedPlot(TILE * 1.6, 35), 2.2, 18.9);
+  for (const tx of [6.1, 10.8, 11.9, 16.3, 18.6, 20.6, 23.2]) nat('tree_detailed', tx, 18.4 + (tx % 2) * 1.1, { s: 1.0, lv: tx % 3 < 1.5 ? blossom : leaves });
+  // traffic
+  onRoadX(2, 12, 1, L.bus(0xffc93c)); onRoadX(15, 12, -1, L.car(carCols[0])); onRoadX(8.5, 6, 1, L.car(carCols[1])); onRoadZ(19, 3, 1, L.car(carCols[3]));
+  onRoadZ(11, 14, -1, L.car(carCols[2])); onRoadZ(5, 9, 1, L.car(carCols[4])); onRoadX(17.5, 17, 1, L.bus(0x6fae5a)); onRoadZ(19, 15, -1, L.car(carCols[6]));
+  crowd(12.8, 5.5, 4, 3); crowd(4.2, 11.4, 3, 1); crowd(20.4, 12.8, 2, 0.6);
+  const pet = L.dog(0xffe0b0); place(pet, 11.7, 10.8, { rot: 1.4, y: 0.06 }); const owner = L.person(0x6fae5a, { h: 0.7 }); place(owner, 11.8, 10.4, { y: 0.06 });
+  place(L.balloon(0xe76f51, 0xffd447), 3.5, 5, { y: 23 }); place(L.balloon(0x6fae5a, 0xffffff), 20, 1, { y: 28 });
+  for (const [tx, tz] of [[0.3, 6.8], [4.7, 6.8], [0.3, 11.5], [4.6, 11.5], [12.3, 6.8], [18.6, 6.8], [12.3, 11.4], [18.6, 11.5], [0.3, 17.6], [4.6, 17.6], [6.4, 16.6], [18.6, 16.4], [20.4, 6.8], [23.4, 6.8]]) nat(TREES[Math.floor(r() * 3)], tx, tz, { s: 1.0, lv: r() < 0.3 ? blossom : leaves });
+  for (const [tx, tz] of [[7.0, 11.6], [21.2, 11.6]]) place(L.flowerBed(2.2, 0.8, tx * 3), tx, tz, { y: 0.06 });
+}
+
+place(L.cityGate(C, city, 4.6), city === 'viet' ? 19.5 : 17.5, 19.3, { y: 0.04 });
+L.faceCamera(scene, camera);
+renderer.render(scene, camera);
+
+// ------------------------------------------------------------ HUD mock (kid UI: ≥ 22px, big touch targets)
+if (hud) {
+  const el = document.createElement('div'); el.className = 'hud';
+  el.innerHTML = `<div class="pill"><span class="dot" style="background:#${C.a.toString(16).padStart(6, '0')}"></span>${C.name}</div><div class="pill">⭐ 46</div>`;
+  document.body.appendChild(el);
+  const land = document.createElement('div'); land.className = 'land';
+  land.innerHTML = `Ô đất mới <div class="bar"><i style="width:${Math.round(46 / 55 * 100)}%"></i></div> 46/55 ⭐`;
+  document.body.appendChild(land);
+  for (const [p, text] of tags) { const v = p.clone().project(camera); const t = document.createElement('div'); t.className = 'tag'; t.textContent = text; t.style.left = `${(v.x + 1) / 2 * W}px`; t.style.top = `${(1 - v.y) / 2 * H}px`; document.body.appendChild(t); }
+}
+window.__stats = L.stats(renderer, scene);
+window.__done = true;
+</script></body></html>

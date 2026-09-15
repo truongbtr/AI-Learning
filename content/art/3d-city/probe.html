@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#2b2d33;overflow:hidden}canvas{display:block}</style>
+</head><body>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const q = new URLSearchParams(location.search);
+const W = +q.get('w') || 2400, H = +q.get('h') || 1500;
+const kit = q.get('kit') || 'commercial';
+const filter = q.get('only');
+const idx = await (await fetch('./kenney-index.json')).json();
+const dir = '../kenney/' + idx.dirs[kit].replace('kenney/', '');
+let names = idx.models[kit];
+if (filter) names = names.filter(n => new RegExp(filter).test(n));
+const r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+r.setSize(W, H); r.outputColorSpace = THREE.SRGBColorSpace; document.body.appendChild(r.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0x2b2d33);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x444444, 1.6));
+const sun = new THREE.DirectionalLight(0xffffff, 2); sun.position.set(-3, 6, 4); scene.add(sun);
+const loader = new GLTFLoader();
+const cols = Math.ceil(Math.sqrt(names.length * W / H));
+const sizes = {};
+let maxS = 0;
+const loaded = await Promise.all(names.map(n => loader.loadAsync(`${dir}/${n}.glb`).then(g => [n, g.scene])));
+for (const [n, s] of loaded) { const b = new THREE.Box3().setFromObject(s); const v = b.getSize(new THREE.Vector3()); sizes[n] = [v.x, v.y, v.z].map(x => +x.toFixed(2)); maxS = Math.max(maxS, v.x, v.z); }
+const gap = maxS * 1.35;
+loaded.forEach(([n, s], i) => { const c = i % cols, row = Math.floor(i / cols); s.position.set(c * gap, 0, row * gap); scene.add(s); });
+const rows = Math.ceil(names.length / cols);
+const cx = (cols - 1) * gap / 2, cz = (rows - 1) * gap / 2;
+const span = Math.max(cols, rows) * gap * 0.62;
+const cam = new THREE.OrthographicCamera(-span * W / H, span * W / H, span, -span, -500, 500);
+if (q.get("top")) { cam.position.set(cx, 50, cz); cam.up.set(0, 0, -1); cam.lookAt(cx, 0, cz); loaded.forEach(([n, s]) => { const m = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.2, 0.15), new THREE.MeshBasicMaterial({ color: 0xff0000 })); m.position.set(s.position.x + 0.5, 0.1, s.position.z); scene.add(m); }); } else { cam.position.set(cx + 30, 30, cz + 30); cam.lookAt(cx, 0, cz); }
+r.render(scene, cam);
+console.log(JSON.stringify({ kit, cols, sizes }));
+window.__done = true;
+</script></body></html>

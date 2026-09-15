@@ -2,6 +2,65 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 10 — 15/09/2026 — Thế giới Học Đường: thành phố 3D *(việc 1 xong — dừng chờ duyệt)*
+
+Trạng thái: **việc 1 (tải kit + bảng phong cách render thật) xong, đang chờ chủ dự án duyệt.** Chưa
+dựng `packages/city`, chưa gắn dữ liệu, chưa đụng giao diện con đang chạy — hai bé không bị ảnh hưởng.
+
+Trang duyệt: https://claude.ai/artifact/FxS1xjZj3oYRFmik5q65Tq · ảnh gốc `docs/screens/3d-city/`.
+
+### Đã làm
+
+- **Tải 5 kit Kenney** (City Suburban 2.0, Commercial 2.1, Industrial 2.0, Roads, Nature Kit — CC0)
+  vào `content/art/kenney/`. ~98 MB → gitignore toàn bộ trừ `README.md` (ghi nguồn, phiên bản, ngày
+  tải, lệnh PowerShell tải lại). `scripts/art-sync.mjs` bỏ qua `kenney/`, `3d-city/`, `3d-proto/`,
+  `node_modules` (trước đây sẽ chép cả 98 MB sang `public/art`).
+- **Bàn render `content/art/3d-city/`** — mầm của `packages/city`, three.js thuần:
+  - `lib.js`: tô lại Kenney theo thành phố (vẽ lại ô màu của `colormap.png`; Nature Kit đổi màu vật
+    liệu), nhà kỹ năng **5 mức** cho Toán và Tiếng Việt, mái ngói cong tự dựng lưới, 9 công trình
+    công cộng (trường, thư viện, sân chơi, bể bơi, sân bóng, rạp xiếc, vườn thú, ga tàu, vòng quay) +
+    chợ + toà thị chính có bảng đơn, kỳ quan **Kim tự tháp 8 mảnh** và **Chùa Một Cột 6 mảnh** (mảnh
+    chưa có hiện kính xanh mờ có viền), ô đất khoá/ô đất mới, cổng thành phố, người, thú cưng, xe,
+    thuyền, khinh khí cầu, xe kem, cây đa, đèn lồng, mây, đồi, núi.
+  - `city.html` (Thành Số, Phố Chữ + HUD mẫu), `sheet.html` (5 mức), `wonder.html` (3 giai đoạn),
+    `probe.html` (bảng tiếp xúc Kenney), `shoot.mjs` (Chrome headless GPU thật, ~9 s/thành phố).
+- **Bảng màu tươi hơn mẫu**: cỏ `#79DC48`, trời `#3FA9F5→#D2F3FF`, bão hoà vật liệu Kenney ×1,18.
+- 8 ảnh: `thanh-so.jpg`, `pho-chu.jpg` (+ bản `-khong-hud`), `thanh-so-5-muc.jpg`,
+  `pho-chu-5-muc.jpg`, `kim-tu-thap-ghep-manh.jpg`, `chua-mot-cot-ghep-manh.jpg`.
+
+### Quyết định kỹ thuật (ghi lại, chưa phải ADR)
+
+- **Đất cong ra xa** thay cho camera trực giao của mẫu: thành phố phẳng trong bán kính 62, ngoài
+  đó hạ `0,0055·d²`. Camera nghiêng 27° vẫn thấy trời có mây (yêu cầu mới) mà không phải hạ góc
+  xuống kiểu nhìn ngang phố. Vá vào `project_vertex` nên bóng đổ khớp.
+- **Ánh sáng bán cầu nửa dưới màu kem**, không phải xanh cỏ — xanh cỏ hắt lên làm tường vàng ngả
+  ô-liu (đã thử, thấy rõ trên ảnh).
+- Kỳ quan và nhà kỹ năng tự dựng; Kenney chỉ cho phố, nhà trang trí, cao ốc nền, cây.
+
+### Số đo (máy render GTX 1060 — chưa phải iPad)
+
+| Cảnh | Draw call | Tam giác |
+|---|---|---|
+| Thành Số | ~4.300 | ~730k |
+| Phố Chữ | ~4.700 | ~700k |
+| Bảng 5 mức | 440–580 | 113–127k |
+
+**Vượt xa ngân sách iPad** (≤ 150 draw call, ≤ 80k tam giác) — đúng dự kiến cho ảnh chất lượng mục
+tiêu. Việc 2 đo trên iPad thật rồi chọn InstancedMesh/gộp theo ô hay đường WebP, ghi ADR.
+
+### Cần chủ dự án
+
+1. Duyệt hướng hình (độ tươi, góc có trời, mật độ), 5 mức công trình, cách hiện mảnh kỳ quan.
+2. **Link bảng phong cách 6 khung trên claude.ai chưa nhận được** — bản này dựng theo đề bài chữ; nếu
+   khung nào lệch thì chỉ ra để sửa trước việc 2.
+3. Cổng Phố Chữ hiện là hai cột + mái cong; nếu thấy giống cổng nước khác thì đổi sang tam quan.
+
+### Tồn đọng
+
+- Việc 2–5 chưa bắt đầu (chờ duyệt). Bốn thành phố và bốn kỳ quan còn lại chưa dựng.
+- `pnpm lint && pnpm test && pnpm build` xanh (15/09). Có sửa lint tối thiểu trong `3d-proto/`
+  (thêm `lang`, sắp import) — thư mục mẫu này nay vào git cùng ảnh của nó.
+
 ## Pha 9 — 15/09/2026 — Dựng máy chủ Ubuntu, chuyển dữ liệu, cắt tunnel
 
 Trạng thái: **§1, §2, §3 xong và đã cắt tunnel — `edu.medifa.vn` trả lời từ máy Ubuntu thật.** Chỉ
