@@ -40,13 +40,14 @@ import {
 import type { MaterialGroup } from "../build/bake";
 import { KenneyLibrary } from "../build/kenney";
 import { ATLAS_SIZE, canvasPainter, SignAtlas } from "../build/signs";
-import { type BuiltCity, buildCity } from "../scene/build-city";
+import { type BuiltCity, buildCity, chunkCentre, levelFor } from "../scene/build-city";
 import { AGENT_MAX, buildAgentTemplates } from "./agents";
 import { applyCamera, CAMERA, type CameraState, clampState, easeInOut, panDelta } from "./camera";
 import { bend, createCurveUniforms } from "./curve";
 import { GAME_DAY_MS, gameHour, type Lighting, lightingAt } from "./daynight";
-import { pathLength, sampleAt } from "./paths";
+import { sampleAt } from "./paths";
 import { surfaceShader } from "./surface";
+import { agentSample, seedOf, spawnTraffic, stepTraffic, type TrafficState } from "./traffic";
 
 export type TapTarget =
   | { type: "skill"; skillId: string }
@@ -92,6 +93,8 @@ export interface CityEngineOptions {
 export interface CityEngine {
   setView(view: CityView): void;
   setHour(hour: number | null): void;
+  /** The hour the city is at right now (0–24) — the HUD sun dial reads this. */
+  hourNow(): number;
   resize(): void;
   on(event: "tap", fn: (t: TapTarget) => void): void;
   anchors(ids?: string[]): ScreenAnchor[];
@@ -237,6 +240,25 @@ export async function createCityEngine(
 
   // agents
   const agentTemplates = buildAgentTemplates();
+  /** Half the side of the shadow box that travels with the camera. */
+  const SHADOW_SPAN = 90;
+  let lodMeshes: {
+    mesh: Mesh;
+    level: "near" | "mid" | "far";
+    cloud: boolean;
+    x: number;
+    z: number;
+  }[] = [];
+  /** Show one detail level per chunk, by how far its middle is from the camera (ADR-23). */
+  function applyLod() {
+    for (const item of lodMeshes) {
+      const distance = Math.hypot(camera.position.x - item.x, camera.position.z - item.z);
+      const wanted = item.cloud ? "near" : levelFor(distance);
+      item.mesh.visible = item.level === wanted;
+    }
+  }
+  let traffic: TrafficState | null = null;
+  let trafficSeed = 0;
   const instanced = new Map<string, InstancedMesh>();
   const makeInstanced = (key: keyof typeof agentTemplates, max: number) => {
     const im = new InstancedMesh(agentTemplates[key], materials.opaque, max);
@@ -277,16 +299,21 @@ export async function createCityEngine(
     const atlas = new SignAtlas(canvasPainter(atlasCtx));
     built = buildCity(view, lib, atlas);
     atlasTexture.needsUpdate = true;
+    lodMeshes = [];
     for (const m of built.baked.meshes) {
       const mesh = new Mesh(m.geometry, materials[m.kind]);
-      mesh.castShadow = m.kind === "opaque";
+      mesh.castShadow = m.kind === "opaque" && m.level === "near";
       mesh.receiveShadow = m.kind !== "cloud";
       if (mesh.castShadow) mesh.customDepthMaterial = depthMaterial;
       mesh.renderOrder = m.kind === "ghost" ? 2 : 0;
       mesh.matrixAutoUpdate = false;
       scene.add(mesh);
       cityObjects.push(mesh);
+      // pha 12: the same chunk is baked three times; the frame shows one of them
+      const centre = chunkCentre(m.chunk);
+      lodMeshes.push({ mesh, level: m.level, cloud: m.kind === "cloud", x: centre.x, z: centre.z });
     }
+    applyLod();
     if (built.baked.lines) {
       const lines = new LineSegments(built.baked.lines, lineMaterial);
       lines.renderOrder = 3;
@@ -294,15 +321,23 @@ export async function createCityEngine(
       scene.add(lines);
       cityObjects.push(lines);
     }
+    // the evening's traffic: seeded by the city and the day, so a reload shows the same city
+    trafficSeed = seedOf([view.subject, view.skills.length, new Date().toISOString().slice(0, 10)]);
+    traffic = spawnTraffic(built.composition.layout.roads, {
+      cars: built.composition.agents.cars,
+      buses: built.composition.agents.buses,
+      people: built.composition.agents.people,
+      seed: trafficSeed,
+    });
     uniforms.curveCenter.value.copy(built.center);
     uniforms.curveStart.value = built.composition.curveStart;
-    const b = built.composition.layout.bounds;
-    const span = Math.max(b.maxX - b.minX, b.maxZ - b.minZ) / 2 + 30;
+    // Shadows cost the whole city again, so they only cover what is near the camera and the box
+    // travels with it (pha 12 việc 5). A shadow two hundred units away is a pixel nobody sees.
     Object.assign(sun.shadow.camera, {
-      left: -span,
-      right: span,
-      top: span,
-      bottom: -span,
+      left: -SHADOW_SPAN,
+      right: SHADOW_SPAN,
+      top: SHADOW_SPAN,
+      bottom: -SHADOW_SPAN,
       near: 1,
       far: 400,
     });
@@ -331,9 +366,10 @@ export async function createCityEngine(
     sun.color.set(L.sunColor);
     sun.intensity = L.sunIntensity;
     fill.intensity = L.fill;
-    const c = built?.center;
-    const cx = c?.x ?? 0;
-    const cz = c?.y ?? 0;
+    ambient.intensity = L.ambient;
+    // the sun (and with it the shadow box) rides above wherever the child is looking
+    const cx = cam.x;
+    const cz = cam.z;
     sun.position.set(cx + L.sunDir[0] * 2, L.sunDir[1] * 2, cz + L.sunDir[2] * 2);
     sun.target.position.set(cx, 0, cz);
     sun.target.updateMatrixWorld();
@@ -369,52 +405,78 @@ export async function createCityEngine(
       im.setMatrixAt(i, m4);
       if (color) im.setColorAt(i, color);
     };
+    // Cars, buses and people walk the road graph (pha 12 việc 3): at a junction each one picks
+    // its next road, straight on more often than a turn. Only what the camera can see is drawn.
     const cars = instanced.get("car") as InstancedMesh;
     const buses = instanced.get("bus") as InstancedMesh;
-    const nCars = Math.min(AGENT_MAX.car, plan.cars);
-    const loops = plan.carLoops;
-    let busCount = 0;
-    for (let i = 0; i < nCars && loops.length; i++) {
-      const loop = loops[(i * 7) % loops.length] as [number, number][];
-      const len = pathLength(loop, true);
-      const s = sampleAt(loop, true, elapsed * 5.5 + (i * len) / 2.7);
-      if (i % 6 === 5 && busCount < AGENT_MAX.bus)
-        place(buses, busCount++, s.x, 0.16, s.z, s.heading);
-      else place(cars, i - busCount, s.x, 0.16, s.z, s.heading, carColors[i % carColors.length]);
-    }
-    cars.count = nCars - busCount;
-    buses.count = busCount;
     const people = ["personA", "personB", "personC"].map((k) => instanced.get(k) as InstancedMesh);
     const counts = [0, 0, 0];
-    const nPeople = Math.min(AGENT_MAX.person, plan.people);
-    for (let i = 0; i < nPeople && plan.walkLoops.length; i++) {
-      const loop = plan.walkLoops[(i * 5) % plan.walkLoops.length] as [number, number][];
-      const len = pathLength(loop, true);
-      const s = sampleAt(
-        loop,
-        true,
-        elapsed * (0.9 + (i % 3) * 0.15) * (i % 2 ? 1 : -1) + (i * len) / 3.3,
+    let carCount = 0;
+    let busCount = 0;
+    if (traffic && built) {
+      traffic = stepTraffic(
+        built.composition.layout.roads,
+        traffic,
+        Math.min(0.2, dt),
+        trafficSeed,
       );
-      const k = i % 3;
-      const im = people[k] as InstancedMesh;
-      place(
-        im,
-        counts[k] as number,
-        s.x,
-        0.12,
-        s.z,
-        s.heading + Math.PI / 2 + (i % 2 ? 0 : Math.PI),
-      );
-      counts[k] = (counts[k] as number) + 1;
+      const radius = cam.dist * 1.15 + 60;
+      for (const agent of traffic.agents) {
+        const at = agentSample(built.composition.layout.roads, agent);
+        if (!at) continue;
+        if (Math.hypot(at.x - cam.x, at.z - cam.z) > radius) continue;
+        if (agent.kind === "car" && carCount < AGENT_MAX.car) {
+          place(
+            cars,
+            carCount,
+            at.x,
+            0.16,
+            at.z,
+            at.heading,
+            carColors[agent.id % carColors.length],
+          );
+          carCount++;
+        } else if (agent.kind === "bus" && busCount < AGENT_MAX.bus) {
+          place(buses, busCount, at.x, 0.16, at.z, at.heading);
+          busCount++;
+        } else if (agent.kind === "person") {
+          const k = agent.id % 3;
+          if ((counts[k] as number) >= AGENT_MAX.person / 3) continue;
+          place(
+            people[k] as InstancedMesh,
+            counts[k] as number,
+            at.x,
+            0.12,
+            at.z,
+            at.heading + Math.PI / 2,
+          );
+          counts[k] = (counts[k] as number) + 1;
+        }
+      }
     }
+    cars.count = carCount;
+    buses.count = busCount;
     people.forEach((im, k) => {
       im.count = counts[k] as number;
     });
+    // Boats: each with its own pace, and every third one a fishing boat that stops to cast its net
+    // for a while before moving on — a river where everything moves at one speed reads as a
+    // conveyor belt (pha 12 việc 2).
     const boats = instanced.get("boat") as InstancedMesh;
     const nBoats = Math.min(AGENT_MAX.boat, plan.boats);
     for (let i = 0; i < nBoats; i++) {
       const line = plan.boatLines[i % plan.boatLines.length] as [number, number][];
-      const s = sampleAt(line, false, elapsed * 2.2 + i * 9);
+      const pace = 1.7 + (i % 3) * 0.55;
+      const fishing = i % 3 === 2;
+      let travelled = elapsed * pace + i * 9;
+      if (fishing) {
+        // 14 seconds of sailing, 9 of standing still, over and over
+        const cycle = 23;
+        const phase = ((elapsed + i * 5) % cycle) / cycle;
+        const stops = Math.floor((elapsed + i * 5) / cycle);
+        travelled = (stops * 14 + Math.min(14, phase * cycle)) * pace + i * 9;
+      }
+      const s = sampleAt(line, false, travelled);
       place(boats, i, s.x, 0.12 + Math.sin(elapsed * 2 + i) * 0.05, s.z, s.heading);
     }
     boats.count = nBoats;
@@ -615,6 +677,7 @@ export async function createCityEngine(
       frames = 0;
       acc = 0;
       if (hourOverride === null) applyLighting();
+      applyLod();
     }
   };
   function tick(dt: number, now: number) {
@@ -656,6 +719,15 @@ export async function createCityEngine(
       hourOverride = h;
       applyLighting();
     },
+    hourNow() {
+      return (
+        hourOverride ??
+        gameHour(Date.now(), {
+          dayMs: opts.dayLengthMs ?? GAME_DAY_MS,
+          anchorMs: opts.dayAnchorMs ?? 0,
+        })
+      );
+    },
     resize,
     on(_event, fn) {
       tapHandlers.push(fn);
@@ -679,14 +751,13 @@ export async function createCityEngine(
     },
     home() {
       if (!built) return { ...cam };
-      const b = built.composition.layout.bounds;
-      const extent = Math.max(b.maxX - b.minX, b.maxZ - b.minZ);
+      // the middle of a town is its town hall. It used to be the middle of the square the map is
+      // drawn on, which for the children's own town is a field on the far side of the lake.
+      const { townHall, bounds } = built.composition.layout;
+      const middle = { x: townHall.x, z: townHall.z };
+      const extent = Math.max(bounds.maxX - bounds.minX, bounds.maxZ - bounds.minZ);
       return clampState(
-        {
-          x: (b.minX + b.maxX) / 2,
-          z: (b.minZ + b.maxZ) / 2,
-          dist: Math.min(CAMERA.defaultDist, Math.max(62, extent * 1.2)),
-        },
+        { ...middle, dist: Math.min(CAMERA.defaultDist, Math.max(62, extent * 1.2)) },
         built.composition.panBounds,
       );
     },

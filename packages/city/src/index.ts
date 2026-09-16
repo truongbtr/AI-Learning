@@ -8,7 +8,18 @@ export * from "./color";
 export { IPAD_BUDGET, visibleBudget } from "./engine/budget";
 export { CAMERA, type CameraState, clampState } from "./engine/camera";
 export { type Lighting, lightingAt } from "./engine/daynight";
+export {
+  agentSample,
+  seedOf,
+  spawnTraffic,
+  stepTraffic,
+  type TrafficState,
+} from "./engine/traffic";
+export * from "./home-plan";
 export * from "./layout";
+export * from "./layout-plan";
 export * from "./palette";
+export * from "./paper-map";
 export { type BuiltCity, buildCity, CHUNK_SIZE } from "./scene/build-city";
-export { CITY_WATER, composeCity } from "./scene/compose";
+export { composeCity, polygon, ribbon } from "./scene/compose";
+export * from "./waterways";

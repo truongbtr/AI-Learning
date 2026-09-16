@@ -1,5 +1,7 @@
 "use client";
 
+import type { PaperMap } from "@mtct/city";
+import { paperMap } from "@mtct/city";
 import type { CityEngine, TapTarget } from "@mtct/city/engine";
 import type {
   CityChange,
@@ -15,6 +17,8 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BigButton } from "@/components/kid/buttons";
 import { CityCanvas, type CityOverlayItem } from "@/components/kid/city/city-canvas";
+import { PaperMapView } from "@/components/kid/city/paper-map";
+import { SunDial } from "@/components/kid/city/sun-dial";
 import { ExercisePlay } from "@/components/kid/exercise-play";
 import { fireConfetti } from "@/components/kid/feedback";
 import { Mascot, type MascotState } from "@/components/kid/mascot";
@@ -117,7 +121,16 @@ export function CityClient({
   // The city's day starts in the morning when the child sat down — the same moment on every screen
   // and after a reload, so the sky never jumps (pha 11). A session not started yet: now.
   const [openedAt] = useState(() => Date.now());
+  const [paper, setPaper] = useState<PaperMap | null>(null);
+  const [hour, setHour] = useState(8);
   const dayAnchorMs = session.startedAt ? new Date(session.startedAt).getTime() : openedAt;
+
+  useEffect(() => {
+    if (!engine) return;
+    const id = window.setInterval(() => setHour(engine.hourNow()), 1000);
+    setHour(engine.hourNow());
+    return () => window.clearInterval(id);
+  }, [engine]);
 
   const idBySkillCode = useMemo(() => new Map(skills.map((s) => [s.code, s.id])), [skills]);
   const nameBySkillId = useMemo(() => new Map(skills.map((s) => [s.id, s.nameVi])), [skills]);
@@ -641,6 +654,21 @@ export function CityClient({
           >
             🌍
           </motion.button>
+          {/* the paper map of a whole year's building (pha 12 việc 5) */}
+          <motion.button
+            type="button"
+            whileTap={{ scale: 0.9 }}
+            onClick={() => {
+              playSound("cham");
+              setPaper(paperMap(view));
+              void speak("Bản đồ thành phố của con đây!");
+            }}
+            className="flex h-[72px] w-[72px] items-center justify-center rounded-full bg-white/95 text-[40px] shadow"
+            aria-label="Xem bản đồ giấy"
+            data-testid="city-paper-map"
+          >
+            🗺️
+          </motion.button>
           <button
             type="button"
             onClick={() =>
@@ -666,6 +694,8 @@ export function CityClient({
         </div>
 
         <div className="pointer-events-auto flex flex-col items-center gap-2">
+          {/* the only clock this world has: it counts nothing down (pha 12 việc 4) */}
+          <SunDial hour={hour} language={city === "esl" ? "en" : "vi"} />
           <button
             type="button"
             onClick={() => void speak(`${info.name}, thành phố ${info.subject}`)}
@@ -829,6 +859,23 @@ export function CityClient({
             onLater={() => {
               setChooser(null);
               setMode(finishedRef.current ? "done" : "idle");
+            }}
+          />
+        ) : null}
+      </AnimatePresence>
+
+      {/* the paper map: a year of building on one screen (pha 12 việc 5) */}
+      <AnimatePresence>
+        {paper ? (
+          <PaperMapView
+            key="paper-map"
+            map={paper}
+            cityName={info.name}
+            onClose={() => setPaper(null)}
+            onPickDistrict={(at) => {
+              setPaper(null);
+              void speak(`Bay tới ${at.name} nhé!`);
+              void engine?.flyTo(at.x, at.z, undefined, reduce ? 1 : 1200);
             }}
           />
         ) : null}

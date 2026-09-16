@@ -19,13 +19,11 @@ export function VocabBench({
   games,
   skillCode,
   words,
-  mascot,
 }: {
   game: VocabGameId;
   games: string[];
   skillCode: string;
   words: VocabWord[];
-  mascot: "robot" | "cu";
 }) {
   const [log, setLog] = useState<string[]>([]);
   const [round, setRound] = useState(0);

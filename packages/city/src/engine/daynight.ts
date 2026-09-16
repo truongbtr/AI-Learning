@@ -14,6 +14,12 @@ export interface Lighting {
   fill: number;
   /** 0 = lamps off … 1 = lamps fully on. */
   lights: number;
+  /**
+   * Flat light added after dark so the paint on the houses stays the colour the child chose
+   * (owner, pha 10b việc 2 → agreed in pha 12). The sky still goes dark; the buildings do not go
+   * grey with it.
+   */
+  ambient: number;
   /** 0 = daylight windows … 1 = warm lit windows. */
   windows: number;
 }
@@ -24,6 +30,7 @@ interface Key {
 }
 
 const DAY: Lighting = {
+  ambient: 0,
   skyTop: 0x3fa9f5,
   skyHorizon: 0xd2f3ff,
   sunColor: 0xfff1d8,
@@ -37,6 +44,7 @@ const DAY: Lighting = {
   windows: 0,
 };
 const GOLDEN: Lighting = {
+  ambient: 0.05,
   skyTop: 0x6f8fe8,
   skyHorizon: 0xffd6a0,
   sunColor: 0xffc38a,
@@ -50,6 +58,7 @@ const GOLDEN: Lighting = {
   windows: 0.25,
 };
 const DUSK: Lighting = {
+  ambient: 0.16,
   skyTop: 0x4a4fa8,
   skyHorizon: 0xff9f8a,
   sunColor: 0xffa27a,
@@ -63,6 +72,7 @@ const DUSK: Lighting = {
   windows: 0.8,
 };
 const NIGHT: Lighting = {
+  ambient: 0.3,
   skyTop: 0x1f2f6e,
   skyHorizon: 0x4f6fb8,
   sunColor: 0xbfd4ff,
@@ -77,6 +87,7 @@ const NIGHT: Lighting = {
 };
 const DAWN: Lighting = {
   ...GOLDEN,
+  ambient: 0.12,
   skyHorizon: 0xffc8b0,
   sunDir: [60, 20, 40],
   lights: 0.5,
@@ -128,6 +139,7 @@ export function lightingAt(hour: number): Lighting {
     hemiIntensity: mix(a.l.hemiIntensity, b.l.hemiIntensity, s),
     fill: mix(a.l.fill, b.l.fill, s),
     lights: mix(a.l.lights, b.l.lights, s),
+    ambient: mix(a.l.ambient, b.l.ambient, s),
     windows: mix(a.l.windows, b.l.windows, s),
   };
 }

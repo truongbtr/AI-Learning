@@ -23,6 +23,7 @@ function map(subject: SkillMapFile["subject"], skills: Partial<SkillMapFile["ski
       prerequisites: [],
       relatedSkillCodes: [],
       confusableWith: [],
+      isActive: true,
       exerciseTypes: ["MCQ" as const],
       difficultyRange: [1, 5] as [number, number],
       code: "VMATH.SO.X",

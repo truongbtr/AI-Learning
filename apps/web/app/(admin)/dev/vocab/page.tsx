@@ -59,7 +59,6 @@ export default async function DevVocabPage({
         games={[...GAMES]}
         skillCode={skillCode}
         words={words as VocabWord[]}
-        mascot={student?.mascot === "OWL" ? "cu" : "robot"}
       />
     </div>
   );

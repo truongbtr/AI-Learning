@@ -20,6 +20,7 @@ import {
   loadExercisePacks,
   loadLessons,
   loadLexicon,
+  loadVoiceLines,
   packToRows,
   resolveContentDir,
   runContentValidation,
@@ -153,6 +154,8 @@ async function main() {
   const lines = [
     ...packs.flatMap(({ pack }) => pack.exercises.flatMap((ex) => ttsLinesOf(ex))),
     ...(lexicon ? lexiconTtsLines(lexicon) : []),
+    // the fixed lines the city speaks (pha 12 việc 4)
+    ...loadVoiceLines(),
   ];
   const storage = new LocalFileStorage(process.env.FILE_ROOT ?? "./data/files");
   // Generating the whole bank takes the best part of an hour on the free tier, so say where it is.

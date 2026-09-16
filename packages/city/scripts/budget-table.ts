@@ -25,7 +25,7 @@ console.log(`agents (max): ${agents.drawCalls} draw calls, ${agents.triangles} t
 console.log(
   "| Cỡ | Thành phố | Draw call xấu nhất | Tam giác xấu nhất | Dựng (ms, Node) |\n|---|---|---|---|---|",
 );
-for (const size of ["day1", "mid", "full"] as const) {
+for (const size of ["day1", "mid", "full", "endOfYear"] as const) {
   for (const city of CITY_IDS) {
     const t0 = performance.now();
     const built = buildCity(sampleView(city, size), lib, new SignAtlas());
