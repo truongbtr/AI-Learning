@@ -258,6 +258,31 @@ describe("ops:export — the snapshot Claude chat reads (docs/14 §3)", () => {
     expect(result.warnings.some((w) => w.includes("docs/"))).toBe(true);
   });
 
+  it("keeps QUYET-DINH.md when docs/ is there but empty — a folder is not the documents", async (ctx) => {
+    needDb(ctx);
+    const db = testDb();
+    const root = tempOps();
+    roots.push(root);
+    mkdirSync(join(root, "context"), { recursive: true });
+    const decisions = "# Quyết định đã chốt\n\n- **ADR-10** — bản cũ còn đúng\n";
+    writeFileSync(join(root, "context", "QUYET-DINH.md"), decisions, "utf8");
+    // what the worker of 16/09 saw: a mounted path with nothing readable in it
+    const emptyDocs = mkdtempSync(join(tmpdir(), "mtct-docs-empty-"));
+    roots.push(emptyDocs);
+
+    const result = await exportOpsState(db, {
+      root,
+      now: new Date(),
+      docsRoot: emptyDocs,
+      skipLatest: true,
+    });
+
+    expect(readFileSync(join(root, "context", "QUYET-DINH.md"), "utf8")).toBe(decisions);
+    const summary = readFileSync(join(root, "state", "SUMMARY.md"), "utf8");
+    expect(summary).toContain("Cảnh báo khi xuất");
+    expect(result.warnings.some((w) => w.includes("QUYET-DINH.md"))).toBe(true);
+  });
+
   it("writes every file docs/14 §3 lists, with no full name and no birth date in any of them", async (ctx) => {
     needDb(ctx);
     const db = testDb();

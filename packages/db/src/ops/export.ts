@@ -691,13 +691,19 @@ export async function exportOpsState(
     health,
     diaries: diaries.length,
   });
-  if (!docs) {
-    // Never overwrite the decisions with an error line: keep yesterday's context, say so here.
-    out.warnings.push("không tìm thấy docs/ — giữ nguyên ops/context/QUYET-DINH.md");
+  // Never overwrite the decisions with an error line: keep yesterday's context, say so here. The
+  // test is whether the ADRs could actually be read, not whether a folder exists — a worker built
+  // without the docs mount found one and rebuilt an empty file from it (pha 11 QC).
+  const rebuiltDecisions = docs ? decisionsFrom(docs) : null;
+  if (!rebuiltDecisions) {
+    const why = docs
+      ? `thư mục \`docs/\` ở \`${docs}\` không đọc được ADR nào (thiếu \`02-KIEN-TRUC.md\` và \`adr/\`)`
+      : "không tìm thấy thư mục `docs/` (đã thử DOCS_ROOT, gốc repo, cạnh `ops/`)";
+    out.warnings.push(`${why} — giữ nguyên ops/context/QUYET-DINH.md`);
     summary = `${summary}
 ## ⚠️ Cảnh báo khi xuất
 
-- Không tìm thấy thư mục \`docs/\` (đã thử DOCS_ROOT, gốc repo, cạnh \`ops/\`). **\`ops/context/QUYET-DINH.md\` được giữ nguyên bản cũ**; phiên bản pha trong HIEN-TRANG.md lấy từ lần xuất trước. Trong container worker, mount \`../docs:/data/docs:ro\` (docker/compose.yml).
+- ${why[0]?.toUpperCase()}${why.slice(1)}. **\`ops/context/QUYET-DINH.md\` được giữ nguyên bản cũ**; phiên bản pha trong HIEN-TRANG.md lấy từ lần xuất trước. Trong container worker, mount \`../docs:/data/docs:ro\` (docker/compose.yml) rồi dựng lại container.
 `;
   }
   write("SUMMARY.md", summary, summary.split("\n").length);
@@ -902,8 +908,11 @@ async function writeContextFiles(
       )?.[1]
     : undefined;
   writeFileSync(statePath, await buildCurrentState(db, { ...opts, previousPhase }), "utf8");
-  // Without the documents the decisions cannot be rebuilt: the old file stays as it is.
-  if (opts.docs) writeFileSync(join(dir, "QUYET-DINH.md"), buildDecisions(opts.docs), "utf8");
+  // The decisions are only rewritten when they could actually be rebuilt. A path that exists is
+  // not enough: on 16/09 a worker whose image predated the docs mount found a folder, read nothing
+  // out of it, and replaced the file with a header and an apology (pha 11 QC).
+  const rebuilt = opts.docs ? decisionsFrom(opts.docs) : null;
+  if (rebuilt) writeFileSync(join(dir, "QUYET-DINH.md"), rebuilt.text, "utf8");
 }
 
 /** docs/14 §5 — the first file a new chat session opens. */
@@ -987,7 +996,8 @@ function latestPhaseHeading(docs: string): string | null {
  * ADR files in `docs/adr/`) rather than retyped here, because a summary that drifts from the ADRs
  * is worse than no summary: it would be believed.
  */
-function buildDecisions(docs: string): string {
+export function decisionsFrom(docs: string): { text: string; sources: number } | null {
+  let sources = 0;
   const lines = [
     `# Quyết định đã chốt`,
     "",
@@ -1005,10 +1015,11 @@ function buildDecisions(docs: string): string {
         return `- **${cells[1]}** — ${cells[2]} _(vì: ${cells[4] ?? ""})_`;
       });
     if (rows.length > 0) {
+      sources += rows.length;
       lines.push("## ADR-1…10 (trong `docs/02` §8)", "", ...rows, "");
     }
   } catch {
-    lines.push("_Không đọc được `docs/02-KIEN-TRUC.md`._", "");
+    // nothing to add; whether the file is worth writing at all is decided at the end
   }
   const adrDir = join(docs, "adr");
   if (existsSync(adrDir)) {
@@ -1016,6 +1027,7 @@ function buildDecisions(docs: string): string {
       .filter((f) => f.endsWith(".md"))
       .sort();
     if (files.length > 0) {
+      sources += files.length;
       lines.push("## ADR-11 trở đi (`docs/adr/`)", "");
       for (const file of files) {
         let title = file.replace(/\.md$/, "");
@@ -1040,7 +1052,8 @@ function buildDecisions(docs: string): string {
     "  kể cả bằng `setPlannerWeight` trong `ops/requests/` (docs/14 §4).",
     "",
   );
-  return lines.join("\n");
+  // A header plus two hand-written lines is not the decisions file: better to keep yesterday's.
+  return sources > 0 ? { text: lines.join("\n"), sources } : null;
 }
 
 export const OPS_EXPORT_SETTING = "ops.export.lastRunAt";
