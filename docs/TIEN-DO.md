@@ -109,7 +109,19 @@ Docker dev (cổng 5000) đã build lại image web + worker cho khớp bảng m
 - Bảng giữ tên cột `box` (0–5) và `known` thay vì `box 0-4`/`correct` để không đổi nghĩa dữ liệu pha 11.
 - Enum `ExerciseType` không thêm `SYL_*` (không có dòng bài nào dùng) — ADR-24 §4.
 
-### Lệnh deploy (khi chủ dự án đồng ý — chưa chạy)
+### Đã lên production — 16/09 21:08
+
+- Git máy chủ `9d1a935` (Xưởng Tiếng + bỏ câu viết rồi chụp ảnh), image web `2ed5107b96f2`, worker
+  `488d2382c571`, dựng trên máy dev từ worktree sạch (lint/build/test xanh). Sao lưu trước khi đổi:
+  `~/pre-deploy-20260916-2057.dump` (3,2 MB).
+- Migration `20260916160000_phase12_syllables_and_lexeme_progress` đã áp (health: 10 migration, web
+  healthy, `/login` 200).
+- Nạp tiếng: dry-run `lexicon 262 unchanged`, `syllables 707 new`; chạy thật `--viet-tts pieces
+  --tts-pace 3300` ở nền từ 21:12, log `~/pha12-tts.log` (776 mp3 cần sinh, ~45 phút).
+- **Chưa chạy** `--viet-tts all` (mp3 đợt 2) — chờ chủ dự án xác nhận nhịp đánh vần (câu hỏi 1 bên dưới).
+- Từ giờ deploy bằng skill `/update_edu_prod` (`.claude/skills/update_edu_prod/SKILL.md`).
+
+### Lệnh deploy (đã dùng)
 
 Theo quy trình hiện hành (build image trên máy dev từ worktree sạch của commit `43ce14a`, backup
 `pg_dump` trên server, `git bundle` + `merge --ff-only`, `docker save … | ssh … docker load`), rồi trên
