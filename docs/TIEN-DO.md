@@ -2,6 +2,111 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 11 — 16/09/2026 — Bến Cảng Từ: trò chơi từ vựng tiếng Anh (+ 4 bản vá QC)
+
+Trạng thái: **việc 1–5 xong trên máy dev, CHƯA deploy** (theo yêu cầu chủ dự án). `pnpm lint` sạch
+(14 cảnh báo cũ), `pnpm test` 592 test xanh, `pnpm build` xanh, `content:validate` sạch.
+
+### Việc 1 — bốn bản vá QC (commit `db8bd85`, `43e9f53`, `2349af8`, `b5a6b3c`)
+
+**a) Nút "Xong!" của bài kéo thả bấm được quá sớm.** Luật cũ là "mỗi giỏ có ít nhất một thẻ", mà
+**573/1552 bài có giỏ cần từ 2 thẻ trở lên** — con thả một thẻ mỗi giỏ là nút sáng, nộp nửa chừng,
+bị chấm PARTIAL **và bị ghi một mã lỗi oan vào `Evidence`** (thứ mà planner và thang rèn đọc hôm
+sau). Hai lớp khoá:
+
+- `ExerciseSpec` nay nói cho máy con **số thẻ mỗi giỏ** (`dropZones[].expect`, lấy từ answerKey) và
+  **không còn gửi `accepts`** — trường này hẹp đáp án lại cho bất kỳ ai đọc payload. Luật sáng nút
+  tách thành hàm thuần `dragReady` có test.
+- Server coi lượt nộp thiếu — giỏ còn chờ, chưa có thẻ nhiễu nào trong giỏ — là **lời nhắc**
+  (`stage: "nudge"`): mascot nói một câu ấm, **không ghi `Attempt`, không tính lượt, không mã lỗi**.
+- `pnpm content:import --respec` (cờ mới) ghi lại `spec` cho bài có *hình dạng* spec đổi mà chữ
+  không đổi: so từng spec, chạm đúng **1552 bài kéo thả**, 9180 bài còn lại không đụng.
+
+**b) Đồng hồ game.** Bản 15 phút chia đều 24 giờ ⇒ **6 phút mỗi ngày game là đêm**: buổi học 12 phút
+vẫn tối gần 4/10 thời gian, lại tối ngay giữa bài, và con mở màn vào lúc nào là hên xui. Nay **24
+phút một ngày game, mở màn 8 giờ sáng tính từ `Session.startedAt`** (ổn định qua tải lại, giống nhau
+ở mọi màn), nhịp không đều: 55% ban ngày, rồi chiều vàng, hoàng hôn, **đêm chỉ ~10%**. Bảng ánh sáng
+không đổi. Đề xuất "nâng ánh sáng buổi tối" của pha 10b **bỏ** — nguyên nhân là nhịp, không phải màu
+(ADR-21 đã ghi).
+
+**c) `ops:export` lại xoá trắng `QUYET-DINH.md`** sáng 16/09. Nguyên nhân thật: container worker trên
+**máy dev** dựng từ 12/09, chạy image trước bản vá và không có mount `docs/`. Nhưng bản vá cũng chưa
+đủ chặt: nó chỉ giữ file cũ khi *không tìm thấy* thư mục docs; tìm thấy mà đọc không ra ADR nào thì
+vẫn ghi đè bằng file rỗng. Nay chỉ ghi đè khi **dựng lại được ADR thật**, kèm cảnh báo trong
+SUMMARY.md nói rõ là "không có thư mục" hay "có thư mục nhưng rỗng". Đã dựng lại container dev
+(`docker compose … up -d --build`) và khôi phục QUYET-DINH.md.
+
+**d) `content:validate` chặn emoji chưa có tranh.** Trước đây không có khâu nào kiểm, nên bài mới
+dùng emoji lạ sẽ âm thầm quay về emoji chữ bé tí (lỗi pha 10b đã sửa). Nay: emoji Noto có mà chưa
+vendor → **lỗi**, kèm câu nhắc `pnpm art:emoji`; ký tự hình học Noto không vẽ (▬ ⬢ ◤) → cảnh báo, vì
+chúng cố tình hiện dạng chữ. Việc này lại lòi ra một lỗi nữa: `art:emoji` tra cả cụm "🦗🎶" như một
+khoá nên **mất cả hai** emoji của cảnh nhỏ; nay tách theo grapheme như `Picture` (414 → 480 tranh).
+
+### Việc 2 — từ điển hình `content/lexicon/esl.json`
+
+**262 từ / 28 kỹ năng `ESL.VOC.*`** còn hiệu lực, lấy đúng danh sách từ trong bản đồ kỹ năng (Global
+Stage 1). Mỗi từ: chữ tiếng Anh, nghĩa Việt, tranh Noto, **một cụm câu mẫu** en + vi, unit khi có.
+Ba kỹ năng đã ngừng dùng (WEATHER, DAYS_OF_WEEK, TRANSPORT) **không có từ nào** — validator chặn.
+Phủ cả 9 kỹ năng VOC trước đây trắng bài: FEELINGS, HOUSE_ROOMS, JOBS, PLACES_TOWN, NATURE,
+DAILY_ROUTINES, JOB_VERBS, PARTIES, TABLEWARE.
+
+- Schema + kiểm định trong `packages/content/src/lexicon.ts`; `content:validate` kiểm kỹ năng còn
+  hiệu lực, tranh có thật, id không trùng.
+- TTS: **~6.400 ký tự** cho 262 từ + 262 cụm câu, giọng `en-US-AnaNeural` — khoảng **1,3%** hạn mức
+  tháng (đang dùng ~31%).
+- Nhân tiện sửa một lỗi cũ: `isActive` trong file bản đồ kỹ năng bị Zod bỏ đi, nên **mỗi lần
+  `content:import` là ba kỹ năng ngừng dùng lại sống lại** trong DB. Nay file quyết định.
+
+### Việc 3 — `WordProgress` + lịch Leitner (ADR-22, migration `20260916110000`)
+
+Bảng dữ liệu học **mới duy nhất** kể từ pha 10. Thang 1-3-7-14-30 ngày, thuần trong
+`packages/core/src/vocab/leitner.ts`: nhận ra → lên bậc; chưa nhận ra → **về bậc 1, gặp lại ngày
+mai** (không "sai", không trừ gì); **một tối chỉ lên một bậc** — giãn cách là lý do bảng này tồn tại.
+`Word` là nội dung (trình nạp ghi), `WordProgress` là của con: đã thêm vào `FORBIDDEN_TARGETS` của
+`ops/requests`, và `ops:export` có thêm `word-progress.csv` **chỉ đọc**.
+
+### Việc 4 — sáu trò chơi (`components/kid/vocab/`)
+
+Nghe-chạm tranh · lật thẻ ghép đôi · cái gì biến mất · chợ nhỏ theo cụm câu · ghép chữ cái · nói to
+(có đường lui "cùng ba mẹ" khi máy không nghe được). Chạy ở **cả hai thế giới** vì đi qua
+`ExercisePlay`. Mỗi lần gặp từ báo về ngay `POST /api/kid/vocab` (không chờ hết ván), server mới là
+nơi quyết định bậc; màn của con không bao giờ thấy số bậc. Một sao cho cả trạm theo ADR-16, khoá theo
+trạm nên tải lại không trả hai lần.
+
+### Việc 5 — planner, Sổ từ, bến cảng
+
+- `vocabStations` đổi tối đa **2 trạm/tối** của kỹ năng VOC thành trò chơi, chọn trò **khác lần
+  trước** cho cùng kỹ năng; kỹ năng chưa có từ thì giữ nguyên bài thường.
+- Trạm đã chơi trong ngày được coi là xong (đếm `WordProgress.lastSeenAt` hôm nay), vì trò chơi không
+  sinh `Attempt`.
+- **Sổ từ** `/kid/so-tu` (vào từ màn nhà): chỉ những từ con đã gặp, theo chủ đề, chạm để nghe lại và
+  xem cụm câu. Không phần trăm, không mục tiêu, không so sánh hai bé.
+- **Thuyền cập cảng**: mỗi từ đạt bậc 4 trở lên kéo một chiếc thuyền vào Bến Cảng Từ (tối đa 4).
+
+### Cách chạy thử trên máy dev
+
+```
+pnpm content:validate && pnpm content:import --dir content/lexicon   # 262 từ + mp3
+pnpm dev                                                            # rồi mở:
+#   /dev/vocab?game=listen-touch   (đổi game=match-pairs|what-vanished|market|build-word|say-it)
+#   /kid/so-tu                     (Sổ từ của con)
+pnpm --filter @mtct/web exec playwright test e2e/phase11-vocab.spec.ts   # cần E2E_ADMIN_PASSWORD
+```
+
+### Chưa làm / cần chủ dự án
+
+1. **Chưa deploy** — đúng như yêu cầu. Khi deploy cần chạy `pnpm db:migrate` (migration mới) và
+   `pnpm content:import` trên máy chủ, cộng **`pnpm content:import --respec --no-tts`** để 1552 bài
+   kéo thả trên production có `expect`.
+2. **Bốn bản vá của việc 1 chưa lên production**, trong đó bản vá kéo-thả-bị-treo chạm **512 bài hai
+   bé đang gặp mỗi tối**. Đề nghị deploy riêng phần vá (thế giới cũ vẫn mặc định) — **cần chủ dự án
+   gật**.
+3. **Chưa xem bằng mắt**: tôi không đăng nhập bằng tài khoản của gia đình, nên sáu trò chơi mới chỉ
+   được kiểm bằng test và bằng việc các trang biên dịch/redirect đúng. Chủ dự án mở `/dev/vocab` (đăng
+   nhập admin) xem sáu trò rồi cho ý kiến trước khi hai bé chơi.
+4. Docker Desktop trên máy dev treo ~40 phút khi dựng lại image (một vmmem chiếm 20 GB); các container
+   `medifa-*` khác bị khởi động lại theo. Không mất dữ liệu, nhưng nên dựng image vào lúc máy rảnh.
+
 ## Pha 10b — 15/09/2026 — Chỉnh hình thành phố, sửa lỗi nhỏ, deploy pha 10 lên Ubuntu
 
 Trạng thái: **việc 1–6 xong, đã deploy** — `edu.medifa.vn` chạy code pha 10b với `migrations: 8`,

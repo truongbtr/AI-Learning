@@ -29,6 +29,7 @@
 - `docs/adr/ADR-19-dang-bai-va-pham-vi-chu-dot-3.md` — ADR-19 — Đợt 3: dạng bài bắt buộc, phạm vi chữ và chữ p
 - `docs/adr/ADR-20-thanh-pho-3d-that-hay-webp.md` — ADR-20 — Thành phố 3D: render thật trên máy, không dựng sẵn WebP
 - `docs/adr/ADR-21-du-lieu-thanh-pho.md` — ADR-21 — Nối dữ liệu học vào thành phố
+- `docs/adr/ADR-22-tri-nho-tung-tu.md` — ADR-22 — Trí nhớ từng từ tiếng Anh (`WordProgress`) tách khỏi `SkillMastery`
 
 ## Hai thứ bị đảo ngược, đừng đọc bản cũ
 
