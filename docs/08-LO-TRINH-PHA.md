@@ -148,6 +148,37 @@ Sau pha 3 gia đình đã có thể **dùng thử hằng ngày**: bài luyện t
 
 ---
 
+## Pha 11 — Bến Cảng Từ: trò chơi từ vựng tiếng Anh *(16/09/2026)*
+
+Lý do: 31 kỹ năng `ESL.VOC.*` có 754 bài thì 40% là trắc nghiệm — con trả lời câu hỏi **về** từ chứ
+không chơi **với** từ, và hệ thống không biết con thuộc từ nào.
+
+1. **Bốn bản vá QC** (làm trước khi đắp nội dung mới): nút "Xong!" của bài kéo thả chỉ sáng khi mỗi
+   giỏ đủ thẻ (`dropZones[].expect`; 573/1552 bài có giỏ cần ≥ 2 thẻ), và server coi lượt nộp thiếu
+   là **lời nhắc**, không phải lượt sai; đồng hồ game 24 phút, mở màn 8 giờ sáng theo
+   `Session.startedAt`; `ops:export` chỉ ghi đè QUYET-DINH.md khi dựng lại được ADR;
+   `content:validate` chặn emoji chưa có tranh.
+2. **Từ điển hình** `content/lexicon/esl.json`: 262 từ cho 28 kỹ năng VOC còn hiệu lực — tranh Noto,
+   nghĩa Việt, một cụm câu mẫu, mp3 giọng `en-US-AnaNeural` sinh sẵn lúc nạp (≈ 6.400 ký tự).
+3. **`WordProgress` + lịch Leitner 1-3-7-14-30 ngày** (ADR-22) — bảng dữ liệu học mới duy nhất kể từ
+   pha 10; `ops/requests` không được chạm, `ops:export` thêm `word-progress.csv` chỉ đọc.
+4. **Sáu trò chơi 30–60 giây**: nghe-chạm tranh · lật thẻ ghép đôi · cái gì biến mất · chợ nhỏ theo
+   cụm câu · ghép chữ cái · nói to (có đường lui "cùng ba mẹ"). Chạy ở cả hai thế giới.
+5. **Planner, Sổ từ, bến cảng**: tối đa 2 trạm từ vựng mỗi tối thay cho bài trắc nghiệm VOC;
+   `/kid/so-tu` là sổ dán những từ con đã gặp; mỗi từ lên bậc kéo một chiếc thuyền vào Bến Cảng Từ.
+
+**Tiêu chí xong**
+
+1. Một trạm từ vựng chơi được từ đầu đến cuối ở cả hai thế giới: không đồng hồ đếm ngược, không
+   điểm, không chữ "sai", không màu đỏ; vùng chạm ≥ 64 px, chữ ≥ 22 px.
+2. Mỗi lần gặp từ ghi đúng một dòng `WordProgress`, **không** sinh `Attempt`/`Evidence`; một tối chỉ
+   lên một bậc.
+3. `content:validate` sạch; `pnpm lint && pnpm test && pnpm build` xanh.
+4. Sổ từ chỉ hiện từ con đã gặp — không phần trăm, không so sánh hai bé.
+5. **Chưa deploy** — chủ dự án xem trên máy dev trước.
+
+---
+
 ## Việc của chủ dự án (gom theo pha — developer nhắc trong báo cáo cuối pha trước)
 
 | Trước pha | Cần chuẩn bị |

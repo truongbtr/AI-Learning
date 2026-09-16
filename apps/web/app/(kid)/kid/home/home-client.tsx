@@ -137,6 +137,16 @@ export function KidHomeClient({ home, signOut }: { home: KidHome; signOut: React
                   <span className="font-extrabold text-[#6B6B7B]">({home.collectibles})</span>
                 ) : null}
               </motion.button>
+              {/* The words the child has collected at Bến Cảng Từ (pha 11). */}
+              <motion.button
+                type="button"
+                whileTap={{ scale: 0.95 }}
+                onClick={() => router.push("/kid/so-tu")}
+                data-testid="go-word-book"
+                className="flex min-h-[64px] items-center gap-2 rounded-[28px] bg-white/92 px-5 font-extrabold text-[20px] shadow-[0_10px_24px_-14px_rgba(43,43,58,0.7)]"
+              >
+                <span className="text-[30px]">📖</span> Sổ từ
+              </motion.button>
             </div>
           </div>
 

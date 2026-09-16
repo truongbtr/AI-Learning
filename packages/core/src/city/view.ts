@@ -55,6 +55,12 @@ export interface CityView {
   wonder: { pieces: number };
   /** Streak → bustle: 0 quiet … 4 busiest. Never decreases the city itself. */
   bustle: 0 | 1 | 2 | 3 | 4;
+  /**
+   * Bến Cảng Từ only: boats at the quay, one per English word the child has learnt to keep, up
+   * to four. A word that climbs the Leitner ladder brings a boat in (pha 11, ADR-22); nothing
+   * ever sends one away again.
+   */
+  harbourBoats?: number;
   /** Collectibles placed as decorations (codes from @mtct/city DECORATIONS). */
   decorations: string[];
   /** Pet codes walking in the city. */

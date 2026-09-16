@@ -217,6 +217,11 @@ export async function subjectsOnTimetable(
 export interface PickedSlot extends Slot {
   exerciseId: string | null;
   stableId?: string;
+  /**
+   * A vocabulary station (pha 11): this slot is played as a game over the words of its skill
+   * instead of as one question. Which words is decided when the child opens it, not now.
+   */
+  vocab?: { game: string };
   /** Why the picker could not fill it, when it could not. */
   missing?: string;
   /** Set on a `homework` slot: the teacher's task, done in the app (FR-LRN-07). */
@@ -275,6 +280,77 @@ async function homeworkSlots(db: Db, studentId: string, date: Date): Promise<Pic
  * never flagged BAD, and — when the ladder asks for it — aimed at the error being drilled.
  * Falls back step by step rather than leaving a hole in the session.
  */
+/** The six games of Bến Cảng Từ, in the order they are handed out (docs/08 pha 11). */
+const VOCAB_GAMES = [
+  "listen-touch",
+  "match-pairs",
+  "market",
+  "what-vanished",
+  "build-word",
+  "say-it",
+] as const;
+/** At most two vocabulary stations an evening: they are longer than one question. */
+export const MAX_VOCAB_STATIONS = 2;
+
+/**
+ * Turns vocabulary slots into games (pha 11).
+ *
+ * 31 ESL.VOC skills carry 754 exercises and 40% of them are multiple choice, so an evening of
+ * "vocabulary" was mostly answering questions *about* words. A station that plays with the words
+ * instead — hears them, says them, matches them — is what actually makes them stick, and it is the
+ * only thing that writes `WordProgress`.
+ *
+ * Which game: whichever of the six the child has met least recently for that skill, so the same
+ * skill is not always the same game. Slots with no words in the dictionary stay ordinary
+ * exercises.
+ */
+export async function vocabStations(
+  db: Db,
+  studentId: string,
+  slots: PickedSlot[],
+): Promise<PickedSlot[]> {
+  const candidates = slots.filter((s) => s.skillCode.startsWith("ESL.VOC."));
+  if (candidates.length === 0) return slots;
+
+  const withWords = await db.word.groupBy({
+    by: ["skillId"],
+    where: {
+      isActive: true,
+      skill: { code: { in: candidates.map((s) => s.skillCode) }, isActive: true },
+    },
+    _count: { _all: true },
+  });
+  if (withWords.length === 0) return slots;
+  const skills = await db.skill.findMany({
+    where: { id: { in: withWords.map((w) => w.skillId) } },
+    select: { id: true, code: true },
+  });
+  const haveWords = new Set(skills.map((s) => s.code));
+
+  // What the child played last, per skill, so the game changes from evening to evening.
+  const recent = await db.wordProgress.findMany({
+    where: { studentId, word: { skill: { code: { in: [...haveWords] } } } },
+    orderBy: { lastSeenAt: "desc" },
+    take: 40,
+    select: { lastGame: true, word: { select: { skill: { select: { code: true } } } } },
+  });
+  const lastGameOf = new Map<string, string>();
+  for (const r of recent) {
+    const code = r.word.skill.code;
+    if (r.lastGame && !lastGameOf.has(code)) lastGameOf.set(code, r.lastGame);
+  }
+
+  let made = 0;
+  return slots.map((slot) => {
+    if (made >= MAX_VOCAB_STATIONS || !haveWords.has(slot.skillCode)) return slot;
+    made++;
+    const last = lastGameOf.get(slot.skillCode);
+    const at = last ? VOCAB_GAMES.indexOf(last as (typeof VOCAB_GAMES)[number]) : -1;
+    const game = VOCAB_GAMES[(at + 1) % VOCAB_GAMES.length] as string;
+    return { ...slot, exerciseId: null, stableId: undefined, missing: undefined, vocab: { game } };
+  });
+}
+
 export async function pickExercises(
   db: Db,
   slots: Slot[],
@@ -426,7 +502,10 @@ export async function planDailyQuest(
 
   const picked: PickedSlot[] = [
     ...homework,
-    ...practice.map((slot, i) => ({ ...slot, order: homework.length + i + 1 })),
+    ...(await vocabStations(db, studentId, practice)).map((slot, i) => ({
+      ...slot,
+      order: homework.length + i + 1,
+    })),
   ];
 
   const session = await db.session.create({

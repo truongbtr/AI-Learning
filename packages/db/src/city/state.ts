@@ -17,6 +17,7 @@ import {
   cityChanges,
   cityToSubject,
   dayKey,
+  KNOWN_BOX,
   majoritySubject,
   planStations,
   type StationPlan,
@@ -364,6 +365,11 @@ async function loadCity(db: Db, studentId: string, city: CitySubject, shared: Sh
     collectibleCodes: shared.collectibleCodes,
     petCodes: shared.petCodes,
     homework: homework.map((h) => ({ status: h.status, optional: h.optional })),
+    // Bến Cảng Từ: the words this child keeps bring boats into the harbour (pha 11).
+    wordsKept:
+      city === "esl"
+        ? await db.wordProgress.count({ where: { studentId, box: { gte: KNOWN_BOX } } })
+        : 0,
   };
   const state = buildCityState(input);
   if (state.skillOrder.length !== record.skillOrder.length) {

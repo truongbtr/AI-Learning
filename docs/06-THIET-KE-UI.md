@@ -83,6 +83,29 @@ một thành phố; **cả buổi tối diễn ra trong thành phố**, không c
 - Không có gì hỏng, không "sai", không đỏ, không đồng hồ, không tiền; cửa hàng đồ sưu tầm không có lối vào
   từ chế độ thành phố.
 
+### 1.2b Bến Cảng Từ — trò chơi từ vựng *(pha 11, 16/09/2026)*
+
+Với kỹ năng `ESL.VOC.*`, planner thay bài trắc nghiệm bằng **trạm trò chơi**, tối đa **2 trạm mỗi tối**.
+Sáu trò, mỗi trò 30–60 giây, chạy ở **cả hai thế giới** (trong thành phố thì nằm trong bảng bài trượt lên):
+
+1. **Nghe rồi chạm tranh** — nghe từ, chạm tranh đúng trong bốn tranh. Chữ tiếng Anh **không hiện** trước
+   khi con trả lời (cùng lý do với LISTEN_CHOOSE, ADR-14).
+2. **Lật thẻ tìm đôi** — bốn cặp tranh ↔ chữ; lật tranh thì nghe luôn từ đó.
+3. **Cái gì biến mất?** — nhìn bốn tranh, một tranh bay đi, con gọi tên. Đây là trò duy nhất bắt con **nhớ
+   ra** từ chứ không chọn giữa các tranh.
+4. **Chợ nhỏ** — quầy hàng đọc cả **cụm câu** ("I like bananas."), con bỏ đúng món vào giỏ.
+5. **Ghép chữ cái** — tranh + giọng đọc cho sẵn, con xếp chữ cái thành từ; từ dài quá 8 chữ cái không vào
+   vòng này.
+6. **Nói to lên** — mascot đọc, con nói lại; máy nào không nghe được thì con nói với ba mẹ rồi chạm
+   "Con nói được rồi" (đường "cùng ba mẹ" của docs/04 §7).
+
+Luật giữ nguyên như mọi màn của con: không đồng hồ đếm ngược, không hết lượt, không điểm, không chữ "sai",
+không đỏ. Từ chưa nhận ra chỉ **quay lại vào ngày mai** (thang Leitner, ADR-22). Mỗi trạm được **một sao**
+theo công sức (ADR-16). Từ nào lên bậc thì **một chiếc thuyền cập Bến Cảng Từ** trong thành phố ESL.
+
+**Sổ từ** (`/kid/so-tu`, vào từ màn nhà): những từ con **đã gặp**, xếp theo chủ đề, chạm để nghe lại và xem
+cụm câu. Không phần trăm, không mục tiêu, không ô trống cho từ chưa học, không so sánh hai bé.
+
 ### 1.3 Component kid (bắt buộc có trong `components/kid/`)
 
 `BigButton` (squash & stretch), `IconTile`, `SpeakerButton` (đọc text, trạng thái đang đọc), `Mascot` (Lottie, 9 trạng thái §1.7, đồng bộ `talk` với TTS, phản ứng khi chạm), `WorldBackground` (3 lớp parallax + chuyển động nền theo thế giới), `QuestMap` (đường đi, trạm, avatar di chuyển), `Avatar`, `StarBurst` + `StarFlyToPocket`, `StarPocket` (đếm nhảy), `ProgressPath`, `HintBulb`, `FeedbackOverlay`, `KidPinPad`, `MicButton` (giữ để nói, sóng âm), `CameraCapture`, `ConfettiCelebration`, `TreasureChest`, `BadgeCeremony`, `SessionFinale` (kịch bản 4–6 s), `LoadingMascot`, `EmptyState` (minh hoạ theo ngữ cảnh), `SceneTransition`, và 9 component bài tập `exercise/<Type>.tsx` với interface chung:

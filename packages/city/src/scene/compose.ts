@@ -621,7 +621,8 @@ function planAgents(
     boatLines,
     cars: 4 + view.bustle * 4,
     people: 8 + view.bustle * 6,
-    boats: 1 + Math.min(view.bustle, 3),
+    // Bến Cảng Từ: a boat for every English word the child keeps, on top of the usual traffic.
+    boats: Math.max(1 + Math.min(view.bustle, 3), view.harbourBoats ?? 0),
     pets,
   };
 }

@@ -14,6 +14,7 @@ import {
 import type { Prisma, PrismaClient } from "../../generated/client";
 import { grantSessionRewards, rememberForTomorrow, type SessionRewards } from "../kid/rewards";
 import { commitEvidence } from "../mastery/service";
+import { wordsForStation } from "../vocab/service";
 import { adaptAssessment, assessmentWeightFactor } from "./assess";
 import type { PickedSlot } from "./plan";
 
@@ -111,6 +112,28 @@ export interface KidItem {
     submitTo: string | null;
     optional: boolean;
     done: boolean;
+  };
+  /**
+   * A vocabulary station (pha 11): a short game over the words that are due tonight instead of a
+   * question about one word. It has no exercise and no answer key — every meeting is reported to
+   * `POST /api/kid/vocab` as it happens (ADR-22).
+   */
+  vocab?: {
+    game: string;
+    /** The child already played this station today — a vocabulary game has no Attempt row. */
+    done?: boolean;
+    words: {
+      wordId: string;
+      stableId: string;
+      en: string;
+      vi: string;
+      picture: unknown;
+      phraseEn: string;
+      phraseVi: string;
+      skillCode: string;
+      box: number;
+      isNew: boolean;
+    }[];
   };
 }
 
@@ -238,6 +261,39 @@ export async function sessionForKid(
       });
       continue;
     }
+    // A vocabulary station (pha 11): the words are chosen now rather than when the evening was
+    // planned, so a child who plays at nine o'clock gets what is due at nine o'clock.
+    if (slot.vocab) {
+      const words = await wordsForStation(db, session.studentId, {
+        skillCodes: [slot.skillCode],
+        count: 6,
+      });
+      if (words.length === 0) continue; // no words for this skill yet: quietly skip the station
+      // A vocabulary game writes no Attempt row, so "already played" is read from the words
+      // themselves: three of this skill's words met today is a round played.
+      const playedToday = await db.wordProgress.count({
+        where: {
+          studentId: session.studentId,
+          lastSeenAt: { gte: vnDayDate(new Date()) },
+          word: { skill: { code: slot.skillCode } },
+        },
+      });
+      items.push({
+        order: slot.order,
+        exerciseId: "",
+        stableId: `vocab-${slot.vocab.game}-${slot.order}`,
+        type: "MCQ" as MarkableType,
+        language: "en",
+        subject: "ESL",
+        difficulty: 2,
+        skillCode: slot.skillCode,
+        kind: "vocab",
+        spec: null,
+        vocab: { game: slot.vocab.game, words, done: playedToday >= 3 },
+      });
+      continue;
+    }
+
     const ex = slot.exerciseId ? byId.get(slot.exerciseId) : undefined;
     if (!ex) continue; // a hole in the plan is simply not shown to the child
     items.push({
@@ -269,7 +325,7 @@ export async function sessionForKid(
   }));
   const doneOrders = new Set(attempts.filter((a) => a.done).map((a) => a.order));
   // Homework is finished in its own table, not by an Attempt row.
-  for (const item of items) if (item.homework?.done) doneOrders.add(item.order);
+  for (const item of items) if (item.homework?.done || item.vocab?.done) doneOrders.add(item.order);
   const nextOrder = items.find((i) => !doneOrders.has(i.order))?.order ?? null;
 
   return {

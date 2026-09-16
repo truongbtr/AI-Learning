@@ -479,6 +479,8 @@ export interface CityInput {
   /** Companion first. */
   petCodes: readonly string[];
   homework: readonly HomeworkSnapshot[];
+  /** Bến Cảng Từ: how many words the child keeps (box 4 and up), capped by the engine at 4. */
+  wordsKept?: number;
 }
 
 export interface CityHud {
@@ -581,6 +583,7 @@ export function buildCityState(input: CityInput): CityState {
     publicBuildings: publicBuildingsFor(input.city, input.badgesEarned),
     wonder: { pieces: wonder.pieces },
     bustle: bustleFor(input.daysLearnt),
+    harbourBoats: input.city === "esl" ? Math.min(4, input.wordsKept ?? 0) : undefined,
     decorations: input.collectibleCodes.map(decorationFor),
     pets: input.petCodes.map(petFor),
     townHallOrder: townHallOrderFor(input.homework),
