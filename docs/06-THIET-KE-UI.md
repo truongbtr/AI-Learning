@@ -43,7 +43,7 @@ Font: Nunito 700/800; tiếng Việt: Baloo 2 / Be Vietnam Pro
 | K6 | Chơi thêm theo môn | `/kid/play/[subject]` | Chọn môn → 5 bài nhanh; giới hạn lượt hiển thị bằng "vé". |
 | K7 | Bộ sưu tập / vườn | `/kid/collection` | Lưới vật phẩm, mua bằng sao; trang trí góc mascot; thanh mục tiêu phần thưởng đời thực (nếu ba mẹ đặt). |
 | K8 | Hỏi bạn Cú | `/kid/ask` | Nút mic to giữ-để-nói; transcript hiện chữ + mascot trả lời bằng giọng; nút thoát. |
-| K9 | Bài viết/vẽ chụp lại | trong K4 | Hiện đề, con làm ra giấy; nút "Gọi ba mẹ chụp" → camera; ảnh gửi → "Bạn Cú sẽ chấm sau nhé!" và sang bài kế. |
+| K9 | Bài viết/vẽ chụp lại | trong K4 | **Không còn giao trong phiên từ 16/09/2026 (ADR-25).** Hiện đề, con làm ra giấy; nút "Gọi ba mẹ chụp" → camera; ảnh gửi → "Bạn Cú sẽ chấm sau nhé!" và sang bài kế. |
 
 ### 1.2b Chế độ thành phố — Thế giới Học Đường *(Pha 10, cờ `KID_UI=city`, ADR-20/21)*
 

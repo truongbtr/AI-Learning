@@ -366,6 +366,13 @@ export async function vocabStations(
   });
 }
 
+/**
+ * Exercise types no session hands out. A write-then-photograph question stops the evening until a
+ * parent comes with a phone, and the owner has taken them out (ADR-25).
+ */
+export const EXCLUDED_TYPES = ["WRITE_PHOTO"] as const;
+const isExcluded = (type: string) => (EXCLUDED_TYPES as readonly string[]).includes(type);
+
 export async function pickExercises(
   db: Db,
   slots: Slot[],
@@ -380,6 +387,9 @@ export async function pickExercises(
     const base: Prisma.ExerciseWhereInput = {
       status: "PUBLISHED",
       qualityFlag: { not: "BAD" },
+      // No "write it in your notebook, then a parent takes a photo" questions (owner, 16/09;
+      // ADR-25). The bank keeps them; no session is ever given one.
+      type: { notIn: [...EXCLUDED_TYPES] },
       skills: { some: { skill: { code: slot.skillCode } } },
     };
     const tries: Prisma.ExerciseWhereInput[] = [];
@@ -395,7 +405,12 @@ export async function pickExercises(
     if (slot.prefer?.scaffold === "model")
       tries.push({ ...inWorld, spec: { path: ["scaffold"], equals: "model" }, difficulty: near });
     if (slot.prefer?.types?.length)
-      tries.push({ ...inWorld, type: { in: slot.prefer.types as never }, difficulty: near });
+      tries.push({
+        ...inWorld,
+        // the preferred types replace the type filter, so the excluded ones are taken out again here
+        type: { in: slot.prefer.types.filter((t) => !isExcluded(t)) as never },
+        difficulty: near,
+      });
     tries.push({ ...inWorld, difficulty: near });
     tries.push({ ...base, difficulty: near });
     tries.push(base); // any difficulty rather than no exercise at all

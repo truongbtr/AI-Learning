@@ -142,5 +142,5 @@ Năm học 2026–2027, tuần 1 giả định bắt đầu **08/09/2026** (th�
 
 - Định dạng JSON mảng, mỗi phần tử đúng các trường của `Skill` (§`03-MO-HINH-DU-LIEU.md` 2.2) + `prerequisites: string[]` + `relatedSkillCodes: string[]`.
 - `description` ≥ 2 câu, có "Ví dụ:" và "Lỗi thường gặp:".
-- `exerciseTypes` phải thuộc 9 dạng; kỹ năng đọc to bắt buộc có `READ_ALOUD`; kỹ năng viết có `WRITE_PHOTO`/`TRACE`.
+- `exerciseTypes` phải thuộc 9 dạng; kỹ năng đọc to bắt buộc có `READ_ALOUD`; kỹ năng viết có `WRITE_PHOTO`/`TRACE` (từ 16/09/2026 phiên học không giao bài `WRITE_PHOTO` nữa — ADR-25).
 - Kiểm thử seed: không mã trùng, tiên quyết tồn tại, không vòng lặp tiên quyết, mỗi môn ≥ 35 kỹ năng.

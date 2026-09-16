@@ -2,6 +2,23 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Sửa nhỏ — 16/09/2026 tối — Bỏ bài "viết vào vở rồi chụp ảnh" (ADR-25)
+
+Chủ dự án: *"Bỏ các câu viết rồi chụp ảnh nhé."*
+
+- Không phiên nào giao bài `WRITE_PHOTO` nữa (Daily Quest, trạm thành phố, Chơi thêm, thang khắc
+  phục): loại ở chỗ chọn bài duy nhất, `pickExercises` (`EXCLUDED_TYPES`). Ngân hàng giữ nguyên 797
+  bài; bật lại là bỏ một dòng.
+- Không kỹ năng nào hết bài (mỗi kỹ năng còn ≥ 12 bài dạng khác). **Nhưng trong app không còn bài tập
+  viết tay nào** — ngân hàng có 0 bài `TRACE`; kỹ năng tập viết chỉ còn luyện bằng bài chạm/chọn.
+- Test tích hợp `no-photo.test.ts`: đỏ với hành vi cũ, xanh với hành vi mới.
+- **Triển khai riêng lẻ**: production đang ở bản ô bàn cờ + sân vườn (`46f82bb`). `master` đã có Xưởng
+  Tiếng (`43ce14a`, có migration, chưa được duyệt lên production), nên bản lên máy thật là `910d5f6`
+  cộng đúng commit này (cherry-pick), dựng thành image riêng; git trên máy chủ để nguyên ở `46f82bb`
+  để lần triển khai `master` sau vẫn fast-forward được. Không triển khai trong 18:00–21:00.
+- Phiên đã lập trước khi đổi (tối nay) vẫn có thể còn bài chụp ảnh; từ phiên lập sau lúc triển khai
+  (04:30 sáng mai) thì không còn.
+
 ## Pha 12 — 16/09/2026 — Xưởng Tiếng: trò chơi đánh vần tiếng Việt
 
 > Bản đồ vành đai (mục "Pha 12" bên dưới) đã hoàn tác; số pha 12 dùng cho Xưởng Tiếng theo đề bài.
