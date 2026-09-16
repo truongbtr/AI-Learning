@@ -1,10 +1,11 @@
 // Turn a CityView into the static scene graph (to be baked) plus plans for moving things.
 
 import type { CityView } from "@mtct/core";
-import { Mesh, type Object3D, PlaneGeometry } from "three";
+import { Box3, Mesh, type Object3D, PlaneGeometry } from "three";
 import { plate, scaffold, worker } from "../build/building";
 import { cityGate, DECORATIONS, PLOT_CATALOGUE, PUBLIC_BUILDINGS, townHall } from "../build/civic";
 import type { BuildCtx } from "../build/context";
+import { blockLane, lotGarden } from "../build/garden";
 import { add, anchor, box, cyl, group, pick, rng, tok } from "../build/kit";
 import {
   balloon,
@@ -135,7 +136,7 @@ export function composeCity(ctx: BuildCtx, view: CityView): Composition {
     const color = b.kind === "townhall" ? WORLD.plaza : b.kind === "wonder" ? 0xf6e7c3 : lawnColor;
     add(root, box(pad, 0.1, pad, color), b.x, 0.05, b.z);
     if (b.kind === "lots") {
-      add(root, box(pad, 0.02, 0.9, WORLD.path), b.x, 0.11, b.z);
+      add(root, blockLane(pad, b.index + 1), b.x, 0, b.z);
       add(root, box(0.9, 0.02, pad, WORLD.path), b.x, 0.11, b.z);
       for (const [dx, dz] of [
         [-1, -1],
@@ -401,6 +402,22 @@ function waterRectFor(
   return [b.minX - extra, b.minZ - gap - width, b.maxX + extra, b.minZ - gap];
 }
 
+/** Plot builds that are already all garden. */
+const NO_GARDEN = new Set(["garden", "pond", "miniPark"]);
+
+/** Yard, path and planting round what was just built on a lot (build/garden.ts). */
+function withGarden(g: Object3D, building: Object3D, lot: LayoutLot, seed: number) {
+  const slot = lot.slots[0] ?? 3;
+  const box3 = new Box3().setFromObject(building);
+  const garden = lotGarden(
+    { minX: box3.min.x, maxX: box3.max.x, minZ: box3.min.z, maxZ: box3.max.z },
+    seed,
+    // slots 0/1 are the north half of the block, 0/2 the west half (layout.ts SLOT_OFFSET)
+    { x: slot % 2 === 0 ? -1 : 1, z: slot < 2 ? -1 : 1 },
+  );
+  add(g, garden.root);
+}
+
 function buildLot(ctx: BuildCtx, view: CityView, lot: LayoutLot): Object3D {
   const g = group();
   const c = lot.content;
@@ -418,6 +435,7 @@ function buildLot(ctx: BuildCtx, view: CityView, lot: LayoutLot): Object3D {
     const stretch = 1 + GROWTH_PER_STEP * (s.step ?? 0);
     b.root.scale.y = stretch;
     add(g, b.root);
+    if (!s.needsHelp) withGarden(g, b.root, lot, c.skill + 1);
     let top = b.top * stretch;
     if (s.needsHelp && s.level > 0) {
       add(g, scaffold(4.0, 3.8, Math.min(b.top, 4.2)), 0, 0.1, 0);
@@ -443,8 +461,11 @@ function buildLot(ctx: BuildCtx, view: CityView, lot: LayoutLot): Object3D {
     if (c.state === "owned") {
       const choice = view.land.builds.find((x) => x.plot === c.plot);
       const entry = choice ? PLOT_CATALOGUE[choice.build] : undefined;
-      if (entry) add(g, entry.build(ctx, c.plot + 1).root);
-      else openPlot(ctx, g);
+      if (entry) {
+        const built = add(g, entry.build(ctx, c.plot + 1).root);
+        // a garden or a park is its own garden
+        if (!NO_GARDEN.has(choice?.build ?? "")) withGarden(g, built, lot, c.plot + 101);
+      } else openPlot(ctx, g);
     } else {
       lockedPlot(ctx, g, c.plot === view.land.owned ? view.land.nextCost : null);
     }
@@ -468,8 +489,11 @@ function buildLot(ctx: BuildCtx, view: CityView, lot: LayoutLot): Object3D {
       { type: "kit", spec, key: `${ctx.city.id}${c.variant % ctx.city.kit.length}` },
       TILE * 1.25,
     );
-    add(g, m, 0, 0, 0).rotation.y = c.variant % 8 ? 0 : Math.PI / 2;
-    add(g, tree(ctx, c.variant * 3, 0.8), lot.width * 0.32, 0, lot.depth * 0.3);
+    const turned = c.variant % 8 === 0;
+    add(g, m, 0, 0, 0).rotation.y = turned ? Math.PI / 2 : 0;
+    // a house turned side-on has no front on the yard's side: it keeps its one tree
+    if (turned) add(g, tree(ctx, c.variant * 3, 0.8), lot.width * 0.32, 0, lot.depth * 0.3);
+    else withGarden(g, m, lot, c.variant + 501);
     return g;
   }
   // garden

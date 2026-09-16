@@ -88,8 +88,12 @@ export interface Mover {
 
 /** How far a mover keeps to the right of the street's middle. */
 export const LANE = { car: TILE * 0.22, bus: TILE * 0.22, person: TILE * 0.62 } as const;
-/** How much of each street end is spent going round the corner. */
-const CORNER = TILE * 0.9;
+/**
+ * How much of each street end is spent going round the corner. A car turning right cuts the
+ * corner by a quarter of this, so a vehicle takes it tight (a wide curve put its bumper over the
+ * kerb); someone on foot swings round the pavement corner.
+ */
+const CORNER = { car: TILE * 0.6, bus: TILE * 0.6, person: TILE * 0.9 } as const;
 
 /** Straight on 6, a turn 3, back only when there is no other way (people: now and then). */
 export function chooseNext(
@@ -213,7 +217,7 @@ export function place(grid: RoadGrid, m: Mover): Placement {
   const lane = LANE[m.kind];
   const length = Math.hypot(b.x - a.x, b.z - a.z) || 1;
   const d = m.along * length;
-  const corner = Math.min(CORNER, length / 3);
+  const corner = Math.min(CORNER[m.kind], length / 3);
 
   if (d > length - corner) {
     // coming into the junction: curve from this street onto the next one
@@ -325,7 +329,7 @@ export function stepAll(grid: RoadGrid, movers: Mover[], dt: number, time: numbe
     let limit = Number.POSITIVE_INFINITY;
     if (m.kind !== "person") {
       const length = streetLength(grid, m.from, m.to);
-      const corner = Math.min(CORNER, length / 3);
+      const corner = Math.min(CORNER[m.kind], length / 3);
       const stopAt = (length - corner - STOP_GAP) / length;
       if (m.along <= stopAt && hasLights(grid, m.to)) {
         const a = grid.get(m.from) as Junction;

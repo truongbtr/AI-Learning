@@ -97,7 +97,8 @@ describe("traffic on the chessboard city", () => {
         // runs a little further off both middles than that
         if (m.kind === "person")
           expect(away).toBeLessThanOrEqual(LANE.person + 0.3); // not into a block
-        else expect(away).toBeLessThan(TILE / 2); // never up on the pavement
+        // never up on the pavement: the middle of the car stays a car's half-length inside the kerb
+        else expect(away).toBeLessThan(TILE / 2 - 0.5);
         expect(Number.isFinite(p.heading)).toBe(true);
       }
     }

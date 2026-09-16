@@ -1,5 +1,6 @@
 // City bench: renders a sample city with the real engine, shows fps / draw calls / triangles and
 // HTML mission bubbles. Used for screenshots (shoot-bench) and on the real iPad (published page).
+import { PLOT_CATALOGUE } from "../src/build/civic";
 import { KenneyLibrary } from "../src/build/kenney";
 import { createCityEngine, type TapTarget } from "../src/engine";
 import { CITY_IDS, type CityId } from "../src/palette";
@@ -25,6 +26,25 @@ const assets =
 const shot = q.has("shot");
 /** solo=<plot build code>: one plot build alone, camera close — the build chooser pictures. */
 const solo = q.get("solo");
+
+/** plots=<n>: the town after buying n plots of land — how big a year (or two) of stars makes it. */
+function withPlots(view: ReturnType<typeof sampleView>): ReturnType<typeof sampleView> {
+  const plots = Number(q.get("plots"));
+  if (!plots) return view;
+  const codes = Object.keys(PLOT_CATALOGUE);
+  return {
+    ...view,
+    land: {
+      owned: plots,
+      nextCost: 20 + plots * 5,
+      progress: 0,
+      builds: Array.from({ length: plots - 1 }, (_, i) => ({
+        plot: i,
+        build: codes[i % codes.length] as string,
+      })),
+    },
+  };
+}
 
 async function main() {
   const canvas = document.getElementById("city") as HTMLCanvasElement;
@@ -67,7 +87,7 @@ async function main() {
       if (lot) engine.setCamera({ x: lot.x, z: lot.z, dist: 48 });
       return;
     }
-    engine.setView(sampleView(city, size));
+    engine.setView(withPlots(sampleView(city, size)));
     const cx = q.get("cx");
     const cz = q.get("cz");
     const cd = q.get("cd");
@@ -82,7 +102,7 @@ async function main() {
   const bubbles = new Map<string, HTMLButtonElement>();
   const syncBubbles = () => {
     if (q.has("nobubbles")) return;
-    const view = sampleView(city, size);
+    const view = withPlots(sampleView(city, size));
     const wanted = new Set<string>(["townHall:order", "wonder"]);
     for (const s of view.skills)
       if (s.mission || s.needsHelp || s.level === 0) wanted.add(`skill:${s.skillId}`);
