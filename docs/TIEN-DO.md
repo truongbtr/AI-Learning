@@ -12,10 +12,7 @@ Chủ dự án: *"Bỏ các câu viết rồi chụp ảnh nhé."*
 - Không kỹ năng nào hết bài (mỗi kỹ năng còn ≥ 12 bài dạng khác). **Nhưng trong app không còn bài tập
   viết tay nào** — ngân hàng có 0 bài `TRACE`; kỹ năng tập viết chỉ còn luyện bằng bài chạm/chọn.
 - Test tích hợp `no-photo.test.ts`: đỏ với hành vi cũ, xanh với hành vi mới.
-- **Triển khai riêng lẻ**: production đang ở bản ô bàn cờ + sân vườn (`46f82bb`). `master` đã có Xưởng
-  Tiếng (`43ce14a`, có migration, chưa được duyệt lên production), nên bản lên máy thật là `910d5f6`
-  cộng đúng commit này (cherry-pick), dựng thành image riêng; git trên máy chủ để nguyên ở `46f82bb`
-  để lần triển khai `master` sau vẫn fast-forward được. Không triển khai trong 18:00–21:00.
+- **Lên production 21:08 cùng lần triển khai `master` của phiên Xưởng Tiếng** (git máy chủ `9d1a935`, image web `2ed5107b96f2`, migration 10, health ok; image chứa `EXCLUDED_TYPES`). Tôi đã dựng sẵn một bản riêng (bản đang chạy + đúng commit này, test DB 140/140 trên DB tạm schema pha 11) để không kéo Xưởng Tiếng theo, nhưng lúc 21:06 phiên kia đã triển khai `master` — gồm cả commit này — nên bản riêng không được dùng, để tránh hai phiên tráo container chồng nhau.
 - Phiên đã lập trước khi đổi (tối nay) vẫn có thể còn bài chụp ảnh; từ phiên lập sau lúc triển khai
   (04:30 sáng mai) thì không còn.
 
