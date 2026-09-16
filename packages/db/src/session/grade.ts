@@ -127,6 +127,12 @@ export interface KidSession {
   kind: string;
   date: string;
   status: string;
+  /**
+   * When the child sat down (ISO, null before they start). The city anchors its game day to this,
+   * so the sky is the same on every screen and after a reload, and the evening opens in morning
+   * light rather than at whatever hour the wall clock says (pha 11).
+   */
+  startedAt: string | null;
   items: KidItem[];
   attempts: KidAttemptState[];
   /** Where to carry on: the first item with no finished attempt. */
@@ -272,6 +278,7 @@ export async function sessionForKid(
     kind: session.kind,
     date: session.date.toISOString().slice(0, 10),
     status: session.status,
+    startedAt: session.startedAt?.toISOString() ?? null,
     items,
     attempts,
     nextOrder,

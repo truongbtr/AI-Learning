@@ -132,15 +132,58 @@ export function lightingAt(hour: number): Lighting {
   };
 }
 
-/** One game day lasts this long in real time (owner, pha 10b: 15 minutes = one day). */
-export const GAME_DAY_MS = 15 * 60 * 1000;
+/** One game day lasts this long in real time (owner, pha 11: 24 minutes = one day). */
+export const GAME_DAY_MS = 24 * 60 * 1000;
+
+/** The city wakes up with the child: a session opens in the morning, never at dusk. */
+export const DAY_START_HOUR = 8;
 
 /**
- * The hour in the game (0–24), running GAME_DAY_MS per day. Derived from the wall clock rather than
- * from when a screen opened, so the map, the city and a reload all agree on the time of day and the
- * sky never jumps back to morning when the child changes screen.
+ * How the game day is spent. Real time runs at an even pace; the *hours* do not. A 24-minute day
+ * built out of 24 equal hours would put a child through six minutes of night every session, which
+ * is how pha 10b's clock went from "always dark" to "dark four minutes out of ten".
+ *
+ * So the curve lingers on daylight and hurries through the night: a 12–15 minute evening runs from
+ * morning to the golden hour, and a child who plays a whole day sees roughly two and a half
+ * minutes of dark. The hours keep climbing past 24 (the caller wraps) so dawn interpolates the
+ * short way round instead of racing backwards through the afternoon.
  */
-export function gameHour(nowMs: number, dayMs: number = GAME_DAY_MS): number {
+const PHASES: { at: number; hour: number }[] = [
+  { at: 0, hour: DAY_START_HOUR }, // morning
+  { at: 0.55, hour: 16 }, // afternoon — 55% of the day is plain daylight
+  { at: 0.75, hour: 18.3 }, // the golden hour
+  { at: 0.85, hour: 19.6 }, // dusk, lamps coming on
+  { at: 0.95, hour: 29.5 }, // night, hurried through (= 5:30 the next morning)
+  { at: 1, hour: 24 + DAY_START_HOUR }, // dawn, back where we started
+];
+
+/** Where in the game day a moment falls, 0 ≤ p < 1. */
+function phaseAt(nowMs: number, anchorMs: number, dayMs: number): number {
   const day = Math.max(1, dayMs);
-  return ((((nowMs % day) + day) % day) / day) * 24;
+  const since = nowMs - anchorMs;
+  return (((since % day) + day) % day) / day;
+}
+
+export interface GameClock {
+  /** Real milliseconds for one game day. */
+  dayMs?: number;
+  /**
+   * The moment the day starts at `DAY_START_HOUR` — the child's session start, so the sky is the
+   * same on every screen and after a reload, and every session opens in the morning.
+   */
+  anchorMs?: number;
+}
+
+/**
+ * The hour in the game (0–24). Anchored to when the child sat down rather than to the wall clock:
+ * they play at 18–21h, and the city they build should not be permanently at dusk.
+ */
+export function gameHour(nowMs: number, clock: GameClock = {}): number {
+  const p = phaseAt(nowMs, clock.anchorMs ?? 0, clock.dayMs ?? GAME_DAY_MS);
+  let i = 0;
+  while (i < PHASES.length - 2 && (PHASES[i + 1] as { at: number }).at <= p) i++;
+  const a = PHASES[i] as { at: number; hour: number };
+  const b = PHASES[i + 1] as { at: number; hour: number };
+  const t = b.at === a.at ? 0 : (p - a.at) / (b.at - a.at);
+  return (a.hour + (b.hour - a.hour) * t) % 24;
 }

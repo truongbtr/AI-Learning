@@ -75,8 +75,13 @@ export interface CityEngineOptions {
   assetsBase: string;
   /** Freeze the game clock at this hour (0–24) — for tests, previews and the bench. */
   hour?: number;
-  /** Real milliseconds per game day (default GAME_DAY_MS = 15 minutes). */
+  /** Real milliseconds per game day (default GAME_DAY_MS = 24 minutes). */
   dayLengthMs?: number;
+  /**
+   * When the game day starts at `DAY_START_HOUR` — pass the child's session start so the city
+   * opens in the morning and shows the same sky on every screen and after a reload.
+   */
+  dayAnchorMs?: number;
   maxPixelRatio?: number;
   shadowMapSize?: number;
   /** Start without the render loop (bench screenshots call renderOnce). */
@@ -308,8 +313,14 @@ export async function createCityEngine(
   }
 
   function applyLighting() {
-    // the game clock: a whole day passes in GAME_DAY_MS, not in 24 real hours
-    const hour = hourOverride ?? gameHour(Date.now(), opts.dayLengthMs ?? GAME_DAY_MS);
+    // the game clock: a whole day passes in GAME_DAY_MS, not in 24 real hours, and it starts in
+    // the morning of the child's session rather than at whatever hour the wall clock says
+    const hour =
+      hourOverride ??
+      gameHour(Date.now(), {
+        dayMs: opts.dayLengthMs ?? GAME_DAY_MS,
+        anchorMs: opts.dayAnchorMs ?? 0,
+      });
     const L: Lighting = lightingAt(hour);
     skyMat.uniforms.top?.value.set(L.skyTop);
     skyMat.uniforms.bottom?.value.set(L.skyHorizon);

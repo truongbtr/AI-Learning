@@ -20,7 +20,7 @@ import { WONDER_PIECES, wonder } from "./build/wonders";
 import { hexToRgb, rgbToHsl } from "./color";
 import { CAMERA, clampState, panDelta, toCameraDir } from "./engine/camera";
 import { CURVE_K, curvedBoundingSphere } from "./engine/curve";
-import { GAME_DAY_MS, gameHour, lightingAt } from "./engine/daynight";
+import { DAY_START_HOUR, GAME_DAY_MS, gameHour, lightingAt } from "./engine/daynight";
 import { pathLength, sampleAt } from "./engine/paths";
 import type { KenneyManifest } from "./kenney/set";
 import { CITY_IDS } from "./palette";
@@ -213,17 +213,36 @@ describe("no error-red anywhere in the city palette (06 §1.1)", () => {
 void Mesh;
 void Float32BufferAttribute;
 
-describe("game clock (pha 10b: 15 real minutes = one game day)", () => {
-  it("runs a whole day in fifteen minutes", () => {
-    expect(GAME_DAY_MS).toBe(15 * 60 * 1000);
-    const start = 1_800_000_000_000 - (1_800_000_000_000 % GAME_DAY_MS);
-    expect(gameHour(start)).toBe(0);
-    expect(gameHour(start + GAME_DAY_MS / 2)).toBe(12);
-    expect(gameHour(start + GAME_DAY_MS / 4)).toBe(6);
-    // one real minute is about 1.6 game hours
-    expect(gameHour(start + 60_000)).toBeCloseTo(1.6, 5);
-    // a new day starts again at midnight
-    expect(gameHour(start + GAME_DAY_MS)).toBe(0);
+describe("game clock (pha 11: 24 real minutes = one game day, opening in the morning)", () => {
+  const start = 1_800_000_000_000;
+  const at = (minutes: number) => gameHour(start + minutes * 60_000, { anchorMs: start });
+
+  it("opens the session in the morning, wherever the wall clock is", () => {
+    expect(GAME_DAY_MS).toBe(24 * 60 * 1000);
+    expect(at(0)).toBe(DAY_START_HOUR);
+    // and a day later it is morning again
+    expect(at(24)).toBeCloseTo(DAY_START_HOUR, 5);
+  });
+
+  it("spends the evening a child actually plays in daylight", () => {
+    // a 12–15 minute session: morning through afternoon into the golden hour, never night
+    for (const minute of [0, 3, 6, 9, 12, 15]) {
+      const h = at(minute);
+      expect(h).toBeGreaterThanOrEqual(DAY_START_HOUR);
+      expect(h).toBeLessThan(18);
+    }
+    expect(at(18)).toBeGreaterThan(16); // the golden hour arrives late in the day
+  });
+
+  it("hurries through the dark: about a tenth of the day, not four tenths", () => {
+    let dark = 0;
+    const steps = 2400;
+    for (let i = 0; i < steps; i++) {
+      const h = gameHour(start + (i / steps) * GAME_DAY_MS, { anchorMs: start });
+      if (h >= 19.3 || h < 5.5) dark++;
+    }
+    expect(dark / steps).toBeLessThan(0.15);
+    expect(dark / steps).toBeGreaterThan(0.02); // there is still a night to light the windows for
   });
 
   it("stays within 0–24 for any clock, and honours a custom day length", () => {
@@ -232,6 +251,14 @@ describe("game clock (pha 10b: 15 real minutes = one game day)", () => {
       expect(h).toBeGreaterThanOrEqual(0);
       expect(h).toBeLessThan(24);
     }
-    expect(gameHour(30_000, 60_000)).toBe(12);
+    // half a one-minute day is the golden hour, not noon: the curve is not linear in hours
+    expect(gameHour(30_000, { dayMs: 60_000 })).toBeGreaterThan(14);
+    expect(gameHour(30_000, { dayMs: 60_000 })).toBeLessThan(18);
+  });
+
+  it("does not jump when the child reloads: the same anchor gives the same sky", () => {
+    const a = gameHour(start + 7 * 60_000, { anchorMs: start });
+    const b = gameHour(start + 7 * 60_000, { anchorMs: start });
+    expect(a).toBe(b);
   });
 });

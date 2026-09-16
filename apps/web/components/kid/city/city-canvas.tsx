@@ -20,12 +20,15 @@ export interface CityOverlayItem {
 export function CityCanvas({
   view,
   hour,
+  dayAnchorMs,
   overlays,
   onReady,
   onTap,
 }: {
   view: CityView;
   hour?: number;
+  /** When the game day starts in the morning — the child's session start (pha 11). */
+  dayAnchorMs?: number;
   overlays: CityOverlayItem[];
   onReady?: (engine: CityEngine) => void;
   onTap?: (target: TapTarget) => void;
@@ -54,7 +57,11 @@ export function CityCanvas({
       try {
         const { createCityEngine } = await import("@mtct/city/engine");
         if (disposed) return;
-        const engine = await createCityEngine(canvas, { assetsBase: "/art/city", hour });
+        const engine = await createCityEngine(canvas, {
+          assetsBase: "/art/city",
+          hour,
+          dayAnchorMs,
+        });
         if (disposed) {
           engine.dispose();
           return;

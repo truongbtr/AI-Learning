@@ -114,6 +114,11 @@ export function CityClient({
   const viewRef = useRef(view);
   viewRef.current = view;
 
+  // The city's day starts in the morning when the child sat down — the same moment on every screen
+  // and after a reload, so the sky never jumps (pha 11). A session not started yet: now.
+  const [openedAt] = useState(() => Date.now());
+  const dayAnchorMs = session.startedAt ? new Date(session.startedAt).getTime() : openedAt;
+
   const idBySkillCode = useMemo(() => new Map(skills.map((s) => [s.code, s.id])), [skills]);
   const nameBySkillId = useMemo(() => new Map(skills.map((s) => [s.id, s.nameVi])), [skills]);
   const itemByOrder = useMemo(
@@ -615,7 +620,13 @@ export function CityClient({
       data-city={city}
       data-mode={mode}
     >
-      <CityCanvas view={view} overlays={overlays} onReady={setEngine} onTap={onTap} />
+      <CityCanvas
+        view={view}
+        overlays={overlays}
+        onReady={setEngine}
+        onTap={onTap}
+        dayAnchorMs={dayAnchorMs}
+      />
 
       {/* HUD */}
       <header className="pointer-events-none fixed inset-x-0 top-0 z-20 flex items-start justify-between gap-3 p-3">

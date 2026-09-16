@@ -70,10 +70,12 @@ một thành phố; **cả buổi tối diễn ra trong thành phố**, không c
   kỹ năng cần giúp (lỗi 7 ngày ≥ 2, thang khắc phục đang chạy, NEEDS_PRACTICE) và **tối đa 3 cái** trong
   một thành phố, ưu tiên kỹ năng lỗi nhiều nhất; kỹ năng yếu còn lại vẽ ở bậc thường. Lô trống dự phòng
   là nhà nhỏ chi tiết hoặc vườn, không dùng khối cao ốc sơ sài.
-- **Đồng hồ game, không theo giờ thật** *(chủ dự án, 16/09/2026)*: trong thành phố **15 phút thật = 1 ngày
-  game** (sáng → trưa → chiều vàng → tối lên đèn → đêm có sao → sáng lại). Giờ game tính từ đồng hồ máy
-  nên bản đồ, thành phố và khi tải lại đều cùng một giờ, không nhảy về sáng khi đổi màn. Thế giới cũ
-  (§1.8c mục 3) vẫn theo giờ thật.
+- **Đồng hồ game, không theo giờ thật** *(chủ dự án, 16/09/2026)*: trong thành phố **24 phút thật = 1 ngày
+  game**, và ngày game **mở màn lúc 8 giờ sáng tính từ lúc con bắt đầu phiên học** — con ngồi xuống là
+  thành phố sáng, không phụ thuộc đang là 18 giờ hay 21 giờ thật. Nhịp không đều theo giờ: 55% thời gian
+  là ban ngày, rồi chiều vàng, hoàng hôn, và **đêm chỉ khoảng một phần mười** (một buổi 12–15 phút đi từ
+  sáng tới chiều vàng, không rơi vào đêm giữa chừng). Mốc neo lấy từ `Session.startedAt` nên mọi màn và
+  mọi lần tải lại đều cùng một giờ. Thế giới cũ (§1.8c mục 3) vẫn theo giờ thật.
 - **Thành phố bắt đầu nhỏ**: ngày đầu chỉ 2 khu phố + toà thị chính + khu kỳ quan, còn lại đồi cỏ, rừng,
   sông chờ mở đất; một ô đất khoá hiện biển "N★". Cỡ thành phố = tiến bộ của con.
 - **Màu**: mỗi công trình tô bằng bảng riêng = hai màu của thành phố + mái/tường của thành phố + **bảng

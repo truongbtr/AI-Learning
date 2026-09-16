@@ -119,8 +119,24 @@ Hệ quả thêm: migration dữ liệu `20260915200000_rename_kid_nicknames` đ
 
 ## Bổ sung 16/09/2026 — đồng hồ game
 
-"Đồng hồ thật → ngày/đêm" (§3 của đề pha 10) đổi thành **đồng hồ game: 15 phút thật = 1 ngày game**
-(chủ dự án). Hai bé học 18–21 giờ nên theo giờ thật thì thành phố luôn tối; nay con thấy đủ sáng, chiều,
-tối, đêm trong một buổi. `gameHour(now) = (now mod 15 phút) / 15 phút × 24` (`packages/city/src/engine/
-daynight.ts`, có test) — lấy từ đồng hồ máy chứ không từ lúc mở màn, để mọi màn cùng một giờ. Engine vẫn
-nhận `hour` cố định cho bench/ảnh chụp và `dayLengthMs` nếu cần đổi nhịp.
+"Đồng hồ thật → ngày/đêm" (§3 của đề pha 10) đổi thành **đồng hồ game** (chủ dự án). Hai bé học 18–21
+giờ nên theo giờ thật thì thành phố luôn tối.
+
+Bản đầu (15/09) chạy 15 phút thật = 1 ngày game, lấy mốc từ đồng hồ máy. QC 16/09 cho thấy vẫn chưa
+tới đích: chia đều 24 giờ vào 15 phút thì **6 phút mỗi ngày game là đêm** — một buổi học 12 phút vẫn
+tối gần bốn phần mười thời gian, lại tối ngay giữa lúc con đang làm bài, và con mở màn vào đúng lúc nào
+là hên xui.
+
+Bản hiện tại (16/09, pha 11):
+
+- **24 phút thật = 1 ngày game**, `GAME_DAY_MS` trong `packages/city/src/engine/daynight.ts`;
+- **mốc neo là `Session.startedAt`** (`dayAnchorMs` của engine): con ngồi xuống thì thành phố ở
+  `DAY_START_HOUR = 8` giờ sáng. Vẫn ổn định qua tải lại và giống nhau ở mọi màn vì mốc lấy từ DB, không
+  phải từ lúc mở màn;
+- **nhịp không đều theo giờ** (bảng `PHASES`): 55% ngày game là ban ngày, 20% chiều vàng, 10% hoàng hôn,
+  ~13% đêm + bình minh. Một buổi 12–15 phút đi từ sáng tới chiều vàng; ai chơi hết một ngày game thì thấy
+  khoảng hai phút rưỡi trời tối. Bảng ánh sáng `lightingAt(hour)` không đổi.
+
+Engine vẫn nhận `hour` cố định cho bench/ảnh chụp và `dayLengthMs` nếu cần đổi nhịp. Đề xuất "nâng ánh
+sáng môi trường buổi tối" (pha 10b việc 2) **không làm nữa**: nguyên nhân là nhịp ngày/đêm, không phải
+bảng màu.
