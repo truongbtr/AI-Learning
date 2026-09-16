@@ -19,6 +19,21 @@
 > - **Đừng build image trên máy Ubuntu** (3,3 GB RAM, đĩa cơ, đã swap sẵn): mất ~25 phút. Build trên
 >   máy dev **từ một `git worktree` sạch của đúng commit** (thư mục làm việc có thể đang có mã dở
 >   của phiên khác), rồi `docker save | gzip | ssh … docker load` và `up -d` không `--build`.
+> **Sửa tiếp trên bản ô bàn cờ, cùng chiều 16/09 (đã lên production, image `5710f71a03d3`):**
+> - **Xe buýt rỗng** — lỗi ở `cbox` (khối bo góc dùng cho cả nhà lẫn xe): nắp quay úp nên bị bỏ lúc
+>   nướng hình, đáy quay ngửa, pháp tuyến vách quay vào trong. Xe buýt chỉ là một khối nên thành cái
+>   vỏ rỗng thấy cả sàn; nhà cửa đỡ lộ vì có mái riêng, nhưng các vách đang được chiếu sáng ngược phía
+>   và các cục số trên nóc cũng rỗng. Sửa `780bbb3`, số tam giác không đổi; test `kit.test.ts`.
+>   Trang `bench/agents` + `scripts/shoot-agents.ts` vẽ riêng từng mẫu xe/người ở 4 hướng.
+> - **Xe và người đi vòng quanh một khối mãi** → giờ đi trên lưới đường, tới ngã tư chọn ngẫu nhiên
+>   (thẳng 6 · rẽ 3 · quay đầu chỉ ở ngõ cụt; người đôi khi quay lại và dừng ngắm), ôm cua mượt, xe
+>   đi bên phải, người trên vỉa hè; hạt giống theo thành phố + ngày (`engine/traffic.ts`).
+> - **Đèn xanh đèn đỏ ở mọi ngã tư** (4 nhánh; ngã ba không có): cột đèn hai mặt, mỗi mặt một chiều
+>   đường, chu kỳ 13 giây, luôn có ít nhất một chiều đỏ; xe dừng khi đỏ (và khi vàng nếu còn kịp),
+>   xếp hàng sau xe trước, kể cả khi vừa rẽ qua góc. Thay 4 cột đèn trang trí cũ quanh toà thị chính.
+> - 12 test giao thông; cả repo sạch trên bản checkout riêng: lint, build 4/4, test 7/7. Bench
+>   60 khung hình/giây ở thành phố ngày đầu và cuối năm.
+>
 > - Trong container không có `dotenv`: chạy CLI bằng
 >   `sh -c '. ./docker/env.sh; cd packages/db && ./node_modules/.bin/tsx src/cli/content-import.ts …'`
 >   (không nạp `docker/env.sh` thì CLI trỏ `localhost:5432` và không vào được DB).
