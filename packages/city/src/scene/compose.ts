@@ -20,6 +20,7 @@ import {
 } from "../build/props";
 import { skillBuilding } from "../build/skills";
 import { wonder } from "../build/wonders";
+import { hasLights, roadGrid } from "../engine/traffic";
 import type { KenneyKey } from "../kenney/set";
 import {
   BLOCK_PITCH,
@@ -49,10 +50,10 @@ export const CITY_WATER: Record<
 };
 
 export interface AgentPlan {
-  /** Closed loops along road lane centres (world x,z). */
-  carLoops: [number, number][][];
-  /** Closed loops along sidewalks. */
-  walkLoops: [number, number][][];
+  /** The traffic lights: one at every crossroads (engine/traffic.ts). */
+  lights: { key: string; x: number; z: number }[];
+  /** Seeds the traffic, so a reload shows the same town on the same day. */
+  seed: string;
   /** Back-and-forth lines on the water. */
   boatLines: [number, number][][];
   cars: number;
@@ -276,20 +277,9 @@ export function composeCity(ctx: BuildCtx, view: CityView): Composition {
       ).rotation.y = Math.PI;
     }
   }
-  for (const [tx, tz] of [
-    [0, 0],
-    [6, 0],
-    [0, 6],
-    [6, 6],
-  ] as const) {
-    add(
-      root,
-      ctx.lib.model("roads/traffic-light", roadPaint, TILE),
-      tileToWorld(tx) - TILE * 0.45,
-      0.1,
-      tileToWorld(tz) - TILE * 0.45,
-    );
-  }
+  // a working traffic light at every crossroads: the pole is built here, the lamps change colour
+  // in the engine (they are instanced, so they can)
+  for (const light of trafficLights(layout)) add(root, lightPole(), light.x, 0.1, light.z);
   add(root, cityGate(ctx), tileToWorld(gateTx), 0.1, tileToWorld(gateTz + 2));
 
   cat = "lots";
@@ -566,31 +556,43 @@ function lockedPlot(ctx: BuildCtx, g: Object3D, cost: number | null) {
   );
 }
 
+/**
+ * Where the lights stand: on the pavement corner of the crossroads that faces the camera, so the
+ * pole is seen across the open road and not hidden behind a block.
+ */
+export function trafficLights(layout: CityLayout): { key: string; x: number; z: number }[] {
+  const grid = roadGrid(layout.roads);
+  return [...grid.values()]
+    .filter((j) => hasLights(grid, j.key))
+    .map((j) => ({ key: j.key, x: j.x + LIGHT_OFFSET, z: j.z + LIGHT_OFFSET }));
+}
+
+/** From the crossroads' middle to the pole, on both axes (the corner nearer the camera). */
+const LIGHT_OFFSET = -TILE * 0.62;
+/** The lamp faces, relative to the pole's foot: +x shows the east–west way, +z the north–south. */
+export const LAMP_FACES = {
+  x: { dx: 0.19, dz: 0 },
+  z: { dx: 0, dz: 0.19 },
+  heights: { red: 3.0, amber: 2.68, green: 2.36 },
+} as const;
+
+function lightPole(): Object3D {
+  const g = group();
+  add(g, cyl(0.07, 0.09, 2.2, 0x46607a, 6), 0, 1.1, 0);
+  add(g, box(0.36, 1.08, 0.36, 0x2b2f3a), 0, 2.68, 0);
+  // little hoods over the lamps, on the two faces the camera sees
+  for (const y of [3.0, 2.68, 2.36]) {
+    add(g, box(0.06, 0.04, 0.3, 0x2b2f3a), 0.21, y + 0.15, 0);
+    add(g, box(0.3, 0.04, 0.06, 0x2b2f3a), 0, y + 0.15, 0.21);
+  }
+  return g;
+}
+
 function planAgents(
   layout: CityLayout,
   view: CityView,
   water: [number, number, number, number],
 ): AgentPlan {
-  const lane = TILE * 0.22;
-  const carLoops: [number, number][][] = [];
-  const walkLoops: [number, number][][] = [];
-  for (const b of layout.blocks) {
-    const half = (BLOCK_PITCH / 2) * TILE;
-    const o = half - lane; // clockwise lane on the block's ring road
-    carLoops.push([
-      [b.x - o, b.z - o],
-      [b.x + o, b.z - o],
-      [b.x + o, b.z + o],
-      [b.x - o, b.z + o],
-    ]);
-    const s = half - TILE * 0.62;
-    walkLoops.push([
-      [b.x - s, b.z + s],
-      [b.x + s, b.z + s],
-      [b.x + s, b.z - s],
-      [b.x - s, b.z - s],
-    ]);
-  }
   const [x0, z0, x1, z1] = water;
   const boatLines: [number, number][][] =
     x1 - x0 > z1 - z0
@@ -616,8 +618,8 @@ function planAgents(
         ];
   const pets = view.pets.map((code, i) => ({ code, x: -3 + i * 1.5, z: 5.5 }));
   return {
-    carLoops,
-    walkLoops,
+    lights: trafficLights(layout),
+    seed: `${view.subject}:${new Date().toISOString().slice(0, 10)}`,
     boatLines,
     cars: 4 + view.bustle * 4,
     people: 8 + view.bustle * 6,

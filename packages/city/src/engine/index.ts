@@ -41,12 +41,24 @@ import type { MaterialGroup } from "../build/bake";
 import { KenneyLibrary } from "../build/kenney";
 import { ATLAS_SIZE, canvasPainter, SignAtlas } from "../build/signs";
 import { type BuiltCity, buildCity } from "../scene/build-city";
+import { type AgentPlan, LAMP_FACES } from "../scene/compose";
 import { AGENT_MAX, buildAgentTemplates } from "./agents";
 import { applyCamera, CAMERA, type CameraState, clampState, easeInOut, panDelta } from "./camera";
 import { bend, createCurveUniforms } from "./curve";
 import { GAME_DAY_MS, gameHour, type Lighting, lightingAt } from "./daynight";
-import { pathLength, sampleAt } from "./paths";
+import { sampleAt } from "./paths";
 import { surfaceShader } from "./surface";
+import {
+  lightAt,
+  type Mover,
+  place as placeMover,
+  type RoadGrid,
+  roadGrid,
+  seedOf,
+  spawn,
+  stepAll,
+  stillOnTheRoad,
+} from "./traffic";
 
 export type TapTarget =
   | { type: "skill"; skillId: string }
@@ -256,6 +268,7 @@ export async function createCityEngine(
   makeInstanced("personC", AGENT_MAX.person / 3);
   makeInstanced("boat", AGENT_MAX.boat);
   for (const k of ["dog", "cat", "bunny", "duck"] as const) makeInstanced(k, AGENT_MAX.pet);
+  makeInstanced("bulb", AGENT_MAX.bulb);
   const carColors = [0xff6f61, 0x5e93d6, 0xffd447, 0x6fcf5a, 0xb283e0, 0xffffff, 0xff9f43].map(
     (c) => new Color(c),
   );
@@ -344,6 +357,41 @@ export async function createCityEngine(
     renderer.shadowMap.needsUpdate = true;
   }
 
+  // ---------------------------------------------------------------- traffic
+  let traffic: { roads: ReadonlySet<string>; grid: RoadGrid; movers: Mover[] } | null = null;
+  function trafficFor(roads: ReadonlySet<string>, plan: AgentPlan) {
+    if (traffic && traffic.roads === roads) return traffic;
+    const grid = roadGrid(roads);
+    const nVehicles = Math.min(AGENT_MAX.car + AGENT_MAX.bus, plan.cars);
+    const want = {
+      bus: Math.min(AGENT_MAX.bus, Math.floor(nVehicles / 6)),
+      car: 0,
+      person: Math.min(AGENT_MAX.person, plan.people),
+    };
+    want.car = Math.min(AGENT_MAX.car, nVehicles - want.bus);
+    // the town grew: whoever is still on a real street carries on, the rest are put down afresh
+    const kept = (traffic?.movers ?? []).filter((m) => stillOnTheRoad(grid, m));
+    const movers: Mover[] = [];
+    for (const kind of ["car", "bus", "person"] as const) {
+      const mine = kept.filter((m) => m.kind === kind).slice(0, want[kind]);
+      const fresh = spawn(
+        grid,
+        kind,
+        want[kind] - mine.length,
+        seedOf(`${plan.seed}:${kind}:${mine.length}`),
+      );
+      movers.push(...mine, ...fresh);
+    }
+    traffic = { roads, grid, movers };
+    return traffic;
+  }
+  const lampColours = {
+    red: new Color(0xff3b30),
+    amber: new Color(0xffb020),
+    green: new Color(0x34d17a),
+  } as const;
+  const lampOff = new Color(0x2a2e38);
+
   // ---------------------------------------------------------------- agents update
   let elapsed = 0;
   const m4 = new Matrix4();
@@ -369,47 +417,59 @@ export async function createCityEngine(
       im.setMatrixAt(i, m4);
       if (color) im.setColorAt(i, color);
     };
+    // cars, buses and people wander the street grid; vehicles stop at red lights (engine/traffic)
+    const traffic = trafficFor(built.composition.layout.roads, plan);
+    stepAll(traffic.grid, traffic.movers, dt, elapsed);
     const cars = instanced.get("car") as InstancedMesh;
     const buses = instanced.get("bus") as InstancedMesh;
-    const nCars = Math.min(AGENT_MAX.car, plan.cars);
-    const loops = plan.carLoops;
-    let busCount = 0;
-    for (let i = 0; i < nCars && loops.length; i++) {
-      const loop = loops[(i * 7) % loops.length] as [number, number][];
-      const len = pathLength(loop, true);
-      const s = sampleAt(loop, true, elapsed * 5.5 + (i * len) / 2.7);
-      if (i % 6 === 5 && busCount < AGENT_MAX.bus)
-        place(buses, busCount++, s.x, 0.16, s.z, s.heading);
-      else place(cars, i - busCount, s.x, 0.16, s.z, s.heading, carColors[i % carColors.length]);
-    }
-    cars.count = nCars - busCount;
-    buses.count = busCount;
     const people = ["personA", "personB", "personC"].map((k) => instanced.get(k) as InstancedMesh);
-    const counts = [0, 0, 0];
-    const nPeople = Math.min(AGENT_MAX.person, plan.people);
-    for (let i = 0; i < nPeople && plan.walkLoops.length; i++) {
-      const loop = plan.walkLoops[(i * 5) % plan.walkLoops.length] as [number, number][];
-      const len = pathLength(loop, true);
-      const s = sampleAt(
-        loop,
-        true,
-        elapsed * (0.9 + (i % 3) * 0.15) * (i % 2 ? 1 : -1) + (i * len) / 3.3,
-      );
-      const k = i % 3;
-      const im = people[k] as InstancedMesh;
-      place(
-        im,
-        counts[k] as number,
-        s.x,
-        0.12,
-        s.z,
-        s.heading + Math.PI / 2 + (i % 2 ? 0 : Math.PI),
-      );
-      counts[k] = (counts[k] as number) + 1;
-    }
-    people.forEach((im, k) => {
-      im.count = counts[k] as number;
+    const counts = { car: 0, bus: 0, person: [0, 0, 0] };
+    traffic.movers.forEach((m, i) => {
+      const p = placeMover(traffic.grid, m);
+      if (m.kind === "bus") place(buses, counts.bus++, p.x, 0.16, p.z, p.heading);
+      else if (m.kind === "car")
+        place(cars, counts.car++, p.x, 0.16, p.z, p.heading, carColors[i % carColors.length]);
+      else {
+        const k = i % 3;
+        // the person model faces +z, the traffic heading is for a model facing +x
+        place(
+          people[k] as InstancedMesh,
+          counts.person[k] as number,
+          p.x,
+          0.12,
+          p.z,
+          p.heading + Math.PI / 2,
+        );
+        counts.person[k] = (counts.person[k] as number) + 1;
+      }
     });
+    cars.count = counts.car;
+    buses.count = counts.bus;
+    people.forEach((im, k) => {
+      im.count = counts.person[k] as number;
+    });
+    // the lamps: two faces per light, red over amber over green, lit in their own colour
+    const bulbs = instanced.get("bulb") as InstancedMesh;
+    let bulb = 0;
+    for (const light of plan.lights) {
+      for (const axis of ["x", "z"] as const) {
+        const face = LAMP_FACES[axis];
+        const showing = lightAt(light.key, axis, elapsed);
+        for (const colour of ["red", "amber", "green"] as const) {
+          if (bulb >= AGENT_MAX.bulb) break;
+          place(
+            bulbs,
+            bulb++,
+            light.x + face.dx,
+            LAMP_FACES.heights[colour],
+            light.z + face.dz,
+            axis === "x" ? Math.PI / 2 : 0,
+            showing === colour ? lampColours[colour] : lampOff,
+          );
+        }
+      }
+    }
+    bulbs.count = bulb;
     const boats = instanced.get("boat") as InstancedMesh;
     const nBoats = Math.min(AGENT_MAX.boat, plan.boats);
     for (let i = 0; i < nBoats; i++) {
