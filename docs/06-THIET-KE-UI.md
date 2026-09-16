@@ -76,8 +76,33 @@ một thành phố; **cả buổi tối diễn ra trong thành phố**, không c
   là ban ngày, rồi chiều vàng, hoàng hôn, và **đêm chỉ khoảng một phần mười** (một buổi 12–15 phút đi từ
   sáng tới chiều vàng, không rơi vào đêm giữa chừng). Mốc neo lấy từ `Session.startedAt` nên mọi màn và
   mọi lần tải lại đều cùng một giờ. Thế giới cũ (§1.8c mục 3) vẫn theo giờ thật.
-- **Thành phố bắt đầu nhỏ**: ngày đầu chỉ 2 khu phố + toà thị chính + khu kỳ quan, còn lại đồi cỏ, rừng,
-  sông chờ mở đất; một ô đất khoá hiện biển "N★". Cỡ thành phố = tiến bộ của con.
+- **Thành phố bắt đầu nhỏ**: ngày đầu chỉ toà thị chính bên hồ + một phần vành đai 1, còn lại đồi cỏ,
+  rừng, hồ, sông chờ mở đất; một ô đất khoá hiện biển "N★". Cỡ thành phố = tiến bộ của con.
+- **Dáng bản đồ kiểu vành đai** *(pha 12, ADR-23)*: hồ ở giữa có từ ngày đầu, toà thị chính trên bán đảo
+  bờ hồ; đường **cong theo vành đai** ôm hồ, các ô đất hình thang xếp **theo nan quạt**, nhà thấp tầng
+  thành **dải liền kề cùng hướng cùng mái**; **một đại lộ chéo** cắt ngang, ô nào bị cắt thành công viên;
+  hồ nhỏ và dải rừng ngăn giữa các khu; **cụm 4–6 toà cao tầng chỉ ở hai cung sát hồ**. Mỗi vành đai là
+  một **khu có tên** (biển ở lối vào), mở vành đai mới là một cột mốc có ăn mừng. Mượn hình học nơi hai
+  bé đang sống; **không** chép bản đồ thật, **không** dùng tên thương mại nào.
+- **Riêng Phố Chữ là thị trấn thật của hai bé** *(pha 12 việc 7, ADR-23 mục 6)*: vẽ theo bản quy hoạch
+  thật — sông Bắc Hưng Hải phía bắc, Đường 379 chạy dọc thị trấn, các ngón kênh của The Island, Hồ
+  Thiên Nga dài ở giữa, sân golf phía đông, Aqua Bay phía nam — và **giữ đúng tên khu trên bản đồ**
+  (Park River, The Island, Ecopark CBD, Education HUB, Aqua Bay, Palm Springs…). Hình dáng và thứ tự
+  các khu là thật, **tỉ lệ mét thì không**. Năm thành phố kia vẫn là thị trấn tưởng tượng, và sông của
+  chúng **được phép chảy qua thị trấn** — chỗ nào sông cắt ngang thì đường bắc **cầu**, không xây nhà.
+- **Sông và bến cảng** *(pha 12)*: sông chạy chéo ở rìa, hiện sẵn từ ngày đầu; bến cảng có cầu tàu, cần
+  cẩu, thùng hàng, thuyền neo; **cầu** bắc qua khi thành phố lớn tới bờ. Thuyền đi lại **không đều
+  nhau**: thuyền buồm, xà lan, thuyền câu dừng thả lưới rồi mới đi tiếp. Mỗi thành phố một tính sông.
+- **Xe và người đi ngẫu nhiên** *(pha 12)*: tới ngã tư thì chọn đường tiếp theo (đi thẳng nhiều nhất),
+  tốc độ mỗi xe khác nhau, chậm lại trong cua, dừng đèn; **có hạt giống theo ngày** nên tải lại trang
+  thành phố vẫn y như cũ.
+- **Đồng hồ mặt trời trên HUD** *(pha 12)*: một cung mảnh vắt ngang phía trên, mặt trời đi từ trái sang
+  phải trong một ngày game rồi mặt trăng nối tiếp; nền cung đổi màu theo giờ. Chạm mặt trời thì mascot
+  nói giờ (tiếng Việt, riêng Bến Cảng Từ nói tiếng Anh), dùng mp3 sinh sẵn. **Không đếm ngược, không hạn
+  giờ** — đây là đồng hồ để ngắm, không phải để hối.
+- **Bản đồ giấy** *(pha 12)*: kéo camera ra xa hết cỡ (hoặc chạm nút 🗺️) thì hiện bản đồ vẽ 2D — nước
+  xanh, mảng xanh, đường trắng, tên từng khu, chấm sáng ở sao nhiệm vụ tối nay. Chạm một khu thì camera
+  bay xuống đó. Đây là chỗ con nhìn thấy toàn bộ công sức cả năm trên một màn hình.
 - **Màu**: mỗi công trình tô bằng bảng riêng = hai màu của thành phố + mái/tường của thành phố + **bảng
   chung**, xoay theo lô → một khu phố luôn có ≥ 3 màu mái và ≥ 4 màu tường (test `palette.test.ts`).
 - Không có gì hỏng, không "sai", không đỏ, không đồng hồ, không tiền; cửa hàng đồ sưu tầm không có lối vào

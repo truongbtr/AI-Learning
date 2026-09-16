@@ -100,3 +100,28 @@ Khi đó thứ tự xử lý: giảm `maxPixelRatio`, tắt bóng đổ mềm, r
   `content/art/kenney/` (tải theo README).
 - Thành phố được dựng lại toàn bộ khi `CityView` đổi (~0,1–0,3 s trên máy dev). Hoạt hình "công trình mọc
   lên" của việc 4 sẽ tách riêng lô đó thành mesh động trong lúc chạy hoạt hình.
+
+## Bổ sung 16/09/2026 — số đo mới sau pha 12 (ADR-23)
+
+Bản đồ đổi sang vành đai/nan quạt, đường thành đồ thị cong, thêm sông và bến cảng, thêm LOD ba mức.
+Ngân sách **giữ nguyên** (≤ 150 draw call, ≤ 80k tam giác) và có thêm một kịch bản khó hơn hẳn:
+
+| Kịch bản | Draw call xấu nhất | Tam giác xấu nhất |
+|---|---|---|
+| Cỡ `full` (như ADR-20 cũ) | 58–66 | 21,1–39,7k |
+| **Cuối năm** (102 kỹ năng, 40 ô đất, 15 công trình, kỳ quan xong, nhộn nhịp 4, quét khắp thành phố, iPad ngang + dọc) | **57–64** | **23,0–35,1k** |
+
+Phố Chữ — thị trấn thật của hai bé (ADR-23 mục 6) — là thành phố **nhẹ nhất** trong sáu (57 draw
+call, 23k tam giác cuối năm): nó trải trên một bản đồ rộng gấp rưỡi nên phần lớn nằm ngoài ngưỡng
+LOD ở mọi khung hình.
+
+Một lưu ý khi đọc bench: cửa sổ bench trên máy dev rộng hơn iPad (tỉ lệ 1,6 thay vì 1,44) nên khung
+hình xấu nhất ở đó đo được ~80k tam giác — sát trần. Ngân sách ADR-20 tính theo tỉ lệ iPad thật, và
+test `budget.test.ts` canh đúng hai tỉ lệ đó.
+
+Ba thay đổi làm nên con số đó: ô lưới bake **60 × 60** (trước là 51,2), **LOD ba mức** bake sẵn
+(`near` / `mid` bỏ chi tiết < 2,2 đơn vị / `far` bóng khối), và **bóng đổ chỉ trong hộp 90 đơn vị bám
+theo camera** thay vì phủ cả thành phố. `maxDist` hạ 124 → **108**.
+
+Vì sao số tam giác *giảm* dù thành phố to hơn: ở khung hình xấu nhất phần lớn thành phố nằm ngoài
+ngưỡng LOD, nên được vẽ ở mức `mid`/`far`. Chi tiết và lý do không đạt "9 ô mỗi khung hình": ADR-23.

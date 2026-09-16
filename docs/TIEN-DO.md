@@ -2,6 +2,148 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 12 — 16/09/2026 — Bản đồ thành phố kiểu vành đai, sông và bến cảng, giao thông ngẫu nhiên
+
+Trạng thái: **việc 1–7 xong trên máy dev, CHƯA deploy**. `lint` sạch, **toàn bộ test xanh**, `build`
+xanh. Viết lại `layout.ts` (lõi pha 10) và phần nền/nước/đường của `compose.ts`; **hợp đồng dữ liệu
+ADR-21 giữ nguyên** — `CityView`, `StudentCity`, `skillOrder`, luật mastery→nhà, sao→đất,
+huy hiệu→công trình không đổi một chữ. ADR-23 ghi lại toàn bộ quyết định.
+
+### Việc 1 — vành đai và nan quạt thay lưới vuông
+
+Hồ ở giữa có từ ngày đầu, toà thị chính trên bán đảo bờ hồ. Vành đai r ở bán kính
+`34 + (r−1)×26`, **méo theo một hình duy nhất của cả thành phố** (không phải mỗi vành một kiểu —
+hai vành cạnh nhau phải chừa đủ chỗ cho một con đường) và **lệch tâm dần** theo một hướng riêng của
+từng thành phố. Ô đất là mảnh hình thang; số ô mỗi vành tính theo **bề rộng ô cố định 13,5** chứ
+không theo công thức `8+6r` của đề bài — với `8+6r`, vành ngoài thành dải cỏ rộng có một ngôi nhà
+mỗi ba mươi mét, không giống ảnh tham khảo.
+
+**Quy tắc ổn định giữ nguyên và có test cho cả sáu thành phố**: thêm 1 kỹ năng + 1 huy hiệu + 1 ô
+đất → không công trình nào đang có đổi chỗ (toạ độ khớp tới 6 chữ số).
+
+Không đều đặn hoá: đại lộ chéo (dây cung né hồ) biến ô nó cắt thành công viên; **mỗi vành đai bị hai
+quãng xanh cắt ngang** (công viên + hồ nhỏ + rừng), và đoạn vành đai chạy qua quãng xanh là **đường
+mòn** chứ không phải mặt nhựa — nhờ vậy vành đai không còn là vòng kín; cụm 4–6 toà cao tầng chỉ ở
+hai cung sát hồ; nhà thấp tầng dựng thành **dải liền kề cùng hướng** theo cung.
+
+Mỗi vành đai là một khu có tên riêng theo thành phố (Khu Bến Cũ, Đồi Hoa, Vườn Thiên Nga…), có biển
+ở lối vào và tên trên bản đồ giấy.
+
+### Việc 2 — sông, bến cảng, thuyền
+
+Sông chạy chéo ở rìa (cách tâm ~5 vành đai, có khúc uốn), hiện từ ngày đầu. Bến cảng ở khúc gần
+thành phố nhất: cầu tàu gỗ, cột buộc, nhà điều hành có đèn hiệu, cần cẩu, thùng hàng, thuyền neo.
+**Cầu** dựng khi thành phố lớn tới bờ. Mỗi thành phố một tính sông (`RiverStyle`, là tham số):
+âu tàu · sông hiền · cảng lớn · thuyền giấy · xà lan · ghềnh. Thuyền đi **không đều nhau** — mỗi
+chiếc một tốc độ, cứ ba chiếc có một chiếc dừng thả lưới 9 giây rồi mới đi tiếp. Bến Cảng Từ vẫn
+nhận thuyền theo số từ tiếng Anh con thuộc (nối từ pha 11).
+
+### Việc 3 — xe, người đi ngẫu nhiên trên đồ thị đường
+
+`roads: Set<string>` (ô lưới) đổi thành **đồ thị**: nút là ngã tư, cạnh là đoạn đường cong.
+Xe tới nút thì **chọn đường theo trọng số** (thẳng 6 · rẽ nhẹ 3 · rẽ gắt 1,2 · quay đầu 0,05, chỉ
+khi cụt), mỗi xe một tốc độ ±20%, chậm lại trong cua, dừng đèn ở chỗ đại lộ cắt vành đai; xe buýt
+dừng bến; người đi bộ dừng ngắm. **Có hạt giống** theo `(studentId, cityId, ngày)` → tải lại trang
+thành phố không nhảy loạn. Test: 200 bước không ai rời đường, cùng hạt giống cho cùng kết quả,
+phân bố rẽ đúng trọng số, đường cụt thì quay đầu được.
+
+### Việc 4 — đồng hồ mặt trời trên HUD
+
+Cung mảnh vắt ngang phía trên; mặt trời đi trái→phải trong một ngày game, lặn rồi mặt trăng mọc đi
+tiếp; nền cung đổi màu theo giờ. Chạm mặt trời → mascot nói giờ, **tiếng Anh ở Bến Cảng Từ**, dùng
+mp3 sinh sẵn (`content/voice/city-lines.json`, nạp cùng `content:import` — 15 câu, ~350 ký tự).
+Gộp luôn đề xuất treo từ pha 10b: **nâng ánh sáng môi trường ban đêm** (`Lighting.ambient` 0 ban
+ngày → 0,3 ban đêm) nên màu nhà vẫn tươi khi trời tối.
+
+### Việc 5 — hiệu năng và bản đồ giấy
+
+Ô lưới bake **60×60**; **LOD ba mức** bake sẵn (đủ · bỏ chi tiết < 2,2 đơn vị · bóng khối ba mặt),
+đổi mức theo khoảng cách camera (100 và 190); **bóng đổ chỉ trong hộp 90 đơn vị bám theo camera**;
+tác nhân chỉ vẽ trong tầm nhìn. `maxDist` 124 → 108.
+
+**Đo kịch bản "cuối năm"** (102 kỹ năng, 40 ô đất, 15 công trình, kỳ quan xong, nhộn nhịp 4, quét
+camera khắp thành phố, iPad ngang + dọc), cả sáu thành phố: **57–64 draw call · 23,0–35,1k tam
+giác** — dưới một nửa trần 150/80k. Test nằm trong `budget.test.ts`.
+
+**Bản đồ giấy**: nút 🗺️ trên HUD mở bản đồ 2D vẽ bằng canvas — nước xanh, mảng xanh, đường trắng,
+đường mòn kem, **dải nhà** (không phải chấm tròn), tên từng khu, chấm sáng ở sao tối nay; chạm một
+khu thì camera bay xuống đó. Xem trước không cần trình duyệt:
+`pnpm --filter @mtct/city exec tsx scripts/paper-map-svg.ts viet endOfYear`.
+
+### Việc 6 — ảnh, tài liệu
+
+18 ảnh bench (6 thành phố × ngày đầu/giữa năm/cuối năm) + ảnh bến cảng + ảnh ban đêm + bản đồ giấy,
+trong `docs/screens/pha-12/`. Sáu ảnh đảo ngày đầu vẽ lại (`content/art/city/thumbs/*.webp`, 14–16
+KB). ADR-23 mới; docs/06 §1.2 bổ sung; ADR-20 thêm bảng số đo mới.
+
+### Việc 7 — Phố Chữ vẽ thành thị trấn thật của hai bé (chủ dự án giao thêm, tối 16/09)
+
+Chủ dự án gửi ảnh bản đồ quy hoạch: *"Có 1 thành phố giống y hệt thế này, các con đang ở đây, vẽ
+giống từng con đường, dòng sông, ngôi nhà, tên lấy theo đúng tên trên bản đồ"* — **đảo lại** ràng
+buộc "không chép bản đồ thật, không dùng tên thật" ở đầu pha. Ghi vào ADR-23 mục 6 và vào README
+của thư mục ảnh tham khảo.
+
+- **Phố Chữ (`viet`) thành thị trấn nhà.** Chọn môn Tiếng Việt vì đó là môn nhiều kỹ năng nhất
+  (102 — tức thị trấn cần nhiều đất nhất) và là thành phố hai bé vào nhiều nhất.
+- **Bản quy hoạch là dữ liệu**, gõ tay bằng mắt từ bản đồ và ảnh vệ tinh
+  (`packages/city/src/home-plan.ts`): sông Bắc Hưng Hải vắt ngang phía bắc, **Đường 379** chạy suốt
+  từ tây bắc xuống đông nam, **các ngón kênh của The Island** ở phía tây với một con phố trên mỗi
+  dải đất, **Hồ Thiên Nga** dài nằm giữa có đường ven hồ ôm quanh, **sân golf 18 lỗ** phía đông,
+  **Aqua Bay** phía nam, **Park River** trên bờ sông, **Ecopark CBD** (cụm cao tầng) ở rìa tây,
+  **Education HUB** ngay dưới sông, **Palm Springs**, **Dragon Islands**, **Khu Đồi Hoa**, **Học
+  viện Golf EPGA**. Tên khu là tên thật trên bản đồ; **tỉ lệ mét thì không thật** — đúng hình dáng
+  và thứ tự các khu, đây là phác thảo cỡ đồ chơi.
+- **Luật ổn định không mẻ một chỗ nào.** Ô rơi xuống nước / xuống đường / vào sân golf / chồng lên
+  hàng xóm bị loại **một lần, từ bản quy hoạch** (không bao giờ từ việc con học được gì), nên thứ tự
+  phần còn lại cố định và nhà đã xây không dịch chỗ — có test riêng
+  (`packages/city/src/home-plan.test.ts`, 10 test). `planReport()` in ra khu nào mất bao nhiêu ô, để
+  lần sau sửa bản quy hoạch còn biết vì sao.
+- **Sức chứa**: 185 ô, trong đó 124 ô nhà — đủ 102 kỹ năng Tiếng Việt và còn dư. Test canh mốc này.
+- **Cách lớn lên cũng khác**: ở thị trấn nhà, **đường phố có đủ từ ngày đầu** (thị trấn thật thì đã ở
+  đó rồi) và con xây **nhà** vào các lô trống dọc phố — ngày đầu là một thị trấn vắng chờ được ở.
+  Năm thành phố kia vẫn mở thêm vành đai mới như cũ.
+- **Năm thành phố kia**: chủ dự án cho phép *"có thể có con sông chảy qua giữa thành phố"*. Khi mở
+  ra làm việc đó thì lòi ra **một lỗi thật**: thành phố cuối năm đang đặt **5–25 ngôi nhà giữa lòng
+  sông** ở cả năm thành phố (bố cục không biết gì về sông). Đã sửa ba chỗ:
+  1. ô nằm trong lòng sông thành **mặt nước**, không phải đất xây;
+  2. đoạn đường vắt qua nước thành **cầu** (mặt cầu nâng, có lan can) thay vì nhựa sơn trên nước;
+  3. đường sông **không còn đổi theo độ lớn thành phố** — nếu không, một ô khô tháng Mười có thể
+     ngập vào tháng Năm, và nhà trên đó sẽ phải dọn đi.
+  Và **một cửa duy nhất lấy nước của thành phố** (`cityWaterways`): trước đó cảnh 3D tự suy góc đại
+  lộ từ đường đã vẽ — đường ấy chạy ngược chiều, nên **sông trong cảnh nằm ở phía đối diện** so với
+  sông mà bố cục đã chừa chỗ. Giờ cả ba nơi (bố cục, cảnh 3D, bản đồ giấy) hỏi cùng một hàm.
+- Hai chỗ nhỏ đi kèm: chạm vào một khu trên bản đồ giấy chọn **biển gần nhất** (không phải vành đai
+  gần nhất — thị trấn nhà không xếp theo vành đai); **máy ảnh "về nhà"** đặt ở **toà thị chính**
+  (tâm hình vuông của bản đồ, ở thị trấn nhà, là một cánh đồng bên kia hồ).
+- Ảnh: `docs/screens/pha-12/thanh-pho-nha-viet.jpg` (3D) và
+  `docs/screens/pha-12/ban-do-giay-viet-endOfYear.svg` (bản đồ giấy).
+
+### Làm khác đề bài (đã ghi trong ADR-23)
+
+1. **"Khung hình rộng nhất chạm tối đa 9 ô"** — không đạt được với ô 60×60 và camera nghiêng 27°:
+   hình chiếu khung nhìn là hình thang dài, chạm ~18 ô. Muốn đúng 9 thì phải dùng ô 100×100 (cắt
+   LOD thô, lọc lỏng) hoặc kéo camera còn dist 80 (con mất cảm giác thành phố). Thứ mà luật này bảo
+   vệ là **số draw call** và số đó đo được là 57–64/150, nên giữ ô 60 và ghi rõ lý do.
+2. **Số ô mỗi vành đai** theo bề rộng cố định thay vì `8+6r` (lý do ở việc 1).
+
+### Cần chủ dự án
+
+1. **Nhìn từ trên xuống vẫn hơi "vòng tròn đồng tâm"** — chủ dự án đã nói và tôi đồng ý. Đã làm
+   được: lệch tâm dần, một hình méo chung, hai quãng xanh cắt mỗi vành, đoạn qua công viên thành
+   đường mòn, và trên bản đồ giấy nhà vẽ thành dải chứ không phải chấm. Trong 3D (góc con chơi) đã
+   đỡ hẳn; nhìn thẳng từ trên vẫn thấy các vòng. Bước tiếp nếu chủ dự án muốn: **chia ô trong từng
+   cung thành khối nhỏ bất quy tắc có ngõ cụt** (như khu nhà thật) thay vì nan quạt đều — khoảng
+   nửa ngày, và là pha 12b. **Riêng Phố Chữ thì việc 7 đã giải xong chuyện này** — nó vẽ theo bản đồ
+   thật nên không còn vòng nào; nếu chủ dự án thấy thị trấn nhà dễ nhìn hơn hẳn thì tôi vẽ tay bản
+   quy hoạch cho cả năm thành phố kia theo cùng cách (mỗi thành phố ~nửa ngày).
+2. **Chưa deploy.** Khi deploy: `pnpm build` rồi `docker compose -f docker/compose.yml up -d --build`;
+   không cần migration (pha 12 không đụng DB), nhưng vẫn cần lệnh của pha 11 nếu máy chủ chưa chạy:
+   `pnpm db:migrate` + `pnpm content:import` + `pnpm content:import --respec --no-tts`.
+3. Bốn bản vá QC của pha 11 **vẫn chưa lên production** (bản vá kéo-thả chạm 512 bài hai bé gặp mỗi
+   tối) — vẫn chờ chủ dự án gật.
+4. Ảnh tham khảo trong `docs/screens/pha-12/tham-khao/` là ảnh bên thứ ba; nếu có lúc nào mở repo ra
+   công khai thì xoá thư mục đó trước (README trong thư mục đã ghi).
+
 ## Pha 11 — 16/09/2026 — Bến Cảng Từ: trò chơi từ vựng tiếng Anh (+ 4 bản vá QC)
 
 Trạng thái: **việc 1–5 xong trên máy dev, CHƯA deploy** (theo yêu cầu chủ dự án). `pnpm lint` sạch
