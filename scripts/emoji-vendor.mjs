@@ -37,10 +37,22 @@ export function emojiKey(value) {
     .join("-");
 }
 
+/**
+ * "🐔🦆" → ["🐔", "🦆"]; one emoji (even a ZWJ family) stays one — the same split the Picture
+ * component does. Scanning whole values instead used to lose both halves of a small scene: Noto
+ * has no icon called "1f997-1f3b6", so "🦗🎶" was reported missing and neither 🦗 nor 🎶 was
+ * written (pha 11 QC).
+ */
+const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
+function graphemes(value) {
+  return [...segmenter.segment(value)].map((s) => s.segment).filter((g) => g.trim().length > 0);
+}
+
 const found = new Set();
 function scan(node) {
   if (!node || typeof node !== "object") return;
-  if (node.kind === "emoji" && typeof node.value === "string") found.add(node.value);
+  if (node.kind === "emoji" && typeof node.value === "string")
+    for (const part of graphemes(node.value)) found.add(part);
   for (const v of Object.values(node)) scan(v);
 }
 function walk(dir) {
@@ -82,6 +94,15 @@ for (const value of [...found].sort()) {
 writeFileSync(
   join(out, "LICENSE.md"),
   "# Emoji pictures\n\nFrom Noto Color Emoji by Google (https://github.com/googlefonts/noto-emoji), Apache License 2.0,\nextracted with `pnpm art:emoji` from the @iconify-json/noto package.\n",
+);
+/**
+ * What content:validate reads: which emoji have a picture, and which glyphs Noto simply has no
+ * picture for (▬ ⬢ ◤ — geometric symbols, drawn as text on purpose). Without the second list the
+ * validator could not tell "someone forgot to run art:emoji" from "this one is a plain symbol".
+ */
+writeFileSync(
+  join(out, "index.json"),
+  `${JSON.stringify({ pictures: written, notInNoto: missing }, null, 2)}\n`,
 );
 // one key per line, so the generated file is already in the formatter's shape
 const lines = written.map((k) => `  "${k}",`).join("\n");

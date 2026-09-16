@@ -1,6 +1,7 @@
 import { explainErrorTagMismatch } from "./error-semantics";
 import type { ExerciseDef, ExercisePack, Phase3Type } from "./exercise";
 import { PHASE3_TYPES } from "./exercise";
+import { type EmojiLibrary, emojiKey, emojiParts } from "./load";
 import { lessonRefsOf, type SkillDef } from "./skill-map";
 import { checkPrintedVietnamese, lessonReachOf, taughtUpTo } from "./tieng-viet-progression";
 
@@ -38,6 +39,8 @@ export interface ValidationContext {
   errorCodes: ReadonlySet<string>;
   /** Labels in content/art/objects/manifest.json; null when the manifest does not exist yet. */
   assetLabels: ReadonlySet<string> | null;
+  /** Pictures in content/art/emoji/; null before `pnpm art:emoji` has ever run. */
+  emoji?: EmojiLibrary | null;
 }
 
 /**
@@ -196,8 +199,9 @@ export function validatePack(
         err("at least one wrong choice must carry an errorTag (docs/04 §11.2)", ex.id);
     }
 
-    // Rubric 10: every asset image must exist in the object library.
-    if (ctx.assetLabels) {
+    // Rubric 10: every asset image must exist in the object library, and every emoji must have a
+    // picture — an emoji without one is drawn by the device font, at about half the size asked for.
+    {
       const refs = [
         ex.prompt.image,
         ex.countTarget?.objects,
@@ -205,9 +209,26 @@ export function validatePack(
         ...(ex.dragItems ?? []).map((d) => d.image),
         ...(ex.dropZones ?? []).map((d) => d.image),
       ];
-      for (const ref of refs)
-        if (ref?.kind === "asset" && !ctx.assetLabels.has(ref.value))
+      for (const ref of refs) {
+        if (!ref) continue;
+        if (ctx.assetLabels && ref.kind === "asset" && !ctx.assetLabels.has(ref.value))
           err(`image asset "${ref.value}" is not in content/art/objects/manifest.json`, ex.id);
+        if (ctx.emoji && ref.kind === "emoji") {
+          const lib = ctx.emoji;
+          const absent = emojiParts(ref.value).filter((p) => !lib.pictures.has(emojiKey(p)));
+          const forgotten = absent.filter((p) => !lib.notInNoto.has(p));
+          if (forgotten.length > 0)
+            err(
+              `emoji ${forgotten.join(" ")} has no picture in content/art/emoji/ — run \`pnpm art:emoji\``,
+              ex.id,
+            );
+          else if (absent.length > 0)
+            warn(
+              `${absent.join(" ")} is a plain symbol, not an emoji Noto draws — it will be shown as text`,
+              ex.id,
+            );
+        }
+      }
     }
 
     // Rubric 8: no two exercises may be the same question with the same options.

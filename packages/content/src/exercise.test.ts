@@ -268,6 +268,33 @@ describe("pack validation (docs/10 §6)", () => {
     );
   });
 
+  it("flags an emoji nobody ran art:emoji for, and lets a plain symbol through as a warning", () => {
+    const emoji = {
+      pictures: new Set(["1f34e"]),
+      notInNoto: new Set(["▬"]),
+    };
+    const withEmoji = (value: string) =>
+      validatePack(
+        parseExercisePack(
+          pack([mcq(6, { prompt: { text: "Có mấy quả?", image: { kind: "emoji", value } } })]),
+        ),
+        "t.json",
+        { ...ctx, emoji },
+      );
+
+    const aboutEmoji = (issues: ReturnType<typeof validatePack>) =>
+      issues.filter((i) => i.message.includes("art:emoji") || i.message.includes("plain symbol"));
+
+    expect(aboutEmoji(withEmoji("🍎"))).toHaveLength(0);
+    // a scene is split the way the renderer splits it: 🍎 has a picture, 🍌 does not
+    const scene = withEmoji("🍎🍌");
+    expect(scene.some((i) => i.level === "error" && i.message.includes("art:emoji"))).toBe(true);
+    // ▬ is drawn as text on purpose — worth a word, not a failed import
+    const symbol = aboutEmoji(withEmoji("▬"));
+    expect(symbol.some((i) => i.level === "error")).toBe(false);
+    expect(symbol.some((i) => i.level === "warn" && i.message.includes("plain symbol"))).toBe(true);
+  });
+
   it("flags two exercises that are the same question", () => {
     const issues = validatePack(parseExercisePack(pack([mcq(3), mcq(3)])), "t.json", ctx);
     expect(issues.some((i) => i.message.includes("duplicates"))).toBe(true);

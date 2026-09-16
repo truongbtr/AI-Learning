@@ -11,6 +11,7 @@ import {
 } from "./exercise-validate";
 import {
   loadAssetLabels,
+  loadEmojiPictures,
   loadErrorTaxonomy,
   loadExercisePacks,
   loadLessons,
@@ -45,6 +46,9 @@ export function runContentValidation(opts: { quiet?: boolean } = {}): ContentVal
     console.warn(
       "WARN content/art/objects/manifest.json missing — image asset check skipped (phase 3)",
     );
+  const emojiPictures = loadEmojiPictures();
+  if (!emojiPictures)
+    console.warn("WARN content/art/emoji/ missing — emoji picture check skipped (pnpm art:emoji)");
 
   // --- Lessons (docs/10 §4.1) -------------------------------------------------------------
   let lessons: ReturnType<typeof loadLessons> = [];
@@ -94,6 +98,7 @@ export function runContentValidation(opts: { quiet?: boolean } = {}): ContentVal
         lessonCodes: new Set([...lessonCodes, ...seenLessonCodes]),
         errorCodes,
         assetLabels,
+        emoji: emojiPictures,
       }),
     );
   allIssues.push(...findDuplicateIds(packs.map((p) => ({ file: p.name, pack: p.pack }))));

@@ -116,6 +116,52 @@ export function loadAssetLabels(
   return labels;
 }
 
+/**
+ * Emoji that have a picture in `content/art/emoji/` (`pnpm art:emoji`, Noto Color Emoji SVGs).
+ *
+ * An emoji without one falls back to device text, which on Windows draws at about half the size it
+ * was asked for — that is the thumbnail problem pha 10b fixed, and new content would bring it back
+ * silently. Returns null when the folder does not exist, and the check is skipped.
+ */
+export interface EmojiLibrary {
+  /** Codepoint keys that have an SVG. */
+  pictures: ReadonlySet<string>;
+  /** Glyphs Noto has no picture for (▬ ⬢ ◤ …) — drawn as text on purpose, not a mistake. */
+  notInNoto: ReadonlySet<string>;
+}
+
+export function loadEmojiPictures(dir = contentDir("art", "emoji")): EmojiLibrary | null {
+  if (!existsSync(dir) || !statSync(dir).isDirectory()) return null;
+  const pictures = new Set<string>();
+  for (const f of readdirSync(dir)) if (f.endsWith(".svg")) pictures.add(f.slice(0, -4));
+  if (pictures.size === 0) return null;
+  let notInNoto: string[] = [];
+  const index = join(dir, "index.json");
+  if (existsSync(index)) {
+    const json = JSON.parse(readFileSync(index, "utf8")) as { notInNoto?: string[] };
+    notInNoto = json.notInNoto ?? [];
+  }
+  return { pictures, notInNoto: new Set(notInNoto) };
+}
+
+/** Codepoints joined by "-", lower case, without FE0F — the file name in content/art/emoji/. */
+export function emojiKey(value: string): string {
+  return [...value]
+    .map((ch) => (ch.codePointAt(0) as number).toString(16))
+    .filter((cp) => cp !== "fe0f")
+    .join("-");
+}
+
+/** "🐔🦆" → ["🐔", "🦆"]; one emoji (even a ZWJ family) stays one. */
+export function emojiParts(value: string): string[] {
+  const seg =
+    typeof Intl !== "undefined" && "Segmenter" in Intl
+      ? new Intl.Segmenter("en", { granularity: "grapheme" })
+      : null;
+  if (!seg) return [value];
+  return [...seg.segment(value)].map((s) => s.segment).filter((g) => g.trim().length > 0);
+}
+
 /** Resolves `--dir content/exercises/vmath` (absolute or repo-relative) to an absolute path. */
 export function resolveContentDir(arg: string | undefined, fallback: string): string {
   if (!arg) return fallback;
