@@ -212,9 +212,9 @@ export function composeCity(ctx: BuildCtx, view: CityView): Composition {
   const roadPaint = { type: "road" } as const;
   const placed = new Set<string>();
   const cells = [...layout.roads].map((k) => k.split(",").map(Number) as [number, number]);
-  // gate stub toward the camera side
-  const gateTx = BLOCK_PITCH;
+  // gate stub toward the camera side, on the town's southern edge wherever that is today
   const gateTz = layout.tiles.maxZ;
+  const gateTx = gateColumn(layout.roads, gateTz);
   for (let i = 1; i <= 3; i++) layout.roads.add(`${gateTx},${gateTz + i}`);
   cells.push([gateTx, gateTz + 1], [gateTx, gateTz + 2], [gateTx, gateTz + 3]);
   const kind = (tx: number, tz: number) => roadTile(layout.roads, tx, tz);
@@ -554,6 +554,22 @@ function lockedPlot(ctx: BuildCtx, g: Object3D, cost: number | null) {
     1.9,
     0.05,
   );
+}
+
+/**
+ * Which street the city gate stands at the end of. The edge moves out as the town grows, and the
+ * gate moves with it. The first blocks of a new ring go in on the camera side, so for a while the
+ * old spot (one block east of the middle) had no street under it and the gate stood in the grass
+ * with its road going nowhere (owner, 16/09). Nearest street to that spot on the edge row instead.
+ */
+export function gateColumn(roads: ReadonlySet<string>, edgeTz: number): number {
+  for (let step = 0; step < 64; step++) {
+    // BLOCK_PITCH, 0, 2·P, −P, 3·P, −2·P …
+    const offset = step % 2 === 0 ? step / 2 : -(step + 1) / 2;
+    const tx = BLOCK_PITCH * (1 + offset);
+    if (roads.has(`${tx},${edgeTz}`)) return tx;
+  }
+  return BLOCK_PITCH;
 }
 
 /**

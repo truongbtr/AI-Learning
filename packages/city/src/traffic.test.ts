@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { AGENT_MAX, LIGHT_RADIUS } from "./engine/agents";
 import {
   chooseNext,
   hasLights,
@@ -15,6 +16,7 @@ import {
   stillOnTheRoad,
 } from "./engine/traffic";
 import { layoutCity, TILE } from "./layout";
+import { gateColumn, trafficLights } from "./scene/compose";
 
 const city = (skills: number) =>
   layoutCity({ skills, publics: Math.floor(skills / 8), plotsOwned: Math.floor(skills / 5) });
@@ -254,5 +256,30 @@ describe("traffic lights", () => {
       });
     }
     expect(checked).toBeGreaterThan(100);
+  });
+});
+
+describe("a town that keeps growing", () => {
+  const grown = (plots: number) => layoutCity({ skills: 102, publics: 23, plotsOwned: plots });
+
+  it("keeps the city gate at the end of a street at every step of growth", () => {
+    for (let plots = 0; plots <= 160; plots += 2) {
+      const layout = grown(plots);
+      const tx = gateColumn(layout.roads, layout.tiles.maxZ);
+      expect(layout.roads.has(`${tx},${layout.tiles.maxZ}`)).toBe(true);
+    }
+  });
+
+  it("never has more lit crossroads near the camera than there are lamps for", () => {
+    for (const plots of [20, 80, 160]) {
+      const layout = grown(plots);
+      const lights = trafficLights(layout);
+      const b = layout.bounds;
+      for (let x = b.minX; x <= b.maxX; x += 12)
+        for (let z = b.minZ; z <= b.maxZ; z += 12) {
+          const near = lights.filter((l) => Math.hypot(l.x - x, l.z - z) <= LIGHT_RADIUS).length;
+          expect(near * 6).toBeLessThanOrEqual(AGENT_MAX.bulb);
+        }
+    }
   });
 });

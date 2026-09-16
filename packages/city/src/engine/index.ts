@@ -42,7 +42,7 @@ import { KenneyLibrary } from "../build/kenney";
 import { ATLAS_SIZE, canvasPainter, SignAtlas } from "../build/signs";
 import { type BuiltCity, buildCity } from "../scene/build-city";
 import { type AgentPlan, LAMP_FACES } from "../scene/compose";
-import { AGENT_MAX, buildAgentTemplates } from "./agents";
+import { AGENT_MAX, buildAgentTemplates, LIGHT_RADIUS } from "./agents";
 import { applyCamera, CAMERA, type CameraState, clampState, easeInOut, panDelta } from "./camera";
 import { bend, createCurveUniforms } from "./curve";
 import { GAME_DAY_MS, gameHour, type Lighting, lightingAt } from "./daynight";
@@ -452,6 +452,7 @@ export async function createCityEngine(
     const bulbs = instanced.get("bulb") as InstancedMesh;
     let bulb = 0;
     for (const light of plan.lights) {
+      if (Math.hypot(light.x - cam.x, light.z - cam.z) > LIGHT_RADIUS) continue;
       for (const axis of ["x", "z"] as const) {
         const face = LAMP_FACES[axis];
         const showing = lightAt(light.key, axis, elapsed);

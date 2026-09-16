@@ -5,8 +5,14 @@ import { quad, tok } from "../build/kit";
 import { boat, bunny, bus, car, cat, dog, duck, person } from "../build/props";
 import type { AgentLoad } from "./budget";
 
-/** `bulb`: three lamps on each of the two faces of a traffic light, at up to 64 crossroads. */
-export const AGENT_MAX = { car: 16, bus: 3, person: 30, boat: 4, pet: 6, bulb: 64 * 6 } as const;
+/**
+ * `bulb`: three lamps on each of the two faces of a traffic light. A town of a hundred and fifty
+ * blocks has more crossroads than this; only the lights nearest the camera are lit (LIGHT_RADIUS),
+ * which is all of them a child can make out.
+ */
+export const AGENT_MAX = { car: 16, bus: 3, person: 30, boat: 4, pet: 6, bulb: 96 * 6 } as const;
+/** Lamps further than this from the point the camera looks at are not drawn. */
+export const LIGHT_RADIUS = 100;
 
 export type AgentKey =
   | "car"
