@@ -97,18 +97,22 @@ Docker dev (cổng 5000) đã build lại image web + worker cho khớp bảng m
 
 ### Lệnh deploy (khi chủ dự án đồng ý — chưa chạy)
 
-Như mọi lần (git bundle → server, backup DB trước), rồi:
+Theo quy trình hiện hành (build image trên máy dev từ worktree sạch của commit `43ce14a`, backup
+`pg_dump` trên server, `git bundle` + `merge --ff-only`, `docker save … | ssh … docker load`), rồi trên
+server, ngoài giờ 18:00–21:00:
 
 ```
-docker compose build web worker
-docker compose up -d web worker          # web tự chạy migration: ĐỔI TÊN WordProgress → LexemeProgress
-                                         # (dữ liệu từ vựng pha 11 của hai bé được giữ, thành kind=word)
-docker compose exec web sh -c 'cd /app/packages/db && . /app/docker/env.sh && pnpm exec tsx src/cli/content-import.ts --dir content/lexicon --viet-tts pieces --tts-pace 3300'
-                                         # 707 tiếng + đợt 1 mp3: tối đa 3.971 ký tự, ~50 phút — chạy ngoài 18:00–21:00
-# sau khi cô giáo xác nhận nhịp:
-docker compose exec web sh -c '… content-import.ts --dir content/lexicon --viet-tts all --tts-pace 3300'
-                                         # đợt 2: tối đa 16.208 ký tự
+docker compose -f docker/compose.yml --env-file .env up -d --no-build web worker
+    # web tự chạy migration: ĐỔI TÊN WordProgress → LexemeProgress (dữ liệu từ vựng pha 11 của hai bé
+    # được giữ, thành kind=word), thêm bảng Syllable và cột StudentCity.syllableBricks
+docker compose -f docker/compose.yml --env-file .env exec -T web sh -c '. ./docker/env.sh; cd packages/db && ./node_modules/.bin/tsx src/cli/content-import.ts --dir content/lexicon --viet-tts pieces --tts-pace 3300'
+    # 707 tiếng + mp3 đợt 1: tối đa 3.971 ký tự, ~50 phút (bộ đệm mp3 của server riêng với máy dev)
+# chỉ sau khi cô giáo xác nhận nhịp đánh vần:
+docker compose -f docker/compose.yml --env-file .env exec -T web sh -c '. ./docker/env.sh; cd packages/db && ./node_modules/.bin/tsx src/cli/content-import.ts --dir content/lexicon --viet-tts all --tts-pace 3300'
+    # mp3 đợt 2: tối đa 16.208 ký tự
 ```
+
+Tổng TTS cho cả hai đợt ≤ 20.172 ký tự — hạn mức tháng 9 sau đó vẫn dưới 40 %.
 
 ### Câu hỏi cho chủ dự án
 
