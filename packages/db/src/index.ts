@@ -5,6 +5,7 @@ export * from "./chat";
 export * from "./city";
 export * from "./content/export";
 export * from "./content/import";
+export * from "./content/lexicon";
 export * from "./content/stats";
 export * from "./diary";
 export * from "./intake";
@@ -20,6 +21,7 @@ export * from "./parent";
 export * from "./session";
 export * from "./skills/import";
 export * from "./skills/search";
+export * from "./vocab/service";
 
 const globalForPrisma = globalThis as unknown as { __mtctPrisma?: PrismaClient };
 

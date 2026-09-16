@@ -307,6 +307,7 @@ describe("ops:export — the snapshot Claude chat reads (docs/14 §3)", () => {
         "remediation.csv",
         "sessions.csv",
         "students.csv",
+        "word-progress.csv",
       ].sort(),
     );
     expect(result.totalBytes).toBeLessThan(5 * 1024 * 1024);

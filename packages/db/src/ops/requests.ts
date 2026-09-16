@@ -41,6 +41,8 @@ export const FORBIDDEN_TARGETS = [
   "Session",
   "SkillMastery",
   "MasteryHistory",
+  // The child's memory of each English word (pha 11, ADR-22) — learning data like the rest.
+  "WordProgress",
   "User",
   "StudentGuardian",
   "LoginAudit",

@@ -660,6 +660,60 @@ export async function exportOpsState(
     diaryRows.length,
   );
 
+  // ── word-progress.csv — which English words each child keeps (pha 11, ADR-22) ─────────────
+  // Read-only, like every other file here: `ops/requests` may not touch WordProgress at all.
+  const wordRows: (string | number)[][] = [];
+  for (const s of students) {
+    const rows = await db.wordProgress.findMany({
+      where: { studentId: s.id },
+      orderBy: [{ box: "desc" }, { dueAt: "asc" }],
+      select: {
+        box: true,
+        dueAt: true,
+        seen: true,
+        known: true,
+        streak: true,
+        lastSeenAt: true,
+        lastGame: true,
+        word: { select: { stableId: true, en: true, skill: { select: { code: true } } } },
+      },
+    });
+    for (const r of rows)
+      wordRows.push([
+        s.slug,
+        r.word.stableId,
+        r.word.en,
+        r.word.skill.code,
+        r.box,
+        dayKey(r.dueAt),
+        r.seen,
+        r.known,
+        r.streak,
+        r.lastSeenAt ? dayKey(r.lastSeenAt) : "",
+        r.lastGame ?? "",
+      ]);
+  }
+  write(
+    "word-progress.csv",
+    csvFile(
+      [
+        "student",
+        "wordId",
+        "en",
+        "skillCode",
+        "box",
+        "dueOn",
+        "seen",
+        "known",
+        "streak",
+        "lastSeenOn",
+        "lastGame",
+      ],
+      wordRows,
+    ),
+    wordRows.length,
+  );
+
   // ── meta + the page a person reads ────────────────────────────────────────────────────────
   const meta = {
     schemaVersion: SCHEMA_VERSION,
