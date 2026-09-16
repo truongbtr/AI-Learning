@@ -51,6 +51,13 @@ export const skillDefSchema = z.object({
   relatedSkillCodes: z.array(skillCode).default([]),
   /** Skills a 6-year-old mixes up with this one (b/d, s/x, have/has ...). */
   confusableWith: z.array(skillCode).default([]),
+  /**
+   * A skill the school turned out not to teach (three ESL topics, 11/09/2026). It stays in the
+   * file with its history and its evidence, and no new content is written for it. The files are
+   * the source of truth (ADR-9), so the importer copies this rather than forcing every skill back
+   * on — which is what it used to do, quietly reviving all three on every import.
+   */
+  isActive: z.boolean().default(true),
   exerciseTypes: z.array(z.enum(EXERCISE_TYPES)).min(1),
   difficultyRange: z
     .tuple([z.number().int().min(1).max(5), z.number().int().min(1).max(5)])

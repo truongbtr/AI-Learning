@@ -65,6 +65,8 @@ function walk(dir) {
 }
 walk(join(root, "content", "exercises"));
 walk(join(root, "content", "lessons"));
+// the picture dictionary of pha 11 — its 262 words are drawn from the same library
+walk(join(root, "content", "lexicon"));
 
 rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });

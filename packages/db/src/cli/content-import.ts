@@ -16,8 +16,10 @@
 import {
   contentDir,
   lessonToRow,
+  lexiconTtsLines,
   loadExercisePacks,
   loadLessons,
+  loadLexicon,
   packToRows,
   resolveContentDir,
   runContentValidation,
@@ -26,6 +28,7 @@ import {
 import { LocalFileStorage } from "@mtct/core/storage";
 import { pregenerateAudio, ttsConfigFromEnv } from "@mtct/core/tts";
 import { importExercises, importLessons } from "../content/import";
+import { importWords } from "../content/lexicon";
 import { prisma } from "../index";
 import { readTtsUsage, recordTtsUsage, summariseTtsUsage } from "../ops/tts-usage";
 import { parseArgs } from "./args";
@@ -74,42 +77,70 @@ async function main() {
     for (const s of result.skipped) console.warn(`  WARN ${s.code}: ${s.reason}`);
   }
 
+  // --- Lexicon (pha 11) -------------------------------------------------------------------
+  // The picture dictionary behind the vocabulary games. Content, like the exercises: the importer
+  // writes `Word`, never `WordProgress` (ADR-22).
+  const lexicon = scoped && !dirArg?.includes("lexicon") ? null : loadLexicon();
+  if (lexicon) {
+    const result = await importWords(
+      prisma,
+      lexicon.words.map((w) => ({
+        stableId: w.id,
+        en: w.en,
+        vi: w.vi,
+        skillCode: w.skillCode,
+        picture: w.picture,
+        phraseEn: w.phrase.en,
+        phraseVi: w.phrase.vi,
+        unit: w.unit ?? null,
+      })),
+      { dryRun, sourceDir: "content/lexicon", note },
+    );
+    console.log(
+      `lexicon: ${result.created} new, ${result.updated} updated, ${result.revived} revived, ` +
+        `${result.unchanged} unchanged, ${result.retired} retired` +
+        (result.batchId ? ` — batch ${result.batchId}` : ""),
+    );
+    for (const s of result.skipped) console.warn(`  WARN ${s.stableId}: ${s.reason}`);
+  }
+
   // --- Exercises (docs/10 §4.2) -----------------------------------------------------------
   const packs = wantsExercises
     ? loadExercisePacks(resolveContentDir(scoped ? dirArg : undefined, contentDir("exercises")))
     : [];
-  if (packs.length === 0) {
-    if (lessons.length === 0)
-      console.log("nothing to import (no lessons and no *.pack.json found)");
+  if (packs.length === 0 && lessons.length === 0 && !lexicon) {
+    console.log("nothing to import (no lessons, no lexicon and no *.pack.json found)");
     return;
   }
 
-  const rows = packs.flatMap(({ name, pack }) => packToRows(pack, name));
-  const result = await importExercises(prisma, rows, {
-    dryRun,
-    sourceDir,
-    note,
-    // A scoped import must not retire the exercises of the skills it did not look at.
-    retireMissing: true,
-    respec,
-  });
-  console.log(
-    `exercises: ${result.created} new, ${result.updated} updated, ${result.revived} revived, ` +
-      `${result.unchanged} unchanged, ${result.retired} retired` +
-      (result.batchId ? ` — batch ${result.batchId}` : ""),
-  );
-  for (const s of result.skipped) console.warn(`  WARN ${s.stableId}: ${s.reason}`);
+  if (packs.length > 0) {
+    const rows = packs.flatMap(({ name, pack }) => packToRows(pack, name));
+    const result = await importExercises(prisma, rows, {
+      dryRun,
+      sourceDir,
+      note,
+      // A scoped import must not retire the exercises of the skills it did not look at.
+      retireMissing: true,
+      respec,
+    });
+    console.log(
+      `exercises: ${result.created} new, ${result.updated} updated, ${result.revived} revived, ` +
+        `${result.unchanged} unchanged, ${result.retired} retired` +
+        (result.batchId ? ` — batch ${result.batchId}` : ""),
+    );
+    for (const s of result.skipped) console.warn(`  WARN ${s.stableId}: ${s.reason}`);
 
-  if (dryRun) {
-    const changes = result.plan;
-    if (changes.length === 0) console.log("dry-run: 0 changes");
-    else {
-      console.log(`dry-run: ${changes.length} change(s)`);
-      for (const c of changes.slice(0, 50)) console.log(`  ${c.action.padEnd(6)} ${c.stableId}`);
-      if (changes.length > 50) console.log(`  … and ${changes.length - 50} more`);
+    if (dryRun) {
+      const changes = result.plan;
+      if (changes.length === 0) console.log("dry-run: 0 changes");
+      else {
+        console.log(`dry-run: ${changes.length} change(s)`);
+        for (const c of changes.slice(0, 50)) console.log(`  ${c.action.padEnd(6)} ${c.stableId}`);
+        if (changes.length > 50) console.log(`  … and ${changes.length - 50} more`);
+      }
     }
-    return;
   }
+  if (dryRun) return;
 
   // --- TTS pre-generation (ADR-11 muc 3) --------------------------------------------------
   if (skipTts) {
@@ -117,7 +148,12 @@ async function main() {
     return;
   }
   const cfg = ttsConfigFromEnv();
-  const lines = packs.flatMap(({ pack }) => pack.exercises.flatMap((ex) => ttsLinesOf(ex)));
+  // Both banks in one pass: the exercise prompts, then every lexicon word and its phrase in the
+  // English voice — about 6.4k characters for 262 words, roughly 1% of the monthly free tier.
+  const lines = [
+    ...packs.flatMap(({ pack }) => pack.exercises.flatMap((ex) => ttsLinesOf(ex))),
+    ...(lexicon ? lexiconTtsLines(lexicon) : []),
+  ];
   const storage = new LocalFileStorage(process.env.FILE_ROOT ?? "./data/files");
   // Generating the whole bank takes the best part of an hour on the free tier, so say where it is.
   const startedAt = Date.now();

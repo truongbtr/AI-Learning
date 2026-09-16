@@ -4,6 +4,7 @@ import { type ErrorTaxonomyFile, parseErrorTaxonomy } from "./error-taxonomy";
 import { type ExercisePack, parseExercisePack } from "./exercise";
 import { type LessonFile, parseLesson } from "./lesson";
 import { type LessonUnitsFile, parseLessonUnits } from "./lesson-units";
+import { type LexiconFile, parseLexicon } from "./lexicon";
 import { contentDir } from "./paths";
 import { parseSkillMap, type SkillMapFile } from "./skill-map";
 
@@ -49,6 +50,12 @@ export function loadSkillMaps(dir = contentDir("skill-map")): NamedSkillMap[] {
     name: `skill-map/${name}`,
     map: parseSkillMap(JSON.parse(readFileSync(join(dir, name), "utf8"))),
   }));
+}
+
+/** content/lexicon/esl.json — the picture dictionary of pha 11; null while it does not exist. */
+export function loadLexicon(file = contentDir("lexicon", "esl.json")): LexiconFile | null {
+  if (!existsSync(file)) return null;
+  return parseLexicon(JSON.parse(readFileSync(file, "utf8")));
 }
 
 /** content/lessons/<subject>/*.units.json (recursive one level) */

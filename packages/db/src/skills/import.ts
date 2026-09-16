@@ -62,7 +62,8 @@ export async function importSkillMaps(
       difficultyMax: d.difficultyRange[1],
       relatedSkillCodes: d.relatedSkillCodes,
       confusableWith: d.confusableWith,
-      isActive: true,
+      // The file decides: a skill marked isActive=false stays retired (docs/10 §11).
+      isActive: d.isActive !== false,
       source,
     };
     await db.skill.upsert({

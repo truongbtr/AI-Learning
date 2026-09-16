@@ -1,0 +1,2239 @@
+{
+  "language": "en",
+  "voice": "en-US-AnaNeural",
+  "source": "Global Stage 1 (Macmillan + Navio), lớp 1B3 Edison Ecopark — danh sách từ lấy từ content/skill-map/esl.json",
+  "note": "Từ điển hình của pha 11: tranh + giọng đọc + nghĩa Việt + một cụm câu mẫu. Ba kỹ năng đã ngừng dùng (WEATHER, DAYS_OF_WEEK, TRANSPORT) không có từ nào.",
+  "words": [
+    {
+      "id": "esl-greetings-hello",
+      "en": "hello",
+      "vi": "xin chào",
+      "skillCode": "ESL.VOC.GREETINGS",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👋" },
+      "phrase": { "en": "Hello! I'm six.", "vi": "Xin chào! Mình sáu tuổi." }
+    },
+    {
+      "id": "esl-greetings-goodbye",
+      "en": "goodbye",
+      "vi": "tạm biệt",
+      "skillCode": "ESL.VOC.GREETINGS",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "✌️" },
+      "phrase": { "en": "Goodbye! See you.", "vi": "Tạm biệt nhé!" }
+    },
+    {
+      "id": "esl-greetings-friend",
+      "en": "friend",
+      "vi": "bạn",
+      "skillCode": "ESL.VOC.GREETINGS",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🧑‍🤝‍🧑" },
+      "phrase": { "en": "This is my friend.", "vi": "Đây là bạn mình." }
+    },
+    {
+      "id": "esl-greetings-name",
+      "en": "name",
+      "vi": "tên",
+      "skillCode": "ESL.VOC.GREETINGS",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🏷️" },
+      "phrase": { "en": "What's your name?", "vi": "Bạn tên gì?" }
+    },
+
+    {
+      "id": "esl-family-mom",
+      "en": "mom",
+      "vi": "mẹ",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👩" },
+      "phrase": { "en": "This is my mom.", "vi": "Đây là mẹ mình." }
+    },
+    {
+      "id": "esl-family-dad",
+      "en": "dad",
+      "vi": "bố",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👨" },
+      "phrase": { "en": "This is my dad.", "vi": "Đây là bố mình." }
+    },
+    {
+      "id": "esl-family-brother",
+      "en": "brother",
+      "vi": "anh, em trai",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👦" },
+      "phrase": { "en": "I have a brother.", "vi": "Mình có một em trai." }
+    },
+    {
+      "id": "esl-family-sister",
+      "en": "sister",
+      "vi": "chị, em gái",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👧" },
+      "phrase": { "en": "I have a sister.", "vi": "Mình có một em gái." }
+    },
+    {
+      "id": "esl-family-grandma",
+      "en": "grandma",
+      "vi": "bà",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👵" },
+      "phrase": { "en": "My grandma is kind.", "vi": "Bà mình hiền lắm." }
+    },
+    {
+      "id": "esl-family-grandpa",
+      "en": "grandpa",
+      "vi": "ông",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👴" },
+      "phrase": { "en": "My grandpa is old.", "vi": "Ông mình già rồi." }
+    },
+    {
+      "id": "esl-family-aunt",
+      "en": "aunt",
+      "vi": "cô, dì",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👩‍🦰" },
+      "phrase": { "en": "My aunt is funny.", "vi": "Cô mình vui tính." }
+    },
+    {
+      "id": "esl-family-uncle",
+      "en": "uncle",
+      "vi": "chú, bác",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👨‍🦰" },
+      "phrase": { "en": "My uncle is tall.", "vi": "Chú mình cao." }
+    },
+    {
+      "id": "esl-family-baby",
+      "en": "baby",
+      "vi": "em bé",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👶" },
+      "phrase": { "en": "The baby is cute.", "vi": "Em bé dễ thương." }
+    },
+    {
+      "id": "esl-family-cousin",
+      "en": "cousin",
+      "vi": "anh chị em họ",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🧒" },
+      "phrase": { "en": "My cousin is six.", "vi": "Anh họ mình sáu tuổi." }
+    },
+    {
+      "id": "esl-family-twins",
+      "en": "twins",
+      "vi": "sinh đôi",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👯" },
+      "phrase": { "en": "We are twins.", "vi": "Chúng mình sinh đôi." }
+    },
+    {
+      "id": "esl-family-pet",
+      "en": "pet",
+      "vi": "thú cưng",
+      "skillCode": "ESL.VOC.FAMILY",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🐕" },
+      "phrase": { "en": "I have a pet.", "vi": "Mình có một thú cưng." }
+    },
+
+    {
+      "id": "esl-adj-old",
+      "en": "old",
+      "vi": "già",
+      "skillCode": "ESL.VOC.ADJECTIVES",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👴" },
+      "phrase": { "en": "My grandpa is old.", "vi": "Ông mình già rồi." }
+    },
+    {
+      "id": "esl-adj-young",
+      "en": "young",
+      "vi": "trẻ",
+      "skillCode": "ESL.VOC.ADJECTIVES",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "👶" },
+      "phrase": { "en": "My sister is young.", "vi": "Em gái mình còn nhỏ." }
+    },
+    {
+      "id": "esl-adj-tall",
+      "en": "tall",
+      "vi": "cao",
+      "skillCode": "ESL.VOC.ADJECTIVES",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🦒" },
+      "phrase": { "en": "A giraffe is tall.", "vi": "Hươu cao cổ thì cao." }
+    },
+    {
+      "id": "esl-adj-short",
+      "en": "short",
+      "vi": "thấp",
+      "skillCode": "ESL.VOC.ADJECTIVES",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🐇" },
+      "phrase": { "en": "A rabbit is short.", "vi": "Con thỏ thì thấp." }
+    },
+    {
+      "id": "esl-adj-funny",
+      "en": "funny",
+      "vi": "vui tính",
+      "skillCode": "ESL.VOC.ADJECTIVES",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🤣" },
+      "phrase": { "en": "My dad is funny.", "vi": "Bố mình vui tính." }
+    },
+    {
+      "id": "esl-adj-kind",
+      "en": "kind",
+      "vi": "tốt bụng",
+      "skillCode": "ESL.VOC.ADJECTIVES",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🤗" },
+      "phrase": { "en": "My teacher is kind.", "vi": "Cô giáo mình tốt bụng." }
+    },
+    {
+      "id": "esl-adj-cute",
+      "en": "cute",
+      "vi": "dễ thương",
+      "skillCode": "ESL.VOC.ADJECTIVES",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🐣" },
+      "phrase": { "en": "The chick is cute.", "vi": "Gà con dễ thương." }
+    },
+    {
+      "id": "esl-adj-smart",
+      "en": "smart",
+      "vi": "thông minh",
+      "skillCode": "ESL.VOC.ADJECTIVES",
+      "unit": 1,
+      "picture": { "kind": "emoji", "value": "🧠" },
+      "phrase": { "en": "My brother is smart.", "vi": "Anh mình thông minh." }
+    },
+
+    {
+      "id": "esl-colors-red",
+      "en": "red",
+      "vi": "màu đỏ",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "🔴" },
+      "phrase": { "en": "It's red.", "vi": "Nó màu đỏ." }
+    },
+    {
+      "id": "esl-colors-blue",
+      "en": "blue",
+      "vi": "màu xanh dương",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "🔵" },
+      "phrase": { "en": "It's blue.", "vi": "Nó màu xanh dương." }
+    },
+    {
+      "id": "esl-colors-yellow",
+      "en": "yellow",
+      "vi": "màu vàng",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "🟡" },
+      "phrase": { "en": "It's yellow.", "vi": "Nó màu vàng." }
+    },
+    {
+      "id": "esl-colors-green",
+      "en": "green",
+      "vi": "màu xanh lá",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "🟢" },
+      "phrase": { "en": "It's green.", "vi": "Nó màu xanh lá." }
+    },
+    {
+      "id": "esl-colors-orange",
+      "en": "orange",
+      "vi": "màu cam",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "🟠" },
+      "phrase": { "en": "It's orange.", "vi": "Nó màu cam." }
+    },
+    {
+      "id": "esl-colors-purple",
+      "en": "purple",
+      "vi": "màu tím",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "🟣" },
+      "phrase": { "en": "It's purple.", "vi": "Nó màu tím." }
+    },
+    {
+      "id": "esl-colors-pink",
+      "en": "pink",
+      "vi": "màu hồng",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "🌸" },
+      "phrase": { "en": "The flower is pink.", "vi": "Bông hoa màu hồng." }
+    },
+    {
+      "id": "esl-colors-brown",
+      "en": "brown",
+      "vi": "màu nâu",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "🟤" },
+      "phrase": { "en": "It's brown.", "vi": "Nó màu nâu." }
+    },
+    {
+      "id": "esl-colors-black",
+      "en": "black",
+      "vi": "màu đen",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "⚫" },
+      "phrase": { "en": "It's black.", "vi": "Nó màu đen." }
+    },
+    {
+      "id": "esl-colors-white",
+      "en": "white",
+      "vi": "màu trắng",
+      "skillCode": "ESL.VOC.COLORS",
+      "picture": { "kind": "emoji", "value": "⚪" },
+      "phrase": { "en": "It's white.", "vi": "Nó màu trắng." }
+    },
+
+    {
+      "id": "esl-num-one",
+      "en": "one",
+      "vi": "một",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "1️⃣" },
+      "phrase": { "en": "One apple, please.", "vi": "Cho mình một quả táo." }
+    },
+    {
+      "id": "esl-num-two",
+      "en": "two",
+      "vi": "hai",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "2️⃣" },
+      "phrase": { "en": "I have two hands.", "vi": "Mình có hai bàn tay." }
+    },
+    {
+      "id": "esl-num-three",
+      "en": "three",
+      "vi": "ba",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "3️⃣" },
+      "phrase": { "en": "Three cats are here.", "vi": "Có ba con mèo." }
+    },
+    {
+      "id": "esl-num-four",
+      "en": "four",
+      "vi": "bốn",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "4️⃣" },
+      "phrase": { "en": "A dog has four legs.", "vi": "Con chó có bốn chân." }
+    },
+    {
+      "id": "esl-num-five",
+      "en": "five",
+      "vi": "năm",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "5️⃣" },
+      "phrase": { "en": "Give me five!", "vi": "Đập tay nào!" }
+    },
+    {
+      "id": "esl-num-six",
+      "en": "six",
+      "vi": "sáu",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "6️⃣" },
+      "phrase": { "en": "I'm six years old.", "vi": "Mình sáu tuổi." }
+    },
+    {
+      "id": "esl-num-seven",
+      "en": "seven",
+      "vi": "bảy",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "7️⃣" },
+      "phrase": { "en": "Seven days, one week.", "vi": "Bảy ngày là một tuần." }
+    },
+    {
+      "id": "esl-num-eight",
+      "en": "eight",
+      "vi": "tám",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "8️⃣" },
+      "phrase": { "en": "Eight balloons fly up.", "vi": "Tám quả bóng bay lên." }
+    },
+    {
+      "id": "esl-num-nine",
+      "en": "nine",
+      "vi": "chín",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "9️⃣" },
+      "phrase": { "en": "Nine fish swim.", "vi": "Chín con cá đang bơi." }
+    },
+    {
+      "id": "esl-num-ten",
+      "en": "ten",
+      "vi": "mười",
+      "skillCode": "ESL.VOC.NUMBERS_1_20",
+      "picture": { "kind": "emoji", "value": "🔟" },
+      "phrase": { "en": "I count to ten.", "vi": "Mình đếm tới mười." }
+    },
+
+    {
+      "id": "esl-school-book",
+      "en": "book",
+      "vi": "quyển sách",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "📕" },
+      "phrase": { "en": "It's a book.", "vi": "Đây là quyển sách." }
+    },
+    {
+      "id": "esl-school-pen",
+      "en": "pen",
+      "vi": "cái bút mực",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "🖊️" },
+      "phrase": { "en": "It's a pen.", "vi": "Đây là cái bút mực." }
+    },
+    {
+      "id": "esl-school-pencil",
+      "en": "pencil",
+      "vi": "cái bút chì",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "✏️" },
+      "phrase": { "en": "I write with a pencil.", "vi": "Mình viết bằng bút chì." }
+    },
+    {
+      "id": "esl-school-ruler",
+      "en": "ruler",
+      "vi": "cái thước",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "📏" },
+      "phrase": { "en": "It's a ruler.", "vi": "Đây là cái thước." }
+    },
+    {
+      "id": "esl-school-eraser",
+      "en": "eraser",
+      "vi": "cục tẩy",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "🧽" },
+      "phrase": { "en": "Where is my eraser?", "vi": "Cục tẩy của mình đâu?" }
+    },
+    {
+      "id": "esl-school-bag",
+      "en": "bag",
+      "vi": "cái cặp",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "🎒" },
+      "phrase": { "en": "My bag is blue.", "vi": "Cặp mình màu xanh." }
+    },
+    {
+      "id": "esl-school-chair",
+      "en": "chair",
+      "vi": "cái ghế",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "🪑" },
+      "phrase": { "en": "Sit on the chair.", "vi": "Ngồi lên ghế nhé." }
+    },
+    {
+      "id": "esl-school-board",
+      "en": "board",
+      "vi": "cái bảng",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "🪧" },
+      "phrase": { "en": "Look at the board.", "vi": "Nhìn lên bảng nào." }
+    },
+    {
+      "id": "esl-school-crayon",
+      "en": "crayon",
+      "vi": "bút sáp màu",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "🖍️" },
+      "phrase": { "en": "I draw with a crayon.", "vi": "Mình tô bằng bút sáp." }
+    },
+    {
+      "id": "esl-school-notebook",
+      "en": "notebook",
+      "vi": "quyển vở",
+      "skillCode": "ESL.VOC.SCHOOL_OBJECTS",
+      "picture": { "kind": "emoji", "value": "📓" },
+      "phrase": { "en": "Open your notebook.", "vi": "Mở vở ra nào." }
+    },
+
+    {
+      "id": "esl-cmd-stand-up",
+      "en": "stand up",
+      "vi": "đứng lên",
+      "skillCode": "ESL.VOC.CLASSROOM_COMMANDS",
+      "picture": { "kind": "emoji", "value": "🧍" },
+      "phrase": { "en": "Stand up, please.", "vi": "Con đứng lên nhé." }
+    },
+    {
+      "id": "esl-cmd-sit-down",
+      "en": "sit down",
+      "vi": "ngồi xuống",
+      "skillCode": "ESL.VOC.CLASSROOM_COMMANDS",
+      "picture": { "kind": "emoji", "value": "🧎" },
+      "phrase": { "en": "Sit down, please.", "vi": "Con ngồi xuống nhé." }
+    },
+    {
+      "id": "esl-cmd-open-book",
+      "en": "open your book",
+      "vi": "mở sách ra",
+      "skillCode": "ESL.VOC.CLASSROOM_COMMANDS",
+      "picture": { "kind": "emoji", "value": "📖" },
+      "phrase": { "en": "Open your book.", "vi": "Con mở sách ra." }
+    },
+    {
+      "id": "esl-cmd-close-book",
+      "en": "close your book",
+      "vi": "gấp sách lại",
+      "skillCode": "ESL.VOC.CLASSROOM_COMMANDS",
+      "picture": { "kind": "emoji", "value": "📘" },
+      "phrase": { "en": "Close your book.", "vi": "Con gấp sách lại." }
+    },
+    {
+      "id": "esl-cmd-listen",
+      "en": "listen",
+      "vi": "lắng nghe",
+      "skillCode": "ESL.VOC.CLASSROOM_COMMANDS",
+      "picture": { "kind": "emoji", "value": "👂" },
+      "phrase": { "en": "Listen to the song.", "vi": "Nghe bài hát nhé." }
+    },
+    {
+      "id": "esl-cmd-look",
+      "en": "look",
+      "vi": "nhìn",
+      "skillCode": "ESL.VOC.CLASSROOM_COMMANDS",
+      "picture": { "kind": "emoji", "value": "👀" },
+      "phrase": { "en": "Look at me.", "vi": "Nhìn cô nào." }
+    },
+    {
+      "id": "esl-cmd-raise-hand",
+      "en": "raise your hand",
+      "vi": "giơ tay",
+      "skillCode": "ESL.VOC.CLASSROOM_COMMANDS",
+      "picture": { "kind": "emoji", "value": "✋" },
+      "phrase": { "en": "Raise your hand.", "vi": "Con giơ tay lên." }
+    },
+    {
+      "id": "esl-cmd-be-quiet",
+      "en": "be quiet",
+      "vi": "giữ yên lặng",
+      "skillCode": "ESL.VOC.CLASSROOM_COMMANDS",
+      "picture": { "kind": "emoji", "value": "🤫" },
+      "phrase": { "en": "Be quiet, please.", "vi": "Mình yên lặng nhé." }
+    },
+
+    {
+      "id": "esl-body-face",
+      "en": "face",
+      "vi": "khuôn mặt",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "😀" },
+      "phrase": { "en": "Wash your face.", "vi": "Rửa mặt nào." }
+    },
+    {
+      "id": "esl-body-eyes",
+      "en": "eyes",
+      "vi": "đôi mắt",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "👀" },
+      "phrase": { "en": "I have two eyes.", "vi": "Mình có hai mắt." }
+    },
+    {
+      "id": "esl-body-ears",
+      "en": "ears",
+      "vi": "đôi tai",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "👂" },
+      "phrase": { "en": "Touch your ears.", "vi": "Chạm vào tai nào." }
+    },
+    {
+      "id": "esl-body-nose",
+      "en": "nose",
+      "vi": "cái mũi",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "👃" },
+      "phrase": { "en": "Touch your nose.", "vi": "Chạm vào mũi nào." }
+    },
+    {
+      "id": "esl-body-mouth",
+      "en": "mouth",
+      "vi": "cái miệng",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "👄" },
+      "phrase": { "en": "Open your mouth.", "vi": "Há miệng nào." }
+    },
+    {
+      "id": "esl-body-hair",
+      "en": "hair",
+      "vi": "mái tóc",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "💇" },
+      "phrase": { "en": "My hair is black.", "vi": "Tóc mình màu đen." }
+    },
+    {
+      "id": "esl-body-hands",
+      "en": "hands",
+      "vi": "bàn tay",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "🖐️" },
+      "phrase": { "en": "Wash your hands.", "vi": "Rửa tay nào." }
+    },
+    {
+      "id": "esl-body-arms",
+      "en": "arms",
+      "vi": "cánh tay",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "💪" },
+      "phrase": { "en": "Move your arms.", "vi": "Vung tay nào." }
+    },
+    {
+      "id": "esl-body-legs",
+      "en": "legs",
+      "vi": "chân",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "🦵" },
+      "phrase": { "en": "I run with my legs.", "vi": "Mình chạy bằng chân." }
+    },
+    {
+      "id": "esl-body-feet",
+      "en": "feet",
+      "vi": "bàn chân",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "🦶" },
+      "phrase": { "en": "Two feet, two shoes.", "vi": "Hai bàn chân, hai chiếc giày." }
+    },
+    {
+      "id": "esl-body-teeth",
+      "en": "teeth",
+      "vi": "răng",
+      "skillCode": "ESL.VOC.BODY",
+      "picture": { "kind": "emoji", "value": "🦷" },
+      "phrase": { "en": "Brush your teeth.", "vi": "Đánh răng nào." }
+    },
+
+    {
+      "id": "esl-feel-happy",
+      "en": "happy",
+      "vi": "vui",
+      "skillCode": "ESL.VOC.FEELINGS",
+      "picture": { "kind": "emoji", "value": "😄" },
+      "phrase": { "en": "I'm happy today.", "vi": "Hôm nay mình vui." }
+    },
+    {
+      "id": "esl-feel-sad",
+      "en": "sad",
+      "vi": "buồn",
+      "skillCode": "ESL.VOC.FEELINGS",
+      "picture": { "kind": "emoji", "value": "😢" },
+      "phrase": { "en": "He is sad.", "vi": "Bạn ấy buồn." }
+    },
+    {
+      "id": "esl-feel-angry",
+      "en": "angry",
+      "vi": "giận",
+      "skillCode": "ESL.VOC.FEELINGS",
+      "picture": { "kind": "emoji", "value": "😠" },
+      "phrase": { "en": "The lion is angry.", "vi": "Sư tử đang giận." }
+    },
+    {
+      "id": "esl-feel-tired",
+      "en": "tired",
+      "vi": "mệt",
+      "skillCode": "ESL.VOC.FEELINGS",
+      "picture": { "kind": "emoji", "value": "😪" },
+      "phrase": { "en": "I'm tired now.", "vi": "Mình mệt rồi." }
+    },
+    {
+      "id": "esl-feel-hungry",
+      "en": "hungry",
+      "vi": "đói",
+      "skillCode": "ESL.VOC.FEELINGS",
+      "picture": { "kind": "emoji", "value": "🤤" },
+      "phrase": { "en": "I'm hungry.", "vi": "Mình đói bụng." }
+    },
+    {
+      "id": "esl-feel-thirsty",
+      "en": "thirsty",
+      "vi": "khát",
+      "skillCode": "ESL.VOC.FEELINGS",
+      "picture": { "kind": "emoji", "value": "🥤" },
+      "phrase": { "en": "I'm thirsty.", "vi": "Mình khát nước." }
+    },
+    {
+      "id": "esl-feel-hot",
+      "en": "hot",
+      "vi": "nóng",
+      "skillCode": "ESL.VOC.FEELINGS",
+      "picture": { "kind": "emoji", "value": "🥵" },
+      "phrase": { "en": "I'm hot.", "vi": "Mình nóng quá." }
+    },
+    {
+      "id": "esl-feel-cold",
+      "en": "cold",
+      "vi": "lạnh",
+      "skillCode": "ESL.VOC.FEELINGS",
+      "picture": { "kind": "emoji", "value": "🥶" },
+      "phrase": { "en": "I'm cold.", "vi": "Mình lạnh quá." }
+    },
+    {
+      "id": "esl-feel-scared",
+      "en": "scared",
+      "vi": "sợ",
+      "skillCode": "ESL.VOC.FEELINGS",
+      "picture": { "kind": "emoji", "value": "😨" },
+      "phrase": { "en": "The cat is scared.", "vi": "Con mèo đang sợ." }
+    },
+
+    {
+      "id": "esl-pets-dog",
+      "en": "dog",
+      "vi": "con chó",
+      "skillCode": "ESL.VOC.ANIMALS_PETS",
+      "picture": { "kind": "emoji", "value": "🐶" },
+      "phrase": { "en": "I have a dog.", "vi": "Mình có một con chó." }
+    },
+    {
+      "id": "esl-pets-cat",
+      "en": "cat",
+      "vi": "con mèo",
+      "skillCode": "ESL.VOC.ANIMALS_PETS",
+      "picture": { "kind": "emoji", "value": "🐱" },
+      "phrase": { "en": "The cat is sleeping.", "vi": "Con mèo đang ngủ." }
+    },
+    {
+      "id": "esl-pets-fish",
+      "en": "fish",
+      "vi": "con cá",
+      "skillCode": "ESL.VOC.ANIMALS_PETS",
+      "picture": { "kind": "emoji", "value": "🐟" },
+      "phrase": { "en": "The fish can swim.", "vi": "Con cá biết bơi." }
+    },
+    {
+      "id": "esl-pets-bird",
+      "en": "bird",
+      "vi": "con chim",
+      "skillCode": "ESL.VOC.ANIMALS_PETS",
+      "picture": { "kind": "emoji", "value": "🐦" },
+      "phrase": { "en": "The bird can fly.", "vi": "Con chim biết bay." }
+    },
+    {
+      "id": "esl-pets-rabbit",
+      "en": "rabbit",
+      "vi": "con thỏ",
+      "skillCode": "ESL.VOC.ANIMALS_PETS",
+      "picture": { "kind": "emoji", "value": "🐰" },
+      "phrase": { "en": "The rabbit can jump.", "vi": "Con thỏ biết nhảy." }
+    },
+    {
+      "id": "esl-pets-hamster",
+      "en": "hamster",
+      "vi": "chuột hamster",
+      "skillCode": "ESL.VOC.ANIMALS_PETS",
+      "picture": { "kind": "emoji", "value": "🐹" },
+      "phrase": { "en": "My hamster is small.", "vi": "Con hamster của mình bé xíu." }
+    },
+    {
+      "id": "esl-pets-turtle",
+      "en": "turtle",
+      "vi": "con rùa",
+      "skillCode": "ESL.VOC.ANIMALS_PETS",
+      "picture": { "kind": "emoji", "value": "🐢" },
+      "phrase": { "en": "The turtle is slow.", "vi": "Con rùa đi chậm." }
+    },
+
+    {
+      "id": "esl-farm-cow",
+      "en": "cow",
+      "vi": "con bò",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🐄" },
+      "phrase": { "en": "The cow says moo.", "vi": "Con bò kêu ò ó." }
+    },
+    {
+      "id": "esl-farm-pig",
+      "en": "pig",
+      "vi": "con lợn",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🐷" },
+      "phrase": { "en": "The pig is pink.", "vi": "Con lợn màu hồng." }
+    },
+    {
+      "id": "esl-farm-sheep",
+      "en": "sheep",
+      "vi": "con cừu",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🐑" },
+      "phrase": { "en": "The sheep is white.", "vi": "Con cừu màu trắng." }
+    },
+    {
+      "id": "esl-farm-horse",
+      "en": "horse",
+      "vi": "con ngựa",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🐴" },
+      "phrase": { "en": "The horse can run.", "vi": "Con ngựa chạy nhanh." }
+    },
+    {
+      "id": "esl-farm-duck",
+      "en": "duck",
+      "vi": "con vịt",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🦆" },
+      "phrase": { "en": "The duck can swim.", "vi": "Con vịt biết bơi." }
+    },
+    {
+      "id": "esl-farm-chicken",
+      "en": "chicken",
+      "vi": "con gà",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🐔" },
+      "phrase": { "en": "The chicken is here.", "vi": "Con gà ở đây." }
+    },
+    {
+      "id": "esl-farm-lion",
+      "en": "lion",
+      "vi": "con sư tử",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🦁" },
+      "phrase": { "en": "The lion is big.", "vi": "Con sư tử to lớn." }
+    },
+    {
+      "id": "esl-farm-elephant",
+      "en": "elephant",
+      "vi": "con voi",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🐘" },
+      "phrase": { "en": "The elephant is grey.", "vi": "Con voi màu xám." }
+    },
+    {
+      "id": "esl-farm-monkey",
+      "en": "monkey",
+      "vi": "con khỉ",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🐵" },
+      "phrase": { "en": "The monkey likes bananas.", "vi": "Con khỉ thích chuối." }
+    },
+    {
+      "id": "esl-farm-giraffe",
+      "en": "giraffe",
+      "vi": "hươu cao cổ",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🦒" },
+      "phrase": { "en": "The giraffe is tall.", "vi": "Hươu cao cổ rất cao." }
+    },
+    {
+      "id": "esl-farm-zebra",
+      "en": "zebra",
+      "vi": "ngựa vằn",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🦓" },
+      "phrase": { "en": "The zebra is black and white.", "vi": "Ngựa vằn đen trắng." }
+    },
+    {
+      "id": "esl-farm-tiger",
+      "en": "tiger",
+      "vi": "con hổ",
+      "skillCode": "ESL.VOC.ANIMALS_FARM",
+      "picture": { "kind": "emoji", "value": "🐯" },
+      "phrase": { "en": "The tiger is orange.", "vi": "Con hổ màu cam." }
+    },
+
+    {
+      "id": "esl-food-rice",
+      "en": "rice",
+      "vi": "cơm",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🍚" },
+      "phrase": { "en": "I like rice.", "vi": "Mình thích ăn cơm." }
+    },
+    {
+      "id": "esl-food-bread",
+      "en": "bread",
+      "vi": "bánh mì",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🍞" },
+      "phrase": { "en": "I eat bread.", "vi": "Mình ăn bánh mì." }
+    },
+    {
+      "id": "esl-food-egg",
+      "en": "egg",
+      "vi": "quả trứng",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🥚" },
+      "phrase": { "en": "One egg, please.", "vi": "Cho mình một quả trứng." }
+    },
+    {
+      "id": "esl-food-milk",
+      "en": "milk",
+      "vi": "sữa",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🥛" },
+      "phrase": { "en": "I drink milk.", "vi": "Mình uống sữa." }
+    },
+    {
+      "id": "esl-food-water",
+      "en": "water",
+      "vi": "nước",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "💧" },
+      "phrase": { "en": "I drink water.", "vi": "Mình uống nước." }
+    },
+    {
+      "id": "esl-food-juice",
+      "en": "juice",
+      "vi": "nước ép",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🧃" },
+      "phrase": { "en": "I like juice.", "vi": "Mình thích nước ép." }
+    },
+    {
+      "id": "esl-food-cake",
+      "en": "cake",
+      "vi": "bánh ngọt",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🍰" },
+      "phrase": { "en": "The cake is sweet.", "vi": "Bánh ngọt lắm." }
+    },
+    {
+      "id": "esl-food-chicken",
+      "en": "chicken",
+      "vi": "thịt gà",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🍗" },
+      "phrase": { "en": "I eat chicken.", "vi": "Mình ăn thịt gà." }
+    },
+    {
+      "id": "esl-food-noodles",
+      "en": "noodles",
+      "vi": "mì",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🍜" },
+      "phrase": { "en": "I like noodles.", "vi": "Mình thích ăn mì." }
+    },
+    {
+      "id": "esl-food-soup",
+      "en": "soup",
+      "vi": "canh",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🍲" },
+      "phrase": { "en": "The soup is hot.", "vi": "Canh còn nóng." }
+    },
+    {
+      "id": "esl-food-cheese",
+      "en": "cheese",
+      "vi": "phô mai",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🧀" },
+      "phrase": { "en": "I like cheese.", "vi": "Mình thích phô mai." }
+    },
+    {
+      "id": "esl-food-sandwich",
+      "en": "sandwich",
+      "vi": "bánh kẹp",
+      "skillCode": "ESL.VOC.FOOD",
+      "picture": { "kind": "emoji", "value": "🥪" },
+      "phrase": { "en": "This is my sandwich.", "vi": "Đây là bánh kẹp của mình." }
+    },
+
+    {
+      "id": "esl-fruit-apple",
+      "en": "apple",
+      "vi": "quả táo",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🍎" },
+      "phrase": { "en": "I eat an apple.", "vi": "Mình ăn một quả táo." }
+    },
+    {
+      "id": "esl-fruit-banana",
+      "en": "banana",
+      "vi": "quả chuối",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🍌" },
+      "phrase": { "en": "I like bananas.", "vi": "Mình thích chuối." }
+    },
+    {
+      "id": "esl-fruit-orange",
+      "en": "orange",
+      "vi": "quả cam",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🍊" },
+      "phrase": { "en": "The orange is sweet.", "vi": "Quả cam ngọt lắm." }
+    },
+    {
+      "id": "esl-fruit-grapes",
+      "en": "grapes",
+      "vi": "quả nho",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🍇" },
+      "phrase": { "en": "I like grapes.", "vi": "Mình thích nho." }
+    },
+    {
+      "id": "esl-fruit-mango",
+      "en": "mango",
+      "vi": "quả xoài",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🥭" },
+      "phrase": { "en": "The mango is yellow.", "vi": "Quả xoài màu vàng." }
+    },
+    {
+      "id": "esl-fruit-watermelon",
+      "en": "watermelon",
+      "vi": "quả dưa hấu",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🍉" },
+      "phrase": { "en": "Watermelon is cold.", "vi": "Dưa hấu mát lắm." }
+    },
+    {
+      "id": "esl-fruit-strawberry",
+      "en": "strawberry",
+      "vi": "quả dâu tây",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🍓" },
+      "phrase": { "en": "The strawberry is red.", "vi": "Quả dâu màu đỏ." }
+    },
+    {
+      "id": "esl-fruit-pear",
+      "en": "pear",
+      "vi": "quả lê",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🍐" },
+      "phrase": { "en": "I have a pear.", "vi": "Mình có một quả lê." }
+    },
+    {
+      "id": "esl-fruit-lemon",
+      "en": "lemon",
+      "vi": "quả chanh",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🍋" },
+      "phrase": { "en": "The lemon is sour.", "vi": "Quả chanh chua." }
+    },
+    {
+      "id": "esl-fruit-coconut",
+      "en": "coconut",
+      "vi": "quả dừa",
+      "skillCode": "ESL.VOC.FRUITS",
+      "picture": { "kind": "emoji", "value": "🥥" },
+      "phrase": { "en": "I drink coconut water.", "vi": "Mình uống nước dừa." }
+    },
+
+    {
+      "id": "esl-toys-ball",
+      "en": "ball",
+      "vi": "quả bóng",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "⚽" },
+      "phrase": { "en": "This is my ball.", "vi": "Đây là quả bóng của mình." }
+    },
+    {
+      "id": "esl-toys-doll",
+      "en": "doll",
+      "vi": "búp bê",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "🪆" },
+      "phrase": { "en": "I like my doll.", "vi": "Mình thích búp bê." }
+    },
+    {
+      "id": "esl-toys-car",
+      "en": "car",
+      "vi": "ô tô đồ chơi",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "🚗" },
+      "phrase": { "en": "It's a red car.", "vi": "Đây là ô tô đỏ." }
+    },
+    {
+      "id": "esl-toys-robot",
+      "en": "robot",
+      "vi": "người máy",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "🤖" },
+      "phrase": { "en": "This is my robot.", "vi": "Đây là người máy của mình." }
+    },
+    {
+      "id": "esl-toys-kite",
+      "en": "kite",
+      "vi": "cái diều",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "🪁" },
+      "phrase": { "en": "The kite can fly.", "vi": "Cái diều bay được." }
+    },
+    {
+      "id": "esl-toys-teddy",
+      "en": "teddy bear",
+      "vi": "gấu bông",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "🧸" },
+      "phrase": { "en": "I sleep with my teddy bear.", "vi": "Mình ngủ với gấu bông." }
+    },
+    {
+      "id": "esl-toys-train",
+      "en": "train",
+      "vi": "tàu hoả đồ chơi",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "🚂" },
+      "phrase": { "en": "The train is long.", "vi": "Đoàn tàu dài ghê." }
+    },
+    {
+      "id": "esl-toys-puzzle",
+      "en": "puzzle",
+      "vi": "trò xếp hình",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "🧩" },
+      "phrase": { "en": "I like puzzles.", "vi": "Mình thích xếp hình." }
+    },
+    {
+      "id": "esl-toys-blocks",
+      "en": "blocks",
+      "vi": "khối xếp hình",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "🧱" },
+      "phrase": { "en": "I build with blocks.", "vi": "Mình xây bằng khối gỗ." }
+    },
+    {
+      "id": "esl-toys-bike",
+      "en": "bike",
+      "vi": "xe đạp",
+      "skillCode": "ESL.VOC.TOYS",
+      "picture": { "kind": "emoji", "value": "🚲" },
+      "phrase": { "en": "I ride my bike.", "vi": "Mình đạp xe." }
+    },
+
+    {
+      "id": "esl-clothes-shirt",
+      "en": "shirt",
+      "vi": "áo sơ mi",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "👔" },
+      "phrase": { "en": "Dad wears a shirt.", "vi": "Bố mặc áo sơ mi." }
+    },
+    {
+      "id": "esl-clothes-tshirt",
+      "en": "T-shirt",
+      "vi": "áo phông",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "👕" },
+      "phrase": { "en": "My T-shirt is blue.", "vi": "Áo phông mình màu xanh." }
+    },
+    {
+      "id": "esl-clothes-dress",
+      "en": "dress",
+      "vi": "váy liền",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "👗" },
+      "phrase": { "en": "She wears a dress.", "vi": "Bạn ấy mặc váy." }
+    },
+    {
+      "id": "esl-clothes-shorts",
+      "en": "shorts",
+      "vi": "quần đùi",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "🩳" },
+      "phrase": { "en": "I wear shorts.", "vi": "Mình mặc quần đùi." }
+    },
+    {
+      "id": "esl-clothes-trousers",
+      "en": "trousers",
+      "vi": "quần dài",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "👖" },
+      "phrase": { "en": "My trousers are brown.", "vi": "Quần dài mình màu nâu." }
+    },
+    {
+      "id": "esl-clothes-shoes",
+      "en": "shoes",
+      "vi": "đôi giày",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "👟" },
+      "phrase": { "en": "Put on your shoes.", "vi": "Đi giày vào nào." }
+    },
+    {
+      "id": "esl-clothes-socks",
+      "en": "socks",
+      "vi": "đôi tất",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "🧦" },
+      "phrase": { "en": "My socks are white.", "vi": "Tất mình màu trắng." }
+    },
+    {
+      "id": "esl-clothes-hat",
+      "en": "hat",
+      "vi": "cái mũ",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "🧢" },
+      "phrase": { "en": "He wears a hat.", "vi": "Bạn ấy đội mũ." }
+    },
+    {
+      "id": "esl-clothes-jacket",
+      "en": "jacket",
+      "vi": "áo khoác",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "🧥" },
+      "phrase": { "en": "It's cold. Wear a jacket.", "vi": "Trời lạnh, mặc áo khoác nhé." }
+    },
+    {
+      "id": "esl-clothes-gloves",
+      "en": "gloves",
+      "vi": "găng tay",
+      "skillCode": "ESL.VOC.CLOTHES",
+      "picture": { "kind": "emoji", "value": "🧤" },
+      "phrase": { "en": "My gloves are warm.", "vi": "Găng tay mình ấm lắm." }
+    },
+
+    {
+      "id": "esl-house-living-room",
+      "en": "living room",
+      "vi": "phòng khách",
+      "skillCode": "ESL.VOC.HOUSE_ROOMS",
+      "picture": { "kind": "emoji", "value": "🛋️" },
+      "phrase": {
+        "en": "We watch TV in the living room.",
+        "vi": "Nhà mình xem tivi ở phòng khách."
+      }
+    },
+    {
+      "id": "esl-house-bedroom",
+      "en": "bedroom",
+      "vi": "phòng ngủ",
+      "skillCode": "ESL.VOC.HOUSE_ROOMS",
+      "picture": { "kind": "emoji", "value": "🛌" },
+      "phrase": { "en": "My bedroom is small.", "vi": "Phòng ngủ mình nhỏ." }
+    },
+    {
+      "id": "esl-house-kitchen",
+      "en": "kitchen",
+      "vi": "nhà bếp",
+      "skillCode": "ESL.VOC.HOUSE_ROOMS",
+      "picture": { "kind": "emoji", "value": "🍳" },
+      "phrase": { "en": "Mom is in the kitchen.", "vi": "Mẹ đang ở bếp." }
+    },
+    {
+      "id": "esl-house-bathroom",
+      "en": "bathroom",
+      "vi": "phòng tắm",
+      "skillCode": "ESL.VOC.HOUSE_ROOMS",
+      "picture": { "kind": "emoji", "value": "🛁" },
+      "phrase": { "en": "The bathroom is here.", "vi": "Phòng tắm ở đây." }
+    },
+    {
+      "id": "esl-house-garden",
+      "en": "garden",
+      "vi": "khu vườn",
+      "skillCode": "ESL.VOC.HOUSE_ROOMS",
+      "picture": { "kind": "emoji", "value": "🌷" },
+      "phrase": { "en": "We play in the garden.", "vi": "Chúng mình chơi ngoài vườn." }
+    },
+    {
+      "id": "esl-house-door",
+      "en": "door",
+      "vi": "cái cửa",
+      "skillCode": "ESL.VOC.HOUSE_ROOMS",
+      "picture": { "kind": "emoji", "value": "🚪" },
+      "phrase": { "en": "Open the door, please.", "vi": "Mở cửa giúp mình nhé." }
+    },
+    {
+      "id": "esl-house-window",
+      "en": "window",
+      "vi": "cửa sổ",
+      "skillCode": "ESL.VOC.HOUSE_ROOMS",
+      "picture": { "kind": "emoji", "value": "🪟" },
+      "phrase": { "en": "Look out of the window.", "vi": "Nhìn ra cửa sổ nào." }
+    },
+    {
+      "id": "esl-house-house",
+      "en": "house",
+      "vi": "ngôi nhà",
+      "skillCode": "ESL.VOC.HOUSE_ROOMS",
+      "picture": { "kind": "emoji", "value": "🏠" },
+      "phrase": { "en": "This is my house.", "vi": "Đây là nhà mình." }
+    },
+    {
+      "id": "esl-house-stairs",
+      "en": "stairs",
+      "vi": "cầu thang",
+      "skillCode": "ESL.VOC.HOUSE_ROOMS",
+      "picture": { "kind": "emoji", "value": "🪜" },
+      "phrase": { "en": "Go up the stairs.", "vi": "Đi lên cầu thang nào." }
+    },
+
+    {
+      "id": "esl-act-run",
+      "en": "run",
+      "vi": "chạy",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "🏃" },
+      "phrase": { "en": "I can run fast.", "vi": "Mình chạy nhanh được." }
+    },
+    {
+      "id": "esl-act-jump",
+      "en": "jump",
+      "vi": "nhảy",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "🤸" },
+      "phrase": { "en": "I can jump high.", "vi": "Mình nhảy cao được." }
+    },
+    {
+      "id": "esl-act-swim",
+      "en": "swim",
+      "vi": "bơi",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "🏊" },
+      "phrase": { "en": "I can swim.", "vi": "Mình biết bơi." }
+    },
+    {
+      "id": "esl-act-sing",
+      "en": "sing",
+      "vi": "hát",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "🎤" },
+      "phrase": { "en": "I sing a song.", "vi": "Mình hát một bài." }
+    },
+    {
+      "id": "esl-act-dance",
+      "en": "dance",
+      "vi": "nhảy múa",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "💃" },
+      "phrase": { "en": "Let's dance!", "vi": "Cùng nhảy nào!" }
+    },
+    {
+      "id": "esl-act-read",
+      "en": "read",
+      "vi": "đọc",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "📚" },
+      "phrase": { "en": "I read a book.", "vi": "Mình đọc một quyển sách." }
+    },
+    {
+      "id": "esl-act-write",
+      "en": "write",
+      "vi": "viết",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "✍️" },
+      "phrase": { "en": "I write my name.", "vi": "Mình viết tên mình." }
+    },
+    {
+      "id": "esl-act-draw",
+      "en": "draw",
+      "vi": "vẽ",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "🎨" },
+      "phrase": { "en": "I draw a cat.", "vi": "Mình vẽ một con mèo." }
+    },
+    {
+      "id": "esl-act-play",
+      "en": "play",
+      "vi": "chơi",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "🎲" },
+      "phrase": { "en": "Let's play together.", "vi": "Cùng chơi nào." }
+    },
+    {
+      "id": "esl-act-eat",
+      "en": "eat",
+      "vi": "ăn",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "🍽️" },
+      "phrase": { "en": "I eat rice.", "vi": "Mình ăn cơm." }
+    },
+    {
+      "id": "esl-act-sleep",
+      "en": "sleep",
+      "vi": "ngủ",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "💤" },
+      "phrase": { "en": "I sleep at night.", "vi": "Buổi tối mình đi ngủ." }
+    },
+    {
+      "id": "esl-act-fly",
+      "en": "fly",
+      "vi": "bay",
+      "skillCode": "ESL.VOC.ACTIONS_VERBS",
+      "picture": { "kind": "emoji", "value": "🕊️" },
+      "phrase": { "en": "Birds can fly.", "vi": "Chim biết bay." }
+    },
+
+    {
+      "id": "esl-shape-circle",
+      "en": "circle",
+      "vi": "hình tròn",
+      "skillCode": "ESL.VOC.SHAPES",
+      "picture": { "kind": "emoji", "value": "⭕" },
+      "phrase": { "en": "It's a circle.", "vi": "Đây là hình tròn." }
+    },
+    {
+      "id": "esl-shape-square",
+      "en": "square",
+      "vi": "hình vuông",
+      "skillCode": "ESL.VOC.SHAPES",
+      "picture": { "kind": "emoji", "value": "🟦" },
+      "phrase": { "en": "It's a square.", "vi": "Đây là hình vuông." }
+    },
+    {
+      "id": "esl-shape-triangle",
+      "en": "triangle",
+      "vi": "hình tam giác",
+      "skillCode": "ESL.VOC.SHAPES",
+      "picture": { "kind": "emoji", "value": "🔺" },
+      "phrase": { "en": "It's a triangle.", "vi": "Đây là hình tam giác." }
+    },
+    {
+      "id": "esl-shape-star",
+      "en": "star",
+      "vi": "ngôi sao",
+      "skillCode": "ESL.VOC.SHAPES",
+      "picture": { "kind": "emoji", "value": "⭐" },
+      "phrase": { "en": "I see a star.", "vi": "Mình thấy một ngôi sao." }
+    },
+    {
+      "id": "esl-shape-heart",
+      "en": "heart",
+      "vi": "hình trái tim",
+      "skillCode": "ESL.VOC.SHAPES",
+      "picture": { "kind": "emoji", "value": "❤️" },
+      "phrase": { "en": "It's a heart.", "vi": "Đây là hình trái tim." }
+    },
+    {
+      "id": "esl-shape-diamond",
+      "en": "diamond",
+      "vi": "hình thoi",
+      "skillCode": "ESL.VOC.SHAPES",
+      "picture": { "kind": "emoji", "value": "🔷" },
+      "phrase": { "en": "It's a diamond.", "vi": "Đây là hình thoi." }
+    },
+
+    {
+      "id": "esl-play-slide",
+      "en": "slide",
+      "vi": "cầu trượt",
+      "skillCode": "ESL.VOC.PLAYGROUND",
+      "picture": { "kind": "emoji", "value": "🛝" },
+      "phrase": { "en": "I go down the slide.", "vi": "Mình trượt cầu trượt." }
+    },
+    {
+      "id": "esl-play-swing",
+      "en": "swing",
+      "vi": "xích đu",
+      "skillCode": "ESL.VOC.PLAYGROUND",
+      "picture": { "kind": "emoji", "value": "🎠" },
+      "phrase": { "en": "I like the swing.", "vi": "Mình thích xích đu." }
+    },
+    {
+      "id": "esl-play-sandbox",
+      "en": "sandbox",
+      "vi": "hố cát",
+      "skillCode": "ESL.VOC.PLAYGROUND",
+      "picture": { "kind": "emoji", "value": "🏖️" },
+      "phrase": { "en": "We play in the sandbox.", "vi": "Chúng mình chơi ở hố cát." }
+    },
+    {
+      "id": "esl-play-climb",
+      "en": "climb",
+      "vi": "trèo",
+      "skillCode": "ESL.VOC.PLAYGROUND",
+      "picture": { "kind": "emoji", "value": "🧗" },
+      "phrase": { "en": "I can climb.", "vi": "Mình trèo được." }
+    },
+    {
+      "id": "esl-play-ride-bike",
+      "en": "ride a bike",
+      "vi": "đạp xe",
+      "skillCode": "ESL.VOC.PLAYGROUND",
+      "picture": { "kind": "emoji", "value": "🚴" },
+      "phrase": { "en": "I ride a bike.", "vi": "Mình đạp xe." }
+    },
+    {
+      "id": "esl-play-fly-kite",
+      "en": "fly a kite",
+      "vi": "thả diều",
+      "skillCode": "ESL.VOC.PLAYGROUND",
+      "picture": { "kind": "emoji", "value": "🪁" },
+      "phrase": { "en": "Let's fly a kite.", "vi": "Mình đi thả diều nhé." }
+    },
+
+    {
+      "id": "esl-jobs-teacher",
+      "en": "teacher",
+      "vi": "giáo viên",
+      "skillCode": "ESL.VOC.JOBS",
+      "picture": { "kind": "emoji", "value": "👩‍🏫" },
+      "phrase": { "en": "My mom is a teacher.", "vi": "Mẹ mình là giáo viên." }
+    },
+    {
+      "id": "esl-jobs-doctor",
+      "en": "doctor",
+      "vi": "bác sĩ",
+      "skillCode": "ESL.VOC.JOBS",
+      "picture": { "kind": "emoji", "value": "👩‍⚕️" },
+      "phrase": { "en": "The doctor helps us.", "vi": "Bác sĩ giúp chúng mình." }
+    },
+    {
+      "id": "esl-jobs-nurse",
+      "en": "nurse",
+      "vi": "y tá",
+      "skillCode": "ESL.VOC.JOBS",
+      "picture": { "kind": "emoji", "value": "💉" },
+      "phrase": { "en": "The nurse is kind.", "vi": "Cô y tá tốt bụng." }
+    },
+    {
+      "id": "esl-jobs-farmer",
+      "en": "farmer",
+      "vi": "nông dân",
+      "skillCode": "ESL.VOC.JOBS",
+      "picture": { "kind": "emoji", "value": "👩‍🌾" },
+      "phrase": { "en": "The farmer has a cow.", "vi": "Bác nông dân có một con bò." }
+    },
+    {
+      "id": "esl-jobs-driver",
+      "en": "driver",
+      "vi": "tài xế",
+      "skillCode": "ESL.VOC.JOBS",
+      "picture": { "kind": "emoji", "value": "🚕" },
+      "phrase": { "en": "The driver drives a bus.", "vi": "Bác tài lái xe buýt." }
+    },
+    {
+      "id": "esl-jobs-cook",
+      "en": "cook",
+      "vi": "đầu bếp",
+      "skillCode": "ESL.VOC.JOBS",
+      "picture": { "kind": "emoji", "value": "👨‍🍳" },
+      "phrase": { "en": "The cook makes soup.", "vi": "Đầu bếp nấu canh." }
+    },
+    {
+      "id": "esl-jobs-police",
+      "en": "police officer",
+      "vi": "chú công an",
+      "skillCode": "ESL.VOC.JOBS",
+      "picture": { "kind": "emoji", "value": "👮" },
+      "phrase": { "en": "The police officer helps.", "vi": "Chú công an giúp mọi người." }
+    },
+    {
+      "id": "esl-jobs-firefighter",
+      "en": "firefighter",
+      "vi": "lính cứu hoả",
+      "skillCode": "ESL.VOC.JOBS",
+      "picture": { "kind": "emoji", "value": "🧑‍🚒" },
+      "phrase": { "en": "The firefighter is brave.", "vi": "Chú lính cứu hoả dũng cảm." }
+    },
+
+    {
+      "id": "esl-bed-bed",
+      "en": "bed",
+      "vi": "cái giường",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "🛏️" },
+      "phrase": { "en": "My bed is soft.", "vi": "Giường mình êm lắm." }
+    },
+    {
+      "id": "esl-bed-rug",
+      "en": "rug",
+      "vi": "tấm thảm",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "🧶" },
+      "phrase": { "en": "The rug is on the floor.", "vi": "Tấm thảm ở trên sàn." }
+    },
+    {
+      "id": "esl-bed-lamp",
+      "en": "lamp",
+      "vi": "cái đèn",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "💡" },
+      "phrase": { "en": "The lamp is on the desk.", "vi": "Cái đèn ở trên bàn học." }
+    },
+    {
+      "id": "esl-bed-table",
+      "en": "table",
+      "vi": "cái bàn",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "🍽️" },
+      "phrase": { "en": "The book is on the table.", "vi": "Quyển sách ở trên bàn." }
+    },
+    {
+      "id": "esl-bed-chair",
+      "en": "chair",
+      "vi": "cái ghế",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "🪑" },
+      "phrase": { "en": "The cat is on the chair.", "vi": "Con mèo ở trên ghế." }
+    },
+    {
+      "id": "esl-bed-desk",
+      "en": "desk",
+      "vi": "bàn học",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "🖥️" },
+      "phrase": { "en": "I study at my desk.", "vi": "Mình học ở bàn học." }
+    },
+    {
+      "id": "esl-bed-closet",
+      "en": "closet",
+      "vi": "tủ quần áo",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "🗄️" },
+      "phrase": { "en": "My clothes are in the closet.", "vi": "Quần áo mình ở trong tủ." }
+    },
+    {
+      "id": "esl-bed-wall",
+      "en": "wall",
+      "vi": "bức tường",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "🧱" },
+      "phrase": { "en": "The picture is on the wall.", "vi": "Bức tranh treo trên tường." }
+    },
+    {
+      "id": "esl-bed-picture",
+      "en": "picture",
+      "vi": "bức tranh",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "🖼️" },
+      "phrase": { "en": "I like this picture.", "vi": "Mình thích bức tranh này." }
+    },
+    {
+      "id": "esl-bed-floor",
+      "en": "floor",
+      "vi": "sàn nhà",
+      "skillCode": "ESL.VOC.BEDROOM_FURNITURE",
+      "unit": 5,
+      "picture": { "kind": "emoji", "value": "🟫" },
+      "phrase": { "en": "The ball is on the floor.", "vi": "Quả bóng ở dưới sàn." }
+    },
+
+    {
+      "id": "esl-go-swimming",
+      "en": "go swimming",
+      "vi": "đi bơi",
+      "skillCode": "ESL.VOC.ACTIVITIES_GO_PLAY_DO",
+      "unit": 6,
+      "picture": { "kind": "emoji", "value": "🏊" },
+      "phrase": { "en": "I go swimming on Sunday.", "vi": "Chủ nhật mình đi bơi." }
+    },
+    {
+      "id": "esl-go-riding",
+      "en": "go horseback riding",
+      "vi": "đi cưỡi ngựa",
+      "skillCode": "ESL.VOC.ACTIVITIES_GO_PLAY_DO",
+      "unit": 6,
+      "picture": { "kind": "emoji", "value": "🏇" },
+      "phrase": { "en": "I go horseback riding.", "vi": "Mình đi cưỡi ngựa." }
+    },
+    {
+      "id": "esl-go-surfing",
+      "en": "go surfing",
+      "vi": "đi lướt sóng",
+      "skillCode": "ESL.VOC.ACTIVITIES_GO_PLAY_DO",
+      "unit": 6,
+      "picture": { "kind": "emoji", "value": "🏄" },
+      "phrase": { "en": "They go surfing.", "vi": "Các bạn ấy đi lướt sóng." }
+    },
+    {
+      "id": "esl-play-tennis",
+      "en": "play tennis",
+      "vi": "chơi quần vợt",
+      "skillCode": "ESL.VOC.ACTIVITIES_GO_PLAY_DO",
+      "unit": 6,
+      "picture": { "kind": "emoji", "value": "🎾" },
+      "phrase": { "en": "I play tennis with dad.", "vi": "Mình chơi quần vợt với bố." }
+    },
+    {
+      "id": "esl-play-basketball",
+      "en": "play basketball",
+      "vi": "chơi bóng rổ",
+      "skillCode": "ESL.VOC.ACTIVITIES_GO_PLAY_DO",
+      "unit": 6,
+      "picture": { "kind": "emoji", "value": "🏀" },
+      "phrase": { "en": "We play basketball.", "vi": "Chúng mình chơi bóng rổ." }
+    },
+    {
+      "id": "esl-play-soccer",
+      "en": "play soccer",
+      "vi": "chơi bóng đá",
+      "skillCode": "ESL.VOC.ACTIVITIES_GO_PLAY_DO",
+      "unit": 6,
+      "picture": { "kind": "emoji", "value": "⚽" },
+      "phrase": { "en": "I play soccer at school.", "vi": "Mình chơi bóng đá ở trường." }
+    },
+    {
+      "id": "esl-do-karate",
+      "en": "do karate",
+      "vi": "học karate",
+      "skillCode": "ESL.VOC.ACTIVITIES_GO_PLAY_DO",
+      "unit": 6,
+      "picture": { "kind": "emoji", "value": "🥋" },
+      "phrase": { "en": "I do karate.", "vi": "Mình học karate." }
+    },
+    {
+      "id": "esl-do-yoga",
+      "en": "do yoga",
+      "vi": "tập yoga",
+      "skillCode": "ESL.VOC.ACTIVITIES_GO_PLAY_DO",
+      "unit": 6,
+      "picture": { "kind": "emoji", "value": "🧘" },
+      "phrase": { "en": "Mom does yoga.", "vi": "Mẹ tập yoga." }
+    },
+    {
+      "id": "esl-do-ballet",
+      "en": "do ballet",
+      "vi": "học múa ba lê",
+      "skillCode": "ESL.VOC.ACTIVITIES_GO_PLAY_DO",
+      "unit": 6,
+      "picture": { "kind": "emoji", "value": "🩰" },
+      "phrase": { "en": "She does ballet.", "vi": "Bạn ấy học múa ba lê." }
+    },
+
+    {
+      "id": "esl-town-park",
+      "en": "park",
+      "vi": "công viên",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🏞️" },
+      "phrase": { "en": "We play in the park.", "vi": "Chúng mình chơi ở công viên." }
+    },
+    {
+      "id": "esl-town-library",
+      "en": "library",
+      "vi": "thư viện",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "📚" },
+      "phrase": { "en": "I read at the library.", "vi": "Mình đọc sách ở thư viện." }
+    },
+    {
+      "id": "esl-town-cafe",
+      "en": "café",
+      "vi": "quán cà phê",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "☕" },
+      "phrase": { "en": "Mom is at the café.", "vi": "Mẹ đang ở quán cà phê." }
+    },
+    {
+      "id": "esl-town-movie",
+      "en": "movie theater",
+      "vi": "rạp chiếu phim",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🎬" },
+      "phrase": { "en": "We go to the movie theater.", "vi": "Nhà mình đi rạp chiếu phim." }
+    },
+    {
+      "id": "esl-town-hospital",
+      "en": "hospital",
+      "vi": "bệnh viện",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🏥" },
+      "phrase": { "en": "The doctor is at the hospital.", "vi": "Bác sĩ ở bệnh viện." }
+    },
+    {
+      "id": "esl-town-town",
+      "en": "town",
+      "vi": "thị trấn",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🏘️" },
+      "phrase": { "en": "I live in a small town.", "vi": "Mình sống ở một thị trấn nhỏ." }
+    },
+    {
+      "id": "esl-town-sports-center",
+      "en": "sports center",
+      "vi": "trung tâm thể thao",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🏟️" },
+      "phrase": {
+        "en": "We run at the sports center.",
+        "vi": "Chúng mình chạy ở trung tâm thể thao."
+      }
+    },
+    {
+      "id": "esl-town-grocery",
+      "en": "grocery store",
+      "vi": "cửa hàng tạp hoá",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🛒" },
+      "phrase": { "en": "Dad is at the grocery store.", "vi": "Bố đang ở cửa hàng tạp hoá." }
+    },
+    {
+      "id": "esl-town-pool",
+      "en": "swimming pool",
+      "vi": "bể bơi",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🤽" },
+      "phrase": { "en": "The swimming pool is big.", "vi": "Bể bơi to lắm." }
+    },
+    {
+      "id": "esl-town-station",
+      "en": "station",
+      "vi": "nhà ga",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🚉" },
+      "phrase": { "en": "The train is at the station.", "vi": "Đoàn tàu đang ở nhà ga." }
+    },
+    {
+      "id": "esl-town-street",
+      "en": "street",
+      "vi": "con đường",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🛣️" },
+      "phrase": { "en": "Look before you cross the street.", "vi": "Nhìn trước khi qua đường nhé." }
+    },
+    {
+      "id": "esl-town-hotel",
+      "en": "hotel",
+      "vi": "khách sạn",
+      "skillCode": "ESL.VOC.PLACES_TOWN",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🏨" },
+      "phrase": { "en": "We sleep at the hotel.", "vi": "Nhà mình ngủ ở khách sạn." }
+    },
+
+    {
+      "id": "esl-nature-tree",
+      "en": "tree",
+      "vi": "cái cây",
+      "skillCode": "ESL.VOC.NATURE",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🌳" },
+      "phrase": { "en": "The tree is tall.", "vi": "Cái cây cao lắm." }
+    },
+    {
+      "id": "esl-nature-forest",
+      "en": "forest",
+      "vi": "khu rừng",
+      "skillCode": "ESL.VOC.NATURE",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🌲" },
+      "phrase": { "en": "Many trees make a forest.", "vi": "Nhiều cây thành khu rừng." }
+    },
+    {
+      "id": "esl-nature-insects",
+      "en": "insects",
+      "vi": "côn trùng",
+      "skillCode": "ESL.VOC.NATURE",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🐜" },
+      "phrase": { "en": "I see small insects.", "vi": "Mình thấy mấy con côn trùng bé." }
+    },
+    {
+      "id": "esl-nature-flowers",
+      "en": "flowers",
+      "vi": "bông hoa",
+      "skillCode": "ESL.VOC.NATURE",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🌸" },
+      "phrase": { "en": "The flowers are pink.", "vi": "Những bông hoa màu hồng." }
+    },
+    {
+      "id": "esl-nature-leaves",
+      "en": "leaves",
+      "vi": "lá cây",
+      "skillCode": "ESL.VOC.NATURE",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🍃" },
+      "phrase": { "en": "The leaves are green.", "vi": "Lá cây màu xanh." }
+    },
+    {
+      "id": "esl-nature-grass",
+      "en": "grass",
+      "vi": "cỏ",
+      "skillCode": "ESL.VOC.NATURE",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🌿" },
+      "phrase": { "en": "We sit on the grass.", "vi": "Chúng mình ngồi trên cỏ." }
+    },
+    {
+      "id": "esl-nature-river",
+      "en": "river",
+      "vi": "dòng sông",
+      "skillCode": "ESL.VOC.NATURE",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "🌊" },
+      "phrase": { "en": "Fish live in the river.", "vi": "Cá sống ở dòng sông." }
+    },
+    {
+      "id": "esl-nature-lake",
+      "en": "lake",
+      "vi": "cái hồ",
+      "skillCode": "ESL.VOC.NATURE",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "💧" },
+      "phrase": { "en": "The lake is quiet.", "vi": "Mặt hồ yên ắng." }
+    },
+    {
+      "id": "esl-nature-mountain",
+      "en": "mountain",
+      "vi": "ngọn núi",
+      "skillCode": "ESL.VOC.NATURE",
+      "unit": 7,
+      "picture": { "kind": "emoji", "value": "⛰️" },
+      "phrase": { "en": "The mountain is high.", "vi": "Ngọn núi cao lắm." }
+    },
+
+    {
+      "id": "esl-routine-get-up",
+      "en": "get up",
+      "vi": "thức dậy",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "⏰" },
+      "phrase": { "en": "I get up at six.", "vi": "Mình dậy lúc sáu giờ." }
+    },
+    {
+      "id": "esl-routine-brush-teeth",
+      "en": "brush your teeth",
+      "vi": "đánh răng",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "🪥" },
+      "phrase": { "en": "I brush my teeth.", "vi": "Mình đánh răng." }
+    },
+    {
+      "id": "esl-routine-wash-face",
+      "en": "wash your face",
+      "vi": "rửa mặt",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "🧼" },
+      "phrase": { "en": "I wash my face.", "vi": "Mình rửa mặt." }
+    },
+    {
+      "id": "esl-routine-get-dressed",
+      "en": "get dressed",
+      "vi": "mặc quần áo",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "👕" },
+      "phrase": { "en": "I get dressed.", "vi": "Mình mặc quần áo." }
+    },
+    {
+      "id": "esl-routine-make-bed",
+      "en": "make your bed",
+      "vi": "gấp chăn màn",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "🛏️" },
+      "phrase": { "en": "I make my bed.", "vi": "Mình gấp chăn màn." }
+    },
+    {
+      "id": "esl-routine-go-school",
+      "en": "go to school",
+      "vi": "đi học",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "🏫" },
+      "phrase": { "en": "I go to school at seven.", "vi": "Mình đi học lúc bảy giờ." }
+    },
+    {
+      "id": "esl-routine-go-home",
+      "en": "go home",
+      "vi": "về nhà",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "🏠" },
+      "phrase": { "en": "I go home after school.", "vi": "Tan học mình về nhà." }
+    },
+    {
+      "id": "esl-routine-shower",
+      "en": "take a shower",
+      "vi": "đi tắm",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "🚿" },
+      "phrase": { "en": "I take a shower.", "vi": "Mình đi tắm." }
+    },
+    {
+      "id": "esl-routine-pack-backpack",
+      "en": "pack your backpack",
+      "vi": "soạn cặp",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "🎒" },
+      "phrase": { "en": "I pack my backpack.", "vi": "Mình soạn cặp." }
+    },
+    {
+      "id": "esl-routine-go-bed",
+      "en": "go to bed",
+      "vi": "đi ngủ",
+      "skillCode": "ESL.VOC.DAILY_ROUTINES",
+      "unit": 8,
+      "picture": { "kind": "emoji", "value": "🌙" },
+      "phrase": { "en": "I go to bed at nine.", "vi": "Mình đi ngủ lúc chín giờ." }
+    },
+
+    {
+      "id": "esl-jobverb-fly",
+      "en": "fly",
+      "vi": "lái máy bay",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "✈️" },
+      "phrase": { "en": "A pilot flies a plane.", "vi": "Phi công lái máy bay." }
+    },
+    {
+      "id": "esl-jobverb-teach",
+      "en": "teach",
+      "vi": "dạy học",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "👩‍🏫" },
+      "phrase": { "en": "A teacher teaches children.", "vi": "Cô giáo dạy các bạn nhỏ." }
+    },
+    {
+      "id": "esl-jobverb-drive",
+      "en": "drive",
+      "vi": "lái xe",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "🚗" },
+      "phrase": { "en": "A driver drives a bus.", "vi": "Bác tài lái xe buýt." }
+    },
+    {
+      "id": "esl-jobverb-clean",
+      "en": "clean",
+      "vi": "dọn dẹp",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "🧹" },
+      "phrase": { "en": "We clean the classroom.", "vi": "Chúng mình dọn lớp học." }
+    },
+    {
+      "id": "esl-jobverb-cook",
+      "en": "cook",
+      "vi": "nấu ăn",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "🍳" },
+      "phrase": { "en": "A chef cooks food.", "vi": "Đầu bếp nấu đồ ăn." }
+    },
+    {
+      "id": "esl-jobverb-take-care",
+      "en": "take care of",
+      "vi": "chăm sóc",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "🤱" },
+      "phrase": { "en": "A nurse takes care of people.", "vi": "Y tá chăm sóc mọi người." }
+    },
+    {
+      "id": "esl-jobverb-help",
+      "en": "help",
+      "vi": "giúp đỡ",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "🤝" },
+      "phrase": { "en": "I help my mom.", "vi": "Mình giúp mẹ." }
+    },
+    {
+      "id": "esl-jobverb-work",
+      "en": "work",
+      "vi": "làm việc",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "💼" },
+      "phrase": { "en": "My dad works in a hospital.", "vi": "Bố mình làm ở bệnh viện." }
+    },
+    {
+      "id": "esl-jobverb-travel",
+      "en": "travel",
+      "vi": "đi xa",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "🧳" },
+      "phrase": { "en": "Pilots travel a lot.", "vi": "Phi công đi xa nhiều." }
+    },
+    {
+      "id": "esl-jobverb-uniform",
+      "en": "wear a uniform",
+      "vi": "mặc đồng phục",
+      "skillCode": "ESL.VOC.JOB_VERBS",
+      "unit": 9,
+      "picture": { "kind": "emoji", "value": "👮" },
+      "phrase": { "en": "Police officers wear a uniform.", "vi": "Chú công an mặc đồng phục." }
+    },
+
+    {
+      "id": "esl-party-balloons",
+      "en": "balloons",
+      "vi": "bóng bay",
+      "skillCode": "ESL.VOC.PARTIES",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🎈" },
+      "phrase": { "en": "The balloons are red.", "vi": "Bóng bay màu đỏ." }
+    },
+    {
+      "id": "esl-party-gift",
+      "en": "gift",
+      "vi": "món quà",
+      "skillCode": "ESL.VOC.PARTIES",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🎁" },
+      "phrase": { "en": "This gift is for you.", "vi": "Món quà này tặng bạn." }
+    },
+    {
+      "id": "esl-party-candy",
+      "en": "candy",
+      "vi": "kẹo",
+      "skillCode": "ESL.VOC.PARTIES",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🍬" },
+      "phrase": { "en": "I like candy.", "vi": "Mình thích kẹo." }
+    },
+    {
+      "id": "esl-party-invitation",
+      "en": "invitation",
+      "vi": "thiệp mời",
+      "skillCode": "ESL.VOC.PARTIES",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "💌" },
+      "phrase": { "en": "Here is your invitation.", "vi": "Thiệp mời của bạn đây." }
+    },
+    {
+      "id": "esl-party-fireworks",
+      "en": "fireworks",
+      "vi": "pháo hoa",
+      "skillCode": "ESL.VOC.PARTIES",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🎆" },
+      "phrase": { "en": "Look at the fireworks!", "vi": "Nhìn pháo hoa kìa!" }
+    },
+    {
+      "id": "esl-party-card",
+      "en": "card",
+      "vi": "tấm thiệp",
+      "skillCode": "ESL.VOC.PARTIES",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "✉️" },
+      "phrase": { "en": "I make a card for mom.", "vi": "Mình làm thiệp tặng mẹ." }
+    },
+    {
+      "id": "esl-party-band",
+      "en": "band",
+      "vi": "ban nhạc",
+      "skillCode": "ESL.VOC.PARTIES",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🎺" },
+      "phrase": { "en": "The band plays music.", "vi": "Ban nhạc chơi nhạc." }
+    },
+    {
+      "id": "esl-party-drinks",
+      "en": "drinks",
+      "vi": "đồ uống",
+      "skillCode": "ESL.VOC.PARTIES",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🥤" },
+      "phrase": { "en": "The drinks are cold.", "vi": "Đồ uống mát lạnh." }
+    },
+    {
+      "id": "esl-party-decorations",
+      "en": "decorations",
+      "vi": "đồ trang trí",
+      "skillCode": "ESL.VOC.PARTIES",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🎊" },
+      "phrase": { "en": "The decorations are pretty.", "vi": "Đồ trang trí đẹp quá." }
+    },
+
+    {
+      "id": "esl-table-cup",
+      "en": "cup",
+      "vi": "cái cốc",
+      "skillCode": "ESL.VOC.TABLEWARE",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🍵" },
+      "phrase": { "en": "This is my cup.", "vi": "Đây là cốc của mình." }
+    },
+    {
+      "id": "esl-table-plate",
+      "en": "plate",
+      "vi": "cái đĩa",
+      "skillCode": "ESL.VOC.TABLEWARE",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🍽️" },
+      "phrase": { "en": "The rice is on the plate.", "vi": "Cơm ở trên đĩa." }
+    },
+    {
+      "id": "esl-table-knife",
+      "en": "knife",
+      "vi": "con dao",
+      "skillCode": "ESL.VOC.TABLEWARE",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🔪" },
+      "phrase": { "en": "The knife is sharp.", "vi": "Con dao sắc lắm." }
+    },
+    {
+      "id": "esl-table-fork",
+      "en": "fork",
+      "vi": "cái nĩa",
+      "skillCode": "ESL.VOC.TABLEWARE",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🍴" },
+      "phrase": { "en": "I eat with a fork.", "vi": "Mình ăn bằng nĩa." }
+    },
+    {
+      "id": "esl-table-spoon",
+      "en": "spoon",
+      "vi": "cái thìa",
+      "skillCode": "ESL.VOC.TABLEWARE",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🥄" },
+      "phrase": { "en": "Pass me the spoon, please.", "vi": "Đưa mình cái thìa nhé." }
+    },
+    {
+      "id": "esl-table-chopsticks",
+      "en": "chopsticks",
+      "vi": "đôi đũa",
+      "skillCode": "ESL.VOC.TABLEWARE",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🥢" },
+      "phrase": { "en": "I eat rice with chopsticks.", "vi": "Mình ăn cơm bằng đũa." }
+    },
+    {
+      "id": "esl-table-bowl",
+      "en": "bowl",
+      "vi": "cái bát",
+      "skillCode": "ESL.VOC.TABLEWARE",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🥣" },
+      "phrase": { "en": "The soup is in the bowl.", "vi": "Canh ở trong bát." }
+    },
+    {
+      "id": "esl-table-candle",
+      "en": "candle",
+      "vi": "cây nến",
+      "skillCode": "ESL.VOC.TABLEWARE",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🕯️" },
+      "phrase": { "en": "The candle is on the cake.", "vi": "Cây nến ở trên bánh." }
+    },
+    {
+      "id": "esl-table-napkin",
+      "en": "napkin",
+      "vi": "khăn giấy",
+      "skillCode": "ESL.VOC.TABLEWARE",
+      "unit": 10,
+      "picture": { "kind": "emoji", "value": "🧻" },
+      "phrase": { "en": "Here is a napkin.", "vi": "Khăn giấy đây." }
+    }
+  ]
+}
