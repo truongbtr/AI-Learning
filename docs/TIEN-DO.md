@@ -117,7 +117,7 @@ Docker dev (cổng 5000) đã build lại image web + worker cho khớp bảng m
 - Migration `20260916160000_phase12_syllables_and_lexeme_progress` đã áp (health: 10 migration, web
   healthy, `/login` 200).
 - Nạp tiếng: dry-run `lexicon 262 unchanged`, `syllables 707 new`; chạy thật `--viet-tts pieces
-  --tts-pace 3300` ở nền từ 21:12, log `~/pha12-tts.log` (776 mp3 cần sinh, ~45 phút).
+  --tts-pace 3300` ở nền 21:12–21:58: 776 mp3 mới, 979 có sẵn, 0 lỗi; hạn mức TTS tháng 9 172.274/500.000 (34 %).
 - **Chưa chạy** `--viet-tts all` (mp3 đợt 2) — chờ chủ dự án xác nhận nhịp đánh vần (câu hỏi 1 bên dưới).
 - Từ giờ deploy bằng skill `/update_edu_prod` (`.claude/skills/update_edu_prod/SKILL.md`).
 
