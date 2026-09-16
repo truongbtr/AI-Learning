@@ -20,7 +20,7 @@ const meetingSchema = z.object({
  * POST /api/kid/vocab — one meeting with one word in a vocabulary game (pha 11, ADR-22).
  *
  * The child's device says what happened; the server decides what it means. The Leitner box, the
- * next due date and whether the word moved up are computed here from `WordProgress`, so nothing a
+ * next due date and whether the word moved up are computed here from `LexemeProgress`, so nothing a
  * tampered-with client sends can invent progress: the worst it can do is claim a meeting that did
  * happen, which only ever brings a word back sooner.
  *

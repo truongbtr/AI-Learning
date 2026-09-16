@@ -14,7 +14,8 @@ import {
 import type { Prisma, PrismaClient } from "../../generated/client";
 import { grantSessionRewards, rememberForTomorrow, type SessionRewards } from "../kid/rewards";
 import { commitEvidence } from "../mastery/service";
-import { wordsForStation } from "../vocab/service";
+import { type SyllableStationPayload, syllableStation } from "../syllable/service";
+import { wordsForStation, wordsMetSince } from "../vocab/service";
 import { adaptAssessment, assessmentWeightFactor } from "./assess";
 import type { PickedSlot } from "./plan";
 
@@ -135,6 +136,12 @@ export interface KidItem {
       isNew: boolean;
     }[];
   };
+  /**
+   * A Xưởng Tiếng station (pha 12): two spelling games over tonight's syllables. Like a vocabulary
+   * station it has no Attempt and no answer key to hide — every meeting goes to
+   * `POST /api/kid/syllable`, which decides right or wrong from the syllable itself.
+   */
+  syllable?: SyllableStationPayload;
 }
 
 export interface KidAttemptState {
@@ -232,6 +239,7 @@ export async function sessionForKid(
   const homeworkById = new Map(homeworkRows.map((h) => [h.id, h]));
 
   const items: KidItem[] = [];
+  const syllablesDealt: string[] = [];
   for (const slot of slots) {
     if (slot.kind === "homework" && slot.homework) {
       const row = homeworkById.get(slot.homework.id);
@@ -271,13 +279,12 @@ export async function sessionForKid(
       if (words.length === 0) continue; // no words for this skill yet: quietly skip the station
       // A vocabulary game writes no Attempt row, so "already played" is read from the words
       // themselves: three of this skill's words met today is a round played.
-      const playedToday = await db.wordProgress.count({
-        where: {
-          studentId: session.studentId,
-          lastSeenAt: { gte: vnDayDate(new Date()) },
-          word: { skill: { code: slot.skillCode } },
-        },
-      });
+      const playedToday = await wordsMetSince(
+        db,
+        session.studentId,
+        slot.skillCode,
+        vnDayDate(new Date()),
+      );
       items.push({
         order: slot.order,
         exerciseId: "",
@@ -290,6 +297,34 @@ export async function sessionForKid(
         kind: "vocab",
         spec: null,
         vocab: { game: slot.vocab.game, words, done: playedToday >= 3 },
+      });
+      continue;
+    }
+
+    // A Xưởng Tiếng station (pha 12): dealt now, like the vocabulary station above. The second
+    // station of the evening never repeats the first one's syllables.
+    if (slot.syllable) {
+      const station = await syllableStation(db, session.studentId, {
+        sessionId: session.id,
+        order: slot.order,
+        games: slot.syllable.games,
+        skills: slot.syllable.skills,
+        exclude: syllablesDealt,
+      });
+      if (station.syllableIds.length === 0) continue; // no dictionary yet: skip the station
+      syllablesDealt.push(...station.syllableIds);
+      items.push({
+        order: slot.order,
+        exerciseId: "",
+        stableId: `syllable-${station.games.join("-")}-${slot.order}`,
+        type: "MCQ" as MarkableType,
+        language: "vi",
+        subject: "VIET",
+        difficulty: 2,
+        skillCode: slot.skillCode,
+        kind: "syllable",
+        spec: null,
+        syllable: { games: station.games, rounds: station.rounds, done: station.done },
       });
       continue;
     }
@@ -325,7 +360,8 @@ export async function sessionForKid(
   }));
   const doneOrders = new Set(attempts.filter((a) => a.done).map((a) => a.order));
   // Homework is finished in its own table, not by an Attempt row.
-  for (const item of items) if (item.homework?.done || item.vocab?.done) doneOrders.add(item.order);
+  for (const item of items)
+    if (item.homework?.done || item.vocab?.done || item.syllable?.done) doneOrders.add(item.order);
   const nextOrder = items.find((i) => !doneOrders.has(i.order))?.order ?? null;
 
   return {

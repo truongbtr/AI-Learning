@@ -61,6 +61,11 @@ export interface CityView {
    * ever sends one away again.
    */
   harbourBoats?: number;
+  /**
+   * Phố Chữ only: Xưởng Tiếng, the syllable workshop (pha 12, ADR-24). Every syllable the child
+   * keeps is a brick; every ten bricks, a house goes up on the workshop street. Never shrinks.
+   */
+  workshop?: { houses: number; bricks: number; bricksPerHouse: number };
   /** Collectibles placed as decorations (codes from @mtct/city DECORATIONS). */
   decorations: string[];
   /** Pet codes walking in the city. */

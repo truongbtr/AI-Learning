@@ -481,6 +481,8 @@ export interface CityInput {
   homework: readonly HomeworkSnapshot[];
   /** Bến Cảng Từ: how many words the child keeps (box 4 and up), capped by the engine at 4. */
   wordsKept?: number;
+  /** Xưởng Tiếng: syllables at the brick box (pha 12). Phố Chữ only. */
+  syllableBricks?: number;
 }
 
 export interface CityHud {
@@ -539,6 +541,33 @@ export function scaffoldedSkills(
   );
 }
 
+// ------------------------------------------------------------------ syllables → bricks → houses
+
+/**
+ * Xưởng Tiếng (pha 12, ADR-24): a syllable that reaches this Leitner box is one brick on the
+ * workshop's pile in Phố Chữ, and every ten bricks raise a house on the workshop street. A brick
+ * is never taken back — a syllable that slips down the ladder keeps the house it helped build,
+ * like every other building in the city (Pha 10 §1.4).
+ */
+export const SYLLABLE_BRICK_BOX = 3;
+export const BRICKS_PER_HOUSE = 10;
+
+export interface WorkshopProgress {
+  houses: number;
+  /** Bricks already on the pile towards the next house (0 … 9). */
+  bricks: number;
+  bricksPerHouse: number;
+}
+
+export function workshopProgress(bricks: number): WorkshopProgress {
+  const total = Math.max(0, Math.floor(bricks));
+  return {
+    houses: Math.floor(total / BRICKS_PER_HOUSE),
+    bricks: total % BRICKS_PER_HOUSE,
+    bricksPerHouse: BRICKS_PER_HOUSE,
+  };
+}
+
 export function buildCityState(input: CityInput): CityState {
   const skillOrder = mergeSkillOrder(input.storedOrder, input.skills);
   const byId = new Map(input.skills.map((s) => [s.skillId, s]));
@@ -584,6 +613,7 @@ export function buildCityState(input: CityInput): CityState {
     wonder: { pieces: wonder.pieces },
     bustle: bustleFor(input.daysLearnt),
     harbourBoats: input.city === "esl" ? Math.min(4, input.wordsKept ?? 0) : undefined,
+    workshop: input.city === "viet" ? workshopProgress(input.syllableBricks ?? 0) : undefined,
     decorations: input.collectibleCodes.map(decorationFor),
     pets: input.petCodes.map(petFor),
     townHallOrder: townHallOrderFor(input.homework),

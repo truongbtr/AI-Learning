@@ -49,6 +49,8 @@ export const LEARNING_TABLES = [
   "StudentCollectible",
   "StudentPicturePiece",
   "StudentBadge",
+  // the Leitner memory of words and syllables (ADR-22, pha 11–12) — missed in pha 11, added in 12
+  "LexemeProgress",
   "Certificate",
   "KidMail",
   "MascotMemory",
@@ -76,6 +78,8 @@ export const PROTECTED_TABLES = [
   "Pet",
   "Collectible",
   "WeeklyPicture",
+  "Word",
+  "Syllable",
   "User",
   "Student",
 ] as const;
@@ -177,6 +181,7 @@ export async function deleteForStudents(db: PrismaClient, studentIds: string[]):
   await db.studentPicturePiece.deleteMany({ where });
   await db.studentBadge.deleteMany({ where });
   await db.studentCity.deleteMany({ where });
+  await db.lexemeProgress.deleteMany({ where });
   await db.certificate.deleteMany({ where });
   await db.kidMail.deleteMany({ where });
   await db.mascotMemory.deleteMany({ where });

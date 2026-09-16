@@ -47,7 +47,9 @@ ops/state/
     content-coverage.csv     # skillCode, số bài PUBLISHED theo dạng và mức khó, số bài chưa có audio
     diary.csv                # ngày, môn, bài lớp học, bài cô giao, đã dán lúc mấy giờ
     exercise-health.csv      # exerciseStableId, số lượt, tỉ lệ đúng, tỉ lệ bỏ qua, giây trung vị
-    word-progress.csv        # nickname, từ, kỹ năng, bậc Leitner, ngày hẹn, số lần gặp/nhận ra, trò gần nhất
+    lexemes.csv              # nickname, kind (word = từ tiếng Anh | syllable = tiếng Việt), lexemeId, chữ,
+                             #   kỹ năng, bậc Leitner, ngày hẹn, số lần gặp/đúng, chuỗi đúng, lần gặp cuối, trò gần nhất
+                             #   (pha 12: thay word-progress.csv, schemaVersion 2)
 ```
 
 Ràng buộc:
@@ -95,7 +97,7 @@ Danh sách thao tác **được phép** (whitelist, cái gì không có trong da
 | `noteForParent` | Đặt một thẻ nhắc trên dashboard ba mẹ |
 
 **Cấm tuyệt đối, không có ngoại lệ:** xoá hay sửa `Evidence`, `Attempt`, `Session`, `SkillMastery`,
-`WordProgress` (dữ liệu học của con là bất khả xâm phạm — muốn sửa thì ba mẹ dùng `PARENT_OVERRIDE`
+`LexemeProgress` (trước pha 12 tên là `WordProgress` — tên cũ vẫn bị chặn) (dữ liệu học của con là bất khả xâm phạm — muốn sửa thì ba mẹ dùng `PARENT_OVERRIDE`
 trên web, có ghi vết); đụng `User`, mật khẩu, phân quyền; đổi `.env`; xoá file.
 
 Vòng đời: `ops/requests/` → `pnpm ops:apply` (kiểm định → in diff → hỏi đồng ý) →

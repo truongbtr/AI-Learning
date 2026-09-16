@@ -1,6 +1,7 @@
 import { mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { expect, type Page, test } from "@playwright/test";
+import { playSyllableStation } from "./syllable-helpers";
 
 /**
  * Phase 3 acceptance (docs/08 pha 3 "Tiêu chí xong"): K1 → K5 as a child, on a running stack that
@@ -268,6 +269,22 @@ test("K4 → K5: the whole quest, with hints and never the word a child should n
         .click({ timeout: 4000 })
         .catch(() => {});
       await page.waitForTimeout(300);
+    }
+
+    // A Xưởng Tiếng station (pha 12) is two spelling games, not one question: play it through.
+    if (
+      await page
+        .getByTestId("syllable-station")
+        .isVisible()
+        .catch(() => false)
+    ) {
+      const here = page.url();
+      const played = await playSyllableStation(page);
+      console.log(`[xuong-tieng] ${JSON.stringify(played)}`);
+      subjects.add("Tiếng Việt");
+      answered++;
+      await page.waitForURL((url) => url.toString() !== here, { timeout: 15_000 }).catch(() => {});
+      continue;
     }
 
     // Nothing to answer here. A quest is planned once a day, so on a re-run the session is

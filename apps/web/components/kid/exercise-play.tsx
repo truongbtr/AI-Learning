@@ -11,6 +11,8 @@ import { type FeedbackKind, FeedbackOverlay, HintBubble } from "@/components/kid
 import { HomeworkStation } from "@/components/kid/homework-station";
 import { StarFlyToPocket } from "@/components/kid/stars";
 import { OfflineNotice } from "@/components/kid/states";
+import { SyllableStation } from "@/components/kid/syllable/station";
+import type { SyllableStationData } from "@/components/kid/syllable/types";
 import { THEME } from "@/components/kid/tokens";
 import { useSpeak } from "@/components/kid/use-speak";
 import { VocabStation } from "@/components/kid/vocab/station";
@@ -133,7 +135,19 @@ export function ExercisePlay({
           />
         ) : null}
 
-        {!item.homework && !item.vocab ? (
+        {/* A Xưởng Tiếng station plays two spelling games instead of one question (pha 12). */}
+        {!item.homework && !item.vocab && item.syllable ? (
+          <SyllableStation
+            sessionId={session.id}
+            order={item.order}
+            station={item.syllable as SyllableStationData}
+            mascot={mascot}
+            onFinished={onFinished}
+            onStars={onStars}
+          />
+        ) : null}
+
+        {!item.homework && !item.vocab && !item.syllable ? (
           <>
             <ExerciseRenderer
               spec={item.spec as ClientSpec}

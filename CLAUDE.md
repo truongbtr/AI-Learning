@@ -91,7 +91,7 @@ còn lại). **Giữ lại chờ người** ở ba chỗ máy hay sai: `confiden
 **2. Dữ liệu vận hành `ops/` (`docs/14`).** Thư mục là API: đọc `ops/state/`, tác động qua
 `ops/requests/`.
 
-- `pnpm ops:export` (tự chạy 04:30 sau `planner.daily`) → 11 CSV + `meta.json` + `SUMMARY.md` vào
+- `pnpm ops:export` (tự chạy 04:30 sau `planner.daily`) → 12 CSV (có `lexemes.csv`) + `meta.json` + `SUMMARY.md` vào
   `ops/state/<ngày>/`, cộng `ops/context/HIEN-TRANG.md` + `QUYET-DINH.md`. Giữ 90 ngày, < 5 MB/ngày,
   **chỉ nickname** — không tên đầy đủ, không ngày sinh.
 - Muốn đổi gì thì **đặt một file JSON** vào `ops/requests/` (9 thao tác trong danh sách trắng) rồi
@@ -108,6 +108,7 @@ pnpm db:migrate     # prisma migrate dev
 pnpm db:seed
 pnpm content:validate            # kiểm định file trong content/
 pnpm content:import --dry-run    # xem thay đổi trước khi nạp DB
+pnpm content:import --viet-tts all  # Xưởng Tiếng: sinh cả mp3 nhịp đánh vần (mặc định chỉ `pieces`, ADR-24)
 pnpm content:stats               # kỹ năng nào còn thiếu bài (đọc DB)
 pnpm content:export --skill <mã> # xuất ngược từ DB ra file
 pnpm content:import-intake       # nạp lô ảnh vở cũ từ intake-inbox/<bé>/<ngày>/ (10 §8)

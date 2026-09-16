@@ -73,3 +73,29 @@ có test).
   lại lịch Leitner mỗi tối từ lịch sử là công việc thừa cho một thứ vốn là một con số.
 - **SM-2 / Anki thật**: quá mịn cho 262 từ và cho trẻ 6 tuổi; năm bậc là đủ và giải thích được cho
   ba mẹ trong một câu.
+
+## Bổ sung 16/09/2026 (pha 12) — `WordProgress` thành `LexemeProgress`
+
+Xưởng Tiếng (ADR-24) cần đúng thứ bảng này làm cho từ tiếng Anh, nhưng cho **tiếng Việt**. Theo đề bài
+pha 12, bảng được **mở rộng** chứ không nhân đôi:
+
+- Migration `20260916160000_phase12_syllables_and_lexeme_progress` **đổi tên tại chỗ**
+  `WordProgress` → `LexemeProgress`, `wordId` → `lexemeId`, thêm `kind LexemeKind (word | syllable)`.
+  Mọi dòng cũ thành `kind = word`; không chép, không mất dòng nào. Khoá duy nhất là
+  `(studentId, kind, lexemeId)`.
+- **Bỏ khoá ngoại** `wordId → Word`: một cột không trỏ được hai bảng. Hệ quả chấp nhận được vì `Word` và
+  `Syllable` không bao giờ bị xoá (trình nạp chỉ tắt `isActive`), còn xoá một bé vẫn xoá theo qua
+  `studentId`. Đọc tiến độ giờ ghép trong bộ nhớ (`progressFor`), không lồng quan hệ Prisma — với
+  ≤ 1.000 dòng mỗi bé thì không đáng kể.
+- Tên cột giữ nguyên (`box` 0–5, `known`, `streak`, `lastGame`). Đề bài phác `box 0-4` và `correct`;
+  giữ nguyên để không đổi nghĩa dữ liệu pha 11 — `known` **chính là** số lần làm đúng.
+- Chỉ một module ghi bảng: `packages/db/src/lexeme/progress.ts` (`recordLexemeMeeting`), gọi từ
+  `POST /api/kid/vocab` và `POST /api/kid/syllable`.
+- **Khác pha 11**: một lần gặp **tiếng** có ghi thêm `Evidence` cho kỹ năng `VIET.HV.*` (mastery mạch
+  học vần phải đi tiếp); gặp **từ** vẫn không ghi gì ngoài bảng này.
+- `ops/requests`: `LexemeProgress` vào `FORBIDDEN_TARGETS` (giữ cả tên cũ `WordProgress` để yêu cầu viết
+  trước khi đổi tên vẫn bị từ chối).
+- `ops:export`: `word-progress.csv` thành `lexemes.csv` có cột `kind`, `schemaVersion` lên 2.
+- Công cụ xoá dữ liệu học (`db:reset-learning`) và file xuất dữ liệu một bé (`db:export-student`)
+  **trước đây bỏ sót** `WordProgress`; nay có `LexemeProgress` (khoá `lexemes` trong file xuất).
+  `Word`/`Syllable` nằm trong danh sách bảng được bảo vệ.

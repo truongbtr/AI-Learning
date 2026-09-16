@@ -1,6 +1,6 @@
 /**
  * `pnpm content:import [--dir content/exercises/vmath] [--dry-run] [--no-tts] [--respec]
- *  [--tts-pace 3300] [--note "..."]`
+ *  [--tts-pace 3300] [--viet-tts pieces|rhythm|all] [--note "..."]`
  * (docs/10 sec. 5 step 4).
  *
  * 1. validates everything first — a dirty bank is never imported;
@@ -20,15 +20,19 @@ import {
   loadExercisePacks,
   loadLessons,
   loadLexicon,
+  loadVietLexicon,
   packToRows,
   resolveContentDir,
   runContentValidation,
   ttsLinesOf,
+  type VietTtsPart,
+  vietLexiconTtsLines,
 } from "@mtct/content";
 import { LocalFileStorage } from "@mtct/core/storage";
 import { pregenerateAudio, ttsConfigFromEnv } from "@mtct/core/tts";
 import { importExercises, importLessons } from "../content/import";
 import { importWords } from "../content/lexicon";
+import { importSyllables } from "../content/syllables";
 import { prisma } from "../index";
 import { readTtsUsage, recordTtsUsage, summariseTtsUsage } from "../ops/tts-usage";
 import { parseArgs } from "./args";
@@ -45,6 +49,18 @@ const skipTts = args.flags.has("no-tts");
 const respec = args.flags.has("respec");
 /** `--tts-pace 3300` — ms between two synthesis requests; the free Azure tier needs about that. */
 const pacing = Number.parseInt(args.values.get("tts-pace") ?? "", 10);
+/**
+ * `--viet-tts pieces|rhythm|all` — which Xưởng Tiếng lines to pre-generate (pha 12, ADR-24).
+ * Default `pieces`: rimes, tone names, syllables and blends, which do not depend on how the class
+ * spells out loud. `all` adds the onset sounds and the whole rhythm of every syllable — run it
+ * once the project owner has confirmed "bờ – a – ba – huyền – bà" with the teacher.
+ */
+const vietTtsArg = args.values.get("viet-tts") ?? "pieces";
+if (!["pieces", "rhythm", "all"].includes(vietTtsArg)) {
+  console.error(`--viet-tts must be pieces, rhythm or all (got "${vietTtsArg}")`);
+  process.exit(1);
+}
+const vietTts = vietTtsArg as VietTtsPart;
 
 async function main() {
   const validation = runContentValidation({ quiet: true });
@@ -79,7 +95,7 @@ async function main() {
 
   // --- Lexicon (pha 11) -------------------------------------------------------------------
   // The picture dictionary behind the vocabulary games. Content, like the exercises: the importer
-  // writes `Word`, never `WordProgress` (ADR-22).
+  // writes `Word`, never `LexemeProgress` (ADR-22).
   const lexicon = scoped && !dirArg?.includes("lexicon") ? null : loadLexicon();
   if (lexicon) {
     const result = await importWords(
@@ -104,11 +120,42 @@ async function main() {
     for (const s of result.skipped) console.warn(`  WARN ${s.stableId}: ${s.reason}`);
   }
 
+  // --- Syllable dictionary (pha 12) -------------------------------------------------------
+  // Xưởng Tiếng's syllables. Content again: the importer writes `Syllable`, never
+  // `LexemeProgress` (ADR-22, ADR-24).
+  const viet = scoped && !dirArg?.includes("lexicon") ? null : loadVietLexicon();
+  if (viet) {
+    const result = await importSyllables(
+      prisma,
+      viet.syllables.map((s, position) => ({
+        stableId: s.id,
+        text: s.tieng,
+        onset: s.amDau,
+        rime: s.van,
+        tone: s.thanh,
+        picture: s.tranh,
+        meaning: s.nghia,
+        skillCode: s.skillCode,
+        lessonUnitCode: s.lessonUnitCode,
+        week: s.tuanSGK,
+        everyday: s.hangNgay === true,
+        position,
+      })),
+      { dryRun, sourceDir: "content/lexicon/viet.json", note },
+    );
+    console.log(
+      `syllables: ${result.created} new, ${result.updated} updated, ${result.revived} revived, ` +
+        `${result.unchanged} unchanged, ${result.retired} retired` +
+        (result.batchId ? ` — batch ${result.batchId}` : ""),
+    );
+    for (const s of result.skipped) console.warn(`  WARN ${s.stableId}: ${s.reason}`);
+  }
+
   // --- Exercises (docs/10 §4.2) -----------------------------------------------------------
   const packs = wantsExercises
     ? loadExercisePacks(resolveContentDir(scoped ? dirArg : undefined, contentDir("exercises")))
     : [];
-  if (packs.length === 0 && lessons.length === 0 && !lexicon) {
+  if (packs.length === 0 && lessons.length === 0 && !lexicon && !viet) {
     console.log("nothing to import (no lessons, no lexicon and no *.pack.json found)");
     return;
   }
@@ -150,10 +197,21 @@ async function main() {
   const cfg = ttsConfigFromEnv();
   // Both banks in one pass: the exercise prompts, then every lexicon word and its phrase in the
   // English voice — about 6.4k characters for 262 words, roughly 1% of the monthly free tier.
+  const vietLines = viet ? vietLexiconTtsLines(viet, vietTts) : [];
   const lines = [
     ...packs.flatMap(({ pack }) => pack.exercises.flatMap((ex) => ttsLinesOf(ex))),
     ...(lexicon ? lexiconTtsLines(lexicon) : []),
+    ...vietLines,
   ];
+  // Say what this could cost before spending it (pha 12): the free F0 tier is 500k characters a
+  // month, and only lines without an mp3 are sent — cached ones are free.
+  if (viet) {
+    const vietChars = vietLines.reduce((n, l) => n + l.text.length, 0);
+    console.log(
+      `tts: Xưởng Tiếng (${vietTts}) — ${vietLines.length} câu, tối đa ${vietChars.toLocaleString("vi-VN")} ký tự ` +
+        "nếu chưa có câu nào trong bộ đệm",
+    );
+  }
   const storage = new LocalFileStorage(process.env.FILE_ROOT ?? "./data/files");
   // Generating the whole bank takes the best part of an hour on the free tier, so say where it is.
   const startedAt = Date.now();

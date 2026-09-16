@@ -4,7 +4,7 @@
  * Six short games, 30–60 seconds each, over the same handful of words. They exist because the ESL
  * vocabulary bank is 40% multiple choice: a child answers questions *about* a word without ever
  * playing with it, and nothing knows which words they actually keep. Every meeting here goes to
- * `WordProgress` and the Leitner ladder (ADR-22).
+ * `LexemeProgress` (kind=word) and the Leitner ladder (ADR-22).
  *
  * The rules of the child's world hold here as everywhere: no countdown, no lives, no score, no
  * "sai", no red. A word not recognised simply comes back tomorrow.

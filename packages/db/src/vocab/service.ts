@@ -2,12 +2,13 @@
  * The vocabulary games' side of the database (pha 11, ADR-22): which words a child meets tonight,
  * and what one meeting changes.
  *
- * `Word` is content (written by `content:import`); `WordProgress` is the child's own memory of a
- * word and is written **only** from here, by a child actually playing. `ops/requests` may not
+ * `Word` is content (written by `content:import`); `LexemeProgress` (kind=word) is the child's own
+ * memory of a word and is written **only** through `recordLexemeMeeting`, by a child actually playing. `ops/requests` may not
  * touch it and `ops:export` only reads it (docs/14).
  */
-import { reviewWord, type SchedulableWord, vocabProgress, wordsDue } from "@mtct/core";
+import { type SchedulableWord, vocabProgress, wordsDue } from "@mtct/core";
 import type { PrismaClient } from "../../generated/client";
+import { progressFor, recordLexemeMeeting } from "../lexeme/progress";
 
 type Db = PrismaClient;
 
@@ -54,12 +55,17 @@ export async function wordsForStation(
       phraseEn: true,
       phraseVi: true,
       skill: { select: { code: true } },
-      progress: { where: { studentId }, select: { box: true, dueAt: true, lastGame: true } },
     },
   });
+  const progress = await progressFor(
+    db,
+    studentId,
+    "word",
+    rows.map((r) => r.id),
+  );
 
   const schedulable: (SchedulableWord & { row: (typeof rows)[number] })[] = rows.map((row) => {
-    const p = row.progress[0];
+    const p = progress.get(row.id);
     return {
       wordId: row.id,
       box: p?.box ?? 0,
@@ -114,50 +120,37 @@ export interface WordMeetingResult {
 
 /** One meeting with one word, from one game. Never writes anything else. */
 export async function recordWordMeeting(db: Db, m: WordMeeting): Promise<WordMeetingResult> {
-  const now = m.now ?? new Date();
-  const before = await db.wordProgress.findUnique({
-    where: { studentId_wordId: { studentId: m.studentId, wordId: m.wordId } },
+  const result = await recordLexemeMeeting(db, {
+    studentId: m.studentId,
+    kind: "word",
+    lexemeId: m.wordId,
+    correct: m.correct,
+    game: m.game,
+    now: m.now,
   });
-  const after = reviewWord(
-    {
-      box: before?.box ?? 0,
-      dueAt: before?.dueAt ?? now,
-      seen: before?.seen ?? 0,
-      known: before?.known ?? 0,
-      streak: before?.streak ?? 0,
-      lastSeenAt: before?.lastSeenAt ?? null,
-    },
-    { correct: m.correct, now, game: m.game },
-  );
-  await db.wordProgress.upsert({
-    where: { studentId_wordId: { studentId: m.studentId, wordId: m.wordId } },
-    create: {
-      studentId: m.studentId,
-      wordId: m.wordId,
-      box: after.box,
-      dueAt: after.dueAt,
-      seen: after.seen,
-      known: after.known,
-      streak: after.streak,
-      lastSeenAt: after.lastSeenAt ?? now,
-      lastGame: m.game,
-    },
-    update: {
-      box: after.box,
-      dueAt: after.dueAt,
-      seen: after.seen,
-      known: after.known,
-      streak: after.streak,
-      lastSeenAt: after.lastSeenAt ?? now,
-      lastGame: m.game,
+  return { box: result.box, promoted: result.promoted, dueAt: result.dueAt, seen: result.seen };
+}
+
+/** How many of this skill's words the child has met since `since` — "a round was played". */
+export async function wordsMetSince(
+  db: Db,
+  studentId: string,
+  skillCode: string,
+  since: Date,
+): Promise<number> {
+  const ids = await db.word.findMany({
+    where: { skill: { code: skillCode } },
+    select: { id: true },
+  });
+  if (ids.length === 0) return 0;
+  return db.lexemeProgress.count({
+    where: {
+      studentId,
+      kind: "word",
+      lastSeenAt: { gte: since },
+      lexemeId: { in: ids.map((w) => w.id) },
     },
   });
-  return {
-    box: after.box,
-    promoted: after.box > (before?.box ?? 0),
-    dueAt: after.dueAt,
-    seen: after.seen,
-  };
 }
 
 export interface WordBookEntry {
@@ -199,14 +192,15 @@ export async function wordBook(db: Db, studentId: string): Promise<WordBook> {
       vi: true,
       picture: true,
       phraseEn: true,
+      id: true,
       skill: { select: { code: true, nameVi: true, order: true } },
-      progress: { where: { studentId }, select: { box: true, seen: true } },
     },
   });
+  const progress = await progressFor(db, studentId, "word");
 
   const byTopic = new Map<string, WordBook["topics"][number]>();
   for (const row of rows) {
-    const p = row.progress[0];
+    const p = progress.get(row.id);
     const topic = byTopic.get(row.skill.code) ?? {
       skillCode: row.skill.code,
       nameVi: row.skill.nameVi,

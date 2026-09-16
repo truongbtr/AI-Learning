@@ -9,7 +9,7 @@ import { imageRefSchema } from "./exercise";
  * meeting the word often enough to keep it. Children need a word 15–20 times, spaced out, before
  * it sticks; a word heard and said sticks better than a word read; and a word inside a phrase
  * sticks better than a word on its own. So every entry carries a picture, a voice, the Vietnamese
- * meaning and one short phrase — and `WordProgress` (ADR-22) counts the meetings.
+ * meaning and one short phrase — and `LexemeProgress` (ADR-22) counts the meetings.
  *
  * The children are six and cannot read English yet: the picture and the voice are the word, the
  * spelling is only there to become familiar.

@@ -20,6 +20,7 @@ import { fireConfetti } from "@/components/kid/feedback";
 import { Mascot, type MascotState } from "@/components/kid/mascot";
 import { playSound, preloadSounds } from "@/components/kid/sound";
 import { StarPocket } from "@/components/kid/stars";
+import { BrickRow } from "@/components/kid/syllable/station";
 import { useSpeak } from "@/components/kid/use-speak";
 import {
   CITY_INFO,
@@ -235,8 +236,11 @@ export function CityClient({
       } else if (open.length === 0) {
         void say(`Chào ${nickname}! Có thư của cô ở toà thị chính.`, "greet");
       } else {
+        // a Xưởng Tiếng station wears a cog, not a star (pha 12) — say what the child will see
+        const workshop = open[0]?.orders.some((o) => itemByOrder.get(o)?.syllable);
         void say(
-          `Chào ${nickname}! Tối nay ${info.name} có ${open.length} ngôi sao. Chạm vào ngôi sao nhé!`,
+          `Chào ${nickname}! Tối nay ${info.name} có ${open.length} ngôi sao. ` +
+            (workshop ? "Chạm vào bánh răng để vào Xưởng Tiếng nhé!" : "Chạm vào ngôi sao nhé!"),
           "greet",
         );
       }
@@ -564,17 +568,23 @@ export function CityClient({
       if (!skillId || seen.has(skillId)) continue;
       seen.add(skillId);
       const isNext = station === next;
+      // tonight's Xưởng Tiếng station wears a cog instead of a star (pha 12)
+      const workshop = station.orders.some((o) => itemByOrder.get(o)?.syllable);
       out.push({
         anchor: `skill:${skillId}`,
         key: `star:${skillId}`,
         node: (
           <StarBubble
-            label={`Ngôi sao ở toà nhà ${nameBySkillId.get(skillId) ?? ""}`}
+            label={
+              workshop
+                ? `Xưởng Tiếng ở toà nhà ${nameBySkillId.get(skillId) ?? ""}`
+                : `Ngôi sao ở toà nhà ${nameBySkillId.get(skillId) ?? ""}`
+            }
             pulse={isNext && !reduce}
             big={isNext}
             onTap={() => void openStation(station)}
           >
-            ⭐
+            {workshop ? "⚙️" : "⭐"}
           </StarBubble>
         ),
       });
@@ -599,6 +609,7 @@ export function CityClient({
   }, [
     homeworkLeft.length,
     idBySkillCode,
+    itemByOrder,
     mode,
     nameBySkillId,
     next,
@@ -663,6 +674,31 @@ export function CityClient({
               />
             </span>
           </button>
+          {/* Xưởng Tiếng (pha 12): the syllables this child keeps, and the bricks towards a house */}
+          {city === "viet" && view.workshop ? (
+            <motion.button
+              type="button"
+              whileTap={{ scale: 0.94 }}
+              onClick={() => {
+                playSound("cham");
+                void speak("Sổ tiếng của con");
+                router.push("/kid/so-tieng?from=city");
+              }}
+              className="flex min-h-[64px] w-[210px] items-center gap-2 rounded-[22px] bg-white/90 px-4 py-2 text-left shadow"
+              aria-label="Mở sổ tiếng"
+              data-testid="syllable-book-open"
+              data-houses={view.workshop.houses}
+              data-bricks={view.workshop.bricks}
+            >
+              <span className="text-[34px]" aria-hidden>
+                📒
+              </span>
+              <span className="flex flex-col gap-1">
+                <span className="font-extrabold text-[22px] text-[#1f3b63]">Sổ tiếng</span>
+                <BrickRow laid={view.workshop.bricks} size={9} />
+              </span>
+            </motion.button>
+          ) : null}
         </div>
 
         <div className="pointer-events-auto flex flex-col items-center gap-2">

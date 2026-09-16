@@ -12,6 +12,7 @@ import type { Prisma, PrismaClient } from "../../generated/client";
 import { PLANNER_MIX_SETTING } from "../ops/apply";
 import { activePlanSkills } from "../parent/plans";
 import { assessmentState, planAssessment } from "./assess";
+import { type SyllableStationSlot, syllableStations } from "./syllable-plan";
 
 type Db = PrismaClient;
 
@@ -222,6 +223,11 @@ export interface PickedSlot extends Slot {
    * instead of as one question. Which words is decided when the child opens it, not now.
    */
   vocab?: { game: string };
+  /**
+   * A Xưởng Tiếng station (pha 12): two spelling games over tonight's syllables instead of one
+   * question. Which syllables is decided when the child opens it.
+   */
+  syllable?: SyllableStationSlot;
   /** Why the picker could not fill it, when it could not. */
   missing?: string;
   /** Set on a `homework` slot: the teacher's task, done in the app (FR-LRN-07). */
@@ -298,7 +304,7 @@ export const MAX_VOCAB_STATIONS = 2;
  * 31 ESL.VOC skills carry 754 exercises and 40% of them are multiple choice, so an evening of
  * "vocabulary" was mostly answering questions *about* words. A station that plays with the words
  * instead — hears them, says them, matches them — is what actually makes them stick, and it is the
- * only thing that writes `WordProgress`.
+ * only thing that writes `LexemeProgress` for English words.
  *
  * Which game: whichever of the six the child has met least recently for that skill, so the same
  * skill is not always the same game. Slots with no words in the dictionary stay ordinary
@@ -328,16 +334,25 @@ export async function vocabStations(
   const haveWords = new Set(skills.map((s) => s.code));
 
   // What the child played last, per skill, so the game changes from evening to evening.
-  const recent = await db.wordProgress.findMany({
-    where: { studentId, word: { skill: { code: { in: [...haveWords] } } } },
+  const recent = await db.lexemeProgress.findMany({
+    where: { studentId, kind: "word", lastGame: { not: null } },
     orderBy: { lastSeenAt: "desc" },
-    take: 40,
-    select: { lastGame: true, word: { select: { skill: { select: { code: true } } } } },
+    take: 80,
+    select: { lastGame: true, lexemeId: true },
   });
+  const skillOfWord = new Map(
+    (
+      await db.word.findMany({
+        where: { id: { in: recent.map((r) => r.lexemeId) } },
+        select: { id: true, skill: { select: { code: true } } },
+      })
+    ).map((w) => [w.id, w.skill.code]),
+  );
   const lastGameOf = new Map<string, string>();
   for (const r of recent) {
-    const code = r.word.skill.code;
-    if (r.lastGame && !lastGameOf.has(code)) lastGameOf.set(code, r.lastGame);
+    const code = skillOfWord.get(r.lexemeId);
+    if (code && haveWords.has(code) && r.lastGame && !lastGameOf.has(code))
+      lastGameOf.set(code, r.lastGame);
   }
 
   let made = 0;
@@ -500,9 +515,15 @@ export async function planDailyQuest(
     theme: student?.mascot === "OWL" ? "GARDEN" : "ROBOT",
   });
 
+  const withGames = await syllableStations(
+    db,
+    studentId,
+    await vocabStations(db, studentId, practice),
+    date,
+  );
   const picked: PickedSlot[] = [
     ...homework,
-    ...(await vocabStations(db, studentId, practice)).map((slot, i) => ({
+    ...withGames.slots.map((slot, i) => ({
       ...slot,
       order: homework.length + i + 1,
     })),
@@ -516,7 +537,7 @@ export async function planDailyQuest(
       status: "PLANNED",
       slots: picked as unknown as Prisma.InputJsonValue,
       generationLog: {
-        log: plan.log,
+        log: [...plan.log, ...withGames.log],
         remediating: plan.remediating,
         missing: picked.filter((p) => p.missing).map((p) => p.missing),
         plannedAt: new Date().toISOString(),

@@ -41,7 +41,10 @@ export const FORBIDDEN_TARGETS = [
   "Session",
   "SkillMastery",
   "MasteryHistory",
-  // The child's memory of each English word (pha 11, ADR-22) — learning data like the rest.
+  // The child's memory of each English word and each Vietnamese syllable (ADR-22, pha 11–12) —
+  // learning data like the rest. The old name stays listed so a request written before the rename
+  // is refused just the same.
+  "LexemeProgress",
   "WordProgress",
   "User",
   "StudentGuardian",

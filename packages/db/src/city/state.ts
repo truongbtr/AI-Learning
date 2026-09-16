@@ -21,6 +21,7 @@ import {
   majoritySubject,
   planStations,
   type StationPlan,
+  SYLLABLE_BRICK_BOX,
   snapshotOf,
   stationCount,
   subjectToCity,
@@ -107,7 +108,11 @@ export async function starsBySubject(
 ): Promise<Record<CitySubject, number>> {
   const out = emptyStars();
   const rows = await db.starLedger.findMany({
-    where: { studentId, delta: { gt: 0 }, refType: { in: ["Attempt", "Session", "Homework"] } },
+    where: {
+      studentId,
+      delta: { gt: 0 },
+      refType: { in: ["Attempt", "Session", "Homework", ...Object.keys(GAME_STATION_SUBJECT)] },
+    },
     select: { delta: true, refType: true, refId: true },
   });
   const ids = (type: string) =>
@@ -138,11 +143,12 @@ export async function starsBySubject(
   for (const r of rows) {
     const ref = r.refId ?? "";
     const subject =
-      r.refType === "Attempt"
+      GAME_STATION_SUBJECT[r.refType ?? ""] ??
+      (r.refType === "Attempt"
         ? attemptSubject.get(ref)
         : r.refType === "Session"
           ? sessionSubject.get(ref)
-          : homeworkSubject.get(ref.split(":")[0] as string);
+          : homeworkSubject.get(ref.split(":")[0] as string));
     if (!subject) continue;
     const city = subjectToCity(subject);
     if (city in out) out[city] += r.delta;
@@ -150,11 +156,22 @@ export async function starsBySubject(
   return out;
 }
 
+/**
+ * Game stations have no Attempt: their star is keyed to the station (`<sessionId>-<order>`) and
+ * always belongs to one subject — Bến Cảng Từ to ESL, Xưởng Tiếng to Tiếng Việt.
+ */
+const GAME_STATION_SUBJECT: Record<string, string> = {
+  VocabStation: "ESL",
+  SyllableStation: "VIET",
+};
+
 type StoredSlot = {
   order?: number;
   skillCode?: string;
   exerciseId?: string | null;
   homework?: unknown;
+  vocab?: unknown;
+  syllable?: unknown;
   missing?: string;
   subject?: string;
 };
@@ -166,8 +183,10 @@ const attemptDone = (a: { gradedAt: Date | null; response: Prisma.JsonValue }) =
 export function stationsOfSession(
   slots: Prisma.JsonValue,
   attempts: { order: number; gradedAt: Date | null; response: Prisma.JsonValue }[],
+  /** Orders of game stations already played (they finish with a star, not an Attempt). */
+  gamesDone: ReadonlySet<number> = new Set(),
 ): StationPlan {
-  const done = new Set(attempts.filter(attemptDone).map((a) => a.order));
+  const done = new Set([...attempts.filter(attemptDone).map((a) => a.order), ...gamesDone]);
   const list = (Array.isArray(slots) ? slots : []) as StoredSlot[];
   return planStations(
     list
@@ -176,10 +195,17 @@ export function stationsOfSession(
         order: s.order as number,
         skillCode: s.skillCode ?? "",
         homework: !!s.homework,
-        missing: !s.homework && !s.exerciseId,
+        missing: !s.homework && !s.exerciseId && !s.vocab && !s.syllable,
         done: done.has(s.order as number),
       })),
   );
+}
+
+/** Orders of the slots in a session that are played as a game (vocabulary or syllables). */
+function gameOrders(slots: Prisma.JsonValue): number[] {
+  return ((Array.isArray(slots) ? slots : []) as StoredSlot[])
+    .filter((s) => typeof s.order === "number" && (s.vocab || s.syllable))
+    .map((s) => s.order as number);
 }
 
 async function loadShared(db: Db, studentId: string, at: Date): Promise<Shared> {
@@ -226,6 +252,16 @@ async function loadShared(db: Db, studentId: string, at: Date): Promise<Shared> 
       }),
     ]);
 
+  // game stations finish with a star keyed "<sessionId>-<order>" rather than with an Attempt
+  const gameStars = await db.starLedger.findMany({
+    where: {
+      studentId,
+      refType: { in: Object.keys(GAME_STATION_SUBJECT) },
+      refId: { in: sessions.flatMap((s) => gameOrders(s.slots).map((o) => `${s.id}-${o}`)) },
+    },
+    select: { refId: true },
+  });
+  const gameStarIds = new Set(gameStars.map((g) => g.refId));
   const citySessions = new Map<string, CitySessionState>();
   const questCities = new Set<string>();
   for (const session of sessions) {
@@ -242,7 +278,11 @@ async function loadShared(db: Db, studentId: string, at: Date): Promise<Shared> 
     citySessions.set(city, {
       id: session.id,
       status: session.status,
-      stations: stationsOfSession(session.slots, session.attempts),
+      stations: stationsOfSession(
+        session.slots,
+        session.attempts,
+        new Set(gameOrders(session.slots).filter((o) => gameStarIds.has(`${session.id}-${o}`))),
+      ),
     });
   }
 
@@ -350,6 +390,15 @@ async function loadCity(db: Db, studentId: string, city: CitySubject, shared: Sh
       });
     }
   }
+  const bricks =
+    city === "viet"
+      ? Math.max(
+          record.syllableBricks,
+          await db.lexemeProgress.count({
+            where: { studentId, kind: "syllable", box: { gte: SYLLABLE_BRICK_BOX } },
+          }),
+        )
+      : 0;
   const input: CityInput = {
     city,
     now: shared.now,
@@ -368,14 +417,19 @@ async function loadCity(db: Db, studentId: string, city: CitySubject, shared: Sh
     // Bến Cảng Từ: the words this child keeps bring boats into the harbour (pha 11).
     wordsKept:
       city === "esl"
-        ? await db.wordProgress.count({ where: { studentId, box: { gte: KNOWN_BOX } } })
+        ? await db.lexemeProgress.count({
+            where: { studentId, kind: "word", box: { gte: KNOWN_BOX } },
+          })
         : 0,
+    // Xưởng Tiếng: the syllables this child keeps are bricks in Phố Chữ (pha 12). The pile is a
+    // high-water mark, so a syllable forgotten for a while does not pull a house down.
+    syllableBricks: bricks,
   };
   const state = buildCityState(input);
-  if (state.skillOrder.length !== record.skillOrder.length) {
+  if (state.skillOrder.length !== record.skillOrder.length || bricks > record.syllableBricks) {
     await db.studentCity.update({
       where: { id: record.id },
-      data: { skillOrder: state.skillOrder },
+      data: { skillOrder: state.skillOrder, syllableBricks: bricks },
     });
   }
   return { state, record, session };

@@ -9,6 +9,7 @@ import {
   type PackIssue,
   validatePack,
 } from "./exercise-validate";
+import { checkVietLexicon, vietLexiconTtsLines } from "./lexicon-viet";
 import {
   emojiKey,
   emojiParts,
@@ -20,6 +21,7 @@ import {
   loadLessonUnitFiles,
   loadLexicon,
   loadSkillMaps,
+  loadVietLexicon,
   type NamedPack,
 } from "./load";
 import type { SkillDef } from "./skill-map";
@@ -98,6 +100,62 @@ export function runContentValidation(opts: { quiet?: boolean } = {}): ContentVal
     }
   } catch (err) {
     console.error(`ERR lexicon: ${(err as Error).message}`);
+    errors++;
+  }
+
+  // --- Syllable dictionary (pha 12) ---------------------------------------------------------
+  // Xưởng Tiếng builds every syllable out of three spoken tiles, so the file has to agree with the
+  // function that reads the tiles back, every skill has to exist, and every picture has to draw.
+  try {
+    const viet = loadVietLexicon();
+    if (viet) {
+      for (const problem of checkVietLexicon(viet)) {
+        console.error(`ERR lexicon/viet.json ${problem}`);
+        errors++;
+      }
+      const codes = new Set<string>([
+        ...viet.syllables.map((s) => s.skillCode),
+        ...viet.amDau.map((o) => o.skillCode),
+        ...viet.van.map((v) => v.skillCode),
+        ...viet.thanh.flatMap((t) => (t.skillCode ? [t.skillCode] : [])),
+      ]);
+      for (const code of codes) {
+        const skill = skills.get(code);
+        if (!skill) {
+          console.error(`ERR lexicon/viet.json: skill "${code}" does not exist`);
+          errors++;
+        } else if (skill.isActive === false) {
+          console.error(`ERR lexicon/viet.json: skill "${code}" is retired`);
+          errors++;
+        }
+      }
+      for (const s of viet.syllables) {
+        if (lessonCodes.size > 0 && !lessonCodes.has(s.lessonUnitCode)) {
+          console.error(`ERR lexicon/viet.json [${s.id}]: lesson ${s.lessonUnitCode} is unknown`);
+          errors++;
+        }
+        if (emojiPictures && s.tranh?.kind === "emoji") {
+          const missing = emojiParts(s.tranh.value).filter(
+            (p) => !emojiPictures.pictures.has(emojiKey(p)) && !emojiPictures.notInNoto.has(p),
+          );
+          if (missing.length > 0) {
+            console.error(
+              `ERR lexicon/viet.json [${s.id}]: emoji ${missing.join(" ")} has no picture — run \`pnpm art:emoji\``,
+            );
+            errors++;
+          }
+        }
+      }
+      const everyday = viet.syllables.filter((s) => s.hangNgay).length;
+      const pictured = viet.syllables.filter((s) => s.tranh).length;
+      const chars = vietLexiconTtsLines(viet).reduce((n, l) => n + l.text.length, 0);
+      log(
+        `OK  lexicon/viet: ${viet.syllables.length} tiếng (${everyday} hằng ngày, ${pictured} có tranh) · ` +
+          `${viet.amDau.length} âm đầu · ${viet.van.length} vần · ~${chars.toLocaleString("vi-VN")} ký tự TTS`,
+      );
+    }
+  } catch (err) {
+    console.error(`ERR lexicon/viet.json: ${(err as Error).message}`);
     errors++;
   }
 

@@ -5,6 +5,7 @@
 import { type CitySubject, cityToSubject, planSession, type Slot, vnDayDate } from "@mtct/core";
 import type { Prisma, PrismaClient } from "../../generated/client";
 import { type PickedSlot, pickExercises, plannerSnapshot } from "../session/plan";
+import { syllableStations } from "../session/syllable-plan";
 
 type Db = PrismaClient;
 
@@ -128,11 +129,14 @@ export async function planCitySession(
     },
   }));
 
+  // Phố Chữ: spelling practice is played in Xưởng Tiếng (pha 12). Other cities are unchanged.
+  const games =
+    city === "viet"
+      ? await syllableStations(db, studentId, practice.slice(0, CITY_SESSION_SLOTS), date)
+      : { slots: practice.slice(0, CITY_SESSION_SLOTS), log: [] as string[] };
   const slots: PickedSlot[] = [
     ...homeworkSlots,
-    ...practice
-      .slice(0, CITY_SESSION_SLOTS)
-      .map((slot, i) => ({ ...slot, order: homeworkSlots.length + i + 1 })),
+    ...games.slots.map((slot, i) => ({ ...slot, order: homeworkSlots.length + i + 1 })),
   ];
   const session = await db.session.create({
     data: {

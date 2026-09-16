@@ -5,6 +5,7 @@ import { type ExercisePack, parseExercisePack } from "./exercise";
 import { type LessonFile, parseLesson } from "./lesson";
 import { type LessonUnitsFile, parseLessonUnits } from "./lesson-units";
 import { type LexiconFile, parseLexicon } from "./lexicon";
+import { parseVietLexicon, type VietLexiconFile } from "./lexicon-viet";
 import { contentDir } from "./paths";
 import { parseSkillMap, type SkillMapFile } from "./skill-map";
 
@@ -50,6 +51,12 @@ export function loadSkillMaps(dir = contentDir("skill-map")): NamedSkillMap[] {
     name: `skill-map/${name}`,
     map: parseSkillMap(JSON.parse(readFileSync(join(dir, name), "utf8"))),
   }));
+}
+
+/** content/lexicon/viet.json — the syllable dictionary of pha 12; null while it does not exist. */
+export function loadVietLexicon(file = contentDir("lexicon", "viet.json")): VietLexiconFile | null {
+  if (!existsSync(file)) return null;
+  return parseVietLexicon(JSON.parse(readFileSync(file, "utf8")));
 }
 
 /** content/lexicon/esl.json — the picture dictionary of pha 11; null while it does not exist. */

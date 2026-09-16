@@ -256,6 +256,38 @@ Khi một kỹ năng vào `NEEDS_PRACTICE` hoặc có lỗi đang hoạt động
 
 Giới hạn để không chán: một kỹ năng đang rèn **không quá 4 bài/phiên**; hai kỹ năng đang rèn cùng lúc tối đa; luôn xen bài con làm được giữa các bài rèn (tỉ lệ đúng trong phiên mục tiêu ≥ 70%).
 
+### 11.4b Theo dõi theo từng tiếng — Xưởng Tiếng *(pha 12, ADR-24, ADR-22 bổ sung)*
+
+Mạch học vần có **hai sổ song song**, không trộn:
+
+- **`LexemeProgress` (`kind = syllable`)** — trí nhớ của bé với **từng tiếng** (707 tiếng trong
+  `content/lexicon/viet.json`), cùng thang Leitner 1-3-7-14-30 ngày của từ tiếng Anh (§ pha 11): làm đúng
+  → lên một bậc (một tối chỉ lên một bậc), chưa đúng → về bậc 1, gặp lại ngày mai. Tiếng ở **bậc ≥ 3**
+  là một viên gạch ở Phố Chữ và hiện trong Sổ tiếng.
+- **`SkillMastery` của `VIET.HV.*`** — vẫn cập nhật qua `Evidence` như §3.1: mỗi lần gặp một tiếng trong
+  trò chơi là **một** bằng chứng `EXERCISE` cho kỹ năng của tiếng đó (kỹ năng của phần muộn nhất trong
+  âm đầu/vần/thanh), với trọng số nhân theo trò: Lắp/Tách 0,6 · Bánh xe 0,5 · Đọc to 0,5 · Cặp 0,4 · Tàu
+  0,4. Đúng/sai do máy chủ so **từng mảnh** với tiếng trong DB, không lấy theo thiết bị.
+
+Mỗi tối planner lấy cho một trạm **5 tiếng đến hạn + 3 tiếng mới** (bé mới: tiếng hằng ngày trước; sau
+đó kỹ năng của trạm, rồi bài gần nhất lớp đã học). Câu hỏi ôn (`review`), thang rèn và bài cô giao vẫn là
+bài trắc nghiệm cũ.
+
+Mã lỗi khi con lắp khác tiếng mẫu — **không thêm mã mới**, dùng mã đã có trong §11.1, mỗi lần gặp một mã
+(khe âm đầu trước, rồi vần, rồi thanh):
+
+| Khe | Mã |
+|---|---|
+| âm đầu thuộc một cặp dễ lẫn | `nham_b_d`, `nham_ch_tr`, `nham_s_x`, `nham_ng_ngh`, `nham_c_k_q` |
+| âm đầu khác | `nham_am_dau` |
+| vần | `doc_nham_van` |
+| thanh hỏi ↔ ngã | `nham_hoi_nga` |
+| bỏ dấu (chọn thanh ngang) | `thieu_dau_thanh` |
+| thanh khác | `sai_dau_thanh` |
+
+Trò *Cặp dễ lẫn* ghi mã của cặp đang hỏi; *Tàu chở vần* chỉ ghi tiếng con tìm được (không có lỗi);
+*Đọc to* chỉ ghi khi máy hoặc ba mẹ xác nhận con đã đọc.
+
 ### 11.5 Nhìn thấy trên dashboard ba mẹ
 
 Thẻ "3 điều cần chú ý" của mỗi bé hiển thị theo mẫu: **lỗi gì · bao nhiêu lần · đang ở bậc mấy của thang rèn · ba mẹ có thể làm gì 5 phút tối nay**. Bấm vào thấy đúng những câu con đã sai (ảnh vở hoặc bài luyện).

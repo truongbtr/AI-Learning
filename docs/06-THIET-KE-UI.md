@@ -321,6 +321,47 @@ Dự án gia đình không có hoạ sĩ, nên tài sản đến từ ba nguồn
 
 Quy trình: mọi tài sản đặt trong `content/art/<loại>/` kèm `manifest.json` (tên, nhãn EN/VI, nguồn, giấy phép); script kiểm tra kích thước; ảnh nguồn AI giữ prompt trong manifest để tái sinh cùng phong cách. Tài sản là **việc của pha 3** và được bổ sung dần; pha 3 chưa cần đủ, nhưng phải có: 1 thế giới hoàn chỉnh, 2 mascot đủ 9 trạng thái, bộ hiệu ứng, ≥ 60 vật thể cho bài.
 
+### 1.10 Xưởng Tiếng — trò chơi đánh vần tiếng Việt *(pha 12, 16/09/2026, ADR-24)*
+
+**Âm ra trước, chữ là kết quả.** Con nghe → con lắp → máy đọc lại đúng cái con vừa lắp theo nhịp
+`cadence()` ("bờ – a – ba – huyền – bà") → tranh hiện ra xác nhận nghĩa. Chữ có trên mảnh để quen mặt,
+**không trò nào bắt con đọc chữ mới làm được**. Mảnh nào chạm vào cũng tự phát âm; âm đầu đọc **âm**
+("bờ"), không đọc tên chữ.
+
+Ba loại mảnh, phân biệt bằng **hình** trước khi con đọc được: âm đầu **hình vuông xanh dương**, vần
+**thanh dài xanh lá**, thanh **cái mũ cam** (dấu vẽ trên vòng chấm ◌̀). Không mảnh nào đỏ.
+
+| Trò | Kiểu | Con làm gì | Mở khi |
+|---|---|---|---|
+| **Lắp tiếng** (trò lõi) | `SYL_BUILD` | Máy đọc tiếng + hiện tranh. Mảnh trôi trên **băng chuyền**; kéo (hoặc chạm mảnh rồi chạm khe) một âm đầu, một vần, một mũ vào **3 khe** của máy. Đủ khe → bánh răng quay → máy đọc nhịp, từng khe sáng theo tiếng → tiếng sáng lên + tranh nảy. Lắp khác tiếng mẫu: máy vẫn đọc cái con lắp, rồi "Mình nghe lại tiếng mẫu nhé", mảnh không thuộc về trượt về băng chuyền (mảnh đúng ở lại); lần thứ hai máy tự lắp và đọc. 6–8 tiếng/vòng. | luôn |
+| **Tách tiếng** | `SYL_SPLIT` | Cùng cái máy, nhưng **chữ đã hiện sẵn**: con tách tiếng mình nhìn thấy thành ba mảnh mình nghe thấy. | ≥ 80 % lắp đúng với tiếng đã ở box ≥ 2 |
+| **Bánh xe thanh điệu** | `SYL_TONE` | Âm đầu + vần đứng yên; bánh xe 6 mũ xoay (ma/mà/má/mả/mã/mạ), nấc nào cũng đọc lên, tiếng có nghĩa hiện tranh. Máy đọc một tiếng, con xoay tới rồi bấm **Xong**. Ưu tiên bộ hỏi/ngã với bé hay lẫn. | đã học đủ 6 thanh và đã gặp ≥ 6 tiếng |
+| **Cặp dễ lẫn** | `SYL_PAIR` | Nghe một tiếng → chọn mặt chữ giữa **đúng hai** thẻ to (b/d, ch/tr, s/x, ng/ngh, c/k, hỏi/ngã). Thẻ không phát âm trước khi chọn. | luôn |
+| **Tàu chở vần** | `SYL_TRAIN` | Toa tàu chở một vần có thanh ("à"); con đặt âm đầu lên đầu tàu. Tiếng **có nghĩa** → một toa hàng mang tranh cập kho + máy đọc tiếng và nghĩa. Tiếng vô nghĩa → máy đọc thử rồi "Tiếng này chưa có nghĩa, thử cái khác nhé!". **Không có đáp án sai.** Hết khi tìm được 4 tiếng hoặc con bấm Xong. | ≥ 10 tiếng ở box ≥ 2 |
+| **Đọc to** | `SYL_READ` | Đọc to chính tiếng vừa lắp (cùng bộ so `matchReadAloud` của READ_ALOUD). Máy không nghe được thì "Con đọc cho ba mẹ nghe nhé!" + nút **Con đọc được rồi** (đường "cùng ba mẹ", docs/04 §7). Lần micro không nghe thấy **không** được ghi. | luôn |
+
+**Luật chung.** Mỗi vòng 30–60 giây, 6–8 tiếng; một trạm = 2 vòng khác loại, tối đa 2 trạm/tối (không
+làm buổi học dài thêm — docs/04 §4). Chạm là có tiếng + hình ngay; **nút loa nghe lại ở mọi màn**; mảnh
+ghép và thẻ **≥ 88 px**; không chữ "sai", không đỏ (kể cả emoji — viên gạch được **vẽ** bằng CSS vàng
+thay 🧱), không đồng hồ, không điểm. Mỗi trạm **một sao** (ADR-16). Trạm chạy ở **cả hai thế giới**; ở
+Phố Chữ, toà nhà có trạm mang **bánh răng ⚙️** thay ngôi sao. Câu hỏi ôn tập và bài cô giao cùng kỹ năng
+vẫn là bài thường và có thể đứng trước trò trong cùng một trạm.
+
+**Phố Chữ.** Mỗi tiếng vào box ≥ 3 là **một viên gạch**; đủ 10 gạch mọc **một ngôi nhà**. HUD có nút
+**📒 Sổ tiếng** với hàng 10 viên gạch (sáng = đã có, mờ = còn thiếu) — vẽ, không ghi phân số.
+
+**Sổ tiếng** (`/kid/so-tieng`, từ HUD Phố Chữ với `?from=city`): lưới các tiếng **đã thuộc** (box ≥ 3),
+xếp theo nhóm bài SGK, chạm để nghe lại; mở thẻ có nút **Nghe đánh vần** và dòng nhịp viết ra. Dùng
+**chung component** `LexemeBook` với Sổ từ (pha 11). Không phần trăm, không mục tiêu, không ô trống cho
+tiếng chưa học, không so sánh hai bé; chỉ ghi "N tiếng đã thuộc · M tiếng đang tập".
+
+**Xem thử** (admin, không ghi dữ liệu học): `/dev/syllable?game=build|split|tone|pair|train|read&tieng=bà,anh,quyển`.
+
+Ảnh từng trò: `docs/screens/pha-12-xuong-tieng/` (`x1`…`x10`, do `e2e/phase12-syllable.spec.ts` chụp).
+
+Chưa làm: **ngôi nhà Xưởng Tiếng trong cảnh 3D** — dữ liệu đã có (`CityView.workshop`), phần vẽ nối vào
+sau khi cảnh thành phố làm lại cho bản đồ Ecopark (ADR-24 cuối).
+
 ## 2. Bảng điều khiển ba mẹ — nguyên tắc
 
 - Dùng shadcn/ui, bố cục sidebar (laptop) / bottom tab (điện thoại). Tiếng Việt. Màu trung tính, điểm nhấn theo bé (dùng lại primary của bé để phân biệt nhanh).

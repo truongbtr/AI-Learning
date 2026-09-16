@@ -91,11 +91,11 @@ describe("words and the Leitner ladder (integration, needs the imported lexicon)
     const db = testDb();
     const [word] = await wordsForStation(db, student?.id ?? "", { skillCodes: [SKILL], count: 6 });
     if (!word) throw new Error("no word");
-    await db.wordProgress.upsert({
-      where: { studentId_wordId: { studentId: student?.id ?? "", wordId: word.wordId } },
+    const key = { studentId: student?.id ?? "", kind: "word" as const, lexemeId: word.wordId };
+    await db.lexemeProgress.upsert({
+      where: { studentId_kind_lexemeId: key },
       create: {
-        studentId: student?.id ?? "",
-        wordId: word.wordId,
+        ...key,
         box: 4,
         seen: 9,
         known: 8,

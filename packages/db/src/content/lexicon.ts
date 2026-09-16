@@ -2,7 +2,7 @@
  * Importing the picture dictionary of pha 11 (content/lexicon/esl.json → `Word`).
  *
  * SAFETY CONTRACT — like the exercise importer, this module only writes content: `Word` and
- * `ContentBatch`. It never touches `WordProgress`, which is the child's own memory of a word
+ * `ContentBatch`. It never touches `LexemeProgress`, which is the child's own memory of a word
  * (ADR-22), nor any other learning table. A word that leaves the file is deactivated, never
  * deleted, so the progress rows pointing at it keep their meaning.
  *

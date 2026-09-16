@@ -36,7 +36,8 @@ const DAY_MS = 86_400_000;
 /** docs/14 §3 — how far back the history files reach. */
 export const HISTORY_DAYS = 90;
 export const KEEP_DAYS = 90;
-export const SCHEMA_VERSION = 1;
+/** 2 (pha 12): word-progress.csv became lexemes.csv, with a `kind` column for syllables. */
+export const SCHEMA_VERSION = 2;
 /** docs/14 §3: a day's folder over this is a bug, not a big day. */
 export const MAX_DAY_BYTES = 5 * 1024 * 1024;
 
@@ -660,14 +661,17 @@ export async function exportOpsState(
     diaryRows.length,
   );
 
-  // ── word-progress.csv — which English words each child keeps (pha 11, ADR-22) ─────────────
-  // Read-only, like every other file here: `ops/requests` may not touch WordProgress at all.
-  const wordRows: (string | number)[][] = [];
+  // ── lexemes.csv — which English words and Vietnamese syllables each child keeps ──────────
+  // (pha 11 words, pha 12 syllables, ADR-22). Read-only, like every other file here: `ops/requests`
+  // may not touch LexemeProgress at all. One row per child × lexeme, `kind` says which bank.
+  const lexemeRows: (string | number)[][] = [];
   for (const s of students) {
-    const rows = await db.wordProgress.findMany({
+    const rows = await db.lexemeProgress.findMany({
       where: { studentId: s.id },
-      orderBy: [{ box: "desc" }, { dueAt: "asc" }],
+      orderBy: [{ kind: "asc" }, { box: "desc" }, { dueAt: "asc" }],
       select: {
+        kind: true,
+        lexemeId: true,
         box: true,
         dueAt: true,
         seen: true,
@@ -675,15 +679,37 @@ export async function exportOpsState(
         streak: true,
         lastSeenAt: true,
         lastGame: true,
-        word: { select: { stableId: true, en: true, skill: { select: { code: true } } } },
       },
     });
-    for (const r of rows)
-      wordRows.push([
+    const wordIds = rows.filter((r) => r.kind === "word").map((r) => r.lexemeId);
+    const syllableIds = rows.filter((r) => r.kind === "syllable").map((r) => r.lexemeId);
+    const [words, syllables] = await Promise.all([
+      wordIds.length
+        ? db.word.findMany({
+            where: { id: { in: wordIds } },
+            select: { id: true, stableId: true, en: true, skill: { select: { code: true } } },
+          })
+        : [],
+      syllableIds.length
+        ? db.syllable.findMany({
+            where: { id: { in: syllableIds } },
+            select: { id: true, stableId: true, text: true, skill: { select: { code: true } } },
+          })
+        : [],
+    ]);
+    const named = new Map<string, { stableId: string; text: string; skillCode: string }>();
+    for (const w of words)
+      named.set(w.id, { stableId: w.stableId, text: w.en, skillCode: w.skill.code });
+    for (const y of syllables)
+      named.set(y.id, { stableId: y.stableId, text: y.text, skillCode: y.skill.code });
+    for (const r of rows) {
+      const n = named.get(r.lexemeId);
+      lexemeRows.push([
         s.slug,
-        r.word.stableId,
-        r.word.en,
-        r.word.skill.code,
+        r.kind,
+        n?.stableId ?? r.lexemeId,
+        n?.text ?? "",
+        n?.skillCode ?? "",
         r.box,
         dayKey(r.dueAt),
         r.seen,
@@ -692,14 +718,16 @@ export async function exportOpsState(
         r.lastSeenAt ? dayKey(r.lastSeenAt) : "",
         r.lastGame ?? "",
       ]);
+    }
   }
   write(
-    "word-progress.csv",
+    "lexemes.csv",
     csvFile(
       [
         "student",
-        "wordId",
-        "en",
+        "kind",
+        "lexemeId",
+        "text",
         "skillCode",
         "box",
         "dueOn",
@@ -709,9 +737,9 @@ export async function exportOpsState(
         "lastSeenOn",
         "lastGame",
       ],
-      wordRows,
+      lexemeRows,
     ),
-    wordRows.length,
+    lexemeRows.length,
   );
 
   // ── meta + the page a person reads ────────────────────────────────────────────────────────

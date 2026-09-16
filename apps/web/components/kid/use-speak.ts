@@ -18,15 +18,29 @@ import { pickVoice } from "@/lib/tts/voices";
 
 export type SpeakState = "idle" | "loading" | "speaking" | "unavailable";
 
-let current: { audio?: HTMLAudioElement; utterance?: SpeechSynthesisUtterance } | null = null;
+let current: {
+  audio?: HTMLAudioElement;
+  utterance?: SpeechSynthesisUtterance;
+  /** Settles the caller's wait: a paused <audio> never fires "ended", so stopping must. */
+  done?: () => void;
+} | null = null;
+/**
+ * Bumped by every new line. A line whose mp3 is still downloading when a newer one starts must not
+ * play over it afterwards (pha 12: the spelling rhythm is several lines in a row).
+ */
+let generation = 0;
 
 function stopEverything() {
-  if (current?.audio) {
-    current.audio.pause();
-    current.audio.currentTime = 0;
+  const stopped = current;
+  current = null;
+  if (stopped?.audio) {
+    stopped.audio.pause();
+    stopped.audio.currentTime = 0;
   }
   if (typeof window !== "undefined" && "speechSynthesis" in window) window.speechSynthesis.cancel();
-  current = null;
+  // whoever was waiting for that line to finish goes on — otherwise a game waiting on its own
+  // voice freezes the moment a child touches something that speaks
+  stopped?.done?.();
 }
 
 async function loadVoices(): Promise<SpeechSynthesisVoice[]> {
@@ -67,6 +81,7 @@ export function useSpeak() {
     if (!trimmed) return false;
     const lang = opts.lang ?? "vi-VN";
     stopEverything();
+    const mine = ++generation;
     if (mounted.current) setState("loading");
 
     // 1. the server's audio (recorded clip, cached mp3, or cloud synthesis)
@@ -77,10 +92,11 @@ export function useSpeak() {
       const res = await fetch(url);
       if (res.ok && res.status !== 204) {
         const blob = await res.blob();
+        if (mine !== generation) return false; // a newer line has started meanwhile
         const audio = new Audio(URL.createObjectURL(blob));
-        current = { audio };
         if (mounted.current) setState("speaking");
         await new Promise<void>((resolve) => {
+          current = { audio, done: resolve };
           audio.onended = () => resolve();
           audio.onerror = () => resolve();
           void audio.play().catch(() => resolve());
@@ -109,9 +125,10 @@ export function useSpeak() {
     const prosody = kidProsody(lang);
     u.rate = prosody.rate;
     u.pitch = prosody.pitch;
-    current = { utterance: u };
+    if (mine !== generation) return false;
     if (mounted.current) setState("speaking");
     await new Promise<void>((resolve) => {
+      current = { utterance: u, done: resolve };
       u.onend = () => resolve();
       u.onerror = () => resolve();
       window.speechSynthesis.speak(u);

@@ -153,7 +153,7 @@ model Student {
   chatContexts      ChatContext[]
   parentNotices     ParentNotice[]
   cities            StudentCity[]
-  wordProgress      WordProgress[]
+  lexemeProgress    LexemeProgress[]
 }
 
 model StudentGuardian {
@@ -225,6 +225,7 @@ model Skill {
   exerciseSkills    ExerciseSkill[]
   planItems         PlanItem[]
   words             Word[]
+  syllables         Syllable[]
 
   @@index([subject, strand, order])
 }
@@ -1055,6 +1056,9 @@ model StudentCity {
   plotBuilds Json     @default("[]")
   /// Snapshot of the city the kid last saw, so each celebration plays once
   seen       Json?
+  /// Phố Chữ only: the most syllable bricks this child has ever had (pha 12, ADR-24). A syllable
+  /// that slips down the Leitner ladder does not take its brick back — the house stays up.
+  syllableBricks Int  @default(0)
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
 
@@ -1343,7 +1347,7 @@ enum ContentBatchKind {
   EXERCISES
   ART
   INTAKE
-  /// Từ điển hình của pha 11 (content/lexicon/)
+  /// Từ điển hình của pha 11 và kho tiếng của pha 12 (content/lexicon/)
   LEXICON
 }
 
@@ -1361,6 +1365,7 @@ model ContentBatch {
 
   exercises Exercise[]
   words     Word[]
+  syllables Syllable[]
 }
 
 enum InboxKind {
@@ -1610,7 +1615,7 @@ model ParentNotice {
 }
 
 /// Từ điển hình của pha 11 (content/lexicon/esl.json, ADR-9: soạn ngoại tuyến rồi nạp).
-/// Đây là **nội dung**, trình nạp được phép ghi; tiến độ của con nằm ở `WordProgress`.
+/// Đây là **nội dung**, trình nạp được phép ghi; tiến độ của con nằm ở `LexemeProgress` (kind=word).
 model Word {
   id        String   @id @default(cuid())
   /// `esl-family-mom` — khoá bền, đổi tên là thành từ khác.
@@ -1631,35 +1636,76 @@ model Word {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  progress WordProgress[]
-
   @@index([skillId, isActive])
 }
 
-/// Trí nhớ từng từ của từng bé — lịch Leitner 1-3-7-14 ngày (ADR-22).
-/// **Dữ liệu học của con**: ops/requests không được chạm, ops:export chỉ đọc.
-model WordProgress {
-  id         String   @id @default(cuid())
-  studentId  String
-  student    Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
-  wordId     String
-  word       Word     @relation(fields: [wordId], references: [id], onDelete: Cascade)
-  /// 0 = chưa gặp, 1..5 = bậc Leitner; bậc 5 là "thuộc rồi".
-  box        Int      @default(0)
-  /// Ngày hẹn gặp lại (docs/04: 1-3-7-14 ngày, bậc 5 là 30 ngày).
-  dueAt      DateTime @default(now())
-  /// Số lần con gặp từ này, và số lần nhận ra đúng.
-  seen       Int      @default(0)
-  known      Int      @default(0)
-  /// Chuỗi đúng liên tiếp hiện tại — rớt một lần là về 0.
-  streak     Int      @default(0)
-  lastSeenAt DateTime?
-  /// Trò chơi gần nhất đã dùng từ này, để không lặp lại đúng một kiểu.
-  lastGame   String?
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+/// Kho tiếng của Xưởng Tiếng (pha 12, content/lexicon/viet.json, ADR-24).
+/// **Nội dung** như `Word`: trình nạp ghi, không bao giờ xoá — tiếng rời file thì chỉ bị tắt.
+model Syllable {
+  id             String        @id @default(cuid())
+  /// `viet-ba-huyen` — khoá bền; đổi là thành tiếng khác.
+  stableId       String        @unique
+  /// Tiếng như sách viết: "bà", "quyển".
+  text           String
+  /// Âm đầu ("" khi không có), vần (không mang dấu thanh), thanh (ngang|huyen|sac|hoi|nga|nang).
+  onset          String
+  rime           String
+  tone           String
+  /// ImageRef, hoặc null khi không có tranh nào nói đúng nghĩa.
+  picture        Json?
+  meaning        String
+  skillId        String
+  skill          Skill         @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  /// Bài SGK muộn nhất trong ba phần của tiếng, và tuần tương ứng.
+  lessonUnitCode String
+  week           Int
+  /// Tiếng con nghe hằng ngày — mời trước, trước cả thứ tự sách.
+  everyday       Boolean       @default(false)
+  /// Vị trí trong file: nhóm hằng ngày trước, rồi thứ tự sách.
+  position       Int           @default(0)
+  isActive       Boolean       @default(true)
+  batchId        String?
+  batch          ContentBatch? @relation(fields: [batchId], references: [id], onDelete: SetNull)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
 
-  @@unique([studentId, wordId])
-  @@index([studentId, dueAt])
-  @@index([studentId, box])
+  @@index([skillId, isActive])
+  @@index([week, isActive])
+}
+
+enum LexemeKind {
+  word
+  syllable
+}
+
+/// Trí nhớ của từng bé với từng **từ** tiếng Anh (pha 11) và từng **tiếng** Việt (pha 12) — lịch
+/// Leitner 1-3-7-14-30 ngày (ADR-22 và phần bổ sung).
+/// `lexemeId` là `Word.id` khi `kind=word`, là `Syllable.id` khi `kind=syllable`. Không có khoá
+/// ngoại vì một cột không trỏ được hai bảng; nội dung không bao giờ bị xoá (chỉ tắt) nên dòng tiến độ
+/// không mồ côi, còn xoá bé thì vẫn xoá theo qua `studentId`.
+/// **Dữ liệu học của con**: ops/requests không được chạm, ops:export chỉ đọc.
+model LexemeProgress {
+  id         String     @id @default(cuid())
+  studentId  String
+  student    Student    @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  kind       LexemeKind
+  lexemeId   String
+  /// 0 = chưa gặp, 1..5 = bậc Leitner; bậc 5 là "thuộc rồi".
+  box        Int        @default(0)
+  /// Ngày hẹn gặp lại (docs/04: 1-3-7-14 ngày, bậc 5 là 30 ngày).
+  dueAt      DateTime   @default(now())
+  /// Số lần con gặp, và số lần làm đúng.
+  seen       Int        @default(0)
+  known      Int        @default(0)
+  /// Chuỗi đúng liên tiếp hiện tại — rớt một lần là về 0.
+  streak     Int        @default(0)
+  lastSeenAt DateTime?
+  /// Trò chơi gần nhất đã dùng, để lần sau hỏi theo kiểu khác.
+  lastGame   String?
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+
+  @@unique([studentId, kind, lexemeId])
+  @@index([studentId, kind, dueAt])
+  @@index([studentId, kind, box])
 }

@@ -179,6 +179,37 @@ không chơi **với** từ, và hệ thống không biết con thuộc từ nà
 
 ---
 
+## Pha 12 — Xưởng Tiếng: trò chơi đánh vần tiếng Việt *(16/09/2026, ưu tiên trước pha bản đồ Ecopark)*
+
+Lý do: kho có 3.422 bài học vần nhưng **dạng bài** sai — bài đánh vần lõi bắt con **đọc** ba đáp án chữ
+để trả lời câu hỏi về việc đọc; con đoán, đoán trúng thì mastery lên. Nguyên tắc cả pha: **âm ra trước,
+chữ là kết quả** (ADR-24).
+
+1. **Kho tiếng** `content/lexicon/viet.json` (707 tiếng, 27 âm đầu, 125 vần tập một; 30 tiếng hằng ngày
+   đứng đầu, gồm tên hai bé) + hàm thuần `cadence()` cho nhịp "bờ – a – ba – huyền – bà" + mp3
+   `vi-VN-HoaiMyNeural` sinh lúc nạp, chia đợt `pieces` / `rhythm` (`--viet-tts`).
+2. **`WordProgress` → `LexemeProgress`** (`kind: word | syllable`, migration đổi tên tại chỗ); dùng lại
+   Leitner 1-3-7-14-30; mỗi lần gặp tiếng ghi thêm `Evidence` cho `VIET.HV.*` với mã lỗi có sẵn.
+3. **Sáu trò** Lắp tiếng · Tách tiếng · Bánh xe thanh điệu · Cặp dễ lẫn · Tàu chở vần · Đọc to trong
+   khung `exercise-play.tsx` (docs/06 §1.10).
+4. **Planner + Phố Chữ**: tối đa 2 trạm/tối, mỗi trạm 2 vòng khác loại, thay ô `focus/new` học vần và
+   nhường chỗ để buổi không dài thêm; ôn tập & bài cô giao giữ bài cũ. Tiếng box ≥ 3 = một viên gạch,
+   10 gạch = một ngôi nhà; **Sổ tiếng** dùng chung component với Sổ từ.
+5. **Kiểm tra & tài liệu**: `e2e/phase12-syllable.spec.ts`, test nhịp phát mp3 cho 5 tiếng mẫu, docs 03/04/06/14,
+   ADR-24, bổ sung ADR-22.
+
+**Tiêu chí xong**
+
+1. Một trạm Xưởng Tiếng chơi được từ đầu đến cuối ở Phố Chữ và ở thế giới cũ; không chữ "sai", không
+   đỏ, không đồng hồ; mảnh ghép ≥ 88 px.
+2. Mỗi lần gặp tiếng ghi đúng một dòng `LexemeProgress` `kind=syllable` và một `Evidence`; không
+   `Attempt`; một tối chỉ lên một bậc.
+3. Nhịp phát ra đúng thứ tự `cadence()` (có test cho "anh" và "quyển").
+4. `content:validate` sạch; `pnpm lint && pnpm test && pnpm build` xanh; e2e pha 10, 11, thế giới cũ xanh.
+5. **Chưa deploy** — chủ dự án xem trên máy dev; xác nhận nhịp với cô giáo trước khi sinh mp3 đợt 2.
+
+---
+
 ## Việc của chủ dự án (gom theo pha — developer nhắc trong báo cáo cuối pha trước)
 
 | Trước pha | Cần chuẩn bị |

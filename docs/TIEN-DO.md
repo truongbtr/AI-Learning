@@ -2,6 +2,125 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 12 — 16/09/2026 — Xưởng Tiếng: trò chơi đánh vần tiếng Việt
+
+> Bản đồ vành đai (mục "Pha 12" bên dưới) đã hoàn tác; số pha 12 dùng cho Xưởng Tiếng theo đề bài.
+> ADR-23 vẫn giữ số của nó, nên ADR của pha này là **ADR-24**.
+
+Trạng thái: **việc 1–5 xong trên máy dev, CHƯA deploy.** `pnpm lint` sạch, `pnpm test` xanh (core 335 ·
+db 145 · web 71 · content 69 · city 72 · inbox 18), `pnpm build` xanh, `content:validate` sạch.
+
+### Việc 1 — kho tiếng, nhịp đánh vần, mp3
+
+- `content/lexicon/viet.json`: **707 tiếng** (305 có tranh Noto), **27 âm đầu**, **125 vần** tập một
+  (đề bài ước ~160 là tính cả tập hai), 6 thanh. 30 tiếng đầu là tiếng hằng ngày, có **thy** và
+  **thanh** (viết thường — trò lắp bằng mảnh chữ thường). Rút từ 1.154 chuỗi trong 93 gói `HV.*`, bỏ
+  tiếng vô nghĩa, soạn nghĩa + tranh. Bài/tuần/kỹ năng **suy ra** từ phần muộn nhất của tiếng.
+- `cadence()` thuần ở `packages/core/src/syllable/cadence.ts`; 50 ca test (có/không âm đầu, thanh
+  ngang, vần có âm cuối, `oan`, `uyên`, `ươu`, `gi`, `qu`).
+- `content:validate` kiểm từng tiếng bằng chính hàm tách/ghép của trò chơi; `pnpm art:emoji` thêm 34
+  tranh mới.
+- **TTS** (`vi-VN-HoaiMyNeural`), ước lượng trước khi chạy: đợt `pieces` 1.237 câu / 3.971 ký tự; đợt
+  `rhythm` 723 câu / 16.208 ký tự; cả hai 20.172 ký tự. Hạn mức tháng trước khi chạy **159.033 /
+  500.000 (32 %)** → cả hai đợt vẫn dưới 37 %, **không cần chia vì hạn mức**. Vẫn chia vì nhịp đọc chưa
+  được cô giáo xác nhận: trên máy dev đã sinh **đợt 1** (`--viet-tts pieces`): 776 mp3 mới, 979 đã có sẵn,
+  0 lỗi, mất 50 phút ở tốc độ gói F0; bộ đếm tháng giờ ghi **166.832** (bộ đếm ước theo thứ tự câu nên
+  ghi dư ~4 nghìn ký tự so với thực tế — dư là an toàn). Đợt 2 chưa sinh.
+
+### Việc 2 — `WordProgress` → `LexemeProgress`
+
+Migration `20260916160000_phase12_syllables_and_lexeme_progress`: đổi tên bảng tại chỗ, `wordId` →
+`lexemeId`, thêm `kind` (dòng cũ = `word`), bỏ khoá ngoại sang `Word`; bảng nội dung `Syllable`;
+`StudentCity.syllableBricks`. Một module ghi duy nhất (`packages/db/src/lexeme/progress.ts`). Đã cập nhật
+planner, trạm từ vựng, thành phố, `ops/requests` (chặn cả hai tên), `ops:export` (`lexemes.csv`,
+`schemaVersion` 2, dòng trong `ops/CHANGELOG.md`), docs/03, docs/14, bổ sung ADR-22.
+**Lỗ hổng pha 11 được vá luôn**: `db:reset-learning` và `db:export-student` trước đây **không** đụng tới
+`WordProgress`; giờ có `LexemeProgress`.
+Mỗi lần gặp tiếng ghi thêm **một `Evidence`** cho `VIET.HV.*` (qua `commitEvidence`) — **không cần mã
+lỗi mới**: `nham_am_dau`, `doc_nham_van`, `nham_hoi_nga`, `thieu_dau_thanh`, `sai_dau_thanh` và 5 mã cặp
+dễ lẫn đều đã có.
+
+### Việc 3 — sáu trò
+
+`apps/web/components/kid/syllable/`: Lắp tiếng (băng chuyền, 3 khe, máy đọc nhịp, khe sáng theo tiếng),
+Tách tiếng, Bánh xe thanh điệu, Cặp dễ lẫn (đúng 2 thẻ), Tàu chở vần (không có đáp án sai), Đọc to (cùng
+`matchReadAloud`, đường "cùng ba mẹ"). Chạy trong `exercise-play.tsx`; API `POST /api/kid/syllable`
+kiểm vai trò + quyền trên bé + trạm thuộc phiên của bé, **tự chấm từng mảnh**. Bộ sinh vòng thuần
+(`rounds.ts`) có 23 test trên kho thật: không trùng tiếng, nhiễu là âm đầu/vần/thanh **thật**, đúng số
+lượng. Bàn thử admin `/dev/syllable` (không ghi dữ liệu).
+
+**Lỗi tìm ra khi chạy thật với mp3**: `useSpeak` dừng câu cũ bằng `pause()` nhưng không báo cho người
+đang chờ câu đó — `<audio>` bị dừng không bao giờ phát `ended`, nên trò nào chờ giọng đọc sẽ **đứng
+hình** khi có câu khác chen vào. Đã sửa ở `use-speak.ts` (dừng là báo xong; câu tải xong muộn không
+được phát đè câu mới). Sửa chung cho mọi màn của con.
+
+### Việc 4 — planner, Phố Chữ, Sổ tiếng
+
+- Tối đa 2 trạm/tối; chỉ ô `focus/new` của `VIET.HV.*`; một trạm nuốt tối đa 3 ô học vần, thiếu thì
+  nhường chỗ ô `focus/new` cuối buổi — **buổi không dài thêm** (ghi vào `generationLog`). Ôn tập, thang
+  rèn, bài cô giao giữ bài cũ. 5 tiếng đến hạn + 3 tiếng mới mỗi trạm. Chạy ở cả Daily Quest (thế giới
+  cũ) và Phố Chữ.
+- Phố Chữ: trạm có **bánh răng ⚙️**; nút **Sổ tiếng** ở HUD với hàng gạch vẽ; box ≥ 3 = 1 gạch,
+  10 gạch = 1 nhà (mốc cao nhất, không tụt). Sao của trạm trò chơi giờ tính vào đúng thành phố
+  (`SyllableStation` → Tiếng Việt, và `VocabStation` → Tiếng Anh — trước đây sao Bến Cảng Từ không vào
+  thành phố nào).
+- Thành phố trước đây coi mọi ô không có `exerciseId` là "thiếu bài" → trạm trò chơi **không hiện** trong
+  thành phố; đã sửa.
+- `/kid/so-tieng` và Sổ từ dùng chung `components/kid/lexeme-book.tsx`.
+
+### Việc 5 — kiểm tra
+
+| Kiểm tra | Kết quả |
+|---|---|
+| `e2e/phase12-syllable.spec.ts` — Mai Thy → Phố Chữ → ⚙️ → 2 vòng | **xanh**: Lắp tiếng 8 tiếng + Cặp dễ lẫn 7 tiếng, mỗi lần lắp nhịp khớp `cadence()`, `LexemeProgress` `kind=syllable` tăng đúng 15 lần gặp, dòng `word` không đổi, quét không "sai"/đỏ/đồng hồ |
+| Sổ tiếng | **xanh**: số thẻ = số tiếng box ≥ 3, không %, không phân số |
+| Nhịp mp3 cho 5 tiếng mẫu (bà, **anh**, **quyển**, nghé, mẹ) | **xanh** ở `cadence-player.test.ts` (thứ tự fetch `/api/tts`, không bao giờ hai câu cùng lúc) |
+| 3 test trên bàn thử admin (nhịp trên bàn thử, Tàu chở vần, 4 trò còn lại) | **bỏ qua** — cần `E2E_ADMIN_PASSWORD`, `.env` không có; developer không gõ mật khẩu thật của chủ dự án. Sáu màn có thêm test dựng HTML (`games.test.ts`) |
+| e2e pha 10 (Thành Số, thành phố lạ) | **xanh** |
+| e2e pha 10 "đảo sáu thành phố" | **đỏ trên `next dev`**: nút Next.js Dev Tools đè lên cửa ba mẹ ở góc — không liên quan pha này, chạy trên bản build sẽ không có nút đó |
+| e2e pha 11 | cả file bỏ qua khi thiếu `E2E_ADMIN_PASSWORD`; Sổ từ đã kiểm riêng bằng một lần chạy tạm |
+| e2e thế giới cũ (pha 3, 5 test) | **xanh**; một lần chạy đi qua trạm Xưởng Tiếng (Lắp tiếng 8 + Bánh xe 4); walker pha 3 đã học cách chơi trạm |
+
+Ảnh: `docs/screens/pha-12-xuong-tieng/` (x3 Phố Chữ với bánh răng, x4 Lắp tiếng, x10 Sổ tiếng; x1, x2,
+x5–x9 sẽ có khi chạy với `E2E_ADMIN_PASSWORD`).
+Docker dev (cổng 5000) đã build lại image web + worker cho khớp bảng mới.
+
+### Chưa làm + giả định
+
+- **Ngôi nhà Xưởng Tiếng trong cảnh 3D**: `CityView.workshop` đã có, nhưng `compose.ts` đang được làm lại
+  song song (phiên khác, bản đồ Ecopark) — không đụng để khỏi giẫm chân. Trong thành phố hiện có bánh
+  răng trên toà nhà của trạm + đống gạch/ số nhà ở HUD và Sổ tiếng.
+- Luật mở Bánh xe thanh (đủ 6 thanh + đã gặp 6 tiếng) và Tàu chở vần (10 tiếng box ≥ 2) là **diễn giải**
+  của developer; đề bài chỉ nêu điều kiện của Tách tiếng.
+- Bảng giữ tên cột `box` (0–5) và `known` thay vì `box 0-4`/`correct` để không đổi nghĩa dữ liệu pha 11.
+- Enum `ExerciseType` không thêm `SYL_*` (không có dòng bài nào dùng) — ADR-24 §4.
+
+### Lệnh deploy (khi chủ dự án đồng ý — chưa chạy)
+
+Như mọi lần (git bundle → server, backup DB trước), rồi:
+
+```
+docker compose build web worker
+docker compose up -d web worker          # web tự chạy migration: ĐỔI TÊN WordProgress → LexemeProgress
+                                         # (dữ liệu từ vựng pha 11 của hai bé được giữ, thành kind=word)
+docker compose exec web sh -c 'cd /app/packages/db && . /app/docker/env.sh && pnpm exec tsx src/cli/content-import.ts --dir content/lexicon --viet-tts pieces --tts-pace 3300'
+                                         # 707 tiếng + đợt 1 mp3: tối đa 3.971 ký tự, ~50 phút — chạy ngoài 18:00–21:00
+# sau khi cô giáo xác nhận nhịp:
+docker compose exec web sh -c '… content-import.ts --dir content/lexicon --viet-tts all --tts-pace 3300'
+                                         # đợt 2: tối đa 16.208 ký tự
+```
+
+### Câu hỏi cho chủ dự án
+
+1. **Nhịp đánh vần trên lớp 1B3 có đúng là "bờ – a – ba – huyền – bà" không** (đọc âm, không đọc tên
+   chữ; thanh ngang không gọi tên; tiếng không âm đầu như "anh" chỉ đọc một lần)? Cần trả lời **trước khi
+   sinh mp3 đợt 2**. Nếu khác, chỉ sửa `cadence()`.
+2. `nham_am_dau` trong bộ mã lỗi đang gắn môn **ESL**, nhưng pha này (và gói `HV.DANH_VAN_TIENG` có sẵn)
+   dùng nó cho tiếng Việt như đề bài dặn. Có muốn tách một mã riêng cho tiếng Việt không?
+3. Tên hai bé trong kho tiếng viết thường ("thy", "thanh") để lắp được bằng mảnh chữ thường. Được không,
+   hay muốn trò hiện chữ hoa riêng cho tên?
+4. Có muốn đặt `E2E_ADMIN_PASSWORD` trong `.env` máy dev để ba test bàn thử (và e2e pha 11) chạy được?
+
 ## Pha 12 — 16/09/2026 — Bản đồ thành phố kiểu vành đai, sông và bến cảng, giao thông ngẫu nhiên
 
 > **ĐÃ HOÀN TÁC trên production, chiều 16/09/2026.** Chủ dự án xem bản đồ mới trên máy thật:

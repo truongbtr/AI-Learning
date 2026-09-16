@@ -301,13 +301,13 @@ describe("ops:export — the snapshot Claude chat reads (docs/14 §3)", () => {
         "error-stats.csv",
         "evidence.csv",
         "exercise-health.csv",
+        "lexemes.csv",
         "mastery-history.csv",
         "mastery.csv",
         "meta.json",
         "remediation.csv",
         "sessions.csv",
         "students.csv",
-        "word-progress.csv",
       ].sort(),
     );
     expect(result.totalBytes).toBeLessThan(5 * 1024 * 1024);
@@ -341,7 +341,7 @@ describe("ops:export — the snapshot Claude chat reads (docs/14 §3)", () => {
       schemaVersion: number;
       files: { name: string }[];
     };
-    expect(meta.schemaVersion).toBe(1);
+    expect(meta.schemaVersion).toBe(2); // 2 since pha 12: lexemes.csv
   });
 
   it("keeps 90 days and drops what is older", () => {

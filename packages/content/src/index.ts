@@ -5,6 +5,7 @@ export * from "./exercise-validate";
 export * from "./lesson";
 export * from "./lesson-units";
 export * from "./lexicon";
+export * from "./lexicon-viet";
 export * from "./load";
 export * from "./paths";
 export * from "./skill-map";

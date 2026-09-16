@@ -22,6 +22,12 @@ describe("what a learning-data reset may and may not touch (docs/08 pha 8 việc
       expect(LEARNING_TABLES as readonly string[]).toContain(table);
   });
 
+  it("empties the Leitner memory of words and syllables, and keeps the dictionaries", () => {
+    expect(LEARNING_TABLES as readonly string[]).toContain("LexemeProgress");
+    for (const table of ["Word", "Syllable"])
+      expect(PROTECTED_TABLES as readonly string[]).toContain(table);
+  });
+
   it("empties the three tables whose dates were a day out", () => {
     // ADR-18's closing note: Session.date, Streak.lastActiveDate, EggProgress.startedOn.
     for (const table of ["Session", "Streak", "EggProgress"])

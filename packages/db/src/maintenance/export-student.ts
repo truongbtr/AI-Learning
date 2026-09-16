@@ -34,6 +34,8 @@ export interface StudentExport {
   plans: Record<string, unknown>[];
   external: Record<string, unknown>[];
   rewards: Record<string, unknown>;
+  /** The English words and Vietnamese syllables the child has met, with their Leitner box. */
+  lexemes: Record<string, unknown>[];
   counts: Record<string, number>;
 }
 
@@ -112,6 +114,23 @@ export async function exportStudent(db: PrismaClient, slug: string): Promise<Stu
     where: { studentId },
     orderBy: { subject: "asc" },
   });
+
+  // Words (pha 11) and syllables (pha 12) the child has met — the Leitner memory of ADR-22.
+  const lexemeRows = await db.lexemeProgress.findMany({
+    where: { studentId },
+    orderBy: [{ kind: "asc" }, { lastSeenAt: "asc" }],
+  });
+  const lexemeText = new Map<string, string>();
+  for (const w of await db.word.findMany({
+    where: { id: { in: lexemeRows.filter((r) => r.kind === "word").map((r) => r.lexemeId) } },
+    select: { id: true, en: true },
+  }))
+    lexemeText.set(w.id, w.en);
+  for (const y of await db.syllable.findMany({
+    where: { id: { in: lexemeRows.filter((r) => r.kind === "syllable").map((r) => r.lexemeId) } },
+    select: { id: true, text: true },
+  }))
+    lexemeText.set(y.id, y.text);
 
   const out: StudentExport = {
     $schema: "mtct/student-export/1",
@@ -278,7 +297,17 @@ export async function exportStudent(db: PrismaClient, slug: string): Promise<Stu
           }
         : null,
     },
+    lexemes: lexemeRows.map((r) => ({
+      kind: r.kind,
+      text: lexemeText.get(r.lexemeId) ?? null,
+      box: r.box,
+      seen: r.seen,
+      known: r.known,
+      lastSeenAt: stamp(r.lastSeenAt),
+      dueOn: day(r.dueAt),
+    })),
     counts: {
+      lexemes: lexemeRows.length,
       mastery: mastery.length,
       evidence: evidence.length,
       sessions: sessions.length,
