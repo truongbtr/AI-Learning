@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Mascot } from "../mascot";
 import { playSound } from "../sound";
 import { SPRING } from "../tokens";
@@ -43,7 +43,6 @@ export function VocabStation({
   const { speak } = useSpeak();
   const [state, setState] = useState<"intro" | "playing" | "done">("intro");
   const [promoted, setPromoted] = useState(0);
-  const sent = useRef(new Set<string>());
 
   const title = GAME_NAMES[game];
 
@@ -57,9 +56,6 @@ export function VocabStation({
 
   const onMeeting = useCallback(
     ({ wordId, correct }: { wordId: string; correct: boolean }) => {
-      // Same word, same game, twice in a round: the server would only count the first anyway.
-      const key = `${wordId}:${sent.current.size}`;
-      sent.current.add(key);
       void fetch("/api/kid/vocab", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
