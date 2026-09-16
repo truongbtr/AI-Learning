@@ -127,8 +127,9 @@ function chamferBoxGeometry(w: number, h: number, d: number, c: number): BufferG
   for (let i = 0; i < 8; i++) {
     const a = ring[i] as [number, number];
     const b = ring[(i + 1) % 8] as [number, number];
-    const nx = b[1] - a[1];
-    const nz = -(b[0] - a[0]);
+    // outward: the ring runs anticlockwise seen from above, so the outside is on the edge's left
+    const nx = a[1] - b[1];
+    const nz = b[0] - a[0];
     const len = Math.hypot(nx, nz) || 1;
     const quad = [
       [a[0], y0, a[1]],
@@ -151,7 +152,10 @@ function chamferBoxGeometry(w: number, h: number, d: number, c: number): BufferG
       const a = ring[0] as [number, number];
       const b = ring[i] as [number, number];
       const cc = ring[i + 1] as [number, number];
-      const tri = ny > 0 ? [a, cc, b] : [a, b, cc];
+      // wound so the lid faces up and the base faces down. It was the other way round: the bake
+      // dropped every lid as a face turned away from the camera, and a bus with no roof of its own
+      // was a hollow shell with its floor showing (owner, 16/09).
+      const tri = ny > 0 ? [a, b, cc] : [a, cc, b];
       for (const v of tri) {
         pos.push(v[0], y, v[1]);
         nor.push(0, ny, 0);
