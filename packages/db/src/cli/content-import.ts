@@ -1,5 +1,6 @@
 /**
- * `pnpm content:import [--dir content/exercises/vmath] [--dry-run] [--no-tts] [--tts-pace 3300] [--note "..."]`
+ * `pnpm content:import [--dir content/exercises/vmath] [--dry-run] [--no-tts] [--respec]
+ *  [--tts-pace 3300] [--note "..."]`
  * (docs/10 sec. 5 step 4).
  *
  * 1. validates everything first — a dirty bank is never imported;
@@ -34,6 +35,11 @@ const dryRun = args.flags.has("dry-run");
 const dirArg = args.values.get("dir");
 const note = args.values.get("note");
 const skipTts = args.flags.has("no-tts");
+/**
+ * `--respec` — rewrite the stored `spec`/`answerKey` of every exercise read, even when its text is
+ * unchanged. For the day the *shape* of the client spec changes (pha 11: `dropZones[].expect`).
+ */
+const respec = args.flags.has("respec");
 /** `--tts-pace 3300` — ms between two synthesis requests; the free Azure tier needs about that. */
 const pacing = Number.parseInt(args.values.get("tts-pace") ?? "", 10);
 
@@ -85,6 +91,7 @@ async function main() {
     note,
     // A scoped import must not retire the exercises of the skills it did not look at.
     retireMissing: true,
+    respec,
   });
   console.log(
     `exercises: ${result.created} new, ${result.updated} updated, ${result.revived} revived, ` +

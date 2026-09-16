@@ -79,7 +79,7 @@ const SAMPLES: Record<string, PreviewSpec> = {
       { id: "i1", text: "3" },
       { id: "i2", text: "2" },
     ],
-    dropZones: [{ id: "z1", label: "5", accepts: ["i1", "i2"] }],
+    dropZones: [{ id: "z1", label: "5", expect: 2 }],
     scaffold: "none",
     hints: ["3 và mấy thì được 5?"],
     explanation: "3 và 2 gộp lại được 5.",

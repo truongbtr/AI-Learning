@@ -1,6 +1,7 @@
 import {
   type AnswerBundle,
   type AttemptResponse,
+  dragNotFinished,
   feedbackForTry,
   MAX_TRIES,
   type MarkableType,
@@ -57,6 +58,16 @@ const CHEER_LINES = [
 ];
 
 const PENDING_LINE = "Mình cất bài này để ba mẹ xem cùng nhé!";
+
+/**
+ * Said when a basket is still waiting for a card. Not a verdict, so it carries no "chưa đúng" and
+ * no "thử lại" — the child has not answered yet, they are still doing it.
+ */
+const NUDGE_LINES = [
+  "Còn thẻ ở khay kìa, con kéo nốt vào giỏ nhé!",
+  "Giỏ này còn chỗ cho một thẻ nữa đó!",
+  "Mình kéo thêm thẻ nữa rồi bấm Xong nha!",
+];
 
 /** Where on the road the child is offered a choice (docs/06 §1.8b item 2). */
 const CHOICE_STATIONS = [2, 6];
@@ -431,7 +442,11 @@ export interface AttemptFeedback {
   correct: boolean;
   /** The attempt is over — move to the next station. */
   final: boolean;
-  stage: "correct" | "retry" | "hint" | "reveal" | "pending";
+  /**
+   * `nudge` is not a verdict: the child pressed "Xong!" with baskets still waiting for cards.
+   * Nothing is written, the try does not count, and the exercise stays open.
+   */
+  stage: "correct" | "retry" | "hint" | "reveal" | "pending" | "nudge";
   /** The mascot's line. Warm, short, and never the word "sai" (docs/06 §1.5). */
   line: string;
   hint?: string;
@@ -535,6 +550,25 @@ export async function submitAttempt(db: Db, input: SubmitAttemptInput): Promise<
             ? "reveal"
             : replayLadder.stage,
     });
+  }
+
+  // Half-finished is not wrong: baskets still waiting, no distractor dropped in one. Say so and
+  // write nothing — no attempt, no try, no error code on the child's evidence (docs/04 §7).
+  if (
+    exercise.type === "DRAG_DROP" &&
+    dragNotFinished(bundleFor(exercise), input.response) &&
+    !input.response.skipped
+  ) {
+    return {
+      order: input.order,
+      correct: false,
+      final: false,
+      stage: "nudge",
+      line: rotate(NUDGE_LINES, input.order + (existing?.tries ?? 0)),
+      tries: existing?.tries ?? 0,
+      starsAwarded: 0,
+      starsTotal: await starBalance(db, session.studentId),
+    };
   }
 
   const tries = (existing?.tries ?? 0) + 1;

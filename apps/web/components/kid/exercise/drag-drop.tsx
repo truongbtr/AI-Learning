@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { playSound } from "../sound";
 import { SPRING, STAGGER } from "../tokens";
+import { dragReady } from "./drag-ready";
 import { ExerciseFrame } from "./frame";
 import { Picture } from "./picture";
 import { type ExerciseProps, fillPlaceholders } from "./types";
@@ -47,14 +48,20 @@ export function DragDropExercise({
 
   const zones = spec.dropZones ?? [];
   const items = spec.dragItems ?? [];
-  // Ready once every basket holds a card, or once the tray is empty. Not "every card placed": in
-  // many exercises some cards are distractors that stay in the tray ("Kéo chữ ch vào giỏ" — kh and
-  // tr stay behind). And an empty tray is always enough, so a child who put every card in one basket
+  // Ready once every basket holds as many cards as it wants (`expect`, the count the answer key
+  // puts there — never which cards), or once the tray is empty. Not "every card placed": in many
+  // exercises some cards are distractors that stay in the tray ("Kéo chữ ch vào giỏ" — kh and tr
+  // stay behind). And an empty tray is always enough, so a child who put every card in one basket
   // can still press "Xong!" and get the hint, instead of a button that never lights up.
-  const trayEmpty = items.length > 0 && items.every((i) => placed[i.id]);
-  const everyZoneFilled =
-    zones.length > 0 && zones.every((z) => Object.values(placed).some((zoneId) => zoneId === z.id));
-  const ready = trayEmpty || everyZoneFilled;
+  //
+  // Before `expect` the rule was "every basket holds a card", and 573 of the 1552 drag exercises
+  // have a basket that wants two: one card per basket lit the button up and a half-finished answer
+  // was marked as a mistake.
+  const ready = dragReady(
+    zones,
+    items.map((i) => i.id),
+    placed,
+  );
 
   // The server has marked it: the cards that went to the wrong place float home so the child can
   // try those again — the ones that were right stay where they were put.

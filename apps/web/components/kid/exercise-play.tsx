@@ -72,6 +72,14 @@ export function ExercisePlay({
       setTries(data.tries);
       setMessage(data.line);
 
+      if (data.stage === "nudge") {
+        // Not an answer at all: baskets still waiting for cards. The mascot says so, the exercise
+        // stays open, and nothing was written — this try does not count (docs/04 §7).
+        setHint(data.line);
+        speak(data.line, { lang: speechLang(data.line, "vi") });
+        return;
+      }
+
       if (data.stage === "correct") {
         setFeedback("correct");
         setFlying(origin ?? { x: window.innerWidth / 2, y: window.innerHeight * 0.6 });

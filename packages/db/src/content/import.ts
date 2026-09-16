@@ -72,6 +72,13 @@ export interface ImportOptions {
   runBy?: string;
   /** Retire exercises of the imported skills that are no longer in the files (default true). */
   retireMissing?: boolean;
+  /**
+   * Rewrite `spec` and `answerKey` even when the source text has not changed. Needed when the
+   * *shape* of the client spec changes rather than its content — pha 11 added
+   * `dropZones[].expect`, and the exercises carrying it were byte-identical in the files, so a
+   * plain import would have left 1552 stored specs on the old shape.
+   */
+  respec?: boolean;
 }
 
 export interface ExerciseImportResult {
@@ -93,6 +100,20 @@ export interface LessonImportResult {
   unchanged: number;
   skipped: { code: string; reason: string }[];
   batchId: string | null;
+}
+
+/**
+ * Key-order-independent JSON, so a stored `spec` read back from jsonb (Postgres keeps its own key
+ * order) can be compared with a freshly built one.
+ */
+function canonical(value: unknown): string {
+  if (value === null || typeof value !== "object") return JSON.stringify(value) ?? "null";
+  if (Array.isArray(value)) return `[${value.map(canonical).join(",")}]`;
+  return `{${Object.entries(value as Record<string, unknown>)
+    .filter(([, v]) => v !== undefined)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([k, v]) => `${JSON.stringify(k)}:${canonical(v)}`)
+    .join(",")}}`;
 }
 
 async function skillIdsByCode(db: Db, codes: string[]): Promise<Map<string, string>> {
@@ -139,14 +160,36 @@ export async function importExercises(
   );
   const unitMap = await unitIdsByCode(db, rows.map((r) => r.lessonUnitCode ?? "").filter(Boolean));
 
-  const existing = new Map(
+  interface KnownExercise {
+    id: string;
+    stableId: string;
+    contentHash: string;
+    status: string;
+    /** Only read with `--respec`, to see whether the stored spec is still the shape we build. */
+    spec?: unknown;
+  }
+  const existing = new Map<string, KnownExercise>(
     (
-      await db.exercise.findMany({
+      (await db.exercise.findMany({
         where: { stableId: { in: rows.map((r) => r.stableId) } },
-        select: { id: true, stableId: true, contentHash: true, status: true },
-      })
+        select: {
+          id: true,
+          stableId: true,
+          contentHash: true,
+          status: true,
+          ...(opts.respec ? { spec: true } : {}),
+        },
+      })) as unknown as KnownExercise[]
     ).map((e) => [e.stableId, e]),
   );
+
+  /**
+   * With `--respec`, an exercise whose text is unchanged still has to be written when the *shape*
+   * of the spec we now build differs from the one in the database. Comparing the two keeps the run
+   * honest: the 1552 drag exercises get their `expect`, the other 9180 stay untouched.
+   */
+  const specChanged = (known: KnownExercise, row: ExerciseRow): boolean =>
+    Boolean(opts.respec) && canonical(known.spec) !== canonical(row.spec);
 
   // Retire: an id that has disappeared **from a file this run actually read**. Scoping by file
   // matters — without it, importing five test rows for a skill retired the fifty real exercises of
@@ -176,7 +219,7 @@ export async function importExercises(
     if (!known) result.plan.push({ stableId: row.stableId, action: "create" });
     else if (known.status === "RETIRED")
       result.plan.push({ stableId: row.stableId, action: "revive" });
-    else if (known.contentHash !== row.contentHash)
+    else if (known.contentHash !== row.contentHash || specChanged(known, row))
       result.plan.push({ stableId: row.stableId, action: "update" });
   }
   for (const r of retireCandidates) result.plan.push({ stableId: r.stableId, action: "retire" });
@@ -186,7 +229,7 @@ export async function importExercises(
       const known = existing.get(row.stableId);
       if (!known) result.created++;
       else if (known.status === "RETIRED") result.revived++;
-      else if (known.contentHash !== row.contentHash) result.updated++;
+      else if (known.contentHash !== row.contentHash || specChanged(known, row)) result.updated++;
       else result.unchanged++;
     }
     result.retired = retireCandidates.length;
@@ -204,7 +247,7 @@ export async function importExercises(
     // not change — otherwise it stays invisible for ever. It returns as DRAFT so a parent looks
     // at it again before a child meets it.
     const revived = known?.status === "RETIRED";
-    if (known && !revived && known.contentHash === row.contentHash) {
+    if (known && !revived && known.contentHash === row.contentHash && !specChanged(known, row)) {
       result.unchanged++;
       continue;
     }

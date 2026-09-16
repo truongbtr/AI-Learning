@@ -302,6 +302,24 @@ export function parseExercisePack(json: unknown): ExercisePack {
 }
 
 /**
+ * A drop zone as the child's device sees it. `accepts` (which cards the zone tolerates) stays on
+ * the server; the client is told only **how many** cards belong here, because "Xong!" has to know
+ * when a basket is full without knowing what fills it (ADR-14).
+ *
+ * Before pha 11 the button lit up as soon as every basket held one card. 573 of the 1552 drag
+ * exercises have a basket that wants two or more, so a child who put one card in each could press
+ * "Xong!" half-finished and be marked partially wrong — and the error code was written to their
+ * evidence. That is what `expect` prevents.
+ */
+export interface ClientDropZone {
+  id: string;
+  label?: string;
+  image?: ImageRef;
+  /** How many cards belong in this zone — the count only, never which ones. */
+  expect: number;
+}
+
+/**
  * The `ExerciseSpec` stored in `Exercise.spec` and sent to the client (docs/04 sec. 5).
  * `answerKey` is deliberately NOT part of it — it lives in its own column.
  */
@@ -316,7 +334,7 @@ export interface ExerciseSpec {
   /** Parallel to `choices`: the diagnosis per choice id, kept server-side only. */
   scaffold: ExerciseDef["scaffold"];
   dragItems?: ExerciseDef["dragItems"];
-  dropZones?: ExerciseDef["dropZones"];
+  dropZones?: ClientDropZone[];
   readTarget?: ExerciseDef["readTarget"];
   /** Spoken only — a renderer that prints this is a bug (see ExercisePreview). */
   listenTarget?: ExerciseDef["listenTarget"];
@@ -351,7 +369,17 @@ export function toExerciseSpec(ex: ExerciseDef, subject: (typeof SUBJECTS)[numbe
   if (ex.choices) spec.choices = ex.choices.map(({ errorTag: _drop, ...rest }) => ({ ...rest }));
   if (ex.dragItems)
     spec.dragItems = ex.dragItems.map(({ errorTag: _drop, ...rest }) => ({ ...rest }));
-  if (ex.dropZones) spec.dropZones = ex.dropZones;
+  if (ex.dropZones) {
+    // How many cards the answer key puts in each zone. `accepts` is wider than the key on purpose
+    // (a zone tolerates cards it will mark wrong), so the key is what "full" means.
+    const key = (ex.answerKey ?? {}) as Record<string, unknown>;
+    spec.dropZones = ex.dropZones.map((zone) => {
+      const wanted = key[zone.id];
+      const expect = Array.isArray(wanted) ? wanted.length : 1;
+      const { accepts: _drop, ...rest } = zone;
+      return { ...rest, expect };
+    });
+  }
   if (ex.readTarget) spec.readTarget = ex.readTarget;
   if (ex.listenTarget) spec.listenTarget = ex.listenTarget;
   if (ex.countTarget) {

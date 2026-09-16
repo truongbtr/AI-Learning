@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { feedbackForTry, markAttempt } from "./mark";
+import { dragNotFinished, feedbackForTry, markAttempt } from "./mark";
 
 describe("multiple choice", () => {
   const key = { value: "b", errorTags: { a: "nham_b_d", c: "doan_bua" } };
@@ -166,5 +166,40 @@ describe("drag and drop with distractors that stay in the tray", () => {
     expect(m.correct).toBe(false);
     expect(m.outcome).toBe("INCORRECT");
     expect(m.errorCode).not.toBe("bo_trong");
+  });
+});
+
+describe("half-finished drag and drop is not a mistake", () => {
+  // a basket that wants two cards — 573 of the 1552 drag exercises have one
+  const key = {
+    value: { gio: ["k1", "k2"] },
+    errorTags: { d1: "nham_ch_tr" },
+    cards: ["k1", "k2", "d1"],
+  };
+
+  it("one card of the two is not finished", () => {
+    expect(dragNotFinished(key, { placements: { gio: ["k1"] } })).toBe(true);
+  });
+
+  it("both cards home is an answer to mark", () => {
+    expect(dragNotFinished(key, { placements: { gio: ["k1", "k2"] } })).toBe(false);
+  });
+
+  it("a distractor in the basket is an answer, wrong but finished", () => {
+    expect(dragNotFinished(key, { placements: { gio: ["k1", "d1"] } })).toBe(false);
+    expect(markAttempt("DRAG_DROP", key, { placements: { gio: ["k1", "d1"] } }).correct).toBe(
+      false,
+    );
+  });
+
+  it("a child who decides to move on is not nudged", () => {
+    expect(dragNotFinished(key, { placements: { gio: ["k1"] }, skipped: true })).toBe(false);
+  });
+
+  it("an exercise whose baskets each want one card never nudges", () => {
+    const single = { value: { a: ["k1"], b: ["k2"] }, cards: ["k1", "k2"] };
+    expect(dragNotFinished(single, { placements: { a: ["k1"], b: ["k2"] } })).toBe(false);
+    // one basket filled, the other still empty: that is half-finished too
+    expect(dragNotFinished(single, { placements: { a: ["k1"] } })).toBe(true);
   });
 });

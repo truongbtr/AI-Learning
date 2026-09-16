@@ -224,6 +224,89 @@ describe("a day's session (integration, needs the seeded database)", () => {
     expect(await starBalance(db, student?.id ?? "")).toBe(before + 1);
   });
 
+  it("answers a half-finished drag with a nudge and writes nothing", async (ctx) => {
+    needDb(ctx);
+    const db = testDb();
+    const skill = await db.skill.findUnique({ where: { code: SKILL }, select: { id: true } });
+    const drag = await db.exercise.create({
+      data: {
+        stableId: `${PREFIX}-drag`,
+        type: "DRAG_DROP",
+        subject: "VMATH",
+        language: "vi",
+        difficulty: 2,
+        status: "PUBLISHED",
+        spec: {
+          type: "DRAG_DROP",
+          language: "vi",
+          subject: "VMATH",
+          skillCodes: [SKILL],
+          difficulty: 2,
+          prompt: { text: "Kéo hai thẻ vào giỏ cho đủ 5 nhé!", tts: true },
+          dragItems: [
+            { id: "k1", text: "3" },
+            { id: "k2", text: "2" },
+            { id: "d1", text: "9" },
+          ],
+          dropZones: [{ id: "gio", label: "5", expect: 2 }],
+          scaffold: "none",
+          hints: ["3 và mấy thì được 5?"],
+          explanation: "3 và 2 gộp lại được 5.",
+          meta: { estSeconds: 35, sourceRef: "SGK Toán 1 tập một tr.32" },
+        },
+        answerKey: { value: { gio: ["k1", "k2"] }, errorTags: { d1: "nham_cong_tru" } },
+        explanation: "3 và 2 gộp lại được 5.",
+        contentHash: `${PREFIX}-hash-drag`,
+        skills: { create: { skillId: skill?.id ?? "" } },
+      },
+    });
+    const day = new Date();
+    day.setHours(0, 0, 0, 0);
+    const session = await db.session.create({
+      data: {
+        studentId: student?.id ?? "",
+        kind: "TARGETED",
+        date: day,
+        status: "PLANNED",
+        slots: [
+          {
+            order: 0,
+            kind: "focus",
+            skillCode: SKILL,
+            subject: "VMATH",
+            difficulty: 2,
+            reason: "kiểm thử",
+            exerciseId: drag.id,
+            stableId: `${PREFIX}-drag`,
+          },
+        ],
+      },
+    });
+
+    const half = await submitAttempt(db, {
+      sessionId: session.id,
+      order: 0,
+      response: { placements: { gio: ["k1"] } },
+      token: "d1",
+    });
+    expect(half.stage).toBe("nudge");
+    expect(half.final).toBe(false);
+    expect(half.tries).toBe(0); // it did not cost the child a try
+    expect(half.line.toLowerCase()).not.toContain("sai");
+    expect(await db.attempt.count({ where: { sessionId: session.id } })).toBe(0);
+    expect(await db.evidence.count({ where: { attempt: { sessionId: session.id } } })).toBe(0);
+
+    // the same child, now finished: this one is marked
+    const done = await submitAttempt(db, {
+      sessionId: session.id,
+      order: 0,
+      response: { placements: { gio: ["k1", "k2"] } },
+      token: "d2",
+    });
+    expect(done.correct).toBe(true);
+    expect(await db.attempt.count({ where: { sessionId: session.id } })).toBe(1);
+  });
+
   it("remembers where a session stopped, so it can be carried on", async (ctx) => {
     needDb(ctx);
     const db = testDb();

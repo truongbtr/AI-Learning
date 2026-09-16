@@ -173,6 +173,30 @@ describe("ExerciseSpec sent to the client", () => {
     expect(answerBundleOf(count)).toMatchObject({ value: 6, correctCount: 6 });
   });
 
+  it("tells a drop zone how many cards it wants, never which ones", () => {
+    const drag = parseExercisePack(
+      pack([
+        {
+          ...mcq(5),
+          type: "DRAG_DROP",
+          choices: undefined,
+          prompt: { text: "Kéo hai thẻ vào giỏ cho đủ nhé!" },
+          dragItems: [
+            { id: "k1", text: "3" },
+            { id: "k2", text: "2" },
+            { id: "d1", text: "9" },
+          ],
+          dropZones: [{ id: "gio", label: "5", accepts: ["k1", "k2", "d1"] }],
+          answerKey: { gio: ["k1", "k2"] },
+        },
+      ]),
+    ).exercises[0] as ExerciseDef;
+    const spec = toExerciseSpec(drag, "VMATH");
+    expect(spec.dropZones).toEqual([{ id: "gio", label: "5", expect: 2 }]);
+    // `accepts` would narrow the answer down for anyone reading the payload
+    expect(JSON.stringify(spec)).not.toContain("accepts");
+  });
+
   it("plays the spoken word but never puts it in the prompt", () => {
     const listen = parseExercisePack(
       pack([

@@ -204,6 +204,34 @@ function markReadAloud(key: AnswerBundle, res: AttemptResponse, lang: "vi" | "en
 }
 
 /**
+ * DRAG_DROP only: the child pressed "Xong!" with baskets still waiting for cards, and has not put
+ * a single distractor in a basket — nothing here says "mistake", it says "not finished".
+ *
+ * The client knows how many cards each basket wants (`dropZones[].expect`) and keeps the button
+ * dim until they are there, so this is the second lock: a session that started before pha 11 holds
+ * a spec without `expect`, and its half-finished answer must not become a wrong attempt with an
+ * error code on the child's evidence. The caller answers with a nudge and writes nothing.
+ */
+export function dragNotFinished(key: AnswerBundle, res: AttemptResponse): boolean {
+  if (res.skipped) return false;
+  const want = (key.value ?? {}) as Record<string, string[]>;
+  const home = new Map<string, string>();
+  for (const [zoneId, items] of Object.entries(want)) for (const id of items) home.set(id, zoneId);
+  if (home.size === 0) return false;
+
+  const shown = new Set(key.cards ?? []);
+  let placedFromKey = 0;
+  for (const items of Object.values(res.placements ?? {})) {
+    for (const id of items ?? []) {
+      if (home.has(id)) placedFromKey++;
+      // a distractor in a basket is a real answer, wrong but finished: mark it, do not nudge
+      else if (shown.has(id)) return false;
+    }
+  }
+  return placedFromKey > 0 && placedFromKey < home.size;
+}
+
+/**
  * Marks one attempt. Types the server cannot mark on its own (a photo of handwriting, a spoken
  * answer, a traced letter) come back `pending`: the attempt is stored, no evidence is written yet.
  */
