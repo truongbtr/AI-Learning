@@ -52,27 +52,6 @@ export function loadSkillMaps(dir = contentDir("skill-map")): NamedSkillMap[] {
   }));
 }
 
-/**
- * content/voice/*.json — fixed lines the app speaks (the city clock of pha 12). They are generated
- * as mp3 at import time and played from the cache: the app speaks no line it has not been given
- * beforehand (ADR-10, ADR-11).
- */
-export function loadVoiceLines(dir = contentDir("voice")): { text: string; lang: string }[] {
-  if (!existsSync(dir)) return [];
-  const out: { text: string; lang: string }[] = [];
-  for (const name of readdirSync(dir)) {
-    if (!name.endsWith(".json")) continue;
-    const json = JSON.parse(readFileSync(join(dir, name), "utf8")) as {
-      lines?: { text?: unknown; lang?: unknown }[];
-    };
-    for (const line of json.lines ?? []) {
-      if (typeof line.text === "string" && typeof line.lang === "string")
-        out.push({ text: line.text, lang: line.lang });
-    }
-  }
-  return out;
-}
-
 /** content/lexicon/esl.json — the picture dictionary of pha 11; null while it does not exist. */
 export function loadLexicon(file = contentDir("lexicon", "esl.json")): LexiconFile | null {
   if (!existsSync(file)) return null;

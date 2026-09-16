@@ -37,21 +37,9 @@ export const SURF: Record<SurfaceKind, number> = {
 const groupOf = (kind: SurfaceKind): MaterialGroup =>
   kind === "sign" ? "sign" : kind === "ghost" ? "ghost" : kind === "cloud" ? "cloud" : "opaque";
 
-/**
- * Detail levels (pha 12 việc 5). The cost of a frame has to follow the SCREEN, not the size of the
- * city, so a chunk far from the camera is drawn with less in it:
- *
- *   near — everything, as pha 10 baked it;
- *   mid  — the small stuff dropped (windows, trims, benches, single flowers): about a fifth of the
- *          triangles, and at 120 units away nobody can tell;
- *   far  — the block as its silhouette: one box per big part, which still reads as a skyline.
- */
-export type DetailLevel = "near" | "mid" | "far";
-
 export interface BakedMesh {
   chunk: string;
   kind: MaterialGroup;
-  level: DetailLevel;
   geometry: BufferGeometry;
   triangles: number;
 }
@@ -72,21 +60,13 @@ export interface BakeOptions {
    */
   toCamera?: Vector3;
   cullThreshold?: number;
-  /** Which detail level to bake (default "near"). */
-  level?: DetailLevel;
 }
-
-/** A part smaller than this across is not baked into the mid level. */
-const MID_MIN_SIZE = 2.2;
-/** A part smaller than this across leaves no silhouette at all. */
-const FAR_MIN_SIZE = 3.4;
 
 export const chunkKey = (x: number, z: number, size: number) =>
   `${Math.floor(x / size)},${Math.floor(z / size)}`;
 
 const tmpBox = new Box3();
 const tmpV = new Vector3();
-const tmpSize = new Vector3();
 
 export function bake(root: Object3D, chunkSize: number, options: BakeOptions = {}): BakeResult {
   root.updateMatrixWorld(true);
@@ -110,12 +90,6 @@ export function bake(root: Object3D, chunkSize: number, options: BakeOptions = {
     if (!g.boundingBox) g.computeBoundingBox();
     tmpBox.copy(g.boundingBox as Box3).applyMatrix4(obj.matrixWorld);
     tmpBox.getCenter(tmpV);
-    const level = options.level ?? "near";
-    if (level !== "near") {
-      tmpBox.getSize(tmpSize);
-      const across = Math.max(tmpSize.x, tmpSize.z, tmpSize.y);
-      if (across < (level === "mid" ? MID_MIN_SIZE : FAR_MIN_SIZE)) return;
-    }
     const group = options.single ? "opaque" : groupOf(tokenOf(obj.material).kind);
     const key = `${options.single ? "0,0" : chunkKey(tmpV.x, tmpV.z, chunkSize)}|${group}`;
     let list = buckets.get(key);
@@ -130,13 +104,9 @@ export function bake(root: Object3D, chunkSize: number, options: BakeOptions = {
   for (const [key, items] of buckets) {
     const [chunk, kind] = key.split("|") as [string, MaterialGroup];
     const cull = kind === "cloud" ? undefined : options.toCamera;
-    const level = options.level ?? "near";
-    const geometry =
-      level === "far"
-        ? silhouette(items)
-        : merge(items, kind === "sign", cull, options.cullThreshold ?? -0.3);
+    const geometry = merge(items, kind === "sign", cull, options.cullThreshold ?? -0.3);
     const triangles = (geometry.index?.count ?? 0) / 3;
-    if (triangles > 0) meshes.push({ chunk, kind, level, geometry, triangles });
+    if (triangles > 0) meshes.push({ chunk, kind, geometry, triangles });
   }
   let lines: BufferGeometry | null = null;
   if (linePositions.length) {
@@ -277,69 +247,4 @@ function merge(
   out.computeBoundingSphere();
   out.computeBoundingBox();
   return out;
-}
-
-/**
- * The "far" level: every part that is big enough becomes its own box, in its own colour. From two
- * hundred units away a district is a skyline and a few roofs, and that is all the eye is getting
- * anyway — but it costs twelve triangles a building instead of six hundred.
- */
-function silhouette(items: Mesh[]): BufferGeometry {
-  const position: number[] = [];
-  const normal: number[] = [];
-  const color: number[] = [];
-  const surf: number[] = [];
-  const index: number[] = [];
-  const box = new Box3();
-  const size = new Vector3();
-  const centre = new Vector3();
-  for (const mesh of items) {
-    const g = mesh.geometry as BufferGeometry;
-    if (!g.boundingBox) g.computeBoundingBox();
-    box.copy(g.boundingBox as Box3).applyMatrix4(mesh.matrixWorld);
-    box.getSize(size);
-    box.getCenter(centre);
-    if (Math.max(size.x, size.y, size.z) < FAR_MIN_SIZE) continue;
-    const token = tokenOf(mesh.material);
-    const lin = [
-      srgbToLinear((token.color >> 16) & 255),
-      srgbToLinear((token.color >> 8) & 255),
-      srgbToLinear(token.color & 255),
-    ];
-    const base = position.length / 3;
-    const hx = size.x / 2;
-    const hy = size.y / 2;
-    const hz = size.z / 2;
-    // only the three faces the fixed camera can see: top, +x and +z
-    const corners: [number, number, number][] = [
-      [-hx, hy, -hz],
-      [hx, hy, -hz],
-      [hx, hy, hz],
-      [-hx, hy, hz],
-      [-hx, -hy, hz],
-      [hx, -hy, hz],
-      [hx, -hy, -hz],
-    ];
-    for (const [x, y, z] of corners) {
-      position.push(centre.x + x, Math.max(0, centre.y + y), centre.z + z);
-      normal.push(0, 1, 0);
-      color.push(lin[0] as number, lin[1] as number, lin[2] as number);
-      surf.push(SURF[token.kind]);
-    }
-    // top
-    index.push(base, base + 1, base + 2, base, base + 2, base + 3);
-    // +z wall
-    index.push(base + 3, base + 2, base + 5, base + 3, base + 5, base + 4);
-    // +x wall
-    index.push(base + 2, base + 1, base + 6, base + 2, base + 6, base + 5);
-  }
-  const geometry = new BufferGeometry();
-  geometry.setAttribute("position", new Float32BufferAttribute(position, 3));
-  geometry.setAttribute("normal", new Float32BufferAttribute(normal, 3));
-  geometry.setAttribute("color", new Float32BufferAttribute(color, 3));
-  geometry.setAttribute("surf", new Float32BufferAttribute(surf, 1));
-  geometry.setIndex(new Uint32BufferAttribute(index, 1));
-  geometry.computeBoundingSphere();
-  geometry.computeBoundingBox();
-  return geometry;
 }

@@ -71,11 +71,9 @@ async function main() {
     const cx = q.get("cx");
     const cz = q.get("cz");
     const cd = q.get("cd");
-    // where the child starts: over the middle of the town, not over the middle of the map
-    const home = engine.home();
     engine.setCamera({
-      x: cx !== null ? Number(cx) : home.x,
-      z: cz !== null ? Number(cz) : home.z,
+      ...(cx !== null ? { x: Number(cx) } : {}),
+      ...(cz !== null ? { z: Number(cz) } : {}),
       ...(cd !== null ? { dist: Number(cd) } : {}),
     });
   };

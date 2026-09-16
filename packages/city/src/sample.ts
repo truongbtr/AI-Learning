@@ -46,12 +46,8 @@ const LABELS: Record<CityId, string[]> = {
   esci: ["sun", "moon", "leaf", "rain", "rock", "bug", "star", "sky", "seed", "fish"],
 };
 
-/**
- * start = a real first evening: a handful of skills, most not built yet, nothing needing help.
- * endOfYear = pha 12's worst case: every subject at the size of the biggest one, every plot built,
- * every public building up, the wonder finished and the busiest streets there are.
- */
-export type SampleSize = "start" | "day1" | "mid" | "full" | "endOfYear";
+/** start = a real first evening: a handful of skills, most not built yet, nothing needing help. */
+export type SampleSize = "start" | "day1" | "mid" | "full";
 
 export function sampleView(city: CityId, size: SampleSize): CityView {
   const n =
@@ -61,9 +57,7 @@ export function sampleView(city: CityId, size: SampleSize): CityView {
         ? 5
         : size === "mid"
           ? Math.min(28, SKILL_COUNT[city])
-          : size === "endOfYear"
-            ? 102
-            : SKILL_COUNT[city];
+          : SKILL_COUNT[city];
   const skills = Array.from({ length: n }, (_, i) => {
     const raw = ((i * 7 + 3) % 5) as BuildingLevel;
     const level =
@@ -84,8 +78,7 @@ export function sampleView(city: CityId, size: SampleSize): CityView {
   });
   const publics = Object.keys(PUBLIC_BUILDINGS);
   const plotCodes = Object.keys(PLOT_CATALOGUE);
-  const owned =
-    size === "day1" || size === "start" ? 0 : size === "mid" ? 3 : size === "endOfYear" ? 40 : 10;
+  const owned = size === "day1" || size === "start" ? 0 : size === "mid" ? 3 : 10;
   const first = size === "day1" || size === "start";
   return {
     subject: city,
@@ -99,11 +92,7 @@ export function sampleView(city: CityId, size: SampleSize): CityView {
         build: plotCodes[i % plotCodes.length] as string,
       })),
     },
-    publicBuildings: first
-      ? []
-      : size === "mid"
-        ? publics.slice(0, 5)
-        : publics.slice(0, size === "endOfYear" ? 15 : 14),
+    publicBuildings: first ? [] : size === "mid" ? publics.slice(0, 5) : publics.slice(0, 14),
     wonder: {
       pieces: first
         ? size === "start"
@@ -111,13 +100,10 @@ export function sampleView(city: CityId, size: SampleSize): CityView {
           : 1
         : size === "mid"
           ? Math.floor(WONDER_PIECES[city] / 2)
-          : size === "endOfYear"
-            ? WONDER_PIECES[city]
-            : WONDER_PIECES[city] - 1,
+          : WONDER_PIECES[city] - 1,
     },
     bustle: first ? 1 : size === "mid" ? 3 : 4,
     decorations: first ? [] : Object.keys(DECORATIONS).slice(0, size === "mid" ? 4 : 10),
-    harbourBoats: size === "endOfYear" ? 4 : 0,
     pets: first ? [] : ["dog", "cat"],
     townHallOrder: "open",
   };
