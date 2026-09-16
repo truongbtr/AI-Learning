@@ -4,6 +4,25 @@
 
 ## Pha 12 — 16/09/2026 — Bản đồ thành phố kiểu vành đai, sông và bến cảng, giao thông ngẫu nhiên
 
+> **ĐÃ HOÀN TÁC trên production, chiều 16/09/2026.** Chủ dự án xem bản đồ mới trên máy thật:
+> *"Bản đồ mới xấu quá, tôi muốn trở lại bản đồ cũ ô bàn cờ."* Commit `491f92e` được `git revert`
+> (`fb57312`) — mã trở về **đúng bản pha 11** (so `9c8fa2d`, ngoài `docs/` không khác một byte).
+> Pha 11 **giữ nguyên** trên production: migration `Word`/`WordProgress`, từ điển 262 từ, bản vá
+> "Xong!" với 1552 bài kéo-thả đã ghi lại spec (`expect` 1552/1552, `accepts` 0).
+> Cùng đi với bản đồ: đồng hồ mặt trời, sông/bến cảng/cầu, giao thông trên đồ thị đường, LOD ba
+> mức, bản đồ giấy, thị trấn nhà Ecopark. Phần dưới đây giữ lại làm lịch sử; mã vẫn còn trong
+> `491f92e` nếu muốn lấy lại từng phần (vd. đồng hồ mặt trời không phụ thuộc bản đồ).
+>
+> Hai bài học triển khai, ghi cho lần sau:
+> - **Production là máy Ubuntu `192.168.1.102`**, không phải máy Windows này (máy này là dev,
+>   DB riêng). Xem `host` trong `/api/health` trước khi kết luận đang nhìn máy nào.
+> - **Đừng build image trên máy Ubuntu** (3,3 GB RAM, đĩa cơ, đã swap sẵn): mất ~25 phút. Build trên
+>   máy dev **từ một `git worktree` sạch của đúng commit** (thư mục làm việc có thể đang có mã dở
+>   của phiên khác), rồi `docker save | gzip | ssh … docker load` và `up -d` không `--build`.
+> - Trong container không có `dotenv`: chạy CLI bằng
+>   `sh -c '. ./docker/env.sh; cd packages/db && ./node_modules/.bin/tsx src/cli/content-import.ts …'`
+>   (không nạp `docker/env.sh` thì CLI trỏ `localhost:5432` và không vào được DB).
+
 Trạng thái: **việc 1–7 xong trên máy dev, CHƯA deploy**. `lint` sạch, **toàn bộ test xanh**, `build`
 xanh. Viết lại `layout.ts` (lõi pha 10) và phần nền/nước/đường của `compose.ts`; **hợp đồng dữ liệu
 ADR-21 giữ nguyên** — `CityView`, `StudentCity`, `skillOrder`, luật mastery→nhà, sao→đất,
