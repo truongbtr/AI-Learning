@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { SpeakerButton } from "../buttons";
 import { Picture } from "../exercise/picture";
 import { playSound } from "../sound";
@@ -17,14 +17,18 @@ import { shuffle, type VocabGameProps } from "./types";
  * and by picture; printing it turns a listening game into a reading one (the same trap ADR-14
  * describes for LISTEN_CHOOSE).
  */
+/** Four words is a round of about a minute; six turns it into a chore (docs/08 pha 11). */
+const ROUND_WORDS = 4;
+
 export function ListenTouchGame({ words, onMeeting, onDone }: VocabGameProps) {
   const reduce = useReducedMotion();
   const { speak } = useSpeak();
+  const asked = useMemo(() => words.slice(0, ROUND_WORDS), [words]);
   const [round, setRound] = useState(0);
   const [options, setOptions] = useState<typeof words>([]);
   const [picked, setPicked] = useState<string | null>(null);
 
-  const target = words[round];
+  const target = asked[round];
 
   useEffect(() => {
     if (!target) return;
@@ -48,11 +52,11 @@ export function ListenTouchGame({ words, onMeeting, onDone }: VocabGameProps) {
       playSound(correct ? "dung" : "gan-dung");
       onMeeting({ wordId: target.wordId, correct });
       window.setTimeout(() => {
-        if (round + 1 >= words.length) onDone();
+        if (round + 1 >= asked.length) onDone();
         else setRound((r) => r + 1);
       }, 1100);
     },
-    [target, picked, onMeeting, onDone, round, words.length],
+    [target, picked, onMeeting, onDone, round, asked.length],
   );
 
   if (!target) return null;
