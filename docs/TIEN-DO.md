@@ -34,6 +34,24 @@
 > - 12 test giao thông; cả repo sạch trên bản checkout riêng: lint, build 4/4, test 7/7. Bench
 >   60 khung hình/giây ở thành phố ngày đầu và cuối năm.
 >
+> **Tiếp, chiều 16/09 (image `d43ba739be05`, commit `46f82bb`):**
+> - **Sân vườn cho mỗi nhà** (chủ dự án: *"Mỗi nhà có thêm đường đi vào, sân, tiểu cảnh"*): sân lát
+>   trước cửa, lối ra mép lô, một món tiểu cảnh (hàng rào cây / hai khóm cây / luống hoa) ở phía máy
+>   quay nhìn thấy; khoảng giữa mỗi khối lát thành **ngõ** — nhà nửa bắc có cửa nhìn ra ngõ. Đặt theo
+>   nền nhà thật, không đặt gì cao hơn mặt lát vào dải người đi bộ (`build/garden.ts`, 5 test).
+>   Vẫn trong trần 80k của ADR-20: Phố Chữ lớn nhất **79.922** (mặt lát là mặt phẳng, luống hoa rẻ,
+>   một món mỗi lô, không trồng cây sau nhà vì máy quay không thấy).
+> - **Cổng thành phố** luôn đứng ở đầu một con phố (trước đó ~9% các bước lớn lên nó đứng giữa cỏ,
+>   ngay khi một vòng khối mới bắt đầu). **Đèn giao thông** chỉ thắp trong bán kính 100 quanh chỗ máy
+>   quay nhìn, nên thành phố to mấy cũng đủ đèn. Xe ôm cua gọn hơn.
+> - **Thành phố lớn tới đâu** (đo): kỹ năng có trần theo môn (≤ 102), huy hiệu có hạn; thứ tăng mãi là
+>   ô đất (giá 20, 25, 30… sao). Hai bé kiếm ~35–43 sao/ngày học → ~18 ô/thành phố/năm nếu chia đều,
+>   ~50 ô nếu dồn một thành phố (104 khối, khung nặng nhất ~170k tam giác — **vượt trần 80k**; máy dev
+>   vẫn 60 khung/giây ở 280k). Không có trần cứng trong mã. Muốn giữ trần 80k cho thành phố lớn thì
+>   phải đưa LOD về (mã trong `491f92e`) — chờ chủ dự án đo trên máy của hai bé.
+> - Ổ máy chủ tụt còn 7,7 GB vì 30,9 GB bộ đệm build của lần build tại chỗ → đã `docker builder prune`,
+>   còn 35 GB trống, health `ok`.
+>
 > - Trong container không có `dotenv`: chạy CLI bằng
 >   `sh -c '. ./docker/env.sh; cd packages/db && ./node_modules/.bin/tsx src/cli/content-import.ts …'`
 >   (không nạp `docker/env.sh` thì CLI trỏ `localhost:5432` và không vào được DB).
