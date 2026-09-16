@@ -118,7 +118,9 @@ Docker dev (cổng 5000) đã build lại image web + worker cho khớp bảng m
   healthy, `/login` 200).
 - Nạp tiếng: dry-run `lexicon 262 unchanged`, `syllables 707 new`; chạy thật `--viet-tts pieces
   --tts-pace 3300` ở nền 21:12–21:58: 776 mp3 mới, 979 có sẵn, 0 lỗi; hạn mức TTS tháng 9 172.274/500.000 (34 %).
-- **Chưa chạy** `--viet-tts all` (mp3 đợt 2) — chờ chủ dự án xác nhận nhịp đánh vần (câu hỏi 1 bên dưới).
+- Chủ dự án xác nhận nhịp đánh vần (câu hỏi 1) → mp3 đợt 2 `--viet-tts all --tts-pace 3300` chạy nền
+  trên production 22:48–23:38: 714 mp3 mới, 1.761 có sẵn, 0 lỗi; hạn mức TTS tháng 9 179.357/500.000
+  (36 %). Xưởng Tiếng trên production đã đủ mp3 cả hai đợt.
 - Từ giờ deploy bằng skill `/update_edu_prod` (`.claude/skills/update_edu_prod/SKILL.md`).
 
 ### Lệnh deploy (đã dùng)
@@ -145,6 +147,7 @@ Tổng TTS cho cả hai đợt ≤ 20.172 ký tự — hạn mức tháng 9 sau 
 1. **Nhịp đánh vần trên lớp 1B3 có đúng là "bờ – a – ba – huyền – bà" không** (đọc âm, không đọc tên
    chữ; thanh ngang không gọi tên; tiếng không âm đầu như "anh" chỉ đọc một lần)? Cần trả lời **trước khi
    sinh mp3 đợt 2**. Nếu khác, chỉ sửa `cadence()`.
+   → **Đã trả lời 16/09: đúng nhịp này.** `cadence()` giữ nguyên.
 2. `nham_am_dau` trong bộ mã lỗi đang gắn môn **ESL**, nhưng pha này (và gói `HV.DANH_VAN_TIENG` có sẵn)
    dùng nó cho tiếng Việt như đề bài dặn. Có muốn tách một mã riêng cho tiếng Việt không?
 3. Tên hai bé trong kho tiếng viết thường ("thy", "thanh") để lắp được bằng mảnh chữ thường. Được không,
