@@ -13,6 +13,8 @@ import { StarFlyToPocket } from "@/components/kid/stars";
 import { OfflineNotice } from "@/components/kid/states";
 import { THEME } from "@/components/kid/tokens";
 import { useSpeak } from "@/components/kid/use-speak";
+import { VocabStation } from "@/components/kid/vocab/station";
+import type { VocabGameId, VocabWord } from "@/components/kid/vocab/types";
 
 /**
  * One exercise of a session, wherever it is shown: a page of the quest road (K4), or the panel that
@@ -118,7 +120,20 @@ export function ExercisePlay({
           />
         ) : null}
 
-        {!item.homework ? (
+        {/* A vocabulary station plays a game over words instead of asking one question (pha 11). */}
+        {!item.homework && item.vocab ? (
+          <VocabStation
+            sessionId={session.id}
+            order={item.order}
+            game={item.vocab.game as VocabGameId}
+            words={item.vocab.words as VocabWord[]}
+            mascot={mascot}
+            onFinished={onFinished}
+            onStars={onStars}
+          />
+        ) : null}
+
+        {!item.homework && !item.vocab ? (
           <>
             <ExerciseRenderer
               spec={item.spec as ClientSpec}
