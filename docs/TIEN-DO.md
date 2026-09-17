@@ -2,6 +2,152 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 13 — 17–18/09/2026 — English Maths bám MATH NOTES Grade 1 Vol 1 (EDI-MN1) — v0.1.3
+
+Trạng thái: **việc 1–5 xong trên máy dev, CHƯA deploy** (chờ QC). `pnpm lint` sạch, `pnpm test` xanh
+(core 342 · db 151 · web 96 · content 85 · city 72 · inbox 18), `pnpm build` xanh,
+`content:validate` sạch. Nguồn số liệu: `docs/giao-trinh/EDI-MN1-vol1-phan-tich.md` (đã commit), đối
+chiếu lại ảnh trang PDF.
+
+### Việc 1 — 14 LessonUnit
+
+- `content/lessons/emath/EDI-MN1-U3-L1…L9`, `EDI-MN1-U4-L1…L5` + khung `EDI-MN1.units.json` (quyển 97
+  trang). Mỗi bài: trang sách, mục tiêu, từ vựng tiếng Anh của sách, Try This First + Exit Ticket nguyên
+  câu, đáp án, ghi chú cho ba mẹ (Math in Real Life tr.32, mẹo cá sấu "Alligator eats the bigger
+  number", mẹo Unit 4 tr.36).
+- Trường mới `bookLabel` (số in đầu trang, vd. "Lesson 3-6") trong `packages/content/src/lesson.ts` +
+  test; không có cột DB nên đứng đầu `title` ("Lesson 3-6 · Compare Numbers") để khớp khi cô nói số đó.
+- **Tuần là ước**: sách còn trắng khi chụp (17/09 = tuần 4); TKB 1B3 có 2 buổi English Maths (4 tiết)
+  → 2 bài/tuần. U3: L1–L2 tuần 4 · L3–L4 tuần 5 · L5–L6 tuần 6 · L7–L8 tuần 7 · L9 tuần 8. U4: L1 tuần 9 ·
+  L2 tuần 9–10 · L3 tuần 10 · L4 tuần 11 · L5 tuần 11–12. Nhật ký lớp chưa có dòng English Maths nào.
+- `docs/09` §1c: bảng bài thật, Volume 1 dài 97 trang (có Unit 5–6), số đầu trang lệch trang giới
+  thiệu, "Patterns" là quy luật đếm (`G.PATTERNS` không thuộc sách này).
+
+### Việc 2 — bản đồ kỹ năng EMATH (51 → 54)
+
+- Mới: `NBT.TEEN_NUMBERS` (K.NBT.A.1, tuần 4), `NBT.NUMBER_CHART_20` (tuần 5), `NBT.COMPARE_TO_20`
+  (tuần 7; tiên quyết `COMPARE_1_10` + `TEEN_NUMBERS`).
+- Dời `expectedWeek`: `TENS_ONES` 20 → 6, `PLACE_VALUE_MODELS` 21 → 6, `NUMBER_LINE_TO_20` 6 → 5,
+  `COUNT_ON` 9 → 10, `NUMBER_BONDS_10` 5 → 9, `DOUBLES` 10 → 11, `MAKE_TEN` 13 → 11.
+- Tiên quyết: `TENS_ONES` đòi `COUNT_TO_20` + `TEEN_NUMBERS` (thay `SKIP_COUNT_10S`);
+  `ADD_WITHIN_10` đòi `ADD_WITHIN_5` (thay `NUMBER_BONDS_10` — sách dạy 4-1 trước 4-2).
+  `lessonRef` trỏ về bài EDI-MN1. Mastery cũ không đổi nghĩa; không đụng dữ liệu học.
+- **Tác động lên planner** (`packages/content/src/emath-mn1.test.ts`, chạy planner thật trên bản đồ
+  thật):
+  - bé mới vững đếm/so sánh tới 10 → ô "bài mới" chỉ lấy kỹ năng tuần ≤ 4, có `TEEN_NUMBERS`; chưa mở
+    `TENS_ONES`, `COMPARE_TO_20`;
+  - vững teen numbers và các kỹ năng tuần 4–5 → `TENS_ONES` là bài mới đầu tiên (trước pha 13 phải đợi
+    `SKIP_COUNT_10S` tuần 19); `PLACE_VALUE_MODELS` vẫn chờ `TENS_ONES`;
+  - phiên 12 ô với 6 kỹ năng quá hạn ôn: **≥ 3 ô ôn (30% của 10 ô giữa)**, vẫn có bài mới — sàn ôn
+    không bị phá.
+  - Lưu ý: planner **không khoá theo tuần**, chỉ xếp bài mới theo `expectedWeek` và khoá theo tiên
+    quyết ≥ 60.
+
+### Việc 3 — bài luyện: 307 bài mới (đã nạp + phát hành trên DB dev)
+
+| Gói | Bài | MCQ | LISTEN | DRAG | COUNT_TAP | READ |
+|---|---|---|---|---|---|---|
+| `NBT.TEEN_NUMBERS` (mới) | 49 | 25 | 7 | 7 | 5 | 5 |
+| `NBT.NUMBER_CHART_20` (mới) | 41 | 21 | 5 | 5 | 5 | 5 |
+| `NBT.TENS_ONES` (mới, trước 0 bài) | 38 | 17 | 5 | 6 | 5 | 5 |
+| `NBT.PLACE_VALUE_MODELS` (mới, trước 0 bài) | 36 | 15 | 5 | 6 | 5 | 5 |
+| `NBT.COMPARE_TO_20` (mới) | 54 | 28 | 5 | 11 | 5 | 5 |
+| + `NBT.COUNT_TO_20` | 13 | 6 | 1 | 3 | 2 | 1 |
+| + `NBT.NUMBER_LINE_TO_20` | 12 | 8 | 1 | 1 | 0 | 2 |
+| + `OA.ADD_WITHIN_10` | 12 | 8 | 1 | 1 | 1 | 1 |
+| + `OA.NUMBER_BONDS_10` | 13 | 8 | 1 | 3 | 0 | 1 |
+| + `OA.COUNT_ON` | 12 | 9 | 1 | 1 | 0 | 1 |
+| + `OA.DOUBLES` | 13 | 10 | 1 | 1 | 0 | 1 |
+| + `OA.MAKE_TEN` | 14 | 11 | 1 | 1 | 0 | 1 |
+| **Tổng** | **307** | 166 | 34 | 46 | 28 | 33 |
+
+- Mọi bài có `meta.lessonUnitCode` (307/307 gắn LessonUnit trong DB) và `sourceRef` "EDI-MN1 tr.X". Độ
+  khó 1–2 giữ số, tên người, câu hỏi của sách (Val/Jean, Pat, Jake/Caleb, Cory, Kelly/Carl, bánh quy);
+  3–5 là biến thể. Không `WRITE_PHOTO`, không tô/vẽ. Sinh bằng `scripts/content-gen/emath-mn1-packs.mjs`
+  (chạy lại chỉ thay phần `emath-mn1-*` ở gói cũ).
+- Nhiễu mang đúng bẫy của sách: đếm cả số đầu (`dem_thua_1`), thanh chục 9 khối (`chuc_khong_du_10`),
+  10 là teen number (`nham_so_teen`), nhầm chiều dấu (`nham_dau_lon_be`), chọn số bé khi hỏi số lớn
+  (`so_sanh_nguoc`), đếm cách 2/đếm lùi khi hỏi số tiếp theo (`sai_quy_luat_dem`), doubles cộng sai
+  (`nho_sai_doubles`), đảo chữ số 14/41 (`nham_thu_tu_so`), nhầm chục/đơn vị (`sai_hang_chuc_don_vi`).
+- **4 mã lỗi mới** (45 → 49), mỗi mã có luật ngữ nghĩa + test: `chuc_khong_du_10`, `nham_so_teen`,
+  `sai_quy_luat_dem`, `nho_sai_doubles`. Lý do: không mã cũ nào tả đúng (`dem_thieu_1/dem_thua_1` chỉ
+  nói về một *số* lệch 1; một phép doubles sai là một *câu*, 10 là teen number không lệch số nào…). Đã
+  dùng mã cũ khi đủ nghĩa: đếm cả số đầu → `dem_thua_1`, 23 thay 13 → `sai_hang_chuc_don_vi`.
+  `so_sanh_nguoc`/`nham_dau_lon_be` thêm kỹ năng khắc phục `EMATH.NBT.COMPARE_TO_20`.
+- **TTS `en-US-AnaNeural`** — ước lượng trước khi sinh (`scripts/content-gen/emath-mn1-tts-estimate.mjs`):
+  **232 câu mới, 6.496 ký tự**; production tháng 9 đang ở **180.156 / 500.000 (36%)** → sau đợt này
+  ≈ 37,3%. Dưới 50.000 → **một đợt**. **Thực tế: chưa sinh mp3 nào** — trên dev nạp bằng `--no-tts`
+  (mp3 phục vụ ở production, như pha 12); sinh khi triển khai bằng `pnpm content:import` trên máy chủ
+  (≈ 13 phút ở tốc độ F0).
+
+### Việc 4 — mô hình trực quan trong đề (ADR-26)
+
+- `ImageRef.kind = "model"` + `model`: `tenFrame` (1–2 khung, chấm hai màu), `tensOnes` (thanh chục +
+  khối rời, chuỗi hạt, bẫy thanh 9 khối), `numberLine` (nhãn thưa, ô "?", chấm, vòng nhảy),
+  `numberBond`, `dotCards`, `numberChart` (bảng 20, ô "?", khoanh), `counter`. Không ExerciseType mới,
+  không migration.
+- SVG vẽ từ dữ liệu qua `Picture`; ô đáp án vẽ ten-frame/thanh chục đứng như trang sách (ba–bốn đáp án
+  một hàng). Chữ trong mô hình ≥ 22 px ở cỡ khung đề; không màu đỏ.
+- Kéo-thả: giỏ là ten-frame (chấm rơi vào ô, sau chấm in sẵn), nhãn "15 ○ 12" đặt thẻ vào giữa hai số,
+  thẻ chấm 68 px (≥ 64) để 16–22 chấm vừa khay.
+- **Chấm thẻ giống hệt nhau đổi chỗ được** (`twinsOf`/`resolveTwins`, core): 7 chấm nào cũng đúng; chấm
+  thừa vẫn bị tính và bay về đúng thẻ con đã kéo. Đọc từ spec con đã thấy nên không cần nạp lại bài cũ.
+- Test: 22 test dựng HTML + nhận diện giỏ (web, `math-model.test.ts`), 6 test chấm thẻ giống hệt (core), 3 test schema mô hình (content); cả pha thêm 7 test bài học/planner và 5 test mã lỗi (content).
+
+### Việc 5 — kiểm tra, ảnh, dọn
+
+- **e2e `apps/web/e2e/phase13-math-notes.spec.ts`** (dev server `web-world` :5002, msedge):
+  - trang thử dựng **chính `ExerciseRenderer` của con** (bundle esbuild, CSS của app): 5 câu của sách ở
+    1280×720, iPad ngang 1024×768, iPad dọc 768×1024 — mọi nút ≥ 64 px, không gì dưới mép màn hình,
+    không "sai"/đỏ/đồng hồ; ten-frame 17 đúng 17 chấm; câu "show 13" có đúng một thanh 9 khối; kéo 14
+    chấm: "Xong!" chỉ sáng ở chấm thứ 14, gửi đủ 14 — **xanh**;
+  - **62 dạng bài** EDI-MN1 (mỗi tổ hợp gói × dạng × mô hình) ở 1280×720: nút ≥ 64 px, vừa màn — **xanh**;
+  - phiên thật **Xưởng Máy** (thành phố, cookie `mtct_ui=city`): gặp bài EDI-MN1 có ten-frame ("Make a
+    10. What is 6 + 8?") — **xanh**;
+  - phiên thật **thế giới cũ** (Daily Quest): quest 18/09 gặp bài EDI-MN1 có ten-frame ("What number makes 10 with 8?") — **xanh**. Test đi thẳng từng trạm (`/kid/quest/N`) và bỏ qua trò chơi từ vựng/đánh vần — bản đầu kẹt 14 phút ở trò "Nghe rồi chạm tranh" vì bộ trả lời của test không biết chơi trò đó;
+  - hai phiên thật dùng một `PlanHint` tạm (focus TEEN_NUMBERS, PLACE_VALUE_MODELS, MAKE_TEN,
+    TENS_ONES — đúng cửa `plan-hint.json` của Claude Code), test tự gỡ khi xong (đã kiểm: 0 dòng còn lại).
+- Ảnh: `docs/screens/pha-13-math-notes/` — `b1-ten-frame-17`, `b2-thanh-chuc-13`, `b3-tia-so-9-cong-3`,
+  `b4-number-bond-7-cong-5`, `b5-keo-dau-15-12` (mỗi ảnh thêm bản `-ipad`), `b6/b7` kéo chấm,
+  `s1-xuong-may-ten-frame`, `s2-the-gioi-cu-ten-frame`.
+- `Claude outputs/` thêm vào `.gitignore`; ảnh `cua-so-thut-vao.png` lỡ commit ở pha 12 bỏ khỏi git
+  (file vẫn trên máy, cùng bản nháp skill `nap-bai-vo-edison`).
+- **Chưa deploy.** Khi triển khai: migration không đổi (vẫn 11); sau khi lên cần `pnpm db:seed` (image
+  mới tự chạy khi khởi động — kỹ năng, 14 bài, mã lỗi), `pnpm content:import` (307 bài + 232 mp3), rồi
+  phát hành lô EMATH mới.
+
+### Chỗ làm khác đề bài
+
+1. **Commit Việc 1 và 2 gộp một** (bài học và kỹ năng trỏ lẫn nhau, tách ra thì commit giữa đỏ
+   `content:validate`); Việc 4 commit trước Việc 3 vì bài luyện cần schema mô hình.
+2. `bookLabel` chỉ đặt cho bài **có in số** trên đầu trang; U3-L1…L4 và U4-L2 đầu trang không in số.
+3. Số bài: TEEN_NUMBERS 49 và COMPARE_TO_20 54 (đề ~35–40) vì ba bài so sánh của sách nhiều câu; gói
+   cũ thêm 12–14 bài (đề 8–12).
+4. Giữ số sách nhưng thêm/đổi nhiễu khi nhiễu của sách không có mã lỗi đúng nghĩa: "Which ten-frame
+   shows 17?" giữ 17/19/15 và **thêm 16** (`dem_thieu_1`); "5 stars: 5 7 9" dùng **4/6** thay 7/9.
+5. `ADD_WITHIN_10` đổi tiên quyết (không nêu trong đề) — để `NUMBER_BONDS_10` dời sang tuần 9 không
+   thành tiên quyết của một kỹ năng tuần 8. `NUMBER_BONDS_10` vì thế **muộn hơn** trước (5 → 9).
+6. Chấm "thẻ giống hệt" là thay đổi ở tầng chấm (ADR-26), cần cho "kéo đủ N chấm".
+7. Luật mã lỗi so sánh nhận thêm "has more", "equal to", "farther".
+8. e2e chạy với **Mai Thy**: mã hình của Chí Thanh trên DB dev không có trong repo và tôi không đoán
+   mã. Spec nhận `E2E_KID="Chí Thanh"`, `E2E_KID_SLUG=thanh`, `E2E_KID_PIN=<4 hình, cách nhau dấu phẩy>`.
+9. Ảnh 5 câu của sách chụp trên **trang thử** (renderer thật, không qua đăng nhập) vì `/dev/kit` cần
+   mật khẩu admin (không có `E2E_ADMIN_PASSWORD`) và phiên thật chọn bài ngẫu nhiên. Thêm devDependency
+   `esbuild@0.28.2` cho `@mtct/web` (đã có trong store, qua `tsx`).
+10. **Phiên bản 0.1.3** dù `release:check` đang xanh (GitHub có 0.1.1): production đã chạy 0.1.2 với mã
+    khác, số trên màn hình cần phân biệt bản pha 13.
+
+### Câu hỏi cho chủ dự án
+
+1. **Lớp 1B3 đang ở bài nào** của MATH NOTES? Tuần của 14 bài đang là ước (bắt đầu tuần 4).
+2. Chụp tiếp **sách tr.52–97** (Lesson 4-7/4-8, Math in Real Life + Self-Reflection Unit 4, Unit 5–6).
+3. 141 bài EMATH cũ còn ghi CCSS (vd. `G.PATTERNS` — quy luật lặp, sách này không dạy): giữ, hay chuyển
+   sang retire khi có đủ Volume 1?
+4. Chạy e2e cho Chí Thanh: đặt `E2E_KID_PIN` (hoặc cho tôi mã hình dev của bé).
+5. "Student Self-Reflection" (3 mặt trời) — có muốn thành một bước cuối phiên không? (đang để ý tưởng)
+
+Phiên bản: **v0.1.3** (commit cuối ghi trong báo cáo).
+
 ## Sửa nhỏ — 17/09/2026 — v0.1.2: vừa màn hình thấp, vẽ đủ hình đếm, chặn nốt bài chụp ảnh
 
 - **Phần trả lời tràn khỏi màn hình độ phân giải thấp** (chủ dự án): khung bài trong thành phố cao
