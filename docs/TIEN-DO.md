@@ -2,6 +2,20 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Deploy — 18/09/2026 sáng — v0.1.4 lên production (pha 13 + 13b + 3 sửa nhỏ + dashboard)
+
+Commit `ecc25ff` (`chore(release): v0.1.4`) đã lên `192.168.1.102`; trước đó máy chủ ở `e6ffcbb` / v0.1.2.
+14 commit, gồm cả pha 13 (MATH NOTES) và 13b, bài quy luật vẽ dãy, đọc tiếng Anh theo %, ô "Lớp đang học tới
+bài nào", trang `/admin` kết quả học tập, công tắc tắt đăng nhập.
+
+- Sao lưu trước: `~/pre-deploy-20260918-0548.dump` (3,7 MB).
+- Migration: `20260917215607_diary_lesson_source` → `/api/health` báo `migrations: 12` (khớp 12 thư mục).
+- Seed idempotent lúc khởi động: 4 kỹ năng EMATH mới, 25 LessonUnit EDI-MN1, bộ mã lỗi.
+- `content:import` chạy trên máy chủ: **307 bài mới, 86 bài cập nhật** (trong đó 77 bài đếm sửa `repeat`),
+  25 bài học cập nhật; sinh **229 câu mp3 tiếng Anh** (`en-US-AnaNeural`, ~15 phút).
+- Kiểm tra sau: `/api/health` → `version 0.1.4`, `status ok`, `host ubuntu-edison`, worker ok.
+- Công tắc tắt đăng nhập trên production: **đang TẮT công tắc** (tức vẫn phải đăng nhập như thường).
+
 ## Sửa nhỏ — 18/09/2026 — Trang quản trị: kết quả học tập + công tắc tắt đăng nhập
 
 Chủ dự án: *"Tạo cho tôi dashboard trong trang admin báo kết quả học tập của các con nữa nhé."* và
