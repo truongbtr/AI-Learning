@@ -1,0 +1,3044 @@
+{
+  "skillCode": "EMATH.NBT.TEEN_NUMBERS",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["EDI-MN1-U3-L2"],
+  "note": "EDI-MN1 Lesson 'Numbers 11 to 19' (tr.8–10): hai ten-frame, 1 ten and … ones, teen numbers. Bẫy của sách: 10 không phải teen number (nham_so_teen).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-teen-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many dots?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-14+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 14,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["The first frame is full: that is 10.", "Count on from 10: 11, 12…"],
+      "explanation": "A full frame is 10, and 4 more makes 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-teen-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many dots in all?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-17+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 17,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The first frame is full: that is 10.", "Count on from 10: 11, 12…"],
+      "explanation": "A full frame is 10, and 7 more makes 17.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-teen-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count the dots. What number?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-13+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 13,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The first frame is full: that is 10.", "Count on from 10: 11, 12…"],
+      "explanation": "A full frame is 10, and 3 more makes 13.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-teen-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many dots?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-18+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 18,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["The first frame is full: that is 10.", "Count on from 10: 11, 12…"],
+      "explanation": "A full frame is 10, and 8 more makes 18.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-teen-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many dots in all?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-11+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 11,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The first frame is full: that is 10.", "Count on from 10: 11, 12…"],
+      "explanation": "A full frame is 10, and 1 more makes 11.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-teen-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count the dots. What number?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-16+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 16,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The first frame is full: that is 10.", "Count on from 10: 11, 12…"],
+      "explanation": "A full frame is 10, and 6 more makes 16.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-teen-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many dots?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-19+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 19,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "20",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["The first frame is full: that is 10.", "Count on from 10: 11, 12…"],
+      "explanation": "A full frame is 10, and 9 more makes 19.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-teen-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many dots in all?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-12+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 12,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The first frame is full: that is 10.", "Count on from 10: 11, 12…"],
+      "explanation": "A full frame is 10, and 2 more makes 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-teen-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which ten-frame shows 17?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-17+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 17,
+                  "tone": "dark"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-19+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 19,
+                  "tone": "dark"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-15+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 15,
+                  "tone": "dark"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "d",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-16+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 16,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find the full frame first.", "Then count the dots in the second frame: 7."],
+      "explanation": "17 is a full ten-frame and 7 more.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which ten-frame shows 13?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-13+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 13,
+                  "tone": "dark"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-12+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 12,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-14+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 14,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A full frame is 10.", "Look for 10 and 3 more."],
+      "explanation": "13 is 10 and 3 more.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which ten-frame shows 18?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-17+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 17,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-18+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 18,
+                  "tone": "dark"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-19+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 19,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A full frame is 10.", "Look for 10 and 8 more."],
+      "explanation": "18 is 10 and 8 more.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which ten-frame shows 12?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-11+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 11,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-13+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 13,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-12+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 12,
+                  "tone": "dark"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["A full frame is 10.", "Look for 10 and 2 more."],
+      "explanation": "12 is 10 and 2 more.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which ten-frame shows 15?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-15+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 15,
+                  "tone": "dark"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-14+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 14,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-16+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 16,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A full frame is 10.", "Look for 10 and 5 more."],
+      "explanation": "15 is 10 and 5 more.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_so_teen",
+      "scaffold": "model",
+      "id": "emath-teen-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which is a teen number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "nham_so_teen"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Teen numbers are 11 to 19.", "10 is one ten and no ones."],
+      "explanation": "12 is a teen number: 1 ten and 2 ones.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_so_teen",
+      "scaffold": "none",
+      "id": "emath-teen-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap the teen number."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "nham_so_teen"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Teen numbers are 11 to 19.", "10 is one ten and no ones."],
+      "explanation": "15 is a teen number: 1 ten and 5 ones.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_so_teen",
+      "scaffold": "none",
+      "id": "emath-teen-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Find the teen number."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17"
+        },
+        {
+          "id": "b",
+          "text": "20",
+          "errorTag": "nham_so_teen"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Teen numbers are 11 to 19.", "10 is one ten and no ones."],
+      "explanation": "17 is a teen number: 1 ten and 7 ones.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_so_teen",
+      "scaffold": "none",
+      "id": "emath-teen-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which is a teen number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "nham_so_teen"
+        },
+        {
+          "id": "b",
+          "text": "19"
+        },
+        {
+          "id": "c",
+          "text": "20",
+          "errorTag": "nham_so_teen"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Teen numbers are 11 to 19.", "10 is one ten and no ones."],
+      "explanation": "19 is a teen number: 1 ten and 9 ones.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-teen-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is 10 + 3?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-10+3",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 10,
+                "tone": "dark"
+              },
+              {
+                "count": 3,
+                "tone": "light"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at 10 and count on.", "10, then 3 more."],
+      "explanation": "10 + 3 = 13.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is 10 + 7?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-10+7",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 10,
+                "tone": "dark"
+              },
+              {
+                "count": 7,
+                "tone": "light"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Start at 10 and count on.", "10, then 7 more."],
+      "explanation": "10 + 7 = 17.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What is 10 + 5?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-10+5",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 10,
+                "tone": "dark"
+              },
+              {
+                "count": 5,
+                "tone": "light"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Start at 10 and count on.", "10, then 5 more."],
+      "explanation": "10 + 5 = 15.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-teen-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What is 10 + 9?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-10+9",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 10,
+                "tone": "dark"
+              },
+              {
+                "count": 9,
+                "tone": "light"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "20",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start at 10 and count on.", "10, then 9 more."],
+      "explanation": "10 + 9 = 19.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-teen-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "1 ten and 4 ones is what number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "41",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The ten comes first: 1…", "Then the ones: 4."],
+      "explanation": "1 ten and 4 ones is 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-teen-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "1 ten and 8 ones is what number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "81",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The ten comes first: 1…", "Then the ones: 8."],
+      "explanation": "1 ten and 8 ones is 18.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-teen-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "1 ten and 6 ones is what number?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "61",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["The ten comes first: 1…", "Then the ones: 6."],
+      "explanation": "1 ten and 6 ones is 16.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "10 + ? = 16"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "16",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["16 is 10 and some ones.", "How many ones are in 16?"],
+      "explanation": "16 is 10 and 6, so 10 + 6 = 16.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the number."
+      },
+      "listenTarget": {
+        "text": "fourteen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen for the '-teen' at the end.", "Tap the number with a 1 in front."],
+      "explanation": "You heard \"fourteen\": 14.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "seventeen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen for the '-teen' at the end.", "Tap the number with a 1 in front."],
+      "explanation": "You heard \"seventeen\": 17.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "thirteen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen for the '-teen' at the end.", "Tap the number with a 1 in front."],
+      "explanation": "You heard \"thirteen\": 13.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully and pick one."
+      },
+      "listenTarget": {
+        "text": "eighteen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen for the '-teen' at the end.", "Tap the number with a 1 in front."],
+      "explanation": "You heard \"eighteen\": 18.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hear it, then find it."
+      },
+      "listenTarget": {
+        "text": "eleven"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen for the '-teen' at the end.", "Tap the number with a 1 in front."],
+      "explanation": "You heard \"eleven\": 11.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap what you hear."
+      },
+      "listenTarget": {
+        "text": "nineteen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "20",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen for the '-teen' at the end.", "Tap the number with a 1 in front."],
+      "explanation": "You heard \"nineteen\": 19.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. Which ten-frames show it?"
+      },
+      "listenTarget": {
+        "text": "fifteen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-14+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 14,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-15+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 15,
+                  "tone": "dark"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-16+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 16,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Fifteen is ten and five.", "Find a full frame and 5 more."],
+      "explanation": "Fifteen is a full ten-frame and 5 more.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-teen-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Draw number 14. Drag the dots in."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c9",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c10",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c11",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c12",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c13",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c14",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c15",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c16",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-2-[]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": []
+            }
+          },
+          "accepts": [
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c6",
+            "c7",
+            "c8",
+            "c9",
+            "c10",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16"
+          ]
+        }
+      ],
+      "answerKey": {
+        "frame": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7",
+          "c8",
+          "c9",
+          "c10",
+          "c11",
+          "c12",
+          "c13",
+          "c14"
+        ]
+      },
+      "hints": ["Fill the first frame: 10.", "Then 4 more in the second frame."],
+      "explanation": "14 is a full frame and 4 more.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.9"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-teen-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Show 1 group of ten and 5 ones."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c9",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c10",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c11",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c12",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c13",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c14",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c15",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c16",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c17",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-2-[]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": []
+            }
+          },
+          "accepts": [
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c6",
+            "c7",
+            "c8",
+            "c9",
+            "c10",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17"
+          ]
+        }
+      ],
+      "answerKey": {
+        "frame": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7",
+          "c8",
+          "c9",
+          "c10",
+          "c11",
+          "c12",
+          "c13",
+          "c14",
+          "c15"
+        ]
+      },
+      "hints": ["A group of ten fills one frame.", "Then put 5 in the other frame."],
+      "explanation": "1 ten and 5 ones is 15.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-teen-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "The first frame is full. Drag dots to show 13."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-2-[{\"count\":10,\"tone\":\"dark\"}]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 10,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "accepts": ["c1", "c2", "c3", "c4", "c5", "c6"]
+        }
+      ],
+      "answerKey": {
+        "frame": ["c1", "c2", "c3"]
+      },
+      "hints": ["10 is already there.", "13 is 10 and 3."],
+      "explanation": "10 and 3 more is 13.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-teen-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Show 1 group of ten and 1 one."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c9",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c10",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c11",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c12",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c13",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c14",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-2-[]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": []
+            }
+          },
+          "accepts": [
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c6",
+            "c7",
+            "c8",
+            "c9",
+            "c10",
+            "c11",
+            "c12",
+            "c13",
+            "c14"
+          ]
+        }
+      ],
+      "answerKey": {
+        "frame": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10", "c11"]
+      },
+      "hints": ["Fill one whole frame first.", "Then just one more."],
+      "explanation": "1 ten and 1 one is 11.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_so_teen",
+      "scaffold": "none",
+      "id": "emath-teen-0037",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Is it a teen number? Sort the cards."
+      },
+      "dragItems": [
+        {
+          "id": "n12",
+          "text": "12"
+        },
+        {
+          "id": "n15",
+          "text": "15"
+        },
+        {
+          "id": "n17",
+          "text": "17"
+        },
+        {
+          "id": "n7",
+          "text": "7"
+        },
+        {
+          "id": "n10",
+          "text": "10",
+          "errorTag": "nham_so_teen"
+        },
+        {
+          "id": "n4",
+          "text": "4"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "teen",
+          "label": "Teen numbers",
+          "accepts": ["n12", "n15", "n17", "n7", "n10", "n4"]
+        },
+        {
+          "id": "not",
+          "label": "Not teen",
+          "accepts": ["n12", "n15", "n17", "n7", "n10", "n4"]
+        }
+      ],
+      "answerKey": {
+        "teen": ["n12", "n15", "n17"],
+        "not": ["n7", "n10", "n4"]
+      },
+      "hints": ["Teen numbers go from 11 to 19.", "10 is not a teen number."],
+      "explanation": "12, 15 and 17 are teen numbers; 10 is not.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.10"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0038",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Match each number to its word."
+      },
+      "dragItems": [
+        {
+          "id": "w13",
+          "text": "thirteen"
+        },
+        {
+          "id": "w16",
+          "text": "sixteen"
+        },
+        {
+          "id": "w19",
+          "text": "nineteen"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z13",
+          "label": "13",
+          "accepts": ["w13", "w16", "w19"]
+        },
+        {
+          "id": "z16",
+          "label": "16",
+          "accepts": ["w13", "w16", "w19"]
+        },
+        {
+          "id": "z19",
+          "label": "19",
+          "accepts": ["w13", "w16", "w19"]
+        }
+      ],
+      "answerKey": {
+        "z13": ["w13"],
+        "z16": ["w16"],
+        "z19": ["w19"]
+      },
+      "hints": ["Read the start of each word.", "Six-teen is 16."],
+      "explanation": "13 thirteen, 16 sixteen, 19 nineteen.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0039",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Put the teen numbers in order."
+      },
+      "dragItems": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "first",
+          "label": "First",
+          "accepts": ["a", "b", "c"]
+        },
+        {
+          "id": "second",
+          "label": "Next",
+          "accepts": ["a", "b", "c"]
+        },
+        {
+          "id": "third",
+          "label": "Last",
+          "accepts": ["a", "b", "c"]
+        }
+      ],
+      "answerKey": {
+        "first": ["b"],
+        "second": ["a"],
+        "third": ["c"]
+      },
+      "hints": ["Start with the smallest.", "11 comes before 14."],
+      "explanation": "11, 14, 18.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0040",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each one to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "✏️",
+          "labelVi": "bút chì",
+          "labelEn": "pencils",
+          "repeat": 12
+        },
+        "correctCount": 12,
+        "layout": "grid"
+      },
+      "answerKey": 12,
+      "hints": ["Count to 10 first.", "Then keep going: 11, 12…"],
+      "explanation": "There are 12 pencils.",
+      "meta": {
+        "estSeconds": 44,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.4"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0041",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap and count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔵",
+          "labelVi": "chấm",
+          "labelEn": "dots",
+          "repeat": 11
+        },
+        "correctCount": 11,
+        "layout": "grid"
+      },
+      "answerKey": 11,
+      "hints": ["Count to 10 first.", "Then keep going: 11, 12…"],
+      "explanation": "There are 11 dots.",
+      "meta": {
+        "estSeconds": 42,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0042",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count them all. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🎈",
+          "labelVi": "bóng bay",
+          "labelEn": "balloons",
+          "repeat": 13
+        },
+        "correctCount": 13,
+        "layout": "grid"
+      },
+      "answerKey": 13,
+      "hints": ["Count to 10 first.", "Then keep going: 11, 12…"],
+      "explanation": "There are 13 balloons.",
+      "meta": {
+        "estSeconds": 46,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0043",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Touch each one as you count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "stars",
+          "repeat": 14
+        },
+        "correctCount": 14,
+        "layout": "grid"
+      },
+      "answerKey": 14,
+      "hints": ["Count to 10 first.", "Then keep going: 11, 12…"],
+      "explanation": "There are 14 stars.",
+      "meta": {
+        "estSeconds": 48,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0044",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "COUNT_TAP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each one to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "labelEn": "bees",
+          "repeat": 12
+        },
+        "correctCount": 12,
+        "layout": "grid"
+      },
+      "answerKey": 12,
+      "hints": ["Count to 10 first.", "Then keep going: 11, 12…"],
+      "explanation": "There are 12 bees.",
+      "meta": {
+        "estSeconds": 44,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0045",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Fourteen.",
+        "words": ["Fourteen"]
+      },
+      "answerKey": {
+        "words": ["Fourteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Fourteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-teen-0046",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Say it clearly."
+      },
+      "readTarget": {
+        "text": "Ten and four is fourteen.",
+        "words": ["Ten", "and", "four", "is", "fourteen"]
+      },
+      "answerKey": {
+        "words": ["Ten", "and", "four", "is", "fourteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Ten and four is fourteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0047",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "One ten and seven ones is seventeen.",
+        "words": ["One", "ten", "and", "seven", "ones", "is", "seventeen"]
+      },
+      "answerKey": {
+        "words": ["One", "ten", "and", "seven", "ones", "is", "seventeen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"One ten and seven ones is seventeen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0048",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Eleven, twelve, thirteen, fourteen, fifteen.",
+        "words": ["Eleven", "twelve", "thirteen", "fourteen", "fifteen"]
+      },
+      "answerKey": {
+        "words": ["Eleven", "twelve", "thirteen", "fourteen", "fifteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Eleven, twelve, thirteen, fourteen, fifteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-teen-0049",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TEEN_NUMBERS"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Ten is not a teen number.",
+        "words": ["Ten", "is", "not", "a", "teen", "number"]
+      },
+      "answerKey": {
+        "words": ["Ten", "is", "not", "a", "teen", "number"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Ten is not a teen number.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L2",
+        "sourceRef": "EDI-MN1 tr.8"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2128 @@
+{
+  "skillCode": "EMATH.NBT.COMPARE_TO_20",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["EDI-MN1-U3-L7", "EDI-MN1-U3-L8", "EDI-MN1-U3-L9"],
+  "note": "EDI-MN1 Lesson 3-6 Compare Numbers, 3-7 Compare Numbers on a Number Line, 3-8 Use Symbols (tr.23–31). 'Alligator eats the bigger number.' Kéo dấu > < = vào ô tròn giữa hai số.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "model",
+      "id": "emath-cmp20-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which is greater: 8 or 12?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-2-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 2
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["12 has a ten. 8 does not.", "A ten makes it bigger."],
+      "explanation": "12 is greater than 8.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.23"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "emath-cmp20-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is correct?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-2-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 2
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9 is greater than 12",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "12 is greater than 9"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["12 is 1 ten and 2 ones.", "9 has no ten."],
+      "explanation": "12 is greater than 9.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "model",
+      "id": "emath-cmp20-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Val has 17 beads. Jean has 11 beads. Who has more?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Val"
+        },
+        {
+          "id": "b",
+          "text": "Jean",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Compare 17 and 11.", "Both have 1 ten. Compare the ones: 7 and 1."],
+      "explanation": "17 is greater than 11, so Val has more.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-cmp20-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "True or false: 11 is greater than 12."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "True",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Compare the tens first.", "Then compare the ones."],
+      "explanation": "It is false.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "True or false: 13 is greater than 2."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Compare the tens first.", "Then compare the ones."],
+      "explanation": "It is true.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "True or false: 9 is equal to 19."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "True",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Compare the tens first.", "Then compare the ones."],
+      "explanation": "It is false.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "True or false: 15 is equal to 15."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Compare the tens first.", "Then compare the ones."],
+      "explanation": "It is true.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.25"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "True or false: 19 is less than 2."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "True",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Compare the tens first.", "Then compare the ones."],
+      "explanation": "It is false.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.25"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "emath-cmp20-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Mia has 14 cards. Tom has 19 cards. Who has more?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tom"
+        },
+        {
+          "id": "b",
+          "text": "Mia",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find the two numbers.", "Fewer means less."],
+      "explanation": "Tom is the answer.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.25"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "emath-cmp20-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Ben has 16 shells. Lan has 12 shells. Who has fewer?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ben",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "Lan"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find the two numbers.", "Fewer means less."],
+      "explanation": "Lan is the answer.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.25"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "emath-cmp20-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "An has 20 stickers. Bo has 18. Who has fewer?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bo"
+        },
+        {
+          "id": "b",
+          "text": "An",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find the two numbers.", "Fewer means less."],
+      "explanation": "Bo is the answer.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.25"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-cmp20-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is farther to the right: 7 or 10?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20],\"marks\":[7,10]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20],
+            "marks": [7, 10]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Numbers grow to the right.", "Find 7 and 10 on the line."],
+      "explanation": "10 is farther to the right, so 10 is greater.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.26"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "emath-cmp20-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which sentence is correct?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20],\"marks\":[8,14]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20],
+            "marks": [8, 14]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14 is greater than 8"
+        },
+        {
+          "id": "b",
+          "text": "8 is greater than 14",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["The number to the right is greater.", "14 is to the right of 8."],
+      "explanation": "14 is greater than 8.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.27"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "True or false: 4 is less than 7.",
+        "image": {
+          "kind": "model",
+          "value": "nl-3-17-{\"labels\":[3,5,10,15,17],\"marks\":[4,7]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 3,
+            "to": 17,
+            "labels": [3, 5, 10, 15, 17],
+            "marks": [4, 7]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "False",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "True"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find both numbers on the line.", "Left is less, right is greater."],
+      "explanation": "It is true.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.27"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "True or false: 3 is greater than 13.",
+        "image": {
+          "kind": "model",
+          "value": "nl-3-17-{\"labels\":[3,5,10,15,17],\"marks\":[3,13]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 3,
+            "to": 17,
+            "labels": [3, 5, 10, 15, 17],
+            "marks": [3, 13]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "False"
+        },
+        {
+          "id": "b",
+          "text": "True",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find both numbers on the line.", "Left is less, right is greater."],
+      "explanation": "It is false.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.27"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "True or false: 8 is equal to 9.",
+        "image": {
+          "kind": "model",
+          "value": "nl-3-17-{\"labels\":[3,5,10,15,17],\"marks\":[8,9]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 3,
+            "to": 17,
+            "labels": [3, 5, 10, 15, 17],
+            "marks": [8, 9]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "True",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find both numbers on the line.", "Left is less, right is greater."],
+      "explanation": "It is false.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.27"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "model",
+      "id": "emath-cmp20-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Pat says that 6 is greater than 11. Do you agree?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20],\"marks\":[6,11]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20],
+            "marks": [6, 11]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "No"
+        },
+        {
+          "id": "b",
+          "text": "Yes",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Where is 6? Where is 11?", "11 is to the right."],
+      "explanation": "No: 6 is less than 11.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.27"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which is less: 12 or 14?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find both on the number line.", "The one on the left is less."],
+      "explanation": "The answer is 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which is less: 18 or 15?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find both on the number line.", "The one on the left is less."],
+      "explanation": "The answer is 15.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Jake has 12 cards. Caleb has 18 cards. Who has more?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Jake",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "Caleb"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find both on the number line.", "The one on the left is less."],
+      "explanation": "The answer is Caleb.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "emath-cmp20-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which is less: 19 or 9?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "19",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find both on the number line.", "The one on the left is less."],
+      "explanation": "The answer is 9.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "model",
+      "id": "emath-cmp20-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which symbol means less than?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "<"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The alligator eats the bigger number.", "Less than points to the left: <"],
+      "explanation": "< means less than.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.30"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "emath-cmp20-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which symbol would you use between 15 and 12?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": ">"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Which is bigger, 15 or 12?", "The open mouth faces 15."],
+      "explanation": "15 > 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.29"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which symbol means equal to?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "="
+        },
+        {
+          "id": "b",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Equal means the same.", "It has two flat lines."],
+      "explanation": "= means equal to.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "so_sanh_nguoc",
+      "scaffold": "none",
+      "id": "emath-cmp20-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Pat writes 8 > 17. Is Pat correct?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "No"
+        },
+        {
+          "id": "b",
+          "text": "Yes",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Is 8 greater than 17?", "17 has a ten."],
+      "explanation": "No: 8 < 17.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which sign goes in 16 ○ 13?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": ">"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Which number is greater?", "The mouth opens to the greater number."],
+      "explanation": "16 > 13.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.30"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which sign goes in 14 ○ 19?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<"
+        },
+        {
+          "id": "b",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Which number is greater?", "The mouth opens to the greater number."],
+      "explanation": "14 < 19.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.30"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which sign goes in 20 ○ 20?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "="
+        },
+        {
+          "id": "c",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Which number is greater?", "The mouth opens to the greater number."],
+      "explanation": "20 = 20.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.30"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "model",
+      "id": "emath-cmp20-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the right sign."
+      },
+      "dragItems": [
+        {
+          "id": "gt",
+          "text": ">"
+        },
+        {
+          "id": "lt",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "eq",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "sign",
+          "label": "15 ○ 12",
+          "accepts": ["gt", "lt", "eq"]
+        }
+      ],
+      "answerKey": {
+        "sign": ["gt"]
+      },
+      "hints": ["Which number is greater?", "The open side faces the greater number."],
+      "explanation": "15 > 12.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.30"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "model",
+      "id": "emath-cmp20-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which sign fits? Drag it in."
+      },
+      "dragItems": [
+        {
+          "id": "gt",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "lt",
+          "text": "<"
+        },
+        {
+          "id": "eq",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "sign",
+          "label": "5 ○ 11",
+          "accepts": ["gt", "lt", "eq"]
+        }
+      ],
+      "answerKey": {
+        "sign": ["lt"]
+      },
+      "hints": ["Which number is greater?", "The open side faces the greater number."],
+      "explanation": "5 < 11.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.30"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "emath-cmp20-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Make it true: drag a sign."
+      },
+      "dragItems": [
+        {
+          "id": "gt",
+          "text": ">"
+        },
+        {
+          "id": "lt",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "eq",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "sign",
+          "label": "17 ○ 8",
+          "accepts": ["gt", "lt", "eq"]
+        }
+      ],
+      "answerKey": {
+        "sign": ["gt"]
+      },
+      "hints": ["Which number is greater?", "The open side faces the greater number."],
+      "explanation": "17 > 8.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.30"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "emath-cmp20-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Feed the alligator: drag the sign."
+      },
+      "dragItems": [
+        {
+          "id": "gt",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "lt",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "eq",
+          "text": "="
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "sign",
+          "label": "12 ○ 12",
+          "accepts": ["gt", "lt", "eq"]
+        }
+      ],
+      "answerKey": {
+        "sign": ["eq"]
+      },
+      "hints": ["Which number is greater?", "The open side faces the greater number."],
+      "explanation": "12 = 12.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.30"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "emath-cmp20-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the right sign."
+      },
+      "dragItems": [
+        {
+          "id": "gt",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "lt",
+          "text": "<"
+        },
+        {
+          "id": "eq",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "sign",
+          "label": "15 ○ 19",
+          "accepts": ["gt", "lt", "eq"]
+        }
+      ],
+      "answerKey": {
+        "sign": ["lt"]
+      },
+      "hints": ["Which number is greater?", "The open side faces the greater number."],
+      "explanation": "15 < 19.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "emath-cmp20-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which sign fits? Drag it in."
+      },
+      "dragItems": [
+        {
+          "id": "gt",
+          "text": ">"
+        },
+        {
+          "id": "lt",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "eq",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "sign",
+          "label": "2 ○ 1",
+          "accepts": ["gt", "lt", "eq"]
+        }
+      ],
+      "answerKey": {
+        "sign": ["gt"]
+      },
+      "hints": ["Which number is greater?", "The open side faces the greater number."],
+      "explanation": "2 > 1.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "emath-cmp20-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Make it true: drag a sign."
+      },
+      "dragItems": [
+        {
+          "id": "gt",
+          "text": ">"
+        },
+        {
+          "id": "lt",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "eq",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "sign",
+          "label": "20 ○ 19",
+          "accepts": ["gt", "lt", "eq"]
+        }
+      ],
+      "answerKey": {
+        "sign": ["gt"]
+      },
+      "hints": ["Which number is greater?", "The open side faces the greater number."],
+      "explanation": "20 > 19.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "emath-cmp20-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Feed the alligator: drag the sign."
+      },
+      "dragItems": [
+        {
+          "id": "gt",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "lt",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "eq",
+          "text": "="
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "sign",
+          "label": "10 ○ 10",
+          "accepts": ["gt", "lt", "eq"]
+        }
+      ],
+      "answerKey": {
+        "sign": ["eq"]
+      },
+      "hints": ["Which number is greater?", "The open side faces the greater number."],
+      "explanation": "10 = 10.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_dau_lon_be",
+      "scaffold": "none",
+      "id": "emath-cmp20-0037",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the right sign."
+      },
+      "dragItems": [
+        {
+          "id": "gt",
+          "text": ">"
+        },
+        {
+          "id": "lt",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "eq",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "sign",
+          "label": "18 ○ 7",
+          "accepts": ["gt", "lt", "eq"]
+        }
+      ],
+      "answerKey": {
+        "sign": ["gt"]
+      },
+      "hints": ["Which number is greater?", "The open side faces the greater number."],
+      "explanation": "18 > 7.",
+      "meta": {
+        "estSeconds": 30,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0038",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Greater than 15 or less than 15?"
+      },
+      "dragItems": [
+        {
+          "id": "n19",
+          "text": "19"
+        },
+        {
+          "id": "n12",
+          "text": "12"
+        },
+        {
+          "id": "n17",
+          "text": "17"
+        },
+        {
+          "id": "n9",
+          "text": "9"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "more",
+          "label": "Greater than 15",
+          "accepts": ["n19", "n12", "n17", "n9"]
+        },
+        {
+          "id": "less",
+          "label": "Less than 15",
+          "accepts": ["n19", "n12", "n17", "n9"]
+        }
+      ],
+      "answerKey": {
+        "more": ["n19", "n17"],
+        "less": ["n12", "n9"]
+      },
+      "hints": ["Say the numbers in order and find 15.", "After 15 is greater."],
+      "explanation": "17 and 19 are greater than 15; 9 and 12 are less.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.25"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0039",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Order from least to greatest.",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20]
+          }
+        }
+      },
+      "dragItems": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "l",
+          "label": "Least",
+          "accepts": ["a", "b", "c"]
+        },
+        {
+          "id": "m",
+          "label": "Middle",
+          "accepts": ["a", "b", "c"]
+        },
+        {
+          "id": "g",
+          "label": "Greatest",
+          "accepts": ["a", "b", "c"]
+        }
+      ],
+      "answerKey": {
+        "l": ["b"],
+        "m": ["a"],
+        "g": ["c"]
+      },
+      "hints": ["Find each on the number line.", "Left to right is least to greatest."],
+      "explanation": "8, 13, 18.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.28"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0040",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Hear it, then find it."
+      },
+      "listenTarget": {
+        "text": "sixteen or twelve: which is greater?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen for greater or less.", "Compare the two numbers."],
+      "explanation": "The answer is 16.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0041",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap what you hear."
+      },
+      "listenTarget": {
+        "text": "nine or fourteen: which is less?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen for greater or less.", "Compare the two numbers."],
+      "explanation": "The answer is 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0042",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the number."
+      },
+      "listenTarget": {
+        "text": "eleven or seventeen: which is greater?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "so_sanh_nguoc"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen for greater or less.", "Compare the two numbers."],
+      "explanation": "The answer is 17.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.24"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0043",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. Tap the sign."
+      },
+      "listenTarget": {
+        "text": "greater than"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "b",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": ">"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The alligator opens to the bigger number.", "Look at which way it points."],
+      "explanation": "> means greater than.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.29"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0044",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which sign did you hear?"
+      },
+      "listenTarget": {
+        "text": "less than"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "<"
+        },
+        {
+          "id": "b",
+          "text": ">",
+          "errorTag": "nham_dau_lon_be"
+        },
+        {
+          "id": "c",
+          "text": "=",
+          "errorTag": "nham_dau_lon_be"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["The alligator opens to the bigger number.", "Look at which way it points."],
+      "explanation": "< means less than.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.29"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0045",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each one to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍓",
+          "labelVi": "quả dâu",
+          "labelEn": "strawberries",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Count each one once.", "Say the number out loud."],
+      "explanation": "There are 10 strawberries.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0046",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap and count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apples",
+          "repeat": 12
+        },
+        "correctCount": 12,
+        "layout": "grid"
+      },
+      "answerKey": 12,
+      "hints": ["Count each one once.", "Say the number out loud."],
+      "explanation": "There are 12 apples.",
+      "meta": {
+        "estSeconds": 44,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0047",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count them all. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🏓",
+          "labelVi": "vợt bóng bàn",
+          "labelEn": "bats",
+          "repeat": 8
+        },
+        "correctCount": 8,
+        "layout": "grid"
+      },
+      "answerKey": 8,
+      "hints": ["Count each one once.", "Say the number out loud."],
+      "explanation": "There are 8 bats.",
+      "meta": {
+        "estSeconds": 36,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0048",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Touch each one as you count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🥢",
+          "labelVi": "que",
+          "labelEn": "sticks",
+          "repeat": 14
+        },
+        "correctCount": 14,
+        "layout": "grid"
+      },
+      "answerKey": 14,
+      "hints": ["Count each one once.", "Say the number out loud."],
+      "explanation": "There are 14 sticks.",
+      "meta": {
+        "estSeconds": 48,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0049",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each one to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐸",
+          "labelVi": "con ếch",
+          "labelEn": "frogs",
+          "repeat": 11
+        },
+        "correctCount": 11,
+        "layout": "grid"
+      },
+      "answerKey": 11,
+      "hints": ["Count each one once.", "Say the number out loud."],
+      "explanation": "There are 11 frogs.",
+      "meta": {
+        "estSeconds": 42,
+        "lessonUnitCode": "EDI-MN1-U3-L9",
+        "sourceRef": "EDI-MN1 tr.31"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-cmp20-0050",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Eighteen is greater than fifteen.",
+        "words": ["Eighteen", "is", "greater", "than", "fifteen"]
+      },
+      "answerKey": {
+        "words": ["Eighteen", "is", "greater", "than", "fifteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Eighteen is greater than fifteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.23"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0051",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Say it clearly."
+      },
+      "readTarget": {
+        "text": "Fifteen is less than eighteen.",
+        "words": ["Fifteen", "is", "less", "than", "eighteen"]
+      },
+      "answerKey": {
+        "words": ["Fifteen", "is", "less", "than", "eighteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Fifteen is less than eighteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.23"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0052",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Twelve is equal to twelve.",
+        "words": ["Twelve", "is", "equal", "to", "twelve"]
+      },
+      "answerKey": {
+        "words": ["Twelve", "is", "equal", "to", "twelve"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Twelve is equal to twelve.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.23"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0053",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "The number to the right is greater.",
+        "words": ["The", "number", "to", "the", "right", "is", "greater"]
+      },
+      "answerKey": {
+        "words": ["The", "number", "to", "the", "right", "is", "greater"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The number to the right is greater.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.26"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-cmp20-0054",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COMPARE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "The alligator eats the bigger number!",
+        "words": ["The", "alligator", "eats", "the", "bigger", "number"]
+      },
+      "answerKey": {
+        "words": ["The", "alligator", "eats", "the", "bigger", "number"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The alligator eats the bigger number!\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L7",
+        "sourceRef": "EDI-MN1 tr.23"
+      }
+    }
+  ]
+}

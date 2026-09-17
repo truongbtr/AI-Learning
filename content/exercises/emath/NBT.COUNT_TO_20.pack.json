@@ -3,7 +3,7 @@
   "subject": "EMATH",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v1",
-  "lessonRefs": [],
+  "lessonRefs": ["EDI-MN1-U3-L1"],
   "note": "Count to 20 bằng tiếng Anh — song song với Toán Bài 1 và Bài 2. Nguồn: MATH NOTES Grade 1 Vol.1 (EDI-MN1) tr.5–10 — trước ghi CCSS.MATH.1.OA/1.NBT vì chưa có sách.",
   "exercises": [
     {
@@ -1660,6 +1660,688 @@
         "estSeconds": 70,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.5–10 (MATH NOTES Grade 1, Unit 3: Numbers 1 to 10 + Numbers 11 to 20)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-count-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many fingers are on one hand?",
+        "image": {
+          "kind": "emoji",
+          "value": "🖐️",
+          "labelVi": "bàn tay",
+          "labelEn": "hand"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Hold up one hand.", "Count each finger."],
+      "explanation": "One hand has 5 fingers.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.5"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-count-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Circle the correct number. How many triangles?",
+        "image": {
+          "kind": "emoji",
+          "value": "🔺",
+          "labelVi": "tam giác",
+          "labelEn": "triangles",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Touch each one as you count.", "Say the last number you count."],
+      "explanation": "There are 3 triangles.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.6"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-mn1-count-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Circle the correct number. How many hearts?",
+        "image": {
+          "kind": "emoji",
+          "value": "❤️",
+          "labelVi": "trái tim",
+          "labelEn": "hearts",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Touch each one as you count.", "Say the last number you count."],
+      "explanation": "There are 8 hearts.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.6"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-count-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Circle the correct number. How many stars?",
+        "image": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "stars",
+          "repeat": 5
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Touch each one as you count.", "Say the last number you count."],
+      "explanation": "There are 5 stars.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.6"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-count-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many cars? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🚗",
+          "labelVi": "ô tô",
+          "labelEn": "cars",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Two rows of five.", "5 and 5 more."],
+      "explanation": "There are 10 cars.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.6"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-count-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many teddy bears? Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🧸",
+          "labelVi": "gấu bông",
+          "labelEn": "teddy bears",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Two rows of five.", "5 and 5 more."],
+      "explanation": "There are 10 teddy bears.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.6"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-mn1-count-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Draw 7 objects: drag 7 dots in."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c9",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c10",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-1-[]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 1,
+              "dots": []
+            }
+          },
+          "accepts": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10"]
+        }
+      ],
+      "answerKey": {
+        "frame": ["c1", "c2", "c3", "c4", "c5", "c6", "c7"]
+      },
+      "hints": ["Count as you drag.", "Stop at 7."],
+      "explanation": "7 dots are 7 objects.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.6"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-mn1-count-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "4 bees. 2 more come. How many bees now?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐝",
+          "labelVi": "con ong",
+          "labelEn": "bees",
+          "repeat": 4
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start with 4.", "Count on 2 more."],
+      "explanation": "4 and 2 more is 6.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "none",
+      "id": "emath-mn1-count-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "3 butterflies. 2 more come. How many now?",
+        "image": {
+          "kind": "emoji",
+          "value": "🦋",
+          "labelVi": "con bướm",
+          "labelEn": "butterflies",
+          "repeat": 3
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Start with 3.", "Count on 2 more."],
+      "explanation": "3 and 2 more is 5.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-count-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Match each number to its word."
+      },
+      "dragItems": [
+        {
+          "id": "w4",
+          "text": "four"
+        },
+        {
+          "id": "w1",
+          "text": "one"
+        },
+        {
+          "id": "w5",
+          "text": "five"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z4",
+          "label": "4",
+          "accepts": ["w4", "w1", "w5"]
+        },
+        {
+          "id": "z1",
+          "label": "1",
+          "accepts": ["w4", "w1", "w5"]
+        },
+        {
+          "id": "z5",
+          "label": "5",
+          "accepts": ["w4", "w1", "w5"]
+        }
+      ],
+      "answerKey": {
+        "z4": ["w4"],
+        "z1": ["w1"],
+        "z5": ["w5"]
+      },
+      "hints": ["Say each number out loud.", "Find the word that sounds the same."],
+      "explanation": "4 four, 1 one, 5 five",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-count-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Match each number to its word."
+      },
+      "dragItems": [
+        {
+          "id": "w7",
+          "text": "seven"
+        },
+        {
+          "id": "w10",
+          "text": "ten"
+        },
+        {
+          "id": "w9",
+          "text": "nine"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z7",
+          "label": "7",
+          "accepts": ["w7", "w10", "w9"]
+        },
+        {
+          "id": "z10",
+          "label": "10",
+          "accepts": ["w7", "w10", "w9"]
+        },
+        {
+          "id": "z9",
+          "label": "9",
+          "accepts": ["w7", "w10", "w9"]
+        }
+      ],
+      "answerKey": {
+        "z7": ["w7"],
+        "z10": ["w10"],
+        "z9": ["w9"]
+      },
+      "hints": ["Say each number out loud.", "Find the word that sounds the same."],
+      "explanation": "7 seven, 10 ten, 9 nine",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.7"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-count-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the number you hear."
+      },
+      "listenTarget": {
+        "text": "eight"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen again.", "Eight comes after seven."],
+      "explanation": "You heard \"eight\": 8.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.5"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-count-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.COUNT_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count out loud!"
+      },
+      "readTarget": {
+        "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+        "words": ["One", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+      },
+      "answerKey": {
+        "words": ["One", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"One, two, three, four, five, six, seven, eight, nine, ten.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L1",
+        "sourceRef": "EDI-MN1 tr.5"
       }
     }
   ]

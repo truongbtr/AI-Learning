@@ -3,7 +3,7 @@
   "subject": "EMATH",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v3",
-  "lessonRefs": [],
+  "lessonRefs": ["EDI-MN1-U4-L3"],
   "note": "Đếm tiếp để cộng: bắt đầu từ số lớn, đếm thêm số nhỏ. Ô 'dừng sớm một' mang dem_thieu_1 — chính là lỗi đếm cả số bắt đầu (8, 9, 10 cho 8 + 3). Nguồn: MATH NOTES Grade 1 Vol.1 (EDI-MN1) tr.40–42 — trước ghi CCSS 1.OA.C.5 vì chưa có sách.",
   "exercises": [
     {
@@ -1341,6 +1341,657 @@
         "estSeconds": 90,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.40–42 (MATH NOTES Grade 1, Unit 4: Addition within 10 — chiến lược đếm tiếp)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-mn1-counton-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Start at 6. Count on 3. What is 6 + 3?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-10-{\"marks\":[6]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 10,
+            "marks": [6]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Do not count the 6.", "Say 7, 8, 9."],
+      "explanation": "From 6, three jumps land on 9.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.44"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is 5 + 2?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-10-{\"hops\":{\"start\":5,\"count\":2}}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 10,
+            "hops": {
+              "start": 5,
+              "count": 2
+            }
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start at 5.", "Count 2 jumps."],
+      "explanation": "5 + 2 = 7.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.44"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-mn1-counton-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "9 + 3 = ? Count on.",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20],\"hops\":{\"start\":9,\"count\":3}}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20],
+            "hops": {
+              "start": 9,
+              "count": 3
+            }
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at 9.", "Count 3 jumps."],
+      "explanation": "9 + 3 = 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.43"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Jump on the line. 8 + 6 = ?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20],\"hops\":{\"start\":8,\"count\":6}}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20],
+            "hops": {
+              "start": 8,
+              "count": 6
+            }
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Start at 8.", "Count 6 jumps."],
+      "explanation": "8 + 6 = 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.44"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is 8 + 1?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-10-{\"hops\":{\"start\":8,\"count\":1}}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 10,
+            "hops": {
+              "start": 8,
+              "count": 1
+            }
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Start at 8.", "Count 1 jumps."],
+      "explanation": "8 + 1 = 9.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "7 + 5 = ? Count on.",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20],\"hops\":{\"start\":7,\"count\":5}}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20],
+            "hops": {
+              "start": 7,
+              "count": 5
+            }
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start at 7.", "Count 5 jumps."],
+      "explanation": "7 + 5 = 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Jump on the line. 6 + 1 = ?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-10-{\"hops\":{\"start\":6,\"count\":1}}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 10,
+            "hops": {
+              "start": 6,
+              "count": 1
+            }
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at 6.", "Count 1 jumps."],
+      "explanation": "6 + 1 = 7.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which expression do the jumps show?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-20-{\"labels\":[0,5,10,15,20],\"hops\":{\"start\":9,\"count\":4}}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 20,
+            "labels": [0, 5, 10, 15, 20],
+            "hops": {
+              "start": 9,
+              "count": 4
+            }
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4 + 4"
+        },
+        {
+          "id": "b",
+          "text": "9 + 9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "9 + 4"
+        },
+        {
+          "id": "d",
+          "text": "9 + 13",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Where do the jumps start?", "How many jumps?"],
+      "explanation": "Start at 9 and jump 4: 9 + 4.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.44"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Cory reads 7 pages, then 3 more. How many pages in all?",
+        "image": {
+          "kind": "emoji",
+          "value": "📚",
+          "labelVi": "sách",
+          "labelEn": "books"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Start at 7.", "Count on 3."],
+      "explanation": "7 + 3 = 10 pages.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.45"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count on from 9 by 3. Drag the numbers you say."
+      },
+      "dragItems": [
+        {
+          "id": "n10",
+          "text": "10"
+        },
+        {
+          "id": "n11",
+          "text": "11"
+        },
+        {
+          "id": "n12",
+          "text": "12"
+        },
+        {
+          "id": "n9",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "j1",
+          "label": "Jump 1",
+          "accepts": ["n10", "n11", "n12", "n9"]
+        },
+        {
+          "id": "j2",
+          "label": "Jump 2",
+          "accepts": ["n10", "n11", "n12", "n9"]
+        },
+        {
+          "id": "j3",
+          "label": "Jump 3",
+          "accepts": ["n10", "n11", "n12", "n9"]
+        }
+      ],
+      "answerKey": {
+        "j1": ["n10"],
+        "j2": ["n11"],
+        "j3": ["n12"]
+      },
+      "hints": ["Do not say 9 again.", "The first jump lands on 10."],
+      "explanation": "9… 10, 11, 12.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.43"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap where you stop."
+      },
+      "listenTarget": {
+        "text": "Start at eleven. Count on two."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say eleven in your head.", "Then twelve, thirteen."],
+      "explanation": "11 + 2 = 13.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.44"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-counton-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.COUNT_ON"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read the tip!"
+      },
+      "readTarget": {
+        "text": "Counting on is quicker when you start with the greater addend.",
+        "words": [
+          "Counting",
+          "on",
+          "is",
+          "quicker",
+          "when",
+          "you",
+          "start",
+          "with",
+          "the",
+          "greater",
+          "addend"
+        ]
+      },
+      "answerKey": {
+        "words": [
+          "Counting",
+          "on",
+          "is",
+          "quicker",
+          "when",
+          "you",
+          "start",
+          "with",
+          "the",
+          "greater",
+          "addend"
+        ]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Counting on is quicker when you start with the greater addend.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L3",
+        "sourceRef": "EDI-MN1 tr.43"
       }
     }
   ]

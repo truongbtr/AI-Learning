@@ -1,0 +1,2037 @@
+{
+  "skillCode": "EMATH.NBT.TENS_ONES",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["EDI-MN1-U3-L5", "EDI-MN1-U3-L6"],
+  "note": "EDI-MN1 'Understand Tens' (đầu trang Lesson 3-2, tr.17–19): 10 ones = 1 ten, 20 ones = 2 tens. Bẫy của sách: nhóm không đủ 10 (chuc_khong_du_10), 25 khối gọi là 2 chục.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "chuc_khong_du_10",
+      "scaffold": "model",
+      "id": "emath-tens-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many ones make a ten?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-0-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 0
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count the cubes in the rod.", "One, two, three… up to the top."],
+      "explanation": "10 ones make 1 ten.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.17"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "model",
+      "id": "emath-tens-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "2 tens and 0 ones is what number?",
+        "image": {
+          "kind": "model",
+          "value": "to-2-0-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 2,
+            "ones": 0
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "b",
+          "text": "19",
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Each rod is 10.", "10, 20."],
+      "explanation": "2 tens and 0 ones is 20.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-tens-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many tens do you see?",
+        "image": {
+          "kind": "model",
+          "value": "to-2-0-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 2,
+            "ones": 0
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "20",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A ten is one whole rod.", "Count the rods, not the cubes."],
+      "explanation": "There are 2 rods, so 2 tens.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "chuc_khong_du_10",
+      "scaffold": "none",
+      "id": "emath-tens-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Are these cubes 2 tens?",
+        "image": {
+          "kind": "model",
+          "value": "to-0-25-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 0,
+            "ones": 25
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes",
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count all the cubes.", "2 tens would be 20. Are there 20?"],
+      "explanation": "There are 25 cubes, not 20, so they are not 2 tens.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-tens-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "10 ones make how many tens?",
+        "image": {
+          "kind": "model",
+          "value": "to-0-10-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 0,
+            "ones": 10
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["10 ones can make one rod.", "How many rods?"],
+      "explanation": "10 ones is the same as 1 ten.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "20 ones make how many tens?",
+        "image": {
+          "kind": "model",
+          "value": "to-0-20-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 0,
+            "ones": 20
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "20",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Make groups of 10.", "10 and 10."],
+      "explanation": "20 ones = 2 tens.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-tens-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "20 children. 10 fit on each bus. How many buses?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "20",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Each bus takes a group of 10.", "10 children, then 10 more."],
+      "explanation": "20 children fill 2 buses of 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "chuc_khong_du_10",
+      "scaffold": "model",
+      "id": "emath-tens-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which picture shows 1 ten?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-0-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 0,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-0-8-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 0,
+              "ones": 8
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-0-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 0
+            }
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["A ten has exactly 10 cubes.", "Count each rod."],
+      "explanation": "Only the rod with 10 cubes is 1 ten.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.17"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-tens-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "1 ten and 6 ones is what number?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-6-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 6
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "61",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Say the ten first.", "Ten… and 6 more."],
+      "explanation": "1 ten and 6 ones is 16.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-tens-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "1 ten and 3 ones is what number?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-3-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 3
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "31",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "13"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Say the ten first.", "Ten… and 3 more."],
+      "explanation": "1 ten and 3 ones is 13.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "none",
+      "id": "emath-tens-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "1 ten and 8 ones is what number?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-8-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 8
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "81",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Say the ten first.", "Ten… and 8 more."],
+      "explanation": "1 ten and 8 ones is 18.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many tens are in 17?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["17 is a teen number.", "A teen number has 1 ten."],
+      "explanation": "17 is 1 ten and 7 ones.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many tens are in 14?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["14 is a teen number.", "A teen number has 1 ten."],
+      "explanation": "14 is 1 ten and 4 ones.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many tens are in 19?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["19 is a teen number.", "A teen number has 1 ten."],
+      "explanation": "19 is 1 ten and 9 ones.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many ones are in 17?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Take away the ten.", "17 is 10 and some more."],
+      "explanation": "17 is 1 ten and 7 ones.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many ones are in 12?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Take away the ten.", "12 is 10 and some more."],
+      "explanation": "12 is 1 ten and 2 ones.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "chuc_khong_du_10",
+      "scaffold": "none",
+      "id": "emath-tens-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Count carefully. Is this 1 ten?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-0-9-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 0,
+            "rodSize": 9
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "No"
+        },
+        {
+          "id": "b",
+          "text": "Yes",
+          "errorTag": "chuc_khong_du_10"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count every cube in the rod.", "A ten needs 10."],
+      "explanation": "This rod has only 9 cubes, so it is not a ten.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-tens-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Drag 10 ones to make a ten."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c9",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c10",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c11",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c12",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-1-[]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 1,
+              "dots": []
+            }
+          },
+          "accepts": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10", "c11", "c12"]
+        }
+      ],
+      "answerKey": {
+        "frame": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10"]
+      },
+      "hints": ["Fill every box of the frame.", "A full frame is 10."],
+      "explanation": "10 ones make 1 ten.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.17"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-tens-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Make 2 tens: fill both frames."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c9",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c10",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c11",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c12",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c13",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c14",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c15",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c16",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c17",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c18",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c19",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c20",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c21",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c22",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-2-[]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": []
+            }
+          },
+          "accepts": [
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c6",
+            "c7",
+            "c8",
+            "c9",
+            "c10",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17",
+            "c18",
+            "c19",
+            "c20",
+            "c21",
+            "c22"
+          ]
+        }
+      ],
+      "answerKey": {
+        "frame": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7",
+          "c8",
+          "c9",
+          "c10",
+          "c11",
+          "c12",
+          "c13",
+          "c14",
+          "c15",
+          "c16",
+          "c17",
+          "c18",
+          "c19",
+          "c20"
+        ]
+      },
+      "hints": ["Each frame is one ten.", "Fill the first, then the second."],
+      "explanation": "Two full frames are 2 tens: 20.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-tens-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Show 14: drag the tens and the ones.",
+        "image": {
+          "kind": "model",
+          "value": "to-1-4-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 4
+          }
+        }
+      },
+      "dragItems": [
+        {
+          "id": "t",
+          "text": "1",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "o",
+          "text": "4",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "n",
+          "text": "14",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "tens",
+          "label": "tens",
+          "accepts": ["t", "o", "n"]
+        },
+        {
+          "id": "ones",
+          "label": "ones",
+          "accepts": ["t", "o", "n"]
+        }
+      ],
+      "answerKey": {
+        "tens": ["t"],
+        "ones": ["o"]
+      },
+      "hints": ["Count the rods for tens.", "Count the loose cubes for ones."],
+      "explanation": "14 is 1 ten and 4 ones.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-tens-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Show 17: drag the tens and the ones.",
+        "image": {
+          "kind": "model",
+          "value": "to-1-7-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 7
+          }
+        }
+      },
+      "dragItems": [
+        {
+          "id": "t",
+          "text": "1",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "o",
+          "text": "7",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "n",
+          "text": "17",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "tens",
+          "label": "tens",
+          "accepts": ["t", "o", "n"]
+        },
+        {
+          "id": "ones",
+          "label": "ones",
+          "accepts": ["t", "o", "n"]
+        }
+      ],
+      "answerKey": {
+        "tens": ["t"],
+        "ones": ["o"]
+      },
+      "hints": ["Count the rods for tens.", "Count the loose cubes for ones."],
+      "explanation": "17 is 1 ten and 7 ones.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-tens-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Show 20: drag the tens and the ones.",
+        "image": {
+          "kind": "model",
+          "value": "to-2-0-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 2,
+            "ones": 0
+          }
+        }
+      },
+      "dragItems": [
+        {
+          "id": "t",
+          "text": "2",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "o",
+          "text": "0",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "n",
+          "text": "20",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "tens",
+          "label": "tens",
+          "accepts": ["t", "o", "n"]
+        },
+        {
+          "id": "ones",
+          "label": "ones",
+          "accepts": ["t", "o", "n"]
+        }
+      ],
+      "answerKey": {
+        "tens": ["t"],
+        "ones": ["o"]
+      },
+      "hints": ["Count the rods for tens.", "Count the loose cubes for ones."],
+      "explanation": "20 is 2 tens and 0 ones.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Match the ones to the tens."
+      },
+      "dragItems": [
+        {
+          "id": "one",
+          "text": "1 ten"
+        },
+        {
+          "id": "two",
+          "text": "2 tens"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "ten",
+          "label": "10 ones",
+          "accepts": ["one", "two"]
+        },
+        {
+          "id": "twenty",
+          "label": "20 ones",
+          "accepts": ["one", "two"]
+        }
+      ],
+      "answerKey": {
+        "ten": ["one"],
+        "twenty": ["two"]
+      },
+      "hints": ["Every 10 ones make 1 ten.", "20 is 10 and 10."],
+      "explanation": "10 ones = 1 ten; 20 ones = 2 tens.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "two tens"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "20"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "chuc_khong_du_10"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A ten is 10.", "Put the tens and ones together."],
+      "explanation": "Two tens is 20.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully and pick one."
+      },
+      "listenTarget": {
+        "text": "ten ones"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "chuc_khong_du_10"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A ten is 10.", "Put the tens and ones together."],
+      "explanation": "Ten ones is 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Hear it, then find it."
+      },
+      "listenTarget": {
+        "text": "one ten and five ones"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "51",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["A ten is 10.", "Put the tens and ones together."],
+      "explanation": "One ten and five ones is 15.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tap what you hear."
+      },
+      "listenTarget": {
+        "text": "one ten and nine ones"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19"
+        },
+        {
+          "id": "b",
+          "text": "91",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "20",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["A ten is 10.", "Put the tens and ones together."],
+      "explanation": "One ten and nine ones is 19.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the number."
+      },
+      "listenTarget": {
+        "text": "one ten and zero ones"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A ten is 10.", "Put the tens and ones together."],
+      "explanation": "One ten and zero ones is 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.18"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Count them all. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "✏️",
+          "labelVi": "bút chì",
+          "labelEn": "pencils",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Count carefully, one each.", "Is it a group of ten?"],
+      "explanation": "There are 10 pencils — that is 1 ten.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Touch each one as you count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelVi": "khối vuông",
+          "labelEn": "cubes",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Count carefully, one each.", "Is it a group of ten?"],
+      "explanation": "There are 10 cubes — that is 1 ten.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each one to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🧒",
+          "labelVi": "bạn nhỏ",
+          "labelEn": "children",
+          "repeat": 10
+        },
+        "correctCount": 10,
+        "layout": "grid"
+      },
+      "answerKey": 10,
+      "hints": ["Count carefully, one each.", "Is it a group of ten?"],
+      "explanation": "There are 10 children — that is 1 ten.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap and count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍓",
+          "labelVi": "quả dâu",
+          "labelEn": "strawberries",
+          "repeat": 12
+        },
+        "correctCount": 12,
+        "layout": "grid"
+      },
+      "answerKey": 12,
+      "hints": ["Count carefully, one each.", "Is it a group of ten?"],
+      "explanation": "There are 12 strawberries.",
+      "meta": {
+        "estSeconds": 44,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "COUNT_TAP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Count them all. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔵",
+          "labelVi": "chấm",
+          "labelEn": "dots",
+          "repeat": 11
+        },
+        "correctCount": 11,
+        "layout": "grid"
+      },
+      "answerKey": 11,
+      "hints": ["Count carefully, one each.", "Is it a group of ten?"],
+      "explanation": "There are 11 dots.",
+      "meta": {
+        "estSeconds": 42,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.19"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-tens-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Ten ones is the same as one ten.",
+        "words": ["Ten", "ones", "is", "the", "same", "as", "one", "ten"]
+      },
+      "answerKey": {
+        "words": ["Ten", "ones", "is", "the", "same", "as", "one", "ten"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Ten ones is the same as one ten.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.17"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Two tens and zero ones is twenty.",
+        "words": ["Two", "tens", "and", "zero", "ones", "is", "twenty"]
+      },
+      "answerKey": {
+        "words": ["Two", "tens", "and", "zero", "ones", "is", "twenty"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Two tens and zero ones is twenty.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.17"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "One ten and four ones is fourteen.",
+        "words": ["One", "ten", "and", "four", "ones", "is", "fourteen"]
+      },
+      "answerKey": {
+        "words": ["One", "ten", "and", "four", "ones", "is", "fourteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"One ten and four ones is fourteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.17"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0037",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Say it clearly."
+      },
+      "readTarget": {
+        "text": "Twenty ones make two tens.",
+        "words": ["Twenty", "ones", "make", "two", "tens"]
+      },
+      "answerKey": {
+        "words": ["Twenty", "ones", "make", "two", "tens"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Twenty ones make two tens.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.17"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-tens-0038",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.TENS_ONES"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "A ten has ten cubes.",
+        "words": ["A", "ten", "has", "ten", "cubes"]
+      },
+      "answerKey": {
+        "words": ["A", "ten", "has", "ten", "cubes"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A ten has ten cubes.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L5",
+        "sourceRef": "EDI-MN1 tr.17"
+      }
+    }
+  ]
+}

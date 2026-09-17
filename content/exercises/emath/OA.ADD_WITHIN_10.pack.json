@@ -3,7 +3,7 @@
   "subject": "EMATH",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v1",
-  "lessonRefs": [],
+  "lessonRefs": ["EDI-MN1-U4-L1"],
   "note": "Add within 10 bằng tiếng Anh — song song với Toán Bài 10 (docs/09 §2 liên kết chéo). Nguồn: MATH NOTES Grade 1 Vol.1 (EDI-MN1) tr.40–42 — trước ghi CCSS.MATH.1.OA/1.NBT vì chưa có sách.",
   "exercises": [
     {
@@ -1590,6 +1590,546 @@
         "estSeconds": 60,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.40–42 (MATH NOTES Grade 1, Unit 4: Addition within 10)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is 8 + 2?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at 8.", "Count on 2: 9, 10."],
+      "explanation": "8 + 2 = 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.37"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-mn1-add-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "5 frogs and 3 more frogs. How many in all?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐸",
+          "labelVi": "con ếch",
+          "labelEn": "frogs",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["You can count them all.", "Or add: 5 + 3."],
+      "explanation": "5 + 3 = 8 frogs.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.37"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-mn1-add-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "3 birds and 3 more birds. How many in all?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐦",
+          "labelVi": "con chim",
+          "labelEn": "birds",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["You can count them all.", "Or add: 3 + 3."],
+      "explanation": "3 + 3 = 6 birds.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.38"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "5 caps and 3 more caps. How many in all?",
+        "image": {
+          "kind": "emoji",
+          "value": "🧢",
+          "labelVi": "cái mũ",
+          "labelEn": "caps",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["You can count them all.", "Or add: 5 + 3."],
+      "explanation": "5 + 3 = 8 caps.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.38"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "2 kites and 4 more kites. How many in all?",
+        "image": {
+          "kind": "emoji",
+          "value": "🪁",
+          "labelVi": "con diều",
+          "labelEn": "kites",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["You can count them all.", "Or add: 2 + 4."],
+      "explanation": "2 + 4 = 6 kites.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.38"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "7 cows and 2 more cows. How many in all?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐄",
+          "labelVi": "con bò",
+          "labelEn": "cows",
+          "repeat": 9
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["You can count them all.", "Or add: 7 + 2."],
+      "explanation": "7 + 2 = 9 cows.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.39"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "3 horses and 3 more horses. How many in all?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐴",
+          "labelVi": "con ngựa",
+          "labelEn": "horses",
+          "repeat": 6
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["You can count them all.", "Or add: 3 + 3."],
+      "explanation": "3 + 3 = 6 horses.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.39"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10", "EMATH.OA.ADD_WITHIN_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What is 6 + 5?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Start at 6.", "Count on 5 more."],
+      "explanation": "6 + 5 = 11.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.39"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "5 frogs and 3 frogs. Tap to count them all."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐸",
+          "labelVi": "con ếch",
+          "labelEn": "frogs",
+          "repeat": 8
+        },
+        "correctCount": 8,
+        "layout": "grid"
+      },
+      "answerKey": 8,
+      "hints": ["Count every frog.", "Five, six, seven…"],
+      "explanation": "5 + 3 = 8 frogs.",
+      "meta": {
+        "estSeconds": 36,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.37"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Match each addition to its sum."
+      },
+      "dragItems": [
+        {
+          "id": "s8",
+          "text": "8"
+        },
+        {
+          "id": "s9",
+          "text": "9"
+        },
+        {
+          "id": "s6",
+          "text": "6"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "a",
+          "label": "5 + 3",
+          "accepts": ["s8", "s9", "s6"]
+        },
+        {
+          "id": "b",
+          "label": "7 + 2",
+          "accepts": ["s8", "s9", "s6"]
+        },
+        {
+          "id": "c",
+          "label": "2 + 4",
+          "accepts": ["s8", "s9", "s6"]
+        }
+      ],
+      "answerKey": {
+        "a": ["s8"],
+        "b": ["s9"],
+        "c": ["s6"]
+      },
+      "hints": ["Add the two addends.", "Count on from the bigger one."],
+      "explanation": "5 + 3 = 8, 7 + 2 = 9, 2 + 4 = 6.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.38"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the sum."
+      },
+      "listenTarget": {
+        "text": "seven plus two"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at seven.", "Count on two."],
+      "explanation": "7 + 2 = 9.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.39"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-add-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.ADD_WITHIN_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read the big idea!"
+      },
+      "readTarget": {
+        "text": "One way to find a sum is to add the addends.",
+        "words": ["One", "way", "to", "find", "a", "sum", "is", "to", "add", "the", "addends"]
+      },
+      "answerKey": {
+        "words": ["One", "way", "to", "find", "a", "sum", "is", "to", "add", "the", "addends"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"One way to find a sum is to add the addends.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L1",
+        "sourceRef": "EDI-MN1 tr.37"
       }
     }
   ]

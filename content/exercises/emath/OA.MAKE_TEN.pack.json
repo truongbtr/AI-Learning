@@ -3,7 +3,7 @@
   "subject": "EMATH",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v3",
-  "lessonRefs": [],
+  "lessonRefs": ["EDI-MN1-U4-L5"],
   "note": "Tách một số để làm tròn 10 trước (8+5 = 8+2+3 = 10+3). Ô nhiễu: hụt/dư một, cộng ngược, chép lại số trong đề.",
   "exercises": [
     {
@@ -1607,6 +1607,797 @@
         "estSeconds": 30,
         "lessonUnitCode": null,
         "sourceRef": "CCSS 1.OA.C.6 (make-ten strategy) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-mn1-maketen-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What number makes 10 with 8?",
+        "image": {
+          "kind": "model",
+          "value": "tf-1-8+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 1,
+            "dots": [
+              {
+                "count": 8,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count the empty boxes.", "8 and ? make 10."],
+      "explanation": "8 + 2 = 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thieu_1",
+      "scaffold": "model",
+      "id": "emath-mn1-maketen-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is 7 + 5?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-7+5",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 7,
+                "tone": "dark"
+              },
+              {
+                "count": 5,
+                "tone": "light"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Fill the first frame: 7 and 3.", "Then 10 and 2."],
+      "explanation": "7 + 5 = 10 + 2 = 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Make a 10. What is 6 + 8?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-6+8",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 6,
+                "tone": "dark"
+              },
+              {
+                "count": 8,
+                "tone": "light"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Fill the first frame: 6 and 4.", "Then 10 and 4."],
+      "explanation": "6 + 8 = 10 + 4 = 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.50"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What is 9 + 3?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-9+3",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 9,
+                "tone": "dark"
+              },
+              {
+                "count": 3,
+                "tone": "light"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Fill the first frame: 9 and 1.", "Then 10 and 2."],
+      "explanation": "9 + 3 = 10 + 2 = 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.50"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Make a 10. What is 6 + 5?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-6+5",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 6,
+                "tone": "dark"
+              },
+              {
+                "count": 5,
+                "tone": "light"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Fill the first frame: 6 and 4.", "Then 10 and 1."],
+      "explanation": "6 + 5 = 10 + 1 = 11.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.51"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What is 7 + 6?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-7+6",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 7,
+                "tone": "dark"
+              },
+              {
+                "count": 6,
+                "tone": "light"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Fill the first frame: 7 and 3.", "Then 10 and 3."],
+      "explanation": "7 + 6 = 10 + 3 = 13.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.51"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-mn1-maketen-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Split 5 into 3 and 2. What is 7 + 5?",
+        "image": {
+          "kind": "model",
+          "value": "nb-5-3-2",
+          "model": {
+            "kind": "numberBond",
+            "whole": 5,
+            "parts": [3, 2]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["7 + 3 = 10.", "10 + 2 = 12."],
+      "explanation": "7 + 5 = 7 + 3 + 2 = 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Split 8 into 1 and 7. What is 9 + 8?",
+        "image": {
+          "kind": "model",
+          "value": "nb-8-1-7",
+          "model": {
+            "kind": "numberBond",
+            "whole": 8,
+            "parts": [1, 7]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "17"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["9 + 1 = 10.", "10 + 7 = ?"],
+      "explanation": "9 + 8 = 9 + 1 + 7 = 17.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.50"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Split 6 into 1 and 5. What is 9 + 6?",
+        "image": {
+          "kind": "model",
+          "value": "nb-6-1-5",
+          "model": {
+            "kind": "numberBond",
+            "whole": 6,
+            "parts": [1, 5]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["9 + 1 = 10.", "10 + 5 = ?"],
+      "explanation": "9 + 6 = 10 + 5 = 15.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.51"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Split 4 into 1 and 3. What is 9 + 4?",
+        "image": {
+          "kind": "model",
+          "value": "nb-4-1-3",
+          "model": {
+            "kind": "numberBond",
+            "whole": 4,
+            "parts": [1, 3]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["9 + 1 = 10.", "10 + 3 = ?"],
+      "explanation": "9 + 4 = 10 + 3 = 13.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.51"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_cong_tru",
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Kelly has 8 pencils. Carl has 7. How many in all?",
+        "image": {
+          "kind": "emoji",
+          "value": "✏️",
+          "labelVi": "bút chì",
+          "labelEn": "pencils",
+          "repeat": 15
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Make a 10: 8 + 2.", "Then 10 + 5."],
+      "explanation": "8 + 7 = 8 + 2 + 5 = 15 pencils.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.51"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-mn1-maketen-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Make a 10: drag light dots to fill the frame."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-1-[{\"count\":7,\"tone\":\"dark\"}]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 1,
+              "dots": [
+                {
+                  "count": 7,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "accepts": ["c1", "c2", "c3", "c4", "c5"]
+        }
+      ],
+      "answerKey": {
+        "frame": ["c1", "c2", "c3"]
+      },
+      "hints": ["Count the empty boxes.", "7 and 3 make 10."],
+      "explanation": "7 + 3 = 10, and 2 dots are left for the next frame.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.49"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the sum."
+      },
+      "listenTarget": {
+        "text": "eight plus five"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "13"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Make a 10: eight plus two.", "Then add three more."],
+      "explanation": "8 + 5 = 13.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.51"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-maketen-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.MAKE_TEN"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read how to make a 10!"
+      },
+      "readTarget": {
+        "text": "Seven plus three is ten. Ten plus two is twelve.",
+        "words": ["Seven", "plus", "three", "is", "ten", "Ten", "plus", "two", "is", "twelve"]
+      },
+      "answerKey": {
+        "words": ["Seven", "plus", "three", "is", "ten", "Ten", "plus", "two", "is", "twelve"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Seven plus three is ten. Ten plus two is twelve.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L5",
+        "sourceRef": "EDI-MN1 tr.49"
       }
     }
   ]

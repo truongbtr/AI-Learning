@@ -3,7 +3,7 @@
   "subject": "EMATH",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v3",
-  "lessonRefs": [],
+  "lessonRefs": ["EDI-MN1-U4-L4"],
   "note": "Doubles và doubles + 1. Với near doubles, ô 'chỉ dùng double' (5 + 6 → 10) mang dem_thieu_1 — đúng lỗi 'không cộng thêm 1'; ô chép lại số trong đề mang lap_lai_tong.",
   "exercises": [
     {
@@ -1321,6 +1321,611 @@
         "estSeconds": 90,
         "lessonUnitCode": null,
         "sourceRef": "CCSS 1.OA.C.6 (doubles and near doubles) — chưa có giáo trình English Maths của trường"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is 7 + 7?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["7 + 7 is two weeks of days.", "Count on 7 from 7."],
+      "explanation": "7 + 7 = 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.46"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nho_sai_doubles",
+      "scaffold": "model",
+      "id": "emath-mn1-doubles-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which doubles fact matches the cards?",
+        "image": {
+          "kind": "model",
+          "value": "dc-2-2",
+          "model": {
+            "kind": "dotCards",
+            "cards": [2, 2]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2 + 2 = 5",
+          "errorTag": "nho_sai_doubles"
+        },
+        {
+          "id": "b",
+          "text": "2 + 2 = 4"
+        },
+        {
+          "id": "c",
+          "text": "3 + 3 = 5",
+          "errorTag": "nho_sai_doubles"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count the dots on one card.", "Then count them all."],
+      "explanation": "2 + 2 = 4.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.47"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What is the sum of 5 + 5?",
+        "image": {
+          "kind": "model",
+          "value": "dc-5-5",
+          "model": {
+            "kind": "dotCards",
+            "cards": [5, 5]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Two hands have 5 + 5 fingers.", "Count them all."],
+      "explanation": "5 + 5 = 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.47"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "A box has 8 crackers. How many are in 2 boxes?",
+        "image": {
+          "kind": "emoji",
+          "value": "🍪",
+          "labelVi": "bánh quy",
+          "labelEn": "crackers",
+          "repeat": 8
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Two boxes: 8 + 8.", "Double 8."],
+      "explanation": "8 + 8 = 16 crackers.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.47"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nho_sai_doubles",
+      "scaffold": "model",
+      "id": "emath-mn1-doubles-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which doubles fact matches the cards?",
+        "image": {
+          "kind": "model",
+          "value": "dc-8-8",
+          "model": {
+            "kind": "dotCards",
+            "cards": [8, 8]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3 + 3 = 5",
+          "errorTag": "nho_sai_doubles"
+        },
+        {
+          "id": "b",
+          "text": "8 + 8 = 16"
+        },
+        {
+          "id": "c",
+          "text": "4 + 4 = 8"
+        },
+        {
+          "id": "d",
+          "text": "5 + 5 = 9",
+          "errorTag": "nho_sai_doubles"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["How many dots on one card?", "Check that the sum is right."],
+      "explanation": "Each card has 8 dots: 8 + 8 = 16.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.47"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "A spider has 4 + 4 legs. How many legs?",
+        "image": {
+          "kind": "emoji",
+          "value": "🕷️",
+          "labelVi": "con nhện",
+          "labelEn": "spider"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Both addends are the same.", "Double 4."],
+      "explanation": "4 + 4 = 8.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.46"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "An egg box has 6 + 6 eggs. How many eggs?",
+        "image": {
+          "kind": "emoji",
+          "value": "🥚",
+          "labelVi": "quả trứng",
+          "labelEn": "eggs"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Both addends are the same.", "Double 6."],
+      "explanation": "6 + 6 = 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.46"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "A dog has 2 + 2 legs. How many legs?",
+        "image": {
+          "kind": "emoji",
+          "value": "🐶",
+          "labelVi": "con chó",
+          "labelEn": "dog"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Both addends are the same.", "Double 2."],
+      "explanation": "2 + 2 = 4.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.46"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Two weeks have 7 + 7 days. How many days?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Both addends are the same.", "Double 7."],
+      "explanation": "7 + 7 = 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.46"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Write the doubles fact for the cards.",
+        "image": {
+          "kind": "model",
+          "value": "dc-6-6",
+          "model": {
+            "kind": "dotCards",
+            "cards": [6, 6]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 + 6 = 12"
+        },
+        {
+          "id": "b",
+          "text": "6 + 6 = 11",
+          "errorTag": "nho_sai_doubles"
+        },
+        {
+          "id": "c",
+          "text": "6 + 5 = 11"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Both cards are the same.", "Double 6."],
+      "explanation": "6 + 6 = 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.48"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nho_sai_doubles",
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Match each double to its sum."
+      },
+      "dragItems": [
+        {
+          "id": "s14",
+          "text": "14"
+        },
+        {
+          "id": "s4",
+          "text": "4"
+        },
+        {
+          "id": "s12",
+          "text": "12"
+        },
+        {
+          "id": "s13",
+          "text": "13",
+          "errorTag": "nho_sai_doubles"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "a",
+          "label": "7 + 7",
+          "accepts": ["s14", "s4", "s12", "s13"]
+        },
+        {
+          "id": "b",
+          "label": "2 + 2",
+          "accepts": ["s14", "s4", "s12", "s13"]
+        },
+        {
+          "id": "c",
+          "label": "6 + 6",
+          "accepts": ["s14", "s4", "s12", "s13"]
+        }
+      ],
+      "answerKey": {
+        "a": ["s14"],
+        "b": ["s4"],
+        "c": ["s12"]
+      },
+      "hints": ["A doubles sum is always even.", "Double 6 is 12."],
+      "explanation": "7 + 7 = 14, 2 + 2 = 4, 6 + 6 = 12.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.48"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the sum."
+      },
+      "listenTarget": {
+        "text": "double nine"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Double nine is nine plus nine.", "It is one less than 19."],
+      "explanation": "9 + 9 = 18.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.48"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-doubles-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.DOUBLES"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read the big idea!"
+      },
+      "readTarget": {
+        "text": "When you use doubles, the two addends are the same.",
+        "words": ["When", "you", "use", "doubles", "the", "two", "addends", "are", "the", "same"]
+      },
+      "answerKey": {
+        "words": ["When", "you", "use", "doubles", "the", "two", "addends", "are", "the", "same"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"When you use doubles, the two addends are the same.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L4",
+        "sourceRef": "EDI-MN1 tr.46"
       }
     }
   ]

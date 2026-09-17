@@ -144,7 +144,7 @@ function onsetRime(syllable: string): { onset: string; rime: string } {
 const ZERO_HINTS =
   /\b0\b|không\s+(cho|có|thêm|bớt|lấy|còn|ăn)|chưa\s+có|không\s+\w+\s+nào|hết\s+cả|zero|no\s+more|none/iu;
 const COMPARE_HINTS =
-  /[<>=]|lớn hơn|bé hơn|nhiều hơn|ít hơn|bằng nhau|so sánh|bigger|smaller|greater|less|more than|fewer/iu;
+  /[<>=]|lớn hơn|bé hơn|nhiều hơn|ít hơn|bằng nhau|so sánh|bigger|smaller|greater|less|more than|fewer|farther|has more\b|equal to/iu;
 const ORDER_HINTS =
   /liền (trước|sau)|đếm (tiếp|lùi)|sau số|trước số|thứ tự|order|comes (after|before)/iu;
 

@@ -3,7 +3,7 @@
   "subject": "EMATH",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v3",
-  "lessonRefs": [],
+  "lessonRefs": ["EDI-MN1-U4-L2"],
   "note": "Tách số đến 10 (part-part-whole). Ô nhiễu: chép lại phần đã cho (lap_lai_tong — lỗi 'nhầm phần và tổng') và hụt/dư một. Câu 'cặp nào làm thành 10' đặt cặp hụt một (6 and 3) làm ô nhiễu. Nguồn: MATH NOTES Grade 1 Vol.1 (EDI-MN1) tr.40–42 — trước ghi CCSS 1.OA.C.6 vì chưa có sách.",
   "exercises": [
     {
@@ -1455,6 +1455,771 @@
         "estSeconds": 90,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.40–42 (MATH NOTES Grade 1, Unit 4: Addition within 10 — chiến lược tách gộp)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-mn1-bonds-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What number goes with 6 to make 10?",
+        "image": {
+          "kind": "model",
+          "value": "tf-1-6+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 1,
+            "dots": [
+              {
+                "count": 6,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "3",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "16",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count the empty boxes.", "6 and how many make 10?"],
+      "explanation": "6 and 4 make 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.40"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many more to make 10?",
+        "image": {
+          "kind": "model",
+          "value": "tf-1-5+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 1,
+            "dots": [
+              {
+                "count": 5,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Count the empty boxes.", "5 and ? make 10."],
+      "explanation": "5 + 5 = 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.41"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many more to make 10?",
+        "image": {
+          "kind": "model",
+          "value": "tf-1-1+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 1,
+            "dots": [
+              {
+                "count": 1,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count the empty boxes.", "1 and ? make 10."],
+      "explanation": "1 + 9 = 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.41"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many more to make 10?",
+        "image": {
+          "kind": "model",
+          "value": "tf-1-8+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 1,
+            "dots": [
+              {
+                "count": 8,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "1",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count the empty boxes.", "8 and ? make 10."],
+      "explanation": "8 + 2 = 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.41"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many more to make 10?",
+        "image": {
+          "kind": "model",
+          "value": "tf-1-7+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 1,
+            "dots": [
+              {
+                "count": 7,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count the empty boxes.", "7 and ? make 10."],
+      "explanation": "7 + 3 = 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.41"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many more to make 10?",
+        "image": {
+          "kind": "model",
+          "value": "tf-1-2+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 1,
+            "dots": [
+              {
+                "count": 2,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Count the empty boxes.", "2 and ? make 10."],
+      "explanation": "2 + 8 = 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.41"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "lap_lai_tong",
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How many more to make 10?",
+        "image": {
+          "kind": "model",
+          "value": "tf-1-10+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 1,
+            "dots": [
+              {
+                "count": 10,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Is there an empty box?", "The frame is already full."],
+      "explanation": "10 + 0 = 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.41"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-mn1-bonds-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Fill the frame. Drag the dots you need."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-1-[{\"count\":4,\"tone\":\"dark\"}]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 1,
+              "dots": [
+                {
+                  "count": 4,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "accepts": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8"]
+        }
+      ],
+      "answerKey": {
+        "frame": ["c1", "c2", "c3", "c4", "c5", "c6"]
+      },
+      "hints": ["Count the empty boxes.", "4 and 6 make 10."],
+      "explanation": "4 + 6 = 10.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.41"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Rainbow to 10: match the partners."
+      },
+      "dragItems": [
+        {
+          "id": "p10",
+          "text": "10"
+        },
+        {
+          "id": "p9",
+          "text": "9"
+        },
+        {
+          "id": "p8",
+          "text": "8"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z0",
+          "label": "0 + ○",
+          "accepts": ["p10", "p9", "p8"]
+        },
+        {
+          "id": "z1",
+          "label": "1 + ○",
+          "accepts": ["p10", "p9", "p8"]
+        },
+        {
+          "id": "z2",
+          "label": "2 + ○",
+          "accepts": ["p10", "p9", "p8"]
+        }
+      ],
+      "answerKey": {
+        "z0": ["p10"],
+        "z1": ["p9"],
+        "z2": ["p8"]
+      },
+      "hints": ["Each pair makes 10.", "Count on to 10."],
+      "explanation": "0 + 10, 1 + 9, 2 + 8",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.42"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Rainbow to 10: match the partners."
+      },
+      "dragItems": [
+        {
+          "id": "p7",
+          "text": "7"
+        },
+        {
+          "id": "p6",
+          "text": "6"
+        },
+        {
+          "id": "p5",
+          "text": "5"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "z3",
+          "label": "3 + ○",
+          "accepts": ["p7", "p6", "p5"]
+        },
+        {
+          "id": "z4",
+          "label": "4 + ○",
+          "accepts": ["p7", "p6", "p5"]
+        },
+        {
+          "id": "z5",
+          "label": "5 + ○",
+          "accepts": ["p7", "p6", "p5"]
+        }
+      ],
+      "answerKey": {
+        "z3": ["p7"],
+        "z4": ["p6"],
+        "z5": ["p5"]
+      },
+      "hints": ["Each pair makes 10.", "Count on to 10."],
+      "explanation": "3 + 7, 4 + 6, 5 + 5",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.42"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What is the missing part?",
+        "image": {
+          "kind": "model",
+          "value": "nb-10-7-null",
+          "model": {
+            "kind": "numberBond",
+            "whole": 10,
+            "parts": [7, null]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "2",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "17",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The parts make the whole: 10.", "7 and what make 10?"],
+      "explanation": "7 and 3 make 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.40"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the partner."
+      },
+      "listenTarget": {
+        "text": "three and what make ten?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "errorTag": "lap_lai_tong"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on from three to ten.", "Use your fingers."],
+      "explanation": "3 and 7 make 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.42"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-bonds-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.OA.NUMBER_BONDS_10"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Say the rainbow!"
+      },
+      "readTarget": {
+        "text": "Six and four make ten.",
+        "words": ["Six", "and", "four", "make", "ten"]
+      },
+      "answerKey": {
+        "words": ["Six", "and", "four", "make", "ten"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Six and four make ten.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U4-L2",
+        "sourceRef": "EDI-MN1 tr.42"
       }
     }
   ]

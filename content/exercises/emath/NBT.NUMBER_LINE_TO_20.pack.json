@@ -3,7 +3,7 @@
   "subject": "EMATH",
   "generatedBy": "claude-code",
   "promptVersion": "exercise-gen-v2",
-  "lessonRefs": [],
+  "lessonRefs": ["EDI-MN1-U3-L4", "EDI-MN1-U3-L8"],
   "note": "Tia số tới 20: liền trước, liền sau, số còn thiếu, xếp thứ tự. Bài số hai chữ số có ô nhiễu đảo chữ số (14 → 41) mang mã `nham_thu_tu_so`. Nguồn: MATH NOTES Grade 1 Vol.1 (EDI-MN1) tr.14–16 — trước ghi CCSS 1.NBT.A.1 vì chưa có sách.",
   "exercises": [
     {
@@ -1590,6 +1590,574 @@
         "estSeconds": 30,
         "lessonUnitCode": null,
         "sourceRef": "EDI-MN1 tr.14–16 (MATH NOTES Grade 1, Unit 3: Patterns on a Number Line to 20)"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-mn1-line-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What number is one step after 7?",
+        "image": {
+          "kind": "model",
+          "value": "nl-0-10-{\"marks\":[7]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 0,
+            "to": 10,
+            "marks": [7]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Find 7 on the line.", "Take one step to the right."],
+      "explanation": "One step after 7 is 8.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.14"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_quy_luat_dem",
+      "scaffold": "model",
+      "id": "emath-mn1-line-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which numbers come next?",
+        "image": {
+          "kind": "model",
+          "value": "nl-10-20-{\"labels\":[10,11,12,13,14,15,16],\"hidden\":[17,18,19,20]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 10,
+            "to": 20,
+            "labels": [10, 11, 12, 13, 14, 15, 16],
+            "hidden": [17, 18, 19, 20]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17, 18, 19, 20"
+        },
+        {
+          "id": "b",
+          "text": "8, 10, 12, 14",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "c",
+          "text": "15, 14, 13, 12",
+          "errorTag": "sai_quy_luat_dem"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["The numbers grow by one.", "After 16 comes 17."],
+      "explanation": "Next come 17, 18, 19, 20.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.15"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_quy_luat_dem",
+      "scaffold": "none",
+      "id": "emath-mn1-line-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which numbers come next?",
+        "image": {
+          "kind": "model",
+          "value": "nl-3-13-{\"labels\":[3,4,5,6,7,8],\"hidden\":[9,10,11,12,13]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 3,
+            "to": 13,
+            "labels": [3, 4, 5, 6, 7, 8],
+            "hidden": [9, 10, 11, 12, 13]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "0, 2, 4, 6, 8",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "b",
+          "text": "9, 10, 11, 12, 13"
+        },
+        {
+          "id": "c",
+          "text": "7, 6, 5, 4, 3",
+          "errorTag": "sai_quy_luat_dem"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The numbers grow by one.", "After 8 comes 9."],
+      "explanation": "Next come 9, 10, 11, 12, 13.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.16"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_quy_luat_dem",
+      "scaffold": "none",
+      "id": "emath-mn1-line-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which numbers come next?",
+        "image": {
+          "kind": "model",
+          "value": "nl-7-17-{\"labels\":[7,8,9,10,11,12],\"hidden\":[13,14,15,16,17]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 7,
+            "to": 17,
+            "labels": [7, 8, 9, 10, 11, 12],
+            "hidden": [13, 14, 15, 16, 17]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "4, 6, 8, 10, 12",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "b",
+          "text": "11, 10, 9, 8, 7",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "c",
+          "text": "13, 14, 15, 16, 17"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The numbers grow by one.", "After 12 comes 13."],
+      "explanation": "Next come 13, 14, 15, 16, 17.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.16"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-line-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is missing?",
+        "image": {
+          "kind": "model",
+          "value": "nl-6-13-{\"labels\":[6,13],\"hidden\":[9]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 6,
+            "to": 13,
+            "labels": [6, 13],
+            "hidden": [9]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count along the marks.", "Start at 6."],
+      "explanation": "The missing number is 9.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.15"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-line-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is missing?",
+        "image": {
+          "kind": "model",
+          "value": "nl-8-15-{\"labels\":[8,12,15],\"hidden\":[11]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 8,
+            "to": 15,
+            "labels": [8, 12, 15],
+            "hidden": [11]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count along the marks.", "Start at 8."],
+      "explanation": "The missing number is 11.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.16"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-line-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is missing?",
+        "image": {
+          "kind": "model",
+          "value": "nl-11-18-{\"labels\":[11,15,18],\"hidden\":[14]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 11,
+            "to": 18,
+            "labels": [11, 15, 18],
+            "hidden": [14]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count along the marks.", "Start at 11."],
+      "explanation": "The missing number is 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.16"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-line-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Fill in the missing numbers.",
+        "image": {
+          "kind": "model",
+          "value": "nl-10-16-{\"hidden\":[12,14]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 10,
+            "to": 16,
+            "hidden": [12, 14]
+          }
+        }
+      },
+      "dragItems": [
+        {
+          "id": "n12",
+          "text": "12"
+        },
+        {
+          "id": "n14",
+          "text": "14"
+        },
+        {
+          "id": "n16",
+          "text": "16",
+          "errorTag": "sai_quy_luat_dem"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "a",
+          "label": "11 ○ 13",
+          "accepts": ["n12", "n14", "n16"]
+        },
+        {
+          "id": "b",
+          "label": "13 ○ 15",
+          "accepts": ["n12", "n14", "n16"]
+        }
+      ],
+      "answerKey": {
+        "a": ["n12"],
+        "b": ["n14"]
+      },
+      "hints": ["Small to big, left to right.", "Count by ones."],
+      "explanation": "11, 12, 13, 14, 15.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.15"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-line-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is greater?",
+        "image": {
+          "kind": "model",
+          "value": "nl-10-20-{\"marks\":[13,17]}",
+          "model": {
+            "kind": "numberLine",
+            "from": 10,
+            "to": 20,
+            "marks": [13, 17]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "so_sanh_nguoc"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["The number to the right is greater.", "17 is to the right of 13."],
+      "explanation": "17 is greater than 13.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.26"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-line-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen and tap the number."
+      },
+      "listenTarget": {
+        "text": "one step after fifteen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Start at 15.", "One step to the right."],
+      "explanation": "One step after 15 is 16.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.14"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-line-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Read the rule out loud!"
+      },
+      "readTarget": {
+        "text": "Fill in the numbers from small to big, left to right.",
+        "words": [
+          "Fill",
+          "in",
+          "the",
+          "numbers",
+          "from",
+          "small",
+          "to",
+          "big",
+          "left",
+          "to",
+          "right"
+        ]
+      },
+      "answerKey": {
+        "words": [
+          "Fill",
+          "in",
+          "the",
+          "numbers",
+          "from",
+          "small",
+          "to",
+          "big",
+          "left",
+          "to",
+          "right"
+        ]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Fill in the numbers from small to big, left to right.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L4",
+        "sourceRef": "EDI-MN1 tr.14"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-mn1-line-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_LINE_TO_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Say the rule!"
+      },
+      "readTarget": {
+        "text": "The number to the right is greater.",
+        "words": ["The", "number", "to", "the", "right", "is", "greater"]
+      },
+      "answerKey": {
+        "words": ["The", "number", "to", "the", "right", "is", "greater"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"The number to the right is greater.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L8",
+        "sourceRef": "EDI-MN1 tr.26"
       }
     }
   ]

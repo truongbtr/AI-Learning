@@ -1,0 +1,2539 @@
+{
+  "skillCode": "EMATH.NBT.PLACE_VALUE_MODELS",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["EDI-MN1-U3-L6"],
+  "note": "EDI-MN1 'Represent Tens and Ones' (đầu trang Lesson 3-3, tr.20–22): thanh chục + khối rời, chuỗi hạt, ten-frame. Nhiễu của sách: thanh chỉ 9 khối (chuc_khong_du_10), thừa một thanh chục.",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "chuc_khong_du_10",
+      "scaffold": "model",
+      "id": "emath-pvm-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How can you show number 13?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-3-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 3
+            }
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-2-3-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 3
+            }
+          },
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-6-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 6
+            }
+          }
+        },
+        {
+          "id": "d",
+          "image": {
+            "kind": "model",
+            "value": "to-1-3-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 3,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["13 is 1 ten and 3 ones.", "Check that the rod has 10 cubes."],
+      "explanation": "13 is one full rod of 10 and 3 cubes.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "chuc_khong_du_10",
+      "scaffold": "none",
+      "id": "emath-pvm-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "How can you show number 17?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-7-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 7,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-1-7-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 7
+            }
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-2-7-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 7
+            }
+          },
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "d",
+          "image": {
+            "kind": "model",
+            "value": "to-1-6-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 6
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["17 is 1 ten and 7 ones.", "Count the cubes in the rod too."],
+      "explanation": "17 is one rod of 10 and 7 cubes.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-pvm-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which picture shows 15?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-5-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 5,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-2-5-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 5
+            }
+          },
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-5-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 5
+            }
+          }
+        },
+        {
+          "id": "d",
+          "image": {
+            "kind": "model",
+            "value": "to-1-4-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 4
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["15 is 1 ten and 5 ones.", "Count the cubes in the rod too."],
+      "explanation": "15 is one rod of 10 and 5 cubes.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "chuc_khong_du_10",
+      "scaffold": "none",
+      "id": "emath-pvm-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Find the model for 11."
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-1-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 1,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-2-1-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 1
+            }
+          },
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-0-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 0
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "image": {
+            "kind": "model",
+            "value": "to-1-1-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 1
+            }
+          }
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["11 is 1 ten and 1 ones.", "Count the cubes in the rod too."],
+      "explanation": "11 is one rod of 10 and 1 cubes.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-pvm-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How can you show number 19?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-9-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 9
+            }
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-1-9-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 9,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-2-9-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 9
+            }
+          },
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "d",
+          "image": {
+            "kind": "model",
+            "value": "to-1-8-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 8
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["19 is 1 ten and 9 ones.", "Count the cubes in the rod too."],
+      "explanation": "19 is one rod of 10 and 9 cubes.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Which picture shows 20?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-2-0-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 0,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-2-0-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 0
+            }
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-9-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 9
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "d",
+          "image": {
+            "kind": "model",
+            "value": "to-0-2-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 0,
+              "ones": 2
+            }
+          },
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["20 is 2 tens.", "Check each rod has 10."],
+      "explanation": "20 is two full rods of 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "nham_thu_tu_so",
+      "scaffold": "model",
+      "id": "emath-pvm-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What number is this?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-6-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 6
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "61",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "17",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["The rod is 1 ten.", "Count the loose cubes: 6."],
+      "explanation": "1 ten and 6 ones is 16.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-pvm-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many beads in all?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-7-10-beads",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 7,
+            "style": "beads"
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "71",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "17"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["The string has 10 beads.", "Then count the loose beads."],
+      "explanation": "1 ten and 7 ones is 17.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What number do the ten-frames show?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-13+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 13,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["A full frame is 1 ten.", "Then 3 ones."],
+      "explanation": "1 ten and 3 ones is 13.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What number do the ten-frames show?",
+        "image": {
+          "kind": "model",
+          "value": "tf-2-14+0",
+          "model": {
+            "kind": "tenFrame",
+            "frames": 2,
+            "dots": [
+              {
+                "count": 14,
+                "tone": "dark"
+              }
+            ]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["A full frame is 1 ten.", "Then 4 ones."],
+      "explanation": "1 ten and 4 ones is 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many in all?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-2-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 2
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "21",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count the tens first: 10, 20…", "Then count on the ones."],
+      "explanation": "This shows 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Count the tens and ones.",
+        "image": {
+          "kind": "model",
+          "value": "to-1-8-10-beads",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 8,
+            "style": "beads"
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "81",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Count the tens first: 10, 20…", "Then count on the ones."],
+      "explanation": "This shows 18.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What number is this?",
+        "image": {
+          "kind": "model",
+          "value": "to-2-0-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 2,
+            "ones": 0
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count the tens first: 10, 20…", "Then count on the ones."],
+      "explanation": "This shows 20.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "How many in all?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-5-10-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 5
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "51",
+          "errorTag": "nham_thu_tu_so"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count the tens first: 10, 20…", "Then count on the ones."],
+      "explanation": "This shows 15.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-pvm-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Count every cube. What number is this?",
+        "image": {
+          "kind": "model",
+          "value": "to-1-9-9-cubes",
+          "model": {
+            "kind": "tensOnes",
+            "tens": 1,
+            "ones": 9,
+            "rodSize": 9
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Is the rod really 10?", "Count the rod cubes one by one."],
+      "explanation": "The rod has only 9 cubes: 9 and 9 is 18.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-pvm-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Match each model to its number."
+      },
+      "dragItems": [
+        {
+          "id": "n13",
+          "text": "13"
+        },
+        {
+          "id": "n16",
+          "text": "16"
+        },
+        {
+          "id": "n11",
+          "text": "11"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-3-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 3
+            }
+          },
+          "accepts": ["n13", "n16", "n11"]
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-1-6-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 6
+            }
+          },
+          "accepts": ["n13", "n16", "n11"]
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-1-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 1
+            }
+          },
+          "accepts": ["n13", "n16", "n11"]
+        }
+      ],
+      "answerKey": {
+        "a": ["n13"],
+        "b": ["n16"],
+        "c": ["n11"]
+      },
+      "hints": ["Each rod is 10.", "Count the loose cubes."],
+      "explanation": "13, 16 and 11.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Match each model to its number."
+      },
+      "dragItems": [
+        {
+          "id": "n14",
+          "text": "14"
+        },
+        {
+          "id": "n20",
+          "text": "20"
+        },
+        {
+          "id": "n17",
+          "text": "17"
+        },
+        {
+          "id": "n12",
+          "text": "12",
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-4-10-beads",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 4,
+              "style": "beads"
+            }
+          },
+          "accepts": ["n14", "n20", "n17", "n12"]
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-2-0-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 0
+            }
+          },
+          "accepts": ["n14", "n20", "n17", "n12"]
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-7-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 7
+            }
+          },
+          "accepts": ["n14", "n20", "n17", "n12"]
+        }
+      ],
+      "answerKey": {
+        "a": ["n14"],
+        "b": ["n20"],
+        "c": ["n17"]
+      },
+      "hints": ["Count the tens first.", "Two rods are 20."],
+      "explanation": "14, 20 and 17.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-pvm-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Draw 17 with dots: drag them in."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c9",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c10",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c11",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c12",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c13",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c14",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c15",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c16",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c17",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c18",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c19",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-2-[]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": []
+            }
+          },
+          "accepts": [
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c6",
+            "c7",
+            "c8",
+            "c9",
+            "c10",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17",
+            "c18",
+            "c19"
+          ]
+        }
+      ],
+      "answerKey": {
+        "frame": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7",
+          "c8",
+          "c9",
+          "c10",
+          "c11",
+          "c12",
+          "c13",
+          "c14",
+          "c15",
+          "c16",
+          "c17"
+        ]
+      },
+      "hints": ["Fill one frame for the ten.", "Then 7 ones."],
+      "explanation": "17 is 1 ten and 7 ones.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-pvm-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Show 20: fill the ten-frames."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c9",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c10",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c11",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c12",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c13",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c14",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c15",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c16",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c17",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c18",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c19",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c20",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          }
+        },
+        {
+          "id": "c21",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c22",
+          "image": {
+            "kind": "model",
+            "value": "counter-dark",
+            "model": {
+              "kind": "counter",
+              "tone": "dark"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-2-[]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": []
+            }
+          },
+          "accepts": [
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c6",
+            "c7",
+            "c8",
+            "c9",
+            "c10",
+            "c11",
+            "c12",
+            "c13",
+            "c14",
+            "c15",
+            "c16",
+            "c17",
+            "c18",
+            "c19",
+            "c20",
+            "c21",
+            "c22"
+          ]
+        }
+      ],
+      "answerKey": {
+        "frame": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7",
+          "c8",
+          "c9",
+          "c10",
+          "c11",
+          "c12",
+          "c13",
+          "c14",
+          "c15",
+          "c16",
+          "c17",
+          "c18",
+          "c19",
+          "c20"
+        ]
+      },
+      "hints": ["20 is 2 tens.", "Fill both frames."],
+      "explanation": "Two full frames make 20.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "none",
+      "id": "emath-pvm-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "One frame is full. Drag dots to show 16."
+      },
+      "dragItems": [
+        {
+          "id": "c1",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c2",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c3",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c4",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c5",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c6",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c8",
+          "image": {
+            "kind": "model",
+            "value": "counter-light",
+            "model": {
+              "kind": "counter",
+              "tone": "light"
+            }
+          },
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "frame",
+          "image": {
+            "kind": "model",
+            "value": "zone-2-[{\"count\":10,\"tone\":\"dark\"}]",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 10,
+                  "tone": "dark"
+                }
+              ]
+            }
+          },
+          "accepts": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8"]
+        }
+      ],
+      "answerKey": {
+        "frame": ["c1", "c2", "c3", "c4", "c5", "c6"]
+      },
+      "hints": ["10 is done.", "16 is 10 and 6."],
+      "explanation": "10 and 6 more is 16.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "chuc_khong_du_10",
+      "scaffold": "none",
+      "id": "emath-pvm-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Sort: which models show 15?"
+      },
+      "dragItems": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-5-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 5
+            }
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "tf-2-15+0",
+            "model": {
+              "kind": "tenFrame",
+              "frames": 2,
+              "dots": [
+                {
+                  "count": 15,
+                  "tone": "dark"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-5-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 5,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "d",
+          "image": {
+            "kind": "model",
+            "value": "to-2-5-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 5
+            }
+          },
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "yes",
+          "label": "Shows 15",
+          "accepts": ["a", "b", "c", "d"]
+        },
+        {
+          "id": "no",
+          "label": "Not 15",
+          "accepts": ["a", "b", "c", "d"]
+        }
+      ],
+      "answerKey": {
+        "yes": ["a", "b"],
+        "no": ["c", "d"]
+      },
+      "hints": ["15 is 1 ten and 5 ones.", "Check every ten has 10."],
+      "explanation": "A full rod and 5 cubes, or a full frame and 5 dots, show 15.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Listen. Tap the model."
+      },
+      "listenTarget": {
+        "text": "one ten and six ones"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-6-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 6,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-1-5-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 5
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-6-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 6
+            }
+          }
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen for the tens.", "Then listen for the ones."],
+      "explanation": "One ten and six ones is 16.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which model did you hear?"
+      },
+      "listenTarget": {
+        "text": "one ten and three ones"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-1-3-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 3
+            }
+          }
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-1-3-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 3,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-1-2-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 1,
+              "ones": 2
+            }
+          },
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen for the tens.", "Then listen for the ones."],
+      "explanation": "One ten and three ones is 13.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then find the model."
+      },
+      "listenTarget": {
+        "text": "two tens"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "image": {
+            "kind": "model",
+            "value": "to-2-0-9-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 0,
+              "rodSize": 9
+            }
+          },
+          "errorTag": "chuc_khong_du_10"
+        },
+        {
+          "id": "b",
+          "image": {
+            "kind": "model",
+            "value": "to-2-0-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 2,
+              "ones": 0
+            }
+          }
+        },
+        {
+          "id": "c",
+          "image": {
+            "kind": "model",
+            "value": "to-0-2-10-cubes",
+            "model": {
+              "kind": "tensOnes",
+              "tens": 0,
+              "ones": 2
+            }
+          },
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen for the tens.", "Then listen for the ones."],
+      "explanation": "Two tens is 20.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully and pick one."
+      },
+      "listenTarget": {
+        "text": "seventeen"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "71",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        },
+        {
+          "id": "d",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Tens come first.", "Say it again in your head."],
+      "explanation": "Seventeen is 17.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Hear it, then find it."
+      },
+      "listenTarget": {
+        "text": "one ten and eight ones"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "81",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Tens come first.", "Say it again in your head."],
+      "explanation": "One ten and eight ones is 18.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.21"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Touch each one as you count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟦",
+          "labelVi": "khối vuông",
+          "labelEn": "cubes",
+          "repeat": 13
+        },
+        "correctCount": 13,
+        "layout": "grid"
+      },
+      "answerKey": 13,
+      "hints": ["Count 10 first: that is a ten.", "Then count the ones left."],
+      "explanation": "13 is 1 ten and 3 ones.",
+      "meta": {
+        "estSeconds": 46,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each one to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🔵",
+          "labelVi": "hạt",
+          "labelEn": "beads",
+          "repeat": 12
+        },
+        "correctCount": 12,
+        "layout": "grid"
+      },
+      "answerKey": 12,
+      "hints": ["Count 10 first: that is a ten.", "Then count the ones left."],
+      "explanation": "12 is 1 ten and 2 ones.",
+      "meta": {
+        "estSeconds": 44,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap and count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟧",
+          "labelVi": "khối vuông",
+          "labelEn": "blocks",
+          "repeat": 14
+        },
+        "correctCount": 14,
+        "layout": "grid"
+      },
+      "answerKey": 14,
+      "hints": ["Count 10 first: that is a ten.", "Then count the ones left."],
+      "explanation": "14 is 1 ten and 4 ones.",
+      "meta": {
+        "estSeconds": 48,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Count them all. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🟡",
+          "labelVi": "hạt",
+          "labelEn": "beads",
+          "repeat": 11
+        },
+        "correctCount": 11,
+        "layout": "grid"
+      },
+      "answerKey": 11,
+      "hints": ["Count 10 first: that is a ten.", "Then count the ones left."],
+      "explanation": "11 is 1 ten and 1 ones.",
+      "meta": {
+        "estSeconds": 42,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "COUNT_TAP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Touch each one as you count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "stars",
+          "repeat": 13
+        },
+        "correctCount": 13,
+        "layout": "grid"
+      },
+      "answerKey": 13,
+      "hints": ["Count 10 first: that is a ten.", "Then count the ones left."],
+      "explanation": "13 is 1 ten and 3 ones.",
+      "meta": {
+        "estSeconds": 46,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.22"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-pvm-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "One ten and six ones is sixteen.",
+        "words": ["One", "ten", "and", "six", "ones", "is", "sixteen"]
+      },
+      "answerKey": {
+        "words": ["One", "ten", "and", "six", "ones", "is", "sixteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"One ten and six ones is sixteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "One ten, seven ones, seventeen.",
+        "words": ["One", "ten", "seven", "ones", "seventeen"]
+      },
+      "answerKey": {
+        "words": ["One", "ten", "seven", "ones", "seventeen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"One ten, seven ones, seventeen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Say it clearly."
+      },
+      "readTarget": {
+        "text": "Two tens is twenty.",
+        "words": ["Two", "tens", "is", "twenty"]
+      },
+      "answerKey": {
+        "words": ["Two", "tens", "is", "twenty"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Two tens is twenty.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "This rod has ten cubes.",
+        "words": ["This", "rod", "has", "ten", "cubes"]
+      },
+      "answerKey": {
+        "words": ["This", "rod", "has", "ten", "cubes"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"This rod has ten cubes.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-pvm-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.PLACE_VALUE_MODELS"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "One ten and three ones is thirteen.",
+        "words": ["One", "ten", "and", "three", "ones", "is", "thirteen"]
+      },
+      "answerKey": {
+        "words": ["One", "ten", "and", "three", "ones", "is", "thirteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"One ten and three ones is thirteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L6",
+        "sourceRef": "EDI-MN1 tr.20"
+      }
+    }
+  ]
+}

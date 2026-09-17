@@ -153,6 +153,16 @@ describe("MATH NOTES traps (pha 13)", () => {
     expect(check("sai_quy_luat_dem", "17, 18, 19", "18, 20, 22", ok)).toBeNull();
     expect(check("sai_quy_luat_dem", "12", "21", en("Which is greater?"))).toMatch(/next/);
   });
+  it("hears 'Who has more?' and 'is equal to' as comparisons", () => {
+    const val = en("Val has 17 beads. Jean has 11 beads. Who has more?");
+    expect(check("so_sanh_nguoc", "Val", "Jean", val)).toBeNull();
+    expect(
+      check("so_sanh_nguoc", "False", "True", en("True or false: 9 is equal to 19.")),
+    ).toBeNull();
+    expect(check("so_sanh_nguoc", "Val", "Jean", en("Val has 17 beads. Who is taller?"))).toMatch(
+      /comparison/,
+    );
+  });
   it("a wrong doubles fact must be a doubles fact, and wrong", () => {
     const ctx = en("Which doubles fact matches the cards?");
     expect(check("nho_sai_doubles", "8 + 8 = 16", "5 + 5 = 9", ctx)).toBeNull();

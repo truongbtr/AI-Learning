@@ -104,7 +104,12 @@ const MOVE = {
   "EMATH.OA.NUMBER_BONDS_10": { expectedWeek: 9, lessonRef: "EDI-MN1-U4-L2" },
   "EMATH.OA.COUNT_ON": { expectedWeek: 10, lessonRef: "EDI-MN1-U4-L3" },
   "EMATH.OA.DOUBLES": { expectedWeek: 11, lessonRef: "EDI-MN1-U4-L4" },
-  "EMATH.OA.MAKE_TEN": { expectedWeek: 11, lessonRef: "EDI-MN1-U4-L5" },
+  "EMATH.OA.MAKE_TEN": {
+    expectedWeek: 11,
+    lessonRef: "EDI-MN1-U4-L5",
+    // the book reads the strategy aloud: "7 plus 3 is 10, 10 plus 2 is 12"
+    exerciseTypes: ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "COUNT_TAP", "READ_ALOUD"],
+  },
 };
 
 for (const def of NEW) {

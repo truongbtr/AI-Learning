@@ -1,0 +1,1814 @@
+{
+  "skillCode": "EMATH.NBT.NUMBER_CHART_20",
+  "subject": "EMATH",
+  "generatedBy": "claude-code",
+  "promptVersion": "exercise-gen-v3",
+  "lessonRefs": ["EDI-MN1-U3-L3"],
+  "note": "EDI-MN1 Lesson 'Patterns on a Number Chart to 20' (tr.11–13): quy luật đếm trên bảng 2 × 10 — sang phải thêm 1, xuống dưới thêm 10. Không phải quy luật lặp (G.PATTERNS).",
+  "exercises": [
+    {
+      "assetTheme": "neutral",
+      "targetsError": "dem_thua_1",
+      "scaffold": "model",
+      "id": "emath-chart-0001",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What number is 2 more than 13?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[13]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [13]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "11",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find the number on the chart.", "Move 2 to the right."],
+      "explanation": "2 more than 13 is 15.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0002",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What number is 1 more than 16?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[16]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [16]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "15",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Find the number on the chart.", "Move 1 to the right."],
+      "explanation": "1 more than 16 is 17.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0003",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What number is 2 more than 8?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[8]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [8]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Find the number on the chart.", "Move 2 to the right."],
+      "explanation": "2 more than 8 is 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0004",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What number is 2 more than 17?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[17]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [17]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "20",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "nham_cong_tru"
+        },
+        {
+          "id": "d",
+          "text": "19"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Find the number on the chart.", "Move 2 to the right."],
+      "explanation": "2 more than 17 is 19.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0005",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What number is 1 more than 9?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[9]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [9]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "errorTag": "nham_cong_tru"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Find the number on the chart.", "Move 1 to the right."],
+      "explanation": "1 more than 9 is 10.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "model",
+      "id": "emath-chart-0006",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is missing?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"hidden\":[18]}",
+          "model": {
+            "kind": "numberChart",
+            "hidden": [18]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Look at the numbers before and after it.", "Or look up and down its column."],
+      "explanation": "17, 18, 19 — the missing number is 18.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.12"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0007",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What number hides under the ?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"hidden\":[9]}",
+          "model": {
+            "kind": "numberChart",
+            "hidden": [9]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "19",
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Look at the numbers before and after it.", "Or look up and down its column."],
+      "explanation": "8, 9, 10 — the missing number is 9.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.12"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0008",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Find the missing number.",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"hidden\":[14]}",
+          "model": {
+            "kind": "numberChart",
+            "hidden": [14]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "d",
+          "text": "14"
+        }
+      ],
+      "answerKey": "d",
+      "hints": ["Look at the numbers before and after it.", "Or look up and down its column."],
+      "explanation": "13, 14, 15 — the missing number is 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.12"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-chart-0009",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is missing?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"hidden\":[7]}",
+          "model": {
+            "kind": "numberChart",
+            "hidden": [7]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "d",
+          "text": "17",
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Look at the numbers before and after it.", "Or look up and down its column."],
+      "explanation": "6, 7, 8 — the missing number is 7.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.12"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0010",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "What number hides under the ?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"hidden\":[20]}",
+          "model": {
+            "kind": "numberChart",
+            "hidden": [20]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "19",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Look at the numbers before and after it.", "Or look up and down its column."],
+      "explanation": "19, 20,  — the missing number is 20.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.12"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0011",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Find the missing number.",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"hidden\":[11]}",
+          "model": {
+            "kind": "numberChart",
+            "hidden": [11]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Look at the numbers before and after it.", "Or look up and down its column."],
+      "explanation": "10, 11, 12 — the missing number is 11.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.12"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "model",
+      "id": "emath-chart-0012",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is below 4?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[4]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [4]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "5",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Stay in the same column.", "Down one row is 10 more; up one row is 10 less."],
+      "explanation": "14 is in the same column as 4.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-chart-0013",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is below 7?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[7]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [7]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "8",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Stay in the same column.", "Down one row is 10 more; up one row is 10 less."],
+      "explanation": "17 is in the same column as 7.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-chart-0014",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is above 16?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[16]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [16]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Stay in the same column.", "Down one row is 10 more; up one row is 10 less."],
+      "explanation": "6 is in the same column as 16.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_hang_chuc_don_vi",
+      "scaffold": "none",
+      "id": "emath-chart-0015",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Which number is above 19?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[19]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [19]
+          }
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Stay in the same column.", "Down one row is 10 more; up one row is 10 less."],
+      "explanation": "9 is in the same column as 19.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_quy_luat_dem",
+      "scaffold": "model",
+      "id": "emath-chart-0016",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What numbers come next after 14?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "16, 18, 20",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "b",
+          "text": "13, 12, 11, 10",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "c",
+          "text": "15, 16, 17, 18"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on by ones.", "Say 14, then the next number."],
+      "explanation": "After 14 come 15, 16, 17, 18.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_quy_luat_dem",
+      "scaffold": "none",
+      "id": "emath-chart-0017",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "What numbers come next after 10?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "11, 12, 13, 14"
+        },
+        {
+          "id": "b",
+          "text": "12, 14, 16",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "c",
+          "text": "9, 8, 7, 6",
+          "errorTag": "sai_quy_luat_dem"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on by ones.", "Say 10, then the next number."],
+      "explanation": "After 10 come 11, 12, 13, 14.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_quy_luat_dem",
+      "scaffold": "none",
+      "id": "emath-chart-0018",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What numbers come next after 8?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10, 12, 14",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "b",
+          "text": "9, 10, 11, 12"
+        },
+        {
+          "id": "c",
+          "text": "7, 6, 5, 4",
+          "errorTag": "sai_quy_luat_dem"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on by ones.", "Say 8, then the next number."],
+      "explanation": "After 8 come 9, 10, 11, 12.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_quy_luat_dem",
+      "scaffold": "none",
+      "id": "emath-chart-0019",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What numbers come next after 16?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18, 20",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "b",
+          "text": "15, 14, 13, 12",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "c",
+          "text": "17, 18, 19, 20"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Count on by ones.", "Say 16, then the next number."],
+      "explanation": "After 16 come 17, 18, 19, 20.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_quy_luat_dem",
+      "scaffold": "none",
+      "id": "emath-chart-0020",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "What numbers come next after 5?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "6, 7, 8, 9"
+        },
+        {
+          "id": "b",
+          "text": "7, 9, 11",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "c",
+          "text": "4, 3, 2, 1",
+          "errorTag": "sai_quy_luat_dem"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Count on by ones.", "Say 5, then the next number."],
+      "explanation": "After 5 come 6, 7, 8, 9.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": "sai_quy_luat_dem",
+      "scaffold": "none",
+      "id": "emath-chart-0021",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "MCQ",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "What numbers come next after 11?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "13, 15, 17",
+          "errorTag": "sai_quy_luat_dem"
+        },
+        {
+          "id": "b",
+          "text": "12, 13, 14, 15"
+        },
+        {
+          "id": "c",
+          "text": "10, 9, 8, 7",
+          "errorTag": "sai_quy_luat_dem"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Count on by ones.", "Say 11, then the next number."],
+      "explanation": "After 11 come 12, 13, 14, 15.",
+      "meta": {
+        "estSeconds": 22,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-chart-0022",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Fill in the missing numbers.",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"hidden\":[18,9]}",
+          "model": {
+            "kind": "numberChart",
+            "hidden": [18, 9]
+          }
+        }
+      },
+      "dragItems": [
+        {
+          "id": "n18",
+          "text": "18"
+        },
+        {
+          "id": "n9",
+          "text": "9"
+        },
+        {
+          "id": "n19",
+          "text": "19",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "a",
+          "label": "16 17 ○",
+          "accepts": ["n18", "n9", "n19"]
+        },
+        {
+          "id": "b",
+          "label": "○ 10 11",
+          "accepts": ["n18", "n9", "n19"]
+        }
+      ],
+      "answerKey": {
+        "a": ["n18"],
+        "b": ["n9"]
+      },
+      "hints": ["What comes after 17?", "What comes before 10?"],
+      "explanation": "16, 17, 18 and 9, 10, 11.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.12"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0023",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Fill in the missing numbers.",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"hidden\":[7,19]}",
+          "model": {
+            "kind": "numberChart",
+            "hidden": [7, 19]
+          }
+        }
+      },
+      "dragItems": [
+        {
+          "id": "n7",
+          "text": "7"
+        },
+        {
+          "id": "n19",
+          "text": "19"
+        },
+        {
+          "id": "n17",
+          "text": "17",
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "a",
+          "label": "6 ○ 8",
+          "accepts": ["n7", "n19", "n17"]
+        },
+        {
+          "id": "b",
+          "label": "18 ○ 20",
+          "accepts": ["n7", "n19", "n17"]
+        }
+      ],
+      "answerKey": {
+        "a": ["n7"],
+        "b": ["n19"]
+      },
+      "hints": ["What is between 6 and 8?", "What is between 18 and 20?"],
+      "explanation": "6, 7, 8 and 18, 19, 20.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.12"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0024",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Drag the numbers into the chart gaps.",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"hidden\":[3,12,19]}",
+          "model": {
+            "kind": "numberChart",
+            "hidden": [3, 12, 19]
+          }
+        }
+      },
+      "dragItems": [
+        {
+          "id": "n3",
+          "text": "3"
+        },
+        {
+          "id": "n12",
+          "text": "12"
+        },
+        {
+          "id": "n19",
+          "text": "19"
+        },
+        {
+          "id": "n13",
+          "text": "13",
+          "errorTag": "sai_hang_chuc_don_vi"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "a",
+          "label": "2 ○ 4",
+          "accepts": ["n3", "n12", "n19", "n13"]
+        },
+        {
+          "id": "b",
+          "label": "11 ○ 13",
+          "accepts": ["n3", "n12", "n19", "n13"]
+        },
+        {
+          "id": "c",
+          "label": "18 ○ 20",
+          "accepts": ["n3", "n12", "n19", "n13"]
+        }
+      ],
+      "answerKey": {
+        "a": ["n3"],
+        "b": ["n12"],
+        "c": ["n19"]
+      },
+      "hints": ["Each gap sits between two numbers.", "Count on by one."],
+      "explanation": "3, 12 and 19 fill the gaps.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.12"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0025",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Top row or bottom row?",
+        "image": {
+          "kind": "model",
+          "value": "nc-{}",
+          "model": {
+            "kind": "numberChart"
+          }
+        }
+      },
+      "dragItems": [
+        {
+          "id": "n4",
+          "text": "4"
+        },
+        {
+          "id": "n14",
+          "text": "14"
+        },
+        {
+          "id": "n9",
+          "text": "9"
+        },
+        {
+          "id": "n19",
+          "text": "19"
+        },
+        {
+          "id": "n10",
+          "text": "10",
+          "errorTag": "nham_so_teen"
+        },
+        {
+          "id": "n11",
+          "text": "11"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "top",
+          "label": "1 to 10",
+          "accepts": ["n4", "n14", "n9", "n19", "n10", "n11"]
+        },
+        {
+          "id": "bottom",
+          "label": "11 to 20",
+          "accepts": ["n4", "n14", "n9", "n19", "n10", "n11"]
+        }
+      ],
+      "answerKey": {
+        "top": ["n4", "n9", "n10"],
+        "bottom": ["n14", "n19", "n11"]
+      },
+      "hints": ["The top row ends at 10.", "The bottom row starts at 11."],
+      "explanation": "4, 9 and 10 are on top; 11, 14 and 19 are below.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0026",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "DRAG_DROP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Put the numbers in counting order."
+      },
+      "dragItems": [
+        {
+          "id": "a",
+          "text": "17"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        }
+      ],
+      "dropZones": [
+        {
+          "id": "one",
+          "label": "14 ○",
+          "accepts": ["a", "b", "c"]
+        },
+        {
+          "id": "two",
+          "label": "○",
+          "accepts": ["a", "b", "c"]
+        },
+        {
+          "id": "three",
+          "label": "○ 18",
+          "accepts": ["a", "b", "c"]
+        }
+      ],
+      "answerKey": {
+        "one": ["b"],
+        "two": ["c"],
+        "three": ["a"]
+      },
+      "hints": ["What comes after 14?", "Count on: 15, 16, 17."],
+      "explanation": "14, 15, 16, 17, 18.",
+      "meta": {
+        "estSeconds": 40,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0027",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Listen, then tap the answer."
+      },
+      "listenTarget": {
+        "text": "What comes after sixteen?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "errorTag": "dem_thua_1"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen again.", "Use the number chart in your head."],
+      "explanation": "The answer is 17.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0028",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "What did you hear? Tap it."
+      },
+      "listenTarget": {
+        "text": "What comes after nine?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "errorTag": "nham_thu_tu_so"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen again.", "Use the number chart in your head."],
+      "explanation": "The answer is 10.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0029",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Listen carefully and pick one."
+      },
+      "listenTarget": {
+        "text": "two more than eleven"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "12",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thua_1"
+        }
+      ],
+      "answerKey": "b",
+      "hints": ["Listen again.", "Use the number chart in your head."],
+      "explanation": "The answer is 13.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0030",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Hear it, then find it."
+      },
+      "listenTarget": {
+        "text": "What comes before twenty?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "18",
+          "errorTag": "dem_thieu_1"
+        },
+        {
+          "id": "b",
+          "text": "20",
+          "errorTag": "lap_lai_tong"
+        },
+        {
+          "id": "c",
+          "text": "19"
+        }
+      ],
+      "answerKey": "c",
+      "hints": ["Listen again.", "Use the number chart in your head."],
+      "explanation": "The answer is 19.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0031",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "LISTEN_CHOOSE",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Tap what you hear.",
+        "image": {
+          "kind": "model",
+          "value": "nc-{\"marked\":[5]}",
+          "model": {
+            "kind": "numberChart",
+            "marked": [5]
+          }
+        }
+      },
+      "listenTarget": {
+        "text": "the number below five"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "errorTag": "sai_hang_chuc_don_vi"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "errorTag": "dem_thieu_1"
+        }
+      ],
+      "answerKey": "a",
+      "hints": ["Listen again.", "Use the number chart in your head."],
+      "explanation": "The answer is 15.",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0032",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap and count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "✏️",
+          "labelVi": "bút chì",
+          "labelEn": "pencils",
+          "repeat": 11
+        },
+        "correctCount": 11,
+        "layout": "grid"
+      },
+      "answerKey": 11,
+      "hints": ["Tap in order, like reading the chart.", "After 10 comes 11."],
+      "explanation": "There are 11 pencils.",
+      "meta": {
+        "estSeconds": 42,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0033",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Count them all. Tap each one."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🍎",
+          "labelVi": "quả táo",
+          "labelEn": "apples",
+          "repeat": 13
+        },
+        "correctCount": 13,
+        "layout": "grid"
+      },
+      "answerKey": 13,
+      "hints": ["Tap in order, like reading the chart.", "After 10 comes 11."],
+      "explanation": "There are 13 apples.",
+      "meta": {
+        "estSeconds": 46,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0034",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Touch each one as you count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🐞",
+          "labelVi": "bọ rùa",
+          "labelEn": "ladybugs",
+          "repeat": 12
+        },
+        "correctCount": 12,
+        "layout": "grid"
+      },
+      "answerKey": 12,
+      "hints": ["Tap in order, like reading the chart.", "After 10 comes 11."],
+      "explanation": "There are 12 ladybugs.",
+      "meta": {
+        "estSeconds": 44,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0035",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Tap each one to count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "🌸",
+          "labelVi": "bông hoa",
+          "labelEn": "flowers",
+          "repeat": 14
+        },
+        "correctCount": 14,
+        "layout": "grid"
+      },
+      "answerKey": 14,
+      "hints": ["Tap in order, like reading the chart.", "After 10 comes 11."],
+      "explanation": "There are 14 flowers.",
+      "meta": {
+        "estSeconds": 48,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0036",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "COUNT_TAP",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "How many? Tap and count."
+      },
+      "countTarget": {
+        "objects": {
+          "kind": "emoji",
+          "value": "⭐",
+          "labelVi": "ngôi sao",
+          "labelEn": "stars",
+          "repeat": 15
+        },
+        "correctCount": 15,
+        "layout": "grid"
+      },
+      "answerKey": 15,
+      "hints": ["Tap in order, like reading the chart.", "After 10 comes 11."],
+      "explanation": "There are 15 stars.",
+      "meta": {
+        "estSeconds": 50,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.13"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "model",
+      "id": "emath-chart-0037",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 1,
+      "prompt": {
+        "tts": true,
+        "text": "Your turn to read!"
+      },
+      "readTarget": {
+        "text": "Eleven, twelve, thirteen, fourteen.",
+        "words": ["Eleven", "twelve", "thirteen", "fourteen"]
+      },
+      "answerKey": {
+        "words": ["Eleven", "twelve", "thirteen", "fourteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Eleven, twelve, thirteen, fourteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0038",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 2,
+      "prompt": {
+        "tts": true,
+        "text": "Read it to {ban}."
+      },
+      "readTarget": {
+        "text": "Two more than thirteen is fifteen.",
+        "words": ["Two", "more", "than", "thirteen", "is", "fifteen"]
+      },
+      "answerKey": {
+        "words": ["Two", "more", "than", "thirteen", "is", "fifteen"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Two more than thirteen is fifteen.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0039",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 3,
+      "prompt": {
+        "tts": true,
+        "text": "Read slowly and clearly."
+      },
+      "readTarget": {
+        "text": "Fourteen is below four.",
+        "words": ["Fourteen", "is", "below", "four"]
+      },
+      "answerKey": {
+        "words": ["Fourteen", "is", "below", "four"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Fourteen is below four.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0040",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 4,
+      "prompt": {
+        "tts": true,
+        "text": "Read this out loud!"
+      },
+      "readTarget": {
+        "text": "Sixteen, seventeen, eighteen, nineteen, twenty.",
+        "words": ["Sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
+      },
+      "answerKey": {
+        "words": ["Sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"Sixteen, seventeen, eighteen, nineteen, twenty.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    },
+    {
+      "assetTheme": "neutral",
+      "targetsError": null,
+      "scaffold": "none",
+      "id": "emath-chart-0041",
+      "language": "en",
+      "skillCodes": ["EMATH.NBT.NUMBER_CHART_20"],
+      "type": "READ_ALOUD",
+      "difficulty": 5,
+      "prompt": {
+        "tts": true,
+        "text": "Say it clearly."
+      },
+      "readTarget": {
+        "text": "A number chart helps you count.",
+        "words": ["A", "number", "chart", "helps", "you", "count"]
+      },
+      "answerKey": {
+        "words": ["A", "number", "chart", "helps", "you", "count"]
+      },
+      "hints": ["Read one word at a time."],
+      "explanation": "This says: \"A number chart helps you count.\"",
+      "meta": {
+        "estSeconds": 25,
+        "lessonUnitCode": "EDI-MN1-U3-L3",
+        "sourceRef": "EDI-MN1 tr.11"
+      }
+    }
+  ]
+}
