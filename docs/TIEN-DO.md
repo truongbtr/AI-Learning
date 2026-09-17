@@ -46,8 +46,8 @@ khả năng nằm ở Volume 2. Chỉ **dời tuần** hai kỹ năng đang chen
 
 ### e2e cho Chí Thanh
 
-Mã hình bé là **Chó · Sư tử · Voi · Rùa** (bộ hình của app không có con hổ — chủ dự án nói "Hổ", tôi hiểu là con
-sư tử 🦁 và chỉ thử một lần). Phiên thật **Xưởng Máy** của Chí Thanh gặp bài EDI-MN1 có ten-frame — xanh, ảnh
+Chủ dự án đưa mã hình của bé (không chép vào tài liệu — mã đăng nhập là bí mật; truyền qua `E2E_KID_PIN`
+khi chạy test). Lưu ý bộ hình của app **không có con hổ**; con vật lớn duy nhất là sư tử 🦁. Phiên thật **Xưởng Máy** của Chí Thanh gặp bài EDI-MN1 có ten-frame — xanh, ảnh
 `s1-xuong-may-ten-frame.png` giờ là phiên của bé. Phiên **thế giới cũ** của bé hôm nay đã bị chính lượt chạy trước
 chơi hết, nên test giờ **bỏ qua có lý do** khi quest trong ngày đã xong (chạy lại ngày mai); phiên thế giới cũ của
 Mai Thy đã xanh sáng nay.
