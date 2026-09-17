@@ -1,3 +1,4 @@
+import type { ClientSpec } from "./types";
 /**
  * When "Xong!" lights up in a drag exercise. Pure, so the rule that decides whether a six-year-old
  * can hand in a half-finished answer is covered by a test rather than by a click-through.
@@ -26,4 +27,25 @@ export function dragReady(
   const inZone = (zoneId: string) =>
     Object.values(placed).filter((placedIn) => placedIn === zoneId).length;
   return zones.every((z) => inZone(z.id) >= Math.max(1, z.expect ?? 1));
+}
+
+type Zone = NonNullable<ClientSpec["dropZones"]>[number];
+type Item = NonNullable<ClientSpec["dragItems"]>[number];
+
+/** A counter card (pha 13): drawn smaller, so twenty of them fit the tray — still ≥ 64 px. */
+export function isCounter(item: Item): boolean {
+  return item.image?.kind === "model" && item.image.model?.kind === "counter";
+}
+
+/** A basket that *is* a ten-frame: dropped counters sit in its cells, after any printed dots. */
+export function tenFrameOf(zone: Zone) {
+  const m = zone.image?.kind === "model" ? zone.image.model : undefined;
+  return m?.kind === "tenFrame" ? m : null;
+}
+
+/** "15 ○ 12" → ["15", "12"]: the card lands between the two, where the book's circle is. */
+export function slotLabel(label: string | undefined): [string, string] | null {
+  if (!label?.includes("○")) return null;
+  const at = label.indexOf("○");
+  return [label.slice(0, at).trim(), label.slice(at + 1).trim()];
 }

@@ -48,18 +48,23 @@ export interface ValidationContext {
  * are the same question even if a word of the instruction differs (rubric 8).
  */
 function normalisePrompt(ex: ExerciseDef): string {
+  // a model is told apart by its data, not by the key its author gave it
+  const pic = (i: ExerciseDef["prompt"]["image"]) =>
+    i ? (i.model ? JSON.stringify(i.model) : i.value) : undefined;
   const parts = [ex.type, ex.prompt.text.trim().toLowerCase().replace(/\s+/g, " ")];
-  if (ex.prompt.image) parts.push(`img:${ex.prompt.image.value}`);
+  if (ex.prompt.image) parts.push(`img:${pic(ex.prompt.image)}`);
   if (ex.choices)
-    parts.push(ex.choices.map((c) => `${c.text ?? c.image?.value ?? c.audio ?? ""}`).join(","));
+    parts.push(ex.choices.map((c) => `${c.text ?? pic(c.image) ?? c.audio ?? ""}`).join(","));
   if (ex.readTarget) parts.push(`read:${ex.readTarget.text}`);
   // What the child hears is part of the question even though it is never printed.
   if (ex.listenTarget) parts.push(`hear:${ex.listenTarget.text}`);
   if (ex.countTarget)
     parts.push(`count:${ex.countTarget.objects.value}x${ex.countTarget.correctCount}`);
-  if (ex.dragItems)
-    parts.push(`drag:${ex.dragItems.map((d) => d.text ?? d.image?.value).join(",")}`);
-  if (ex.dropZones) parts.push(`zones:${ex.dropZones.map((z) => z.label ?? z.id).join(",")}`);
+  if (ex.dragItems) parts.push(`drag:${ex.dragItems.map((d) => d.text ?? pic(d.image)).join(",")}`);
+  if (ex.dropZones)
+    parts.push(
+      `zones:${ex.dropZones.map((z) => `${z.label ?? z.id}${pic(z.image) ?? ""}`).join(",")}`,
+    );
   if (ex.traceTarget) parts.push(`trace:${ex.traceTarget.glyph}`);
   if (ex.rubric) parts.push(`rubric:${ex.rubric.sampleAnswers.join("|")}`);
   return parts.join("|");

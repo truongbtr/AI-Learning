@@ -11,6 +11,8 @@ import { ExerciseFrame } from "./frame";
 import { Picture } from "./picture";
 import { type ExerciseProps, fillPlaceholders } from "./types";
 
+type ChoiceImage = NonNullable<NonNullable<ExerciseProps["spec"]["choices"]>[number]["image"]>;
+
 /**
  * MCQ and LISTEN_CHOOSE — the same card grid, answered by tapping.
  *
@@ -29,7 +31,7 @@ function ChoiceCard({
   language,
 }: {
   label?: string;
-  image?: { kind: string; value: string; labelVi?: string };
+  image?: ChoiceImage;
   onPick: (el: HTMLElement) => void;
   disabled?: boolean;
   picked: boolean;
@@ -69,7 +71,7 @@ function ChoiceCard({
       data-testid="choice"
       data-picked={picked ? "true" : undefined}
     >
-      {image ? <Picture image={image} size={short ? 92 : 128} /> : null}
+      {image ? <Picture image={image} size={short ? 92 : 128} layout="tall" /> : null}
       {label ? (
         <span className="font-extrabold text-[34px] text-[#2B2B3A] leading-tight">{label}</span>
       ) : null}

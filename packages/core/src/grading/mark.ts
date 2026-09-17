@@ -35,6 +35,70 @@ export interface AnswerBundle {
    * the key is a distractor that belongs in the tray — dropping it in a zone is a real mistake.
    */
   cards?: string[];
+  /**
+   * DRAG_DROP: card id -> what the card looks like, for cards that look exactly like another card.
+   * Seven identical dots dragged into a ten-frame are right whichever seven they are (pha 13), so
+   * the key's ids stand for "a card that looks like this", not for one particular card.
+   */
+  twins?: Record<string, string>;
+}
+
+/** What a drag card shows, as a comparable string. */
+function faceOf(item: { text?: unknown; image?: unknown }): string {
+  return JSON.stringify([item.text ?? null, item.image ?? null]);
+}
+
+/**
+ * Cards that look the same as at least one other card (from the spec the child was shown).
+ * Returns undefined when every card is different — the common case, and the old behaviour.
+ */
+export function twinsOf(
+  items: { id?: unknown; text?: unknown; image?: unknown }[],
+): Record<string, string> | undefined {
+  const byFace = new Map<string, string[]>();
+  for (const item of items) {
+    if (typeof item.id !== "string") continue;
+    const face = faceOf(item);
+    byFace.set(face, [...(byFace.get(face) ?? []), item.id]);
+  }
+  const out: Record<string, string> = {};
+  for (const [face, ids] of byFace) if (ids.length > 1) for (const id of ids) out[id] = face;
+  return Object.keys(out).length > 0 ? out : undefined;
+}
+
+/**
+ * Renames twin cards so the answer key's ids line up with where the child put look-alikes.
+ * In each zone a twin takes the id of a key card of the same face still unclaimed there; a twin
+ * with no such place takes the id of a look-alike the key leaves in the tray, so an extra dot is
+ * still an extra dot. `original` maps a new id back to the card the child actually moved.
+ */
+export function resolveTwins(
+  key: AnswerBundle,
+  placements: Record<string, string[]>,
+): { placements: Record<string, string[]>; original: Map<string, string> } {
+  const original = new Map<string, string>();
+  const twins = key.twins;
+  if (!twins) return { placements, original };
+  const want = (key.value ?? {}) as Record<string, string[]>;
+  const inKey = new Set(Object.values(want).flat());
+  const take = (pool: Map<string, string[]>, face: string) => pool.get(face)?.shift();
+  const spare = new Map<string, string[]>();
+  for (const id of key.cards ?? [])
+    if (twins[id] && !inKey.has(id)) spare.set(twins[id], [...(spare.get(twins[id]) ?? []), id]);
+  const out: Record<string, string[]> = {};
+  for (const [zoneId, ids] of Object.entries(placements)) {
+    const pool = new Map<string, string[]>();
+    for (const id of want[zoneId] ?? [])
+      if (twins[id]) pool.set(twins[id], [...(pool.get(twins[id]) ?? []), id]);
+    out[zoneId] = (ids ?? []).map((id) => {
+      const face = twins[id];
+      if (!face) return id;
+      const renamed = take(pool, face) ?? take(spare, face) ?? id;
+      if (!original.has(renamed)) original.set(renamed, id);
+      return renamed;
+    });
+  }
+  return { placements: out, original };
 }
 
 /** What the kid renderer sends back. Every field is optional: a child may simply skip. */
@@ -102,7 +166,8 @@ function markChoice(key: AnswerBundle, res: AttemptResponse): MarkResult {
 /** DRAG_DROP: the share of cards that ended up where the answer key puts them (docs/04 §7). */
 function markDrag(key: AnswerBundle, res: AttemptResponse): MarkResult {
   const want = (key.value ?? {}) as Record<string, string[]>;
-  const got = res.placements ?? {};
+  const twin = resolveTwins(key, res.placements ?? {});
+  const got = twin.placements;
   const home = new Map<string, string>();
   for (const [zoneId, items] of Object.entries(want)) for (const id of items) home.set(id, zoneId);
   const total = home.size;
@@ -137,7 +202,8 @@ function markDrag(key: AnswerBundle, res: AttemptResponse): MarkResult {
     score,
     errorCode: correct ? null : tagOf(key, wrongItems[0]),
     pending: false,
-    wrongItems,
+    // the cards the child moved, so the right ones float home
+    wrongItems: wrongItems.map((id) => twin.original.get(id) ?? id),
   };
 }
 
@@ -221,7 +287,7 @@ export function dragNotFinished(key: AnswerBundle, res: AttemptResponse): boolea
 
   const shown = new Set(key.cards ?? []);
   let placedFromKey = 0;
-  for (const items of Object.values(res.placements ?? {})) {
+  for (const items of Object.values(resolveTwins(key, res.placements ?? {}).placements)) {
     for (const id of items ?? []) {
       if (home.has(id)) placedFromKey++;
       // a distractor in a basket is a real answer, wrong but finished: mark it, do not nudge

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dragNotFinished, feedbackForTry, markAttempt } from "./mark";
+import { dragNotFinished, feedbackForTry, markAttempt, twinsOf } from "./mark";
 
 describe("multiple choice", () => {
   const key = { value: "b", errorTags: { a: "nham_b_d", c: "doan_bua" } };
@@ -201,5 +201,59 @@ describe("half-finished drag and drop is not a mistake", () => {
     expect(dragNotFinished(single, { placements: { a: ["k1"], b: ["k2"] } })).toBe(false);
     // one basket filled, the other still empty: that is half-finished too
     expect(dragNotFinished(single, { placements: { a: ["k1"] } })).toBe(true);
+  });
+});
+
+describe("look-alike drag cards (pha 13: dots into a ten-frame)", () => {
+  const dot = { image: { kind: "model", value: "dot", model: { kind: "counter" } } };
+  const items = ["d1", "d2", "d3", "d4", "d5"].map((id) => ({ id, ...dot }));
+  const twins = twinsOf(items);
+  // "drag 3 dots into the frame": the key names d1-d3, d4 and d5 stay in the tray
+  const key = { value: { frame: ["d1", "d2", "d3"] }, cards: items.map((i) => i.id), twins };
+
+  it("finds the cards that look the same, and nothing when all differ", () => {
+    expect(Object.keys(twins ?? {})).toHaveLength(5);
+    expect(
+      twinsOf([
+        { id: "a", text: "<" },
+        { id: "b", text: ">" },
+      ]),
+    ).toBeUndefined();
+  });
+
+  it("accepts any three dots", () => {
+    const m = markAttempt("DRAG_DROP", key, { placements: { frame: ["d5", "d2", "d4"] } });
+    expect(m.correct).toBe(true);
+    expect(m.score).toBe(1);
+  });
+
+  it("still sees one dot too many, and floats back a dot the child moved", () => {
+    const m = markAttempt("DRAG_DROP", key, {
+      placements: { frame: ["d4", "d5", "d1", "d2"] },
+    });
+    expect(m.correct).toBe(false);
+    expect(m.wrongItems).toHaveLength(1);
+    expect(["d1", "d2", "d4", "d5"]).toContain(m.wrongItems?.[0]);
+  });
+
+  it("does not call two look-alike dots in their own frames a mix-up", () => {
+    const two = {
+      value: { left: ["d1"], right: ["d2"] },
+      cards: ["d1", "d2"],
+      twins: twinsOf(items.slice(0, 2)),
+    };
+    expect(
+      markAttempt("DRAG_DROP", two, { placements: { left: ["d2"], right: ["d1"] } }).correct,
+    ).toBe(true);
+  });
+
+  it("waits for the last dot instead of marking a half-filled frame", () => {
+    expect(dragNotFinished(key, { placements: { frame: ["d4", "d5"] } })).toBe(true);
+    expect(dragNotFinished(key, { placements: { frame: ["d4", "d5", "d3"] } })).toBe(false);
+  });
+
+  it("changes nothing for cards that all look different", () => {
+    const plain = { value: { z: ["a"] }, cards: ["a", "b"] };
+    expect(markAttempt("DRAG_DROP", plain, { placements: { z: ["b"] } }).correct).toBe(false);
   });
 });

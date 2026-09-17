@@ -9,6 +9,7 @@ import {
   markAttempt,
   nextApplicableRung,
   SESSION_TARGET_ACCURACY,
+  twinsOf,
   vnDayDate,
 } from "@mtct/core";
 import type { Prisma, PrismaClient } from "../../generated/client";
@@ -799,7 +800,10 @@ function bundleFor(exercise: { answerKey: unknown; spec: unknown }): AnswerBundl
   const items = (exercise.spec as { dragItems?: { id?: unknown }[] } | null)?.dragItems;
   if (!Array.isArray(items)) return bundle;
   const cards = items.map((i) => i?.id).filter((id): id is string => typeof id === "string");
-  return cards.length > 0 ? { ...bundle, cards } : bundle;
+  if (cards.length === 0) return bundle;
+  // look-alike cards (seven dots for a ten-frame) are interchangeable — read from what was shown
+  const twins = twinsOf(items);
+  return twins ? { ...bundle, cards, twins } : { ...bundle, cards };
 }
 
 function hintsOf(spec: unknown): string[] {

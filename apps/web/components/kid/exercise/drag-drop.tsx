@@ -2,10 +2,12 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useShortScreen } from "../fit-to-height";
 import { playSound } from "../sound";
 import { SPRING, STAGGER } from "../tokens";
-import { dragReady } from "./drag-ready";
+import { dragReady, isCounter, slotLabel, tenFrameOf } from "./drag-ready";
 import { ExerciseFrame } from "./frame";
+import { tenFrameTones } from "./math-model";
 import { Picture } from "./picture";
 import { type ExerciseProps, fillPlaceholders } from "./types";
 
@@ -26,6 +28,9 @@ import { type ExerciseProps, fillPlaceholders } from "./types";
 
 const SNAP_PX = 90;
 
+type Item = NonNullable<ExerciseProps["spec"]["dragItems"]>[number];
+type Zone = NonNullable<ExerciseProps["spec"]["dropZones"]>[number];
+
 interface Placed {
   [itemId: string]: string | undefined; // itemId -> zoneId
 }
@@ -45,6 +50,7 @@ export function DragDropExercise({
   const [selected, setSelected] = useState<string | null>(null);
   const zoneRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const reduce = useReducedMotion();
+  const short = useShortScreen();
 
   const zones = spec.dropZones ?? [];
   const items = spec.dragItems ?? [];
@@ -131,6 +137,7 @@ export function DragDropExercise({
   };
 
   const card = (item: (typeof items)[number], inZone: boolean) => {
+    const small = isCounter(item);
     return (
       <motion.div
         key={item.id}
@@ -152,20 +159,104 @@ export function DragDropExercise({
         animate={inZone && !reduce ? { scale: [1.15, 0.95, 1] } : {}}
         // a three-step pop cannot be a spring (motion allows two keyframes per spring)
         transition={inZone ? { duration: 0.35, ease: "easeOut" } : SPRING.press}
-        className={`flex min-h-[104px] min-w-[104px] cursor-grab touch-none select-none items-center justify-center rounded-[26px] bg-white px-5 py-3 shadow-[0_12px_28px_-14px_rgba(43,43,58,0.55)] ${
+        className={`flex cursor-grab touch-none select-none items-center justify-center bg-white shadow-[0_12px_28px_-14px_rgba(43,43,58,0.55)] ${
+          small
+            ? "h-[68px] w-[68px] rounded-full p-1"
+            : "min-h-[104px] min-w-[104px] rounded-[26px] px-5 py-3"
+        } ${
           selected === item.id ? "ring-4 ring-[#FFD447]" : inZone ? "ring-4 ring-[#34C759]" : ""
         }`}
         data-testid="drag-item"
         data-item={item.id}
       >
         {item.image ? (
-          <Picture image={item.image} size={96} className="pointer-events-none" />
+          <Picture image={item.image} size={small ? 104 : 96} className="pointer-events-none" />
         ) : (
           <span className="font-extrabold text-[34px] text-[#2B2B3A]">
             {fillPlaceholders(item.text ?? "", vars)}
           </span>
         )}
       </motion.div>
+    );
+  };
+
+  /** What a basket shows: its label, its picture, and the cards dropped in it. */
+  const zoneBody = (z: Zone, mine: Item[]) => {
+    const frame = tenFrameOf(z);
+    if (frame) {
+      // the frame's own cells: printed dots first, then the counters the child dropped
+      const printed = tenFrameTones(frame);
+      const cells = Array.from({ length: frame.frames * 10 }, (_, i) => i);
+      return (
+        <>
+          {z.label ? (
+            <span className="font-extrabold text-[20px] text-[#6B6B7B]">{z.label}</span>
+          ) : null}
+          <div className="flex flex-wrap justify-center gap-6" data-testid="ten-frame-zone">
+            {(frame.frames === 2 ? [0, 10] : [0]).map((start) => (
+              <div
+                key={`frame-${start}`}
+                className="grid grid-cols-5 overflow-hidden rounded-[12px] border-4 border-[#2B2B3A] bg-white"
+              >
+                {cells.slice(start, start + 10).map((i) => {
+                  const placedAt = i - printed.length;
+                  const tone = printed[i];
+                  const item = placedAt >= 0 ? mine[placedAt] : undefined;
+                  return (
+                    <div
+                      key={`cell-${i}`}
+                      className="flex h-[72px] w-[72px] items-center justify-center border border-[#8A7F6A]/60"
+                      data-cell={i}
+                    >
+                      {tone ? (
+                        <span
+                          className={`block h-[46px] w-[46px] rounded-full border-[3px] ${
+                            tone === "dark"
+                              ? "border-[#1C5FB8] bg-[#2F80ED]"
+                              : "border-[#E09A00] bg-[#FFC247]"
+                          }`}
+                          data-printed={tone}
+                        />
+                      ) : item ? (
+                        card(item, true)
+                      ) : null}
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+          {/* more cards than cells: still visible, so they can be dragged back */}
+          {mine.length > cells.length - printed.length ? (
+            <div className="flex flex-wrap justify-center gap-2">
+              {mine.slice(cells.length - printed.length).map((item) => card(item, true))}
+            </div>
+          ) : null}
+        </>
+      );
+    }
+    const slot = slotLabel(z.label);
+    if (slot) {
+      return (
+        <div className="flex items-center justify-center gap-4" data-testid="slot-zone">
+          <span className="font-extrabold text-[44px] text-[#2B2B3A]">{slot[0]}</span>
+          <span className="flex min-h-[108px] min-w-[108px] items-center justify-center rounded-full border-4 border-[#C9BDA4] border-dashed bg-white">
+            {mine.map((item) => card(item, true))}
+          </span>
+          <span className="font-extrabold text-[44px] text-[#2B2B3A]">{slot[1]}</span>
+        </div>
+      );
+    }
+    return (
+      <>
+        {z.label ? (
+          <span className="font-extrabold text-[20px] text-[#6B6B7B]">{z.label}</span>
+        ) : null}
+        {z.image ? <Picture image={z.image} size={short ? 72 : 96} /> : null}
+        <div className="flex flex-wrap justify-center gap-2">
+          {mine.map((item) => card(item, true))}
+        </div>
+      </>
     );
   };
 
@@ -206,12 +297,10 @@ export function DragDropExercise({
                 data-testid="drop-zone"
                 data-zone={z.id}
               >
-                {z.label ? (
-                  <span className="font-extrabold text-[20px] text-[#6B6B7B]">{z.label}</span>
-                ) : null}
-                <div className="flex flex-wrap justify-center gap-2">
-                  {mine.map((item) => (item ? card(item, true) : null))}
-                </div>
+                {zoneBody(
+                  z,
+                  mine.filter((i): i is Item => Boolean(i)),
+                )}
               </button>
             );
           })}
@@ -219,7 +308,9 @@ export function DragDropExercise({
 
         {/* the tray */}
         <div
-          className="flex min-h-[120px] w-full flex-wrap items-center justify-center gap-4 rounded-[32px] bg-white/50 p-4"
+          className={`flex min-h-[120px] w-full flex-wrap items-center justify-center rounded-[32px] bg-white/50 p-4 ${
+            items.some(isCounter) ? "min-h-[96px] gap-3" : "gap-4"
+          }`}
           data-testid="drag-tray"
         >
           {items.filter((i) => !placed[i.id]).map((item) => card(item, false))}

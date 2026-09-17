@@ -1,4 +1,6 @@
+import type { MathModel } from "@mtct/content";
 import { EMOJI_PICTURES } from "./emoji-set";
+import { MathModelPicture, type ModelLayout } from "./math-model";
 import { imageSrc } from "./types";
 
 /** Codepoints joined by "-", lower case, without FE0F — the file name in /art/emoji/. */
@@ -32,8 +34,9 @@ export function Picture({
   className = "",
   alt,
   repeat = 1,
+  layout,
 }: {
-  image: { kind: string; value: string; labelVi?: string };
+  image: { kind: string; value: string; labelVi?: string; labelEn?: string; model?: MathModel };
   /** Pixel size of one picture (square). */
   size: number;
   className?: string;
@@ -44,7 +47,20 @@ export function Picture({
    * of five like a ten-frame, so a six-year-old can count them.
    */
   repeat?: number;
+  /** For a maths model: "tall" draws ten-frames the way the book does, for an answer card. */
+  layout?: ModelLayout;
 }) {
+  // a maths model (pha 13) is drawn from its data; `repeat` does not apply to it
+  if (image.kind === "model" && image.model)
+    return (
+      <MathModelPicture
+        model={image.model}
+        size={size}
+        layout={layout}
+        className={className}
+        alt={alt || image.labelEn || undefined}
+      />
+    );
   const count = Math.max(1, Math.min(20, Math.floor(repeat)));
   if (count > 1) {
     const each = Math.round(size * (count <= 3 ? 0.62 : 0.5));

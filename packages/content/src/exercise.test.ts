@@ -352,3 +352,57 @@ describe("packToRows", () => {
     expect(JSON.stringify(rows[0]?.spec)).not.toContain("dem_thieu_1");
   });
 });
+
+describe("maths models as pictures (pha 13)", () => {
+  const frame = (n: number) => ({
+    kind: "model",
+    value: "ten-frame",
+    model: { kind: "tenFrame", frames: 2, dots: [{ count: n }] },
+  });
+
+  it("needs model data on a model picture, and only there", () => {
+    expect(
+      parseExercisePack(pack([mcq(3, { prompt: { text: "Mấy chấm?", image: frame(13) } })])),
+    ).toBeTruthy();
+    expect(() =>
+      parseExercisePack(
+        pack([mcq(3, { prompt: { text: "Mấy chấm?", image: { kind: "model", value: "x" } } })]),
+      ),
+    ).toThrow(/needs `model`/);
+    expect(() =>
+      parseExercisePack(
+        pack([
+          mcq(3, {
+            prompt: {
+              text: "Mấy chấm?",
+              image: { kind: "emoji", value: "⭐", model: frame(1).model },
+            },
+          }),
+        ]),
+      ),
+    ).toThrow(/only that kind/);
+  });
+
+  it("keeps the model in the spec the child's device receives", () => {
+    const ex = parseExercisePack(
+      pack([mcq(3, { prompt: { text: "Mấy chấm?", image: frame(13) } })]),
+    ).exercises[0]!;
+    expect(toExerciseSpec(ex, "VMATH").prompt.image?.model).toEqual({
+      kind: "tenFrame",
+      frames: 2,
+      dots: [{ count: 13, tone: "dark" }],
+    });
+  });
+
+  it("tells two questions apart by their model, not by the picture's key", () => {
+    const a = mcq(3, { id: "vmath-model-0001", prompt: { text: "Mấy chấm?", image: frame(13) } });
+    const b = mcq(3, { id: "vmath-model-0002", prompt: { text: "Mấy chấm?", image: frame(14) } });
+    const c = mcq(3, { id: "vmath-model-0003", prompt: { text: "Mấy chấm?", image: frame(13) } });
+    const dup = (list: unknown[]) =>
+      validatePack(parseExercisePack(pack(list)), "x", ctx).filter((i) =>
+        i.message.includes("duplicates"),
+      );
+    expect(dup([a, b])).toHaveLength(0);
+    expect(dup([a, c])).toHaveLength(1);
+  });
+});

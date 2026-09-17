@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { mathModelSchema } from "./math-model";
 import { EXERCISE_TYPES } from "./skill-map";
 import { SUBJECTS } from "./timetable";
 
@@ -25,7 +26,8 @@ export type Phase3Type = (typeof PHASE3_TYPES)[number];
 
 export const ASSET_THEMES = ["neutral", "robot", "garden"] as const;
 export const SCAFFOLDS = ["none", "model", "guided"] as const;
-export const IMAGE_KINDS = ["emoji", "icon", "asset", "generated"] as const;
+/** `model`: a maths model drawn from data (ten-frame, ten-rods, number line…), see math-model.ts. */
+export const IMAGE_KINDS = ["emoji", "icon", "asset", "generated", "model"] as const;
 
 /** Placeholders the app substitutes at display time (docs/10 sec. 7) — never a real child name. */
 export const PLACEHOLDERS = ["{ten}", "{vat}", "{ban}"] as const;
@@ -39,18 +41,27 @@ const stableId = z
   .regex(/^[a-z0-9][a-z0-9-]{6,60}$/, "id: lowercase, digits and dashes, 7-61 chars");
 const audioKey = z.string().regex(/^[a-z0-9][a-z0-9-]{0,60}$/);
 
-export const imageRefSchema = z.object({
-  kind: z.enum(IMAGE_KINDS),
-  /** emoji character, icon name, or a label from content/art/objects/manifest.json. */
-  value: z.string().trim().min(1),
-  labelVi: z.string().trim().optional(),
-  labelEn: z.string().trim().optional(),
-  /**
-   * Draw the picture this many times. A counting question ("Trong tranh có mấy bông hoa?") is
-   * unanswerable without it, so it is part of the data, not a rendering detail.
-   */
-  repeat: z.number().int().min(1).max(20).optional(),
-});
+export const imageRefSchema = z
+  .object({
+    kind: z.enum(IMAGE_KINDS),
+    /**
+     * emoji character, icon name, a label from content/art/objects/manifest.json, or — for a
+     * model — a short key that tells two models apart ("tenframe-10+7").
+     */
+    value: z.string().trim().min(1),
+    labelVi: z.string().trim().optional(),
+    labelEn: z.string().trim().optional(),
+    /**
+     * Draw the picture this many times. A counting question ("Trong tranh có mấy bông hoa?") is
+     * unanswerable without it, so it is part of the data, not a rendering detail.
+     */
+    repeat: z.number().int().min(1).max(20).optional(),
+    /** The maths model to draw when `kind` is "model" (pha 13). */
+    model: mathModelSchema.optional(),
+  })
+  .refine((r) => (r.kind === "model") === (r.model != null), {
+    message: 'an image of kind "model" needs `model`, and only that kind may have one',
+  });
 
 export const choiceSchema = z.object({
   id: z.string().regex(/^[a-z]$/, "choice ids are single letters a-d"),
