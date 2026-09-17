@@ -128,6 +128,10 @@ Docker dev (cổng 5000) đã build lại image web + worker cho khớp bảng m
   (`20260917100000_syllable_proper_name`), seed: 45 mã lỗi (1 mới). `content:import` (dry-run trước):
   1.026 bài tiếng Việt cập nhật, 2 tiếng cập nhật, không sinh mp3 mới (8.551 câu có sẵn). Kiểm lại:
   `properName` đúng hai tiếng thy/thanh; 670 bài có `targetsError = nham_am_dau_viet`; health ok, web healthy.
+- 17/09 11:00: **v0.1.1** lên production (`6713d31` — số phiên bản chữ nhỏ cuối mọi màn hình và
+  `version` trong `/api/health`; quy định nâng version mỗi lần public GitHub ở CLAUDE.md "Phiên bản").
+  Không migration, không nạp nội dung; sao lưu `~/pre-deploy-20260917-1058.dump`. Kiểm: health
+  `version: 0.1.1`, trang `/login` có `v0.1.1`, web healthy. GitHub còn ở v0.1.0 (`7a8d99e`).
 - Từ giờ deploy bằng skill `/update_edu_prod` (`.claude/skills/update_edu_prod/SKILL.md`).
 
 ### Lệnh deploy (đã dùng)
