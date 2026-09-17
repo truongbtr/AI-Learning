@@ -2,6 +2,23 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Sửa nhỏ — 17/09/2026 — v0.1.2: vừa màn hình thấp, vẽ đủ hình đếm, chặn nốt bài chụp ảnh
+
+- **Phần trả lời tràn khỏi màn hình độ phân giải thấp** (chủ dự án): khung bài trong thành phố cao
+  90dvh (màn hình thấp hơn 820 px: gần kín màn hình), rộng hơn, bài đặt giữa; khung câu hỏi, tranh, ô
+  đáp án, mascot gọn lại trên màn hình thấp; `FitToHeight` thu nhỏ tối đa còn 90% nếu vẫn chưa vừa
+  (nút 72 px vẫn ≥ 64 px). Đo ở 1366×768 và 1280×720, ba thành phố: mọi nút nằm trong màn hình, không
+  cần thu nhỏ.
+- **"Trong tranh có mấy ngôi sao?" chỉ vẽ 1 sao, đáp án 8–10** (chủ dự án): dữ liệu đúng (`repeat: 9`),
+  khung câu hỏi bỏ qua `repeat`. `Picture` giờ vẽ đủ số hình, hàng 5 như khung mười ô. 217 bài được sửa
+  (130 VMATH, 63 ESL, 23 EMATH, 1 ENL), không cần nạp lại nội dung.
+- **"Bỏ qua hết các bài viết ra vở rồi chụp ảnh"** (chủ dự án): hai lối còn sót đã chặn — trạm chọn
+  hai bài, và phiên lập trước quy tắc (bổ sung ADR-25). Không sửa `Session` nào.
+- **Lên production 13:00** (commit `1d8b909`, v0.1.2): build trong worktree sạch (lint/build/test
+  xanh), backup `~/pre-deploy-20260917-1249.dump`, image chuyển bằng `docker save | load`, không có
+  migration (vẫn 11), không có lệnh nạp nội dung. `/api/health`: version 0.1.2, status ok, worker ok;
+  `/login` 200. Dọn 25 GB image cũ trên máy chủ (đĩa còn 46 GB).
+
 ## Sửa nhỏ — 16/09/2026 tối — Bỏ bài "viết vào vở rồi chụp ảnh" (ADR-25)
 
 Chủ dự án: *"Bỏ các câu viết rồi chụp ảnh nhé."*
