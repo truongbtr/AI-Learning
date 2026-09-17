@@ -48,6 +48,7 @@
     "db:trial": "pnpm --filter @mtct/db run trial",
     "ops:export": "pnpm --filter @mtct/db run ops:export",
     "ops:apply": "pnpm --filter @mtct/db run ops:apply",
+    "auth:bypass": "pnpm --filter @mtct/db run auth:bypass",
     "tts:voices": "pnpm --filter @mtct/db run tts:voices",
     "tts:smoke": "pnpm --filter @mtct/db run tts:smoke",
     "art:build": "node scripts/art-build/build.mjs",

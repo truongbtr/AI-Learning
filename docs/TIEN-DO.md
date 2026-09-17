@@ -2,6 +2,29 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Sửa nhỏ — 18/09/2026 — Trang quản trị: kết quả học tập + công tắc tắt đăng nhập
+
+Chủ dự án: *"Tạo cho tôi dashboard trong trang admin báo kết quả học tập của các con nữa nhé."* và
+*"Bạn làm thêm chức năng tắt đăng nhập trong database ấy, khi test thì tắt đăng nhập đi vào thẳng trang admin."*
+
+**1. `/admin` — "Hai bé học thế nào rồi"** (`packages/db/src/admin/dashboard.ts`, `apps/web/app/(admin)/admin/page.tsx`).
+Một trang đọc trong một phút trước khi đi ngủ, hai bé cạnh nhau: hôm nay làm mấy câu và đúng bao nhiêu phần trăm,
+bảy ngày qua bao nhiêu câu / phút / phiên, chuỗi ngày, sáu môn dạng thanh, 5 kỹ năng yếu nhất, 5 lỗi hay gặp kèm
+cách chữa từ bộ mã lỗi, số lô ảnh và bài cô giao còn chờ, và "Lớp đang học tới đâu" nối sang Nhật ký lớp.
+Không có dữ liệu mới nào — tất cả đọc lại từ `studentOverview` + `Attempt`/`SkillMastery`/`ErrorStat`.
+`ADMIN` đăng nhập xong giờ về thẳng đây (trước kia là `/admin/users`).
+
+**2. Tắt đăng nhập để thử** (`docs/12` §7). Công tắc nằm trong DB (`Setting` khoá `auth.bypass`), bật ở `/admin/auth`
+hoặc `pnpm auth:bypass on --hours 4` / `off` / `status`. Bật lên thì mở web là vào thẳng `/admin`, không hỏi mật khẩu.
+Bốn cái khoá an toàn: **luôn có hạn** (mặc định 8 giờ, tối đa 7 ngày, hết hạn tự bật lại), **mượn tài khoản `ADMIN`
+thật** nên mọi kiểm tra vai trò/`studentId` ở server vẫn chạy, **băng cảnh báo đỏ trên mọi màn hình người lớn**, và
+**ghi `AuditLog`** mỗi lần bật/tắt. Cloudflare Access (nếu bật) vẫn chắn phía trước.
+
+Đã thử tay trên `localhost:5002`: bật công tắc → mở `/` vào thẳng bảng kết quả, có băng cảnh báo; bấm "Bật lại đăng
+nhập ngay" → `/` quay về màn hình đăng nhập.
+
+Tồn đọng: production mặc định **không** tắt đăng nhập; chỉ bật khi đang ngồi thử máy.
+
 ## Sửa nhỏ — 18/09/2026 — Đọc tiếng Anh chấm theo % khớp (ADR-27)
 
 Chủ dự án: *"Các câu phát âm tiếng anh chấm điểm theo % trùng khớp với nội dung chứ không cần đúng 100%, mỗi lần

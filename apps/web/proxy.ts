@@ -2,6 +2,7 @@ import { roleAllowsArea } from "@mtct/core";
 import { NextResponse } from "next/server";
 import NextAuth from "next-auth";
 import { authConfig } from "./auth.config";
+import { bypassState } from "./lib/auth/bypass-gate";
 import {
   ACCESS_DENIED_HTML,
   accessConfigFromEnv,
@@ -12,13 +13,14 @@ import {
 
 /**
  * Route-level authorization (docs/02 §6): first line of defence; every handler/page checks again.
- * Runs on the Node runtime (Next 16 proxy). Uses only the JWT — no DB here.
+ * Runs on the Node runtime (Next 16 proxy). Reads the JWT only — the one database read is the
+ * "tắt đăng nhập" switch, cached for ten seconds (lib/auth/bypass-gate.ts).
  */
 const { auth } = NextAuth(authConfig);
 
 function homeFor(role: string, mustChange: boolean): string {
   if (mustChange) return "/change-password";
-  if (role === "ADMIN") return "/admin/users";
+  if (role === "ADMIN") return "/admin";
   if (role === "PARENT") return "/parent";
   return "/kid/home";
 }
@@ -61,6 +63,14 @@ export default auth(async (req) => {
   // involved, so the session check below would turn every call into a 401.
   if (pathname.startsWith("/api/internal/")) return NextResponse.next();
 
+  /**
+   * "Tắt đăng nhập" (docs/12 §7): while the switch in the database is on, a visitor with no cookie
+   * is let through as the borrowed ADMIN account — so the area check further down is the same check
+   * it always was. Cloudflare Access above still applies: this switch opens one door, not both.
+   */
+  const guest = user ? false : (await bypassState()).on;
+  const role = user?.role ?? "ADMIN";
+
   // Public: login page, Auth.js endpoints, health, and the web manifest — iOS fetches that one
   // before anybody has logged in, and a redirect to /login makes the icon uninstallable.
   if (
@@ -69,15 +79,15 @@ export default auth(async (req) => {
     pathname === "/api/health" ||
     pathname === "/manifest.webmanifest"
   ) {
-    if (user && pathname === "/login") {
+    if ((user || guest) && pathname === "/login") {
       return NextResponse.redirect(
-        new URL(homeFor(user.role, user.mustChangePassword), req.nextUrl),
+        new URL(homeFor(role, user?.mustChangePassword ?? false), req.nextUrl),
       );
     }
     return NextResponse.next();
   }
 
-  if (!user) {
+  if (!user && !guest) {
     if (isApi) return NextResponse.json({ error: "Chưa đăng nhập" }, { status: 401 });
     const login = new URL("/login", req.nextUrl);
     if (pathname !== "/") login.searchParams.set("next", pathname + search);
@@ -85,7 +95,7 @@ export default auth(async (req) => {
   }
 
   // Forced password change: nothing else is reachable until done (docs/12 §3).
-  if (user.mustChangePassword && pathname !== "/change-password") {
+  if (user?.mustChangePassword && pathname !== "/change-password") {
     if (isApi && pathname !== "/api/auth/change-password") {
       return NextResponse.json({ error: "Phải đổi mật khẩu trước" }, { status: 403 });
     }
@@ -102,9 +112,11 @@ export default auth(async (req) => {
           pathname.startsWith("/dev")
         ? "admin"
         : null;
-  if (area && !roleAllowsArea(user.role, area)) {
+  if (area && !roleAllowsArea(role, area)) {
     if (isApi) return NextResponse.json({ error: "Không có quyền" }, { status: 403 });
-    return NextResponse.redirect(new URL(homeFor(user.role, user.mustChangePassword), req.nextUrl));
+    return NextResponse.redirect(
+      new URL(homeFor(role, user?.mustChangePassword ?? false), req.nextUrl),
+    );
   }
 
   return NextResponse.next();

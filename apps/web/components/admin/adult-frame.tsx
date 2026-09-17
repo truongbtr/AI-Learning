@@ -3,6 +3,7 @@ import { guardianStudentIds } from "@/lib/auth/session";
 import { visibleSections } from "@/lib/nav";
 import type { SessionUser } from "@/types/next-auth";
 import { AdminShell } from "./admin-shell";
+import { BypassBanner } from "./bypass-banner";
 
 const ROLE_LABEL = { ADMIN: "Quản trị", PARENT: "Phụ huynh", CHILD: "Con" } as const;
 
@@ -27,6 +28,7 @@ export async function AdultFrame({
         avatarKey: user.avatarKey,
       }}
     >
+      <BypassBanner />
       {children}
     </AdminShell>
   );

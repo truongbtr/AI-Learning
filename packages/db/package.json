@@ -42,7 +42,8 @@
     "tts:voices": "dotenv -e ../../.env -- tsx src/cli/tts-voices.ts",
     "tts:smoke": "dotenv -e ../../.env -- tsx src/cli/tts-smoke.ts",
     "ops:export": "dotenv -e ../../.env -- tsx src/cli/ops-export.ts",
-    "ops:apply": "dotenv -e ../../.env -- tsx src/cli/ops-apply.ts"
+    "ops:apply": "dotenv -e ../../.env -- tsx src/cli/ops-apply.ts",
+    "auth:bypass": "dotenv -e ../../.env -- tsx src/cli/auth-bypass.ts"
   },
   "dependencies": {
     "@mtct/content": "workspace:*",

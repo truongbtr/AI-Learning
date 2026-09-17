@@ -111,7 +111,26 @@ Nên có (P1, làm ở pha 8):
 - **2FA (TOTP)** cho tài khoản `ADMIN`.
 - Cảnh báo email khi có đăng nhập admin từ IP lạ.
 
-## 7. Điều KHÔNG làm (giữ đơn giản)
+## 7. Tắt đăng nhập để thử (công tắc trong DB)
+
+Khi ngồi thử máy, phải gõ mật khẩu mỗi lần rất mất công. Có một công tắc **trong cơ sở dữ liệu**
+(`Setting`, khoá `auth.bypass`): bật lên thì mở địa chỉ web là vào thẳng `/admin`, không hỏi gì.
+
+- **Bật/tắt ở đâu**: trang `/admin/auth` (một chạm), hoặc trên máy chủ:
+  `pnpm auth:bypass on --hours 4` · `pnpm auth:bypass off` · `pnpm auth:bypass status`.
+  Dòng lệnh là đường thoát khi chính trang đăng nhập đang hỏng.
+- **Luôn có hạn**: mặc định 8 giờ, tối đa 7 ngày. Hết hạn là tự bật lại đăng nhập, không cần ai nhớ.
+- **Mượn một tài khoản `ADMIN` thật**, không tạo danh tính ảo — nên mọi kiểm tra vai trò và quyền
+  trên `studentId` ở tầng server vẫn chạy y như cũ (§6).
+- **Luôn có băng cảnh báo** trên mọi màn hình người lớn: đang tắt, mượn tài khoản nào, mấy giờ tự
+  bật lại. Mỗi lần bật/tắt ghi một dòng `AuditLog` (`auth.bypass.on` / `auth.bypass.off`).
+- **Không mở cửa Cloudflare Access**: nếu đã đặt Access trước `/admin` thì vẫn phải qua Access.
+  Công tắc này mở một lớp, không mở cả hai.
+- **Cảnh báo**: web mở ra internet, nên trong lúc tắt, bất kỳ ai biết địa chỉ đều xem được bài vở và
+  số liệu của hai bé. Chỉ tắt khi đang thử máy; xong thì bật lại ngay. Mặc định trên production là
+  **tắt công tắc** (tức là vẫn phải đăng nhập).
+
+## 8. Điều KHÔNG làm (giữ đơn giản)
 
 - Không phân quyền chi tiết theo từng chức năng — chỉ ba vai trò.
 - Không có đăng nhập bằng Google/Facebook ở v1 (có thể thêm sau, Auth.js hỗ trợ sẵn).
