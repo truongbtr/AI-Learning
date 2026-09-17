@@ -130,7 +130,7 @@ type ExerciseSpec = {
 };
 ```
 
-- `ImageRef` = `{ kind: 'emoji'|'icon'|'asset'|'generated', value: string, labelVi?, labelEn?, repeat? }` — v1 ưu tiên **emoji và bộ icon SVG có sẵn** (không sinh ảnh AI), bài cần ảnh thật dùng thư viện ảnh nội bộ do phụ huynh nạp hoặc `generated` ở P2. `repeat` = vẽ hình mấy lần, bắt buộc với câu hỏi đếm (ADR-14).
+- `ImageRef` = `{ kind: 'emoji'|'icon'|'asset'|'generated', value: string, labelVi?, labelEn?, repeat? }` — v1 ưu tiên **emoji và bộ icon SVG có sẵn** (không sinh ảnh AI), bài cần ảnh thật dùng thư viện ảnh nội bộ do phụ huynh nạp hoặc `generated` ở P2. `repeat` = vẽ hình mấy lần, bắt buộc với câu hỏi đếm (ADR-14). Từ pha 13 có thêm `kind: 'model'` kèm `model` — mô hình toán của sách (ten-frame, thanh chục, tia số có vòng nhảy, number bond, thẻ chấm, bảng số 20, một chấm để kéo) vẽ từ dữ liệu (ADR-26).
 - Client **không nhận `answerKey`** với dạng đóng; chấm ở server (`POST attempt`). Ngoại lệ: cho phép chấm cục bộ offline với chữ ký HMAC của đáp án — dev chọn 1 cách và ghi ADR.
 - **Cột `Exercise.answerKey` lưu một gói, chỉ máy chủ đọc** (ADR-14): `{ value, errorTags?: { <choiceId>: <mã lỗi> }, correctCount?: number }`. `choices[].errorTag` và `countTarget.correctCount` bị cắt khỏi `spec` trước khi gửi client — cái đầu làm lộ chẩn đoán, cái sau làm lộ đáp án.
 - **Bài `LISTEN_CHOOSE`:** đề bài chỉ là câu hướng dẫn trung tính; tiếng phải nghe nằm ở `listenTarget` và **bộ render không bao giờ được hiển thị nó** — in ra là bé biết đọc chỉ cần nhìn, bài không còn đo kỹ năng nghe (ADR-14).
@@ -169,7 +169,7 @@ Khung `ASSIST_KID`: system khoá chủ đề (5 môn, bài đang làm), trả l�
 
 | Dạng | Cách chấm | Điểm |
 |---|---|---|
-| MCQ, LISTEN_CHOOSE, COUNT_TAP, DRAG_DROP, MINI_STORY | So khớp cục bộ với answerKey | 1 / 0 (DRAG_DROP: tỉ lệ vị trí đúng) |
+| MCQ, LISTEN_CHOOSE, COUNT_TAP, DRAG_DROP, MINI_STORY | So khớp cục bộ với answerKey | 1 / 0 (DRAG_DROP: tỉ lệ vị trí đúng; thẻ trông giống hệt nhau — chấm để kéo vào ten-frame — đổi chỗ được, ADR-26) |
 | READ_ALOUD | STT → so khớp từng từ với `readTarget.words` (chuẩn hoá, cho phép sai âm nhẹ theo bảng đồng âm), tính `accuracy`, `wordsPerMinute`; nếu accuracy 0.5–0.85 → gọi GRADE (Haiku) để phân biệt lỗi phát âm/bỏ từ | accuracy |
 | SPEAK_ANSWER | STT → GRADE với rubric → `score`, `feedback`, `keyIdeasHit[]` | 0–1 |
 | WRITE_PHOTO | Ảnh → GRADE (Sonnet vision) với rubric → `score`, `feedback`, `issues[]` (ví dụ "chữ b viết ngược") | 0–1, trạng thái `PENDING` cho tới khi chấm xong; phụ huynh có thể sửa điểm |

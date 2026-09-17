@@ -554,11 +554,13 @@ export function modelHeight(m: MathModel, size: number, layout: ModelLayout): nu
     case "numberLine":
       return Math.round(d.h * 0.8);
     case "tenFrame":
-      return Math.round(size * (layout === "tall" ? 1.15 : 0.75));
+      // on an answer card the frames stand up and must still show every empty cell clearly
+      return Math.round(size * (layout === "tall" ? 1.9 : 0.75));
     case "tensOnes":
-      return Math.round(size * 1.2);
+      // a child counts the cubes of a rod (9 or 10?): on an answer card they need the room
+      return Math.round(size * (layout === "tall" ? 1.9 : 1.2));
     case "numberBond":
-      return Math.round(size * 1.0);
+      return Math.round(size * 1.25);
     case "numberChart":
       return Math.round(Math.max(size * 0.75, d.h * 0.75));
     case "counter":

@@ -210,7 +210,7 @@ describe("every model", () => {
 
 describe("drag baskets built from models", () => {
   const tf = {
-    kind: "model",
+    kind: "model" as const,
     value: "tf",
     model: parse({ kind: "tenFrame", dots: [{ count: 7 }] }),
   };
