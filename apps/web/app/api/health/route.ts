@@ -16,5 +16,7 @@ export const dynamic = "force-dynamic";
  */
 export async function GET() {
   const report = await healthReport(prisma);
-  return NextResponse.json(report, { status: report.db.ok ? 200 : 503 });
+  // the build's version, so a deploy can be checked against the release (CLAUDE.md "Phiên bản")
+  const version = process.env.NEXT_PUBLIC_APP_VERSION ?? null;
+  return NextResponse.json({ version, ...report }, { status: report.db.ok ? 200 : 503 });
 }

@@ -25,6 +25,9 @@ Tham số (tuỳ chọn): commit cần deploy. Mặc định: `master` hiện t�
    mp3 nào phải chạy sau khi đổi bản không, có bước nào đang **chờ chủ dự án xác nhận** (không tự chạy
    bước đó).
 4. Liệt kê những gì sẽ lên: `git log --oneline <server-head>..<commit>`.
+5. Ghi lại **phiên bản** sẽ lên: `git show <commit>:package.json` → `version` (CLAUDE.md "Phiên bản"). Có code
+   mới mà version vẫn bằng bản đang chạy (`/api/health` → `version`) → nâng (`pnpm release:bump`, commit
+   `chore(release): vX.Y.Z`) trước khi build.
 
 ## 1. Build từ worktree sạch (máy Windows)
 
@@ -83,14 +86,14 @@ Chạy `--dry-run` trước, xem số thay đổi, rồi mới chạy thật. Si
 
 ## 6. Xác nhận và báo cáo
 
-- `curl -s https://edu.medifa.vn/api/health` → `status: ok`, `host: ubuntu-edison`, `db.migrations`
+- `curl -s https://edu.medifa.vn/api/health` → `version` đúng phiên bản của commit, `status: ok`, `host: ubuntu-edison`, `db.migrations`
   đúng số thư mục trong `packages/db/prisma/migrations`, worker ok.
 - `docker compose ps`: web healthy, worker up.
 - Trang `/login` trả 200; một asset mới của bản này trả 200.
 - Dọn: `docker image prune -f` trên máy chủ nếu `/api/health` cảnh báo đĩa.
 - Ghi vào `docs/TIEN-DO.md` (mục pha vừa deploy): commit đã lên, migration, lệnh đã chạy, kết quả,
   việc còn chờ chủ dự án. Commit tài liệu, bundle lên máy chủ như bước 3 (không cần đổi image).
-- Báo chủ dự án ngắn gọn bằng tiếng Việt: bản nào đã lên, thay đổi gì với con, còn gì chờ.
+- Báo chủ dự án ngắn gọn bằng tiếng Việt: **phiên bản** (vX.Y.Z) và commit đã lên, thay đổi gì với con, còn gì chờ.
 
 ## Không được
 

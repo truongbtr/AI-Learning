@@ -1,4 +1,4 @@
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { config as loadEnv } from "dotenv";
 import type { NextConfig } from "next";
@@ -8,6 +8,12 @@ const rootEnv = join(__dirname, "..", "..", ".env");
 if (existsSync(rootEnv)) loadEnv({ path: rootEnv, override: false, quiet: true });
 
 const isProd = process.env.NODE_ENV === "production";
+
+// The one version number of the app: the root package.json, raised on every GitHub release
+// (CLAUDE.md "Phiên bản"). Baked in at build time, shown small at the bottom of every screen.
+const appVersion: string = JSON.parse(
+  readFileSync(join(__dirname, "..", "..", "package.json"), "utf8"),
+).version;
 
 // Security headers (docs/12 §6, NFR-05). CSP stays "basic": Next needs inline scripts/styles.
 const csp = [
@@ -38,6 +44,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Do not let Next write AGENTS.md/CLAUDE.md into apps/web — the repo root CLAUDE.md is the rulebook.
   agentRules: false,
+  env: { NEXT_PUBLIC_APP_VERSION: appVersion },
   // Pure-TS workspace packages are compiled by Next; the DB package is a prebuilt CommonJS external.
   transpilePackages: ["@mtct/core", "@mtct/content", "@mtct/city"],
   serverExternalPackages: ["@mtct/db", "@prisma/client", "@node-rs/argon2"],

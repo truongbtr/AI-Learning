@@ -1,7 +1,7 @@
 {
   "name": "mtct",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hoc cung Mai Thy & Chi Thanh - family learning platform (EDISON_LEARNING)",
   "packageManager": "pnpm@9.15.9",
   "engines": {
@@ -11,6 +11,8 @@
   "scripts": {
     "dev": "pnpm art:sync && turbo run dev",
     "build": "pnpm art:sync && turbo run build",
+    "release:bump": "node scripts/release-version.mjs bump",
+    "release:check": "node scripts/release-version.mjs check",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "test": "turbo run test",

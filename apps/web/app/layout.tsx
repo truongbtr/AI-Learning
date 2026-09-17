@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Nunito } from "next/font/google";
+import { AppVersion } from "@/components/app-version";
 import "./globals.css";
 
 // Self-hosted at build time via next/font (docs/08 pha 0).
@@ -45,7 +46,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi" className={`${beVietnam.variable} ${nunito.variable}`}>
-      <body className="min-h-dvh antialiased">{children}</body>
+      <body className="min-h-dvh antialiased">
+        {children}
+        <AppVersion />
+      </body>
     </html>
   );
 }

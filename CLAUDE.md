@@ -8,6 +8,23 @@ Nền tảng web gia đình, dùng AI cá nhân hoá việc học ở nhà cho h
 2. Tài liệu `docs/00`–`13` là **nguồn sự thật**. Làm khác tài liệu → viết ADR ở `docs/adr/` và nêu trong báo cáo; không tự đổi quyết định đã chốt (ADR-1…10 trong `docs/02-KIEN-TRUC.md` §8).
 3. Bị chặn thật (thiếu tài liệu, quyết định trái tài liệu) → hỏi chủ dự án; còn lại làm trọn pha, không dừng giữa chừng.
 4. Không push; commit Conventional Commits, tiếng Anh. `pnpm lint && pnpm test && pnpm build` phải xanh trước khi báo cáo.
+5. **Cuối mỗi lần báo cáo có sửa code, ghi phiên bản** (vd. "Phiên bản: v0.1.1", kèm commit cuối) để chủ
+   dự án đối chiếu với số nhỏ ở cuối màn hình và `/api/health`. Xem mục "Phiên bản" bên dưới.
+
+## Phiên bản
+
+- **Một nguồn duy nhất:** `version` trong `package.json` gốc (SemVer `x.y.z`; `package.json` của từng
+  gói giữ nguyên, không dùng). Số này được đóng vào bản build, hiện chữ nhỏ ở cuối mọi màn hình
+  (`components/app-version.tsx`) và trong `GET /api/health` (`"version"`).
+- **Mỗi lần public lên GitHub nâng 1 version** (mặc định nâng số cuối: 0.1.1 → 0.1.2):
+  `pnpm release:bump` rồi commit `chore(release): vX.Y.Z` **trước** khi push. `pnpm release:check`
+  báo lỗi nếu `master` có commit mà GitHub chưa có nhưng version vẫn bằng bản trên GitHub.
+- Claude Code không push; khi đã có commit mới mà version còn bằng bản trên GitHub (`release:check`
+  đỏ), Claude Code nâng version trong lần commit đó để bản tiếp theo lên GitHub mang số mới.
+- Deploy production (`/update_edu_prod`) kiểm `version` trên `/api/health` khớp `package.json` của
+  commit vừa lên.
+- Lịch sử: `0.1.0` là mọi bản tới "Hoàn thành pha 12" (`7a8d99e`, đã lên GitHub); `0.1.1` bắt đầu từ
+  mã lỗi `nham_am_dau_viet` + tên hai bé viết hoa + số phiên bản trên màn hình (17/09/2026).
 
 ## Bản đồ tài liệu
 

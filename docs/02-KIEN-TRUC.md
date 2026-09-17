@@ -159,6 +159,7 @@ services:
 - `.env.example` liệt kê: `DATABASE_URL`, `AUTH_SECRET`, `ADMIN_USERNAME`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `TTS_PROVIDER` (mặc định `webspeech`; còn lại `azure | google` — ADR-11), `TTS_API_KEY?`, `TTS_REGION?`, `TTS_VOICE_VI?`, `TTS_VOICE_EN?`, `TTS_RATE?` (mặc định 0.9), `FILE_ROOT`, `INBOX_ROOT`, `INTERNAL_API_TOKEN?` (worker gọi `POST /api/evidence`; để trống thì chỉ ADMIN ghi được — ADR-13), `TUNNEL_TOKEN`. **Không có khoá API LLM.** Giọng TTS là **giọng dựng sẵn của nhà cung cấp**, không nhân bản giọng trẻ; mp3 sinh sẵn lúc `content:import` và cache dưới `FILE_ROOT/tts/` (ADR-11).
 - Môi trường dev: `pnpm dev` với Postgres trong Docker; seed bằng `pnpm db:seed`.
 - Cập nhật: `git pull && docker compose build && docker compose up -d` ; migration chạy tự động lúc web khởi động (`prisma migrate deploy`).
+- **Phiên bản** (17/09/2026): `version` của `package.json` gốc, đóng vào bản build (`NEXT_PUBLIC_APP_VERSION`), hiện chữ nhỏ cuối mọi màn hình và trong `/api/health`. **Mỗi lần public lên GitHub nâng 1 version** (`pnpm release:bump`, commit `chore(release): vX.Y.Z`; `pnpm release:check` trước khi push). Báo cáo sau mỗi lần sửa code ghi rõ phiên bản. Chi tiết: CLAUDE.md mục "Phiên bản".
 
 ## 8. Quyết định kiến trúc (ADR tóm tắt)
 
