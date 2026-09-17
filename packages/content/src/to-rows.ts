@@ -100,7 +100,12 @@ export function lessonToRow(lesson: LessonFile): LessonRowData {
   return {
     code: lesson.code,
     subject: lesson.subject,
-    title: lesson.title,
+    // No column for the printed label (no migration): it leads the title, which is what the
+    // parent reads and what the diary matcher searches.
+    title:
+      lesson.bookLabel && !lesson.title.includes(lesson.bookLabel)
+        ? `${lesson.bookLabel} · ${lesson.title}`
+        : lesson.title,
     objectives: lesson.objectives,
     vocabulary: lesson.vocabulary,
     concepts: lesson.concepts,

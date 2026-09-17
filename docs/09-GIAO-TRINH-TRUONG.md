@@ -59,28 +59,48 @@ Cách lấy, theo thứ tự ưu tiên:
    Global Stage 1. Có bảng này là nội dung bám chương trình ngay, chưa cần chụp hết quyển.
 3. Chụp dần 2–3 trang mỗi bài theo tiến độ lớp.
 
-### 1c.1 Mục lục Volume 1 (chủ dự án chụp 14/09/2026)
+### 1c.1 Volume 1 — bài học thật (bản scan sách tr.1–51, 17/09/2026; pha 13)
 
-Volume 1 **chỉ gồm Unit 3 và Unit 4**, 60 trang. Mã tài liệu dùng trong `sourceRef`: `EDI-MN1`.
+Phân tích từng câu: `docs/giao-trinh/EDI-MN1-vol1-phan-tich.md`. File `sach giao khoa/02-edison-math-notes-g1-vol1-tr1-51.pdf`
+(**trang PDF = trang sách + 1**). Mã tài liệu trong `sourceRef`: `EDI-MN1` (ghi "EDI-MN1 tr.X", X là trang sách).
 
-| Unit | Mục | Trang | Kỹ năng `EMATH.*` tương ứng |
-|---|---|---|---|
-| 3 | Unit Introduction · Learning Tips | 3–4 | — |
-| 3 | **Numbers 1 to 10** | 5–7 | `NBT.COUNT_WRITE_1_10`, `NBT.COMPARE_1_10` |
-| 3 | **Numbers 11 to 20** | 8–10 | `NBT.TEEN_NUMBERS`, `NBT.PLACE_VALUE_TEENS` |
-| 3 | **Patterns on a Number Chart to 20** | 11–12 | `NBT.NUMBER_CHART_100`(rút gọn tới 20), `G.PATTERNS` |
-| 3 | **Patterns on a Number Line to 20** | 14–16 | `NBT.NUMBER_LINE_TO_20` |
-| 3 | Lesson 3-2 · 3-3 · 3-6 · 3-7 · 3-8 | 17–31 | **chưa rõ tên bài — cần chụp trang đầu mỗi bài** |
-| 3 | Math in Real Life | 32 | (vận dụng — chưa mô hình hoá) |
-| 3 | Student Self-Reflection | 33–34 | (tự đánh giá — chưa mô hình hoá) |
-| 4 | Unit Introduction · Learning Tips | 35–36 | — |
-| 4 | Lesson 4-1 | 37–39 | chưa rõ |
-| 4 | **Addition within 10** | 40–42 | `OA.ADD_WITHIN_10`, `OA.COUNT_ON`, `OA.NUMBER_BONDS_10` |
-| 4 | Lesson 4-2 · 4-3 · 4-5 · 4-7 · 4-8 | 43–57 | **chưa rõ tên bài — cần chụp trang đầu mỗi bài** |
-| 4 | Math in Real Life | 58 | (vận dụng) |
-| 4 | Student Self-Reflection | 59–60 | (tự đánh giá) |
+- **Volume 1 dài 97 trang, không phải 60**, và **không chỉ có Unit 3–4**: mục lục còn **Unit 5** (tr.61–80: Lesson 5-1
+  *Subtraction within 10*, 5-2, 5-3, 5-4, Math in Real Life, Self-Reflection) và **Unit 6** (tr.81–97: Lesson 6-1…6-4,
+  Math in Real Life, Self-Reflection). Bản scan dừng ở tr.51 — **thiếu tr.52–97**.
+- **Số bài in trên đầu trang lệch số trên trang "Unit Introduction"** (đầu trang 3-2, 3-3, 3-6, 3-7, 3-8 = giới thiệu
+  3-5 … 3-9). Mã `LessonUnit` theo thứ tự trang giới thiệu (liền mạch); số in đầu trang nằm ở `bookLabel` của file bài
+  học và đứng đầu `title` ("Lesson 3-6 · Compare Numbers") để khớp khi cô giáo nói "Lesson 3-6".
+- **"Patterns on a Number Chart / Number Line" là quy luật đếm** (hàng, cột, đếm tới, số còn thiếu) — **không phải**
+  quy luật lặp AB/ABB. `EMATH.G.PATTERNS` không thuộc quyển này.
+- Mọi bài dùng **mô hình trực quan** (ten-frame, thanh chục + khối rời, chuỗi hạt, tia số có bước nhảy, number bond,
+  thẻ chấm); app vẽ đúng các mô hình đó trong đề (pha 13 việc 4).
 
-**Nhận xét:**
+| `LessonUnit` | Đầu trang | Tên bài | Trang | Tuần (ước) | Kỹ năng `EMATH.*` |
+|---|---|---|---|---|---|
+| `EDI-MN1-U3-L1` | — (giới thiệu 3-1) | Numbers 1 to 10 | 5–7 | 4 | `NBT.COUNT_TO_20`, `MP.MATH_VOCAB_EN` |
+| `EDI-MN1-U3-L2` | — (3-2) | Numbers 11 to 19 (mục lục ghi "11 to 20") | 8–10 | 4 | **`NBT.TEEN_NUMBERS`** |
+| `EDI-MN1-U3-L3` | — (3-3) | Patterns on a Number Chart to 20 | 11–13 | 5 | **`NBT.NUMBER_CHART_20`** |
+| `EDI-MN1-U3-L4` | — (3-4) | Patterns on a Number Line to 20 | 14–16 | 5 | `NBT.NUMBER_LINE_TO_20` |
+| `EDI-MN1-U3-L5` | Lesson 3-2 | Understand Tens | 17–19 | 6 | `NBT.TENS_ONES` |
+| `EDI-MN1-U3-L6` | Lesson 3-3 | Represent Tens and Ones | 20–22 | 6 | `NBT.PLACE_VALUE_MODELS`, `NBT.TENS_ONES` |
+| `EDI-MN1-U3-L7` | Lesson 3-6 | Compare Numbers | 23–25 | 7 | **`NBT.COMPARE_TO_20`** |
+| `EDI-MN1-U3-L8` | Lesson 3-7 | Compare Numbers on a Number Line | 26–28 | 7 | `NBT.COMPARE_TO_20`, `NBT.NUMBER_LINE_TO_20` |
+| `EDI-MN1-U3-L9` | Lesson 3-8 | Use Symbols to Compare Numbers | 29–31 | 8 | `NBT.COMPARE_TO_20` |
+| — | — | Math in Real Life · Student Self-Reflection | 32–34 | 8 | gợi ý ba mẹ trong `contentText` |
+| `EDI-MN1-U4-L1` | Lesson 4-1 | Relate Counting to Addition | 37–39 | 9 | `OA.ADD_WITHIN_10` (+ `ADD_WITHIN_20`) |
+| `EDI-MN1-U4-L2` | — (4-2; mục lục "Addition within 10") | Ways to make 10 | 40–42 | 9–10 | `OA.NUMBER_BONDS_10` |
+| `EDI-MN1-U4-L3` | Lesson 4-2 | Count On to Add Using a Number Line | 43–45 | 10 | `OA.COUNT_ON` |
+| `EDI-MN1-U4-L4` | Lesson 4-3 | Doubles | 46–48 | 11 | `OA.DOUBLES` |
+| `EDI-MN1-U4-L5` | Lesson 4-5 | Make a 10 to Add | 49–51 | 11–12 | `OA.MAKE_TEN` |
+| (chưa có ảnh) | 4-7? / 4-8? | Use properties to add · Add three numbers | 52–57 | — | `OA.PROPERTIES_COMMUTATIVE`, `OA.THREE_ADDENDS` |
+
+**Tuần là ước:** sách giao về nhà 17/09/2026 (tuần 4) còn trắng; TKB 1B3 có 2 buổi English Maths (4 tiết)/tuần, mỗi bài
+≈ 2 tiết → 2 bài/tuần, thêm một buổi cuối mỗi unit. Nhật ký lớp chưa có dòng English Maths nào. Sửa khi cô nhắc bài.
+
+*Bảng mục lục cũ (14/09/2026, chỉ từ ảnh mục lục) đã được thay bằng bảng trên; phần nhận xét dưới đây giữ nguyên để biết
+lịch sử.*
+
+**Nhận xét (14/09/2026, trước khi có sách):**
 - Nội dung khớp với giả định cũ: ngân hàng `EMATH` hiện bám **CCSS 1.NBT.A.1** (số tới 20) và
   **1.OA.C.6** (cộng trong 10) — đúng hai thứ Unit 3 và 4 dạy. Không phải soạn lại, chỉ gắn lại nguồn.
 - Quyển **bắt đầu từ Unit 3** → Unit 1–2 ở quyển khác hoặc đã học từ mẫu giáo. **Cần hỏi cô.**
@@ -106,6 +126,10 @@ vì đoán. `NBT.ORDINAL_NUMBERS` không có trong mục lục Volume 1 — có 
 `expectedWeek` không đổi (chưa có tiến độ dạy 2026-2027 để lùi tuần). Còn 141/346 bài EMATH khác (các
 kỹ năng `EMATH.G.*`, `EMATH.MP.*`, `EMATH.OA.SUB_*`, `EMATH.OA.DOUBLES`… và Unit 5+ chưa có trong
 Volume 1) vẫn ghi CCSS — đúng, vì sách chưa dạy tới hoặc mục lục chưa đủ rõ.
+
+**Đã làm 17/09/2026 (pha 13):** 14 `LessonUnit` EDI-MN1 (bảng §1c.1), 3 kỹ năng mới (`NBT.TEEN_NUMBERS`,
+`NBT.NUMBER_CHART_20`, `NBT.COMPARE_TO_20`), `expectedWeek` của 7 kỹ năng dời theo sách, bài luyện bám sách có
+`meta.lessonUnitCode` và `sourceRef` "EDI-MN1 tr.X". Chi tiết và số liệu ở `docs/TIEN-DO.md` mục Pha 13.
 
 ## 2. Toán 1 (Kết nối tri thức) — cấu trúc cả năm
 

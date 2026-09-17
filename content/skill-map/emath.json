@@ -65,7 +65,7 @@
       "standardRef": "CCSS.MATH.1.OA.C.6",
       "gradeLevel": "1",
       "order": 3,
-      "expectedWeek": 5,
+      "expectedWeek": 9,
       "prerequisites": ["EMATH.OA.ADD_WITHIN_5"],
       "relatedSkillCodes": ["VMATH.SO.TACH_GOP_10"],
       "confusableWith": [],
@@ -77,7 +77,8 @@
         "READ_ALOUD",
         "WRITE_PHOTO"
       ],
-      "difficultyRange": [1, 5]
+      "difficultyRange": [1, 5],
+      "lessonRef": "EDI-MN1-U4-L2"
     },
     {
       "code": "EMATH.OA.ADD_WITHIN_10",
@@ -89,7 +90,7 @@
       "gradeLevel": "1",
       "order": 4,
       "expectedWeek": 8,
-      "prerequisites": ["EMATH.OA.NUMBER_BONDS_10"],
+      "prerequisites": ["EMATH.OA.ADD_WITHIN_5"],
       "relatedSkillCodes": ["VMATH.SO.CONG_PV_10"],
       "confusableWith": ["EMATH.OA.SUB_WITHIN_10"],
       "exerciseTypes": [
@@ -100,7 +101,8 @@
         "READ_ALOUD",
         "WRITE_PHOTO"
       ],
-      "difficultyRange": [1, 5]
+      "difficultyRange": [1, 5],
+      "lessonRef": "EDI-MN1-U4-L1"
     },
     {
       "code": "EMATH.OA.SUB_WITHIN_10",
@@ -134,7 +136,7 @@
       "standardRef": "CCSS.MATH.1.OA.C.6",
       "gradeLevel": "1",
       "order": 6,
-      "expectedWeek": 10,
+      "expectedWeek": 11,
       "prerequisites": ["EMATH.OA.ADD_WITHIN_10"],
       "relatedSkillCodes": [],
       "confusableWith": [],
@@ -146,7 +148,8 @@
         "READ_ALOUD",
         "WRITE_PHOTO"
       ],
-      "difficultyRange": [1, 5]
+      "difficultyRange": [1, 5],
+      "lessonRef": "EDI-MN1-U4-L4"
     },
     {
       "code": "EMATH.OA.COUNT_ON",
@@ -157,7 +160,7 @@
       "standardRef": "CCSS.MATH.1.OA.C.5",
       "gradeLevel": "1",
       "order": 7,
-      "expectedWeek": 9,
+      "expectedWeek": 10,
       "prerequisites": ["EMATH.NBT.COUNT_TO_20"],
       "relatedSkillCodes": [],
       "confusableWith": ["EMATH.NBT.TEN_MORE_LESS"],
@@ -169,7 +172,8 @@
         "READ_ALOUD",
         "WRITE_PHOTO"
       ],
-      "difficultyRange": [1, 5]
+      "difficultyRange": [1, 5],
+      "lessonRef": "EDI-MN1-U4-L3"
     },
     {
       "code": "EMATH.OA.COUNT_BACK",
@@ -203,12 +207,13 @@
       "standardRef": "CCSS.MATH.1.OA.C.6",
       "gradeLevel": "1",
       "order": 9,
-      "expectedWeek": 13,
+      "expectedWeek": 11,
       "prerequisites": ["EMATH.OA.NUMBER_BONDS_10", "EMATH.OA.ADD_WITHIN_10"],
       "relatedSkillCodes": [],
       "confusableWith": [],
       "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "COUNT_TAP"],
-      "difficultyRange": [1, 5]
+      "difficultyRange": [1, 5],
+      "lessonRef": "EDI-MN1-U4-L5"
     },
     {
       "code": "EMATH.OA.ADD_WITHIN_20",
@@ -382,6 +387,24 @@
         "DRAG_DROP",
         "WRITE_PHOTO"
       ],
+      "difficultyRange": [1, 5],
+      "lessonRef": "EDI-MN1-U3-L1"
+    },
+    {
+      "code": "EMATH.NBT.TEEN_NUMBERS",
+      "strand": "NBT",
+      "nameVi": "Số 11–19 (teen numbers): một chục và vài đơn vị",
+      "nameEn": "Teen numbers: ten and some ones",
+      "description": "Hiểu số 11–19 là một nhóm mười và 1–9 đơn vị; đọc số trên hai ten-frame (khung đầu đầy); đọc, nghe và nói tên eleven … nineteen. Ví dụ: 'A full ten-frame and 4 dots: 1 ten and 4 ones is 14'; 13 = 10 + 3; 'Circle the teen numbers: 7, 12, 10, 15'. Lỗi thường gặp: coi 10 (hoặc 20) là teen number, đọc nhầm khung thứ hai (10 + 9 thành 17), nhầm thirteen/thirty.",
+      "standardRef": "CCSS.MATH.K.NBT.A.1",
+      "gradeLevel": "K",
+      "order": 19,
+      "expectedWeek": 4,
+      "lessonRef": "EDI-MN1-U3-L2",
+      "prerequisites": ["EMATH.NBT.COUNT_TO_20"],
+      "relatedSkillCodes": ["VMATH.SO.SO_11_20", "ESL.VOC.NUMBERS_1_20"],
+      "confusableWith": [],
+      "exerciseTypes": ["MCQ", "COUNT_TAP", "DRAG_DROP", "LISTEN_CHOOSE", "READ_ALOUD"],
       "difficultyRange": [1, 5]
     },
     {
@@ -409,11 +432,29 @@
       "standardRef": "CCSS.MATH.1.NBT.A.1",
       "gradeLevel": "1",
       "order": 21,
-      "expectedWeek": 6,
+      "expectedWeek": 5,
       "prerequisites": ["EMATH.NBT.COUNT_TO_20"],
       "relatedSkillCodes": [],
       "confusableWith": [],
       "exerciseTypes": ["DRAG_DROP", "MCQ", "COUNT_TAP", "LISTEN_CHOOSE", "READ_ALOUD"],
+      "difficultyRange": [1, 5],
+      "lessonRef": ["EDI-MN1-U3-L4", "EDI-MN1-U3-L8"]
+    },
+    {
+      "code": "EMATH.NBT.NUMBER_CHART_20",
+      "strand": "NBT",
+      "nameVi": "Quy luật trên bảng số 1–20 (hàng, cột)",
+      "nameEn": "Patterns on a number chart to 20",
+      "description": "Đọc bảng số 2 hàng × 10 cột; sang phải thêm 1, xuống dưới cùng cột thêm 10; điền số thiếu trong bảng và trong mảnh bảng; nói các số tiếp theo. Ví dụ: 'What number is 2 more than 13?' (15); mảnh bảng [16, 17, _ / _, 10, 11] → 18 và 9; 'What numbers come next? 14 → 15, 16, 17, 18'. Lỗi thường gặp: đếm cách 2 hoặc đếm lùi khi hỏi số tiếp theo, đọc cột thành hàng (số dưới 4 là 5 thay vì 14).",
+      "standardRef": "CCSS.MATH.1.NBT.A.1",
+      "gradeLevel": "1",
+      "order": 21,
+      "expectedWeek": 5,
+      "lessonRef": "EDI-MN1-U3-L3",
+      "prerequisites": ["EMATH.NBT.COUNT_TO_20"],
+      "relatedSkillCodes": ["VMATH.SO.BANG_100_DEM_THEO_CHUC"],
+      "confusableWith": [],
+      "exerciseTypes": ["MCQ", "DRAG_DROP", "LISTEN_CHOOSE", "COUNT_TAP", "READ_ALOUD"],
       "difficultyRange": [1, 5]
     },
     {
@@ -430,6 +471,23 @@
       "relatedSkillCodes": [],
       "confusableWith": [],
       "exerciseTypes": ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "COUNT_TAP", "READ_ALOUD"],
+      "difficultyRange": [1, 5]
+    },
+    {
+      "code": "EMATH.NBT.COMPARE_TO_20",
+      "strand": "NBT",
+      "nameVi": "So sánh số tới 20 (lời, tia số, dấu < > =)",
+      "nameEn": "Compare numbers to 20",
+      "description": "So sánh hai số tới 20 bằng mô hình chục – đơn vị, bằng tia số (bên phải lớn hơn) và bằng dấu > < =; nói câu 'is greater than / is less than / is equal to'; đánh giá câu so sánh đúng hay sai. Ví dụ: 'Val has 17 beads. Jean has 11 beads. Who has more?'; 15 ○ 12 → >; 'Pat says that 6 is greater than 11. Do you agree?'. Lỗi thường gặp: đặt dấu ngược chiều, chọn số bé khi hỏi số lớn, so theo chữ số hàng đơn vị (9 lớn hơn 12).",
+      "standardRef": "CCSS.MATH.1.NBT.B.3",
+      "gradeLevel": "1",
+      "order": 22,
+      "expectedWeek": 7,
+      "lessonRef": ["EDI-MN1-U3-L7", "EDI-MN1-U3-L8", "EDI-MN1-U3-L9"],
+      "prerequisites": ["EMATH.NBT.COMPARE_1_10", "EMATH.NBT.TEEN_NUMBERS"],
+      "relatedSkillCodes": ["VMATH.SO.SO_SANH_100"],
+      "confusableWith": [],
+      "exerciseTypes": ["MCQ", "DRAG_DROP", "LISTEN_CHOOSE", "COUNT_TAP", "READ_ALOUD"],
       "difficultyRange": [1, 5]
     },
     {
@@ -505,12 +563,13 @@
       "standardRef": "CCSS.MATH.1.NBT.B.2",
       "gradeLevel": "1",
       "order": 27,
-      "expectedWeek": 20,
-      "prerequisites": ["EMATH.NBT.SKIP_COUNT_10S"],
+      "expectedWeek": 6,
+      "prerequisites": ["EMATH.NBT.COUNT_TO_20", "EMATH.NBT.TEEN_NUMBERS"],
       "relatedSkillCodes": ["VMATH.SO.CHUC_DON_VI"],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "MCQ", "COUNT_TAP"],
-      "difficultyRange": [1, 4]
+      "exerciseTypes": ["DRAG_DROP", "MCQ", "COUNT_TAP", "LISTEN_CHOOSE", "READ_ALOUD"],
+      "difficultyRange": [1, 5],
+      "lessonRef": ["EDI-MN1-U3-L5", "EDI-MN1-U3-L6"]
     },
     {
       "code": "EMATH.NBT.PLACE_VALUE_MODELS",
@@ -521,12 +580,13 @@
       "standardRef": "CCSS.MATH.1.NBT.B.2",
       "gradeLevel": "1",
       "order": 28,
-      "expectedWeek": 21,
+      "expectedWeek": 6,
       "prerequisites": ["EMATH.NBT.TENS_ONES"],
       "relatedSkillCodes": [],
       "confusableWith": [],
-      "exerciseTypes": ["DRAG_DROP", "COUNT_TAP", "MCQ"],
-      "difficultyRange": [1, 3]
+      "exerciseTypes": ["DRAG_DROP", "COUNT_TAP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD"],
+      "difficultyRange": [1, 5],
+      "lessonRef": "EDI-MN1-U3-L6"
     },
     {
       "code": "EMATH.NBT.COMPARE_TWO_DIGIT",

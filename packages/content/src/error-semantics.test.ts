@@ -130,3 +130,33 @@ describe("silence when it cannot tell", () => {
     expect(check("nham_b_d", "bà", null, viet)).toBeNull();
   });
 });
+
+describe("MATH NOTES traps (pha 13)", () => {
+  const en = (prompt: string): ExerciseContext => ({
+    type: "MCQ",
+    language: "en",
+    subject: "EMATH",
+    prompt,
+  });
+  it("a ten of nine cubes can only look smaller", () => {
+    const ctx = en("How many cubes?");
+    expect(check("chuc_khong_du_10", "13", "12", ctx)).toBeNull();
+    expect(check("chuc_khong_du_10", "13", "23", ctx)).toMatch(/less than 13/);
+  });
+  it("taking 10 for a teen number needs a teen question and a 10 or 20", () => {
+    expect(check("nham_so_teen", "12", "10", en("Which is a teen number?"))).toBeNull();
+    expect(check("nham_so_teen", "12", "9", en("Which is a teen number?"))).toMatch(/10 or 20/);
+    expect(check("nham_so_teen", "12", "10", en("Which is greater?"))).toMatch(/never says/);
+  });
+  it("a counting-pattern slip belongs on a what-comes-next question", () => {
+    const ok = en("Which numbers come next?");
+    expect(check("sai_quy_luat_dem", "17, 18, 19", "18, 20, 22", ok)).toBeNull();
+    expect(check("sai_quy_luat_dem", "12", "21", en("Which is greater?"))).toMatch(/next/);
+  });
+  it("a wrong doubles fact must be a doubles fact, and wrong", () => {
+    const ctx = en("Which doubles fact matches the cards?");
+    expect(check("nho_sai_doubles", "8 + 8 = 16", "5 + 5 = 9", ctx)).toBeNull();
+    expect(check("nho_sai_doubles", "8 + 8 = 16", "4 + 4 = 8", ctx)).toMatch(/is right/);
+    expect(check("nho_sai_doubles", "9", "8", en("What is 6 + 3?"))).toMatch(/no a \+ a/);
+  });
+});

@@ -288,6 +288,35 @@ export function explainErrorTagMismatch(choice: TaggedChoice, ctx: ExerciseConte
       if (bothNumbers && cNum < 10 && dNum < 10)
         return `"sai_hang_chuc_don_vi" needs tens and units; both ${cNum} and ${dNum} are single digits`;
       return null;
+    // Pha 13 (MATH NOTES): the four traps the book sets on purpose.
+    case "chuc_khong_du_10":
+      // a "ten" that is really nine can only make the number look smaller
+      if (bothNumbers && dNum >= cNum)
+        return `"chuc_khong_du_10" means a ten counted as fewer than 10, so the option must be less than ${cNum}, not ${dNum}`;
+      return null;
+    case "nham_so_teen": {
+      const text = `${ctx.prompt} ${ctx.listenTarget ?? ""}`;
+      if (!/\bteen/i.test(text))
+        return `"nham_so_teen" belongs on a teen-number question; this one never says "teen"`;
+      if (dNum != null && dNum !== 10 && dNum !== 20)
+        return `"nham_so_teen" is taking 10 or 20 for a teen number; the option is ${dNum}`;
+      return null;
+    }
+    case "sai_quy_luat_dem": {
+      const text = `${ctx.prompt} ${ctx.listenTarget ?? ""}`;
+      if (!/\b(next|after|before|missing|step|comes|count)/i.test(text))
+        return `"sai_quy_luat_dem" belongs on a "what comes next" question; nothing here asks for the next numbers`;
+      return null;
+    }
+    case "nho_sai_doubles": {
+      const text = `${ctx.prompt} ${ctx.listenTarget ?? ""} ${distractor ?? ""}`;
+      if (!/double/i.test(text) && !/\b(\d+)\s*\+\s*\1\b/.test(text))
+        return `"nho_sai_doubles" belongs on a doubles question; there is no a + a here`;
+      const m = /\b(\d+)\s*\+\s*\1\s*=\s*(\d+)/.exec(distractor ?? "");
+      if (m && Number(m[1]) * 2 === Number(m[2]))
+        return `"nho_sai_doubles" means a wrong doubles fact, but "${distractor}" is right`;
+      return null;
+    }
     case "khong_hieu_de_loi_van":
       if (words(ctx.prompt).length < 6 && !ctx.listenTarget)
         return `"khong_hieu_de_loi_van" belongs on a word problem; this prompt is ${words(ctx.prompt).length} words`;

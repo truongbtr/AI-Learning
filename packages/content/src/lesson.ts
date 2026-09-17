@@ -36,6 +36,12 @@ export const lessonFileSchema = z
     code: unitCode,
     subject: z.enum(SUBJECTS),
     title: z.string().trim().min(3),
+    /**
+     * The lesson number printed at the top of the page, when it differs from the order of `code`.
+     * MATH NOTES numbers its pages "Lesson 3-6" while its unit introduction calls the same lesson
+     * 3-7; the teacher says what the page says, so the diary has to find it by this label.
+     */
+    bookLabel: z.string().trim().min(3).max(40).optional(),
     book: lessonBookSchema,
     periods: z.number().int().min(1).optional(),
     weekFrom: z.number().int().min(1).max(MAX_WEEK).optional(),
