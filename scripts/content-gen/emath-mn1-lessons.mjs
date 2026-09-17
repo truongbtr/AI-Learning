@@ -1,26 +1,30 @@
 /**
- * Pha 13 việc 1 — 14 bài học của MATH NOTES Grade 1 · Volume 1 (EDI-MN1), Unit 3 và Unit 4 tới
- * "Make a 10 to Add". Số liệu lấy từ docs/giao-trinh/EDI-MN1-vol1-phan-tich.md (QC đã đọc hết bản
+ * Pha 13 việc 1 — 25 bài học của MATH NOTES Grade 1 · Volume 1 (EDI-MN1): Unit 3, Unit 4, Unit 5 và
+ * Unit 6 (11 bài cuối ở `emath-mn1-lessons-b.mjs`, đọc từ bản scan tr.52–97). Số liệu lấy từ docs/giao-trinh/EDI-MN1-vol1-phan-tich.md (QC đã đọc hết bản
  * scan sách tr.1–51) và đối chiếu lại ảnh trang.
  *
  * Mã bài theo thứ tự trang "Unit Introduction" (liền mạch 1…9); `bookLabel` giữ số in trên đầu
  * trang ("Lesson 3-6") khi nó khác, vì cô giáo nói theo số đó.
  *
- * Tuần là **ước**: sách giao 17/09/2026 (tuần 4) còn trắng, TKB 1B3 có 2 buổi English Maths
- * (4 tiết) mỗi tuần, mỗi bài gồm bài học + Exit Ticket + Additional Practice ≈ 2 tiết → 2 bài/tuần,
- * cộng một buổi cho Math in Real Life + Self-Reflection cuối mỗi unit. Nhật ký lớp chưa có dòng
- * English Maths nào để chỉnh.
+ * Tuần lấy từ tiến độ thật: 18/09/2026 chủ dự án cho biết lớp đang học tới **trang 28** (bài
+ * Compare Numbers on a Number Line) ở tuần 4 → sách bắt đầu tuần 1 và đi **2 bài/tuần** (4 tiết
+ * English Maths của TKB 1B3). Unit 3 khép lại ở tuần 5 (Math in Real Life + Self-Reflection), Unit 4
+ * bắt đầu tuần 6.
  *
  *   node scripts/content-gen/emath-mn1-lessons.mjs
  */
 import { mkdirSync, writeFileSync } from "node:fs";
+import { MORE } from "./emath-mn1-lessons-b.mjs";
 
 const BOOK = {
   name: "MATH NOTES Grade 1 · Volume 1 (Edison Schools)",
+  // hai bản scan: tr.1–51 và tr.52–97
   file: "02-edison-math-notes-g1-vol1-tr1-51.pdf",
 };
+/** Bản scan chứa trang này. */
+const fileFor = (page) => (page <= 51 ? BOOK.file : "03-edison-math-notes-g1-vol1-tr52-97.pdf");
 const WEEK_NOTE =
-  "Tuần là ước (2 bài/tuần theo 4 tiết English Maths của TKB 1B3, sách bắt đầu tuần 4); chỉnh khi nhật ký lớp nhắc bài này.";
+  "Tuần theo tiến độ thật của lớp 1B3 (chủ dự án 18/09/2026: lớp học tới trang 28, tức bài Compare Numbers on a Number Line, tuần 4) — 2 bài/tuần, 4 tiết English Maths/tuần.";
 const REAL_LIFE_U3 =
   "Toán trong đời sống (sách tr.32): cùng con đếm đồ chơi, ghế, bàn, sách trong nhà rồi nói to số đếm bằng tiếng Anh; vẽ những chiếc ghế trong nhà và viết số ghế.";
 const ALLIGATOR =
@@ -35,7 +39,7 @@ const L = [
     bookLabel: null,
     title: "Numbers 1 to 10",
     pages: [5, 7],
-    weeks: [4, 4],
+    weeks: [1, 1],
     topic: "Unit 3. Numbers to 20",
     objectives: [
       "Đếm đồ vật trong nhóm tới 10 và viết số 1–10.",
@@ -86,7 +90,7 @@ const L = [
     bookLabel: null,
     title: "Numbers 11 to 19",
     pages: [8, 10],
-    weeks: [4, 4],
+    weeks: [1, 1],
     topic: "Unit 3. Numbers to 20",
     objectives: [
       "Nhận ra số 11–19 là teen numbers: 1 nhóm mười và vài đơn vị.",
@@ -140,7 +144,7 @@ const L = [
     bookLabel: null,
     title: "Patterns on a Number Chart to 20",
     pages: [11, 13],
-    weeks: [5, 5],
+    weeks: [2, 2],
     topic: "Unit 3. Numbers to 20",
     objectives: [
       "Đọc bảng số 1–20 (2 hàng × 10 cột), chỉ đúng hàng (row) và cột (column).",
@@ -180,7 +184,7 @@ const L = [
     bookLabel: null,
     title: "Patterns on a Number Line to 20",
     pages: [14, 16],
-    weeks: [5, 5],
+    weeks: [2, 2],
     topic: "Unit 3. Numbers to 20",
     objectives: [
       "Nhận ra mũi tên, vạch (mark) và khoảng đều trên tia số.",
@@ -216,7 +220,7 @@ const L = [
     bookLabel: "Lesson 3-2",
     title: "Understand Tens",
     pages: [17, 19],
-    weeks: [6, 6],
+    weeks: [3, 3],
     topic: "Unit 3. Numbers to 20",
     objectives: [
       "Hiểu 10 đơn vị (ones) gộp lại thành 1 chục (ten).",
@@ -248,7 +252,7 @@ const L = [
     bookLabel: "Lesson 3-3",
     title: "Represent Tens and Ones",
     pages: [20, 22],
-    weeks: [6, 6],
+    weeks: [3, 3],
     topic: "Unit 3. Numbers to 20",
     objectives: [
       "Biểu diễn số 11–20 bằng thanh chục và khối rời, chuỗi hạt, ten-frame.",
@@ -287,7 +291,7 @@ const L = [
     bookLabel: "Lesson 3-6",
     title: "Compare Numbers",
     pages: [23, 25],
-    weeks: [7, 7],
+    weeks: [4, 4],
     topic: "Unit 3. Numbers to 20",
     objectives: [
       "So sánh hai số tới 20 bằng mô hình chục – đơn vị.",
@@ -324,7 +328,7 @@ const L = [
     bookLabel: "Lesson 3-7",
     title: "Compare Numbers on a Number Line",
     pages: [26, 28],
-    weeks: [7, 7],
+    weeks: [4, 4],
     topic: "Unit 3. Numbers to 20",
     objectives: [
       "Dùng tia số để so sánh: số bên phải lớn hơn, số bên trái bé hơn.",
@@ -364,7 +368,7 @@ const L = [
     bookLabel: "Lesson 3-8",
     title: "Use Symbols to Compare Numbers",
     pages: [29, 31],
-    weeks: [8, 8],
+    weeks: [5, 5],
     topic: "Unit 3. Numbers to 20",
     objectives: [
       "Nhận ra ba dấu: > greater than, < less than, = equal to.",
@@ -399,7 +403,7 @@ const L = [
     bookLabel: "Lesson 4-1",
     title: "Relate Counting to Addition",
     pages: [37, 39],
-    weeks: [9, 9],
+    weeks: [6, 6],
     topic: "Unit 4. Addition within 20",
     objectives: [
       "Tìm tổng của hai nhóm bằng cách đếm hết hoặc bằng phép cộng.",
@@ -430,7 +434,7 @@ const L = [
     bookLabel: null,
     title: "Ways to make 10",
     pages: [40, 42],
-    weeks: [9, 10],
+    weeks: [6, 6],
     topic: "Unit 4. Addition within 20",
     objectives: [
       "Tìm mọi cặp số có tổng bằng 10 (10 + 0 … 0 + 10).",
@@ -461,7 +465,7 @@ const L = [
     bookLabel: "Lesson 4-2",
     title: "Count On to Add Using a Number Line",
     pages: [43, 45],
-    weeks: [10, 10],
+    weeks: [7, 7],
     topic: "Unit 4. Addition within 20",
     objectives: [
       "Cộng bằng cách đếm tiếp trên tia số: đứng ở số đầu, nhảy thêm số bước.",
@@ -498,7 +502,7 @@ const L = [
     bookLabel: "Lesson 4-3",
     title: "Doubles",
     pages: [46, 48],
-    weeks: [11, 11],
+    weeks: [7, 7],
     topic: "Unit 4. Addition within 20",
     objectives: [
       "Nhận ra doubles: hai số hạng giống nhau (1 + 1 … 10 + 10).",
@@ -536,7 +540,7 @@ const L = [
     bookLabel: "Lesson 4-5",
     title: "Make a 10 to Add",
     pages: [49, 51],
-    weeks: [11, 12],
+    weeks: [8, 8],
     topic: "Unit 4. Addition within 20",
     objectives: [
       "Cộng qua 10 bằng cách làm tròn 10: 7 + 5 = 7 + 3 + 2 = 12.",
@@ -570,6 +574,9 @@ const L = [
   },
 ];
 
+// tr.52–97 (chủ dự án gửi 18/09/2026): hai bài cuối Unit 4, Unit 5 và Unit 6
+L.push(...MORE);
+
 const units = [];
 for (const l of L) {
   const lesson = {
@@ -577,7 +584,7 @@ for (const l of L) {
     subject: "EMATH",
     title: l.title,
     ...(l.bookLabel ? { bookLabel: l.bookLabel } : {}),
-    book: { ...BOOK, pageFrom: l.pages[0], pageTo: l.pages[1] },
+    book: { ...BOOK, file: fileFor(l.pages[0]), pageFrom: l.pages[0], pageTo: l.pages[1] },
     periods: 2,
     weekFrom: l.weeks[0],
     weekTo: l.weeks[1],

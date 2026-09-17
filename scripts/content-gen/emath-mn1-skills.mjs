@@ -3,7 +3,8 @@
  *
  * - Thêm 3 kỹ năng sách dạy riêng mà bản đồ CCSS chưa tách: TEEN_NUMBERS, NUMBER_CHART_20,
  *   COMPARE_TO_20.
- * - Dời `expectedWeek` về tuần của LessonUnit tương ứng (content/lessons/emath/EDI-MN1.units.json).
+ * - Dời `expectedWeek` về tuần của LessonUnit tương ứng; tuần lấy từ tiến độ thật của lớp
+ *   (18/09/2026: lớp đang ở trang 28 = bài 3-7 trên đầu trang, tuần 4 → 2 bài/tuần từ tuần 1).
  * - Sửa tiên quyết theo thứ tự sách: chục – đơn vị học ngay sau teen numbers, trước đếm cách 10;
  *   "Relate Counting to Addition" (4-1) đứng trước "Ways to make 10" (4-2).
  * - Kỹ năng mới và hai kỹ năng chục – đơn vị không khai WRITE_PHOTO (phiên của con không còn bài
@@ -30,7 +31,7 @@ const NEW = [
     standardRef: "CCSS.MATH.K.NBT.A.1",
     gradeLevel: "K",
     order: 19,
-    expectedWeek: 4,
+    expectedWeek: 1,
     lessonRef: "EDI-MN1-U3-L2",
     prerequisites: ["EMATH.NBT.COUNT_TO_20"],
     relatedSkillCodes: ["VMATH.SO.SO_11_20", "ESL.VOC.NUMBERS_1_20"],
@@ -48,7 +49,7 @@ const NEW = [
     standardRef: "CCSS.MATH.1.NBT.A.1",
     gradeLevel: "1",
     order: 21,
-    expectedWeek: 5,
+    expectedWeek: 2,
     lessonRef: "EDI-MN1-U3-L3",
     prerequisites: ["EMATH.NBT.COUNT_TO_20"],
     relatedSkillCodes: ["VMATH.SO.BANG_100_DEM_THEO_CHUC"],
@@ -66,7 +67,7 @@ const NEW = [
     standardRef: "CCSS.MATH.1.NBT.B.3",
     gradeLevel: "1",
     order: 22,
-    expectedWeek: 7,
+    expectedWeek: 4,
     lessonRef: ["EDI-MN1-U3-L7", "EDI-MN1-U3-L8", "EDI-MN1-U3-L9"],
     prerequisites: ["EMATH.NBT.COMPARE_1_10", "EMATH.NBT.TEEN_NUMBERS"],
     relatedSkillCodes: ["VMATH.SO.SO_SANH_100"],
@@ -78,34 +79,35 @@ const NEW = [
 
 /** expectedWeek, lessonRef and prerequisites that follow the book. */
 const MOVE = {
-  "EMATH.NBT.COUNT_TO_20": { lessonRef: "EDI-MN1-U3-L1" },
+  "EMATH.NBT.COUNT_TO_20": { expectedWeek: 1, lessonRef: "EDI-MN1-U3-L1" },
   "EMATH.NBT.NUMBER_LINE_TO_20": {
-    expectedWeek: 5,
+    expectedWeek: 2,
     lessonRef: ["EDI-MN1-U3-L4", "EDI-MN1-U3-L8"],
   },
   "EMATH.NBT.TENS_ONES": {
-    expectedWeek: 6,
+    expectedWeek: 3,
     lessonRef: ["EDI-MN1-U3-L5", "EDI-MN1-U3-L6"],
     prerequisites: ["EMATH.NBT.COUNT_TO_20", "EMATH.NBT.TEEN_NUMBERS"],
     exerciseTypes: ["DRAG_DROP", "MCQ", "COUNT_TAP", "LISTEN_CHOOSE", "READ_ALOUD"],
     difficultyRange: [1, 5],
   },
   "EMATH.NBT.PLACE_VALUE_MODELS": {
-    expectedWeek: 6,
+    expectedWeek: 3,
     lessonRef: "EDI-MN1-U3-L6",
     exerciseTypes: ["DRAG_DROP", "COUNT_TAP", "MCQ", "LISTEN_CHOOSE", "READ_ALOUD"],
     difficultyRange: [1, 5],
   },
   "EMATH.OA.ADD_WITHIN_10": {
+    expectedWeek: 6,
     lessonRef: "EDI-MN1-U4-L1",
     // 4-1 "Relate Counting to Addition" comes before 4-2 "Ways to make 10"
     prerequisites: ["EMATH.OA.ADD_WITHIN_5"],
   },
-  "EMATH.OA.NUMBER_BONDS_10": { expectedWeek: 9, lessonRef: "EDI-MN1-U4-L2" },
-  "EMATH.OA.COUNT_ON": { expectedWeek: 10, lessonRef: "EDI-MN1-U4-L3" },
-  "EMATH.OA.DOUBLES": { expectedWeek: 11, lessonRef: "EDI-MN1-U4-L4" },
+  "EMATH.OA.NUMBER_BONDS_10": { expectedWeek: 6, lessonRef: "EDI-MN1-U4-L2" },
+  "EMATH.OA.COUNT_ON": { expectedWeek: 7, lessonRef: "EDI-MN1-U4-L3" },
+  "EMATH.OA.DOUBLES": { expectedWeek: 7, lessonRef: "EDI-MN1-U4-L4" },
   "EMATH.OA.MAKE_TEN": {
-    expectedWeek: 11,
+    expectedWeek: 8,
     lessonRef: "EDI-MN1-U4-L5",
     // the book reads the strategy aloud: "7 plus 3 is 10, 10 plus 2 is 12"
     exerciseTypes: ["MCQ", "LISTEN_CHOOSE", "DRAG_DROP", "COUNT_TAP", "READ_ALOUD"],

@@ -562,9 +562,11 @@ test("the old world's quest hands out an EDI-MN1 question with a ten-frame", asy
   // Visit the stations one by one. A vocabulary or spelling game (pha 11–12) is not what this
   // phase checks, so the test steps past it instead of learning to play it.
   let found = false;
+  let open = 0;
   for (let n = 1; n <= 16 && !found; n++) {
     await page.goto(`/kid/quest/${n}`);
     if (!/\/kid\/quest\/\d+$/.test(page.url())) continue; // answered already, or no such station
+    open++;
     await readyToLook(page);
     if (await visible(page, "vocab-station")) continue;
     await kidSafe(page);
@@ -577,5 +579,8 @@ test("the old world's quest hands out an EDI-MN1 question with a ten-frame", asy
     }
     await answerOne(page);
   }
+  // A quest is planned once a day: when every station has been answered already (by an earlier run
+  // or by the child) there is nothing left to look at until tomorrow — not a content failure.
+  test.skip(open === 0, "today's quest is already finished — run again tomorrow");
   expect(found, "no ten-frame question in today's quest").toBe(true);
 });

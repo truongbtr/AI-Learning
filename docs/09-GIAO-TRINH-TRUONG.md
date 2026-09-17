@@ -1,12 +1,4 @@
-# 09 — GIÁO TRÌNH THỰC TẾ CỦA TRƯỜNG (KHO `sach giao khoa/`)
-
-> Kiểm kê tài liệu chủ dự án đã nạp vào `sach giao khoa/`, cấu trúc bài học rút từ mục lục, và ánh xạ sang bản đồ kỹ năng (`05`) để: (a) pha 1 gán `expectedWeek` và tên bài SGK cho kỹ năng Toán/Tiếng Việt; (b) pha 6 nạp thành `Material` → `LessonUnit` với `code` đúng theo bảng dưới. Cập nhật khi có thêm sách.
-
----
-
-## 1. Kiểm kê
-
-| File | Sách | Loại | Trang PDF | Phạm vi |
+8 | File | Sách | Loại | Trang PDF | Phạm vi |
 |---|---|---|---|---|
 | `01-sgk-tieng-viet-1-tap-mot.pdf` | Tiếng Việt 1 — tập một | **SGK học sinh** | 186 | HK1: **83 bài học vần** + Ôn tập + Đánh giá cuối HK1 (nội dung hết trang 182) |
 | `01-sgk-tieng-viet-1-tap-hai.pdf` | Tiếng Việt 1 — tập hai | SGK học sinh | 178 | HK2: 8 chủ đề bài đọc + Ôn tập & đánh giá |
@@ -75,27 +67,43 @@ Phân tích từng câu: `docs/giao-trinh/EDI-MN1-vol1-phan-tich.md`. File `sach
 - Mọi bài dùng **mô hình trực quan** (ten-frame, thanh chục + khối rời, chuỗi hạt, tia số có bước nhảy, number bond,
   thẻ chấm); app vẽ đúng các mô hình đó trong đề (pha 13 việc 4).
 
-| `LessonUnit` | Đầu trang | Tên bài | Trang | Tuần (ước) | Kỹ năng `EMATH.*` |
+| `LessonUnit` | Đầu trang | Tên bài | Trang | Tuần | Kỹ năng `EMATH.*` |
 |---|---|---|---|---|---|
-| `EDI-MN1-U3-L1` | — (giới thiệu 3-1) | Numbers 1 to 10 | 5–7 | 4 | `NBT.COUNT_TO_20`, `MP.MATH_VOCAB_EN` |
-| `EDI-MN1-U3-L2` | — (3-2) | Numbers 11 to 19 (mục lục ghi "11 to 20") | 8–10 | 4 | **`NBT.TEEN_NUMBERS`** |
-| `EDI-MN1-U3-L3` | — (3-3) | Patterns on a Number Chart to 20 | 11–13 | 5 | **`NBT.NUMBER_CHART_20`** |
-| `EDI-MN1-U3-L4` | — (3-4) | Patterns on a Number Line to 20 | 14–16 | 5 | `NBT.NUMBER_LINE_TO_20` |
-| `EDI-MN1-U3-L5` | Lesson 3-2 | Understand Tens | 17–19 | 6 | `NBT.TENS_ONES` |
-| `EDI-MN1-U3-L6` | Lesson 3-3 | Represent Tens and Ones | 20–22 | 6 | `NBT.PLACE_VALUE_MODELS`, `NBT.TENS_ONES` |
-| `EDI-MN1-U3-L7` | Lesson 3-6 | Compare Numbers | 23–25 | 7 | **`NBT.COMPARE_TO_20`** |
-| `EDI-MN1-U3-L8` | Lesson 3-7 | Compare Numbers on a Number Line | 26–28 | 7 | `NBT.COMPARE_TO_20`, `NBT.NUMBER_LINE_TO_20` |
-| `EDI-MN1-U3-L9` | Lesson 3-8 | Use Symbols to Compare Numbers | 29–31 | 8 | `NBT.COMPARE_TO_20` |
-| — | — | Math in Real Life · Student Self-Reflection | 32–34 | 8 | gợi ý ba mẹ trong `contentText` |
-| `EDI-MN1-U4-L1` | Lesson 4-1 | Relate Counting to Addition | 37–39 | 9 | `OA.ADD_WITHIN_10` (+ `ADD_WITHIN_20`) |
-| `EDI-MN1-U4-L2` | — (4-2; mục lục "Addition within 10") | Ways to make 10 | 40–42 | 9–10 | `OA.NUMBER_BONDS_10` |
-| `EDI-MN1-U4-L3` | Lesson 4-2 | Count On to Add Using a Number Line | 43–45 | 10 | `OA.COUNT_ON` |
-| `EDI-MN1-U4-L4` | Lesson 4-3 | Doubles | 46–48 | 11 | `OA.DOUBLES` |
-| `EDI-MN1-U4-L5` | Lesson 4-5 | Make a 10 to Add | 49–51 | 11–12 | `OA.MAKE_TEN` |
-| (chưa có ảnh) | 4-7? / 4-8? | Use properties to add · Add three numbers | 52–57 | — | `OA.PROPERTIES_COMMUTATIVE`, `OA.THREE_ADDENDS` |
+| `EDI-MN1-U3-L1` | — (giới thiệu 3-1) | Numbers 1 to 10 | 5–7 | 1 | `NBT.COUNT_TO_20`, `MP.MATH_VOCAB_EN` |
+| `EDI-MN1-U3-L2` | — (3-2) | Numbers 11 to 19 (mục lục ghi "11 to 20") | 8–10 | 1 | **`NBT.TEEN_NUMBERS`** |
+| `EDI-MN1-U3-L3` | — (3-3) | Patterns on a Number Chart to 20 | 11–13 | 2 | **`NBT.NUMBER_CHART_20`** |
+| `EDI-MN1-U3-L4` | — (3-4) | Patterns on a Number Line to 20 | 14–16 | 2 | `NBT.NUMBER_LINE_TO_20` |
+| `EDI-MN1-U3-L5` | Lesson 3-2 | Understand Tens | 17–19 | 3 | `NBT.TENS_ONES` |
+| `EDI-MN1-U3-L6` | Lesson 3-3 | Represent Tens and Ones | 20–22 | 3 | `NBT.PLACE_VALUE_MODELS`, `NBT.TENS_ONES` |
+| `EDI-MN1-U3-L7` | Lesson 3-6 | Compare Numbers | 23–25 | 4 | **`NBT.COMPARE_TO_20`** |
+| `EDI-MN1-U3-L8` | Lesson 3-7 | Compare Numbers on a Number Line | 26–28 | 4 | `NBT.COMPARE_TO_20`, `NBT.NUMBER_LINE_TO_20` |
+| `EDI-MN1-U3-L9` | Lesson 3-8 | Use Symbols to Compare Numbers | 29–31 | 5 | `NBT.COMPARE_TO_20` |
+| — | — | Math in Real Life · Student Self-Reflection | 32–34 | 5 | gợi ý ba mẹ trong `contentText` |
+| `EDI-MN1-U4-L1` | Lesson 4-1 | Relate Counting to Addition | 37–39 | 6 | `OA.ADD_WITHIN_10` (+ `ADD_WITHIN_20`) |
+| `EDI-MN1-U4-L2` | — (4-2; mục lục "Addition within 10") | Ways to make 10 | 40–42 | 6–7 | `OA.NUMBER_BONDS_10` |
+| `EDI-MN1-U4-L3` | Lesson 4-2 | Count On to Add Using a Number Line | 43–45 | 7 | `OA.COUNT_ON` |
+| `EDI-MN1-U4-L4` | Lesson 4-3 | Doubles | 46–48 | 7 | `OA.DOUBLES` |
+| `EDI-MN1-U4-L5` | Lesson 4-5 | Make a 10 to Add | 49–51 | 8 | `OA.MAKE_TEN` |
+| `EDI-MN1-U4-L6` | Lesson 4-7 | Use Properties to Add | 52–54 | 8 | `OA.PROPERTIES_COMMUTATIVE` |
+| `EDI-MN1-U4-L7` | Lesson 4-8 | Add Three Numbers | 55–57 | 9 | `OA.THREE_ADDENDS`, `OA.ADD_WITHIN_20` |
+| — | — | Math in Real Life · Student Self-Reflection (Unit 4) | 58–60 | 9 | gợi ý ba mẹ trong `contentText` |
+| **Unit 5** | — | **Subtraction within 20** (giới thiệu + Learning Tips) | 61–62 | 10 | — |
+| `EDI-MN1-U5-L1` | Lesson 5-1 | Relate Counting to Subtraction | 63–65 | 10 | `OA.SUB_WITHIN_20`, `OA.SUB_WITHIN_10` |
+| `EDI-MN1-U5-L2` | — (number box) | Subtraction within 10 | 66–68 | 10 | `OA.SUB_WITHIN_10`, `OA.COUNT_BACK` |
+| `EDI-MN1-U5-L3` | Lesson 5-2 | Count Back to Subtract | 69–71 | 11 | `OA.COUNT_BACK` |
+| `EDI-MN1-U5-L4` | Lesson 5-3 | Count On to Subtract | 72–74 | 11 | **`OA.COUNT_ON_SUBTRACT`** (mới) |
+| `EDI-MN1-U5-L5` | Lesson 5-4 | Make a 10 to Subtract | 75–77 | 12 | **`OA.MAKE_TEN_SUBTRACT`** (mới) |
+| — | — | Math in Real Life · Student Self-Reflection (Unit 5) | 78–80 | 12 | gợi ý ba mẹ trong `contentText` |
+| **Unit 6** | — | **2D Shapes** (giới thiệu + Learning Tips) | 81–82 | 13 | — |
+| `EDI-MN1-U6-L1` | Lesson 6-1 | Understand Defining Attributes of Shapes | 83–85 | 13 | `G.SHAPE_ATTRIBUTES` |
+| `EDI-MN1-U6-L2` | Lesson 6-2 | Understand Non-Defining Attributes | 86–88 | 13 | **`G.NON_DEFINING_ATTRS`** (mới) |
+| `EDI-MN1-U6-L3` | Lesson 6-3 | Compose Shapes | 89–91 | 14 | `G.COMPOSE_SHAPES` |
+| `EDI-MN1-U6-L4` | Lesson 6-4 | Build New Shapes | 92–94 | 14 | **`G.DECOMPOSE_SHAPES`** (mới) |
+| — | — | Math in Real Life · Student Self-Reflection (Unit 6) | 95–97 | 15 | gợi ý ba mẹ trong `contentText` |
 
-**Tuần là ước:** sách giao về nhà 17/09/2026 (tuần 4) còn trắng; TKB 1B3 có 2 buổi English Maths (4 tiết)/tuần, mỗi bài
-≈ 2 tiết → 2 bài/tuần, thêm một buổi cuối mỗi unit. Nhật ký lớp chưa có dòng English Maths nào. Sửa khi cô nhắc bài.
+**Tuần theo tiến độ thật:** chủ dự án cho biết 18/09/2026 (tuần 4) lớp học **tới trang 28** — bài Compare Numbers
+on a Number Line. Vậy sách bắt đầu tuần 1 và lớp đi **2 bài/tuần** (4 tiết English Maths của TKB 1B3): Unit 3 khép
+lại ở tuần 5, Unit 4 bắt đầu tuần 6 và xong khoảng tuần 9. Mai Thy và Chí Thanh học **cùng lớp 1B3** nên chung tiến độ.
 
 *Bảng mục lục cũ (14/09/2026, chỉ từ ảnh mục lục) đã được thay bằng bảng trên; phần nhận xét dưới đây giữ nguyên để biết
 lịch sử.*

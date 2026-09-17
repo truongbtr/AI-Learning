@@ -13,21 +13,28 @@ const byCode = new Map(emath.skills.map((s) => [s.code, s]));
 const mn1 = loadLessons().filter((l) => l.lesson.code.startsWith("EDI-MN1-"));
 
 describe("EDI-MN1 lessons", () => {
-  it("has the 14 lessons of Unit 3 and Unit 4 up to Make a 10, in book order", () => {
+  it("has the 25 lessons of Unit 3 to Unit 6, in book order", () => {
     const codes = mn1.map((l) => l.lesson.code).sort();
-    expect(codes).toEqual([
-      ...Array.from({ length: 9 }, (_, i) => `EDI-MN1-U3-L${i + 1}`),
-      ...Array.from({ length: 5 }, (_, i) => `EDI-MN1-U4-L${i + 1}`),
-    ]);
+    expect(codes).toEqual(
+      [
+        ...Array.from({ length: 9 }, (_, i) => `EDI-MN1-U3-L${i + 1}`),
+        ...Array.from({ length: 7 }, (_, i) => `EDI-MN1-U4-L${i + 1}`),
+        ...Array.from({ length: 5 }, (_, i) => `EDI-MN1-U5-L${i + 1}`),
+        ...Array.from({ length: 4 }, (_, i) => `EDI-MN1-U6-L${i + 1}`),
+      ].sort(),
+    );
     const pages = [...mn1]
       .sort((a, b) => a.lesson.book.pageFrom - b.lesson.book.pageFrom)
       .map((l) => l.lesson.code);
     expect(pages).toEqual(codes);
     for (const { lesson } of mn1) {
-      expect(lesson.book.pageTo).toBeLessThanOrEqual(51); // the scan stops at book page 51
+      // the book is 97 pages; the two scans cover 1–51 and 52–97
+      expect(lesson.book.pageTo).toBeLessThanOrEqual(97);
+      expect(lesson.book.file).toContain(lesson.book.pageFrom <= 51 ? "tr1-51" : "tr52-97");
       expect(lesson.sampleTasks.some((t) => t.text.startsWith("Try This First"))).toBe(true);
       expect(lesson.sampleTasks.some((t) => t.text.startsWith("Exit Ticket"))).toBe(true);
-      expect(lesson.contentText).toMatch(/Tuần là ước/);
+      // every lesson tells the parent where the week came from (the class is at page 28 on 18/09)
+      expect(lesson.contentText).toMatch(/Tuần theo tiến độ/);
     }
   });
 
@@ -44,7 +51,7 @@ describe("EDI-MN1 lessons", () => {
     const units = loadLessonUnitFiles()
       .flatMap((f) => f.units.units)
       .filter((u) => u.code.startsWith("EDI-MN1-"));
-    expect(units).toHaveLength(14);
+    expect(units).toHaveLength(25);
     for (const u of units) {
       const lesson = mn1.find((l) => l.lesson.code === u.code)!.lesson;
       expect(u.title).toBe(lessonToRow(lesson).title);

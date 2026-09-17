@@ -2,6 +2,65 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Pha 13b — 18/09/2026 — Hết quyển MATH NOTES Vol 1, tuần theo tiến độ thật của lớp
+
+Chủ dự án 18/09: gửi bản scan **tr.52–97**, cho biết **hai bé học cùng lớp và lớp đang ở trang 28**, cho mã hình
+đăng nhập của Chí Thanh, và hỏi có nên giữ các bài EMATH ngoài sách không. Trạng thái: **xong trên dev, CHƯA
+deploy.** `pnpm lint` sạch, `pnpm test` xanh (core 342 · db 151 · web 96 · content 85 · city 72 · inbox 18),
+`pnpm build` xanh, `content:validate` sạch.
+
+### Tuần: từ "ước" thành tiến độ thật
+
+Trang 28 là bài *Compare Numbers on a Number Line* (`EDI-MN1-U3-L8`), tuần 4 → sách bắt đầu **tuần 1**, lớp đi
+**2 bài/tuần** (4 tiết English Maths). Dời toàn bộ: Unit 3 tuần 1–5 · Unit 4 tuần 6–9 · Unit 5 tuần 10–12 ·
+Unit 6 tuần 13–14. `expectedWeek` của 12 kỹ năng đổi theo (vd. `TENS_ONES` 6 → 3, `MAKE_TEN` 11 → 8). Nghĩa là
+**hai tuần tới lớp học Use Symbols to Compare (tuần 5) rồi sang Unit 4** — bài trong app đã sẵn.
+
+### Hết quyển: 25 bài học, 58 kỹ năng EMATH
+
+- Đọc hết 46 trang scan mới (ảnh không theo thứ tự trang; bốn trợ lý đọc song song rồi khớp lại theo số trang in
+  trên sách). Phân tích đầy đủ: `docs/giao-trinh/EDI-MN1-vol1-phan-tich.md` mục 5–7.
+- **11 `LessonUnit` mới** (tổng 25): `U4-L6` Use Properties to Add (tr.52–54) · `U4-L7` Add Three Numbers (55–57) ·
+  Unit 5 *Subtraction within 20*: `U5-L1` Relate Counting to Subtraction (63–65), `U5-L2` Subtraction within 10 —
+  number box (66–68), `U5-L3` Count Back to Subtract (69–71), `U5-L4` Count On to Subtract (72–74), `U5-L5` Make a
+  10 to Subtract (75–77) · Unit 6 *2D Shapes*: `U6-L1` Defining Attributes (83–85), `U6-L2` Non-Defining Attributes
+  (86–88), `U6-L3` Compose Shapes (89–91), `U6-L4` Build New Shapes (92–94). Mỗi bài có Try This First + Exit
+  Ticket nguyên câu, đáp án, mẹo Learning Tips và Math in Real Life của unit cho ba mẹ.
+- **4 kỹ năng mới**: `OA.COUNT_ON_SUBTRACT` (đếm tiến để trừ — 15 − 9 là 6 bước từ 9), `OA.MAKE_TEN_SUBTRACT`
+  (bớt về 10 rồi trừ tiếp), `G.NON_DEFINING_ATTRS` (màu/cỡ không đổi tên hình), `G.DECOMPOSE_SHAPES` (tách hình rồi
+  dựng hình mới). 8 kỹ năng cũ được gắn bài và dời tuần (`SUB_WITHIN_10` 9 → 10, `COUNT_BACK` 11, `SHAPE_ATTRIBUTES`
+  8 → 13, `COMPOSE_SHAPES` 9 → 14…); `SUB_WITHIN_20` đổi tiên quyết thành `SUB_WITHIN_10` cho khớp thứ tự sách.
+- **Chưa có bài luyện cho Unit 5–6** (4 kỹ năng mới đang 0 bài, `SUB_WITHIN_10`/`COUNT_BACK`/`SHAPE_ATTRIBUTES`…
+  vẫn là bài CCSS cũ). Lớp tới Unit 5 khoảng tuần 10 → còn ~6 tuần; chờ chủ dự án gật rồi soạn (ước ~220 bài,
+  ~5 nghìn ký tự TTS).
+
+### Các bài EMATH ngoài sách: giữ (trả lời câu hỏi 3)
+
+581 bài thuộc 15 kỹ năng sách không dạy. Giữ tất cả, vì: 4 kỹ năng là **nền** sách mặc định con đã biết
+(`ADD_WITHIN_5` 45 bài, `SUB_WITHIN_5` 45, `COMPARE_1_10` 41, `NAME_2D_SHAPES` 36); 6 kỹ năng là **tiếng Anh toán**
+và đọc đề (`MATH_VOCAB_EN`, `READ_WORD_PROBLEM_EN`, `WORD_PROBLEMS_ADD_SUB`, `USE_TOOLS_DRAW_MODEL`,
+`EQUAL_SIGN_MEANING`, `RELATE_ADD_SUB`) — đúng thứ hai bé cần nhất ở lớp song ngữ; phần còn lại (`POSITION_WORDS`
+53 bài, `ORDINAL_NUMBERS` 40, `G.PATTERNS` 35, `NAME_3D_SHAPES` 35, `UNKNOWN_IN_EQUATION` 40) là CCSS lớp 1, nhiều
+khả năng nằm ở Volume 2. Chỉ **dời tuần** hai kỹ năng đang chen vào đầu năm: `G.PATTERNS` 4 → 15 và
+`ORDINAL_NUMBERS` 7 → 16, để ô "bài mới" luôn ưu tiên bài lớp đang học. Không retire bài nào.
+
+### e2e cho Chí Thanh
+
+Mã hình bé là **Chó · Sư tử · Voi · Rùa** (bộ hình của app không có con hổ — chủ dự án nói "Hổ", tôi hiểu là con
+sư tử 🦁 và chỉ thử một lần). Phiên thật **Xưởng Máy** của Chí Thanh gặp bài EDI-MN1 có ten-frame — xanh, ảnh
+`s1-xuong-may-ten-frame.png` giờ là phiên của bé. Phiên **thế giới cũ** của bé hôm nay đã bị chính lượt chạy trước
+chơi hết, nên test giờ **bỏ qua có lý do** khi quest trong ngày đã xong (chạy lại ngày mai); phiên thế giới cũ của
+Mai Thy đã xanh sáng nay.
+
+### Tồn đọng
+
+- Soạn bài luyện Unit 5–6 (chờ gật).
+- Vài chỗ ảnh mờ cần xem lại khi cầm sách giấy: ô nhiễu Exit Ticket tr.76, số vật trong tranh tr.64–65, câu thứ hai
+  của Math in Real Life tr.78 (bị ảnh bánh che).
+- Hỏi cô về **Volume 2** (học kỳ 2) để đặt tuần cho các kỹ năng còn lại.
+
+Phiên bản: **v0.1.3** (chưa nâng thêm; pha 13 chưa lên GitHub).
+
 ## Pha 13 — 17–18/09/2026 — English Maths bám MATH NOTES Grade 1 Vol 1 (EDI-MN1) — v0.1.3
 
 Trạng thái: **việc 1–5 xong trên máy dev, CHƯA deploy** (chờ QC). `pnpm lint` sạch, `pnpm test` xanh
