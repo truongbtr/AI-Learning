@@ -1,6 +1,6 @@
 "use client";
 
-import { joinSyllable, type Tone } from "@mtct/core";
+import { joinSyllable, type Tone, writtenSyllable } from "@mtct/core";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { SpeakerButton } from "../buttons";
@@ -257,7 +257,7 @@ export function BuildGame({ round, onMeeting, onDone }: SyllableGameProps<BuildR
               }
               data-testid="syl-word"
             >
-              {target.text}
+              {writtenSyllable(target.text, target.properName)}
             </motion.button>
           ) : null}
         </AnimatePresence>
@@ -342,7 +342,7 @@ export function BuildGame({ round, onMeeting, onDone }: SyllableGameProps<BuildR
         })}
         {builtText && (phase === "running" || phase === "again") ? (
           <span className="ml-2 font-black text-[40px] text-[#6B6B7B]" data-testid="syl-built">
-            = {builtText}
+            = {writtenSyllable(builtText, target.properName && builtText === target.text)}
           </span>
         ) : null}
       </div>

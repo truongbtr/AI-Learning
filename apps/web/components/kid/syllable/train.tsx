@@ -1,6 +1,6 @@
 "use client";
 
-import { joinSyllable, type Tone, TRAIN_GOAL } from "@mtct/core";
+import { joinSyllable, type Tone, TRAIN_GOAL, writtenSyllable } from "@mtct/core";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { BigButton, SpeakerButton } from "../buttons";
@@ -133,7 +133,9 @@ export function TrainGame({ round, onMeeting, onDone }: SyllableGameProps<TrainR
                   📦
                 </span>
               )}
-              <span className="font-black text-[26px] text-[#2B2B3A]">{s.text}</span>
+              <span className="font-black text-[26px] text-[#2B2B3A]">
+                {writtenSyllable(s.text, s.properName)}
+              </span>
             </motion.div>
           ))}
         </AnimatePresence>

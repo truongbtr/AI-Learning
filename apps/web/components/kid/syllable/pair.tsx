@@ -1,5 +1,6 @@
 "use client";
 
+import { writtenSyllable } from "@mtct/core";
 import { motion, useReducedMotion } from "framer-motion";
 import { useCallback, useEffect, useState } from "react";
 import { SpeakerButton } from "../buttons";
@@ -109,7 +110,7 @@ export function PairGame({ round, onMeeting, onDone }: SyllableGameProps<PairRou
               data-testid="syl-pair-card"
               data-card={card}
             >
-              {card}
+              {writtenSyllable(card, item.syllable.properName)}
             </motion.button>
           );
         })}

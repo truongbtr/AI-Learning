@@ -102,7 +102,7 @@ AiCall ; AiConfig ; PromptTemplate ; Setting
 
 **Word** *(pha 11, nội dung)* — từ tiếng Anh của Bến Cảng Từ: `stableId`, `en`, `vi`, `skillId`, `picture`, `phraseEn/Vi`, `unit?`, `isActive`, `batchId`. Nạp từ `content/lexicon/esl.json`.
 
-**Syllable** *(pha 12, nội dung, ADR-24)* — tiếng Việt của Xưởng Tiếng: `stableId` (`viet-ba-huyen`), `text`, `onset` (âm đầu, "" nếu không có), `rime` (vần, không dấu thanh), `tone` (`ngang|huyen|sac|hoi|nga|nang`), `picture?`, `meaning`, `skillId` (kỹ năng của phần muộn nhất), `lessonUnitCode`, `week`, `everyday` (tiếng hằng ngày, mời trước), `position`, `isActive`, `batchId`. Nạp từ `content/lexicon/viet.json`; không bao giờ xoá, chỉ tắt.
+**Syllable** *(pha 12, nội dung, ADR-24)* — tiếng Việt của Xưởng Tiếng: `stableId` (`viet-ba-huyen`), `text`, `onset` (âm đầu, "" nếu không có), `rime` (vần, không dấu thanh), `tone` (`ngang|huyen|sac|hoi|nga|nang`), `picture?`, `meaning`, `skillId` (kỹ năng của phần muộn nhất), `lessonUnitCode`, `week`, `everyday` (tiếng hằng ngày, mời trước), `properName` (tên riêng — tên hai bé — viết hoa chữ đầu trên màn hình; migration `20260917100000`), `position`, `isActive`, `batchId`. Nạp từ `content/lexicon/viet.json`; không bao giờ xoá, chỉ tắt.
 
 **LexemeProgress** *(pha 11 tên `WordProgress`, pha 12 mở rộng — ADR-22)* — **dữ liệu học của con**: `studentId`, `kind` (`word|syllable`), `lexemeId` (→ `Word.id` hoặc `Syllable.id` theo `kind`, không khoá ngoại), `box` (0–5, Leitner), `dueAt`, `seen`, `known` (số lần đúng), `streak`, `lastSeenAt`, `lastGame`. Duy nhất theo `(studentId, kind, lexemeId)`. Chỉ ghi khi con chơi; `ops/requests` không được chạm.
 

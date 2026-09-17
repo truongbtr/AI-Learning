@@ -1,6 +1,6 @@
 "use client";
 
-import { TONE_NAMES, type Tone } from "@mtct/core";
+import { TONE_NAMES, type Tone, writtenSyllable } from "@mtct/core";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useCallback, useEffect, useState } from "react";
 import { BigButton, SpeakerButton } from "../buttons";
@@ -161,7 +161,7 @@ export function ToneWheelGame({ round, onMeeting, onDone }: SyllableGameProps<To
               style={answered === "right" ? { boxShadow: "0 0 0 8px #34C759" } : undefined}
               data-testid="syl-tone-text"
             >
-              {notch.text}
+              {writtenSyllable(notch.text, item.syllable.properName)}
             </motion.span>
           </div>
         </div>

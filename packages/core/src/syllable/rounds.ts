@@ -43,6 +43,18 @@ export interface GameSyllable {
   meaning: string;
   picture: unknown | null;
   skillCode: string;
+  /** A given name ("thy"): written with a capital on screen, built from the usual lower-case tiles. */
+  properName?: boolean;
+}
+
+/**
+ * How a syllable is written on screen: a given name starts with a capital ("Thy", "Thanh"), as the
+ * children see their names written at school. Everything that compares syllables keeps `text`.
+ */
+export function writtenSyllable(text: string, properName?: boolean): string {
+  if (!properName || text.length === 0) return text;
+  const [first = "", ...rest] = text.normalize("NFC");
+  return first.toLocaleUpperCase("vi-VN") + rest.join("");
 }
 
 export type Rng = () => number;

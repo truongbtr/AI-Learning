@@ -1,6 +1,6 @@
 "use client";
 
-import { matchReadAloud } from "@mtct/core";
+import { matchReadAloud, writtenSyllable } from "@mtct/core";
 import { motion, useReducedMotion } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { BigButton, SpeakerButton } from "../buttons";
@@ -138,7 +138,7 @@ export function ReadGame({ round, onMeeting, onDone }: SyllableGameProps<ReadRou
           className="rounded-[34px] bg-white px-8 py-3 font-black text-[96px] text-[#2B2B3A] leading-none shadow-[0_14px_30px_-18px_rgba(43,43,58,0.55)]"
           style={heard ? { boxShadow: "0 0 0 8px #34C759" } : undefined}
         >
-          {item.text}
+          {writtenSyllable(item.text, item.properName)}
         </motion.span>
         <SpeakerButton text={item.text} lang="vi-VN" size={84} />
       </div>

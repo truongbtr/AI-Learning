@@ -16,6 +16,7 @@ import {
   toneRound,
   trainRound,
   unlockedGames,
+  writtenSyllable,
 } from "./rounds";
 
 /**
@@ -297,5 +298,16 @@ describe("which games are open, and which two a station plays", () => {
     for (let day = 0; day < 10; day++)
       for (const station of [0, 1])
         for (const g of stationGames(open, day, station)) expect(open).toContain(g);
+  });
+});
+
+describe("a given name on screen", () => {
+  it("starts with a capital, and nothing else changes", () => {
+    expect(writtenSyllable("thy", true)).toBe("Thy");
+    expect(writtenSyllable("thanh", true)).toBe("Thanh");
+    expect(writtenSyllable("đạt", true)).toBe("Đạt");
+    expect(writtenSyllable("ông", true)).toBe("Ông");
+    expect(writtenSyllable("thanh")).toBe("thanh");
+    expect(writtenSyllable("thanh", false)).toBe("thanh");
   });
 });

@@ -1,6 +1,6 @@
 # ADR-24 — Xưởng Tiếng: âm ra trước, chữ là kết quả
 
-**Ngày:** 16/09/2026 · **Pha:** 12 (Xưởng Tiếng) · **Trạng thái:** đã chốt, trừ nhịp đánh vần (chờ cô giáo xác nhận)
+**Ngày:** 16/09/2026 · **Pha:** 12 (Xưởng Tiếng) · **Trạng thái:** đã chốt (nhịp đánh vần được chủ dự án xác nhận 16/09/2026)
 
 ## Bối cảnh
 
@@ -30,6 +30,10 @@ s/x, ng/ngh, c/k, hỏi/ngã). Đó là phân biệt hình, không phải đọc
 - **30 tiếng đầu** là tiếng con nghe hằng ngày (`hangNgay: true`): bà, ba, mẹ, bé, cá, gà, nhà, **thy**,
   **thanh**, ông, cô, chú, dì, cậu, anh, chị, em, bố, bạn, cơm, sữa, mèo, chó, sách, vở, bút, ghế, nhớ,
   yêu, vui. Còn lại theo thứ tự SGK.
+- **Tên hai bé** (`thy`, `thanh`) mang `tenRieng: true` (chủ dự án, 17/09/2026: "Tên là Mai Thy và Chí
+  Thanh"): `tieng` vẫn viết thường để ba mảnh ghép như mọi tiếng, còn trên màn hình trò viết hoa chữ đầu
+  ("Thy", "Thanh") qua `writtenSyllable()`; nghĩa ghi đủ tên "Mai Thy", "Chí Thanh". Trò *Cặp dễ lẫn* và
+  *Bánh xe thanh* viết hoa **mọi** thẻ của lượt đó, để chữ hoa không làm lộ đáp án.
 - **Bài và tuần suy ra, không gõ tay**: bài của một tiếng = bài **muộn nhất** trong ba phần (âm đầu, vần,
   thanh) theo bảng bài học của SGK Tiếng Việt 1 tập một (Kết nối tri thức); tuần = `(bài − 1) / 5 + 1`
   (khớp `expectedWeek` của skill map). `skillCode` là kỹ năng của chính phần muộn nhất đó.
@@ -70,7 +74,7 @@ không. Vì vậy mp3 chia hai đợt (`--viet-tts`):
 | Đợt | Gồm | Số câu | Ký tự |
 |---|---|---|---|
 | `pieces` (đã sinh trên máy dev) | 125 vần, 6 tên thanh, 707 tiếng, các bước ghép âm đầu + vần | 1.237 | 3.971 |
-| `rhythm` (chờ xác nhận) | 27 âm đầu đọc thành âm ("bờ"), cả chuỗi đánh vần của từng tiếng | 723 | 16.208 |
+| `rhythm` (đã xác nhận 16/09, đã sinh trên production) | 27 âm đầu đọc thành âm ("bờ"), cả chuỗi đánh vần của từng tiếng | 723 | 16.208 |
 | tổng | | 1.957 | 20.172 |
 
 Bộ đệm mp3 theo nội dung câu, nên đổi nhịp chỉ **thêm** câu mới; đợt 1 vẫn dùng được.

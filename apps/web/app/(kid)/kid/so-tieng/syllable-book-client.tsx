@@ -1,6 +1,6 @@
 "use client";
 
-import { cadenceLine, type WorkshopProgress } from "@mtct/core";
+import { cadenceLine, type WorkshopProgress, writtenSyllable } from "@mtct/core";
 import type { SyllableBook } from "@mtct/db";
 import { useEffect } from "react";
 import { BigButton, SpeakerButton } from "@/components/kid/buttons";
@@ -69,7 +69,7 @@ export function SyllableBookClient({
         title: group.nameVi,
         cards: group.syllables.map((s) => ({
           id: s.stableId,
-          big: s.text,
+          big: writtenSyllable(s.text, s.properName),
           small: s.meaning,
           picture: s.picture ?? undefined,
           say: () => void speak(s.text, { lang: "vi-VN" }),

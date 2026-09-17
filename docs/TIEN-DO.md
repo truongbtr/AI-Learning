@@ -152,8 +152,13 @@ Tổng TTS cho cả hai đợt ≤ 20.172 ký tự — hạn mức tháng 9 sau 
    → **Đã trả lời 16/09: đúng nhịp này.** `cadence()` giữ nguyên.
 2. `nham_am_dau` trong bộ mã lỗi đang gắn môn **ESL**, nhưng pha này (và gói `HV.DANH_VAN_TIENG` có sẵn)
    dùng nó cho tiếng Việt như đề bài dặn. Có muốn tách một mã riêng cho tiếng Việt không?
+   → **Đã trả lời 17/09: tách.** Mã mới `nham_am_dau_viet`; `nham_am_dau` chỉ còn cho tiếng Anh; 1.026 bài
+   tiếng Việt đổi mã (nạp lại, trạng thái bài giữ nguyên); bằng chứng cũ giữ nguyên mã cũ.
 3. Tên hai bé trong kho tiếng viết thường ("thy", "thanh") để lắp được bằng mảnh chữ thường. Được không,
    hay muốn trò hiện chữ hoa riêng cho tên?
+   → **Đã trả lời 17/09: "Tên là Mai Thy và Chí Thanh".** Hai tiếng mang `tenRieng: true` (cột
+   `Syllable.properName`, migration `20260917100000_syllable_proper_name`); trò viết "Thy", "Thanh", mảnh
+   ghép vẫn chữ thường; nghĩa ghi đủ tên.
 4. Có muốn đặt `E2E_ADMIN_PASSWORD` trong `.env` máy dev để ba test bàn thử (và e2e pha 11) chạy được?
 
 ## Pha 12 — 16/09/2026 — Bản đồ thành phố kiểu vành đai, sông và bến cảng, giao thông ngẫu nhiên

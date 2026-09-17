@@ -61,6 +61,19 @@ describe("syllables, the Leitner ladder and the evidence (integration, needs vie
     expect(picked.filter((s) => home.has(s.id)).length).toBeGreaterThanOrEqual(3);
   });
 
+  it("marks only the children's names as proper names", async (ctx) => {
+    needDb(ctx);
+    const names = await testDb().syllable.findMany({
+      where: { properName: true, isActive: true },
+      select: { stableId: true, text: true },
+      orderBy: { stableId: "asc" },
+    });
+    expect(names).toEqual([
+      { stableId: "viet-thanh-ngang", text: "thanh" },
+      { stableId: "viet-thy-ngang", text: "thy" },
+    ]);
+  });
+
   it("judges a build piece by piece, whatever the device claims", () => {
     const ba = { text: "bà", onset: "b", rime: "a", tone: "huyen" as const };
     expect(judgeSyllable(ba, { game: "build", onset: "b", rime: "a", tone: "huyen" })).toEqual({

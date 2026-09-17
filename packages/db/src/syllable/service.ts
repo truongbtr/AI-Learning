@@ -75,6 +75,7 @@ function toGame(row: {
   meaning: string;
   picture: unknown;
   week: number;
+  properName: boolean;
   skill: { code: string };
 }): Omit<PlayableSyllable, "box" | "isNew"> {
   return {
@@ -88,6 +89,7 @@ function toGame(row: {
     picture: row.picture ?? null,
     skillCode: row.skill.code,
     week: row.week,
+    properName: row.properName,
   };
 }
 
@@ -103,6 +105,7 @@ const SYLLABLE_SELECT = {
   week: true,
   everyday: true,
   position: true,
+  properName: true,
   skill: { select: { code: true } },
 } as const;
 
@@ -418,6 +421,7 @@ export async function syllablesMetSince(db: Db, studentId: string, since: Date):
 export interface SyllableBookEntry {
   stableId: string;
   text: string;
+  properName: boolean;
   meaning: string;
   picture: unknown;
   box: number;
@@ -448,6 +452,7 @@ export async function syllableBook(db: Db, studentId: string): Promise<SyllableB
       id: true,
       stableId: true,
       text: true,
+      properName: true,
       meaning: true,
       picture: true,
       skill: { select: { code: true, nameVi: true, order: true } },
@@ -474,6 +479,7 @@ export async function syllableBook(db: Db, studentId: string): Promise<SyllableB
     g.syllables.push({
       stableId: r.stableId,
       text: r.text,
+      properName: r.properName,
       meaning: r.meaning,
       picture: r.picture,
       box,

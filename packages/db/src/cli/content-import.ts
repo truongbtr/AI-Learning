@@ -139,6 +139,7 @@ async function main() {
         lessonUnitCode: s.lessonUnitCode,
         week: s.tuanSGK,
         everyday: s.hangNgay === true,
+        properName: s.tenRieng === true,
         position,
       })),
       { dryRun, sourceDir: "content/lexicon/viet.json", note },

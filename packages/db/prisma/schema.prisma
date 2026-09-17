@@ -1661,6 +1661,8 @@ model Syllable {
   week           Int
   /// Tiếng con nghe hằng ngày — mời trước, trước cả thứ tự sách.
   everyday       Boolean       @default(false)
+  /// Tên riêng (tên hai bé): trò viết hoa chữ đầu ("Thy"), mảnh ghép vẫn là chữ thường.
+  properName     Boolean       @default(false)
   /// Vị trí trong file: nhóm hằng ngày trước, rồi thứ tự sách.
   position       Int           @default(0)
   isActive       Boolean       @default(true)

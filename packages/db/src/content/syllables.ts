@@ -25,6 +25,8 @@ export interface SyllableRow {
   lessonUnitCode: string;
   week: number;
   everyday: boolean;
+  /** A given name: the games write it with a capital ("Thy"). */
+  properName: boolean;
   position: number;
 }
 
@@ -58,6 +60,7 @@ function same(a: SyllableRow, skillId: string, b: Stored): boolean {
     a.lessonUnitCode === b.lessonUnitCode &&
     a.week === b.week &&
     a.everyday === b.everyday &&
+    a.properName === b.properName &&
     a.position === b.position &&
     skillId === b.skillId &&
     JSON.stringify(a.picture ?? null) === JSON.stringify(b.picture ?? null)
@@ -126,6 +129,7 @@ export async function importSyllables(
       lessonUnitCode: row.lessonUnitCode,
       week: row.week,
       everyday: row.everyday,
+      properName: row.properName,
       position: row.position,
     };
     await db.syllable.upsert({

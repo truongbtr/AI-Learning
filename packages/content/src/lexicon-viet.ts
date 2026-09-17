@@ -38,6 +38,11 @@ export const vietSyllableSchema = z.object({
   tuanSGK: z.number().int().min(1).max(35),
   /** One of the syllables a child hears every day: offered first, before the book order. */
   hangNgay: z.boolean().optional(),
+  /**
+   * A given name (the children's: "thy", "thanh"). `tieng` stays lower-case so the three tiles build
+   * it like any other syllable; the games write it with a capital ("Thy").
+   */
+  tenRieng: z.boolean().optional(),
 });
 
 export const vietOnsetSchema = z.object({
