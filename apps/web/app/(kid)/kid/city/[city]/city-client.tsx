@@ -17,6 +17,7 @@ import { BigButton } from "@/components/kid/buttons";
 import { CityCanvas, type CityOverlayItem } from "@/components/kid/city/city-canvas";
 import { ExercisePlay } from "@/components/kid/exercise-play";
 import { fireConfetti } from "@/components/kid/feedback";
+import { FitToHeight } from "@/components/kid/fit-to-height";
 import { Mascot, type MascotState } from "@/components/kid/mascot";
 import { playSound, preloadSounds } from "@/components/kid/sound";
 import { StarPocket } from "@/components/kid/stars";
@@ -818,15 +819,17 @@ export function CityClient({
         {panel && item ? (
           <motion.section
             key="panel"
-            className="fixed inset-x-0 bottom-0 z-40 mx-auto flex h-[76dvh] w-full max-w-5xl flex-col overflow-y-auto rounded-t-[36px] bg-[#FFFBF2] px-4 pt-3 pb-4 shadow-[0_-20px_60px_-20px_rgba(31,59,99,0.45)]"
+            // Tall on purpose: the question and every answer must be on screen at once, even on a
+            // low-resolution laptop (owner, 17/09/2026) — a short screen gets almost all of it.
+            className="fixed inset-x-0 bottom-0 z-40 mx-auto flex h-[90dvh] w-full max-w-6xl flex-col overflow-y-auto rounded-t-[36px] bg-[#FFFBF2] px-4 pt-3 pb-4 shadow-[0_-20px_60px_-20px_rgba(31,59,99,0.45)] [@media(max-height:820px)]:h-[calc(100dvh-8px)] [@media(max-height:820px)]:pt-2 [@media(max-height:820px)]:pb-2"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             exit={{ y: "100%" }}
             transition={{ type: "spring", stiffness: 240, damping: 30 }}
             data-testid="exercise-panel"
           >
-            <div className="mx-auto mb-2 h-2 w-16 shrink-0 rounded-full bg-[#e3d9c4]" />
-            <div className="mb-2 flex shrink-0 items-center justify-between gap-3">
+            <div className="mx-auto mb-2 h-2 w-16 shrink-0 rounded-full bg-[#e3d9c4] [@media(max-height:820px)]:mb-1" />
+            <div className="mb-2 flex shrink-0 items-center justify-between gap-3 [@media(max-height:820px)]:mb-1">
               <span className="rounded-full bg-white px-4 py-2 font-extrabold text-[22px] text-[#1f3b63] shadow-sm">
                 {panel.station.index < 0 ? "📜 Bài cô giao" : `⭐ ${info.name}`} · {panel.at + 1}/
                 {panel.queue.length}
@@ -843,13 +846,14 @@ export function CityClient({
                 ))}
               </div>
             </div>
-            <ExercisePlay
-              key={item.order}
-              session={session}
-              item={item}
-              onStars={() => setPocket((p) => p + 1)}
-              onFinished={onExerciseDone}
-            />
+            <FitToHeight key={item.order}>
+              <ExercisePlay
+                session={session}
+                item={item}
+                onStars={() => setPocket((p) => p + 1)}
+                onFinished={onExerciseDone}
+              />
+            </FitToHeight>
           </motion.section>
         ) : null}
       </AnimatePresence>

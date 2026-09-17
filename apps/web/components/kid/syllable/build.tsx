@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { SpeakerButton } from "../buttons";
 import { Picture } from "../exercise/picture";
+import { useShortScreen } from "../fit-to-height";
 import { playSound } from "../sound";
 import { SPRING } from "../tokens";
 import { useSpeak } from "../use-speak";
@@ -43,6 +44,7 @@ export function BuildGame({ round, onMeeting, onDone }: SyllableGameProps<BuildR
   const reduce = useReducedMotion();
   const { speak } = useSpeak();
   const cadence = useCadence();
+  const short = useShortScreen();
   const items = round.items;
   const [index, setIndex] = useState(0);
   const [placed, setPlaced] = useState<Placed>({});
@@ -213,7 +215,7 @@ export function BuildGame({ round, onMeeting, onDone }: SyllableGameProps<BuildR
 
   return (
     <div
-      className="flex w-full flex-col items-center gap-4"
+      className="flex w-full flex-col items-center gap-4 [@media(max-height:820px)]:gap-2"
       data-testid="syl-build"
       data-game={round.game}
       data-target={target.text}
@@ -232,9 +234,9 @@ export function BuildGame({ round, onMeeting, onDone }: SyllableGameProps<BuildR
             initial={reduce ? false : { scale: 0.6, opacity: 0 }}
             animate={{ scale: phase === "right" && !reduce ? [1, 1.18, 1] : 1, opacity: 1 }}
             transition={SPRING.pop}
-            className="flex h-[128px] w-[128px] items-center justify-center rounded-[32px] bg-white shadow-[0_14px_30px_-18px_rgba(43,43,58,0.55)]"
+            className="flex h-[128px] w-[128px] items-center justify-center rounded-[32px] [@media(max-height:820px)]:h-[96px] [@media(max-height:820px)]:w-[96px] bg-white shadow-[0_14px_30px_-18px_rgba(43,43,58,0.55)]"
           >
-            <Picture image={target.picture as never} size={104} alt={target.meaning} />
+            <Picture image={target.picture as never} size={short ? 76 : 104} alt={target.meaning} />
           </motion.div>
         ) : null}
         <div className="flex flex-col items-center gap-1">
@@ -348,7 +350,7 @@ export function BuildGame({ round, onMeeting, onDone }: SyllableGameProps<BuildR
       </div>
 
       {/* the conveyor belt */}
-      <div className="w-full overflow-hidden rounded-[30px] bg-[#E9EEF5] py-4 shadow-[inset_0_6px_0_#D5DDE8]">
+      <div className="w-full overflow-hidden rounded-[30px] bg-[#E9EEF5] py-4 shadow-[inset_0_6px_0_#D5DDE8] [@media(max-height:820px)]:py-2">
         <motion.div
           className="flex flex-wrap items-center justify-center gap-3 px-3"
           animate={reduce || held ? { x: 0 } : { x: [0, -14, 0, 14, 0] }}

@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { SpeakerButton } from "../buttons";
+import { useShortScreen } from "../fit-to-height";
 import { playSound } from "../sound";
 import { SPRING, STAGGER } from "../tokens";
 import { useSpeak } from "../use-speak";
@@ -36,6 +37,7 @@ function ChoiceCard({
   language: "vi" | "en";
 }) {
   const reduce = useReducedMotion();
+  const short = useShortScreen();
   const ref = useRef<HTMLButtonElement>(null);
   const ring =
     state === "correct"
@@ -63,11 +65,11 @@ function ChoiceCard({
             : {}
       }
       transition={state ? { duration: 0.45 } : SPRING.press}
-      className={`flex min-h-[152px] min-w-[152px] flex-1 flex-col items-center justify-center gap-2 rounded-[32px] bg-white px-6 py-5 shadow-[0_14px_34px_-18px_rgba(43,43,58,0.55)] ${ring}`}
+      className={`flex min-h-[152px] min-w-[152px] flex-1 flex-col items-center justify-center gap-2 rounded-[32px] bg-white px-6 py-5 shadow-[0_14px_34px_-18px_rgba(43,43,58,0.55)] [@media(max-height:820px)]:min-h-[116px] [@media(max-height:820px)]:py-3 ${ring}`}
       data-testid="choice"
       data-picked={picked ? "true" : undefined}
     >
-      {image ? <Picture image={image} size={128} /> : null}
+      {image ? <Picture image={image} size={short ? 92 : 128} /> : null}
       {label ? (
         <span className="font-extrabold text-[34px] text-[#2B2B3A] leading-tight">{label}</span>
       ) : null}
@@ -129,7 +131,10 @@ export function ChoiceExercise({
       mascot={mascot}
       extraTop={
         listening ? (
-          <div className="flex flex-col items-center gap-2" data-testid="listen-again">
+          <div
+            className="flex flex-col items-center gap-2 [@media(max-height:820px)]:flex-row [@media(max-height:820px)]:gap-4"
+            data-testid="listen-again"
+          >
             <SpeakerButton text={heard} lang={lang} clip={spec.listenTarget?.audioKey} size={96} />
             <span className="font-bold text-[20px] text-[#6B6B7B]">Bấm để nghe lại</span>
           </div>

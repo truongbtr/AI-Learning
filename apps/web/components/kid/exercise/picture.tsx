@@ -31,13 +31,44 @@ export function Picture({
   size,
   className = "",
   alt,
+  repeat = 1,
 }: {
   image: { kind: string; value: string; labelVi?: string };
   /** Pixel size of one picture (square). */
   size: number;
   className?: string;
   alt?: string;
+  /**
+   * Draw the picture this many times — "Trong tranh có mấy ngôi sao?" with `repeat: 9` must show
+   * nine stars, not one (owner, 17/09/2026: a single star with answers 8, 9, 10). Laid out in rows
+   * of five like a ten-frame, so a six-year-old can count them.
+   */
+  repeat?: number;
 }) {
+  const count = Math.max(1, Math.min(20, Math.floor(repeat)));
+  if (count > 1) {
+    const each = Math.round(size * (count <= 3 ? 0.62 : 0.5));
+    const rows: number[][] = [];
+    for (let i = 0; i < count; i += 5)
+      rows.push(Array.from({ length: Math.min(5, count - i) }, (_, k) => i + k));
+    return (
+      <span
+        className={`inline-flex flex-col items-center gap-2 ${className}`}
+        role="img"
+        aria-label={`${count} ${alt ?? image.labelVi ?? ""}`.trim()}
+        data-testid="picture-repeat"
+        data-count={count}
+      >
+        {rows.map((row) => (
+          <span key={`row-${row[0]}`} className="flex items-center justify-center gap-2">
+            {row.map((n) => (
+              <Picture key={`copy-${n}`} image={image} size={each} alt="" />
+            ))}
+          </span>
+        ))}
+      </span>
+    );
+  }
   const label = alt ?? image.labelVi ?? "";
   const asset = imageSrc(image.value, image.kind);
   if (asset) {

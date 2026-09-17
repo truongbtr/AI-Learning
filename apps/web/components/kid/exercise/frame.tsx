@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { HintBulb, SpeakerButton } from "../buttons";
+import { useShortScreen } from "../fit-to-height";
 import { Mascot } from "../mascot";
 import { SPRING, STAGGER } from "../tokens";
 import { Picture } from "./picture";
@@ -37,14 +38,16 @@ export function ExerciseFrame({
 }) {
   const text = fillPlaceholders(spec.prompt.text, vars);
   const img = spec.prompt.image;
+  // a low-resolution screen gets a tighter frame, so the answers stay in sight
+  const short = useShortScreen();
 
   return (
-    <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-5">
+    <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-5 [@media(max-height:820px)]:gap-3">
       <motion.div
         initial={{ opacity: 0, y: 18, scale: 0.97 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={SPRING.pop}
-        className="flex w-full items-center gap-4 rounded-[36px] bg-white/94 px-6 py-5 shadow-[0_18px_46px_-24px_rgba(43,43,58,0.55)]"
+        className="flex w-full items-center gap-4 rounded-[36px] bg-white/94 px-6 py-5 shadow-[0_18px_46px_-24px_rgba(43,43,58,0.55)] [@media(max-height:820px)]:py-2"
         data-testid="exercise-prompt"
       >
         <SpeakerButton
@@ -53,7 +56,7 @@ export function ExerciseFrame({
           clip={spec.prompt.audioKey}
           auto
         />
-        <p className="min-w-0 flex-1 font-extrabold text-[30px] text-[#2B2B3A] leading-snug">
+        <p className="min-w-0 flex-1 font-extrabold text-[30px] text-[#2B2B3A] leading-snug [@media(max-height:820px)]:text-[26px]">
           {text}
         </p>
         <HintBulb onHint={onHint} used={hintsUsed} total={spec.hints.length} disabled={disabled} />
@@ -67,7 +70,7 @@ export function ExerciseFrame({
           className="flex items-center justify-center"
           data-testid="prompt-image"
         >
-          <Picture image={img} size={208} />
+          <Picture image={img} size={short ? 136 : 208} repeat={img.repeat} />
         </motion.div>
       ) : null}
 
@@ -84,7 +87,12 @@ export function ExerciseFrame({
       </motion.div>
 
       <div className="pointer-events-none fixed right-4 bottom-4 opacity-95 sm:right-8">
-        <Mascot name={mascot} state={disabled ? "cheer" : "think"} size={132} interactive />
+        <Mascot
+          name={mascot}
+          state={disabled ? "cheer" : "think"}
+          size={short ? 88 : 132}
+          interactive
+        />
       </div>
     </div>
   );
