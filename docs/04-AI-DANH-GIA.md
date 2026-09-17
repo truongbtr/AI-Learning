@@ -170,7 +170,7 @@ Khung `ASSIST_KID`: system khoá chủ đề (5 môn, bài đang làm), trả l�
 | Dạng | Cách chấm | Điểm |
 |---|---|---|
 | MCQ, LISTEN_CHOOSE, COUNT_TAP, DRAG_DROP, MINI_STORY | So khớp cục bộ với answerKey | 1 / 0 (DRAG_DROP: tỉ lệ vị trí đúng; thẻ trông giống hệt nhau — chấm để kéo vào ten-frame — đổi chỗ được, ADR-26) |
-| READ_ALOUD | STT → so khớp từng từ với `readTarget.words` (chuẩn hoá, cho phép sai âm nhẹ theo bảng đồng âm), tính `accuracy`, `wordsPerMinute`; nếu accuracy 0.5–0.85 → gọi GRADE (Haiku) để phân biệt lỗi phát âm/bỏ từ | accuracy |
+| READ_ALOUD | STT → so khớp từng từ với `readTarget.words` (chuẩn hoá, cho phép sai âm nhẹ theo bảng đồng âm), tính `accuracy`, `wordsPerMinute`. **Tiếng Việt**: ≥ 0.85 qua, 0.5–0.85 để ba mẹ nghe rồi quyết. **Tiếng Anh (ADR-27, 18/09/2026)**: qua ở **0.60**, khớp gần đúng 1–2 chữ cái, không bao giờ chờ ba mẹ; màn của con hiện câu máy nghe được và % khớp sau mỗi lần đọc | accuracy (= % khớp) |
 | SPEAK_ANSWER | STT → GRADE với rubric → `score`, `feedback`, `keyIdeasHit[]` | 0–1 |
 | WRITE_PHOTO | Ảnh → GRADE (Sonnet vision) với rubric → `score`, `feedback`, `issues[]` (ví dụ "chữ b viết ngược") | 0–1, trạng thái `PENDING` cho tới khi chấm xong; phụ huynh có thể sửa điểm |
 | TRACE | So khớp nét vẽ với đường chuẩn (DTW đơn giản, ngưỡng rộng); v1 chỉ *khuyến khích*, trọng số bằng chứng 0.3 | 0–1 |

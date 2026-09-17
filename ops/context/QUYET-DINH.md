@@ -33,6 +33,7 @@
 - `docs/adr/ADR-23-ban-do-vanh-dai.md` — ADR-23 — Bản đồ thành phố kiểu vành đai, đồ thị đường, và ngân sách cuối năm
 - `docs/adr/ADR-24-xuong-tieng-am-truoc-chu-sau.md` — ADR-24 — Xưởng Tiếng: âm ra trước, chữ là kết quả
 - `docs/adr/ADR-25-bo-bai-viet-roi-chup.md` — ADR-25 — Không giao bài "viết vào vở rồi chụp ảnh" trong phiên học
+- `docs/adr/ADR-26-mo-hinh-toan-trong-de.md` — ADR-26 — Mô hình toán của sách là hình trong đề; thẻ kéo giống hệt nhau đổi chỗ được
 
 ## Hai thứ bị đảo ngược, đừng đọc bản cũ
 

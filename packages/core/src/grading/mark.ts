@@ -261,10 +261,13 @@ function markReadAloud(key: AnswerBundle, res: AttemptResponse, lang: "vi" | "en
     correct: read.verdict === "good",
     outcome:
       read.verdict === "good" ? "CORRECT" : read.verdict === "partial" ? "PARTIAL" : "INCORRECT",
+    // The score *is* the share that matched: an English reading is marked by how much of it came
+    // back, not by all-or-nothing (owner, 18/09/2026, ADR-27).
     score: read.accuracy,
     errorCode,
-    // a partial reading is the case docs/04 §7 sends to a human, not to a guess
-    pending: read.verdict === "partial",
+    // A Vietnamese reading in the grey zone is the case docs/04 §7 sends to a human. An English one
+    // never waits: it is scored where it landed and the child moves on.
+    pending: lang !== "en" && read.verdict === "partial",
     readAloud: read,
   };
 }

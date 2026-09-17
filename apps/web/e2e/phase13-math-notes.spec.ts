@@ -15,6 +15,7 @@ import {
  * Needs the dev server on the old world (`web-world`, port 5002) and content imported; the city
  * test turns the cities on for this browser with the `mtct_ui` cookie (pha 10b).
  *
+ *   pnpm --filter @mtct/core build   # the bench bundles the built core
  *   $env:E2E_BASE_URL="http://localhost:5002"; $env:E2E_CHANNEL="msedge"
  *   pnpm --filter @mtct/web exec playwright test e2e/phase13-math-notes.spec.ts
  *
@@ -198,7 +199,7 @@ async function tapBudget(page: Page, label: string, root = "body") {
   );
 }
 
-async function openBench(page: Page, ex: ExerciseDef) {
+async function openBench(page: Page, ex: ExerciseDef, opts: { hears?: string } = {}) {
   await page.goto("/login");
   const head = await page.evaluate(() =>
     [...document.querySelectorAll('link[rel="stylesheet"], style')]
@@ -214,6 +215,26 @@ async function openBench(page: Page, ex: ExerciseDef) {
     },
     toExerciseSpec(ex, "EMATH") as unknown as Record<string, unknown>,
   );
+  // a fake recogniser, so a reading question can be played in a headless browser
+  if (opts.hears !== undefined)
+    await page.evaluate((said) => {
+      class FakeRecognition {
+        lang = "";
+        continuous = false;
+        interimResults = false;
+        onresult: ((e: unknown) => void) | null = null;
+        onerror: (() => void) | null = null;
+        onend: (() => void) | null = null;
+        start() {
+          setTimeout(() => {
+            this.onresult?.({ results: { 0: { 0: { transcript: said } } } });
+            this.onend?.();
+          }, 50);
+        }
+        stop() {}
+      }
+      (window as unknown as { SpeechRecognition: unknown }).SpeechRecognition = FakeRecognition;
+    }, opts.hears);
   await page.addScriptTag({ content: bundle });
   await expect(page.getByTestId("bench")).toBeVisible();
   if (await visible(page, "model-first")) {
@@ -613,4 +634,34 @@ test("a pattern question draws its pattern", async ({ page }) => {
   await page.getByTestId("drop-zone").first().click();
   await expect(page.getByTestId("drag-submit")).toBeEnabled();
   await expect(page.getByTestId("drag-tray").getByTestId("drag-item")).toHaveCount(2);
+});
+
+/**
+ * Owner, 18/09/2026: an English reading should be scored by how much of it matched, show what was
+ * heard and the percentage every time, and pass without being perfect.
+ */
+test("a reading shows what it heard and its % match, and passes below 100%", async ({ page }) => {
+  const reading = findExercise(
+    "an English sentence to read",
+    (ex) => ex.type === "READ_ALOUD" && ex.readTarget?.words.length === 5,
+  );
+  await page.setViewportSize({ width: 1280, height: 720 });
+  // the recogniser drops one word of the five: 80% of the sentence came back
+  const said = (reading.readTarget?.words ?? []).slice(0, 4).join(" ").toLowerCase();
+  await openBench(page, reading, { hears: said });
+
+  const mic = page.getByTestId("mic-button");
+  await mic.dispatchEvent("pointerdown");
+  await page.waitForTimeout(400);
+  await mic.dispatchEvent("pointerup");
+
+  const score = page.getByTestId("read-score");
+  await expect(score).toBeVisible();
+  await expect(score).toHaveAttribute("data-match", "80");
+  await expect(page.getByTestId("read-heard")).toContainText(said);
+  // 80% is not perfect and is still a pass: the button sends it as done
+  await expect(page.getByTestId("read-submit")).toContainText("Xong");
+  await kidSafe(page);
+  await tapBudget(page, "read aloud @ 1280x720");
+  await page.screenshot({ path: join(SHOTS, "b9-doc-to-phan-tram.png") });
 });

@@ -257,3 +257,33 @@ describe("look-alike drag cards (pha 13: dots into a ten-frame)", () => {
     expect(markAttempt("DRAG_DROP", plain, { placements: { z: ["b"] } }).correct).toBe(false);
   });
 });
+
+describe("an English reading is marked by how much matched", () => {
+  const key = { value: { words: ["Ten", "ones", "is", "one", "ten"] } };
+
+  it("passes at 60% and never waits for a grown-up", () => {
+    const m = markAttempt(
+      "READ_ALOUD",
+      key,
+      { heard: "ten ones is one", seconds: 4 },
+      { lang: "en" },
+    );
+    expect(m.score).toBeCloseTo(0.8);
+    expect(m.correct).toBe(true);
+    expect(m.pending).toBe(false);
+  });
+
+  it("keeps the score when it lands below the bar, instead of holding the attempt", () => {
+    const m = markAttempt("READ_ALOUD", key, { heard: "ten", seconds: 3 }, { lang: "en" });
+    expect(m.score).toBeCloseTo(0.2); // one word of five came back
+    expect(m.outcome).toBe("INCORRECT");
+    expect(m.pending).toBe(false);
+    expect(m.errorCode).toBe("doc_bo_tu_tieng_anh");
+  });
+
+  it("leaves Vietnamese readings to a grown-up as before", () => {
+    const vi = { value: { words: ["bà", "có", "cá"] } };
+    const m = markAttempt("READ_ALOUD", vi, { heard: "bà có", seconds: 5 }, { lang: "vi" });
+    expect(m.pending).toBe(true);
+  });
+});

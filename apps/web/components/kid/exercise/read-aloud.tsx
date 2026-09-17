@@ -1,6 +1,6 @@
 "use client";
 
-import { matchReadAloud, type ReadAloudResult } from "@mtct/core";
+import { matchReadAloud, PASS_ACCURACY, type ReadAloudResult } from "@mtct/core";
 import { motion, useReducedMotion } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { SpeakerButton } from "../buttons";
@@ -63,6 +63,11 @@ export function ReadAloudExercise({
   const started = useRef(0);
   const recognition = useRef<Recognition | null>(null);
   const reduce = useReducedMotion();
+
+  const match = result ? Math.round(result.accuracy * 100) : 0;
+  // English passes well below a perfect reading; Vietnamese keeps the stricter bar (ADR-27)
+  const passed =
+    result != null && result.accuracy >= PASS_ACCURACY[spec.language === "en" ? "en" : "vi"];
 
   const words = spec.readTarget?.words ?? [];
   const text = spec.readTarget?.text ?? words.join(" ");
@@ -204,9 +209,36 @@ export function ReadAloudExercise({
         ) : null}
 
         {heard ? (
-          <p className="text-[20px] text-[#6B6B7B]">
-            Mình nghe được: <span className="font-bold">“{heard}”</span>
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex w-full max-w-3xl flex-col items-center gap-2 rounded-[28px] bg-white/90 px-6 py-4"
+            data-testid="read-heard"
+          >
+            <p className="text-center text-[20px] text-[#6B6B7B]">
+              Mình nghe được: <span className="font-bold text-[#2B2B3A]">“{heard}”</span>
+            </p>
+            {result ? (
+              <div className="flex items-center gap-3" data-testid="read-score" data-match={match}>
+                <div className="h-4 w-48 overflow-hidden rounded-full bg-[#EDE6D8]">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: `${match}%` }}
+                    transition={{ duration: 0.6 }}
+                    className={`h-full rounded-full ${passed ? "bg-[#34C759]" : "bg-[#FFB020]"}`}
+                  />
+                </div>
+                <span className="font-extrabold text-[24px] text-[#2B2B3A]">{match}%</span>
+              </div>
+            ) : null}
+            <p className="text-center font-bold text-[20px] text-[#6B6B7B]">
+              {result
+                ? passed
+                  ? "Giống lắm rồi! Gửi được nhé."
+                  : "Đọc thêm lần nữa cho giống hơn, hoặc gửi luôn cũng được."
+                : ""}
+            </p>
+          </motion.div>
         ) : null}
 
         {result ? (
@@ -225,7 +257,7 @@ export function ReadAloudExercise({
             className="min-h-[84px] rounded-[34px] bg-[#34C759] px-10 font-extrabold text-[26px] text-white shadow-[0_10px_0_-2px_#22A344]"
             data-testid="read-submit"
           >
-            {result.verdict === "good" ? "Xong, gửi bạn Cú!" : "Gửi bài đọc"}
+            {passed ? "Xong, gửi bạn Cú!" : `Gửi bài đọc (${match}%)`}
           </motion.button>
         ) : null}
       </div>

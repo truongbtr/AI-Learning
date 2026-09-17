@@ -2,6 +2,27 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Sửa nhỏ — 18/09/2026 — Đọc tiếng Anh chấm theo % khớp (ADR-27)
+
+Chủ dự án: *"Các câu phát âm tiếng anh chấm điểm theo % trùng khớp với nội dung chứ không cần đúng 100%, mỗi lần
+phát âm sẽ hiển thị nội dung phát âm và % trùng khớp. Không trùng 100% vẫn cho qua được."*
+
+Trước đây cả hai thứ tiếng chung một ngưỡng: ≥ 85% mới qua, 50–85% **treo lại chờ ba mẹ xác nhận**. Máy nhận giọng
+của trình duyệt nghe bé sáu tuổi người Việt đọc tiếng Anh thì hay ra "forteen", "for teen", "grater" — nên rất nhiều
+lần đọc rơi vào vùng treo và con không qua được.
+
+- **Ngưỡng theo từng thứ tiếng** (`PASS_ACCURACY`): tiếng Việt 0,85 như cũ; **tiếng Anh 0,60**.
+- **Điểm chính là % khớp**, và bài đọc tiếng Anh **không bao giờ chờ ba mẹ** nữa — dưới ngưỡng vẫn ghi nhận đúng số
+  điểm rồi đi tiếp. Tiếng Việt giữ nguyên đường "vùng xám → ba mẹ".
+- **Khớp gần đúng cho tiếng Anh**: lệch 1 chữ cái (từ ≤ 5 chữ) hoặc 2 (từ dài hơn) vẫn tính đúng — "grater" ≈
+  "greater"; máy tách "fourteen" thành "four teen" thì ghép lại trước khi so. Vẫn phân biệt four ≠ five,
+  fourteen ≠ thirteen, eighteen ≠ eighty.
+- **Màn của con**: sau mỗi lần đọc hiện câu máy nghe được, thanh phần trăm và con số (ví dụ 80%), kèm một câu động
+  viên; nút gửi vẫn bấm được khi chưa đạt, ghi rõ phần trăm. Không có chữ "sai", không màu đỏ. Phần trăm hiện cho cả
+  hai thứ tiếng, chỉ ngưỡng qua là khác.
+- 9 test mới (core) + một test e2e dựng máy nghe giả để chụp màn; ảnh `docs/screens/pha-13-math-notes/b9-doc-to-phan-tram.png`.
+- Đường "con đọc cho ba mẹ nghe rồi" vẫn còn cho máy không micro.
+
 ## Sửa nhỏ — 18/09/2026 — Bài quy luật phải vẽ dãy ra, không tả bằng chữ
 
 Chủ dự án gửi ảnh màn Xưởng Máy: bài *"Red, blue, red, blue, … Drag what comes next."* chỉ có dòng chữ tiếng Anh và

@@ -64,3 +64,38 @@ describe("marking a read-aloud", () => {
     expect(r.wordsPerMinute).toBeNull();
   });
 });
+
+describe("English is scored by how much matched (owner, 18/09/2026)", () => {
+  it("passes a reading that is close but not perfect", () => {
+    const r = matchReadAloud(
+      ["Eighteen", "is", "greater", "than", "fifteen"],
+      "eighteen is grater than fifteen",
+      { lang: "en" },
+    );
+    expect(r.accuracy).toBe(1); // "grater" is one letter from "greater"
+    expect(r.verdict).toBe("good");
+
+    const half = matchReadAloud(["Seven", "is", "greater", "than", "four"], "seven is greater", {
+      lang: "en",
+    });
+    expect(half.accuracy).toBeCloseTo(0.6);
+    expect(half.verdict).toBe("good"); // 60% of the words is a pass in English
+  });
+
+  it("glues a word the recogniser split in two", () => {
+    const r = matchReadAloud(["fourteen"], "four teen", { lang: "en" });
+    expect(r.accuracy).toBe(1);
+  });
+
+  it("still tells two different numbers apart", () => {
+    expect(matchReadAloud(["four"], "five", { lang: "en" }).accuracy).toBe(0);
+    expect(matchReadAloud(["fourteen"], "thirteen", { lang: "en" }).accuracy).toBe(0);
+    expect(matchReadAloud(["eighteen"], "eighty", { lang: "en" }).accuracy).toBe(0);
+  });
+
+  it("keeps the Vietnamese bar where it was", () => {
+    const r = matchReadAloud(["bà", "có", "cá"], "bà có", { lang: "vi" });
+    expect(r.accuracy).toBeCloseTo(2 / 3);
+    expect(r.verdict).toBe("partial"); // a grown-up decides, as before
+  });
+});

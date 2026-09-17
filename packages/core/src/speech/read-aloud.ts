@@ -24,6 +24,16 @@ export interface ReadAloudResult {
   verdict: "good" | "partial" | "retry";
 }
 
+/**
+ * How much of the text has to be read for it to count as read (owner, 18/09/2026).
+ *
+ * Vietnamese is the reading lesson itself — a dropped syllable is the thing being practised, so
+ * the bar stays where docs/04 §7 put it. English is pronunciation practice on a browser recogniser
+ * that mishears a six-year-old for reasons that are not the child's fault, so it is scored by how
+ * much matched and passes well below a perfect reading.
+ */
+export const PASS_ACCURACY = { vi: 0.85, en: 0.6 } as const;
+
 /** Lower case, no punctuation, tones kept (they are the point in Vietnamese). */
 export function normaliseSpoken(text: string): string[] {
   return text
@@ -55,12 +65,69 @@ export function spokenKey(word: string, lang: "vi" | "en" = "vi"): string {
   return w;
 }
 
-/** Same word once the accent is allowed for. Tones still count: "ba" is not "bà". */
+/** Levenshtein distance, for "the recogniser wrote it down slightly wrong". */
+function editDistance(a: string, b: string): number {
+  const prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    let diag = prev[0] as number;
+    prev[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      const next = Math.min(
+        (prev[j] as number) + 1,
+        (prev[j - 1] as number) + 1,
+        diag + (a[i - 1] === b[j - 1] ? 0 : 1),
+      );
+      diag = prev[j] as number;
+      prev[j] = next;
+    }
+  }
+  return prev[b.length] as number;
+}
+
+/**
+ * Same word once the accent is allowed for. Tones still count: "ba" is not "bà".
+ *
+ * English also forgives one or two letters, because that is what the recogniser does to a child's
+ * "fourteen" ("forteen", "fourty..."). The allowance is small on purpose: "four" and "five" are two
+ * letters apart and must stay different words.
+ */
 export function sameWord(expected: string, heard: string, lang: "vi" | "en" = "vi"): boolean {
   if (expected.toLowerCase() === heard.toLowerCase()) return true;
-  if (spokenKey(expected, lang) === spokenKey(heard, lang)) return true;
+  const want = spokenKey(expected, lang);
+  const got = spokenKey(heard, lang);
+  if (want === got) return true;
+  if (lang === "en" && want.length >= 4) {
+    const allowed = want.length <= 5 ? 1 : 2;
+    return editDistance(want, got) <= allowed;
+  }
   // A missing tone mark is a reading mistake, not an accent — it must not pass here.
   return false;
+}
+
+/**
+ * The recogniser often writes one spoken word as two ("fourteen" → "four teen"). Glue such a pair
+ * back together when the join is a word the child was asked to read; otherwise the alignment counts
+ * a word the child did say as missing.
+ */
+function joinSplitWords(want: string[], got: string[], lang: "vi" | "en"): string[] {
+  if (lang !== "en" || got.length < 2) return got;
+  const out: string[] = [];
+  for (let i = 0; i < got.length; i++) {
+    const pair = `${got[i]}${got[i + 1] ?? ""}`;
+    const joins =
+      i + 1 < got.length &&
+      want.some(
+        (w) =>
+          sameWord(w, pair, lang) &&
+          !sameWord(w, got[i] as string, lang) &&
+          !sameWord(w, got[i + 1] as string, lang),
+      );
+    if (joins) {
+      out.push(pair);
+      i++;
+    } else out.push(got[i] as string);
+  }
+  return out;
 }
 
 /**
@@ -74,7 +141,7 @@ export function matchReadAloud(
 ): ReadAloudResult {
   const lang = opts.lang ?? "vi";
   const want = expected.flatMap((w) => normaliseSpoken(w));
-  const got = normaliseSpoken(heard);
+  const got = joinSplitWords(want, normaliseSpoken(heard), lang);
 
   // Needleman–Wunsch alignment: cheap, and it handles "skipped a word" and "said it twice".
   const n = want.length;
@@ -129,7 +196,13 @@ export function matchReadAloud(
     missed: words.filter((w) => !w.ok).map((w) => w.word),
     extra,
     wordsPerMinute,
-    // docs/04 §7: above 0.85 is a pass, below 0.5 is another go; in between a parent decides.
-    verdict: accuracy >= 0.85 ? "good" : accuracy >= 0.5 ? "partial" : "retry",
+    // docs/04 §7 for Vietnamese: above 0.85 is a pass, below 0.5 another go, in between a parent
+    // decides. English passes at PASS_ACCURACY.en and is never held for a parent (ADR-27).
+    verdict:
+      accuracy >= PASS_ACCURACY[lang]
+        ? "good"
+        : accuracy >= PASS_ACCURACY[lang] * 0.6
+          ? "partial"
+          : "retry",
   };
 }
