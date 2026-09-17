@@ -136,7 +136,7 @@ const BLENDS = [
     const { choices, answerKey } = choicesOf(
       { text: word },
       [
-        { text: byOnset, errorTag: "nham_am_dau" },
+        { text: byOnset, errorTag: "nham_am_dau_viet" },
         { text: byRime, errorTag: "doc_nham_van" },
       ],
       i,
@@ -144,7 +144,7 @@ const BLENDS = [
     add({
       type: "MCQ",
       difficulty: 1 + (i % 4),
-      targetsError: i % 2 === 0 ? "nham_am_dau" : "doc_nham_van",
+      targetsError: i % 2 === 0 ? "nham_am_dau_viet" : "doc_nham_van",
       scaffold: i < 4 ? "model" : "none",
       prompt: { text: `${onset} – ${rime}. ${ASK[i % 6]}` },
       choices,
@@ -171,13 +171,13 @@ const BLENDS = [
     const other = byOnset[0];
     const { choices, answerKey } = choicesOf(
       { text: onset },
-      [{ text: other, errorTag: "nham_am_dau" }, { text: "a" }],
+      [{ text: other, errorTag: "nham_am_dau_viet" }, { text: "a" }],
       i + 1,
     );
     add({
       type: "MCQ",
       difficulty: 2 + (i % 3),
-      targetsError: "nham_am_dau",
+      targetsError: "nham_am_dau_viet",
       prompt: { text: `Tiếng "${word}". ${ASK_PART[i % 6]}` },
       choices,
       answerKey,
@@ -192,7 +192,7 @@ const BLENDS = [
     const { choices, answerKey } = choicesOf(
       { text: word },
       [
-        { text: byOnset, errorTag: "nham_am_dau" },
+        { text: byOnset, errorTag: "nham_am_dau_viet" },
         { text: byRime, errorTag: "doc_nham_van" },
       ],
       i,
@@ -200,7 +200,7 @@ const BLENDS = [
     add({
       type: "LISTEN_CHOOSE",
       difficulty: 1 + (i % 5),
-      targetsError: "nham_am_dau",
+      targetsError: "nham_am_dau_viet",
       scaffold: i < 2 ? "model" : "none",
       prompt: { text: listenPrompt(LISTEN, word, i) },
       listenTarget: { text: word },
@@ -225,12 +225,12 @@ const BLENDS = [
     const cards = [
       { id: "d1", text: onset },
       { id: "v1", text: rime },
-      { id: "d2", text: byOnset[0], errorTag: "nham_am_dau" },
+      { id: "d2", text: byOnset[0], errorTag: "nham_am_dau_viet" },
     ];
     add({
       type: "DRAG_DROP",
       difficulty: 2 + (i % 4),
-      targetsError: "nham_am_dau",
+      targetsError: "nham_am_dau_viet",
       prompt: { text: `Tiếng "${word}". ${DRAG_ASK[i % 6]}` },
       dragItems: cards,
       dropZones: [
@@ -288,7 +288,7 @@ const BLENDS = [
 
   packOf(
     "VIET.HV.DANH_VAN_TIENG",
-    "Ghép âm đầu + vần + dấu thành tiếng, phạm vi chữ tới bài 13. Nhiễu luôn là tiếng thật: cùng vần khác âm đầu (nham_am_dau) hoặc cùng âm đầu khác vần (doc_nham_van).",
+    "Ghép âm đầu + vần + dấu thành tiếng, phạm vi chữ tới bài 13. Nhiễu luôn là tiếng thật: cùng vần khác âm đầu (nham_am_dau_viet) hoặc cùng âm đầu khác vần (doc_nham_van).",
     list,
   );
 }

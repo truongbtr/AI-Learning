@@ -6,7 +6,7 @@
  *  - mỗi tiếng có `without` — một tiếng thật **không chứa** âm đang hỏi, để câu "Tiếng nào có
  *    âm ô?" chỉ có một đáp án (lỗi #2 của đợt 1);
  *  - mỗi phương án nhiễu là **tiếng thật**, mang đúng mã lỗi của việc trẻ vừa làm: nhìn nhầm
- *    con chữ gần giống (o/ô/ơ) là `nham_chu_gan_giong`, đọc nhầm âm đầu là `nham_am_dau`,
+ *    con chữ gần giống (o/ô/ơ) là `nham_chu_gan_giong`, đọc nhầm âm đầu là `nham_am_dau_viet`,
  *    đọc nhầm vần là `doc_nham_van` (lỗi #8 và #9 của đợt 1).
  *
  * Dùng chung cho `viet-letters.mjs` (bài 7–12) và `viet-letters-2.mjs` (bài 16–24).
@@ -123,7 +123,7 @@ const tagged = (text, errorTag) => (text ? { text, errorTag } : null);
  *  - `w`       tiếng có âm đang dạy
  *  - `without` tiếng thật **không** chứa âm đó — nhờ nó câu hỏi mới có đúng một đáp án
  *  - `near`    tiếng chỉ khác `w` một con chữ gần giống (o/ô/ơ, e/ê, d/đ) → nham_chu_gan_giong
- *  - `onset`   tiếng cùng vần khác âm đầu → nham_am_dau
+ *  - `onset`   tiếng cùng vần khác âm đầu → nham_am_dau_viet
  *  - `rime`    tiếng cùng âm đầu khác vần → doc_nham_van
  */
 export function letterPack(cfg) {
@@ -152,7 +152,7 @@ export function letterPack(cfg) {
   const lackingTagged = (word) =>
     [
       tagged(word.near, nt(word)),
-      tagged(word.onset, "nham_am_dau"),
+      tagged(word.onset, "nham_am_dau_viet"),
       tagged(word.rime, "doc_nham_van"),
     ].filter((c) => c && !hasUnit(c.text, word.letter));
   /** Tiếng `without` của các từ khác — ô nhiễu không mã, chắc chắn không chứa âm đang hỏi. */
@@ -191,7 +191,7 @@ export function letterPack(cfg) {
   withPic.forEach((word, i) => {
     const wrongs = [
       tagged(word.near, nt(word)) ?? tagged(word.rime, "doc_nham_van"),
-      tagged(word.onset, "nham_am_dau") ?? { text: word.without },
+      tagged(word.onset, "nham_am_dau_viet") ?? { text: word.without },
     ].filter(Boolean);
     const { choices, answerKey } = choicesOf({ text: word.w }, wrongs, i + 1);
     add({
@@ -240,7 +240,7 @@ export function letterPack(cfg) {
   // ④ Nghe tiếng, chọn ô — ô nhiễu cùng vần khác âm đầu, đúng lỗi nghe sót âm đầu.
   words.slice(0, 9).forEach((word, i) => {
     const wrongs = [
-      tagged(word.onset, "nham_am_dau") ?? tagged(word.near, nt(word)),
+      tagged(word.onset, "nham_am_dau_viet") ?? tagged(word.near, nt(word)),
       tagged(word.rime, "doc_nham_van") ?? { text: word.without },
     ].filter(Boolean);
     const { choices, answerKey } = choicesOf({ text: word.w }, wrongs, i);
@@ -319,7 +319,7 @@ export function letterPack(cfg) {
   withPic.slice(0, 3).forEach((word, i) => {
     const decoys = [
       tagged(word.near, nt(word)) ?? tagged(word.rime, "doc_nham_van"),
-      tagged(word.onset, "nham_am_dau") ?? { text: word.without },
+      tagged(word.onset, "nham_am_dau_viet") ?? { text: word.without },
     ].filter(Boolean);
     add({
       type: "DRAG_DROP",

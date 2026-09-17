@@ -132,8 +132,8 @@ describe("error codes for a build", () => {
   const ba = { onset: "b", rime: "a", tone: "huyen" as Tone };
   it("names the onset slot first, with the pair code when there is one", () => {
     expect(buildErrorCode(ba, { onset: "d", rime: "a", tone: "huyen" })).toBe("nham_b_d");
-    expect(buildErrorCode(ba, { onset: "m", rime: "a", tone: "huyen" })).toBe("nham_am_dau");
-    expect(buildErrorCode(ba, { onset: "m", rime: "o", tone: "sac" })).toBe("nham_am_dau");
+    expect(buildErrorCode(ba, { onset: "m", rime: "a", tone: "huyen" })).toBe("nham_am_dau_viet");
+    expect(buildErrorCode(ba, { onset: "m", rime: "o", tone: "sac" })).toBe("nham_am_dau_viet");
   });
   it("then the rime, then the tone", () => {
     expect(buildErrorCode(ba, { onset: "b", rime: "o", tone: "sac" })).toBe("doc_nham_van");

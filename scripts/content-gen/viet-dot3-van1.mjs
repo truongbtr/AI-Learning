@@ -4,7 +4,7 @@
  * Tiếng đúng lấy từ trang sách (mục 2 Đọc, tranh, câu nhận biết, bài đọc). Ô nhiễu là tiếng thật và
  * chỉ dùng chữ, vần đã học tới bài đó (validator `tieng-viet-progression`):
  *  - `near`  khác một dấu phụ trong cùng nhóm vần (bạn / bận) → nham_chu_gan_giong;
- *  - `onset` cùng vần khác âm đầu (bạn / nạn) → nham_am_dau;
+ *  - `onset` cùng vần khác âm đầu (bạn / nạn) → nham_am_dau_viet;
  *  - `rime`  cùng âm đầu khác vần (bạn / bọ) → doc_nham_van.
  * Câu đọc là câu sách có đủ chữ đã học; câu có vần chưa học (ơi, ây, au) thì cắt bớt.
  *

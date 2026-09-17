@@ -208,7 +208,7 @@ Mọi chỗ ghi lỗi trong hệ thống (`IntakeItem.errorType`, `Exercise.targ
 
 | Nhóm | Mã | Con làm gì | Cách phát hiện |
 |---|---|---|---|
-| **Tiếng Việt — âm/chữ** | `nham_b_d` · `nham_p_q` · `nham_s_x` · `nham_ch_tr` · `nham_ng_ngh` · `nham_g_gh` · `nham_c_k_q` | lẫn cặp chữ giống nhau về hình hoặc âm | đáp án nhiễu trong MCQ; STT đọc to; ảnh vở |
+| **Tiếng Việt — âm/chữ** | `nham_b_d` · `nham_p_q` · `nham_s_x` · `nham_ch_tr` · `nham_ng_ngh` · `nham_g_gh` · `nham_c_k_q` · `nham_am_dau_viet` (âm đầu khác, 17/09) | lẫn cặp chữ giống nhau về hình hoặc âm; sai âm đầu mà vần, thanh vẫn đúng | đáp án nhiễu trong MCQ; STT đọc to; ảnh vở |
 | **Tiếng Việt — dấu thanh** | `nham_hoi_nga` · `thieu_dau_thanh` · `sai_dau_thanh` · `dat_dau_sai_cho` | đọc/viết sai dấu | STT; ảnh vở; MCQ dấu |
 | **Tiếng Việt — đọc** | `doc_bo_tieng` · `doc_nham_van` · `doc_danh_van_cham` · `doc_them_tieng` | bỏ tiếng, sai vần, đánh vần quá lâu | STT so khớp từng tiếng + thời gian |
 | **Tiếng Việt — viết** | `viet_nguoc_chu` · `viet_thieu_net` · `viet_sai_do_cao` · `viet_khong_noi_net` | chữ gương, thiếu nét, sai cỡ | ảnh vở (Vision), TRACE |
@@ -216,7 +216,7 @@ Mọi chỗ ghi lỗi trong hệ thống (`IntakeItem.errorType`, `Exercise.targ
 | **Toán — phép tính** | `nham_cong_tru` · `quen_so_0` · `sai_hang_chuc_don_vi` · `khong_hieu_de_loi_van` | làm dấu ngược, cộng với 0 sai, cộng nhầm hàng | nhiễu = kết quả của phép ngược; bài lời văn |
 | **Toán — so sánh** | `so_sanh_nguoc` · `nham_dau_lon_be` | chọn ngược < > | MCQ nhiễu ngược |
 | **Tiếng Anh — ngữ pháp** | `nham_have_has` · `nham_am_is_are` · `thieu_s_so_nhieu` · `nham_this_that` | chọn sai dạng | nhiễu = dạng còn lại |
-| **Tiếng Anh — âm & chữ** | `nham_am_dau` · `nham_nguyen_am_ngan` (a/e/i/o/u) · `sai_chinh_ta_tu` · `doc_bo_tu_tieng_anh` | phonics, spelling, đọc bỏ từ | LISTEN_CHOOSE; unscramble; STT |
+| **Tiếng Anh — âm & chữ** | `nham_am_dau` (chỉ tiếng Anh) · `nham_nguyen_am_ngan` (a/e/i/o/u) · `sai_chinh_ta_tu` · `doc_bo_tu_tieng_anh` | phonics, spelling, đọc bỏ từ | LISTEN_CHOOSE; unscramble; STT |
 | **Chung — hành vi** | `doan_bua` (trả lời < 2 s) · `bo_trong` · `chua_nghe_het_de` · `met_cuoi_phien` (sai dồn ở 3 bài cuối) | không phải lỗi kiến thức | thời gian, vị trí trong phiên |
 
 Bộ này seed ở pha 1 (~40 mã), mở rộng khi ảnh vở cho thấy lỗi mới; admin thêm mã trong `/admin/skills`.
@@ -273,13 +273,13 @@ Mỗi tối planner lấy cho một trạm **5 tiếng đến hạn + 3 tiếng 
 đó kỹ năng của trạm, rồi bài gần nhất lớp đã học). Câu hỏi ôn (`review`), thang rèn và bài cô giao vẫn là
 bài trắc nghiệm cũ.
 
-Mã lỗi khi con lắp khác tiếng mẫu — **không thêm mã mới**, dùng mã đã có trong §11.1, mỗi lần gặp một mã
+Mã lỗi khi con lắp khác tiếng mẫu — dùng mã trong §11.1 (`nham_am_dau_viet` tách khỏi mã tiếng Anh ngày 17/09), mỗi lần gặp một mã
 (khe âm đầu trước, rồi vần, rồi thanh):
 
 | Khe | Mã |
 |---|---|
 | âm đầu thuộc một cặp dễ lẫn | `nham_b_d`, `nham_ch_tr`, `nham_s_x`, `nham_ng_ngh`, `nham_c_k_q` |
-| âm đầu khác | `nham_am_dau` |
+| âm đầu khác | `nham_am_dau_viet` |
 | vần | `doc_nham_van` |
 | thanh hỏi ↔ ngã | `nham_hoi_nga` |
 | bỏ dấu (chọn thanh ngang) | `thieu_dau_thanh` |

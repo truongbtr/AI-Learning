@@ -162,7 +162,7 @@ export function writingPack(cfg) {
     const cards = [
       { id: "d1", text: onset },
       { id: "v1", text: rime },
-      ...(decoy ? [{ id: "d2", text: decoy, errorTag: "nham_am_dau" }] : []),
+      ...(decoy ? [{ id: "d2", text: decoy, errorTag: "nham_am_dau_viet" }] : []),
     ];
     add({
       type: "DRAG_DROP",

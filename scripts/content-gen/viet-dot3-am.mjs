@@ -23,7 +23,7 @@ letterPack({
   lessonRefs: ["KNTT-TV1-T1-B26"],
   lessonUnitCode: "KNTT-TV1-T1-B26",
   src: src(26, "64–65", "Ph ph, Qu qu"),
-  note: "Bài 26: Ph ph, Qu qu. Từ của sách: phà, phí, phở, quạ, quê, quế, pha trà, phố cổ, quê nhà, quả khế; câu đọc 'Bà cho bé quà quê', 'Bố đưa bà đi phố cổ'. Ô nhiễu: cùng vần khác âm đầu (phố / bố — nham_am_dau), cùng âm đầu khác vần (phố / phở — doc_nham_van).",
+  note: "Bài 26: Ph ph, Qu qu. Từ của sách: phà, phí, phở, quạ, quê, quế, pha trà, phố cổ, quê nhà, quả khế; câu đọc 'Bà cho bé quà quê', 'Bố đưa bà đi phố cổ'. Ô nhiễu: cùng vần khác âm đầu (phố / bố — nham_am_dau_viet), cùng âm đầu khác vần (phố / phở — doc_nham_van).",
   words: [
     W("phố", "ph", "cổ", null, "bố", "phở", "🏙️", "phố cổ", "robot"),
     W("quê", "qu", "nhà", null, "kê", "quế", "🏡", "quê nhà", "garden"),

@@ -340,20 +340,27 @@ export function explainErrorTagMismatch(choice: TaggedChoice, ctx: ExerciseConte
         return `"${x}" and "${y}" are not look-alike letters (a/ă/â, o/ô/ơ, e/ê, u/ư, a/o)`;
       return null;
     }
+    // English and Vietnamese each have their own wrong-first-sound code (owner, 17/09/2026)
     case "nham_am_dau": {
+      if (ctx.language !== "en")
+        return `"nham_am_dau" is the English code; a Vietnamese âm đầu mix-up is "nham_am_dau_viet"`;
+      if (distractor == null || correct == null) return null;
+      if (words(correct).length !== 1 || words(distractor).length !== 1) return null;
+      if (correct[0]?.toLowerCase() === distractor[0]?.toLowerCase())
+        return `"nham_am_dau" is a wrong first sound, but "${distractor}" starts like "${correct}"`;
+      return null;
+    }
+    case "nham_am_dau_viet": {
+      if (ctx.language === "en")
+        return `"nham_am_dau_viet" is the Vietnamese code; an English first-sound mix-up is "nham_am_dau"`;
       if (distractor == null || correct == null) return null;
       if (words(correct).length !== 1 || words(distractor).length !== 1) return null;
       const c = onsetRime(correct);
       const d = onsetRime(distractor);
-      if (ctx.language === "en") {
-        if (correct[0]?.toLowerCase() === distractor[0]?.toLowerCase())
-          return `"nham_am_dau" is a wrong first sound, but "${distractor}" starts like "${correct}"`;
-        return null;
-      }
       if (c.onset === d.onset)
-        return `"nham_am_dau" is a wrong first sound, but "${distractor}" has the same âm đầu as "${correct}"`;
+        return `"nham_am_dau_viet" is a wrong first sound, but "${distractor}" has the same âm đầu as "${correct}"`;
       if (c.rime !== d.rime)
-        return `"nham_am_dau" changes only the first sound; "${distractor}" also changes the vần of "${correct}"`;
+        return `"nham_am_dau_viet" changes only the first sound; "${distractor}" also changes the vần of "${correct}"`;
       return null;
     }
     case "doc_nham_van": {

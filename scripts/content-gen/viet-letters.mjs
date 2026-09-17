@@ -6,7 +6,7 @@
  *  - mỗi tiếng có `without` — một tiếng thật **không chứa** âm đang hỏi, để câu "Tiếng nào có
  *    âm ô?" chỉ có một đáp án (lỗi #2 của đợt 1);
  *  - mỗi phương án nhiễu là **tiếng thật**, mang đúng mã lỗi của việc trẻ vừa làm: nhìn nhầm
- *    con chữ gần giống (o/ô/ơ) là `nham_chu_gan_giong`, đọc nhầm âm đầu là `nham_am_dau`,
+ *    con chữ gần giống (o/ô/ơ) là `nham_chu_gan_giong`, đọc nhầm âm đầu là `nham_am_dau_viet`,
  *    đọc nhầm vần là `doc_nham_van` (lỗi #8 và #9 của đợt 1).
  *
  *   node scripts/content-gen/viet-letters.mjs

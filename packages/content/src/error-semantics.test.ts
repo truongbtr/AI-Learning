@@ -78,8 +78,9 @@ describe("letters and tones", () => {
   });
 
   it("âm đầu changes the first sound, vần changes the rest", () => {
-    expect(check("nham_am_dau", "cà", "bà", viet)).toBeNull();
-    expect(check("nham_am_dau", "cà", "cò", viet)).toMatch(/same âm đầu/);
+    expect(check("nham_am_dau_viet", "cà", "bà", viet)).toBeNull();
+    expect(check("nham_am_dau_viet", "cà", "cò", viet)).toMatch(/same âm đầu/);
+    expect(check("nham_am_dau", "cà", "bà", viet)).toMatch(/is "nham_am_dau_viet"/);
     expect(check("doc_nham_van", "cà", "cò", viet)).toBeNull();
     expect(check("doc_nham_van", "cà", "bà", viet)).toMatch(/same vần/);
   });
@@ -103,6 +104,11 @@ describe("English", () => {
   it("a spelling slip is a near miss, not a different word", () => {
     expect(check("sai_chinh_ta_tu", "was", "saw", en)).toBeNull();
     expect(check("sai_chinh_ta_tu", "tall", "short", en)).toMatch(/edits from/);
+  });
+  it("a first-sound miss uses the English code", () => {
+    expect(check("nham_am_dau", "pin", "bin", en)).toBeNull();
+    expect(check("nham_am_dau", "pin", "pan", en)).toMatch(/starts like/);
+    expect(check("nham_am_dau_viet", "pin", "bin", en)).toMatch(/is "nham_am_dau"/);
   });
 });
 

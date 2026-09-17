@@ -114,7 +114,7 @@ Mã lỗi (chỉ dùng mã **đã có** trong `content/error-taxonomy.json`; kh�
 | Con lắp sai ở | Mã |
 |---|---|
 | khe âm đầu, là cặp b/d, ch/tr, s/x, ng/ngh, c/k | `nham_b_d` · `nham_ch_tr` · `nham_s_x` · `nham_ng_ngh` · `nham_c_k_q` |
-| khe âm đầu, còn lại | `nham_am_dau` |
+| khe âm đầu, còn lại | `nham_am_dau_viet` (trước 17/09: `nham_am_dau`) |
 | khe vần | `doc_nham_van` |
 | thanh hỏi ↔ ngã | `nham_hoi_nga` (đề bài gọi là `nham_thanh_hoi_nga`; mã đã có sẵn với đúng nghĩa đó) |
 | chọn thanh ngang cho tiếng có dấu | `thieu_dau_thanh` |
@@ -124,6 +124,12 @@ Một lần gặp chỉ mang **một** mã: khe âm đầu trước, rồi vần
 Lưu ý: `nham_am_dau` trong taxonomy đang gắn môn ESL; gói `HV.DANH_VAN_TIENG` có sẵn cũng đã dùng nó cho
 tiếng Việt. Pha này theo đúng đề bài và tiền lệ đó; tách mã riêng cho tiếng Việt là việc của chủ dự án
 quyết (nêu trong báo cáo).
+
+**Cập nhật 17/09/2026 — chủ dự án: "tách mã lỗi riêng".** Thêm `nham_am_dau_viet` (môn VIET, nhóm
+`viet_am_chu`, sửa bằng `VIET.HV.DANH_VAN_TIENG` + `VIET.DOC.DOC_TIENG`); `nham_am_dau` chỉ còn cho tiếng
+Anh. Xưởng Tiếng, mọi gói `content/exercises/viet` và script sinh bài tiếng Việt dùng mã mới;
+`content:validate` chặn mã tiếng Anh trên bài tiếng Việt và ngược lại. Bằng chứng cũ của hai bé mang
+`nham_am_dau` **giữ nguyên** (không sửa `Evidence`).
 
 ### 6. Planner
 

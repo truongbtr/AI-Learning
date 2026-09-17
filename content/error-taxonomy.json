@@ -87,6 +87,18 @@
       "behavioural": false
     },
     {
+      "code": "nham_am_dau_viet",
+      "subject": "VIET",
+      "group": "viet_am_chu",
+      "nameVi": "Nhầm âm đầu (tiếng Việt)",
+      "description": "Đọc hoặc lắp tiếng đúng vần, đúng thanh nhưng sai âm đầu (gà → già, bố → phố), ngoài các cặp đã có mã riêng (b/d, p/q, s/x, ch/tr, ng/ngh, g/gh, c/k/q).",
+      "detection": "Ô nhiễu cùng vần khác âm đầu có errorTag; Xưởng Tiếng khi con đặt sai mảnh ở khe âm đầu; STT đọc to; ảnh vở.",
+      "remediation": "Nghe nhịp đánh vần của tiếng (bờ – a – ba) rồi lắp lại khe âm đầu; nghe–chọn hai tiếng chỉ khác âm đầu.",
+      "remediationSkills": ["VIET.HV.DANH_VAN_TIENG", "VIET.DOC.DOC_TIENG"],
+      "lessonRefs": [],
+      "behavioural": false
+    },
+    {
       "code": "nham_chu_gan_giong",
       "subject": "VIET",
       "group": "viet_am_chu",
@@ -467,7 +479,7 @@
       "code": "nham_am_dau",
       "subject": "ESL",
       "group": "anh_am_chu",
-      "nameVi": "Nhầm âm đầu",
+      "nameVi": "Nhầm âm đầu (tiếng Anh)",
       "description": "Chọn sai âm/chữ đầu của từ (p/b, t/d, c/k).",
       "detection": "LISTEN_CHOOSE; unscramble.",
       "remediation": "Bài nhận âm đầu với cặp tối thiểu (pin/bin).",

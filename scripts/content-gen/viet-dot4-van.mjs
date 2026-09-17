@@ -18,9 +18,9 @@ import { bare, splitSyllable } from "./vn-units.mjs";
 
 /**
  * Tách âm đầu/vần **giữ nguyên dấu thanh** — đúng như `onsetRime()` trong error-semantics.ts dùng để
- * chấm mã nham_am_dau/doc_nham_van. Khác với `splitSyllable` (vn-units.mjs, bỏ dấu) dùng cho việc
+ * chấm mã nham_am_dau_viet/doc_nham_van. Khác với `splitSyllable` (vn-units.mjs, bỏ dấu) dùng cho việc
  * "tiếng này có vần X không". Hai tiếng chỉ được coi là "cùng vần khác âm đầu" khi vần **kể cả dấu**
- * giống hệt nhau (kiến/điện khác dấu sắc/nặng nên KHÔNG phải một cặp nham_am_dau hợp lệ).
+ * giống hệt nhau (kiến/điện khác dấu sắc/nặng nên KHÔNG phải một cặp nham_am_dau_viet hợp lệ).
  */
 const ONSETS = ["ngh", "ng", "nh", "ch", "gh", "gi", "kh", "ph", "qu", "th", "tr"];
 function onsetRimeToned(syllable) {
@@ -75,7 +75,7 @@ const SAFE_RIME = {
 
 /**
  * entries: [w, vầnNhãn, pic?, gloss?, theme?][]. Tự tính onset/rime bằng splitSyllable nên luôn
- * đúng mã lỗi (nham_am_dau cần cùng vần khác âm đầu; doc_nham_van cần cùng âm đầu khác vần).
+ * đúng mã lỗi (nham_am_dau_viet cần cùng vần khác âm đầu; doc_nham_van cần cùng âm đầu khác vần).
  */
 function autoWords(entries) {
   const parsed = entries.map(([w, letter, pic, gloss, theme]) => {
@@ -93,7 +93,7 @@ function autoWords(entries) {
     };
   });
   return parsed.map((word) => {
-    // nham_am_dau đòi vần *kể cả dấu* giống hệt, âm đầu khác — chỉ ghép khi tìm được, không đoán.
+    // nham_am_dau_viet đòi vần *kể cả dấu* giống hệt, âm đầu khác — chỉ ghép khi tìm được, không đoán.
     const onsetPartner = parsed.find(
       (o) => o !== word && o.rime === word.rime && o.onset !== word.onset,
     );

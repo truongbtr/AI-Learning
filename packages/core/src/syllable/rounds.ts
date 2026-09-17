@@ -297,7 +297,7 @@ export function buildErrorCode(
 ): string | null {
   const [first] = buildMistakes(target, built);
   if (!first) return null;
-  if (first === "onset") return pairErrorCode(target.onset, built.onset) ?? "nham_am_dau";
+  if (first === "onset") return pairErrorCode(target.onset, built.onset) ?? "nham_am_dau_viet";
   if (first === "rime") return "doc_nham_van";
   return toneErrorCode(target.tone, built.tone);
 }

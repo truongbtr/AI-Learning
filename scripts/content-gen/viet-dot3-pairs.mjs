@@ -4,7 +4,7 @@
  *  - s/x (bài 21, 27): cặp tiếng thật cùng vần (sẻ / xẻ, xô / sô) — khuôn `pairPack`.
  *  - c/k/q (bài 3, 11, 26): quy tắc chính tả; ô sai là cách viết sai đúng quy tắc (ká, cê, kả).
  *  - p/q (bài 26): chữ gương ở mức con chữ (p / q, mã nham_p_q) và âm đầu ph / qu ở mức tiếng
- *    (phà / quà, mã nham_am_dau). Không in "qhà": chữ q đứng một mình chưa học.
+ *    (phà / quà, mã nham_am_dau_viet). Không in "qhà": chữ q đứng một mình chưa học.
  *  - hỏi/ngã: bản đồ kỹ năng chỉ ghi bài 6, 9 — tới bài 9 lớp mới có 11 chữ, không đủ cặp tiếng thật.
  *    Đợt 3 mở `lessonRef` tới bài 19 (lớp đang học bài 14–19) để có mũ / mủ, nghỉ / nghĩ, cũ / củ.
  *
@@ -110,14 +110,14 @@ pairPack({
 });
 
 const PQ = "nham_p_q";
-const AD = "nham_am_dau";
+const AD = "nham_am_dau_viet";
 situationPack({
   code: "VIET.HV.NHAM_LAN_P_Q",
   prefix: "viet-pq",
   unit: "KNTT-TV1-T1-B26",
   lessonRefs: ["KNTT-TV1-T1-B26"],
   src: "SGK Tiếng Việt 1 tập một, Bài 26 tr.64–65 (p – ph, qu)",
-  note: "Phân biệt p và q. Mức con chữ: p / q là chữ gương, ô nhiễu mang nham_p_q. Mức tiếng: ph / qu cùng vần cùng dấu (phà / quà, phê / quê, phả / quả), ô nhiễu mang nham_am_dau. Không in 'qhà' hay 'pu': chữ q đứng một mình và vần uê chưa học.",
+  note: "Phân biệt p và q. Mức con chữ: p / q là chữ gương, ô nhiễu mang nham_p_q. Mức tiếng: ph / qu cùng vần cùng dấu (phà / quà, phê / quê, phả / quả), ô nhiễu mang nham_am_dau_viet. Không in 'qhà' hay 'pu': chữ q đứng một mình và vần uê chưa học.",
   items: [
     {
       q: "Chữ nào là chữ p?",
