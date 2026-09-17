@@ -121,6 +121,8 @@ Docker dev (cổng 5000) đã build lại image web + worker cho khớp bảng m
 - Chủ dự án xác nhận nhịp đánh vần (câu hỏi 1) → mp3 đợt 2 `--viet-tts all --tts-pace 3300` chạy nền
   trên production 22:48–23:38: 714 mp3 mới, 1.761 có sẵn, 0 lỗi; hạn mức TTS tháng 9 179.357/500.000
   (36 %). Xưởng Tiếng trên production đã đủ mp3 cả hai đợt.
+- 17/09 09:35: git máy chủ lên `7a8d99e` ("Hoàn thành pha 12" — chỉ ảnh + `ops/context`, không đổi code nên
+  không đổi image/không khởi động lại). `ops/context/HIEN-TRANG.md` giữ bản production tự xuất lúc 04:30.
 - Từ giờ deploy bằng skill `/update_edu_prod` (`.claude/skills/update_edu_prod/SKILL.md`).
 
 ### Lệnh deploy (đã dùng)
