@@ -686,6 +686,12 @@ model ClassDiary {
   @@unique([className, date])
 }
 
+/** Ai nói lớp học bài này: bài đăng của cô, hay ba mẹ tự chọn trên /parent/diary. */
+enum DiaryLessonSource {
+  POST
+  PARENT
+}
+
 model DiaryLesson {
   id            String      @id @default(cuid())
   diaryId       String
@@ -700,6 +706,8 @@ model DiaryLesson {
   pages         Int[]       @default([])
   contentNote   String?
   skillCodes    String[]    @default([])
+  // Dán lại bài đăng của cô sẽ dựng lại các dòng POST; dòng PARENT (ba mẹ chọn tay) giữ nguyên.
+  source        DiaryLessonSource @default(POST)
   createdAt     DateTime    @default(now())
   updatedAt     DateTime    @updatedAt
 }

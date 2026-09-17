@@ -1,4 +1,11 @@
-import { confirmClassDiary, diaryTonight, prisma, saveClassDiary } from "@mtct/db";
+import {
+  confirmClassDiary,
+  diaryTonight,
+  nextLessonAfter,
+  prisma,
+  saveClassDiary,
+  setTodaysLesson,
+} from "@mtct/db";
 import { z } from "zod";
 import { handle, json, parseBody } from "@/lib/api";
 import { guardianStudentIds, requireRole } from "@/lib/auth/session";
@@ -12,6 +19,17 @@ const saveSchema = z.object({
 });
 
 const confirmSchema = z.object({ diaryId: z.string().min(1) });
+
+const SUBJECTS = ["VIET", "VMATH", "ESL", "ENL", "EMATH", "ESCI"] as const;
+const lessonSchema = z.object({
+  className: z.string().min(1).max(20).default("1B3"),
+  subject: z.enum(SUBJECTS),
+  unitCode: z.string().min(1).max(64),
+  date: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/)
+    .optional(),
+});
 
 /** Children this adult may see; ADMIN sees the whole class. */
 async function childrenOf(
@@ -65,6 +83,31 @@ export const POST = handle(async (request: Request) => {
     homeworkRows: result.homeworkPerStudent,
     tonight,
   });
+});
+
+/**
+ * PUT /api/diary — "hôm nay lớp học bài này" (docs/11 §4).
+ *
+ * The teacher's post names Tiếng Việt, ESL and Toán and never English Maths, so that subject had no
+ * daily signal at all (owner, 18/09/2026). One tap here writes the same `DiaryLesson` a pasted post
+ * writes — unit, subject, the unit's skills — and tonight's session follows it.
+ */
+export const PUT = handle(async (request: Request) => {
+  const user = await requireRole("PARENT", "ADMIN");
+  const body = await parseBody(request, lessonSchema);
+  const date = body.date ? new Date(`${body.date}T00:00:00Z`) : new Date();
+  const saved = await setTodaysLesson(prisma, {
+    className: body.className,
+    subject: body.subject,
+    unitCode: body.unitCode,
+    date,
+  });
+  const tonight = await diaryTonight(prisma, {
+    className: body.className,
+    studentIds: await childrenOf(user, body.className),
+    date,
+  });
+  return json({ ...saved, next: await nextLessonAfter(prisma, body.subject, saved.code), tonight });
 });
 
 /** GET /api/diary?className=1B3[&date=…] — today's diary and what it means for tonight. */

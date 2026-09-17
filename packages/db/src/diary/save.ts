@@ -137,8 +137,9 @@ export async function saveClassDiary(db: Db, input: SaveDiaryInput): Promise<Sav
     },
   });
 
-  // Rebuilt from the text every time, so correcting a paste corrects the day.
-  await db.diaryLesson.deleteMany({ where: { diaryId: diary.id } });
+  // Rebuilt from the text every time, so correcting a paste corrects the day. A lesson a parent
+  // picked by hand (docs/11 §4, "hôm nay lớp học bài nào") is not in the text and stays.
+  await db.diaryLesson.deleteMany({ where: { diaryId: diary.id, source: "POST" } });
   for (const lesson of parsed.taught) {
     const unit = await matchUnit(db, lesson);
     const skillCodes = await skillsFor(db, lesson, unit?.id ?? null);

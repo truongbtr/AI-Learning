@@ -1,10 +1,21 @@
-import { prisma } from "@mtct/db";
+import { currentLessons, lessonChoices, prisma } from "@mtct/db";
 import { PageHeader } from "@/components/admin/page-header";
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { guardPage } from "@/lib/auth/session";
 import { DiaryForm } from "./diary-form";
+import { LessonPicker, type PickerSubject } from "./lesson-picker";
 
 export const dynamic = "force-dynamic";
+
+/** The subjects a parent can point at a lesson, in the order they matter at home. */
+const PICKER_SUBJECTS = [
+  ["EMATH", "English Maths"],
+  ["VMATH", "Toán"],
+  ["VIET", "Tiếng Việt"],
+  ["ESL", "ESL"],
+  ["ENL", "ENL"],
+  ["ESCI", "English Science"],
+] as const;
 
 const TASK_LABEL: Record<string, string> = {
   READ_ALOUD: "Đọc to",
@@ -43,6 +54,29 @@ export default async function DiaryPage() {
     },
   });
 
+  // "Hôm nay lớp học bài nào?": the lessons of each subject and where the class was last seen
+  const current = await currentLessons(prisma, className);
+  const pickerSubjects: PickerSubject[] = [];
+  for (const [subject, label] of PICKER_SUBJECTS) {
+    const lessons = await lessonChoices(prisma, subject);
+    if (lessons.length === 0) continue;
+    const seen = current.find((c) => c.subject === subject);
+    pickerSubjects.push({
+      subject,
+      label,
+      lessons,
+      current:
+        seen?.code && seen.title
+          ? {
+              code: seen.code,
+              title: seen.title,
+              date: seen.date.toISOString(),
+              source: seen.source,
+            }
+          : null,
+    });
+  }
+
   return (
     <div className="flex flex-col gap-6">
       <PageHeader
@@ -51,6 +85,7 @@ export default async function DiaryPage() {
         description="Dán bài đăng của cô mỗi tối — đây là nguồn dữ liệu rẻ nhất và đúng nhất của cả hệ thống (docs/11)."
       />
       <DiaryForm className={className} />
+      <LessonPicker subjects={pickerSubjects} className={className} />
 
       <Card className="flex flex-col gap-3">
         <div>
