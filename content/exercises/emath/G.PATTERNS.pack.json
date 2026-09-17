@@ -791,7 +791,12 @@
       "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Red, blue, red, blue, … Drag what comes next."
+        "text": "What comes next? Drag it in.",
+        "image": {
+          "kind": "emoji",
+          "value": "🔴🔵🔴🔵",
+          "labelVi": "dãy màu"
+        }
       },
       "dragItems": [
         {
@@ -819,14 +824,17 @@
       "dropZones": [
         {
           "id": "z0",
-          "label": "next",
+          "label": "?",
           "accepts": ["c0", "c1", "c2"]
         }
       ],
       "answerKey": {
         "z0": ["c0"]
       },
-      "hints": ["Say the colours out loud."],
+      "hints": [
+        "Point to each colour and say it out loud.",
+        "Look at the two colours taking turns."
+      ],
       "explanation": "Red comes after blue.",
       "meta": {
         "estSeconds": 40,
@@ -845,7 +853,12 @@
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Star, heart, star, heart, … Drag what comes next."
+        "text": "Finish the pattern. Drag the next one.",
+        "image": {
+          "kind": "emoji",
+          "value": "⭐💛⭐💛",
+          "labelVi": "dãy hình"
+        }
       },
       "dragItems": [
         {
@@ -873,14 +886,14 @@
       "dropZones": [
         {
           "id": "z0",
-          "label": "next",
+          "label": "?",
           "accepts": ["c0", "c1", "c2"]
         }
       ],
       "answerKey": {
         "z0": ["c1"]
       },
-      "hints": ["Say the pattern out loud."],
+      "hints": ["Say the pattern out loud as you point.", "Two pictures take turns."],
       "explanation": "Star comes after heart.",
       "meta": {
         "estSeconds": 40,
@@ -899,7 +912,12 @@
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Circle, circle, square, circle, … Drag the next one."
+        "text": "Which one comes next? Drag it in.",
+        "image": {
+          "kind": "emoji",
+          "value": "🔴🔴🟦🔴",
+          "labelVi": "dãy hình"
+        }
       },
       "dragItems": [
         {
@@ -927,14 +945,14 @@
       "dropZones": [
         {
           "id": "z0",
-          "label": "next",
+          "label": "?",
           "accepts": ["c0", "c1", "c2"]
         }
       ],
       "answerKey": {
         "z0": ["c0"]
       },
-      "hints": ["The part that repeats is circle, circle, square."],
+      "hints": ["Circle, circle, square — then it starts again.", "Point to each one and say it."],
       "explanation": "Another circle comes next.",
       "meta": {
         "estSeconds": 40,
@@ -953,7 +971,12 @@
       "difficulty": 4,
       "prompt": {
         "tts": true,
-        "text": "Cat, dog, dog, cat, dog, … Drag what comes next."
+        "text": "What comes next? Drag it in.",
+        "image": {
+          "kind": "emoji",
+          "value": "🐈🐕🐕🐈🐕",
+          "labelVi": "dãy con vật"
+        }
       },
       "dragItems": [
         {
@@ -981,14 +1004,14 @@
       "dropZones": [
         {
           "id": "z0",
-          "label": "next",
+          "label": "?",
           "accepts": ["c0", "c1", "c2"]
         }
       ],
       "answerKey": {
         "z0": ["c0"]
       },
-      "hints": ["The part that repeats is cat, dog, dog."],
+      "hints": ["One cat, then two dogs, again and again.", "Say the animals out loud."],
       "explanation": "Dog comes next.",
       "meta": {
         "estSeconds": 40,
@@ -1007,7 +1030,12 @@
       "difficulty": 4,
       "prompt": {
         "tts": true,
-        "text": "Apple, banana, grape, apple, … Drag the next one."
+        "text": "Finish the pattern. Drag the next fruit.",
+        "image": {
+          "kind": "emoji",
+          "value": "🍎🍌🍇🍎",
+          "labelVi": "dãy quả"
+        }
       },
       "dragItems": [
         {
@@ -1035,14 +1063,14 @@
       "dropZones": [
         {
           "id": "z0",
-          "label": "next",
+          "label": "?",
           "accepts": ["c0", "c1", "c2"]
         }
       ],
       "answerKey": {
         "z0": ["c0"]
       },
-      "hints": ["The part that repeats has three things."],
+      "hints": ["Three fruits take turns in the same order.", "Say them out loud as you point."],
       "explanation": "Banana comes after apple.",
       "meta": {
         "estSeconds": 40,
@@ -1061,7 +1089,12 @@
       "difficulty": 5,
       "prompt": {
         "tts": true,
-        "text": "Sun, moon, moon, sun, moon, … Drag the next one."
+        "text": "Which one comes next? Drag it in.",
+        "image": {
+          "kind": "emoji",
+          "value": "☀️🌙🌙☀️🌙",
+          "labelVi": "dãy hình"
+        }
       },
       "dragItems": [
         {
@@ -1089,14 +1122,14 @@
       "dropZones": [
         {
           "id": "z0",
-          "label": "next",
+          "label": "?",
           "accepts": ["c0", "c1", "c2"]
         }
       ],
       "answerKey": {
         "z0": ["c0"]
       },
-      "hints": ["The part that repeats is sun, moon, moon."],
+      "hints": ["One sun, then two moons, again and again.", "Point to each picture and say it."],
       "explanation": "Moon comes next.",
       "meta": {
         "estSeconds": 40,
@@ -1115,7 +1148,7 @@
       "difficulty": 1,
       "prompt": {
         "tts": true,
-        "text": "Red, blue, red, blue… Tap the red beads."
+        "text": "Tap each red bead to count."
       },
       "countTarget": {
         "objects": {
@@ -1147,7 +1180,7 @@
       "difficulty": 2,
       "prompt": {
         "tts": true,
-        "text": "Count the stars in the pattern."
+        "text": "Count the stars. Tap each one."
       },
       "countTarget": {
         "objects": {
@@ -1179,7 +1212,7 @@
       "difficulty": 3,
       "prompt": {
         "tts": true,
-        "text": "Tap each heart in the pattern."
+        "text": "Tap each heart to count them."
       },
       "countTarget": {
         "objects": {

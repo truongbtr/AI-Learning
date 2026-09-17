@@ -2,6 +2,23 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## Sửa nhỏ — 18/09/2026 — Bài quy luật phải vẽ dãy ra, không tả bằng chữ
+
+Chủ dự án gửi ảnh màn Xưởng Máy: bài *"Red, blue, red, blue, … Drag what comes next."* chỉ có dòng chữ tiếng Anh và
+ba khoanh tròn màu — *"khi kéo rồi thì không còn màu để kéo nữa thì làm sao xếp được 4 khoanh tròn"*. Đúng là nhìn
+vào không hiểu đề: dãy mẫu **không được vẽ ra**, con sáu tuổi lại phải đọc "red, blue" mới hình dung được.
+
+- Soát cả ngân hàng tìm đề "tả tranh bằng chữ mà không vẽ": chỉ **9 bài** trong gói `EMATH.G.PATTERNS` bị
+  (6 bài kéo thả + 3 bài đếm nhắc "pattern" nhưng chỉ vẽ một loại hình). Các chỗ khác là dương tính giả (tranh nằm
+  ở ô đáp án, hoặc dấu "…" trong câu nói).
+- Sửa (`scripts/content-gen/fix-pattern-pictures.mjs`): đề vẽ đúng dãy bằng chuỗi emoji — 🔴🔵🔴🔵, ⭐💛⭐💛,
+  🔴🔴🟦🔴, 🐈🐕🐕🐈🐕, 🍎🍌🍇🍎, ☀️🌙🌙☀️🌙 — nhãn giỏ đổi thành "?" (ô trống cuối dãy), đề rút thành câu ngắn không cần
+  đọc tên màu ("What comes next? Drag it in."), gợi ý đổi theo. Ba bài đếm nói đúng thứ con nhìn thấy.
+- Đáp án không đổi; mỗi bài vẫn chỉ kéo **một** thẻ vào ô trống (ba thẻ còn lại nằm im trong khay).
+- Test chặn tái diễn trong `phase13-math-notes.spec.ts`: đề phải vẽ 4 hình, khay có 3 thẻ, một giỏ; ảnh
+  `docs/screens/pha-13-math-notes/b8-quy-luat-ve-ra-day.png`.
+- Đã nạp DB dev (9 bài cập nhật). Bản production vẫn là v0.1.2 nên **con vẫn gặp bài cũ cho tới lần deploy tới**.
+
 ## QC pha 13 — 18/09/2026 — tự soát trước khi chủ dự án QC
 
 Viết một bộ soát **độc lập với bộ sinh** (`scripts/content-gen/emath-mn1-qc.mjs`): đọc file bài luyện, tự tính lại

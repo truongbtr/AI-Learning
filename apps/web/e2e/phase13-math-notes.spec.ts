@@ -584,3 +584,33 @@ test("the old world's quest hands out an EDI-MN1 question with a ten-frame", asy
   test.skip(open === 0, "today's quest is already finished — run again tomorrow");
   expect(found, "no ten-frame question in today's quest").toBe(true);
 });
+
+/**
+ * Owner, 18/09/2026: the pattern question showed only the words "Red, blue, red, blue, …" and three
+ * colour cards — "khi kéo rồi thì không còn màu để kéo nữa thì làm sao xếp được 4 khoanh tròn".
+ * The pattern itself was never drawn. It is now, so the question can be answered without reading.
+ */
+test("a pattern question draws its pattern", async ({ page }) => {
+  const pattern = parseExercisePack(
+    JSON.parse(readFileSync(join(PACKS, "G.PATTERNS.pack.json"), "utf8")),
+  ).exercises.find((ex) => ex.id === "emath-pattern-0021") as ExerciseDef;
+
+  await page.setViewportSize({ width: 1280, height: 720 });
+  await openBench(page, pattern);
+  // four pictures in the question: the pattern itself, not a sentence about it
+  const strip = page.getByTestId("prompt-image").locator("img");
+  await expect(strip).toHaveCount(4);
+  expect(pattern.prompt.text).not.toMatch(/red|blue/i);
+  // three cards to choose from, and one basket for the missing one
+  await expect(page.getByTestId("drag-tray").getByTestId("drag-item")).toHaveCount(3);
+  await expect(page.getByTestId("drop-zone")).toHaveCount(1);
+  await kidSafe(page);
+  await tapBudget(page, "pattern @ 1280x720");
+  await page.screenshot({ path: join(SHOTS, "b8-quy-luat-ve-ra-day.png") });
+
+  // one card is enough: drop it in and "Xong!" lights up
+  await page.getByTestId("drag-tray").getByTestId("drag-item").first().click();
+  await page.getByTestId("drop-zone").first().click();
+  await expect(page.getByTestId("drag-submit")).toBeEnabled();
+  await expect(page.getByTestId("drag-tray").getByTestId("drag-item")).toHaveCount(2);
+});
