@@ -123,6 +123,11 @@ Docker dev (cổng 5000) đã build lại image web + worker cho khớp bảng m
   (36 %). Xưởng Tiếng trên production đã đủ mp3 cả hai đợt.
 - 17/09 09:35: git máy chủ lên `7a8d99e` ("Hoàn thành pha 12" — chỉ ảnh + `ops/context`, không đổi code nên
   không đổi image/không khởi động lại). `ops/context/HIEN-TRANG.md` giữ bản production tự xuất lúc 04:30.
+- 17/09 10:13: lên `e89eaf4` (mã `nham_am_dau_viet` + tên hai bé viết hoa), image web `314b50d2aaed`,
+  worker `67d6d34ebfb7`; sao lưu `~/pre-deploy-20260917-1012.dump`. Migration 11
+  (`20260917100000_syllable_proper_name`), seed: 45 mã lỗi (1 mới). `content:import` (dry-run trước):
+  1.026 bài tiếng Việt cập nhật, 2 tiếng cập nhật, không sinh mp3 mới (8.551 câu có sẵn). Kiểm lại:
+  `properName` đúng hai tiếng thy/thanh; 670 bài có `targetsError = nham_am_dau_viet`; health ok, web healthy.
 - Từ giờ deploy bằng skill `/update_edu_prod` (`.claude/skills/update_edu_prod/SKILL.md`).
 
 ### Lệnh deploy (đã dùng)
