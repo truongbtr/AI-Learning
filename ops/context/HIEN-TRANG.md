@@ -1,14 +1,14 @@
-# Hiện trạng — 2026-09-16
+# Hiện trạng — 2026-09-17
 
 > Sinh tự động mỗi lần `pnpm ops:export`. **Đây là file một phiên chat mới đọc đầu tiên** (docs/14 §5).
 
 ## Hệ thống đang ở đâu
 
-- Pha gần nhất ghi trong `docs/TIEN-DO.md`: **Pha 11 — 16/09/2026 — Bến Cảng Từ: trò chơi từ vựng tiếng Anh (+ 4 bản vá QC)**
-- 2 bé đang học · 376 kỹ năng trong bản đồ · 10732 bài đã xuất bản
-- 22 phiên, 120 bằng chứng, 0 lô ảnh gửi qua chat
+- Pha gần nhất ghi trong `docs/TIEN-DO.md`: **Sửa nhỏ — 16/09/2026 tối — Bỏ bài "viết vào vở rồi chụp ảnh" (ADR-25)**
+- 2 bé đang học · 373 kỹ năng trong bản đồ · 10732 bài đã xuất bản
+- 29 phiên, 225 bằng chứng, 0 lô ảnh gửi qua chat
 - Ngày học đầu tiên có trong DB: 2026-09-12
-- Lần xuất trước: 2026-09-15T21:30:31.821Z
+- Lần xuất trước: 2026-09-16T04:18:46.689Z
 
 ## Đọc gì, ở đâu
 
