@@ -9,6 +9,7 @@ import {
   ExternalLink,
   Inbox,
   LayoutDashboard,
+  LockKeyhole,
   type LucideIcon,
   Network,
   NotebookText,
@@ -36,6 +37,7 @@ const ICONS: Record<NavIcon, LucideIcon> = {
   camera: Camera,
   diary: NotebookText,
   school: CalendarDays,
+  lock: LockKeyhole,
 };
 
 /**

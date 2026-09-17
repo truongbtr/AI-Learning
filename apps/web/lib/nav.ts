@@ -16,7 +16,8 @@ export type NavIcon =
   | "inbox"
   | "camera"
   | "diary"
-  | "school";
+  | "school"
+  | "lock";
 
 export interface NavItem {
   label: string;
@@ -41,6 +42,14 @@ export interface NavSection {
 }
 
 export const navSections: NavSection[] = [
+  {
+    id: "dashboard",
+    group: "Kết quả",
+    label: "Hai bé học thế nào",
+    href: "/admin",
+    icon: "health",
+    roles: ["ADMIN"],
+  },
   {
     id: "children",
     group: "Tổng quan",
@@ -118,6 +127,14 @@ export const navSections: NavSection[] = [
     icon: "school",
   },
   {
+    id: "auth",
+    group: "Hệ thống",
+    label: "Tắt đăng nhập để thử",
+    href: "/admin/auth",
+    icon: "lock",
+    roles: ["ADMIN"],
+  },
+  {
     id: "health",
     group: "Hệ thống",
     label: "Sức khoẻ hệ thống",
@@ -141,6 +158,7 @@ export function visibleSections(role: Role): NavSection[] {
 
 /** Exact match for the root of an area, prefix match for everything else. */
 export function isActivePath(pathname: string, href: string): boolean {
-  if (href === "/parent") return pathname === href;
+  // Area roots: /parent and /admin are pages of their own, not prefixes of everything below them.
+  if (href === "/parent" || href === "/admin") return pathname === href;
   return pathname === href || pathname.startsWith(`${href}/`);
 }

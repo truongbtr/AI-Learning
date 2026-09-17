@@ -3,12 +3,19 @@ import { prisma } from "@mtct/db";
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { ApiError } from "@/lib/api";
+import { bypassUser } from "@/lib/auth/bypass-gate";
 import type { SessionUser } from "@/types/next-auth";
 
-/** Session user from the httpOnly cookie, or null. */
+/**
+ * Session user from the httpOnly cookie, or null.
+ *
+ * While "tắt đăng nhập" is on (docs/12 §7) a visitor with no cookie is handed the borrowed ADMIN
+ * account instead, which is why every guard below — role, student, area — keeps working unchanged.
+ */
 export async function getSessionUser(): Promise<SessionUser | null> {
   const session = await auth();
-  return session?.user ?? null;
+  if (session?.user) return session.user;
+  return await bypassUser();
 }
 
 /** Where each role lands after login. */
@@ -16,7 +23,7 @@ export function homeFor(user: Pick<SessionUser, "role" | "mustChangePassword">):
   if (user.mustChangePassword) return "/change-password";
   switch (user.role) {
     case "ADMIN":
-      return "/admin/users";
+      return "/admin";
     case "PARENT":
       return "/parent";
     case "CHILD":

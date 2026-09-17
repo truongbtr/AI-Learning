@@ -1,6 +1,8 @@
 import { PrismaClient } from "../generated/client";
 
 export * from "../generated/client";
+export * from "./admin/dashboard";
+export * from "./auth/bypass";
 export * from "./chat";
 export * from "./city";
 export * from "./content/export";
