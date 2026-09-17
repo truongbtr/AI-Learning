@@ -2,6 +2,26 @@
 
 > Developer ghi sau mỗi pha: ngày, việc đã làm, cách chạy thử, tồn đọng, câu hỏi cho chủ dự án. Mới nhất ở trên.
 
+## QC pha 13 — 18/09/2026 — tự soát trước khi chủ dự án QC
+
+Viết một bộ soát **độc lập với bộ sinh** (`scripts/content-gen/emath-mn1-qc.mjs`): đọc file bài luyện, tự tính lại
+đáp án từ đề và từ hình rồi so với khoá đáp án — phép tính trong đề, số chấm ten-frame, số khối của thanh chục (kể
+cả bẫy thanh 9 khối), điểm xuất phát và số bước nhảy trên tia số, number bond, thẻ chấm, số hình phải đếm, khoá đáp
+án của bài kéo, gợi ý có lộ đáp án không, trang nguồn có nằm trong bài học không. Soát 512 bài EDI-MN1.
+
+**Lỗi thật, ảnh hưởng tới con (không phải của pha này):** **77 bài đếm vẽ sai số lượng**. `countTarget.objects.repeat`
+để trống nên màn hình luôn vẽ **6 hình** trong khi đáp án là 2, 10, 14… — con đếm 6 rồi bị tính là chưa đúng. Máy con
+không bao giờ nhận `correctCount` (ADR-14) nên renderer không thể tự suy ra. Sửa ba lớp: (1) đặt `repeat` cho 77 bài
+(51 VMATH, 15 EMATH, 11 ESL — chỉ sửa số hình vẽ, không đụng đáp án); (2) `toExerciseSpec` tự điền `repeat` từ
+`correctCount` khi thiếu; (3) `content:validate` báo lỗi nếu số hình vẽ khác số phải đếm. Hai test chặn tái diễn.
+Đã nạp lại DB dev: 89 bài cập nhật, không còn bài đang dùng nào thiếu `repeat` (23 dòng còn lại đều đã RETIRED).
+
+**Sửa trong nội dung pha 13:** 6 gợi ý nói thẳng đáp án (vd. "12 has a ten. 8 does not." cho câu hỏi 8 hay 12 lớn
+hơn) → viết lại theo cách chỉ đường, không cho đáp án; 2 bài ghi sai trang nguồn (tr.4 và tr.21 lệch khỏi bài học
+của chúng). Không có bài nào sai đáp án, sai hình hay sai khoá kéo-thả.
+
+Bộ soát chạy lại bất cứ lúc nào: `node scripts/content-gen/emath-mn1-qc.mjs` (0 = sạch).
+
 ## Pha 13b — 18/09/2026 — Hết quyển MATH NOTES Vol 1, tuần theo tiến độ thật của lớp
 
 Chủ dự án 18/09: gửi bản scan **tr.52–97**, cho biết **hai bé học cùng lớp và lớp đang ở trang 28**, cho mã hình

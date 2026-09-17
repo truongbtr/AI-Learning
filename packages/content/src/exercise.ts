@@ -394,8 +394,14 @@ export function toExerciseSpec(ex: ExerciseDef, subject: (typeof SUBJECTS)[numbe
   if (ex.readTarget) spec.readTarget = ex.readTarget;
   if (ex.listenTarget) spec.listenTarget = ex.listenTarget;
   if (ex.countTarget) {
-    const { correctCount: _drop, ...rest } = ex.countTarget;
-    spec.countTarget = rest;
+    const { correctCount, ...rest } = ex.countTarget;
+    // The child device never sees `correctCount` (ADR-14), so the picture can only be drawn the
+    // right number of times if `repeat` says so. 77 counting questions drew six objects for an
+    // answer of ten because it was missing (QC, 18/09/2026) — fill it in rather than draw a lie.
+    spec.countTarget = {
+      ...rest,
+      objects: { ...rest.objects, repeat: rest.objects.repeat ?? correctCount },
+    };
   }
   if (ex.traceTarget) spec.traceTarget = ex.traceTarget;
   if (ex.story) spec.story = ex.story;

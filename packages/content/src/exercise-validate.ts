@@ -236,6 +236,17 @@ export function validatePack(
       }
     }
 
+    // A counting question must draw as many objects as it asks the child to count: the answer
+    // never reaches the device, so `repeat` is the only thing that can say how many to draw.
+    if (ex.type === "COUNT_TAP" && ex.countTarget) {
+      const drawn = ex.countTarget.objects.repeat;
+      if (drawn !== ex.countTarget.correctCount)
+        err(
+          `COUNT_TAP draws ${drawn ?? "one"} object(s) but asks for ${ex.countTarget.correctCount} — set objects.repeat`,
+          ex.id,
+        );
+    }
+
     // Rubric 8: no two exercises may be the same question with the same options.
     const key = normalisePrompt(ex);
     const twin = seenPrompts.get(key);

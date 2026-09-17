@@ -406,3 +406,49 @@ describe("maths models as pictures (pha 13)", () => {
     expect(dup([a, c])).toHaveLength(1);
   });
 });
+
+describe("a counting question draws what it counts (QC, 18/09/2026)", () => {
+  const counting = (over: Record<string, unknown> = {}) =>
+    mcq(4, {
+      id: "vmath-count-0001",
+      type: "COUNT_TAP",
+      prompt: { text: "Có mấy quả táo?" },
+      choices: undefined,
+      countTarget: {
+        objects: { kind: "emoji", value: "🍎", labelVi: "quả táo", repeat: 10 },
+        correctCount: 10,
+      },
+      answerKey: 10,
+      ...over,
+    });
+
+  it("refuses a picture drawn fewer times than the answer", () => {
+    const short = counting({
+      countTarget: {
+        objects: { kind: "emoji", value: "🍎", labelVi: "quả táo" },
+        correctCount: 10,
+      },
+    });
+    const issues = validatePack(parseExercisePack(pack([short])), "t.json", ctx);
+    expect(issues.some((i) => i.level === "error" && i.message.includes("objects.repeat"))).toBe(
+      true,
+    );
+  });
+
+  it("fills repeat from the answer, because the child's device never sees the count", () => {
+    const ex = parseExercisePack(
+      pack([
+        counting({
+          countTarget: {
+            objects: { kind: "emoji", value: "🍎", labelVi: "quả táo" },
+            correctCount: 7,
+          },
+          answerKey: 7,
+        }),
+      ]),
+    ).exercises[0]!;
+    const spec = toExerciseSpec(ex, "VMATH");
+    expect(spec.countTarget?.objects.repeat).toBe(7);
+    expect(JSON.stringify(spec)).not.toContain("correctCount");
+  });
+});
