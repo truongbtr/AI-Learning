@@ -17,6 +17,7 @@ import { commitEvidence } from "../mastery/service";
 import { type SyllableStationPayload, syllableStation } from "../syllable/service";
 import { wordsForStation, wordsMetSince } from "../vocab/service";
 import { adaptAssessment, assessmentWeightFactor } from "./assess";
+import { EXCLUDED_TYPES } from "./excluded";
 import type { PickedSlot } from "./plan";
 
 /**
@@ -218,8 +219,10 @@ export async function sessionForKid(
 
   const slots = (session.slots ?? []) as unknown as PickedSlot[];
   const ids = slots.map((s) => s.exerciseId).filter((id): id is string => Boolean(id));
+  // A session planned before a type was taken out still names such exercises: they are simply
+  // not loaded, so the child never sees them (ADR-25) — like any other hole in the plan.
   const exercises = await db.exercise.findMany({
-    where: { id: { in: ids } },
+    where: { id: { in: ids }, type: { notIn: [...EXCLUDED_TYPES] } },
     select: {
       id: true,
       stableId: true,
@@ -416,11 +419,16 @@ export async function choiceAt(
   } as const;
 
   const [current, alternative] = await Promise.all([
-    db.exercise.findUnique({ where: { id: slot.exerciseId }, select }),
+    db.exercise.findFirst({
+      where: { id: slot.exerciseId, type: { notIn: [...EXCLUDED_TYPES] } },
+      select,
+    }),
     db.exercise.findFirst({
       where: {
         status: "PUBLISHED",
         qualityFlag: { not: "BAD" },
+        // the second choice follows the same rule as the planner (ADR-25)
+        type: { notIn: [...EXCLUDED_TYPES] },
         skills: { some: { skill: { code: slot.skillCode } } },
         id: { notIn: [slot.exerciseId, ...seen.map((a) => a.exerciseId)] },
         difficulty: {

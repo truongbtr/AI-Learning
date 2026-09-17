@@ -12,6 +12,7 @@ import type { Prisma, PrismaClient } from "../../generated/client";
 import { PLANNER_MIX_SETTING } from "../ops/apply";
 import { activePlanSkills } from "../parent/plans";
 import { assessmentState, planAssessment } from "./assess";
+import { EXCLUDED_TYPES, isExcludedType } from "./excluded";
 import { type SyllableStationSlot, syllableStations } from "./syllable-plan";
 
 type Db = PrismaClient;
@@ -366,12 +367,7 @@ export async function vocabStations(
   });
 }
 
-/**
- * Exercise types no session hands out. A write-then-photograph question stops the evening until a
- * parent comes with a phone, and the owner has taken them out (ADR-25).
- */
-export const EXCLUDED_TYPES = ["WRITE_PHOTO"] as const;
-const isExcluded = (type: string) => (EXCLUDED_TYPES as readonly string[]).includes(type);
+export { EXCLUDED_TYPES } from "./excluded";
 
 export async function pickExercises(
   db: Db,
@@ -408,7 +404,7 @@ export async function pickExercises(
       tries.push({
         ...inWorld,
         // the preferred types replace the type filter, so the excluded ones are taken out again here
-        type: { in: slot.prefer.types.filter((t) => !isExcluded(t)) as never },
+        type: { in: slot.prefer.types.filter((t) => !isExcludedType(t)) as never },
         difficulty: near,
       });
     tries.push({ ...inWorld, difficulty: near });

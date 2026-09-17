@@ -1,5 +1,6 @@
 import { vnDayDate, type WeeklyEvent, weeklyEvent, weekStartOf } from "@mtct/core";
 import type { PrismaClient } from "../../generated/client";
+import { hiddenOrders } from "../session/excluded";
 import { kidVars, starBalance } from "../session/grade";
 import { type EggState, type PictureState, updateEgg, updateWeeklyPicture } from "./rewards";
 
@@ -104,7 +105,7 @@ export async function kidHome(db: Db, studentId: string, at = new Date()): Promi
     }),
   ]);
 
-  const slots = (session?.slots ?? []) as { exerciseId?: string | null }[];
+  const slots = (session?.slots ?? []) as { order?: number; exerciseId?: string | null }[];
   const done = (session?.attempts ?? []).filter(
     (a) => a.gradedAt !== null || (a.response as { final?: boolean } | null)?.final === true,
   ).length;
@@ -131,7 +132,8 @@ export async function kidHome(db: Db, studentId: string, at = new Date()): Promi
       sessionId: session?.id ?? null,
       status: session?.status ?? null,
       done,
-      total: slots.filter((s) => s.exerciseId).length,
+      // exercises a child is no longer shown (ADR-25) are not waited for
+      total: slots.filter((s) => s.exerciseId).length - (await hiddenOrders(db, slots)).size,
       finished: session?.status === "COMPLETED",
     },
     egg: await updateEgg(db, studentId, at),

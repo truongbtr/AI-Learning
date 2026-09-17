@@ -1,6 +1,16 @@
 import type { Slot } from "@mtct/core";
+import { vnDayDate } from "@mtct/core";
 import { afterAll, beforeAll, describe, expect, it, type TestContext } from "vitest";
-import { databaseReachable, disconnectTestDb, testDb } from "../test-db";
+import {
+  createTempStudent,
+  databaseReachable,
+  disconnectTestDb,
+  removeTempStudent,
+  type TempStudent,
+  testDb,
+} from "../test-db";
+import { hiddenOrders } from "./excluded";
+import { choiceAt, sessionForKid } from "./grade";
 import { EXCLUDED_TYPES, pickExercises } from "./plan";
 
 /**
@@ -17,6 +27,8 @@ const SKILL = "VMATH.ITEST.NO_PHOTO";
 describe("no write-and-photograph questions in a session (integration)", () => {
   let ready = false;
   let tapId = "";
+  let photoId = "";
+  let student: TempStudent | null = null;
   const needDb = (ctx: TestContext) => {
     if (!ready) ctx.skip("no database (start Postgres and run pnpm db:seed)");
   };
@@ -43,7 +55,7 @@ describe("no write-and-photograph questions in a session (integration)", () => {
       status: "PUBLISHED" as const,
       skills: { create: { skillId: skill.id } },
     };
-    await db.exercise.create({
+    const photo = await db.exercise.create({
       data: {
         ...common,
         stableId: `${PREFIX}-photo`,
@@ -88,6 +100,8 @@ describe("no write-and-photograph questions in a session (integration)", () => {
       },
     });
     tapId = tap.id;
+    photoId = photo.id;
+    student = await createTempStudent("nophoto");
   });
 
   async function cleanUp() {
@@ -97,6 +111,7 @@ describe("no write-and-photograph questions in a session (integration)", () => {
   }
 
   afterAll(async () => {
+    await removeTempStudent(student);
     if (ready) await cleanUp();
     await disconnectTestDb();
   });
@@ -123,6 +138,47 @@ describe("no write-and-photograph questions in a session (integration)", () => {
     for (let i = 0; i < 6; i++) {
       const [picked] = await pickExercises(testDb(), [slot({ types: ["WRITE_PHOTO"] })]);
       expect(picked?.exerciseId).toBe(tapId);
+    }
+  });
+
+  /** A session planned before the rule, with the photo question still in it. */
+  async function oldSession() {
+    const db = testDb();
+    const base = { skillCode: SKILL, subject: "VMATH", kind: "focus", difficulty: 2, reason: "t" };
+    return db.session.create({
+      data: {
+        studentId: student?.id ?? "",
+        kind: "FREE_PLAY",
+        date: vnDayDate(new Date()),
+        status: "PLANNED",
+        slots: [
+          { ...base, order: 1, exerciseId: photoId },
+          { ...base, order: 2, exerciseId: tapId },
+        ],
+      },
+    });
+  }
+
+  it("never shows the photo question of a session planned before the rule", async (ctx) => {
+    needDb(ctx);
+    const session = await oldSession();
+    const kid = await sessionForKid(testDb(), session.id);
+    expect(kid?.items.map((i) => i.exerciseId)).toEqual([tapId]);
+    expect(kid?.nextOrder).toBe(2);
+    expect([
+      ...(await hiddenOrders(testDb(), [
+        { order: 1, exerciseId: photoId },
+        { order: 2, exerciseId: tapId },
+      ])),
+    ]).toEqual([1]);
+  });
+
+  it("never offers it as the second choice of a choice station, nor as the first", async (ctx) => {
+    needDb(ctx);
+    const session = await oldSession();
+    for (const order of [1, 2]) {
+      const { items } = await choiceAt(testDb(), session.id, order);
+      expect(items.map((i) => i.type)).not.toContain("WRITE_PHOTO");
     }
   });
 

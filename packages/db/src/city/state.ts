@@ -28,6 +28,7 @@ import {
   vnDayDate,
 } from "@mtct/core";
 import type { Prisma, PrismaClient } from "../../generated/client";
+import { hiddenOrders } from "../session/excluded";
 import { subjectsOnTimetable } from "../session/plan";
 import { CITY_SESSION_SLOTS } from "./session";
 
@@ -185,6 +186,8 @@ export function stationsOfSession(
   attempts: { order: number; gradedAt: Date | null; response: Prisma.JsonValue }[],
   /** Orders of game stations already played (they finish with a star, not an Attempt). */
   gamesDone: ReadonlySet<number> = new Set(),
+  /** Orders whose exercise a child is no longer shown (ADR-25): not waited for. */
+  hidden: ReadonlySet<number> = new Set(),
 ): StationPlan {
   const done = new Set([...attempts.filter(attemptDone).map((a) => a.order), ...gamesDone]);
   const list = (Array.isArray(slots) ? slots : []) as StoredSlot[];
@@ -195,7 +198,9 @@ export function stationsOfSession(
         order: s.order as number,
         skillCode: s.skillCode ?? "",
         homework: !!s.homework,
-        missing: !s.homework && !s.exerciseId && !s.vocab && !s.syllable,
+        missing:
+          (!s.homework && !s.exerciseId && !s.vocab && !s.syllable) ||
+          hidden.has(s.order as number),
         done: done.has(s.order as number),
       })),
   );
@@ -282,6 +287,7 @@ async function loadShared(db: Db, studentId: string, at: Date): Promise<Shared> 
         session.slots,
         session.attempts,
         new Set(gameOrders(session.slots).filter((o) => gameStarIds.has(`${session.id}-${o}`))),
+        await hiddenOrders(db, (Array.isArray(session.slots) ? session.slots : []) as StoredSlot[]),
       ),
     });
   }

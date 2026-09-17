@@ -36,3 +36,23 @@ Chủ dự án, 16/09/2026: *"Bỏ các câu viết rồi chụp ảnh nhé."*
 - Test: `packages/db/src/session/no-photo.test.ts` — một kỹ năng tạm có đúng hai bài (một chụp ảnh,
   một trắc nghiệm): chọn mười hai lần luôn ra bài trắc nghiệm; hành vi cũ ra bài chụp ảnh khoảng một
   nửa số lần.
+
+## Bổ sung 17/09/2026 — hai lối còn sót
+
+Chủ dự án nhắc lại "bỏ qua hết các bài yêu cầu viết ra vở rồi chụp ảnh". Rà lại thì bộ chọn bài đã
+lọc từ 16/09, nhưng còn hai lối đưa bài chụp ảnh tới con:
+
+1. **Trạm chọn một trong hai bài** (docs/06 §1.8b, `choiceAt`): bài thứ hai được lấy bằng một truy vấn
+   riêng **không** lọc dạng bài.
+2. **Phiên đã lập trước quy tắc** (phiên thành phố và phiên chẩn đoán lập trước tối 16/09, và phiên
+   "đang dở" còn mở): ô bài chụp ảnh vẫn nằm trong `Session.slots` và vẫn được hiện.
+
+Cách vá, không sửa dữ liệu học nào (`Session` giữ nguyên):
+
+- Danh sách dạng bị bỏ chuyển vào `packages/db/src/session/excluded.ts`; `choiceAt` lọc cả bài đang
+  có lẫn bài thay thế.
+- `sessionForKid` không nạp bài thuộc dạng bị bỏ — con thấy ô đó như một ô trống của kế hoạch và đi
+  tiếp; màn thành phố (`stationsOfSession`) và thanh tiến độ ở màn nhà (`kidHome`) không chờ ô đó
+  (`hiddenOrders`), nên trạm vẫn "xong" được.
+- Test bổ sung trong `no-photo.test.ts`: một phiên cũ có ô chụp ảnh chỉ hiện bài trắc nghiệm; trạm
+  chọn hai bài không bao giờ đưa bài chụp ảnh.
